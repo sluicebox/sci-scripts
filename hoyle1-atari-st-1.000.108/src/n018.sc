@@ -1,0 +1,75 @@
+;;; Sierra Script 1.0 - (do not remove this comment)
+;;; Decompiled by sluicebox
+(script# 18)
+(include sci.sh)
+(use Main)
+
+(public
+	proc18_0 0
+)
+
+(procedure (proc18_0 param1 &tmp temp0 temp1)
+	(= global859 param1)
+	(= temp0 0)
+	(if (localproc_0)
+		(for ((= temp1 0)) (< temp1 4) ((++ temp1))
+			(if
+				(and
+					(not ((gPlayerList at: temp1) sittingOut:))
+					(!= (gPlayerList at: temp1) global859)
+					((gPlayerList at: temp1) outOf: global170)
+				)
+				(++ temp0)
+			)
+		)
+		(if
+			(and
+				(== temp0 (- global448 1))
+				(or (== global269 global859) (not global269))
+			)
+			(for ((= temp1 0)) (< temp1 4) ((++ temp1))
+				(if
+					(and
+						(not ((gPlayerList at: temp1) sittingOut:))
+						(!= (gPlayerList at: temp1) gPlayer0)
+					)
+					((gPlayerList at: temp1) takeAllPlayer: global859 obvious: 1)
+				)
+			)
+		else
+			(return 0)
+		)
+	)
+)
+
+(procedure (localproc_0 &tmp temp0 temp1)
+	(= temp0 0)
+	(if (gPlayer0 handPoints:)
+		(= temp1 gPlayer0)
+		(++ temp0)
+	)
+	(if (gPlayer1 handPoints:)
+		(= temp1 gPlayer1)
+		(++ temp0)
+	)
+	(if (gPlayer2 handPoints:)
+		(= temp1 gPlayer2)
+		(++ temp0)
+	)
+	(if (gPlayer3 handPoints:)
+		(= temp1 gPlayer3)
+		(++ temp0)
+	)
+	(= global269 0)
+	(if (== temp0 1)
+		(= global269 temp1)
+	)
+	(if (or (not temp0) (and (== temp0 1) (not global169)))
+		(return 1)
+	)
+	(if (and (== temp0 1) global169 (== global859 temp1))
+		(return 1)
+	)
+	(return 0)
+)
+

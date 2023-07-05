@@ -1,0 +1,46 @@
+;;; Sierra Script 1.0 - (do not remove this comment)
+;;; Decompiled by sluicebox
+(script# 3250)
+(include sci.sh)
+(use Main)
+
+(public
+	rm3v250 0
+)
+
+(instance rm3v250 of ShiversRoom
+	(properties
+		picture 3250
+	)
+
+	(method (init)
+		(efExitLeft init: 2)
+		(efExitRight init: 1)
+		(gPBoatView setView: 2)
+		(super init: &rest)
+	)
+)
+
+(instance efExitLeft of ExitFeature
+	(properties
+		nextRoom 3240
+	)
+)
+
+(instance efExitRight of ExitFeature
+	(properties
+		nextRoom 3260
+	)
+)
+
+(instance efExitForward of ExitFeature ; UNUSED
+	(properties
+		nextRoom 3040
+	)
+
+	(method (init)
+		(self createPoly:)
+		(super init: &rest)
+	)
+)
+

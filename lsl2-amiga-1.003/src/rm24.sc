@@ -1,0 +1,136 @@
+;;; Sierra Script 1.0 - (do not remove this comment)
+;;; Decompiled by sluicebox
+(script# 24)
+(include sci.sh)
+(use Main)
+(use Interface)
+(use Motion)
+(use Game)
+(use Actor)
+(use System)
+
+(public
+	rm24 0
+)
+
+(instance rm24 of Rm
+	(properties
+		picture 24
+		horizon 5
+		north 20
+		east 25
+		west 23
+	)
+
+	(method (init)
+		(Load rsVIEW 255)
+		(super init:)
+		(aPeople
+			setLoop: 0
+			setStep: 1 1
+			setCycle: Fwd
+			illegalBits: 0
+			ignoreHorizon:
+			ignoreActors:
+			init:
+			setScript: detailScript
+		)
+		(cond
+			((== gPrevRoomNum 0)
+				(gEgo posn: 155 179)
+			)
+			((== gPrevRoomNum 20)
+				(gEgo posn: 99 110)
+			)
+		)
+		(NormalEgo)
+		(gEgo init:)
+		(self setRegions: 200 setScript: rm24Script) ; rm200
+	)
+)
+
+(instance rm24Script of Script
+	(properties)
+
+	(method (doit)
+		(super doit:)
+	)
+
+	(method (handleEvent event)
+		(if (or (!= (event type:) evSAID) (event claimed:))
+			(return)
+		)
+		(if (Said '/film')
+			(Print 24 0) ; "From here you can just make out the promo board on the latest project now in production: "Debbie Does Oakhurst! An extraordinary trip down mammary lane! A behind the scenes look when sex was still dirty.""
+			(Print 24 1 #at -1 130) ; "(Must be a documentary!)"
+		)
+		(if (Said 'look>')
+			(if (Said '[/building,unreversal,krod,airport]')
+				(Print 24 2) ; "Why, that must be "Unreversal Studios!""
+			)
+			(if (Said '/children,man,woman')
+				(Print 24 3) ; "They're on one of those famous "Unreversal Studios Tours.""
+			)
+		)
+	)
+)
+
+(instance detailScript of Script
+	(properties)
+
+	(method (changeState newState)
+		(switch (= state newState)
+			(0
+				(= cycles 12)
+			)
+			(1
+				(aPeople setPri: -1 setLoop: 0 setMotion: MoveTo 190 64 self)
+			)
+			(2
+				(aPeople hide:)
+				(= seconds (Random 2 9))
+			)
+			(3
+				(aPeople
+					setLoop: 1
+					posn: -5 63
+					show:
+					setMotion: MoveTo 190 64 self
+				)
+			)
+			(4
+				(aPeople hide:)
+				(= seconds (Random 2 9))
+			)
+			(5
+				(aPeople
+					setLoop: 2
+					posn: -5 63
+					show:
+					setMotion: MoveTo 210 64 self
+				)
+			)
+			(6
+				(aPeople hide:)
+				(= seconds (Random 2 9))
+			)
+			(7
+				(aPeople setLoop: 3 posn: 299 103 setPri: 11 show:)
+				(= seconds (Random 5 15))
+			)
+			(8
+				(aPeople hide:)
+				(self changeState: 0)
+			)
+		)
+	)
+)
+
+(instance aPeople of Act
+	(properties
+		y 63
+		x -5
+		view 255
+	)
+)
+

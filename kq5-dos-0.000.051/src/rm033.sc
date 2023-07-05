@@ -1,0 +1,586 @@
+;;; Sierra Script 1.0 - (do not remove this comment)
+;;; Decompiled by sluicebox
+(script# 33)
+(include sci.sh)
+(use Main)
+(use Interface)
+(use Sort)
+(use RFeature)
+(use Motion)
+(use Game)
+(use Actor)
+(use System)
+
+(public
+	rm033 0
+)
+
+(local
+	local0
+	[local1 46] = [0 189 57 189 120 167 101 161 120 155 99 148 60 132 52 122 77 122 116 117 117 109 65 103 58 101 80 100 114 96 125 92 73 92 53 79 101 76 115 67 100 60 95 42 0 42]
+	[local47 54] = [0 39 104 39 98 45 102 59 118 67 133 68 95 80 61 80 60 81 73 90 144 89 133 94 113 98 84 101 83 103 118 107 168 105 155 117 68 133 100 146 118 152 151 146 187 133 245 132 319 146 319 0 0 0]
+	[local101 14] = [225 147 205 147 200 164 223 173 248 164 243 158 234 157]
+)
+
+(instance rm033 of Rm
+	(properties
+		picture 33
+		horizon 67
+		north 32
+		east 34
+	)
+
+	(method (init)
+		(super init:)
+		(if (== global322 100)
+			(gGlobalSound2 number: 106 loop: -1 vol: 127 playBed:)
+			(Load rsVIEW 520)
+			(Load rsSOUND 83)
+			(self setScript: sledRun)
+		else
+			(switch gPrevRoomNum
+				(north
+					(gEgo view: 16 posn: 116 71 loop: 4 cel: 2 init:)
+					((gEgo head:) hide:)
+					(HandsOff)
+					(self setScript: walkFromNorth)
+				)
+				(else
+					(gEgo
+						posn: 312 165
+						init:
+						normal: 1
+						view: 12
+						setLoop: -1
+						setCel: -1
+						setStep: 2 2
+						moveSpeed: global289
+						cycleSpeed: 0
+						setCycle: Walk
+					)
+					(sled init:)
+				)
+			)
+		)
+		(poly1 points: @local1 size: 23)
+		(poly2 points: @local47 size: 27)
+		(poly3 points: @local101 size: 7)
+		(self
+			setFeatures: crevasse path33 path33a bridge mountains
+			addObstacle: poly1 poly2 poly3
+		)
+	)
+
+	(method (doit &tmp temp0)
+		(cond
+			(script
+				(script doit:)
+			)
+			((= temp0 (self edgeToRoom: (gEgo edgeHit:)))
+				(gCurRoom newRoom: temp0)
+			)
+			(
+				(or
+					(& (gEgo onControl: 0) $1000)
+					(& (gEgo onControl: 0) $0080)
+				)
+				(gEgo setPri: (- (gEgo priority:) 2) setLoop: 1)
+				(self setScript: falling)
+			)
+			((& (gEgo onControl: 0) $2000)
+				(gEgo setPri: (gEgo priority:) setLoop: 1)
+				(self setScript: falling)
+			)
+			((& (gEgo onControl: 0) $0020)
+				(gEgo setPri: 8 setLoop: 0)
+				(bridge setPri: 15)
+				(self setScript: falling)
+			)
+			(
+				(or
+					(& (gEgo onControl: 0) $0200)
+					(& (gEgo onControl: 0) $0100)
+				)
+				(gEgo
+					setPri:
+						(cond
+							((< (gEgo y:) 68) 1)
+							((< (gEgo y:) 88) 2)
+							(else 4)
+						)
+					setLoop: 0
+				)
+				(self setScript: falling)
+			)
+			((& (gEgo onControl: 0) $0004)
+				(bridge cycleSpeed: 1 setCycle: End)
+				(gEgo setPri: (- (gEgo priority:) 2))
+				(self setScript: falling)
+			)
+			((& (gEgo onControl: 0) $0008)
+				(gEgo view: 16)
+				((gEgo head:) hide:)
+			)
+			((& (gEgo onControl: 0) $0010)
+				(gEgo view: 14)
+				((gEgo head:) show:)
+			)
+			((& (gEgo onControl: 0) $0040)
+				(gEgo view: 12)
+			)
+		)
+	)
+
+	(method (handleEvent event)
+		(cond
+			((event claimed:)
+				(return)
+			)
+			(script
+				(return)
+			)
+		)
+	)
+
+	(method (dispose)
+		(super dispose:)
+	)
+)
+
+(instance sledRun of Script
+	(properties)
+
+	(method (changeState newState)
+		(switch (= state newState)
+			(0
+				(HandsOff)
+				(gEgo
+					normal: 0
+					ignoreHorizon: 1
+					view: 520
+					loop: 0
+					cel: 2
+					posn: 1 39
+					init:
+					moveSpeed: 0
+					illegalBits: 0
+					setMotion: MoveTo 73 40 self
+				)
+				((gEgo head:) hide:)
+			)
+			(1
+				(gEgo setLoop: 1 setCel: 0 setMotion: MoveTo 95 49 self)
+			)
+			(2
+				(gEgo setCel: 1 posn: 95 49 setMotion: MoveTo 106 61 self)
+			)
+			(3
+				(gEgo setCel: 2 posn: 106 61 setMotion: MoveTo 130 71 self)
+			)
+			(4
+				(gEgo setCel: 4 posn: 130 71 setMotion: MoveTo 112 77 self)
+			)
+			(5
+				(gEgo
+					setLoop: 2
+					setCel: 0
+					posn: 112 77
+					setMotion: MoveTo 54 80 self
+				)
+			)
+			(6
+				(gEgo setCel: 1 posn: 54 80 setMotion: MoveTo 82 88 self)
+			)
+			(7
+				(gEgo posn: 82 88 setMotion: MoveTo 103 91 self)
+			)
+			(8
+				(gEgo setCel: 2 posn: 103 91 setMotion: MoveTo 137 91 self)
+			)
+			(9
+				(gEgo setCel: 3 posn: 137 91 setMotion: MoveTo 96 100 self)
+			)
+			(10
+				(gEgo
+					setLoop: 3
+					setCel: 0
+					posn: 96 100
+					setMotion: MoveTo 64 103 self
+				)
+			)
+			(11
+				(gEgo setCel: 1 setMotion: MoveTo 101 108 self)
+			)
+			(12
+				(gEgo setCel: 2 setMotion: MoveTo 143 118 self)
+			)
+			(13
+				(gEgo setCel: 3 setMotion: MoveTo 158 119 self)
+			)
+			(14
+				(gGlobalSound2 number: 107 loop: 1 vol: 127 playBed:)
+				(gEgo setLoop: 4 setCel: 0 setMotion: MoveTo 179 121 self)
+			)
+			(15
+				(gEgo setStep: 4 4 setCel: 1 setMotion: MoveTo 196 143 self)
+			)
+			(16
+				(gEgo setCel: 2 setMotion: MoveTo 219 175 self)
+			)
+			(17
+				(gEgo setCel: 3 setMotion: MoveTo 221 175 self)
+			)
+			(18
+				(gEgo setLoop: 5 setCel: 0 posn: 224 157 setCycle: End self)
+				(sled init:)
+				(gGlobalSound2 number: 790 vol: 60 loop: 1 play: self)
+				(gGlobalSound3 number: 108 loop: 1 vol: 127 play:)
+			)
+			(19
+				(= seconds 4)
+			)
+			(20
+				(gEgo
+					posn: 226 152
+					setLoop: 9
+					cel: 0
+					cycleSpeed: 3
+					setCycle: End self
+				)
+			)
+			(21
+				(Say 165 33 0 67 30 30 25 5) ; "Drat! My sled is broken!"
+				(HandsOn)
+				(gEgo
+					normal: 1
+					view: 12
+					setLoop: -1
+					setCel: -1
+					x: (+ (gEgo x:) 3)
+					setStep: 2 2
+					moveSpeed: global289
+					cycleSpeed: 0
+					setCycle: Walk
+					loop: 11
+					cel: 4
+					illegalBits: -32768
+				)
+				((gEgo head:) show:)
+				(client setScript: 0)
+				(= global322 0)
+			)
+		)
+	)
+)
+
+(instance falling of Script
+	(properties)
+
+	(method (changeState newState)
+		(switch (= state newState)
+			(0
+				(if (IsObject (bridge cycler:))
+					(= cycles 3)
+				else
+					(= cycles 1)
+				)
+			)
+			(1
+				(HandsOff)
+				((gEgo head:) hide:)
+				(gEgo
+					normal: 0
+					view:
+						(switch (gEgo view:)
+							(16 82)
+							(14 80)
+							(else 78)
+						)
+					cel: 0
+					cycleSpeed: 2
+					setCycle: End self
+					illegalBits: 0
+				)
+				(gGlobalSound3 number: 83 priority: 15 loop: 1 vol: 127 play:)
+			)
+			(2
+				(gEgo
+					yStep: 8
+					setMotion: MoveTo (- (gEgo x:) 20) 230 self
+				)
+			)
+			(3
+				(= seconds 3)
+			)
+			(4
+				(= global330 {That last step was a doozy!})
+				(EgoDead)
+			)
+		)
+	)
+)
+
+(instance walkFromNorth of Script
+	(properties)
+
+	(method (changeState newState)
+		(switch (= state newState)
+			(0
+				(gEgo setMotion: MoveTo (gEgo x:) (+ (gEgo y:) 3) self)
+			)
+			(1
+				(HandsOn)
+				(self dispose:)
+			)
+		)
+	)
+)
+
+(instance overCrevasse of Script
+	(properties)
+
+	(method (changeState newState)
+		(switch (= state newState)
+			(0
+				(gEgo
+					view: 648
+					normal: 0
+					setLoop: 1
+					setCel: 0
+					xStep: 4
+					x: 340
+					y: 154
+					illegalBits: 0
+					setMotion: MoveTo 120 154 self
+				)
+				((gEgo head:) hide:)
+			)
+			(1
+				(sled
+					view: 621
+					setLoop: 0
+					cel: 0
+					cycleSpeed: 3
+					illegalBits: 0
+					ignoreActors:
+					setMotion: MoveTo (sled x:) (- (sled y:) 20)
+					setCycle: End self
+				)
+				(gEgo setMotion: MoveTo 90 (gEgo y:))
+			)
+			(2
+				(PrintDC 33 1) ; "For Lisa from O."
+				(sled setMotion: MoveTo (- (sled x:) 80) (sled y:) self)
+			)
+			(3
+				(gEgo setMotion: MoveTo 80 164)
+				(sled setCycle: Beg self)
+			)
+			(4
+				(sled dispose:)
+				(self dispose:)
+			)
+		)
+	)
+)
+
+(instance path33 of RFeature
+	(properties)
+
+	(method (handleEvent event)
+		(if
+			(or
+				(event claimed:)
+				(not (== (event type:) evVERB))
+				(not (& (OnControl CONTROL (event x:) (event y:)) $0002))
+			)
+			(return)
+		else
+			(switch (event message:)
+				(2 ; Look
+					(PrintDC 33 2) ; "A snowy path zigzags its way across the top of a narrow ridge toward a deep crevasse."
+					(event claimed: 1)
+				)
+			)
+		)
+	)
+)
+
+(instance path33a of RFeature
+	(properties)
+
+	(method (handleEvent event)
+		(if
+			(or
+				(event claimed:)
+				(not (== (event type:) evVERB))
+				(not (& (OnControl CONTROL (event x:) (event y:)) $0800))
+			)
+			(return)
+		else
+			(switch (event message:)
+				(2 ; Look
+					(PrintDC 33 3) ; "From here, the path widens and continues on to the east."
+					(event claimed: 1)
+				)
+			)
+		)
+	)
+)
+
+(instance crevasse of RFeature
+	(properties)
+
+	(method (handleEvent event)
+		(if
+			(or
+				(event claimed:)
+				(not (== (event type:) evVERB))
+				(not (& (OnControl CONTROL (event x:) (event y:)) $0400))
+			)
+			(return)
+		else
+			(switch (event message:)
+				(2 ; Look
+					(PrintDC 33 4) ; "A deep crevasse splits the snowy mountain ridge in two. A thin strip of ice crosses it. It looks too wide to jump across."
+					(event claimed: 1)
+				)
+				(3 ; Do
+					(PrintDC 33 5) ; "Graham thinks about attempting to jump across the crevasse, but wisely chooses not to."
+					(event claimed: 1)
+				)
+			)
+		)
+	)
+)
+
+(instance bridge of Prop
+	(properties
+		y 145
+		x 75
+		view 516
+		priority 7
+		signal 16400
+	)
+
+	(method (handleEvent event)
+		(if
+			(or
+				(event claimed:)
+				(not (== (event type:) evVERB))
+				(not (proc0_18 self event))
+			)
+			(return)
+		else
+			(switch (event message:)
+				(2 ; Look
+					(PrintDC 33 4) ; "A deep crevasse splits the snowy mountain ridge in two. A thin strip of ice crosses it. It looks too wide to jump across."
+					(event claimed: 1)
+				)
+				(3 ; Do
+					(PrintDC 33 5) ; "Graham thinks about attempting to jump across the crevasse, but wisely chooses not to."
+					(event claimed: 1)
+				)
+				(5 ; Inventory
+					(switch global69
+						(29 ; Sled
+							(PrintDC 33 6) ; "Perhaps with some momentum Graham could use this to cross the crevasse."
+							(event claimed: 1)
+						)
+						(28 ; Wand
+							(event claimed: 0)
+						)
+						(else
+							(PrintDC 33 7) ; "It won't help Graham cross the crevasse."
+							(event claimed: 1)
+						)
+					)
+				)
+			)
+		)
+	)
+)
+
+(instance mountains of RFeature
+	(properties)
+
+	(method (handleEvent event)
+		(if
+			(or
+				(event claimed:)
+				(not (== (event type:) evVERB))
+				(not (& (OnControl CONTROL (event x:) (event y:)) $4000))
+			)
+			(return)
+		else
+			(switch (event message:)
+				(2 ; Look
+					(PrintDC 33 8) ; "In the distance, snowy mountains loom above a lovely river valley."
+					(event claimed: 1)
+				)
+			)
+		)
+	)
+)
+
+(instance sled of Act
+	(properties
+		y 172
+		x 226
+		view 520
+		loop 7
+		priority 10
+		signal 16400
+	)
+
+	(method (handleEvent event)
+		(if
+			(or
+				(event claimed:)
+				(not (== (event type:) evVERB))
+				(not (proc0_18 self event))
+			)
+			(return)
+		else
+			(switch (event message:)
+				(2 ; Look
+					(PrintDC 33 9) ; "Graham's sled lies in several broken pieces on the eastern side of the icy crevasse."
+					(event claimed: 1)
+				)
+				(3 ; Do
+					(if (not local0)
+						(++ local0)
+						(PrintDC 33 10) ; "The broken sled is now no good to anybody."
+						(event claimed: 1)
+					)
+				)
+				(5 ; Inventory
+					(switch global69
+						(26 ; Cloak
+							(gCurRoom setScript: overCrevasse)
+							(event claimed: 1)
+						)
+						(else
+							(event claimed: 0)
+						)
+					)
+				)
+			)
+		)
+	)
+)
+
+(instance poly1 of Polygon
+	(properties)
+)
+
+(instance poly2 of Polygon
+	(properties)
+)
+
+(instance poly3 of Polygon
+	(properties
+		type PBarredAccess
+	)
+)
+

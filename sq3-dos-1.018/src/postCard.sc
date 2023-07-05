@@ -1,0 +1,61 @@
+;;; Sierra Script 1.0 - (do not remove this comment)
+;;; Decompiled by sluicebox
+(script# 471)
+(include sci.sh)
+(use Main)
+(use Interface)
+(use Actor)
+(use System)
+
+(public
+	postCard 0
+)
+
+(instance postCard of Code
+	(properties)
+
+	(method (init)
+		(Load rsVIEW 73)
+		(super init:)
+	)
+
+	(method (doit)
+		(switch global600
+			(1
+				(Print 471 0 #icon 73 0 2 #button {Read Back} 1 #width 100) ; "You examine one of the many interesting post cards."
+				(Print 471 1 #font 999 #width 225) ; "Arrakis               Place A great spot for winter travel,       Stamp Arrakis holds many delights for        Here the adventurous vacationer. Nothing can compare with a blinding dust storm, or being crushed by a sandworm."
+			)
+			(2
+				(Print 471 0 #icon 73 1 1 #button {Read Back} 1 #width 100) ; "You examine one of the many interesting post cards."
+				(Print 471 2 #font 999 #width 225) ; "Black Hole Bertha            Place Like a giant interstellar           Stamp vacuum, Black Hole Bertha         Here comes sweeping through the galaxy. All travelers are advised to stay away from Bertha. Just buy the post card, then tell everyone you went there."
+			)
+			(3
+				(Print 471 0 #icon 73 0 0 #button {Read Back} 1 #width 100) ; "You examine one of the many interesting post cards."
+				(Print 471 3 #font 999 #width 225) ; "Ortega               Place The volcanoes of Ortega are         Stamp constantly reshaping its            Here surface. Dressed in heat resistant underwear, the hearty traveler can find a lava lovers paradise on this starkly enjoyable planet."
+			)
+			(4
+				(Print 471 0 #icon 73 0 3 #button {Read Back} 1 #width 100) ; "You examine one of the many interesting post cards."
+				(Print 471 4 #font 999 #width 225) ; "RobertaLand              Place Come join the fun at the           Stamp funpark of the future!             Here See characters from your favorite stories come to life again and again. Recently revised, so don't miss a single thrilling scene."
+			)
+			(5
+				(Print 471 0 #icon 73 1 0 #button {Read Back} 1 #width 100) ; "You examine one of the many interesting post cards."
+				(Print 471 5 #font 999 #width 225) ; "Beta Alpha Starless Region        Place Looking for some real           Stamp solitude? Come to a place          Here that's so far from everything that you can't even see stars. Mind-numbing boredom greets you as you drift aimlessly through nothing. A must for the brain-dead!"
+			)
+			(6
+				(Print 471 0 #icon 73 0 1 #button {Read Back} 1 #width 100) ; "You examine one of the many interesting post cards."
+				(Print 471 6 #font 999 #width 225) ; "Achoron              Place The friendly creatures of          Stamp Achoron are a delight for           Here young and old alike. Tame enough to come right up and caress you, yet wild enough to slash you to shreds if provoked."
+			)
+		)
+		(DisposeScript 471)
+	)
+)
+
+(instance card of Prop ; UNUSED
+	(properties)
+
+	(method (init)
+		(super init:)
+		(self view: 73 setLoop: 0 setCel: 1 setPri: 15 posn: 100 53)
+	)
+)
+

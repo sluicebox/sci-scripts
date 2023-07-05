@@ -1,0 +1,347 @@
+;;; Sierra Script 1.0 - (do not remove this comment)
+;;; Decompiled by sluicebox
+(script# 6006)
+(include sci.sh)
+(use Main)
+(use Location)
+(use ExitFeature)
+(use n1111)
+(use Polygon)
+(use Feature)
+
+(public
+	avianRightShaft3 0
+)
+
+(local
+	local0
+)
+
+(instance avianRightShaft3 of Location
+	(properties)
+
+	(method (init)
+		(super init:)
+		(= plane global116)
+		(faceUp down: faceOut)
+		(faceDown up: faceOut)
+		(faceOut up: faceUp)
+		(faceOut down: faceDown)
+		(if local0
+			(self addPicObj: faceIn faceOut faceIn)
+		else
+			(switch gPrevRoomNum
+				(6005 ; avianLeftShaft3
+					(self setPicObj: faceIn)
+				)
+				(6008 ; avianRightShaft4
+					(self setPicObj: faceUp)
+				)
+				(6009 ; avianBridgeControls
+					(if (== global164 270)
+						(self setPicObj: faceOut)
+					else
+						(self setPicObj: faceIn)
+					)
+				)
+				(else
+					(self setPicObj: faceDown)
+				)
+			)
+			(self addPicObj: faceIn faceOut faceIn)
+		)
+	)
+
+	(method (serialize param1)
+		(= local0 param1)
+		(super serialize: param1)
+	)
+)
+
+(instance faceIn of CameraAngle
+	(properties
+		picture 6045
+		heading 180
+		edgeN 0
+		edgeS 0
+	)
+
+	(method (init)
+		(super init:)
+		(bridgeControls init:)
+		(doorBlue3_180 init:)
+		(bridgeControl_180 init:)
+	)
+)
+
+(instance faceOut of CameraAngle
+	(properties
+		picture 6046
+	)
+
+	(method (init)
+		(super init:)
+		(outExit init:)
+		(doorRed3_0 init:)
+		(ledges_0 init:)
+		(bridge_0 init:)
+	)
+)
+
+(instance faceUp of CameraAngle
+	(properties
+		picture 6047
+		edgeN 0
+		edgeE 0
+		edgeW 0
+	)
+
+	(method (init)
+		(= picture (if (IsFlag 142) 6051 else 6047))
+		(super init:)
+		(upExit init:)
+		(ledges_0_up init:)
+		(sea_0_up init:)
+	)
+)
+
+(instance faceDown of CameraAngle
+	(properties
+		picture 6048
+		edgeS 0
+		edgeE 0
+		edgeW 0
+	)
+
+	(method (init)
+		(super init:)
+		(downExit init:)
+		(ledges_0_down init:)
+		(bridge_0_down init:)
+	)
+)
+
+(instance downExit of ExitFeature
+	(properties
+		nsLeft 99
+		nsTop 92
+		nsRight 513
+		nsBottom 258
+		nextRoom 6008
+	)
+)
+
+(instance upExit of ExitFeature
+	(properties
+		nsLeft 55
+		nsTop 4
+		nsRight 535
+		nsBottom 172
+		nextRoom 6004
+	)
+)
+
+(instance outExit of ExitFeature
+	(properties
+		nsLeft 215
+		nsTop 91
+		nsRight 374
+		nsBottom 241
+		nextRoom 6005
+	)
+)
+
+(instance bridgeControls of Feature
+	(properties
+		nsLeft 381
+		nsTop 238
+		nsRight 434
+		nsBottom 293
+	)
+
+	(method (init)
+		(super init:)
+		(= plane global116)
+		(self setHotspot: 2)
+	)
+
+	(method (doVerb theVerb)
+		(switch theVerb
+			(2
+				(gCurRoom newRoom: 6009) ; avianBridgeControls
+				(self deleteHotspot:)
+			)
+			(else
+				(super doVerb: theVerb)
+			)
+		)
+	)
+)
+
+(instance doorRed3_0 of Feature
+	(properties
+		noun 10
+	)
+
+	(method (init)
+		(super init: &rest)
+		(self
+			setHotspot: 144
+			setPolygon:
+				((Polygon new:)
+					type: PTotalAccess
+					init: 219 43 394 40 409 121 351 229 256 228 194 122
+					yourself:
+				)
+		)
+	)
+)
+
+(instance ledges_0 of Feature
+	(properties
+		noun 3
+	)
+
+	(method (init)
+		(super init: &rest)
+		(self
+			setHotspot: 144
+			setPolygon:
+				((Polygon new:)
+					type: PTotalAccess
+					init: 212 236 378 236 381 251 385 249 207 253
+					yourself:
+				)
+		)
+	)
+)
+
+(instance bridge_0 of Feature
+	(properties
+		noun 36
+	)
+
+	(method (init)
+		(super init: &rest)
+		(self
+			setHotspot: 144
+			setPolygon:
+				((Polygon new:)
+					type: PTotalAccess
+					init: 269 250 325 251 328 287 265 288
+					yourself:
+				)
+		)
+	)
+)
+
+(instance ledges_0_up of Feature
+	(properties
+		noun 3
+	)
+
+	(method (init)
+		(super init: &rest)
+		(self
+			setHotspot: 144
+			setPolygon:
+				((Polygon new:)
+					type: PTotalAccess
+					init: -1 1 589 0 589 77 540 78 540 113 520 124 411 128 377 144 220 146 177 131 75 129 59 113 58 77 0 75
+					yourself:
+				)
+		)
+	)
+)
+
+(instance ledges_0_down of Feature
+	(properties
+		noun 3
+	)
+
+	(method (init)
+		(super init: &rest)
+		(self
+			setHotspot: 144
+			setPolygon:
+				((Polygon new:)
+					type: PTotalAccess
+					init: 1 180 134 180 163 201 430 203 457 181 586 176 588 287 2 285
+					yourself:
+				)
+		)
+	)
+)
+
+(instance bridge_0_down of Feature
+	(properties
+		noun 36
+	)
+
+	(method (init)
+		(super init: &rest)
+		(self
+			setHotspot: 144
+			setPolygon:
+				((Polygon new:)
+					type: PTotalAccess
+					init: 165 2 429 2 430 203 162 203
+					yourself:
+				)
+		)
+	)
+)
+
+(instance doorBlue3_180 of Feature
+	(properties
+		noun 52
+		nsLeft 169
+		nsTop 5
+		nsRight 433
+		nsBottom 284
+		x 301
+		y 144
+	)
+
+	(method (init)
+		(super init: &rest)
+		(self setHotspot: 144)
+	)
+)
+
+(instance bridgeControl_180 of Feature
+	(properties
+		noun 5
+	)
+
+	(method (init)
+		(super init: &rest)
+		(self
+			setHotspot: 144
+			setPolygon:
+				((Polygon new:)
+					type: PTotalAccess
+					init: 403 235 433 240 434 285 420 291 398 286 388 270 406 247
+					yourself:
+				)
+		)
+	)
+)
+
+(instance sea_0_up of Feature
+	(properties
+		noun 1
+		nsLeft 234
+		nsTop 141
+		nsRight 356
+		nsBottom 289
+		x 295
+		y 215
+	)
+
+	(method (init)
+		(super init: &rest)
+		(self setHotspot: 144)
+	)
+)
+

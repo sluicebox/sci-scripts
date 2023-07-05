@@ -1,0 +1,46 @@
+;;; Sierra Script 1.0 - (do not remove this comment)
+;;; Decompiled by sluicebox
+(script# 777)
+(include sci.sh)
+(use Main)
+
+(public
+	proc777_0 0
+)
+
+(procedure (proc777_0 param1 param2 param3 param4 &tmp temp0 temp1 temp2 temp3 temp4 temp5 temp6 temp7 temp8 temp9 temp10 temp11 temp12 temp13 temp14)
+	(if (gCurRoom inset:)
+		(return)
+	)
+	(= temp14 (if (and argc param2) param2 else 1))
+	(= temp13 (if (> argc 2) param3 else 20))
+	(= temp12 (if (> argc 3) param4 else 2))
+	(= temp0 (= temp4 (= temp8 (param1 left:))))
+	(= temp1 (= temp5 (= temp9 (param1 top:))))
+	(= temp2 (= temp6 (= temp10 (param1 right:))))
+	(= temp3 (= temp7 (= temp11 (param1 bottom:))))
+	(if (& temp14 $0001)
+		(-= temp4 temp12)
+		(-= temp6 temp12)
+		(+= temp8 temp12)
+		(+= temp10 temp12)
+	)
+	(if (& temp14 $0002)
+		(-= temp5 temp12)
+		(-= temp7 temp12)
+		(+= temp9 temp12)
+		(+= temp11 temp12)
+	)
+	1
+	(while temp13
+		(param1 setRect: temp4 temp5 temp6 temp7)
+		(UpdatePlane param1)
+		(FrameOut)
+		(param1 setRect: temp8 temp9 temp10 temp11)
+		(UpdatePlane param1)
+		(FrameOut)
+		(-- temp13)
+	)
+	(param1 setRect: temp0 temp1 temp2 temp3)
+)
+

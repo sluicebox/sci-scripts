@@ -1,0 +1,34 @@
+;;; Sierra Script 1.0 - (do not remove this comment)
+;;; Decompiled by sluicebox
+(script# 13253)
+(include sci.sh)
+(use Main)
+
+(public
+	rm13v253 0
+)
+
+(instance rm13v253 of ShiversRoom
+	(properties
+		picture 13570
+	)
+
+	(method (init)
+		(efExitLeft init: 7)
+		(efExitRight init: 1)
+		(super init: &rest)
+	)
+)
+
+(instance efExitLeft of ExitFeature
+	(properties
+		nextRoom 13252
+	)
+)
+
+(instance efExitRight of ExitFeature
+	(properties
+		nextRoom 13250
+	)
+)
+

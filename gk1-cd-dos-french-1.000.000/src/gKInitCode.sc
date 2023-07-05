@@ -1,0 +1,60 @@
+;;; Sierra Script 1.0 - (do not remove this comment)
+;;; Decompiled by sluicebox
+(script# 10)
+(include sci.sh)
+(use Main)
+(use n013)
+(use GKEgo)
+(use Styler)
+(use Plane)
+(use Str)
+(use Array)
+(use Print)
+(use User)
+(use System)
+
+(public
+	gKInitCode 0
+)
+
+(instance gKInitCode of Code
+	(properties)
+
+	(method (doit &tmp temp0 temp1)
+		(= temp1 (Str newWith: 16 {}))
+		(= gUserFont 4)
+		(User alterEgo: GKEgo canControl: 0 canInput: 0)
+		(= gUseSortedFeatures 1)
+		(= gSystemPlane (Plane new:))
+		(if (DoSound sndGET_AUDIO_CAPABILITY)
+			(= global166 1)
+			(= gMsgType 3)
+		else
+			(= global166 0)
+			(= gMsgType 1)
+		)
+		(Styler divisions: 20)
+		(= gPossibleScore (if (not global181) 342 else 25))
+		(= gScore 0)
+		(= global179 70)
+		(= global176 (IntArray new: 15))
+		(gSystemPlane back: 4)
+		(Print font: 999 back: 5 fore: 1 skip: 254)
+		(if (and (>= (= global105 (Graph 1)) 2) (<= global105 16))
+			(ClearFlag 52)
+		else
+			(SetFlag 52)
+		)
+		(= global106 (DoSound sndGET_POLYPHONY))
+		(temp1 format: {%d.scr} 99)
+		(if (FileIO fiEXISTS (temp1 data:))
+			(= global110 1)
+		else
+			(= global110 0)
+		)
+		(= gEatMice 2)
+		(temp1 dispose:)
+		(DisposeScript 10)
+	)
+)
+

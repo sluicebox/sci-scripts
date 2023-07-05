@@ -1,0 +1,45 @@
+;;; Sierra Script 1.0 - (do not remove this comment)
+;;; Decompiled by sluicebox
+(script# 11)
+(include sci.sh)
+(use Main)
+(use System)
+
+(public
+	colorInit 0
+)
+
+(instance colorInit of Code
+	(properties)
+
+	(method (doit)
+		(= global214 0)
+		(= global215 7)
+		(= global216 8)
+		(= global217 7)
+		(= global218 7)
+		(= global219 7)
+		(= global220 15)
+		(= global221 4)
+		(= global222 12)
+		(= global223 12)
+		(= global224 6)
+		(= global225 14)
+		(= global226 14)
+		(= global227 2)
+		(= global228 2)
+		(= global229 10)
+		(= global230 10)
+		(= global231 1)
+		(= global232 1)
+		(= global233 9)
+		(= global234 9)
+		(= global235 5)
+		(= global236 13)
+		(= global237 3)
+		(= global238 11)
+		(= global239 14)
+		(DisposeScript 11)
+	)
+)
+

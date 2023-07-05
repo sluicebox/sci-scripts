@@ -1,0 +1,1163 @@
+;;; Sierra Script 1.0 - (do not remove this comment)
+;;; Decompiled by sluicebox
+(script# 67)
+(include sci.sh)
+(use Main)
+(use Interface)
+(use castle)
+(use Count)
+(use Sort)
+(use RFeature)
+(use Motion)
+(use Game)
+(use User)
+(use Menu)
+(use Actor)
+(use System)
+
+(public
+	rm067 0
+)
+
+(local
+	local0
+	local1
+	local2
+	[local3 9] = [141 35 159 165 34 165 183 40 163]
+	local12
+	local13
+	local14
+	local15
+	local16
+	local17
+	local18
+	local19
+	[local20 12] = [0 22 50 153 70 153 83 145 21 0 0 0]
+	[local32 10] = [92 149 32 0 319 0 319 168 192 151]
+	[local42 12] = [319 175 302 172 260 182 0 181 0 189 319 189]
+	[local54 12] = [0 177 6 177 6 171 28 161 15 153 0 105]
+	[local66 10] = [33 154 36 157 46 153 0 42 0 87]
+	[local76 14] = [0 105 15 153 28 161 54 163 51 170 23 177 0 177]
+)
+
+(instance rm067 of Rm
+	(properties
+		picture 67
+	)
+
+	(method (init)
+		(super init:)
+		(Load rsVIEW 697)
+		(Load rsVIEW 695)
+		(Load rsVIEW 902)
+		(Load rsVIEW 882)
+		(Load rsVIEW 904)
+		(Load rsSOUND 98)
+		(Load rsSOUND 97)
+		(Load rsSOUND 62)
+		(Load rsSOUND 78)
+		(= global322 actor_1)
+		(self setRegions: 550 setFeatures: mouseHole hole grate) ; castle
+		(switch gPrevRoomNum
+			(55
+				(stone init: setPri: 13 stopUpd:)
+				(self addObstacle: poly6)
+				(stone cel: (stone lastCel:) forceUpd:)
+				(gCurRoom setScript: enterHole)
+			)
+			(else
+				(stone init: setPri: 5 stopUpd:)
+				(self addObstacle: poly4)
+				(gEgo
+					init:
+					view: 902
+					ignoreActors: 1
+					illegalBits: 0
+					setLoop: 1
+					setCel: 0
+					posn: 1000 1000
+				)
+				((gEgo head:) moveHead: 0 hide:)
+				(Load rsSOUND 18)
+				(Load rsSOUND 71)
+				(Load rsSOUND 67)
+				(proc550_17)
+				(self setScript: henchCaught)
+			)
+		)
+		(dripple setCel: 255 setPri: 5 init: hide:)
+		(splash setCycle: Fwd init: hide:)
+		(poly1 points: @local20 size: 6)
+		(poly2 points: @local32 size: 5)
+		(poly3 points: @local42 size: 6)
+		(poly4 points: @local54 size: 6)
+		(poly5 points: @local66 size: 5)
+		(poly6 points: @local76 size: 7)
+		(self addObstacle: poly1 poly2 poly3 poly5)
+	)
+
+	(method (doit &tmp temp0 temp1)
+		(reflection
+			loop: (gEgo loop:)
+			cel: (gEgo cel:)
+			posn: (gEgo x:) (+ (gEgo y:) 1)
+		)
+		(if (and (& (gEgo onControl: 1) $0004) (gEgo mover:))
+			(= temp0 (gEgo x:))
+			(= temp1 (gEgo y:))
+			(switch (gEgo loop:)
+				(0
+					(+= temp0 1)
+				)
+				(1
+					(-= temp0 1)
+				)
+				(3
+					(-= temp1 2)
+				)
+				(2
+					(+= temp1 1)
+				)
+			)
+			(splash posn: temp0 temp1 show:)
+		else
+			(splash hide:)
+		)
+		(cond
+			(script
+				(script doit:)
+			)
+			(
+				(and
+					(& (gEgo onControl: 0) $0010)
+					(== (stone cel:) (stone lastCel:))
+				)
+				(self setScript: enteringHole)
+			)
+		)
+	)
+
+	(method (handleEvent event)
+		(cond
+			((event claimed:)
+				(return)
+			)
+			(script
+				(return)
+			)
+			((== (event type:) evVERB)
+				(switch (event message:)
+					(2 ; Look
+						(if (& (OnControl CONTROL (event x:) (event y:)) $0004)
+							(PrintDC 67 0) ; "Water, dripping down strands of slimy vegetation hanging from the ceiling, forms a small pool on the cell's cold, stone floor."
+						else
+							(PrintDC 67 1) ; "Graham finds himself in a dirty, dingy cell somewhere below Mordack's castle."
+						)
+						(event claimed: 1)
+					)
+				)
+			)
+		)
+	)
+
+	(method (dispose)
+		(super dispose:)
+	)
+)
+
+(instance drippingWater of Script
+	(properties)
+
+	(method (doit &tmp temp0 temp1)
+		(super doit:)
+		(if (and (= temp0 (drop mover:)) (< (= temp1 (temp0 dy:)) 16))
+			(temp0 dy: (* temp1 2))
+		)
+	)
+
+	(method (changeState newState &tmp temp0)
+		(switch (= state newState)
+			(0
+				(= seconds (Random 3 10))
+				(= local0 [local3 (= temp0 (* (Random 0 2) 3))])
+				(= local1 [local3 (++ temp0)])
+				(= local2 [local3 (++ temp0)])
+			)
+			(1
+				(dripple
+					loop: 0
+					cel: 0
+					posn: local0 local1
+					cycleSpeed: 0
+					setCycle: CT 2 1 self
+					show:
+				)
+			)
+			(2
+				(drop
+					posn: local0 (+ local1 4)
+					yStep: 1
+					setMotion: MoveTo local0 local2 self
+					show:
+				)
+				(dripple setCycle: End)
+			)
+			(3
+				(drop hide:)
+				(gGlobalSound3 number: 98 loop: 1 play:)
+				(dripple
+					posn: local0 local2
+					loop: 2
+					cel: 0
+					cycleSpeed: 1
+					setCycle: End self
+				)
+			)
+			(4
+				(= state -1)
+				(= cycles 1)
+			)
+		)
+	)
+)
+
+(instance moveStone of Script
+	(properties)
+
+	(method (doit &tmp temp0)
+		(super doit:)
+		(if (and (== local12 gEgo) (not (-- local15)))
+			(if cycles
+				(= temp0 (+ local13 (^= local14 $0001)))
+				(= local15 2)
+			else
+				(= temp0 local13)
+				(= local12 0)
+			)
+			((gEgo head:) loop: temp0)
+		)
+	)
+
+	(method (changeState newState)
+		(switch (= state newState)
+			(0
+				(= seconds (Random 20 40))
+			)
+			(1
+				(if
+					(or
+						(== (gCurRoom script:) lookInMseHole)
+						(& (gEgo onControl: 0) $0018)
+						(< (gEgo x:) 55)
+					)
+					(= seconds 8)
+					(= cycles 1)
+					(= state 0)
+				else
+					(= cycles 1)
+				)
+				(gGlobalSound fade:)
+			)
+			(2
+				(proc550_17)
+				(gEgo observeControl: 8 setMotion: 0)
+				(= local13 ((gEgo head:) loop:))
+				(stone setPri: 5 cycleSpeed: 6 setCycle: CT 4 1 self)
+			)
+			(3
+				(proc0_7 gEgo stone 0)
+				(gGlobalSound number: 97 loop: 1 vol: 127 play:)
+				(stone setPri: 13 cycleSpeed: 3 setCycle: End self)
+			)
+			(4
+				((gEgo head:)
+					cel:
+						(&
+							(StrAt ((gEgo head:) headCel:) (gEgo cel:))
+							$000f
+						)
+					moveHead: 0
+				)
+				(stone setPri: -1 stopUpd:)
+				(= seconds 3)
+			)
+			(5
+				((gCurRoom obstacles:) delete: poly4)
+				(gCurRoom addObstacle: poly6)
+				(global322
+					init:
+					view: 882
+					setLoop: 8
+					setCel: 0
+					setPri: 5
+					posn: 20 144
+					xStep: 1
+					cycleSpeed: 2
+					setMotion: MoveTo 24 144 self
+					show:
+				)
+				(prop1
+					view: 882
+					loop: 10
+					posn: 22 136
+					setCycle: Fwd
+					setPri: 11
+					init:
+					hide:
+				)
+			)
+			(6
+				(global322 setCycle: CT 4 1 self)
+			)
+			(7
+				(Say 101 67 2 67 10 10 25 3) ; "Hello!"
+				(Say 160 67 3 67 100 10 25 5) ; "What? Princess Cassima! Where did you come from?!"
+				(Say 101 67 4 67 10 10 25 10) ; "From the labyrinth. I spend a lot of time down here, you know...with my friends."
+				(Say 160 67 5 67 100 10 25 3) ; "Friends?"
+				(Say 101 67 6 67 10 10 25 12) ; "Yes. Like Dink...and Sam. I don't know if you ever saw Sam or not. Anyway, I found this loose stone once that led here...to this cell. Now come on! You'd better get out of here!"
+				(= cycles 1)
+			)
+			(8
+				(global322 setCycle: End self)
+				(= local14 2)
+			)
+			(9
+				(global322 setLoop: 9 cel: 0 setCycle: End self)
+			)
+			(10
+				(global322 setCycle: Beg self)
+			)
+			(11
+				(if (-- local14)
+					(-= state 2)
+				else
+					(global322 setLoop: 8)
+				)
+				(= cycles 1)
+			)
+			(12
+				(global322 cel: (global322 lastCel:) setCycle: Beg self)
+				(gGlobalSound fade:)
+			)
+			(13
+				(global322 setCel: 0 setMotion: MoveTo 20 144 self)
+			)
+			(14
+				(gGlobalSound number: 67 loop: -1 vol: 127 play:)
+				(SetFlag 70)
+				(SetFlag 97)
+				(global322 dispose: delete:)
+				((gEgo head:) moveHead: 1)
+				(proc550_18)
+				(client setScript: 0)
+			)
+		)
+	)
+)
+
+(instance enteringHole of Script
+	(properties)
+
+	(method (changeState newState)
+		(switch (= state newState)
+			(0
+				(proc550_17)
+				(gEgo
+					normal: 0
+					illegalBits: 0
+					ignoreActors: 1
+					setPri: 5
+					setMotion: MoveTo 33 155 self
+				)
+			)
+			(1
+				(gEgo
+					view: 882
+					loop: 12
+					cel: 0
+					cycleSpeed: 3
+					ignoreActors: 1
+					setCycle: End self
+				)
+				((gEgo head:) hide:)
+			)
+			(2
+				(gEgo
+					setLoop: 15
+					cel: 0
+					xStep: 1
+					cycleSpeed: 1
+					setCycle: Walk
+					moveSpeed: 1
+					setMotion: MoveTo 21 155 self
+				)
+			)
+			(3
+				(proc550_18)
+				(gCurRoom newRoom: 55)
+			)
+		)
+	)
+)
+
+(instance lookInMseHole of Script
+	(properties)
+
+	(method (changeState newState)
+		(switch (= state newState)
+			(0
+				(proc550_17)
+				(gEgo setMotion: MoveTo 183 150 self)
+			)
+			(1
+				(gEgo
+					view: 882
+					loop: 5
+					cel: 0
+					posn: (- (gEgo x:) 10) (+ (gEgo y:) 1)
+					normal: 0
+					cycleSpeed: 2
+					setCycle: End self
+				)
+				((gEgo head:) hide:)
+				(reflection hide:)
+			)
+			(2
+				(if (and (not local19) (not local16))
+					(global322
+						view: 214
+						setLoop: 0
+						cel: 0
+						posn: 156 144
+						setPri: 14
+						setStep: 6 4
+						cycleSpeed: 2
+						setMotion: MoveTo 119 126
+						setCycle: CT 4 1 self
+						init:
+						show:
+					)
+				else
+					(+= state 2)
+					(= cycles 1)
+				)
+			)
+			(3
+				(User canInput: 1)
+				(User canControl: 0)
+				(TheIconBar state: 1)
+				(= global102 0)
+				(= global103 0)
+				(proc0_26 (| (HaveMouse) (!= global70 (gUIcons at: 0))))
+				(global322 setMotion: 0 hide:)
+				(prop1
+					view: 882
+					loop: 1
+					cel: 1
+					posn: (global322 x:) (+ (global322 y:) 5)
+					setPri: (+ (global322 priority:) 1)
+					setCycle: 0
+					init:
+					show:
+				)
+				(= cycles 2)
+			)
+			(4
+				(PrintDC 67 7 #at -1 10) ; "Graham can see a small, moldy piece of cheese just inside the mousehole."
+				(if (not local16)
+					(= local18 1)
+					(+= state 3)
+					(= seconds 5)
+				else
+					(= cycles 1)
+				)
+			)
+			(5
+				(proc550_17)
+				(gEgo setMotion: 0 loop: 6 cel: 0 setCycle: End self)
+			)
+			(6
+				(if (not local19)
+					(cond
+						(local16
+							(PrintDC 67 8 #at 40 40) ; "Graham finds that his hand is too large to reach very far into the mousehole."
+							(= local16 0)
+						)
+						(local17
+							(PrintDC 67 9 #at 40 40) ; "Graham can't reach into the mousehole far enough to retrieve the piece of cheese."
+							(++ local17)
+						)
+						(else
+							(PrintDC 67 10 #at 40 40) ; "Graham can ALMOST reach the piece of cheese inside the mousehole...but finds his hand too large to reach very far."
+							(++ local17)
+						)
+					)
+				else
+					(PrintDC 67 11 #at 40 40) ; "There! Got it! The fishhook did the trick in retrieving the piece of cheese from the mousehole."
+					(= local17 2)
+					(SetScore 4)
+					(gEgo get: 32) ; Moldy_Cheese
+				)
+				(gEgo setCycle: Beg self)
+			)
+			(7
+				(proc550_17)
+				(gEgo loop: 5 cel: (gEgo lastCel:) setMotion: 0)
+				(= cycles 1)
+			)
+			(8
+				(= local18 0)
+				(global322 hide:)
+				(prop1 hide:)
+				(gEgo setCycle: Beg self)
+			)
+			(9
+				(proc550_18)
+				(gEgo
+					view: 0
+					loop: 7
+					posn: (+ (gEgo x:) 10) (- (gEgo y:) 1)
+					setCycle: Walk
+					cycleSpeed: 0
+					normal: 1
+				)
+				((gEgo head:) show:)
+				(proc0_7 gEgo prop1 5)
+				(reflection show:)
+				(client setScript: 0)
+			)
+		)
+	)
+)
+
+(instance mouseRunning of Script
+	(properties)
+
+	(method (changeState newState)
+		(switch (= state newState)
+			(0
+				(gGlobalSound3 number: 62 loop: 1 play:)
+				(global322
+					view: 882
+					setLoop: 4
+					posn: 64 189
+					setPri: 5
+					setStep: 4 3
+					cycleSpeed: 0
+					setCycle: Walk
+					setMotion: MoveTo 64 164 self
+					init:
+					show:
+				)
+			)
+			(1
+				(global322 setLoop: 3 posn: 61 159)
+				(= cycles 10)
+			)
+			(2
+				(global322 setMotion: MoveTo 119 148 self)
+			)
+			(3
+				(= cycles 10)
+			)
+			(4
+				(global322 setMotion: MoveTo 153 148 self)
+			)
+			(5
+				(= cycles 10)
+			)
+			(6
+				(global322
+					setLoop: 4
+					posn: 157 152
+					setPri: 4
+					setMotion: MoveTo 157 138 self
+				)
+			)
+			(7
+				(client setScript: 0)
+			)
+		)
+	)
+)
+
+(instance drop of Act
+	(properties
+		view 882
+		loop 1
+		priority 12
+		signal 22544
+		illegalBits 0
+	)
+)
+
+(instance actor_1 of Act
+	(properties
+		signal 24576
+		illegalBits 0
+	)
+)
+
+(instance prop1 of Prop
+	(properties
+		signal 16384
+	)
+
+	(method (handleEvent event)
+		(if
+			(or
+				(not local18)
+				(event claimed:)
+				(not (== (event type:) evVERB))
+				(not (proc0_18 self event))
+			)
+			(return)
+		else
+			(switch (event message:)
+				(2 ; Look
+					(PrintDC 67 12 #at 40 40) ; "Green mold covers the small piece of cheese."
+					(event claimed: 1)
+					(return)
+				)
+				(3 ; Do
+					(if (< local17 2)
+						(event claimed: 1)
+					)
+				)
+				(5 ; Inventory
+					(switch global69
+						(31 ; Fishhook
+							(if (gEgo has: 32) ; Moldy_Cheese
+								(PrintDC 67 13) ; "That won't do any good."
+								(event claimed: 1)
+							else
+								(= local19 1)
+								(lookInMseHole start: 2)
+								(rm067 setScript: lookInMseHole)
+							)
+							(event claimed: 1)
+						)
+						(28 ; Wand
+							(event claimed: 0)
+						)
+						(else
+							(PrintDC 67 14) ; "That implement won't quite work here."
+							(event claimed: 1)
+						)
+					)
+				)
+			)
+			(if (event claimed:)
+				((rm067 script:)
+					state: (- ((rm067 script:) state:) 3)
+					seconds: 0
+					cycles: 1
+				)
+			)
+		)
+	)
+)
+
+(instance reflection of Prop
+	(properties
+		y 189
+		x 319
+		view 883
+		signal 16384
+	)
+)
+
+(instance dripple of Prop
+	(properties
+		view 882
+		signal 16384
+	)
+)
+
+(instance stone of Prop
+	(properties
+		y 176
+		x 24
+		view 882
+		loop 7
+		signal 16384
+		cycleSpeed 2
+	)
+
+	(method (handleEvent event)
+		(if
+			(or
+				(event claimed:)
+				(not (== (event type:) evVERB))
+				(not (proc0_18 self event))
+			)
+			(return)
+		else
+			(switch (event message:)
+				(2 ; Look
+					(cond
+						((== (stone cel:) (stone lastCel:))
+							(PrintDC 67 15) ; "A stone block rests on the ground near a large hole in the cell wall."
+							(event claimed: 1)
+						)
+						((IsFlag 97)
+							(PrintDC 67 16) ; "It looks like someone replaced and mortared the loose stone."
+							(event claimed: 1)
+						)
+						(else
+							(event claimed: 0)
+						)
+					)
+				)
+				(3 ; Do
+					(cond
+						((== (stone cel:) (stone lastCel:))
+							(PrintDC 67 17) ; "The stone is much too heavy for Graham to lift."
+							(event claimed: 1)
+						)
+						((IsFlag 97)
+							(PrintDC 67 18) ; "The stone can't be budged anymore."
+							(event claimed: 1)
+						)
+						(else
+							(event claimed: 0)
+						)
+					)
+				)
+			)
+		)
+	)
+)
+
+(instance splash of Prop
+	(properties
+		view 882
+		loop 13
+		signal 16384
+		cycleSpeed 1
+	)
+)
+
+(instance mouseHole of RFeature
+	(properties
+		nsTop 141
+		nsLeft 151
+		nsBottom 147
+		nsRight 163
+	)
+
+	(method (handleEvent event)
+		(if
+			(or
+				(event claimed:)
+				(not (== (event type:) evVERB))
+				(not (proc0_18 self event))
+			)
+			(return)
+		else
+			(switch (event message:)
+				(2 ; Look
+					(cond
+						((gEgo has: 32) ; Moldy_Cheese
+							(PrintDC 67 19) ; "Graham can see a tiny mousehole in one wall of the dreary cell."
+							(event claimed: 1)
+						)
+						((== (gCurRoom script:) lookInMseHole)
+							(event claimed: 0)
+						)
+						(else
+							(rm067 setScript: lookInMseHole)
+							(event claimed: 1)
+						)
+					)
+				)
+				(3 ; Do
+					(if (not (gEgo has: 32)) ; Moldy_Cheese
+						(switch local17
+							(0
+								(= local16 1)
+								(if (== (gCurRoom script:) lookInMseHole)
+									(lookInMseHole start: 2)
+								else
+									(lookInMseHole start: 0)
+								)
+								(rm067 setScript: lookInMseHole)
+								(event claimed: 1)
+							)
+							(1
+								(PrintDC 67 9 #at 40 40) ; "Graham can't reach into the mousehole far enough to retrieve the piece of cheese."
+								(event claimed: 1)
+							)
+						)
+					else
+						(PrintDC 67 20) ; "There is nothing more of interest inside the mousehole."
+						(event claimed: 1)
+					)
+				)
+				(5 ; Inventory
+					(switch global69
+						(31 ; Fishhook
+							(if (not (gEgo has: 32)) ; Moldy_Cheese
+								(= local19 1)
+								(if (== (gCurRoom script:) lookInMseHole)
+									(lookInMseHole start: 2)
+								else
+									(lookInMseHole start: 0)
+								)
+								(rm067 setScript: lookInMseHole)
+								(event claimed: 1)
+							else
+								(PrintDC 67 20) ; "There is nothing more of interest inside the mousehole."
+								(event claimed: 1)
+							)
+						)
+						(28 ; Wand
+							(event claimed: 0)
+						)
+						(else
+							(PrintDC 67 14) ; "That implement won't quite work here."
+							(event claimed: 1)
+						)
+					)
+				)
+			)
+		)
+	)
+)
+
+(instance hole of RFeature
+	(properties
+		nsTop 127
+		nsLeft 14
+		nsBottom 146
+		nsRight 26
+	)
+
+	(method (handleEvent event)
+		(if
+			(or
+				(!= (stone cel:) (stone lastCel:))
+				(event claimed:)
+				(not (== (event type:) evVERB))
+				(not (proc0_18 self event))
+			)
+			(return)
+		else
+			(switch (event message:)
+				(2 ; Look
+					(PrintDC 67 21) ; "A fallen stone has revealed a large hole in the cell wall."
+					(event claimed: 1)
+				)
+				(3 ; Do
+					(proc550_17)
+					(gCurRoom setScript: gotoHole)
+					(event claimed: 1)
+				)
+			)
+		)
+	)
+)
+
+(instance poly1 of Polygon
+	(properties
+		type PBarredAccess
+	)
+)
+
+(instance poly2 of Polygon
+	(properties
+		type PBarredAccess
+	)
+)
+
+(instance poly3 of Polygon
+	(properties
+		type PBarredAccess
+	)
+)
+
+(instance poly4 of Polygon
+	(properties
+		type PBarredAccess
+	)
+)
+
+(instance poly5 of Polygon
+	(properties
+		type PBarredAccess
+	)
+)
+
+(instance poly6 of Polygon
+	(properties
+		type PBarredAccess
+	)
+)
+
+(instance dieScumScript of Script
+	(properties)
+
+	(method (changeState newState)
+		(switch (= state newState)
+			(0
+				(= seconds (Random 30 60))
+			)
+			(1
+				(proc550_17)
+				(gEgo setMotion: PolyPath 90 160 self)
+			)
+			(2
+				(PrintDC 67 22) ; "After observing no discernible escape route from the small cell, Graham sinks to the floor in despair, knowing he will never see the light of day again."
+				(= cycles 1)
+			)
+			(3
+				((gEgo head:) hide:)
+				(gEgo
+					setMotion: 0
+					normal: 0
+					view: 264
+					setLoop: 1
+					cycleSpeed: 2
+					setCycle: End self
+				)
+				(= global103 0)
+			)
+			(4
+				(= global330 {Cheer up, Graham. At least you're not alone.})
+				(EgoDead)
+			)
+		)
+	)
+)
+
+(instance grate of RFeature
+	(properties
+		nsTop 3
+		nsLeft 138
+		nsBottom 24
+		nsRight 184
+	)
+
+	(method (handleEvent event)
+		(if
+			(or
+				(event claimed:)
+				(not (== (event type:) evVERB))
+				(not (proc0_18 self event))
+			)
+			(return)
+		else
+			(switch (event message:)
+				(2 ; Look
+					(PrintDC 67 23) ; "Above him, Graham can see a damp, rusty grate leading to...who knows where?"
+					(event claimed: 1)
+				)
+				(3 ; Do
+					(PrintDC 67 24) ; "The grate is too high up.  Graham can do nothing with it."
+					(event claimed: 1)
+				)
+			)
+		)
+	)
+)
+
+(instance ringsScript of Script
+	(properties)
+
+	(method (changeState newState &tmp [temp0 2])
+		(switch (= state newState)
+			(0
+				(if (< (DoSound sndGET_POLYPHONY) 8)
+					((ScriptID 550 5) setCycle: End self) ; theRings
+				else
+					(gGlobalSound3 number: 71 loop: 1 play: self)
+					((ScriptID 550 5) setCycle: End) ; theRings
+				)
+			)
+			(1
+				(= cycles 5)
+			)
+			(2
+				(self init:)
+			)
+		)
+	)
+)
+
+(instance enterHole of Script
+	(properties)
+
+	(method (changeState newState &tmp [temp0 2])
+		(switch (= state newState)
+			(0
+				(Load rsVIEW 0)
+				(gGlobalSound number: 67 loop: -1 playBed:)
+				(gEgo
+					init:
+					normal: 0
+					view: 883
+					posn: 33 158
+					illegalBits: 0
+					ignoreActors: 1
+					setLoop: 4
+					cel: 0
+					cycleSpeed: 2
+					setCycle: End self
+				)
+				((gEgo head:) hide:)
+			)
+			(1
+				((gEgo head:) show:)
+				(gEgo
+					view: 0
+					setLoop: -1
+					setCycle: Walk
+					cycleSpeed: 0
+					posn: 31 158
+					setMotion: MoveTo (+ (gEgo x:) 30) (gEgo y:) self
+				)
+			)
+			(2
+				(reflection setPri: 3 init:)
+				(drop setScript: drippingWater init: hide:)
+				(proc550_18)
+				(client setScript: 0)
+			)
+		)
+	)
+)
+
+(instance henchCaught of Script
+	(properties)
+
+	(method (changeState newState &tmp [temp0 2])
+		(switch (= state newState)
+			(0
+				(gGlobalSound3 number: 18 loop: 1 play:)
+				((ScriptID 550 4) ; theMagicDoor
+					view: 695
+					setLoop: 3
+					posn: 294 161
+					cycleSpeed: 3
+					init:
+					setPri: 4
+					setCycle: End self
+				)
+			)
+			(1
+				((ScriptID 550 5) ; theRings
+					init:
+					posn: ((ScriptID 550 4) x:) (- ((ScriptID 550 4) y:) 34) ; theMagicDoor, theMagicDoor
+					setLoop: 3
+					cycleSpeed: 1
+					setPri: 5
+					setScript: ringsScript
+				)
+				((ScriptID 550 3) ; theHenchMan
+					init:
+					setScript: 0
+					illegalBits: 0
+					ignoreActors: 1
+					show:
+					view: 904
+					posn: 334 155
+					setPri: 5
+					setLoop: 3
+					setCel: 0
+					cycleSpeed: 4
+					moveSpeed: 2
+					setMotion: MoveTo 295 155 self
+				)
+			)
+			(2
+				((ScriptID 550 3) setCycle: CT 4 1 self) ; theHenchMan
+			)
+			(3
+				((ScriptID 550 3) setCycle: End) ; theHenchMan
+				(gEgo
+					posn: 231 161
+					cycleSpeed: 2
+					normal: 0
+					setCycle: End self
+				)
+			)
+			(4
+				(gGlobalSound3 number: 78 play:)
+				(gEgo
+					view: 882
+					setLoop: 11
+					posn: (- (gEgo x:) 13) (+ (gEgo y:) 3)
+					cel: 0
+					cycleSpeed: 1
+					setCycle: End self
+				)
+			)
+			(5
+				(drop setScript: drippingWater init: hide:)
+				(NormalEgo)
+				(gEgo view: 0 loop: 2)
+				((gEgo head:) moveHead: 1 show:)
+				(reflection setPri: 3 init:)
+				((ScriptID 550 3) dispose:) ; theHenchMan
+				(= global333 0)
+				(if (== global331 5)
+					(SetFlag 65)
+					(if (< global353 120)
+						(= global353 120)
+					)
+				)
+				((ScriptID 550 5) dispose:) ; theRings
+				(gGlobalSound3 number: 18 loop: 1 play:)
+				((ScriptID 550 4) ; theMagicDoor
+					view: 695
+					setCel: 255
+					cycleSpeed: 4
+					setCycle: Beg self
+				)
+			)
+			(6
+				((ScriptID 550 4) dispose:) ; theMagicDoor
+				(= seconds 2)
+			)
+			(7
+				(if (and (not (IsFlag 97)) (== ((gInventory at: 25) owner:) 57)) ; Locket
+					(stone setScript: moveStone)
+				else
+					(stone setScript: dieScumScript)
+				)
+				(gGlobalSound number: 67 loop: -1 playBed:)
+				(= seconds 2)
+			)
+			(8
+				(global322 setScript: mouseRunning)
+				(= seconds 3)
+			)
+			(9
+				(proc550_18)
+				(client setScript: 0)
+			)
+		)
+	)
+)
+
+(instance gotoHole of Script
+	(properties)
+
+	(method (changeState newState &tmp [temp0 2])
+		(switch (= state newState)
+			(0
+				(gEgo
+					illegalBits: 0
+					ignoreActors: 1
+					setPri: (if (< (gEgo y:) 166) 5 else -1)
+					setMotion: PolyPath 60 160 self
+				)
+			)
+			(1
+				(gEgo setPri: 5 setMotion: PolyPath 33 155)
+				(client setScript: 0)
+			)
+		)
+	)
+)
+

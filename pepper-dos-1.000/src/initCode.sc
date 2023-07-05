@@ -1,0 +1,63 @@
+;;; Sierra Script 1.0 - (do not remove this comment)
+;;; Decompiled by sluicebox
+(script# 879)
+(include sci.sh)
+(use Main)
+(use TwistyWindow)
+(use n897)
+(use User)
+(use System)
+
+(public
+	initCode 0
+)
+
+(instance initCode of Code
+	(properties)
+
+	(method (doit &tmp [temp0 21])
+		(Load rsFONT 1)
+		(Lock rsFONT 1 1)
+		(Load rsVIEW 905)
+		(Lock rsVIEW 905 1)
+		(= gSystemWindow TwistyWindow)
+		(= gUseSortedFeatures 1)
+		(StrCpy @gSysLogPath {})
+		(proc897_0)
+		(TextFonts 0 4)
+		(TextColors 10 26 52 27)
+		(= gDictionary (ScriptID 0 10)) ; dictionary
+		(Palette palSET_FROM_RESOURCE 999 2)
+		(= gEatMice 5)
+		(= gTheCursor 999)
+		(gGame setCursor: 999 1 304 172 masterVolume: 13)
+		(User alterEgo: gEgo canControl: 0 canInput: 0)
+		(= gPossibleScore 460)
+		(= gUserFont 4)
+		(Load rsFONT 4)
+		(Lock rsFONT gUserFont 1)
+		(= gBigFont 2108)
+		(= gSmallFont 1207)
+		(= global109 2407)
+		(= global110 4115)
+		(= global111 2510)
+		(= gTextSpeed 8)
+		(= gWaitCursor 997)
+		(= global103 (DoSound sndGET_POLYPHONY))
+		(if (and (>= (= global102 (Graph grGET_COLOURS)) 2) (<= global102 16))
+			(ClearFlag 1)
+		else
+			(SetFlag 1)
+		)
+		(gGame detailLevel: 3)
+		(if (!= (Platform 4 0) 1)
+			(= global197 0)
+			(SetFlag 165)
+		else
+			(= global197 4)
+		)
+		(DisposeScript 897)
+		(DisposeScript 879)
+	)
+)
+

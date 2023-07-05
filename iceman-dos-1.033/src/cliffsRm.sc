@@ -1,0 +1,47 @@
+;;; Sierra Script 1.0 - (do not remove this comment)
+;;; Decompiled by sluicebox
+(script# 73)
+(include sci.sh)
+(use Main)
+(use Interface)
+(use RFeature)
+(use Game)
+
+(public
+	cliffsRm 0
+	cliffFeat 1
+)
+
+(instance cliffsRm of Rm
+	(properties
+		picture 73
+		west 74
+	)
+
+	(method (init)
+		(super init:)
+		(self setRegions: 310 311 setFeatures: cliffFeat) ; tunisia, guardfReg
+		(gEgo init:)
+	)
+
+	(method (handleEvent event)
+		(cond
+			((super handleEvent: event))
+			((Said 'look[<at,around][/room]')
+				(Print 73 0) ; "You see lots of cliffs and stuff."
+			)
+		)
+	)
+)
+
+(instance cliffFeat of RFeature
+	(properties
+		y 126
+		x -13
+		nsTop 125
+		nsLeft -15
+		nsBottom 127
+		nsRight -10
+	)
+)
+

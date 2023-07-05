@@ -1,0 +1,55 @@
+;;; Sierra Script 1.0 - (do not remove this comment)
+;;; Decompiled by sluicebox
+(script# 941)
+(include sci.sh)
+(use Main)
+(use Motion)
+
+(class RandCycle of Cycle
+	(properties
+		count -1
+	)
+
+	(method (init theObj num whoCares)
+		(super init: theObj)
+		(if (>= argc 2)
+			(= count num)
+			(if (>= argc 3)
+				(= caller whoCares)
+			)
+		else
+			(= count -1)
+		)
+	)
+
+	(method (doit)
+		(++ cycleCnt)
+		(if (> cycleCnt (client cycleSpeed:))
+			(if count
+				(if (> count 0)
+					(-- count)
+				)
+				(client cel: (self nextCel:))
+				(= cycleCnt 0)
+			else
+				(self cycleDone:)
+			)
+		)
+	)
+
+	(method (nextCel &tmp newCel)
+		(while (== (= newCel (Random 0 (client lastCel:))) (client cel:))
+		)
+		(return newCel)
+	)
+
+	(method (cycleDone)
+		(= completed 1)
+		(if caller
+			(= global58 1)
+		else
+			(self motionCue:)
+		)
+	)
+)
+

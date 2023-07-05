@@ -1,0 +1,143 @@
+;;; Sierra Script 1.0 - (do not remove this comment)
+;;; Decompiled by sluicebox
+(script# 17)
+(include sci.sh)
+(use Main)
+(use PolyPath)
+(use Motion)
+
+(public
+	pOffMover 0
+	iOffMover 1
+)
+
+(local
+	local0
+)
+
+(instance pOffMover of PolyPath
+	(properties)
+
+	(method (moveDone)
+		(if (== (points at: value) 30583)
+			(if (not local0)
+				(gCurRoom leaveRoom:)
+			)
+			(if (gEgo notBlockedByEdge:)
+				(cond
+					((and (>= finalX 313) (not local0))
+						(gGlory handsOff:)
+						(= local0 1)
+						(= value 2)
+						(self init: gEgo 335 finalY)
+					)
+					((and (<= finalX 7) (not local0))
+						(gGlory handsOff:)
+						(= local0 1)
+						(= value 2)
+						(self init: gEgo -15 finalY)
+					)
+					((and (<= (gEgo y:) (gCurRoom horizon:)) (not local0))
+						(gGlory handsOff:)
+						(= local0 1)
+						(= value 2)
+						(self init: gEgo finalX (- (gCurRoom horizon:) 1))
+					)
+					((and (>= finalY 182) (not local0))
+						(gGlory handsOff:)
+						(= local0 1)
+						(= value 2)
+						(self init: gEgo finalX 240)
+					)
+					(else
+						(cond
+							((>= finalX 335)
+								(gCurRoom newRoom: (gCurRoom east:))
+							)
+							((<= finalX -15)
+								(gCurRoom newRoom: (gCurRoom west:))
+							)
+							((> finalY 182)
+								(gCurRoom newRoom: (gCurRoom south:))
+							)
+							(else
+								(gGlory handsOff:)
+								(= local0 1)
+								(gCurRoom newRoom: (gCurRoom north:))
+							)
+						)
+						(super moveDone:)
+					)
+				)
+			else
+				(gGlory handsOn:)
+				(super moveDone:)
+			)
+		else
+			(self setTarget: init:)
+		)
+	)
+
+	(method (dispose)
+		(= local0 0)
+		(super dispose:)
+	)
+)
+
+(instance iOffMover of MoveTo
+	(properties)
+
+	(method (moveDone)
+		(cond
+			((and (>= x 313) (not local0))
+				(gGlory handsOff:)
+				(= local0 1)
+				(self init: gEgo 335 y)
+			)
+			((and (<= x 7) (not local0))
+				(gGlory handsOff:)
+				(= local0 1)
+				(self init: gEgo -15 y)
+			)
+			((and (<= (gEgo y:) (gCurRoom horizon:)) (not local0))
+				(gGlory handsOff:)
+				(= local0 1)
+				(self init: gEgo x (- (gCurRoom horizon:) 1))
+			)
+			((and (>= y 182) (not local0))
+				(gGlory handsOff:)
+				(= local0 1)
+				(self init: gEgo x 240)
+			)
+			((not local0)
+				(gGlory handsOn:)
+				(super moveDone:)
+			)
+			(else
+				(cond
+					((>= x 335)
+						(gCurRoom newRoom: (gCurRoom east:))
+					)
+					((<= x -15)
+						(gCurRoom newRoom: (gCurRoom west:))
+					)
+					((> y 182)
+						(gCurRoom newRoom: (gCurRoom south:))
+					)
+					(else
+						(gGlory handsOff:)
+						(= local0 1)
+						(gCurRoom newRoom: (gCurRoom north:))
+					)
+				)
+				(super moveDone:)
+			)
+		)
+	)
+
+	(method (dispose)
+		(= local0 0)
+		(super dispose:)
+	)
+)
+

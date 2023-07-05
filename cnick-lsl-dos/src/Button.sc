@@ -1,0 +1,65 @@
+;;; Sierra Script 1.0 - (do not remove this comment)
+;;; Decompiled by sluicebox
+(script# 417)
+(include sci.sh)
+(use Main)
+(use Actor)
+(use System)
+
+(class Button of Prop
+	(properties)
+
+	(method (init)
+		(super init: &rest)
+		(gKeyDownHandler addToFront: self)
+	)
+
+	(method (dispose)
+		(gKeyDownHandler delete: self)
+		(super dispose:)
+	)
+
+	(method (handleEvent event)
+		(if
+			(and
+				(& (event type:) evKEYBOARD)
+				(& (event message:) KEY_RETURN)
+				(<= nsLeft (event x:) nsRight)
+				(<= nsTop (event y:) nsBottom)
+			)
+			(if (self onMe: event)
+				(self doVerb: ((gTheIconBar curIcon:) message:))
+			)
+			(event claimed: 1)
+			(return)
+		else
+			(super handleEvent: event)
+		)
+	)
+
+	(method (onMe param1)
+		(if (super onMe: param1)
+			(return (self flash: (& (param1 type:) $0004)))
+		)
+	)
+
+	(method (flash param1 &tmp temp0 temp1)
+		(= temp1 0)
+		(self startUpd:)
+		(while (!= ((= temp0 (Event new:)) type:) (if param1 8 else 2))
+			(temp0 localize:)
+			(self cel: (super onMe: temp0))
+			(Animate (gCast elements:) 1)
+			(temp0 dispose:)
+		)
+		(self cel: 0 stopUpd:)
+		(Animate (gCast elements:) 1)
+		(temp0 localize:)
+		(if (super onMe: temp0)
+			(= temp1 1)
+		)
+		(temp0 dispose:)
+		(return temp1)
+	)
+)
+

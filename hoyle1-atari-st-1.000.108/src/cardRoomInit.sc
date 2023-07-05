@@ -1,0 +1,75 @@
+;;; Sierra Script 1.0 - (do not remove this comment)
+;;; Decompiled by sluicebox
+(script# 212)
+(include sci.sh)
+(use Main)
+(use room5)
+(use System)
+
+(public
+	cardRoomInit 0
+)
+
+(instance cardRoomInit of Obj
+	(properties)
+
+	(method (init)
+		(Load rsSCRIPT 105)
+		(Load rsSCRIPT 203)
+		(Load rsSCRIPT 204)
+		(Load rsSCRIPT 205)
+		(Load rsSCRIPT 206)
+		(Load rsSCRIPT 207)
+		(Load rsSCRIPT 208)
+		(Load rsSCRIPT 209)
+		(Load rsSCRIPT 210)
+		(Load rsSCRIPT 211)
+		(Load rsSCRIPT 212)
+		(Load rsSCRIPT 213)
+		(Load rsSCRIPT 899)
+		(= global174 6)
+		(Load rsVIEW 152)
+		(Load rsVIEW 153)
+		(Load rsVIEW 154)
+		(Load rsVIEW 155)
+		(Load rsVIEW 52)
+		(Load rsVIEW 53)
+		(Load rsVIEW 54)
+		(Load rsVIEW 55)
+		(Load rsVIEW 169)
+		(Load rsVIEW 170)
+		(Load rsVIEW 168)
+		(Load rsVIEW 167)
+		(Load rsSOUND 100)
+		(Load rsSOUND 101)
+		(Load rsSOUND 102)
+		(Load rsSOUND 103)
+		(Load rsSOUND 104)
+		(Load rsSOUND 105)
+		(Load rsSOUND 32)
+		(= global180 0)
+		(= global432 0)
+		((proc5_2) init:)
+		(= global436 gPlayer0)
+		((proc5_8) init:)
+		(= global264 (ScriptID 210)) ; cardRoomScript1
+		(= global264 (ScriptID 211)) ; cardRoomScript2
+		((ScriptID 211) dispose:) ; cardRoomScript2
+		(DisposeScript 211)
+	)
+
+	(method (doit)
+		(if (not global186)
+			(++ global186)
+			((gPlayer2 altrEgo:) init: gPlayer2)
+		)
+		(if
+			(and
+				((gPlayer2 altrEgo:) expressions:)
+				(not (((gPlayer2 altrEgo:) expressions:) size:))
+			)
+			(gCardRoom cue:)
+		)
+	)
+)
+

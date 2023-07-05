@@ -1,0 +1,215 @@
+;;; Sierra Script 1.0 - (do not remove this comment)
+;;; Decompiled by sluicebox
+(script# 15)
+(include sci.sh)
+(use Main)
+(use Interface)
+(use DCIcon)
+(use Motion)
+(use System)
+
+(public
+	aboutCode 0
+)
+
+(local
+	[local0 550]
+)
+
+(instance aboutCode of Code
+	(properties)
+
+	(method (doit &tmp string)
+		(Load rsVIEW 993)
+		(switch
+			(= string
+				(Print ; "Leisure Suit Larry 5"
+					15
+					0
+					#button
+					{About LSL5}
+					1
+					#button
+					{Cancel}
+					0
+					#button
+					{Italian Displays}
+					2
+					#mode
+					1
+				)
+			)
+			(2
+				(if (== (gGame printLang:) 39)
+					(gGame parseLang: 1 printLang: 1)
+				else
+					(gGame parseLang: 39 printLang: 39)
+				)
+			)
+			(1
+				(TPrint ; ""Leisure Suit Larry 5: Passionate Patti Does A Little Undercover Work" Executive Producer Ken Williams Creative Director Bill Davis Director Al Lowe Producer Guruka Singh Khalsa"
+					15
+					1
+					33
+					gSmallFont
+					30
+					1
+					70
+					222
+					80
+					{Sierra Presents}
+				)
+				(cycleIcon loop: 2)
+				(TPrint ; "Game Designer Al Lowe Production Designer Andy Hoyos Art Designer Jane Cardinal Lead Programmer Brian K. Hughes Composer Craig Safan Art Team Manager Cheryl Loyd"
+					15
+					2
+					33
+					gSmallFont
+					30
+					1
+					82
+					cycleIcon
+					70
+					180
+					80
+					{The Bosses}
+				)
+				(cycleIcon loop: 3)
+				(TPrint ; "Animators Cheryl Loyd, Barry T. Smith, Roger Hardy, Jr., Dana M. Dean, Karin Young, Marc Hudgins, Eric Kasner, Richard Powell, Phyllis Cucchiara, Terry Falls, Michael Hutchison, Desie Hartman, and Willis Wong"
+					15
+					3
+					33
+					gSmallFont
+					30
+					1
+					82
+					cycleIcon
+					70
+					200
+					80
+					{The Workers}
+				)
+				(TPrint ; "Background Artists Jane Cardinal, Maurice Morgan, Andy Hoyos, Cheryl Loyd, Jay Friedman, Jennifer Shontz, and Gloria Garland"
+					15
+					4
+					33
+					gSmallFont
+					30
+					1
+					82
+					cycleIcon
+					70
+					200
+					80
+					{The Workers}
+				)
+				(TPrint ; "Programmers Brian K. Hughes, Carlos Escobar, Steve Conrad, John Hartin, Oliver Brelsford, and Al Lowe"
+					15
+					5
+					33
+					gSmallFont
+					30
+					1
+					82
+					cycleIcon
+					70
+					200
+					80
+					{The Workers}
+				)
+				(cycleIcon loop: 1)
+				(TPrint ; "Music Director Mark Seibert Composer Craig Safan Additional Music Chris Braymen Theme Song Composed by Al Lowe"
+					15
+					6
+					33
+					gSmallFont
+					30
+					1
+					82
+					cycleIcon
+					70
+					200
+					80
+					{The Boys in the Band}
+				)
+				(cycleIcon loop: 0)
+				(Format @local0 15 7 gVersion gVersion) ; "Written Exclusively in S.C.I. "Sierra's Creative Interpreter" System Programmers Jeff Stephenson, Robert E. Heitman, Dan Foy, Larry Scott, John Rettig, J. Mark Hood, Chris Smith, Terry McHenry, Eric Hart, Chad Bye, Mark Wilden, Ken Koch, John Crane, Steve Coallier, and Randy Moss Quality Assurance Robin Bradley Joe Perry Additional Written Material Josh Mandel Version %s"
+				(TPrint
+					@local0
+					33
+					gSmallFont
+					30
+					1
+					82
+					cycleIcon
+					70
+					222
+					80
+					{The Hackers}
+				)
+				(Format @local0 15 8) ; "If you're having a good time playing this game and would like to order other fun products from the Sierra family of computer games, just give our Order Desk a telephone call at 167-821177. Our friendly and courteous order takers are probably sitting around doing nothing right now and would love to have someone to talk to!"
+				(TPrint
+					@local0
+					33
+					gSmallFont
+					30
+					1
+					70
+					222
+					80
+					{A Paid Commercial Announcement}
+				)
+				(if 1
+					(TPrint ; "You'll also want to order spare copies of all these other lovable Larry Laffer mis-adventures: "Leisure Suit Larry In the Land of the Lounge Lizards," "Leisure Suit Larry Goes Looking for Love (in Several Wrong Places)," "Leisure Suit Larry 3: Passionate Patti in Pursuit of the Pulsating Pectorals,""
+						15
+						9
+						33
+						gSmallFont
+						30
+						1
+						70
+						266
+						80
+						{More Laffer Laughs}
+					)
+					(TPrint ; ""Leisure Suit Larry 4: The Missing Floppies," and "The Laffer Utilities," a collection of silly little programs designed just for fun at the office. (Well, maybe you shouldn't order your copies of Larry4 just yet; we seem to have misplaced our master disks.)"
+						15
+						10
+						33
+						gSmallFont
+						30
+						1
+						70
+						266
+						80
+						{More Laffer Laughs}
+					)
+				)
+				(TPrint ; "Besides the Larry series, Al Lowe has written these other fine Sierra games: "Bop-A-Bet," "Dragon's Keep," "Troll's Tale," "The Gelfling Adventure," "The Black Cauldron," "Winnie the Pooh in the Hundred Acre Woods," and "Donald Duck's Playground.""
+					15
+					11
+					33
+					gSmallFont
+					30
+					1
+					70
+					234
+					80
+					{Discontinued Products}
+				)
+			)
+		)
+	)
+)
+
+(instance cycleIcon of DCIcon
+	(properties
+		view 993
+		cycleSpeed 15
+	)
+
+	(method (init)
+		((= cycler (Fwd new:)) init: self)
+	)
+)
+

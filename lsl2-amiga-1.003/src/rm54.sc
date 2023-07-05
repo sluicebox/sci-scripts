@@ -1,0 +1,327 @@
+;;; Sierra Script 1.0 - (do not remove this comment)
+;;; Decompiled by sluicebox
+(script# 54)
+(include sci.sh)
+(use Main)
+(use Door)
+(use airplaneScript)
+(use Interface)
+(use Sound)
+(use Motion)
+(use Game)
+(use Actor)
+(use System)
+
+(public
+	rm54 0
+)
+
+(local
+	bagNumber
+)
+
+(instance theSound of Sound
+	(properties
+		number 5
+		loop -1
+	)
+)
+
+(instance rm54 of Rm
+	(properties
+		picture 54
+		horizon 5
+		east 55
+		west 53
+	)
+
+	(method (init)
+		(Load rsVIEW 515)
+		(Load rsVIEW 516)
+		(super init:)
+		(gAddToPics add: aAgent doit:)
+		(if ((gInventory at: 22) ownedBy: gCurRoomNum) ; Suitcase
+			(Load rsVIEW 155)
+			(Load rsSOUND 5)
+			(Load rsFONT 7)
+			(theSound init:)
+			(aBag
+				view: 515
+				setLoop: 0
+				setPri: 5
+				setStep: 2 1
+				posn: 90 123
+				illegalBits: 0
+				init:
+				hide:
+				setScript: bagScript
+			)
+		)
+		(aPlane startX: 306 startY: 22 endX: 222 endY: 22 init:)
+		(aTraveler
+			setPri: 2
+			setStep: 1 1
+			setCycle: Walk
+			illegalBits: 0
+			init:
+			hide:
+		)
+		(cond
+			((== gPrevRoomNum 53)
+				(gEgo posn: 1 154)
+			)
+			((== gPrevRoomNum 55)
+				(gEgo posn: 316 154)
+			)
+			(else
+				(gEgo posn: 316 154)
+			)
+		)
+		(NormalEgo)
+		(gEgo init:)
+		(aDoor
+			setPri: 11
+			doorCtrl: 2
+			doorBlock: 16384
+			roomCtrl: 0
+			msgLook:
+				{The low blue gate leads back to the Customs Inspection area.}
+			msgFunny: {Knock. Knock. (No one's there!)}
+			init:
+		)
+		(self setRegions: 500 setScript: rm54Script) ; rm500
+	)
+
+	(method (dispose)
+		(DisposeScript 992)
+		(DisposeScript travelerScript)
+		(super dispose:)
+	)
+)
+
+(instance rm54Script of Script
+	(properties)
+
+	(method (doit)
+		(super doit:)
+	)
+
+	(method (handleEvent event)
+		(if (or (!= (event type:) evSAID) (event claimed:))
+			(return)
+		)
+		(if (and (not (gEgo has: 22)) (Said 'look/bag,baggage')) ; Suitcase
+			(if ((gInventory at: 22) ownedBy: gCurRoomNum) ; Suitcase
+				(Print 54 0) ; "Luggage passes by on the nearby conveyor belt."
+			else
+				(Print 54 1) ; "What a pair of lips!"
+			)
+		)
+		(if (Said 'look>')
+			(if (Said '/belt,baggage,bag,belt')
+				(Print 54 2) ; "Conveyors carrying luggage stretch off into the distance."
+			)
+			(if (Said '/man,cop')
+				(Print 54 3) ; "He's sound asleep. Shhh! Don't wake him."
+			)
+			(if (Said '/art')
+				(Print 54 4) ; "Gawd, is that symbolic, or what?!"
+				(if (> gFilthLevel 10)
+					(Print 54 5 #at -1 130) ; "(You fondly recall an old joke about a girl and her cherry.)"
+				)
+			)
+			(if (Said '[/airport]')
+				(Print 54 6) ; "A security guard snoozes beside his X-ray machine, allowing baggage to pass by uninspected."
+			)
+		)
+		(if (or (Said 'awaken<up') (Said 'awaken,lagoon,hit,talk/man,cop'))
+			(Print 54 7) ; "Zzzzzzz."
+		)
+		(if (Said 'carry,(get<up),get/bag,baggage')
+			(cond
+				((not ((gInventory at: 22) ownedBy: gCurRoomNum)) ; Suitcase
+					(Print 54 8) ; "Where?"
+				)
+				((not (& (gEgo onControl:) $0008))
+					(NotClose) ; "You're not close enough."
+				)
+				((> (gEgo distanceTo: aBag) 23)
+					(Print 54 9) ; "You missed!"
+				)
+				(else
+					(aBag hide:)
+					(if (and (!= bagNumber 0) (!= bagNumber 8))
+						(Print 54 10 #at -1 20 #draw) ; "You nimbly grab someone's suitcase from the moving belt, force it open, and discover inside..."
+					)
+					(switch bagNumber
+						(0
+							(Print 54 11) ; "If you play this game backwards, you can read: "Paul is dead.""
+						)
+						(1
+							(Print 54 12) ; "...a disassembled hunting rifle. You decide it is of no use to you."
+						)
+						(2
+							(Print 54 13) ; "...some dirty underwear."
+						)
+						(3
+							(Print 54 14) ; "...a dead cat."
+							(Print 54 15) ; "YUCK!"
+						)
+						(4
+							(Print 54 16) ; "...a pair of maces. You decide they are of no use to you."
+						)
+						(5
+							(Print 54 17) ; "...a Tommy gun in a violin case. You decide it is of no use to you."
+						)
+						(6
+							(Print 54 18) ; "...nothing of interest."
+						)
+						(7
+							(Print 54 19) ; "...a computer. Searching through the disk storage box within, you discover a complete set of Sierra adventure games. You decide they are of no use to you."
+							(Print 54 20) ; "...because you're having plenty of trouble with THIS game!"
+						)
+						(8
+							(Print 54 21) ; "John 3:16"
+						)
+						(9
+							(Print 54 18) ; "...nothing of interest."
+						)
+						(10
+							(Print 54 22) ; "...some blue, pin-striped suits. You decide they are of no use to you."
+						)
+						(11
+							(Print 54 23) ; "...a fully-automatic machine gun and some clips of ammo. You realize you have no use for this until you purchase "Police Quest II, The Vengeance.""
+						)
+						(12
+							(self changeState: 1)
+							(return)
+						)
+					)
+					(Print 54 24 #at -1 20) ; "You sheepishly close it, return it to the conveyor, and wonder if anyone noticed you."
+					(aBag show:)
+				)
+			)
+		)
+	)
+
+	(method (changeState newState)
+		(switch (= state newState)
+			(1
+				(gGame changeScore: 5)
+				(aBag dispose:)
+				(bagScript dispose:)
+				(Print 54 25 #at -1 20 #width 222 #font 7) ; "A BOMB!!"
+				(theSound play:)
+				(gEgo get: 22) ; Suitcase
+				(= gBombStatus 1)
+				(HandsOff)
+				(gEgo view: 155 setLoop: 1)
+				(Print 54 26 #draw) ; "Let's see now," you think, "I'm holding a suitcase containing a ticking bomb. What shall I do?"
+				(= seconds 3)
+			)
+			(2
+				(Print 54 27) ; ""Say," you decide. ""I think I'll get this thing outside... and FAST!"
+				(gEgo setMotion: MoveTo (gEgo x:) 154 self)
+			)
+			(3
+				(gEgo
+					setStep: 4 3
+					setCycle: Walk
+					setMotion: MoveTo 0 154 self
+				)
+			)
+		)
+	)
+)
+
+(instance travelerScript of Script
+	(properties)
+
+	(method (changeState newState)
+		(switch (= state newState)
+			(0
+				(= seconds 3)
+			)
+			(1
+				(aTraveler posn: 230 36 show: setMotion: MoveTo 291 37 self)
+			)
+			(2
+				(aTraveler setLoop: (if (== (aTraveler loop:) 3) 4 else 3))
+				(self changeState: 0)
+			)
+		)
+	)
+)
+
+(instance bagScript of Script
+	(properties)
+
+	(method (changeState newState)
+		(switch (= state newState)
+			(0
+				(aBag
+					posn: 90 123
+					setCel: bagNumber
+					setLoop: 0
+					show:
+					setMotion: MoveTo 152 123 self
+				)
+			)
+			(1
+				(aBag setLoop: 1 setMotion: MoveTo 303 123 self)
+			)
+			(2
+				(if (> (++ bagNumber) 12)
+					(= bagNumber 0)
+				)
+				(aBag hide:)
+				(self changeState: 0)
+			)
+		)
+	)
+)
+
+(instance aAgent of PV
+	(properties
+		y 157
+		x 109
+		view 516
+		priority 12
+	)
+)
+
+(instance aBag of Act
+	(properties
+		signal 16384
+	)
+)
+
+(instance aPlane of Airplane
+	(properties)
+)
+
+(instance aTraveler of Act
+	(properties
+		y 36
+		x 230
+		view 515
+		loop 3
+		signal 16384
+	)
+)
+
+(instance aDoor of AutoDoor
+	(properties
+		y 156
+		x 15
+		view 515
+		loop 2
+		msgLook 0
+		msgLookLock 18
+		msgLocked 38
+		msgExcept 59
+		msgFunny 82
+		msgCloser 102
+	)
+)
+

@@ -1,0 +1,336 @@
+;;; Sierra Script 1.0 - (do not remove this comment)
+;;; Decompiled by sluicebox
+(script# 64913)
+(include sci.sh)
+(use Main)
+(use DButton)
+(use DText)
+(use DItem)
+(use Plane)
+(use Str)
+(use Array)
+(use System)
+
+(class DSelector of DItem
+	(properties
+		font 0
+		length 0
+		width 100
+		textHeight 0
+		first 0
+		current 0
+		listPlane 0
+		textList 0
+		fore 0
+		back 255
+		slider 0
+		knob 0
+		upButton 0
+		downButton 0
+		leading 2
+	)
+
+	(method (init theList &tmp d newCast str)
+		(= d
+			((DText new:)
+				fore: 0
+				back: 0
+				skip: 0
+				font: font
+				text: { }
+				setSize:
+				yourself:
+			)
+		)
+		(= bitmap
+			(CreateTextBitmap
+				0
+				(+ (- (d nsRight:) (d nsLeft:)) 1)
+				(+ (- (d nsBottom:) (d nsTop:)) 1)
+				d
+			)
+		)
+		(DisposeClone d)
+		(= listPlane
+			((Plane new:)
+				name: {DSPlane}
+				priority: (+ (GetHighPlanePri) 1)
+				yourself:
+			)
+		)
+		(= first 0)
+		(super init: theList &rest)
+		(if (and (not nsLeft) (not nsTop) (not nsRight) (not nsBottom))
+			(= nsRight (+ (- nsRight nsLeft) 1))
+			(= nsBottom (+ (- nsBottom nsTop) 1))
+		)
+		(listPlane
+			init: nsLeft nsTop nsRight nsBottom
+			back: back
+			posn: nsLeft nsTop plane
+			addCast: textList
+		)
+		(textList eachElementDo: #init textList)
+		(if (>= upButton 0)
+			(if upButton
+				(upButton
+					font: font
+					object: self
+					selector: #scrollUp
+					state: 1
+					setSize:
+					init: theList
+				)
+			else
+				(= str (Str new:))
+				(Message msgGET 64990 39 0 0 1 (str data:)) ; "\1d"
+				((= upButton (DButton new:))
+					font: font
+					text: (KArray 8 (str data:)) ; ArrayDup
+					view: 64990
+					loop: 4
+					cel: 0
+					object: self
+					selector: #scrollUp
+					state: 1
+					setSize:
+					init: theList
+					yourself:
+				)
+				(str dispose:)
+			)
+		)
+		(if (>= downButton 0)
+			(if downButton
+				(downButton
+					font: font
+					object: self
+					selector: #scrollDown
+					state: 1
+					setSize:
+					init: theList
+				)
+			else
+				(= str (Str new:))
+				(Message msgGET 64990 40 0 0 1 (str data:)) ; "\1e"
+				(= downButton
+					((DButton new:)
+						font: font
+						text: (KArray 8 (str data:)) ; ArrayDup
+						view: 64990
+						loop: 4
+						cel: 0
+						setSize:
+						object: self
+						selector: #scrollDown
+						state: 1
+						init: theList
+						yourself:
+					)
+				)
+				(str dispose:)
+			)
+		)
+		(self draw:)
+	)
+
+	(method (dispose)
+		(textList dispose:)
+		(if bitmap
+			(Bitmap 1 bitmap) ; Dispose
+			(= bitmap 0)
+		)
+		(listPlane dispose:)
+		(if (> upButton 0)
+			(upButton dispose:)
+		)
+		(if (> downButton 0)
+			(downButton dispose:)
+		)
+		(= textList (= listPlane (= upButton (= downButton (= bitmap 0)))))
+		(super dispose:)
+	)
+
+	(method (scrollDown howMany &tmp num)
+		(= num (if argc howMany else 1))
+		(if (>= (+= current howMany) (textList size:))
+			(= current (- (textList size:) 1))
+		)
+		(if (>= current (+ first length))
+			(= first (- current (- length 1)))
+		)
+		(self draw:)
+	)
+
+	(method (scrollUp howMany &tmp num)
+		(= num (if argc howMany else 1))
+		(if (< (-= current howMany) 0)
+			(= current 0)
+		)
+		(if (< current first)
+			(= first current)
+		)
+		(self draw:)
+	)
+
+	(method (draw &tmp node nextNode obj cobj i)
+		(if (textList size:)
+			(= cobj (textList at: current))
+			(= node (KList 3 (textList elements:))) ; FirstNode
+			(for ((= i 0)) node ((++ i))
+				(= nextNode (KList 6 node)) ; NextNode
+				(= obj (KList 8 node)) ; NodeValue
+				(obj
+					moveTo: 2 (+ 1 (* (- first i) -1 textHeight))
+					fore: (if (== cobj obj) back else fore)
+					back: (if (== cobj obj) fore else back)
+					draw:
+				)
+				(UpdateScreenItem obj)
+				(= node nextNode)
+			)
+		)
+		(if gSaveFileSelText
+			(gSaveFileSelText dispose:)
+			(= gSaveFileSelText 0)
+		)
+		(if (>= (- (textList size:) 1) current 0)
+			(= gSaveFileSelText (Str with: ((textList at: current) text:)))
+		)
+	)
+
+	(method (setText theText &tmp i [widest 2] l str)
+		(if (and (not theText) textList)
+			(textList dispose:)
+			(= textList 0)
+		)
+		(if (not textList)
+			(= textList ((Cast new:) name: {DSList} add: yourself:))
+		)
+		(if theText
+			(= l (Str new:))
+			(for
+				((= i 0))
+				(and (< i argc) (< (textList size:) 250))
+				((++ i))
+				
+				(l copy: [theText i])
+				(textList
+					add:
+						((SelectorDText new:)
+							font: font
+							text: (KArray 8 (l data:)) ; ArrayDup
+							setSize: (- width 4)
+							yourself:
+						)
+				)
+			)
+			(l dispose:)
+			(if (not length)
+				(= length argc)
+			)
+			(if listPlane
+				(listPlane addCast: textList)
+				(textList eachElementDo: #init textList)
+			)
+		)
+	)
+
+	(method (getText)
+		(KArray 8 ((textList at: current) text:)) ; ArrayDup
+	)
+
+	(method (setSize param1 &tmp temp0 temp1 temp2 temp3 temp4 temp5)
+		(= temp3 (IntArray new:))
+		(= temp4 (= temp0 0))
+		(= textHeight 0)
+		(if (or (and argc param1) (not width))
+			(for
+				((= temp1 (KList 3 (textList elements:)))) ; FirstNode
+				temp1
+				((= temp1 (textList nextNode:)))
+				
+				(textList nextNode: (KList 6 temp1)) ; NextNode
+				(= temp2 (KList 8 temp1)) ; NodeValue
+				(if (not width)
+					(Text 0 (temp3 data:) (temp2 text:) font 0 0)
+					(= temp0 (Max (temp3 at: 2) temp0))
+				else
+					(Text 0 (temp3 data:) (temp2 text:) font width 0)
+				)
+				(if (and argc param1)
+					(= temp4 (Max (+ (temp3 at: 3) leading) temp4))
+				)
+			)
+		)
+		(Text 0 (temp3 data:) {M} font 0 0)
+		(= textHeight (Max temp4 (+ (temp3 at: 3) leading)))
+		(temp3 dispose:)
+		(if (< (textList size:) length)
+			(= temp5 (textList size:))
+		else
+			(= temp5 length)
+		)
+		(self setNSRect: 0 0 (Max width temp0) (* textHeight temp5))
+	)
+
+	(method (updatePlane &tmp c l h)
+		(listPlane posn: (listPlane left:) (listPlane top:) plane)
+		(UpdatePlane listPlane)
+		(= c
+			(-
+				(+
+					(/ (- (listPlane bottom:) (listPlane top:)) 2)
+					(listPlane top:)
+				)
+				(plane top:)
+			)
+		)
+		(= l (+ (- (listPlane right:) (plane left:)) 4))
+		(if (> upButton 0)
+			(= h
+				(CelHigh (upButton view:) (upButton loop:) (upButton cel:))
+			)
+			(upButton moveTo: l (- c (+ h 4)))
+			(UpdateScreenItem upButton)
+		)
+		(if (> downButton 0)
+			(downButton moveTo: l (+ c 4))
+			(UpdateScreenItem downButton)
+		)
+	)
+
+	(method (handleEvent event &tmp ret)
+		(if (== (event type:) evMOUSEBUTTON)
+			(event globalize:)
+			(if (listPlane onMe: event)
+				(event localize: listPlane)
+				(if (= ret (textList firstTrue: #onMe event))
+					(= current (textList indexOf: ret))
+					(self draw:)
+				)
+			)
+			(event localize: plane)
+		)
+		(if (event claimed:)
+			(return self)
+		)
+	)
+
+	(method (setNSRect param1 param2 param3 param4)
+		(= nsLeft param1)
+		(= nsTop param2)
+		(= nsRight param3)
+		(= nsBottom param4)
+	)
+)
+
+(class SelectorDText of DText
+	(properties)
+
+	(method (setSize w)
+		(super setSize: w)
+		(= textRight (- (= nsRight w) (- textLeft nsLeft)))
+	)
+)
+
