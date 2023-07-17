@@ -41,7 +41,7 @@
 
 	(method (init)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 		(self setCycle: Fwd)
 	)
 

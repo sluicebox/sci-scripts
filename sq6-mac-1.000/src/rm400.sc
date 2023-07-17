@@ -59,7 +59,7 @@
 			(= style 0)
 		)
 		(cond
-			((and (== gPrevRoomNum 460) (or (== global119 0) (== global119 400)))
+			((and (== gPrevRoomNum 460) (or (== gComPostNextRoomNum 0) (== gComPostNextRoomNum 400)))
 				(gEgo posn: 39 131 setHeading: 270 init:)
 				(gGame handsOn:)
 			)
@@ -136,7 +136,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(proc0_4 gEgo holoControls self)
+				(Face gEgo holoControls self)
 			)
 			(1
 				(gMessager say: 3 1 0 0 self) ; "These are the HoloDeck programming controls."
@@ -419,7 +419,7 @@
 				)
 			)
 			(3
-				(gCurRoom newRoom: global119)
+				(gCurRoom newRoom: gComPostNextRoomNum)
 				(self dispose:)
 			)
 		)

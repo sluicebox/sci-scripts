@@ -249,7 +249,7 @@
 		(for ((= temp0 0)) (< temp0 5) ((++ temp0))
 			(self
 				add:
-					((= [local53 temp0] (responder_Sdetector new:))
+					((= [local53 temp0] (responder new:))
 						nsLeft: [local64 temp0]
 						nsTop: [local69 temp0]
 						nsRight: [local74 temp0]
@@ -421,10 +421,8 @@
 	)
 )
 
-(instance responder_Sdetector of CodeIcon
-	(properties
-		name {responder}
-	)
+(instance responder of CodeIcon
+	(properties)
 
 	(method (highlight param1 &tmp temp0)
 		(if (== local6 -1)

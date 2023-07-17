@@ -60,7 +60,7 @@
 				(gGk2Music setLoop: -1 number: 606 play:)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 63 28 321 241 init:)
+		(gEgo sel_737: setScaler: Scaler 63 28 321 241 init:)
 		(self setRegions: 499) ; huntRegion
 		(proc499_4)
 		(fWestExit init:)

@@ -29,10 +29,10 @@
 
 	(method (init)
 		(gGame handsOff:)
-		(if (not global170)
-			(= global170 1)
+		(if (not gShuttleStatus)
+			(= gShuttleStatus 1)
 		)
-		(if (or (IsFlag 126) (== global170 1))
+		(if (or (IsFlag 126) (== gShuttleStatus 1))
 			(self
 				addObstacle:
 					((Polygon new:)
@@ -115,10 +115,10 @@
 					(gGame handsOn:)
 				)
 			)
-			((== global170 1)
+			((== gShuttleStatus 1)
 				(shuttle init: setScript: shuttleCrashes)
 			)
-			((== global170 2)
+			((== gShuttleStatus 2)
 				(Load 140 612) ; WAVE
 				(shuttle
 					view: 614
@@ -131,7 +131,7 @@
 					setScript: shuttleLands
 				)
 			)
-			((== global170 3)
+			((== gShuttleStatus 3)
 				(Load 140 614) ; WAVE
 				(if (IsFlag 203)
 					(shuttle
@@ -153,7 +153,7 @@
 					)
 				)
 			)
-			((== global170 4)
+			((== gShuttleStatus 4)
 				(shipDoor init: approachVerbs: 1 4) ; Look, Do
 				(if (IsFlag 126)
 					(gEgo
@@ -269,8 +269,8 @@
 			)
 			(3
 				(SetFlag 126)
-				(= global170 4)
-				(= global148 610)
+				(= gShuttleStatus 4)
+				(= gShuttleRoomNum 610)
 				(gCurRoom newRoom: 490)
 			)
 		)
@@ -301,7 +301,7 @@
 				(= ticks 60)
 			)
 			(4
-				(= global148 610)
+				(= gShuttleRoomNum 610)
 				(gCurRoom newRoom: 490)
 			)
 		)
@@ -349,7 +349,7 @@
 			)
 			(2
 				(client setCycle: End)
-				(proc0_7 1 1 self)
+				(Fade 1 1 self)
 			)
 			(3
 				(gCurRoom exitStyle: 0 newRoom: 740)
@@ -688,7 +688,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(4 ; Do
-				(= global148 610)
+				(= gShuttleRoomNum 610)
 				(gCurRoom newRoom: 480)
 			)
 			(else

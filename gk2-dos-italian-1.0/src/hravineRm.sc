@@ -49,7 +49,7 @@
 			(gEgo
 				posn: 437 253
 				heading: 180
-				BAD_SELECTOR:
+				sel_737:
 				setScaler: Scaler 86 58 282 201
 				init:
 			)
@@ -82,7 +82,7 @@
 				init:
 			)
 			(gCurInvView select: 81)
-			(gGame BAD_SELECTOR: 1)
+			(gGame sel_849: 1)
 			(GunTimer setReal: GunTimer 10)
 		)
 		(fRavine init:)
@@ -142,7 +142,7 @@
 				setScript: sFidget
 			)
 			(gCurInvView select: 81)
-			(gGame BAD_SELECTOR: 1)
+			(gGame sel_849: 1)
 		else
 			(super doVerb: theVerb)
 		)

@@ -460,14 +460,14 @@
 
 	(method (BAD_SELECTOR &tmp temp0)
 		(if (vmdText text:)
-			(vmdText BAD_SELECTOR: 0)
+			(vmdText sel_749: 0)
 		else
 			(switch (gGame printLang:)
 				(351
-					(vmdText BAD_SELECTOR: {Clique para pular a cena})
+					(vmdText sel_749: {Clique para pular a cena})
 				)
 				(else
-					(vmdText BAD_SELECTOR: {Click mouse to skip scene})
+					(vmdText sel_749: {Click mouse to skip scene})
 				)
 			)
 		)
@@ -489,7 +489,7 @@
 				)
 				(= bitmap BAD_SELECTOR)
 			else
-				(self BAD_SELECTOR: 0)
+				(self sel_749: 0)
 			)
 			(UpdateScreenItem self)
 		)
@@ -693,13 +693,12 @@
 			(switch (gGame printLang:)
 				(351
 					(scoreText
-						BAD_SELECTOR: (Str format: {Placar: %d de 679} gScore)
+						sel_749: (Str format: {Placar: %d de 679} gScore)
 					)
 				)
 				(else
 					(scoreText
-						BAD_SELECTOR:
-							(Str format: {Score: %d out of 679} gScore)
+						sel_749: (Str format: {Score: %d out of 679} gScore)
 					)
 				)
 			)
@@ -776,7 +775,7 @@
 				(self newRoom: 34) ; demoRm
 			)
 			(1
-				(self BAD_SELECTOR:)
+				(self sel_868:)
 				(self newRoom: 24) ; whereTo
 			)
 		)
@@ -808,8 +807,8 @@
 			)
 			(switch (event message:)
 				(KEY_ESCAPE
-					(gUser BAD_SELECTOR: 62)
-					((gUser BAD_SELECTOR:) update:)
+					(gUser sel_712: 62)
+					((gUser sel_715:) update:)
 				)
 				(KEY_F7
 					(gGame restore:)
@@ -822,14 +821,14 @@
 				(KEY_ADD
 					(if (gUser controls:)
 						(= global112 (Max 1 (-- global112)))
-						(gGame BAD_SELECTOR: global112)
+						(gGame sel_874: global112)
 						(gEgo setSpeed: global112)
 					)
 				)
 				(KEY_SUBTRACT
 					(if (gUser controls:)
 						(++ global112)
-						(gGame BAD_SELECTOR: global112)
+						(gGame sel_874: global112)
 						(gEgo setSpeed: global112)
 					)
 				)
@@ -868,14 +867,14 @@
 	)
 
 	(method (pragmaFail &tmp [temp0 3])
-		((gUser BAD_SELECTOR:) BAD_SELECTOR:)
+		((gUser sel_715:) sel_734:)
 	)
 
 	(method (handsOff)
 		(gUser canControl: 0 canInput: 0)
 		(if BAD_SELECTOR
 			(= BAD_SELECTOR 0)
-			((gUser BAD_SELECTOR:) BAD_SELECTOR:)
+			((gUser sel_715:) sel_736:)
 		)
 		(gk2Messager scratch: 0)
 	)
@@ -884,7 +883,7 @@
 		(gUser canControl: (and argc param1) canInput: 1)
 		(if (not BAD_SELECTOR)
 			(= BAD_SELECTOR 1)
-			((gUser BAD_SELECTOR:) update:)
+			((gUser sel_715:) update:)
 		)
 		(while ((= temp0 (Event new: 3)) type:)
 			(temp0 dispose:)
@@ -949,7 +948,7 @@
 				15011
 				15012
 			)
-			(gCurRoom BAD_SELECTOR:)
+			(gCurRoom sel_878:)
 		)
 		(cond
 			((and (not (gUser canControl:)) (not (gUser canInput:)))
@@ -1035,17 +1034,17 @@
 
 	(method (setCursor param1)
 		(cond
-			((or (not gUser) (not (gUser BAD_SELECTOR:)))
+			((or (not gUser) (not (gUser sel_715:)))
 				(super setCursor: param1 &rest)
 			)
 			((== param1 gWaitCursor)
-				((gUser BAD_SELECTOR:) BAD_SELECTOR:)
+				((gUser sel_715:) sel_736:)
 			)
 			((== param1 BAD_SELECTOR)
-				((gUser BAD_SELECTOR:) update:)
+				((gUser sel_715:) update:)
 			)
 			(else
-				((gUser BAD_SELECTOR:) update:)
+				((gUser sel_715:) update:)
 			)
 		)
 	)
@@ -1278,13 +1277,13 @@
 		else
 			(cond
 				((== theVerb 62) ; Do
-					(gUser BAD_SELECTOR: verb)
+					(gUser sel_712: verb)
 				)
-				((not (OneOf (gUser BAD_SELECTOR:) 111 135))
-					(gUser BAD_SELECTOR: 62)
+				((not (OneOf (gUser sel_712:) 111 135))
+					(gUser sel_712: 62)
 				)
 			)
-			((gUser BAD_SELECTOR:) update:)
+			((gUser sel_715:) update:)
 		)
 	)
 
@@ -1344,8 +1343,8 @@
 					15011
 					15012
 				)
-				(= global142 (gCurRoom BAD_SELECTOR:))
-				(= global143 (gCurRoom BAD_SELECTOR:))
+				(= global142 (gCurRoom sel_879:))
+				(= global143 (gCurRoom sel_880:))
 				(if (not (IsFlag 816))
 					(SetFlag 816)
 					(PlayScene 912)
@@ -1437,7 +1436,7 @@
 	)
 
 	(method (doVerb)
-		(gCurRoom BAD_SELECTOR:)
+		(gCurRoom sel_881:)
 	)
 )
 

@@ -95,7 +95,7 @@
 	)
 
 	(method (onMe)
-		(if (== (gCurInvView BAD_SELECTOR:) 54)
+		(if (== (gCurInvView sel_716:) 54)
 			(super onMe: &rest)
 		else
 			(return 0)

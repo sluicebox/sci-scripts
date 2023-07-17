@@ -95,7 +95,7 @@
 				(= ticks 1)
 			)
 			(2
-				(if (> (-= local3 1) 64911)
+				(if (> (-= local3 1) -625)
 					(= state 0)
 				)
 				(= cycles 1)

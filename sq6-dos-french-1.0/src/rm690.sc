@@ -226,7 +226,7 @@
 		(switch (= state newState)
 			(0
 				(client hide:)
-				(= ticks (proc0_8 100 300))
+				(= ticks (RandomNumber 100 300))
 			)
 			(1
 				(client show: cycleSpeed: local0 setCycle: End self)

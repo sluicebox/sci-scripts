@@ -113,10 +113,10 @@
 		(= useInsetRect 0)
 		(SetNowSeen self)
 		(if (and (> argc 1) param2)
-			(param1 BAD_SELECTOR: self)
+			(param1 sel_748: self)
 		)
 		(if (and (> argc 2) param3)
-			(param1 BAD_SELECTOR: self)
+			(param1 sel_747: self)
 		)
 	)
 
@@ -261,7 +261,7 @@
 		(super doit: &rest)
 		(= temp0 (self onMe: gMouseX gMouseY))
 		(if (and active temp0)
-			(self BAD_SELECTOR:)
+			(self sel_754:)
 		)
 		(cond
 			(BAD_SELECTOR
@@ -311,9 +311,9 @@
 			(if
 				(and
 					(== (event type:) evMOUSEBUTTON)
-					(or (not BAD_SELECTOR) (self BAD_SELECTOR:))
+					(or (not BAD_SELECTOR) (self sel_753:))
 				)
-				(self doVerb: (gUser BAD_SELECTOR:))
+				(self doVerb: (gUser sel_712:))
 			)
 		)
 		(event claimed:)
@@ -343,9 +343,9 @@
 			(= temp0 0)
 			(= verb -1)
 		)
-		(gUser BAD_SELECTOR: verb)
-		(gUser BAD_SELECTOR: BAD_SELECTOR)
-		(if (= temp1 (gUser BAD_SELECTOR:))
+		(gUser sel_712: verb)
+		(gUser sel_738: BAD_SELECTOR)
+		(if (= temp1 (gUser sel_715:))
 			(temp1 update:)
 		)
 		(self update: temp0)

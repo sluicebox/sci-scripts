@@ -55,7 +55,7 @@
 		else
 			(= BAD_SELECTOR 0)
 			(if BAD_SELECTOR
-				(self BAD_SELECTOR: BAD_SELECTOR 0)
+				(self sel_704: BAD_SELECTOR 0)
 				(= BAD_SELECTOR 0)
 			)
 			(if BAD_SELECTOR
@@ -78,11 +78,11 @@
 			(BAD_SELECTOR at: (- temp0 1) -1)
 			(if BAD_SELECTOR
 				(= BAD_SELECTOR BAD_SELECTOR)
-				(self BAD_SELECTOR: BAD_SELECTOR 1)
+				(self sel_704: BAD_SELECTOR 1)
 				(gGk2Music number: BAD_SELECTOR loop: 1 play: self)
 			else
 				(= BAD_SELECTOR (BAD_SELECTOR at: (= BAD_SELECTOR 0)))
-				(self BAD_SELECTOR: BAD_SELECTOR 1)
+				(self sel_704: BAD_SELECTOR 1)
 				(gGk2Music number: BAD_SELECTOR loop: 1 play: self)
 			)
 		)
@@ -92,18 +92,18 @@
 		(cond
 			((not BAD_SELECTOR) 0)
 			(BAD_SELECTOR
-				(self BAD_SELECTOR: BAD_SELECTOR 0)
+				(self sel_704: BAD_SELECTOR 0)
 				(BAD_SELECTOR dispose:)
 				(= BAD_SELECTOR (= BAD_SELECTOR 0))
 			)
 			(BAD_SELECTOR
-				(self BAD_SELECTOR: BAD_SELECTOR 0)
+				(self sel_704: BAD_SELECTOR 0)
 				(= BAD_SELECTOR 0)
-				(self BAD_SELECTOR:)
+				(self sel_703:)
 			)
 			(scratch
 				(= scratch 0)
-				(self BAD_SELECTOR: BAD_SELECTOR 0)
+				(self sel_704: BAD_SELECTOR 0)
 				(for
 					((= temp0 BAD_SELECTOR))
 					(== temp0 BAD_SELECTOR)
@@ -111,11 +111,11 @@
 				)
 				(= BAD_SELECTOR temp0)
 				(= BAD_SELECTOR (BAD_SELECTOR at: BAD_SELECTOR))
-				(self BAD_SELECTOR: BAD_SELECTOR 1)
+				(self sel_704: BAD_SELECTOR 1)
 				(gGk2Music number: BAD_SELECTOR loop: 1 play: self)
 			)
 			(else
-				(self BAD_SELECTOR:)
+				(self sel_703:)
 			)
 		)
 	)
@@ -152,7 +152,7 @@
 
 	(method (stop)
 		(gGk2Music stop:)
-		(self BAD_SELECTOR: 1 cue:)
+		(self sel_698: 1 cue:)
 	)
 )
 

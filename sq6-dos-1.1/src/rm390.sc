@@ -55,7 +55,7 @@
 			(or
 				(and (IsFlag 41) (not (IsFlag 118)))
 				(and (IsFlag 424) (not (IsFlag 116)))
-				(and (IsFlag 116) (IsFlag 117) (== global120 1))
+				(and (IsFlag 116) (IsFlag 117) (== gAct 1))
 			)
 			(LED init: approachVerbs: 4 setCycle: RandCycle) ; Do
 		)
@@ -185,7 +185,7 @@
 				(= cycles 1)
 			)
 			(1
-				(if (or (== global119 gCurRoomNum) (== global119 0))
+				(if (or (== gComPostNextRoomNum gCurRoomNum) (== gComPostNextRoomNum 0))
 					(gGame handsOn:)
 					(self dispose:)
 				else
@@ -206,7 +206,7 @@
 			)
 			(3
 				(gGame handsOff:)
-				(gCurRoom newRoom: global119)
+				(gCurRoom newRoom: gComPostNextRoomNum)
 				(self dispose:)
 			)
 		)
@@ -270,7 +270,7 @@
 				(= ticks 180)
 			)
 			(5
-				(proc666_0 26 self)
+				(EgoDead 26 self) ; "You pick strange methods of getting a charge out of life."
 			)
 			(6
 				(gEgo normalize: cycleSpeed: 6 setLoop: 0)

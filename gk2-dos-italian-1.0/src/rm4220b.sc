@@ -103,7 +103,7 @@
 					(not BAD_SELECTOR)
 					(IsFlag BAD_SELECTOR)
 				)
-				(or (not BAD_SELECTOR) (BAD_SELECTOR firstTrue: #BAD_SELECTOR))
+				(or (not BAD_SELECTOR) (BAD_SELECTOR firstTrue: #sel_834))
 			)
 		)
 	)

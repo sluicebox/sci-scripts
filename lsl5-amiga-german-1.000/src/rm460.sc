@@ -516,7 +516,7 @@
 				(Say Mr__Bigg 460 22 108 139 self) ; "...and it's fortunate that you're here this evening as I'm only in town for a short time. Yes, I'm testifying tomorrow on Capitol Hill at the Senate hearings on pornography in the entertainment industry."
 			)
 			(78
-				(Say You_GDu 460 23 108 139 self) ; ""Oh, really?" you say, feigning interest."
+				(Say You 460 23 108 139 self) ; ""Oh, really?" you say, feigning interest."
 			)
 			(79
 				(Say Mr__Bigg 460 24 139 self) ; ""You've heard of me, then?" he swells up noticeably."
@@ -536,7 +536,7 @@
 				(Say Mr__Bigg 460 28 67 -1 185 108 139 self) ; "Allow me to introduce myself," he says, "I'm Mr. Bigg, a major West Coast corporate leader."
 			)
 			(84
-				(Say You_GDu 460 29 108 139 self) ; ""My name is Passionate Patti," you reply."
+				(Say You 460 29 108 139 self) ; ""My name is Passionate Patti," you reply."
 			)
 			(85
 				(Say Mr__Bigg 460 30 67 -1 185 108 139 self) ; ""And I bet I can guess how you earned that name," he grins."
@@ -570,7 +570,7 @@
 				(= ticks 30)
 			)
 			(94
-				(Say You_GDu 460 39 108 139 self) ; "Really, Mr. Bigg, your offer is not interest..."
+				(Say You 460 39 108 139 self) ; "Really, Mr. Bigg, your offer is not interest..."
 			)
 			(95
 				(Say Mr__Bigg 460 40 67 -1 185 108 139 self) ; "Bigg interrupts you. "Oh, Patti! Stop being so formal. Please. Call me `Julius.'""
@@ -1259,9 +1259,8 @@
 	)
 )
 
-(instance You_GDu of Talker
+(instance You of Talker
 	(properties
-		name {You}
 		x 20
 		y 5
 		nsTop 70

@@ -1578,10 +1578,10 @@
 				(bearSfx number: 2520 setLoop: 1 loop: 1 play: setVol: 127)
 				(cond
 					((and (== gChapter 4) (not (Random 0 4)))
-						(= ticks (+ 10 (DoAudio audPLAY 4350 0 0 3 1)))
+						(= ticks (+ 10 (DoAudio audPLAY 4350 0 0 3 1))) ; "(MUFFLED; VOICE COMING FROM FAR UNDER THE GROUND)Nooooooooo!"
 					)
 					((and (OneOf gChapter 3 5) (not (Random 0 4)))
-						(= ticks (+ 10 (DoAudio audPLAY 6350 1 8 1 1)))
+						(= ticks (+ 10 (DoAudio audPLAY 6350 1 8 1 1))) ; "(TERRIFIED)NO! NO!"
 					)
 					(else
 						(sfx

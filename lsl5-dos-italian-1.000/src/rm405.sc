@@ -63,9 +63,8 @@
 	)
 )
 
-(instance Andy_IAndy of Talker
+(instance Andy of Talker
 	(properties
-		name {Andy}
 		nsTop 13
 		nsLeft 10
 		view 1407
@@ -127,13 +126,13 @@
 			(3
 				(clubOwner setCycle: 0 setCel: 0 stopUpd:)
 				(Say gEgo 405 0 67 15 15 70 160) ; "Well, Andy," you say to the swarthy club manager, "that about wraps it up for me. Looks like you've had another good week!"
-				(Say Andy_IAndy 405 1 108 139 self) ; "Funny you'd mention that, Patti."
+				(Say Andy 405 1 108 139 self) ; "Funny you'd mention that, Patti."
 			)
 			(4
 				(= ticks 30)
 			)
 			(5
-				(Say Andy_IAndy 405 2 108 139 self) ; "I was just getting ready to talk to you."
+				(Say Andy 405 2 108 139 self) ; "I was just getting ready to talk to you."
 			)
 			(6
 				(= ticks 123)
@@ -143,66 +142,66 @@
 				(= seconds 3)
 			)
 			(8
-				(Say Andy_IAndy 405 4 108 139 self) ; "Oh, Patti, it ain't me. You know I like you just fine. It's just my boss that don't."
+				(Say Andy 405 4 108 139 self) ; "Oh, Patti, it ain't me. You know I like you just fine. It's just my boss that don't."
 			)
 			(9
 				(= ticks 60)
 			)
 			(10
-				(Say Andy_IAndy 405 5 108 139 self) ; "Julius doesn't much care for small audiences."
+				(Say Andy 405 5 108 139 self) ; "Julius doesn't much care for small audiences."
 			)
 			(11
 				(= ticks 60)
 			)
 			(12
-				(Say Andy_IAndy 405 6 108 139 self) ; "He says your fans listen too much and drink too little."
+				(Say Andy 405 6 108 139 self) ; "He says your fans listen too much and drink too little."
 			)
 			(13
 				(= ticks 60)
 			)
 			(14
 				(TPrint 405 7 67 -1 185) ; "(How ironic! You were thinking just the opposite!)"
-				(Say Andy_IAndy 405 8 108 139 self) ; "He can't see how he and his 'backers' can be expected to make a profit like that."
+				(Say Andy 405 8 108 139 self) ; "He can't see how he and his 'backers' can be expected to make a profit like that."
 			)
 			(15
 				(= ticks 30)
 			)
 			(16
-				(Say Andy_IAndy 405 9 108 139 self) ; "Patti, I'm just going to have to let you go."
+				(Say Andy 405 9 108 139 self) ; "Patti, I'm just going to have to let you go."
 			)
 			(17
 				(= ticks 123)
 			)
 			(18
 				(Say gEgo 405 10 67 15 15 70 160) ; "But, Andy! How could you? After all I've done for you?"
-				(Say Andy_IAndy 405 11 108 139 self) ; "It's not me, Honey," he says, "you treated me jus' fine. I'll be sorry to see you go."
+				(Say Andy 405 11 108 139 self) ; "It's not me, Honey," he says, "you treated me jus' fine. I'll be sorry to see you go."
 			)
 			(19
 				(= ticks 123)
 			)
 			(20
 				(Say gEgo 405 12 67 15 15 70 160) ; "Well, then, give me my pay, and I'll get out of here!"
-				(Say Andy_IAndy 405 13 108 139 self) ; "Ah, er," he stutters, "I guess that's the other thing: I can't do that."
+				(Say Andy 405 13 108 139 self) ; "Ah, er," he stutters, "I guess that's the other thing: I can't do that."
 			)
 			(21
 				(= ticks 60)
 			)
 			(22
-				(Say Andy_IAndy 405 14 108 139 self) ; "Julius says your contract was never valid, so he doesn't have to pay."
+				(Say Andy 405 14 108 139 self) ; "Julius says your contract was never valid, so he doesn't have to pay."
 			)
 			(23
 				(= ticks 123)
 			)
 			(24
 				(Say gEgo 405 15 67 15 15 70 160) ; "WHAT!" you explode, "Now you're saying I don't even get paid for the week I have worked?! I ought to file a grievance with the Musicians' Union!"
-				(Say Andy_IAndy 405 16 108 139 self) ; "Not exactly shaking, he replies, "Do what you have to do, Patti, but if you ever want to work anywhere in this town again...""
+				(Say Andy 405 16 108 139 self) ; "Not exactly shaking, he replies, "Do what you have to do, Patti, but if you ever want to work anywhere in this town again...""
 			)
 			(25
 				(= ticks 60)
 			)
 			(26
 				(Say gEgo 405 17 67 15 15 70 160) ; "His meaning is not lost on you. "Goodbye, Andy! Somehow I expected more of you. I don't know why!""
-				(Say Andy_IAndy 405 18 108 139 self) ; "Patti, take my advice: play more commercial. Give 'em what they like! A broad as good lookin' as you could really pull 'em in, if you'd just get smart!"
+				(Say Andy 405 18 108 139 self) ; "Patti, take my advice: play more commercial. Give 'em what they like! A broad as good lookin' as you could really pull 'em in, if you'd just get smart!"
 			)
 			(27
 				(= ticks 123)

@@ -51,7 +51,7 @@
 				(gEgo
 					posn: 50 264
 					heading: 135
-					BAD_SELECTOR:
+					sel_737:
 					setScaler: Scaler 35 25 285 252
 					init:
 				)
@@ -60,7 +60,7 @@
 				(gEgo
 					posn: 50 264
 					heading: 135
-					BAD_SELECTOR:
+					sel_737:
 					setScaler: Scaler 35 25 285 252
 					init:
 				)
@@ -72,7 +72,7 @@
 			)
 		)
 		(if (and (!= gPrevRoomNum 2213) (!= gPrevRoomNum 2244))
-			(gEgo BAD_SELECTOR: setScaler: Scaler 40 24 290 262 init:)
+			(gEgo sel_737: setScaler: Scaler 40 24 290 262 init:)
 		)
 		(fEastExit init:)
 		(fBarnWall init:)

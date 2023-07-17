@@ -29,7 +29,7 @@
 		(if (== gPrevRoomNum 11301)
 			(gEgo
 				posn: 48 178
-				BAD_SELECTOR: 135
+				sel_737: 135
 				setScale:
 				scaleX: 20
 				scaleY: 20
@@ -38,7 +38,7 @@
 		else
 			(gEgo
 				posn: 165 100
-				BAD_SELECTOR: 135
+				sel_737: 135
 				setScale:
 				scaleX: 20
 				scaleY: 20

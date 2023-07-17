@@ -35,7 +35,7 @@
 			(gEgo
 				posn: 271 214
 				heading: 135
-				BAD_SELECTOR:
+				sel_737:
 				init:
 				setScaler: Scaler 54 41 272 221
 			)
@@ -44,7 +44,7 @@
 			(gEgo
 				posn: 477 219
 				heading: 225
-				BAD_SELECTOR:
+				sel_737:
 				init:
 				setScaler: Scaler 81 42 318 212
 			)
@@ -158,7 +158,7 @@
 					(76 ; invFourRoses
 						(SetFlag 610)
 						(gEgo put: 38 get: 72) ; invFourRoses, invCarKeys
-						(gSoundManager BAD_SELECTOR: 1)
+						(gSoundManager sel_702: 1)
 						(PlayScene 462)
 						(roses init:)
 					)
@@ -295,7 +295,7 @@
 				)
 			)
 			(76 ; invFourRoses
-				(gSoundManager BAD_SELECTOR: 1)
+				(gSoundManager sel_702: 1)
 				(PlayScene 462)
 				(SetFlag 610)
 				(gEgo put: 38 get: 72) ; invFourRoses, invCarKeys
@@ -317,7 +317,7 @@
 				(gMessager say: 8 62 0 0 self 730) ; "(LOOK AT GERDE IN CRYPT AREA, SLIGHTLY SUSPICIOUS)Gerde's here. I wonder what she's up to?"
 			)
 			(1
-				(gSoundManager BAD_SELECTOR: 1)
+				(gSoundManager sel_702: 1)
 				(PlayScene 461 self)
 			)
 			(2

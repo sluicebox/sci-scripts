@@ -33,7 +33,7 @@
 			posn: 527 84
 			setScale: 0
 			view: 20631
-			BAD_SELECTOR:
+			sel_737:
 			init:
 			setScript: (FidgetScript new:)
 		)
@@ -181,7 +181,7 @@
 			)
 			(90 ; invWolfTags
 				(if (IsFlag 330)
-					(gUser BAD_SELECTOR: 62)
+					(gUser sel_712: 62)
 					(GKHotCursor update:)
 					(SetFlag 657)
 					(PlayScene 635 0 530) ; hallRm

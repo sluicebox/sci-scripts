@@ -146,7 +146,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(while (u> (GetTime) -192)
+				(while (u> (GetTime) 65344)
 				)
 				(fred
 					view: 950

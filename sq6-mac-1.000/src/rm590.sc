@@ -597,10 +597,10 @@
 	)
 
 	(method (init &tmp temp0 temp1 temp2 temp3 temp4 temp5 temp6 temp7 temp8 [temp9 120])
-		(if (not global152)
-			(= global152 2)
+		(if (not gFileRoomRow)
+			(= gFileRoomRow 2)
 		)
-		(switch global152
+		(switch gFileRoomRow
 			(1
 				(= picture 590)
 			)
@@ -629,7 +629,7 @@
 			code: scrollCode
 		)
 		(= temp4 (Str newWith: 80 {}))
-		(switch global152
+		(switch gFileRoomRow
 			(1
 				(for ((= temp2 0)) (<= temp2 2) ((++ temp2))
 					(for ((= temp0 0)) (<= temp0 4) ((++ temp0))
@@ -746,7 +746,7 @@
 	)
 
 	(method (buildPic)
-		(switch global152
+		(switch gFileRoomRow
 			(1
 				(AddPicAt plane 5901 320 0)
 				(AddPicAt plane 5902 640 0)
@@ -1022,7 +1022,7 @@
 			)
 			(1 0)
 			(2
-				(if (and (== (register loop:) 4) (not global171))
+				(if (and (== (register loop:) 4) (not gLookedAtNigelFile))
 					(self setScript: frigginCheaters self)
 				else
 					(= ticks 1)

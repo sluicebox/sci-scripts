@@ -43,7 +43,7 @@
 			nsTop: 300
 			nsRight: 613
 			nsBottom: 334
-			BAD_SELECTOR: 4
+			sel_742: 4
 			x: 225
 			y: 2000
 			sightAngle: 40
@@ -53,7 +53,7 @@
 			nsTop: 15
 			nsRight: 613
 			nsBottom: 84
-			BAD_SELECTOR: 0
+			sel_742: 0
 			x: 225
 			y: 63536
 			sightAngle: 40
@@ -63,7 +63,7 @@
 			nsTop: 15
 			nsRight: 640
 			nsBottom: 334
-			BAD_SELECTOR: 2
+			sel_742: 2
 			x: 2000
 			y: 250
 			sightAngle: 40
@@ -73,7 +73,7 @@
 			nsTop: 15
 			nsRight: 52
 			nsBottom: 334
-			BAD_SELECTOR: 6
+			sel_742: 6
 			x: 63536
 			y: 250
 			sightAngle: 40

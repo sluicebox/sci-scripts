@@ -62,7 +62,7 @@
 				(gSoundManager play: 0 230 231 232 233)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 100 54 375 253 init:)
+		(gEgo sel_737: setScaler: Scaler 100 54 375 253 init:)
 		(fAdmin init:)
 		(fSign init:)
 		(fToKennel init:)

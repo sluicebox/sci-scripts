@@ -8,10 +8,10 @@
 (use Sound)
 
 (public
-	proc666_0 0
+	EgoDead 0
 )
 
-(procedure (proc666_0 param1 param2 &tmp temp0)
+(procedure (EgoDead param1 param2 &tmp temp0)
 	(Load rsVIEW 920 921 925)
 	(Load rsMESSAGE 666)
 	(Load rsHEAP 64912)
@@ -29,7 +29,7 @@
 	)
 	(switch param1
 		(17
-			(switch (proc0_8 3 5)
+			(switch (RandomNumber 3 5)
 				(3
 					(= param1 21)
 				)

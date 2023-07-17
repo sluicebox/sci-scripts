@@ -1923,7 +1923,7 @@
 		(for ((= temp0 12)) (< temp0 16) ((++ temp0))
 			(self
 				add:
-					((operator_GOperator new:)
+					((operator new:)
 						loop: (- temp0 10)
 						cel: 0
 						maskLoop: (- temp0 10)
@@ -1943,7 +1943,7 @@
 		(for ((= temp0 0)) (< temp0 12) ((++ temp0))
 			(self
 				add:
-					((= temp3 (operand_GOperand new:))
+					((= temp3 (operand new:))
 						value: [local434 temp0]
 						cel: 0
 						text: [local418 temp0]
@@ -2249,9 +2249,8 @@
 	)
 )
 
-(instance operand_GOperand of TextIcon
+(instance operand of TextIcon
 	(properties
-		name {operand}
 		view 140
 		loop 1
 		cel 0
@@ -2383,9 +2382,8 @@
 	)
 )
 
-(instance operator_GOperator of CodeIcon
+(instance operator of CodeIcon
 	(properties
-		name {operator}
 		view 140
 		cel 0
 		maskView 140
@@ -2450,7 +2448,7 @@
 	)
 )
 
-(instance symbol_GSymbol_a of CodeIcon
+(instance symbol_a of CodeIcon
 	(properties
 		name {symbol}
 		view 388
@@ -2483,7 +2481,7 @@
 	)
 )
 
-(instance symbol_GSymbol_b of TextIcon
+(instance symbol_b of TextIcon
 	(properties
 		name {symbol}
 		view 150
@@ -2567,7 +2565,7 @@
 		(for ((= temp0 0)) (< temp0 10) ((++ temp0))
 			(self
 				add:
-					((= [local574 temp0] (symbol_GSymbol_a new:))
+					((= [local574 temp0] (symbol_a new:))
 						loop: temp0
 						value: temp0
 						nsLeft: [local588 temp0]
@@ -2580,7 +2578,7 @@
 		)
 		(self
 			add:
-				(symbol_GSymbol_b
+				(symbol_b
 					highlightColor: [local0 7]
 					lowlightColor: [local0 18]
 					textColor: [local0 9]
@@ -2618,7 +2616,7 @@
 		(cond
 			((== (event type:) evKEYBOARD)
 				(if (or (== (= temp5 (event message:)) KEY_e) (== temp5 KEY_E))
-					(backDoorLock select: symbol_GSymbol_b 0)
+					(backDoorLock select: symbol_b 0)
 				)
 			)
 			((and (& (event type:) $0040) (IsObject highlightedIcon)) ; direction

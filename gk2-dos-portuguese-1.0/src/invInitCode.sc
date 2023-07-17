@@ -148,17 +148,13 @@
 
 	(method (init &tmp temp0)
 		(gTopMessage save:)
-		(if (!= (gEgo BAD_SELECTOR:) -1)
-			((gEgo BAD_SELECTOR:) eachElementDo: #BAD_SELECTOR)
+		(if (!= (gEgo sel_848:) -1)
+			((gEgo sel_848:) eachElementDo: #sel_833)
 		)
 		(if BAD_SELECTOR
 			(= BAD_SELECTOR ((KList 8 (BAD_SELECTOR last:)) nsBottom:)) ; NodeValue
-			(gUser BAD_SELECTOR: 62)
-			((gUser BAD_SELECTOR:)
-				BAD_SELECTOR: 60 352 627 475
-				show:
-				update:
-			)
+			(gUser sel_712: 62)
+			((gUser sel_715:) sel_717: 60 352 627 475 show: update:)
 			(= modeless 1)
 			(super init: &rest)
 		)
@@ -166,7 +162,7 @@
 
 	(method (dispose)
 		(= BAD_SELECTOR 50)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR: 0)
+		((gUser sel_715:) sel_717: 0)
 		(gTopMessage restore:)
 		(super dispose: &rest)
 		(= width 360)
@@ -203,7 +199,7 @@
 	(method (hilite param1)
 		(if (and argc param1)
 			(|= loop $0001)
-			(gTopMessage BAD_SELECTOR: 20 0 (value message:))
+			(gTopMessage sel_749: 20 0 (value message:))
 		else
 			(&= loop $fffe)
 			(gTopMessage restore:)
@@ -217,7 +213,7 @@
 
 	(method (handleEvent)
 		(if (super handleEvent: &rest)
-			(if (value doVerb: (gUser BAD_SELECTOR:))
+			(if (value doVerb: (gUser sel_712:))
 				(|= state $0002)
 			)
 			(return 1)
@@ -242,7 +238,7 @@
 			(= temp0 995)
 			(= temp1 (<< (>> number $0004) $0001))
 			(= temp2 (& number $000f))
-			(InvPrint BAD_SELECTOR: temp0 temp1 temp2 self)
+			(InvPrint sel_706: temp0 temp1 temp2 self)
 		else
 			(return 0)
 		)
@@ -250,7 +246,7 @@
 
 	(method (showSelf param1 &tmp temp0 temp1)
 		(if (== param1 message)
-			((gUser BAD_SELECTOR:) BAD_SELECTOR: BAD_SELECTOR: 0)
+			((gUser sel_715:) sel_736: sel_719: 0)
 			(Lock rsVIEW 999)
 			(Lock rsVIEW 993)
 			(= temp0 number)
@@ -261,21 +257,21 @@
 			(invPlane picture: temp0)
 			(if (== BAD_SELECTOR 0)
 				(invPlane init: 0 0 639 479)
-				((gUser BAD_SELECTOR:) BAD_SELECTOR: 0)
+				((gUser sel_715:) sel_717: 0)
 				(exitButton posn: 8 440)
 			else
 				(invPlane init: 12 15 627 349)
-				((gUser BAD_SELECTOR:) BAD_SELECTOR: 12 15 627 349)
+				((gUser sel_715:) sel_717: 12 15 627 349)
 				(exitButton posn: 8 292)
 			)
 			(UpdateScreenItem exitButton)
-			(self BAD_SELECTOR:)
+			(self sel_866:)
 			(= global135 0)
 			(while ((= temp1 (Event new: 3)) type:)
 				(temp1 dispose:)
 			)
-			(gUser BAD_SELECTOR: 62)
-			((gUser BAD_SELECTOR:) update: BAD_SELECTOR: 1)
+			(gUser sel_712: 62)
+			((gUser sel_715:) update: sel_719: 1)
 			(return 1)
 		else
 			(return 0)
@@ -297,10 +293,10 @@
 				nsBottom: 468
 			)
 			(UpdateScreenItem exitButton)
-			((gUser BAD_SELECTOR:) BAD_SELECTOR: 0)
+			((gUser sel_715:) sel_717: 0)
 		)
 		(UpdatePlane invPlane)
-		(self BAD_SELECTOR:)
+		(self sel_866:)
 	)
 
 	(method (BAD_SELECTOR)
@@ -323,10 +319,10 @@
 			(invPlane setRect: 12 15 627 348)
 			(exitButton posn: 8 292)
 			(UpdateScreenItem exitButton)
-			((gUser BAD_SELECTOR:) BAD_SELECTOR: 12 15 627 349)
+			((gUser sel_715:) sel_717: 12 15 627 349)
 		)
 		(UpdatePlane invPlane)
-		(self BAD_SELECTOR:)
+		(self sel_866:)
 	)
 
 	(method (select param1)
@@ -349,7 +345,7 @@
 				(return 1)
 			)
 			(else
-				((gUser BAD_SELECTOR:) BAD_SELECTOR:)
+				((gUser sel_715:) sel_734:)
 				(return 0)
 			)
 		)
@@ -540,7 +536,7 @@
 		(if (== gChapter 6)
 			(= noun 203)
 		)
-		(super BAD_SELECTOR: &rest)
+		(super sel_833: &rest)
 	)
 
 	(method (BAD_SELECTOR)
@@ -1850,7 +1846,7 @@
 			((and (== theVerb 21) (== gCurRoomNum 670)) ; invMatches, cavePitRm
 				(SetFlag 658)
 				(gEgo put: 50 put: 51) ; invLantern, invMatches
-				(gUser BAD_SELECTOR: 62)
+				(gUser sel_712: 62)
 				(GKHotCursor update:)
 				(gCurRoom setScript: litLanternScript)
 				(return 1)
@@ -1921,7 +1917,7 @@
 			((and (== theVerb 24) (== gCurRoomNum 670)) ; invLantern, cavePitRm
 				(SetFlag 658)
 				(gEgo put: 50 put: 51) ; invLantern, invMatches
-				(gUser BAD_SELECTOR: 62)
+				(gUser sel_712: 62)
 				(GKHotCursor update:)
 				(gCurRoom setScript: litLanternScript)
 				(return 1)
@@ -2414,7 +2410,7 @@
 
 	(method (showSelf)
 		(if (and (super showSelf: &rest) (IsFlag 741))
-			(self BAD_SELECTOR:)
+			(self sel_864:)
 		)
 	)
 
@@ -3067,12 +3063,12 @@
 
 	(method (init)
 		(= scratch 0)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR:)
-		(= local1 ((gUser BAD_SELECTOR:) BAD_SELECTOR:))
-		((gUser BAD_SELECTOR:) BAD_SELECTOR: (List new:))
+		((gUser sel_715:) sel_736:)
+		(= local1 ((gUser sel_715:) sel_718:))
+		((gUser sel_715:) sel_718: (List new:))
 		(super init: &rest)
 		(exitButton init: self 1 1)
-		((gUser BAD_SELECTOR:) update: BAD_SELECTOR: 0)
+		((gUser sel_715:) update: sel_719: 0)
 		(= priority (+ (GetHighPlanePri) 1))
 		(UpdatePlane self)
 	)
@@ -3092,11 +3088,11 @@
 	)
 
 	(method (dispose)
-		(((gUser BAD_SELECTOR:) BAD_SELECTOR:) release: dispose:)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR: local1)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR: 1)
+		(((gUser sel_715:) sel_718:) release: dispose:)
+		((gUser sel_715:) sel_718: local1)
+		((gUser sel_715:) sel_719: 1)
 		(= scratch 0)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR: 0)
+		((gUser sel_715:) sel_717: 0)
 		(= global135 1)
 		(super dispose: &rest)
 		(if global249
@@ -3140,15 +3136,15 @@
 		)
 		(if (not plane)
 			(= plane invPlane)
-			((invPlane BAD_SELECTOR:) add: self)
-			((gUser BAD_SELECTOR:) add: self)
+			((invPlane sel_744:) add: self)
+			((gUser sel_715:) add: self)
 		)
 	)
 
 	(method (dispose)
 		(self setPolygon: 0)
-		((invPlane BAD_SELECTOR:) delete: self)
-		(((gUser BAD_SELECTOR:) BAD_SELECTOR:) delete: self)
+		((invPlane sel_744:) delete: self)
+		(((gUser sel_715:) sel_718:) delete: self)
 		(= plane (= nsLeft (= nsTop (= nsBottom (= nsRight 0)))))
 	)
 
@@ -3173,7 +3169,7 @@
 	)
 
 	(method (doVerb)
-		(local0 BAD_SELECTOR:)
+		(local0 sel_864:)
 	)
 )
 
@@ -3187,7 +3183,7 @@
 	)
 
 	(method (doVerb)
-		(local0 BAD_SELECTOR:)
+		(local0 sel_865:)
 	)
 )
 

@@ -50,11 +50,11 @@
 		)
 	)
 	(if (temp1 size:)
-		(if (or (< (= global120 (temp1 asInteger:)) 0) (> global120 4))
-			(= global120 1)
+		(if (or (< (= gAct (temp1 asInteger:)) 0) (> gAct 4))
+			(= gAct 1)
 		)
 	else
-		(= global120 1)
+		(= gAct 1)
 	)
 	(if (temp0 size:)
 		(= global300 (temp0 asInteger:))
@@ -265,7 +265,7 @@
 		)
 		(localproc_0)
 	else
-		(= global148 global300)
+		(= gShuttleRoomNum global300)
 		(= global300 480)
 	)
 )
@@ -274,7 +274,7 @@
 	(properties)
 
 	(method (init)
-		(if global100
+		(if gDebugging
 			(= local0 (IntArray with: 0 0 0 0))
 			(super init:)
 			(localproc_0)

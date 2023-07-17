@@ -136,31 +136,31 @@
 				(hand setCycle: Fwd)
 				(leftEyebrow setCycle: Beg)
 				(rightEyebrow setCycle: Beg)
-				(Say Vinnie_ITotore 205 3 108 139 self) ; "Yes sir, Mr. Bigg! Our friends in Hollywood have the industry in an uproar. Their `America's Sexiest Home Videos' show is the talk of show biz!"
+				(Say Vinnie 205 3 108 139 self) ; "Yes sir, Mr. Bigg! Our friends in Hollywood have the industry in an uproar. Their `America's Sexiest Home Videos' show is the talk of show biz!"
 			)
 			(4
 				(= ticks 45)
 			)
 			(5
-				(Say Vinnie_ITotore 205 4 108 139 self) ; "There's every indication it will be the smash hit of the fall season."
+				(Say Vinnie 205 4 108 139 self) ; "There's every indication it will be the smash hit of the fall season."
 			)
 			(6
 				(= ticks 45)
 			)
 			(7
-				(Say Bruno_IBruno 205 5 108 139 self) ; "And we've found the perfect way to attack our little straw dog: I've discovered a new, hyper-active, political action committee called `Conservatives Against Nearly Everything.'"
+				(Say Bruno 205 5 108 139 self) ; "And we've found the perfect way to attack our little straw dog: I've discovered a new, hyper-active, political action committee called `Conservatives Against Nearly Everything.'"
 			)
 			(8
 				(= ticks 45)
 			)
 			(9
-				(Say Bruno_IBruno 205 6 108 139 self) ; "I'm sure they would be willing to become the focus of a national campaign to clean up the airwaves."
+				(Say Bruno 205 6 108 139 self) ; "I'm sure they would be willing to become the focus of a national campaign to clean up the airwaves."
 			)
 			(10
 				(= ticks 45)
 			)
 			(11
-				(Say Bruno_IBruno 205 7 108 139 self) ; "I'd like to propose to you, Boss, that we make a `little investment' in the health and well-being of C.A.N.E. You know, a `little something' to show how much we support their cause.'"
+				(Say Bruno 205 7 108 139 self) ; "I'd like to propose to you, Boss, that we make a `little investment' in the health and well-being of C.A.N.E. You know, a `little something' to show how much we support their cause.'"
 			)
 			(12
 				(TPrint 205 8) ; "The room is filled with suppressed laughter."
@@ -211,27 +211,13 @@
 				(= ticks 45)
 			)
 			(3
-				(Say ; "Let me assure you, Julius: everything IS proceeding nicely. No, sir. I will NOT let you down."
-					Silas_Scruemall_IMimmo_Chiavatutto
-					205
-					14
-					108
-					139
-					self
-				)
+				(Say Silas_Scruemall 205 14 108 139 self) ; "Let me assure you, Julius: everything IS proceeding nicely. No, sir. I will NOT let you down."
 			)
 			(4
 				(= ticks 45)
 			)
 			(5
-				(Say ; "Yes, sir. That's also being taken care of. No, it's handled. I have a man on it right now. All right; whatever you say, Julius!"
-					Silas_Scruemall_IMimmo_Chiavatutto
-					205
-					15
-					108
-					139
-					self
-				)
+				(Say Silas_Scruemall 205 15 108 139 self) ; "Yes, sir. That's also being taken care of. No, it's handled. I have a man on it right now. All right; whatever you say, Julius!"
 			)
 			(6
 				(= ticks 30)
@@ -259,27 +245,13 @@
 				(= cycles 2)
 			)
 			(2
-				(Say ; "Well, thank you, gentlemen. I promise your CONSIDERABLE contribution will not be wasted!"
-					President_of_C_A_N_E__IPresidente_della_C_A_N_N_A_
-					205
-					17
-					108
-					139
-					self
-				)
+				(Say President_of_C_A_N_E_ 205 17 108 139 self) ; "Well, thank you, gentlemen. I promise your CONSIDERABLE contribution will not be wasted!"
 			)
 			(3
 				(= ticks 45)
 			)
 			(4
-				(Say ; "I daresay this one donation will enable us to now succeed where we've been unable to before. You just don't know how grateful we are!"
-					President_of_C_A_N_E__IPresidente_della_C_A_N_N_A_
-					205
-					18
-					108
-					139
-					self
-				)
+				(Say President_of_C_A_N_E_ 205 18 108 139 self) ; "I daresay this one donation will enable us to now succeed where we've been unable to before. You just don't know how grateful we are!"
 			)
 			(5
 				(= ticks 45)
@@ -297,14 +269,7 @@
 				(= ticks 45)
 			)
 			(10
-				(Say ; "Why, sure. In fact, I know just where this money would do the most good. Tell your boss he's made the right decision going with us! C.A.N.E. will not let him down!"
-					President_of_C_A_N_E__IPresidente_della_C_A_N_N_A_
-					205
-					21
-					108
-					139
-					self
-				)
+				(Say President_of_C_A_N_E_ 205 21 108 139 self) ; "Why, sure. In fact, I know just where this money would do the most good. Tell your boss he's made the right decision going with us! C.A.N.E. will not let him down!"
 			)
 			(11
 				(= ticks 45)
@@ -384,27 +349,13 @@
 				(= ticks 45)
 			)
 			(6
-				(Say ; "Yeah, okay, Senator, we've got it. Here's the deal: there's plenty more where this comes from, as long as we see some progress on that bill to tighten regulation of the airwaves."
-					A_C_A_N_E__er_IUno_della_C_A_N_N_A_
-					205
-					27
-					108
-					139
-					self
-				)
+				(Say A_C_A_N_E__er 205 27 108 139 self) ; "Yeah, okay, Senator, we've got it. Here's the deal: there's plenty more where this comes from, as long as we see some progress on that bill to tighten regulation of the airwaves."
 			)
 			(7
 				(= ticks 45)
 			)
 			(8
-				(Say ; "We want that smut off the air--and we're willing to back up our beliefs in the `traditional' American way. So? Do you want it or don't you?"
-					A_C_A_N_E__er_IUno_della_C_A_N_N_A_
-					205
-					28
-					108
-					139
-					self
-				)
+				(Say A_C_A_N_E__er 205 28 108 139 self) ; "We want that smut off the air--and we're willing to back up our beliefs in the `traditional' American way. So? Do you want it or don't you?"
 			)
 			(9
 				(= ticks 45)
@@ -493,9 +444,8 @@
 	)
 )
 
-(instance Vinnie_ITotore of Talker
+(instance Vinnie of Talker
 	(properties
-		name {Vinnie}
 		x 1
 		y 180
 		nsTop 66
@@ -519,9 +469,8 @@
 	)
 )
 
-(instance Bruno_IBruno of Talker
+(instance Bruno of Talker
 	(properties
-		name {Bruno}
 		x 30
 		y 180
 		nsTop 95
@@ -542,7 +491,7 @@
 	)
 )
 
-(instance Silas_Scruemall_IMimmo_Chiavatutto of Talker
+(instance Silas_Scruemall of Talker
 	(properties
 		name {Silas Scruemall}
 		x 80
@@ -585,7 +534,7 @@
 	)
 )
 
-(instance President_of_C_A_N_E__IPresidente_della_C_A_N_N_A_ of Talker
+(instance President_of_C_A_N_E_ of Talker
 	(properties
 		name {President of C.A.N.E.}
 		x 120
@@ -660,7 +609,7 @@
 	)
 )
 
-(instance A_C_A_N_E__er_IUno_della_C_A_N_N_A_ of Talker
+(instance A_C_A_N_E__er of Talker
 	(properties
 		name {A C.A.N.E.-er}
 		x 1

@@ -29,7 +29,7 @@
 				(gEgo posn: 283 303 heading: 0)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 77 34 303 160 init:)
+		(gEgo sel_737: setScaler: Scaler 77 34 303 160 init:)
 		(super init: &rest)
 		(fEastExit init:)
 		(fWestExit init:)

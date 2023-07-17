@@ -457,7 +457,7 @@
 					(!= local49 gMouseY)
 				)
 			)
-			(RobotFeature BAD_SELECTOR:)
+			(RobotFeature sel_917:)
 		)
 		(= local48 gMouseX)
 		(= local49 gMouseY)
@@ -628,16 +628,16 @@
 					)
 					(KEY_DIVIDE
 						(= temp0 (GetNumber {Intensity: }))
-						(gGame BAD_SELECTOR: temp0)
+						(gGame sel_918: temp0)
 					)
 					($007c ; |
 						(-- local27)
-						(gGame BAD_SELECTOR: local27)
+						(gGame sel_918: local27)
 						(= local47 1)
 					)
 					(KEY_ADD
 						(++ local27)
-						(gGame BAD_SELECTOR: local27)
+						(gGame sel_918: local27)
 						(= local47 1)
 					)
 					($003d ; =
@@ -777,7 +777,7 @@
 							)
 							((OneOf (event message:) JOY_DOWN JOY_DOWN)
 								(= temp0 (GetNumber {Intensity:}))
-								(gEgo BAD_SELECTOR: temp0 0)
+								(gEgo sel_918: temp0 0)
 							)
 							((OneOf (event message:) KEY_T KEY_t)
 								(cond
@@ -1337,7 +1337,7 @@
 										(act9 onMeCheck:)
 										(< local58 (- local57 1))
 									)
-									(RobotFeature BAD_SELECTOR:)
+									(RobotFeature sel_917:)
 									(++ local58)
 									(if (not (local62 at: local58))
 										(Robot 1 local58 local59 local60) ; DisplayFrame
@@ -1389,7 +1389,7 @@
 									((act9 onMeCheck:)
 										(= local24 0)
 										(= local23 0)
-										(RobotFeature BAD_SELECTOR:)
+										(RobotFeature sel_917:)
 										(if
 											(OneOf
 												local58
@@ -1622,7 +1622,7 @@
 							(Robot 6) ; Exists
 							(RobotFeature onMe: (event x:) (event y:))
 						)
-						(RobotFeature BAD_SELECTOR:)
+						(RobotFeature sel_917:)
 						(= local7 0)
 						(= temp8 (- (event x:) local59))
 						(= temp9 (- (event y:) local60))
@@ -1632,7 +1632,7 @@
 								2
 							)
 							(temp10 localize: (gCurRoom plane:))
-							(RobotFeature BAD_SELECTOR:)
+							(RobotFeature sel_917:)
 							(Robot
 								1 ; DisplayFrame
 								local58

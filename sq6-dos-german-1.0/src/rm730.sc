@@ -112,7 +112,7 @@
 				(gEgo setMotion: MoveTo 113 111 self)
 			)
 			(2
-				(proc0_7 1 1 self)
+				(Fade 1 1 self)
 			)
 			(3
 				(gCast eachElementDo: #dispose)
@@ -121,7 +121,7 @@
 			)
 			(4
 				(gGSound1 stop:)
-				(proc0_7 0 1 self)
+				(Fade 0 1 self)
 			)
 			(5
 				(= gAutoRobot

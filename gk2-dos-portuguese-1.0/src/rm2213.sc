@@ -46,7 +46,7 @@
 				(gEgo posn: 359 328 heading: 135)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 100 90 338 303 init:)
+		(gEgo sel_737: setScaler: Scaler 100 90 338 303 init:)
 		(if (not (gEgo has: 73)) ; invPitcher
 			(vBucket init:)
 		)

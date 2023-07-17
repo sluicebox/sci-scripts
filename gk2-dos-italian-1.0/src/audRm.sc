@@ -31,7 +31,7 @@
 			(11302
 				(gEgo
 					posn: 579 178
-					BAD_SELECTOR: 225
+					sel_737: 225
 					setScale:
 					scaleX: 20
 					scaleY: 20
@@ -41,7 +41,7 @@
 			(11304
 				(gEgo
 					posn: 572 79
-					BAD_SELECTOR: 225
+					sel_737: 225
 					setScale:
 					scaleX: 20
 					scaleY: 20
@@ -51,7 +51,7 @@
 			(else
 				(gEgo
 					posn: 38 313
-					BAD_SELECTOR: 45
+					sel_737: 45
 					setScaler: Scaler 88 22 381 223
 					init:
 				)

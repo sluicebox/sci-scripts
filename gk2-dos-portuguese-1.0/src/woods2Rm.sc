@@ -32,7 +32,7 @@
 				(gSoundManager play: 0 600 601)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 81 28 322 192 init:)
+		(gEgo sel_737: setScaler: Scaler 81 28 322 192 init:)
 		(fEastExit init:)
 		(fWestExit init:)
 		(super init: &rest)

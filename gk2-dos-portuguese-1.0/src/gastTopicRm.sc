@@ -33,11 +33,8 @@
 				(= BAD_SELECTOR 174)
 			)
 		)
-		(tGHCase1
-			BAD_SELECTOR: tGHWhereGabe tGHHowLong tGHAbout
-			BAD_SELECTOR: 1
-		)
-		(tGHCaseOther BAD_SELECTOR: tGHWhereGabe tGHHowLong tGHAbout)
+		(tGHCase1 sel_835: tGHWhereGabe tGHHowLong tGHAbout sel_832: 1)
+		(tGHCaseOther sel_835: tGHWhereGabe tGHHowLong tGHAbout)
 		(if (!= gChapter 4)
 			(super
 				init:

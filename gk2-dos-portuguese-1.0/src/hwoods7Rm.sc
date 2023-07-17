@@ -53,7 +53,7 @@
 				)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 88 46 323 214 init:)
+		(gEgo sel_737: setScaler: Scaler 88 46 323 214 init:)
 		(if (OneOf gPrevRoomNum 666 544) ; uDie, vgRm
 			(PlayScene 685)
 			(if (== gPrevRoomNum 666) ; uDie

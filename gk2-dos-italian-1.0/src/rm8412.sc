@@ -29,7 +29,7 @@
 			else
 				(SetFlag 576)
 				(SetFlag 408)
-				(gSoundManager BAD_SELECTOR: 1)
+				(gSoundManager sel_702: 1)
 				(PlayScene 498 0 8414) ; rm8412Topic
 			)
 		else

@@ -63,38 +63,35 @@
 	(method (init)
 		((= gInventory self)
 			add:
-				Ok_IOK
-				(Key_IChiave cursor: keyCursor yourself:)
-				(Pie_ITorta cursor: pieCursor yourself:)
-				(Golden_Needle_IAgo_d_Oro cursor: needleCursor yourself:)
-				(Coin_IMoneta cursor: silverCursor yourself:)
-				(Fish_IPesce cursor: fishCursor yourself:)
-				(Brass_Bottle_IBottiglia_d_Ottone
-					cursor: bottleCursor
-					yourself:
-				)
-				(Staff_IBastone cursor: staffCursor yourself:)
-				(Shoe_IScarpa cursor: shoeCursor yourself:)
-				(Heart_ICuore cursor: heartCursor yourself:)
-				(Harp_IArpa cursor: harpCursor yourself:)
-				(Gold_Coin_IMoneta_d_Oro cursor: goldCursor yourself:)
-				(Marionette_IMarionetta cursor: puppetCursor yourself:)
-				(Pouch_IBorsellino cursor: pouchCursor yourself:)
-				(Emeralds_ISmeraldi cursor: threeEmeraldCursor yourself:)
-				(Spinning_Wheel_IArcolaio cursor: wheelCursor yourself:)
-				(Stick_IBastone cursor: stickCursor yourself:)
-				(Honeycomb_IFavo cursor: honeyCursor yourself:)
-				(Beeswax_ICera cursor: waxCursor yourself:)
-				(Leg_of_Lamb_ICoscia_d_agnello cursor: lambCursor yourself:)
-				(Rope_IFune cursor: ropeCursor yourself:)
-				(Crystal_ICristallo cursor: crystalCursor yourself:)
-				(Hammer_IMartello cursor: hammerCursor yourself:)
-				(Shell_IConchiglia cursor: shellCursor yourself:)
-				(Bag_of_Peas_ISacchetto_di_Piselli cursor: peasCursor yourself:)
-				(Locket_IMedaglione cursor: locketCursor yourself:)
-				(Cloak_IMantello cursor: cloakCursor yourself:)
-				(Amulet_IAmuleto cursor: amuletCursor yourself:)
-				(Wand_IBacchetta
+				Ok
+				(Key cursor: keyCursor yourself:)
+				(Pie cursor: pieCursor yourself:)
+				(Golden_Needle cursor: needleCursor yourself:)
+				(Coin cursor: silverCursor yourself:)
+				(Fish cursor: fishCursor yourself:)
+				(Brass_Bottle cursor: bottleCursor yourself:)
+				(Staff cursor: staffCursor yourself:)
+				(Shoe cursor: shoeCursor yourself:)
+				(Heart cursor: heartCursor yourself:)
+				(Harp cursor: harpCursor yourself:)
+				(Gold_Coin cursor: goldCursor yourself:)
+				(Marionette cursor: puppetCursor yourself:)
+				(Pouch cursor: pouchCursor yourself:)
+				(Emeralds cursor: threeEmeraldCursor yourself:)
+				(Spinning_Wheel cursor: wheelCursor yourself:)
+				(Stick cursor: stickCursor yourself:)
+				(Honeycomb cursor: honeyCursor yourself:)
+				(Beeswax cursor: waxCursor yourself:)
+				(Leg_of_Lamb cursor: lambCursor yourself:)
+				(Rope cursor: ropeCursor yourself:)
+				(Crystal cursor: crystalCursor yourself:)
+				(Hammer cursor: hammerCursor yourself:)
+				(Shell cursor: shellCursor yourself:)
+				(Bag_of_Peas cursor: peasCursor yourself:)
+				(Locket cursor: locketCursor yourself:)
+				(Cloak cursor: cloakCursor yourself:)
+				(Amulet cursor: amuletCursor yourself:)
+				(Wand
 					cursor:
 						(if (not (IsFlag 60))
 							cwandCursor
@@ -103,40 +100,19 @@
 						)
 					yourself:
 				)
-				(Sled_ISlitta cursor: sledCursor yourself:)
-				(Iron_Bar_ISbarra_di_Ferro cursor: ironbarCursor yourself:)
-				(Fishhook_IAmo_da_Pesca cursor: hookCursor yourself:)
-				(Moldy_Cheese_IFormaggio_Ammuffito
-					cursor: cheeseCursor
-					yourself:
-				)
-				(Elf_Shoes__IScarpe_del_Folletto
-					cursor: elfShoeCursor
-					yourself:
-				)
-				(Tambourine_ITamburello cursor: tambourineCursor yourself:)
-				(Mordack_s_Wand_IBacchetta_di_Mordack
-					cursor: mWandCursor
-					yourself:
-				)
-				(Hairpin_IForcina cursor: hairpinCursor yourself:)
-				(Cat_Fish_IPesce_Gatto cursor: mFishCursor yourself:)
-				(Mongoose_Spell_IIncantesimo_Mangusta
-					cursor: cGlowWandCursor
-					yourself:
-				)
-				(Bunny_Spell_IIncantesimo_Coniglio
-					cursor: cGlowWandCursor
-					yourself:
-				)
-				(Rain_Spell_IIncantesimo_Pioggia
-					cursor: cGlowWandCursor
-					yourself:
-				)
-				(Tiger_Spell_IIncantesimo_Tigre
-					cursor: cGlowWandCursor
-					yourself:
-				)
+				(Sled cursor: sledCursor yourself:)
+				(Iron_Bar cursor: ironbarCursor yourself:)
+				(Fishhook cursor: hookCursor yourself:)
+				(Moldy_Cheese cursor: cheeseCursor yourself:)
+				(Elf_Shoes_ cursor: elfShoeCursor yourself:)
+				(Tambourine cursor: tambourineCursor yourself:)
+				(Mordack_s_Wand cursor: mWandCursor yourself:)
+				(Hairpin cursor: hairpinCursor yourself:)
+				(Cat_Fish cursor: mFishCursor yourself:)
+				(Mongoose_Spell cursor: cGlowWandCursor yourself:)
+				(Bunny_Spell cursor: cGlowWandCursor yourself:)
+				(Rain_Spell cursor: cGlowWandCursor yourself:)
+				(Tiger_Spell cursor: cGlowWandCursor yourself:)
 				(invLook cursor: eyeCursor yourself:)
 				(invHand cursor: handCursor yourself:)
 				(invSelect cursor: gNormalCursor yourself:)
@@ -159,16 +135,14 @@
 	)
 )
 
-(instance Ok_IOK of KQInvItem
+(instance Ok of KQInvItem
 	(properties
-		name {Ok}
 		view 895
 	)
 )
 
-(instance Key_IChiave of KQInvItem
+(instance Key of KQInvItem
 	(properties
-		name {Key}
 		view 892
 		loop 2
 		cel 4
@@ -178,9 +152,8 @@
 	)
 )
 
-(instance Pie_ITorta of KQInvItem
+(instance Pie of KQInvItem
 	(properties
-		name {Pie}
 		view 892
 		cel 9
 		signal 2
@@ -189,7 +162,7 @@
 	)
 )
 
-(instance Golden_Needle_IAgo_d_Oro of KQInvItem
+(instance Golden_Needle of KQInvItem
 	(properties
 		name {Golden Needle}
 		view 892
@@ -200,9 +173,8 @@
 	)
 )
 
-(instance Coin_IMoneta of KQInvItem
+(instance Coin of KQInvItem
 	(properties
-		name {Coin}
 		view 892
 		cel 1
 		signal 2
@@ -211,9 +183,8 @@
 	)
 )
 
-(instance Fish_IPesce of KQInvItem
+(instance Fish of KQInvItem
 	(properties
-		name {Fish}
 		view 891
 		signal 2
 		description 5
@@ -221,7 +192,7 @@
 	)
 )
 
-(instance Brass_Bottle_IBottiglia_d_Ottone of KQInvItem
+(instance Brass_Bottle of KQInvItem
 	(properties
 		name {Brass Bottle}
 		view 891
@@ -245,9 +216,8 @@
 	)
 )
 
-(instance Staff_IBastone of KQInvItem
+(instance Staff of KQInvItem
 	(properties
-		name {Staff}
 		view 891
 		cel 2
 		signal 2
@@ -256,9 +226,8 @@
 	)
 )
 
-(instance Shoe_IScarpa of KQInvItem
+(instance Shoe of KQInvItem
 	(properties
-		name {Shoe}
 		view 892
 		cel 6
 		signal 2
@@ -267,9 +236,8 @@
 	)
 )
 
-(instance Heart_ICuore of KQInvItem
+(instance Heart of KQInvItem
 	(properties
-		name {Heart}
 		view 892
 		loop 2
 		cel 7
@@ -279,9 +247,8 @@
 	)
 )
 
-(instance Harp_IArpa of KQInvItem
+(instance Harp of KQInvItem
 	(properties
-		name {Harp}
 		view 893
 		signal 2
 		description 10
@@ -289,7 +256,7 @@
 	)
 )
 
-(instance Gold_Coin_IMoneta_d_Oro of KQInvItem
+(instance Gold_Coin of KQInvItem
 	(properties
 		name {Gold Coin}
 		view 891
@@ -300,9 +267,8 @@
 	)
 )
 
-(instance Marionette_IMarionetta of KQInvItem
+(instance Marionette of KQInvItem
 	(properties
-		name {Marionette}
 		view 892
 		cel 7
 		signal 2
@@ -310,9 +276,8 @@
 	)
 )
 
-(instance Pouch_IBorsellino of KQInvItem
+(instance Pouch of KQInvItem
 	(properties
-		name {Pouch}
 		view 892
 		loop 2
 		cel 5
@@ -384,9 +349,8 @@
 	)
 )
 
-(instance Emeralds_ISmeraldi of KQInvItem
+(instance Emeralds of KQInvItem
 	(properties
-		name {Emeralds}
 		view 891
 		cel 6
 		signal 2
@@ -425,7 +389,7 @@
 	)
 )
 
-(instance Spinning_Wheel_IArcolaio of KQInvItem
+(instance Spinning_Wheel of KQInvItem
 	(properties
 		name {Spinning Wheel}
 		view 892
@@ -436,9 +400,8 @@
 	)
 )
 
-(instance Stick_IBastone of KQInvItem
+(instance Stick of KQInvItem
 	(properties
-		name {Stick}
 		view 892
 		loop 2
 		cel 1
@@ -448,9 +411,8 @@
 	)
 )
 
-(instance Honeycomb_IFavo of KQInvItem
+(instance Honeycomb of KQInvItem
 	(properties
-		name {Honeycomb}
 		view 891
 		cel 7
 		signal 2
@@ -459,9 +421,8 @@
 	)
 )
 
-(instance Beeswax_ICera of KQInvItem
+(instance Beeswax of KQInvItem
 	(properties
-		name {Beeswax}
 		view 892
 		loop 2
 		signal 2
@@ -469,7 +430,7 @@
 	)
 )
 
-(instance Leg_of_Lamb_ICoscia_d_agnello of KQInvItem
+(instance Leg_of_Lamb of KQInvItem
 	(properties
 		name {Leg of Lamb}
 		view 892
@@ -503,9 +464,8 @@
 	)
 )
 
-(instance Rope_IFune of KQInvItem
+(instance Rope of KQInvItem
 	(properties
-		name {Rope}
 		view 892
 		cel 8
 		signal 2
@@ -514,9 +474,8 @@
 	)
 )
 
-(instance Crystal_ICristallo of KQInvItem
+(instance Crystal of KQInvItem
 	(properties
-		name {Crystal}
 		view 893
 		cel 1
 		signal 2
@@ -525,9 +484,8 @@
 	)
 )
 
-(instance Hammer_IMartello of KQInvItem
+(instance Hammer of KQInvItem
 	(properties
-		name {Hammer}
 		view 892
 		loop 4
 		signal 2
@@ -535,9 +493,8 @@
 	)
 )
 
-(instance Shell_IConchiglia of KQInvItem
+(instance Shell of KQInvItem
 	(properties
-		name {Shell}
 		view 893
 		cel 2
 		signal 2
@@ -545,7 +502,7 @@
 	)
 )
 
-(instance Bag_of_Peas_ISacchetto_di_Piselli of KQInvItem
+(instance Bag_of_Peas of KQInvItem
 	(properties
 		name {Bag of Peas}
 		view 893
@@ -571,9 +528,8 @@
 	)
 )
 
-(instance Locket_IMedaglione of KQInvItem
+(instance Locket of KQInvItem
 	(properties
-		name {Locket}
 		view 893
 		cel 6
 		signal 2
@@ -595,9 +551,8 @@
 	)
 )
 
-(instance Cloak_IMantello of KQInvItem
+(instance Cloak of KQInvItem
 	(properties
-		name {Cloak}
 		view 892
 		cel 2
 		signal 2
@@ -606,9 +561,8 @@
 	)
 )
 
-(instance Amulet_IAmuleto of KQInvItem
+(instance Amulet of KQInvItem
 	(properties
-		name {Amulet}
 		view 892
 		loop 2
 		cel 2
@@ -632,9 +586,8 @@
 	)
 )
 
-(instance Wand_IBacchetta of KQInvItem
+(instance Wand of KQInvItem
 	(properties
-		name {Wand}
 		view 892
 		signal 2
 		description 28
@@ -665,9 +618,8 @@
 	)
 )
 
-(instance Sled_ISlitta of KQInvItem
+(instance Sled of KQInvItem
 	(properties
-		name {Sled}
 		view 892
 		cel 3
 		signal 2
@@ -676,7 +628,7 @@
 	)
 )
 
-(instance Iron_Bar_ISbarra_di_Ferro of KQInvItem
+(instance Iron_Bar of KQInvItem
 	(properties
 		name {Iron Bar}
 		view 893
@@ -687,9 +639,8 @@
 	)
 )
 
-(instance Fishhook_IAmo_da_Pesca of KQInvItem
+(instance Fishhook of KQInvItem
 	(properties
-		name {Fishhook}
 		view 893
 		cel 11
 		signal 2
@@ -698,7 +649,7 @@
 	)
 )
 
-(instance Moldy_Cheese_IFormaggio_Ammuffito of KQInvItem
+(instance Moldy_Cheese of KQInvItem
 	(properties
 		name {Moldy Cheese}
 		view 893
@@ -709,7 +660,7 @@
 	)
 )
 
-(instance Elf_Shoes__IScarpe_del_Folletto of KQInvItem
+(instance Elf_Shoes_ of KQInvItem
 	(properties
 		name {Elf Shoes }
 		view 892
@@ -721,9 +672,8 @@
 	)
 )
 
-(instance Tambourine_ITamburello of KQInvItem
+(instance Tambourine of KQInvItem
 	(properties
-		name {Tambourine}
 		view 892
 		loop 2
 		cel 3
@@ -733,7 +683,7 @@
 	)
 )
 
-(instance Mordack_s_Wand_IBacchetta_di_Mordack of KQInvItem
+(instance Mordack_s_Wand of KQInvItem
 	(properties
 		name {Mordack's Wand}
 		view 893
@@ -759,9 +709,8 @@
 	)
 )
 
-(instance Hairpin_IForcina of KQInvItem
+(instance Hairpin of KQInvItem
 	(properties
-		name {Hairpin}
 		view 893
 		cel 9
 		signal 2
@@ -770,7 +719,7 @@
 	)
 )
 
-(instance Cat_Fish_IPesce_Gatto of KQInvItem
+(instance Cat_Fish of KQInvItem
 	(properties
 		name {Cat Fish}
 		view 893
@@ -781,7 +730,7 @@
 	)
 )
 
-(instance Mongoose_Spell_IIncantesimo_Mangusta of KQInvSpellItem
+(instance Mongoose_Spell of KQInvSpellItem
 	(properties
 		name {Mongoose Spell}
 		view 712
@@ -791,7 +740,7 @@
 	)
 )
 
-(instance Bunny_Spell_IIncantesimo_Coniglio of KQInvSpellItem
+(instance Bunny_Spell of KQInvSpellItem
 	(properties
 		name {Bunny Spell}
 		view 712
@@ -802,7 +751,7 @@
 	)
 )
 
-(instance Rain_Spell_IIncantesimo_Pioggia of KQInvSpellItem
+(instance Rain_Spell of KQInvSpellItem
 	(properties
 		name {Rain Spell}
 		view 712
@@ -813,7 +762,7 @@
 	)
 )
 
-(instance Tiger_Spell_IIncantesimo_Tigre of KQInvSpellItem
+(instance Tiger_Spell of KQInvSpellItem
 	(properties
 		name {Tiger Spell}
 		view 712

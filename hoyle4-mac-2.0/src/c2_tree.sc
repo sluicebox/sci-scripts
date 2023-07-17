@@ -1401,7 +1401,7 @@
 						(and
 							(u> temp9 28672)
 							(or
-								(u> temp9 -32768)
+								(u> temp9 32768)
 								(>= (param1 calcHCP: temp10) 4)
 							)
 							(or

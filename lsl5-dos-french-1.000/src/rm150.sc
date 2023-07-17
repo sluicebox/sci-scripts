@@ -105,7 +105,7 @@
 	)
 )
 
-(instance You_FToi_a of Talker
+(instance You_a of Talker
 	(properties
 		name {You}
 		nsTop 88
@@ -116,12 +116,12 @@
 	)
 
 	(method (init)
-		(= mouth You_FToi_b)
+		(= mouth You_b)
 		(super init: &rest)
 	)
 )
 
-(instance You_FToi_b of Prop
+(instance You_b of Prop
 	(properties
 		name {You}
 		view 1151
@@ -319,7 +319,7 @@
 				(= ticks 123)
 			)
 			(18
-				(Say You_FToi_a 150 6 108 139 self) ; ""Why, my name is Larry; Larry Laffer," you reply."
+				(Say You_a 150 6 108 139 self) ; ""Why, my name is Larry; Larry Laffer," you reply."
 			)
 			(19
 				(= ticks 123)
@@ -337,7 +337,7 @@
 				(= ticks 123)
 			)
 			(24
-				(Say You_FToi_a 150 9 108 139 self) ; "Yes, I know," you offer proudly, "I'm the Chief Tape Rewinder and Sterilizer on this project!"
+				(Say You_a 150 9 108 139 self) ; "Yes, I know," you offer proudly, "I'm the Chief Tape Rewinder and Sterilizer on this project!"
 			)
 			(25
 				(= ticks 30)
@@ -369,7 +369,7 @@
 				(= ticks 123)
 			)
 			(34
-				(Say You_FToi_a 150 15 108 139 self) ; "What? Audition three women? No problem, boss, I'm your guy!"
+				(Say You_a 150 15 108 139 self) ; "What? Audition three women? No problem, boss, I'm your guy!"
 			)
 			(35
 				(= ticks 30)
@@ -393,7 +393,7 @@
 				(= ticks 123)
 			)
 			(41
-				(Say You_FToi_a 150 19 108 139 self) ; "Wow, Mr. Scruemall," you say, unable to contain your excitement, "I can always use another pocket protector. Mine's getting really vintage!"
+				(Say You_a 150 19 108 139 self) ; "Wow, Mr. Scruemall," you say, unable to contain your excitement, "I can always use another pocket protector. Mine's getting really vintage!"
 			)
 			(42
 				(= seconds 3)
@@ -405,8 +405,8 @@
 				(= ticks 123)
 			)
 			(45
-				(You_FToi_a talkWidth: 160)
-				(Say You_FToi_a 150 21 108 139 self) ; ""I knew that," you pretend."
+				(You_a talkWidth: 160)
+				(Say You_a 150 21 108 139 self) ; ""I knew that," you pretend."
 			)
 			(46
 				(= seconds 3)
@@ -419,8 +419,8 @@
 			)
 			(49
 				(larryCam dispose:)
-				(You_FToi_a talkWidth: 240)
-				(Say You_FToi_a 150 23 108 139 self) ; ""I can handle it, Sir," you say excitedly."
+				(You_a talkWidth: 240)
+				(Say You_a 150 23 108 139 self) ; ""I can handle it, Sir," you say excitedly."
 			)
 			(50
 				(= seconds 3)
@@ -433,8 +433,8 @@
 			)
 			(53
 				(TPrint 150 25 67 -1 28) ; "You think, "Wow! This could be the big break I've been hoping for!""
-				(You_FToi_a talkWidth: 240)
-				(Say You_FToi_a 150 26 108 139 self) ; "I promise to give it everything I've got!"
+				(You_a talkWidth: 240)
+				(Say You_a 150 26 108 139 self) ; "I promise to give it everything I've got!"
 			)
 			(54
 				(= ticks 123)

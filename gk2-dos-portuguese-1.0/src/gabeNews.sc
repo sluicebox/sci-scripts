@@ -22,7 +22,7 @@
 		(Palette 2 0 255 0) ; PalIntensity
 		(super init: &rest)
 		(gThePlane setRect: 0 0 640 480 priority: 202)
-		(gGame BAD_SELECTOR:)
+		(gGame sel_849:)
 		((ScriptID 0 9) active: 0) ; logo
 		((ScriptID 0 7) active: 0) ; movieButton
 		((ScriptID 0 5) active: 0) ; recButton

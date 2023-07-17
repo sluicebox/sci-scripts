@@ -85,7 +85,7 @@
 		)
 		(= keep 1)
 		(if (== local18 0)
-			(= local18 (+ 320 (* 10 (proc0_8 0 2))))
+			(= local18 (+ 320 (* 10 (RandomNumber 0 2))))
 		)
 		(if (and (== gCurRoomNum local18) (not (IsFlag 32)))
 			(Load 140 321) ; WAVE
@@ -148,10 +148,10 @@
 				(elmo init:)
 			)
 		)
-		(if (and (or (== local36 1) (>= 2 (proc0_8 1 16))) (not local39))
+		(if (and (or (== local36 1) (>= 2 (RandomNumber 1 16))) (not local39))
 			(wanderer init:)
 		)
-		(if (and (or (== local39 1) (>= 2 (proc0_8 1 14))) (not local36))
+		(if (and (or (== local39 1) (>= 2 (RandomNumber 1 14))) (not local36))
 			(wandererB init:)
 		)
 		(super init:)
@@ -467,7 +467,7 @@
 				)
 			)
 			(5
-				(proc0_4 gEgo blaine self)
+				(Face gEgo blaine self)
 			)
 			(6
 				(blaine setCycle: End self)
@@ -477,7 +477,7 @@
 					(cond
 						((IsFlag 43)
 							(= local15 1)
-							(switch (proc0_8 0 1)
+							(switch (RandomNumber 0 1)
 								(0
 									(gMessager say: 3 2 9 0 self 222) ; "He seems to be anxious to get somewhere else and ignores you."
 								)
@@ -539,7 +539,7 @@
 				(gEgo setMotion: MoveTo 131 132 self)
 			)
 			(1
-				(proc0_4 gEgo elmo self)
+				(Face gEgo elmo self)
 			)
 			(2
 				(SetFlag 30)
@@ -638,7 +638,7 @@
 				)
 			)
 			(5
-				(proc0_4 gEgo elmo self)
+				(Face gEgo elmo self)
 			)
 			(6
 				(cond
@@ -772,7 +772,7 @@
 				(photoCurtain setCycle: End self)
 			)
 			(5
-				(if (== (-= global150 1) 0)
+				(if (== (-= gBuckazoidCount 1) 0)
 					(gEgo put: 13) ; Buckazoids
 				)
 				(gTheIconBar show:)
@@ -943,7 +943,7 @@
 				(gEgo setMotion: MoveTo (- (blaine x:) 15) (blaine y:) self)
 			)
 			(1
-				(proc0_4 gEgo blaine self)
+				(Face gEgo blaine self)
 			)
 			(2
 				(blaine setCycle: End self)
@@ -973,7 +973,7 @@
 				(gEgo setMotion: MoveTo (- (blaine x:) 11) (blaine y:) self)
 			)
 			(1
-				(proc0_4 gEgo blaine self)
+				(Face gEgo blaine self)
 			)
 			(2
 				(blaine setCycle: End self)
@@ -1007,7 +1007,7 @@
 				(gGame points: 20)
 				(SetFlag 28)
 				(gEgo put: 61 get: 13) ; Full_Tray, Buckazoids
-				(+= global150 50)
+				(+= gBuckazoidCount 50)
 				(gTheIconBar show:)
 				(blaine setMotion: MoveTo 240 70 self)
 			)
@@ -1037,7 +1037,7 @@
 		(switch (= state newState)
 			(0
 				(elmo view: 3252 x: 103 y: 130 setLoop: 2 setCel: 0)
-				(= seconds (proc0_8 3 7))
+				(= seconds (RandomNumber 3 7))
 			)
 			(1
 				(elmo setCycle: End self)
@@ -1080,7 +1080,7 @@
 			)
 			(1
 				(Load 140 326) ; WAVE
-				(proc0_4 gEgo elmo self)
+				(Face gEgo elmo self)
 			)
 			(2
 				(elmo setCycle: End self)
@@ -1350,7 +1350,7 @@
 			(0
 				(= local32 (elmo mover:))
 				(client mover: 0 setLoop: 4 1 setCel: 1)
-				(= seconds (proc0_8 3 12))
+				(= seconds (RandomNumber 3 12))
 			)
 			(1
 				(client setLoop: -1 setCycle: Walk setMotion: local32)
@@ -1811,7 +1811,7 @@
 		(super init:)
 		(self setCycle: Walk)
 		(if (== local38 0)
-			(= local38 (proc0_8 1 6))
+			(= local38 (RandomNumber 1 6))
 		)
 		(switch gCurRoomNum
 			(320
@@ -1867,7 +1867,7 @@
 			)
 		)
 		(if (not (< 0 local37 3))
-			(= local37 (proc0_8 1 2))
+			(= local37 (RandomNumber 1 2))
 		)
 		(switch local37
 			(1
@@ -2018,7 +2018,7 @@
 	(method (init)
 		(self setCycle: Walk)
 		(if (== local41 0)
-			(= local41 (proc0_8 1 4))
+			(= local41 (RandomNumber 1 4))
 		)
 		(switch local41
 			(1
@@ -2035,7 +2035,7 @@
 			)
 		)
 		(if (== local40 0)
-			(= local40 (proc0_8 1 2))
+			(= local40 (RandomNumber 1 2))
 		)
 		(switch local40
 			(1
@@ -2183,7 +2183,7 @@
 			(else
 				(self view: 327 setSpeed: 5 setScript: 0 setCycle: Walk)
 				(if (== local44 0)
-					(= local44 (proc0_8 1 3))
+					(= local44 (RandomNumber 1 3))
 				)
 				(switch local44
 					(1
@@ -2281,7 +2281,7 @@
 					)
 					(else
 						(self ignoreActors: 1)
-						(proc0_4 gEgo self)
+						(Face gEgo self)
 						(self setScript: sBlaineTalk)
 					)
 				)
@@ -2324,7 +2324,7 @@
 		else
 			(self view: 325 setSpeed: 5 setScript: 0 setLoop: -1 setCycle: Walk)
 			(if (== local345 0)
-				(= local345 (proc0_8 1 3))
+				(= local345 (RandomNumber 1 3))
 			)
 			(switch local345
 				(1
@@ -2422,7 +2422,7 @@
 					)
 					(else
 						(self ignoreActors: 1)
-						(proc0_4 gEgo self)
+						(Face gEgo self)
 						(elmo setScript: sElmoTalk)
 					)
 				)

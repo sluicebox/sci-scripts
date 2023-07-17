@@ -144,7 +144,7 @@
 							(and
 								scratch
 								(== (gTheCursor verb:) 2)
-								(scratch respondsTo: #BAD_SELECTOR)
+								(scratch respondsTo: #sel_32)
 							)
 							(self doVerb: 32)
 							(= ret (event claimed: 1))

@@ -92,7 +92,7 @@
 						DataMan
 						Reverse_Biaz_DataPak
 						P__C__Hammer_DataPak
-						Reverse_Biaz_Fax_GFax_von_Reverse_Biaz
+						Reverse_Biaz_Fax
 						Champagne
 						Gold_Record
 						Cassette_Tape
@@ -1115,7 +1115,7 @@
 	)
 )
 
-(instance Reverse_Biaz_Fax_GFax_von_Reverse_Biaz of InvI
+(instance Reverse_Biaz_Fax of InvI
 	(properties
 		name {Reverse Biaz Fax}
 		view 955

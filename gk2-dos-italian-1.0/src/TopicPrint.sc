@@ -21,7 +21,7 @@
 			(= classButton TopicButton)
 			(= BAD_SELECTOR 0)
 		)
-		(super BAD_SELECTOR: &rest)
+		(super sel_706: &rest)
 	)
 
 	(method (init &tmp temp0)
@@ -56,14 +56,14 @@
 					(not BAD_SELECTOR)
 					(IsFlag BAD_SELECTOR)
 				)
-				(or (not BAD_SELECTOR) (BAD_SELECTOR firstTrue: #BAD_SELECTOR))
+				(or (not BAD_SELECTOR) (BAD_SELECTOR firstTrue: #sel_834))
 			)
 		)
 	)
 
 	(method (BAD_SELECTOR)
-		(if (self BAD_SELECTOR:)
-			(TopicPrint BAD_SELECTOR: self noun 3 0 1)
+		(if (self sel_834:)
+			(TopicPrint sel_706: self noun 3 0 1)
 		)
 	)
 
@@ -107,21 +107,21 @@
 		(if
 			(and
 				value
-				(value BAD_SELECTOR:)
+				(value sel_829:)
 				(or
-					(value BAD_SELECTOR:)
+					(value sel_832:)
 					(and
-						(value BAD_SELECTOR:)
-						(not ((value BAD_SELECTOR:) firstTrue: #BAD_SELECTOR))
+						(value sel_831:)
+						(not ((value sel_831:) firstTrue: #sel_834))
 					)
 				)
 			)
-			(SetFlag (value BAD_SELECTOR:))
+			(SetFlag (value sel_829:))
 		)
 		(cond
 			((not value) 0)
-			((value BAD_SELECTOR:)
-				(gCurRoom BAD_SELECTOR: (value BAD_SELECTOR:))
+			((value sel_831:)
+				(gCurRoom sel_840: (value sel_831:))
 			)
 		)
 		(super doit: &rest)

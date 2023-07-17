@@ -239,7 +239,7 @@
 	)
 
 	(method (dispose)
-		(MapEdit_GKarte_editieren dispose:)
+		(MapEdit dispose:)
 		(super dispose:)
 	)
 )
@@ -555,7 +555,7 @@
 					(Animate (gCast elements:) 0)
 					(self loop: 0 forceUpd:)
 					(Animate (gCast elements:) 0)
-					(MapEdit_GKarte_editieren init:)
+					(MapEdit init:)
 					(event claimed: 1)
 				)
 			)
@@ -569,7 +569,7 @@
 					(Animate (gCast elements:) 0)
 					(self loop: 0 forceUpd:)
 					(Animate (gCast elements:) 0)
-					(MapEdit_GKarte_editieren init:)
+					(MapEdit init:)
 					(event claimed: 1)
 				)
 			)
@@ -695,9 +695,8 @@
 	)
 )
 
-(class MapEdit_GKarte_editieren of Obj
+(class MapEdit of Obj
 	(properties
-		name {MapEdit}
 		x 0
 		y 0
 		state 1

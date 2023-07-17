@@ -84,26 +84,26 @@
 	(method (BAD_SELECTOR)
 		(if
 			(or
-				(self BAD_SELECTOR: (Wolf BAD_SELECTOR:))
-				(self BAD_SELECTOR: (gCurRoom BAD_SELECTOR:))
+				(self sel_895: (Wolf sel_880:))
+				(self sel_895: (gCurRoom sel_880:))
 			)
 			(SetFlag 811)
-			(= global143 (gCurRoom BAD_SELECTOR:))
-			(= global142 (gCurRoom BAD_SELECTOR:))
+			(= global143 (gCurRoom sel_880:))
+			(= global142 (gCurRoom sel_879:))
 			(PlayScene 912 0 11871) ; rm11871
 		)
 	)
 
 	(method (BAD_SELECTOR param1 &tmp temp0 temp1 temp2 temp3 temp4 temp5)
 		(= temp0 (BAD_SELECTOR at: (- param1 1)))
-		(= temp1 (temp0 BAD_SELECTOR:))
-		(= temp2 (temp0 BAD_SELECTOR:))
-		(= temp3 (temp0 BAD_SELECTOR:))
-		(= temp4 (temp0 BAD_SELECTOR:))
-		(if (== (Wolf BAD_SELECTOR:) param1)
-			(= temp5 (gCurRoom BAD_SELECTOR:))
+		(= temp1 (temp0 sel_896:))
+		(= temp2 (temp0 sel_897:))
+		(= temp3 (temp0 sel_898:))
+		(= temp4 (temp0 sel_899:))
+		(if (== (Wolf sel_880:) param1)
+			(= temp5 (gCurRoom sel_880:))
 		else
-			(= temp5 (Wolf BAD_SELECTOR:))
+			(= temp5 (Wolf sel_880:))
 		)
 		(cond
 			((not (or temp3 temp2 temp4 temp1))
@@ -116,9 +116,9 @@
 						(not (or temp2 temp4 temp1))
 						(not
 							(or
-								((BAD_SELECTOR at: (- temp3 1)) BAD_SELECTOR:)
-								((BAD_SELECTOR at: (- temp3 1)) BAD_SELECTOR:)
-								((BAD_SELECTOR at: (- temp3 1)) BAD_SELECTOR:)
+								((BAD_SELECTOR at: (- temp3 1)) sel_898:)
+								((BAD_SELECTOR at: (- temp3 1)) sel_897:)
+								((BAD_SELECTOR at: (- temp3 1)) sel_896:)
 							)
 						)
 						(!= temp5 temp3)
@@ -128,9 +128,9 @@
 						(not (or temp3 temp4 temp1))
 						(not
 							(or
-								((BAD_SELECTOR at: (- temp2 1)) BAD_SELECTOR:)
-								((BAD_SELECTOR at: (- temp2 1)) BAD_SELECTOR:)
-								((BAD_SELECTOR at: (- temp2 1)) BAD_SELECTOR:)
+								((BAD_SELECTOR at: (- temp2 1)) sel_898:)
+								((BAD_SELECTOR at: (- temp2 1)) sel_897:)
+								((BAD_SELECTOR at: (- temp2 1)) sel_899:)
 							)
 						)
 						(!= temp5 temp2)
@@ -140,9 +140,9 @@
 						(not (or temp3 temp2 temp1))
 						(not
 							(or
-								((BAD_SELECTOR at: (- temp4 1)) BAD_SELECTOR:)
-								((BAD_SELECTOR at: (- temp4 1)) BAD_SELECTOR:)
-								((BAD_SELECTOR at: (- temp4 1)) BAD_SELECTOR:)
+								((BAD_SELECTOR at: (- temp4 1)) sel_896:)
+								((BAD_SELECTOR at: (- temp4 1)) sel_897:)
+								((BAD_SELECTOR at: (- temp4 1)) sel_899:)
 							)
 						)
 						(!= temp5 temp4)
@@ -152,9 +152,9 @@
 						(not (or temp3 temp2 temp4))
 						(not
 							(or
-								((BAD_SELECTOR at: (- temp1 1)) BAD_SELECTOR:)
-								((BAD_SELECTOR at: (- temp1 1)) BAD_SELECTOR:)
-								((BAD_SELECTOR at: (- temp1 1)) BAD_SELECTOR:)
+								((BAD_SELECTOR at: (- temp1 1)) sel_896:)
+								((BAD_SELECTOR at: (- temp1 1)) sel_898:)
+								((BAD_SELECTOR at: (- temp1 1)) sel_899:)
 							)
 						)
 						(!= temp5 temp1)
@@ -169,7 +169,7 @@
 					(BAD_SELECTOR at: 1)
 					(BAD_SELECTOR at: 8)
 					(BAD_SELECTOR at: 15)
-					(not (OneOf (Wolf BAD_SELECTOR:) 3 4 7 8 11 12 13))
+					(not (OneOf (Wolf sel_880:) 3 4 7 8 11 12 13))
 				)
 				(return 1)
 			)
@@ -180,7 +180,7 @@
 					(BAD_SELECTOR at: 2)
 					(BAD_SELECTOR at: 9)
 					(BAD_SELECTOR at: 16)
-					(not (OneOf (Wolf BAD_SELECTOR:) 4 8 12 13))
+					(not (OneOf (Wolf sel_880:) 4 8 12 13))
 				)
 				(return 1)
 			)
@@ -190,7 +190,7 @@
 					(BAD_SELECTOR at: 4)
 					(BAD_SELECTOR at: 5)
 					(BAD_SELECTOR at: 6)
-					(OneOf (Wolf BAD_SELECTOR:) 1 2 3 4)
+					(OneOf (Wolf sel_880:) 1 2 3 4)
 				)
 				(return 1)
 			)
@@ -200,7 +200,7 @@
 					(BAD_SELECTOR at: 11)
 					(BAD_SELECTOR at: 12)
 					(BAD_SELECTOR at: 13)
-					(not (OneOf (Wolf BAD_SELECTOR:) 10 11 12 13))
+					(not (OneOf (Wolf sel_880:) 10 11 12 13))
 				)
 				(return 1)
 			)
@@ -210,7 +210,7 @@
 					(BAD_SELECTOR at: 8)
 					(BAD_SELECTOR at: 10)
 					(BAD_SELECTOR at: 11)
-					(OneOf (Wolf BAD_SELECTOR:) 1 2 5 6)
+					(OneOf (Wolf sel_880:) 1 2 5 6)
 				)
 				(return 1)
 			)
@@ -222,7 +222,7 @@
 					(BAD_SELECTOR at: 15)
 					(BAD_SELECTOR at: 10)
 					(BAD_SELECTOR at: 14)
-					(OneOf (Wolf BAD_SELECTOR:) 5 6 10)
+					(OneOf (Wolf sel_880:) 5 6 10)
 				)
 				(return 1)
 			)
@@ -232,7 +232,7 @@
 					(BAD_SELECTOR at: 4)
 					(BAD_SELECTOR at: 8)
 					(BAD_SELECTOR at: 15)
-					(not (OneOf (Wolf BAD_SELECTOR:) 5 6 10))
+					(not (OneOf (Wolf sel_880:) 5 6 10))
 				)
 				(return 1)
 			)
@@ -246,12 +246,12 @@
 					(BAD_SELECTOR at: 12)
 					(or
 						(and
-							(OneOf (Wolf BAD_SELECTOR:) 2 3 6 7)
-							(not (OneOf (gCurRoom BAD_SELECTOR:) 2 3 6 7))
+							(OneOf (Wolf sel_880:) 2 3 6 7)
+							(not (OneOf (gCurRoom sel_880:) 2 3 6 7))
 						)
 						(and
-							(OneOf (gCurRoom BAD_SELECTOR:) 2 3 6 7)
-							(not (OneOf (Wolf BAD_SELECTOR:) 2 3 6 7))
+							(OneOf (gCurRoom sel_880:) 2 3 6 7)
+							(not (OneOf (Wolf sel_880:) 2 3 6 7))
 						)
 					)
 				)
@@ -267,14 +267,12 @@
 					(BAD_SELECTOR at: 16)
 					(or
 						(and
-							(OneOf (Wolf BAD_SELECTOR:) 6 7 10 11)
-							(not
-								(OneOf (gCurRoom BAD_SELECTOR:) 6 7 10 11)
-							)
+							(OneOf (Wolf sel_880:) 6 7 10 11)
+							(not (OneOf (gCurRoom sel_880:) 6 7 10 11))
 						)
 						(and
-							(OneOf (gCurRoom BAD_SELECTOR:) 6 7 10 11)
-							(not (OneOf (Wolf BAD_SELECTOR:) 6 7 10 11))
+							(OneOf (gCurRoom sel_880:) 6 7 10 11)
+							(not (OneOf (Wolf sel_880:) 6 7 10 11))
 						)
 					)
 				)
@@ -286,7 +284,7 @@
 					(BAD_SELECTOR at: 6)
 					(BAD_SELECTOR at: 8)
 					(BAD_SELECTOR at: 15)
-					(not (OneOf (Wolf BAD_SELECTOR:) 7 8 11 12))
+					(not (OneOf (Wolf sel_880:) 7 8 11 12))
 				)
 				(return 1)
 			)
@@ -298,12 +296,12 @@
 					(BAD_SELECTOR at: 13)
 					(or
 						(and
-							(OneOf (Wolf BAD_SELECTOR:) 3 4 7 8)
-							(not (OneOf (gCurRoom BAD_SELECTOR:) 3 4 7 8))
+							(OneOf (Wolf sel_880:) 3 4 7 8)
+							(not (OneOf (gCurRoom sel_880:) 3 4 7 8))
 						)
 						(and
-							(OneOf (gCurRoom BAD_SELECTOR:) 3 4 7 8)
-							(not (OneOf (Wolf BAD_SELECTOR:) 3 4 7 8))
+							(OneOf (gCurRoom sel_880:) 3 4 7 8)
+							(not (OneOf (Wolf sel_880:) 3 4 7 8))
 						)
 					)
 				)
@@ -340,7 +338,7 @@
 	)
 
 	(method (BAD_SELECTOR param1 &tmp temp0 temp1)
-		(= temp0 ((BaseRegion BAD_SELECTOR:) at: (- param1 1)))
+		(= temp0 ((BaseRegion sel_891:) at: (- param1 1)))
 		(if (== gCurRoomNum 11871)
 			(= temp1 global143)
 		else
@@ -349,10 +347,10 @@
 		(if
 			(or
 				(== param1 temp1)
-				(== (temp0 BAD_SELECTOR:) temp1)
-				(== (temp0 BAD_SELECTOR:) temp1)
-				(== (temp0 BAD_SELECTOR:) temp1)
-				(== (temp0 BAD_SELECTOR:) temp1)
+				(== (temp0 sel_898:) temp1)
+				(== (temp0 sel_897:) temp1)
+				(== (temp0 sel_899:) temp1)
+				(== (temp0 sel_896:) temp1)
 			)
 			(return 0)
 		else
@@ -361,13 +359,13 @@
 	)
 
 	(method (BAD_SELECTOR &tmp temp0 temp1 temp2 temp3 temp4 temp5 temp6 temp7)
-		(= temp0 ((BaseRegion BAD_SELECTOR:) at: (- BAD_SELECTOR 1)))
-		(= temp1 (temp0 BAD_SELECTOR:))
-		(= temp2 (temp0 BAD_SELECTOR:))
-		(= temp3 (temp0 BAD_SELECTOR:))
-		(= temp4 (temp0 BAD_SELECTOR:))
-		(= temp5 (temp0 BAD_SELECTOR:))
-		(= temp6 (temp0 BAD_SELECTOR:))
+		(= temp0 ((BaseRegion sel_891:) at: (- BAD_SELECTOR 1)))
+		(= temp1 (temp0 sel_896:))
+		(= temp2 (temp0 sel_897:))
+		(= temp3 (temp0 sel_898:))
+		(= temp4 (temp0 sel_899:))
+		(= temp5 (temp0 sel_903:))
+		(= temp6 (temp0 sel_904:))
 		(if (== gCurRoomNum 11871)
 			(= temp7 global143)
 		else
@@ -378,7 +376,7 @@
 				(and
 					(> temp5 1)
 					temp1
-					(self BAD_SELECTOR: temp1)
+					(self sel_900: temp1)
 					(or
 						(!= temp1 1)
 						(and (not temp2) (== temp4 temp7))
@@ -387,29 +385,23 @@
 					(or
 						(== temp1 9)
 						(and
-							(((BaseRegion BAD_SELECTOR:) at: (- temp1 1))
-								BAD_SELECTOR:
-							)
-							(((BaseRegion BAD_SELECTOR:)
+							(((BaseRegion sel_891:) at: (- temp1 1)) sel_898:)
+							(((BaseRegion sel_891:)
 									at:
 										(-
-											(((BaseRegion BAD_SELECTOR:)
+											(((BaseRegion sel_891:)
 													at: (- temp1 1)
 												)
-												BAD_SELECTOR:
+												sel_898:
 											)
 											1
 										)
 								)
-								BAD_SELECTOR:
+								sel_897:
 							)
 						)
-						(((BaseRegion BAD_SELECTOR:) at: (- temp1 1))
-							BAD_SELECTOR:
-						)
-						(((BaseRegion BAD_SELECTOR:) at: (- temp1 1))
-							BAD_SELECTOR:
-						)
+						(((BaseRegion sel_891:) at: (- temp1 1)) sel_899:)
+						(((BaseRegion sel_891:) at: (- temp1 1)) sel_896:)
 						(and (not (or temp3 temp2)) (== temp4 temp7))
 						(and (not (or temp3 temp4)) (== temp2 temp7))
 						(and (not (or temp2 temp4)) (== temp3 temp7))
@@ -421,22 +413,16 @@
 				(and
 					(< temp6 3)
 					temp4
-					(self BAD_SELECTOR: temp4)
+					(self sel_900: temp4)
 					(or
 						(!= temp4 12)
 						(and (not temp1) (== temp3 temp7))
 						(and (not temp3) (== temp1 temp7))
 					)
 					(or
-						(((BaseRegion BAD_SELECTOR:) at: (- temp4 1))
-							BAD_SELECTOR:
-						)
-						(((BaseRegion BAD_SELECTOR:) at: (- temp4 1))
-							BAD_SELECTOR:
-						)
-						(((BaseRegion BAD_SELECTOR:) at: (- temp4 1))
-							BAD_SELECTOR:
-						)
+						(((BaseRegion sel_891:) at: (- temp4 1)) sel_897:)
+						(((BaseRegion sel_891:) at: (- temp4 1)) sel_899:)
+						(((BaseRegion sel_891:) at: (- temp4 1)) sel_896:)
 						(and (not (or temp1 temp3)) (== temp2 temp7))
 						(and (not (or temp1 temp2)) (== temp3 temp7))
 						(and (not (or temp3 temp2)) (== temp1 temp7))
@@ -446,10 +432,10 @@
 			)
 			((== BAD_SELECTOR 1)
 				(cond
-					((and temp4 (self BAD_SELECTOR: temp4))
+					((and temp4 (self sel_900: temp4))
 						(= BAD_SELECTOR temp4)
 					)
-					((and temp2 (self BAD_SELECTOR: temp2))
+					((and temp2 (self sel_900: temp2))
 						(= BAD_SELECTOR temp2)
 					)
 					(
@@ -459,8 +445,8 @@
 							(and (not temp2) (== temp7 5))
 						)
 						(SetFlag 813)
-						(= global143 (gCurRoom BAD_SELECTOR:))
-						(= global142 (gCurRoom BAD_SELECTOR:))
+						(= global143 (gCurRoom sel_880:))
+						(= global142 (gCurRoom sel_879:))
 						(PlayScene 912 0 11871) ; rm11871
 					)
 					(else 0)
@@ -468,20 +454,20 @@
 			)
 			((== BAD_SELECTOR 12)
 				(cond
-					((and temp1 (self BAD_SELECTOR: temp1))
+					((and temp1 (self sel_900: temp1))
 						(= BAD_SELECTOR temp1)
 					)
-					((and temp3 (self BAD_SELECTOR: temp3))
+					((and temp3 (self sel_900: temp3))
 						(= BAD_SELECTOR temp3)
 					)
-					((self BAD_SELECTOR: BAD_SELECTOR) 0)
+					((self sel_900: BAD_SELECTOR) 0)
 					(else
 						(= BAD_SELECTOR 13)
 					)
 				)
 			)
 			((== BAD_SELECTOR 13)
-				(if (and temp3 (self BAD_SELECTOR: temp3))
+				(if (and temp3 (self sel_900: temp3))
 					(= BAD_SELECTOR temp3)
 				else
 					0
@@ -489,11 +475,11 @@
 			)
 			((== temp6 3)
 				(cond
-					((and temp3 (self BAD_SELECTOR: temp3))
+					((and temp3 (self sel_900: temp3))
 						(= BAD_SELECTOR temp3)
 					)
-					((self BAD_SELECTOR: BAD_SELECTOR) 0)
-					((and temp2 (self BAD_SELECTOR: temp2))
+					((self sel_900: BAD_SELECTOR) 0)
+					((and temp2 (self sel_900: temp2))
 						(= BAD_SELECTOR temp2)
 					)
 				)
@@ -502,7 +488,7 @@
 				(cond
 					(
 						(or
-							(and temp2 (self BAD_SELECTOR: temp2))
+							(and temp2 (self sel_900: temp2))
 							(and
 								(!= temp7 temp2)
 								(!= temp7 gCurRoom)
@@ -512,18 +498,18 @@
 						)
 						(= BAD_SELECTOR temp2)
 					)
-					((self BAD_SELECTOR: BAD_SELECTOR) 0)
-					((and temp3 (self BAD_SELECTOR: temp3))
+					((self sel_900: BAD_SELECTOR) 0)
+					((and temp3 (self sel_900: temp3))
 						(= BAD_SELECTOR temp3)
 					)
 				)
 			)
 			((== temp6 1)
 				(cond
-					((and temp2 (self BAD_SELECTOR: temp2))
+					((and temp2 (self sel_900: temp2))
 						(= BAD_SELECTOR temp2)
 					)
-					((self BAD_SELECTOR: BAD_SELECTOR) 0)
+					((self sel_900: BAD_SELECTOR) 0)
 				)
 			)
 		)
@@ -533,8 +519,8 @@
 			(if (== gCurRoomNum 11871)
 				(gCurRoom notify:)
 			else
-				(= global143 (gCurRoom BAD_SELECTOR:))
-				(= global142 (gCurRoom BAD_SELECTOR:))
+				(= global143 (gCurRoom sel_880:))
+				(= global142 (gCurRoom sel_879:))
 				(PlayScene 912 0 11871) ; rm11871
 			)
 		)
@@ -565,45 +551,45 @@
 	(method (BAD_SELECTOR param1 param2)
 		(switch param1
 			(2
-				((BaseRegion BAD_SELECTOR:) at: 0 1)
-				(((BaseRegion BAD_SELECTOR:) at: 0) BAD_SELECTOR: 0)
-				(((BaseRegion BAD_SELECTOR:) at: 1) BAD_SELECTOR: 0)
+				((BaseRegion sel_890:) at: 0 1)
+				(((BaseRegion sel_891:) at: 0) sel_897: 0)
+				(((BaseRegion sel_891:) at: 1) sel_896: 0)
 				(if
 					(and
-						((BaseRegion BAD_SELECTOR:) at: 7)
-						((BaseRegion BAD_SELECTOR:) at: 14)
+						((BaseRegion sel_890:) at: 7)
+						((BaseRegion sel_890:) at: 14)
 					)
 					(gGame changeScore: 1168)
 				)
 			)
 			(3
-				((BaseRegion BAD_SELECTOR:) at: 1 1)
-				(((BaseRegion BAD_SELECTOR:) at: 1) BAD_SELECTOR: 0)
-				(((BaseRegion BAD_SELECTOR:) at: 2) BAD_SELECTOR: 0)
+				((BaseRegion sel_890:) at: 1 1)
+				(((BaseRegion sel_891:) at: 1) sel_897: 0)
+				(((BaseRegion sel_891:) at: 2) sel_896: 0)
 			)
 			(4
-				((BaseRegion BAD_SELECTOR:) at: 2 1)
-				(((BaseRegion BAD_SELECTOR:) at: 2) BAD_SELECTOR: 0)
-				(((BaseRegion BAD_SELECTOR:) at: 3) BAD_SELECTOR: 0)
+				((BaseRegion sel_890:) at: 2 1)
+				(((BaseRegion sel_891:) at: 2) sel_897: 0)
+				(((BaseRegion sel_891:) at: 3) sel_896: 0)
 			)
 			(5
-				((BaseRegion BAD_SELECTOR:) at: 3 1)
-				(((BaseRegion BAD_SELECTOR:) at: 0) BAD_SELECTOR: 0)
-				(((BaseRegion BAD_SELECTOR:) at: 4) BAD_SELECTOR: 0)
+				((BaseRegion sel_890:) at: 3 1)
+				(((BaseRegion sel_891:) at: 0) sel_899: 0)
+				(((BaseRegion sel_891:) at: 4) sel_898: 0)
 			)
 			(6
 				(if (== param2 0)
-					((BaseRegion BAD_SELECTOR:) at: 4 1)
-					(((BaseRegion BAD_SELECTOR:) at: 1) BAD_SELECTOR: 0)
-					(((BaseRegion BAD_SELECTOR:) at: 5) BAD_SELECTOR: 0)
+					((BaseRegion sel_890:) at: 4 1)
+					(((BaseRegion sel_891:) at: 1) sel_899: 0)
+					(((BaseRegion sel_891:) at: 5) sel_898: 0)
 				else
-					((BaseRegion BAD_SELECTOR:) at: 7 1)
-					(((BaseRegion BAD_SELECTOR:) at: 4) BAD_SELECTOR: 0)
-					(((BaseRegion BAD_SELECTOR:) at: 5) BAD_SELECTOR: 0)
+					((BaseRegion sel_890:) at: 7 1)
+					(((BaseRegion sel_891:) at: 4) sel_897: 0)
+					(((BaseRegion sel_891:) at: 5) sel_896: 0)
 					(if
 						(and
-							((BaseRegion BAD_SELECTOR:) at: 0)
-							((BaseRegion BAD_SELECTOR:) at: 14)
+							((BaseRegion sel_890:) at: 0)
+							((BaseRegion sel_890:) at: 14)
 						)
 						(gGame changeScore: 1168)
 					)
@@ -611,49 +597,49 @@
 			)
 			(7
 				(if (== param2 0)
-					((BaseRegion BAD_SELECTOR:) at: 5 1)
-					(((BaseRegion BAD_SELECTOR:) at: 2) BAD_SELECTOR: 0)
-					(((BaseRegion BAD_SELECTOR:) at: 6) BAD_SELECTOR: 0)
+					((BaseRegion sel_890:) at: 5 1)
+					(((BaseRegion sel_891:) at: 2) sel_899: 0)
+					(((BaseRegion sel_891:) at: 6) sel_898: 0)
 				else
-					((BaseRegion BAD_SELECTOR:) at: 8 1)
-					(((BaseRegion BAD_SELECTOR:) at: 5) BAD_SELECTOR: 0)
-					(((BaseRegion BAD_SELECTOR:) at: 6) BAD_SELECTOR: 0)
+					((BaseRegion sel_890:) at: 8 1)
+					(((BaseRegion sel_891:) at: 5) sel_897: 0)
+					(((BaseRegion sel_891:) at: 6) sel_896: 0)
 				)
 			)
 			(8
 				(if (== param2 0)
-					((BaseRegion BAD_SELECTOR:) at: 6 1)
-					(((BaseRegion BAD_SELECTOR:) at: 3) BAD_SELECTOR: 0)
-					(((BaseRegion BAD_SELECTOR:) at: 7) BAD_SELECTOR: 0)
+					((BaseRegion sel_890:) at: 6 1)
+					(((BaseRegion sel_891:) at: 3) sel_899: 0)
+					(((BaseRegion sel_891:) at: 7) sel_898: 0)
 				else
-					((BaseRegion BAD_SELECTOR:) at: 9 1)
-					(((BaseRegion BAD_SELECTOR:) at: 6) BAD_SELECTOR: 0)
-					(((BaseRegion BAD_SELECTOR:) at: 7) BAD_SELECTOR: 0)
+					((BaseRegion sel_890:) at: 9 1)
+					(((BaseRegion sel_891:) at: 6) sel_897: 0)
+					(((BaseRegion sel_891:) at: 7) sel_896: 0)
 				)
 			)
 			(9
-				((BaseRegion BAD_SELECTOR:) at: 10 1)
-				(((BaseRegion BAD_SELECTOR:) at: 4) BAD_SELECTOR: 0)
-				(((BaseRegion BAD_SELECTOR:) at: 8) BAD_SELECTOR: 0)
-				(if ((BaseRegion BAD_SELECTOR:) at: 14)
+				((BaseRegion sel_890:) at: 10 1)
+				(((BaseRegion sel_891:) at: 4) sel_899: 0)
+				(((BaseRegion sel_891:) at: 8) sel_898: 0)
+				(if ((BaseRegion sel_890:) at: 14)
 					(gGame changeScore: 1168)
 				)
 			)
 			(10
 				(if (== param2 0)
-					((BaseRegion BAD_SELECTOR:) at: 11 1)
-					(((BaseRegion BAD_SELECTOR:) at: 5) BAD_SELECTOR: 0)
-					(((BaseRegion BAD_SELECTOR:) at: 9) BAD_SELECTOR: 0)
+					((BaseRegion sel_890:) at: 11 1)
+					(((BaseRegion sel_891:) at: 5) sel_899: 0)
+					(((BaseRegion sel_891:) at: 9) sel_898: 0)
 				else
-					((BaseRegion BAD_SELECTOR:) at: 14 1)
-					(((BaseRegion BAD_SELECTOR:) at: 8) BAD_SELECTOR: 0)
-					(((BaseRegion BAD_SELECTOR:) at: 9) BAD_SELECTOR: 0)
+					((BaseRegion sel_890:) at: 14 1)
+					(((BaseRegion sel_891:) at: 8) sel_897: 0)
+					(((BaseRegion sel_891:) at: 9) sel_896: 0)
 					(if
 						(or
-							((BaseRegion BAD_SELECTOR:) at: 10)
+							((BaseRegion sel_890:) at: 10)
 							(and
-								((BaseRegion BAD_SELECTOR:) at: 0)
-								((BaseRegion BAD_SELECTOR:) at: 7)
+								((BaseRegion sel_890:) at: 0)
+								((BaseRegion sel_890:) at: 7)
 							)
 						)
 						(gGame changeScore: 1168)
@@ -662,24 +648,24 @@
 			)
 			(11
 				(if (== param2 0)
-					((BaseRegion BAD_SELECTOR:) at: 12 1)
-					(((BaseRegion BAD_SELECTOR:) at: 6) BAD_SELECTOR: 0)
-					(((BaseRegion BAD_SELECTOR:) at: 10) BAD_SELECTOR: 0)
+					((BaseRegion sel_890:) at: 12 1)
+					(((BaseRegion sel_891:) at: 6) sel_899: 0)
+					(((BaseRegion sel_891:) at: 10) sel_898: 0)
 				else
-					((BaseRegion BAD_SELECTOR:) at: 15 1)
-					(((BaseRegion BAD_SELECTOR:) at: 9) BAD_SELECTOR: 0)
-					(((BaseRegion BAD_SELECTOR:) at: 10) BAD_SELECTOR: 0)
+					((BaseRegion sel_890:) at: 15 1)
+					(((BaseRegion sel_891:) at: 9) sel_897: 0)
+					(((BaseRegion sel_891:) at: 10) sel_896: 0)
 				)
 			)
 			(12
 				(if (== param2 0)
-					((BaseRegion BAD_SELECTOR:) at: 13 1)
-					(((BaseRegion BAD_SELECTOR:) at: 7) BAD_SELECTOR: 0)
-					(((BaseRegion BAD_SELECTOR:) at: 11) BAD_SELECTOR: 0)
+					((BaseRegion sel_890:) at: 13 1)
+					(((BaseRegion sel_891:) at: 7) sel_899: 0)
+					(((BaseRegion sel_891:) at: 11) sel_898: 0)
 				else
-					((BaseRegion BAD_SELECTOR:) at: 16 1)
-					(((BaseRegion BAD_SELECTOR:) at: 10) BAD_SELECTOR: 0)
-					(((BaseRegion BAD_SELECTOR:) at: 11) BAD_SELECTOR: 0)
+					((BaseRegion sel_890:) at: 16 1)
+					(((BaseRegion sel_891:) at: 10) sel_897: 0)
+					(((BaseRegion sel_891:) at: 11) sel_896: 0)
 				)
 			)
 		)
@@ -822,7 +808,7 @@
 
 	(method (init)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -845,7 +831,7 @@
 
 	(method (init)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -868,7 +854,7 @@
 
 	(method (init)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -886,7 +872,7 @@
 	(properties)
 
 	(method (cue)
-		(Wolf BAD_SELECTOR:)
+		(Wolf sel_901:)
 		(self setReal: self 8)
 	)
 )

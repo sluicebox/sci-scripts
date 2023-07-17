@@ -2491,8 +2491,9 @@
 	)
 )
 
-(instance symbol of CodeIcon
+(instance symbol_a of CodeIcon
 	(properties
+		name {symbol}
 		view 388
 		loop 1
 		cel 0
@@ -2524,7 +2525,7 @@
 	)
 )
 
-(instance symbol_Ss_mbolo of TextIcon
+(instance symbol_b of TextIcon
 	(properties
 		name {symbol}
 		view 150
@@ -2608,7 +2609,7 @@
 		(for ((= temp0 0)) (< temp0 10) ((++ temp0))
 			(self
 				add:
-					((= [local575 temp0] (symbol new:))
+					((= [local575 temp0] (symbol_a new:))
 						loop: temp0
 						value: temp0
 						nsLeft: [local589 temp0]
@@ -2621,7 +2622,7 @@
 		)
 		(self
 			add:
-				(symbol_Ss_mbolo
+				(symbol_b
 					highlightColor: [local0 7]
 					lowlightColor: [local0 18]
 					textColor: [local0 9]
@@ -2660,7 +2661,7 @@
 		(cond
 			((== (event type:) evKEYBOARD)
 				(if (or (== (= temp5 (event message:)) KEY_e) (== temp5 KEY_E))
-					(backDoorLock select: symbol_Ss_mbolo 0)
+					(backDoorLock select: symbol_b 0)
 				)
 			)
 			((and (& (event type:) $0040) (IsObject highlightedIcon)) ; direction

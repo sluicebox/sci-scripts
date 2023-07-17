@@ -441,7 +441,7 @@
 		(switch (= state newState)
 			(0
 				(= local4 (Random 0 4))
-				(= local5 (proc0_8 0 2))
+				(= local5 (RandomNumber 0 2))
 				(= ticks (Random 60 120))
 			)
 			(1
@@ -636,7 +636,7 @@
 			)
 			(3
 				(sound1 stop:)
-				(proc666_0 18 self)
+				(EgoDead 18 self) ; "My goodness, those little guys are efficient! However, based on how they left your boots behind, you might consider some Odor Eaters."
 			)
 			(4
 				(gEgo posn: 117 355 normalize: 1)
@@ -670,7 +670,7 @@
 				(self changeState: 4)
 			)
 			(1
-				(frontNan cycleSpeed: (proc0_8 6 20))
+				(frontNan cycleSpeed: (RandomNumber 6 20))
 				(self changeState: 4)
 			)
 			(2
@@ -678,7 +678,7 @@
 				(self changeState: 4)
 			)
 			(3
-				(sideNan2 cycleSpeed: (proc0_8 6 20))
+				(sideNan2 cycleSpeed: (RandomNumber 6 20))
 				(self changeState: 4)
 			)
 			(4
@@ -775,7 +775,7 @@
 				)
 			)
 			(6
-				(proc666_0 19 self)
+				(EgoDead 19 self) ; "That's pretty far to go just to do your Wizard of Oz impression. Makes you feel tingly all over, doesn't it?"
 			)
 			(7
 				(if ((gCurRoom obstacles:) contains: crawlPoly)
@@ -824,7 +824,7 @@
 				)
 			)
 			(3
-				(proc666_0 19 self)
+				(EgoDead 19 self) ; "That's pretty far to go just to do your Wizard of Oz impression. Makes you feel tingly all over, doesn't it?"
 			)
 			(4
 				(gEgo posn: 176 348 normalize:)
@@ -1103,7 +1103,7 @@
 			(3
 				(gGame points: 5 479)
 				(cond
-					((== global172 1)
+					((== gCurrentMnM 1)
 						(gEgo
 							put: 67 ; M_M_Yellow
 							view: 6240
@@ -1112,7 +1112,7 @@
 							setCycle: CT 7 1 self
 						)
 					)
-					((== global172 2)
+					((== gCurrentMnM 2)
 						(gEgo
 							put: 66 ; M_M_Green
 							view: 6240
@@ -1121,7 +1121,7 @@
 							setCycle: CT 7 1 self
 						)
 					)
-					((== global172 0)
+					((== gCurrentMnM 0)
 						(gEgo
 							put: 65 ; M_M
 							view: 6240
@@ -1135,13 +1135,13 @@
 			(4
 				(sound1 number: 702 loop: 0 play:)
 				(cond
-					((== global172 1)
+					((== gCurrentMnM 1)
 						(gEgo cel: 8 setCycle: End self)
 					)
-					((== global172 2)
+					((== gCurrentMnM 2)
 						(gEgo cel: 8 setCycle: End self)
 					)
-					((== global172 0)
+					((== gCurrentMnM 0)
 						(gEgo cel: 8 setCycle: End self)
 					)
 				)
@@ -1184,13 +1184,13 @@
 			)
 			(1
 				(cond
-					((== global172 1)
+					((== gCurrentMnM 1)
 						(gEgo setMotion: PolyPath 249 367 self)
 					)
-					((== global172 2)
+					((== gCurrentMnM 2)
 						(gEgo setMotion: PolyPath 268 370 self)
 					)
-					((== global172 0)
+					((== gCurrentMnM 0)
 						(gEgo setMotion: PolyPath 262 356 self)
 					)
 				)
@@ -1199,28 +1199,28 @@
 				(gEgo cycleSpeed: 12)
 				(gGame points: 1 476)
 				(cond
-					((== global172 1)
+					((== gCurrentMnM 1)
 						(gEgo view: 624 loop: 0 cel: 0 setCycle: CT 3 1 self)
 					)
-					((== global172 2)
+					((== gCurrentMnM 2)
 						(gEgo view: 624 loop: 1 cel: 0 setCycle: CT 3 1 self)
 					)
-					((== global172 0)
+					((== gCurrentMnM 0)
 						(gEgo view: 624 loop: 2 cel: 0 setCycle: CT 3 1 self)
 					)
 				)
 			)
 			(3
 				(cond
-					((== global172 1)
+					((== gCurrentMnM 1)
 						(yMnm dispose:)
 						(gEgo get: 67 cel: 4 setCycle: End self) ; M_M_Yellow
 					)
-					((== global172 2)
+					((== gCurrentMnM 2)
 						(gMnm dispose:)
 						(gEgo get: 66 cel: 4 setCycle: End self) ; M_M_Green
 					)
-					((== global172 0)
+					((== gCurrentMnM 0)
 						(rMnm dispose:)
 						(gEgo get: 65 cel: 4 setCycle: End self) ; M_M
 					)
@@ -1752,7 +1752,7 @@
 						(not (gEgo has: 67)) ; M_M_Yellow
 					)
 					(SetFlag 170)
-					(= global172 1)
+					(= gCurrentMnM 1)
 					(gEgo setScript: sGetM_M)
 				else
 					(gMessager say: 12 4 7) ; "I already have one."
@@ -1799,7 +1799,7 @@
 						(not (gEgo has: 67)) ; M_M_Yellow
 					)
 					(SetFlag 169)
-					(= global172 2)
+					(= gCurrentMnM 2)
 					(gEgo setScript: sGetM_M)
 				else
 					(gMessager say: 12 4 7) ; "I already have one."
@@ -1846,7 +1846,7 @@
 						(not (gEgo has: 67)) ; M_M_Yellow
 					)
 					(SetFlag 168)
-					(= global172 0)
+					(= gCurrentMnM 0)
 					(gEgo setScript: sGetM_M)
 				else
 					(gMessager say: 12 4 7) ; "I already have one."
@@ -2537,63 +2537,7 @@
 
 	(method (init)
 		(super
-			init:
-				54
-				358
-				21
-				408
-				108
-				408
-				141
-				400
-				81
-				381
-				118
-				371
-				105
-				360
-				130
-				357
-				163
-				358
-				169
-				365
-				210
-				370
-				252
-				379
-				278
-				385
-				299
-				373
-				298
-				368
-				271
-				377
-				250
-				372
-				243
-				363
-				260
-				355
-				238
-				351
-				221
-				355
-				209
-				350
-				154
-				334
-				142
-				337
-				128
-				343
-				113
-				345
-				89
-				345
-				82
-				352
+			init: 54 358 21 408 108 408 141 400 81 381 118 371 105 360 130 357 163 358 169 365 210 370 252 379 278 385 299 373 298 368 271 377 250 372 243 363 260 355 238 351 221 355 209 350 154 334 142 337 128 343 113 345 89 345 82 352
 		)
 	)
 )

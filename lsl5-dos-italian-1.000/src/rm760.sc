@@ -1251,7 +1251,7 @@
 	)
 )
 
-(instance Lana_Luscious_ILana_Luscious_a of Talker
+(instance Lana_Luscious_a of Talker
 	(properties
 		name {Lana Luscious}
 		x 80
@@ -1274,7 +1274,7 @@
 	)
 )
 
-(instance Lana_Luscious_ILana_Luscious_b of Talker
+(instance Lana_Luscious_b of Talker
 	(properties
 		name {Lana Luscious}
 		nsTop 100
@@ -1453,12 +1453,12 @@
 			(2
 				(lana setMotion: 0)
 				(Say gEgo 760 34) ; "Oh, Lana," you say in your friendliest voice, "Lana Luscious!"
-				(Say Lana_Luscious_ILana_Luscious_b 760 35 108) ; "Yes," she replies, hesitantly. "Who are you?"
+				(Say Lana_Luscious_b 760 35 108) ; "Yes," she replies, hesitantly. "Who are you?"
 				(= ticks 30)
 			)
 			(3
 				(Say gEgo 760 36) ; "My name is Larry; Larry Laffer," you purr. "I've come a long way to meet you!"
-				(Say Lana_Luscious_ILana_Luscious_b 760 37 108) ; "And meet me you have, Larry," says Lana. "Whaddaya say we sit down on that bench over there? These skates are killing me!"
+				(Say Lana_Luscious_b 760 37 108) ; "And meet me you have, Larry," says Lana. "Whaddaya say we sit down on that bench over there? These skates are killing me!"
 				(= ticks 30)
 			)
 			(4
@@ -1821,7 +1821,7 @@
 				(= ticks 60)
 			)
 			(1
-				(Say Lana_Luscious_ILana_Luscious_a 760 40 108) ; ""Only when I'm trying to find a man," she says with a smile."
+				(Say Lana_Luscious_a 760 40 108) ; ""Only when I'm trying to find a man," she says with a smile."
 				(= ticks 60)
 			)
 			(2)
@@ -1830,7 +1830,7 @@
 				(= ticks 60)
 			)
 			(4
-				(Say Lana_Luscious_ILana_Luscious_a 760 42 108) ; ""Only when I'm here skating," she says with a smile."
+				(Say Lana_Luscious_a 760 42 108) ; ""Only when I'm here skating," she says with a smile."
 				(= ticks 60)
 			)
 			(5)
@@ -1839,7 +1839,7 @@
 				(= ticks 60)
 			)
 			(7
-				(Say Lana_Luscious_ILana_Luscious_a 760 44 108) ; ""If you like that, you should drop by the `Tramp This! Mud Wrestling' Show. I go on in just a few minutes!" she says with a wink."
+				(Say Lana_Luscious_a 760 44 108) ; ""If you like that, you should drop by the `Tramp This! Mud Wrestling' Show. I go on in just a few minutes!" she says with a wink."
 				(= ticks 60)
 			)
 			(8)
@@ -1848,7 +1848,7 @@
 				(= ticks 60)
 			)
 			(10
-				(Say Lana_Luscious_ILana_Luscious_a 760 46 108) ; "Why, it's in the Tramp Ballroom. The entrance is at the rear of the casino!" she says. "And if you bring a few hundred dollars with you, I'll make sure it's an experience you'll never forget!"
+				(Say Lana_Luscious_a 760 46 108) ; "Why, it's in the Tramp Ballroom. The entrance is at the rear of the casino!" she says. "And if you bring a few hundred dollars with you, I'll make sure it's an experience you'll never forget!"
 				(= ticks 60)
 			)
 			(11
@@ -1862,7 +1862,7 @@
 				(= ticks 60)
 			)
 			(14
-				(Say Lana_Luscious_ILana_Luscious_a 760 49 108) ; "Okay, Larry; I'll look forward to it!" she concludes, standing up. "Gotta go get out of my makeup!"
+				(Say Lana_Luscious_a 760 49 108) ; "Okay, Larry; I'll look forward to it!" she concludes, standing up. "Gotta go get out of my makeup!"
 				(= ticks 60)
 			)
 			(15
@@ -1899,13 +1899,13 @@
 				)
 			)
 			(3 ; Do
-				(Say Lana_Luscious_ILana_Luscious_a 760 52 108) ; "Oh, Larry! You know that just drives me crazy!"
+				(Say Lana_Luscious_a 760 52 108) ; "Oh, Larry! You know that just drives me crazy!"
 			)
 			(10 ; Zipper
-				(Say Lana_Luscious_ILana_Luscious_a 760 53 108) ; "Larry! Here?" says Lana. "Why don't you come by the Casino later when I'm mud wrestling?"
+				(Say Lana_Luscious_a 760 53 108) ; "Larry! Here?" says Lana. "Why don't you come by the Casino later when I'm mud wrestling?"
 			)
 			(4 ; Inventory
-				(Say Lana_Luscious_ILana_Luscious_a 760 54 108) ; "Oh, I have no use for anything you could possibly offer me, Larry," says Lana. "Why, when I have total access to this sun-drenched boardwalk, the fresh ocean breezes caressing my hair, my smell of the salt water and ready access to all the mud I can roll in!"
+				(Say Lana_Luscious_a 760 54 108) ; "Oh, I have no use for anything you could possibly offer me, Larry," says Lana. "Why, when I have total access to this sun-drenched boardwalk, the fresh ocean breezes caressing my hair, my smell of the salt water and ready access to all the mud I can roll in!"
 			)
 			(else
 				(super doVerb: theVerb &rest)

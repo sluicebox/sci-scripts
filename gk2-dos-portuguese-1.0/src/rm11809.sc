@@ -41,7 +41,7 @@
 				(gEgo posn: 378 284 heading: 45)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 100 60 365 273 init:)
+		(gEgo sel_737: setScaler: Scaler 100 60 365 273 init:)
 		(if (== gEgo GraceEgo)
 			(Palette 1 (= global249 221)) ; PalLoad
 		else

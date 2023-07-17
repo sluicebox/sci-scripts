@@ -135,10 +135,10 @@
 	(eventFeature init:)
 	(Starselected posn: -1 -1 init:)
 	(Perseus init:)
-	(Ursa_Major_Gden_gro_en_B_ren init:)
-	(Cancer_GKrebs init:)
+	(Ursa_Major init:)
+	(Cancer init:)
 	(Orion init:)
-	(consSet add: Perseus Ursa_Major_Gden_gro_en_B_ren Cancer_GKrebs Orion)
+	(consSet add: Perseus Ursa_Major Cancer Orion)
 	(localproc_0)
 	(localproc_2
 		0
@@ -905,7 +905,7 @@
 	)
 )
 
-(instance Ursa_Major_Gden_gro_en_B_ren of constellation
+(instance Ursa_Major of constellation
 	(properties
 		name {Ursa Major}
 		kanjiName {Ursa Major}
@@ -919,9 +919,8 @@
 	)
 )
 
-(instance Cancer_GKrebs of constellation
+(instance Cancer of constellation
 	(properties
-		name {Cancer}
 		kanjiName {Cancer}
 	)
 

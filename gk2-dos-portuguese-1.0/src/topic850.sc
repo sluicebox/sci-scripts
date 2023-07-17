@@ -106,7 +106,7 @@
 
 	(method (BAD_SELECTOR)
 		(if (IsFlag 298)
-			(return (super BAD_SELECTOR: &rest))
+			(return (super sel_834: &rest))
 		else
 			(return 0)
 		)

@@ -56,21 +56,21 @@
 				(if (Message msgSIZE 15 noun theVerb 0 1)
 					(gMessager say: noun 1 0 0 0 15)
 				else
-					(gMessager say: 0 1 0 (proc0_8 1 3) 0 15)
+					(gMessager say: 0 1 0 (RandomNumber 1 3) 0 15)
 				)
 			)
 			((== theVerb 4) ; Do
 				(if (Message msgSIZE 15 noun theVerb 0 1)
 					(gMessager say: noun 4 0 0 0 15)
 				else
-					(gMessager say: 0 4 0 (proc0_8 1 3) 0 15)
+					(gMessager say: 0 4 0 (RandomNumber 1 3) 0 15)
 				)
 			)
 			((not (OneOf theVerb 3 4 2 17)) ; Walk, Do, Talk, ???
 				(if (Message msgSIZE 15 noun theVerb 0 1)
 					(gMessager say: noun theVerb 0 0 0 15)
 				else
-					(gMessager say: 0 26 0 (proc0_8 1 3) 0 15)
+					(gMessager say: 0 26 0 (RandomNumber 1 3) 0 15)
 				)
 			)
 			(else
@@ -423,7 +423,7 @@
 					plane: invPlane
 				)
 				(if (and (not bucksShowing) (== (temp2 mainView:) 9551))
-					(= numBuckStr (Str format: {%d} global150))
+					(= numBuckStr (Str format: {%d} gBuckazoidCount))
 					(= temp4 (IntArray newWith: 4 {}))
 					(Text 0 (temp4 data:) (numBuckStr data:) 70 30)
 					(= temp5

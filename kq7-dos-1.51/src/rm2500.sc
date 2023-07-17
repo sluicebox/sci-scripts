@@ -1715,7 +1715,7 @@
 					(cook setCycle: CT 9 1 self)
 				)
 				(9
-					(= ticks (+ 10 (DoAudio audPLAY 2500 0 0 7 2)))
+					(= ticks (+ 10 (DoAudio audPLAY 2500 0 0 7 2))) ; "Eeeeow!"
 					(cook setCycle: End self)
 				)
 				(10)
@@ -1961,15 +1961,15 @@
 				)
 				(switch (= global324 temp0)
 					(1
-						(DoAudio audPLAY 4400 12 8 1 1)
+						(DoAudio audPLAY 4400 12 8 1 1) ; "(SCREAM THAT SOUNDS LIKE ROSELLA IS FALLING INTO A DEEP, DEEP PIT--SCREAM TRAILS OFF)EEEEEEEEEEEEEEEEEEEEEEEE!"
 						(= ticks 10)
 					)
 					(2
-						(DoAudio audPLAY 4350 0 0 3 1)
+						(DoAudio audPLAY 4350 0 0 3 1) ; "(MUFFLED; VOICE COMING FROM FAR UNDER THE GROUND)Nooooooooo!"
 						(= ticks 90)
 					)
 					(3
-						(DoAudio audPLAY 1450 1 8 0 2)
+						(DoAudio audPLAY 1450 1 8 0 2) ; "(TERRIFIED, SHOUTING)No! Stop!"
 						(= ticks 90)
 					)
 					(4
@@ -2320,7 +2320,7 @@
 					(= local14 12)
 				)
 				(18
-					(= ticks (+ 10 (DoAudio audPLAY 2500 0 0 1 3)))
+					(= ticks (+ 10 (DoAudio audPLAY 2500 0 0 1 3))) ; "EEEEEOW!"
 				)
 				(19
 					(gEgo setLoop: 0 cel: 0 setPri: 59)
@@ -2409,7 +2409,7 @@
 				(35
 					(localproc_4 3)
 					(= local14 9)
-					(DoAudio audPLAY 2500 0 0 1 3)
+					(DoAudio audPLAY 2500 0 0 1 3) ; "EEEEEOW!"
 					(cook setCycle: End self)
 				)
 				(36

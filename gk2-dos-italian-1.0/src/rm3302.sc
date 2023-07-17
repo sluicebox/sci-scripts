@@ -36,7 +36,7 @@
 			)
 			(pVonGlower init: setScript: FidgetScript)
 		)
-		(tVonGlower BAD_SELECTOR: tFrom tFamily tMunich)
+		(tVonGlower sel_835: tFrom tFamily tMunich)
 		(super
 			init:
 				tVonGlower
@@ -165,10 +165,7 @@
 
 	(method (BAD_SELECTOR param1)
 		(return
-			(and
-				(super BAD_SELECTOR: param1)
-				(or (and argc param1) (IsFlag 514))
-			)
+			(and (super sel_834: param1) (or (and argc param1) (IsFlag 514)))
 		)
 	)
 )

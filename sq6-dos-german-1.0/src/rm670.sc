@@ -489,7 +489,7 @@
 					y: 143
 					setLoop: -1
 					setCycle: StopWalk 6412
-					setSpeed: global158
+					setSpeed: gEgoSpeed
 				)
 				(gGame handsOn:)
 				(self dispose:)
@@ -585,7 +585,7 @@
 					setLoop: -1
 					setCycle: StopWalk 6412
 					setPri: -1
-					setSpeed: global158
+					setSpeed: gEgoSpeed
 				)
 				(gGame handsOn:)
 				(self dispose:)
@@ -638,7 +638,7 @@
 				(gMessager say: 2 0 3 3 self) ; "Please remember to keep your arms and legs on the worm at all times."
 			)
 			(4
-				(proc0_7 1 1 self)
+				(Fade 1 1 self)
 			)
 			(5
 				(gCast eachElementDo: #dispose)
@@ -646,7 +646,7 @@
 				(= cycles 1)
 			)
 			(6
-				(proc0_7 0 1 self)
+				(Fade 0 1 self)
 				(gGSound1 stop:)
 			)
 			(7
@@ -662,7 +662,7 @@
 				)
 			)
 			(8
-				(gEgo setSpeed: global158)
+				(gEgo setSpeed: gEgoSpeed)
 				(gCurRoom newRoom: 730)
 			)
 		)
@@ -703,7 +703,7 @@
 				)
 			)
 			(4
-				(proc666_0 25 self)
+				(EgoDead 25 self) ; "Since you've entered the tapeworm not partially digested, you'll probably give him heartburn. I hope you're proud of yourself."
 			)
 			(5
 				(= register 0)
@@ -723,7 +723,7 @@
 					setLoop: -1
 					setCycle: StopWalk 6412
 					setPri: -1
-					setSpeed: global158
+					setSpeed: gEgoSpeed
 				)
 				(wormMouth setCycle: Fwd)
 				(wormTounge dispose:)

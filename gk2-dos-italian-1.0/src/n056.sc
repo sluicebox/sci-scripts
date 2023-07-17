@@ -274,7 +274,7 @@
 			(gGame changeScore: 1164)
 		)
 		(808
-			(gTopMessage BAD_SELECTOR: 0)
+			(gTopMessage sel_749: 0)
 			(PlayVMDFile 8080)
 		)
 		(818
@@ -727,7 +727,7 @@
 			(PlayVMDFile 9382)
 		)
 		(940
-			(gSoundManager BAD_SELECTOR: 1)
+			(gSoundManager sel_702: 1)
 			(PlayVMDFile 9400)
 		)
 		(1940
@@ -742,7 +742,7 @@
 		)
 		(943
 			(gGame getDisc: 2)
-			(gTopMessage BAD_SELECTOR: 0)
+			(gTopMessage sel_749: 0)
 			(PlayVMDFile 9430)
 			(SetFlag 815)
 			(gGame getDisc: 1)
@@ -751,7 +751,7 @@
 			(PlayVMDFile 10100)
 		)
 		(else
-			(gEgo BAD_SELECTOR:)
+			(gEgo sel_737:)
 			(PrintDebugSceneText param1 {Unimplemented scene in scenes6.sc})
 		)
 	)

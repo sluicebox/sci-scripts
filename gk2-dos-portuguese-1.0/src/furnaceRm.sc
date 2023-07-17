@@ -26,7 +26,7 @@
 		(gEgo
 			posn: 420 360
 			heading: 315
-			BAD_SELECTOR:
+			sel_737:
 			setScaler: Scaler 82 68 324 296
 			init:
 		)
@@ -77,7 +77,7 @@
 			(62 ; Do
 				(ClearFlag 797)
 				(PlayScene 926)
-				(gEgo BAD_SELECTOR: 315)
+				(gEgo sel_737: 315)
 				(self dispose:)
 			)
 			(else
@@ -104,7 +104,7 @@
 	(method (init)
 		(Lock 140 1190 1) ; WAVE
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 		(self setCycle: Fwd)
 		(gGk2Music
 			number: 1190
@@ -162,7 +162,7 @@
 						(SetFlag 795)
 						(PlayScene 929)
 						(PlayScene 926)
-						(gEgo BAD_SELECTOR: 315)
+						(gEgo sel_737: 315)
 						(furnaceDoorOpen dispose:)
 						(ClearFlag 797)
 					)
@@ -272,13 +272,13 @@
 								(ClearFlag 797)
 								(furnaceDoorOpen dispose:)
 								(PlayScene 926)
-								(gEgo BAD_SELECTOR: 315)
+								(gEgo sel_737: 315)
 							)
 							(else
 								(SetFlag 797)
 								(furnaceDoorOpen init:)
 								(PlayScene 925)
-								(gEgo BAD_SELECTOR: 315)
+								(gEgo sel_737: 315)
 							)
 						)
 					)

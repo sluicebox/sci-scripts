@@ -123,17 +123,11 @@
 	(gFeatures addToFront: eventFeature)
 	(eventFeature init:)
 	(Starselected posn: -1 -1 init:)
-	(Perseus_SPerseo init:)
-	(Ursa_Major_Sla_Osa_Mayor init:)
-	(Cancer_SC_ncer init:)
-	(Orion_SOri_n init:)
-	(consSet
-		add:
-			Perseus_SPerseo
-			Ursa_Major_Sla_Osa_Mayor
-			Cancer_SC_ncer
-			Orion_SOri_n
-	)
+	(Perseus init:)
+	(Ursa_Major init:)
+	(Cancer init:)
+	(Orion init:)
+	(consSet add: Perseus Ursa_Major Cancer Orion)
 	(localproc_0)
 	(localproc_2
 		0
@@ -887,9 +881,8 @@
 	(properties)
 )
 
-(instance Perseus_SPerseo of constellation
+(instance Perseus of constellation
 	(properties
-		name {Perseus}
 		kanjiName {Perseus}
 	)
 
@@ -901,7 +894,7 @@
 	)
 )
 
-(instance Ursa_Major_Sla_Osa_Mayor of constellation
+(instance Ursa_Major of constellation
 	(properties
 		name {Ursa Major}
 		kanjiName {Ursa Major}
@@ -915,9 +908,8 @@
 	)
 )
 
-(instance Cancer_SC_ncer of constellation
+(instance Cancer of constellation
 	(properties
-		name {Cancer}
 		kanjiName {Cancer}
 	)
 
@@ -929,9 +921,8 @@
 	)
 )
 
-(instance Orion_SOri_n of constellation
+(instance Orion of constellation
 	(properties
-		name {Orion}
 		kanjiName {Orion}
 	)
 

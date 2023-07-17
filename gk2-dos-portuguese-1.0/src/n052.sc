@@ -376,7 +376,7 @@
 			(PlayVMDFile 2131)
 		)
 		(214
-			(gSoundManager BAD_SELECTOR: 1)
+			(gSoundManager sel_702: 1)
 			(PlayVMDFile 2140)
 			(gGame changeScore: 888)
 		)

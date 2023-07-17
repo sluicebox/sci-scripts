@@ -62,7 +62,7 @@
 					)
 					((and (not (IsFlag 967)) (IsFlag 502))
 						(gEgo get: 32) ; invCuckooClock
-						((gUser BAD_SELECTOR:) BAD_SELECTOR:)
+						((gUser sel_715:) sel_737:)
 						(PlayScene 238 0 400) ; marienRm
 					)
 					(else
@@ -103,7 +103,7 @@
 					)
 					((and (not (IsFlag 967)) (IsFlag 502))
 						(gEgo get: 32) ; invCuckooClock
-						((gUser BAD_SELECTOR:) BAD_SELECTOR:)
+						((gUser sel_715:) sel_737:)
 						(PlayScene 238 0 400) ; marienRm
 					)
 					(else

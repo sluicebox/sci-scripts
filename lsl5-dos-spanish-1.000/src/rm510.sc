@@ -267,15 +267,15 @@
 			(1
 				(cond
 					((== ((Inv at: 14) state:) 0) ; Membership_Tape
-						(Say the_maitre_d__Sel_maitre 515 7 108 139 self) ; "But, of course, My Sewer," says the maitre d' snootily. "It worked in Larry 3, didn't it?"
+						(Say the_maitre_d_ 515 7 108 139 self) ; "But, of course, My Sewer," says the maitre d' snootily. "It worked in Larry 3, didn't it?"
 					)
 					((== ((Inv at: 14) state:) 4) ; Membership_Tape
-						(Say the_maitre_d__Sel_maitre 515 8 108) ; ""I suggest you find transportation to another location, Mr. (heh, heh) Laffer!" he smirks."
+						(Say the_maitre_d_ 515 8 108) ; ""I suggest you find transportation to another location, Mr. (heh, heh) Laffer!" he smirks."
 						(HandsOn)
 						(self dispose:)
 					)
 					(else
-						(Say the_maitre_d__Sel_maitre 515 9 108) ; "You have your tape, Mr. Laffer. Stop bothering me!"
+						(Say the_maitre_d_ 515 9 108) ; "You have your tape, Mr. Laffer. Stop bothering me!"
 						(HandsOn)
 						(self dispose:)
 					)
@@ -301,12 +301,12 @@
 					(HandsOff)
 					(Points 3 106)
 					(gEgo put: 12) ; Money
-					(Say the_maitre_d__Sel_maitre 515 10 108) ; "Please, follow me, sir," says the maitre d', walking to the punch tape reader. "Allow me to prepare you for membership in our exclusive club."
+					(Say the_maitre_d_ 515 10 108) ; "Please, follow me, sir," says the maitre d', walking to the punch tape reader. "Allow me to prepare you for membership in our exclusive club."
 					(= okToMakeTape 1)
 					((Inv at: 14) state: 1) ; Membership_Tape
 					(gCurRoom setScript: sMD)
 				else
-					(Say the_maitre_d__Sel_maitre 515 11 108) ; "Thank you very much, sir," says the maitre d' greedily. "Have a nice day!"
+					(Say the_maitre_d_ 515 11 108) ; "Thank you very much, sir," says the maitre d' greedily. "Have a nice day!"
 					(HandsOn)
 					(self dispose:)
 				)
@@ -503,57 +503,50 @@
 					((== ((Inv at: 14) state:) 0) ; Membership_Tape
 						(switch talkCounter
 							(1
-								(Say the_maitre_d__Sel_maitre 515 27 108) ; "No."
+								(Say the_maitre_d_ 515 27 108) ; "No."
 							)
 							(2
-								(Say the_maitre_d__Sel_maitre 515 28 108) ; "No."
+								(Say the_maitre_d_ 515 28 108) ; "No."
 							)
 							(3
-								(Say the_maitre_d__Sel_maitre 515 29 108) ; "No."
+								(Say the_maitre_d_ 515 29 108) ; "No."
 							)
 							(4
-								(Say the_maitre_d__Sel_maitre 515 30 108) ; "No."
+								(Say the_maitre_d_ 515 30 108) ; "No."
 							)
 							(5
-								(Say the_maitre_d__Sel_maitre 515 31 108) ; "No?"
+								(Say the_maitre_d_ 515 31 108) ; "No?"
 							)
 							(6
-								(Say the_maitre_d__Sel_maitre 515 32 108) ; "Know."
+								(Say the_maitre_d_ 515 32 108) ; "Know."
 							)
 							(7
-								(Say the_maitre_d__Sel_maitre 515 33 108) ; "Ho."
+								(Say the_maitre_d_ 515 33 108) ; "Ho."
 							)
 							(8
-								(Say the_maitre_d__Sel_maitre 515 34 108) ; "Who?"
+								(Say the_maitre_d_ 515 34 108) ; "Who?"
 							)
 							(9
-								(Say ; ""OK! STOP!! I'll get you a damned ticket!" he shouts."
-									the_maitre_d__Sel_maitre
-									515
-									35
-									108
-									139
-									self
-								)
+								(Say the_maitre_d_ 515 35 108 139 self) ; ""OK! STOP!! I'll get you a damned ticket!" he shouts."
 								(= okToMakeTape 1)
 								((Inv at: 14) state: 1) ; Membership_Tape
 							)
 							(else
-								(Say the_maitre_d__Sel_maitre 515 36 108) ; "I'm sorry, sir, but my limit is one bore per customer!"
+								(Say the_maitre_d_ 515 36 108) ; "I'm sorry, sir, but my limit is one bore per customer!"
 							)
 						)
 					)
 					((== ((Inv at: 14) owner:) 510) ; Membership_Tape
-						(Say the_maitre_d__Sel_maitre 515 37 108) ; "You fool! Eeet's hanging there in plain sight!"
+						(Say the_maitre_d_ 515 37 108) ; "You fool! Eeet's hanging there in plain sight!"
 					)
 					((== ((Inv at: 14) state:) 4) ; Membership_Tape
-						(Say the_maitre_d__Sel_maitre 515 38 108) ; ""I suggest you find transportation to another location, Mr. (heh, heh) Laffer!" he smirks."
+						(Say the_maitre_d_ 515 38 108) ; ""I suggest you find transportation to another location, Mr. (heh, heh) Laffer!" he smirks."
 					)
 					((IsFlag 2)
 						(gCurRoom setScript: sDoubleTalk)
 					)
 					((== ((Inv at: 14) state:) 1) ; Membership_Tape
-						(Say the_maitre_d__Sel_maitre 515 39 108) ; "Just find a place to sit down. You have an assigned table. Find it!"
+						(Say the_maitre_d_ 515 39 108) ; "Just find a place to sit down. You have an assigned table. Find it!"
 					)
 				)
 				(if (not okToMakeTape)
@@ -606,7 +599,7 @@
 				(screen dispose:)
 			)
 			(25
-				(Say the_maitre_d__Sel_maitre 515 41 108 139 self) ; "There you are, Sir!" barks the maitre d'. "Enjoy your visit here at the lovely Hard Disk Cafe!"
+				(Say the_maitre_d_ 515 41 108 139 self) ; "There you are, Sir!" barks the maitre d'. "Enjoy your visit here at the lovely Hard Disk Cafe!"
 			)
 			(26
 				(maitreD
@@ -633,10 +626,10 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(Say the_maitre_d__Sel_maitre 515 42 108 139 self) ; "I'm sorry, sir," he replies, "but admittance to the exclusive `Herman Hollerith Room' is limited to only our very finest customers."
+				(Say the_maitre_d_ 515 42 108 139 self) ; "I'm sorry, sir," he replies, "but admittance to the exclusive `Herman Hollerith Room' is limited to only our very finest customers."
 			)
 			(1
-				(Say the_maitre_d__Sel_maitre 515 43 108) ; ""(...which you are not!)" he concludes under his breath."
+				(Say the_maitre_d_ 515 43 108) ; ""(...which you are not!)" he concludes under his breath."
 				(HandsOn)
 				(self dispose:)
 			)
@@ -926,9 +919,9 @@
 			(3 ; Do
 				(Say gEgo 515 65) ; "Hello," you say to the maitre d', "do you have a table for a guy like me?"
 				(if (gEgo has: 14) ; Membership_Tape
-					(Say the_maitre_d__Sel_maitre 515 66 108) ; "Please keep your hands off me," says the maitre d'. "I'm for the use of members only!"
+					(Say the_maitre_d_ 515 66 108) ; "Please keep your hands off me," says the maitre d'. "I'm for the use of members only!"
 				else
-					(Say the_maitre_d__Sel_maitre 515 67 108) ; "Why don't you get your tape out of the machine?"
+					(Say the_maitre_d_ 515 67 108) ; "Why don't you get your tape out of the machine?"
 				)
 			)
 			(5 ; Talk
@@ -936,7 +929,7 @@
 			)
 			(4 ; Inventory
 				(if (== ((Inv at: 14) owner:) 510) ; Membership_Tape
-					(Say the_maitre_d__Sel_maitre 515 68 108) ; "You know, I'd really love to be rid of all these troublesome credit cards," you tell the maitre d'. "Would you be willing to trade them for a table inside?"
+					(Say the_maitre_d_ 515 68 108) ; "You know, I'd really love to be rid of all these troublesome credit cards," you tell the maitre d'. "Would you be willing to trade them for a table inside?"
 				else
 					(switch invItem
 						(12 ; Money
@@ -946,33 +939,26 @@
 						(13 ; Credit_Cards
 							(if (== ((Inv at: 14) state:) 1) ; Membership_Tape
 								(Say gEgo 515 68) ; "You know, I'd really love to be rid of all these troublesome credit cards," you tell the maitre d'. "Would you be willing to trade them for a table inside?"
-								(Say the_maitre_d__Sel_maitre 515 69 108) ; "But, of course, Sir!" he replies, snapping to attention. "I always have a soft spot for a fine fellow like you!"
+								(Say the_maitre_d_ 515 69 108) ; "But, of course, Sir!" he replies, snapping to attention. "I always have a soft spot for a fine fellow like you!"
 								(Points 5 108)
 								((Inv at: 14) state: 2) ; Membership_Tape
 								(gEgo put: 13) ; Credit_Cards
 								(= okToMakeTape 1)
 								(gCurRoom setScript: sMD)
 							else
-								(Say the_maitre_d__Sel_maitre 515 70 108) ; "You might want to save these, Sir," he replies. "You may need them later."
+								(Say the_maitre_d_ 515 70 108) ; "You might want to save these, Sir," he replies. "You may need them later."
 							)
 						)
 						(6 ; Hard_Disk_Cafe_Napkin
 							(Say gEgo 515 71) ; "Would you mind throwing this away for me," you say, "Now that I know how to get here I don't need it any more."
-							(Say ; ""Wee, wee, moisture!" he replies."
-								the_maitre_d__Sel_maitre
-								515
-								72
-								108
-								139
-								self
-							)
+							(Say the_maitre_d_ 515 72 108 139 self) ; ""Wee, wee, moisture!" he replies."
 							(gEgo put: 6 gCurRoomNum) ; Hard_Disk_Cafe_Napkin
 							(gTheIconBar disable: 6 curIcon: (gTheIconBar at: 0))
 							(gGame setCursor: ((gTheIconBar curIcon:) cursor:))
 						)
 						(11 ; DayTrotter
 							(Say gEgo 515 73) ; ""Would you like to see my appointment calendar for the next year?" you ask the maitre d'."
-							(Say the_maitre_d__Sel_maitre 515 74 108) ; ""Hardly," he sniffs."
+							(Say the_maitre_d_ 515 74 108) ; ""Hardly," he sniffs."
 						)
 						(else
 							(super doVerb: theVerb invItem &rest)
@@ -1063,7 +1049,7 @@
 	)
 )
 
-(instance the_maitre_d__Sel_maitre of Talker
+(instance the_maitre_d_ of Talker
 	(properties
 		name {the maitre d'}
 		nsTop 33

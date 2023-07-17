@@ -42,7 +42,7 @@
 				(gGk2Music setLoop: -1 number: 210 play:)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 95 54 362 272 init:)
+		(gEgo sel_737: setScaler: Scaler 95 54 362 272 init:)
 		(vBlanket init:)
 		(pClock init: setCycle: Osc cycleSpeed: 12)
 		(fCrucifix init:)
@@ -166,7 +166,7 @@
 
 	(method (init)
 		(super init:)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 )
 

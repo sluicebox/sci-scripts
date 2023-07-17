@@ -113,14 +113,14 @@
 		(if
 			(and
 				(<= gHowFast 8)
-				(= local25 (proc0_8 0 2))
+				(= local25 (RandomNumber 0 2))
 				(> (gGame detailLevel:) 2)
 			)
 			(Load 140 314) ; WAVE
 			(stevie init: ignoreActors: 1 setCycle: Fwd)
 			(billy init: setScript: makinFun ignoreActors: 1 setCycle: Fwd)
 		)
-		(if (= local24 (proc0_8 0 1))
+		(if (= local24 (RandomNumber 0 1))
 			(mikey init: setScript: drinkin)
 		)
 		(if (IsFlag 14)
@@ -208,7 +208,7 @@
 	(properties)
 
 	(method (pickSwitch)
-		(if (proc0_8 0 2)
+		(if (RandomNumber 0 2)
 			(= whichSwitch 0)
 		else
 			(= whichSwitch 1)
@@ -218,13 +218,13 @@
 	(method (altChangeState param1)
 		(switch (= state param1)
 			(0
-				(= ticks (proc0_8 210 600))
+				(= ticks (RandomNumber 210 600))
 			)
 			(1
 				(client loop: 1 cel: 0 setCycle: End self)
 			)
 			(2
-				(= ticks (proc0_8 10 60))
+				(= ticks (RandomNumber 10 60))
 			)
 			(3
 				(client setCycle: Beg self)
@@ -239,7 +239,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= ticks (proc0_8 180 360))
+				(= ticks (RandomNumber 180 360))
 			)
 			(1
 				(client loop: 0 cel: 0 setCycle: End self)
@@ -258,7 +258,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= ticks (proc0_8 15 75))
+				(= ticks (RandomNumber 15 75))
 			)
 			(1
 				(client setCycle: End self)
@@ -288,7 +288,7 @@
 	(method (altChangeState param1)
 		(switch (= state param1)
 			(0
-				(= ticks (proc0_8 15 45))
+				(= ticks (RandomNumber 15 45))
 			)
 			(1
 				(client loop: 5 cel: 0 setCycle: CT 2 1 self)
@@ -322,7 +322,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= ticks (proc0_8 300 480))
+				(= ticks (RandomNumber 300 480))
 			)
 			(1
 				(if (or (not local18) (glassOBeerF isNotHidden:))
@@ -338,10 +338,10 @@
 			)
 			(4
 				(client loop: 2 cel: 0 setCycle: Fwd)
-				(= ticks (proc0_8 45 75))
+				(= ticks (RandomNumber 45 75))
 			)
 			(5
-				(if (and (proc0_8 0 1) (<= local27 3))
+				(if (and (RandomNumber 0 1) (<= local27 3))
 					(++ local27)
 					(client loop: 3 cel: 0 setCycle: End self)
 				else
@@ -372,7 +372,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= ticks (proc0_8 660 900))
+				(= ticks (RandomNumber 660 900))
 			)
 			(1
 				(client loop: 1 cel: 0 setCycle: Fwd)
@@ -836,7 +836,7 @@
 			)
 			(1
 				(if (not (localproc_0 gEgo))
-					(proc0_4 client gEgo self)
+					(Face client gEgo self)
 				else
 					(= ticks 1)
 				)
@@ -947,7 +947,7 @@
 					setCycle: Beg self
 					get: 13 ; Buckazoids
 				)
-				(++ global150)
+				(++ gBuckazoidCount)
 			)
 			(4
 				(client normalize: 7)
@@ -986,7 +986,7 @@
 					setCycle: Beg self
 					get: 13 ; Buckazoids
 				)
-				(++ global150)
+				(++ gBuckazoidCount)
 			)
 			(4
 				(client normalize: 4)
@@ -1034,7 +1034,7 @@
 				(= local17 0)
 				(client normalize: 4)
 				(gGame handsOn:)
-				(if (>= global150 19)
+				(if (>= gBuckazoidCount 19)
 					(gMessager say: 16 4 6) ; "Hey, don't be greedy. It's bad enough that you stole already."
 				)
 				(self dispose:)
@@ -1078,7 +1078,7 @@
 				(= local17 0)
 				(client normalize: 7)
 				(gGame handsOn:)
-				(if (>= global150 19)
+				(if (>= gBuckazoidCount 19)
 					(gMessager say: 16 4 6) ; "Hey, don't be greedy. It's bad enough that you stole already."
 				)
 				(self dispose:)
@@ -1967,7 +1967,7 @@
 						((and (< 120 (waitron x:) 190) (< 100 (waitron y:) 120))
 							(= y (- (waitron y:) 8))
 						)
-						((proc0_8 0 2)
+						((RandomNumber 0 2)
 							(= y (- (waitron y:) 6))
 						)
 						(else
@@ -1990,7 +1990,7 @@
 				)
 				(else
 					(if (and local18 local19)
-						(switch (proc0_8 0 2)
+						(switch (RandomNumber 0 2)
 							(0
 								(= pair 7)
 							)
@@ -2003,7 +2003,7 @@
 						)
 						(continue)
 					)
-					(switch (proc0_8 0 3)
+					(switch (RandomNumber 0 3)
 						(0
 							(= pair 6)
 						)
@@ -2192,19 +2192,19 @@
 						(super doVerb: theVerb &rest)
 					)
 					(local26)
-					((and (== script wipeFrontTable) local16 (< global150 19))
+					((and (== script wipeFrontTable) local16 (< gBuckazoidCount 19))
 						(gEgo setScript: egoGrabsBucksSE)
 					)
-					((and (== script wipeFrontTable) local16 (>= global150 19))
+					((and (== script wipeFrontTable) local16 (>= gBuckazoidCount 19))
 						(gEgo setScript: egoGrovelsSE)
 					)
 					((and (== script wipeFrontTable) (not local16))
 						(gEgo setScript: egoGrovelsSE)
 					)
-					((and (== script wipeBackTable) local16 (< global150 19))
+					((and (== script wipeBackTable) local16 (< gBuckazoidCount 19))
 						(gEgo setScript: egoGrabsBucksNW)
 					)
-					((and (== script wipeBackTable) local16 (>= global150 19))
+					((and (== script wipeBackTable) local16 (>= gBuckazoidCount 19))
 						(gEgo setScript: egoGrovelsNW)
 					)
 					((and (== script wipeBackTable) (not local16))

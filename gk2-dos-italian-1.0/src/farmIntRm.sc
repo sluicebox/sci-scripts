@@ -31,7 +31,7 @@
 				(gEgo posn: 78 348 heading: 45)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 97 76 348 308 init:)
+		(gEgo sel_737: setScaler: Scaler 97 76 348 308 init:)
 		(fFrontDoor init:)
 		(fNewsPaper init:)
 		(fStationary init:)
@@ -104,7 +104,7 @@
 				)
 				(5
 					(PlayScene 548)
-					(gEgo posn: 78 348 BAD_SELECTOR: 45)
+					(gEgo posn: 78 348 sel_737: 45)
 				)
 			)
 		else
@@ -140,12 +140,7 @@
 						(else
 							(PlayScene 10)
 							(SetFlag 411)
-							(gEgo
-								get: 9 ; invGabeEnvelope1
-								posn: 78 348
-								heading: 45
-								BAD_SELECTOR:
-							)
+							(gEgo get: 9 posn: 78 348 heading: 45 sel_737:) ; invGabeEnvelope1
 						)
 					)
 				)
@@ -157,12 +152,7 @@
 						((IsFlag 241)
 							(PlayScene 232)
 							(SetFlag 411)
-							(gEgo
-								get: 31 ; invGabeEnvelope2
-								posn: 78 348
-								heading: 45
-								BAD_SELECTOR:
-							)
+							(gEgo get: 31 posn: 78 348 heading: 45 sel_737:) ; invGabeEnvelope2
 						)
 						(else
 							(gMessager say: 27 62 0 1 0 210) ; "(TRY TO WRITE TO GRACE CH 3 BEFORE IT'S TIME)I don't have anythin' to write about at the moment."
@@ -217,7 +207,7 @@
 					((and (== gChapter 3) (IsFlag 515))
 						(PlayScene 233)
 						(SetFlag 546)
-						(gEgo heading: 225 posn: 453 301 BAD_SELECTOR:)
+						(gEgo heading: 225 posn: 453 301 sel_737:)
 					)
 					(else
 						(gMessager say: 34 62 0 0 0 210) ; "(PICKUP, TRY TO CALL GROSSBERG'S NBR CH 3 BEFORE FINISHING DIALOGUE WITH LEBER)I need to make sure I've gleaned everythin' I can from Leber before I try that."
@@ -323,13 +313,13 @@
 		(switch theVerb
 			(62 ; Do
 				(PlayScene 12)
-				(gEgo posn: 78 348 heading: 135 BAD_SELECTOR:)
+				(gEgo posn: 78 348 heading: 135 sel_737:)
 			)
 			(59 ; invKlingmannReceipt
 				(if (and (IsFlag 434) (== gChapter 1))
 					(PlayScene 13)
 					(SetFlag 412)
-					(gEgo posn: 78 348 heading: 135 BAD_SELECTOR:)
+					(gEgo posn: 78 348 heading: 135 sel_737:)
 				else
 					(super doVerb: theVerb)
 				)
@@ -357,7 +347,7 @@
 	(method (doVerb theVerb)
 		(if (== theVerb 62) ; Do
 			(PlayScene 8)
-			(gEgo get: 8 posn: 78 348 heading: 135 BAD_SELECTOR:) ; invHuberKeys
+			(gEgo get: 8 posn: 78 348 heading: 135 sel_737:) ; invHuberKeys
 			(fMirror init:)
 			(self dispose:)
 		else

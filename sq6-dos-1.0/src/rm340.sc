@@ -101,7 +101,7 @@
 			(Load rsHEAP 64964)
 			(Load rsSCRIPT 64964)
 			(= local12 (Str newWith: 200 {}))
-			(= global150 1)
+			(= gBuckazoidCount 1)
 			(leftSide init:)
 			(teleportOperator init:)
 			(= gPrevRoomNum 420)
@@ -212,7 +212,7 @@
 			(++ local0)
 		)
 		(-- local0)
-		(localproc_0 22 0 0 (proc0_8 1 local0))
+		(localproc_0 22 0 0 (RandomNumber 1 local0))
 	)
 
 	(method (cue)
@@ -725,7 +725,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= seconds (proc0_8 10 30))
+				(= seconds (RandomNumber 10 30))
 			)
 			(1
 				(if (<= local5 1)
@@ -778,7 +778,7 @@
 		(switch (= state newState)
 			(0
 				(bum setLoop: 0 setCel: 0 setCycle: Fwd)
-				(= ticks (proc0_8 120 420))
+				(= ticks (RandomNumber 120 420))
 			)
 			(1
 				(bum setLoop: 1 setCel: 0 setCycle: End self)
@@ -800,7 +800,7 @@
 					(= register 0)
 					(= cycles 1)
 				else
-					(= ticks (* 60 (proc0_8 5 10)))
+					(= ticks (* 60 (RandomNumber 5 10)))
 				)
 			)
 			(1
@@ -813,7 +813,7 @@
 			)
 			(2
 				(gEgo
-					setLoop: (proc0_8 1 3)
+					setLoop: (RandomNumber 1 3)
 					cycleSpeed: local8
 					setCycle: Osc 1 self
 				)
@@ -2026,7 +2026,7 @@
 	(properties)
 
 	(method (init)
-		(self type: 2)
+		(self type: PBarredAccess)
 		(super init: 148 120 194 114 235 121 196 125)
 	)
 )

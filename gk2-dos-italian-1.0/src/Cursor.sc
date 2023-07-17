@@ -95,8 +95,8 @@
 		(= view 999)
 		(self init: &rest)
 		(= BAD_SELECTOR (Set new:))
-		(gUser BAD_SELECTOR: self)
-		(gUser BAD_SELECTOR: (= BAD_SELECTOR 62))
+		(gUser sel_715: self)
+		(gUser sel_712: (= BAD_SELECTOR 62))
 	)
 
 	(method (dispose)
@@ -207,7 +207,7 @@
 						(= temp4
 							(!=
 								BAD_SELECTOR
-								(= BAD_SELECTOR (gUser BAD_SELECTOR:))
+								(= BAD_SELECTOR (gUser sel_712:))
 							)
 						)
 						(self update:)
@@ -249,7 +249,7 @@
 
 	(method (highlight param1)
 		(= BAD_SELECTOR param1)
-		(self BAD_SELECTOR: BAD_SELECTOR)
+		(self sel_735: BAD_SELECTOR)
 		(self init:)
 	)
 
@@ -263,9 +263,7 @@
 				(= loop (= cel 0))
 			else
 				(= view 996)
-				(= loop
-					(<< (>> (= temp0 (gUser BAD_SELECTOR:)) $0004) $0001)
-				)
+				(= loop (<< (>> (= temp0 (gUser sel_738:)) $0004) $0001))
 				(= cel (& temp0 $000f))
 			)
 			(if param1
@@ -280,14 +278,14 @@
 	)
 
 	(method (update)
-		(= BAD_SELECTOR (gUser BAD_SELECTOR:))
-		(self BAD_SELECTOR: BAD_SELECTOR)
+		(= BAD_SELECTOR (gUser sel_712:))
+		(self sel_735: BAD_SELECTOR)
 		(self init:)
 	)
 
 	(method (BAD_SELECTOR)
 		(gCurInvView update:)
-		(gUser BAD_SELECTOR: 62)
+		(gUser sel_712: 62)
 		(self show: update:)
 	)
 )

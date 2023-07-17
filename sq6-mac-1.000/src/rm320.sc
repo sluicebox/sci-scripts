@@ -117,7 +117,7 @@
 			(barrelFlame2 init: setCycle: RandCycle)
 		)
 		(cond
-			((<= 2 (proc0_8 1 3))
+			((<= 2 (RandomNumber 1 3))
 				(if (> (gGame detailLevel:) 2)
 					(smokeStack1 init: setCycle: RandCycle)
 				)
@@ -126,9 +126,9 @@
 				(smokeStack2 init: setCycle: RandCycle)
 			)
 		)
-		(if (<= 2 (proc0_8 1 3))
+		(if (<= 2 (RandomNumber 1 3))
 			(hooker init: setCycle: Fwd setScript: sHooker)
-			(switch (proc0_8 1 6)
+			(switch (RandomNumber 1 6)
 				(1
 					(Load 140 34004) ; WAVE
 					(Load 140 343) ; WAVE
@@ -221,7 +221,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_4 gEgo pimp self)
+				(Face gEgo pimp self)
 			)
 			(1
 				(gMessager say: 21 1 0 0 self) ; "Hmmm. Those two look like people my mom warned me about. I think I should avoid them."
@@ -338,7 +338,7 @@
 		(switch (= state newState)
 			(0
 				(client setSpeed: 3)
-				(= seconds (proc0_8 1 3))
+				(= seconds (RandomNumber 1 3))
 			)
 			(1
 				(client setCycle: Walk)
@@ -418,8 +418,8 @@
 			)
 			(1
 				(client
-					cycleSpeed: (proc0_8 10 15)
-					setCycle: Osc (proc0_8 2 4) self
+					cycleSpeed: (RandomNumber 10 15)
+					setCycle: Osc (RandomNumber 2 4) self
 				)
 			)
 			(2
@@ -436,23 +436,23 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= ticks (proc0_8 300 900))
+				(= ticks (RandomNumber 300 900))
 			)
 			(1
-				(switch (proc0_8 0 3)
+				(switch (RandomNumber 0 3)
 					(0
 						(self setScript: sHookerTossHair)
 					)
 					(1
 						(hooker setCycle: End)
-						(= ticks (proc0_8 50 300))
+						(= ticks (RandomNumber 50 300))
 					)
 					(2
 						(hooker setCel: 0 setLoop: 2 setCycle: End self)
 					)
 					(3
 						(hooker setCycle: End)
-						(= ticks (proc0_8 50 300))
+						(= ticks (RandomNumber 50 300))
 					)
 				)
 			)
@@ -474,7 +474,7 @@
 			)
 			(1
 				(hooker setCel: 0 setLoop: 1)
-				(= ticks (proc0_8 2 400))
+				(= ticks (RandomNumber 2 400))
 			)
 			(2
 				(hooker setCycle: End self)
@@ -739,7 +739,7 @@
 				(gCurRoom doVerb: theVerb)
 			)
 			(else
-				(proc0_4 gEgo pimp)
+				(Face gEgo pimp)
 				(super doVerb: theVerb)
 			)
 		)
@@ -764,7 +764,7 @@
 				(gEgo setScript: sPimp)
 			)
 			(else
-				(proc0_4 gEgo pimp)
+				(Face gEgo pimp)
 				(super doVerb: theVerb)
 			)
 		)
@@ -1414,7 +1414,7 @@
 	(properties)
 
 	(method (init)
-		(self type: 2)
+		(self type: PBarredAccess)
 		(super init: 176 110 176 106 219 106 219 110)
 	)
 )

@@ -30,10 +30,10 @@
 	)
 
 	(method (newRoom newRoomNumber)
-		(if (and (>= (spDoor cel:) 1) (< 1000 newRoomNumber 38000)) ; rm1v00
+		(if (and (>= (spDoor cel:) 1) (< 1000 newRoomNumber -27536)) ; rm1v00
 			(gSounds play: 10407 0 90 0)
 		)
-		(if (>= newRoomNumber 38000)
+		(if (>= newRoomNumber -27536)
 			(gSounds fade: 23701 0 5 16 1 0)
 		)
 		(super newRoom: newRoomNumber &rest)

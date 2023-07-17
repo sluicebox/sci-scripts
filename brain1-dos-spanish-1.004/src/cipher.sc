@@ -124,8 +124,8 @@
 )
 
 (procedure (localproc_4 param1 param2 param3 &tmp temp0 temp1)
-	(letter_Sletra highlight: 0)
-	(letter_Sletra
+	(letter highlight: 0)
+	(letter
 		nsLeft: (+ 17 (* param2 9))
 		nsRight: (+ 26 (* param2 9))
 		nsTop: (+ 35 (* param1 9))
@@ -286,11 +286,11 @@
 		(localproc_2)
 		(ciphWindow back: [local18 9])
 		(= window ciphWindow)
-		(self add: letter_Sletra)
+		(self add: letter)
 		(for ((= temp1 0)) (< temp1 local0) ((++ temp1))
 			(self
 				add:
-					((row_Sfila new:)
+					((row new:)
 						nsLeft: 17
 						nsTop: (+ 35 (* temp1 9))
 						nsBottom: (+ 43 (* temp1 9))
@@ -311,7 +311,7 @@
 		(= local43 (= local44 0))
 		(= local45 (= local46 -1))
 		(= highlightedIcon 0)
-		(= curIcon letter_Sletra)
+		(= curIcon letter)
 		(gTheIconBar select: (gTheIconBar at: 1) curIcon: (gTheIconBar at: 1))
 		(gGame setCursor: 8)
 		(if (== (gGame printLang:) 1)
@@ -534,7 +534,7 @@
 								)
 							)
 							(localproc_4 temp4 temp5 0)
-							(cipher select: letter_Sletra 0)
+							(cipher select: letter 0)
 							(break 2)
 						)
 					)
@@ -577,9 +577,8 @@
 	)
 )
 
-(instance row_Sfila of CodeIcon
+(instance row of CodeIcon
 	(properties
-		name {row}
 		view 381
 		loop 3
 		cel 0
@@ -646,9 +645,8 @@
 	)
 )
 
-(instance letter_Sletra of CodeIcon
+(instance letter of CodeIcon
 	(properties
-		name {letter}
 		view 381
 		loop 3
 		cel 0

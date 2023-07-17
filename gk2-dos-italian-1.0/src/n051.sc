@@ -441,7 +441,7 @@
 			(PlayVMDFile 1150)
 		)
 		(else
-			(gEgo BAD_SELECTOR:)
+			(gEgo sel_737:)
 			(PrintDebugSceneText param1 {Unimplemented scene or fidget in scenes1.sc})
 		)
 	)

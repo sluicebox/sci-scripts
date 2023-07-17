@@ -36,11 +36,8 @@
 			)
 			(thomas init: setScript: sThomasFidget)
 		)
-		(tMissingWolves
-			BAD_SELECTOR: tGotOut tKillings tLookLike
-			BAD_SELECTOR: 1
-		)
-		(tMissingWolves2 BAD_SELECTOR: tGotOut tKillings tLookLike)
+		(tMissingWolves sel_835: tGotOut tKillings tLookLike sel_832: 1)
+		(tMissingWolves2 sel_835: tGotOut tKillings tLookLike)
 		(super
 			init:
 				tThomas1

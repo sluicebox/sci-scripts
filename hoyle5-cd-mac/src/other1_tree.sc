@@ -910,7 +910,7 @@
 						)
 						(= temp0 0)
 					)
-					((>= temp8 32768)
+					((>= temp8 -32768)
 						(= temp0 (proc709_0 temp15 (param1 minLevel: temp15)))
 					)
 					((!= temp10 temp37)

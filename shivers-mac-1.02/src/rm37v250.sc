@@ -28,7 +28,7 @@
 	)
 
 	(method (newRoom newRoomNumber)
-		(if (and (proc951_11 9 37000) (not (<= 37260 newRoomNumber 37290))) ; rm37v260
+		(if (and (proc951_11 9 37000) (not (<= -28276 newRoomNumber -28246)))
 			(gSounds fade: 23702 0 5 16 1 0)
 			(proc951_9 23701)
 			(gSounds play: 23701 -1 74 0)

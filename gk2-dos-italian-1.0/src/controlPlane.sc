@@ -27,13 +27,13 @@
 			(return)
 		)
 		(= local0 ((ScriptID 0 4) active:)) ; inventoryButton
-		(gGame BAD_SELECTOR: 1)
+		(gGame sel_849: 1)
 		(if (!= gChapter 6)
 			((ScriptID 0 5) mask:) ; recButton
 		)
 		((ScriptID 0 7) mask:) ; movieButton
 		(= global135 0)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR: 80 350 419 470)
+		((gUser sel_715:) sel_717: 80 350 419 470)
 		(super init: 99 361 419 470)
 		(controlPanel init: self)
 		(if local0
@@ -50,7 +50,7 @@
 
 	(method (dispose)
 		(if (not (and (IsFlag 1099) (== gChapter 5)))
-			(gGame BAD_SELECTOR: (not local0))
+			(gGame sel_849: (not local0))
 		)
 		(if (and (or (gEgo has: 6) (== gEgo GraceEgo)) (!= gChapter 6)) ; invTapeRecorder
 			((ScriptID 0 5) mask: 0) ; recButton
@@ -59,7 +59,7 @@
 			((ScriptID 0 7) mask: 0) ; movieButton
 		)
 		(= global135 1)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR:)
+		((gUser sel_715:) sel_717:)
 		(super dispose: &rest)
 	)
 )
@@ -167,7 +167,7 @@
 	)
 
 	(method (init)
-		(= x (self BAD_SELECTOR:))
+		(= x (self sel_856:))
 		(super init: &rest)
 	)
 
@@ -192,8 +192,8 @@
 			(temp0 localize: plane)
 			(= temp1 (temp0 x:))
 			(= temp2 (temp0 y:))
-			(self BAD_SELECTOR: temp1 temp2)
-			(self BAD_SELECTOR: (self BAD_SELECTOR:))
+			(self sel_853: temp1 temp2)
+			(self sel_855: (self sel_854:))
 			(temp0 dispose:)
 		)
 		(= temp1 (temp0 x:))
@@ -228,7 +228,7 @@
 				BAD_SELECTOR
 				(+
 					(/
-						(* (self BAD_SELECTOR:) (- BAD_SELECTOR BAD_SELECTOR))
+						(* (self sel_857:) (- BAD_SELECTOR BAD_SELECTOR))
 						BAD_SELECTOR
 					)
 					BAD_SELECTOR

@@ -40,7 +40,7 @@
 				(gEgo posn: 183 216 heading: 135)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 80 8 333 179 init:)
+		(gEgo sel_737: setScaler: Scaler 80 8 333 179 init:)
 		(switch gChapter
 			(1
 				(randomPeople init: setScript: (FidgetScript new:))

@@ -38,7 +38,7 @@
 				(gEgo posn: 221 328 heading: 45)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 45 28 286 238 init:)
+		(gEgo sel_737: setScaler: Scaler 45 28 286 238 init:)
 		(super init: &rest)
 		(Lock 140 250 1) ; WAVE
 		(gGk2Music setLoop: -1 number: 250 play:)

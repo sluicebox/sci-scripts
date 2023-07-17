@@ -30,7 +30,7 @@
 				(gSoundManager play: 0 600 601)
 			)
 		)
-		(gEgo setScaler: Scaler 73 29 266 149 BAD_SELECTOR: init:)
+		(gEgo setScaler: Scaler 73 29 266 149 sel_737: init:)
 		(super init: &rest)
 		(if (and (== gPrevRoomNum 660) (IsFlag 658)) ; caveMainRm
 			(PlayScene 678)

@@ -117,7 +117,7 @@
 		(localproc_0)
 		(ClearFlag 714)
 		(gCurInvView update:)
-		(gUser BAD_SELECTOR: 62)
+		(gUser sel_712: 62)
 		(= BAD_SELECTOR buttonList)
 		(self setScript: flashEm)
 		(super init: &rest)
@@ -134,7 +134,7 @@
 	)
 
 	(method (BAD_SELECTOR)
-		(self BAD_SELECTOR: (not local0))
+		(self sel_886: (not local0))
 	)
 
 	(method (BAD_SELECTOR)
@@ -153,7 +153,7 @@
 	)
 
 	(method (BAD_SELECTOR)
-		(self BAD_SELECTOR: (not local5))
+		(self sel_886: (not local5))
 	)
 
 	(method (BAD_SELECTOR)
@@ -171,7 +171,7 @@
 	)
 
 	(method (BAD_SELECTOR)
-		(self BAD_SELECTOR: (not local2))
+		(self sel_886: (not local2))
 	)
 
 	(method (BAD_SELECTOR)
@@ -190,7 +190,7 @@
 	)
 
 	(method (BAD_SELECTOR)
-		(self BAD_SELECTOR: (not local1))
+		(self sel_886: (not local1))
 	)
 
 	(method (BAD_SELECTOR)
@@ -209,7 +209,7 @@
 	)
 
 	(method (BAD_SELECTOR)
-		(self BAD_SELECTOR: (not local3))
+		(self sel_886: (not local3))
 	)
 
 	(method (BAD_SELECTOR)
@@ -228,7 +228,7 @@
 	)
 
 	(method (BAD_SELECTOR)
-		(self BAD_SELECTOR: (not local4))
+		(self sel_886: (not local4))
 	)
 
 	(method (BAD_SELECTOR)
@@ -311,7 +311,7 @@
 			(0
 				(for ((= temp0 0)) (< temp0 (buttonList size:)) ((++ temp0))
 					(= temp1 (buttonList at: temp0))
-					(if (temp1 BAD_SELECTOR:)
+					(if (temp1 sel_882:)
 						(temp1 hilite: 0)
 					)
 				)
@@ -319,8 +319,8 @@
 			)
 			(1
 				(for ((= temp0 0)) (< temp0 (buttonList size:)) ((++ temp0))
-					(if ((buttonList at: temp0) BAD_SELECTOR:)
-						((buttonList at: temp0) hilite: 1 BAD_SELECTOR:)
+					(if ((buttonList at: temp0) sel_882:)
+						((buttonList at: temp0) hilite: 1 sel_887:)
 					)
 				)
 				(= ticks 15)

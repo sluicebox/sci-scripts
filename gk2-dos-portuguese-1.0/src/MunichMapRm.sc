@@ -123,17 +123,17 @@
 	(method (BAD_SELECTOR))
 
 	(method (doit)
-		(if (== (GKHotCursor BAD_SELECTOR:) self)
-			(self BAD_SELECTOR: 1)
+		(if (== (GKHotCursor sel_723:) self)
+			(self sel_886: 1)
 			(= BAD_SELECTOR 0)
-			(gTopMessage BAD_SELECTOR: modNum noun 0)
+			(gTopMessage sel_749: modNum noun 0)
 		else
 			(if (not BAD_SELECTOR)
-				(self BAD_SELECTOR:)
+				(self sel_887:)
 				(= BAD_SELECTOR 1)
 			)
-			(if (not (gCurRoom BAD_SELECTOR:))
-				(self BAD_SELECTOR: 0)
+			(if (not (gCurRoom sel_888:))
+				(self sel_886: 0)
 				(if BAD_SELECTOR
 					(self hilite: 1)
 				)
@@ -187,7 +187,7 @@
 			(= temp0 (self track: event))
 		)
 		(if temp0
-			(self BAD_SELECTOR:)
+			(self sel_885:)
 		)
 	)
 
@@ -239,7 +239,7 @@
 		(^= BAD_SELECTOR $0001)
 		(if BAD_SELECTOR
 			(mapText init: (ScriptID 0 8)) ; bottomPlane
-			(BAD_SELECTOR eachElementDo: #BAD_SELECTOR)
+			(BAD_SELECTOR eachElementDo: #sel_887)
 		else
 			((((ScriptID 0 8) casts:) at: 0) delete: mapText) ; bottomPlane
 			(mapText dispose:)
@@ -254,8 +254,8 @@
 		(super init: &rest)
 		(proc11_13)
 		(BAD_SELECTOR init:)
-		((gInterfacePlane BAD_SELECTOR:) delete: (ScriptID 0 4)) ; inventoryButton
-		((gInterfacePlane BAD_SELECTOR:) delete: (ScriptID 0 4)) ; inventoryButton
+		((gInterfacePlane sel_743:) delete: (ScriptID 0 4)) ; inventoryButton
+		((gInterfacePlane sel_744:) delete: (ScriptID 0 4)) ; inventoryButton
 		((ScriptID 0 4) dispose:) ; inventoryButton
 		((ScriptID 0 6) init: gInterfacePlane 1 1) ; mapHintButton
 		(if (or (< gChapter 5) (and (== gChapter 5) (gEgo has: 6))) ; invTapeRecorder
@@ -265,15 +265,15 @@
 	)
 
 	(method (doit)
-		(if (not (GKHotCursor BAD_SELECTOR:))
-			(gTopMessage BAD_SELECTOR: 0)
+		(if (not (GKHotCursor sel_723:))
+			(gTopMessage sel_749: 0)
 		)
 		(super doit: &rest)
 	)
 
 	(method (dispose)
-		((gInterfacePlane BAD_SELECTOR:) delete: (ScriptID 0 6)) ; mapHintButton
-		((gInterfacePlane BAD_SELECTOR:) delete: (ScriptID 0 6)) ; mapHintButton
+		((gInterfacePlane sel_743:) delete: (ScriptID 0 6)) ; mapHintButton
+		((gInterfacePlane sel_744:) delete: (ScriptID 0 6)) ; mapHintButton
 		(if (or (< gChapter 5) (and (== gChapter 5) (gEgo has: 6))) ; invTapeRecorder
 			((ScriptID 0 5) mask: 0) ; recButton
 		)
@@ -305,7 +305,7 @@
 			(= width 300)
 		)
 		(super init: &rest)
-		(self BAD_SELECTOR: 0 19 0 0 1)
+		(self sel_749: 0 19 0 0 1)
 	)
 )
 
@@ -369,7 +369,7 @@
 	)
 
 	(method (BAD_SELECTOR)
-		(self BAD_SELECTOR: (not local0))
+		(self sel_886: (not local0))
 	)
 
 	(method (BAD_SELECTOR)
@@ -397,7 +397,7 @@
 	)
 
 	(method (BAD_SELECTOR)
-		(self BAD_SELECTOR: (not local1))
+		(self sel_886: (not local1))
 	)
 
 	(method (BAD_SELECTOR)
@@ -434,7 +434,7 @@
 	)
 
 	(method (BAD_SELECTOR)
-		(self BAD_SELECTOR: (not local2))
+		(self sel_886: (not local2))
 	)
 
 	(method (BAD_SELECTOR)
@@ -458,7 +458,7 @@
 	)
 
 	(method (BAD_SELECTOR)
-		(self BAD_SELECTOR: (not local3))
+		(self sel_886: (not local3))
 	)
 
 	(method (BAD_SELECTOR)
@@ -482,7 +482,7 @@
 	)
 
 	(method (BAD_SELECTOR)
-		(self BAD_SELECTOR: (not (IsFlag 426)))
+		(self sel_886: (not (IsFlag 426)))
 	)
 
 	(method (BAD_SELECTOR)
@@ -510,7 +510,7 @@
 	)
 
 	(method (BAD_SELECTOR)
-		(self BAD_SELECTOR: (not local4))
+		(self sel_886: (not local4))
 	)
 
 	(method (BAD_SELECTOR)
@@ -563,7 +563,7 @@
 	)
 
 	(method (BAD_SELECTOR)
-		(self BAD_SELECTOR: (not local5))
+		(self sel_886: (not local5))
 	)
 
 	(method (BAD_SELECTOR)
@@ -591,7 +591,7 @@
 	)
 
 	(method (BAD_SELECTOR)
-		(self BAD_SELECTOR: (not local6))
+		(self sel_886: (not local6))
 	)
 
 	(method (BAD_SELECTOR)
@@ -624,7 +624,7 @@
 			(0
 				(for ((= temp0 0)) (< temp0 (buttonList size:)) ((++ temp0))
 					(= temp1 (buttonList at: temp0))
-					(if (temp1 BAD_SELECTOR:)
+					(if (temp1 sel_882:)
 						(temp1 hilite: 0)
 					)
 				)
@@ -632,8 +632,8 @@
 			)
 			(1
 				(for ((= temp0 0)) (< temp0 (buttonList size:)) ((++ temp0))
-					(if ((buttonList at: temp0) BAD_SELECTOR:)
-						((buttonList at: temp0) hilite: 1 BAD_SELECTOR:)
+					(if ((buttonList at: temp0) sel_882:)
+						((buttonList at: temp0) hilite: 1 sel_887:)
 					)
 				)
 				(= ticks 15)
@@ -701,11 +701,11 @@
 
 	(method (init)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) add: self)
+		((gUser sel_756:) add: self)
 	)
 
 	(method (dispose)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_756:) delete: self)
 		(super dispose: &rest)
 	)
 

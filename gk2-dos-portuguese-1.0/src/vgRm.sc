@@ -31,7 +31,7 @@
 			(gEgo
 				posn: 351 256
 				heading: 135
-				BAD_SELECTOR:
+				sel_737:
 				setScaler: Scaler 86 71 289 257
 				init:
 			)

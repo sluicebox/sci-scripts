@@ -40,10 +40,8 @@
 	)
 )
 
-(instance controls_Fcontr_les of Controls
-	(properties
-		name {controls}
-	)
+(instance controls of Controls
+	(properties)
 )
 
 (class LLRoom of Rm
@@ -51,7 +49,7 @@
 
 	(method (init &tmp wide high i theLoop)
 		(= number gCurRoomNum)
-		(= controls controls_Fcontr_les)
+		(= controls controls)
 		(if (== ((Inv at: 1) owner:) gCurRoom) ; Battery_Charger
 			(= i 0)
 			(while (!= [chargerCoords i] 0)

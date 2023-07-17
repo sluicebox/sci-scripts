@@ -35,7 +35,7 @@
 			(Lock 140 410 1) ; WAVE
 			(gGk2Music setLoop: -1 number: 410 play:)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 75 15 329 198 init:)
+		(gEgo sel_737: setScaler: Scaler 75 15 329 198 init:)
 		(gGame handsOff:)
 		(super init: &rest)
 		(fHunt init:)

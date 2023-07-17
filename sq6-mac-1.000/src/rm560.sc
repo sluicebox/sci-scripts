@@ -119,7 +119,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= seconds (proc0_8 12 28))
+				(= seconds (RandomNumber 12 28))
 			)
 			(1
 				(if (gTalkers isEmpty:)

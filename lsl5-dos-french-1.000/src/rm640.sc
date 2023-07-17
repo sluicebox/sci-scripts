@@ -35,7 +35,7 @@
 (procedure (TalkFromBooth)
 	(= askedInToStudio 1)
 	(TPrint 640 57) ; "A speaker crackles in the background..."
-	(Say Reverse_Biaz_FReverse_Biaz 640 58 108) ; "Hello, out there! You must be Passionate Patti! Everything's all ready for your cut-in session. Just come on into the studio, I'm waiting for you."
+	(Say Reverse_Biaz 640 58 108) ; "Hello, out there! You must be Passionate Patti! Everything's all ready for your cut-in session. Just come on into the studio, I'm waiting for you."
 )
 
 (instance rm640 of LLRoom
@@ -781,7 +781,7 @@
 				(gEgo setHeading: 90 self)
 			)
 			(4
-				(Say Reverse_Biaz_FReverse_Biaz 640 20 108 139 self) ; "Patti, I promise you: you'll never work in this town again!"
+				(Say Reverse_Biaz 640 20 108 139 self) ; "Patti, I promise you: you'll never work in this town again!"
 			)
 			(5
 				(elevatorDing number: 622 play:)
@@ -1016,7 +1016,7 @@
 					)
 					(askedInToStudio
 						(SetFlag 21)
-						(Say Reverse_Biaz_FReverse_Biaz 640 25 108) ; "Where are you going, Patti? There are a lot of people in this town who would love a chance to blow synth on a session here. I was happy to give you the gig. But, if you leave me now, I promise you I'll be on the phone to the Union before you're downstairs!"
+						(Say Reverse_Biaz 640 25 108) ; "Where are you going, Patti? There are a lot of people in this town who would love a chance to blow synth on a session here. I was happy to give you the gig. But, if you leave me now, I promise you I'll be on the phone to the Union before you're downstairs!"
 					)
 					(else
 						(TalkFromBooth)
@@ -1664,7 +1664,7 @@
 	(properties)
 )
 
-(instance Reverse_Biaz_FReverse_Biaz of Talker
+(instance Reverse_Biaz of Talker
 	(properties
 		name {Reverse Biaz}
 		nsTop 15

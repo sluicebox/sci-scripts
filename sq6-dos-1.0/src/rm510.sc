@@ -102,7 +102,7 @@
 		(Load 140 268) ; WAVE
 		(Load rsHEAP 64941)
 		(Load rsSCRIPT 64941)
-		(if (== global120 2)
+		(if (== gAct 2)
 			(Load rsSOUND 991 511 51020 51021)
 			(Load rsFONT 460)
 			(Load rsPALETTE 511)
@@ -205,7 +205,7 @@
 					(printer init: cel: (printer lastCel:))
 				)
 				(cond
-					((and (== global120 1) (IsFlag 106))
+					((and (== gAct 1) (IsFlag 106))
 						(kielbasa init:)
 						(gCurRoom
 							addObstacle:
@@ -217,7 +217,7 @@
 						)
 						(gCurRoom setScript: sUnwelcomeEntry 0 1)
 					)
-					((== global120 1)
+					((== gAct 1)
 						(kielbasa init:)
 						(gCurRoom
 							addObstacle:
@@ -232,7 +232,7 @@
 					)
 					(else
 						(keyboard init: approachVerbs: 1 4 2 26) ; Look, Do, Talk, ???
-						(if (and (not (IsFlag 114)) (== global120 2))
+						(if (and (not (IsFlag 114)) (== gAct 2))
 							(keyboard cel: (keyboard lastCel:))
 						)
 						(gCurRoom setScript: sEnterRoom)
@@ -304,7 +304,7 @@
 				(door setCycle: Beg self)
 			)
 			(2
-				(if (and (== global120 2) (not (IsFlag 115)))
+				(if (and (== gAct 2) (not (IsFlag 115)))
 					(gMessager say: 1 1 4 0 self) ; "Wow, a mad scientist working on a planet called "Delta Burksilon." You wonder what he's doing here. Designing women perhaps?"
 					(SetFlag 115)
 				else
@@ -341,7 +341,7 @@
 				)
 			)
 			(3
-				(proc0_4 gEgo door self)
+				(Face gEgo door self)
 			)
 			(4
 				(doorPanel doVerb: 4)
@@ -473,7 +473,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= ticks (proc0_8 60 120))
+				(= ticks (RandomNumber 60 120))
 			)
 			(1
 				(bellows loop: 1)
@@ -481,7 +481,7 @@
 			)
 			(2
 				(bellows loop: 0 cel: 0 setCycle: Walk)
-				(if (= register (proc0_8 0 1))
+				(if (= register (RandomNumber 0 1))
 					(= scratch 3)
 					(bellows setMotion: MoveTo 125 60 self)
 				else
@@ -497,7 +497,7 @@
 				)
 			)
 			(4
-				(if (= register (proc0_8 0 2))
+				(if (= register (RandomNumber 0 2))
 					(bellows loop: 1 cel: 0 setCycle: End self)
 				else
 					(= cycles 1)
@@ -527,7 +527,7 @@
 			)
 			(8
 				(bellows loop: 0 cel: 0 setCycle: Walk)
-				(if (= register (proc0_8 0 1))
+				(if (= register (RandomNumber 0 1))
 					(= scratch 4)
 					(bellows setMotion: MoveTo 152 55 self)
 				else
@@ -543,7 +543,7 @@
 				)
 			)
 			(10
-				(if (= register (proc0_8 0 1))
+				(if (= register (RandomNumber 0 1))
 					(bellows loop: 1 cel: 0 setCycle: End self)
 				else
 					(= cycles 1)
@@ -565,7 +565,7 @@
 			)
 			(13
 				(bellows loop: 0 cel: 0 setCycle: Walk)
-				(if (= register (proc0_8 0 1))
+				(if (= register (RandomNumber 0 1))
 					(= scratch 5)
 					(bellows setMotion: MoveTo 167 53 self)
 				else
@@ -581,7 +581,7 @@
 				)
 			)
 			(15
-				(if (= register (proc0_8 0 1))
+				(if (= register (RandomNumber 0 1))
 					(bellows view: 517 loop: 0)
 					(bellows cel: (bellows lastCel:) setCycle: Beg self)
 				else
@@ -596,7 +596,7 @@
 				)
 			)
 			(17
-				(if (= register (proc0_8 0 1))
+				(if (= register (RandomNumber 0 1))
 					(= scratch 5)
 					(bellows
 						view: 5170
@@ -617,7 +617,7 @@
 				)
 			)
 			(19
-				(if (= register (proc0_8 0 1))
+				(if (= register (RandomNumber 0 1))
 					(bellows loop: 1 cel: 0 setCycle: End self)
 				else
 					(= cycles 1)
@@ -816,10 +816,10 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(kielTail setCycle: ForwardCounter (proc0_8 2 6) self)
+				(kielTail setCycle: ForwardCounter (RandomNumber 2 6) self)
 			)
 			(1
-				(= seconds (proc0_8 3 5))
+				(= seconds (RandomNumber 3 5))
 			)
 			(2
 				(self changeState: 0)
@@ -834,10 +834,10 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(bellows setCycle: ForwardCounter (proc0_8 2 4) self)
+				(bellows setCycle: ForwardCounter (RandomNumber 2 4) self)
 			)
 			(1
-				(= seconds (proc0_8 3 5))
+				(= seconds (RandomNumber 3 5))
 			)
 			(2
 				(self changeState: 0)
@@ -1068,7 +1068,7 @@
 			)
 			(13
 				(gEgo put: 86) ; Incriminating_Printouts
-				(= global120 3)
+				(= gAct 3)
 				(gCurRoom newRoom: 530)
 				(self dispose:)
 			)
@@ -1188,12 +1188,12 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(PalVary 0 511 0 (proc0_8 60 100)) ; PalVaryStart
-				(= ticks (proc0_8 2 3))
+				(PalVary 0 511 0 (RandomNumber 60 100)) ; PalVaryStart
+				(= ticks (RandomNumber 2 3))
 			)
 			(1
-				(PalVary 1 0 (proc0_8 0 40)) ; PalVaryReverse
-				(= ticks (proc0_8 4 6))
+				(PalVary 1 0 (RandomNumber 0 40)) ; PalVaryReverse
+				(= ticks (RandomNumber 4 6))
 			)
 			(2
 				(if (<= local7 20)
@@ -1217,11 +1217,11 @@
 		(switch (= state newState)
 			(0
 				(sFXType play:)
-				(bellows setCycle: ForwardCounter (proc0_8 3 7) self)
+				(bellows setCycle: ForwardCounter (RandomNumber 3 7) self)
 			)
 			(1
 				(sFXType stop:)
-				(= ticks (proc0_8 60 120))
+				(= ticks (RandomNumber 60 120))
 			)
 			(2
 				(self changeState: 0)
@@ -1296,11 +1296,11 @@
 				)
 				(self setScript: sDoingExperiments)
 			)
-			((== global120 1)
+			((== gAct 1)
 				(self setScript: sBellowsChinRub)
 				(= cycleSpeed 10)
 			)
-			((and (not (IsFlag 114)) (== global120 2))
+			((and (not (IsFlag 114)) (== gAct 2))
 				(self
 					view: 515
 					posn: 257 121
@@ -1337,7 +1337,7 @@
 				(gMessager say: noun theVerb) ; "He's kind of gross-looking. Let's not."
 			)
 			(2 ; Talk
-				(if (and (== global120 2) (== view 515))
+				(if (and (== gAct 2) (== view 515))
 					(gCurRoom setScript: sDrStormsOff)
 				else
 					(super doVerb: theVerb)

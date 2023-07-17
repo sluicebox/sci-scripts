@@ -35,13 +35,10 @@
 			(pLeber init: setScript: (FidgetScript new:))
 		)
 		(if (== gChapter 3)
-			(tOVictims
-				BAD_SELECTOR: tNumVictims tWhenVictims tPatVictims
-				BAD_SELECTOR: 1
-			)
-			(tOVictims1 BAD_SELECTOR: tNumVictims tWhenVictims tPatVictims)
-			(tKiller BAD_SELECTOR: tForensics tWereWolf tZooWolf tOneWolf)
-			(tKillin BAD_SELECTOR: tLatest tTheories)
+			(tOVictims sel_835: tNumVictims tWhenVictims tPatVictims sel_832: 1)
+			(tOVictims1 sel_835: tNumVictims tWhenVictims tPatVictims)
+			(tKiller sel_835: tForensics tWereWolf tZooWolf tOneWolf)
+			(tKillin sel_835: tLatest tTheories)
 			(super
 				init:
 					tHimself

@@ -321,7 +321,7 @@
 					)
 					(30
 						(gGlobalSound1 client: 0 fade: 0 10 5 1)
-						(DoAudio audPLAY 610 1 4 68 3)
+						(DoAudio audPLAY 610 1 4 68 3) ; "Have a nice day."
 					)
 				)
 				(= seconds (= local31 (* local5 2)))

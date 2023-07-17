@@ -52,29 +52,29 @@
 			(23
 				(Inv
 					add:
-						Camcorder_SC_mara_de_v_deo
-						Battery_Charger_SCargador
-						A_Blank_Videotape_SUna_cinta_de_v_deo_virgen_a
-						A_Blank_Videotape_SUna_cinta_de_v_deo_virgen_b
-						A_Blank_Videotape_SUna_cinta_de_v_deo_virgen_c
-						Michelle_Milken_s_Resume_SLa_carpeta_de_Michelle_Milken
-						Hard_Disk_Cafe_Napkin_SServilleta_del_Hard_Disk_Cafe
-						AeroDork_Gold_Card_STarjeta_AeroDork_Oro
-						Boarding_Pass_STarjeta_de_embarque
-						AeroDork_s_In_Flight_Magazine_SLa_revista_de_abordo_de_AeroDork
-						Some_Change_SCalderilla
-						DayTrotter__SAgenda
-						Money_SDinero
-						Credit_Cards_SLas_tarjetas_de_cr_dito
-						Membership_Tape_SLa_cinta_de_socio
-						Lana_Luscious__Resume_SLa_carpeta_de_Lana_Luscious
-						Tramp_Casino_Matchbook_SCaja_de_cerillas_del_Casino_Tramp
-						Silver_Dollar_SEl_D_lar_de_Plata
-						Roller_skates_SPatines
-						Chi_Chi_Lambada_s_Resume_SLa_carpeta_de_Chi_Chi_Lambada
-						Doc_Pulliam_s_Card_SLa_tarjeta_del_Doctor_Pulliam
-						Green_Card_SCarta_Verde
-						Doily_STapete
+						Camcorder
+						Battery_Charger
+						A_Blank_Videotape_a
+						A_Blank_Videotape_b
+						A_Blank_Videotape_c
+						Michelle_Milken_s_Resume
+						Hard_Disk_Cafe_Napkin
+						AeroDork_Gold_Card
+						Boarding_Pass
+						AeroDork_s_In_Flight_Magazine
+						Some_Change
+						DayTrotter_
+						Money
+						Credit_Cards
+						Membership_Tape
+						Lana_Luscious__Resume
+						Tramp_Casino_Matchbook
+						Silver_Dollar
+						Roller_skates
+						Chi_Chi_Lambada_s_Resume
+						Doc_Pulliam_s_Card
+						Green_Card
+						Doily
 						invLook
 						invHand
 						invSelect
@@ -89,19 +89,19 @@
 			(24
 				(Inv
 					add:
-						DataMan_SDataMan
-						Reverse_Biaz_DataPak_SEl_DataPak_de_Reverse_Biaz
-						P__C__Hammer_DataPak_SEl_DataPak_de_P_C__Hammer
-						Reverse_Biaz_Fax_SEl_fax_de_Reverse_Biaz
+						DataMan
+						Reverse_Biaz_DataPak
+						P__C__Hammer_DataPak
+						Reverse_Biaz_Fax
 						Champagne
-						Gold_Record_SEl_disco_de_oro
-						Cassette_Tape_SCinta_de_Cassette
-						P__C__Hammer_Fax_Sel_fax_de_P_C__Hammer
-						Letter_Opener_SAbrecartas
-						Desk_Key_SLlave_del_escritorio
-						Folder_Of_Evidence_SCarpeta_de_evidencia
-						Photocopied_Evidence_SPruebas_fotocopiadas
-						Reel_To_Reel_Tape_SCinta_magnetof_nica
+						Gold_Record
+						Cassette_Tape
+						P__C__Hammer_Fax
+						Letter_Opener
+						Desk_Key
+						Folder_Of_Evidence
+						Photocopied_Evidence
+						Reel_To_Reel_Tape
 						Hooter_Shooter
 						invLook
 						invHand
@@ -216,9 +216,8 @@
 	)
 )
 
-(instance Camcorder_SC_mara_de_v_deo of InvI
+(instance Camcorder of InvI
 	(properties
-		name {Camcorder}
 		view 931
 		cursor 931
 		signal 2
@@ -296,7 +295,7 @@
 						(Points 4 73)
 						(TPrint 19 23) ; "You insert the tape into "The Rob Lowe.""
 						(= state invItem)
-						((Inv at: invItem) owner: Camcorder_SC_mara_de_v_deo)
+						((Inv at: invItem) owner: Camcorder)
 						(gTheIconBar curInvIcon: 0)
 						(Inv curIcon: 0 hide:)
 						(gEgo showInv:)
@@ -312,7 +311,7 @@
 	)
 )
 
-(instance Battery_Charger_SCargador of InvI
+(instance Battery_Charger of InvI
 	(properties
 		name {Battery Charger}
 		view 932
@@ -346,7 +345,7 @@
 	)
 )
 
-(instance A_Blank_Videotape_SUna_cinta_de_v_deo_virgen_a of InvI
+(instance A_Blank_Videotape_a of InvI
 	(properties
 		name {A Blank Videotape}
 		view 934
@@ -389,7 +388,7 @@
 	)
 )
 
-(instance A_Blank_Videotape_SUna_cinta_de_v_deo_virgen_b of InvI
+(instance A_Blank_Videotape_b of InvI
 	(properties
 		name {A Blank Videotape}
 		view 934
@@ -432,7 +431,7 @@
 	)
 )
 
-(instance A_Blank_Videotape_SUna_cinta_de_v_deo_virgen_c of InvI
+(instance A_Blank_Videotape_c of InvI
 	(properties
 		name {A Blank Videotape}
 		view 934
@@ -475,7 +474,7 @@
 	)
 )
 
-(instance Michelle_Milken_s_Resume_SLa_carpeta_de_Michelle_Milken of InvI
+(instance Michelle_Milken_s_Resume of InvI
 	(properties
 		name {Michelle Milken's Resume}
 		view 937
@@ -489,16 +488,7 @@
 			(2 ; Look
 				(TPrint 19 35 33 gMonoFont 82 937 2 1 80 name) ; "NAME    Michelle Milken AGE     28 HAIR    Black EYES    Brown HEIGHT   6' 1" WEIGHT   131"
 				(TPrint 19 36 33 gMonoFont 70 222 80 name) ; "OCCUPATION junk bond sales HANGOUTS  Wall Street,       computer stores TURNONS   anything covered       with whipped cream TURNOFFS  strong moral fiber"
-				(if
-					(not
-						(OneOf
-							(Hard_Disk_Cafe_Napkin_SServilleta_del_Hard_Disk_Cafe
-								owner:
-							)
-							23
-							510
-						)
-					)
+				(if (not (OneOf (Hard_Disk_Cafe_Napkin owner:) 23 510))
 					(Points 1 69)
 					(TPrint 19 37) ; "Inside her folder, you find a napkin."
 					(gEgo get: 6) ; Hard_Disk_Cafe_Napkin
@@ -521,7 +511,7 @@
 	)
 )
 
-(instance Hard_Disk_Cafe_Napkin_SServilleta_del_Hard_Disk_Cafe of InvI
+(instance Hard_Disk_Cafe_Napkin of InvI
 	(properties
 		name {Hard Disk Cafe Napkin}
 		view 938
@@ -548,7 +538,7 @@
 	)
 )
 
-(instance AeroDork_Gold_Card_STarjeta_AeroDork_Oro of InvI
+(instance AeroDork_Gold_Card of InvI
 	(properties
 		name {AeroDork Gold Card}
 		view 939
@@ -575,7 +565,7 @@
 	)
 )
 
-(instance Boarding_Pass_STarjeta_de_embarque of InvI
+(instance Boarding_Pass of InvI
 	(properties
 		name {Boarding Pass}
 		view 940
@@ -652,7 +642,7 @@
 	)
 )
 
-(instance AeroDork_s_In_Flight_Magazine_SLa_revista_de_abordo_de_AeroDork of InvI
+(instance AeroDork_s_In_Flight_Magazine of InvI
 	(properties
 		name {AeroDork's In-Flight Magazine}
 		view 941
@@ -681,7 +671,7 @@
 	)
 )
 
-(instance Some_Change_SCalderilla of InvI
+(instance Some_Change of InvI
 	(properties
 		name {Some Change}
 		view 942
@@ -716,7 +706,7 @@
 	)
 )
 
-(instance DayTrotter__SAgenda of InvI
+(instance DayTrotter_ of InvI
 	(properties
 		name {DayTrotter\05}
 		view 943
@@ -756,9 +746,8 @@
 	)
 )
 
-(instance Money_SDinero of InvI
+(instance Money of InvI
 	(properties
-		name {Money}
 		view 944
 		cursor 944
 		signal 2
@@ -783,7 +772,7 @@
 	)
 )
 
-(instance Credit_Cards_SLas_tarjetas_de_cr_dito of InvI
+(instance Credit_Cards of InvI
 	(properties
 		name {Credit Cards}
 		view 945
@@ -810,7 +799,7 @@
 	)
 )
 
-(instance Membership_Tape_SLa_cinta_de_socio of InvI
+(instance Membership_Tape of InvI
 	(properties
 		name {Membership Tape}
 		view 946
@@ -847,9 +836,8 @@
 	)
 )
 
-(instance DataMan_SDataMan of InvI
+(instance DataMan of InvI
 	(properties
-		name {DataMan}
 		view 948
 		cursor 948
 		signal 2
@@ -882,9 +870,7 @@
 					(1
 						(= state 0)
 						(TPrint 19 65) ; "You remove Reverse Biaz's DataPak from your DataMan."
-						(Reverse_Biaz_DataPak_SEl_DataPak_de_Reverse_Biaz
-							owner: 24
-						)
+						(Reverse_Biaz_DataPak owner: 24)
 						(gTheIconBar curInvIcon: 0)
 						(Inv curIcon: 0 hide:)
 						(gEgo showInv:)
@@ -892,9 +878,7 @@
 					(2
 						(= state 0)
 						(TPrint 19 66) ; "You remove P. C. Hammer's DataPak from your DataMan."
-						(P__C__Hammer_DataPak_SEl_DataPak_de_P_C__Hammer
-							owner: 24
-						)
+						(P__C__Hammer_DataPak owner: 24)
 						(gTheIconBar curInvIcon: 0)
 						(Inv curIcon: 0 hide:)
 						(gEgo showInv:)
@@ -905,12 +889,10 @@
 				(switch invItem
 					(1 ; Battery_Charger
 						(Points 7 75)
-						(if (== (DataMan_SDataMan state:) 0)
+						(if (== (DataMan state:) 0)
 							(TPrint 19 67) ; "You insert Reverse Biaz's DataPak into your DataMan."
 							(= state 1)
-							(Reverse_Biaz_DataPak_SEl_DataPak_de_Reverse_Biaz
-								owner: self
-							)
+							(Reverse_Biaz_DataPak owner: self)
 							(gTheIconBar curInvIcon: 0)
 							(Inv curIcon: 0 hide:)
 							(gEgo showInv:)
@@ -920,12 +902,10 @@
 					)
 					(2 ; A_Blank_Videotape_a
 						(Points 7 75)
-						(if (== (DataMan_SDataMan state:) 0)
+						(if (== (DataMan state:) 0)
 							(TPrint 19 69) ; "You insert P. C. Hammer's DataPak into your DataMan."
 							(= state 2)
-							(P__C__Hammer_DataPak_SEl_DataPak_de_P_C__Hammer
-								owner: self
-							)
+							(P__C__Hammer_DataPak owner: self)
 							(gTheIconBar curInvIcon: 0)
 							(Inv curIcon: 0 hide:)
 							(gEgo showInv:)
@@ -945,7 +925,7 @@
 	)
 )
 
-(instance Reverse_Biaz_DataPak_SEl_DataPak_de_Reverse_Biaz of InvI
+(instance Reverse_Biaz_DataPak of InvI
 	(properties
 		name {Reverse Biaz DataPak}
 		view 949
@@ -973,7 +953,7 @@
 	)
 )
 
-(instance P__C__Hammer_DataPak_SEl_DataPak_de_P_C__Hammer of InvI
+(instance P__C__Hammer_DataPak of InvI
 	(properties
 		name {P. C. Hammer DataPak}
 		view 949
@@ -1001,7 +981,7 @@
 	)
 )
 
-(instance Lana_Luscious__Resume_SLa_carpeta_de_Lana_Luscious of InvI
+(instance Lana_Luscious__Resume of InvI
 	(properties
 		name {Lana Luscious' Resume}
 		view 937
@@ -1038,7 +1018,7 @@
 	)
 )
 
-(instance Tramp_Casino_Matchbook_SCaja_de_cerillas_del_Casino_Tramp of InvI
+(instance Tramp_Casino_Matchbook of InvI
 	(properties
 		name {Tramp Casino Matchbook}
 		view 952
@@ -1066,7 +1046,7 @@
 	)
 )
 
-(instance Silver_Dollar_SEl_D_lar_de_Plata of InvI
+(instance Silver_Dollar of InvI
 	(properties
 		name {Silver Dollar}
 		view 953
@@ -1103,7 +1083,7 @@
 	)
 )
 
-(instance Roller_skates_SPatines of InvI
+(instance Roller_skates of InvI
 	(properties
 		name {Roller-skates}
 		view 954
@@ -1135,7 +1115,7 @@
 	)
 )
 
-(instance Reverse_Biaz_Fax_SEl_fax_de_Reverse_Biaz of InvI
+(instance Reverse_Biaz_Fax of InvI
 	(properties
 		name {Reverse Biaz Fax}
 		view 955
@@ -1189,7 +1169,7 @@
 	)
 )
 
-(instance Gold_Record_SEl_disco_de_oro of InvI
+(instance Gold_Record of InvI
 	(properties
 		name {Gold Record}
 		view 957
@@ -1220,7 +1200,7 @@
 	)
 )
 
-(instance Cassette_Tape_SCinta_de_Cassette of InvI
+(instance Cassette_Tape of InvI
 	(properties
 		name {Cassette Tape}
 		view 958
@@ -1247,7 +1227,7 @@
 	)
 )
 
-(instance Chi_Chi_Lambada_s_Resume_SLa_carpeta_de_Chi_Chi_Lambada of InvI
+(instance Chi_Chi_Lambada_s_Resume of InvI
 	(properties
 		name {Chi Chi Lambada's Resume}
 		view 937
@@ -1284,7 +1264,7 @@
 	)
 )
 
-(instance Doc_Pulliam_s_Card_SLa_tarjeta_del_Doctor_Pulliam of InvI
+(instance Doc_Pulliam_s_Card of InvI
 	(properties
 		name {Doc Pulliam's Card}
 		view 960
@@ -1313,7 +1293,7 @@
 	)
 )
 
-(instance Green_Card_SCarta_Verde of InvI
+(instance Green_Card of InvI
 	(properties
 		name {Green Card}
 		view 961
@@ -1340,9 +1320,8 @@
 	)
 )
 
-(instance Doily_STapete of InvI
+(instance Doily of InvI
 	(properties
-		name {Doily}
 		view 962
 		cursor 962
 		signal 2
@@ -1399,7 +1378,7 @@
 	)
 )
 
-(instance P__C__Hammer_Fax_Sel_fax_de_P_C__Hammer of InvI
+(instance P__C__Hammer_Fax of InvI
 	(properties
 		name {P. C. Hammer Fax}
 		view 955
@@ -1426,7 +1405,7 @@
 	)
 )
 
-(instance Letter_Opener_SAbrecartas of InvI
+(instance Letter_Opener of InvI
 	(properties
 		name {Letter Opener}
 		view 964
@@ -1453,7 +1432,7 @@
 	)
 )
 
-(instance Desk_Key_SLlave_del_escritorio of InvI
+(instance Desk_Key of InvI
 	(properties
 		name {Desk Key}
 		view 965
@@ -1480,7 +1459,7 @@
 	)
 )
 
-(instance Folder_Of_Evidence_SCarpeta_de_evidencia of InvI
+(instance Folder_Of_Evidence of InvI
 	(properties
 		name {Folder Of Evidence}
 		view 966
@@ -1513,7 +1492,7 @@
 	)
 )
 
-(instance Photocopied_Evidence_SPruebas_fotocopiadas of InvI
+(instance Photocopied_Evidence of InvI
 	(properties
 		name {Photocopied Evidence}
 		view 967
@@ -1540,7 +1519,7 @@
 	)
 )
 
-(instance Reel_To_Reel_Tape_SCinta_magnetof_nica of InvI
+(instance Reel_To_Reel_Tape of InvI
 	(properties
 		name {Reel To Reel Tape}
 		view 968

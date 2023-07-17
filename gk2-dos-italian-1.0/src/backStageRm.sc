@@ -48,7 +48,7 @@
 			(gEgo
 				posn: 88 308
 				heading: 135
-				BAD_SELECTOR:
+				sel_737:
 				setScaler: Scaler 53 31 352 278
 				init:
 			)
@@ -56,7 +56,7 @@
 			(gEgo
 				posn: 526 330
 				heading: 315
-				BAD_SELECTOR:
+				sel_737:
 				setScaler: Scaler 53 31 352 278
 				init:
 			)
@@ -112,7 +112,7 @@
 
 	(method (init)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 		(self setScript: sFidget)
 	)
 )
@@ -125,7 +125,7 @@
 
 	(method (init)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 		(self setScript: sDoYourThing)
 	)
 )

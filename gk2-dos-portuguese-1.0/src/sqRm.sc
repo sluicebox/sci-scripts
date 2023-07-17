@@ -60,7 +60,7 @@
 		(gEgo
 			view: 5
 			heading: 180
-			BAD_SELECTOR:
+			sel_737:
 			setScaler: Scaler 100 33 333 273
 			init:
 			setStep: 10 2

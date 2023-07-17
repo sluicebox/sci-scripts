@@ -56,7 +56,7 @@
 					yourself:
 				)
 		)
-		(if (not (and (== gPrevRoomNum 520) (== global120 1)))
+		(if (not (and (== gPrevRoomNum 520) (== gAct 1)))
 			(gGSound1 number: 500 loop: -1 play:)
 		)
 		(switch gPrevRoomNum
@@ -70,7 +70,7 @@
 			)
 			(520
 				(= local0 1)
-				(if (== global120 1)
+				(if (== gAct 1)
 					(gEgo view: 502 loop: 0 cel: 0 posn: 183 102)
 				else
 					(gEgo posn: 228 103)
@@ -81,7 +81,7 @@
 				(gEgo posn: 131 104)
 			)
 		)
-		(if (and (== gPrevRoomNum 520) (== global120 1))
+		(if (and (== gPrevRoomNum 520) (== gAct 1))
 			(Load 140 508 509) ; WAVE
 		)
 		(elevatorButtons init: approachVerbs: 4 1) ; Do, Look
@@ -105,8 +105,8 @@
 		(cond
 			(
 				(or
-					(and (== gPrevRoomNum 520) (== global120 1))
-					(and (== local0 0) (== global120 1))
+					(and (== gPrevRoomNum 520) (== gAct 1))
+					(and (== local0 0) (== gAct 1))
 				)
 				(hatchClosed init:)
 				(shaftClosed init:)
@@ -129,7 +129,7 @@
 				(gCurRoom setScript: sEnterFromShaft)
 			)
 			(520
-				(if (== global120 1)
+				(if (== gAct 1)
 					(gCurRoom setScript: sEndChapter1)
 				else
 					(gCurRoom setScript: sEnterFromShaft)
@@ -178,8 +178,8 @@
 				(cond
 					(
 						(or
-							(and (== local0 0) (== global120 1))
-							(and (== global120 2) (== local0 1))
+							(and (== local0 0) (== gAct 1))
+							(and (== gAct 2) (== local0 1))
 						)
 						0
 					)
@@ -258,8 +258,8 @@
 				(cond
 					(
 						(or
-							(and (== local0 0) (== global120 1))
-							(and (== global120 2) (== local0 1))
+							(and (== local0 0) (== gAct 1))
+							(and (== gAct 2) (== local0 1))
 						)
 						(if (gFeatures contains: hatchOpen)
 							(hatchOpen dispose:)
@@ -308,7 +308,7 @@
 				(gEgo setMotion: MoveTo 91 99 self)
 			)
 			(1
-				(= global148 500)
+				(= gShuttleRoomNum 500)
 				(gCurRoom newRoom: 480)
 				(self dispose:)
 			)
@@ -449,7 +449,7 @@
 				(gMessager say: 0 0 4 6 self) ; "S T E L L A R !!!"
 			)
 			(12
-				(= global120 2)
+				(= gAct 2)
 				(Styler changeDivisions: 1400)
 				(gCurRoom newRoom: 410)
 				(self dispose:)
@@ -499,7 +499,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(1 ; Look
-				(if (and (== global120 2) (== local0 1))
+				(if (and (== gAct 2) (== local0 1))
 					(gMessager say: noun theVerb 5) ; "Apparently, the door's been sealed off since the explosion."
 				else
 					(super doVerb: theVerb)

@@ -35,11 +35,11 @@
 			(pVonAigner init: setScript: sVonAignerFidget)
 		)
 		(tHLVAGrossberg2
-			BAD_SELECTOR: tHLVAContact tHLVAZell tHLVAZell2 tHLVAMoneyZell
+			sel_835: tHLVAContact tHLVAZell tHLVAZell2 tHLVAMoneyZell
 		)
 		(tHLVAGrossberg
-			BAD_SELECTOR: tHLVAContact tHLVAZell tHLVAZell2 tHLVAMoneyZell
-			BAD_SELECTOR: 1
+			sel_835: tHLVAContact tHLVAZell tHLVAZell2 tHLVAMoneyZell
+			sel_832: 1
 		)
 		(super
 			init:
@@ -52,7 +52,7 @@
 	)
 
 	(method (BAD_SELECTOR)
-		(if (not (gCurRoom BAD_SELECTOR:))
+		(if (not (gCurRoom sel_845:))
 			(gCurRoom north: 530)
 			(SetFlag 656)
 			(PlayScene 655)

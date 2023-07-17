@@ -434,7 +434,7 @@
 				(gEgo setMotion: MoveTo 1010 28 self)
 			)
 			(4
-				(= global148 740)
+				(= gShuttleRoomNum 740)
 				(gCurRoom newRoom: 480)
 				(self dispose:)
 			)
@@ -487,7 +487,7 @@
 				(= ticks 240)
 			)
 			(3
-				(= global148 740)
+				(= gShuttleRoomNum 740)
 				(gCurRoom newRoom: 490)
 				(self dispose:)
 			)
@@ -677,7 +677,7 @@
 				)
 			)
 			(1
-				(proc666_0 28 self)
+				(EgoDead 28 self) ; "And you were so close, too."
 			)
 			(2
 				(cond
@@ -1111,7 +1111,7 @@
 				)
 			)
 			(4
-				(proc666_0 16 self)
+				(EgoDead 16 self) ; "So close and yet so far away. How embarrassing to get wasted by the Laurel and Hardy of nanites."
 			)
 			(5
 				(gEgo posn: 250 107 normalize: 1)
@@ -1197,7 +1197,7 @@
 				)
 			)
 			(4
-				(proc666_0 16 self)
+				(EgoDead 16 self) ; "So close and yet so far away. How embarrassing to get wasted by the Laurel and Hardy of nanites."
 			)
 			(5
 				(gEgo posn: 250 107 normalize: 1)
@@ -1270,7 +1270,7 @@
 				)
 			)
 			(6
-				(proc666_0 16 self)
+				(EgoDead 16 self) ; "So close and yet so far away. How embarrassing to get wasted by the Laurel and Hardy of nanites."
 			)
 			(7
 				(gEgo normalize: 5)
@@ -1406,7 +1406,7 @@
 				)
 			)
 			(6
-				(proc666_0 16 self)
+				(EgoDead 16 self) ; "So close and yet so far away. How embarrassing to get wasted by the Laurel and Hardy of nanites."
 			)
 			(7
 				(gEgo normalize: 5)

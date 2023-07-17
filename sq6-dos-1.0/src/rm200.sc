@@ -202,7 +202,7 @@
 		(switch (= state newState)
 			(0
 				(eyesOfGW setCycle: Fwd)
-				(= ticks (proc0_8 60 120))
+				(= ticks (RandomNumber 60 120))
 			)
 			(1
 				(eyesOfGW cel: 0)
@@ -303,7 +303,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= seconds (proc0_8 3 6))
+				(= seconds (RandomNumber 3 6))
 			)
 			(1
 				(smoker setCycle: End self)
@@ -328,7 +328,7 @@
 					cycleSpeed: 15
 					setCycle: RandCycle
 				)
-				(= seconds (proc0_8 8 26))
+				(= seconds (RandomNumber 8 26))
 			)
 			(1
 				(gameScreen loop: 3 cel: 0 cycleSpeed: 25 setCycle: End)
@@ -416,7 +416,7 @@
 					view: 2051
 					posn: 211 124
 					cel: 0
-					loop: (proc0_8 0 1)
+					loop: (RandomNumber 0 1)
 					setCycle: End self
 				)
 			)
@@ -700,10 +700,10 @@
 					cycleSpeed: 12
 					setCycle: CT 10 1 self
 				)
-				(if (<= global150 0)
+				(if (<= gBuckazoidCount 0)
 					(gEgo get: 13) ; Buckazoids
 				)
-				(+= global150 300)
+				(+= gBuckazoidCount 300)
 			)
 			(6
 				(djurkwhad setCycle: End)
@@ -1078,12 +1078,12 @@
 			)
 			(2 ; Talk
 				(cond
-					((== global149 0)
+					((== gTalkedToDjurkwhad 0)
 						(= local1 6)
-						(= global149 1)
+						(= gTalkedToDjurkwhad 1)
 						(self setScript: sRogerTalksToJerk)
 					)
-					((== global149 1)
+					((== gTalkedToDjurkwhad 1)
 						(if (gEgo has: 18) ; Cheat_Sheet
 							(self setScript: sCanCheat)
 						else

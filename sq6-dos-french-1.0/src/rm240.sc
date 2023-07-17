@@ -544,11 +544,11 @@
 			(0
 				(gGame handsOff:)
 				(sManager dispose:)
-				(-= global150 300)
+				(-= gBuckazoidCount 300)
 				(gEgo view: 249 loop: 0 cycleSpeed: 10 setCycle: End self)
 			)
 			(1
-				(if (<= global150 0)
+				(if (<= gBuckazoidCount 0)
 					(gEgo put: 13) ; Buckazoids
 				else
 					((gInventory at: 13) select: 0 1) ; Buckazoids
@@ -759,7 +759,7 @@
 			)
 			((== theVerb 64) ; Buckazoids
 				(if (not (IsFlag 18))
-					(if (and (>= global150 300) (gEgo has: 13)) ; Buckazoids
+					(if (and (>= gBuckazoidCount 300) (gEgo has: 13)) ; Buckazoids
 						(exit220 init: gTheExitCursor approachVerbs: 9) ; ExitUp
 						(SetFlag 18)
 						(gCurRoom setScript: sRogerPaysManager)

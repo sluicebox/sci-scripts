@@ -30,11 +30,11 @@
 	SetFlag 1
 	ClearFlag 2
 	IsFlag 3
-	proc0_4 4
+	Face 4
 	proc0_5 5
 	proc0_6 6
-	proc0_7 7
-	proc0_8 8
+	Fade 7
+	RandomNumber 8
 	reformTimer 9
 	bartenderTimer 10
 	nowServingTimer 11
@@ -166,7 +166,7 @@
 	gLastScreenX = 319
 	gLastScreenY = 199
 	; 100
-	global100
+	gDebugging
 	global101 = 1234
 	global102
 	global103
@@ -188,9 +188,9 @@
 	gTheExitWCursor
 	gTheExitNoneCursor
 	gHelpCursor
-	global119
+	gComPostNextRoomNum
 	; 120
-	global120 = 1
+	gAct = 1
 	global121
 	gTextScroller
 	global123
@@ -223,19 +223,19 @@
 	global145 = 2
 	global146 = 3
 	global147 = 4
-	global148 = 450
-	global149
+	gShuttleRoomNum = 450
+	gTalkedToDjurkwhad
 	; 150
-	global150
+	gBuckazoidCount
 	global151
-	global152
-	global153 = 4
+	gFileRoomRow
+	gNowServingNumber = 4
 	gPolygon
 	; 155
-	global155
+	gSidneyTalkCount
 	global156
 	global157
-	global158
+	gEgoSpeed
 	global159
 	; 160
 	global160
@@ -250,15 +250,15 @@
 	global168
 	global169
 	; 170
-	global170
-	global171
-	global172 = -1
+	gShuttleStatus
+	gLookedAtNigelFile
+	gCurrentMnM = -1
 	global173 = 3
 	global174
 	; 175
-	global175
+	gDeepshipLocation
 	global176
-	global177
+	gETTouchCount
 	global178
 	gStr
 	; 180
@@ -440,7 +440,7 @@
 	)
 )
 
-(procedure (proc0_7 param1 param2 param3 param4 &tmp temp0 temp1)
+(procedure (Fade param1 param2 param3 param4 &tmp temp0 temp1)
 	(if (or (< argc 2) (== param2 0))
 		(= param2 1)
 	)
@@ -492,13 +492,13 @@
 	)
 )
 
-(procedure (proc0_8 param1 param2)
+(procedure (RandomNumber param1 param2)
 	(return
 		(+ param1 (mod (+ (* 25173 (GetTime)) 13849) (+ (- param2 param1) 1)))
 	)
 )
 
-(procedure (proc0_4 param1 param2 param3 &tmp temp0 [temp1 2] temp3)
+(procedure (Face param1 param2 param3 &tmp temp0 [temp1 2] temp3)
 	(if (== argc 3)
 		(= temp3 param3)
 	else
@@ -558,7 +558,7 @@
 		(= temp0 (FileIO fiOPEN {version} 1))
 		(FileIO fiREAD_STRING gVersion 10 temp0)
 		(FileIO fiCLOSE temp0)
-		(= global158 4)
+		(= gEgoSpeed 4)
 		(= gWaitCursor theWaitCursor)
 		(= gNormalCursor arrowCursor)
 		(= gWalkCursor walkCursor)
@@ -578,13 +578,13 @@
 		(= gMouseY 80)
 		((= gGSound1 gSound1) owner: self init:)
 		((= gGSound2 gSound2) owner: self init:)
-		(= global100 0)
+		(= gDebugging 0)
 		(if (== (Platform 4) 2)
 			(= global106 1)
 		)
 		((ScriptID 32 0) init:) ; SQ6Controls
 		(SQInventory init:)
-		(if global100
+		(if gDebugging
 			(= global300 24)
 		)
 		(SetPalStyleRange 80 86)
@@ -613,7 +613,7 @@
 		(if gPMouse
 			(gPMouse stop:)
 		)
-		(if global100
+		(if gDebugging
 			((ScriptID 21 0) init:) ; debugRm
 		)
 		(super startRoom: param1)
@@ -693,16 +693,16 @@
 					(if (gUser controls:)
 						(gEgo
 							setSpeed:
-								(= global158
+								(= gEgoSpeed
 									(Max 0 (- (gEgo moveSpeed:) 1))
 								)
 						)
 					)
 				)
 				(KEY_SUBTRACT
-					(if (and (gUser controls:) (< global158 11))
+					(if (and (gUser controls:) (< gEgoSpeed 11))
 						(gEgo
-							setSpeed: (= global158 (+ (gEgo moveSpeed:) 1))
+							setSpeed: (= gEgoSpeed (+ (gEgo moveSpeed:) 1))
 						)
 					)
 				)
@@ -942,16 +942,16 @@
 	(method (doit param1)
 		(cond
 			((== param1 1)
-				(gMessager say: 0 1 0 (proc0_8 1 8) 0 0)
+				(gMessager say: 0 1 0 (RandomNumber 1 8) 0 0)
 			)
 			((== param1 4)
-				(gMessager say: 0 4 0 (proc0_8 1 7) 0 0)
+				(gMessager say: 0 4 0 (RandomNumber 1 7) 0 0)
 			)
 			((== param1 2)
-				(gMessager say: 0 2 0 (proc0_8 1 7) 0 0)
+				(gMessager say: 0 2 0 (RandomNumber 1 7) 0 0)
 			)
 			((not (OneOf param1 3 1 4 2 17 11 5 7 9 10 8))
-				(gMessager say: 0 26 0 (proc0_8 1 6) 0 0)
+				(gMessager say: 0 26 0 (RandomNumber 1 6) 0 0)
 			)
 			(else
 				(gGame pragmaFail:)
@@ -1016,7 +1016,7 @@
 			(gGame setCursor: ((gTheIconBar curIcon:) getCursor:) 1)
 		)
 		(if gEgo
-			(gEgo setSpeed: global158)
+			(gEgo setSpeed: gEgoSpeed)
 		)
 	)
 )
@@ -1556,8 +1556,8 @@
 	(properties)
 
 	(method (cue)
-		(if (and (not (IsFlag 183)) (> (++ global153) 99))
-			(= global153 0)
+		(if (and (not (IsFlag 183)) (> (++ gNowServingNumber) 99))
+			(= gNowServingNumber 0)
 		)
 		(if (== gCurRoomNum 570)
 			(if

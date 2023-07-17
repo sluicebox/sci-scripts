@@ -43,7 +43,7 @@
 	)
 
 	(method (BAD_SELECTOR)
-		(if (not (self BAD_SELECTOR:))
+		(if (not (self sel_845:))
 			(ClearFlag 408)
 			(PlayScene 502)
 		)

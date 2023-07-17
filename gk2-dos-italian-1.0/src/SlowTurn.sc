@@ -23,7 +23,7 @@
 		(= temp1 (& (/ (+ param2 45) 90) $0003))
 		(client loop: temp1 cel: 0 setCycle: End self)
 		(gUser canInput: 0)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR: 0)
+		((gUser sel_715:) sel_719: 0)
 	)
 
 	(method (cue &tmp temp0)
@@ -33,7 +33,7 @@
 			(temp0 cue:)
 		)
 		(gUser canInput: 1)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR: 1)
+		((gUser sel_715:) sel_719: 1)
 	)
 )
 

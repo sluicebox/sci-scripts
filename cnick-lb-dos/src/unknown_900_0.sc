@@ -89,7 +89,7 @@
 	(method (sel_143 param1)
 		(switch (= sel_29 param1)
 			(0
-				(while (u> (GetTime) -192)
+				(while (u> (GetTime) 65344)
 				)
 				(unknown_900_3
 					sel_2: 950

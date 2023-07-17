@@ -42,7 +42,7 @@
 	)
 
 	(method (init)
-		(= global175 2)
+		(= gDeepshipLocation 2) ; Space
 		(= local5 (gEgo moveSpeed:))
 		(= local4 (Str newWith: 200 {}))
 		(gEgo
@@ -85,7 +85,7 @@
 				)
 		)
 		(cond
-			((and (== gPrevRoomNum 460) (or (== global119 0) (== global119 410)))
+			((and (== gPrevRoomNum 460) (or (== gComPostNextRoomNum 0) (== gComPostNextRoomNum 410)))
 				(gEgo posn: 39 131 setHeading: 270)
 				(gGame handsOn:)
 			)
@@ -751,7 +751,7 @@
 		(switch (= state newState)
 			(0
 				(dorff view: 411 setLoop: 0)
-				(= seconds (proc0_8 15 20))
+				(= seconds (RandomNumber 15 20))
 			)
 			(1
 				(if local2
@@ -1172,7 +1172,7 @@
 				)
 			)
 			(3
-				(gCurRoom newRoom: global119)
+				(gCurRoom newRoom: gComPostNextRoomNum)
 				(self dispose:)
 			)
 		)

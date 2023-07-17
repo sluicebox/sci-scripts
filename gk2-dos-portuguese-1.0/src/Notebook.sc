@@ -42,15 +42,15 @@
 		(= x (- 0 ((gCurRoom plane:) left:)))
 		(= y (- 0 ((gCurRoom plane:) top:)))
 		(super init: &rest)
-		(if (gUser BAD_SELECTOR:)
-			(= BAD_SELECTOR ((gUser BAD_SELECTOR:) BAD_SELECTOR:))
-			((gUser BAD_SELECTOR:) BAD_SELECTOR: (Set new:))
+		(if (gUser sel_715:)
+			(= BAD_SELECTOR ((gUser sel_715:) sel_718:))
+			((gUser sel_715:) sel_718: (Set new:))
 		)
 		(if (not gPanels)
 			(= gPanels (List new:))
 		)
 		(gPanels addToFront: self)
-		(self BAD_SELECTOR:)
+		(self sel_824:)
 		(exitButton init:)
 	)
 
@@ -64,20 +64,20 @@
 		(= BAD_SELECTOR param1)
 		(= BAD_SELECTOR (= BAD_SELECTOR 0))
 		(local1 eachElementDo: #x 517)
-		(for ((= temp0 0)) (< temp0 (BAD_SELECTOR BAD_SELECTOR:)) ((++ temp0))
+		(for ((= temp0 0)) (< temp0 (BAD_SELECTOR sel_828:)) ((++ temp0))
 			((local1 at: temp0) hide:)
 		)
 		(BAD_SELECTOR setPri: 50 show:)
 		(UpdateScreenItem BAD_SELECTOR)
 		(for
-			((= temp0 (+ (BAD_SELECTOR BAD_SELECTOR:) 1)))
+			((= temp0 (+ (BAD_SELECTOR sel_828:) 1)))
 			(< temp0 (local1 size:))
 			((++ temp0))
 			
 			((local1 at: temp0) setPri: (- 15 temp0) show:)
 			(UpdateScreenItem (local1 at: temp0))
 		)
-		(self BAD_SELECTOR:)
+		(self sel_825:)
 	)
 
 	(method (BAD_SELECTOR param1 &tmp temp0 temp1 temp2 temp3)
@@ -85,15 +85,15 @@
 		(cond
 			((== param1 1)
 				(= BAD_SELECTOR (+ BAD_SELECTOR 1))
-				(if (not (self BAD_SELECTOR:))
+				(if (not (self sel_825:))
 					(if
 						(>=
-							(= temp2 (+ (BAD_SELECTOR BAD_SELECTOR:) 1))
+							(= temp2 (+ (BAD_SELECTOR sel_828:) 1))
 							(BAD_SELECTOR size:)
 						)
 						(= BAD_SELECTOR temp3)
 						(= local4 1)
-						(self BAD_SELECTOR:)
+						(self sel_825:)
 						(return)
 					)
 					(for ((= temp0 temp2)) (< temp0 (local1 size:)) ((++ temp0))
@@ -105,33 +105,33 @@
 					(if (== temp0 (BAD_SELECTOR size:))
 						(= BAD_SELECTOR temp3)
 						(= local4 1)
-						(self BAD_SELECTOR:)
+						(self sel_825:)
 					else
-						(self BAD_SELECTOR: (local1 at: temp2))
+						(self sel_803: (local1 at: temp2))
 					)
 				)
 			)
 			((not BAD_SELECTOR)
-				(if (< (= temp2 (- (BAD_SELECTOR BAD_SELECTOR:) 1)) 0)
+				(if (< (= temp2 (- (BAD_SELECTOR sel_828:) 1)) 0)
 					(= local3 1)
 					(return)
 				else
-					(BAD_SELECTOR setPri: (- 15 (BAD_SELECTOR BAD_SELECTOR:)))
+					(BAD_SELECTOR setPri: (- 15 (BAD_SELECTOR sel_828:)))
 					(UpdateScreenItem BAD_SELECTOR)
 					(= BAD_SELECTOR (local1 at: temp2))
 					(BAD_SELECTOR setPri: 50 show:)
 					(UpdateScreenItem BAD_SELECTOR)
 					(if (BAD_SELECTOR isEmpty:)
-						(self BAD_SELECTOR: 0)
+						(self sel_826: 0)
 					else
-						(self BAD_SELECTOR:)
-						(self BAD_SELECTOR:)
+						(self sel_827:)
+						(self sel_825:)
 					)
 				)
 			)
 			(else
-				(self BAD_SELECTOR:)
-				(self BAD_SELECTOR:)
+				(self sel_827:)
+				(self sel_825:)
 			)
 		)
 	)
@@ -140,7 +140,7 @@
 		(= temp0 BAD_SELECTOR)
 		(= BAD_SELECTOR 0)
 		(if (not temp0)
-			(= temp2 (BAD_SELECTOR at: (BAD_SELECTOR BAD_SELECTOR:)))
+			(= temp2 (BAD_SELECTOR at: (BAD_SELECTOR sel_828:)))
 			(= temp3 0)
 			(for ((= temp1 0)) (< temp1 (temp2 size:)) ((++ temp1))
 				(if (temp2 at: temp1)
@@ -148,7 +148,7 @@
 				)
 			)
 			(while 1
-				(self BAD_SELECTOR:)
+				(self sel_825:)
 				(if (== BAD_SELECTOR temp3)
 					(break)
 				else
@@ -157,7 +157,7 @@
 			)
 		else
 			(while 1
-				(self BAD_SELECTOR:)
+				(self sel_825:)
 				(if (< BAD_SELECTOR (- temp0 1))
 					(= BAD_SELECTOR (+ BAD_SELECTOR 1))
 				else
@@ -171,16 +171,16 @@
 		(local2 eachElementDo: #dispose)
 		(if (not BAD_SELECTOR)
 			(BAD_SELECTOR show:)
-			(topicHeader init: (BAD_SELECTOR at: (BAD_SELECTOR BAD_SELECTOR:)))
+			(topicHeader init: (BAD_SELECTOR at: (BAD_SELECTOR sel_828:)))
 			(= BAD_SELECTOR 80)
 		else
 			(BAD_SELECTOR hide:)
 			(= BAD_SELECTOR 62)
 		)
-		(= temp1 (BAD_SELECTOR at: (BAD_SELECTOR BAD_SELECTOR:)))
+		(= temp1 (BAD_SELECTOR at: (BAD_SELECTOR sel_828:)))
 		(for ((= temp0 BAD_SELECTOR)) (< temp0 (temp1 size:)) ((++ temp0))
 			(if (temp1 at: temp0)
-				(if (not (self BAD_SELECTOR: temp0))
+				(if (not (self sel_805: temp0))
 					(break)
 				else
 					(= BAD_SELECTOR temp0)
@@ -200,8 +200,8 @@
 				new:
 					BAD_SELECTOR
 					param1
-					(BAD_SELECTOR at: (BAD_SELECTOR BAD_SELECTOR:))
-					((BAD_SELECTOR at: (BAD_SELECTOR BAD_SELECTOR:)) at: param1)
+					(BAD_SELECTOR at: (BAD_SELECTOR sel_828:))
+					((BAD_SELECTOR at: (BAD_SELECTOR sel_828:)) at: param1)
 			)
 		)
 		(if (or (< (temp0 nsBottom:) 480) (== (local2 size:) 1))
@@ -414,8 +414,8 @@
 	(method (handleEvent event)
 		(event localize: plane)
 		(if (not (event type:))
-			(if (gUser BAD_SELECTOR:)
-				((gUser BAD_SELECTOR:) handleEvent: event)
+			(if (gUser sel_715:)
+				((gUser sel_715:) handleEvent: event)
 			)
 			(event claimed: 1)
 			(return)
@@ -450,8 +450,8 @@
 
 	(method (dispose &tmp temp0)
 		(if BAD_SELECTOR
-			(((gUser BAD_SELECTOR:) BAD_SELECTOR:) release: dispose:)
-			((gUser BAD_SELECTOR:) BAD_SELECTOR: BAD_SELECTOR)
+			(((gUser sel_715:) sel_718:) release: dispose:)
+			((gUser sel_715:) sel_718: BAD_SELECTOR)
 			(= BAD_SELECTOR 0)
 		)
 		(if BAD_SELECTOR
@@ -505,7 +505,7 @@
 	(method (doVerb)
 		(gGame handsOff:)
 		(= local3 0)
-		(Notebook BAD_SELECTOR: 1)
+		(Notebook sel_826: 1)
 		(gGame handsOn:)
 	)
 )
@@ -539,7 +539,7 @@
 	(method (doVerb)
 		(gGame handsOff:)
 		(= local4 0)
-		(Notebook BAD_SELECTOR: 0)
+		(Notebook sel_826: 0)
 		(gGame handsOn:)
 	)
 )
@@ -650,7 +650,7 @@
 				else
 					0
 				)
-			BAD_SELECTOR: param2
+			sel_828: param2
 			isEmpty: param1
 			x: 545
 			y: param3
@@ -661,7 +661,7 @@
 
 	(method (doVerb)
 		(gGame handsOff:)
-		(Notebook BAD_SELECTOR: self)
+		(Notebook sel_803: self)
 		(gGame handsOn:)
 	)
 )

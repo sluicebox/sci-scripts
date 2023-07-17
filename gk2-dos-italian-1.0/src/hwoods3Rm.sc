@@ -61,7 +61,7 @@
 				(gEgo posn: 605 310 heading: 270)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 85 37 325 226 init:)
+		(gEgo sel_737: setScaler: Scaler 85 37 325 226 init:)
 		(self setRegions: 499) ; huntRegion
 		(fNorthExit init:)
 		(fEastExit init:)

@@ -153,7 +153,7 @@
 						)
 						(localproc_0)
 						(Palette 2 0 255 0) ; PalIntensity
-						(gGame BAD_SELECTOR:)
+						(gGame sel_868:)
 						(Lock rsAUDIO 34 0)
 						(InitChapter 1)
 					)

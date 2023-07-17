@@ -52,7 +52,7 @@
 		(door17 init:)
 		(proproomDoor init:)
 		(exitButton init:)
-		(= local26 (Wolf BAD_SELECTOR:))
+		(= local26 (Wolf sel_880:))
 		(self notify:)
 	)
 
@@ -77,8 +77,8 @@
 		(super doit:)
 		(cond
 			(script)
-			((!= local26 (Wolf BAD_SELECTOR:))
-				(= temp0 (Wolf BAD_SELECTOR:))
+			((!= local26 (Wolf sel_880:))
+				(= temp0 (Wolf sel_880:))
 				(vgWolf
 					setLoop: 5 1
 					setMotion: MoveTo [local0 (- temp0 1)] [local13 (- temp0 1)]
@@ -157,15 +157,15 @@
 				(= cycles 3)
 			)
 			(1
-				(if (== (vgWolf x:) [local0 (- (Wolf BAD_SELECTOR:) 1)])
+				(if (== (vgWolf x:) [local0 (- (Wolf sel_880:) 1)])
 					(= cycles 3)
 				else
 					(vgWolf
 						setLoop: 5 1
 						setMotion:
 							MoveTo
-							[local0 (- (Wolf BAD_SELECTOR:) 1)]
-							[local13 (- (Wolf BAD_SELECTOR:) 1)]
+							[local0 (- (Wolf sel_880:) 1)]
+							[local13 (- (Wolf sel_880:) 1)]
 							self
 					)
 				)
@@ -211,15 +211,15 @@
 			)
 			(1
 				(gabeWolf x: (- (gabeWolf x:) 14) cel: 1)
-				(if (== (vgWolf x:) [local0 (- (Wolf BAD_SELECTOR:) 1)])
+				(if (== (vgWolf x:) [local0 (- (Wolf sel_880:) 1)])
 					(= cycles 3)
 				else
 					(vgWolf
 						setLoop: 5 1
 						setMotion:
 							MoveTo
-							[local0 (- (Wolf BAD_SELECTOR:) 1)]
-							[local13 (- (Wolf BAD_SELECTOR:) 1)]
+							[local0 (- (Wolf sel_880:) 1)]
+							[local13 (- (Wolf sel_880:) 1)]
 							self
 					)
 				)
@@ -253,15 +253,15 @@
 				(= cycles 3)
 			)
 			(1
-				(if (== (vgWolf x:) [local0 (- (Wolf BAD_SELECTOR:) 1)])
+				(if (== (vgWolf x:) [local0 (- (Wolf sel_880:) 1)])
 					(= cycles 3)
 				else
 					(vgWolf
 						setLoop: 5 1
 						setMotion:
 							MoveTo
-							[local0 (- (Wolf BAD_SELECTOR:) 1)]
-							[local13 (- (Wolf BAD_SELECTOR:) 1)]
+							[local0 (- (Wolf sel_880:) 1)]
+							[local13 (- (Wolf sel_880:) 1)]
 							self
 					)
 				)
@@ -318,7 +318,7 @@
 		(= y (- [local13 (- global143 1)] 6))
 		(= cel global142)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -335,7 +335,7 @@
 	)
 
 	(method (init)
-		(if ((BaseRegion BAD_SELECTOR:) at: 0)
+		(if ((BaseRegion sel_890:) at: 0)
 			(= loop 1)
 			(= x 255)
 			(= y 64)
@@ -345,7 +345,7 @@
 			(= y 75)
 		)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -362,7 +362,7 @@
 	)
 
 	(method (init)
-		(if ((BaseRegion BAD_SELECTOR:) at: 1)
+		(if ((BaseRegion sel_890:) at: 1)
 			(= loop 1)
 			(= x 361)
 			(= y 64)
@@ -372,7 +372,7 @@
 			(= y 75)
 		)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -389,7 +389,7 @@
 	)
 
 	(method (init)
-		(if ((BaseRegion BAD_SELECTOR:) at: 2)
+		(if ((BaseRegion sel_890:) at: 2)
 			(= loop 1)
 			(= x 466)
 			(= y 64)
@@ -399,7 +399,7 @@
 			(= y 75)
 		)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -416,7 +416,7 @@
 	)
 
 	(method (init)
-		(if ((BaseRegion BAD_SELECTOR:) at: 3)
+		(if ((BaseRegion sel_890:) at: 3)
 			(= loop 0)
 			(= x 191)
 			(= y 88)
@@ -426,7 +426,7 @@
 			(= y 104)
 		)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -441,7 +441,7 @@
 	)
 
 	(method (init)
-		(if ((BaseRegion BAD_SELECTOR:) at: 4)
+		(if ((BaseRegion sel_890:) at: 4)
 			(= loop 0)
 			(= x 296)
 			(= y 88)
@@ -451,7 +451,7 @@
 			(= y 104)
 		)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -466,7 +466,7 @@
 	)
 
 	(method (init)
-		(if ((BaseRegion BAD_SELECTOR:) at: 5)
+		(if ((BaseRegion sel_890:) at: 5)
 			(= loop 0)
 			(= x 403)
 			(= y 88)
@@ -476,7 +476,7 @@
 			(= y 104)
 		)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -491,7 +491,7 @@
 	)
 
 	(method (init)
-		(if ((BaseRegion BAD_SELECTOR:) at: 6)
+		(if ((BaseRegion sel_890:) at: 6)
 			(= loop 0)
 			(= x 509)
 			(= y 88)
@@ -501,7 +501,7 @@
 			(= y 104)
 		)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -516,7 +516,7 @@
 	)
 
 	(method (init)
-		(if ((BaseRegion BAD_SELECTOR:) at: 7)
+		(if ((BaseRegion sel_890:) at: 7)
 			(= loop 1)
 			(= x 255)
 			(= y 135)
@@ -526,7 +526,7 @@
 			(= y 145)
 		)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -541,7 +541,7 @@
 	)
 
 	(method (init)
-		(if ((BaseRegion BAD_SELECTOR:) at: 8)
+		(if ((BaseRegion sel_890:) at: 8)
 			(= loop 1)
 			(= x 361)
 			(= y 135)
@@ -551,7 +551,7 @@
 			(= y 145)
 		)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -566,7 +566,7 @@
 	)
 
 	(method (init)
-		(if ((BaseRegion BAD_SELECTOR:) at: 9)
+		(if ((BaseRegion sel_890:) at: 9)
 			(= loop 1)
 			(= x 466)
 			(= y 135)
@@ -576,7 +576,7 @@
 			(= y 145)
 		)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -591,7 +591,7 @@
 	)
 
 	(method (init)
-		(if ((BaseRegion BAD_SELECTOR:) at: 10)
+		(if ((BaseRegion sel_890:) at: 10)
 			(= loop 0)
 			(= x 191)
 			(= y 161)
@@ -600,7 +600,7 @@
 			(= y (= x 179))
 		)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -615,7 +615,7 @@
 	)
 
 	(method (init)
-		(if ((BaseRegion BAD_SELECTOR:) at: 11)
+		(if ((BaseRegion sel_890:) at: 11)
 			(= loop 0)
 			(= x 296)
 			(= y 161)
@@ -625,7 +625,7 @@
 			(= y 179)
 		)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -640,7 +640,7 @@
 	)
 
 	(method (init)
-		(if ((BaseRegion BAD_SELECTOR:) at: 12)
+		(if ((BaseRegion sel_890:) at: 12)
 			(= loop 0)
 			(= x 403)
 			(= y 161)
@@ -650,7 +650,7 @@
 			(= y 179)
 		)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -665,7 +665,7 @@
 	)
 
 	(method (init)
-		(if ((BaseRegion BAD_SELECTOR:) at: 13)
+		(if ((BaseRegion sel_890:) at: 13)
 			(= loop 0)
 			(= x 509)
 			(= y 161)
@@ -675,7 +675,7 @@
 			(= y 179)
 		)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -690,7 +690,7 @@
 	)
 
 	(method (init)
-		(if ((BaseRegion BAD_SELECTOR:) at: 14)
+		(if ((BaseRegion sel_890:) at: 14)
 			(= loop 1)
 			(= x 255)
 			(= y 208)
@@ -700,7 +700,7 @@
 			(= y 219)
 		)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -715,7 +715,7 @@
 	)
 
 	(method (init)
-		(if ((BaseRegion BAD_SELECTOR:) at: 15)
+		(if ((BaseRegion sel_890:) at: 15)
 			(= loop 1)
 			(= x 361)
 			(= y 208)
@@ -725,7 +725,7 @@
 			(= y 219)
 		)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -740,7 +740,7 @@
 	)
 
 	(method (init)
-		(if ((BaseRegion BAD_SELECTOR:) at: 16)
+		(if ((BaseRegion sel_890:) at: 16)
 			(= loop 1)
 			(= x 466)
 			(= y 208)
@@ -750,7 +750,7 @@
 			(= y 219)
 		)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -768,7 +768,7 @@
 
 	(method (init)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -786,7 +786,7 @@
 
 	(method (init)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -804,7 +804,7 @@
 
 	(method (init)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -822,10 +822,10 @@
 	)
 
 	(method (init)
-		(= x [local0 (- (Wolf BAD_SELECTOR:) 1)])
-		(= y [local13 (- (Wolf BAD_SELECTOR:) 1)])
+		(= x [local0 (- (Wolf sel_880:) 1)])
+		(= y [local13 (- (Wolf sel_880:) 1)])
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)

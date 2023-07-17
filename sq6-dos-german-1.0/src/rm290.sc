@@ -234,7 +234,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= ticks (proc0_8 270 480))
+				(= ticks (RandomNumber 270 480))
 			)
 			(1
 				(client
@@ -245,7 +245,7 @@
 			)
 			(2
 				(client setCycle: 0)
-				(= ticks (proc0_8 270 480))
+				(= ticks (RandomNumber 270 480))
 			)
 			(3
 				(client
@@ -269,7 +269,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= ticks (proc0_8 270 480))
+				(= ticks (RandomNumber 270 480))
 			)
 			(1
 				(client
@@ -283,7 +283,7 @@
 				(client setCycle: 0)
 				(squeak stop:)
 				(self setScript: 0)
-				(= ticks (proc0_8 270 480))
+				(= ticks (RandomNumber 270 480))
 			)
 			(3
 				(client
@@ -310,7 +310,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= ticks (proc0_8 120 270))
+				(= ticks (RandomNumber 120 270))
 			)
 			(1
 				(if (and (gTalkers isEmpty:) (not (gGSound2 handle:)))
@@ -681,7 +681,7 @@
 				(gMessager say: 11 4 4 0 self) ; "Oh, not real smart."
 			)
 			(4
-				(proc666_0 24 self)
+				(EgoDead 24 self) ; "Don't you just hate it when that happens?"
 			)
 			(5
 				(meltTimer setReal: meltTimer 30)
@@ -703,7 +703,7 @@
 				(client setMotion: PolyPath 240 115 self)
 			)
 			(1
-				(proc0_4 gEgo endroid self)
+				(Face gEgo endroid self)
 			)
 			(2
 				(self dispose:)
@@ -721,7 +721,7 @@
 				(client setMotion: PolyPath 104 118 self)
 			)
 			(1
-				(proc0_4 gEgo endroid self)
+				(Face gEgo endroid self)
 			)
 			(2
 				(self dispose:)
@@ -739,7 +739,7 @@
 				(client setLoop: 1 1 cel: 0 setCycle: CT 3 1 self)
 			)
 			(1
-				(= ticks (proc0_8 20 45))
+				(= ticks (RandomNumber 20 45))
 			)
 			(2
 				(if (gTalkers isEmpty:)
@@ -749,14 +749,14 @@
 			)
 			(3
 				(client loop: 2 cel: 0 setCycle: Fwd)
-				(= ticks (proc0_8 60 180))
+				(= ticks (RandomNumber 60 180))
 			)
 			(4
 				(ratchet stop:)
 				(client loop: 3 cel: 0 setCycle: End self)
 			)
 			(5
-				(= ticks (proc0_8 120 210))
+				(= ticks (RandomNumber 120 210))
 			)
 			(6
 				(= state -1)
@@ -826,7 +826,7 @@
 				(gMessager say: 0 0 10 0 self) ; "Yeah, that is great improvement. Look much better now."
 			)
 			(3
-				(proc666_0 4 self)
+				(EgoDead 4 self) ; "I'm not going to say he told you so, but he did."
 			)
 			(4
 				(killTimer setReal: killTimer 30)
@@ -944,7 +944,7 @@
 				(gMessager say: 11 0 6 3 self) ; "Yep, he sure did. Boy, that's gotta hurt."
 			)
 			(4
-				(proc666_0 4 self)
+				(EgoDead 4 self) ; "I'm not going to say he told you so, but he did."
 			)
 			(5
 				(meltTimer setReal: meltTimer 30)
@@ -1003,7 +1003,7 @@
 				(gMessager say: 11 0 6 3 self) ; "Yep, he sure did. Boy, that's gotta hurt."
 			)
 			(6
-				(proc666_0 4 self)
+				(EgoDead 4 self) ; "I'm not going to say he told you so, but he did."
 			)
 			(7
 				(mergeTimer setReal: mergeTimer 30)
@@ -1038,7 +1038,7 @@
 				)
 			)
 			(1
-				(proc0_4 gEgo endroid self)
+				(Face gEgo endroid self)
 			)
 			(2
 				(gMessager say: 11 2 8 1 self) ; "Hey, there. So, what's up? Pretty crappy weather we're having, don't you think?"
@@ -1062,7 +1062,7 @@
 				(gMessager sayRange: 11 2 8 4 5 self) ; "He's apparently a social minimalist. His only reaction is the kind of look that makes you want to run to the safety of your closet and assume your all-too-familiar fetal position."
 			)
 			(7
-				(proc666_0 4 self)
+				(EgoDead 4 self) ; "I'm not going to say he told you so, but he did."
 			)
 			(8
 				(killTimer setReal: killTimer 30)

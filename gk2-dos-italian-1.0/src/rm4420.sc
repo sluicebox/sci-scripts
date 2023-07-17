@@ -134,7 +134,7 @@
 		(if
 			(and
 				(not (IsFlag BAD_SELECTOR))
-				(or (not BAD_SELECTOR) (BAD_SELECTOR firstTrue: #BAD_SELECTOR))
+				(or (not BAD_SELECTOR) (BAD_SELECTOR firstTrue: #sel_834))
 				(IsFlag 250)
 				(IsFlag 249)
 			)

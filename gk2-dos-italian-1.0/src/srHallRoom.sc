@@ -41,7 +41,7 @@
 		(gEgo
 			posn: 223 261
 			heading: 135
-			BAD_SELECTOR:
+			sel_737:
 			setScaler: Scaler 76 45 328 257
 			init:
 		)
@@ -50,7 +50,7 @@
 			(gerda init: setPri: 350)
 			(cond
 				((and (== gChapter 6) (not (IsFlag 716)))
-					(gSoundManager BAD_SELECTOR: 1)
+					(gSoundManager sel_702: 1)
 					(PlayScene 758)
 					(SetFlag 716)
 				)
@@ -301,8 +301,8 @@
 				(9 ; invGracePackage1
 					(if (IsFlag 474)
 						(PlayScene 135)
-						(gUser BAD_SELECTOR: 62)
-						((gUser BAD_SELECTOR:) BAD_SELECTOR:)
+						(gUser sel_712: 62)
+						((gUser sel_715:) sel_737:)
 						(gEgo put: 27) ; invGracePackage1
 						(gEgo get: 80) ; invAddressedPackage
 						(gCurInvView select: 80)

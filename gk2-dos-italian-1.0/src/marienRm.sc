@@ -76,7 +76,7 @@
 			(gGk2Music setLoop: -1 number: 401 play: setVol: 38)
 		)
 		(gEgo
-			BAD_SELECTOR: 8
+			sel_737: 8
 			setScale: 0
 			cel:
 				(switch gPrevRoomNum
@@ -603,7 +603,7 @@
 	)
 
 	(method (doVerb)
-		(GKHotCursor BAD_SELECTOR:)
+		(GKHotCursor sel_737:)
 		(gGame handsOff:)
 		(localproc_0)
 		(gEgo setMotion: 0 posn: 1865 307 loop: 0 show:)
@@ -649,7 +649,7 @@
 	)
 
 	(method (doVerb)
-		(GKHotCursor BAD_SELECTOR:)
+		(GKHotCursor sel_737:)
 		(gGame handsOff:)
 		(localproc_0)
 		(gEgo setMotion: 0 posn: 40 307 loop: 1 show:)

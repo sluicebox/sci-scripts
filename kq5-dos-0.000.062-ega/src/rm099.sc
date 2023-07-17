@@ -26,7 +26,7 @@
 		(HandsOff)
 		(super init:)
 		(= global327 0)
-		(while (u> (GetTime) -1024)
+		(while (u> (GetTime) 64512)
 		)
 		(fred
 			view: 99

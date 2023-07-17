@@ -61,17 +61,17 @@
 	(method (init &tmp temp0 temp1 temp2)
 		(= local0 (= local1 0))
 		(Sound pause: 1)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR:)
+		((gUser sel_715:) sel_736:)
 		(= global135 0)
-		(= local4 ((gUser BAD_SELECTOR:) BAD_SELECTOR:))
-		((gUser BAD_SELECTOR:) BAD_SELECTOR: (List new:))
+		(= local4 ((gUser sel_715:) sel_718:))
+		((gUser sel_715:) sel_718: (List new:))
 		(super init: 0 0 gLastScreenX gLastScreenY)
 		(= priority (+ (GetHighPlanePri) 1))
-		((gUser BAD_SELECTOR:) update: BAD_SELECTOR: 0)
+		((gUser sel_715:) update: sel_719: 0)
 		(self drawPic: -1)
 		(exitButton init: self 1 1)
 		(= local6 ((ScriptID 0 4) active:)) ; inventoryButton
-		(gGame BAD_SELECTOR:)
+		(gGame sel_849:)
 		((ScriptID 0 9) active: 0) ; logo
 		((ScriptID 0 7) active: 0) ; movieButton
 		((ScriptID 0 5) active: 0) ; recButton
@@ -105,15 +105,15 @@
 			(local3 dispose:)
 			(= local3 0)
 		)
-		(gGame BAD_SELECTOR: (not local6))
+		(gGame sel_849: (not local6))
 		((ScriptID 0 9) active: 1) ; logo
 		((ScriptID 0 7) active: 1) ; movieButton
 		((ScriptID 0 5) active: 1) ; recButton
 		(Sound pause: 0)
 		(BAD_SELECTOR delete: (aboutScript dispose: yourself:))
-		(((gUser BAD_SELECTOR:) BAD_SELECTOR:) release: dispose:)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR: local4)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR: 1)
+		(((gUser sel_715:) sel_718:) release: dispose:)
+		((gUser sel_715:) sel_718: local4)
+		((gUser sel_715:) sel_719: 1)
 		(= global135 1)
 		(super dispose: &rest)
 		(if global249
@@ -201,7 +201,7 @@
 			(7
 				(gGame panelObj: aboutPlane)
 				(gGame panelSelector: 143)
-				(aboutPlane BAD_SELECTOR: self 0)
+				(aboutPlane sel_748: self 0)
 				(self dispose:)
 			)
 		)
@@ -295,16 +295,16 @@
 		(= useInsetRect 0)
 		(SetNowSeen self)
 		(if (and (> argc 1) param2)
-			(param1 BAD_SELECTOR: self)
+			(param1 sel_748: self)
 		)
 		(if (and (> argc 2) param3)
-			(param1 BAD_SELECTOR: self)
+			(param1 sel_747: self)
 		)
 	)
 
 	(method (dispose)
 		(Bitmap 1 bitmap) ; Dispose
-		((self plane:) BAD_SELECTOR: self 0)
+		((self plane:) sel_748: self 0)
 		((((self plane:) casts:) at: 0) delete: self)
 		(super dispose:)
 	)

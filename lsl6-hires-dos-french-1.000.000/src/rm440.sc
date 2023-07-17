@@ -133,7 +133,7 @@
 				init:
 			)
 		)
-		(DoAudio audSTOP 82 2 0 1 1)
+		(DoAudio audSTOP 82 2 0 1 1) ; "As the last breath of life slowly ebbs from your body, you think to yourself, "So what? Those are tits to die for!""
 		(switch temp3
 			(0
 				(Print back: 7)
@@ -1988,7 +1988,7 @@
 					(= local1 0)
 					(= local2 0)
 					(sfx number: 0 stop:)
-					(DoAudio audPLAY 82 2 0 1 1)
+					(DoAudio audPLAY 82 2 0 1 1) ; "As the last breath of life slowly ebbs from your body, you think to yourself, "So what? Those are tits to die for!""
 				)
 			)
 		)

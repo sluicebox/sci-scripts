@@ -213,9 +213,9 @@
 					)
 					(KEY_a
 						(Printf {DoAudio AudPlay 0 LARRY N TAKE ALL 1})
-						(DoAudio audPLAY 0 2 5 0 1)
+						(DoAudio audPLAY 0 2 5 0 1) ; "Take me! I'm mine!!"
 						(Printf {DoAudio AudPlay 0 LARRY N TOWEL ALL 1})
-						(DoAudio audPLAY 0 2 56 0 1)
+						(DoAudio audPLAY 0 2 56 0 1) ; "You furtively wipe a few drops of perspiration from your upper lip and hope that no cute babes have noticed."
 					)
 					(KEY_p
 						(if (!= (= temp0 (GetNumber {Pic #?})) -1)

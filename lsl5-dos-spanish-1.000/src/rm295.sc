@@ -287,7 +287,7 @@
 			)
 			(2
 				(gEgo setCycle: 0)
-				(Say Mr__President_SSr__Presidente 295 20 108 139 self) ; ""Hello, who is this?" asks the voice on the phone."
+				(Say Mr__President 295 20 108 139 self) ; ""Hello, who is this?" asks the voice on the phone."
 			)
 			(3
 				(= ticks 30)
@@ -301,43 +301,43 @@
 			)
 			(6
 				(gEgo setCycle: 0)
-				(Say Mr__President_SSr__Presidente 295 22 108 139 self) ; "Well, Mr. Lafner, this is the President of the United States!"
+				(Say Mr__President 295 22 108 139 self) ; "Well, Mr. Lafner, this is the President of the United States!"
 			)
 			(7
 				(= ticks 30)
 			)
 			(8
-				(Say Mr__President_SSr__Presidente 295 23 108 139 self) ; "I just wanted to telephone to express the appreciation of this great nation to you, Larry Lasner, for the heroic deed you just accomplished!"
+				(Say Mr__President 295 23 108 139 self) ; "I just wanted to telephone to express the appreciation of this great nation to you, Larry Lasner, for the heroic deed you just accomplished!"
 			)
 			(9
 				(= ticks 30)
 			)
 			(10
-				(Say Mr__President_SSr__Presidente 295 24 108 139 self) ; "(And, of course, take this opportunity to up my approval rating another few points. You know, it never hurts to be seen worldwide on CNN under these circumstances!)"
+				(Say Mr__President 295 24 108 139 self) ; "(And, of course, take this opportunity to up my approval rating another few points. You know, it never hurts to be seen worldwide on CNN under these circumstances!)"
 			)
 			(11
 				(= ticks 30)
 			)
 			(12
-				(Say Mr__President_SSr__Presidente 295 25 108 139 self) ; "Eh, um, anyway, what I mean is," he says, getting back on track, "You probably didn't know, but the Vice-President's Mommy was on that airplane you just saved."
+				(Say Mr__President 295 25 108 139 self) ; "Eh, um, anyway, what I mean is," he says, getting back on track, "You probably didn't know, but the Vice-President's Mommy was on that airplane you just saved."
 			)
 			(13
 				(= ticks 30)
 			)
 			(14
-				(Say Mr__President_SSr__Presidente 295 26 108 139 self) ; "(By the way, he's still gaining the approval of the great American people; yes, gaining every month, little by little, getting better and better...)"
+				(Say Mr__President 295 26 108 139 self) ; "(By the way, he's still gaining the approval of the great American people; yes, gaining every month, little by little, getting better and better...)"
 			)
 			(15
 				(= ticks 30)
 			)
 			(16
-				(Say Mr__President_SSr__Presidente 295 27 108 139 self) ; "Ah, in any case, he's so grateful that he wants me to host a big dinner in your honor here at the White House. He would have called you himself, but it's long distance."
+				(Say Mr__President 295 27 108 139 self) ; "Ah, in any case, he's so grateful that he wants me to host a big dinner in your honor here at the White House. He would have called you himself, but it's long distance."
 			)
 			(17
 				(= ticks 30)
 			)
 			(18
-				(Say Mr__President_SSr__Presidente 295 28 108 139 self) ; "So, Lafter, do you think you could drop by the White House, oh, say, Tuesday next week for one of those typical Big National Hero Of The Week Dinners?"
+				(Say Mr__President 295 28 108 139 self) ; "So, Lafter, do you think you could drop by the White House, oh, say, Tuesday next week for one of those typical Big National Hero Of The Week Dinners?"
 			)
 			(19
 				(= ticks 30)
@@ -365,19 +365,19 @@
 			)
 			(26
 				(gEgo setCycle: 0)
-				(Say Mr__President_SSr__Presidente 295 32 108 139 self) ; "Oh, sorry, Lasser," he says, "I'll be too busy fish, er, uh, MEETing with some important ambassadors or something, to attend. But I promise to send the Vice-President instead."
+				(Say Mr__President 295 32 108 139 self) ; "Oh, sorry, Lasser," he says, "I'll be too busy fish, er, uh, MEETing with some important ambassadors or something, to attend. But I promise to send the Vice-President instead."
 			)
 			(27
 				(= ticks 30)
 			)
 			(28
-				(Say Mr__President_SSr__Presidente 295 33 108 139 self) ; "Nice talking to you, Licker," he concludes. "Good job!"
+				(Say Mr__President 295 33 108 139 self) ; "Nice talking to you, Licker," he concludes. "Good job!"
 			)
 			(29
 				(= ticks 30)
 			)
 			(30
-				(Say Mr__President_SSr__Presidente 295 34 108 139 self) ; "And, good bye."
+				(Say Mr__President 295 34 108 139 self) ; "And, good bye."
 			)
 			(31
 				(= ticks 30)
@@ -629,7 +629,7 @@
 	)
 )
 
-(instance Mr__President_SSr__Presidente of Talker
+(instance Mr__President of Talker
 	(properties
 		name {Mr. President}
 		nsTop 15

@@ -15,7 +15,7 @@
 		(super init: &rest)
 		(self overlay:)
 		(self setText:)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR: 0 show: update:)
+		((gUser sel_715:) sel_723: 0 show: update:)
 		(Palette 2 0 255 100) ; PalIntensity
 	)
 
@@ -25,7 +25,7 @@
 
 	(method (newRoom newRoomNumber)
 		(= global249 0)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR:)
+		((gUser sel_715:) sel_736:)
 		(super newRoom: newRoomNumber)
 	)
 
@@ -60,7 +60,7 @@
 			(= temp0 (if (!= modNum -1) modNum else gCurRoomNum))
 			(= temp1 (Str new:))
 			(if (Message msgGET temp0 noun 0 0 1 (temp1 data:))
-				(gTopMessage BAD_SELECTOR: temp1)
+				(gTopMessage sel_749: temp1)
 				(gTopMessage save:)
 			)
 			(temp1 dispose:)

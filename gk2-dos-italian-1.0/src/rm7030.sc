@@ -193,8 +193,8 @@
 				(package init:)
 				(gEgo put: 80) ; invAddressedPackage
 				(gCurInvView update:)
-				(gUser BAD_SELECTOR: 62)
-				((gUser BAD_SELECTOR:) update:)
+				(gUser sel_712: 62)
+				((gUser sel_715:) update:)
 			)
 			(9 ; invGracePackage1
 				(gMessager say: 1 9 0 1) ; "(TRY TO GIVE UNADDRESSED PACKAGE TO POST OFFICE LADY)I have to get an address first."
@@ -203,8 +203,8 @@
 				(PlayScene 433)
 				(gEgo put: 43) ; invGraceEnvelope3
 				(gCurInvView update:)
-				(gUser BAD_SELECTOR: 62)
-				((gUser BAD_SELECTOR:) update:)
+				(gUser sel_712: 62)
+				((gUser sel_715:) update:)
 				(letter3 init:)
 			)
 			(62 ; Do

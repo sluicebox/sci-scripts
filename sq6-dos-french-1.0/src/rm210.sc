@@ -361,7 +361,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= seconds (proc0_8 5 30))
+				(= seconds (RandomNumber 5 30))
 			)
 			(1
 				(client loop: local10 cel: 0 setCycle: End self)
@@ -834,7 +834,7 @@
 			)
 			(3
 				(if (== ((client gauge:) cel:) 0)
-					(switch (proc0_8 1 3)
+					(switch (RandomNumber 1 3)
 						(1
 							(Message msgGET 210 12 0 0 1 (local1 data:)) ; "Untainted victory!"
 							(stoogeSound number: 11200 play: self)
@@ -953,7 +953,7 @@
 			)
 			(3
 				(if (== ((client gauge:) cel:) 0)
-					(switch (proc0_8 1 3)
+					(switch (RandomNumber 1 3)
 						(1
 							(Message msgGET 210 12 0 0 1 (local1 data:)) ; "Untainted victory!"
 							(stoogeSound number: 11200 play: self)
@@ -1544,7 +1544,7 @@
 		(switch (= state newState)
 			(0
 				(= local29 1)
-				(= cycles (proc0_8 30 90))
+				(= cycles (RandomNumber 30 90))
 			)
 			(1
 				(= local29 0)
@@ -1580,7 +1580,7 @@
 					(== (playerTwo loop:) 0)
 					(== (GetDistance (self x:) 0 ((self opponent:) x:) 0) 44)
 				)
-				(switch (proc0_8 1 local30)
+				(switch (RandomNumber 1 local30)
 					(1
 						(playerTwo command: 3)
 					)
@@ -1604,7 +1604,7 @@
 					(!= ((self opponent:) loop:) 1)
 					(> (GetDistance (self x:) 0 ((self opponent:) x:) 0) 44)
 				)
-				(switch (proc0_8 1 local30)
+				(switch (RandomNumber 1 local30)
 					(1
 						(playerTwo command: 1)
 					)
@@ -1620,7 +1620,7 @@
 				)
 			)
 			((and (OneOf (playerOne loop:) 0) (== (playerTwo loop:) 0))
-				(switch (proc0_8 1 (+ local30 1))
+				(switch (RandomNumber 1 (+ local30 1))
 					(1
 						(playerTwo command: 4)
 					)

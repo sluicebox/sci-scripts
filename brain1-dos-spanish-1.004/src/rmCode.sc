@@ -921,7 +921,7 @@
 	)
 )
 
-(instance symbol_Ss_mbolo_a of TextIcon
+(instance symbol_a of TextIcon
 	(properties
 		name {symbol}
 		view 384
@@ -963,7 +963,7 @@
 	)
 )
 
-(instance symbol_Ss_mbolo_b of TextIcon
+(instance symbol_b of TextIcon
 	(properties
 		name {symbol}
 		view 384
@@ -1037,7 +1037,7 @@
 		(for ((= temp0 0)) (< temp0 10) ((++ temp0))
 			(self
 				add:
-					((= [local18 temp0] (symbol_Ss_mbolo_a new:))
+					((= [local18 temp0] (symbol_a new:))
 						value: temp0
 						nsLeft: [local31 temp0]
 						nsTop: [local41 temp0]
@@ -1050,7 +1050,7 @@
 		)
 		(self
 			add:
-				(symbol_Ss_mbolo_b
+				(symbol_b
 					highlightColor: [local0 2]
 					lowlightColor: [local0 3]
 					textColor: [local0 4]
@@ -1088,7 +1088,7 @@
 						(cabinetLock select: [local18 (- temp1 48)] 0)
 					)
 					((or (== temp1 KEY_e) (== temp1 KEY_E))
-						(cabinetLock select: symbol_Ss_mbolo_b 0)
+						(cabinetLock select: symbol_b 0)
 					)
 				)
 			)

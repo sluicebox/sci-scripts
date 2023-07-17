@@ -505,16 +505,16 @@
 				(= seconds 3)
 			)
 			(77
-				(Say Mr__Bigg_Sel_Sr__Bigg 460 22 108 139 self) ; "...and it's fortunate that you're here this evening as I'm only in town for a short time. Yes, I'm testifying tomorrow on Capitol Hill at the Senate hearings on pornography in the entertainment industry."
+				(Say Mr__Bigg 460 22 108 139 self) ; "...and it's fortunate that you're here this evening as I'm only in town for a short time. Yes, I'm testifying tomorrow on Capitol Hill at the Senate hearings on pornography in the entertainment industry."
 			)
 			(78
-				(Say You_ST_ 460 23 108 139 self) ; ""Oh, really?" you say, feigning interest."
+				(Say You 460 23 108 139 self) ; ""Oh, really?" you say, feigning interest."
 			)
 			(79
-				(Say Mr__Bigg_Sel_Sr__Bigg 460 24 139 self) ; ""You've heard of me, then?" he swells up noticeably."
+				(Say Mr__Bigg 460 24 139 self) ; ""You've heard of me, then?" he swells up noticeably."
 			)
 			(80
-				(Say Mr__Bigg_Sel_Sr__Bigg 460 25 108 139 self) ; "Yes, my job is simple: tomorrow I intend to convince Congress to create tough, anti-pornography legislation tough enough to make the airwaves "Beaver" clean again, just like they were back in the Fifties!"
+				(Say Mr__Bigg 460 25 108 139 self) ; "Yes, my job is simple: tomorrow I intend to convince Congress to create tough, anti-pornography legislation tough enough to make the airwaves "Beaver" clean again, just like they were back in the Fifties!"
 			)
 			(81
 				(= seconds 3)
@@ -525,13 +525,13 @@
 				(= seconds 3)
 			)
 			(83
-				(Say Mr__Bigg_Sel_Sr__Bigg 460 28 67 -1 185 108 139 self) ; "Allow me to introduce myself," he says, "I'm Mr. Bigg, a major West Coast corporate leader."
+				(Say Mr__Bigg 460 28 67 -1 185 108 139 self) ; "Allow me to introduce myself," he says, "I'm Mr. Bigg, a major West Coast corporate leader."
 			)
 			(84
-				(Say You_ST_ 460 29 108 139 self) ; ""My name is Passionate Patti," you reply."
+				(Say You 460 29 108 139 self) ; ""My name is Passionate Patti," you reply."
 			)
 			(85
-				(Say Mr__Bigg_Sel_Sr__Bigg 460 30 67 -1 185 108 139 self) ; ""And I bet I can guess how you earned that name," he grins."
+				(Say Mr__Bigg 460 30 67 -1 185 108 139 self) ; ""And I bet I can guess how you earned that name," he grins."
 			)
 			(86
 				(= seconds 3)
@@ -543,17 +543,17 @@
 			)
 			(88
 				(TPrint 460 33 67 -1 185) ; "Realizing you are still unimpressed, Bigg digs in deeper."
-				(Say Mr__Bigg_Sel_Sr__Bigg 460 34 108 139 self) ; "You know, Patti (may I call you Patti?), I find you a very sexy woman. In fact, I've been looking for just such a woman for a new position I recently created."
+				(Say Mr__Bigg 460 34 108 139 self) ; "You know, Patti (may I call you Patti?), I find you a very sexy woman. In fact, I've been looking for just such a woman for a new position I recently created."
 			)
 			(89
 				(TPrint 460 35 67 -1 185) ; "Between phrases, he continues to hum that melody."
 				(= seconds 3)
 			)
 			(90
-				(Say Mr__Bigg_Sel_Sr__Bigg 460 36 139 self) ; "Patti, you seem like a woman interested in quick success. Why don't you be the hostess of my new TV show?"
+				(Say Mr__Bigg 460 36 139 self) ; "Patti, you seem like a woman interested in quick success. Why don't you be the hostess of my new TV show?"
 			)
 			(91
-				(Say Mr__Bigg_Sel_Sr__Bigg 460 37 108 139 self) ; "For months I've had minions out hunting for the sexiest woman in America. But tonight, I've discovered her myself! Just say the word, Babe, and the gig is yours!"
+				(Say Mr__Bigg 460 37 108 139 self) ; "For months I've had minions out hunting for the sexiest woman in America. But tonight, I've discovered her myself! Just say the word, Babe, and the gig is yours!"
 			)
 			(92
 				(TPrint 460 38 67 -1 15 70 280 108 self) ; "At the mention of "sexiest woman in America," Larry's head jerks toward Bigg, his attention riveted on your conversation."
@@ -562,10 +562,10 @@
 				(= ticks 30)
 			)
 			(94
-				(Say You_ST_ 460 39 108 139 self) ; "Really, Mr. Bigg, your offer is not interest..."
+				(Say You 460 39 108 139 self) ; "Really, Mr. Bigg, your offer is not interest..."
 			)
 			(95
-				(Say Mr__Bigg_Sel_Sr__Bigg 460 40 67 -1 185 108 139 self) ; "Bigg interrupts you. "Oh, Patti! Stop being so formal. Please. Call me `Julius.'""
+				(Say Mr__Bigg 460 40 67 -1 185 108 139 self) ; "Bigg interrupts you. "Oh, Patti! Stop being so formal. Please. Call me `Julius.'""
 			)
 			(96
 				(= seconds 3)
@@ -1224,7 +1224,7 @@
 	)
 )
 
-(instance Mr__Bigg_Sel_Sr__Bigg of Talker
+(instance Mr__Bigg of Talker
 	(properties
 		name {Mr. Bigg}
 		x 20
@@ -1251,9 +1251,8 @@
 	)
 )
 
-(instance You_ST_ of Talker
+(instance You of Talker
 	(properties
-		name {You}
 		x 20
 		y 5
 		nsTop 70

@@ -33,7 +33,7 @@
 			(gEgo
 				posn: 337 346
 				heading: 315
-				BAD_SELECTOR:
+				sel_737:
 				init:
 				setScaler: Scaler 100 88 334 295
 			)
@@ -370,7 +370,7 @@
 						(PlayScene 44 0 2342) ; rm2342
 					)
 				)
-				(gUser BAD_SELECTOR: 62)
+				(gUser sel_712: 62)
 				(GKHotCursor update: delete: self)
 			)
 			(else

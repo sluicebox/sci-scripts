@@ -43,7 +43,7 @@
 			)
 			(3
 				(tClub
-					BAD_SELECTOR:
+					sel_835:
 						tClubHowLong
 						tWhatHappened
 						tClubNumber
@@ -77,7 +77,7 @@
 				(return 0)
 			)
 		)
-		(return (super BAD_SELECTOR: &rest))
+		(return (super sel_846: &rest))
 	)
 )
 

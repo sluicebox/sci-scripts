@@ -52,9 +52,9 @@
 		(= temp0 (= temp1 0))
 		(User canInput: 1)
 		(super init:)
-		(gInterfacePlane BAD_SELECTOR: (ScriptID 0 9) 0) ; logo
-		(gInterfacePlane BAD_SELECTOR: (ScriptID 0 9) 0) ; logo
-		(gGame BAD_SELECTOR: 1)
+		(gInterfacePlane sel_748: (ScriptID 0 9) 0) ; logo
+		(gInterfacePlane sel_747: (ScriptID 0 9) 0) ; logo
+		(gGame sel_849: 1)
 		((ScriptID 0 9) dispose:) ; logo
 		((ScriptID 0 7) active: 0) ; movieButton
 		((ScriptID 0 5) active: 0) ; recButton

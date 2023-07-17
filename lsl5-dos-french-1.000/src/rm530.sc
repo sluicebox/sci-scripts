@@ -122,34 +122,13 @@
 			(0
 				(switch register
 					(0
-						(Say ; ""Nearly as many times as I'm here," she responds."
-							Michelle_Milken_FMichelle_Milken
-							530
-							1
-							108
-							139
-							self
-						)
+						(Say Michelle_Milken 530 1 108 139 self) ; ""Nearly as many times as I'm here," she responds."
 					)
 					(1
-						(Say ; "That may be, but I look even better out of it!"
-							Michelle_Milken_FMichelle_Milken
-							530
-							2
-							108
-							139
-							self
-						)
+						(Say Michelle_Milken 530 2 108 139 self) ; "That may be, but I look even better out of it!"
 					)
 					(2
-						(Say ; "Well, you may sit down, but it may be for dessert!"
-							Michelle_Milken_FMichelle_Milken
-							530
-							3
-							108
-							139
-							self
-						)
+						(Say Michelle_Milken 530 3 108 139 self) ; "Well, you may sit down, but it may be for dessert!"
 					)
 				)
 			)
@@ -337,7 +316,7 @@
 				(= cycles 2)
 			)
 			(1
-				(Say Michelle_Milken_FMichelle_Milken 530 7 108) ; ""Allow me to make our booth just a little more private," says Michelle, standing up."
+				(Say Michelle_Milken 530 7 108) ; ""Allow me to make our booth just a little more private," says Michelle, standing up."
 				(drape4 setCycle: Beg self)
 			)
 			(2
@@ -814,7 +793,7 @@
 					(1
 						(Say gEgo 530 27 67 -1 185) ; "Hello, Lovely Lonely Lady," you say to the gorgeous babe sitting all alone in the booth near you. "Allow me to introduce myself. My name is Larry; Larry Laffer."
 						(TPrint 530 28) ; "You hope she doesn't just ignore you."
-						(Say Michelle_Milken_FMichelle_Milken 530 29 108) ; "Hi, Larry," she says with a friendly smile, "new in town?"
+						(Say Michelle_Milken 530 29 108) ; "Hi, Larry," she says with a friendly smile, "new in town?"
 					)
 					(2
 						(Say gEgo 530 30 67 -1 185) ; "Remembering your boss' warning not to reveal your identity, you decide to begin with a casual opener, "Do you come here often?" you ask."
@@ -827,7 +806,7 @@
 					)
 					(4
 						(Say gEgo 530 33 67 -1 185) ; ""I notice you're dining alone," you try again."
-						(Say Michelle_Milken_FMichelle_Milken 530 34 108) ; ""Yes, and dining isn't the only thing I don't enjoy doing alone!" she responds with a smile."
+						(Say Michelle_Milken 530 34 108) ; ""Yes, and dining isn't the only thing I don't enjoy doing alone!" she responds with a smile."
 					)
 					(else
 						(Say gEgo 530 35 67 -1 185) ; ""I was wondering: may I join you for dinner?" you ask."
@@ -891,7 +870,7 @@
 	)
 )
 
-(instance Michelle_Milken_FMichelle_Milken of Talker
+(instance Michelle_Milken of Talker
 	(properties
 		name {Michelle Milken}
 		nsTop 15

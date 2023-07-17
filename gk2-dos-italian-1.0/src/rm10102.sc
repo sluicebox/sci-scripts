@@ -43,7 +43,7 @@
 			(gEgo
 				setCycle: 0
 				setScript: 0
-				BAD_SELECTOR: 6
+				sel_737: 6
 				posn: 425 325
 				setLoop: 8
 				setCel: 7
@@ -53,7 +53,7 @@
 			(gEgo
 				setCycle: 0
 				setScript: 0
-				BAD_SELECTOR: 6
+				sel_737: 6
 				posn: 150 322
 				setLoop: 8
 				cel: 0
@@ -128,7 +128,7 @@
 					init:
 					setScript: (FidgetScript new:)
 				)
-				((gUser BAD_SELECTOR:) delete: vChair)
+				((gUser sel_715:) delete: vChair)
 			)
 			((IsFlag 724)
 				(urnNiche init:)
@@ -150,7 +150,7 @@
 				setScript: (FidgetScript new:)
 			)
 			(gUser canControl: 0)
-			((gUser BAD_SELECTOR:) delete: vPriest)
+			((gUser sel_715:) delete: vPriest)
 			(vGiftBox view: 30800 init:)
 			(vPriest view: 21798 init:)
 		else
@@ -170,7 +170,7 @@
 		(if (IsFlag 726)
 			(PlayScene 800)
 			(everywhere dispose:)
-			((gUser BAD_SELECTOR:) add: vChair)
+			((gUser sel_715:) add: vChair)
 			(door init:)
 			(windDoor init:)
 		else
@@ -179,7 +179,7 @@
 		(gEgo
 			setCycle: 0
 			setScript: 0
-			BAD_SELECTOR: 6
+			sel_737: 6
 			posn: 688 330
 			setLoop: 8
 			setCel: 1
@@ -208,9 +208,9 @@
 		(archway init:)
 		(madonnaCloseup init:)
 		(altar init:)
-		((gUser BAD_SELECTOR:) add: vPriest)
+		((gUser sel_715:) add: vPriest)
 		(vPriest view: 20798)
-		((gUser BAD_SELECTOR:) add: vGiftBox)
+		((gUser sel_715:) add: vGiftBox)
 		(vGiftBox view: 30780)
 		(gGame handsOn: 1)
 	)
@@ -324,7 +324,7 @@
 					(door dispose:)
 					(windDoor dispose:)
 					(everywhere init:)
-					((gUser BAD_SELECTOR:) delete: self)
+					((gUser sel_715:) delete: self)
 					(gEgo setCycle: 0 setScript: 0 hide:)
 					(gUser canControl: 0)
 					(vChair
@@ -610,9 +610,9 @@
 	(properties)
 
 	(method (cue)
-		((gUser BAD_SELECTOR:) delete: vPriest)
+		((gUser sel_715:) delete: vPriest)
 		(vPriest view: 21798)
-		((gUser BAD_SELECTOR:) delete: vGiftBox)
+		((gUser sel_715:) delete: vGiftBox)
 		(vGiftBox view: 30800)
 		(vChair view: 30800 loop: 1 posn: 560 213)
 		(archway dispose:)
@@ -662,7 +662,7 @@
 			(62 ; Do
 				(ClearFlag 726)
 				(PlayScene 1805)
-				((gUser BAD_SELECTOR:) add: vChair)
+				((gUser sel_715:) add: vChair)
 				(vChair
 					setCycle: 0
 					setScript: 0

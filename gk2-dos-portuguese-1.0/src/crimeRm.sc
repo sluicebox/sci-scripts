@@ -32,7 +32,7 @@
 		(gEgo
 			posn: 189 323
 			heading: 45
-			BAD_SELECTOR:
+			sel_737:
 			setScaler: Scaler 74 52 325 267
 			init:
 		)
@@ -232,7 +232,7 @@
 					(gGame handsOff:)
 					(SetFlag 530)
 					(SetFlag 27)
-					(gSoundManager BAD_SELECTOR: 1)
+					(gSoundManager sel_702: 1)
 					(PlayScene 340)
 				else
 					(gMessager say: 9 0 0 0 0 470) ; "(TRY TO TALK TO NEWS CREW AFTER NEWS CREW SCENE)I told Leber I wouldn't talk to the press anymore. Too bad. I coulda been another David Hasselhof."
@@ -302,7 +302,7 @@
 					((IsFlag 534)
 						(SetFlag 536)
 						(SetFlag 535)
-						(gSoundManager BAD_SELECTOR: 1)
+						(gSoundManager sel_702: 1)
 						(PlayScene 338)
 					)
 					(else
@@ -322,7 +322,7 @@
 					(else
 						(SetFlag 535)
 						(SetFlag 536)
-						(gSoundManager BAD_SELECTOR: 1)
+						(gSoundManager sel_702: 1)
 						(PlayScene 338)
 					)
 				)
@@ -337,7 +337,7 @@
 					)
 					(else
 						(SetFlag 537)
-						(gSoundManager BAD_SELECTOR: 1)
+						(gSoundManager sel_702: 1)
 						(PlayScene 339)
 					)
 				)

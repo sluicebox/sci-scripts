@@ -107,7 +107,7 @@
 			)
 		)
 		(gWalkHandler addToFront: door)
-		(if (proc0_8 0 2)
+		(if (RandomNumber 0 2)
 			(barGeek init:)
 		else
 			(pinky init: setScript: sPinkyAction)
@@ -296,7 +296,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(if (== (proc0_8 1 4) 2)
+				(if (== (RandomNumber 1 4) 2)
 					(sFXToilet play:)
 				)
 				(= ticks 180)
@@ -325,7 +325,7 @@
 				(hoverGuys setHeading: 180 self)
 			)
 			(2
-				(= ticks (proc0_8 600 1800))
+				(= ticks (RandomNumber 600 1800))
 			)
 			(3
 				(hoverGuys setMotion: PolyPath 75 137 self)
@@ -334,7 +334,7 @@
 				(hoverGuys setHeading: 180 self)
 			)
 			(5
-				(= ticks (proc0_8 600 1800))
+				(= ticks (RandomNumber 600 1800))
 			)
 			(6
 				(hoverGuys setMotion: DPath 140 138 154 137 self)
@@ -343,7 +343,7 @@
 				(hoverGuys setHeading: 180 self)
 			)
 			(8
-				(= ticks (proc0_8 600 1800))
+				(= ticks (RandomNumber 600 1800))
 			)
 			(9
 				(hoverGuys setMotion: DPath 255 137 351 138 self)
@@ -352,7 +352,7 @@
 				(hoverGuys setHeading: 180 self)
 			)
 			(11
-				(= ticks (proc0_8 600 1800))
+				(= ticks (RandomNumber 600 1800))
 			)
 			(12
 				(self changeState: 0)
@@ -367,20 +367,20 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= ticks (proc0_8 120 300))
+				(= ticks (RandomNumber 120 300))
 			)
 			(1
-				(switch (= register (proc0_8 1 3))
+				(switch (= register (RandomNumber 1 3))
 					(1
 						(client
-							setLoop: (proc0_8 1 2)
-							setCycle: ForwardCounter (proc0_8 2 4) self
+							setLoop: (RandomNumber 1 2)
+							setCycle: ForwardCounter (RandomNumber 2 4) self
 						)
 					)
 					(2
 						(client
 							setLoop: 3
-							setCycle: RandCycle (proc0_8 90 240) self
+							setCycle: RandCycle (RandomNumber 90 240) self
 						)
 					)
 					(3
@@ -390,7 +390,7 @@
 			)
 			(2
 				(if (== register 3)
-					(= ticks (proc0_8 60 180))
+					(= ticks (RandomNumber 60 180))
 				else
 					(= cycles 1)
 				)
@@ -416,21 +416,21 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= ticks (proc0_8 120 300))
+				(= ticks (RandomNumber 120 300))
 			)
 			(1
-				(if (= register (proc0_8 0 2))
+				(if (= register (RandomNumber 0 2))
 					(client
 						setLoop: 7
-						setCycle: ForwardCounter (proc0_8 2 4) self
+						setCycle: ForwardCounter (RandomNumber 2 4) self
 					)
 				else
-					(client setLoop: (proc0_8 5 6) setCycle: End self)
+					(client setLoop: (RandomNumber 5 6) setCycle: End self)
 				)
 			)
 			(2
 				(if (== register 0)
-					(= ticks (proc0_8 60 180))
+					(= ticks (RandomNumber 60 180))
 				else
 					(= cycles 1)
 				)
@@ -456,11 +456,11 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(client setCycle: ForwardCounter (proc0_8 2 4) self)
+				(client setCycle: ForwardCounter (RandomNumber 2 4) self)
 			)
 			(1
 				(client cel: 0)
-				(= ticks (proc0_8 120 300))
+				(= ticks (RandomNumber 120 300))
 			)
 			(2
 				(self changeState: 0)
@@ -800,7 +800,7 @@
 				(= ticks 180)
 			)
 			(1
-				(switch (= register (proc0_8 1 5))
+				(switch (= register (RandomNumber 1 5))
 					(1
 						(geekHead setLoop: 2 setCel: 0 setCycle: End self)
 					)
@@ -881,7 +881,7 @@
 				(flyGirl setCel: 0 setCycle: End self)
 			)
 			(1
-				(= ticks (proc0_8 30 180))
+				(= ticks (RandomNumber 30 180))
 			)
 			(2
 				(self changeState: 0)
@@ -896,10 +896,10 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= ticks (proc0_8 120 240))
+				(= ticks (RandomNumber 120 240))
 			)
 			(1
-				(switch (= register (proc0_8 1 2))
+				(switch (= register (RandomNumber 1 2))
 					(1
 						(bigLegs setLoop: 0 setCel: 0 setCycle: CT 4 1 self)
 					)
@@ -914,7 +914,7 @@
 						(= ticks 30)
 					)
 					(2
-						(= ticks (proc0_8 30 180))
+						(= ticks (RandomNumber 30 180))
 					)
 				)
 			)
@@ -943,11 +943,11 @@
 			(0
 				(laugher
 					setLoop: 0
-					setCycle: RandCycle (proc0_8 240 360) self 1
+					setCycle: RandCycle (RandomNumber 240 360) self 1
 				)
 			)
 			(1
-				(if (= register (proc0_8 0 1))
+				(if (= register (RandomNumber 0 1))
 					(laugher setLoop: 1 setCycle: End self)
 				else
 					(= cycles 1)
@@ -955,13 +955,13 @@
 			)
 			(2
 				(if register
-					(laugher setCycle: ROsc (proc0_8 3 10) 2 3 self)
+					(laugher setCycle: ROsc (RandomNumber 3 10) 2 3 self)
 				else
 					(= cycles 1)
 				)
 			)
 			(3
-				(= ticks (proc0_8 30 60))
+				(= ticks (RandomNumber 30 60))
 			)
 			(4
 				(self changeState: 0)
@@ -976,10 +976,10 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= ticks (proc0_8 60 180))
+				(= ticks (RandomNumber 60 180))
 			)
 			(1
-				(switch (= register (proc0_8 1 3))
+				(switch (= register (RandomNumber 1 3))
 					(1
 						(pinky setLoop: 2 setCel: 0 setCycle: CT 3 1 self)
 					)
@@ -1036,21 +1036,21 @@
 			(0
 				(switch (guy2 scratch:)
 					(0
-						(if (proc0_8 0 1)
+						(if (RandomNumber 0 1)
 							(= register 1)
 						else
 							(= register 2)
 						)
 					)
 					(1
-						(if (proc0_8 0 1)
+						(if (RandomNumber 0 1)
 							(= register 0)
 						else
 							(= register 2)
 						)
 					)
 					(2
-						(if (proc0_8 0 1)
+						(if (RandomNumber 0 1)
 							(= register 1)
 						else
 							(= register 2)
@@ -1071,7 +1071,7 @@
 							scratch: 1
 							setLoop: 2
 							setCel: 0
-							setCycle: RandCycle (proc0_8 120 240) self 1
+							setCycle: RandCycle (RandomNumber 120 240) self 1
 						)
 					)
 					(2
@@ -1087,14 +1087,14 @@
 			(1
 				(switch register
 					(0
-						(= ticks (proc0_8 60 120))
+						(= ticks (RandomNumber 60 120))
 					)
 					(1
 						(guy1 scratch: 0 setLoop: 2 setCel: 0)
 						(= cycles 6)
 					)
 					(2
-						(guy1 setCycle: ROsc (proc0_8 3 6) 1 2 self)
+						(guy1 setCycle: ROsc (RandomNumber 3 6) 1 2 self)
 					)
 				)
 			)
@@ -1137,21 +1137,21 @@
 			(0
 				(switch (guy1 scratch:)
 					(0
-						(if (proc0_8 0 1)
+						(if (RandomNumber 0 1)
 							(= register 1)
 						else
 							(= register 2)
 						)
 					)
 					(1
-						(if (proc0_8 0 1)
+						(if (RandomNumber 0 1)
 							(= register 0)
 						else
 							(= register 2)
 						)
 					)
 					(2
-						(if (proc0_8 0 1)
+						(if (RandomNumber 0 1)
 							(= register 1)
 						else
 							(= register 2)
@@ -1161,14 +1161,14 @@
 				(switch register
 					(0
 						(guy2 scratch: 0)
-						(= ticks (proc0_8 60 240))
+						(= ticks (RandomNumber 60 240))
 					)
 					(1
 						(guy2
 							scratch: 1
 							setLoop: 3
 							setCel: 0
-							setCycle: RandCycle (proc0_8 120 240) self 1
+							setCycle: RandCycle (RandomNumber 120 240) self 1
 						)
 					)
 					(2
@@ -1191,7 +1191,7 @@
 						(= cycles 6)
 					)
 					(2
-						(guy2 setCycle: ROsc (proc0_8 3 6) 2 3 self)
+						(guy2 setCycle: ROsc (RandomNumber 3 6) 2 3 self)
 					)
 				)
 			)
@@ -1227,10 +1227,10 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(switch (= register (proc0_8 0 1))
+				(switch (= register (RandomNumber 0 1))
 					(0
 						(barfly setLoop: 0 setCel: 0 setCycle: Fwd)
-						(= ticks (proc0_8 60 240))
+						(= ticks (RandomNumber 60 240))
 					)
 					(1
 						(barfly setLoop: 1 setCel: 0 setCycle: End self)
@@ -1255,7 +1255,7 @@
 				(= cycles 6)
 			)
 			(3
-				(= ticks (proc0_8 60 180))
+				(= ticks (RandomNumber 60 180))
 			)
 			(4
 				(self changeState: 0)
@@ -1270,10 +1270,10 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= ticks (proc0_8 60 180))
+				(= ticks (RandomNumber 60 180))
 			)
 			(1
-				(switch (= register (proc0_8 0 2))
+				(switch (= register (RandomNumber 0 2))
 					(0
 						(soldier setLoop: 0 setCel: 1 setCycle: End self)
 					)
@@ -1281,12 +1281,12 @@
 						(soldier
 							setLoop: 1
 							setCel: 0
-							setCycle: RandCycle (proc0_8 120 240) self
+							setCycle: RandCycle (RandomNumber 120 240) self
 						)
 					)
 					(2
 						(soldier setLoop: 0 setCel: 0)
-						(= ticks (proc0_8 30 120))
+						(= ticks (RandomNumber 30 120))
 					)
 				)
 			)
@@ -1325,7 +1325,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= ticks (proc0_8 60 180))
+				(= ticks (RandomNumber 60 180))
 			)
 			(1
 				(switch (bartender x:)
@@ -1336,13 +1336,13 @@
 							setCycle: Walk
 							setMotion:
 								MoveTo
-								(if (proc0_8 0 1) 156 else 205)
+								(if (RandomNumber 0 1) 156 else 205)
 								(bartender y:)
 								self
 						)
 					)
 					(156
-						(if (proc0_8 0 1)
+						(if (RandomNumber 0 1)
 							(bartender
 								view: 305
 								setLoop: 1
@@ -1365,7 +1365,7 @@
 							setCycle: Walk
 							setMotion:
 								MoveTo
-								(if (proc0_8 0 1) 156 else 120)
+								(if (RandomNumber 0 1) 156 else 120)
 								(bartender y:)
 								self
 						)
@@ -1375,30 +1375,30 @@
 			(2
 				(switch (bartender x:)
 					(205
-						(if (and (proc0_8 0 1) (gCast contains: pinky))
+						(if (and (RandomNumber 0 1) (gCast contains: pinky))
 							(self setScript: sMixPinkyDrink self)
 						else
 							(self setScript: sCleanBar self)
 						)
 					)
 					(120
-						(if (proc0_8 0 1)
+						(if (RandomNumber 0 1)
 							(bartender
 								view: 304
 								loop: 1
-								setCycle: RandCycle (proc0_8 60 240) self 1
+								setCycle: RandCycle (RandomNumber 60 240) self 1
 							)
 						else
 							(bartender view: 3042 setLoop: 0 setCel: 0)
-							(= ticks (proc0_8 60 120))
+							(= ticks (RandomNumber 60 120))
 						)
 					)
 					(else
-						(if (proc0_8 0 1)
+						(if (RandomNumber 0 1)
 							(self setScript: sCleanBar self)
 						else
 							(bartender view: 3042 setLoop: 0 setCel: 0)
-							(= ticks (proc0_8 60 120))
+							(= ticks (RandomNumber 60 120))
 						)
 					)
 				)
@@ -1419,10 +1419,10 @@
 				(bartender view: 3042 setLoop: 0 setCel: 0 setCycle: End self)
 			)
 			(1
-				(bartender setCycle: ROsc (proc0_8 1 2) 12 13 self)
+				(bartender setCycle: ROsc (RandomNumber 1 2) 12 13 self)
 			)
 			(2
-				(bartender setCycle: ROsc (proc0_8 2 4) 9 11 self)
+				(bartender setCycle: ROsc (RandomNumber 2 4) 9 11 self)
 			)
 			(3
 				(bartender setCel: 0)
@@ -1637,7 +1637,7 @@
 				(fridgeDoor show:)
 				(gEgo
 					normalize: 6
-					setSpeed: global158
+					setSpeed: gEgoSpeed
 					signal: (& (gEgo signal:) $f7ff)
 				)
 				(fridgeOpen dispose:)
@@ -2721,7 +2721,7 @@
 
 	(method (init)
 		(super init:)
-		(= scratch (proc0_8 0 2))
+		(= scratch (RandomNumber 0 2))
 	)
 )
 
@@ -2740,21 +2740,21 @@
 		(super init:)
 		(switch (guy1 scratch:)
 			(0
-				(if (proc0_8 0 1)
+				(if (RandomNumber 0 1)
 					(= scratch 1)
 				else
 					(= scratch 2)
 				)
 			)
 			(1
-				(if (proc0_8 0 1)
+				(if (RandomNumber 0 1)
 					(= scratch 0)
 				else
 					(= scratch 2)
 				)
 			)
 			(2
-				(if (proc0_8 0 1)
+				(if (RandomNumber 0 1)
 					(= scratch 1)
 				else
 					(= scratch 2)

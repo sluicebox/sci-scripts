@@ -715,7 +715,7 @@
 		(= scratch -10)
 		(= barObj testBar)
 		(super init: &rest)
-		(= value (- maxValue (/ (* inc global158) 10)))
+		(= value (- maxValue (/ (* inc gEgoSpeed) 10)))
 		(self
 			setPolygon:
 				((Polygon new:)
@@ -727,9 +727,9 @@
 	)
 
 	(method (show)
-		(if (!= scratch global158)
-			(= value (- maxValue (/ (* inc global158) 10)))
-			(if (== global158 11)
+		(if (!= scratch gEgoSpeed)
+			(= value (- maxValue (/ (* inc gEgoSpeed) 10)))
+			(if (== gEgoSpeed 11)
 				(= value 0)
 			)
 		)
@@ -738,12 +738,12 @@
 	)
 
 	(method (doit)
-		(if (== (= global158 (/ (* (- maxValue value) 10) inc)) 11)
+		(if (== (= gEgoSpeed (/ (* (- maxValue value) 10) inc)) 11)
 			(= value 0)
 		)
-		(= scratch global158)
+		(= scratch gEgoSpeed)
 		(if (!= (gEgo view:) 578)
-			(gEgo setSpeed: global158)
+			(gEgo setSpeed: gEgoSpeed)
 		)
 	)
 )

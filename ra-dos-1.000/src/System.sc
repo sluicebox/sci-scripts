@@ -133,8 +133,8 @@
 			(or
 				(== what self)
 				(and
-					(& (what BAD_SELECTOR:) $8000)
-					(not (& BAD_SELECTOR $8000))
+					(& (what -info-:) $8000)
+					(not (& -info- $8000))
 					(== -propDict- (what -propDict-:))
 				)
 			)
@@ -146,10 +146,10 @@
 			(or
 				(and
 					(== -propDict- (what -propDict-:))
-					(== BAD_SELECTOR (what BAD_SELECTOR:))
+					(== -classScript- (what -classScript-:))
 				)
 				(and
-					(= theSuper (self BAD_SELECTOR:))
+					(= theSuper (self -super-:))
 					(IsObject theSuper)
 					(theSuper isKindOf: what)
 				)

@@ -735,7 +735,7 @@
 				(= cycles 1)
 			)
 			(1
-				(if (< (voScoreBoard x:) 64336)
+				(if (< (voScoreBoard x:) -1200)
 					(= cycles 1)
 				else
 					(voScoreBoard x: (- (voScoreBoard x:) 5))
@@ -751,7 +751,7 @@
 				(= cycles 1)
 			)
 			(4
-				(if (< (voScoreBoard x:) 64336)
+				(if (< (voScoreBoard x:) -1200)
 					(voScoreBoard x: local5)
 					(= local1 1)
 				)
@@ -787,7 +787,7 @@
 				(= cycles 1)
 			)
 			(4
-				(if (< (voScoreBoard x:) 64036)
+				(if (< (voScoreBoard x:) -1500)
 					(voScoreBoard x: local5)
 					(= local1 1)
 				)

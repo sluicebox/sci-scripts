@@ -60,7 +60,7 @@
 			(Load 140 393) ; WAVE
 			(rogerReplicator init:)
 			(bullethole init:)
-			(= temp0 (proc0_8 1 9))
+			(= temp0 (RandomNumber 1 9))
 			((= local0 (aBug new:)) init:)
 			((= local1 (aBug new:)) init:)
 			((= local2 (aBug new:)) init:)
@@ -329,19 +329,19 @@
 	)
 
 	(method (init)
-		(self x: (proc0_8 100 220) y: (proc0_8 96 110))
+		(self x: (RandomNumber 100 220) y: (RandomNumber 96 110))
 		(super init:)
 		(self
-			moveSpeed: (proc0_8 3 6)
+			moveSpeed: (RandomNumber 3 6)
 			cycleSpeed: 1
 			setLoop: (if (< x 160) 1 else 2)
 			setCycle: Fwd
 			setMotion:
 				MoveTo
 				(if (< x 160)
-					(- x (proc0_8 5 20))
+					(- x (RandomNumber 5 20))
 				else
-					(+ x (proc0_8 5 20))
+					(+ x (RandomNumber 5 20))
 				)
 				150
 		)

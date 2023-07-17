@@ -25,16 +25,16 @@
 	(method (init)
 		(proc11_12)
 		(Palette 2 0 255 0) ; PalIntensity
-		((gUser BAD_SELECTOR:) BAD_SELECTOR: 60 352 627 475)
+		((gUser sel_715:) sel_717: 60 352 627 475)
 		(resetButton init:)
 		(restoreButton init:)
 		(quitButton init:)
 		(super init: &rest)
 		(howl setLoop: 1 number: 603 play:)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR: 0)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR:)
+		((gUser sel_715:) sel_719: 0)
+		((gUser sel_715:) sel_737:)
 		(gThePlane setRect: 0 0 640 480 priority: 202)
-		(gGame BAD_SELECTOR:)
+		(gGame sel_849:)
 		((ScriptID 0 9) active: 0) ; logo
 		((ScriptID 0 7) active: 0) ; movieButton
 		((ScriptID 0 5) active: 0) ; recButton
@@ -43,12 +43,12 @@
 	)
 
 	(method (dispose)
-		(gGame BAD_SELECTOR: 0)
+		(gGame sel_849: 0)
 		((ScriptID 0 9) active: 1) ; logo
 		((ScriptID 0 7) active: 1) ; movieButton
 		((ScriptID 0 5) active: 1) ; recButton
 		(gThePlane setRect: 12 15 627 349 priority: 1)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR: 1 BAD_SELECTOR: 0)
+		((gUser sel_715:) sel_719: 1 sel_717: 0)
 		(super dispose: &rest)
 	)
 )
@@ -155,7 +155,7 @@
 
 	(method (cue)
 		(gGame restore:)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR: 0)
+		((gUser sel_715:) sel_719: 0)
 	)
 )
 
@@ -173,7 +173,7 @@
 
 	(method (cue)
 		(gGame quitGame:)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR: 0)
+		((gUser sel_715:) sel_719: 0)
 	)
 )
 

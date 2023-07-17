@@ -47,7 +47,7 @@
 				)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 77 34 303 160 init:)
+		(gEgo sel_737: setScaler: Scaler 77 34 303 160 init:)
 		(proc499_4)
 		(fEastExit init:)
 		(fWestExit init:)

@@ -55,20 +55,20 @@
 			init:
 		)
 	)
-	(gTopMessage BAD_SELECTOR: 0)
+	(gTopMessage sel_749: 0)
 	(cond
 		((temp1 size:)
 			(if (or (< (= gChapter (temp1 asInteger:)) 1) (> gChapter 6))
 				(= gChapter 1)
 			)
-			(gGame BAD_SELECTOR:)
+			(gGame sel_858:)
 		)
 		((not gChapter)
 			(= gChapter 1)
 		)
 	)
 	(= gEgo (if (OneOf gChapter 1 3 5) GabeEgo else GraceEgo))
-	(gUser alterEgo: gEgo BAD_SELECTOR: 62)
+	(gUser alterEgo: gEgo sel_712: 62)
 	(if (temp0 size:)
 		(= local1 (temp0 asInteger:))
 	else
@@ -436,7 +436,7 @@
 	(properties)
 
 	(method (init)
-		(gTopMessage BAD_SELECTOR: {Where Do You Want To Go?})
+		(gTopMessage sel_749: {Where Do You Want To Go?})
 		(= local0 (IntArray with: 0 0 0 0))
 		(super init:)
 		(localproc_0)

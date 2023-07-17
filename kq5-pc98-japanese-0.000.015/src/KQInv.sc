@@ -51,47 +51,47 @@
 		((= gInventory self)
 			add:
 				Ok
-				Key_J__
-				Pie_J_p_C
-				Golden_Needle_J_____j
-				Coin_J_R_C__
-				Fish_J__
-				Brass_Bottle_J______________
-				Staff_J__
-				Shoe_J____
-				Heart_J_n___g
-				Harp_J_n___v
-				Gold_Coin_J____
-				Marionette_J_____l__
-				Pouch_J___z
-				Emeralds_J_G_______h
-				Spinning_Wheel_J____
-				Stick_J__
-				Honeycomb_J_n______
-				Beeswax_J___c____
-				Leg_of_Lamb_J_q_r____
-				Rope_J_____v
-				Crystal_J____
-				Hammer_J_n______
-				Shell_J_L_k
-				Bag_of_Peas_J_______G___h_E__
-				Locket_J___P_b_g
-				Cloak_J_____g
-				Amulet_J______
-				Wand_J________
-				Sled_J____
-				Iron_Bar_J_A_C_R___E_o__
-				Fishhook_J_____j
-				Moldy_Cheese_J_J_r_____________Y
-				Elf_Shoes__J_G___t___C
-				Tambourine_J_____o____
-				Mordack_s_Wand_J_______b_N__________
-				Hairpin_J_w_A_s__
-				Cat_Fish_J__
-				Mongoose_Spell_J_____O___X_E_X_y__
-				Bunny_Spell_J_o_j___E_X_y__
-				Rain_Spell_J___C___E_X_y__
-				Tiger_Spell_J___C_K___E_X_y__
+				Key
+				Pie
+				Golden_Needle
+				Coin
+				Fish
+				Brass_Bottle
+				Staff
+				Shoe
+				Heart
+				Harp
+				Gold_Coin
+				Marionette
+				Pouch
+				Emeralds
+				Spinning_Wheel
+				Stick
+				Honeycomb
+				Beeswax
+				Leg_of_Lamb
+				Rope
+				Crystal
+				Hammer
+				Shell
+				Bag_of_Peas
+				Locket
+				Cloak
+				Amulet
+				Wand
+				Sled
+				Iron_Bar
+				Fishhook
+				Moldy_Cheese
+				Elf_Shoes_
+				Tambourine
+				Mordack_s_Wand
+				Hairpin
+				Cat_Fish
+				Mongoose_Spell
+				Bunny_Spell
+				Rain_Spell
+				Tiger_Spell
 				invLook
 				invHand
 				invSelect
@@ -114,9 +114,8 @@
 	)
 )
 
-(instance Key_J__ of KQInvItem
+(instance Key of KQInvItem
 	(properties
-		name {Key}
 		view 892
 		loop 2
 		cel 4
@@ -127,9 +126,8 @@
 	)
 )
 
-(instance Pie_J_p_C of KQInvItem
+(instance Pie of KQInvItem
 	(properties
-		name {Pie}
 		view 892
 		cel 9
 		cursor 16
@@ -139,7 +137,7 @@
 	)
 )
 
-(instance Golden_Needle_J_____j of KQInvItem
+(instance Golden_Needle of KQInvItem
 	(properties
 		name {Golden Needle}
 		view 892
@@ -151,9 +149,8 @@
 	)
 )
 
-(instance Coin_J_R_C__ of KQInvItem
+(instance Coin of KQInvItem
 	(properties
-		name {Coin}
 		view 892
 		cel 1
 		cursor 18
@@ -163,9 +160,8 @@
 	)
 )
 
-(instance Fish_J__ of KQInvItem
+(instance Fish of KQInvItem
 	(properties
-		name {Fish}
 		view 891
 		cursor 19
 		signal 2
@@ -174,7 +170,7 @@
 	)
 )
 
-(instance Brass_Bottle_J______________ of KQInvItem
+(instance Brass_Bottle of KQInvItem
 	(properties
 		name {Brass Bottle}
 		view 891
@@ -204,9 +200,8 @@
 	)
 )
 
-(instance Staff_J__ of KQInvItem
+(instance Staff of KQInvItem
 	(properties
-		name {Staff}
 		view 891
 		cel 2
 		cursor 21
@@ -216,9 +211,8 @@
 	)
 )
 
-(instance Shoe_J____ of KQInvItem
+(instance Shoe of KQInvItem
 	(properties
-		name {Shoe}
 		view 892
 		cel 6
 		cursor 51
@@ -228,9 +222,8 @@
 	)
 )
 
-(instance Heart_J_n___g of KQInvItem
+(instance Heart of KQInvItem
 	(properties
-		name {Heart}
 		view 892
 		loop 2
 		cel 7
@@ -241,9 +234,8 @@
 	)
 )
 
-(instance Harp_J_n___v of KQInvItem
+(instance Harp of KQInvItem
 	(properties
-		name {Harp}
 		view 893
 		cursor 23
 		signal 2
@@ -252,7 +244,7 @@
 	)
 )
 
-(instance Gold_Coin_J____ of KQInvItem
+(instance Gold_Coin of KQInvItem
 	(properties
 		name {Gold Coin}
 		view 891
@@ -264,9 +256,8 @@
 	)
 )
 
-(instance Marionette_J_____l__ of KQInvItem
+(instance Marionette of KQInvItem
 	(properties
-		name {Marionette}
 		view 892
 		cel 7
 		cursor 25
@@ -275,9 +266,8 @@
 	)
 )
 
-(instance Pouch_J___z of KQInvItem
+(instance Pouch of KQInvItem
 	(properties
-		name {Pouch}
 		view 892
 		loop 2
 		cel 5
@@ -357,9 +347,8 @@
 	)
 )
 
-(instance Emeralds_J_G_______h of KQInvItem
+(instance Emeralds of KQInvItem
 	(properties
-		name {Emeralds}
 		view 891
 		cel 6
 		cursor 27
@@ -428,7 +417,7 @@
 	)
 )
 
-(instance Spinning_Wheel_J____ of KQInvItem
+(instance Spinning_Wheel of KQInvItem
 	(properties
 		name {Spinning Wheel}
 		view 892
@@ -440,9 +429,8 @@
 	)
 )
 
-(instance Stick_J__ of KQInvItem
+(instance Stick of KQInvItem
 	(properties
-		name {Stick}
 		view 892
 		loop 2
 		cel 1
@@ -453,9 +441,8 @@
 	)
 )
 
-(instance Honeycomb_J_n______ of KQInvItem
+(instance Honeycomb of KQInvItem
 	(properties
-		name {Honeycomb}
 		view 891
 		cel 7
 		cursor 30
@@ -465,9 +452,8 @@
 	)
 )
 
-(instance Beeswax_J___c____ of KQInvItem
+(instance Beeswax of KQInvItem
 	(properties
-		name {Beeswax}
 		view 892
 		loop 2
 		cursor 31
@@ -476,7 +462,7 @@
 	)
 )
 
-(instance Leg_of_Lamb_J_q_r____ of KQInvItem
+(instance Leg_of_Lamb of KQInvItem
 	(properties
 		name {Leg of Lamb}
 		view 892
@@ -514,9 +500,8 @@
 	)
 )
 
-(instance Rope_J_____v of KQInvItem
+(instance Rope of KQInvItem
 	(properties
-		name {Rope}
 		view 892
 		cel 8
 		cursor 33
@@ -526,9 +511,8 @@
 	)
 )
 
-(instance Crystal_J____ of KQInvItem
+(instance Crystal of KQInvItem
 	(properties
-		name {Crystal}
 		view 893
 		cel 1
 		cursor 34
@@ -538,9 +522,8 @@
 	)
 )
 
-(instance Hammer_J_n______ of KQInvItem
+(instance Hammer of KQInvItem
 	(properties
-		name {Hammer}
 		view 892
 		loop 4
 		cursor 35
@@ -549,9 +532,8 @@
 	)
 )
 
-(instance Shell_J_L_k of KQInvItem
+(instance Shell of KQInvItem
 	(properties
-		name {Shell}
 		view 893
 		cel 2
 		cursor 36
@@ -560,7 +542,7 @@
 	)
 )
 
-(instance Bag_of_Peas_J_______G___h_E__ of KQInvItem
+(instance Bag_of_Peas of KQInvItem
 	(properties
 		name {Bag of Peas}
 		view 893
@@ -587,9 +569,8 @@
 	)
 )
 
-(instance Locket_J___P_b_g of KQInvItem
+(instance Locket of KQInvItem
 	(properties
-		name {Locket}
 		view 893
 		cel 6
 		cursor 38
@@ -610,9 +591,8 @@
 	)
 )
 
-(instance Cloak_J_____g of KQInvItem
+(instance Cloak of KQInvItem
 	(properties
-		name {Cloak}
 		view 892
 		cel 2
 		cursor 39
@@ -622,9 +602,8 @@
 	)
 )
 
-(instance Amulet_J______ of KQInvItem
+(instance Amulet of KQInvItem
 	(properties
-		name {Amulet}
 		view 892
 		loop 2
 		cel 2
@@ -649,9 +628,8 @@
 	)
 )
 
-(instance Wand_J________ of KQInvItem
+(instance Wand of KQInvItem
 	(properties
-		name {Wand}
 		view 892
 		cursor 41
 		signal 2
@@ -683,9 +661,8 @@
 	)
 )
 
-(instance Sled_J____ of KQInvItem
+(instance Sled of KQInvItem
 	(properties
-		name {Sled}
 		view 892
 		cel 3
 		cursor 42
@@ -695,7 +672,7 @@
 	)
 )
 
-(instance Iron_Bar_J_A_C_R___E_o__ of KQInvItem
+(instance Iron_Bar of KQInvItem
 	(properties
 		name {Iron Bar}
 		view 893
@@ -707,9 +684,8 @@
 	)
 )
 
-(instance Fishhook_J_____j of KQInvItem
+(instance Fishhook of KQInvItem
 	(properties
-		name {Fishhook}
 		view 893
 		cel 11
 		cursor 44
@@ -719,7 +695,7 @@
 	)
 )
 
-(instance Moldy_Cheese_J_J_r_____________Y of KQInvItem
+(instance Moldy_Cheese of KQInvItem
 	(properties
 		name {Moldy Cheese}
 		view 893
@@ -731,7 +707,7 @@
 	)
 )
 
-(instance Elf_Shoes__J_G___t___C of KQInvItem
+(instance Elf_Shoes_ of KQInvItem
 	(properties
 		name {Elf Shoes }
 		view 892
@@ -744,9 +720,8 @@
 	)
 )
 
-(instance Tambourine_J_____o____ of KQInvItem
+(instance Tambourine of KQInvItem
 	(properties
-		name {Tambourine}
 		view 892
 		loop 2
 		cel 3
@@ -757,7 +732,7 @@
 	)
 )
 
-(instance Mordack_s_Wand_J_______b_N__________ of KQInvItem
+(instance Mordack_s_Wand of KQInvItem
 	(properties
 		name {Mordack's Wand}
 		view 893
@@ -784,9 +759,8 @@
 	)
 )
 
-(instance Hairpin_J_w_A_s__ of KQInvItem
+(instance Hairpin of KQInvItem
 	(properties
-		name {Hairpin}
 		view 893
 		cel 9
 		cursor 49
@@ -796,7 +770,7 @@
 	)
 )
 
-(instance Cat_Fish_J__ of KQInvItem
+(instance Cat_Fish of KQInvItem
 	(properties
 		name {Cat Fish}
 		view 893
@@ -808,7 +782,7 @@
 	)
 )
 
-(instance Mongoose_Spell_J_____O___X_E_X_y__ of KQInvItem
+(instance Mongoose_Spell of KQInvItem
 	(properties
 		name {Mongoose Spell}
 		view 712
@@ -819,7 +793,7 @@
 	)
 )
 
-(instance Bunny_Spell_J_o_j___E_X_y__ of KQInvItem
+(instance Bunny_Spell of KQInvItem
 	(properties
 		name {Bunny Spell}
 		view 712
@@ -831,7 +805,7 @@
 	)
 )
 
-(instance Rain_Spell_J___C___E_X_y__ of KQInvItem
+(instance Rain_Spell of KQInvItem
 	(properties
 		name {Rain Spell}
 		view 712
@@ -843,7 +817,7 @@
 	)
 )
 
-(instance Tiger_Spell_J___C_K___E_X_y__ of KQInvItem
+(instance Tiger_Spell of KQInvItem
 	(properties
 		name {Tiger Spell}
 		view 712

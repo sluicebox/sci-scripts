@@ -49,7 +49,7 @@
 
 	(method (cycleDone)
 		(client cel: 0)
-		(= waitCount (+ (proc0_8 waitMin waitMax) gGameTime))
+		(= waitCount (+ (RandomNumber waitMin waitMax) gGameTime))
 	)
 )
 

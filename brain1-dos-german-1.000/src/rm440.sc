@@ -809,7 +809,7 @@
 		(for ((= temp0 0)) (< temp0 9) ((++ temp0))
 			(self
 				add:
-					((= [local32 temp0] (choice_GAuswahl new:))
+					((= [local32 temp0] (choice new:))
 						loop: 1
 						nsLeft: [local108 temp0]
 						nsTop: [local117 temp0]
@@ -823,7 +823,7 @@
 		(for ((= temp0 0)) (< temp0 9) ((++ temp0))
 			(self
 				add:
-					((= [local41 temp0] (button_GKnopf new:))
+					((= [local41 temp0] (button new:))
 						loop: (+ temp0 1)
 						nsLeft: [local90 temp0]
 						nsTop: [local99 temp0]
@@ -927,9 +927,8 @@
 	)
 )
 
-(instance choice_GAuswahl of CodeIcon
+(instance choice of CodeIcon
 	(properties
-		name {choice}
 		view 450
 		loop 10
 		cel 0
@@ -1008,9 +1007,8 @@
 	(method (select))
 )
 
-(instance button_GKnopf of CodeIcon
+(instance button of CodeIcon
 	(properties
-		name {button}
 		view 450
 		cel 1
 		signal 128

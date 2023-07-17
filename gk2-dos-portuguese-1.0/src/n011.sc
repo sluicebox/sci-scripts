@@ -172,9 +172,9 @@
 			(PlayChapter6Scene param1 &rest)
 		)
 	)
-	(if (!= (gCurInvView BAD_SELECTOR:) 5)
-		(gUser BAD_SELECTOR: 62)
-		((gUser BAD_SELECTOR:) show: update:)
+	(if (!= (gCurInvView sel_716:) 5)
+		(gUser sel_712: 62)
+		((gUser sel_715:) show: update:)
 	)
 	(if
 		(and
@@ -205,13 +205,13 @@
 				)
 			)
 		)
-		(gEgo BAD_SELECTOR:)
+		(gEgo sel_737:)
 		(if (gEgo scaler:)
 			((gEgo scaler:) doit:)
 		)
 	)
 	(if (gEgo has: 73) ; invPitcher
-		(gGame BAD_SELECTOR: 1)
+		(gGame sel_849: 1)
 		(gCurInvView select: 73 update:)
 	)
 	(if (and (>= argc 2) param2)
@@ -247,7 +247,7 @@
 	(if (ResCheck 151 param1) ; VMD
 		(if
 			(or
-				(gSoundManager BAD_SELECTOR:)
+				(gSoundManager sel_702:)
 				(< (gGame detailLevel:) 5)
 				(< (MemoryInfo 0) 1100)
 			)
@@ -259,7 +259,7 @@
 		(Printf {*** %d.vmd Not Found! ***} param1)
 	)
 	(if temp1
-		(gSoundManager BAD_SELECTOR: 0)
+		(gSoundManager sel_702: 0)
 		(gSounds pause: 0)
 		(gSounds eachElementDo: #check)
 	)
@@ -289,7 +289,7 @@
 		(proc11_12)
 	)
 	(gCast eachElementDo: #dispose)
-	(gGame BAD_SELECTOR:)
+	(gGame sel_858:)
 	(gThePlane setRect: 9 12 630 351 priority: 202)
 	(gInterfacePlane hide:)
 	(gCurRoom drawPic: (+ 10 gChapter))
@@ -298,7 +298,7 @@
 	((Print new:) y: 420 addButtonBM: (+ 100 gChapter) 1 0 0 {} 0 0 init:)
 	(gThePlane setRect: 12 15 627 349 priority: 1)
 	(= gNumCD gChapter)
-	(gUser BAD_SELECTOR: 62)
+	(gUser sel_712: 62)
 	(if (> gChapter 1)
 		(for ((= temp0 100)) (< temp0 128) ((++ temp0))
 			(SetFlag temp0)
@@ -365,10 +365,10 @@
 		(1
 			(switch (gGame printLang:)
 				(351
-					(gTopMessage BAD_SELECTOR: {Cap\a1tulo 1: Filme de Abertura})
+					(gTopMessage sel_749: {Cap\a1tulo 1: Filme de Abertura})
 				)
 				(else
-					(gTopMessage BAD_SELECTOR: {Chapter One: Opening Movie})
+					(gTopMessage sel_749: {Chapter One: Opening Movie})
 				)
 			)
 			(= gEgo GabeEgo)
@@ -379,10 +379,10 @@
 		(2
 			(switch (gGame printLang:)
 				(351
-					(gTopMessage BAD_SELECTOR: {Cap\a1tulo 2: Filme de Abertura})
+					(gTopMessage sel_749: {Cap\a1tulo 2: Filme de Abertura})
 				)
 				(else
-					(gTopMessage BAD_SELECTOR: {Chapter Two: Opening Movie})
+					(gTopMessage sel_749: {Chapter Two: Opening Movie})
 				)
 			)
 			(= gEgo GraceEgo)
@@ -392,10 +392,10 @@
 		(3
 			(switch (gGame printLang:)
 				(351
-					(gTopMessage BAD_SELECTOR: {Cap\a1tulo 3: Filme de Abertura})
+					(gTopMessage sel_749: {Cap\a1tulo 3: Filme de Abertura})
 				)
 				(else
-					(gTopMessage BAD_SELECTOR: {Chapter Three: Opening Movie})
+					(gTopMessage sel_749: {Chapter Three: Opening Movie})
 				)
 			)
 			(= gEgo GabeEgo)
@@ -428,10 +428,10 @@
 		(4
 			(switch (gGame printLang:)
 				(351
-					(gTopMessage BAD_SELECTOR: {Cap\a1tulo 4: Filme de Abertura})
+					(gTopMessage sel_749: {Cap\a1tulo 4: Filme de Abertura})
 				)
 				(else
-					(gTopMessage BAD_SELECTOR: {Chapter Four: Opening Movie})
+					(gTopMessage sel_749: {Chapter Four: Opening Movie})
 				)
 			)
 			(= gEgo GraceEgo)
@@ -441,10 +441,10 @@
 		(5
 			(switch (gGame printLang:)
 				(351
-					(gTopMessage BAD_SELECTOR: {Cap\a1tulo 5: Filme de Abertura})
+					(gTopMessage sel_749: {Cap\a1tulo 5: Filme de Abertura})
 				)
 				(else
-					(gTopMessage BAD_SELECTOR: {Chapter Five: Opening Movie})
+					(gTopMessage sel_749: {Chapter Five: Opening Movie})
 				)
 			)
 			(= gEgo GabeEgo)
@@ -478,10 +478,10 @@
 		(6
 			(switch (gGame printLang:)
 				(351
-					(gTopMessage BAD_SELECTOR: {Cap\a1tulo 6: Filme de Abertura})
+					(gTopMessage sel_749: {Cap\a1tulo 6: Filme de Abertura})
 				)
 				(else
-					(gTopMessage BAD_SELECTOR: {Chapter Six: Opening Movie})
+					(gTopMessage sel_749: {Chapter Six: Opening Movie})
 				)
 			)
 			(= gEgo GraceEgo)
@@ -499,16 +499,16 @@
 		(gGame getDisc: gChapter)
 	)
 	(gInterfacePlane show:)
-	(gTopMessage BAD_SELECTOR: 0)
-	(gUser alterEgo: gEgo BAD_SELECTOR: 62)
-	((gUser BAD_SELECTOR:) update: set: 999 0 0 show:)
+	(gTopMessage sel_749: 0)
+	(gUser alterEgo: gEgo sel_712: 62)
+	((gUser sel_715:) update: set: 999 0 0 show:)
 	(if (!= gChapter 6)
 		((ScriptID 0 5) highlight: 0) ; recButton
 	)
 )
 
 (procedure (proc11_15 param1)
-	((ScriptID param1 0) BAD_SELECTOR:)
+	((ScriptID param1 0) sel_847:)
 )
 
 (procedure (proc11_17)
@@ -1481,7 +1481,7 @@
 	(= temp0 (Str newWith: 10 {}))
 	(temp0 format: {%d.VMD} param1)
 	(if (!= param1 10010)
-		(gTopMessage BAD_SELECTOR: param1)
+		(gTopMessage sel_867: param1)
 	)
 	(PlayVMD 0 (temp0 data:)) ; Open
 	(PlayVMD 23 16 256) ; RestrictPalette
@@ -1551,7 +1551,7 @@
 		(PlayVMD 14 7) ; WaitEvent
 	)
 	(if (!= param1 10010)
-		(gTopMessage BAD_SELECTOR:)
+		(gTopMessage sel_867:)
 	)
 	(PlayVMD 6) ; Close
 	(temp0 dispose:)

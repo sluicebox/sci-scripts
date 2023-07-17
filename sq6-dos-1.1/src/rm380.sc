@@ -115,7 +115,7 @@
 				)
 				(gCurRoom setScript: sStellarTalks)
 			)
-			((and (== gPrevRoomNum 460) (or (== global119 0) (== global119 380)))
+			((and (== gPrevRoomNum 460) (or (== gComPostNextRoomNum 0) (== gComPostNextRoomNum 380)))
 				(gEgo
 					normalize:
 					cel: 3
@@ -730,7 +730,7 @@
 				)
 			)
 			(3
-				(gCurRoom newRoom: global119)
+				(gCurRoom newRoom: gComPostNextRoomNum)
 				(self dispose:)
 			)
 		)
@@ -774,7 +774,7 @@
 				(gEgo setCycle: End self)
 			)
 			(5
-				(gEgo normalize: 1 setSpeed: global158)
+				(gEgo normalize: 1 setSpeed: gEgoSpeed)
 				(gGame handsOn:)
 				(self dispose:)
 			)
@@ -1250,7 +1250,7 @@
 					(= local14 1)
 					(gCurRoom setScript: sJebbaYell)
 				)
-				((and (< global120 2) (not (IsFlag 412)))
+				((and (< gAct 2) (not (IsFlag 412)))
 					(gCurRoom setScript: jebbaTalk2)
 				)
 				(else
@@ -2105,7 +2105,7 @@
 				)
 			)
 			(10
-				(= global119 390)
+				(= gComPostNextRoomNum 390)
 				(gEgo put: 26) ; Data_Cart
 				(gCurRoom setScript: sExitThruComPost)
 			)

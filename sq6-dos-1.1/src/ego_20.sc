@@ -78,7 +78,7 @@
 				setLooper: Grooper
 				loop: temp0
 				setCycle: StopWalk 901
-				setSpeed: global158
+				setSpeed: gEgoSpeed
 			)
 		)
 		(super setMotion: &rest)
@@ -160,7 +160,7 @@
 			setMotion: 0
 			setCycle: StopWalk (+ view 1)
 			setStep: 3 2 0
-			setSpeed: global158
+			setSpeed: gEgoSpeed
 			state: (|= state $0002)
 			ignoreActors: 0
 		)
@@ -855,7 +855,7 @@
 				(local1 number: 2901 play:)
 			)
 			(5
-				(proc666_0 26 self)
+				(EgoDead 26 self) ; "You pick strange methods of getting a charge out of life."
 			)
 			(6
 				(local0 hide: dispose:)

@@ -251,7 +251,7 @@
 				(gEgo cel: 5 setCycle: End self)
 			)
 			(4
-				(proc666_0 3 self)
+				(EgoDead 3 self) ; "Wow, he really creased your can! Pretty impressive -- (PAUSE) maybe not from your point of view, of course."
 			)
 			(5
 				(nigel show: view: 271 loop: 0 cel: 0 setCycle: RandCycle)

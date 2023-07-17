@@ -22,7 +22,7 @@
 	)
 
 	(method (init)
-		(if (gSoundManager BAD_SELECTOR:)
+		(if (gSoundManager sel_695:)
 			(gSoundManager fade: 0 10 10 1 turnOffSound)
 		)
 		(if (IsFlag 116)
@@ -38,7 +38,7 @@
 			(gEgo
 				posn: 200 332
 				heading: 45
-				BAD_SELECTOR:
+				sel_737:
 				setScaler: Scaler 101 79 339 288
 				init:
 			)
@@ -46,7 +46,7 @@
 			(gEgo
 				posn: 455 332
 				heading: 315
-				BAD_SELECTOR:
+				sel_737:
 				setScaler: Scaler 101 79 339 288
 				init:
 			)

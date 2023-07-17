@@ -47,24 +47,10 @@
 				(= seconds 2)
 			)
 			(1
-				(Say ; "Hello, Patti, and welcome aboard. I'm Dr. Phil Hopian, staff physician and volunteer gynecologist around here!"
-					Dr__Phil_Hopian_IDr__Phil_De_Speranza
-					450
-					0
-					108
-					139
-					self
-				)
+				(Say Dr__Phil_Hopian 450 0 108 139 self) ; "Hello, Patti, and welcome aboard. I'm Dr. Phil Hopian, staff physician and volunteer gynecologist around here!"
 			)
 			(2
-				(Say ; "It will be my pleasure to be serving you today."
-					Dr__Phil_Hopian_IDr__Phil_De_Speranza
-					450
-					1
-					108
-					139
-					self
-				)
+				(Say Dr__Phil_Hopian 450 1 108 139 self) ; "It will be my pleasure to be serving you today."
 			)
 			(3
 				(doc setCycle: CT 2 1 self)
@@ -92,14 +78,7 @@
 				(= ticks 60)
 			)
 			(10
-				(Say ; "I love this job!!"
-					Dr__Phil_Hopian_IDr__Phil_De_Speranza
-					450
-					2
-					108
-					139
-					self
-				)
+				(Say Dr__Phil_Hopian 450 2 108 139 self) ; "I love this job!!"
 			)
 			(11
 				(= seconds 3)
@@ -109,42 +88,21 @@
 				(= cycles 3)
 			)
 			(13
-				(Say ; "Now that you've passed your official departmental checkup (with flying colors, I might add), it's time for me to install one of our lab's latest inventions, our `Safety First Field Locator Device.'"
-					Dr__Phil_Hopian_IDr__Phil_De_Speranza
-					450
-					3
-					108
-					139
-					self
-				)
+				(Say Dr__Phil_Hopian 450 3 108 139 self) ; "Now that you've passed your official departmental checkup (with flying colors, I might add), it's time for me to install one of our lab's latest inventions, our `Safety First Field Locator Device.'"
 			)
 			(14
 				(Say gEgo 450 4 67 -1 185) ; "Is this really necessary, Doctor?"
 				(= cycles 1)
 			)
 			(15
-				(Say ; "Of course, Patti. This device lets our team of highly-trained professional trackers follow you wherever you go."
-					Dr__Phil_Hopian_IDr__Phil_De_Speranza
-					450
-					5
-					108
-					139
-					self
-				)
+				(Say Dr__Phil_Hopian 450 5 108 139 self) ; "Of course, Patti. This device lets our team of highly-trained professional trackers follow you wherever you go."
 			)
 			(16
 				(Say gEgo 450 6 67 -1 185) ; "Well, okay, I guess. But will this procedure be painful?"
 				(= ticks 60)
 			)
 			(17
-				(Say ; "Of course not, Patti.... Trust me!"
-					Dr__Phil_Hopian_IDr__Phil_De_Speranza
-					450
-					7
-					108
-					139
-					self
-				)
+				(Say Dr__Phil_Hopian 450 7 108 139 self) ; "Of course not, Patti.... Trust me!"
 			)
 			(18
 				(TPrint 450 8 67 -1 185) ; "(You've heard that line before!)"
@@ -155,14 +113,7 @@
 				(= seconds 3)
 			)
 			(20
-				(Say ; "Now just relax, Patti; you'll only feel a little prick."
-					Dr__Phil_Hopian_IDr__Phil_De_Speranza
-					450
-					9
-					108
-					139
-					self
-				)
+				(Say Dr__Phil_Hopian 450 9 108 139 self) ; "Now just relax, Patti; you'll only feel a little prick."
 			)
 			(21
 				(= seconds 2)
@@ -194,14 +145,7 @@
 				(= cycles 3)
 			)
 			(28
-				(Say ; "Oh, I'm sorry; let me warm that for you first."
-					Dr__Phil_Hopian_IDr__Phil_De_Speranza
-					450
-					11
-					108
-					139
-					self
-				)
+				(Say Dr__Phil_Hopian 450 11 108 139 self) ; "Oh, I'm sorry; let me warm that for you first."
 			)
 			(29
 				(= seconds 3)
@@ -229,14 +173,7 @@
 				(= seconds 2)
 			)
 			(35
-				(Say ; "Oops! Perhaps you'd prefer something in a D-width?"
-					Dr__Phil_Hopian_IDr__Phil_De_Speranza
-					450
-					12
-					108
-					139
-					self
-				)
+				(Say Dr__Phil_Hopian 450 12 108 139 self) ; "Oops! Perhaps you'd prefer something in a D-width?"
 			)
 			(36
 				(= seconds 2)
@@ -348,7 +285,7 @@
 	)
 )
 
-(instance Dr__Phil_Hopian_IDr__Phil_De_Speranza of Talker
+(instance Dr__Phil_Hopian of Talker
 	(properties
 		name {Dr. Phil Hopian}
 		x 5

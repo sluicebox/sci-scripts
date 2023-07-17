@@ -23,7 +23,7 @@
 		else
 			(gEgo posn: 38 337 heading: 45)
 		)
-		(gEgo BAD_SELECTOR: init: setScaler: Scaler 101 30 403 272)
+		(gEgo sel_737: init: setScaler: Scaler 101 30 403 272)
 		(southWest init:)
 		(cryptArea init:)
 		(super init: &rest)

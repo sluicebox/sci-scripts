@@ -431,7 +431,7 @@
 		)
 		(UpdateScreenItem curInvView)
 		(if (and (== (curInvView view:) 9551) (not bucksDisplay))
-			(= numBuckStr (Str format: {%d} global150))
+			(= numBuckStr (Str format: {%d} gBuckazoidCount))
 			(= temp2 (IntArray newWith: 4 {}))
 			(Text 0 (temp2 data:) (numBuckStr data:) 70 30)
 			(= temp3

@@ -112,8 +112,8 @@
 			(gFtrInitializer
 				(self perform: gFtrInitializer)
 			)
-			((gUser BAD_SELECTOR:)
-				((gUser BAD_SELECTOR:) add: self)
+			((gUser sel_715:)
+				((gUser sel_715:) add: self)
 			)
 		)
 	)
@@ -140,7 +140,7 @@
 					(self onMe: event)
 					(self isNotHidden:)
 				)
-				(if (not ((GKHotCursor BAD_SELECTOR:) contains: self))
+				(if (not ((GKHotCursor sel_718:) contains: self))
 					(event claimed: 1)
 					(return)
 				)
@@ -212,7 +212,7 @@
 						(or
 							(!= (event message:) $003e) ; >
 							(== global141 self)
-							(self BAD_SELECTOR:)
+							(self sel_739:)
 						)
 						(CueObj changeState: 3)
 					else
@@ -412,8 +412,8 @@
 			(= onMeCheck 0)
 		)
 		(gFeatures delete: self)
-		(if (gUser BAD_SELECTOR:)
-			((gUser BAD_SELECTOR:) delete: self)
+		(if (gUser sel_715:)
+			((gUser sel_715:) delete: self)
 		)
 		(super dispose:)
 	)

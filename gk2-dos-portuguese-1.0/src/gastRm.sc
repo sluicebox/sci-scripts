@@ -73,7 +73,7 @@
 				(gEgo
 					posn: 457 167
 					heading: 225
-					BAD_SELECTOR:
+					sel_737:
 					init:
 					setScaler: Scaler 72 37 292 154
 				)
@@ -82,7 +82,7 @@
 			((== gPrevRoomNum 7440)
 				(gEgo
 					heading: 135
-					BAD_SELECTOR:
+					sel_737:
 					setScaler: Scaler 72 37 292 154
 					init:
 				)
@@ -92,7 +92,7 @@
 				(gEgo
 					posn: 233 162
 					heading: 135
-					BAD_SELECTOR:
+					sel_737:
 					setScaler: Scaler 72 37 292 154
 					init:
 				)
@@ -341,7 +341,7 @@
 					)
 					((not (IsFlag 473))
 						(PlayScene 173)
-						(gEgo BAD_SELECTOR: 135)
+						(gEgo sel_737: 135)
 					)
 					((proc11_15 7422)
 						(gCurRoom newRoom: 7422) ; gastTopicRm
@@ -380,7 +380,7 @@
 				(gMessager say: 14 62) ; "(RITTERSBERG GASTHOF, TRY TO TAKE SECOND ROLL)I don't need another roll."
 			else
 				(SetFlag 776)
-				(gEgo get: 75 heading: 135 BAD_SELECTOR:) ; invRoll
+				(gEgo get: 75 heading: 135 sel_737:) ; invRoll
 				(PlayScene 764)
 			)
 		else

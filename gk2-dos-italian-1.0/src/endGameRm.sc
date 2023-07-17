@@ -49,7 +49,7 @@
 		(gEgo
 			posn: 134 290
 			heading: 135
-			BAD_SELECTOR:
+			sel_737:
 			init:
 			view: 21930
 			setLoop: 0 1
@@ -165,9 +165,9 @@
 					)
 					(self dispose:)
 				else
-					((gUser BAD_SELECTOR:) delete: grace)
-					((gUser BAD_SELECTOR:) delete: leber1)
-					((gUser BAD_SELECTOR:) delete: furnaceDoor1)
+					((gUser sel_715:) delete: grace)
+					((gUser sel_715:) delete: leber1)
+					((gUser sel_715:) delete: furnaceDoor1)
 					(PlayScene 913)
 					((leber1 script:) dispose:)
 					(leber1 setCycle: 0)
@@ -230,20 +230,20 @@
 				(switch (gGame printLang:)
 					(351
 						(gTopMessage
-							BAD_SELECTOR: {Cap\a1tulo 6: Filme de Encerramento}
+							sel_749: {Cap\a1tulo 6: Filme de Encerramento}
 						)
 					)
 					(39
-						(gTopMessage BAD_SELECTOR: {Capitolo 6: Scena Finale})
+						(gTopMessage sel_749: {Capitolo 6: Scena Finale})
 					)
 					(else
-						(gTopMessage BAD_SELECTOR: {Chapter Six: Ending Movie})
+						(gTopMessage sel_749: {Chapter Six: Ending Movie})
 					)
 				)
 				(PlayScene 1010 self -1)
 			)
 			(6
-				(gTopMessage BAD_SELECTOR: 0)
+				(gTopMessage sel_749: 0)
 				(gCurRoom drawPic: -1)
 				(= cycles 3)
 			)
@@ -514,7 +514,7 @@
 	(method (init)
 		(super init: &rest)
 		(self setPri: 250)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 		(self setCycle: Fwd)
 	)
 
@@ -532,7 +532,7 @@
 
 	(method (init)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 		(self setCycle: Fwd)
 	)
 
@@ -582,7 +582,7 @@
 	(method (init)
 		(super init: &rest)
 		(self setPri: 250)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 		(self setCycle: Fwd)
 	)
 
@@ -600,7 +600,7 @@
 
 	(method (init)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 		(self setCycle: Fwd)
 	)
 

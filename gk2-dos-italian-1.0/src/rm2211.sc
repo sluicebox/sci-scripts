@@ -34,7 +34,7 @@
 				(gEgo posn: 559 288 heading: 225)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 70 55 329 290 init:)
+		(gEgo sel_737: setScaler: Scaler 70 55 329 290 init:)
 		(fSpyArea init:)
 		(fWoods init:)
 		(gGame handsOn: 0)

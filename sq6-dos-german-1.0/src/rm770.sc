@@ -82,7 +82,7 @@
 
 	(method (cue)
 		(if (not script)
-			(gEgo setSpeed: global158 setMotion: 0 setCycle: 0 normalize: 1)
+			(gEgo setSpeed: gEgoSpeed setMotion: 0 setCycle: 0 normalize: 1)
 			(gGame handsOn:)
 		else
 			(gEgo view: 775 setLoop: 1 setCel: 0)
@@ -224,7 +224,7 @@
 				11
 				(if (!= (gEgo loop:) 770)
 					(gEgo
-						setSpeed: global158
+						setSpeed: gEgoSpeed
 						setMotion: 0
 						setCycle: 0
 						normalize: 1
@@ -258,10 +258,10 @@
 			(17
 				17
 				(gEgo
-					setSpeed: global158
+					setSpeed: gEgoSpeed
 					setMotion: 0
 					setCycle: 0
-					setSpeed: global158
+					setSpeed: gEgoSpeed
 					normalize: 1
 				)
 				(gGame handsOn:)
@@ -347,7 +347,7 @@
 				(gEgo normalize: 5 setMotion: MoveTo 350 280 self)
 			)
 			(12
-				(gEgo setSpeed: global158)
+				(gEgo setSpeed: gEgoSpeed)
 				(gGSound1 fade:)
 				(gCurRoom newRoom: 600)
 				(self dispose:)
@@ -566,7 +566,7 @@
 			)
 			(22
 				22
-				(gEgo setSpeed: global158)
+				(gEgo setSpeed: gEgoSpeed)
 				(fishTimer setReal: fishTimer 10)
 				(gTheIconBar disable: 0)
 				(gGame handsOn:)
@@ -599,7 +599,7 @@
 				(sfx number: 778 setLoop: 1 play:)
 			)
 			(1
-				(proc666_0 17 self)
+				(EgoDead 17 self) ; "Pretty embarrassing getting wasted by an old lady, tentacles or not! You'd better hope no one saw that."
 			)
 			(2
 				(sharpe
@@ -695,7 +695,7 @@
 				(gMessager say: 0 0 4 0 self) ; "Hey! You could hurt me doing that!"
 			)
 			(9
-				(gEgo normalize: 5 setSpeed: global158)
+				(gEgo normalize: 5 setSpeed: gEgoSpeed)
 				(gGame handsOn:)
 				(self dispose:)
 			)
@@ -740,16 +740,16 @@
 		(switch (= state newState)
 			(0
 				(drillSound stop:)
-				(client setCel: 0 setCycle: CT (proc0_8 3 6) 1 self)
+				(client setCel: 0 setCycle: CT (RandomNumber 3 6) 1 self)
 				(headsection setCel: 0 setCycle: End self)
 			)
 			(1
-				(client setCycle: ROsc (proc0_8 3 10) 9 14 self)
+				(client setCycle: ROsc (RandomNumber 3 10) 9 14 self)
 				(drillSound setLoop: -1 play:)
 			)
 			(2
 				(headsection setCycle: Beg self)
-				(client setCycle: CT (proc0_8 5 7) -1 self)
+				(client setCycle: CT (RandomNumber 5 7) -1 self)
 			)
 			(3
 				(if (== (client cel:) 5)

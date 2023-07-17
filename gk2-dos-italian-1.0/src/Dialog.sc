@@ -82,12 +82,7 @@
 					)
 				)
 				(gCast eachElementDo: #doit)
-				(if
-					(and
-						caller
-						(caller respondsTo: #BAD_SELECTOR)
-						(caller BAD_SELECTOR:)
-					)
+				(if (and caller (caller respondsTo: #sel_708) (caller sel_708:))
 					(gSounds eachElementDo: #check)
 					(SoundManager doit:)
 				)

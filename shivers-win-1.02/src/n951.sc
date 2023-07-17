@@ -277,7 +277,7 @@
 				((< global547 9)
 					(= temp2 (Random 0 1))
 				)
-				((<= 39000 gCurRoomNum 39999)
+				((<= -26536 gCurRoomNum -25537)
 					(= temp2 2)
 				)
 				((IsFlag 79)

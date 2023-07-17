@@ -184,22 +184,22 @@
 			(cust1 init: ignoreActors: 1 setScript: (generalMotion new:))
 			(cust2 init: ignoreActors: 1 setScript: (generalMotion new:))
 		)
-		(if (not (proc0_8 0 2))
+		(if (not (RandomNumber 0 2))
 			(cust3 init: ignoreActors: 1 setScript: (generalMotion new:))
 			(cust4 init: ignoreActors: 1 setScript: (generalMotion new:))
 		)
-		(if (proc0_8 0 1)
+		(if (RandomNumber 0 1)
 			(elvis init: ignoreActors: 1 setScript: eatNuts)
 		else
 			(cust5 init: ignoreActors: 1 setScript: (generalMotion new:))
 			(cust6 init: ignoreActors: 1 setScript: (generalMotion new:))
 		)
-		(if (proc0_8 0 1)
+		(if (RandomNumber 0 1)
 			(starGazers init: ignoreActors: 1 setScript: pointAtStars)
 		else
 			(cust7 init: ignoreActors: 1 setScript: (generalMotion new:))
 		)
-		(if (and (<= gHowFast 8) (= local6 (proc0_8 0 2)))
+		(if (and (<= gHowFast 8) (= local6 (RandomNumber 0 2)))
 			(movingSky init: setPri: 1 ignoreActors: 1 setCycle: Fwd)
 		)
 		(plant init: ignoreActors: 1 setScript: plantWriggles)
@@ -235,7 +235,7 @@
 				((and (== (Platform) 2) (>= gHowFast 8))
 					(= temp3 0)
 				)
-				((proc0_8 0 1)
+				((RandomNumber 0 1)
 					(= temp3 102)
 				)
 				(else
@@ -310,7 +310,7 @@
 				(= cycles 1)
 			)
 			(1
-				(if (or (== global119 gCurRoomNum) (== global119 0))
+				(if (or (== gComPostNextRoomNum gCurRoomNum) (== gComPostNextRoomNum 0))
 					(gGame handsOn:)
 					(self dispose:)
 				else
@@ -331,7 +331,7 @@
 				)
 			)
 			(3
-				(gCurRoom newRoom: global119)
+				(gCurRoom newRoom: gComPostNextRoomNum)
 				(self dispose:)
 			)
 		)
@@ -450,7 +450,7 @@
 				(= ticks (Random 180 480))
 			)
 			(1
-				(client cel: 0 setCycle: Osc (proc0_8 1 3) self)
+				(client cel: 0 setCycle: Osc (RandomNumber 1 3) self)
 			)
 			(2
 				(client cel: 0)
@@ -759,7 +759,7 @@
 			)
 			(7
 				(gGame handsOn:)
-				(= seconds (proc0_8 15 20))
+				(= seconds (RandomNumber 15 20))
 			)
 			(8
 				(self setScript: endFollower self)
@@ -930,7 +930,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(2 ; Talk
-				(switch global155
+				(switch gSidneyTalkCount
 					(0
 						(gEgo setScript: sidIntro)
 					)
@@ -947,8 +947,8 @@
 						(gMessager say: noun theVerb 4 0) ; "Sydney won't be interested in talking to you any further until you return his body parts."
 					)
 				)
-				(if (< global155 4)
-					(++ global155)
+				(if (< gSidneyTalkCount 4)
+					(++ gSidneyTalkCount)
 				)
 			)
 			(else
@@ -1832,7 +1832,7 @@
 				(== theVerb 4) ; Do
 				(not local6)
 				(not (gCurRoom script:))
-				(not (proc0_8 0 12))
+				(not (RandomNumber 0 12))
 			)
 			(gCurRoom setScript: sillyStar)
 		else

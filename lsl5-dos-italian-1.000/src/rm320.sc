@@ -1564,39 +1564,25 @@
 				(= seconds 4)
 			)
 			(1
-				(Say ; "It's not hard to see, Patti, the problems of two little people don't amount to a hill of beans in this crazy mixed-up world..."
-					Leisure_Suit_Bogie_ILeisure_Suit_Bogie
-					320
-					34
-					108
-					139
-					self
-				)
+				(Say Leisure_Suit_Bogie 320 34 108 139 self) ; "It's not hard to see, Patti, the problems of two little people don't amount to a hill of beans in this crazy mixed-up world..."
 			)
 			(2
 				(= seconds 3)
 			)
 			(3
-				(Say Ingrid_Patti_IIngrid_Patty 320 35 108 139 self) ; "Larry, in all the scenes, in all the games, in all the world... you had to walk into mine!"
+				(Say Ingrid_Patti 320 35 108 139 self) ; "Larry, in all the scenes, in all the games, in all the world... you had to walk into mine!"
 			)
 			(4
 				(= seconds 3)
 			)
 			(5
-				(Say Ingrid_Patti_IIngrid_Patty 320 36 108 139 self) ; "Remember Larry: we'll always have Nontoonyt!"
+				(Say Ingrid_Patti 320 36 108 139 self) ; "Remember Larry: we'll always have Nontoonyt!"
 			)
 			(6
 				(= seconds 3)
 			)
 			(7
-				(Say ; "Here's looking at you, kid!"
-					Leisure_Suit_Bogie_ILeisure_Suit_Bogie
-					320
-					37
-					108
-					139
-					self
-				)
+				(Say Leisure_Suit_Bogie 320 37 108 139 self) ; "Here's looking at you, kid!"
 			)
 			(8
 				(gTheMusic fade: 0 15 10 1)
@@ -1610,7 +1596,7 @@
 	)
 )
 
-(instance Leisure_Suit_Bogie_ILeisure_Suit_Bogie of Talker
+(instance Leisure_Suit_Bogie of Talker
 	(properties
 		name {Leisure Suit Bogie}
 		x 1
@@ -1634,7 +1620,7 @@
 	)
 )
 
-(instance Ingrid_Patti_IIngrid_Patty of Talker
+(instance Ingrid_Patti of Talker
 	(properties
 		name {Ingrid Patti}
 		x 140

@@ -412,7 +412,7 @@
 						(== gPrevRoomNum 390)
 						(IsFlag 116)
 						(IsFlag 117)
-						(== global120 1)
+						(== gAct 1)
 					)
 				)
 				(comm doVerb: 4)
@@ -426,11 +426,11 @@
 				(localproc_2 1 0 5 1 6 -1)
 			)
 		)
-		(= global119 0)
+		(= gComPostNextRoomNum 0)
 	)
 
 	(method (doVerb)
-		(= global119 0)
+		(= gComPostNextRoomNum 0)
 		(gCurRoom newRoom: gPrevRoomNum)
 	)
 
@@ -1022,16 +1022,16 @@
 							((< 0 local49 6)
 								(switch (= local50 local49)
 									(1
-										(= global119 360)
+										(= gComPostNextRoomNum 360)
 									)
 									(2
-										(= global119 370)
+										(= gComPostNextRoomNum 370)
 									)
 									(3
-										(= global119 430)
+										(= gComPostNextRoomNum 430)
 									)
 									(4
-										(= global119 400)
+										(= gComPostNextRoomNum 400)
 									)
 									(5
 										(localproc_0)
@@ -1052,7 +1052,7 @@
 								)
 								(cond
 									((== local50 5) 0)
-									((== global119 gPrevRoomNum)
+									((== gComPostNextRoomNum gPrevRoomNum)
 										(gCurRoom setScript: sInvalidEntry 0 1)
 									)
 									(else
@@ -1079,16 +1079,16 @@
 							((< 0 local49 6)
 								(switch (= local50 local49)
 									(1
-										(= global119 390)
+										(= gComPostNextRoomNum 390)
 									)
 									(2
-										(= global119 440)
+										(= gComPostNextRoomNum 440)
 									)
 									(3
-										(= global119 380)
+										(= gComPostNextRoomNum 380)
 									)
 									(4
-										(= global119 420)
+										(= gComPostNextRoomNum 420)
 									)
 									(5
 										(= local68 0)
@@ -1097,7 +1097,7 @@
 								)
 								(cond
 									((== local50 5) 0)
-									((== global119 gPrevRoomNum)
+									((== gComPostNextRoomNum gPrevRoomNum)
 										(gCurRoom setScript: sInvalidEntry 0 1)
 									)
 									(else
@@ -1128,7 +1128,7 @@
 								(= local52 1)
 							)
 							((== local49 2)
-								(= global119 0)
+								(= gComPostNextRoomNum 0)
 								(if (== local57 2)
 									(= local51 1)
 									(= local49 5)
@@ -2216,7 +2216,7 @@
 				(= cycles 3)
 			)
 			(1
-				(= global175 1)
+				(= gDeepshipLocation 1) ; Delta Burksilon
 				(SetFlag 116)
 				(gGame points: 3 425)
 				(if (IsFlag 117)

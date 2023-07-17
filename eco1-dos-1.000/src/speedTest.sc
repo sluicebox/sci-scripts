@@ -35,7 +35,7 @@
 		(FileIO fiCLOSE local1)
 		(super init:)
 		(gSounds eachElementDo: #stop)
-		(while (u> (GetTime) -1024)
+		(while (u> (GetTime) 64512)
 		)
 		(fred
 			view: 901

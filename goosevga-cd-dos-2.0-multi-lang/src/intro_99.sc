@@ -27,7 +27,7 @@
 		(Palette palSET_INTENSITY 0 255 0)
 		(super init:)
 		(Palette palSET_INTENSITY 0 255 0)
-		(while (u> (GetTime) -1024)
+		(while (u> (GetTime) 64512)
 		)
 		(fred
 			view: 99

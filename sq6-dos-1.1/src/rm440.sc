@@ -76,7 +76,7 @@
 				)
 				(gGame handsOn:)
 			)
-			((and (== gPrevRoomNum 460) (or (== global119 0) (== global119 440)))
+			((and (== gPrevRoomNum 460) (or (== gComPostNextRoomNum 0) (== gComPostNextRoomNum 440)))
 				(gEgo
 					normalize:
 					posn: 11 133
@@ -634,7 +634,7 @@
 				)
 			)
 			(3
-				(gCurRoom newRoom: global119)
+				(gCurRoom newRoom: gComPostNextRoomNum)
 				(self dispose:)
 			)
 		)
@@ -1307,7 +1307,7 @@
 			)
 			(5
 				(if (IsFlag 8)
-					(proc666_0 20 self)
+					(EgoDead 20 self) ; "I'll bet Magnum kicks some serious butt playing marbles!"
 				else
 					(= cycles 1)
 				)
@@ -1537,10 +1537,10 @@
 					((IsFlag 153)
 						(gMessager say: 8 1 2) ; "My, this guy would give Sybil a run for her money."
 					)
-					((== global120 1)
+					((== gAct 1)
 						(gMessager say: 8 1 3) ; "This is Magnum Opus. You owe him 200 buckazoids from a lost bet. In other words, scram."
 					)
-					((> global120 1)
+					((> gAct 1)
 						(gMessager say: 8 1) ; "Magnum Opus belongs to an elite StarCon fighting force called The Flying Flingers (FF for short)."
 					)
 				)
@@ -1571,7 +1571,7 @@
 		(switch theVerb
 			(1 ; Look
 				(cond
-					((< global120 2)
+					((< gAct 2)
 						(gMessager say: 9 1 3) ; "This is your dear crewmate, Chesbro."
 					)
 					((IsFlag 154)
@@ -1623,10 +1623,10 @@
 					((IsFlag 153)
 						(gMessager say: 8 1 2) ; "My, this guy would give Sybil a run for her money."
 					)
-					((== global120 1)
+					((== gAct 1)
 						(gMessager say: 8 1 3) ; "This is Magnum Opus. You owe him 200 buckazoids from a lost bet. In other words, scram."
 					)
-					((> global120 1)
+					((> gAct 1)
 						(gMessager say: 8 1) ; "Magnum Opus belongs to an elite StarCon fighting force called The Flying Flingers (FF for short)."
 					)
 				)
@@ -2293,35 +2293,7 @@
 
 	(method (init)
 		(super
-			init:
-				12
-				131
-				0
-				133
-				318
-				137
-				264
-				122
-				319
-				117
-				248
-				120
-				241
-				118
-				201
-				118
-				198
-				118
-				128
-				118
-				121
-				120
-				57
-				114
-				115
-				122
-				73
-				130
+			init: 12 131 0 133 318 137 264 122 319 117 248 120 241 118 201 118 198 118 128 118 121 120 57 114 115 122 73 130
 		)
 	)
 )
@@ -2333,31 +2305,7 @@
 
 	(method (init)
 		(super
-			init:
-				12
-				131
-				0
-				133
-				318
-				137
-				264
-				122
-				319
-				117
-				248
-				120
-				228
-				114
-				138
-				114
-				121
-				120
-				57
-				114
-				115
-				122
-				73
-				130
+			init: 12 131 0 133 318 137 264 122 319 117 248 120 228 114 138 114 121 120 57 114 115 122 73 130
 		)
 	)
 )

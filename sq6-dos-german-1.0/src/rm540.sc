@@ -77,14 +77,14 @@
 			(1
 				(noseFlash
 					setCel: 0
-					cycleSpeed: (proc0_8 2 5)
+					cycleSpeed: (RandomNumber 2 5)
 					show:
 					setCycle: End self
 				)
 			)
 			(2
 				(++ local0)
-				(= ticks (proc0_8 5 50))
+				(= ticks (RandomNumber 5 50))
 			)
 			(3
 				(noseFlash hide:)
@@ -137,11 +137,11 @@
 				(noseFlash show: setCycle: End self)
 			)
 			(9
-				(= ticks (proc0_8 5 50))
+				(= ticks (RandomNumber 5 50))
 			)
 			(10
 				(++ local0)
-				(noseFlash cycleSpeed: (proc0_8 2 5) setCel: 0 hide:)
+				(noseFlash cycleSpeed: (RandomNumber 2 5) setCel: 0 hide:)
 				(if (== local0 7)
 					(= ticks 1)
 				else
@@ -254,7 +254,7 @@
 			)
 			(23
 				(gGSound1 fade: 0 3 1 0)
-				(proc0_7 1 1 self)
+				(Fade 1 1 self)
 			)
 			(24
 				(window2 show:)
@@ -266,7 +266,7 @@
 				(drEye hide:)
 				(drArm hide:)
 				(gCurRoom picture: 540 drawPic: 540)
-				(proc0_7 0 1 self)
+				(Fade 0 1 self)
 			)
 			(25
 				(= ticks 400)
@@ -400,7 +400,7 @@
 				(= cycles 3)
 			)
 			(51
-				(proc0_7 1 0 self 1)
+				(Fade 1 0 self 1)
 			)
 			(52
 				(gTheIconBar hide: 1 disable:)
@@ -423,7 +423,7 @@
 				(client setCel: 0 cycleSpeed: 4 setCycle: Osc 1 self)
 			)
 			(1
-				(= ticks (proc0_8 200 500))
+				(= ticks (RandomNumber 200 500))
 			)
 			(2
 				(client setCel: 0)
@@ -442,7 +442,7 @@
 				(client setCel: 0 cycleSpeed: 4 setCycle: Osc 1 self)
 			)
 			(1
-				(= ticks (proc0_8 300 400))
+				(= ticks (RandomNumber 300 400))
 			)
 			(2
 				(client setCel: 0)

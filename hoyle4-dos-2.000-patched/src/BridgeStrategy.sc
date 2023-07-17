@@ -1226,7 +1226,7 @@
 							)
 							(
 								(or
-									(u> temp7 -32768)
+									(u> temp7 32768)
 									(and
 										(u> temp7 28672)
 										(param1 hasCard: temp8 3852)

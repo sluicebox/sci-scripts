@@ -34,7 +34,7 @@
 
 	(method (init &tmp temp0)
 		(gEgo
-			BAD_SELECTOR: 5
+			sel_737: 5
 			init:
 			setSpeed: 3
 			setStep: 5 3
@@ -177,7 +177,7 @@
 			(and
 				(not local6)
 				(super onMe: &rest)
-				(self setCursor: (gUser BAD_SELECTOR:))
+				(self setCursor: (gUser sel_715:))
 			)
 		)
 	)
@@ -200,7 +200,7 @@
 	)
 
 	(method (doVerb &tmp temp0)
-		(if ((gUser BAD_SELECTOR:) loop:)
+		(if ((gUser sel_715:) loop:)
 			(gEgo x: 230)
 			(= local1 0)
 			(= local2 local3)
@@ -232,7 +232,7 @@
 			(and
 				(not local5)
 				(super onMe: &rest)
-				(self setCursor: (gUser BAD_SELECTOR:))
+				(self setCursor: (gUser sel_715:))
 			)
 		)
 	)
@@ -255,7 +255,7 @@
 	)
 
 	(method (doVerb &tmp temp0)
-		(if ((gUser BAD_SELECTOR:) loop:)
+		(if ((gUser sel_715:) loop:)
 			(gEgo x: (- local3 130))
 			(gEgo y: 309)
 			(= local1 64897)

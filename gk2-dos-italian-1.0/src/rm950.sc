@@ -33,7 +33,7 @@
 		(gEgo
 			posn: 367 307
 			heading: (if (OneOf gPrevRoomNum 920 921) 135 else 315) ; bed2
-			BAD_SELECTOR:
+			sel_737:
 			setScaler: Scaler 94 37 375 250
 			init:
 		)

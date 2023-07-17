@@ -49,7 +49,7 @@
 				(self setScript: enterScript 0 391)
 			)
 			(else
-				(gSoundManager BAD_SELECTOR: 1)
+				(gSoundManager sel_702: 1)
 				(self setScript: enterScript 0 392)
 			)
 		)
@@ -140,10 +140,10 @@
 			(62 ; Do
 				(gGame handsOff:)
 				(if (IsFlag 50)
-					(gSoundManager BAD_SELECTOR: 1)
+					(gSoundManager sel_702: 1)
 					(PlayScene 394 0 200) ; MunichMapRm
 				else
-					(gSoundManager BAD_SELECTOR: 1)
+					(gSoundManager sel_702: 1)
 					(PlayScene 393 0 200) ; MunichMapRm
 				)
 			)

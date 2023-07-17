@@ -43,24 +43,18 @@
 				(= BAD_SELECTOR 1)
 			)
 		)
-		(if ((BaseRegion BAD_SELECTOR:) at: 0)
+		(if ((BaseRegion sel_890:) at: 0)
 			(+= BAD_SELECTOR 100)
 		)
-		(if ((BaseRegion BAD_SELECTOR:) at: 3)
+		(if ((BaseRegion sel_890:) at: 3)
 			(+= BAD_SELECTOR 100)
 		)
 		(Load 140 15012) ; WAVE
 		(super init:)
 		(if
 			(or
-				(and
-					(== BAD_SELECTOR 1)
-					(not ((BaseRegion BAD_SELECTOR:) at: 0))
-				)
-				(and
-					(== BAD_SELECTOR 2)
-					(not ((BaseRegion BAD_SELECTOR:) at: 3))
-				)
+				(and (== BAD_SELECTOR 1) (not ((BaseRegion sel_890:) at: 0)))
+				(and (== BAD_SELECTOR 2) (not ((BaseRegion sel_890:) at: 3)))
 			)
 			(exitDoor init:)
 		)
@@ -75,11 +69,11 @@
 				(or
 					(and
 						(== BAD_SELECTOR 1)
-						(not ((BaseRegion BAD_SELECTOR:) at: 0))
+						(not ((BaseRegion sel_890:) at: 0))
 					)
 					(and
 						(== BAD_SELECTOR 2)
-						(not ((BaseRegion BAD_SELECTOR:) at: 3))
+						(not ((BaseRegion sel_890:) at: 3))
 					)
 				)
 				(if (not (gFeatures contains: exitDoor))
@@ -131,20 +125,12 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(62 ; Do
-				(switch (gCurRoom BAD_SELECTOR:)
+				(switch (gCurRoom sel_879:)
 					(1
-						(gCurRoom
-							BAD_SELECTOR:
-								(gCurRoom BAD_SELECTOR:)
-								(gCurRoom BAD_SELECTOR:)
-						)
+						(gCurRoom sel_916: (gCurRoom sel_880:) (gCurRoom sel_879:))
 					)
 					(2
-						(gCurRoom
-							BAD_SELECTOR:
-								(gCurRoom BAD_SELECTOR:)
-								(gCurRoom BAD_SELECTOR:)
-						)
+						(gCurRoom sel_916: (gCurRoom sel_880:) (gCurRoom sel_879:))
 					)
 				)
 			)

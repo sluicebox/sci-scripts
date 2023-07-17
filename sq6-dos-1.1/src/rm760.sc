@@ -89,7 +89,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= ticks (proc0_8 30 500))
+				(= ticks (RandomNumber 30 500))
 			)
 			(1
 				(client show: setCycle: End self)

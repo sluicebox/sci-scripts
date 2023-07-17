@@ -167,20 +167,13 @@
 				(= ticks 60)
 			)
 			(4
-				(Say ; "Welcome to our Technical Laboratory. This is the head of our Office of Agent Field Equipment, Commander Twit. Commander Twit, meet Passionate Patti."
-					Inspector_Desmond_GInspektor_Desmond
-					430
-					1
-					108
-					139
-					self
-				)
+				(Say Inspector_Desmond 430 1 108 139 self) ; "Welcome to our Technical Laboratory. This is the head of our Office of Agent Field Equipment, Commander Twit. Commander Twit, meet Passionate Patti."
 			)
 			(5
 				(= seconds 3)
 			)
 			(6
-				(Say Commander_Twit_GKommander_Twit 430 2 108 139 self) ; "Good morning, Patti," says Commander Twit. "It's so very nice to meet you."
+				(Say Commander_Twit 430 2 108 139 self) ; "Good morning, Patti," says Commander Twit. "It's so very nice to meet you."
 			)
 			(7
 				(= seconds 3)
@@ -190,7 +183,7 @@
 				(= ticks 60)
 			)
 			(9
-				(Say Commander_Twit_GKommander_Twit 430 4 108 139 self) ; "You have?" Twit asks suspiciously. "Well, allow me to show you about for a moment before we begin your indoctrination."
+				(Say Commander_Twit 430 4 108 139 self) ; "You have?" Twit asks suspiciously. "Well, allow me to show you about for a moment before we begin your indoctrination."
 			)
 			(10
 				(= ticks 60)
@@ -200,20 +193,13 @@
 				(= ticks 60)
 			)
 			(12
-				(Say Commander_Twit_GKommander_Twit 430 6 108 139 self) ; "Fine," Twit says, obviously charmed. "Feel free to explore the lab a bit, Patti; when you're ready, I'll give you some information you'll need."
+				(Say Commander_Twit 430 6 108 139 self) ; "Fine," Twit says, obviously charmed. "Feel free to explore the lab a bit, Patti; when you're ready, I'll give you some information you'll need."
 			)
 			(13
 				(= ticks 60)
 			)
 			(14
-				(Say ; "Enjoy your indoctrination, Patti," says Desmond, turning to leave, "and especially your physical!"
-					Inspector_Desmond_GInspektor_Desmond
-					430
-					7
-					108
-					139
-					self
-				)
+				(Say Inspector_Desmond 430 7 108 139 self) ; "Enjoy your indoctrination, Patti," says Desmond, turning to leave, "and especially your physical!"
 			)
 			(15
 				(desmond
@@ -256,7 +242,7 @@
 			)
 			(2
 				(SetFlag 41)
-				(Say Commander_Twit_GKommander_Twit 430 9 108 139 self) ; "I suspected you might be intrigued. Dr. Rolfing is working on refining our new `infrared, heat-seeking, surface-to-air vibrator.' We feel it will be of considerable value as a protective device against certain types of enemy agents."
+				(Say Commander_Twit 430 9 108 139 self) ; "I suspected you might be intrigued. Dr. Rolfing is working on refining our new `infrared, heat-seeking, surface-to-air vibrator.' We feel it will be of considerable value as a protective device against certain types of enemy agents."
 			)
 			(3
 				(soundFX number: 431 setLoop: -1 play:)
@@ -299,7 +285,7 @@
 				(= ticks 180)
 			)
 			(10
-				(Say Commander_Twit_GKommander_Twit 430 10 108) ; "Of course, it works much better when you remember to turn it on and then RELEASE it!"
+				(Say Commander_Twit 430 10 108) ; "Of course, it works much better when you remember to turn it on and then RELEASE it!"
 				(HandsOn)
 				(self dispose:)
 			)
@@ -323,7 +309,7 @@
 				(= ticks 60)
 			)
 			(2
-				(Say Commander_Twit_GKommander_Twit 430 12 108 139 self) ; "Ah, now this is an experiment that I think should be of great interest to you, Patti. These two technicians are working on one of our latest Title 9-funded developments: the hair-trigger, double-barreled, armor-piercing brassiere cannon."
+				(Say Commander_Twit 430 12 108 139 self) ; "Ah, now this is an experiment that I think should be of great interest to you, Patti. These two technicians are working on one of our latest Title 9-funded developments: the hair-trigger, double-barreled, armor-piercing brassiere cannon."
 			)
 			(3
 				(techMan setScript: 0 setCycle: End self)
@@ -346,7 +332,7 @@
 				(Face twit gEgo self)
 			)
 			(8
-				(Say Commander_Twit_GKommander_Twit 430 14 108 139 self) ; "Heh, heh, that's the beauty of this baby," he exclaims, his voice rising with pride. "Just touch your elbows together behind your back!"
+				(Say Commander_Twit 430 14 108 139 self) ; "Heh, heh, that's the beauty of this baby," he exclaims, his voice rising with pride. "Just touch your elbows together behind your back!"
 			)
 			(9
 				(braMan setLoop: 2 setCel: 0 cycleSpeed: 24 setCycle: End self)
@@ -385,7 +371,7 @@
 				(= ticks 66)
 			)
 			(15
-				(Say Commander_Twit_GKommander_Twit 430 16 108 139 self) ; "You idiot!" Twit shouts at the bra-slinging technician, "I was talking to Patti!"
+				(Say Commander_Twit 430 16 108 139 self) ; "You idiot!" Twit shouts at the bra-slinging technician, "I was talking to Patti!"
 			)
 			(16
 				(braMan setCycle: End self)
@@ -404,7 +390,7 @@
 				(= seconds 3)
 			)
 			(21
-				(Say Commander_Twit_GKommander_Twit 430 17 108) ; "Obviously, our turnover rate is rather high here!"
+				(Say Commander_Twit 430 17 108) ; "Obviously, our turnover rate is rather high here!"
 				(braMan setCycle: Beg self)
 				((gCurRoom obstacles:) delete: braPolygon)
 				(gCurRoom addObstacle: braPolygon2)
@@ -456,7 +442,7 @@
 						(gCurRoom setScript: sBra)
 					)
 					(else
-						(Say Commander_Twit_GKommander_Twit 430 20 108) ; "Whenever you're through exploring this area, we'll set you up with the mission-required information you're going to need."
+						(Say Commander_Twit 430 20 108) ; "Whenever you're through exploring this area, we'll set you up with the mission-required information you're going to need."
 					)
 				)
 			)
@@ -528,7 +514,7 @@
 				(TPrint 430 26) ; "This door leads outside."
 			)
 			(3 ; Do
-				(Say Commander_Twit_GKommander_Twit 430 27 108) ; "Whenever you are finished with your indoctrination," says Twit, "I'll have a limousine waiting for you outside that door."
+				(Say Commander_Twit 430 27 108) ; "Whenever you are finished with your indoctrination," says Twit, "I'll have a limousine waiting for you outside that door."
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)
@@ -896,7 +882,7 @@
 	)
 )
 
-(instance Commander_Twit_GKommander_Twit of Talker
+(instance Commander_Twit of Talker
 	(properties
 		name {Commander Twit}
 		nsTop 15
@@ -937,7 +923,7 @@
 	)
 )
 
-(instance Inspector_Desmond_GInspektor_Desmond of Talker
+(instance Inspector_Desmond of Talker
 	(properties
 		name {Inspector Desmond}
 		nsTop 15

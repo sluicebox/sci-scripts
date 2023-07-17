@@ -38,32 +38,32 @@
 				(= BAD_SELECTOR 2)
 			)
 		)
-		(if ((BaseRegion BAD_SELECTOR:) at: 6)
+		(if ((BaseRegion sel_890:) at: 6)
 			(+= BAD_SELECTOR 100)
 		)
-		(if ((BaseRegion BAD_SELECTOR:) at: 13)
+		(if ((BaseRegion sel_890:) at: 13)
 			(+= BAD_SELECTOR 100)
 		)
-		(if ((BaseRegion BAD_SELECTOR:) at: 9)
+		(if ((BaseRegion sel_890:) at: 9)
 			(+= BAD_SELECTOR 100)
 		)
 		(super init:)
-		(if (and (== BAD_SELECTOR 0) (not ((BaseRegion BAD_SELECTOR:) at: 6)))
+		(if (and (== BAD_SELECTOR 0) (not ((BaseRegion sel_890:) at: 6)))
 			(exitNDoor init:)
 			(doorLatchN init:)
 		)
-		(if (and (== BAD_SELECTOR 3) (not ((BaseRegion BAD_SELECTOR:) at: 9)))
+		(if (and (== BAD_SELECTOR 3) (not ((BaseRegion sel_890:) at: 9)))
 			(exitWDoor init:)
 			(doorLatchW init:)
 		)
-		(if (and (== BAD_SELECTOR 2) (not ((BaseRegion BAD_SELECTOR:) at: 13)))
+		(if (and (== BAD_SELECTOR 2) (not ((BaseRegion sel_890:) at: 13)))
 			(exitDoor init:)
 		)
 	)
 
 	(method (cue)
 		(cond
-			((and (== BAD_SELECTOR 2) (not ((BaseRegion BAD_SELECTOR:) at: 13)))
+			((and (== BAD_SELECTOR 2) (not ((BaseRegion sel_890:) at: 13)))
 				(if (not (gFeatures contains: exitDoor))
 					(exitDoor init:)
 				)
@@ -76,7 +76,7 @@
 					(doorLatchW dispose:)
 				)
 			)
-			((and (== BAD_SELECTOR 0) (not ((BaseRegion BAD_SELECTOR:) at: 6)))
+			((and (== BAD_SELECTOR 0) (not ((BaseRegion sel_890:) at: 6)))
 				(if (not (gFeatures contains: exitNDoor))
 					(exitNDoor init:)
 					(doorLatchN init:)
@@ -89,7 +89,7 @@
 					(exitDoor dispose:)
 				)
 			)
-			((and (== BAD_SELECTOR 3) (not ((BaseRegion BAD_SELECTOR:) at: 9)))
+			((and (== BAD_SELECTOR 3) (not ((BaseRegion sel_890:) at: 9)))
 				(if (not (gFeatures contains: exitWDoor))
 					(exitWDoor init:)
 					(doorLatchW init:)
@@ -141,11 +141,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(62 ; Do
-				(gCurRoom
-					BAD_SELECTOR:
-						(gCurRoom BAD_SELECTOR:)
-						(gCurRoom BAD_SELECTOR:)
-				)
+				(gCurRoom sel_916: (gCurRoom sel_880:) (gCurRoom sel_879:))
 			)
 			(else
 				(super doVerb: theVerb)
@@ -176,11 +172,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(62 ; Do
-				(gCurRoom
-					BAD_SELECTOR:
-						(gCurRoom BAD_SELECTOR:)
-						(gCurRoom BAD_SELECTOR:)
-				)
+				(gCurRoom sel_916: (gCurRoom sel_880:) (gCurRoom sel_879:))
 			)
 			(else
 				(super doVerb: theVerb)
@@ -210,14 +202,12 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(62 ; Do
-				(((BaseRegion BAD_SELECTOR:) at: (- (gCurRoom BAD_SELECTOR:) 1))
-					BAD_SELECTOR:
-						(gCurRoom BAD_SELECTOR:)
-						(gCurRoom BAD_SELECTOR:)
+				(((BaseRegion sel_891:) at: (- (gCurRoom sel_880:) 1))
+					sel_905: (gCurRoom sel_880:) (gCurRoom sel_879:)
 				)
-				(gCurRoom BAD_SELECTOR: (+ (gCurRoom BAD_SELECTOR:) 100))
+				(gCurRoom sel_909: (+ (gCurRoom sel_909:) 100))
 				(PlayScene 915 gCurRoom)
-				(gCurRoom BAD_SELECTOR:)
+				(gCurRoom sel_878:)
 			)
 			(else
 				(super doVerb: theVerb)
@@ -248,11 +238,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(62 ; Do
-				(gCurRoom
-					BAD_SELECTOR:
-						(gCurRoom BAD_SELECTOR:)
-						(gCurRoom BAD_SELECTOR:)
-				)
+				(gCurRoom sel_916: (gCurRoom sel_880:) (gCurRoom sel_879:))
 			)
 			(else
 				(super doVerb: theVerb)
@@ -282,14 +268,12 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(62 ; Do
-				(((BaseRegion BAD_SELECTOR:) at: (- (gCurRoom BAD_SELECTOR:) 1))
-					BAD_SELECTOR:
-						(gCurRoom BAD_SELECTOR:)
-						(gCurRoom BAD_SELECTOR:)
+				(((BaseRegion sel_891:) at: (- (gCurRoom sel_880:) 1))
+					sel_905: (gCurRoom sel_880:) (gCurRoom sel_879:)
 				)
-				(gCurRoom BAD_SELECTOR: (+ (gCurRoom BAD_SELECTOR:) 100))
+				(gCurRoom sel_906: (+ (gCurRoom sel_906:) 100))
 				(PlayScene 915 gCurRoom)
-				(gCurRoom BAD_SELECTOR:)
+				(gCurRoom sel_878:)
 			)
 			(else
 				(super doVerb: theVerb)

@@ -45,7 +45,7 @@
 			(if (IsFlag 746)
 				(gMessager say: 11 62 0 0 0 modNum) ; "The fire's going good now. I don't want to mess with the controls."
 			else
-				((gUser BAD_SELECTOR:) set: 993 1 0)
+				((gUser sel_715:) set: 993 1 0)
 				(= temp2 (event x:))
 				(= temp3 0)
 				(= temp4 1)
@@ -54,11 +54,11 @@
 					(cond
 						((and (> (= temp1 (temp0 x:)) temp2) (== temp4 0))
 							(= temp4 1)
-							((gUser BAD_SELECTOR:) set: 993 1 0)
+							((gUser sel_715:) set: 993 1 0)
 						)
 						((and (< temp1 temp2) (== temp4 1))
 							(= temp4 0)
-							((gUser BAD_SELECTOR:) set: 993 0 0)
+							((gUser sel_715:) set: 993 0 0)
 						)
 					)
 					(cond
@@ -95,7 +95,7 @@
 					(= temp2 temp1)
 					(temp0 dispose:)
 				)
-				((gUser BAD_SELECTOR:) BAD_SELECTOR:)
+				((gUser sel_715:) sel_737:)
 				(cond
 					((and (IsFlag 798) (> cel 3))
 						(SetFlag 746)
@@ -121,7 +121,7 @@
 	)
 
 	(method (dispose)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR: 0)
+		((gUser sel_715:) sel_717: 0)
 		(super dispose:)
 	)
 )

@@ -42,7 +42,7 @@
 			)
 		)
 		(gEgo
-			BAD_SELECTOR:
+			sel_737:
 			setScaler: Scaler 81 35 332 224
 			init:
 			heading: (if (== gPrevRoomNum 220) 45 else 179) ; farmFldRm

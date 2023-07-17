@@ -145,7 +145,7 @@
 				(= local0 1)
 				(SetFlag 415)
 				(gEgo put: 73) ; invPitcher
-				(gGame BAD_SELECTOR: 0)
+				(gGame sel_849: 0)
 				(PlayScene 21 0 2244) ; rm2244
 			)
 			(else

@@ -95,7 +95,7 @@
 		(switch gPrevRoomNum
 			(340
 				(Load rsVIEW 484 482)
-				(= global148 0)
+				(= gShuttleRoomNum 0)
 				(shuttleDoor cel: 0 init: approachVerbs: 4) ; Do
 				(manualOveride
 					view: 484
@@ -122,19 +122,19 @@
 				)
 			)
 			(450
-				(= global148 450)
+				(= gShuttleRoomNum 450)
 				(shuttleDoor init: approachVerbs: 4) ; Do
 				(gEgo normalize: 0 posn: 62 111 init: setScript: sEnterRoom)
 			)
 			(500
-				(= global148 500)
+				(= gShuttleRoomNum 500)
 				(shuttleDoor init: approachVerbs: 4) ; Do
 				(gEgo normalize: 0 posn: 62 111 init: setScript: sEnterRoom)
 				(SetFlag 174)
 				(SetFlag 187)
 			)
 			(470
-				(= global148 470)
+				(= gShuttleRoomNum 470)
 				(ClearFlag 52)
 				(ClearFlag 53)
 				(ClearFlag 108)
@@ -152,7 +152,7 @@
 				)
 			)
 			(610
-				(= global148 610)
+				(= gShuttleRoomNum 610)
 				(ClearFlag 52)
 				(ClearFlag 53)
 				(ClearFlag 108)
@@ -174,7 +174,7 @@
 				)
 			)
 			(740
-				(= global148 740)
+				(= gShuttleRoomNum 740)
 				(ClearFlag 52)
 				(ClearFlag 53)
 				(ClearFlag 108)
@@ -728,7 +728,7 @@
 			)
 			(5)
 			(6
-				(proc666_0 13 self)
+				(EgoDead 13 self) ; "EVA suits weren't designed just as a fashion statement, Roger."
 			)
 			(7
 				(shuttleDoor show:)
@@ -1088,15 +1088,15 @@
 			)
 			(4
 				(cond
-					((== global148 610)
-						(= global170 4)
-						(gCurRoom newRoom: global148)
+					((== gShuttleRoomNum 610)
+						(= gShuttleStatus 4)
+						(gCurRoom newRoom: gShuttleRoomNum)
 					)
-					((and (== global120 2) (IsFlag 1))
+					((and (== gAct 2) (IsFlag 1))
 						(gCurRoom newRoom: 500)
 					)
 					(else
-						(gCurRoom newRoom: global148)
+						(gCurRoom newRoom: gShuttleRoomNum)
 					)
 				)
 				(self dispose:)
@@ -1277,7 +1277,7 @@
 				(cond
 					((IsFlag 158)
 						(cond
-							((and (OneOf global148 610 740) (IsFlag 53))
+							((and (OneOf gShuttleRoomNum 610 740) (IsFlag 53))
 								(gEgo setScript: sExitRoom)
 							)
 							((IsFlag 52)
@@ -1295,7 +1295,7 @@
 					((IsFlag 186)
 						(gEgo setScript: sRogerGetsSuckedOut)
 					)
-					((and (IsFlag 187) (== global148 0))
+					((and (IsFlag 187) (== gShuttleRoomNum 0))
 						(gEgo setScript: sRogerGetsSuckedOut)
 					)
 					((and (IsFlag 139) (not (IsFlag 52)))
@@ -1340,7 +1340,7 @@
 						(gMessager say: noun theVerb 16) ; "I don't need this suit right now."
 					)
 					((IsFlag 187)
-						(if (== global148 0)
+						(if (== gShuttleRoomNum 0)
 							(gMessager say: noun theVerb 16) ; "I don't need this suit right now."
 						else
 							(gMessager say: noun theVerb 11) ; "You don't need to do that while on Delta Burksilon."
@@ -1436,7 +1436,7 @@
 	)
 
 	(method (init)
-		(switch global148
+		(switch gShuttleRoomNum
 			(450
 				(self view: 4900 noun: 27)
 			)
@@ -2259,7 +2259,7 @@
 				(= cycles 10)
 			)
 			(1
-				(DoAudio audPLAY 480 42 2 0 1)
+				(DoAudio audPLAY 480 42 2 0 1) ; "Your whimper is my command, Sir."
 				(gGame setCursor: gNormalCursor 1)
 				(if
 					((Print new:)
@@ -2271,14 +2271,14 @@
 					(gGame setCursor: gWaitCursor 1)
 					(= cycles 1)
 				else
-					(DoAudio audSTOP 480 42 2 0 1)
+					(DoAudio audSTOP 480 42 2 0 1) ; "Your whimper is my command, Sir."
 					(gGame handsOn:)
 					(gGame setCursor: (gTheIconBar getCursor:))
 					(self dispose:)
 				)
 			)
 			(2
-				(DoAudio audSTOP 480 42 2 0 1)
+				(DoAudio audSTOP 480 42 2 0 1) ; "Your whimper is my command, Sir."
 				(= cycles 1)
 			)
 			(3

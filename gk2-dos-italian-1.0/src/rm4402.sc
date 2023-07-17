@@ -31,7 +31,7 @@
 		(gEgo
 			posn: 460 235
 			heading: 225
-			BAD_SELECTOR:
+			sel_737:
 			setScaler: Scaler 70 45 320 236
 			init:
 		)
@@ -57,7 +57,7 @@
 				(pVonZell init: setScript: (FidgetScript new:))
 				(if (not (IsFlag 505))
 					(SetFlag 505)
-					(gSoundManager BAD_SELECTOR: 1)
+					(gSoundManager sel_702: 1)
 					(PlayScene 276)
 					(gSoundManager play: 0 430 431 432)
 				)
@@ -85,7 +85,7 @@
 				(cond
 					((and (not (IsFlag 506)) (== gPrevRoomNum 430)) ; clubFrontRm
 						(SetFlag 506)
-						(gSoundManager BAD_SELECTOR: 1)
+						(gSoundManager sel_702: 1)
 						(PlayScene 289)
 						(pPreiss init: setScript: (FidgetScript new:))
 					)

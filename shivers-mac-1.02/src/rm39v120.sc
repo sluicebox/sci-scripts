@@ -33,7 +33,7 @@
 	)
 
 	(method (newRoom newRoomNumber)
-		(if (> newRoomNumber 39120) ; rm39v120
+		(if (> newRoomNumber -26416)
 			(gSounds fade: 23901 26 5 16 0 0)
 			(gSounds fade: 23902 42 5 16 0 0)
 		)

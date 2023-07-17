@@ -857,7 +857,7 @@
 		(for ((= temp0 0)) (< temp0 9) ((++ temp0))
 			(self
 				add:
-					((= [local32 temp0] (choice_Selecci_n new:))
+					((= [local32 temp0] (choice new:))
 						loop: 1
 						nsLeft: [local108 temp0]
 						nsTop: [local117 temp0]
@@ -871,7 +871,7 @@
 		(for ((= temp0 0)) (< temp0 9) ((++ temp0))
 			(self
 				add:
-					((= [local41 temp0] (button_Sbot_n new:))
+					((= [local41 temp0] (button new:))
 						loop: (+ temp0 1)
 						nsLeft: [local90 temp0]
 						nsTop: [local99 temp0]
@@ -975,9 +975,8 @@
 	)
 )
 
-(instance choice_Selecci_n of CodeIcon
+(instance choice of CodeIcon
 	(properties
-		name {choice}
 		view 450
 		loop 10
 		cel 0
@@ -1056,9 +1055,8 @@
 	(method (select))
 )
 
-(instance button_Sbot_n of CodeIcon
+(instance button of CodeIcon
 	(properties
-		name {button}
 		view 450
 		cel 1
 		signal 128
@@ -1194,9 +1192,7 @@
 				((< [local279 temp0] 5)
 					(self
 						add:
-							((= [local130 (- temp1 1)]
-									(realBook_SlibroReal new:)
-								)
+							((= [local130 (- temp1 1)] (realBook new:))
 								nsTop: [local234 temp0]
 								nsLeft: [local219 temp0]
 								loop: temp1
@@ -1224,7 +1220,7 @@
 		(if (gEgo has: 18)
 			(self
 				add:
-					((= [local130 0] (realBook_SlibroReal new:))
+					((= [local130 0] (realBook new:))
 						nsLeft: 2
 						nsTop: 143
 						loop: 1
@@ -1564,9 +1560,8 @@
 	)
 )
 
-(instance realBook_SlibroReal of CodeIcon
+(instance realBook of CodeIcon
 	(properties
-		name {realBook}
 		view 445
 		cel 0
 		signal 128

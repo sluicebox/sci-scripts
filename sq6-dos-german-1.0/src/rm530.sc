@@ -36,7 +36,7 @@
 	)
 
 	(method (init)
-		(= global120 3)
+		(= gAct 3)
 		(= local7 (gGSound1 vol:))
 		(gEgo
 			posn: 226 112
@@ -133,7 +133,7 @@
 			)
 			(5
 				(spark hide:)
-				(gGSound2 number: (proc0_8 354 356) setLoop: 0 play:)
+				(gGSound2 number: (RandomNumber 354 356) setLoop: 0 play:)
 				(= ticks 20)
 			)
 			(6
@@ -146,7 +146,7 @@
 				)
 			)
 			(7
-				(gGSound2 number: (proc0_8 354 356) setLoop: 0 play:)
+				(gGSound2 number: (RandomNumber 354 356) setLoop: 0 play:)
 				(dr setCel: 0 setLoop: 4 setCycle: CT 2 1 self)
 			)
 			(8
@@ -174,12 +174,12 @@
 				(= ticks 1)
 			)
 			(13
-				(PalVary 0 531 0 (proc0_8 60 100)) ; PalVaryStart
-				(= ticks (proc0_8 2 3))
+				(PalVary 0 531 0 (RandomNumber 60 100)) ; PalVaryStart
+				(= ticks (RandomNumber 2 3))
 			)
 			(14
-				(PalVary 1 0 (proc0_8 0 40)) ; PalVaryReverse
-				(= ticks (proc0_8 4 6))
+				(PalVary 1 0 (RandomNumber 0 40)) ; PalVaryReverse
+				(= ticks (RandomNumber 4 6))
 			)
 			(15
 				(if (<= local0 20)

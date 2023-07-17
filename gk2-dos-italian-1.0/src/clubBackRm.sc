@@ -50,7 +50,7 @@
 		(gEgo
 			posn: 220 365
 			heading: 45
-			BAD_SELECTOR:
+			sel_737:
 			setScaler: Scaler 106 54 332 224
 			init:
 		)
@@ -173,7 +173,7 @@
 				(if (and (IsFlag 527) (not (gEgo has: 33))) ; invXaverKeys
 					(gMessager say: 7 62 0 0 0 450) ; "(TRY TO HIDE CUCKOO CLOCK IN PLANT AFTER GETTING AND RETURNING KEYS, SMART ASS)I don't think that'll be necessary again."
 				else
-					((gUser BAD_SELECTOR:) BAD_SELECTOR:)
+					((gUser sel_715:) sel_737:)
 					(SetFlag 526)
 					(gEgo put: 32) ; invCuckooClock
 					((ScriptID 4599 1) setReal: (ScriptID 4599 1) 15) ; cuckooTimer, cuckooTimer
@@ -248,7 +248,7 @@
 				else
 					(SetFlag 527)
 					(PlayScene 329)
-					(gEgo posn: 350 300 heading: 315 BAD_SELECTOR:)
+					(gEgo posn: 350 300 heading: 315 sel_737:)
 				)
 			)
 			(else

@@ -39,10 +39,10 @@
 				(gEgo posn: 50 315 heading: 225)
 			)
 			(else
-				(gEgo posn: 45 315 BAD_SELECTOR: 45)
+				(gEgo posn: 45 315 sel_737: 45)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScale: 0 init:)
+		(gEgo sel_737: setScale: 0 init:)
 		(if (not (gEgo has: 73)) ; invPitcher
 			(fTreeLine init:)
 		)

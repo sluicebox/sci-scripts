@@ -16,22 +16,22 @@
 	(method (init &tmp [temp0 2])
 		(super init: &rest)
 		(gCurInvView update:)
-		(gUser BAD_SELECTOR: 62)
-		((gUser BAD_SELECTOR:) update:)
-		(gTopMessage BAD_SELECTOR: 0)
+		(gUser sel_712: 62)
+		((gUser sel_715:) update:)
+		(gTopMessage sel_749: 0)
 		(switch gChapter
 			(1
 				(switch (gGame printLang:)
 					(351
 						(gTopMessage
-							BAD_SELECTOR: {Cap\a1tulo 1: Filme de Encerramento}
+							sel_749: {Cap\a1tulo 1: Filme de Encerramento}
 						)
 					)
 					(39
-						(gTopMessage BAD_SELECTOR: {Cap\a1tolo 1: Scena finale})
+						(gTopMessage sel_749: {Cap\a1tolo 1: Scena finale})
 					)
 					(else
-						(gTopMessage BAD_SELECTOR: {Chapter One: Ending Movie})
+						(gTopMessage sel_749: {Chapter One: Ending Movie})
 					)
 				)
 				(PlayScene 115)
@@ -40,14 +40,14 @@
 				(switch (gGame printLang:)
 					(351
 						(gTopMessage
-							BAD_SELECTOR: {Cap\a1tulo 2: Filme de Encerramento}
+							sel_749: {Cap\a1tulo 2: Filme de Encerramento}
 						)
 					)
 					(39
-						(gTopMessage BAD_SELECTOR: {Cap\a1tolo 2: Scena finale})
+						(gTopMessage sel_749: {Cap\a1tolo 2: Scena finale})
 					)
 					(else
-						(gTopMessage BAD_SELECTOR: {Chapter Two: Ending Movie})
+						(gTopMessage sel_749: {Chapter Two: Ending Movie})
 					)
 				)
 				(if (gGk2Music handle:)
@@ -59,14 +59,14 @@
 				(switch (gGame printLang:)
 					(351
 						(gTopMessage
-							BAD_SELECTOR: {Cap\a1tulo 3: Filme de Encerramento}
+							sel_749: {Cap\a1tulo 3: Filme de Encerramento}
 						)
 					)
 					(39
-						(gTopMessage BAD_SELECTOR: {Cap\a1tolo 3: Scena finale})
+						(gTopMessage sel_749: {Cap\a1tolo 3: Scena finale})
 					)
 					(else
-						(gTopMessage BAD_SELECTOR: {Chapter Three: Ending Movie})
+						(gTopMessage sel_749: {Chapter Three: Ending Movie})
 					)
 				)
 				(PlayScene 411)
@@ -75,14 +75,14 @@
 				(switch (gGame printLang:)
 					(351
 						(gTopMessage
-							BAD_SELECTOR: {Cap\a1tulo 4: Filme de Encerramento}
+							sel_749: {Cap\a1tulo 4: Filme de Encerramento}
 						)
 					)
 					(39
-						(gTopMessage BAD_SELECTOR: {Cap\a1tolo 4: Scena finale})
+						(gTopMessage sel_749: {Cap\a1tolo 4: Scena finale})
 					)
 					(else
-						(gTopMessage BAD_SELECTOR: {Chapter Four: Ending Movie})
+						(gTopMessage sel_749: {Chapter Four: Ending Movie})
 					)
 				)
 				(if (gGk2Music handle:)
@@ -94,14 +94,14 @@
 				(switch (gGame printLang:)
 					(351
 						(gTopMessage
-							BAD_SELECTOR: {Cap\a1tulo 5: Filme de Encerramento}
+							sel_749: {Cap\a1tulo 5: Filme de Encerramento}
 						)
 					)
 					(39
-						(gTopMessage BAD_SELECTOR: {Cap\a1tolo 5: Scena finale})
+						(gTopMessage sel_749: {Cap\a1tolo 5: Scena finale})
 					)
 					(else
-						(gTopMessage BAD_SELECTOR: {Chapter Five: Ending Movie})
+						(gTopMessage sel_749: {Chapter Five: Ending Movie})
 					)
 				)
 				(if (gGk2Music handle:)
@@ -112,7 +112,7 @@
 			)
 			(6)
 		)
-		(gTopMessage BAD_SELECTOR: 0)
+		(gTopMessage sel_749: 0)
 		(if (<= (++ gChapter) 6)
 			(if (!= gChapter 3)
 				(gGame getDisc: gChapter)

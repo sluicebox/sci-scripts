@@ -30,7 +30,7 @@
 					scaleX: 20
 					scaleY: 20
 					posn: 169 158
-					BAD_SELECTOR: 135
+					sel_737: 135
 					init:
 				)
 				(botBackEastExit init:)
@@ -41,7 +41,7 @@
 					scaleX: 20
 					scaleY: 20
 					posn: 85 156
-					BAD_SELECTOR: 135
+					sel_737: 135
 					init:
 				)
 				(botMidEastExit init:)
@@ -52,7 +52,7 @@
 					scaleX: 20
 					scaleY: 20
 					posn: 178 67
-					BAD_SELECTOR: 135
+					sel_737: 135
 					init:
 				)
 				(topBackEastExit init:)
@@ -63,7 +63,7 @@
 					scaleX: 20
 					scaleY: 20
 					posn: 89 58
-					BAD_SELECTOR: 135
+					sel_737: 135
 					init:
 				)
 				(topMidEastExit init:)

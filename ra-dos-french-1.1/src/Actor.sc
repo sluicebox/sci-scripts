@@ -323,7 +323,7 @@
 		(if cType
 			(self startUpd:)
 			(= cycler
-				(if (& (cType BAD_SELECTOR:) $8000)
+				(if (& (cType -info-:) $8000)
 					(cType new:)
 				else
 					cType
@@ -402,7 +402,7 @@
 			((IsObject theObjOrMatchOrY)
 				(= scaleSignal 1)
 				(= scaler
-					(if (& (theObjOrMatchOrY BAD_SELECTOR:) $8000)
+					(if (& (theObjOrMatchOrY -info-:) $8000)
 						(theObjOrMatchOrY new:)
 					else
 						theObjOrMatchOrY
@@ -528,7 +528,7 @@
 		(if mType
 			(self startUpd:)
 			(= mover
-				(if (& (mType BAD_SELECTOR:) $8000)
+				(if (& (mType -info-:) $8000)
 					(mType new:)
 				else
 					mType
@@ -545,7 +545,7 @@
 			(avoider dispose:)
 		)
 		(= avoider
-			(if (and (IsObject aType) (& (aType BAD_SELECTOR:) $8000))
+			(if (and (IsObject aType) (& (aType -info-:) $8000))
 				(aType new:)
 			else
 				aType
@@ -796,7 +796,7 @@
 						(super setLoop: l &rest)
 						0
 					)
-					((& (l BAD_SELECTOR:) $8000)
+					((& (l -info-:) $8000)
 						(l new:)
 					)
 					(else l)

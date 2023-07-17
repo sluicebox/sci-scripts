@@ -2137,7 +2137,7 @@
 					(self evaluateMove: temp6 temp5)
 				)
 				(self evaluateOverall: param1 &rest)
-				(if (< local229 51536)
+				(if (< local229 -14000)
 					(= local229 51536)
 				)
 				(= temp1

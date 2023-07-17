@@ -45,7 +45,7 @@
 	)
 
 	(method (BAD_SELECTOR)
-		(self BAD_SELECTOR: size &rest)
+		(self sel_791: size &rest)
 	)
 
 	(method (BAD_SELECTOR param1 param2 &tmp temp0 temp1 temp2)
@@ -54,7 +54,7 @@
 		)
 		(= BAD_SELECTOR 32767)
 		(for ((= temp0 0)) (< temp0 size) ((++ temp0))
-			(self BAD_SELECTOR: temp0)
+			(self sel_793: temp0)
 			(if
 				(<
 					(= temp1
@@ -81,7 +81,7 @@
 	)
 
 	(method (distanceTo param1 param2 param3)
-		(self BAD_SELECTOR: param1)
+		(self sel_793: param1)
 		(GetDistance BAD_SELECTOR BAD_SELECTOR param2 param3)
 	)
 
@@ -121,7 +121,7 @@
 		(= temp1 (Str new:))
 		(= temp2 (Str new:))
 		(for ((= temp0 0)) (< temp0 size) ((++ temp0))
-			(self BAD_SELECTOR: temp0)
+			(self sel_793: temp0)
 			(temp2 format: {%d } BAD_SELECTOR)
 			(temp1 cat: temp2)
 			(temp2 format: {%d } BAD_SELECTOR)
@@ -135,7 +135,7 @@
 	(method (BAD_SELECTOR param1 param2 &tmp temp0 temp1)
 		(= temp0 -1)
 		(for ((= temp1 0)) (< temp1 size) ((++ temp1))
-			(self BAD_SELECTOR: temp1)
+			(self sel_793: temp1)
 			(if (and (== BAD_SELECTOR param1) (== BAD_SELECTOR param2))
 				(= temp0 temp1)
 			)
@@ -148,14 +148,14 @@
 			(self hide:)
 		)
 		(= BAD_SELECTOR (Set new:))
-		(self BAD_SELECTOR: (= temp5 0))
+		(self sel_793: (= temp5 0))
 		(= temp3 (= temp1 BAD_SELECTOR))
 		(for
 			((= temp4 (= temp2 BAD_SELECTOR)))
 			(< (++ temp5) size)
 			((= temp4 BAD_SELECTOR))
 			
-			(self BAD_SELECTOR: temp5)
+			(self sel_793: temp5)
 			(BAD_SELECTOR
 				add:
 					(AddLine
@@ -165,7 +165,7 @@
 						BAD_SELECTOR
 						BAD_SELECTOR
 						200
-						(local0 BAD_SELECTOR:)
+						(local0 sel_800:)
 						0
 						0
 						1
@@ -182,7 +182,7 @@
 					temp3
 					temp4
 					200
-					(local0 BAD_SELECTOR:)
+					(local0 sel_800:)
 					0
 					0
 					1
@@ -210,13 +210,13 @@
 		(if (== param1 0)
 			(= temp7 (- (BAD_SELECTOR size:) 1))
 			(= temp1 (BAD_SELECTOR at: temp7))
-			(self BAD_SELECTOR: temp7)
+			(self sel_793: temp7)
 			(= temp3 BAD_SELECTOR)
 			(= temp4 BAD_SELECTOR)
 		else
 			(= temp7 (- param1 1))
 			(= temp1 (BAD_SELECTOR at: temp7))
-			(self BAD_SELECTOR: temp7)
+			(self sel_793: temp7)
 			(= temp3 BAD_SELECTOR)
 			(= temp4 BAD_SELECTOR)
 		)
@@ -226,13 +226,13 @@
 		else
 			(= temp7 (+ param1 1))
 		)
-		(self BAD_SELECTOR: temp7)
+		(self sel_793: temp7)
 		(= temp5 BAD_SELECTOR)
 		(= temp6 BAD_SELECTOR)
 		(= temp8 0)
 		(= temp9 0)
 		(= temp10 (local0 plane:))
-		(= temp13 (local0 BAD_SELECTOR:))
+		(= temp13 (local0 sel_801:))
 		(while (not (& ((= temp0 ((User curEvent:) new:)) type:) $0002))
 			(temp0 localize: temp10)
 			(= temp11 (temp0 x:))
@@ -278,7 +278,7 @@
 			(temp0 x:)
 			(temp0 y:)
 			200
-			(local0 BAD_SELECTOR:)
+			(local0 sel_800:)
 			0
 			0
 			1
@@ -291,12 +291,12 @@
 			(temp0 x:)
 			(temp0 y:)
 			200
-			(local0 BAD_SELECTOR:)
+			(local0 sel_800:)
 			0
 			0
 			1
 		)
-		(self BAD_SELECTOR: param1 (temp0 x:) (temp0 y:))
+		(self sel_798: param1 (temp0 x:) (temp0 y:))
 		(FrameOut)
 	)
 
@@ -332,7 +332,7 @@
 		(temp0 with: {})
 		(= temp2 0)
 		(for ((= temp1 0)) (< temp1 size) ((++ temp1))
-			(self BAD_SELECTOR: temp1)
+			(self sel_793: temp1)
 			(temp0 format: {%d %d} BAD_SELECTOR BAD_SELECTOR)
 			(+= temp2 (temp0 size:))
 			(param1 writeString: temp0)
@@ -485,7 +485,7 @@
 		(= temp1 gTheCursor)
 		(gGame setCursor: gWaitCursor)
 		(for ((= temp0 0)) (< temp0 (param1 size:)) ((++ temp0))
-			(self BAD_SELECTOR: (param1 at: temp0))
+			(self sel_808: (param1 at: temp0))
 		)
 		(self show: 1)
 		(FrameOut)
@@ -501,8 +501,8 @@
 		(for ((= temp4 (KList 3 elements))) temp4 ((= temp4 nextNode)) ; FirstNode
 			(= nextNode (KList 6 temp4)) ; NextNode
 			(= temp1 (KList 8 temp4)) ; NodeValue
-			(= temp0 (temp1 BAD_SELECTOR: param1 param2))
-			(if (< (= temp2 (temp1 BAD_SELECTOR:)) temp3)
+			(= temp0 (temp1 sel_790: param1 param2))
+			(if (< (= temp2 (temp1 sel_788:)) temp3)
 				(= BAD_SELECTOR temp1)
 				(= BAD_SELECTOR temp0)
 				(= temp3 temp2)
@@ -524,20 +524,17 @@
 			(BAD_SELECTOR name: (temp6 data:) type: 0)
 			(temp7 dispose:)
 		)
-		(BAD_SELECTOR BAD_SELECTOR: param1 param2)
+		(BAD_SELECTOR sel_796: param1 param2)
 		(while (not BAD_SELECTOR)
 			(= temp2 BAD_SELECTOR)
 			(= temp3 BAD_SELECTOR)
-			(if (= temp4 (self BAD_SELECTOR: BAD_SELECTOR BAD_SELECTOR))
-				(BAD_SELECTOR
-					BAD_SELECTOR: BAD_SELECTOR BAD_SELECTOR
-					BAD_SELECTOR: temp4
-				)
+			(if (= temp4 (self sel_816: BAD_SELECTOR BAD_SELECTOR))
+				(BAD_SELECTOR sel_796: BAD_SELECTOR BAD_SELECTOR sel_795: temp4)
 			)
 		)
 		(if (> (BAD_SELECTOR size:) 2)
 			(BAD_SELECTOR
-				BAD_SELECTOR:
+				sel_795:
 					(AddLine
 						plane
 						param1
@@ -619,7 +616,7 @@
 			(0
 				(if (and (& (event type:) evMOUSEBUTTON) (not (event modifiers:)))
 					(event localize: plane)
-					(self BAD_SELECTOR: (event x:) (event y:))
+					(self sel_815: (event x:) (event y:))
 				)
 			)
 			(1
@@ -627,13 +624,13 @@
 					(cond
 						((not (event modifiers:))
 							(event localize: plane)
-							(self BAD_SELECTOR: (event x:) (event y:))
-							(BAD_SELECTOR BAD_SELECTOR: BAD_SELECTOR)
+							(self sel_790: (event x:) (event y:))
+							(BAD_SELECTOR sel_797: BAD_SELECTOR)
 						)
 						((& (event modifiers:) emSHIFT)
 							(event localize: plane)
-							(self BAD_SELECTOR: (event x:) (event y:))
-							(BAD_SELECTOR BAD_SELECTOR: BAD_SELECTOR 1)
+							(self sel_790: (event x:) (event y:))
+							(BAD_SELECTOR sel_792: BAD_SELECTOR 1)
 							(if (<= (BAD_SELECTOR size:) 2)
 								(self delete: BAD_SELECTOR)
 								(BAD_SELECTOR dispose:)
@@ -641,7 +638,7 @@
 						)
 						((& (event modifiers:) emCTRL)
 							(event localize: plane)
-							(self BAD_SELECTOR: (event x:) (event y:))
+							(self sel_790: (event x:) (event y:))
 							(= temp0 BAD_SELECTOR)
 							(if (< (= temp1 (- BAD_SELECTOR 1)) 0)
 								(= temp1 (- (BAD_SELECTOR size:) 1))
@@ -664,7 +661,7 @@
 								)
 							)
 							(BAD_SELECTOR
-								BAD_SELECTOR:
+								sel_791:
 									(if (> temp3 temp4) temp1 else BAD_SELECTOR)
 									(event x:)
 									(event y:)

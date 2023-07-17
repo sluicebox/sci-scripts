@@ -82,12 +82,12 @@
 				(
 					(or
 						(< global156 3680)
-						(and (u< global146 -14536) (IsFlag 65))
+						(and (u< global146 51000) (IsFlag 65))
 						(and (u< global146 15300) (not (IsFlag 65)))
 					)
 					(= global151 30)
 				)
-				((or (< global156 4250) (u< global146 -4536))
+				((or (< global156 4250) (u< global146 61000))
 					(if (IsFlag 62)
 						(= global151 20)
 					else

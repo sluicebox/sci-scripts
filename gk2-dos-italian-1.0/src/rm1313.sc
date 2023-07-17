@@ -85,8 +85,8 @@
 					(gMessager say: 8 62 0 1 0 130) ; "(LOOK AT PHONE)Who should I call?"
 				)
 				(6 ; invBarclayCard
-					(gUser BAD_SELECTOR: 62)
-					((gUser BAD_SELECTOR:) update:)
+					(gUser sel_712: 62)
+					((gUser sel_715:) update:)
 					(cond
 						((and (IsFlag 466) (not (IsFlag 465)))
 							(SetFlag 465)
@@ -110,8 +110,8 @@
 					)
 				)
 				(81 ; invDallmeierNote
-					(gUser BAD_SELECTOR: 62)
-					((gUser BAD_SELECTOR:) update:)
+					(gUser sel_712: 62)
+					((gUser sel_715:) update:)
 					(cond
 						((not (IsFlag 640))
 							(SetFlag 640)
@@ -148,8 +148,8 @@
 					)
 				)
 				(82 ; invChaphillNote
-					(gUser BAD_SELECTOR: 62)
-					((gUser BAD_SELECTOR:) update:)
+					(gUser sel_712: 62)
+					((gUser sel_715:) update:)
 					(cond
 						((gEgo has: 44) ; invDiaryTranslation
 							(gMessager say: 15 theVerb 0 1 0 130) ; "(TRY TO CALL CHAPHILL AGAIN)I don't think Mr. Chaphill wants to hear from me again."

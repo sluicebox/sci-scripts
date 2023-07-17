@@ -58,8 +58,8 @@
 				(= cycles 1)
 			)
 			(1
-				(gGame BAD_SELECTOR: 0)
-				(gEgo put: 73 posn: 447 336 BAD_SELECTOR: 315) ; invPitcher
+				(gGame sel_849: 0)
+				(gEgo put: 73 posn: 447 336 sel_737: 315) ; invPitcher
 				(gCurRoom picture: 2244)
 				(PlayScene 24 self)
 			)
@@ -109,14 +109,14 @@
 			)
 			(1
 				(gEgo get: 73) ; invPitcher
-				(gUser BAD_SELECTOR: 111)
-				((gUser BAD_SELECTOR:) update:)
+				(gUser sel_712: 111)
+				((gUser sel_715:) update:)
 				(gCurInvView update:)
 				(PlayScene 23 self)
 			)
 			(2
 				(vBucket dispose:)
-				(gEgo posn: 332 332 BAD_SELECTOR: 315)
+				(gEgo posn: 332 332 sel_737: 315)
 				(self dispose:)
 			)
 		)

@@ -88,7 +88,7 @@
 		(super init:)
 		(starfield init:)
 		(cond
-			((and (== gPrevRoomNum 460) (or (== global119 0) (== global119 360)))
+			((and (== gPrevRoomNum 460) (or (== gComPostNextRoomNum 0) (== gComPostNextRoomNum 360)))
 				(gEgo normalize: posn: 32 123 setHeading: 315 init:)
 				(gGame handsOn:)
 			)
@@ -96,7 +96,7 @@
 				(gCurRoom setScript: sExitThruComPost)
 			)
 			((IsFlag 38)
-				(= global175 2)
+				(= gDeepshipLocation 2) ; Space
 				(gCurRoom setScript: sTransmission)
 			)
 			(else
@@ -169,7 +169,7 @@
 	(method (doit)
 		(if (and (not (IsFlag 38)) (not local12) (not (kielbasa script:)))
 			(cond
-				((== (= local5 (proc0_8 1 2)) 1)
+				((== (= local5 (RandomNumber 1 2)) 1)
 					(kielbasa setScript: sKielbasaWorking)
 				)
 				((== local5 2)
@@ -182,7 +182,7 @@
 				((and (== local4 2) (not (IsFlag 38)) (not local12))
 					(engineer setScript: sEngineerLeaving)
 				)
-				((<= (= local6 (proc0_8 0 3)) 2)
+				((<= (= local6 (RandomNumber 0 3)) 2)
 					(engineer setScript: sEngineerTyping)
 				)
 				((== local6 3)
@@ -305,7 +305,7 @@
 				(= ticks 180)
 			)
 			(15
-				(proc0_7 1 1 self)
+				(Fade 1 1 self)
 			)
 			(16
 				(gCast eachElementDo: #hide)
@@ -318,11 +318,11 @@
 				(= cycles 5)
 			)
 			(18
-				(DoAudio audPLAY 360 0 0 6 12)
+				(DoAudio audPLAY 360 0 0 6 12) ; "Meanwhile back in Sickbay..."
 				(= ticks 200)
 			)
 			(19
-				(DoAudio audSTOP 360 0 0 6 12)
+				(DoAudio audSTOP 360 0 0 6 12) ; "Meanwhile back in Sickbay..."
 				(local2 dispose:)
 				(= cycles 5)
 			)
@@ -400,7 +400,7 @@
 				)
 			)
 			(3
-				(gCurRoom newRoom: global119)
+				(gCurRoom newRoom: gComPostNextRoomNum)
 				(self dispose:)
 			)
 		)
@@ -414,7 +414,7 @@
 		(switch (= state newState)
 			(0
 				(science view: 365 loop: 0 setCycle: RandCycle)
-				(= ticks (proc0_8 120 180))
+				(= ticks (RandomNumber 120 180))
 			)
 			(1
 				(if local8
@@ -494,7 +494,7 @@
 			)
 			(1
 				(comm loop: 3 setCycle: RandCycle)
-				(= ticks (proc0_8 120 180))
+				(= ticks (RandomNumber 120 180))
 			)
 			(2
 				(= local7 1)
@@ -529,7 +529,7 @@
 					(screenSaver dispose:)
 					(sciTerminal init: setCycle: RandCycle)
 				)
-				(= ticks (proc0_8 600 900))
+				(= ticks (RandomNumber 600 900))
 			)
 			(1
 				(if (or local12 (IsFlag 38))
@@ -592,7 +592,7 @@
 			)
 			(1
 				(kielbasa loop: 1 setCycle: Fwd)
-				(= ticks (proc0_8 300 600))
+				(= ticks (RandomNumber 300 600))
 			)
 			(2
 				(kielbasa setCycle: End self)
@@ -614,18 +614,18 @@
 		(switch (= state newState)
 			(0
 				(kielbasa view: 3611 loop: 0 cel: 0 setCycle: Fwd)
-				(= ticks (proc0_8 60 180))
+				(= ticks (RandomNumber 60 180))
 			)
 			(1
-				(kielbasa loop: (proc0_8 1 2) setCycle: Fwd)
+				(kielbasa loop: (RandomNumber 1 2) setCycle: Fwd)
 				(if (== (kielbasa loop:) 1)
 					(cptTerminal setCycle: Fwd)
 				)
-				(= ticks (proc0_8 180 400))
+				(= ticks (RandomNumber 180 400))
 			)
 			(2
-				(kielbasa loop: (proc0_8 1 2) setCycle: Fwd)
-				(= ticks (proc0_8 120 300))
+				(kielbasa loop: (RandomNumber 1 2) setCycle: Fwd)
+				(= ticks (RandomNumber 120 300))
 			)
 			(3
 				(cptTerminal setCycle: End)
@@ -645,17 +645,17 @@
 			)
 			(1
 				(kielbasa loop: 1 cel: 0 setCycle: Fwd)
-				(= ticks (proc0_8 60 120))
+				(= ticks (RandomNumber 60 120))
 			)
 			(2
-				(self changeState: (proc0_8 3 5))
+				(self changeState: (RandomNumber 3 5))
 			)
 			(3
 				(kielbasa loop: 2 cel: 0 setCycle: End self)
 			)
 			(4
 				(kielbasa loop: 3 cel: 0 setCycle: Fwd)
-				(= ticks (proc0_8 60 120))
+				(= ticks (RandomNumber 60 120))
 			)
 			(5
 				(self dispose:)
@@ -746,7 +746,7 @@
 		(switch (= state newState)
 			(0
 				(engineer view: 3651 loop: 2 cel: 0 setCycle: Fwd)
-				(= ticks (proc0_8 300 600))
+				(= ticks (RandomNumber 300 600))
 			)
 			(1
 				(self dispose:)
@@ -765,7 +765,7 @@
 			)
 			(1
 				(engineer loop: 1 cel: 0 setCycle: RandCycle)
-				(= ticks (proc0_8 120 180))
+				(= ticks (RandomNumber 120 180))
 			)
 			(2
 				(engineer loop: 0 cel: 1 setCycle: Beg self)
@@ -784,7 +784,7 @@
 		(switch (= state newState)
 			(0
 				(engineer view: 3651 loop: 2 cel: 0 setCycle: Fwd)
-				(= ticks (proc0_8 300 600))
+				(= ticks (RandomNumber 300 600))
 			)
 			(1
 				(engineer
@@ -982,13 +982,13 @@
 
 	(method (init)
 		(cond
-			((== global175 0)
+			((== gDeepshipLocation 0) ; Polysorbate
 				(= loop 0)
 			)
-			((== global175 1)
+			((== gDeepshipLocation 1) ; Delta Burksilon
 				(= loop 1)
 			)
-			((== global175 2)
+			((== gDeepshipLocation 2) ; Space
 				(= loop 2)
 			)
 		)
@@ -999,13 +999,13 @@
 		(switch theVerb
 			(1 ; Look
 				(cond
-					((== global175 0)
+					((== gDeepshipLocation 0) ; Polysorbate
 						(gMessager say: 3 1 11) ; "Orbiting Polysorbate LX."
 					)
-					((== global175 1)
+					((== gDeepshipLocation 1) ; Delta Burksilon
 						(gMessager say: 3 1 10) ; "Orbiting Delta Burksilon V."
 					)
-					((== global175 2)
+					((== gDeepshipLocation 2) ; Space
 						(gMessager say: 3 1) ; "The main viewscreen is filled with stars and distant galaxies, representing untold scores of civilizations and a vast amount of untapped knowledge that could reshape the way we think of time and space."
 					)
 				)

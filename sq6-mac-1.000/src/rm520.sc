@@ -93,7 +93,7 @@
 		(elevLights init: approachVerbs: 4) ; Do
 		(bed init:)
 		(cabinet init: hide:)
-		(if (== global120 1)
+		(if (== gAct 1)
 			(sharpei init:)
 			(crapomatic init: hide: approachVerbs: 4) ; Do
 			(monitors init:)
@@ -102,7 +102,7 @@
 		else
 			(bed loop: 0)
 		)
-		(if (== global120 1)
+		(if (== gAct 1)
 			(gGSound1 number: 520 loop: -1 play:)
 			(Load rsVIEW 524 527)
 			(Load 140 527 52015) ; WAVE
@@ -300,7 +300,7 @@
 			)
 			(10
 				(gEgo normalize: 1)
-				(proc0_4 gEgo sharpei self)
+				(Face gEgo sharpei self)
 			)
 			(11
 				(= local1 1)
@@ -706,7 +706,7 @@
 				(= ticks 60)
 			)
 			(5
-				(proc666_0 8 self)
+				(EgoDead 8 self) ; "And you thought the fumes from lactose intolerance were bad!"
 			)
 			(6
 				(self dispose:)
@@ -985,7 +985,7 @@
 				(gCurRoom setScript: sEndCartoon)
 			)
 			(4 ; Do
-				(if (== global120 1)
+				(if (== gAct 1)
 					(cond
 						(local3
 							(gMessager say: 2 4 12) ; "You realize your strength alone will be no match for the mechanized door."
@@ -1055,7 +1055,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(4 ; Do
-				(if (== global120 1)
+				(if (== gAct 1)
 					(cond
 						(local3
 							(gMessager say: 2 4 10) ; "Drats! It won't budge. I've got to get out of here somehow! No windows and the walls are solid bulkhead. And I'm too big to flush myself out of here. This is the only way. What would MacGyver do now?"

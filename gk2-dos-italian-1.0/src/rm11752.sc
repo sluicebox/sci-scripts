@@ -43,8 +43,8 @@
 		)
 		(if (== gPrevRoomNum 11710)
 			(= local0 1)
-			((gUser BAD_SELECTOR:)
-				BAD_SELECTOR: 1 1 622 348
+			((gUser sel_715:)
+				sel_717: 1 1 622 348
 				posn: global139 global140
 				hide:
 			)
@@ -67,7 +67,7 @@
 			(RemapColors 0) ; Off
 			(FrameOut)
 		)
-		((gUser BAD_SELECTOR:) BAD_SELECTOR: 0)
+		((gUser sel_715:) sel_717: 0)
 		(super newRoom: &rest)
 	)
 )
@@ -136,7 +136,7 @@
 				(= ticks 60)
 			)
 			(2
-				((gUser BAD_SELECTOR:) show:)
+				((gUser sel_715:) show:)
 				(if (IsFlag 747)
 					(SetFlag 771)
 					(ClearFlag 770)

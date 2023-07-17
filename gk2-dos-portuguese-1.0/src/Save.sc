@@ -203,8 +203,8 @@
 			(if (self contains: editI)
 				(self delete: editI)
 				(DeleteScreenItem editI)
-				(if (gUser BAD_SELECTOR:)
-					((gUser BAD_SELECTOR:) delete: editI)
+				(if (gUser sel_715:)
+					((gUser sel_715:) delete: editI)
 				)
 				(if (editI bitmap:)
 					(Bitmap 1 (editI bitmap:)) ; Dispose

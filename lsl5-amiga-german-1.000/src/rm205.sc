@@ -250,27 +250,13 @@
 				(= cycles 2)
 			)
 			(2
-				(Say ; "Well, thank you, gentlemen. I promise your CONSIDERABLE contribution will not be wasted!"
-					President_of_C_A_N_E__GPr_sident_der_B_G_F_A_
-					205
-					17
-					108
-					139
-					self
-				)
+				(Say President_of_C_A_N_E_ 205 17 108 139 self) ; "Well, thank you, gentlemen. I promise your CONSIDERABLE contribution will not be wasted!"
 			)
 			(3
 				(= ticks 45)
 			)
 			(4
-				(Say ; "I daresay this one donation will enable us to now succeed where we've been unable to before. You just don't know how grateful we are!"
-					President_of_C_A_N_E__GPr_sident_der_B_G_F_A_
-					205
-					18
-					108
-					139
-					self
-				)
+				(Say President_of_C_A_N_E_ 205 18 108 139 self) ; "I daresay this one donation will enable us to now succeed where we've been unable to before. You just don't know how grateful we are!"
 			)
 			(5
 				(= ticks 45)
@@ -288,14 +274,7 @@
 				(= ticks 45)
 			)
 			(10
-				(Say ; "Why, sure. In fact, I know just where this money would do the most good. Tell your boss he's made the right decision going with us! C.A.N.E. will not let him down!"
-					President_of_C_A_N_E__GPr_sident_der_B_G_F_A_
-					205
-					21
-					108
-					139
-					self
-				)
+				(Say President_of_C_A_N_E_ 205 21 108 139 self) ; "Why, sure. In fact, I know just where this money would do the most good. Tell your boss he's made the right decision going with us! C.A.N.E. will not let him down!"
 			)
 			(11
 				(= ticks 45)
@@ -375,27 +354,13 @@
 				(= ticks 45)
 			)
 			(6
-				(Say ; "Yeah, okay, Senator, we've got it. Here's the deal: there's plenty more where this comes from, as long as we see some progress on that bill to tighten regulation of the airwaves."
-					A_C_A_N_E__er_GEin_Mitglied_von_B_G_F_A
-					205
-					27
-					108
-					139
-					self
-				)
+				(Say A_C_A_N_E__er 205 27 108 139 self) ; "Yeah, okay, Senator, we've got it. Here's the deal: there's plenty more where this comes from, as long as we see some progress on that bill to tighten regulation of the airwaves."
 			)
 			(7
 				(= ticks 45)
 			)
 			(8
-				(Say ; "We want that smut off the air--and we're willing to back up our beliefs in the `traditional' American way. So? Do you want it or don't you?"
-					A_C_A_N_E__er_GEin_Mitglied_von_B_G_F_A
-					205
-					28
-					108
-					139
-					self
-				)
+				(Say A_C_A_N_E__er 205 28 108 139 self) ; "We want that smut off the air--and we're willing to back up our beliefs in the `traditional' American way. So? Do you want it or don't you?"
 			)
 			(9
 				(= ticks 45)
@@ -576,7 +541,7 @@
 	)
 )
 
-(instance President_of_C_A_N_E__GPr_sident_der_B_G_F_A_ of Talker
+(instance President_of_C_A_N_E_ of Talker
 	(properties
 		name {President of C.A.N.E.}
 		x 120
@@ -651,7 +616,7 @@
 	)
 )
 
-(instance A_C_A_N_E__er_GEin_Mitglied_von_B_G_F_A of Talker
+(instance A_C_A_N_E__er of Talker
 	(properties
 		name {A C.A.N.E.-er}
 		x 1

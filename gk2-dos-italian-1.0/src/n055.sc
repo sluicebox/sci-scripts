@@ -145,7 +145,7 @@
 			(PlayVMDFile 5680)
 		)
 		(1568
-			(gSoundManager BAD_SELECTOR: 1)
+			(gSoundManager sel_702: 1)
 			(PlayVMDFile 5681)
 		)
 		(569
@@ -260,7 +260,7 @@
 			(PrintDebugSceneText param1 {Gabriel and men arrive at lodge - Part I})
 		)
 		(606
-			(gTopMessage BAD_SELECTOR: 0)
+			(gTopMessage sel_749: 0)
 			(PlayVMDFile 6060)
 			(gGame changeScore: 1092)
 		)
@@ -652,7 +652,7 @@
 			(PrintDebugSceneText param1 {Chapter 5 closing movie 3})
 		)
 		(else
-			(gEgo BAD_SELECTOR:)
+			(gEgo sel_737:)
 			(PrintDebugSceneText param1 {Unimplemented scene in scenes5.sc})
 		)
 	)

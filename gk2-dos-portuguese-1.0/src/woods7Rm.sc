@@ -26,7 +26,7 @@
 				(gEgo posn: 525 338 heading: 270)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 99 31 356 161 init:)
+		(gEgo sel_737: setScaler: Scaler 99 31 356 161 init:)
 		(super init: &rest)
 		(fNorthExit init:)
 		(gGame handsOn:)

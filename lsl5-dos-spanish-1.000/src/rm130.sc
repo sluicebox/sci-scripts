@@ -89,7 +89,7 @@
 	)
 )
 
-(instance Mr__Bigg_SSr__Bigg of Talker
+(instance Mr__Bigg of Talker
 	(properties
 		name {Mr. Bigg}
 		x -1
@@ -222,7 +222,7 @@
 				(= cycles 2)
 			)
 			(1
-				(Say Mr__Bigg_SSr__Bigg 130 0 108 139 self) ; "I understand the problem, but I want a solution!"
+				(Say Mr__Bigg 130 0 108 139 self) ; "I understand the problem, but I want a solution!"
 			)
 			(2
 				(= seconds 3)

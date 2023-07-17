@@ -129,7 +129,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(switch global152
+				(switch gFileRoomRow
 					(1
 						(gEgo posn: 90 108 setMotion: MoveTo 68 116 self)
 					)
@@ -142,7 +142,7 @@
 				)
 			)
 			(1
-				(= global152 0)
+				(= gFileRoomRow 0)
 				(gGame handsOn:)
 				(self dispose:)
 			)
@@ -795,7 +795,7 @@
 				)
 				(= approachX (>> approachLeft $0008))
 				(= approachY (>> (<< approachLeft $0008) $0008))
-				(= global152 1)
+				(= gFileRoomRow 1)
 			)
 			(
 				(and
@@ -805,12 +805,12 @@
 				)
 				(= approachX (>> approachMiddle $0008))
 				(= approachY (>> (<< approachMiddle $0008) $0008))
-				(= global152 2)
+				(= gFileRoomRow 2)
 			)
 			((and approachRight rtPoly (rtPoly onMe: (event x:) (event y:)))
 				(= approachX (>> approachRight $0008))
 				(= approachY (>> (<< approachRight $0008) $0008))
-				(= global152 3)
+				(= gFileRoomRow 3)
 			)
 		)
 		(super handleEvent: event &rest)

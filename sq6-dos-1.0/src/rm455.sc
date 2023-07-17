@@ -160,19 +160,19 @@
 				(sShootSnd dispose:)
 				(shootSnd stop:)
 				(gGSound1 fade:)
-				(proc0_7 1 1 self)
+				(Fade 1 1 self)
 			)
 			(13
 				(PalCycle 4) ; Off
 				(gCast eachElementDo: #hide)
 				(gCurRoom drawPic: -1 0)
 				(gTheIconBar clearInvItem:)
-				(= global148 0)
+				(= gShuttleRoomNum 0)
 				(ClearFlag 73)
 				(= cycles 1)
 			)
 			(14
-				(proc0_7 0 1 self)
+				(Fade 0 1 self)
 			)
 			(15
 				(if (<= gHowFast 3)
@@ -202,7 +202,7 @@
 		(switch (= state newState)
 			(0
 				(shootSnd play: 45 0)
-				(= ticks (proc0_8 2 60))
+				(= ticks (RandomNumber 2 60))
 			)
 			(1
 				(self changeState: 0)

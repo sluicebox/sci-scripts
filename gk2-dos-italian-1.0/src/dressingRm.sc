@@ -80,7 +80,7 @@
 		else
 			(gEgo
 				posn: 407 303
-				BAD_SELECTOR: 225
+				sel_737: 225
 				init:
 				view: 11607
 				setScaler: Scaler 92 68 328 239
@@ -358,7 +358,7 @@
 			(0
 				(gGame handsOff:)
 				(ClearFlag 781)
-				((gUser BAD_SELECTOR:) add: changeArea)
+				((gUser sel_715:) add: changeArea)
 				(if (IsFlag 778)
 					(= local0 1)
 					(gEgo show:)
@@ -433,7 +433,7 @@
 
 	(method (init)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -452,7 +452,7 @@
 
 	(method (init)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)
@@ -506,7 +506,7 @@
 			(0
 				(gGame handsOff:)
 				(ClearFlag 781)
-				((gUser BAD_SELECTOR:) add: changeArea)
+				((gUser sel_715:) add: changeArea)
 				(gEgo
 					view: 11605
 					setLoop: 0 1
@@ -521,7 +521,7 @@
 			(1
 				(gEgo
 					posn: 407 300
-					BAD_SELECTOR: 225
+					sel_737: 225
 					view: 11607
 					setScaler: Scaler 92 68 328 239
 				)
@@ -599,7 +599,7 @@
 			)
 			(1
 				(gEgo hide:)
-				((gUser BAD_SELECTOR:) delete: changeArea)
+				((gUser sel_715:) delete: changeArea)
 				(gGame changeScore: 1156 handsOn:)
 				(self dispose:)
 			)
@@ -753,7 +753,7 @@
 			(0
 				(gGame handsOff:)
 				(ClearFlag 781)
-				((gUser BAD_SELECTOR:) add: changeArea)
+				((gUser sel_715:) add: changeArea)
 				(gEgo
 					view: 11605
 					setLoop: 0 1

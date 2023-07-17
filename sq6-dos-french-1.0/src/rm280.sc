@@ -377,20 +377,20 @@
 				(= ticks 60)
 			)
 			(6
-				(if (== global177 4)
+				(if (== gETTouchCount 4)
 					(et loop: 2 cel: 0 setCycle: CT 2 1 self)
 				else
 					(= cycles 1)
 				)
 			)
 			(7
-				(if (== global177 4)
+				(if (== gETTouchCount 4)
 					(gGame points: 5 490)
-					(= global177 0)
+					(= gETTouchCount 0)
 					(sound1 number: 284 loop: 0 play:)
 					(et loop: 2 cel: 3 setCycle: End self)
 				else
-					(+= global177 1)
+					(+= gETTouchCount 1)
 					(= cycles 1)
 				)
 			)
@@ -507,7 +507,7 @@
 			(0
 				(gGame handsOff:)
 				(Load 140 281 282 286 287) ; WAVE
-				(if (<= (-= global150 20) 0)
+				(if (<= (-= gBuckazoidCount 20) 0)
 					(gEgo put: 13) ; Buckazoids
 				)
 				(= cycles 1)
@@ -700,7 +700,7 @@
 		(switch theVerb
 			(64 ; Buckazoids
 				(if (not (IsFlag 148))
-					(if (and (>= global150 20) (gEgo has: 13)) ; Buckazoids
+					(if (and (>= gBuckazoidCount 20) (gEgo has: 13)) ; Buckazoids
 						(SetFlag 148)
 						(pa setScript: sRogerPaysPa)
 					else
@@ -723,10 +723,10 @@
 					((and (not (IsFlag 147)) (not (IsFlag 148)))
 						(gMessager say: 41 2 1 0 self) ; "Got the twenty there, Buster? Otherwise, you can swill thruster drippings with the rest of the deadbeats around here. I don't mean that in a bad way, mind you."
 					)
-					((and (IsFlag 148) (== global120 1))
+					((and (IsFlag 148) (== gAct 1))
 						(gMessager say: 41 2 3 0 self) ; "What? What's the problem, Sonny? Havin' trouble with the bottle? Oh yeah, those highly complex twist tops can really boggle a mind, can't they? Just grab the bottle with one hand and twist the top with the other. You'll get the hang of it. Now run along. I'm a real busy man."
 					)
-					((and (IsFlag 148) (> global120 1))
+					((and (IsFlag 148) (> gAct 1))
 						(gMessager say: 41 2 7 0 self) ; "Run along. I'm a real busy man."
 					)
 				)
@@ -852,7 +852,7 @@
 		(switch theVerb
 			(64 ; Buckazoids
 				(if (not (IsFlag 148))
-					(if (and (>= global150 20) (gEgo has: 13)) ; Buckazoids
+					(if (and (>= gBuckazoidCount 20) (gEgo has: 13)) ; Buckazoids
 						(SetFlag 148)
 						(pa setScript: sRogerPaysPa)
 					else

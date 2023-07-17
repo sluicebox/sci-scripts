@@ -158,9 +158,8 @@
 	)
 )
 
-(instance Biffie_INinuzzo of Talker
+(instance Biffie of Talker
 	(properties
-		name {Biffie}
 		nsTop 113
 		nsLeft 3
 		view 1142
@@ -202,9 +201,8 @@
 	)
 )
 
-(instance Scooter_ITrombetta of Talker
+(instance Scooter of Talker
 	(properties
-		name {Scooter}
 		nsTop 100
 		nsLeft 10
 		view 1143
@@ -246,7 +244,7 @@
 	)
 )
 
-(instance Silas_Scruemall_IMimmo_Chiavatutto of Talker
+(instance Silas_Scruemall of Talker
 	(properties
 		name {Silas Scruemall}
 		nsTop 90
@@ -296,49 +294,49 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(Say Biffie_INinuzzo 140 0 108 139 self) ; "And so," a corporate yes man continues, "I'm pleased to say our contest to find `The Sexiest Woman in America'...."
+				(Say Biffie 140 0 108 139 self) ; "And so," a corporate yes man continues, "I'm pleased to say our contest to find `The Sexiest Woman in America'...."
 			)
 			(1
 				(= ticks 60)
 			)
 			(2
-				(Say Biffie_INinuzzo 140 1 108 139 self) ; ".... to serve as the hostess on `America's Sexiest Home Videos' has been a resounding success!""
+				(Say Biffie 140 1 108 139 self) ; ".... to serve as the hostess on `America's Sexiest Home Videos' has been a resounding success!""
 			)
 			(3
 				(= ticks 60)
 			)
 			(4
-				(Say Biffie_INinuzzo 140 2 108 139 self) ; "The character portrayed by our hostess, whom we've decided to name `Vanna Black,' will be one exceptional woman!"
+				(Say Biffie 140 2 108 139 self) ; "The character portrayed by our hostess, whom we've decided to name `Vanna Black,' will be one exceptional woman!"
 			)
 			(5
 				(= ticks 60)
 			)
 			(6
-				(Say Biffie_INinuzzo 140 3 108 139 self) ; "We've searched for a woman, beautiful, yet with those All-American, girl-next-door looks; a woman virginal and untouchable; and yet, a woman who is sexy and slutty."
+				(Say Biffie 140 3 108 139 self) ; "We've searched for a woman, beautiful, yet with those All-American, girl-next-door looks; a woman virginal and untouchable; and yet, a woman who is sexy and slutty."
 			)
 			(7
 				(= ticks 60)
 			)
 			(8
-				(Say Biffie_INinuzzo 140 4 108 139 self) ; "We've received thousands of submissions, and (thanks to hard work by me and my colleagues) narrowed the field down to three finalists."
+				(Say Biffie 140 4 108 139 self) ; "We've received thousands of submissions, and (thanks to hard work by me and my colleagues) narrowed the field down to three finalists."
 			)
 			(9
 				(= ticks 60)
 			)
 			(10
-				(Say Biffie_INinuzzo 140 5 108 139 self) ; "I intend to have these women flown here, first class, wined and dined in regal style, then outfitted with the finest fashions Rodeo Drive has to offer."
+				(Say Biffie 140 5 108 139 self) ; "I intend to have these women flown here, first class, wined and dined in regal style, then outfitted with the finest fashions Rodeo Drive has to offer."
 			)
 			(11
 				(= ticks 60)
 			)
 			(12
-				(Say Biffie_INinuzzo 140 6 108 139 self) ; "They'll want for nothing! And, on the morning of the auditions, champagne baths for all! I've arranged national press coverage, of course."
+				(Say Biffie 140 6 108 139 self) ; "They'll want for nothing! And, on the morning of the auditions, champagne baths for all! I've arranged national press coverage, of course."
 			)
 			(13
 				(= ticks 60)
 			)
 			(14
-				(Say Biffie_INinuzzo 140 7 108 139 self) ; "In short, everything is proceeding according to schedule."
+				(Say Biffie 140 7 108 139 self) ; "In short, everything is proceeding according to schedule."
 			)
 			(15
 				(= ticks 60)
@@ -356,7 +354,7 @@
 				(= ticks 100)
 			)
 			(19
-				(Say Silas_Scruemall_IMimmo_Chiavatutto 140 9 108 139 self) ; "But wait, Biffie. We all know that if we bring these women to Hollywood to audition under those circumstances, they'll all be sexy."
+				(Say Silas_Scruemall 140 9 108 139 self) ; "But wait, Biffie. We all know that if we bring these women to Hollywood to audition under those circumstances, they'll all be sexy."
 			)
 			(20
 				(= ticks 60)
@@ -369,14 +367,7 @@
 				(= seconds 3)
 			)
 			(22
-				(Say ; "But, we're looking for a woman so over-sexed she'd drop (what's she's doing) for any man, any time, any place, and for any loser, any dork, no matter how lame!"
-					Silas_Scruemall_IMimmo_Chiavatutto
-					140
-					13
-					108
-					139
-					self
-				)
+				(Say Silas_Scruemall 140 13 108 139 self) ; "But, we're looking for a woman so over-sexed she'd drop (what's she's doing) for any man, any time, any place, and for any loser, any dork, no matter how lame!"
 			)
 			(23
 				(= ticks 60)
@@ -388,14 +379,7 @@
 				(= seconds 3)
 			)
 			(25
-				(Say ; "I've changed my mind! Now I think we should hold a blind audition, where the women don't know they're being auditioned!"
-					Silas_Scruemall_IMimmo_Chiavatutto
-					140
-					17
-					108
-					139
-					self
-				)
+				(Say Silas_Scruemall 140 17 108 139 self) ; "I've changed my mind! Now I think we should hold a blind audition, where the women don't know they're being auditioned!"
 			)
 			(26
 				(= ticks 60)
@@ -408,21 +392,14 @@
 				(= seconds 3)
 			)
 			(28
-				(Say Scooter_ITrombetta 140 19 108 139 self) ; "But (with all due respects, Mr. Scruemall) that's impossible. We need videotapes of their auditions for our own, uh, personal review purposes. There's no way we could follow the guy around without her seeing us!"
+				(Say Scooter 140 19 108 139 self) ; "But (with all due respects, Mr. Scruemall) that's impossible. We need videotapes of their auditions for our own, uh, personal review purposes. There's no way we could follow the guy around without her seeing us!"
 			)
 			(29
 				(fScruemall setCel: 1)
 				(= seconds 3)
 			)
 			(30
-				(Say ; "Well, yes, we do need those tapes to review. But what if we could find an auditioner so inept, so sexless, so lame, so unappealing, that it would take the sexiest woman in America to find him attractive?"
-					Silas_Scruemall_IMimmo_Chiavatutto
-					140
-					20
-					108
-					139
-					self
-				)
+				(Say Silas_Scruemall 140 20 108 139 self) ; "Well, yes, we do need those tapes to review. But what if we could find an auditioner so inept, so sexless, so lame, so unappealing, that it would take the sexiest woman in America to find him attractive?"
 			)
 			(31
 				(= ticks 60)
@@ -435,7 +412,7 @@
 				(= seconds 4)
 			)
 			(33
-				(Say Scooter_ITrombetta 140 24 108 139 self) ; "But, Sil--, er, Mr. Scruemall! How will we ever find somebody so lame?"
+				(Say Scooter 140 24 108 139 self) ; "But, Sil--, er, Mr. Scruemall! How will we ever find somebody so lame?"
 			)
 			(34
 				(fScruemall setCel: 0)
@@ -477,14 +454,7 @@
 				(= cycles 10)
 			)
 			(2
-				(Say ; "You may begin with me, boy."
-					Silas_Scruemall_IMimmo_Chiavatutto
-					140
-					26
-					108
-					139
-					self
-				)
+				(Say Silas_Scruemall 140 26 108 139 self) ; "You may begin with me, boy."
 			)
 			(3
 				(TPrint 140 27 67 -1 185) ; "(So you decide to do exactly that!"

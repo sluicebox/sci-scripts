@@ -85,7 +85,7 @@
 
 	(method (setCycle caller cycles &tmp aTimer)
 		(= aTimer
-			(if (& BAD_SELECTOR $8000)
+			(if (& -info- $8000)
 				(self new:)
 			else
 				self
@@ -107,7 +107,7 @@
 			(+= theTicks (* (/ (* hr 3600) theSpeed) 60))
 		)
 		(= aTimer
-			(if (& BAD_SELECTOR $8000)
+			(if (& -info- $8000)
 				(self new:)
 			else
 				self
@@ -126,7 +126,7 @@
 			(+= secs (* hr 3600))
 		)
 		(= aTimer
-			(if (& BAD_SELECTOR $8000)
+			(if (& -info- $8000)
 				(self new:)
 			else
 				self
@@ -138,7 +138,7 @@
 
 	(method (setTicks theTicks caller &tmp aTimer)
 		(= aTimer
-			(if (& BAD_SELECTOR $8000)
+			(if (& -info- $8000)
 				(self new:)
 			else
 				self

@@ -51,7 +51,7 @@
 		(cond
 			((IsFlag 471)
 				(tTrialRecords2
-					BAD_SELECTOR: tWhy tWhat tWhere tChangeBack tWhoManWas
+					sel_835: tWhy tWhat tWhere tChangeBack tWhoManWas
 				)
 				(BAD_SELECTOR add: tTrialRecords2)
 			)

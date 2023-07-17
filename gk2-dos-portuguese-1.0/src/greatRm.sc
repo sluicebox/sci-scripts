@@ -30,7 +30,7 @@
 				(gEgo posn: 227 336 heading: 45)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 83 40 332 235 init:)
+		(gEgo sel_737: setScaler: Scaler 83 40 332 235 init:)
 		(super init: &rest)
 		(if (== gPrevRoomNum 500) ; lodgeExtRm
 			(gSoundManager play: 520 521 522 523 524)

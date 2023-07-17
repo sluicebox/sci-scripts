@@ -61,7 +61,7 @@
 				(gGk2Music setLoop: -1 number: 606 play:)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 81 28 322 192 init:)
+		(gEgo sel_737: setScaler: Scaler 81 28 322 192 init:)
 		(proc499_4)
 		(fEastExit init:)
 		(fWestExit init:)

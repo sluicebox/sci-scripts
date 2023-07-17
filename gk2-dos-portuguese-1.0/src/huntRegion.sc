@@ -188,7 +188,7 @@
 				(if (gTimers contains: WolfTimer)
 					(WolfTimer dispose:)
 				)
-				(gGame BAD_SELECTOR: 0)
+				(gGame sel_849: 0)
 				(gEgo put: 81) ; invGun
 				(ClearFlag 407)
 				(gCurRoom newRoom: 12) ; endChapter

@@ -995,14 +995,14 @@
 				(gMessager say: 8 0 0 4 self) ; "Yep."
 			)
 			(8
-				(proc666_0 6 self)
+				(EgoDead 6 self) ; "Smooth move, ex-lax. Guess this cyberspace thing can be pretty painful -- and I'm not just talking about the rates."
 			)
 			(9
 				(gEgo
 					posn: (register egoEnd2X:) (register egoEnd2Y:)
 					loop: 5
 					setStep: 1 1
-					setSpeed: global158
+					setSpeed: gEgoSpeed
 					show:
 				)
 				(if (IsFlag 202)

@@ -32,7 +32,7 @@
 		(gEgo
 			posn: 100 320
 			heading: 135
-			BAD_SELECTOR:
+			sel_737:
 			setScaler: Scaler 95 62 327 238
 			init:
 		)
@@ -87,7 +87,7 @@
 
 	(method (init)
 		(super init: &rest)
-		((gUser BAD_SELECTOR:) delete: self)
+		((gUser sel_715:) delete: self)
 	)
 
 	(method (onMe)

@@ -32,7 +32,7 @@
 				(gEgo posn: 287 379 heading: 45)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 90 49 358 277 init:)
+		(gEgo sel_737: setScaler: Scaler 90 49 358 277 init:)
 		(super init: &rest)
 		(if (not (IsFlag 660))
 			(SetFlag 660)

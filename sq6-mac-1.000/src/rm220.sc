@@ -530,7 +530,7 @@
 						setMotion: PolyPath 230 137
 					)
 				)
-				(= ticks (proc0_8 30 240))
+				(= ticks (RandomNumber 30 240))
 			)
 			(1
 				(self changeState: 0)
@@ -549,7 +549,7 @@
 			)
 			(1
 				(flickerLight cel: 3 setCycle: Beg)
-				(= ticks (proc0_8 1 180))
+				(= ticks (RandomNumber 1 180))
 			)
 			(2
 				(self changeState: 0)

@@ -23,7 +23,7 @@
 	(method (init)
 		(SetPort 0 0 190 320 0 0)
 		(super init:)
-		(while (u> (GetTime) -1024)
+		(while (u> (GetTime) 64512)
 		)
 		(fred
 			view: 99

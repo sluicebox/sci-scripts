@@ -668,51 +668,26 @@
 			(5 ; Talk
 				(switch mainEvent
 					(0
-						(Say The_Bouncer_GDer_Rausschmeisser 730 18 108) ; "Da ballroom's closed, Mac! Beat it, before I lose my delly-cate sense of humor."
+						(Say The_Bouncer 730 18 108) ; "Da ballroom's closed, Mac! Beat it, before I lose my delly-cate sense of humor."
 					)
 					(2
 						(cond
 							((< (gEgo y:) y)
-								(Say ; "There's one good seat down front, right at ringside!"
-									The_Bouncer_GDer_Rausschmeisser
-									730
-									19
-									108
-								)
+								(Say The_Bouncer 730 19 108) ; "There's one good seat down front, right at ringside!"
 							)
 							((Random 0 1)
-								(Say ; "$25.00, that's the cover charge and ya ain' gettin' in fer less!"
-									The_Bouncer_GDer_Rausschmeisser
-									730
-									20
-									108
-								)
+								(Say The_Bouncer 730 20 108) ; "$25.00, that's the cover charge and ya ain' gettin' in fer less!"
 							)
 							(else
-								(Say ; "Plenty o' good seats lef, Bud! Butcha ain' gettin' past me 'lessin' ya pays ma price!"
-									The_Bouncer_GDer_Rausschmeisser
-									730
-									21
-									108
-								)
+								(Say The_Bouncer 730 21 108) ; "Plenty o' good seats lef, Bud! Butcha ain' gettin' past me 'lessin' ya pays ma price!"
 							)
 						)
 					)
 					(1
 						(if (< (gEgo y:) y)
-							(Say ; "You wanna chance to play wit' da goils? It'll cost ja $500.00, please! Up front. No refunds when ya get beat!"
-								The_Bouncer_GDer_Rausschmeisser
-								730
-								22
-								108
-							)
+							(Say The_Bouncer 730 22 108) ; "You wanna chance to play wit' da goils? It'll cost ja $500.00, please! Up front. No refunds when ya get beat!"
 						else
-							(Say ; "If ya wanna watch, I kin letcha in for a measly $25.00. If ya wanna participate, it'll cost ya 5 big ones! (Need I mention, it's worth it, too!)"
-								The_Bouncer_GDer_Rausschmeisser
-								730
-								23
-								108
-							)
+							(Say The_Bouncer 730 23 108) ; "If ya wanna watch, I kin letcha in for a measly $25.00. If ya wanna participate, it'll cost ya 5 big ones! (Need I mention, it's worth it, too!)"
 						)
 					)
 				)
@@ -750,19 +725,9 @@
 								))
 							(paid
 								(if justWatching
-									(Say ; "Ya paid yer money. Now sit down!"
-										The_Bouncer_GDer_Rausschmeisser
-										730
-										24
-										108
-									)
+									(Say The_Bouncer 730 24 108) ; "Ya paid yer money. Now sit down!"
 								else
-									(Say ; "Ya paid yer money. Now get in there!"
-										The_Bouncer_GDer_Rausschmeisser
-										730
-										25
-										108
-									)
+									(Say The_Bouncer 730 25 108) ; "Ya paid yer money. Now get in there!"
 								)
 							)
 							((gEgo sitting:)
@@ -772,40 +737,20 @@
 								(Format @str 730 26 gSilvDollars gSilvDollars) ; "Excuse me, sir," you say to the hopefully friendly bouncer. "Would it be okay if I only paid you $%d.00? I seem to be a little short!"
 								(Say gEgo @str)
 								(TPrint 730 27) ; "The bouncer scowls at you."
-								(Say ; "Yeah, and not just in that wimpy little fake eelskin wallet, Donkey-doo! Get out of here!"
-									The_Bouncer_GDer_Rausschmeisser
-									730
-									28
-									108
-								)
+								(Say The_Bouncer 730 28 108) ; "Yeah, and not just in that wimpy little fake eelskin wallet, Donkey-doo! Get out of here!"
 							)
 							(else
 								(if (== payoff 25)
 									(Say gEgo 730 29) ; "Hello, Mister," you say to the bouncer. "I'd like to purchase one of your better seats. Here's my $25.00."
-									(Say ; "Thanks for nuttin'. Ya gets da best seat in da house--which is also da only seat in da house!"
-										The_Bouncer_GDer_Rausschmeisser
-										730
-										30
-										108
-									)
+									(Say The_Bouncer 730 30 108) ; "Thanks for nuttin'. Ya gets da best seat in da house--which is also da only seat in da house!"
 									(= justWatching 1)
 								else
 									(Points 12 134)
 									(Say gEgo 730 31) ; "Hello, Mister," you say to the bouncer. "I'd like to participate in the evening's next event. Here's my $500.00."
 									(if (gCast contains: lana)
-										(Say ; "Thanks, suck... uh, er, Sir! Now if you'll kindly step into the ring, the beatin... ah, uh, the show will begin."
-											The_Bouncer_GDer_Rausschmeisser
-											730
-											32
-											108
-										)
+										(Say The_Bouncer 730 32 108) ; "Thanks, suck... uh, er, Sir! Now if you'll kindly step into the ring, the beatin... ah, uh, the show will begin."
 									else
-										(Say ; "Thanks, suck... uh, er, Sir! Now if you'll kindly sit down, the beatin... ah, uh, the show will begin."
-											The_Bouncer_GDer_Rausschmeisser
-											730
-											33
-											108
-										)
+										(Say The_Bouncer 730 33 108) ; "Thanks, suck... uh, er, Sir! Now if you'll kindly sit down, the beatin... ah, uh, the show will begin."
 									)
 									(= justWatching 0)
 								)
@@ -875,7 +820,7 @@
 	)
 )
 
-(instance The_Bouncer_GDer_Rausschmeisser of Talker
+(instance The_Bouncer of Talker
 	(properties
 		name {The Bouncer}
 		nsTop 15

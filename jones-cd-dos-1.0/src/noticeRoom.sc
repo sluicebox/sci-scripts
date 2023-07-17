@@ -26,7 +26,7 @@
 	(method (init)
 		(super init: &rest)
 		(DoAudio audRATE 11025)
-		(while (u> (GetTime) -1024)
+		(while (u> (GetTime) 64512)
 		)
 		(fred
 			view: 0

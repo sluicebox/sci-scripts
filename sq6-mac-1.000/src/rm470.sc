@@ -91,7 +91,7 @@
 	)
 
 	(method (init)
-		(= global148 470)
+		(= gShuttleRoomNum 470)
 		(= local0 (Str newWith: 80 {}))
 		(gGSound1 number: 131 flags: 1 loop: -1 play:)
 		(Load 140 325 471 473 475 477 922 47002 47001) ; WAVE
@@ -101,7 +101,7 @@
 		(Load rsSCRIPT 64941)
 		(Load rsHEAP 64941)
 		(= local3 (gEgo cycleSpeed:))
-		(= local4 global158)
+		(= local4 gEgoSpeed)
 		(if (IsFlag 123)
 			(wriggley view: 4760 loop: 2 cel: 0 posn: 92 59 init: setCycle: Fwd)
 			(wriggleyHood init:)
@@ -142,7 +142,7 @@
 			)
 		)
 		(gEgo view: 4710 loop: 1 cel: 0 posn: 205 91 setSpeed: 9 init:)
-		(= global158 9)
+		(= gEgoSpeed 9)
 		(ship init: approachVerbs: 111) ; Windshield_Sign
 		(door init: approachVerbs: 4) ; Do
 		(if (and (not (IsFlag 124)) (IsFlag 120))
@@ -263,7 +263,7 @@
 			)
 			(4
 				(FrameOut)
-				(proc666_0 26 self)
+				(EgoDead 26 self) ; "You pick strange methods of getting a charge out of life."
 			)
 			(5
 				(gEgo
@@ -363,7 +363,7 @@
 			)
 			(2
 				(gEgo setSpeed: local3)
-				(= global158 local4)
+				(= gEgoSpeed local4)
 				(gCurRoom newRoom: 480)
 				(self dispose:)
 			)
@@ -407,7 +407,7 @@
 						(self dispose:)
 					)
 					((IsFlag 123)
-						(switch (proc0_8 1 2)
+						(switch (RandomNumber 1 2)
 							(1
 								(gMessager say: 4 0 3 0 self) ; "Well, let's get a move on. I have a wax job in an hour and I still have a half light year to make up. Juanobbee is just going to murder me if I'm late again."
 							)
@@ -614,7 +614,7 @@
 		(switch (= state newState)
 			(0
 				(SetFlag 123)
-				(proc0_7 1 1 self)
+				(Fade 1 1 self)
 			)
 			(1
 				(gGSound1 stop:)
@@ -640,7 +640,7 @@
 				(= cycles 5)
 			)
 			(4
-				(proc0_7 0 1 self)
+				(Fade 0 1 self)
 			)
 			(5
 				(= cycles 5)
@@ -656,7 +656,7 @@
 				(= ticks 60)
 			)
 			(9
-				(proc0_7 1 1 self)
+				(Fade 1 1 self)
 			)
 			(10
 				(= ticks 30)
@@ -679,7 +679,7 @@
 				(= cycles 5)
 			)
 			(13
-				(proc0_7 0 1 self)
+				(Fade 0 1 self)
 			)
 			(14
 				(= ticks 30)
@@ -692,7 +692,7 @@
 				(= ticks 30)
 			)
 			(17
-				(proc0_7 1 1 self)
+				(Fade 1 1 self)
 			)
 			(18
 				(= ticks 30)
@@ -714,7 +714,7 @@
 				(= cycles 5)
 			)
 			(21
-				(proc0_7 0 1 self)
+				(Fade 0 1 self)
 			)
 			(22
 				(gGSound2 stop:)

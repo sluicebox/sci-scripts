@@ -386,7 +386,7 @@
 			)
 			(else
 				Unknown_Class_1358
-				BAD_SELECTOR
+				-script-
 				theVerb
 			)
 		)
@@ -472,7 +472,7 @@
 			)
 			(else
 				Unknown_Class_1358
-				BAD_SELECTOR
+				-script-
 				theVerb
 			)
 		)

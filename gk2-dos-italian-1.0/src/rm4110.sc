@@ -55,13 +55,13 @@
 			(53 ; invGabeEnvelope1
 				(gEgo put: 9) ; invGabeEnvelope1
 				(gGame changeScore: 843)
-				((gUser BAD_SELECTOR:) BAD_SELECTOR:)
+				((gUser sel_715:) sel_737:)
 				(PlayScene 66 0 410) ; dienerRm
 			)
 			(54 ; invGabeEnvelope2
 				(gGame changeScore: 949)
 				(gEgo put: 31) ; invGabeEnvelope2
-				((gUser BAD_SELECTOR:) BAD_SELECTOR:)
+				((gUser sel_715:) sel_737:)
 				(PlayScene 241 0 410) ; dienerRm
 			)
 			(else

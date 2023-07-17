@@ -52,7 +52,7 @@
 				(= global141 car)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 53 14 324 221 init:)
+		(gEgo sel_737: setScaler: Scaler 53 14 324 221 init:)
 		(if (== gPrevRoomNum 800) ; bavMapRm
 			(SetFlag 409)
 			(PlayScene 1427)

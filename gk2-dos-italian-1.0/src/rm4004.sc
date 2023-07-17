@@ -38,7 +38,7 @@
 			(Lock 140 400 1) ; WAVE
 			(gGk2Music setLoop: -1 number: 400 play:)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 95 45 355 241 init:)
+		(gEgo sel_737: setScaler: Scaler 95 45 355 241 init:)
 		(vVendor init: setScript: FidgetScript)
 		(fWasharia init:)
 		(fUbergrau init:)

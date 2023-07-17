@@ -29,8 +29,8 @@
 )
 
 (procedure (localproc_0)
-	(onesCtr cel: (mod global153 10))
-	(tensCtr cel: (/ global153 10))
+	(onesCtr cel: (mod gNowServingNumber 10))
+	(tensCtr cel: (/ gNowServingNumber 10))
 	(if (gTalkers isEmpty:)
 		(countSnd play:)
 	)
@@ -434,7 +434,7 @@
 		(switch (= state newState)
 			(0
 				(client setCycle: Fwd)
-				(= ticks (proc0_8 300 600))
+				(= ticks (RandomNumber 300 600))
 			)
 			(1
 				(client setCycle: Beg self)
@@ -467,7 +467,7 @@
 				)
 			)
 			(1
-				(client loop: (proc0_8 1 3) cel: 0 setCycle: End self)
+				(client loop: (RandomNumber 1 3) cel: 0 setCycle: End self)
 				(Sis_Inny showTalk: 0)
 				(gMessager say: 12 2 11 0 self) ; "Next!"
 			)
@@ -602,7 +602,7 @@
 					((not (gEgo has: 75)) ; Number_3_Cord
 						(gMessager say: 3 2 3 0 self) ; "No, uh, I don't seem to have that one, but ..."
 					)
-					((== global153 3)
+					((== gNowServingNumber 3)
 						(= next giveOlNumber3)
 						(= ticks 1)
 					)
@@ -782,7 +782,7 @@
 			(7
 				(ClearFlag 182)
 				(client normalize: 3)
-				(= global153 3)
+				(= gNowServingNumber 3)
 				(localproc_0)
 				((ScriptID 0 11) setReal: (ScriptID 0 11) 60) ; nowServingTimer, nowServingTimer
 				(gGame points: 5 488)
@@ -844,7 +844,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(proc0_4 gEgo sisInny self)
+				(Face gEgo sisInny self)
 			)
 			(1
 				(gMessager say: 0 0 7 0 self) ; "EX-cuse me, Mr. Wilco. Those are reference files only and not available for loan. You may leave, but the folders will remain here."
@@ -1048,11 +1048,11 @@
 		(switch theVerb
 			(4 ; Do
 				(cond
-					((and (== global153 3) (gEgo has: 75)) ; Number_3_Cord
+					((and (== gNowServingNumber 3) (gEgo has: 75)) ; Number_3_Cord
 						(gMessager say: noun theVerb 12 0)
 					)
-					((== global153 3)
-						(gMessager say: noun theVerb 13 (proc0_8 1 3))
+					((== gNowServingNumber 3)
+						(gMessager say: noun theVerb 13 (RandomNumber 1 3))
 					)
 					((IsFlag 182)
 						(gEgo setScript: closeCounter)
@@ -1064,11 +1064,11 @@
 			)
 			(132 ; Screwdriver
 				(cond
-					((and (== global153 3) (gEgo has: 75)) ; Number_3_Cord
+					((and (== gNowServingNumber 3) (gEgo has: 75)) ; Number_3_Cord
 						(gMessager say: noun 4 12 0)
 					)
-					((== global153 3)
-						(gMessager say: noun 4 13 (proc0_8 1 3))
+					((== gNowServingNumber 3)
+						(gMessager say: noun 4 13 (RandomNumber 1 3))
 					)
 					(else
 						(gEgo setScript: fixCounter)
@@ -1181,11 +1181,11 @@
 		(switch theVerb
 			(4 ; Do
 				(cond
-					((and (== global153 3) (gEgo has: 75)) ; Number_3_Cord
+					((and (== gNowServingNumber 3) (gEgo has: 75)) ; Number_3_Cord
 						(gMessager say: noun theVerb 12 0) ; "I already have the right number."
 					)
-					((== global153 3)
-						(gMessager say: noun theVerb 13 (proc0_8 1 3))
+					((== gNowServingNumber 3)
+						(gMessager say: noun theVerb 13 (RandomNumber 1 3))
 					)
 					((IsFlag 182)
 						(gEgo setScript: closeCounter)

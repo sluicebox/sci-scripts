@@ -258,7 +258,7 @@
 	)
 )
 
-(instance Chi_Chi_Lambada_IChi_Chi_Lambada of Talker
+(instance Chi_Chi_Lambada of Talker
 	(properties
 		name {Chi Chi Lambada}
 		nsTop 33
@@ -364,7 +364,7 @@
 				(= ticks 30)
 			)
 			(8
-				(Say Chi_Chi_Lambada_IChi_Chi_Lambada 910 10 108 139 self) ; "Well, Mr. Laffer, shall we get started?"
+				(Say Chi_Chi_Lambada 910 10 108 139 self) ; "Well, Mr. Laffer, shall we get started?"
 			)
 			(9
 				(gEgo setCel: 0 stopUpd:)
@@ -375,7 +375,7 @@
 				(= ticks 60)
 			)
 			(11
-				(Say Chi_Chi_Lambada_IChi_Chi_Lambada 910 12 108 139 self) ; "Well, make up your mind," says Chi Chi. "I've gotta adjust the chair!"
+				(Say Chi_Chi_Lambada 910 12 108 139 self) ; "Well, make up your mind," says Chi Chi. "I've gotta adjust the chair!"
 				(gEgo setCel: 2 stopUpd:)
 			)
 			(12
@@ -402,7 +402,7 @@
 				(= seconds 4)
 			)
 			(16
-				(Say Chi_Chi_Lambada_IChi_Chi_Lambada 910 13 108 139 self) ; "Say, Larry. Have you ever considered dental floss as an aphrodisiac?"
+				(Say Chi_Chi_Lambada 910 13 108 139 self) ; "Say, Larry. Have you ever considered dental floss as an aphrodisiac?"
 			)
 			(17
 				(gCurRoom setScript: sWorkOnTeeth)
@@ -426,14 +426,7 @@
 			)
 			(1
 				(if (and (> local2 30) (not local6))
-					(Say ; "Just a few more seconds and I'll have that nasty old tooth of yours pu..., er, uh, cleaned!"
-						Chi_Chi_Lambada_IChi_Chi_Lambada
-						910
-						14
-						108
-						139
-						self
-					)
+					(Say Chi_Chi_Lambada 910 14 108 139 self) ; "Just a few more seconds and I'll have that nasty old tooth of yours pu..., er, uh, cleaned!"
 					(= local6 1)
 				else
 					(= ticks 60)
@@ -451,14 +444,7 @@
 			(5
 				(if (> local2 35)
 					(HandsOff)
-					(Say ; "I'm all done, Mr. Laffer!"
-						Chi_Chi_Lambada_IChi_Chi_Lambada
-						910
-						15
-						108
-						139
-						self
-					)
+					(Say Chi_Chi_Lambada 910 15 108 139 self) ; "I'm all done, Mr. Laffer!"
 					(chiChi
 						setLoop: 5
 						setCel: 255
@@ -538,7 +524,7 @@
 				(TPrint 910 17) ; "Try establishing eye contact first."
 			)
 			(10 ; Zipper
-				(Say Chi_Chi_Lambada_IChi_Chi_Lambada 910 18 108) ; "Well, I might be interested, Larry," says Chi Chi. "But what about a little conversation first?"
+				(Say Chi_Chi_Lambada 910 18 108) ; "Well, I might be interested, Larry," says Chi Chi. "But what about a little conversation first?"
 			)
 			(1 ; Walk
 				(gCurRoom doVerb: 1)
@@ -566,7 +552,7 @@
 			(2
 				(chiChi setCycle: 0 stopUpd:)
 				(Points 40 165)
-				(Say Chi_Chi_Lambada_IChi_Chi_Lambada 910 19 108 139 self) ; "Why don't we go downstairs to my apartment behind the gymnastics studio where I'll be able to express my appreciation in a more acceptable manner?"
+				(Say Chi_Chi_Lambada 910 19 108 139 self) ; "Why don't we go downstairs to my apartment behind the gymnastics studio where I'll be able to express my appreciation in a more acceptable manner?"
 			)
 			(3
 				(= ticks 90)

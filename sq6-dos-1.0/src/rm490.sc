@@ -328,7 +328,7 @@
 		(if (IsFlag 96)
 			(shuttleHood init:)
 		)
-		(if (not (OneOf global148 470 0))
+		(if (not (OneOf gShuttleRoomNum 470 0))
 			(cockpitView init:)
 		)
 		(if (IsFlag 198)
@@ -493,7 +493,7 @@
 				(= cycles 10)
 			)
 			(1
-				(DoAudio audPLAY 490 40 0 24 3)
+				(DoAudio audPLAY 490 40 0 24 3) ; "What may I do for you, Sir?"
 				(gGame setCursor: gNormalCursor 1)
 				(if
 					((Print new:)
@@ -505,14 +505,14 @@
 					(gGame setCursor: gWaitCursor 1)
 					(= cycles 1)
 				else
-					(DoAudio audSTOP 490 40 0 24 3)
+					(DoAudio audSTOP 490 40 0 24 3) ; "What may I do for you, Sir?"
 					(localproc_8)
 					(gGame setCursor: (gTheIconBar getCursor:))
 					(self dispose:)
 				)
 			)
 			(2
-				(DoAudio audSTOP 490 40 0 24 3)
+				(DoAudio audSTOP 490 40 0 24 3) ; "What may I do for you, Sir?"
 				(= cycles 1)
 			)
 			(3
@@ -540,7 +540,7 @@
 				(= ticks 60)
 			)
 			(2
-				(proc0_7 1 1 self)
+				(Fade 1 1 self)
 			)
 			(3
 				(gCurRoom setInset: inManualArrives self)
@@ -553,7 +553,7 @@
 				(= cycles 1)
 			)
 			(6
-				(proc0_7 0 1 self)
+				(Fade 0 1 self)
 			)
 			(7
 				(gGame points: 5 418)
@@ -824,8 +824,8 @@
 			)
 			(2
 				(SetFlag 78)
-				(= global170 3)
-				(= global148 740)
+				(= gShuttleStatus 3)
+				(= gShuttleRoomNum 740)
 				(gCurRoom newRoom: 610)
 				(self dispose:)
 			)
@@ -851,8 +851,8 @@
 			)
 			(2
 				(SetFlag 78)
-				(= global170 2)
-				(= global148 610)
+				(= gShuttleStatus 2)
+				(= gShuttleRoomNum 610)
 				(gCurRoom newRoom: 740)
 				(self dispose:)
 			)
@@ -915,7 +915,7 @@
 				(buttonSound number: 491 play: self)
 			)
 			(2
-				(proc0_7 1 1 self)
+				(Fade 1 1 self)
 			)
 			(3
 				(localproc_5)
@@ -926,7 +926,7 @@
 				(= cycles 1)
 			)
 			(4
-				(proc0_7 0 1 self)
+				(Fade 0 1 self)
 			)
 			(5
 				(if (<= gHowFast 3)
@@ -942,7 +942,7 @@
 				(= cycles 1)
 			)
 			(6
-				(= global148 500)
+				(= gShuttleRoomNum 500)
 				(ClearFlag 139)
 				(ClearFlag 186)
 				(SetFlag 171)
@@ -1005,7 +1005,7 @@
 						(gMessager say: 40 2 15 0 self) ; "Good work, Sir. I believe I can now follow the ion trail of DeepShip 86 back to Delta Burksilon V."
 					)
 					(else
-						(gMessager say: 40 0 24 (proc0_8 1 5) self)
+						(gMessager say: 40 0 24 (RandomNumber 1 5) self)
 					)
 				)
 			)
@@ -1468,7 +1468,7 @@
 				(= ticks 45)
 			)
 			(11
-				(proc0_7 1 1 self)
+				(Fade 1 1 self)
 			)
 			(12
 				(localproc_5)
@@ -1481,7 +1481,7 @@
 			)
 			(14
 				(gGSound2 fade:)
-				(proc0_7 0 1 self)
+				(Fade 0 1 self)
 			)
 			(15
 				(gGSound1 stop:)
@@ -1499,12 +1499,12 @@
 				(= cycles 3)
 			)
 			(16
-				(proc0_7 1 1 self)
+				(Fade 1 1 self)
 			)
 			(17
 				(gCast eachElementDo: #show)
 				(gCurRoom drawPic: 490 0)
-				(= global148 470)
+				(= gShuttleRoomNum 470)
 				(powerLights1 setCycle: 0 cel: 0)
 				(powerLights2 setCycle: 0 cel: 0)
 				(powerLights3 setCycle: 0 cel: 0)
@@ -1522,7 +1522,7 @@
 				(= cycles 5)
 			)
 			(18
-				(proc0_7 0 1 self)
+				(Fade 0 1 self)
 			)
 			(19
 				(localproc_8)
@@ -2269,7 +2269,7 @@
 				((IsFlag 158)
 					(gMessager say: 12 4 27) ; "Oh, that's right, Manuel is off-line in here. He can't help me now."
 				)
-				((== global148 450)
+				((== gShuttleRoomNum 450)
 					(gMessager say: 12 4 3) ; "Nothing happens. That button must not work at this time."
 				)
 				((IsFlag 94)
@@ -2522,7 +2522,7 @@
 									((not local4)
 										(gCurRoom setScript: sNoDisc)
 									)
-									((== global148 610)
+									((== gShuttleRoomNum 610)
 										(if (IsFlag 128)
 											(gCurRoom setScript: sTravelToBrain)
 										else
@@ -2572,7 +2572,7 @@
 	)
 
 	(method (init)
-		(switch global148
+		(switch gShuttleRoomNum
 			(450
 				(self view: 490 noun: 28)
 			)
@@ -2690,7 +2690,7 @@
 						(gMessager say: noun theVerb 15) ; "Good work, Sir. I believe I can now follow the ion trail of DeepShip 86 back to Delta Burksilon V."
 					)
 					(else
-						(gMessager say: 40 0 24 (proc0_8 1 4))
+						(gMessager say: 40 0 24 (RandomNumber 1 4))
 					)
 				)
 			)
@@ -3230,7 +3230,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_7 0 1 self)
+				(Fade 0 1 self)
 			)
 			(1
 				(buttonSound number: 499 play: self)
@@ -3265,7 +3265,7 @@
 				(= ticks 60)
 			)
 			(10
-				(proc0_7 1 1 self)
+				(Fade 1 1 self)
 			)
 			(11
 				(self dispose:)

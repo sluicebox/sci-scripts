@@ -112,7 +112,7 @@
 				(= cycles 2)
 			)
 			(2
-				(proc0_7 1 0 self 1)
+				(Fade 1 0 self 1)
 			)
 			(3
 				(PlayVMD 6) ; Close

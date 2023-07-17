@@ -80,7 +80,7 @@
 				(ClearFlag 189)
 				(gCurRoom setScript: sEnterRoom)
 			)
-			((and (== gPrevRoomNum 460) (or (== global119 0) (== global119 420)))
+			((and (== gPrevRoomNum 460) (or (== gComPostNextRoomNum 0) (== gComPostNextRoomNum 420)))
 				(gEgo posn: 296 116 cel: 3)
 				(gGame handsOn:)
 			)
@@ -505,7 +505,7 @@
 				)
 			)
 			(3
-				(gCurRoom newRoom: global119)
+				(gCurRoom newRoom: gComPostNextRoomNum)
 				(self dispose:)
 			)
 		)
@@ -531,7 +531,7 @@
 				(gMessager say: 7 4 0 0 self) ; "You give it a tap but nothing happens."
 			)
 			(2
-				(gEgo setSpeed: global158 normalize: 3)
+				(gEgo setSpeed: gEgoSpeed normalize: 3)
 				(gGame handsOn:)
 				(self dispose:)
 			)

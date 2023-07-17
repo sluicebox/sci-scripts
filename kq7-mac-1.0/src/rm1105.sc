@@ -184,7 +184,7 @@
 				(= ticks 1)
 			)
 			(1
-				(DoAudio audPLAY 1100 9 8 14 1)
+				(DoAudio audPLAY 1100 9 8 14 1) ; "It looks like something is supposed to fit in there."
 			)
 			(2
 				(gGame handsOn:)

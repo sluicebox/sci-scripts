@@ -305,7 +305,7 @@
 			(4 ; Do
 				(if (IsFlag 49)
 					(gGame handsOff:)
-					(= global148 450)
+					(= gShuttleRoomNum 450)
 					(self setScript: sExitToShuttle)
 				else
 					(super doVerb: theVerb &rest)

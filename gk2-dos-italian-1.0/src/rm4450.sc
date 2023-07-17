@@ -90,7 +90,7 @@
 
 	(method (BAD_SELECTOR)
 		(= BAD_SELECTOR gPrevRoomNum)
-		(super BAD_SELECTOR: &rest)
+		(super sel_833: &rest)
 	)
 )
 
@@ -103,7 +103,7 @@
 
 	(method (BAD_SELECTOR)
 		(= BAD_SELECTOR gPrevRoomNum)
-		(super BAD_SELECTOR: &rest)
+		(super sel_833: &rest)
 	)
 )
 
@@ -117,7 +117,7 @@
 
 	(method (BAD_SELECTOR)
 		(= BAD_SELECTOR gPrevRoomNum)
-		(super BAD_SELECTOR: &rest)
+		(super sel_833: &rest)
 	)
 
 	(method (BAD_SELECTOR)
@@ -140,7 +140,7 @@
 
 	(method (BAD_SELECTOR)
 		(= BAD_SELECTOR gPrevRoomNum)
-		(super BAD_SELECTOR: &rest)
+		(super sel_833: &rest)
 	)
 )
 
@@ -154,7 +154,7 @@
 
 	(method (BAD_SELECTOR)
 		(= BAD_SELECTOR gPrevRoomNum)
-		(super BAD_SELECTOR: &rest)
+		(super sel_833: &rest)
 	)
 
 	(method (BAD_SELECTOR)

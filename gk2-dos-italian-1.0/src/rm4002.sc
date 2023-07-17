@@ -41,7 +41,7 @@
 			(Lock 140 402 1) ; WAVE
 			(gGk2Music setLoop: -1 number: 402 play:)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 80 8 333 179 init:)
+		(gEgo sel_737: setScaler: Scaler 80 8 333 179 init:)
 		(super init: &rest)
 		(switch gChapter
 			(1

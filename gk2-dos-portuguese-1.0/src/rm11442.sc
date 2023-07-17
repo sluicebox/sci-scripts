@@ -30,7 +30,7 @@
 			posn: 319 275
 			heading: 135
 			setScaler: Scaler 71 59 326 278
-			BAD_SELECTOR:
+			sel_737:
 			init:
 		)
 		(super init: &rest)

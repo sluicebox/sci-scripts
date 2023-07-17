@@ -293,7 +293,7 @@
 		(switch (= state newState)
 			(0
 				(client hide:)
-				(= ticks (proc0_8 100 400))
+				(= ticks (RandomNumber 100 400))
 			)
 			(1
 				(if (== (client loop:) 0)
@@ -320,7 +320,7 @@
 		(switch (= state newState)
 			(0
 				(client hide:)
-				(= ticks (proc0_8 100 400))
+				(= ticks (RandomNumber 100 400))
 			)
 			(1
 				(switch (client loop:)
@@ -361,7 +361,7 @@
 		(switch (= state newState)
 			(0
 				(client hide:)
-				(= ticks (proc0_8 150 300))
+				(= ticks (RandomNumber 150 300))
 			)
 			(1
 				(client show: cycleSpeed: (- local0 2) setCycle: End self)

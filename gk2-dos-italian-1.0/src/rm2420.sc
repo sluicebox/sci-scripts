@@ -38,11 +38,11 @@
 			(klingmann init: setScript: sKlingmannFidget)
 		)
 		(tMissingWolves1
-			BAD_SELECTOR: stHowLong stResponsible stWhyHumans stHowChoose
-			BAD_SELECTOR: 1
+			sel_835: stHowLong stResponsible stWhyHumans stHowChoose
+			sel_832: 1
 		)
 		(tMissingWolves2
-			BAD_SELECTOR: stHowLong stResponsible stWhyHumans stHowChoose
+			sel_835: stHowLong stResponsible stWhyHumans stHowChoose
 		)
 		(super
 			init:

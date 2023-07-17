@@ -361,13 +361,13 @@
 			(4
 				(switch gSilvDollars
 					(0
-						(Say Doorman_Sel_Portero 700 5 108 139 self) ; "Yeah, that's what Mr. Lowe says, too."
+						(Say Doorman 700 5 108 139 self) ; "Yeah, that's what Mr. Lowe says, too."
 					)
 					(1
-						(Say Doorman_Sel_Portero 700 6 108 139 self) ; "Right."
+						(Say Doorman 700 6 108 139 self) ; "Right."
 					)
 					(else
-						(Say Doorman_Sel_Portero 700 7 108 139 self) ; "WOW! Come back again, Sir, and soon!"
+						(Say Doorman 700 7 108 139 self) ; "WOW! Come back again, Sir, and soon!"
 					)
 				)
 				(gEgo put: 17 0) ; Silver_Dollar
@@ -583,13 +583,13 @@
 				(self doVerb: 5)
 			)
 			(5 ; Talk
-				(Say Doorman_Sel_Portero 700 16 108 139 self) ; "May I summon a limousine for you, Sir?"
+				(Say Doorman 700 16 108 139 self) ; "May I summon a limousine for you, Sir?"
 			)
 			(10 ; Zipper
-				(Say Doorman_Sel_Portero 700 17 108) ; "Well, you're a little ugly, but I suppose.... Oh, okay. I get off at midnight!"
+				(Say Doorman 700 17 108) ; "Well, you're a little ugly, but I suppose.... Oh, okay. I get off at midnight!"
 			)
 			(4 ; Inventory
-				(Say Doorman_Sel_Portero 700 18 108) ; "Thanks for the offer, but we employees of Tramp's NEVER accept gratuities!"
+				(Say Doorman 700 18 108) ; "Thanks for the offer, but we employees of Tramp's NEVER accept gratuities!"
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)
@@ -614,7 +614,7 @@
 			(HandsOff)
 			(Say gEgo 700 20) ; "Yes, please... but could you make it back in?"
 			(Points 2 132)
-			(Say Doorman_Sel_Portero 700 21 108) ; "No problem," says Brewster. "Just watch this!"
+			(Say Doorman 700 21 108) ; "No problem," says Brewster. "Just watch this!"
 			(gCurRoom setScript: sLimo)
 		else
 			(Say gEgo 700 22) ; "No, thank you. But I may well come back this way later."
@@ -1383,9 +1383,8 @@
 	)
 )
 
-(instance Doorman_Sel_Portero of Talker
+(instance Doorman of Talker
 	(properties
-		name {Doorman}
 		nsTop 15
 		nsLeft 50
 		view 1703

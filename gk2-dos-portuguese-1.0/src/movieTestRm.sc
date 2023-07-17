@@ -33,7 +33,7 @@
 	(method (init)
 		(= local8 (IsFlag 34))
 		(gGame handsOff:)
-		(gTopMessage BAD_SELECTOR: {Movie Player})
+		(gTopMessage sel_749: {Movie Player})
 		(= local2 (Str newWith: 10 {}))
 		(super init: &rest)
 		(gGame handsOn: 1)
@@ -46,7 +46,7 @@
 		else
 			(ClearFlag 34)
 		)
-		(gTopMessage BAD_SELECTOR: 0)
+		(gTopMessage sel_749: 0)
 		(super dispose:)
 	)
 

@@ -32,7 +32,7 @@
 			(gEgo
 				posn: 185 296
 				heading: 135
-				BAD_SELECTOR:
+				sel_737:
 				init:
 				setScaler: Scaler 90 73 349 303
 			)
@@ -40,7 +40,7 @@
 			(gEgo
 				posn: 240 365
 				heading: 325
-				BAD_SELECTOR:
+				sel_737:
 				init:
 				setScaler: Scaler 90 73 349 303
 			)
@@ -73,7 +73,7 @@
 				(PlayScene 777 self)
 			)
 			(4
-				(gEgo BAD_SELECTOR: 225)
+				(gEgo sel_737: 225)
 				(= seconds 2)
 			)
 			(5

@@ -43,7 +43,7 @@
 				(= ticks 30)
 			)
 			(3
-				(Say You_GDu 380 1 108 139 self) ; "You were right, Inspector Desmond. But for a while there, I was really stumped!"
+				(Say You 380 1 108 139 self) ; "You were right, Inspector Desmond. But for a while there, I was really stumped!"
 			)
 			(4
 				(= ticks 30)
@@ -63,16 +63,16 @@
 			(9
 				(cond
 					((IsFlag 118)
-						(Say You_GDu 380 4 108 139 self) ; "It was easy. I got past that guard in the Shill Building Lobby just by showing him the DataMan\05 into which I had inserted Reverse Biaz's cartridge."
+						(Say You 380 4 108 139 self) ; "It was easy. I got past that guard in the Shill Building Lobby just by showing him the DataMan\05 into which I had inserted Reverse Biaz's cartridge."
 					)
 					((IsFlag 119)
-						(Say You_GDu 380 5 108 139 self) ; "It was easy. I got past that guard in the Shill Building Lobby just by showing him Reverse Biaz's fax."
+						(Say You 380 5 108 139 self) ; "It was easy. I got past that guard in the Shill Building Lobby just by showing him Reverse Biaz's fax."
 					)
 					((IsFlag 48)
-						(Say You_GDu 380 6 108 139 self) ; "It was easy. I got past that guard in the Shill Building Lobby just by finding Reverse Biaz's office in the building directory."
+						(Say You 380 6 108 139 self) ; "It was easy. I got past that guard in the Shill Building Lobby just by finding Reverse Biaz's office in the building directory."
 					)
 					(else
-						(Say You_GDu 380 7 108 139 self) ; "I had real trouble there, Inspector. I never could figure out any way to get past that guard in the Shill Building Lobby."
+						(Say You 380 7 108 139 self) ; "I had real trouble there, Inspector. I never could figure out any way to get past that guard in the Shill Building Lobby."
 					)
 				)
 			)
@@ -92,10 +92,10 @@
 			)
 			(13
 				(if (gEgo has: 5) ; Michelle_Milken_s_Resume
-					(Say You_GDu 380 10 108 139 self) ; "While upstairs in des Rever's outer office, I found a gold record which I think might contain some valuable evidence. Here, take it!"
+					(Say You 380 10 108 139 self) ; "While upstairs in des Rever's outer office, I found a gold record which I think might contain some valuable evidence. Here, take it!"
 					(gEgo put: 5) ; Michelle_Milken_s_Resume
 				else
-					(Say You_GDu 380 11 108 139 self) ; "I couldn't find anything interesting in des Rever's outer office."
+					(Say You 380 11 108 139 self) ; "I couldn't find anything interesting in des Rever's outer office."
 				)
 			)
 			(14
@@ -103,14 +103,14 @@
 			)
 			(15
 				(if (IsFlag 122)
-					(Say You_GDu 380 12 108 139 self) ; "I discovered the gold record could actually be played on a stereo system there. It sounded fine."
+					(Say You 380 12 108 139 self) ; "I discovered the gold record could actually be played on a stereo system there. It sounded fine."
 				else
 					(= cycles 2)
 				)
 			)
 			(16
 				(if (IsFlag 123)
-					(Say You_GDu 380 13 108 139 self) ; "But when I played the gold record in reverse at 33-1/3, I heard a strange message. It should be proof positive of the vicious things they've been doing!"
+					(Say You 380 13 108 139 self) ; "But when I played the gold record in reverse at 33-1/3, I heard a strange message. It should be proof positive of the vicious things they've been doing!"
 				else
 					(= cycles 2)
 				)
@@ -123,9 +123,9 @@
 			)
 			(19
 				(if (IsFlag 126)
-					(Say You_GDu 380 15 108 139 self) ; "Actually, the studio session went pretty well, Boss. After a couple of tries, I started really cookin'!"
+					(Say You 380 15 108 139 self) ; "Actually, the studio session went pretty well, Boss. After a couple of tries, I started really cookin'!"
 				else
-					(Say You_GDu 380 16 108 139 self) ; "I'm sorry, but I just couldn't, Inspector."
+					(Say You 380 16 108 139 self) ; "I'm sorry, but I just couldn't, Inspector."
 				)
 			)
 			(20
@@ -134,15 +134,15 @@
 			(21
 				(cond
 					((IsFlag 127)
-						(Say You_GDu 380 17 108 139 self) ; "You'll love this, Boss! I just used an old technique with which I'm quite familiar! I grabbed some champagne from my limo and got Reverse drunk! So drunk, in fact, he gave me this cassette tape to impress me."
+						(Say You 380 17 108 139 self) ; "You'll love this, Boss! I just used an old technique with which I'm quite familiar! I grabbed some champagne from my limo and got Reverse drunk! So drunk, in fact, he gave me this cassette tape to impress me."
 						(gEgo put: 6) ; Hard_Disk_Cafe_Napkin
 					)
 					((IsFlag 128)
-						(Say You_GDu 380 18 108 139 self) ; "Gosh, Boss. I just used an old technique with which I'm quite familiar! Here's the tape I, uh, `talked' him out of!"
+						(Say You 380 18 108 139 self) ; "Gosh, Boss. I just used an old technique with which I'm quite familiar! Here's the tape I, uh, `talked' him out of!"
 						(gEgo put: 6) ; Hard_Disk_Cafe_Napkin
 					)
 					((IsFlag 129)
-						(Say You_GDu 380 19 108 139 self) ; "Here's the tape I, uh, `talked' him out of!"
+						(Say You 380 19 108 139 self) ; "Here's the tape I, uh, `talked' him out of!"
 						(gEgo put: 6) ; Hard_Disk_Cafe_Napkin
 					)
 					(else
@@ -165,9 +165,9 @@
 			)
 			(26
 				(if (IsFlag 150)
-					(Say You_GDu 380 23 108 139 self) ; "Well, I sneaked into John Krapper's office just as the receptionist came back from her break."
+					(Say You 380 23 108 139 self) ; "Well, I sneaked into John Krapper's office just as the receptionist came back from her break."
 				else
-					(Say You_GDu 380 24 108 139 self) ; "Sorry, Boss, but I couldn't even get past the K-RAP lobby! They really had tight security!"
+					(Say You 380 24 108 139 self) ; "Sorry, Boss, but I couldn't even get past the K-RAP lobby! They really had tight security!"
 				)
 			)
 			(27
@@ -185,10 +185,10 @@
 				(= ticks 60)
 			)
 			(30
-				(Say You_GDu 380 27 108 139 self) ; "I searched John Krapper's desk and discovered a folder filled with what looked like incriminating evidence to me!"
+				(Say You 380 27 108 139 self) ; "I searched John Krapper's desk and discovered a folder filled with what looked like incriminating evidence to me!"
 			)
 			(31
-				(Say You_GDu 380 28 108 139 self) ; "I assumed he'd miss the folder if I stole it, so I used his photocopier to make copies of it. Here they are!"
+				(Say You 380 28 108 139 self) ; "I assumed he'd miss the folder if I stole it, so I used his photocopier to make copies of it. Here they are!"
 				(gEgo put: 11) ; DayTrotter
 			)
 			(32
@@ -198,10 +198,10 @@
 				(= ticks 60)
 			)
 			(34
-				(Say You_GDu 380 30 108 139 self) ; "And, besides that, I overheard what `2 Live 2 Screw' thought were private conversations. They didn't realize they were meeting in a room with an open microphone!"
+				(Say You 380 30 108 139 self) ; "And, besides that, I overheard what `2 Live 2 Screw' thought were private conversations. They didn't realize they were meeting in a room with an open microphone!"
 			)
 			(35
-				(Say You_GDu 380 31 108 139 self) ; "Although I nearly got trapped by P. C. Hammer, I recorded `2 Live 2 Screw' on a reel-to-reel tape."
+				(Say You 380 31 108 139 self) ; "Although I nearly got trapped by P. C. Hammer, I recorded `2 Live 2 Screw' on a reel-to-reel tape."
 			)
 			(36
 				(if (IsFlag 156)
@@ -213,7 +213,7 @@
 			)
 			(37
 				(if (not (IsFlag 156))
-					(Say You_GDu 380 34 108 139 self) ; "Uh, well, Inspector, I must confess: I left it on the tape recorder in the K-RAP control room. I'm sorry."
+					(Say You 380 34 108 139 self) ; "Uh, well, Inspector, I must confess: I left it on the tape recorder in the K-RAP control room. I'm sorry."
 				else
 					(= cycles 2)
 				)
@@ -259,7 +259,7 @@
 				(gEgo get: 13) ; Credit_Cards
 			)
 			(45
-				(Say You_GDu 380 41 108 139 self) ; "Oh, great! I'll wear it to my next heavy metal gig."
+				(Say You 380 41 108 139 self) ; "Oh, great! I'll wear it to my next heavy metal gig."
 			)
 			(46
 				(Say Desmond 380 42 108 139 self) ; "He laughs, "And that may be sooner than you think, Patti!""
@@ -294,9 +294,8 @@
 	)
 )
 
-(instance You_GDu of Talker
+(instance You of Talker
 	(properties
-		name {You}
 		x 110
 		y 180
 		nsTop 76

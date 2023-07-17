@@ -44,7 +44,7 @@
 		else
 			(gEgo posn: 450 313 setScaler: Scaler 100 81 342 292)
 		)
-		(gEgo heading: 225 BAD_SELECTOR: init:)
+		(gEgo heading: 225 sel_737: init:)
 		(super init: &rest)
 		(if (not (IsFlag 714))
 			(SetFlag 708)

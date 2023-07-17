@@ -50,7 +50,7 @@
 	)
 
 	(method (dispose)
-		(if (gCurRoom BAD_SELECTOR:)
+		(if (gCurRoom sel_845:)
 			(PlayScene 291 0 -1)
 		)
 		(super dispose: &rest)

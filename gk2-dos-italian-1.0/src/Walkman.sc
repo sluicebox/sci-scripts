@@ -31,7 +31,7 @@
 
 (procedure (localproc_0 param1 param2)
 	(if (> (local5 size:) param1)
-		(return (== ((local5 at: param1) BAD_SELECTOR:) param2))
+		(return (== ((local5 at: param1) sel_779:) param2))
 	)
 	(return 0)
 )
@@ -77,7 +77,7 @@
 			(++ BAD_SELECTOR)
 			(if (> (temp0 nsRight:) 570)
 				(if (!= BAD_SELECTOR 380)
-					(self BAD_SELECTOR:)
+					(self sel_778:)
 					(return)
 				else
 					(= BAD_SELECTOR 60)
@@ -89,7 +89,7 @@
 			)
 			(if
 				(and
-					(== (temp0 BAD_SELECTOR:) (- BAD_SELECTOR 1))
+					(== (temp0 sel_779:) (- BAD_SELECTOR 1))
 					(or
 						(== local18 (- BAD_SELECTOR 2))
 						(< (- BAD_SELECTOR 2) 0)
@@ -706,7 +706,7 @@
 		)
 		(= picture 13089)
 		(plane drawPic: picture)
-		(self BAD_SELECTOR: (= local11 0))
+		(self sel_776: (= local11 0))
 	)
 
 	(method (BAD_SELECTOR param1 &tmp temp0 temp1 temp2 temp3 temp4 temp5)
@@ -761,9 +761,9 @@
 		(= x (- 0 ((gCurRoom plane:) left:)))
 		(= y (- 0 ((gCurRoom plane:) top:)))
 		(super init: &rest)
-		(if (gUser BAD_SELECTOR:)
-			(= BAD_SELECTOR ((gUser BAD_SELECTOR:) BAD_SELECTOR:))
-			((gUser BAD_SELECTOR:) BAD_SELECTOR: (Set new:))
+		(if (gUser sel_715:)
+			(= BAD_SELECTOR ((gUser sel_715:) sel_718:))
+			((gUser sel_715:) sel_718: (Set new:))
 		)
 		(if (not gPanels)
 			(= gPanels (List new:))
@@ -771,7 +771,7 @@
 		(Load rsVIEW 13088 13087 9940)
 		(Load rsPIC 13088 13087)
 		(gPanels addToFront: self)
-		(self BAD_SELECTOR:)
+		(self sel_770:)
 	)
 
 	(method (BAD_SELECTOR &tmp temp0 temp1 temp2)
@@ -1065,13 +1065,13 @@
 				(= temp2 (BAD_SELECTOR at: temp0))
 				(for ((= temp1 0)) (< temp1 (temp2 size:)) ((++ temp1))
 					(if (temp2 at: temp1)
-						(self BAD_SELECTOR: temp0)
+						(self sel_774: temp0)
 						(break)
 					)
 				)
 			)
 			(for ((= temp0 (local3 size:))) (< temp0 12) ((++ temp0))
-				(self BAD_SELECTOR: -1)
+				(self sel_774: -1)
 			)
 			(loadA init:)
 			(playTape init:)
@@ -1096,8 +1096,8 @@
 	(method (handleEvent event)
 		(event localize: plane)
 		(if (not (event type:))
-			(if (gUser BAD_SELECTOR:)
-				((gUser BAD_SELECTOR:) handleEvent: event)
+			(if (gUser sel_715:)
+				((gUser sel_715:) handleEvent: event)
 			)
 			(if (and (== picture 13089) local6)
 				(local6 handleEvent: event)
@@ -1152,7 +1152,7 @@
 		(= temp2 (temp1 size:))
 		(for ((= temp0 0)) (< temp0 temp2) ((++ temp0))
 			(if (temp1 at: temp0)
-				(self BAD_SELECTOR: param1 temp0)
+				(self sel_773: param1 temp0)
 			)
 		)
 	)
@@ -1162,7 +1162,7 @@
 			(= BAD_SELECTOR 1)
 			(= BAD_SELECTOR 0)
 		else
-			(self BAD_SELECTOR: BAD_SELECTOR)
+			(self sel_771: BAD_SELECTOR)
 		)
 	)
 
@@ -1178,8 +1178,8 @@
 	(method (dispose &tmp temp0)
 		(messageSound stop:)
 		(if BAD_SELECTOR
-			(((gUser BAD_SELECTOR:) BAD_SELECTOR:) release: dispose:)
-			((gUser BAD_SELECTOR:) BAD_SELECTOR: BAD_SELECTOR)
+			(((gUser sel_715:) sel_718:) release: dispose:)
+			((gUser sel_715:) sel_718: BAD_SELECTOR)
 			(= BAD_SELECTOR 0)
 		)
 		(if BAD_SELECTOR
@@ -1255,18 +1255,18 @@
 
 	(method (new param1 param2 param3 param4 &tmp temp0 temp1)
 		(= temp0 (super new:))
-		(if (>= param2 (((Walkman BAD_SELECTOR:) at: param1) size:))
+		(if (>= param2 (((Walkman sel_757:) at: param1) size:))
 			(= temp1 -1)
 		else
-			(= temp1 (((Walkman BAD_SELECTOR:) at: param1) at: param2))
+			(= temp1 (((Walkman sel_757:) at: param1) at: param2))
 		)
 		(temp0
 			view: 13087
 			loop: param1
 			cel: (+ param2 1)
-			BAD_SELECTOR: param1
-			BAD_SELECTOR: param2
-			BAD_SELECTOR: temp1
+			sel_780: param1
+			sel_781: param2
+			sel_782: temp1
 			x: param3
 			y: param4
 			init: local4
@@ -1285,7 +1285,7 @@
 	)
 
 	(method (doVerb)
-		(Walkman BAD_SELECTOR: BAD_SELECTOR BAD_SELECTOR)
+		(Walkman sel_772: BAD_SELECTOR BAD_SELECTOR)
 	)
 
 	(method (dispose)
@@ -1331,7 +1331,7 @@
 				view: 13086
 				loop: 3
 				cel: 0
-				BAD_SELECTOR: param1
+				sel_783: param1
 				x: param2
 				y: param3
 				init: local3
@@ -1340,7 +1340,7 @@
 			(temp0
 				view: 13086
 				cel: param1
-				BAD_SELECTOR: param1
+				sel_783: param1
 				x: param2
 				y: param3
 				init: local3
@@ -1397,7 +1397,7 @@
 	)
 
 	(method (doVerb)
-		(Walkman BAD_SELECTOR: (& loop $fffe) cel BAD_SELECTOR)
+		(Walkman sel_777: (& loop $fffe) cel BAD_SELECTOR)
 	)
 
 	(method (new param1 param2 param3 param4 param5 &tmp temp0)
@@ -1406,7 +1406,7 @@
 			view: 13088
 			loop: param3
 			cel: param4
-			BAD_SELECTOR: param5
+			sel_779: param5
 			x: param1
 			y: param2
 			init: local6
@@ -1430,7 +1430,7 @@
 			view: 13088
 			loop: param3
 			cel: param4
-			BAD_SELECTOR: param5
+			sel_779: param5
 			x: param1
 			y: param2
 			init: local5
@@ -1466,7 +1466,7 @@
 			(= local1 0)
 		)
 		(if local0
-			(Walkman BAD_SELECTOR:)
+			(Walkman sel_770:)
 		)
 	)
 
@@ -1475,7 +1475,7 @@
 			((== (local5 size:) local2)
 				(= local0 1)
 				(for ((= temp0 0)) (< temp0 local2) ((++ temp0))
-					(if (!= temp0 ((local5 at: temp0) BAD_SELECTOR:))
+					(if (!= temp0 ((local5 at: temp0) sel_779:))
 						(= local0 0)
 					)
 				)
@@ -1514,7 +1514,7 @@
 
 	(method (doVerb)
 		(hintButton dispose:)
-		(Walkman BAD_SELECTOR:)
+		(Walkman sel_770:)
 	)
 )
 
@@ -1528,7 +1528,7 @@
 	)
 
 	(method (doVerb)
-		(Walkman BAD_SELECTOR:)
+		(Walkman sel_778:)
 	)
 )
 
@@ -1541,7 +1541,7 @@
 	)
 
 	(method (doVerb)
-		(Walkman BAD_SELECTOR: (- local11 1))
+		(Walkman sel_776: (- local11 1))
 	)
 )
 
@@ -1555,7 +1555,7 @@
 	)
 
 	(method (doVerb)
-		(Walkman BAD_SELECTOR: (+ local11 1))
+		(Walkman sel_776: (+ local11 1))
 	)
 )
 
@@ -1579,12 +1579,12 @@
 	(method (doVerb)
 		(cond
 			(local8
-				(if (>= (local8 BAD_SELECTOR:) 0)
+				(if (>= (local8 sel_783:) 0)
 					(tapeHilite dispose:)
 					(local8 loop: 1)
 					(UpdateScreenItem local8)
 					(if local9
-						(local9 loop: 0 cel: (local9 BAD_SELECTOR:))
+						(local9 loop: 0 cel: (local9 sel_783:))
 						(UpdateScreenItem local9)
 					)
 					(= local9 local8)
@@ -1623,7 +1623,7 @@
 
 	(method (doVerb)
 		(if local9
-			(Walkman BAD_SELECTOR: (local9 BAD_SELECTOR:))
+			(Walkman sel_771: (local9 sel_783:))
 		else
 			(gMessager say: 0 0 4 0 0 91) ; "(TAPE RECORDER CONT'D)I have to load a tape first."
 		)
@@ -1654,7 +1654,7 @@
 				(gMessager say: 0 0 5 0 0 91) ; "(TAPE RECORDER CONT'D)There's already a blank tape in deck B."
 			)
 			(local8
-				(if (>= (local8 BAD_SELECTOR:) 0)
+				(if (>= (local8 sel_783:) 0)
 					(gMessager say: 0 0 6 0 0 91) ; "(TAPE RECORDER CONT'D)I don't want to overwrite what's on that tape."
 				else
 					(tapeHilite dispose:)
@@ -1694,7 +1694,7 @@
 	(method (doVerb)
 		(if local9
 			(if local10
-				(if (== (local9 BAD_SELECTOR:) 2)
+				(if (== (local9 sel_783:) 2)
 					(cond
 						((IsFlag 864)
 							(gMessager say: 0 0 7 0 0 91) ; "(TAPE RECORDER CONT'D)I've done enough splicin' off Klingmann's tape."
@@ -1734,7 +1734,7 @@
 								)
 								(gMessager say: 0 0 32 0 0 91) ; "(TAPE RECORDER, TRY TO DO SPLICE ANYWHERE BUT FARM)Not a bad idea, but I should go somewhere more private first."
 							else
-								(Walkman BAD_SELECTOR:)
+								(Walkman sel_775:)
 							)
 						)
 						(else
@@ -1794,7 +1794,7 @@
 	)
 
 	(method (doVerb)
-		(Walkman BAD_SELECTOR:)
+		(Walkman sel_770:)
 	)
 )
 

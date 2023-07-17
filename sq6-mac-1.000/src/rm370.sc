@@ -157,7 +157,7 @@
 				(dorff init:)
 			)
 			((== gPrevRoomNum 460)
-				(if (or (== global119 370) (== global119 0))
+				(if (or (== gComPostNextRoomNum 370) (== gComPostNextRoomNum 0))
 					(gEgo normalize: 0 posn: 296 131 cycleSpeed: 7 init:)
 					(gGame handsOn:)
 				else
@@ -749,7 +749,7 @@
 			(0
 				(dorff view: 375 setLoop: 2 setCel: 100)
 				(= local5 0)
-				(= local7 (proc0_8 1 5))
+				(= local7 (RandomNumber 1 5))
 				(gMessager say: 20 0 3 local7 self)
 			)
 			(1
@@ -999,7 +999,7 @@
 			)
 			(3
 				(cond
-					((== (= local12 (proc0_8 1 3)) 1)
+					((== (= local12 (RandomNumber 1 3)) 1)
 						(gGSound2 number: 354)
 					)
 					((== local12 2)
@@ -1014,7 +1014,7 @@
 			)
 			(4
 				(cond
-					((== (= local12 (proc0_8 1 3)) 1)
+					((== (= local12 (RandomNumber 1 3)) 1)
 						(gGSound2 number: 354)
 					)
 					((== local12 2)
@@ -1099,7 +1099,7 @@
 			)
 			(3
 				(cond
-					((== (= local12 (proc0_8 1 3)) 1)
+					((== (= local12 (RandomNumber 1 3)) 1)
 						(gGSound2 number: 354)
 					)
 					((== local12 2)
@@ -1114,7 +1114,7 @@
 			)
 			(4
 				(cond
-					((== (= local12 (proc0_8 1 3)) 1)
+					((== (= local12 (RandomNumber 1 3)) 1)
 						(gGSound2 number: 354)
 					)
 					((== local12 2)
@@ -1313,7 +1313,7 @@
 			)
 			(14
 				(gGSound1 number: 990 setLoop: -1 play:)
-				(proc666_0 12 self)
+				(EgoDead 12 self) ; "Being a good samaritan is one thing, but you should've been just a little skeptical about that move."
 			)
 			(15
 				(gGSound1 number: 370 setLoop: -1 play:)
@@ -1383,7 +1383,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= seconds (proc0_8 10 25))
+				(= seconds (RandomNumber 10 25))
 			)
 			(1
 				(if local13
@@ -1393,7 +1393,7 @@
 				)
 			)
 			(2
-				(switch (proc0_8 1 3)
+				(switch (RandomNumber 1 3)
 					(1
 						(gGSound2 setLoop: 0 number: 374 play:)
 						(leftToilet setCycle: End self)
@@ -1551,7 +1551,7 @@
 				)
 			)
 			(3
-				(gCurRoom newRoom: global119)
+				(gCurRoom newRoom: gComPostNextRoomNum)
 				(self dispose:)
 			)
 		)
@@ -2977,27 +2977,9 @@
 	(properties)
 
 	(method (init)
-		(self type: 3)
+		(self type: PContainedAccess)
 		(super
-			init:
-				186
-				95
-				147
-				95
-				154
-				97
-				154
-				100
-				146
-				102
-				143
-				103
-				130
-				104
-				133
-				104
-				215
-				104
+			init: 186 95 147 95 154 97 154 100 146 102 143 103 130 104 133 104 215 104
 		)
 	)
 )
@@ -3006,7 +2988,7 @@
 	(properties)
 
 	(method (init)
-		(self type: 3)
+		(self type: PContainedAccess)
 		(super init: 18 112 11 136 319 136 263 112)
 	)
 )
@@ -3015,7 +2997,7 @@
 	(properties)
 
 	(method (init)
-		(self type: 2)
+		(self type: PBarredAccess)
 		(super init: 218 116 260 116 276 119 235 119)
 	)
 )
@@ -3036,39 +3018,9 @@
 	(properties)
 
 	(method (init)
-		(self type: 3)
+		(self type: PContainedAccess)
 		(super
-			init:
-				147
-				95
-				153
-				97
-				153
-				100
-				145
-				102
-				130
-				104
-				133
-				105
-				145
-				105
-				147
-				112
-				15
-				112
-				7
-				137
-				318
-				137
-				318
-				130
-				264
-				112
-				235
-				112
-				190
-				95
+			init: 147 95 153 97 153 100 145 102 130 104 133 105 145 105 147 112 15 112 7 137 318 137 318 130 264 112 235 112 190 95
 		)
 	)
 )
@@ -3077,7 +3029,7 @@
 	(properties)
 
 	(method (init)
-		(self type: 2)
+		(self type: PBarredAccess)
 		(super init: 218 115 260 115 278 119 235 119)
 	)
 )

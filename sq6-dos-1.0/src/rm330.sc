@@ -51,7 +51,7 @@
 			(if (not (IsFlag 26))
 				(= local11 300)
 			else
-				(switch (proc0_8 0 2)
+				(switch (RandomNumber 0 2)
 					(0
 						(= local11 300)
 					)
@@ -144,7 +144,7 @@
 			(window2 show:)
 		)
 		(Load 140 337) ; WAVE
-		(if (and (== 3 (proc0_8 1 4)) (not (gEgo has: 61))) ; Full_Tray
+		(if (and (== 3 (RandomNumber 1 4)) (not (gEgo has: 61))) ; Full_Tray
 			(Load 140 336) ; WAVE
 			(alleyThing init:)
 		)
@@ -392,7 +392,7 @@
 				)
 			)
 			(5
-				(proc0_4 gEgo bouncer self)
+				(Face gEgo bouncer self)
 			)
 			(6
 				(bouncer show: setCycle: End self)
@@ -434,7 +434,7 @@
 				)
 			)
 			(13
-				(proc0_4 gEgo bouncer self)
+				(Face gEgo bouncer self)
 			)
 			(14
 				(gMessager say: 18 2 4 0 self) ; "I told you the situation here, so beat it!"
@@ -462,7 +462,7 @@
 		(switch (= state newState)
 			(0
 				(client setSpeed: 5)
-				(= seconds (proc0_8 1 2))
+				(= seconds (RandomNumber 1 2))
 			)
 			(1
 				(client setCycle: Walk)
@@ -511,7 +511,7 @@
 				(gGSound2 setLoop: 0 number: 336 play:)
 				(client cycleSpeed: 4)
 				(client setLoop: 4)
-				(client setCycle: ROsc (proc0_8 20 30) 0 1 self)
+				(client setCycle: ROsc (RandomNumber 20 30) 0 1 self)
 			)
 			(2
 				(client setLoop: 3)
@@ -543,12 +543,12 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= ticks (proc0_8 20 50))
+				(= ticks (RandomNumber 20 50))
 			)
 			(1
 				(client cycleSpeed: 12)
 				(client setLoop: 0)
-				(client setCycle: ROsc 1 (proc0_8 0 2) (proc0_8 3 5) self)
+				(client setCycle: ROsc 1 (RandomNumber 0 2) (RandomNumber 3 5) self)
 			)
 			(2
 				(client setCycle: Beg self)
@@ -563,7 +563,7 @@
 			(4
 				(client setLoop: 3)
 				(client setCycle: Fwd)
-				(= ticks (proc0_8 60 100))
+				(= ticks (RandomNumber 60 100))
 			)
 			(5
 				(if (and (< 170 (gEgo x:) 240) (< (gEgo y:) 110))
@@ -626,7 +626,7 @@
 				(if (and (< (gEgo x:) 170) (< 40 (Random 1 100)))
 					(gGSound2 loop: 0 number: 333 play:)
 					(client
-						cycleSpeed: (proc0_8 4 6)
+						cycleSpeed: (RandomNumber 4 6)
 						show:
 						setCel: 0
 						setCycle: End self
@@ -1523,7 +1523,7 @@
 	(properties)
 
 	(method (init)
-		(self type: 2)
+		(self type: PBarredAccess)
 		(super init: 96 125 80 119 105 110 120 118)
 	)
 )

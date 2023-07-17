@@ -38,7 +38,7 @@
 				(gSoundManager play: 0 600 601)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 63 28 321 241 init:)
+		(gEgo sel_737: setScaler: Scaler 63 28 321 241 init:)
 		(super init: &rest)
 		(fOrangeMud init:)
 		(gGame handsOn:)

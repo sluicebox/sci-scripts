@@ -871,11 +871,11 @@
 				(prop1 hide:)
 				(prop2 hide:)
 				(prop3 hide:)
-				(proc0_7 1 1 self)
+				(Fade 1 1 self)
 			)
 			(78
 				(gCurRoom drawPic: -1 0)
-				(proc0_7 0 1 self)
+				(Fade 0 1 self)
 				(= local3 1)
 			)
 			(79

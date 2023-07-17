@@ -27,7 +27,7 @@
 				(gEgo posn: 423 329 heading: 135)
 			)
 		)
-		(gEgo BAD_SELECTOR: setScaler: Scaler 100 90 400 250 init:)
+		(gEgo sel_737: setScaler: Scaler 100 90 400 250 init:)
 		(fDoor init:)
 		(gGame handsOn: 0)
 	)

@@ -371,11 +371,11 @@
 			(PlayVMDFile 3250)
 		)
 		(326
-			(gSoundManager BAD_SELECTOR: 1)
+			(gSoundManager sel_702: 1)
 			(PlayVMDFile 3260)
 		)
 		(327
-			(gSoundManager BAD_SELECTOR: 1)
+			(gSoundManager sel_702: 1)
 			(PlayVMDFile 3270)
 			(gGame changeScore: 974)
 		)
@@ -383,7 +383,7 @@
 			(PlayVMDFile 3280)
 		)
 		(329
-			(gSoundManager BAD_SELECTOR: 1)
+			(gSoundManager sel_702: 1)
 			(PlayVMDFile 3290)
 			(gGame changeScore: 975)
 		)
@@ -564,7 +564,7 @@
 			(PlayVMDFile 4110)
 		)
 		(else
-			(gEgo BAD_SELECTOR:)
+			(gEgo sel_737:)
 			(PrintDebugSceneText param1 {Unimplemented scene or fidget in scenes3.sc})
 		)
 	)
