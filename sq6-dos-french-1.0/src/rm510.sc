@@ -41,7 +41,7 @@
 
 (procedure (localproc_0 param1 param2 param3 param4 param5 param6)
 	(Message msgGET 510 param1 param2 param3 param4 (local4 data:))
-	(Text 0 (local5 data:) (local4 data:) 460 88)
+	(Text 0 (local5 data:) (local4 data:) 460 88) ; TextSize
 	((= local3 (DText new:))
 		font: 460
 		text: (KString 8 (local4 data:)) ; StrDup

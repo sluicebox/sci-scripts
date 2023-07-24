@@ -270,7 +270,7 @@
 				(= gGameTime (+ gTickOffset (GetTime)))
 				(gSounds eachElementDo: #check)
 				(FrameOut)
-				(breakif (gTalkers allTrue: 437 2))
+				(breakif (gTalkers allTrue: #isModeless 2))
 				((User curEvent:) new:)
 			)
 			(event claimed: 1)

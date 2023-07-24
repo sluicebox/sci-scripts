@@ -63,7 +63,7 @@
 (procedure (localproc_1 param1 param2 param3)
 	(Message msgGET 260 param1 0 0 1 (local11 data:))
 	(= local10 (IntArray with: 0 0 0 0))
-	(Text 0 (local10 data:) (local11 data:) 265 170)
+	(Text 0 (local10 data:) (local11 data:) 265 170) ; TextSize
 	((= [local1 param2] (DText new:))
 		text: (KString 8 (local11 data:)) ; StrDup
 		fore: (if (== param2 local9) 255 else 0)
@@ -127,7 +127,7 @@
 		)
 	)
 	(Message msgGET 260 temp0 0 0 1 (local11 data:))
-	(Text 0 (local10 data:) (local11 data:) 265 114)
+	(Text 0 (local10 data:) (local11 data:) 265 114) ; TextSize
 	((= [local7 0] (DText new:))
 		text: (KString 8 (local11 data:)) ; StrDup
 		fore: 0
@@ -139,7 +139,7 @@
 		init:
 	)
 	(Message msgGET 260 temp0 0 0 2 (local11 data:))
-	(Text 0 (local10 data:) (local11 data:) 265 114)
+	(Text 0 (local10 data:) (local11 data:) 265 114) ; TextSize
 	((= [local7 1] (DText new:))
 		text: (KString 8 (local11 data:)) ; StrDup
 		fore: 0

@@ -77,7 +77,7 @@
 
 (procedure (localproc_1 param1 param2 param3)
 	(= local8 (IntArray with: 0 0 0 0))
-	(Text 0 (local8 data:) (param1 data:) 210 320)
+	(Text 0 (local8 data:) (param1 data:) 210 320) ; TextSize
 	(switch param3
 		(1
 			((= local5 (DText new:))

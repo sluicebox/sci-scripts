@@ -865,7 +865,7 @@
 			(and
 				global178
 				(== (global178 type:) 1)
-				(global414 allTrue: 663)
+				(global414 allTrue: #taken)
 				(not (global178 firstTrue: #script))
 			)
 			((ScriptID 402 5) cue:) ; playScript

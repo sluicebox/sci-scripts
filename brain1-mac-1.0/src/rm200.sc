@@ -571,7 +571,7 @@
 		(gKeyDownHandler addToFront: self)
 		(gDirectionHandler addToFront: self)
 		(if (not (HaveMouse))
-			(proc5_9 200 0)
+			(proc5_9 200 0) ; "You can move through the maze by using these keys: Up arrow - Move forward Down arrow - Move backwards Left arrow - Turn left Right arrow - Turn right Page up - Move up Page down - Move down Space bar - Toggle left display ? - See this message"
 		)
 		(gMouseDownHandler add: self)
 		(gCMusic number: 938 setLoop: 1 play:)
@@ -617,7 +617,7 @@
 						(changeButton doVerb: 3)
 					)
 					(KEY_QUESTION
-						(proc5_9 200 1)
+						(proc5_9 200 1) ; "You can move through the maze by using the keypad: 8 - Move forward 2 - Move backwards 4 - Turn left 6 - Turn right 9 - Move up 3 - Move down Space bar - Toggle left display ? - See this message"
 					)
 					(else
 						(super handleEvent: event &rest)
@@ -1017,11 +1017,11 @@
 					)
 					(self cel: 0)
 				else
-					(proc5_9 200 7)
+					(proc5_9 200 7) ; "The button doesn't seem to work."
 				)
 			)
 			((and (== theVerb 2) global114)
-				(proc5_9 200 8)
+				(proc5_9 200 8) ; "Out of Order."
 			)
 			(else
 				(super doVerb: theVerb &rest)

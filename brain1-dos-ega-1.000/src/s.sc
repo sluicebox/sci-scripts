@@ -259,7 +259,7 @@
 			)
 		)
 		(if (!= global171 4)
-			(proc5_9 425 2)
+			(proc5_9 425 2) ; "Find the stars on the sky dome which make up each of four constellations. Click on just those stars which form each constellation. If you think you have an incorrect star, click on it again to turn it off."
 			(currentCon init:)
 		)
 	)
@@ -558,7 +558,7 @@
 				(= local486 1)
 				(localproc_5)
 				(rewardSound number: 51 play:)
-				(proc5_9 425 0)
+				(proc5_9 425 0) ; "Out of this world! You have located all of the constellations in the star map!"
 				(gTheIconBar disable:)
 				(currentCon solvePuzzle: goAway:)
 				(eventFeature dispose:)
@@ -966,8 +966,8 @@
 	)
 
 	(method (showHelp)
-		(proc5_9 425 2)
-		(proc5_9 425 3)
+		(proc5_9 425 2) ; "Find the stars on the sky dome which make up each of four constellations. Click on just those stars which form each constellation. If you think you have an incorrect star, click on it again to turn it off."
+		(proc5_9 425 3) ; "If you get totally stuck, spend a hint coin to have the computer help you with the current constellation."
 	)
 
 	(method (animateOnce)
@@ -1147,7 +1147,7 @@
 			(1
 				(rewardSound number: [local482 local481] play:)
 				(++ local481)
-				(proc5_14 425 4 (register name:))
+				(proc5_14 425 4 (register name:)) ; "Congratulations! You have located %s."
 				(= cycles 1)
 			)
 			(2

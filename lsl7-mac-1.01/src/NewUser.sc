@@ -260,7 +260,11 @@
 	(method (handleEvent event &tmp temp0 temp1 temp2 temp3 temp4)
 		(= gMouseX (event x:))
 		(= gMouseY (event y:))
-		(if (and (not (gPrints isEmpty:)) (not (gPrints allTrue: 440 2)))
+		(if
+			(and
+				(not (gPrints isEmpty:))
+				(not (gPrints allTrue: #isModeless 2))
+			)
 			(gPrints eachElementDo: #doit firstTrue: #handleEvent event)
 			(return 1)
 		)

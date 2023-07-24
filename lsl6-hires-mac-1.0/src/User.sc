@@ -57,7 +57,7 @@
 				((ScriptID 88 0) doit:) ; PointGauge
 				(= temp5 1)
 				(FrameOut)
-				(breakif (gTalkers allTrue: 454 2))
+				(breakif (gTalkers allTrue: #isModeless 2))
 				(curEvent new:)
 			)
 		)
@@ -69,7 +69,7 @@
 				(= temp5 1)
 				((ScriptID 88 0) doit:) ; PointGauge
 				(FrameOut)
-				(breakif (gPrints allTrue: 454 2))
+				(breakif (gPrints allTrue: #isModeless 2))
 				(curEvent new:)
 			)
 		)

@@ -68,7 +68,7 @@
 (procedure (localproc_1 param1 &tmp temp0 temp1)
 	(Message msgGET 99 [param1 0] [param1 1] [param1 2] [param1 3] (local1 data:))
 	(= temp1 (IntArray with: 0 0 0 0))
-	(Text 0 (temp1 data:) (local1 data:) gUserFont 192)
+	(Text 0 (temp1 data:) (local1 data:) gUserFont 192) ; TextSize
 	((= local2 (DText new:))
 		mode: 1
 		font: gUserFont

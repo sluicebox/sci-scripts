@@ -44,7 +44,7 @@
 		(= textTop (= textLeft margin))
 		(if (== view -1)
 			(= r (IntArray with: 0 0 0 0))
-			(Text 0 (r data:) {M} font 0)
+			(Text 0 (r data:) {M} font 0) ; TextSize
 			(= w (* (+ (r at: 2) 1) width))
 			(= nsRight (+ nsLeft w (* margin 2)))
 			(= nsBottom (+ nsTop (r at: 3) (- (* margin 2) 1)))

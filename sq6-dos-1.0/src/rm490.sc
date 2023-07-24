@@ -96,7 +96,7 @@
 	)
 	(Message msgGET 490 param1 param2 param3 1 (local0 data:))
 	(= local1 (IntArray with: 0 0 0 0))
-	(Text 0 (local1 data:) (local0 data:) (if (== param4 1) 60 else 490) 82)
+	(Text 0 (local1 data:) (local0 data:) (if (== param4 1) 60 else 490) 82) ; TextSize
 	((= local2 (DText new:))
 		text: (KString 8 (local0 data:)) ; StrDup
 		fore: 117

@@ -960,7 +960,7 @@
 
 (instance Chair of Feature
 	(properties
-		description 10960
+		description {Chair}
 		onMeCheck 1024
 	)
 

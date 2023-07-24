@@ -975,7 +975,7 @@
 	)
 
 	(method (cue &tmp [temp0 25])
-		(if (not (global414 allTrue: 663))
+		(if (not (global414 allTrue: #taken))
 			(if (!= howManyHome 4)
 				(cond
 					((or local0 global413)

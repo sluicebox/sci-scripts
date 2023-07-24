@@ -731,7 +731,7 @@
 	(method (quitGame)
 		(super
 			quitGame:
-				(proc5_9
+				(proc5_9 ; "Dr. Brain says, "Your poor brain just can't take it any more? Well, that is simply no problem. Just come back to the castle when you are ready for more of my mind-bending puzzles.""
 					0
 					1
 					81
@@ -756,7 +756,7 @@
 		(if
 			(and
 				(u> (MemoryInfo 1) (+ 10 (MemoryInfo 0))) ; FreeHeap, LargestPtr
-				(proc5_9 0 2 81 {Who cares} 0 81 {Debug} 1)
+				(proc5_9 0 2 81 {Who cares} 0 81 {Debug} 1) ; "Memory fragmented."
 			)
 			(SetDebug)
 		)
@@ -960,7 +960,7 @@
 					(if (== global115 1) { } else {s })
 				)
 			else
-				(proc5_9 0 3)
+				(proc5_9 0 3) ; "You don't have any hint coins left."
 			)
 		else
 			(super doVerb: theVerb &rest)
@@ -1191,12 +1191,12 @@
 				(super doVerb: theVerb invItem &rest)
 			)
 			((IsFlag 51)
-				(proc5_9 0 4)
+				(proc5_9 0 4) ; "The decoder ring has no further effect on the clue sheet."
 			)
 			(else
 				(SetFlag 51)
 				(++ description)
-				(proc5_9 0 5)
+				(proc5_9 0 5) ; "Suddenly, the clue sheet begins to make sense (except for the part about the 'henway' -- what's a henway?)."
 				(self doVerb: 2)
 			)
 		)
@@ -1411,7 +1411,7 @@
 			(if (= temp0 (gCurRoom south:))
 				(gCurRoom newRoom: temp0)
 			else
-				(proc5_9 0 6)
+				(proc5_9 0 6) ; "You can't turn back from here!"
 			)
 		)
 	)
@@ -1735,7 +1735,7 @@
 					)
 				)
 				(4
-					(proc5_9 0 9)
+					(proc5_9 0 9) ; "That doesn't work here."
 				)
 				(else
 					(proc0_2)

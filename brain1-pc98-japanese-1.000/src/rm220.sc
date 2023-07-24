@@ -43,7 +43,7 @@
 	[local46 5] = [1 2 4 8 16]
 	[local51 5] = [{(A) Multiply.....} {(B) Apply CPU.....} {(C) It has square roots.....} {(D) To avoid short circuits.....} {(E) A cowculator.....}]
 	[local56 5] = [{(A) \b6\b9\d9.....} {(B) CPU\b5\b3\b7\ad\b3 \c3\b1\c3\a6 \bd\d9.....} {(C) \bc\b6\b8\b2 \c8\b6\de \ca\b4\c3\b2\d9.....} {(D) \bc\ae\b0\c4\a6 \cc\be\b8\de\c0\d2.....} {(E) \b6\b3\b7\ad\da\b0\c0\b0.....}]
-	[local61 20] = [{What's special about#j\db\ce\de\af\c4\a5\cc\df\d7\dd\c4\ca\a4} {the way a robot plant#j\c4\de\b3\bc\c3\c4\b8\cd\de\c2\c5\c9?} {grows?#j } {} 6473 {does a dairy farmer#j\c4\de\dd\c5 \ba\dd\cb\df\ad\b0\c0\b0\a6} {use?#j\c2\b6\b3\c9?} {} {Why do robots always#j\db\ce\de\af\c4\ca\a4\c4\de\b3\bc\c3 \b2\c2\d3} {take the longest path#j\c4\b5\cf\dc\d8\bd\d9\c9?} {between two points?#j } {} {What do robot rabbits#j\db\ce\de\af\c4 \b3\bb\b7\de\ca\a4} {do best?#j\c5\c6\b6\de \bc\de\ae\b3\bd\de?} {} {} {What should you do #j\db\ce\de\af\c4\b6\de\a4 \bc\dd\bf\de\b3\ce\af\bb\a6} {when a robot is #j\b5\ba\bc\c0\d7\c4\de\b3\bd\d9?} {having a heart attack?#j } {}]
+	[local61 20] = [{What's special about#j\db\ce\de\af\c4\a5\cc\df\d7\dd\c4\ca\a4} {the way a robot plant#j\c4\de\b3\bc\c3\c4\b8\cd\de\c2\c5\c9?} {grows?#j } {} {What kind of computer#j\d7\b8\c9\b3\b9\b2\b4\b2\bc\ac\ca\a4} {does a dairy farmer#j\c4\de\dd\c5 \ba\dd\cb\df\ad\b0\c0\b0\a6} {use?#j\c2\b6\b3\c9?} {} {Why do robots always#j\db\ce\de\af\c4\ca\a4\c4\de\b3\bc\c3 \b2\c2\d3} {take the longest path#j\c4\b5\cf\dc\d8\bd\d9\c9?} {between two points?#j } {} {What do robot rabbits#j\db\ce\de\af\c4 \b3\bb\b7\de\ca\a4} {do best?#j\c5\c6\b6\de \bc\de\ae\b3\bd\de?} {} {} {What should you do #j\db\ce\de\af\c4\b6\de\a4 \bc\dd\bf\de\b3\ce\af\bb\a6} {when a robot is #j\b5\ba\bc\c0\d7\c4\de\b3\bd\d9?} {having a heart attack?#j } {}]
 	local81
 )
 
@@ -228,7 +228,7 @@
 )
 
 (procedure (localproc_7)
-	(proc5_9 220 20)
+	(proc5_9 220 20) ; "Sorry, human, that's not it."
 )
 
 (procedure (localproc_8 param1)
@@ -327,7 +327,7 @@
 				(self setScript: openLeftDoor)
 			)
 			(else
-				(proc5_9 220 1)
+				(proc5_9 220 1) ; "You need a magnetic data card to open the door."
 			)
 		)
 	)
@@ -389,7 +389,7 @@
 			((== theVerb 3)
 				(cond
 					((not (gEgo has: 8))
-						(proc5_9 220 4)
+						(proc5_9 220 4) ; "The data card is required to operate this console."
 					)
 					((IsFlag 41)
 						(self setScript: openBackDoor)
@@ -533,13 +533,13 @@
 				(gCurRoom newRoom: 260)
 			)
 			((== theVerb 3)
-				(proc5_9 220 7)
+				(proc5_9 220 7) ; "The robot has escaped from the maze. There's no reason to go back."
 			)
 			((and (== theVerb 2) (IsFlag 55))
-				(proc5_9 220 8)
+				(proc5_9 220 8) ; "You can see the robot maze through the doorway"
 			)
 			(2
-				(proc5_9 220 9)
+				(proc5_9 220 9) ; "Beyond this door lies the "Robot Maze"."
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -564,13 +564,13 @@
 				(gCurRoom newRoom: 240)
 			)
 			((== theVerb 3)
-				(proc5_9 220 10)
+				(proc5_9 220 10) ; "The circuits are buzzing, and the computer is running. You don't need to go back."
 			)
 			((and (== theVerb 2) (IsFlag 56))
-				(proc5_9 220 11)
+				(proc5_9 220 11) ; "Through the open doorway you can see the flashing lights and pulsating electrons of the "Computer Room"."
 			)
 			((== theVerb 2)
-				(proc5_9 220 12)
+				(proc5_9 220 12) ; "This is the door to the "Computer Room"."
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -590,7 +590,7 @@
 			)
 			(1
 				(leftDoor stopUpd:)
-				(proc5_9 220 13)
+				(proc5_9 220 13) ; "You open the door to the Robot Maze."
 				(gCurRoom newRoom: 260)
 				(self dispose:)
 			)
@@ -609,7 +609,7 @@
 				(backDoor setCycle: End self)
 			)
 			(1
-				(proc5_9 220 14)
+				(proc5_9 220 14) ; "You've solved enough riddles that the robots think you're their kind of humanoid. The door opens."
 				(gCurRoom newRoom: 280)
 				(self dispose:)
 			)
@@ -626,7 +626,7 @@
 				(rightDoor setCycle: Beg self)
 			)
 			(1
-				(proc5_9 220 15)
+				(proc5_9 220 15) ; "You open the door to the Computer Room."
 				(gCurRoom newRoom: 240)
 				(self dispose:)
 			)
@@ -727,7 +727,7 @@
 		(= temp0 [local41 [local33 global402]])
 		(cond
 			((& (temp0 signal:) $0004)
-				(proc5_9 220 17)
+				(proc5_9 220 17) ; "You need to learn the answer to this riddle from the robot maze before we can give you a hint. Of course, by then you won't NEED a hint!)"
 			)
 			((super buyClue: &rest)
 				(robotJokes select: temp0 0)
@@ -736,8 +736,8 @@
 	)
 
 	(method (showHelp)
-		(proc5_9 220 18)
-		(proc5_9 220 19)
+		(proc5_9 220 18) ; "This screen shows the state-of-the-art in sophisticated robot humor. (This is an art that has a long way to go!) You can answer the riddles with any of the answers stored on your data card. If you don't have enough answers, get the robot in the robot maze to find you some more."
+		(proc5_9 220 19) ; "Select an answer by clicking on (or typing) its letter. To look at another riddle, click on the Next key, or press 'N'. To try to open the door, press 'O'."
 	)
 
 	(method (dispatchEvent event &tmp temp0 temp1)
@@ -884,7 +884,7 @@
 				(= global408 (Memory memALLOC_CRIT (StrLen temp0)))
 				(= global409 (Memory memALLOC_CRIT (StrLen temp0)))
 				(StrSplitInTwo global408 global409 temp0)
-				(proc5_14 220 21 global408 global409)
+				(proc5_14 220 21 global408 global409) ; "You have to solve %s of the robot jokes before the door will open."
 				(Memory memFREE global408)
 				(Memory memFREE global409)
 			)
@@ -910,7 +910,7 @@
 				(Print 220 22) ; "Dr. Brain doesn't believe in war or violence. That's why he threw out all these old weapons here."
 			)
 			(3
-				(proc5_9 220 23)
+				(proc5_9 220 23) ; "Why, it's very nice of you to try to take out Dr. Brain's garbage. But the can is too heavy for you."
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -953,7 +953,7 @@
 			)
 			(3
 				(gCurRoom setScript: spearSound)
-				(proc5_9 220 25)
+				(proc5_9 220 25) ; "Ouch! That spear is really sharp. Better leave it alone."
 			)
 			(else
 				(super doVerb: theVerb &rest)

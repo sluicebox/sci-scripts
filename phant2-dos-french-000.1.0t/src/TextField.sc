@@ -88,7 +88,7 @@
 			(= width param1)
 		)
 		(= temp0 (IntArray with: 0 0 0 0))
-		(Text 0 (temp0 data:) data font width)
+		(Text 0 (temp0 data:) data font width) ; TextSize
 		(= textWidth (+ 1 (temp0 at: 2)))
 		(= textHeight (+ 1 (temp0 at: 3)))
 		(temp0 dispose:)

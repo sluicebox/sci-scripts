@@ -161,8 +161,8 @@
 	)
 
 	(method (showHelp)
-		(proc5_9 428 0)
-		(proc5_9 428 1)
+		(proc5_9 428 0) ; "This is an opportunity for you to show your knowledge of the solar system. Choose the name of a planet, then click the cross-hair cursor on the correct planet. You may have picked up a clue to the correct order somewhere else in the castle."
+		(proc5_9 428 1) ; "If you can't catch one of the planets, click on its name, then put a hint coin in the slot. (Or spend a hint coin without choosing a name, and we'll help you with the innermost planet you haven't yet named.)"
 	)
 
 	(method (animateOnce)
@@ -414,7 +414,7 @@
 			)
 			(1
 				(rewardSound play:)
-				(proc5_11 428 3)
+				(proc5_11 428 3) ; "Now that you have found all the planets, and saved the Solar System from almost-certain destruction, maybe you'll finally be able to remember where you parked your bike."
 				(= ticks 300)
 			)
 			(2

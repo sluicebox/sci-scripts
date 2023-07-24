@@ -246,7 +246,7 @@
 				(= register 0)
 				(clockHands setCel: 0)
 				(voiceS number: 927 play:)
-				(proc5_10 3 180 0)
+				(proc5_10 3 180 0) ; "You now have 60 seconds."
 				(= ticks 300)
 			)
 			(1
@@ -255,15 +255,15 @@
 				(switch temp0
 					(6
 						(voiceS number: 928 vol: 80 play:)
-						(proc5_10 3 180 1)
+						(proc5_10 3 180 1) ; "You now have 30 seconds."
 					)
 					(9
 						(voiceS number: 929 play:)
-						(proc5_10 3 180 2)
+						(proc5_10 3 180 2) ; "You now have 15 seconds."
 					)
 					(11
 						(voiceS number: 930 play:)
-						(proc5_10 3 180 3)
+						(proc5_10 3 180 3) ; "You now have 5 seconds."
 					)
 				)
 				(= ticks 300)
@@ -291,7 +291,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc5_9 180 4)
+				(proc5_9 180 4) ; "You have entered a room filled with clocks of all kinds. Your gaze is drawn to the four-button panel next to the cuckoo water clock."
 				(gGame setCursor: 222 1)
 				(cuckooDoor setCycle: End self)
 			)
@@ -346,7 +346,7 @@
 				(= cycles 1)
 			)
 			(3
-				(proc5_10 3 180 5)
+				(proc5_10 3 180 5) ; "Ah, at last! Some peace and quiet."
 				(= ticks 1)
 			)
 			(4
@@ -370,7 +370,7 @@
 				(Print 180 6) ; "Here are some of Dr. Brain's most timely reference works. There's a copy of Stephen Hawking's "A Brief History of Time", Robert Heinlein's "Time Enough For Love", Martin Heidegger's "Being and Time", and Madeleine L'Engle's "A Wrinkle in Time"."
 			)
 			(3
-				(proc5_9 180 7)
+				(proc5_9 180 7) ; "Sorry, you don't have enough time to read these right now."
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -393,7 +393,7 @@
 				(Print 180 8) ; "It's an Acme Intruder Alert Alarm."
 			)
 			(3
-				(proc5_9 180 9)
+				(proc5_9 180 9) ; "How alarming! You can't do anything to the alarm."
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -417,9 +417,9 @@
 			)
 			(3
 				(if local125
-					(proc5_9 180 11)
+					(proc5_9 180 11) ; "The clock is run by remote control. If you want to stop it, you'll have to find the controls."
 				else
-					(proc5_9 180 12)
+					(proc5_9 180 12) ; "You'd better leave the clock alone -- you had enough trouble stopping it the first time."
 				)
 			)
 			(else
@@ -443,7 +443,7 @@
 				(Print 180 13) ; "This specially-designed clock radio only plays rap music. Dr. Brain hates rap music, but he got a really good deal on the radio. Besides, an Elf will dance to almost anything."
 			)
 			(3
-				(proc5_9 180 14)
+				(proc5_9 180 14) ; "The controls don't seem to do anything. This must be a radio-controlled radio."
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -463,7 +463,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
-			(proc5_9 180 14)
+			(proc5_9 180 14) ; "The controls don't seem to do anything. This must be a radio-controlled radio."
 		else
 			(super doVerb: theVerb &rest)
 		)
@@ -485,7 +485,7 @@
 				(Print 180 15) ; "Dr. Brain wanted to make sure he could still tell time if the power went out, so he installed this sundial. Of course, he forgot about the minor problem of having two floors of the castle between this room and the sun. That triangular thing in the center is called a "gnomon"."
 			)
 			(3
-				(proc5_9 180 16)
+				(proc5_9 180 16) ; "The gnomon is firmly attached to the sundial. (If you really need a gnomon, try the sundial in "Trinity".)"
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -513,7 +513,7 @@
 			)
 			((and (IsFlag 58) (== theVerb 3))
 				(if (IsFlag 53)
-					(proc5_9 180 18)
+					(proc5_9 180 18) ; "There is nothing more for you to do with the hour glasses."
 				else
 					(if local133
 						(= local133 0)
@@ -549,7 +549,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
-			(proc5_9 180 19)
+			(proc5_9 180 19) ; "Now that you've disarmed the alarm system, these buttons no longer do anything."
 		else
 			(super doVerb: theVerb &rest)
 		)
@@ -566,7 +566,7 @@
 	(method (doVerb theVerb)
 		(cond
 			((== theVerb 2)
-				(proc5_9 180 20)
+				(proc5_9 180 20) ; "This button turns the radio on and off."
 			)
 			((and (== theVerb 3) (not (IsFlag 58)))
 				(gCMusic2 number: 61 setLoop: 1 play:)
@@ -607,7 +607,7 @@
 	(method (doVerb theVerb)
 		(cond
 			((== theVerb 2)
-				(proc5_9 180 21)
+				(proc5_9 180 21) ; "This button starts or stops the clock. It also sets off the alarm."
 			)
 			((and (== theVerb 3) (not (IsFlag 58)))
 				(gCMusic2 number: 61 setLoop: 1 play:)
@@ -654,7 +654,7 @@
 	(method (doVerb theVerb &tmp temp0)
 		(cond
 			((== theVerb 2)
-				(proc5_9 180 22)
+				(proc5_9 180 22) ; "This button makes the cuckoo enter or leave the clock. It also turns the clock on."
 			)
 			((and (== theVerb 3) (not (IsFlag 58)))
 				(gCMusic2 number: 61 setLoop: 1 play:)
@@ -713,7 +713,7 @@
 	(method (doVerb theVerb)
 		(cond
 			((== theVerb 2)
-				(proc5_9 180 23)
+				(proc5_9 180 23) ; "This button turns off the alarm (but only if the cuckoo is quiet and the radio is playing)."
 			)
 			((and (== theVerb 3) (not (IsFlag 58)))
 				(gCMusic2 number: 61 setLoop: 1 play:)
@@ -832,7 +832,7 @@
 				(Print 180 25) ; "It's a cuckoo, Dr. Brain's favorite bird."
 			)
 			(3
-				(proc5_9 180 26)
+				(proc5_9 180 26) ; "You'd better not mess with it; that's Dr. Brain's favorite cuckoo."
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -871,13 +871,13 @@
 	(method (doVerb theVerb)
 		(cond
 			((and (== theVerb 2) (or (gEgo has: 7) (gEgo has: 22)))
-				(proc5_9 180 27)
+				(proc5_9 180 27) ; "It's an empty drawer."
 			)
 			((!= theVerb 3)
 				(super doVerb: theVerb &rest)
 			)
 			((not (IsFlag 58))
-				(proc5_9 180 28)
+				(proc5_9 180 28) ; "The drawer won't open until things quiet down in here."
 			)
 			((not (IsFlag 53))
 				(if local133
@@ -896,10 +896,10 @@
 				)
 			)
 			((and (not (gEgo has: 7)) (not (gEgo has: 22)))
-				(proc5_9 180 29)
+				(proc5_9 180 29) ; "The time cards may come in useful."
 			)
 			(else
-				(proc5_9 180 30)
+				(proc5_9 180 30) ; "There is nothing more for you to do with the drawer."
 			)
 		)
 	)
@@ -990,13 +990,13 @@
 						)
 					)
 					((and (not (gEgo has: 7)) (not (IsFlag 1)))
-						(proc5_9 180 33)
+						(proc5_9 180 33) ; "You'll have to get a time card before you can punch in. There are a few in the desk drawer."
 					)
 					((IsFlag 1)
-						(proc5_9 180 34)
+						(proc5_9 180 34) ; "You've already punched in. Dr. Brain might get suspicious if you punch in again during the same visit."
 					)
 					((not (IsFlag 58))
-						(proc5_9 180 35)
+						(proc5_9 180 35) ; "The time clock won't open until things quiet down in here."
 					)
 				)
 			)
@@ -1023,7 +1023,7 @@
 				(Print 180 36) ; "Another of Dr. Brain's famous garage sale artifacts, this is a clock that runs backwards... sometimes. It doesn't keep very good time even when it's running (but might make a pretty good fan if you attached some fan blades)."
 			)
 			(3
-				(proc5_9 180 37)
+				(proc5_9 180 37) ; "No thanks, the clock already has a perfectly good pair of hands!"
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -1340,7 +1340,7 @@
 					)
 					(if (not local118)
 						(gCMusic number: 55 setLoop: 1 play:)
-						(proc5_9 180 38)
+						(proc5_9 180 38) ; "WARNING! SECURITY ALERT! ATTEMPT TO OPEN LOCK AT WRONG TIME!"
 					else
 						(gCMusic number: 50 setLoop: 1 play:)
 					)
@@ -1558,7 +1558,7 @@
 		(bigHrGlass setScript: 0)
 		(if local118
 			(self solvePuzzle:)
-			(proc5_9 180 39)
+			(proc5_9 180 39) ; "As the last sands fall into place, and you press the "Open" button, the drawer opens to reveal three time cards."
 		)
 		(return local118)
 	)
@@ -1566,18 +1566,18 @@
 	(method (buyClue)
 		(if (super buyClue:)
 			(if global114
-				(proc5_9 180 40)
-				(proc5_9 180 41)
+				(proc5_9 180 40) ; "Both hourglasses start running when you press "Start". The trick is to measure 40 seconds with a 35- and a 15-second hourglass. Figure out how to end up with just five seconds of sand in the 15-second glass when the 35-second glass runs out."
+				(proc5_9 180 41) ; "(Remember, you can flip EITHER glass once one runs out, so the five seconds worth of sand can be in either the top or the bottom of the 15-second glass when the 35-second glass expires.)"
 			else
-				(proc5_9 180 42)
+				(proc5_9 180 42) ; "Both hourglasses start running when you press "Start". The trick is to measure 40 seconds with a 25- and a 15-second hourglass. Since 25+15 equals 40, wait until the 25-second hourglass runs out, then turn over the 15-second hourglass. When it runs out, press the "Open" button."
 			)
 			(Animate (gCast elements:) 1)
 		)
 	)
 
 	(method (showHelp)
-		(proc5_9 180 43)
-		(proc5_14 180 44 (if global114 35 else 25) (if global114 35 else 25))
+		(proc5_9 180 43) ; "This is one of Acme's famous "time locks". To open it, you need to press the "Open" button exactly 40 seconds after pressing "Start". You can flip either hourglass immediately after either runs out."
+		(proc5_14 180 44 (if global114 35 else 25) (if global114 35 else 25)) ; "Of course, the lock is really controlled by the hourglasses, not by time, so you have a few seconds to make each flip. But you will have to flip the hourglasses in the right order to measure out 40 seconds to open the drawer. The large hourglass will run for %d seconds when flipped, and the small one for 15 seconds. Spend a Hint Coin to get some tips."
 		(Animate (gCast elements:) 1)
 	)
 
@@ -1739,7 +1739,7 @@
 				(if (IsFlag 1)
 					(gCurRoom setScript: elevatorScript)
 				else
-					(proc5_9 180 46)
+					(proc5_9 180 46) ; "A special security feature prevents the elevator doors from being opened until you've punched in."
 				)
 			)
 			(else

@@ -622,7 +622,7 @@
 			(cond
 				((CantBeHere self (gCast elements:)))
 				((and (not (& signal $2000)) gCurRoom (< y (gCurRoom horizon:))) -1)
-				((and blocks (not (blocks allTrue: 69 self))) -2)
+				((and blocks (not (blocks allTrue: #doit self))) -2)
 			)
 		)
 	)

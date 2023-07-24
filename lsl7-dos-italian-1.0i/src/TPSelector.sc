@@ -402,11 +402,11 @@
 				
 				(textList nextNode: (KList 6 temp1)) ; NextNode
 				(= temp2 (KList 8 temp1)) ; NodeValue
-				(Text 0 (temp3 data:) (temp2 text:) font 0)
+				(Text 0 (temp3 data:) (temp2 text:) font 0) ; TextSize
 				(= temp0 (Max (temp3 at: 2) temp0))
 			)
 		)
-		(Text 0 (temp3 data:) {M} font 0)
+		(Text 0 (temp3 data:) {M} font 0) ; TextSize
 		(= textHeight (+ (temp3 at: 3) 2))
 		(temp3 dispose:)
 		(= nWidth (Max width temp0))

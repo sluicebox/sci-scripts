@@ -146,7 +146,7 @@
 			(param1 eachElementDo: #doit firstTrue: #handleEvent param2)
 			(gSounds eachElementDo: #check)
 			(FrameOut)
-			(breakif (param1 allTrue: 392 2))
+			(breakif (param1 allTrue: #isModeless 2))
 			(curEvent new:)
 		)
 	)

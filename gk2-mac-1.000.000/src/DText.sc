@@ -66,7 +66,7 @@
 		)
 		(= textTop (= textLeft 0))
 		(= r (IntArray with: 0 0 0 0))
-		(Text 0 (r data:) text font theWidth)
+		(Text 0 (r data:) text font theWidth) ; TextSize
 		(= textRight (r at: 2))
 		(if (> theWidth textRight)
 			(= textRight theWidth)

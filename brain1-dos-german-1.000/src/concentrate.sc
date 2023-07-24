@@ -262,8 +262,8 @@
 	)
 
 	(method (showHelp)
-		(proc5_9 427 16)
-		(proc5_9 427 17)
+		(proc5_9 427 16) ; "These aliens have lost their homes. Pick any two face-down cards and try to match an alien with its home planet. When you make a successful match, the cards will turn face-up."
+		(proc5_9 427 17) ; "Inserting a hint coin will buy you one match."
 	)
 
 	(method (animateOnce)
@@ -290,7 +290,7 @@
 			(= local12 1)
 		)
 		(if (not local109)
-			(proc5_9 427 16)
+			(proc5_9 427 16) ; "These aliens have lost their homes. Pick any two face-down cards and try to match an alien with its home planet. When you make a successful match, the cards will turn face-up."
 			(= local109 1)
 		)
 		(= temp0 (event type:))
@@ -456,7 +456,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc5_11 427 18)
+				(proc5_11 427 18) ; "That match won't work out. Please try again."
 				(= cycles 1)
 			)
 			(1
@@ -482,7 +482,7 @@
 		(switch (= state newState)
 			(0
 				(rewardSound play:)
-				(proc5_11 427 19)
+				(proc5_11 427 19) ; "Great! You have matched the creature with his home. He'll be much happier now."
 				(= cycles 1)
 			)
 			(1
@@ -516,7 +516,7 @@
 					(Wait 0)
 					(Wait 60)
 					(rewardSound number: 52 play:)
-					(proc5_9 427 20)
+					(proc5_9 427 20) ; "Well done! You've performed a major feat of intergalactic diplomacy by helping all the aliens return home. You are awarded the Star Medal, 1st Class."
 					(gEgo get: 24)
 					(concentrate solvePuzzle: 2 goAway:)
 					(= local10 1)

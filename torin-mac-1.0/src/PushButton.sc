@@ -335,7 +335,7 @@
 			(= dimmed 0)
 		)
 		(= textBox (IntArray new: 4))
-		(Text 0 (textBox data:) (oPrivateText data:) font maxWidth 1)
+		(Text 0 (textBox data:) (oPrivateText data:) font maxWidth 1) ; TextSize
 		(= nTextWidth (+ (textBox at: 2) 1))
 		(= nTextHeight (+ (textBox at: 3) 1))
 		(= nWidth (+ nTextWidth border border))
@@ -570,7 +570,7 @@
 			(Bitmap 1 bitmap) ; Dispose
 		)
 		(= temp0 (IntArray new: 4))
-		(Text 0 (temp0 data:) (KString 9 text) font maxWidth 1) ; StrGetData
+		(Text 0 (temp0 data:) (KString 9 text) font maxWidth 1) ; TextSize, StrGetData
 		(= temp11 (+ (temp0 at: 2) 1))
 		(= temp12 (+ (temp0 at: 3) 1))
 		(= nWidth (+ temp11 border border))
@@ -729,7 +729,7 @@
 			(= oDEdit 0)
 		)
 		(= temp0 (IntArray new: 4))
-		(Text 0 (temp0 data:) (KString 9 text) font maxWidth 1) ; StrGetData
+		(Text 0 (temp0 data:) (KString 9 text) font maxWidth 1) ; TextSize, StrGetData
 		(= temp11 (+ (temp0 at: 2) 1))
 		(= temp12 (+ (temp0 at: 3) 1))
 		(= nWidth (+ temp11 border border))

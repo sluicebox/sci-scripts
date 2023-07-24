@@ -1384,7 +1384,7 @@
 				eachElementDo: #doit
 				firstTrue: #handleEvent (User curEvent:)
 			)
-			(breakif (gTalkers allTrue: 439 2))
+			(breakif (gTalkers allTrue: #isModeless 2))
 			(gSounds eachElementDo: #check)
 			((User curEvent:) new:)
 			(FrameOut)

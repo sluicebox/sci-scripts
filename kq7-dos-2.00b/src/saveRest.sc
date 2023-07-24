@@ -39,7 +39,7 @@
 			(1
 				(= temp0 (IntArray with: 0 0 0 0))
 				(gGame setCursor: gNormalCursor)
-				(Text 0 (temp0 data:) {A} gUserFont 320)
+				(Text 0 (temp0 data:) {A} gUserFont 320) ; TextSize
 				(= temp1 (+ (temp0 at: 3) 6))
 				(temp0 dispose:)
 				(Print

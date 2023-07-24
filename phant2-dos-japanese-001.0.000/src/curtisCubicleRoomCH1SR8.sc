@@ -122,8 +122,8 @@
 	)
 
 	(method (doit &tmp temp0 temp1 temp2)
-		(if (self allTrue: 756)
-			(if (not (self allTrue: 757))
+		(if (self allTrue: #locked)
+			(if (not (self allTrue: #atRightLetter))
 				(FrameOut)
 				(if (Random 0 4)
 					(viewOfTelop init: 1)

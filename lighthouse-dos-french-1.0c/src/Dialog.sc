@@ -325,7 +325,7 @@
 	(method (setSize &tmp node obj r)
 		(= r (IntArray with: 0 0 0 0))
 		(if text
-			(Text 0 (r data:) text font 0)
+			(Text 0 (r data:) text font 0) ; TextSize
 			(= nsLeft (r at: 0))
 			(= nsTop (r at: 1))
 			(= nsRight (r at: 2))

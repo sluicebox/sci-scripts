@@ -351,7 +351,7 @@
 			(listOStrings dispose:)
 		else
 			((= local0 (IntArray newWith: 4)) name: {textBox})
-			(Text 0 (local0 data:) (param1 data:) 2510 0 0)
+			(Text 0 (local0 data:) (param1 data:) 2510 0 0) ; TextSize
 			(++ local6)
 			(= temp0
 				(Bitmap

@@ -90,7 +90,7 @@
 			(= messageStr (Str new: (+ size 1) {}))
 			(Message msgGET modNum noun verb case sequenceNo (messageStr data:))
 			(= temp1 (IntArray with: 0 0 0 0))
-			(Text 0 (temp1 data:) (messageStr data:) font -1)
+			(Text 0 (temp1 data:) (messageStr data:) font -1) ; TextSize
 			(= textLeft (= textTop 0))
 			(= textRight (temp1 at: 2))
 			(= textBottom (temp1 at: 3))

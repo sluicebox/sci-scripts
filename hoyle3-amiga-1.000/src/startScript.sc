@@ -664,7 +664,7 @@
 				)
 				(if
 					(and
-						(not (global414 allTrue: 663))
+						(not (global414 allTrue: #taken))
 						(!= (global178 howManyHome:) 4)
 					)
 					(gSound2 play: 902)

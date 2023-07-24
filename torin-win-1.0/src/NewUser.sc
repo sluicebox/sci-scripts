@@ -252,7 +252,11 @@
 	(method (handleEvent event &tmp curPlaneNode oPlane oCastList oTemp oEventHog)
 		(= gMouseX (event x:))
 		(= gMouseY (event y:))
-		(if (and (not (gPrints isEmpty:)) (not (gPrints allTrue: 434 2)))
+		(if
+			(and
+				(not (gPrints isEmpty:))
+				(not (gPrints allTrue: #isModeless 2))
+			)
 			(gPrints eachElementDo: #doit firstTrue: #handleEvent event)
 			(return 1)
 		)

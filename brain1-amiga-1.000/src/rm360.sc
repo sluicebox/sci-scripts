@@ -108,8 +108,8 @@
 			(local417 init:)
 			(= local418 1)
 			(if (not (IsFlag 46))
-				(proc5_9 360 0)
-				(proc5_9 360 1)
+				(proc5_9 360 0) ; "This room looks incomplete. Since we rarely forget to finish a painting before shipping a game, it must be up to you to put the pieces of this puzzle together."
+				(proc5_9 360 1) ; "You can get puzzle pieces by clicking the Hand on the chest. Click a piece anywhere on the screen to place it. Pick up a piece by clicking on it, or several pieces by dragging the mouse across them. You can put pieces aside by clicking them on the chest opening."
 				(SetFlag 46)
 			)
 		else
@@ -400,7 +400,7 @@
 				(event claimed: 1)
 			)
 			((== (event message:) JOY_UPRIGHT)
-				(proc5_9 360 3)
+				(proc5_9 360 3) ; "This is a jigsaw puzzle piece."
 				(event claimed: 1)
 			)
 		)
@@ -447,7 +447,7 @@
 			(self assignToView:)
 			(gGame setCursor: 202 1)
 		else
-			(proc5_9 360 4)
+			(proc5_9 360 4) ; "The box is empty."
 		)
 	)
 
@@ -575,7 +575,7 @@
 		(if (u>= (= temp10 (* (- param3 param1) (- param4 param2))) 16000)
 			(local2 dispose:)
 			(curPiece hide:)
-			(proc5_9 360 6)
+			(proc5_9 360 6) ; "Please drag fewer pieces at a time. Memory isn't free, you know!"
 			(return)
 		)
 		(= temp2 (curPiece x:))
@@ -1096,10 +1096,10 @@
 			(local1
 				(switch (event message:)
 					(JOY_UPRIGHT
-						(proc5_9 360 7)
+						(proc5_9 360 7) ; "You look in vain, but find nothing except a 1981 Prince Charles and Lady Diana picture calendar with popups. You decide you can do without that."
 					)
 					(JOY_RIGHT
-						(proc5_9 360 8)
+						(proc5_9 360 8) ; "Sorry, but the chest has been nailed to the floor by one of Dr. Brain's paranoid former assistants."
 					)
 				)
 			)
@@ -1107,21 +1107,21 @@
 				(++ local3)
 				(cond
 					((== ((client notPlacedList:) size:) 0)
-						(proc5_9 360 4)
+						(proc5_9 360 4) ; "The box is empty."
 					)
 					((== local3 1)
-						(proc5_9 360 9)
+						(proc5_9 360 9) ; "This chest contains a stack of puzzle pieces and your long-missing car keys."
 					)
 					((== local3 2)
-						(proc5_9 360 10)
+						(proc5_9 360 10) ; "Oh, sorry, my mistake. Your car keys weren't in the box after all. You must have left them somewhere else."
 					)
 					(else
-						(proc5_9 360 1)
+						(proc5_9 360 1) ; "You can get puzzle pieces by clicking the Hand on the chest. Click a piece anywhere on the screen to place it. Pick up a piece by clicking on it, or several pieces by dragging the mouse across them. You can put pieces aside by clicking them on the chest opening."
 					)
 				)
 			)
 			((!= (event message:) JOY_RIGHT)
-				(proc5_9 360 11)
+				(proc5_9 360 11) ; "That won't work here."
 			)
 			((client curPiece:)
 				(if (= temp3 ((client dragList:) size:))

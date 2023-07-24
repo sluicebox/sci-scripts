@@ -592,10 +592,10 @@
 		(super setup:)
 		(= temp0 (IntArray with: 0 0 0 0))
 		(if (and argc param1)
-			(Text 0 (temp0 data:) {W} (bigPrint font:) 0 0)
+			(Text 0 (temp0 data:) {W} (bigPrint font:) 0 0) ; TextSize
 			(= dataStep (* (temp0 at: 3) 2))
 			(temp0 at: 0 0 0 0 0)
-			(Text 0 (temp0 data:) param1 (bigPrint font:) (bigPrint width:) 0)
+			(Text 0 (temp0 data:) param1 (bigPrint font:) (bigPrint width:) 0) ; TextSize
 			(= dataTop 0)
 			(= dataBottom
 				(-
@@ -699,17 +699,17 @@
 				(textList nextNode: (KList 6 temp1)) ; NextNode
 				(= temp2 (KList 8 temp1)) ; NodeValue
 				(if (not width)
-					(Text 0 (temp3 data:) (temp2 text:) font 0 0)
+					(Text 0 (temp3 data:) (temp2 text:) font 0 0) ; TextSize
 					(= temp0 (Max (temp3 at: 2) temp0))
 				else
-					(Text 0 (temp3 data:) (temp2 text:) font width 0)
+					(Text 0 (temp3 data:) (temp2 text:) font width 0) ; TextSize
 				)
 				(if (and argc param1)
 					(= temp4 (Max (+ (temp3 at: 3) leading) temp4))
 				)
 			)
 		)
-		(Text 0 (temp3 data:) {M} font 0 0)
+		(Text 0 (temp3 data:) {M} font 0 0) ; TextSize
 		(= textHeight (Max temp4 (+ (temp3 at: 3) leading)))
 		(+= textHeight 4)
 		(temp3 dispose:)

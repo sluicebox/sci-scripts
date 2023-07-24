@@ -50,7 +50,7 @@
 					(return)
 				)
 				(= temp1 (IntArray new: 4))
-				(Text 0 (temp1 data:) (temp0 data:) gnDialogFont temp2 1)
+				(Text 0 (temp1 data:) (temp0 data:) gnDialogFont temp2 1) ; TextSize
 				(= temp3 (+ (temp1 at: 2) 1))
 				(= temp4 (+ (temp1 at: 3) 1))
 				(temp1 dispose:)

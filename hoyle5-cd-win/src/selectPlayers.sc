@@ -207,7 +207,7 @@
 				)
 				(= temp243 (IntArray new: 4))
 				(= temp244 (IntArray new: 4))
-				(Text 0 (temp243 data:) (temp0 data:) gUserFont (Print width:) 0)
+				(Text 0 (temp243 data:) (temp0 data:) gUserFont (Print width:) 0) ; TextSize
 				(= temp238 (/ (- (Print width:) (temp243 at: 2)) 2))
 				(= temp240
 					(/
@@ -221,7 +221,7 @@
 					)
 				)
 				(Text
-					0
+					0 ; TextSize
 					(temp244 data:)
 					(temp100 data:)
 					gUserFont
@@ -266,7 +266,7 @@
 			(= temp2 (IntArray new: 4))
 			(= temp3 (Str new:))
 			(Message msgGET 3 20 8 0 1 (temp3 data:)) ; "That would be too many players."
-			(Text 0 (temp2 data:) (temp3 data:) gUserFont (Print width:) 0)
+			(Text 0 (temp2 data:) (temp3 data:) gUserFont (Print width:) 0) ; TextSize
 			(= temp0 (/ (- (Print width:) (temp2 at: 2)) 2))
 			(= temp1
 				(/
@@ -298,7 +298,7 @@
 		(= temp2 (IntArray new: 4))
 		(= temp3 (Str new:))
 		(Message msgGET 3 20 9 0 1 (temp3 data:)) ; "There is no one here."
-		(Text 0 (temp2 data:) (temp3 data:) gUserFont (Print width:) 0)
+		(Text 0 (temp2 data:) (temp3 data:) gUserFont (Print width:) 0) ; TextSize
 		(= temp0 (/ (- (Print width:) (temp2 at: 2)) 2))
 		(= temp1
 			(/
@@ -1201,7 +1201,7 @@
 					(= temp4 (Str new:))
 					(Message msgGET 3 19 7 1 1 (temp4 data:)) ; "You must choose one player."
 					(Text
-						0
+						0 ; TextSize
 						(temp3 data:)
 						(temp4 data:)
 						gUserFont
@@ -1230,7 +1230,7 @@
 					(= temp4 (Str new:))
 					(Message msgGET 3 19 7 2 1 (temp4 data:)) ; "You must choose three players."
 					(Text
-						0
+						0 ; TextSize
 						(temp3 data:)
 						(temp4 data:)
 						gUserFont
@@ -1690,7 +1690,7 @@
 				(= temp2 (IntArray new: 4))
 				(= temp3 (Str new:))
 				(Message msgGET 3 21 10 0 1 (temp3 data:)) ; "Choose a player."
-				(Text 0 (temp2 data:) (temp3 data:) gUserFont (Print width:) 0)
+				(Text 0 (temp2 data:) (temp3 data:) gUserFont (Print width:) 0) ; TextSize
 				(= temp0 (/ (- (Print width:) (temp2 at: 2)) 2))
 				(= temp1
 					(/
@@ -1755,7 +1755,7 @@
 				(= temp2 (IntArray new: 4))
 				(= temp4 (Str new:))
 				(Message msgGET 3 21 10 0 1 (temp4 data:)) ; "Choose a player."
-				(Text 0 (temp2 data:) (temp4 data:) gUserFont (Print width:) 0)
+				(Text 0 (temp2 data:) (temp4 data:) gUserFont (Print width:) 0) ; TextSize
 				(= temp0 (/ (- (Print width:) (temp2 at: 2)) 2))
 				(= temp1
 					(/
@@ -1813,7 +1813,7 @@
 				(= temp2 (IntArray new: 4))
 				(= temp3 (Str new:))
 				(Message msgGET 3 21 10 0 1 (temp3 data:)) ; "Choose a player."
-				(Text 0 (temp2 data:) (temp3 data:) gUserFont (Print width:) 0)
+				(Text 0 (temp2 data:) (temp3 data:) gUserFont (Print width:) 0) ; TextSize
 				(= temp0 (/ (- (Print width:) (temp2 at: 2)) 2))
 				(= temp1
 					(/

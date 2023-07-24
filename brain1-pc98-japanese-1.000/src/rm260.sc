@@ -171,7 +171,7 @@
 	(if (>= global176 (+ global114 3))
 		(proc5_0 54)
 	)
-	(proc5_9 260 1)
+	(proc5_9 260 1) ; "Congratulations! You helped the robot get out of the maze."
 	(gCurRoom newRoom: 220)
 )
 
@@ -355,10 +355,10 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(2
-				(proc5_9 260 2)
+				(proc5_9 260 2) ; "This little robot is programmed to always travel in a straight line, except when it hits a wall or right turn signal. Hitting a wall will cause it to turn around in the opposite direction. The robot will turn right any time it hits a right turn signal."
 			)
 			(3
-				(proc5_9 260 3)
+				(proc5_9 260 3) ; "You can't do anything to the robot directly. The only controls you can manipulate are the right turn markers at each intersection in the maze."
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -513,10 +513,10 @@
 				(super doVerb: theVerb &rest)
 			)
 			((IsObject cycler)
-				(proc5_9 260 6)
+				(proc5_9 260 6) ; "This transporter is active. It would probably be a good idea to keep the robot away from here."
 			)
 			(else
-				(proc5_9 260 7)
+				(proc5_9 260 7) ; "This transporter is off right now."
 			)
 		)
 	)
@@ -609,9 +609,9 @@
 			((== theVerb 2)
 				(if temp1
 					(if [local38 temp0]
-						(proc5_9 260 10)
+						(proc5_9 260 10) ; "This is a right turn signal. When the robot hits this signal, it will turn right. (If this makes it hit a wall, it will bounce off and go the opposite direction.)"
 					else
-						(proc5_9 260 11)
+						(proc5_9 260 11) ; "Click the hand here to cause the robot to turn right when it hits the signal. Right now, the signal is inactive."
 					)
 				)
 			)
@@ -679,10 +679,10 @@
 				(super doVerb: theVerb invItem &rest)
 			)
 			((not global115)
-				(proc5_9 260 13)
+				(proc5_9 260 13) ; "You are out of hint coins."
 			)
 			((== global166 31)
-				(proc5_9 260 14)
+				(proc5_9 260 14) ; "You can't buy any more hints here."
 			)
 			(else
 				(if gModelessDialog
@@ -690,7 +690,7 @@
 				)
 				(if (not (-- global115))
 					(gEgo put: 0)
-					(proc5_9 260 15)
+					(proc5_9 260 15) ; "You insert your last hint coin in the slot."
 				else
 					(Format ; "You insert a hint coin in the slot. You have %d hint coin%sleft."
 						@temp0
@@ -756,8 +756,8 @@
 	)
 
 	(method (doVerb)
-		(proc5_9 260 18)
-		(proc5_9 260 19)
+		(proc5_9 260 18) ; "Help the robot travel through the maze by clicking on intersections. At an "active" intersection, the robot will turn right. At "inactive" intersections, the robot goes straight. Get the robot to pass over as many "A" squares as possible -- they will write Robot Riddle answers to your data card."
+		(proc5_9 260 19) ; "Watch out for the red and white spirals -- they are traps which will transport the robot back to the beginning of the maze. When the robot runs over a switch, one or more of the traps will turn on -- or off."
 	)
 )
 

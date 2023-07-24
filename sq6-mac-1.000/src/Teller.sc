@@ -27,7 +27,7 @@
 		(= textLeft (= nsLeft (= nsTop 0)))
 		(= textTop gap)
 		(= temp0 (IntArray with: 0 0 0 0))
-		(Text 0 (temp0 data:) text font temp1)
+		(Text 0 (temp0 data:) text font temp1) ; TextSize
 		(= textRight (temp0 at: 2))
 		(= textBottom (+ gap (temp0 at: 3)))
 		(temp0 dispose:)

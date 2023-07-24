@@ -187,9 +187,9 @@
 					)
 					(KEY_ALT_d
 						(if (= gDebugOn (not gDebugOn))
-							(proc5_9 800 2)
+							(proc5_9 800 2) ; "Debug On"
 						else
-							(proc5_9 800 3)
+							(proc5_9 800 3) ; "Debug Off"
 						)
 					)
 					(KEY_ALT_r

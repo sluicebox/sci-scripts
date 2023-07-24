@@ -326,7 +326,7 @@
 		(if local39
 			(Wait 0)
 			(Wait 30)
-			(proc5_11 391 0)
+			(proc5_11 391 0) ; "You've solved the cipher. The back door opens to reveal another elevator."
 			(self solvePuzzle:)
 		)
 		(return local39)
@@ -375,9 +375,9 @@
 	)
 
 	(method (showHelp)
-		(proc5_9 391 1)
-		(proc5_9 391 2)
-		(proc5_9 391 3)
+		(proc5_9 391 1) ; "The monitor shows a message encrypted with a simple substitution cipher. To solve it, swap pairs of letters until the message makes sense. You can swap letters by clicking on two letters of the message or by typing two letters on the keyboard."
+		(proc5_9 391 2) ; "Two useful tools are your Handy-Dandy Letter Counter and the eye chart. The letter counter shows you how many times the letter under your mouse cursor (or the last letter typed) occurs in the message. The eye chart will remind you of the most common English letters."
+		(proc5_9 391 3) ; "If you spend a hint coin, the first incorrect letter of the message will switch to its correct value. If you haven't already read the "Secrets of the Master Code Solvers" book, you might want to give it a try before using up all your hint coins."
 	)
 
 	(method (dispatchEvent event &tmp temp0 temp1 temp2 temp3 temp4 temp5 temp6 temp7)

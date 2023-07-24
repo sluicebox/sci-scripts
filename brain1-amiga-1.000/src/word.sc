@@ -108,21 +108,21 @@
 )
 
 (procedure (localproc_5)
-	(proc5_9 325 21)
-	(proc5_9 325 22)
-	(proc5_9 325 23)
+	(proc5_9 325 21) ; "This is a word search puzzle. Find words of four or more letters relating to sports and games in the grid. Select the words by dragging the mouse from the first to the last letter of each word. Using the keyboard, highlight the first letter of the word, press ENTER, highlight the last letter, then press ENTER again."
+	(proc5_9 325 22) ; "All of the words are on a straight line, either horizontally, diagonally, or vertically in any direction. Many of the letters are used in more than one word. There are 25 words altogether. (A list can be found in the game manual.)"
+	(proc5_9 325 23) ; "Each hint coin you spend will find a missing word for you."
 	(switch global114
 		(0
-			(proc5_9 325 24)
+			(proc5_9 325 24) ; "You need to find at least 18 of the 25 words."
 			(= local455 18)
 		)
 		(1
 			(= local455 22)
-			(proc5_9 325 25)
+			(proc5_9 325 25) ; "You need to find at least 22 of the 25 words."
 		)
 		(else
 			(= local455 25)
-			(proc5_9 325 26)
+			(proc5_9 325 26) ; "You need to find all 25 words."
 		)
 	)
 )
@@ -636,19 +636,19 @@
 							)
 							(2
 								(oldSound play:)
-								(proc5_9 325 15)
+								(proc5_9 325 15) ; "You've already found that word."
 								(localproc_7 temp12 temp13 temp16 temp17 2 5)
 							)
 							(3
 								(squawkSound play:)
 								(localproc_7 temp12 temp13 temp16 temp17 0 6)
-								(proc5_9 325 16)
+								(proc5_9 325 16) ; "You've spotted one of the team members' names. But we're people, not sports or games. Still, thank you for choosing us!"
 								(localproc_3)
 							)
 							(0
 								(wrongSound play:)
 								(localproc_7 temp12 temp13 temp16 temp17 0 6)
-								(proc5_9 325 17)
+								(proc5_9 325 17) ; "Sorry, that isn't a sport or game (at least, not one we thought of!)."
 								(localproc_3)
 							)
 						)
@@ -784,7 +784,7 @@
 				(rewardSound play: self)
 			)
 			(1
-				(proc5_14 325 18 local422)
+				(proc5_14 325 18 local422) ; "Congratulations! You've found %d sports and games. You hear a "swish" and a "click" as the words slide into another puzzle."
 				(= cycles 1)
 			)
 			(2

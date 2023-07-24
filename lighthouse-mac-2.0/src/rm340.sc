@@ -151,23 +151,7 @@
 					(Portal stopSound:)
 					((ScriptID 1 1) ; exitForward
 						newRoom: 800
-						createPoly:
-							272
-							66
-							336
-							48
-							378
-							86
-							399
-							218
-							366
-							274
-							295
-							275
-							252
-							212
-							247
-							128
+						createPoly: 272 66 336 48 378 86 399 218 366 274 295 275 252 212 247 128
 					)
 				)
 				(if (not (IsFlag 65))

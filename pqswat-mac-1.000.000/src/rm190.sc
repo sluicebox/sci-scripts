@@ -508,10 +508,10 @@
 		(super setup:)
 		(= temp0 (IntArray with: 0 0 0 0))
 		(if (and argc param1)
-			(Text 0 (temp0 data:) {W} (bigPrint font:) 0 0)
+			(Text 0 (temp0 data:) {W} (bigPrint font:) 0 0) ; TextSize
 			(= dataStep (* (temp0 at: 3) 2))
 			(temp0 at: 0 0 0 0 0)
-			(Text 0 (temp0 data:) param1 (bigPrint font:) (bigPrint width:) 0)
+			(Text 0 (temp0 data:) param1 (bigPrint font:) (bigPrint width:) 0) ; TextSize
 			(= dataTop 0)
 			(= dataBottom
 				(-

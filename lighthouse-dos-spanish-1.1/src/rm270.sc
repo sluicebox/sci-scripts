@@ -5943,23 +5943,7 @@
 	(method (init)
 		(= arrowStyle 3)
 		(self
-			createPoly:
-				346
-				62
-				315
-				108
-				314
-				162
-				350
-				204
-				417
-				183
-				439
-				120
-				414
-				60
-				360
-				47
+			createPoly: 346 62 315 108 314 162 350 204 417 183 439 120 414 60 360 47
 		)
 		(super init: &rest)
 	)
@@ -5973,23 +5957,7 @@
 		(= arrowStyle 3)
 		(self
 			setPolygon: 0
-			createPoly:
-				346
-				62
-				315
-				108
-				314
-				162
-				350
-				204
-				417
-				183
-				439
-				120
-				414
-				60
-				360
-				47
+			createPoly: 346 62 315 108 314 162 350 204 417 183 439 120 414 60 360 47
 		)
 		(PrintDebug {  MYFORWARD: %d} (self curPic:))
 	)

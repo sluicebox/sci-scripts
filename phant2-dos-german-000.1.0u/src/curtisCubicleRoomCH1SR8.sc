@@ -123,8 +123,8 @@
 	)
 
 	(method (doit &tmp temp0 temp1 temp2)
-		(if (self allTrue: 756)
-			(if (not (self allTrue: 757))
+		(if (self allTrue: #locked)
+			(if (not (self allTrue: #atRightLetter))
 				(FrameOut)
 				(proc63002_11 6301 16 0 59 1)
 			else

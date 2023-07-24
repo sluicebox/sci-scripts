@@ -239,7 +239,7 @@
 					(self cue:)
 				else
 					(gCMusic2 number: 56 setVol: 127 setLoop: 1 flags: 1 play:)
-					(proc5_9 100 0)
+					(proc5_9 100 0) ; "Oops, that wasn't it. Let's try this again."
 					(localproc_2 0)
 					(self dispose:)
 				)
@@ -291,7 +291,7 @@
 			)
 			(else
 				(doorKnock play:)
-				(proc5_9 100 1)
+				(proc5_9 100 1) ; "The door is securely locked. Maybe you should try ringing the doorbell."
 			)
 		)
 	)
@@ -361,7 +361,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
-			(proc5_9 100 2)
+			(proc5_9 100 2) ; "The door is wide open. Just go on in."
 		else
 			(super doVerb: theVerb &rest)
 		)
@@ -485,7 +485,7 @@
 			)
 			(6
 				(if (not (gEgo has: 27))
-					(proc5_9 100 3)
+					(proc5_9 100 3) ; "Congratulations! You have successfully unlocked the front door. You are awarded the "Memory Puzzle Plaque". (You keep it to help you remember this feat.)"
 				)
 				(gEgo get: 27)
 				(gCurRoom newRoom: 120)

@@ -20,7 +20,7 @@
 (procedure (localproc_0 &tmp temp0)
 	(= temp0 (Str newWith: 10 {}))
 	(gGame setCursor: gNormalCursor 1)
-	(Text 0 (local0 data:) {A} gUserFont 320)
+	(Text 0 (local0 data:) {A} gUserFont 320) ; TextSize
 	(= local1 0)
 	(= local1 (QuickPrint new: {Whereto?}))
 	(if (temp0 size:)

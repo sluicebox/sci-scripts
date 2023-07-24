@@ -117,7 +117,7 @@
 		(= temp0 [param1 5])
 		(= temp1 [param1 6])
 	)
-	(Text 0 (local46 data:) (local44 data:) 460 110)
+	(Text 0 (local46 data:) (local44 data:) 460 110) ; TextSize
 	((= [local30 temp0] (DText new:))
 		font: 460
 		text: (KString 8 (local44 data:)) ; StrDup
@@ -148,7 +148,7 @@
 		(local47 dispose:)
 		(= local47 (Str newCopies: (local44 data:)))
 	)
-	(Text 0 (local46 data:) (local47 data:) 460 110)
+	(Text 0 (local46 data:) (local47 data:) 460 110) ; TextSize
 	((= [local30 param5] (DText new:))
 		font: 460
 		text: (KString 8 (local47 data:)) ; StrDup
@@ -169,7 +169,7 @@
 
 (procedure (localproc_4 param1 param2 param3 param4 param5 param6)
 	(Message msgGET 460 param1 param2 param3 param4 (local44 data:))
-	(Text 0 (local46 data:) (local44 data:) 460 110)
+	(Text 0 (local46 data:) (local44 data:) 460 110) ; TextSize
 	((= [local30 param5] (DText new:))
 		font: 460
 		text: (KString 8 (local44 data:)) ; StrDup
@@ -281,7 +281,7 @@
 )
 
 (procedure (localproc_7 param1 param2)
-	(Text 0 (local46 data:) (local44 data:) 460 110)
+	(Text 0 (local46 data:) (local44 data:) 460 110) ; TextSize
 	((= [local30 param1] (DText new:))
 		font: 460
 		text: (KString 8 (local44 data:)) ; StrDup
@@ -327,7 +327,7 @@
 		(= temp0 [param1 5])
 		(= temp1 [param1 6])
 	)
-	(Text 0 (local46 data:) (local44 data:) 460 110)
+	(Text 0 (local46 data:) (local44 data:) 460 110) ; TextSize
 	((= [local30 temp0] (DText new:))
 		font: 460
 		text: (KString 8 (local44 data:)) ; StrDup

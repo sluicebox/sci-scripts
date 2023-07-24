@@ -1553,7 +1553,7 @@
 		x 77
 		y 26
 		description {}
-		lookStr 13252
+		lookStr {The rushing river surges from above forming a raging waterfall.}
 		view 570
 		loop 3
 		cel 1
@@ -1612,7 +1612,7 @@
 		x 81
 		y 39
 		description {}
-		lookStr 13252
+		lookStr {The rushing river surges from above forming a raging waterfall.}
 		view 570
 		loop 4
 		cel 3
@@ -1627,7 +1627,7 @@
 		x 92
 		y 61
 		description {}
-		lookStr 13252
+		lookStr {The rushing river surges from above forming a raging waterfall.}
 		view 570
 		loop 4
 		priority 3
@@ -1641,7 +1641,7 @@
 		x 81
 		y 59
 		description {}
-		lookStr 13252
+		lookStr {The rushing river surges from above forming a raging waterfall.}
 		view 570
 		loop 4
 		cel 2
@@ -1656,7 +1656,7 @@
 		x 81
 		y 48
 		description {}
-		lookStr 13252
+		lookStr {The rushing river surges from above forming a raging waterfall.}
 		view 570
 		loop 4
 		cel 2
@@ -1671,7 +1671,7 @@
 		x 90
 		y 75
 		description {}
-		lookStr 13252
+		lookStr {The rushing river surges from above forming a raging waterfall.}
 		view 570
 		loop 4
 		cel 3
@@ -1686,7 +1686,7 @@
 		x 94
 		y 87
 		description {}
-		lookStr 13252
+		lookStr {The rushing river surges from above forming a raging waterfall.}
 		view 570
 		loop 4
 		priority 5

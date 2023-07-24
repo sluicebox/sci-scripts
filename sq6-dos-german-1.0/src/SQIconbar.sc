@@ -433,7 +433,7 @@
 		(if (and (== (curInvView view:) 9551) (not bucksDisplay))
 			(= numBuckStr (Str format: {%d} gBuckazoidCount))
 			(= temp2 (IntArray newWith: 4 {}))
-			(Text 0 (temp2 data:) (numBuckStr data:) 70 30)
+			(Text 0 (temp2 data:) (numBuckStr data:) 70 30) ; TextSize
 			(= temp3
 				(/
 					(-
@@ -639,7 +639,7 @@
 					)
 					(gSounds eachElementDo: #check)
 					(FrameOut)
-					(breakif (gTalkers allTrue: 434 2))
+					(breakif (gTalkers allTrue: #isModeless 2))
 					(= temp0 ((gUser curEvent:) new:))
 				)
 			)

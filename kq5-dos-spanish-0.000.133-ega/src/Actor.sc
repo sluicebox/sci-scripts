@@ -581,7 +581,7 @@
 					)
 					-1
 				)
-				((and blocks (not (blocks allTrue: 60 self))) -2)
+				((and blocks (not (blocks allTrue: #doit self))) -2)
 			)
 		)
 	)

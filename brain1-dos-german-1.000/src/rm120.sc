@@ -412,19 +412,19 @@
 			(gCMusic2 number: 54 setLoop: 1 play:)
 			(Wait 0)
 			(Wait 30)
-			(proc5_9 120 35)
+			(proc5_9 120 35) ; "Try it again. This number sentence is not an equation."
 			(localproc_11)
 		)
 		(if (== local142 4)
 			(= local40 1)
-			(proc5_9 120 36)
+			(proc5_9 120 36) ; "You solved the Math Marvel puzzle!"
 			(DrawCel 140 6 2 (mathBox x:) (mathBox y:) 15)
 			(mathBox x: (- (mathBox x:) 3))
 			(mathBox y: (- (mathBox y:) 10))
 			(DrawCel 140 6 1 (mathBox x:) (mathBox y:) 15)
 			(DrawCel 140 6 3 (+ (mathBox x:) 14) (+ (mathBox y:) 16) 15)
 			(theMusic3 number: 52 setLoop: 1 play:)
-			(proc5_9 120 37)
+			(proc5_9 120 37) ; "In the chest, you find a key. You take it and put it away for later use."
 			(gEgo get: 4)
 			(gCMusic2 number: 58 setLoop: 1 play:)
 			(DrawCel 140 6 1 (mathBox x:) (mathBox y:) 15)
@@ -485,7 +485,7 @@
 		(= global408 (Memory memALLOC_CRIT (StrLen [local115 param1])))
 		(= global409 (Memory memALLOC_CRIT (StrLen [local115 param1])))
 		(StrSplitInTwo global408 global409 [local115 param1])
-		(proc5_14
+		(proc5_14 ; "The %s code word is '%s'."
 			120
 			44
 			global408
@@ -626,7 +626,7 @@
 				(Print 120 0) ; "The flowers must be standing in a foot of water!"
 			)
 			(3
-				(proc5_9 120 1)
+				(proc5_9 120 1) ; "Please leave Dr. Brain's flowers here for the next visitor."
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -648,7 +648,7 @@
 			)
 			(3
 				(gCMusic2 number: 914 setLoop: 1 play:)
-				(proc5_9 120 3)
+				(proc5_9 120 3) ; "The armor makes a hollow "Clang" sound."
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -669,7 +669,7 @@
 				(Print 120 4) ; "How does that go? "Mirror, mirror, on the wall..." No, that only works in Mixed-Up Fairy Tales."
 			)
 			(3
-				(proc5_9 120 5)
+				(proc5_9 120 5) ; "You left a smudge on the mirror. Better wash up next time."
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -704,13 +704,13 @@
 			((== theVerb 2)
 				(cond
 					((not cel)
-						(proc5_9 120 6)
+						(proc5_9 120 6) ; "Wooden you know it? The desk is tree foot tall. (The foot from the suit of armor must be a four-foot, then. Guess the oak's on you!)"
 					)
 					((IsFlag 13)
 						(localproc_14 local120)
 					)
 					(else
-						(proc5_9 120 7)
+						(proc5_9 120 7) ; "The drawer contains a sliding-tile puzzle."
 					)
 				)
 			)
@@ -751,13 +751,13 @@
 			((== theVerb 2)
 				(cond
 					((not (leftDoor cel:))
-						(proc5_9 120 8)
+						(proc5_9 120 8) ; "A sign on this wooden door reads "Math Marvel"."
 					)
 					((IsFlag 12)
 						(localproc_14 local119)
 					)
 					(else
-						(proc5_14
+						(proc5_14 ; "The Math Marvel is one of Dr. Brain's inventions. You need to construct correct addition, subtraction, multiplication, and division problems to get what's in the treasure chest. %s"
 							120
 							9
 							(if (< local124 2)
@@ -810,13 +810,13 @@
 			((== theVerb 2)
 				(cond
 					((not (rightDoor cel:))
-						(proc5_9 120 10)
+						(proc5_9 120 10) ; "This metal door is labelled "Magic Numbers"."
 					)
 					((IsFlag 11)
 						(localproc_14 local118)
 					)
 					(else
-						(proc5_9 120 11)
+						(proc5_9 120 11) ; "This is a "magic square". Place numbers in the squares so that they add to the same totals across each row, down each column, and along both diagonals."
 					)
 				)
 			)
@@ -883,7 +883,7 @@
 				(backDoor setCycle: End self)
 			)
 			(1
-				(proc5_9 120 13)
+				(proc5_9 120 13) ; "As the door opens, you notice a small award plaque showing that you have passed the mathematics examination with distinction. You pick it up proudly."
 				(gEgo get: 23)
 				(gCurRoom newRoom: 180)
 			)
@@ -1076,24 +1076,24 @@
 			(if (== local125 2)
 				(if local122
 					(if (IsFlag 0)
-						(proc5_9 120 14)
+						(proc5_9 120 14) ; "When the puzzle is complete, you will have created a picture of Dr. Brain's castle. But for now, pretend that the tiles are numbered 1-15 when in their correct order."
 					else
-						(proc5_9 120 15)
+						(proc5_9 120 15) ; "When the puzzle is complete, you will have created a picture of Dr. Brain. But for now, pretend that the tiles are numbered 1-15 when in their correct order."
 					)
 					(= local122 0)
 				)
 				(Print 120 16 #icon 167 0 2 #at 0 0)
 			else
 				(if (== (gGame printLang:) 1)
-					(proc5_9 120 17)
+					(proc5_9 120 17) ; "Start with the top row and work your way down. One useful technique is to "snake" tiles into position. Let's say you want to place the first two tiles. Move the "1" tile just under the "2" position, and the "2" tile right under it. Move other tiles so that the empty square is in the "2" position, then slide both tiles up, get the empty square into the "1" position, slide the "1" tile over, then the "2" tile up. Work your way down the puzzle this way."
 				else
-					(proc5_9 120 18)
+					(proc5_9 120 18) ; "Beginne mit der obersten Reihe und arbeite Dich dann nach unten vor. Eine n\81tzliche Technik besteht darin, die Teile in die richtige "Schlange" zu stellen. Nehmen wir einmal an, Du willst die ersten zwei Teile anordnen. Schiebe den "1" Teil unter die "2" Position und den "2" Teil direkt darunter. Verschiebe nun die anderen Teile so, da\e1 das leere Feld in der "2" Position steht und schiebe dann beide Teile nach oben. Das leere Feld sollte jetzt auf der "1" Position stehen, schiebe jetzt den "1" Teil darauf und dann den "2" Teil nach oben. Arbeite Dich auf diese Art nach unten vor."
 				)
 				(if (!= local125 0)
 					(if (== (gGame printLang:) 1)
-						(proc5_9 120 19)
+						(proc5_9 120 19) ; "The last two rows are a little trickier. Think of those squares as points around a circle. Let's say you have most of the 3rd row, but "10" is out of order (say the order is 9-11-10-12). Move the bottom row pieces so the empty square is under the "10", slide the "10" down, and rotate both rows together until the empty square is between "9" and "11", with the "10" under it. Slide "10" into position, and rotate the pieces back into their correct rows."
 					else
-						(proc5_9 120 20)
+						(proc5_9 120 20) ; "Die beiden letzten Reihen sind ein wenig schwieriger. Stell Dir diese Quadrate als Punkte auf einem Kreisumfang vor. Nehmen wir an, da\e1 Du den gr\94\e1ten Teil der 3. Reihe gel\94st hast, aber "10" nicht in der richtigen Reihenfolge steht (die Reihenfolge ist z.B. 9-11-10-12). Verschiebe jetzt die Teile in der untersten Reihe so, da\e1 sich das leere Feld unter "10" befindet, schiebe dann die "10" nach unten und rotiere jetzt beide Reihen solange, bis das leere Feld zwischen "9" und "11" steht und sich die "10" darunter befindet. Schiebe jetzt die "10" in die richtige Position und rotiere die Teile in ihre richtige Reihe zur\81ck."
 					)
 				)
 			)
@@ -1102,23 +1102,23 @@
 	)
 
 	(method (showHelp)
-		(proc5_9 120 21)
+		(proc5_9 120 21) ; "Inside the drawer, you find a sliding-tile puzzle. The object is to arrange the tiles correctly by sliding tiles into the empty space."
 		(switch local125
 			(0
-				(proc5_9 120 22)
+				(proc5_9 120 22) ; "When you have correctly arranged the tiles, you will have the numbers 1-3 across the top row, 4-6 across the middle row, and 7-8 on the left side of the bottom row."
 			)
 			(1
-				(proc5_9 120 23)
+				(proc5_9 120 23) ; "When you have correctly arranged the tiles, you will have the numbers 1-4 across the top row, 5-8 across the second row, 9-12 across the third row, and 13-15 on the left side of the bottom row."
 			)
 			(else
 				(if (IsFlag 0)
-					(proc5_9 120 24)
+					(proc5_9 120 24) ; "When you have correctly arranged the tiles, you will have created a picture of Dr. Brain's castle. (The empty tile will end up in the bottom right corner.)"
 				else
-					(proc5_9 120 25)
+					(proc5_9 120 25) ; "When you have correctly arranged the tiles, you will have created a picture of Dr. Brain. (The empty tile will end up in the bottom right corner.)"
 				)
 			)
 		)
-		(proc5_9 120 26)
+		(proc5_9 120 26) ; "Click on any tile in the same row or column as the empty square to slide it (and its neighbors) into the empty square. You can spend a Hint Coin to get some suggestions on how to solve this puzzle."
 	)
 
 	(method (dispatchEvent event &tmp temp0 temp1 temp2 temp3 temp4)
@@ -1252,7 +1252,7 @@
 				)
 				(else
 					(gCMusic2 number: 56 setLoop: 1 play:)
-					(proc5_9 120 27)
+					(proc5_9 120 27) ; "You can't move that tile -- it isn't in the same row or column as the blank square."
 					(= temp1 0)
 				)
 			)
@@ -1480,21 +1480,21 @@
 		(if (super buyClue: &rest)
 			(switch local123
 				(0
-					(proc5_9 120 28)
-					(proc5_9 120 29)
+					(proc5_9 120 28) ; "Each row, column, and diagonal will add up to "15". The center square is used four times (one row, one column, and both diagonals), so you'll want a very "average" number there -- put "5" in the center."
+					(proc5_9 120 29) ; "The corners are used three times each, while the sides are each used just twice. So put the "extreme" numbers 1 and 9 opposite each other on the sides. Now work in the rest of the numbers around them to get the correct totals."
 				)
 				(1
-					(proc5_9 120 30)
+					(proc5_9 120 30) ; "Each row, column, and diagonal will add up to "34". Try to keep the middle-sized numbers near the center of the square. One way to solve this type of magic square is to arrange all the numbers in order, then swap each number on the diagonals with its "complement" (1 with 16, 4 with 13, and so on -- subtract the number from 17 to get the number with which you should swap it)."
 				)
 				(2
-					(proc5_9 120 31)
+					(proc5_9 120 31) ; "Each row, column, and diagonal will add up to "64". Try to keep the middle-sized numbers near the center of the square. One way to solve this type of magic square is to arrange all the numbers in order, then swap each number on the diagonals with its "complement" (1 with 31, 7 with 25, and so on -- subtract the number from 32 to get the number with which you should swap it)."
 				)
 			)
 		)
 	)
 
 	(method (showHelp)
-		(proc5_9 120 32)
+		(proc5_9 120 32) ; "This is a "magic square". Place numbers in the squares such that they add to the same totals across each row, down each column, and along both diagonals. If you get stuck, spend a Hint Coin for some clues on how to solve this type of magic square."
 	)
 
 	(method (advance &tmp temp0 temp1 temp2 temp3)
@@ -2006,7 +2006,7 @@
 	)
 
 	(method (showHelp)
-		(proc5_14
+		(proc5_14 ; "The Math Marvel is one of Dr. Brain's inventions. You need to construct correct addition, subtraction, multiplication, and division problems to get what's in the treasure chest. %s You can buy the answer to the next problem for a Hint Coin."
 			120
 			34
 			(if (< local124 2)
@@ -2514,16 +2514,16 @@
 				)
 				(if (= local573 local586)
 					(gCMusic2 number: 51 setLoop: 1 play:)
-					(proc5_9 120 38)
+					(proc5_9 120 38) ; "Great! You unlocked the door!"
 					(SetFlag 32)
 				else
-					(proc5_9 120 39)
+					(proc5_9 120 39) ; "Nothing happens. That must not have been the correct combination."
 					(= local586 1)
 				)
 				(backDoorLock goAway:)
 			else
 				(gCMusic2 number: 51 setLoop: 1 play:)
-				(proc5_9 120 40)
+				(proc5_9 120 40) ; "You hear a "Click!". You figured out part of the combination. Good going!"
 				(localproc_13)
 			)
 		)
@@ -2596,7 +2596,7 @@
 	(method (buyClue)
 		(cond
 			((>= local126 2)
-				(proc5_9 120 41)
+				(proc5_9 120 41) ; "It appears that the previous hint coin got stuck in the slot."
 			)
 			((super buyClue: &rest)
 				(theMusic3 number: 56 setLoop: 1 play:)
@@ -2609,7 +2609,7 @@
 	)
 
 	(method (showHelp)
-		(proc5_9 120 42)
+		(proc5_9 120 42) ; "This is the security lock for the castle. Each time you solve one of the hallway puzzles, you will learn another code word from the combination. Using your Ultra Top Secret Decoder Grid, find the symbols which represent each code word, then key in the symbols in the correct order to open the lock. Click on ENTER (or press E) after each set of symbols."
 	)
 
 	(method (dispatchEvent event &tmp temp0 temp1 temp2 temp3 temp4 temp5)

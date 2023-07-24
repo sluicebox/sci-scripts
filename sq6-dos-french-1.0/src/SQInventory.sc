@@ -425,7 +425,7 @@
 				(if (and (not bucksShowing) (== (temp2 mainView:) 9551))
 					(= numBuckStr (Str format: {%d} gBuckazoidCount))
 					(= temp4 (IntArray newWith: 4 {}))
-					(Text 0 (temp4 data:) (numBuckStr data:) 70 30)
+					(Text 0 (temp4 data:) (numBuckStr data:) 70 30) ; TextSize
 					(= temp5
 						(/
 							(-

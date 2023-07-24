@@ -97,7 +97,7 @@
 		(Wait 0)
 		(Wait 60)
 		(rewardSound play:)
-		(proc5_9 320 13)
+		(proc5_9 320 13) ; "Congratulations! You've formed the secret password "ENTER" with your tangram pieces. The door to the Puzzle Room opens."
 		(tan solvePuzzle: goAway:)
 		(Animate (gCast elements:) 0)
 		(gCurRoom newRoom: 360)
@@ -363,16 +363,16 @@
 
 	(method (buyClue)
 		(if (super buyClue: &rest)
-			(proc5_9 320 0)
-			(proc5_9 320 1)
-			(proc5_9 320 2)
+			(proc5_9 320 0) ; "Arrange the tangram pieces to form a square. When they are correctly arranged, you will be able to read the word "ENTER" across the pieces. Look for parts of this word to figure out where each piece should go."
+			(proc5_9 320 1) ; "When the square is complete, there will be a line border all the way around it. As you place pieces, rotate them so that the line is on the outside."
+			(proc5_9 320 2) ; "The two large triangles go on the top and on the right side. The diamond shape goes on the center of the puzzle bottom."
 		)
 	)
 
 	(method (showHelp)
-		(proc5_9 320 3)
-		(proc5_9 320 4)
-		(proc5_9 320 5)
+		(proc5_9 320 3) ; "Place your tangram pieces on the grid to form a square and spell the password. Click on one of the pieces around the puzzle border to pick up and move that piece."
+		(proc5_9 320 4) ; "Click on the "rotation" symbol, then on a piece, to turn it 90 degrees clockwise. Click on the rotation symbol a second time to stop rotating pieces."
+		(proc5_9 320 5) ; "You can temporarily remove a piece from the grid by clicking on the piece, then clicking anywhere outside the grid. If you need help at solving the puzzle, you can spend a hint coin to get some suggestions."
 	)
 
 	(method (animateOnce)
@@ -386,7 +386,7 @@
 		(= temp5 (event y:))
 		(= temp3 (self firstTrue: #onMe event))
 		(if (IsFlag 48)
-			(proc5_9 320 6)
+			(proc5_9 320 6) ; "You need to find something to help you open this lock."
 			(self goAway:)
 		)
 		(event globalize:)
@@ -552,11 +552,11 @@
 		(if (== theVerb 3)
 			(cond
 				((and (IsFlag 10) (IsFlag 15))
-					(proc5_9 320 7)
+					(proc5_9 320 7) ; "There is nothing more for you beyond this door."
 				)
 				((and (IsFlag 10) (IsFlag 50))
-					(proc5_9 320 8)
-					(proc5_9 320 9)
+					(proc5_9 320 8) ; "The words which were hidden in the word search puzzle are in a list on the right side of the display. Highlight one of the words, then click on a line with the same number of letter spaces."
+					(proc5_9 320 9) ; "When all of the lines are correctly filled, the vertical line will spell a phrase describing the words you used. You can use a hint coin to put in the next word that you are missing or have wrong."
 					(ClearFlag 50)
 					(leftDoor hide:)
 					(Animate (gCast elements:) 0)
@@ -629,7 +629,7 @@
 					(tan init:)
 				)
 				(else
-					(proc5_9 320 10)
+					(proc5_9 320 10) ; "You will need to find some sort of "key" to open the door's strange-looking lock."
 				)
 			)
 		else
@@ -652,7 +652,7 @@
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
 			(gCMusic2 number: 968 flags: 1 setLoop: 1 setVol: 127 play:)
-			(proc5_9 320 11)
+			(proc5_9 320 11) ; "The rubber tree feels kind of rubbery. What a surprise!"
 		else
 			(super doVerb: theVerb &rest)
 		)
@@ -672,7 +672,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
-			(proc5_9 320 12)
+			(proc5_9 320 12) ; "The marble bust is cool to the touch. (After all, it hardly knows you!)"
 		else
 			(super doVerb: theVerb &rest)
 		)

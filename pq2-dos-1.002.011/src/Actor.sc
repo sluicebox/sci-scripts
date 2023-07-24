@@ -508,7 +508,7 @@
 					(not (IsObject gCurRoom))
 					(>= y (gCurRoom horizon:))
 				)
-				(or (== blocks 0) (blocks allTrue: 60 self))
+				(or (== blocks 0) (blocks allTrue: #doit self))
 			)
 		)
 	)

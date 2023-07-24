@@ -197,7 +197,7 @@
 		nsBottom 43
 		nsRight 318
 		description {}
-		lookStr 1964
+		lookStr {Stay tuned at end of game\nfor an intimation of\nQuest for Glory III.}
 	)
 )
 

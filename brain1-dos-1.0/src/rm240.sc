@@ -260,13 +260,13 @@
 
 	(method (buyClue &tmp [temp0 2])
 		(if (super buyClue:)
-			(proc5_9 240 0)
+			(proc5_9 240 0) ; "Place each of the components so that they form a complete circuit from the lower left to the lower right. The correct order is: Battery, Switch, Resistor, Coil, Capacitor. (All will be placed horizontally except the Switch, which is vertical on the left side.)"
 		)
 	)
 
 	(method (showHelp)
-		(proc5_9 240 1)
-		(proc5_9 240 2)
+		(proc5_9 240 1) ; "This is the central computer control circuit. The object is to place the five components in the correct positions to complete the circuit. Instructions are on the maintenance card on the other panel on this console."
+		(proc5_9 240 2) ; "If you get really stuck, insert a hint coin in the coin slot, and we'll tell you where each component goes. But you'll have more fun figuring it out for yourself."
 	)
 
 	(method (animateOnce)
@@ -328,8 +328,8 @@
 								(if (localproc_1)
 									(Animate (gCast elements:) 0)
 									(reward1Sound play:)
-									(proc5_9 240 3)
-									(proc5_9 240 4)
+									(proc5_9 240 3) ; "Congratulations! You have successfully assembled the central control circuit. Now you can pick up Easy Listening 107, "All Music All the Time." Either that, or you've managed to repair the binary sequencing computer."
+									(proc5_9 240 4) ; "You are awarded a memento copy of the control circuit, proving that you know how to follow directions."
 									(gEgo get: 29)
 									(= local43 1)
 									(electricalArc play:)
@@ -674,9 +674,9 @@
 	(method (doVerb theVerb)
 		(if (or (== theVerb 3) (== theVerb 2))
 			(if (not (IsFlag 16))
-				(proc5_9 240 5 70 220)
+				(proc5_9 240 5 70 220) ; "Circuit instructions: 1. Form a complete circuit from the lower left       to the lower right. 2. Don't make any short circuits or       duplicate connections. 3. The power source comes first. 4. You need to slow things down before       you can whirl them around. 5. If a component is yellow, leave it until last. 6. Banded elements must come after switches."
 			else
-				(proc5_9 240 6)
+				(proc5_9 240 6) ; "You've solved it already. Besides if you fool around with the circuit any more, you might void the warranty."
 			)
 		else
 			(super doVerb: theVerb &rest)
@@ -696,7 +696,7 @@
 			(if (not local43)
 				(circuit show:)
 			else
-				(proc5_9 240 7)
+				(proc5_9 240 7) ; "You've solved it already. Besides, if you fool around with the circuit any more, you might void the warranty."
 			)
 		else
 			(super doVerb: theVerb &rest)
@@ -717,7 +717,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
-			(proc5_9 240 8)
+			(proc5_9 240 8) ; "Don't take the laundry out yet; the tape drive is still on its spin cycle."
 		else
 			(super doVerb: theVerb &rest)
 		)
@@ -736,7 +736,7 @@
 			(if (not local44)
 				(sequencer init:)
 			else
-				(proc5_9 240 9)
+				(proc5_9 240 9) ; "The binary sequences are now correctly set."
 			)
 		else
 			(super doVerb: theVerb &rest)
@@ -866,7 +866,7 @@
 		(Animate (gCast elements:) 0)
 		(cond
 			((not local43)
-				(proc5_11 240 10)
+				(proc5_11 240 10) ; "Sorry, the binary sequencer is not currently functional. Please repair the central control circuit to achieve full sequencer operational status."
 			)
 			(local44
 				(gCurRoom setScript: finishRoom)
@@ -886,7 +886,7 @@
 	(method (solvePuzzle)
 		(super solvePuzzle: &rest)
 		(reward2Sound play:)
-		(proc5_11 240 12)
+		(proc5_11 240 12) ; "Congratulations! You have solved the binary conversion puzzle and fixed Dr. Brain's stereo system. A magnetic data card pops out of a slot on the console, and you pick it up for later use. Now, there's this nuclear reactor..."
 		(gEgo get: 8)
 		(= local44 1)
 	)
@@ -917,11 +917,11 @@
 	)
 
 	(method (showHelp)
-		(proc5_11 240 13)
+		(proc5_11 240 13) ; "This is the Binary Sequencing Computer. A decimal number is shown in the box at the left of each line. Turn the switches on and off to form the number's binary equivalent. When you have the correct number, the bulb at the right side of the line will light up."
 		(if (!= global114 2)
-			(proc5_11 240 14)
+			(proc5_11 240 14) ; "The second box shows the decimal equivalent of the number currently formed by the switches. Watch how this number changes as you push the switches. It will help you get the right settings."
 		)
-		(proc5_11 240 15)
+		(proc5_11 240 15) ; "If you get really stuck, insert a hint coin into the slot and we will solve the next row of the conversion for you."
 	)
 
 	(method (animateOnce)

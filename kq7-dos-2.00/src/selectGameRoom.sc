@@ -311,7 +311,7 @@
 					y: [local0 (mod (- local15 1) 5)]
 					init:
 				)
-				(Text 0 (temp3 data:) (temp2 data:) 30 0)
+				(Text 0 (temp3 data:) (temp2 data:) 30 0) ; TextSize
 				((= local22 (DText new:))
 					font: 960
 					text: (KString 8 (temp2 data:)) ; StrDup

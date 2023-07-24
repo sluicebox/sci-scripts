@@ -188,9 +188,9 @@
 	)
 
 	(method (showHelp)
-		(proc5_9 390 0)
-		(proc5_9 390 1)
-		(proc5_14 390 2 local20)
+		(proc5_9 390 0) ; "This lock is sealed by a set of computer-chosen symbols. To open the lock, you must guess the selected symbols. After each guess, the computer will show you (in red) how many symbols you guessed correctly, but in the wrong positions, and (in blue) how many you guessed exactly right."
+		(proc5_9 390 1) ; "Guess symbols by clicking on the symbols at the bottom of the display. You can also use the Up and Down Arrow symbols to look at your previous guesses."
+		(proc5_14 390 2 local20) ; "You have up to %d guesses to logically deduce the chosen combination without setting off the security alarm (this will cause the computer to reset the combination, and you'll have to start over). If you need help, a Hint Coin will buy you the next symbol of the correct combination."
 	)
 )
 
@@ -299,7 +299,7 @@
 				(localproc_0 0 4 0 1)
 			)
 			((>= local19 local20)
-				(proc5_9 390 4)
+				(proc5_9 390 4) ; "*** Warning! Warning! *** Safe has been tampered with. Resetting security code."
 				(= temp2 0)
 				(for ((= temp3 local18)) (< temp2 5) ((++ temp3))
 					(for ((= temp1 0)) (< temp1 local11) ((++ temp1))
@@ -328,7 +328,7 @@
 					(Wait 8)
 					(++ temp2)
 				)
-				(proc5_9 390 5)
+				(proc5_9 390 5) ; "Old combination being purged."
 				(localproc_1)
 				(safe goAway:)
 			)

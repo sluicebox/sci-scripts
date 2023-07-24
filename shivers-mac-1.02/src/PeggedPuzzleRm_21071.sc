@@ -127,27 +127,7 @@
 
 	(method (init)
 		(self
-			createPoly:
-				0
-				0
-				0
-				142
-				262
-				142
-				262
-				0
-				1
-				0
-				20
-				3
-				20
-				141
-				237
-				141
-				236
-				3
-				20
-				3
+			createPoly: 0 0 0 142 262 142 262 0 1 0 20 3 20 141 237 141 236 3 20 3
 		)
 		(super init: &rest)
 		(gMouseDownHandler delete: self)

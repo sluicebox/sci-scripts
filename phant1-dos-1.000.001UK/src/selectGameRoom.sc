@@ -94,7 +94,7 @@
 					init:
 				)
 				(= temp3 (IntArray newWith: 4 {}))
-				(Text 0 (temp3 data:) (temp1 data:) 999 0)
+				(Text 0 (temp3 data:) (temp1 data:) 999 0) ; TextSize
 				((= temp5 (DText new:))
 					font: 999
 					text: (KString 8 (temp1 data:)) ; StrDup

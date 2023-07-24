@@ -215,11 +215,11 @@
 				
 				(textList nextNode: (KList 6 node)) ; NextNode
 				(= obj (KList 8 node)) ; NodeValue
-				(Text 0 (r data:) (obj text:) font 0)
+				(Text 0 (r data:) (obj text:) font 0) ; TextSize
 				(= widest (Max (r at: 2) widest))
 			)
 		)
-		(Text 0 (r data:) {M} font 0)
+		(Text 0 (r data:) {M} font 0) ; TextSize
 		(= textHeight (+ (r at: 3) 2))
 		(r dispose:)
 		(= nsTop (= nsLeft 0))

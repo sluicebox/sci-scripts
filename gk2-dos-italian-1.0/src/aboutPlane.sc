@@ -224,7 +224,7 @@
 			(listOStrings dispose:)
 		else
 			((= local0 (IntArray newWith: 4)) name: {textBox})
-			(Text 0 (local0 data:) (param1 data:) gUserFont 0)
+			(Text 0 (local0 data:) (param1 data:) gUserFont 0) ; TextSize
 			(= temp0
 				(Bitmap
 					0 ; Create

@@ -713,19 +713,19 @@
 	(method (testForSolution)
 		(switch local12
 			(0
-				(if (ringList allTrue: 1003 0)
+				(if (ringList allTrue: #symbolMatch 0)
 					(++ local12)
 					(gMySoundFX number: 228 loop: 0 play:)
 				)
 			)
 			(1
-				(if (ringList allTrue: 1003 12)
+				(if (ringList allTrue: #symbolMatch 12)
 					(++ local12)
 					(gCurRoom setScript: openTopRingScr)
 				)
 			)
 			(2
-				(if (ringList allTrue: 1003 4)
+				(if (ringList allTrue: #symbolMatch 4)
 					(++ local12)
 					(gCurRoom setScript: openBottomRingScr)
 				)
@@ -3677,7 +3677,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(if (and (== theVerb 5) (not local11) (inlayList allTrue: 1001 1)) ; Do
+		(if (and (== theVerb 5) (not local11) (inlayList allTrue: #verify 1)) ; Do
 			(gCurRoom setScript: openPanel1Scr)
 		)
 	)
@@ -3701,7 +3701,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(if (and (== theVerb 5) local11 (inlayList allTrue: 1001 2)) ; Do
+		(if (and (== theVerb 5) local11 (inlayList allTrue: #verify 2)) ; Do
 			(gCurRoom setScript: openPanel2Scr)
 		)
 	)

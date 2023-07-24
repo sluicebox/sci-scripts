@@ -297,7 +297,7 @@
 	(method (doVerb theVerb &tmp temp0 temp1)
 		(cond
 			((== theVerb 3)
-				(proc5_9 440 0)
+				(proc5_9 440 0) ; "You can start doing these once you become Dr. Brain's lab assistant. You'd better wait until then."
 			)
 			((== theVerb 2)
 				(= temp1 2)
@@ -308,7 +308,7 @@
 					(= global408 (Memory memALLOC_CRIT (StrLen [local6 temp0])))
 					(= global409 (Memory memALLOC_CRIT (StrLen [local6 temp0])))
 					(StrSplitInTwo global408 global409 [local6 temp0])
-					(proc5_14 440 1 global408 global409)
+					(proc5_14 440 1 global408 global409) ; "This note says "%s.""
 					(Memory memFREE global408)
 					(Memory memFREE global409)
 				)
@@ -333,7 +333,7 @@
 			((== theVerb 3)
 				(cond
 					((not (IsFlag 38))
-						(proc5_9 440 2)
+						(proc5_9 440 2) ; "A voice from behind the wall says, "Please don't play with my books until you've filled out the job application form.""
 					)
 					((IsFlag 39)
 						(self setScript: openShelf)
@@ -353,10 +353,10 @@
 			((== theVerb 2)
 				(switch local21
 					(0
-						(proc5_9 440 3)
+						(proc5_9 440 3) ; "This bookshelf contains a number of the greatest works of scientific research and classical philosophy. There's also a henway."
 					)
 					(1
-						(proc5_9 440 4)
+						(proc5_9 440 4) ; "What's a henway? Why, about 5 pounds."
 					)
 					(else
 						(= temp0 (Random 0 8))
@@ -364,7 +364,7 @@
 							(= global408 (Memory memALLOC_CRIT (StrLen [local12 temp0])))
 							(= global409 (Memory memALLOC_CRIT (StrLen [local12 temp0])))
 							(StrSplitInTwo global408 global409 [local12 temp0])
-							(proc5_14 440 5 global408 global409)
+							(proc5_14 440 5 global408 global409) ; "One of the books is called "%s"."
 							(Memory memFREE global408)
 							(Memory memFREE global409)
 						)
@@ -390,9 +390,9 @@
 			)
 			(1
 				(gCMusic2 stop:)
-				(proc5_11 440 6)
-				(proc5_11 440 7)
-				(proc5_11 440 8)
+				(proc5_11 440 6) ; "You hear a voice from the next room."
+				(proc5_11 440 7) ; "Congratulations! You have solved every problem I set forth for you. You shall be my new lab assistant."
+				(proc5_11 440 8) ; "I hereby award you this Certificate of Achievement for your accomplishments."
 				(gEgo get: 2)
 				(gCurRoom newRoom: 480)
 			)
@@ -415,7 +415,7 @@
 		(cond
 			((== theVerb 3)
 				(if (and cel (not cycler))
-					(proc5_9 440 9)
+					(proc5_9 440 9) ; "Haven't you done enough damage already?"
 				else
 					(gCMusic2 number: 953 setLoop: 1 play:)
 					(self setCycle: End)
@@ -427,7 +427,7 @@
 			)
 			((== theVerb 2)
 				(if cel
-					(proc5_9 440 10)
+					(proc5_9 440 10) ; "Well, it WAS a nice chair!"
 				else
 					(proc5_9 lookStr)
 				)
@@ -454,7 +454,7 @@
 		(if (== theVerb 3)
 			(if (not local31)
 				(gCMusic2 number: 952 setLoop: 1 play:)
-				(proc5_9 440 11)
+				(proc5_9 440 11) ; "You just hear a dial tone."
 				(gCMusic2 stop:)
 			else
 				(phoneS stop:)
@@ -462,19 +462,19 @@
 				(= local31 0)
 				(switch local22
 					(0
-						(proc5_14 440 12)
+						(proc5_14 440 12) ; ""Hello? Hello?" It's someone from the pizza parlor asking why Dr. Brain hasn't paid last month's pizza bills."
 					)
 					(1
-						(proc5_14 440 13)
+						(proc5_14 440 13) ; ""Hello? Hello?" It's someone from the rent office asking about Dr. Brain's rent payment."
 					)
 					(2
-						(proc5_14 440 14)
+						(proc5_14 440 14) ; ""Hello? Hello?" It's Dr. Brain's publisher asking why the manuscript for his latest book is three months late."
 					)
 					(3
-						(proc5_14 440 15)
+						(proc5_14 440 15) ; "You're beginning to get an idea as to why Dr. Brain never answers the phone."
 					)
 					(else
-						(proc5_14 440 16)
+						(proc5_14 440 16) ; "Better leave the phone alone; they're starting to sound mad."
 					)
 				)
 				(++ local22)
@@ -536,7 +536,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
-			(proc5_9 440 17)
+			(proc5_9 440 17) ; "Don't bother -- it'll all be in the paper or Junior Scientist magazine tomorrow."
 		else
 			(super doVerb: theVerb &rest)
 		)
@@ -613,7 +613,7 @@
 						(self setScript: openDrawer)
 					)
 				else
-					(proc5_9 440 18)
+					(proc5_9 440 18) ; "The drawer is locked."
 				)
 			)
 			((== theVerb 2)
@@ -622,10 +622,10 @@
 						(proc5_9 lookStr)
 					)
 					((gEgo has: 20)
-						(proc5_9 440 19)
+						(proc5_9 440 19) ; "There is nothing else of interest in the drawer."
 					)
 					(else
-						(proc5_9 440 20)
+						(proc5_9 440 20) ; "The only thing of interest in the drawer is the ring. It looks as though the face of the ring can be rotated."
 					)
 				)
 			)
@@ -651,7 +651,7 @@
 			(1
 				(if (not (gEgo has: 20))
 					(ring setLoop: 8 setCel: 0 x: 166 y: 131)
-					(proc5_9 440 21)
+					(proc5_9 440 21) ; "The drawer opens to reveal a cheap-looking ring."
 				)
 				(self dispose:)
 			)
@@ -699,7 +699,7 @@
 		(if (== theVerb 3)
 			(cond
 				((IsFlag 38)
-					(proc5_9 440 22)
+					(proc5_9 440 22) ; "You have already proven your job skills. Now you need to meet with Dr. Brain."
 				)
 				((jobPuzzle show:)
 					(jobPuzzle dispose:)
@@ -724,7 +724,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
-			(proc5_9 440 23)
+			(proc5_9 440 23) ; "It feels like good, solid oak to you."
 		else
 			(super doVerb: theVerb)
 		)
@@ -765,7 +765,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
-			(proc5_9 440 24)
+			(proc5_9 440 24) ; "You can take out the trash later, once you get the lab assistant job. Nice of you to offer, though."
 		else
 			(super doVerb: theVerb &rest)
 		)
@@ -843,8 +843,8 @@
 		(super show: &rest)
 		(if local62
 			(self solvePuzzle: 2)
-			(proc5_9 440 6)
-			(proc5_9 440 25)
+			(proc5_9 440 6) ; "You hear a voice from the next room."
+			(proc5_9 440 25) ; "Very good. You seem to have mastered the skills you will need. Please meet me in the Control Room behind the bookshelf as soon as you can."
 		)
 		(phoneS vol: 127)
 		(teletypeS vol: 127)
@@ -903,14 +903,14 @@
 	)
 
 	(method (showHelp)
-		(proc5_9 440 26)
-		(proc5_9 440 27)
+		(proc5_9 440 26) ; "During your journey through the Castle of Dr. Brain, you've demonstrated a number of skills that should qualify you for the lab assistant job. Now prove it by placing the job skill plaques on the board and matching them with the puzzle plaques you've earned along the way."
+		(proc5_9 440 27) ; "Some of your puzzles might apply to two or more skills, so make sure you choose the one which will let you use all of your puzzle plaques. If you get stuck, you could always buy an answer with one of your hint coins (but Dr. Brain would probably not be impressed!)"
 	)
 
 	(method (buyClue &tmp temp0 temp1)
 		(cond
 			(local60
-				(proc5_9 440 28)
+				(proc5_9 440 28) ; "Just click on the skill names."
 			)
 			((super buyClue: &rest)
 				(if local59
@@ -970,7 +970,7 @@
 					(= global408 (Memory memALLOC_CRIT (StrLen [local81 value])))
 					(= global409 (Memory memALLOC_CRIT (StrLen [local81 value])))
 					(StrSplitInTwo global408 global409 [local81 value])
-					(proc5_14 440 29 global408 global409)
+					(proc5_14 440 29 global408 global409) ; "Nice try, but solving that puzzle doesn't prove you are skilled in %s."
 					(Memory memFREE global408)
 					(Memory memFREE global409)
 				)
@@ -1252,11 +1252,11 @@
 						(cond
 							((not temp7)
 								(gCMusic2 number: 58 setLoop: 1 play:)
-								(proc5_9 440 30)
+								(proc5_9 440 30) ; "The book won't fit on the shelf there."
 							)
 							([local137 temp7]
 								(gCMusic2 number: 58 setLoop: 1 play:)
-								(proc5_9 440 30)
+								(proc5_9 440 30) ; "The book won't fit on the shelf there."
 							)
 							(else
 								(gCMusic2 number: 61 setLoop: 1 play:)
@@ -1317,7 +1317,7 @@
 						(localproc_4)
 					)
 					(else
-						(proc5_9 440 31)
+						(proc5_9 440 31) ; "You can't put the book here."
 					)
 				)
 				(event dispose:)
@@ -1402,17 +1402,17 @@
 	)
 
 	(method (showHelp)
-		(proc5_9 440 32)
-		(proc5_9 440 33)
+		(proc5_9 440 32) ; "You're sure that this bookshelf blocks the secret passage to Dr. Brain's secret basement lab. (He's into secrets.) But you'll have to move the books in exactly the right order to open the bookshelf."
+		(proc5_9 440 33) ; "The clue sheet you got from the robot room should give you some help -- if you can get it to make sense. If you're totally stuck, a hint coin will suggest how you can do that."
 	)
 
 	(method (buyClue)
 		(cond
 			((IsFlag 51)
-				(proc5_9 440 34)
+				(proc5_9 440 34) ; "You already have all the clues you need for this puzzle. If you think you've done something wrong, click on Exit and come back to start over."
 			)
 			((super buyClue: &rest)
-				(proc5_9 440 35)
+				(proc5_9 440 35) ; "That clue sheet doesn't seem to make much sense, does it? Maybe there is something you can do to it which will make it more readable. Check out the other things you're carrying."
 				(bookPuzzle goAway:)
 			)
 		)
@@ -1574,7 +1574,7 @@
 			(= local164 1)
 			(bookPuzzle goAway:)
 		else
-			(proc5_9 440 36)
+			(proc5_9 440 36) ; "Hey! Leave that poor bird alone! (For now.)"
 		)
 	)
 
@@ -1615,16 +1615,16 @@
 				(gCMusic2 number: 57 setLoop: 1 play:)
 				(cond
 					((< local205 2)
-						(proc5_9 440 37)
+						(proc5_9 440 37) ; "You'd better stop and think about what you're doing. Random guesses won't cut it here."
 					)
 					((< local205 4)
-						(proc5_9 440 38)
+						(proc5_9 440 38) ; "Maybe you should recheck the code sheet. You took a wrong turn a while ago."
 					)
 					((< local205 6)
-						(proc5_9 440 39)
+						(proc5_9 440 39) ; "So close, and yet so far. You just don't seem to be getting the last few steps."
 					)
 					(else
-						(proc5_9 440 40)
+						(proc5_9 440 40) ; "Sorry, you almost got it, but messed up a few steps back."
 					)
 				)
 				(localproc_5)
@@ -1653,7 +1653,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
-			(proc5_9 440 41)
+			(proc5_9 440 41) ; "You can start doing these once you become Dr. Brain's lab assistant. You'd better wait until then."
 		else
 			(super doVerb: theVerb)
 		)
@@ -1693,7 +1693,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
-			(proc5_9 440 42)
+			(proc5_9 440 42) ; "There's a little bit of left-over pizza on the blotter. You decide to leave it there."
 		else
 			(super doVerb: theVerb)
 		)
@@ -1713,7 +1713,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
-			(proc5_9 440 43)
+			(proc5_9 440 43) ; "This looks like the only way Dr. Brain can hold things together around here."
 		else
 			(super doVerb: theVerb)
 		)
@@ -1732,7 +1732,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
-			(proc5_9 440 44)
+			(proc5_9 440 44) ; "There are too many papers here to clean up right now."
 		else
 			(super doVerb: theVerb)
 		)
@@ -1751,7 +1751,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
-			(proc5_9 440 45)
+			(proc5_9 440 45) ; "It feels like a TV screen."
 		else
 			(super doVerb: theVerb)
 		)
@@ -1771,8 +1771,8 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
-			(proc5_9 440 46)
-			(proc5_9 440 47)
+			(proc5_9 440 46) ; "You know, this really looks like one of those things you'd find in an old house in a movie. You really think you ought to be able to move it and have the bookshelf slide into the wall, revealing a secret passage to Dr. Brain's secret basement lab."
+			(proc5_9 440 47) ; "But nothing happens when you push the mirror frame. It does get you thinking about the bookshelf, though. What if there really was a way to move it?"
 		else
 			(super doVerb: theVerb)
 		)
@@ -1792,7 +1792,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
-			(proc5_9 440 48)
+			(proc5_9 440 48) ; "You'd better leave the dart alone for now. It could be part of an important scientific experiment."
 		else
 			(super doVerb: theVerb)
 		)

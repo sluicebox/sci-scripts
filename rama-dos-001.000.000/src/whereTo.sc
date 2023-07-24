@@ -259,7 +259,7 @@
 		(= temp3 (IntArray with: 0 0 0 0))
 		(super init:)
 		(gTheCursor show:)
-		(Text 0 (temp3 data:) {A} gUserFont 320)
+		(Text 0 (temp3 data:) {A} gUserFont 320) ; TextSize
 		(= temp2 (+ (temp3 at: 3) 6))
 		(switch
 			(= temp0

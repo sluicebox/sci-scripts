@@ -31,7 +31,7 @@
 	local40
 	local41
 	local42
-	[local43 10] = [{} 5140 {MOVE LEFT} {MOVE BACKWARD} {MOVE RIGHT} {TURN ON} {TURN OFF} {BEGIN} {END} {}]
+	[local43 10] = [{} {MOVE FORWARD} {MOVE LEFT} {MOVE BACKWARD} {MOVE RIGHT} {TURN ON} {TURN OFF} {BEGIN} {END} {}]
 	[local53 3] = [1 3 2]
 	[local56 3] = [24 25 26]
 	[local59 9] = [0 3 4 1 2 6 5 7 8]
@@ -239,7 +239,7 @@
 		(localproc_15 {ITEM DELIVERED} 8 [local0 4] 5)
 		(= local42 (- local35 1))
 		([global356 local42] signal: (| ([global356 local42] signal:) $0004))
-		(proc5_21 285 4 [local298 local42])
+		(proc5_21 285 4 [local298 local42]) ; "You see the %s in the pocket and pick it up."
 		(localproc_13)
 		(= local35 0)
 		(localproc_11)
@@ -798,11 +798,11 @@
 	)
 
 	(method (buyClue)
-		(proc5_11 285 2)
+		(proc5_11 285 2) ; "This coin slot seems to be out of order. Try the one on the robot computer."
 	)
 
 	(method (showHelp)
-		(proc5_11 285 3)
+		(proc5_11 285 3) ; "The robot will follow the instructions you program using the "Robocomp" computer. That is, it will if the robot was correctly designed."
 	)
 )
 

@@ -270,9 +270,9 @@
 	)
 
 	(method (showHelp)
-		(proc5_9 385 0)
-		(proc5_9 385 1)
-		(proc5_9 385 2)
+		(proc5_9 385 0) ; "The dummy is about to be hung, probably for the crime of being stupid. You can save the dummy by being smart enough to guess three words."
+		(proc5_9 385 1) ; "Guess the words by choosing one letter at a time (either click on the letters on the hanging post, or type them). If your guess is correct, the letters will appear in the word above the dummy. But if you get too many wrong, the dummy will hang."
+		(proc5_9 385 2) ; "If you get stuck, you can use a Hint Coin to buy a correct letter that you haven't yet guessed. Each time you guess a word, the dummy will give you a clue to the cabinet lock. After you rescue the dummy, you can review the clues by clicking the Eye on the hanging post."
 	)
 
 	(method (enable &tmp temp0 temp1)
@@ -493,7 +493,7 @@
 					(= global408 (Memory memALLOC_CRIT (StrLen [local53 (- local42 1)])))
 					(= global409 (Memory memALLOC_CRIT (StrLen [local53 (- local42 1)])))
 					(StrSplitInTwo global408 global409 [local53 (- local42 1)])
-					(proc5_14
+					(proc5_14 ; "The dummy says, "Thank you. That feels much better. By the way, the %s number of the cabinet combination is %d"."
 						385
 						3
 						global408
@@ -521,7 +521,7 @@
 				(gCMusic2 number: 53 setLoop: 1 play: self)
 			)
 			(4
-				(proc5_9 385 4)
+				(proc5_9 385 4) ; "Just before he leaves, the dummy adds, "I'm free! Thank you! By the way, you'll need some things from Dr. Brain's safe before you take the elevator up into the tower.""
 				(= ticks 1)
 			)
 			(5
@@ -564,7 +564,7 @@
 				(dummy loop: 2 cel: 0 cycleSpeed: 4 setCycle: End)
 			)
 			(6
-				(proc5_9 385 5)
+				(proc5_9 385 5) ; "One more dummy lost to the world. You'd better hope you're smart enough not to let it happen to you. (You might start by guessing the next word correctly!)"
 				(= ticks 1)
 			)
 			(7

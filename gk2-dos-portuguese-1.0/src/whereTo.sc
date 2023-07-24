@@ -24,7 +24,7 @@
 	(= temp0 (Str newWith: 10 {}))
 	(= temp1 (Str newWith: 3 {}))
 	(gGame setCursor: gNormalCursor 1)
-	(Text 0 (local0 data:) {A} gUserFont 320)
+	(Text 0 (local0 data:) {A} gUserFont 320) ; TextSize
 	(= local1 0)
 	(= local1
 		(Print

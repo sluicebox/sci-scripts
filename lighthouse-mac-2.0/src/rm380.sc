@@ -30,7 +30,7 @@
 
 (procedure (localproc_0 param1 param2 param3 &tmp temp0 temp1)
 	(= temp0 (IntArray new:))
-	(Text 0 (temp0 data:) param1 param2 param3)
+	(Text 0 (temp0 data:) param1 param2 param3) ; TextSize
 	(= temp1 (- (temp0 at: 3) (temp0 at: 0)))
 	(temp0 dispose:)
 	(return temp1)

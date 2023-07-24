@@ -22,7 +22,7 @@
 (local
 	[local0 8] = [54 52 44 44 52 12 5 12]
 	[local8 48] = [7 1 11 11 1 4 7 4 0 0 0 0 0 0 0 0 0 0 0 0 3 4 0 2 1 2 4 3 0 1 3 4 5 0 0 0 0 0 1 2 4 8 16 {(A) Multiply.....} {(B) Apply CPU.....} {(C) It has square roots.....} {(D) To avoid short circuits.....} {(E) A cowculator.....}]
-	[local56 20] = [{What's special about} {the way a robot plant} {grows?} {} 7719 {does a dairy farmer} {use?} {} {Why do robots always} {take the longest path} {between two points?} {} {What do robot rabbits} {do best?} {} {} {What should you do } {when a robot is } {having a heart attack?} {}]
+	[local56 20] = [{What's special about} {the way a robot plant} {grows?} {} {What kind of computer} {does a dairy farmer} {use?} {} {Why do robots always} {take the longest path} {between two points?} {} {What do robot rabbits} {do best?} {} {} {What should you do } {when a robot is } {having a heart attack?} {}]
 	local76
 	local77
 	local78
@@ -138,7 +138,7 @@
 				(self setScript: openLeftDoor)
 			)
 			(else
-				(proc5_9 220 0)
+				(proc5_9 220 0) ; "You need a magnetic data card to open the door."
 			)
 		)
 	)
@@ -204,7 +204,7 @@
 			((== theVerb 3)
 				(cond
 					((not (gEgo has: 8))
-						(proc5_9 220 1)
+						(proc5_9 220 1) ; "The data card is required to operate this console."
 					)
 					((IsFlag 41)
 						(self setScript: openBackDoor)
@@ -351,13 +351,13 @@
 				(gCurRoom newRoom: 260)
 			)
 			((== theVerb 3)
-				(proc5_9 220 2)
+				(proc5_9 220 2) ; "The robot has escaped from the maze. There's no reason to go back."
 			)
 			((and (== theVerb 2) (IsFlag 55))
-				(proc5_9 220 3)
+				(proc5_9 220 3) ; "You can see the robot maze through the doorway"
 			)
 			(2
-				(proc5_9 220 4)
+				(proc5_9 220 4) ; "Beyond this door lies the "Robot Maze"."
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -385,13 +385,13 @@
 				(gCurRoom newRoom: 240)
 			)
 			((== theVerb 3)
-				(proc5_9 220 5)
+				(proc5_9 220 5) ; "The circuits are buzzing, and the computer is running. You don't need to go back."
 			)
 			((and (== theVerb 2) (IsFlag 56))
-				(proc5_9 220 6)
+				(proc5_9 220 6) ; "Through the open doorway you can see the flashing lights and pulsating electrons of the "Computer Room"."
 			)
 			((== theVerb 2)
-				(proc5_9 220 7)
+				(proc5_9 220 7) ; "This is the door to the "Computer Room"."
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -410,7 +410,7 @@
 				(lightedFloor show:)
 			)
 			(1
-				(proc5_9 220 8)
+				(proc5_9 220 8) ; "You open the door to the Robot Maze."
 				(gCurRoom newRoom: 260)
 				(self dispose:)
 			)
@@ -429,7 +429,7 @@
 				(backDoor setCycle: End self)
 			)
 			(1
-				(proc5_9 220 9)
+				(proc5_9 220 9) ; "You've solved enough riddles that the robots think you're their kind of humanoid. The door opens."
 				(gCurRoom newRoom: 280)
 				(self dispose:)
 			)
@@ -446,7 +446,7 @@
 				(rightDoor setCycle: Beg self)
 			)
 			(1
-				(proc5_9 220 10)
+				(proc5_9 220 10) ; "You open the door to the Computer Room."
 				(gCurRoom newRoom: 240)
 				(self dispose:)
 			)
@@ -558,17 +558,17 @@
 		)
 		(cond
 			((not global115)
-				(proc5_11 220 11)
+				(proc5_11 220 11) ; "You are out of hint coins."
 			)
 			((== temp0 1)
-				(proc5_11 220 12)
+				(proc5_11 220 12) ; "To get a hint for that question, you must get the answer from the Robot Maze."
 			)
 			(else
 				(if (not (-- global115))
 					(gEgo put: 0)
-					(proc5_11 220 13)
+					(proc5_11 220 13) ; "You insert your last hint coin in the slot."
 				else
-					(proc5_21
+					(proc5_21 ; "You insert a hint coin in the slot. You have %d hint coin%sleft."
 						220
 						14
 						global115
@@ -620,8 +620,8 @@
 	)
 
 	(method (doVerb)
-		(proc5_9 220 15)
-		(proc5_9 220 16)
+		(proc5_9 220 15) ; "This screen shows the state-of-the-art in sophisticated robot humor. (This is an art that has a long way to go!) You can answer the riddles with any of the answers stored on your data card. If you don't have enough answers, get the robot in the robot maze to find you some more."
+		(proc5_9 220 16) ; "Select an answer by clicking on (or typing) its letter. To look at another riddle, click on the Next key, or press 'N'. To try to open the door, press 'O'."
 	)
 )
 
@@ -1082,7 +1082,7 @@
 				(return)
 			)
 			((== theVerb 3)
-				(proc5_9 220 18)
+				(proc5_9 220 18) ; "Why, it's very nice of you to try to take out Dr. Brain's garbage. But the can is too heavy for you."
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -1126,7 +1126,7 @@
 			)
 			((== theVerb 3)
 				(gCurRoom setScript: spearSound)
-				(proc5_9 220 19)
+				(proc5_9 220 19) ; "Ouch! That spear is really sharp. Better leave it alone."
 			)
 			(else
 				(super doVerb: theVerb &rest)

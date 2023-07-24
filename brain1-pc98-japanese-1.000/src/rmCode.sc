@@ -70,7 +70,7 @@
 	(Wait 0)
 	(Wait 30)
 	(if (not (IsFlag 5))
-		(proc5_9 380 42)
+		(proc5_9 380 42) ; "Inside the cabinet you find a "Pay TV" token and a strange-looking device labelled "Dr. Brain's Handy-Dandy Letter Counter". You pick them up for later use."
 		(Wait 0)
 		(Wait 45)
 		(gCMusic2 number: 965 setLoop: 1 play:)
@@ -205,7 +205,7 @@
 		(switch theVerb
 			(2
 				(if (IsFlag 6)
-					(proc5_14
+					(proc5_14 ; "Etched into the wooden crossbeam of the gallows are three numbers: %d, %d, and %d."
 						380
 						0
 						[global116 0]
@@ -216,7 +216,7 @@
 						[global116 2]
 					)
 				else
-					(proc5_9 380 1)
+					(proc5_9 380 1) ; "The dummy is about to be hung, probably for the crime of being stupid. You can save the dummy by being smart enough to guess three words."
 				)
 			)
 			(else
@@ -256,7 +256,7 @@
 				(if (IsFlag 2)
 					(super doVerb: theVerb invItem &rest)
 				else
-					(proc5_9 380 2)
+					(proc5_9 380 2) ; "Your hint coin is the wrong size for the slot. But I'll give you a hint anyway -- look in the cabinet for a token."
 				)
 			)
 			((== theVerb 3)
@@ -274,7 +274,7 @@
 						)
 					)
 				else
-					(proc5_9 380 3)
+					(proc5_9 380 3) ; "You need to put a token in the slot."
 				)
 			)
 			(else
@@ -359,20 +359,20 @@
 						)
 					)
 					(else
-						(proc5_9 380 5)
+						(proc5_9 380 5) ; "Please don't touch the monitor; you'll smear it!"
 					)
 				)
 			)
 			((== theVerb 2)
 				(cond
 					((IsFlag 3)
-						(proc5_9 380 6)
+						(proc5_9 380 6) ; "The TV screen on the door is currently blank."
 					)
 					((IsFlag 2)
-						(proc5_9 380 7)
+						(proc5_9 380 7) ; "There are some letters on the screen, but they don't make any sense."
 					)
 					(else
-						(proc5_9 380 8)
+						(proc5_9 380 8) ; "The message you deciphered is still visible on the screen."
 					)
 				)
 			)
@@ -416,15 +416,15 @@
 						)
 					)
 					(else
-						(proc5_9 380 9)
+						(proc5_9 380 9) ; "You need to turn on the "Pay TV" monitor by inserting an appropriate token in the coin slot."
 					)
 				)
 			)
 			(2
 				(if (IsFlag 3)
-					(proc5_9 380 10)
+					(proc5_9 380 10) ; "Its cipher solved, the door is now unlocked."
 				else
-					(proc5_9 380 11)
+					(proc5_9 380 11) ; "You wonder what lies beyond this door. Unfortunately, it's locked. You don't see a keyhole, but there is a coin slot. There is a TV monitor set into the door."
 				)
 			)
 			(else
@@ -472,17 +472,17 @@
 			(2
 				(cond
 					((== cel 0)
-						(proc5_14 380 12)
+						(proc5_14 380 12) ; "Dr. Brain looks friendly enough, but you wonder if he could be hiding something."
 					)
 					((> cel 0)
-						(proc5_9 380 13)
+						(proc5_9 380 13) ; "Why, he WAS hiding something! (At least, his portrait was!)"
 					)
 				)
 			)
 			(3
 				(cond
 					((and (self cel:) (safeDoor cel:))
-						(proc5_9 380 14)
+						(proc5_9 380 14) ; "You can't move the painting back right now; there's a safe in the way!"
 					)
 					((self cel:)
 						(gCMusic2 number: 940 setLoop: 1 play:)
@@ -518,7 +518,7 @@
 	(method (doVerb theVerb)
 		(cond
 			((and (== theVerb 2) local16)
-				(proc5_9 380 15)
+				(proc5_9 380 15) ; "You've already taken everything from Dr. Brain's safe. (But don't worry, he already removed everything really valuable, like his $12.15 in computer game royalty receipts and his World Series tickets. He left the key and the code paper to test you.)"
 			)
 			((!= theVerb 3)
 				(super doVerb: theVerb &rest)
@@ -552,7 +552,7 @@
 					(Animate (gCast elements:) 1)
 					(Wait 0)
 					(Wait 45)
-					(proc5_9 380 16)
+					(proc5_9 380 16) ; "Ah, that did it! The safe door swings open. Inside, you find a bright red key and a scrap of paper with a cryptic note. You pick them up and put them in your book bag."
 					(gCMusic2 number: 965 setLoop: 1 play:)
 					(gEgo get: 1)
 					(gEgo get: 17)
@@ -608,7 +608,7 @@
 	(method (doVerb theVerb)
 		(cond
 			((and (IsFlag 5) (== theVerb 3))
-				(proc5_9 380 17)
+				(proc5_9 380 17) ; "You've taken everything that was in the cabinet."
 			)
 			((== theVerb 3)
 				(if (cabinetLock show:)
@@ -730,15 +730,15 @@
 			)
 			((== theVerb 2)
 				(if (self cel:)
-					(proc5_9 380 19)
+					(proc5_9 380 19) ; "The book is called "Master Secrets of the Code Solvers"."
 				else
-					(proc5_9 380 20)
-					(proc5_9 380 21)
-					(proc5_9 380 22)
-					(proc5_9 380 23)
-					(proc5_9 380 24)
-					(proc5_9 380 25)
-					(proc5_9 380 26)
+					(proc5_9 380 20) ; "CHAPTER I: SUBSTITUTION CIPHERS The two most common ways of keeping text secret are to encrypt the individual letters using a cipher, or to replace the words using a code. In this section, we will discuss the most common form of encryption, the simple substitution cipher."
+					(proc5_9 380 21) ; "In a substitution cipher, each letter of the message is replaced by another letter or symbol. For example, the sentence "This is a message." would turn into "Thxy xy a meyyage." if all the "i"s were changed to "x"s, and all the "s"s into "y"s. More commonly, every letter of the message is replaced by a different letter."
+					(proc5_9 380 22) ; "The easiest way to solve a substitution cipher is to have a table of the substitutions used. Failing that, count each of the letters in the message, look for common short words, and look for double letter patterns."
+					(proc5_9 380 23) ; "In English, the three most common letters of the alphabet are "E", "T", and "A", in that order. Knowing the common letters is very helpful in solving ciphers. Count each of the letters, and the most frequent ones are likely to be substitutions for common letters of the alphabet."
+					(proc5_9 380 24) ; "Also look for common short words. A single letter word is almost certain to be "I" or "A". Common two-letter words are "to", "on", "of", "an", etc. Look especially for "the" among three-letter words -- it's the most common English word."
+					(proc5_9 380 25) ; "Finally, check out any double-letter pairs. Not all letters can occur as pairs. Frequent letter pairs are "tt", "oo", "ll", "ff", "nn", "ee", "ss", "rr", and "mm". Try to figure out from context which pairs might work."
+					(proc5_9 380 26) ; "Good luck with your code-solving career!"
 				)
 			)
 			(else
@@ -764,7 +764,7 @@
 				(Print 380 27) ; "This skull was left over after one of the doctor's unfortunate brain-transplant experiments. Fortunately, Dr. Brain was able to recycle it for a worthy purpose."
 			)
 			(3
-				(proc5_9 380 28)
+				(proc5_9 380 28) ; "The flowers are more useful for brightening up this room than they would be in your backpack."
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -789,7 +789,7 @@
 				(Print 380 29) ; "This leads down to a pool full of piranhas. Dr. Brain so hates to leave unsightly messes around the castle."
 			)
 			(3
-				(proc5_9 380 30)
+				(proc5_9 380 30) ; "Don't do that! The piranhas would bite your hand clean off!"
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -814,7 +814,7 @@
 				(Print 380 31) ; "It's the trap door cover."
 			)
 			(3
-				(proc5_9 380 32)
+				(proc5_9 380 32) ; "The trap door is too heavy for you to move."
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -835,7 +835,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
-			(proc5_9 380 33)
+			(proc5_9 380 33) ; "You can't get the rope loose from the pulley."
 		else
 			(super doVerb: theVerb &rest)
 		)
@@ -858,7 +858,7 @@
 	(method (doVerb theVerb)
 		(if (or (== theVerb 3) (== theVerb 2))
 			(gCMusic2 number: 58 setLoop: 1 play:)
-			(proc5_9 380 34 82 383 0 0)
+			(proc5_9 380 34 82 383 0 0) ; "Maybe this is a test of your screen resolution.  On second thought, these letters look very familiar.  You're sure you've seen them quite frequently in other places. The top few letters look especially common."
 		else
 			(super doVerb: theVerb &rest)
 		)
@@ -992,19 +992,19 @@
 			(cond
 				((not (== temp0 [global116 local30]))
 					(gCMusic2 number: 54 setLoop: 1 play:)
-					(proc5_9 380 36)
+					(proc5_9 380 36) ; "Nothing happens. That must not have been the correct combination."
 					(cabinetLock goAway:)
 				)
 				((>= local30 2)
 					(gCMusic2 number: 51 setLoop: 1 play:)
-					(proc5_9 380 37)
+					(proc5_9 380 37) ; "Great! You unlocked the cabinet!"
 					(= local17 1)
 					(cabinetLock goAway:)
 				)
 				(else
 					(++ local30)
 					(gCMusic2 number: 51 setLoop: 1 play:)
-					(proc5_9 380 38)
+					(proc5_9 380 38) ; "You hear a "Click!". You figured out part of the combination. Good going!"
 					(localproc_0)
 				)
 			)
@@ -1084,8 +1084,8 @@
 	)
 
 	(method (showHelp)
-		(proc5_9 380 39)
-		(proc5_9 380 40)
+		(proc5_9 380 39) ; "This keypad controls the cabinet lock. You need to enter the three numbers of the combination, clicking on ENTER after each number. If you get a number wrong, you will have to start over at the beginning. NOTE: You may use the keyboard numbers and E for enter."
+		(proc5_9 380 40) ; "A Hint Coin will buy you one number of the combination. (Click on ENTER after the number appears.) A better idea might be to ask someone for the combination, though."
 	)
 
 	(method (dispatchEvent event &tmp temp0 temp1 [temp2 2] temp4 temp5 temp6 temp7)

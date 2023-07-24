@@ -81,7 +81,7 @@
 		(return 0)
 	)
 	(= oTextBox (IntArray new: 4))
-	(Text 0 (oTextBox data:) (KString 9 strText) nFont nMaxWidth 1) ; StrGetData
+	(Text 0 (oTextBox data:) (KString 9 strText) nFont nMaxWidth 1) ; TextSize, StrGetData
 	(= nWidth (+ (oTextBox at: 2) 1))
 	(oTextBox dispose:)
 	(return nWidth)
@@ -93,7 +93,7 @@
 		(return 0)
 	)
 	(= oTextBox (IntArray new: 4))
-	(Text 0 (oTextBox data:) (KString 9 strText) nFont nMaxWidth 1) ; StrGetData
+	(Text 0 (oTextBox data:) (KString 9 strText) nFont nMaxWidth 1) ; TextSize, StrGetData
 	(= nHeight (+ (oTextBox at: 3) 1))
 	(oTextBox dispose:)
 	(return nHeight)

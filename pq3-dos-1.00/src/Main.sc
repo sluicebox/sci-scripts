@@ -934,7 +934,7 @@
 		nsLeft 40
 		cursor 999
 		signal 67
-		helpStr 11387
+		helpStr {Select this Icon to close this window.}
 	)
 
 	(method (init)

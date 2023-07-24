@@ -120,7 +120,7 @@
 			(cond
 				((and hintFlag (IsFlag hintFlag)) 1)
 				((not global115)
-					(proc5_11 15 0)
+					(proc5_11 15 0) ; "You are out of hint coins."
 					0
 				)
 				(else
@@ -130,9 +130,9 @@
 					)
 					(if (not (-- global115))
 						(gEgo put: 0)
-						(proc5_11 15 1)
+						(proc5_11 15 1) ; "You insert your last hint coin in the slot."
 					else
-						(proc5_21
+						(proc5_21 ; "You insert a hint coin in the slot. You have %d hint coin%sleft."
 							15
 							2
 							global115

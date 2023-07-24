@@ -307,10 +307,10 @@
 			(temp1 copy: (temp0 data:))
 		)
 		(= temp2 (IntArray with: 0 0 0 0))
-		(Text 0 (temp2 data:) (temp1 data:) font 315)
+		(Text 0 (temp2 data:) (temp1 data:) font 315) ; TextSize
 		(= local3 (temp2 at: 3))
 		(= local0 0)
-		(Text 0 (temp2 data:) {M} font 0)
+		(Text 0 (temp2 data:) {M} font 0) ; TextSize
 		(= local4 (* (= temp3 (temp2 at: 3)) length))
 		(= local5 (- 62 local3))
 		(temp2 dispose:)

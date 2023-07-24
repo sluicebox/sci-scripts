@@ -136,7 +136,7 @@
 	(method (setSize &tmp temp0 temp1 temp2)
 		(= temp2 (IntArray with: 0 0 0 0))
 		(if text
-			(Text 0 (temp2 data:) text font 0)
+			(Text 0 (temp2 data:) text font 0) ; TextSize
 			(= nsLeft (temp2 at: 0))
 			(= nsTop (temp2 at: 1))
 			(= nsRight (temp2 at: 2))
@@ -693,7 +693,7 @@
 		)
 		(= textTop (= textLeft 0))
 		(= temp0 (IntArray with: 0 0 0 0))
-		(Text 0 (temp0 data:) text font temp4)
+		(Text 0 (temp0 data:) text font temp4) ; TextSize
 		(= textRight (temp0 at: 2))
 		(if (> temp4 textRight)
 			(= textRight temp4)

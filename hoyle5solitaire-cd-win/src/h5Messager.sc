@@ -993,7 +993,7 @@
 			margin: 10
 			addBitmap: 20 0 temp19
 		)
-		(Text 0 (temp1 data:) (temp2 data:) gUserFont (Print width:) 0)
+		(Text 0 (temp1 data:) (temp2 data:) gUserFont (Print width:) 0) ; TextSize
 		(= temp21 (/ (- (Print width:) (temp1 at: 2)) 2))
 		(= temp22
 			(/

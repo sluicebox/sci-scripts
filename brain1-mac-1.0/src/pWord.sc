@@ -182,7 +182,7 @@
 						)
 						(self placeWord: @local16 temp25 0)
 					else
-						(proc5_9 377 0)
+						(proc5_9 377 0) ; "The selected word doesn't fit properly on this line."
 					)
 				)
 			)
@@ -210,7 +210,7 @@
 			(Wait 0)
 			(Wait 60)
 			(rewardSound play:)
-			(proc5_9 377 1)
+			(proc5_9 377 1) ; "Congratulations! You've solved both the word search and acrostic puzzles, proving yourself to be an expert at word games. You are awarded the Word Game Achievement plaque and a set of tangram pieces that you can use to open the door at the end of the hallway."
 			(gEgo get: 20)
 			(gEgo get: 26)
 			(theWord solvePuzzle: 2 goAway:)
@@ -390,8 +390,8 @@
 	)
 
 	(method (showHelp)
-		(proc5_9 377 2)
-		(proc5_9 377 3)
+		(proc5_9 377 2) ; "The words which were hidden in the word search puzzle are in a list on the right side of the display. Highlight one of the words, then click on a line with the same number of letter spaces."
+		(proc5_9 377 3) ; "When all of the lines are correctly filled, the vertical line will spell a phrase describing the words you used. You can use a hint coin to put in the next word that you are missing or have wrong."
 	)
 
 	(method (animateOnce)

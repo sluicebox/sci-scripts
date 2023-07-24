@@ -65,7 +65,7 @@
 (procedure (localproc_2 param1 param2 param3 param4)
 	(Message msgGET 470 param1 param2 param3 param4 (local0 data:))
 	(= local1 (IntArray with: 0 0 0 0))
-	(Text 0 (local1 data:) (local0 data:) 60 320)
+	(Text 0 (local1 data:) (local0 data:) 60 320) ; TextSize
 	((= local2 (DText new:))
 		text: (KString 8 (local0 data:)) ; StrDup
 		fore:

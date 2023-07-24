@@ -35,21 +35,21 @@
 (procedure (proc420_3 param1 param2)
 	(switch param2
 		(3
-			(proc5_9 420 4)
+			(proc5_9 420 4) ; "Not even Dr. Brain knows how to move a constellation!"
 		)
 		(2
 			(switch param1
 				(0
-					(proc5_9 420 5)
+					(proc5_9 420 5) ; "Perseus was the Greek hero who killed Medusa (who turned anyone who saw her face to stone), and rescued Andromeda from Cetus, the sea monster."
 				)
 				(1
-					(proc5_9 420 6)
+					(proc5_9 420 6) ; "Ursa Major, or the Great Bear, includes the familiar Big Dipper. The cup part of the Dipper points toward Polaris, the North Star. The Great Bear was originally a human woman, Callisto, who was Zeus's lover. Hera got mad and changed her into a bear."
 				)
 				(2
-					(proc5_9 420 7)
+					(proc5_9 420 7) ; "Cancer was a giant crab in Greek myth. (Cancer fought Hercules at one point, but Hercules won. Perhaps this is why Cancer is so crabby.)"
 				)
 				(3
-					(proc5_9 420 8)
+					(proc5_9 420 8) ; "The mighty hunter Orion was companion to Artemis, goddess of the hunt. Orion carries his hunting equipment on his three-star belt."
 				)
 			)
 		)
@@ -172,7 +172,7 @@
 		(Animate (gCast elements:) 0)
 		(sun onMeCheck: 16384 setCycle: Fwd init:)
 		(Animate (gCast elements:) 0)
-		(proc5_9 420 0)
+		(proc5_9 420 0) ; "You are in Dr. Brain's private planetarium in the castle tower. Only Dr. Brain would put the sun and stars in the sky at the same time."
 	)
 
 	(method (dispose)
@@ -316,7 +316,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(3
-				(proc5_9 420 1)
+				(proc5_9 420 1) ; "Even Hercules couldn't support the weight of the sky for long. Better leave that work to Atlas."
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)
@@ -358,10 +358,10 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(2
-				(proc5_9 420 2)
+				(proc5_9 420 2) ; "The poor alien in the flying saucer looks terribly lost. You should try to help him find his home."
 			)
 			(3
-				(proc5_9 420 3)
+				(proc5_9 420 3) ; "Free! Free at last!"
 				(gCurRoom setScript: leave)
 			)
 		)
@@ -647,7 +647,7 @@
 					((IsFlag 31)
 						(cond
 							((not (IsFlag 45))
-								(proc5_9 420 9)
+								(proc5_9 420 9) ; "No! I'm not going back in there!"
 								(gCurRoom setScript: leave)
 							)
 							((not (IsFlag 36))
@@ -664,7 +664,7 @@
 								((ScriptID 427 0) init:) ; concentrate
 							)
 							(else
-								(proc5_9 420 10)
+								(proc5_9 420 10) ; "Your feat of Galactic diplomacy has been duly signed, sealed, and recorded."
 							)
 						)
 					)
@@ -675,9 +675,9 @@
 			)
 			(2
 				(if (IsFlag 31)
-					(proc5_9 420 12)
+					(proc5_9 420 12) ; "You could have sworn you saw a little flying saucer come out of this cabinet. In any case, it's no longer locked."
 				else
-					(proc5_9 420 13)
+					(proc5_9 420 13) ; "This polished wood cabinet looks totally out of place in the astronomy room. It's securely locked."
 				)
 			)
 			(else
@@ -774,7 +774,7 @@
 			)
 			(5
 				(proc5_9 (monolith lookStr:))
-				(proc5_9 420 16)
+				(proc5_9 420 16) ; "But to pass through the monolith, you must show that you know the cradle of mankind -- your own star system. Tag each of the planets with its name -- if you can catch it!"
 				(= cycles 1)
 			)
 			(6

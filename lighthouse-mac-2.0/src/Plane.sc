@@ -258,7 +258,7 @@
 			posn: 0 0
 		)
 		(= temp3 (IntArray new:))
-		(Text 0 (temp3 data:) theText 0 -1)
+		(Text 0 (temp3 data:) theText 0 -1) ; TextSize
 		(= temp4 (+ (temp3 at: 3) 6))
 		(temp10 nsLeft: 0 nsTop: 0 nsRight: (- right left) nsBottom: temp4)
 		(= temp11 (- (temp10 nsRight:) (temp10 nsLeft:)))

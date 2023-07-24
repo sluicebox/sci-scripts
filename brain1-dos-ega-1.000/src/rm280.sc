@@ -46,7 +46,7 @@
 	[local32 6] = [{a negatronic brain assembly} {a set of draft resistors} {a left-handed screwdriver} {a reverse-polarized circumlocutor} {a right-handed widget} {an interactive whatchamacallit}]
 	[local38 4] = [{no objects are left.} {is one object:} {are two objects:} {are three objects:}]
 	[local42 52]
-	[local94 10] = [{} 13044 {MOVE LEFT} {MOVE BACKWARD} {MOVE RIGHT} {TURN ON} {TURN OFF} {BEGIN} {END} {}]
+	[local94 10] = [{} {MOVE FORWARD} {MOVE LEFT} {MOVE BACKWARD} {MOVE RIGHT} {TURN ON} {TURN OFF} {BEGIN} {END} {}]
 	[local104 7] = [22 8 22 63 78 78 78]
 	[local111 7] = [111 115 130 116 105 120 135]
 	[local118 4] = [8 9 10 7]
@@ -337,7 +337,7 @@
 			)
 			(1
 				(proc5_9 (gCurRoom lookStr:))
-				(proc5_9 280 0)
+				(proc5_9 280 0) ; "As you enter the room, the three robot heads on the shelf begin to speak. You know that Dr. Brain has created three models of robots -- one kind is programmed to always tell the truth; another kind always lies; and the third model alternately tells the truth and lies."
 				(localproc_4
 					head1T
 					head1Bust
@@ -377,7 +377,7 @@
 				)
 			)
 			(4
-				(proc5_9 280 4)
+				(proc5_9 280 4) ; "Each of these robot heads is obviously a different model. Only the truth-telling head will follow your programming precisely. The lying head will always do the opposite of what you tell it, and the "confused" head will alternately follow your instructions or do the reverse of them."
 				(self dispose:)
 			)
 		)
@@ -416,13 +416,13 @@
 					(gEgo put: 8)
 					(dataCard setScript: cardIntoComputer)
 				else
-					(proc5_9 280 5)
+					(proc5_9 280 5) ; "You don't need to write any more programs."
 				)
 			)
 			((== theVerb 3)
 				(cond
 					((and (IsFlag 24) (IsFlag 26) (IsFlag 25))
-						(proc5_9 280 5)
+						(proc5_9 280 5) ; "You don't need to write any more programs."
 					)
 					(local21
 						(dataCard setScript: cardIntoComputer)
@@ -493,7 +493,7 @@
 	(method (doVerb theVerb invItem)
 		(cond
 			((and (IsFlag 24) (IsFlag 26) (IsFlag 25))
-				(proc5_9 280 5)
+				(proc5_9 280 5) ; "You don't need to write any more programs."
 			)
 			(local20
 				(programmer show:)
@@ -564,7 +564,7 @@
 	(method (doVerb theVerb &tmp temp0 temp1 temp2 temp3)
 		(cond
 			((== theVerb 3)
-				(proc5_9 280 6)
+				(proc5_9 280 6) ; "The maze is sealed. If you want to get one of the objects, you'll have to program the robot to get it for you."
 			)
 			((== theVerb 2)
 				(= temp0 0)
@@ -590,7 +590,7 @@
 						{\n- an iron plate inscribed with a picture of a robot}
 					)
 				)
-				(proc5_14 280 7 [local38 temp0] temp1 temp2 temp3)
+				(proc5_14 280 7 [local38 temp0] temp1 temp2 temp3) ; "The box contains a maze. Attached to the back is a robot torso. In the front is a drop box. Inside the maze %s %s %s %s"
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -613,7 +613,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
-			(proc5_9 280 8)
+			(proc5_9 280 8) ; "The cookie doesn't look very appetizing, and the plate looks even tougher."
 		else
 			(super doVerb: theVerb &rest)
 		)
@@ -646,7 +646,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
-			(proc5_9 280 9)
+			(proc5_9 280 9) ; "It's not your size."
 		else
 			(super doVerb: theVerb &rest)
 		)
@@ -667,7 +667,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
-			(proc5_9 280 10)
+			(proc5_9 280 10) ; "Zap! These circuits don't seem to be properly grounded. Better leave the power cords alone."
 		else
 			(super doVerb: theVerb &rest)
 		)
@@ -688,7 +688,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 3)
-			(proc5_9 280 11)
+			(proc5_9 280 11) ; "There isn't anything in the slot right now."
 		else
 			(super doVerb: theVerb &rest)
 		)
@@ -716,7 +716,7 @@
 				(self setScript: openElevator)
 			)
 			(else
-				(proc5_9 280 12)
+				(proc5_9 280 12) ; "You can't open the elevator doors yet. You'll have to convince the robot to let you into the rest of the castle."
 			)
 		)
 	)
@@ -1059,16 +1059,16 @@
 			((== theVerb 2)
 				(cond
 					(global363
-						(proc5_9 280 13)
+						(proc5_9 280 13) ; "This head looks like a few screws are loose."
 					)
 					((== loop 0)
-						(proc5_9 20 10)
+						(proc5_9 20 10) ; "This robot head told you, "I am programmed to always follow instructions precisely. Iron Face also follows instructions precisely.""
 					)
 					((== loop 1)
-						(proc5_9 20 8)
+						(proc5_9 20 8) ; "This robot head told you, "I am programmed to always follow instructions precisely. Saucer Head never follows orders correctly.""
 					)
 					((== loop 2)
-						(proc5_9 20 9)
+						(proc5_9 20 9) ; "This robot head told you, "I am programmed to always follow instructions precisely. I am the only precise order-follower here.""
 					)
 				)
 			)
@@ -1095,13 +1095,13 @@
 			((== theVerb 2)
 				(switch loop
 					(1
-						(proc5_9 280 14)
+						(proc5_9 280 14) ; "This robot hand features an electromagnet. It can pick up a moderately heavy metallic object."
 					)
 					(2
-						(proc5_9 280 15)
+						(proc5_9 280 15) ; "This robot hand looks like a miniature fork lift. It's designed to carry fairly large and heavy objects."
 					)
 					(3
-						(proc5_9 280 16)
+						(proc5_9 280 16) ; "This robot hand features a dart gun which can fire a dart with a soft rubber tip. The dart should be able to grab and hold a lightweight, smooth-surfaced object."
 					)
 				)
 			)
@@ -1133,7 +1133,7 @@
 					(gEgo put: 8)
 					(presentHead setScript: doMaze)
 				else
-					(proc5_9 280 17)
+					(proc5_9 280 17) ; "You have everything you need from here."
 				)
 			)
 			((and (== theVerb 4) (localproc_0 invItem)))
@@ -1143,7 +1143,7 @@
 					(gEgo put: 8)
 					(presentHead setScript: doMaze)
 				else
-					(proc5_9 280 17)
+					(proc5_9 280 17) ; "You have everything you need from here."
 				)
 			)
 			(else
@@ -1174,11 +1174,11 @@
 					(gEgo put: 8)
 					(presentHead setScript: doMaze)
 				else
-					(proc5_9 280 17)
+					(proc5_9 280 17) ; "You have everything you need from here."
 				)
 			)
 			((== theVerb 3)
-				(proc5_9 280 18)
+				(proc5_9 280 18) ; "A data card is required to operate this robot."
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)
@@ -1318,10 +1318,10 @@
 	(method (doVerb theVerb)
 		(cond
 			((== theVerb 2)
-				(proc5_14 280 19 [local32 (Random 0 5)])
+				(proc5_14 280 19 [local32 (Random 0 5)]) ; "The shelf contains tools and spare robot parts, including %s."
 			)
 			((== theVerb 3)
-				(proc5_9 280 20)
+				(proc5_9 280 20) ; "You don't need anything from these shelves."
 			)
 			(else
 				(super doVerb: theVerb &rest)
@@ -1401,23 +1401,23 @@
 	)
 
 	(method (showHelp)
-		(proc5_11 280 21)
-		(proc5_11 280 22)
-		(proc5_11 280 23)
-		(proc5_11 280 24)
-		(proc5_11 280 25)
-		(proc5_11 280 26)
+		(proc5_11 280 21) ; "This console allows you to program the IMA Robot using the sophisticated, high-level "Robocomp" programming language. The commands you enter can be saved to a magnetic data card for remote use."
+		(proc5_11 280 22) ; "The triangle keys program the robot hand to move in the indicated direction. The "On" key allows you to activate the current hand's primary function, while "Off" turns the function off."
+		(proc5_11 280 23) ; "Use "INS" and "DEL" to add or remove lines of code to/from your program. The up and down arrow keys on the left side of the display screen allow you to inspect or change other lines of your program."
+		(proc5_11 280 24) ; "The "CLR" button deletes your entire program from memory -- use it with caution. Use "SAVE" to print your program to a data card for use in a remote robotic unit."
+		(proc5_11 280 25) ; "Put a hint coin in the slot for some programming suggestions. You will only be charged one hint coin for as many times as you care to read the hint text."
+		(proc5_11 280 26) ; "If you are using a keyboard, type a 'q' for a list of the key mapping."
 	)
 
 	(method (buyClue)
 		(if (super buyClue: &rest)
-			(proc5_11 280 27)
-			(proc5_11 280 28)
-			(proc5_11 280 29)
-			(proc5_11 280 30)
-			(proc5_11 280 31)
-			(proc5_11 280 32)
-			(proc5_11 280 33)
+			(proc5_11 280 27) ; "Choose the correct hand for each object -- the fork lift for the book (blue), the rubber dart gun for the plastic clue sheet (green), and the magnet to get the iron robot plaque (gray)."
+			(proc5_11 280 28) ; "Program a set of instructions that will move the robot hand to the object, an "On" instruction to pick up the object, some more commands to move the hand to the drop-off slot, then an "Off" command."
+			(proc5_11 280 29) ; "When your program is finished, select "SAVE" to save it to the data card. Pick up the data card with the Hand cursor, and click the data card on the robot's torso to try out your program."
+			(proc5_11 280 30) ; "If the program doesn't work correctly, watch where the hand goes, and note the error message you get. Put the data card back in the console, and modify your program until it works correctly."
+			(proc5_11 280 31) ; "If you choose the lying robot head, it will always do the opposite of what you tell it to do. Think backwards! One approach is to write a correct program, then replace each of the instructions with its opposite."
+			(proc5_11 280 32) ; "The hardest head to program is the one which alternately tells the truth and lies. Write a correct program, then replace every second instruction with its opposite."
+			(proc5_11 280 33) ; "If the robot head breaks, replace it with a working head. Remember to adopt a new programming strategy for each head."
 		)
 	)
 
@@ -1454,7 +1454,7 @@
 
 	(method (hide)
 		(if (and local15 local21 (localproc_1))
-			(proc5_11 280 34)
+			(proc5_11 280 34) ; "***WARNING*** New program not printed to data card!"
 		)
 		(if (IsObject gModelessDialog)
 			(gModelessDialog dispose:)
@@ -1598,7 +1598,7 @@
 			(self cel: 2 show:)
 		else
 			(gCMusic2 number: 931 setLoop: 1 play:)
-			(proc5_11 280 36)
+			(proc5_11 280 36) ; "Program terminated: You have reached the end of the command module length."
 		)
 	)
 
@@ -1626,7 +1626,7 @@
 		(cond
 			((and local21 (not (localproc_1)))
 				(gCMusic2 number: 55 setLoop: 1 play:)
-				(proc5_11 280 37)
+				(proc5_11 280 37) ; "No changes were made in program. No data printed to data card."
 				(programmer goAway:)
 			)
 			(local21
@@ -1635,12 +1635,12 @@
 					(= [global301 temp0] [local42 temp0])
 				)
 				(= [global301 (- local19 1)] 8)
-				(proc5_11 280 38)
+				(proc5_11 280 38) ; "Commands printed to data card."
 				(programmer goAway:)
 			)
 			(else
 				(gCMusic2 number: 55 setLoop: 1 play:)
-				(proc5_11 280 39)
+				(proc5_11 280 39) ; "Data card required in slot to print data."
 			)
 		)
 		(self cel: 2 show:)

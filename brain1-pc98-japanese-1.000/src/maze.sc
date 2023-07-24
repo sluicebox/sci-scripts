@@ -249,7 +249,7 @@
 			(= global408 (Memory memALLOC_CRIT (StrLen [local314 local42])))
 			(= global409 (Memory memALLOC_CRIT (StrLen [local314 local42])))
 			(StrSplitInTwo global408 global409 [local314 local42])
-			(proc5_21 285 4 global408 global409)
+			(proc5_21 285 4 global408 global409) ; "You see the %s in the pocket and pick it up."
 			(Memory memFREE global408)
 			(Memory memFREE global409)
 		)
@@ -968,11 +968,11 @@
 	)
 
 	(method (buyClue)
-		(proc5_11 285 2)
+		(proc5_11 285 2) ; "This coin slot seems to be out of order. Try the one on the robot computer."
 	)
 
 	(method (showHelp)
-		(proc5_11 285 3)
+		(proc5_11 285 3) ; "The robot will follow the instructions you program using the "Robocomp" computer. That is, it will if the robot was correctly designed."
 	)
 )
 

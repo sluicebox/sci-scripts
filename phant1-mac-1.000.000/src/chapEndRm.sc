@@ -45,7 +45,7 @@
 				(gNormalCursor loop: 0 setCel: 1)
 				(gGame setCursor: gNormalCursor 1)
 				(= temp0 (IntArray with: 0 0 0 0))
-				(Text 0 (temp0 data:) {A} gUserFont 320)
+				(Text 0 (temp0 data:) {A} gUserFont 320) ; TextSize
 				(= temp1 (+ (temp0 at: 3) 6))
 				(temp0 dispose:)
 				(= temp3 (= temp2 0))
@@ -94,7 +94,7 @@
 			(2
 				(gGame setCursor: gNormalCursor 1)
 				(= temp0 (IntArray with: 0 0 0 0))
-				(Text 0 (temp0 data:) {A} gUserFont 320)
+				(Text 0 (temp0 data:) {A} gUserFont 320) ; TextSize
 				(= temp1 (+ (temp0 at: 3) 6))
 				(temp0 dispose:)
 				(= temp3 (= temp2 0))

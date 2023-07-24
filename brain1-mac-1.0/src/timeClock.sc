@@ -270,8 +270,8 @@
 	(method (animateOnce)
 		(if local49
 			(= local49 0)
-			(proc5_9 190 0)
-			(proc5_9 190 1)
+			(proc5_9 190 0) ; "Visitors to the castle need to punch in on this time clock. Dr. Brain is very big on punctuality, and expects you to punch in at exactly the right time."
+			(proc5_9 190 1) ; "You will need to punch each of your time cards in at the correct time according to the time sequence on the card."
 		)
 		(if ((ScriptID 180 1) script:) ; clock
 			(((ScriptID 180 1) script:) doit:) ; clock
@@ -374,7 +374,7 @@
 	(method (buyClue)
 		(cond
 			((not (gEgo has: 7))
-				(proc5_9 190 2)
+				(proc5_9 190 2) ; "You need to find a time card before you can punch in."
 			)
 			((super buyClue: &rest)
 				(= local48 1)
@@ -386,7 +386,7 @@
 					(DrawCel 125 5 1 64 111 15)
 					(cardSlotIcon select:)
 				else
-					(proc5_9 190 3)
+					(proc5_9 190 3) ; "Of course, Dr. Brain values cleverness even more than punctuality. Try using the key you got from the Math Marvel to open the Time Clock and reset the time."
 					(gCMusic2 number: 51 setLoop: 1 play:)
 					(localproc_1)
 					(localproc_3)
@@ -400,8 +400,8 @@
 	)
 
 	(method (showHelp)
-		(proc5_9 190 0)
-		(proc5_9 190 1)
+		(proc5_9 190 0) ; "Visitors to the castle need to punch in on this time clock. Dr. Brain is very big on punctuality, and expects you to punch in at exactly the right time."
+		(proc5_9 190 1) ; "You will need to punch each of your time cards in at the correct time according to the time sequence on the card."
 	)
 
 	(method (hide)
@@ -459,7 +459,7 @@
 				)
 			else
 				(gCMusic2 number: 57 setLoop: 1 play:)
-				(proc5_11 190 5)
+				(proc5_11 190 5) ; "It's not the right time to clock in yet."
 			)
 			(DrawCel view loop cel 28 92 15)
 			(DrawCel 125 5 0 64 111 15)

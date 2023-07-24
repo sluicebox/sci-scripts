@@ -113,7 +113,7 @@
 		(return 0)
 	)
 	(= temp0 (IntArray new: 4))
-	(Text 0 (temp0 data:) (KArray 9 param1) param2 param3 1) ; ArrayGetData
+	(Text 0 (temp0 data:) (KArray 9 param1) param2 param3 1) ; TextSize, ArrayGetData
 	(= temp1 (+ (temp0 at: 2) 1))
 	(temp0 dispose:)
 	(return temp1)
@@ -125,7 +125,7 @@
 		(return 0)
 	)
 	(= temp0 (IntArray new: 4))
-	(Text 0 (temp0 data:) (KArray 9 param1) param2 param3 1) ; ArrayGetData
+	(Text 0 (temp0 data:) (KArray 9 param1) param2 param3 1) ; TextSize, ArrayGetData
 	(= temp1 (+ (temp0 at: 3) 1))
 	(temp0 dispose:)
 	(return temp1)

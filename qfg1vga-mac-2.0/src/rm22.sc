@@ -412,7 +412,7 @@
 	)
 )
 
-(instance wimg1 of Actor
+(instance wing1 of Actor
 	(properties
 		yStep 4
 		view 22
@@ -737,7 +737,7 @@
 				(HandsOff)
 				(= local2 (hut x:))
 				(= local3 (hut y:))
-				(wimg1
+				(wing1
 					ignoreActors:
 					ignoreHorizon:
 					setPri: 5
@@ -803,7 +803,7 @@
 					setStep: 1 1
 					setMotion: MoveTo local2 -200
 				)
-				(wimg1 setMotion: MoveTo (wimg1 x:) -200)
+				(wing1 setMotion: MoveTo (wing1 x:) -200)
 				(wing2 setMotion: MoveTo (wing2 x:) -200)
 				(= seconds 12)
 			)

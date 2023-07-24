@@ -10,7 +10,7 @@
 		(repeat
 			(= gGameTime (+ gTickOffset (GetTime)))
 			(gTalkers eachElementDo: #doit firstTrue: #handleEvent param1)
-			(breakif (gTalkers allTrue: 436 2))
+			(breakif (gTalkers allTrue: #isModeless 2))
 			(gSounds eachElementDo: #check)
 			(param1 new:)
 			(FrameOut)
@@ -20,7 +20,7 @@
 		(repeat
 			(= gGameTime (+ gTickOffset (GetTime)))
 			(gPrints eachElementDo: #doit firstTrue: #handleEvent param1)
-			(breakif (gPrints allTrue: 436 2))
+			(breakif (gPrints allTrue: #isModeless 2))
 			(gSounds eachElementDo: #check)
 			(param1 new:)
 			(FrameOut)
