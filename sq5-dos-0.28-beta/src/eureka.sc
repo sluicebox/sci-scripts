@@ -65,15 +65,15 @@
 					295
 				)
 			)
-			(self curLocation: global113)
-			(if (OneOf global113 5 6 3 8 15 14)
+			(self curLocation: gEurekaLocation)
+			(if (OneOf gEurekaLocation 5 6 3 8 15 14) ; clorox2, thrakus, ku, genetix environdome, empty space, goliath
 				(eureka state: 3)
 			)
 		)
 	)
 
 	(method (doit)
-		(if (and (== global113 15) (not (eureka script:)))
+		(if (and (== gEurekaLocation 15) (not (eureka script:))) ; empty space
 			(eureka setScript: sAsteroidNoise)
 		)
 		(super doit: &rest)
@@ -174,13 +174,13 @@
 						(ClearFlag 115)
 					)
 					((IsFlag 37)
-						(= global113 14)
+						(= gEurekaLocation 14) ; goliath
 						(eureka
 							timer: 0
 							warnings: 0
 							state: 3
-							destination: 0
-							curLocation: 14
+							destination: 0 ; Nowhere
+							curLocation: 14 ; goliath
 						)
 						(ClearFlag 37)
 						(if (not (IsFlag 39))
@@ -199,7 +199,7 @@
 								timer: 0
 								warnings: 0
 								state: 1
-								destination: 0
+								destination: 0 ; Nowhere
 							)
 							(ClearFlag 38)
 						else

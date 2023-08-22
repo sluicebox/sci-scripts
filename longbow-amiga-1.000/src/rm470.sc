@@ -46,7 +46,7 @@
 		(= gUseSortedFeatures 0)
 		(if (== gPrevRoomNum 450)
 			(gEgo x: 70)
-			(gEgo edgeHit: 1)
+			(gEgo edgeHit: EDGE_TOP)
 		)
 		(super init: 0 3)
 		(if (and script (not (IsFlag 202)))

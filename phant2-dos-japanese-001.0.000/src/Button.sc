@@ -152,7 +152,7 @@
 				temp0
 				temp1
 			)
-			(Empty self)
+			(SetDebug self)
 		)
 		(= left x)
 		(= top y)
@@ -163,7 +163,7 @@
 	(method (setText param1)
 		(if (not (OneOf argc 1 5))
 			(PrintDebug {Bad argc(%d) for TextButton setText} argc)
-			(Empty self)
+			(SetDebug self)
 		)
 		(if (not text)
 			(= text (TextField new:))

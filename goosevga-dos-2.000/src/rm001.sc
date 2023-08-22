@@ -55,7 +55,7 @@
 		)
 		(Load rsVIEW 67)
 		(Load rsVIEW 153)
-		(proc0_1)
+		(NormalEgo)
 		(switch gPrevRoomNum
 			(east
 				(gEgo posn: 231 (proc0_13 64 (gEgo y:) 102))
@@ -243,7 +243,7 @@
 
 	(method (changeState newState &tmp temp0)
 		(if (not (= state newState))
-			(proc0_2)
+			(HandsOff)
 			(= temp0 (gGoals at: 13))
 			(proc0_7 gEgo jack)
 			(proc0_20)
@@ -293,8 +293,8 @@
 			(if global172
 				(gCurRoom newRoom: 45) ; mapRoom
 			)
-			(proc0_5)
-			(proc0_3)
+			(RedrawCast)
+			(HandsOn)
 		)
 	)
 )

@@ -85,10 +85,10 @@
 	(method (doit)
 		(cond
 			(script)
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(self setScript: exitEastScr)
 			)
-			((== (gEgo edgeHit:) 4)
+			((== (gEgo edgeHit:) EDGE_LEFT)
 				(self setScript: exitWestScr)
 			)
 		)

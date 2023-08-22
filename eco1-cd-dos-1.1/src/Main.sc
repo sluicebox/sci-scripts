@@ -923,24 +923,24 @@
 		(gGame setCursor: temp0 1)
 	)
 
-	(method (startRoom param1)
+	(method (startRoom roomNum)
 		(if gPMouse
 			(gPMouse stop:)
 		)
 		(if (and (gLongSong2 number:) (== (gLongSong2 prevSignal:) -1))
 			(gLongSong2 number: 0)
 		)
-		((ScriptID 806) doit: param1) ; disposeCode
-		(if (== param1 320)
+		((ScriptID 806) doit: roomNum) ; disposeCode
+		(if (== roomNum 320)
 			(travelC cel: 2)
 			(gGame setCursor: travelC)
 		)
-		(if (== param1 381)
+		(if (== roomNum 381)
 			(travelC cel: 1)
 			(gGame setCursor: travelC)
 		)
-		(super startRoom: param1)
-		(if (OneOf param1 803 360)
+		(super startRoom: roomNum)
+		(if (OneOf roomNum 803 360) ; speedTest
 			(ecoStatusLine disable:)
 			(gTheIconBar disable:)
 		else

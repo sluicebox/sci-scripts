@@ -106,7 +106,7 @@
 					loop: 2
 					y: 126
 					x: (+ (/ (* (- (gEgo x:) 98) 37) 129) 140)
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 				)
 				(self setScript: closeDoorScript)
 			)
@@ -142,13 +142,13 @@
 			(= local1 local0)
 			(switch local0
 				(2
-					(gEgo edgeHit: 4)
+					(gEgo edgeHit: EDGE_LEFT)
 				)
 				(4
 					(if (not [global675 5])
 						(gGlobalMGSound fade:)
 					)
-					(gEgo edgeHit: 2)
+					(gEgo edgeHit: EDGE_RIGHT)
 				)
 				(16384
 					(self setScript: openDoorScript)

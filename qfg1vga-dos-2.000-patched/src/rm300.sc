@@ -193,7 +193,7 @@
 				(= local0 0)
 				(gCurRoom setScript: enter320)
 			)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(cond
 					((IsObject openedGate)
 						(HandsOff)

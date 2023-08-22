@@ -48,7 +48,7 @@
 	(method (init)
 		(LoadMany rsVIEW 670)
 		(gEgo y: 189)
-		(switch global133
+		(switch gGoliathFloorNum
 			(1
 				(= local8 1)
 				(= local9 2)
@@ -115,7 +115,7 @@
 		)
 		(switch gPrevRoomNum
 			(1020
-				(if (or (== global133 1) (== global133 4) (== global133 6))
+				(if (or (== gGoliathFloorNum 1) (== gGoliathFloorNum 4) (== gGoliathFloorNum 6))
 					(localproc_0)
 				else
 					(localproc_1)
@@ -234,9 +234,9 @@
 			)
 			(4
 				(if (== register 0)
-					(= global133 local8)
+					(= gGoliathFloorNum local8)
 				else
-					(= global133 local9)
+					(= gGoliathFloorNum local9)
 				)
 				(gCurRoom newRoom: 1020)
 				(self dispose:)

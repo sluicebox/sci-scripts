@@ -54,17 +54,17 @@
 	(procedure (localproc_0 param1) ; UNUSED
 		(if (== (gCurRoom script:) 0)
 			(switch (gEgo edgeHit:)
-				(1
+				(EDGE_TOP
 					(if (< (gEgo x:) 159)
 						(= param1 60)
 					else
 						(= param1 61)
 					)
 				)
-				(2
+				(EDGE_RIGHT
 					(= param1 61)
 				)
-				(3
+				(EDGE_BOTTOM
 					(= param1 66)
 				)
 			)

@@ -49,7 +49,7 @@
 			(
 				(and
 					(== gPastQuicksand 0)
-					(or (== (gEgo edgeHit:) 2) (== (gEgo edgeHit:) 3))
+					(or (== (gEgo edgeHit:) EDGE_RIGHT) (== (gEgo edgeHit:) EDGE_BOTTOM))
 				)
 				(= gPastQuicksand 1)
 				(gGame changeScore: 5)

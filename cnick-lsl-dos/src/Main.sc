@@ -782,15 +782,15 @@
 		)
 	)
 
-	(method (startRoom param1)
+	(method (startRoom roomNum)
 		(if gPMouse
 			(gPMouse stop:)
 		)
 		(if gModelessDialog
 			(gModelessDialog dispose:)
 		)
-		((ScriptID 801) doit: param1) ; disposeCode
-		(super startRoom: param1)
+		((ScriptID 801) doit: roomNum) ; disposeCode
+		(super startRoom: roomNum)
 	)
 
 	(method (handleEvent event &tmp temp0)

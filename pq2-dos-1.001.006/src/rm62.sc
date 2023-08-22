@@ -302,7 +302,7 @@
 				)
 				(gEgo setMotion: MoveTo (gEgo x:) 176)
 			)
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(gCurRoom newRoom: 60)
 			)
 			(

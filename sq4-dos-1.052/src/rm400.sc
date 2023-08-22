@@ -179,7 +179,7 @@
 				(and
 					(not ((ScriptID 700 7) script:)) ; sp2
 					(!= (gEgo view:) 26)
-					(== (gEgo edgeHit:) 2)
+					(== (gEgo edgeHit:) EDGE_RIGHT)
 				)
 				(HandsOff)
 				((ScriptID 700 0) enterBelt: egoBwRed) ; mall
@@ -189,7 +189,7 @@
 				(and
 					(not ((ScriptID 700 7) script:)) ; sp2
 					(!= (gEgo view:) 26)
-					(== (gEgo edgeHit:) 4)
+					(== (gEgo edgeHit:) EDGE_LEFT)
 				)
 				(HandsOff)
 				((ScriptID 700 0) enterBelt: egoBwGreen) ; mall

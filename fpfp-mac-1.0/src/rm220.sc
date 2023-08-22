@@ -83,7 +83,7 @@
 				(gGame handsOn:)
 			)
 			(690
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 				(= style 100)
 			)
 			(else

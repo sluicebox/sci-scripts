@@ -166,7 +166,7 @@
 			(if (Random 0 1)
 				(if (gAddToPics contains: corpseNiche)
 					(switch (rLab prevEdgeHit:)
-						(1
+						(EDGE_TOP
 							(if
 								(OneOf
 									(rLab labCoords:)
@@ -215,7 +215,7 @@
 								)
 							)
 						)
-						(3
+						(EDGE_BOTTOM
 							(if
 								(OneOf
 									(rLab labCoords:)
@@ -264,7 +264,7 @@
 								)
 							)
 						)
-						(4
+						(EDGE_LEFT
 							(if
 								(and
 									(OneOf
@@ -314,7 +314,7 @@
 								(gEgo setScript: rats 0 1)
 							)
 						)
-						(2
+						(EDGE_RIGHT
 							(if
 								(and
 									(OneOf
@@ -368,7 +368,7 @@
 				)
 			else
 				(switch (rLab prevEdgeHit:)
-					(1
+					(EDGE_TOP
 						(cond
 							(
 								(OneOf
@@ -505,7 +505,7 @@
 							)
 						)
 					)
-					(3
+					(EDGE_BOTTOM
 						(cond
 							(
 								(OneOf
@@ -642,7 +642,7 @@
 							)
 						)
 					)
-					(4
+					(EDGE_LEFT
 						(cond
 							(
 								(OneOf
@@ -774,7 +774,7 @@
 							)
 						)
 					)
-					(2
+					(EDGE_RIGHT
 						(cond
 							(
 								(OneOf
@@ -948,12 +948,12 @@
 				(gEgo setScript: 0)
 				(gCurRoom setScript: (ScriptID 30 2)) ; walkOut
 			)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(rLab prevEdgeHit: EDGE_BOTTOM)
 				(gEgo setScript: 0)
 				(gCurRoom setScript: (ScriptID 30 2)) ; walkOut
 			)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(rLab prevEdgeHit: EDGE_TOP)
 				(gEgo setScript: 0)
 				(gCurRoom setScript: (ScriptID 30 2)) ; walkOut
@@ -1582,7 +1582,7 @@
 					)
 				)
 				(switch (rLab prevEdgeHit:)
-					(4
+					(EDGE_LEFT
 						(gEgo
 							posn: 282 158
 							init:
@@ -1590,7 +1590,7 @@
 							setMotion: PolyPath 237 158 self
 						)
 					)
-					(2
+					(EDGE_RIGHT
 						(gEgo
 							posn: 36 158
 							init:
@@ -1598,7 +1598,7 @@
 							setMotion: PolyPath 84 158 self
 						)
 					)
-					(1
+					(EDGE_TOP
 						(gEgo
 							posn: 165 250
 							init:
@@ -1606,7 +1606,7 @@
 							setMotion: PolyPath 165 184 self
 						)
 					)
-					(3
+					(EDGE_BOTTOM
 						(gEgo
 							posn: 165 136
 							init:
@@ -1640,32 +1640,32 @@
 				(gGame handsOff:)
 				(gTheIconBar disable: 6)
 				(switch (rLab prevEdgeHit:)
-					(1
+					(EDGE_TOP
 						(= cycles 8)
 					)
-					(3
+					(EDGE_BOTTOM
 						(gEgo setMotion: MoveTo (gEgo x:) 250 self)
 					)
-					(2
+					(EDGE_RIGHT
 						(gEgo setMotion: MoveTo 310 (gEgo y:) self)
 					)
-					(4
+					(EDGE_LEFT
 						(gEgo setMotion: MoveTo 10 (gEgo y:) self)
 					)
 				)
 			)
 			(1
 				(switch (rLab prevEdgeHit:)
-					(1
+					(EDGE_TOP
 						(gCurRoom newRoom: (gCurRoom north:))
 					)
-					(3
+					(EDGE_BOTTOM
 						(gCurRoom newRoom: (gCurRoom south:))
 					)
-					(2
+					(EDGE_RIGHT
 						(gCurRoom newRoom: (gCurRoom east:))
 					)
-					(4
+					(EDGE_LEFT
 						(gCurRoom newRoom: (gCurRoom west:))
 					)
 				)

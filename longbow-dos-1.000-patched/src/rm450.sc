@@ -69,7 +69,7 @@
 			]
 		)
 		(gEgo
-			edgeHit: 0
+			edgeHit: EDGE_NONE
 			x: [local16 temp0]
 			y: [local21 temp0]
 			setMotion: MoveTo [local6 temp0] [local11 temp0] arrived

@@ -419,7 +419,7 @@
 			(22 ; handgun
 				(if (== (kim script:) stealScr)
 					(gEgo heading: 90)
-					((ScriptID 32 0) doit: 1 22 6 1 115) ; ShootHandgun
+					((ScriptID 32 0) doit: 1 22 6 1 115) ; ShootHandgun, "The consequences of your actions are evident."
 				else
 					(gMessager say: noun theVerb 0) ; "This is an innocent citizen. Put the piece away."
 				)
@@ -711,7 +711,7 @@
 			)
 			(3
 				(if (> local0 2)
-					(proc30_0 1 22 6 1 115)
+					(EgoDead 1 22 6 1 115) ; "The consequences of your actions are evident."
 				else
 					(= cycles 2)
 				)

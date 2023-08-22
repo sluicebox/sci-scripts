@@ -31,12 +31,12 @@
 	(cond
 		((IsFlag 38)
 			(ClearFlag 38)
-			(eureka destination: 0 state: 4 setScript: 0 warnings: 0 timer: 0)
+			(eureka destination: 0 state: 4 setScript: 0 warnings: 0 timer: 0) ; Nowhere
 			(switch (eureka curLocation:)
-				(1
+				(1 ; garbage1
 					(SetFlag 35)
 				)
-				(2
+				(2 ; garbage2
 					(SetFlag 36)
 				)
 			)
@@ -61,7 +61,7 @@
 
 (procedure (localproc_1 param1)
 	(cond
-		((== global113 0)
+		((== gEurekaLocation 0) ; Nowhere
 			(if (not (eureka destination:))
 				(gMessager say: 24 0 46 1 param1) ; "It might help if we picked a destination first, sir."
 			else
@@ -93,14 +93,14 @@
 
 (procedure (localproc_2 param1)
 	(cond
-		((== (eureka destination:) 0)
+		((== (eureka destination:) 0) ; Nowhere
 			(if (IsFlag 30)
 				(gMessager say: 24 0 3 (Random 1 3) param1)
 			else
 				(gMessager say: 24 0 46 1 param1) ; "It might help if we picked a destination first, sir."
 			)
 		)
-		((== global113 0)
+		((== gEurekaLocation 0) ; Nowhere
 			(gMessager say: 24 0 41 1 param1) ; "We'll go to warp as soon as we're clear of the station, sir."
 			(= local2 1)
 		)
@@ -119,13 +119,13 @@
 			(if (eureka curLocation:)
 				(if
 					(or
-						(== (eureka curLocation:) 15)
-						(== (eureka curLocation:) 6)
+						(== (eureka curLocation:) 15) ; empty space
+						(== (eureka curLocation:) 6) ; thrakus
 					)
 					(DisposeScript 221)
 				)
 				(eureka prevLocation: (eureka curLocation:))
-				(eureka curLocation: 0)
+				(eureka curLocation: 0) ; Nowhere
 			)
 		)
 	)
@@ -141,7 +141,7 @@
 				(gMessager say: 35 0 4 (Random 1 3) param1)
 			)
 		)
-		((and (OneOf (eureka curLocation:) 1 2) (== (eureka state:) 2))
+		((and (OneOf (eureka curLocation:) 1 2) (== (eureka state:) 2)) ; garbage1, garbage2
 			(gMessager say: 35 0 48 1 param1) ; "That's not part of our mission profile, Captain."
 		)
 		((IsFlag 37)
@@ -149,7 +149,7 @@
 		)
 		((and (== (eureka state:) 2) (eureka curLocation:))
 			(gMessager say: 35 0 0 1 param1) ; "Standard orbit, aye."
-			(eureka destination: 0 state: 3 setScript: 0 warnings: 0 timer: 0)
+			(eureka destination: 0 state: 3 setScript: 0 warnings: 0 timer: 0) ; Nowhere
 			(= local7 1)
 		)
 		(else
@@ -163,7 +163,7 @@
 		((eureka damaged:)
 			(gMessager say: 12 0 11 1 param1) ; "Weapons inoperative, shields depleted. Basically, we're screwed."
 		)
-		((== global113 14)
+		((== gEurekaLocation 14) ; goliath
 			(switch (eureka puke:)
 				(1
 					(gMessager say: 12 0 15 1 param1) ; "The Goliath is taking quite a beating, sir. If she blows when we're this close, the Eureka will go up with her."
@@ -257,11 +257,11 @@
 							(gMessager say: 23 0 44 1 self) ; "We can't do that! System overloaded, sir!"
 						)
 					)
-					((and (== global113 6) (IsFlag 45) (== global142 1))
+					((and (== gEurekaLocation 6) (IsFlag 45) (== gAct 1)) ; thrakus
 						(gMessager say: 23 0 22 1 self) ; "We can't do that now, sir."
 						(= local0 0)
 					)
-					((and (== global113 15) (not (IsFlag 87)))
+					((and (== gEurekaLocation 15) (not (IsFlag 87))) ; empty space
 						(= local0 0)
 						(gMessager say: 23 0 40 1 self) ; "But Captain! We can't just leave Cliffy out there! You've gotta go after him!"
 					)
@@ -279,18 +279,18 @@
 					)
 					(
 						(and
-							(== (eureka curLocation:) 5)
+							(== (eureka curLocation:) 5) ; clorox2
 							(not (IsFlag 76))
 							(IsFlag 30)
 						)
 						(gMessager say: 23 0 27 1 self) ; "Shouldn't we find out if the colonists are all right first, sir?"
 						(= local0 1)
 					)
-					((or (IsFlag 37) (== (eureka curLocation:) 14))
+					((or (IsFlag 37) (== (eureka curLocation:) 14)) ; goliath
 						(gMessager say: 23 0 15 1 self) ; "But sir, everyone on the Goliath will die!"
 					)
 					(else
-						(if (and (not (IsFlag 30)) (== global127 3))
+						(if (and (not (IsFlag 30)) (== gGarbagePickupCount 3))
 							(gMessager say: 19 0 0 (Random 1 3) self 202)
 						else
 							(gMessager say: 23 0 36 1 self) ; "What coordinates, Captain?"
@@ -312,11 +312,11 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(switch global113
-					(0
+				(switch gEurekaLocation
+					(0 ; Nowhere
 						(gMessager say: 15 0 23 1 self) ; "I'm sure the Star Confederacy wouldn't appreciate it if you blew a hole in the side of one of their stations, Captain."
 					)
-					(6
+					(6 ; thrakus
 						(if (IsFlag 45)
 							(if (not (eureka hits:))
 								(gMessager say: 15 0 22 1 self) ; "Speaking from personal experience, I've found that firing upon our own ships is generally frowned upon by StarCon Command, Captain."
@@ -327,7 +327,7 @@
 							(gMessager say: 15 0 3 (Random 1 3) self)
 						)
 					)
-					(14
+					(14 ; goliath
 						(switch (eureka puke:)
 							(0
 								(if (IsFlag 39)
@@ -379,18 +379,18 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(switch global113
-					(3
+				(switch gEurekaLocation
+					(3 ; ku
 						(gMessager say: 13 0 4 2 self) ; "You'd have better luck trying to bite an air biscuit, sir."
 					)
-					(6
+					(6 ; thrakus
 						(if (eureka hits:)
 							(self setScript: (ScriptID 220 0) self) ; sAsteroidChoices
 						else
 							(gMessager say: 13 0 3 3 self) ; "We don't have any reason to retreat at present, Captain."
 						)
 					)
-					(14
+					(14 ; goliath
 						(if (IsFlag 39)
 							(gMessager say: 13 0 19 1 self) ; "There's no need to do that while we're cloaked, Captain Wilco."
 						else
@@ -683,10 +683,10 @@
 			)
 			(2
 				(cond
-					((== global113 0)
+					((== gEurekaLocation 0) ; Nowhere
 						(self setScript: (ScriptID 220 2) self) ; sDStarconChoices
 					)
-					((and (not (IsFlag 111)) (== global126 1))
+					((and (not (IsFlag 111)) (== gSpikeState 1))
 						(gMessager say: 26 0 31 0 self 202) ; "Yes, Captain?"
 						(SetFlag 111)
 					)
@@ -697,10 +697,10 @@
 							(not (IsFlag 30))
 							(or
 								(== (eureka prevLocation:) 2)
-								(== (eureka curLocation:) 2)
+								(== (eureka curLocation:) 2) ; garbage2
 							)
-							(!= (eureka curLocation:) 1)
-							(!= (eureka curLocation:) 3)
+							(!= (eureka curLocation:) 1) ; garbage1
+							(!= (eureka curLocation:) 3) ; ku
 						)
 						(self setScript: (ScriptID 220 3) self) ; sDAlienChoices
 					)
@@ -712,7 +712,7 @@
 					)
 					(
 						(and
-							(== global113 5)
+							(== gEurekaLocation 5) ; clorox2
 							(IsFlag 93)
 							(not (IsFlag 76))
 							(not (IsFlag 112))
@@ -720,22 +720,22 @@
 						(gMessager say: 26 0 63 0 self 202) ; "Sir?"
 						(SetFlag 112)
 					)
-					((and (== global142 1) (not (IsFlag 94)))
+					((and (== gAct 1) (not (IsFlag 94)))
 						(self setScript: (ScriptID 220 15) self) ; sDAfterClorox
 					)
-					((and (== global113 15) (not (IsFlag 87)))
+					((and (== gEurekaLocation 15) (not (IsFlag 87))) ; empty space
 						(gMessager say: 10 2 59 1 self 202) ; "You'd better hurry up and rescue Cliffy, Captain. His air won't last forever."
 					)
-					((and (== global142 2) (not (IsFlag 75)))
+					((and (== gAct 2) (not (IsFlag 75)))
 						(self setScript: (ScriptID 220 11) self) ; sDThrakusChoices
 					)
 					((>= (eureka puke:) 4)
 						(gMessager say: 13 0 6 2 self 202) ; "Well don't just sit there, Captain! |f8|do|f| something!"
 					)
-					((and (IsFlag 75) (!= global113 14))
+					((and (IsFlag 75) (!= gEurekaLocation 14)) ; goliath
 						(gMessager say: 26 0 78 0 self 202) ; "We gotta stop the Goliath, sir. We can't let the pukoid mutants from hell slime the Star Confederacy."
 					)
-					((and (IsFlag 75) (== global113 14))
+					((and (IsFlag 75) (== gEurekaLocation 14)) ; goliath
 						(gMessager say: 26 0 14 0 self 202) ; "There's got to be a way to sneak aboard that ship."
 					)
 					(else

@@ -987,7 +987,7 @@
 				(gEgo put: 19 57) ; Sarien_ID_Card
 				(if (not (gEgo has: 0)) ; Cartridge
 					(gEgo get: 10) ; buckazoid
-					(= global165 1)
+					(= gBuckazoidCount 1)
 				)
 				(scraps init:)
 				(DeltaurRegion egoStatus: 1)

@@ -42,7 +42,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(gEgo edgeHit: 4)
+				(gEgo edgeHit: EDGE_LEFT)
 				(doc stopUpd:)
 				(= seconds 2)
 			)

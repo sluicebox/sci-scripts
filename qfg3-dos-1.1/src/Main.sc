@@ -1286,10 +1286,10 @@
 		)
 	)
 
-	(method (startRoom param1 &tmp temp0)
+	(method (startRoom roomNum &tmp temp0)
 		(proc0_9)
 		(gGame setCursor: gWaitCursor 1)
-		((ScriptID 27 0) init: param1) ; StartARoom
+		((ScriptID 27 0) init: roomNum) ; StartARoom
 		(DisposeScript 27)
 		(if
 			(and
@@ -1299,7 +1299,7 @@
 			)
 			(SetDebug)
 		)
-		(if (OneOf param1 230 240 250 260)
+		(if (OneOf roomNum 230 240 250 260)
 			(ScriptID 51) ; bazaarR
 		)
 		StopWalk
@@ -1309,7 +1309,7 @@
 		)
 		(gEgo edgeHit: EDGE_NONE)
 		(= global201 0)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(if (not global208)
 			(proc0_10)
 			(gGame setCursor: ((gTheIconBar curIcon:) cursor:) 1)

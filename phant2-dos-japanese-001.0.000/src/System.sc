@@ -161,7 +161,7 @@
 				{Too many params (%d) for SendMany (Max 10)\n}
 				(- argc 2)
 			)
-			(Empty self)
+			(SetDebug self)
 		)
 		(temp0
 			register:

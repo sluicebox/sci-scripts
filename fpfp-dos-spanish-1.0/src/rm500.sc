@@ -50,7 +50,7 @@
 			)
 			(670
 				(gEgo loop: 2)
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 			)
 			(680
 				(gGame handsOn:)

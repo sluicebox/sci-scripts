@@ -68,10 +68,10 @@
 				(gGame handsOn:)
 			)
 			(600
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 			)
 			(710
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 			)
 			(235
 				(if (== gCurPuzzle 10)

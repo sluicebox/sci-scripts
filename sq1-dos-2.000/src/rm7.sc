@@ -77,8 +77,8 @@
 			(
 				(= temp0
 					(switch ((User alterEgo:) edgeHit:)
-						(2 east)
-						(3 south)
+						(EDGE_RIGHT east)
+						(EDGE_BOTTOM south)
 					)
 				)
 				(self setScript: ExitRoom)

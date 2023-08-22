@@ -27,7 +27,7 @@
 	)
 
 	(method (init &tmp temp0 temp1)
-		(proc0_1)
+		(NormalEgo)
 		(super init:)
 		(Load rsVIEW 86)
 		(= temp0 (gEgo x:))
@@ -269,12 +269,12 @@
 		(if global172
 			(gCurRoom newRoom: 45) ; mapRoom
 		)
-		(proc0_3)
+		(HandsOn)
 	)
 
 	(method (init &tmp temp0)
 		(proc0_7 gEgo cat)
-		(proc0_2)
+		(HandsOff)
 		(super init: &rest)
 		(= temp0 (gGoals at: 5))
 		(proc0_20)

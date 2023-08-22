@@ -25,7 +25,7 @@
 
 	(method (init)
 		(LoadMany rsSOUND 191 192)
-		(gEgo init: normalize: 572 edgeHit: 0)
+		(gEgo init: normalize: 572 edgeHit: EDGE_NONE)
 		(switch gPrevRoomNum
 			(north 0)
 			(200

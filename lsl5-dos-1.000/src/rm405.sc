@@ -30,7 +30,7 @@
 		(LoadMany rsVIEW 405 406 407 1407)
 		(gEgo init: view: 406)
 		(clubOwner init: setCycle: Fwd)
-		(gEgo edgeHit: 0 setLoop: 1)
+		(gEgo edgeHit: EDGE_NONE setLoop: 1)
 		(ownersDoor init: caller: rm405)
 		(gTheMusic number: 405 flags: 1 setLoop: -1 play:)
 		(super init:)

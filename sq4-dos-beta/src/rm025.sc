@@ -90,7 +90,7 @@
 	)
 
 	(method (newRoom newRoomNumber)
-		(if (and (== (gEgo edgeHit:) 3) (> (gEgo x:) 199))
+		(if (and (== (gEgo edgeHit:) EDGE_BOTTOM) (> (gEgo x:) 199))
 			(= newRoomNumber 45)
 		)
 		(super newRoom: newRoomNumber)

@@ -123,7 +123,7 @@
 			(= local0 1)
 			(self setScript: myDoor)
 		)
-		(if (== (gEgo edgeHit:) 4)
+		(if (== (gEgo edgeHit:) EDGE_LEFT)
 			(if (and (== gAct 1) (== gClarenceWilburState 14))
 				(= gClarenceWilburState 2)
 			)

@@ -429,10 +429,10 @@
 				(gGame handsOff:)
 				(gTheIconBar disable: 6)
 				(switch (rLab prevEdgeHit:)
-					(2
+					(EDGE_RIGHT
 						(gEgo edgeHit: EDGE_RIGHT setMotion: MoveTo 232 123 self)
 					)
-					(4
+					(EDGE_LEFT
 						(gEgo edgeHit: EDGE_LEFT setMotion: MoveTo 82 123 self)
 					)
 				)
@@ -452,10 +452,10 @@
 			(0
 				(gGame handsOff:)
 				(switch (rLab prevEdgeHit:)
-					(4
+					(EDGE_LEFT
 						(gEgo posn: 232 123 setMotion: PolyPath 194 123 self)
 					)
-					(2
+					(EDGE_RIGHT
 						(gEgo posn: 82 123 setMotion: PolyPath 122 123 self)
 					)
 				)

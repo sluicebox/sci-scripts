@@ -468,20 +468,20 @@
 			(self drawPic: picture)
 		)
 		(switch ((User alterEgo:) edgeHit:)
-			(1
+			(EDGE_TOP
 				((User alterEgo:) y: 188)
 			)
-			(4
+			(EDGE_LEFT
 				((User alterEgo:) x: (- 319 ((User alterEgo:) xStep:)))
 			)
-			(3
+			(EDGE_BOTTOM
 				((User alterEgo:) y: (+ horizon ((User alterEgo:) yStep:)))
 			)
-			(2
+			(EDGE_RIGHT
 				((User alterEgo:) x: 1)
 			)
 		)
-		((User alterEgo:) edgeHit: 0)
+		((User alterEgo:) edgeHit: EDGE_NONE)
 	)
 
 	(method (doit &tmp nRoom)
@@ -491,10 +491,10 @@
 		(if
 			(= nRoom
 				(switch ((User alterEgo:) edgeHit:)
-					(1 north)
-					(2 east)
-					(3 south)
-					(4 west)
+					(EDGE_TOP north)
+					(EDGE_RIGHT east)
+					(EDGE_BOTTOM south)
+					(EDGE_LEFT west)
 				)
 			)
 			(self newRoom: nRoom)

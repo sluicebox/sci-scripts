@@ -39,7 +39,7 @@
 		(if gNight
 			(+= picture 100)
 		)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(gEgo xStep: 4 init:)
 		(super init:)
 		(Load rsPIC 30)

@@ -31,13 +31,13 @@
 
 	(method (init)
 		(Load rsVIEW 127)
-		(proc0_1)
+		(NormalEgo)
 		(super init:)
 		(door init: stopUpd:)
 		(gEgo setMotion: Freeway (= global75 @local0))
 		(switch gPrevRoomNum
 			(40
-				(gEgo loop: 0 cel: 1 x: 146 y: 107 edgeHit: 0 init:)
+				(gEgo loop: 0 cel: 1 x: 146 y: 107 edgeHit: EDGE_NONE init:)
 				(self setScript: outDoor)
 			)
 			(north
@@ -113,7 +113,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(gEgo illegalBits: 0 setMotion: MoveTo 146 107 self)
 			)
 			(1
@@ -134,7 +134,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(= cycles 20)
 			)
 			(1
@@ -149,7 +149,7 @@
 			)
 			(4
 				(gEgo illegalBits: -32768)
-				(proc0_3)
+				(HandsOn)
 				(gCurRoom setScript: 0)
 			)
 		)
@@ -244,11 +244,11 @@
 		(if global172
 			(gCurRoom newRoom: 45) ; mapRoom
 		)
-		(proc0_3)
+		(HandsOn)
 	)
 
 	(method (init &tmp temp0)
-		(proc0_2)
+		(HandsOff)
 		(super init: &rest)
 		(= temp0 (gGoals at: 15))
 		(proc0_20)

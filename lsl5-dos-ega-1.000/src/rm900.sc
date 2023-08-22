@@ -52,7 +52,7 @@
 		(switch gPrevRoomNum
 			(920
 				(HandsOn)
-				(gEgo posn: 214 163 0 setHeading: 180 edgeHit: 0)
+				(gEgo posn: 214 163 0 setHeading: 180 edgeHit: EDGE_NONE)
 			)
 			(north
 				(HandsOn)

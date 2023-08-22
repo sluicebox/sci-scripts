@@ -85,19 +85,19 @@
 				(self setScript: (ScriptID 201 4) self 3) ; sBusyFlo
 			)
 			(1
-				(switch global113
-					(0
+				(switch gEurekaLocation
+					(0 ; Nowhere
 						(gMessager say: 20 0 32 1 self) ; "We can't transmit beyond the interior of the station while we're inside it, sir."
 					)
-					(3
+					(3 ; ku
 						(gMessager say: 20 0 31 1 self) ; "No response. The planet is not inhabited, sir."
 					)
 					(32
 						(gMessager say: 20 0 29 1 self) ; "We're ordered to finish our garbage runs immediately, Captain."
 					)
-					(5
+					(5 ; clorox2
 						(if (IsFlag 30)
-							(switch global142
+							(switch gAct
 								(0
 									(gMessager say: 20 0 27 1 self) ; "Strange, there's no response from the surface, Captain. Maybe we should call StarCon."
 								)
@@ -109,15 +109,15 @@
 							(gMessager say: 20 0 27 2 self) ; "The colony isn't responding to our hails captain. They probably have better things to do than talk to us."
 						)
 					)
-					(6
+					(6 ; thrakus
 						(cond
 							((IsFlag 42)
 								(gMessager say: 20 0 54 1 self) ; "No response from the planet, Captain."
 							)
-							((== global142 1)
+							((== gAct 1)
 								(gMessager say: 20 0 30 1 self) ; "No response captain. The only thing I'm picking up is an escape pod homing beacon on the surface."
 							)
-							((== global142 2)
+							((== gAct 2)
 								(gMessager say: 21 0 33 1 self) ; "Unable to comply, captain. All interplanetary communications are being jammed."
 							)
 							(else
@@ -125,15 +125,15 @@
 							)
 						)
 					)
-					(7
+					(7 ; genetix Space Lab
 						(gMessager say: 20 0 28 1 self) ; "There's no further response from the facility captain."
 					)
-					(8
+					(8 ; genetix environdome
 						(gMessager say: 20 0 28 2 self) ; "There's no response, Captain. I don't think there's anyone down there."
 					)
 					(else
 						(cond
-							((OneOf global113 9 10 11 12 13)
+							((OneOf gEurekaLocation 9 10 11 12 13) ; generic planet 1, genceric planet 2, generic planet 3, generic planet 4, generic planet 5
 								(gMessager say: 20 0 31 1 self) ; "No response. The planet is not inhabited, sir."
 							)
 							((IsFlag 30)
@@ -159,27 +159,27 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(if (and (== global113 0) (IsFlag 34))
+				(if (and (== gEurekaLocation 0) (IsFlag 34)) ; Nowhere
 					(= cycles 1)
 				else
 					(self setScript: (ScriptID 201 4) self 1) ; sBusyFlo
 				)
 			)
 			(1
-				(switch global113
-					(0
+				(switch gEurekaLocation
+					(0 ; Nowhere
 						(if (IsFlag 34)
 							(gMessager say: 21 0 34 0 self) ; "Considering how poor your last effort was, sir, I suggest you stay off the com circuits for awhile."
 						else
 							(self setScript: (ScriptID 211 0) self) ; sQuirkStarCon
 						)
 					)
-					(5
+					(5 ; clorox2
 						(if
 							(and
 								(not (IsFlag 92))
 								(IsFlag 93)
-								(< global142 1)
+								(< gAct 1)
 							)
 							(gMessager say: 21 0 0 1 self) ; "The SCS Goliath is responding, sir. Putting it on screen."
 							(= local1 1)
@@ -187,7 +187,7 @@
 							(gMessager say: 21 0 3 3 self) ; "I can't reach anyone sir."
 						)
 					)
-					(6
+					(6 ; thrakus
 						(cond
 							((IsFlag 42)
 								(if (eureka damaged:)
@@ -207,7 +207,7 @@
 							)
 						)
 					)
-					(14
+					(14 ; goliath
 						(gMessager say: 21 0 33 1 self) ; "Unable to comply, captain. All interplanetary communications are being jammed."
 					)
 					(else
@@ -236,7 +236,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(if (and (== global113 0) (IsFlag 31))
+				(if (and (== gEurekaLocation 0) (IsFlag 31)) ; Nowhere
 					(= cycles 1)
 				else
 					(self setScript: (ScriptID 201 4) self 2) ; sBusyFlo
@@ -244,7 +244,7 @@
 			)
 			(1
 				(cond
-					((== global113 0)
+					((== gEurekaLocation 0) ; Nowhere
 						(if (IsFlag 31)
 							(gMessager say: 22 0 36 1 self) ; "I've already done that, sir."
 						else
@@ -253,7 +253,7 @@
 							(SetFlag 31)
 						)
 					)
-					((== global113 5)
+					((== gEurekaLocation 5) ; clorox2
 						(gNarrator keepWindow: 1)
 						(gSq5Music2 setVol: 5)
 						(starConMusic loop: -1 number: 223 play:)
@@ -391,13 +391,13 @@
 			)
 			(2
 				(cond
-					((== global113 0)
+					((== gEurekaLocation 0) ; Nowhere
 						(self setScript: (ScriptID 220 1) self) ; sFStarconChoices
 					)
-					((== global126 1)
+					((== gSpikeState 1)
 						(self setScript: (ScriptID 220 6) self) ; sFNoiseChoices
 					)
-					((and (not (IsFlag 30)) (< 8 global113 14))
+					((and (not (IsFlag 30)) (< 8 gEurekaLocation 14)) ; genetix environdome, goliath
 						(self setScript: (ScriptID 220 8) self) ; sFGenericChoices
 					)
 					(
@@ -407,7 +407,7 @@
 							(not (IsFlag 30))
 							(or
 								(== (eureka prevLocation:) 2)
-								(== (eureka curLocation:) 2)
+								(== (eureka curLocation:) 2) ; garbage2
 							)
 						)
 						(self setScript: (ScriptID 220 4) self) ; sFAlienChoices
@@ -418,23 +418,23 @@
 					((and (IsFlag 30) (not (IsFlag 93)))
 						(self setScript: (ScriptID 220 5) self) ; sFCloroxChoices
 					)
-					((and (== global113 5) (IsFlag 93) (not (IsFlag 76)))
+					((and (== gEurekaLocation 5) (IsFlag 93) (not (IsFlag 76))) ; clorox2
 						(if (IsFlag 92)
 							(gMessager say: 12 0 61 0 self 202) ; "How may I help you sir?"
 						else
 							(gMessager say: 12 0 62 0 self 202) ; "Any suggestions, Flo?"
 						)
 					)
-					((and (== global142 1) (not (IsFlag 94)))
+					((and (== gAct 1) (not (IsFlag 94)))
 						(self setScript: (ScriptID 220 13) self) ; sFAfterClorox
 					)
-					((and (== global142 2) (not (IsFlag 75)))
+					((and (== gAct 2) (not (IsFlag 75)))
 						(self setScript: (ScriptID 220 10) self) ; sFThrakusChoices
 					)
-					((and (IsFlag 75) (!= global113 14))
+					((and (IsFlag 75) (!= gEurekaLocation 14)) ; goliath
 						(self setScript: (ScriptID 220 12) self) ; sFBeforeGoliath
 					)
-					((and (IsFlag 75) (== global113 14))
+					((and (IsFlag 75) (== gEurekaLocation 14)) ; goliath
 						(gMessager say: 12 0 91 0 self 202) ; "We've got to stop the Goliath, sir--before it's too late."
 					)
 					(else

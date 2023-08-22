@@ -73,7 +73,7 @@
 			(script 0)
 			(
 				(and
-					(== (gEgo edgeHit:) 3)
+					(== (gEgo edgeHit:) EDGE_BOTTOM)
 					(OneOf gCurRoomNum 609 610 611)
 					(== (ulence fieldOff:) 0)
 				)

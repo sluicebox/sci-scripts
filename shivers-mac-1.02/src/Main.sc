@@ -944,9 +944,9 @@
 		(self newRoom: 942) ; speedRoom
 	)
 
-	(method (startRoom param1 &tmp temp0 temp1)
+	(method (startRoom roomNum &tmp temp0 temp1)
 		(for ((= temp0 0)) (< temp0 23) ((++ temp0))
-			(breakif (== [global118 (* temp0 2)] param1))
+			(breakif (== [global118 (* temp0 2)] roomNum))
 		)
 		(if (< temp0 23)
 			(= global106 [global118 (+ (* temp0 2) 1)])
@@ -955,8 +955,8 @@
 			(= global106 0)
 			(= global185 0)
 		)
-		(if (and (== global100 1) (< param1 0))
-			(= temp1 (/ (= temp0 (+ param1 32768)) 10))
+		(if (and (== global100 1) (< roomNum 0))
+			(= temp1 (/ (= temp0 (+ roomNum 32768)) 10))
 			(= temp0 (+ (mod temp0 10) 8))
 			(+= temp1 (+ (/ temp0 10) 3276))
 			(= temp0 (mod temp0 10))
@@ -970,19 +970,19 @@
 		(gTheDoits add: gSound4)
 		(gTheDoits add: gSound5)
 		(gTheDoits add: gSound6)
-		(if (and (< 0 gPrevRoomNum 990) (or (>= param1 990) (< param1 0))) ; shiversOptions
+		(if (and (< 0 gPrevRoomNum 990) (or (>= roomNum 990) (< roomNum 0))) ; shiversOptions, shiversOptions
 			((ScriptID 950 0) init:) ; vInterfaceView
 			(if (!= global105 0)
 				(self setScript: (ScriptID 950 13)) ; sEyeOpen
 			)
 		)
-		(if (and (or (>= gPrevRoomNum 990) (< gPrevRoomNum 0)) (< 0 param1 950)) ; shiversOptions
+		(if (and (or (>= gPrevRoomNum 990) (< gPrevRoomNum 0)) (< 0 roomNum 950)) ; shiversOptions
 			((ScriptID 950 0) dispose:) ; vInterfaceView
 		)
 		(= gTheCursor 0)
 		(SetCursor 999 0 0)
 		(gNormalCursor show:)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 	)
 
 	(method (handleEvent event)

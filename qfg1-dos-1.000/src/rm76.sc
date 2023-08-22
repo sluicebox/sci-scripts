@@ -213,7 +213,7 @@
 			)
 		)
 		(cond
-			((and (== (gEgo edgeHit:) 2) (>= local0 1))
+			((and (== (gEgo edgeHit:) EDGE_RIGHT) (>= local0 1))
 				(ClearFlag 202)
 				(gCurRoom newRoom: 77)
 			)

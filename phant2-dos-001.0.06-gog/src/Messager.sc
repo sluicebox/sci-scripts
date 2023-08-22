@@ -37,7 +37,7 @@
 	(method (doit param1 param2 param3 param4 param5)
 		(if (and argc (!= argc 5))
 			(PrintDebug {Invalid argc(%d) for Message\n} argc)
-			(Empty self)
+			(SetDebug self)
 		)
 		(= talker
 			(if argc
@@ -112,7 +112,7 @@
 	(method (say args &tmp aNoun aVerb aCase aMod)
 		(if (not argc)
 			(PrintDebug {Noun required for messager say\n})
-			(Empty)
+			(SetDebug)
 		)
 		(if (not message)
 			(self init:)
@@ -151,7 +151,7 @@
 	(method (sayRange args &tmp aNoun aVerb aCase aMod)
 		(if (< argc 5)
 			(PrintDebug {Invalid argc(%d) for sayRange\n} argc)
-			(Empty self)
+			(SetDebug self)
 		)
 		(if (not message)
 			(self init:)

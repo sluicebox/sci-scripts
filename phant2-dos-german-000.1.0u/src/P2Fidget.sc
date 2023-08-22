@@ -412,7 +412,7 @@
 			)
 			(else
 				(PrintDebug {Unknown Timer type: %d\n} type)
-				(Empty self)
+				(SetDebug self)
 			)
 		)
 	)
@@ -430,7 +430,7 @@
 			)
 			(else
 				(PrintDebug {Unknown Timer type: %d\n} param1)
-				(Empty self)
+				(SetDebug self)
 			)
 		)
 	)

@@ -98,7 +98,7 @@
 				setCel: 0
 				show:
 				forceUpd:
-				edgeHit: 0
+				edgeHit: EDGE_NONE
 			)
 			(faxMachine init: y: 113 z: 0)
 			(if (!= gPrevRoomNum 205)
@@ -138,7 +138,7 @@
 				show:
 				cycleSpeed: 6
 				forceUpd:
-				edgeHit: 0
+				edgeHit: EDGE_NONE
 			)
 			(legs init: setScript: sLegs)
 			(if (not (IsFlag 30))

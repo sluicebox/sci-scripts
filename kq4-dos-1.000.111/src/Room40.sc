@@ -45,7 +45,7 @@
 		(= gIndoors 0)
 		(super init:)
 		(self setRegions: 505 501 503 504) ; gfReg, waterReg, beachReg, Gull_Region
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(= local1 (Prop new:))
 		(= local2 (View new:))
 		(wave1

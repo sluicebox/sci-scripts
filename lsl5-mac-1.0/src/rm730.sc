@@ -119,7 +119,7 @@
 			(script)
 			((gEgo script:))
 			((gEgo edgeHit:)
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 				(HandsOff)
 				(gCurRoom setScript: sLeave)
 			)

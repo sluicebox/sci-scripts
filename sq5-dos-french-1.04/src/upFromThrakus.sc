@@ -150,7 +150,7 @@
 			)
 			(10
 				(NormalEgo 0 4)
-				(= global126 6)
+				(= gSpikeState 6)
 				(gEgo get: 8) ; Spike
 				(if (== client gCurRoom)
 					(proc240_30)
@@ -315,7 +315,7 @@
 				(SetScore 169 20)
 				(NormalEgo 0 4)
 				(gEgo setMotion: PolyPath 210 141 self)
-				(= global126 2)
+				(= gSpikeState 2)
 				((ScriptID 240 8) init: detailLevel: 3) ; spike
 				(gEgo put: 8) ; Spike
 			)
@@ -335,7 +335,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= global126 5)
+				(= gSpikeState 5)
 				((ScriptID 240 8) detailLevel: 0 setCycle: Beg self) ; spike
 			)
 			(1
@@ -461,7 +461,7 @@
 				(if (== client gCurRoom)
 					(gGame handsOff:)
 				)
-				(= global126 5)
+				(= gSpikeState 5)
 				(gEgo setHeading: 180 self)
 			)
 			(1
@@ -541,19 +541,19 @@
 						(or
 							(and
 								(gCast contains: (ScriptID 240 2)) ; bea
-								(!= global164 9)
+								(!= gBeaState 9)
 							)
 							(proc240_7)
 							(and
 								(IsFlag 63)
 								(IsFlag 45)
-								(not (OneOf global164 1 8))
-								(== global113 6)
+								(not (OneOf gBeaState 1 8))
+								(== gEurekaLocation 6) ; thrakus
 							)
 							(and
 								(!= gPrevRoomNum 225)
-								(== global113 8)
-								(!= global164 8)
+								(== gEurekaLocation 8) ; genetix environdome
+								(!= gBeaState 8)
 							)
 						)
 						(gMessager say: 26 24 13 0) ; "Not a good plan, ace. If you don't get Bea on ice quickly, she'll croak."
@@ -661,7 +661,7 @@
 				(gGame handsOff:)
 				(SetFlag 103)
 				(|= global169 $0002)
-				(= global130 5)
+				(= gCliffyState 5)
 				(proc240_1 1)
 				(gEgo
 					setScale: Scaler 116 71 149 123
@@ -816,7 +816,7 @@
 					setMotion: JumpTo 185 115 self
 				)
 				(gSq5Music2 number: 246 loop: 1 play:)
-				(= global126 7)
+				(= gSpikeState 7)
 			)
 			(27
 				(= next askAboutBea)
@@ -918,7 +918,7 @@
 				(self setScript: putSpikeInTank self)
 			)
 			(10
-				(= global130 12)
+				(= gCliffyState 12)
 				(gEgo setSpeed: global123)
 				(gSq5Music1 fade: 0 10 5 1)
 				(self setScript: (ScriptID 240 9) self) ; openTank
@@ -1098,7 +1098,7 @@
 				(proc240_1 1)
 				(NormalEgo 0 2)
 				(gEgo posn: 123 137 setScale: 0)
-				(if (== global130 12)
+				(if (== gCliffyState 12)
 					(= next cureBea)
 				else
 					(gGame handsOn:)
@@ -1115,7 +1115,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= global164 8)
+				(= gBeaState 8)
 				((ScriptID 240 2) stopUpd:) ; bea
 				((ScriptID 240 21) startUpd:) ; cliffy
 				(self setScript: (ScriptID 240 3) self 2) ; getOffPad
@@ -1216,8 +1216,8 @@
 				(proc240_26 0)
 				(proc240_25 0)
 				(gCast eachElementDo: #show)
-				(= global164 8)
-				(= global130 2)
+				(= gBeaState 8)
+				(= gCliffyState 2)
 				(gEgo ignoreActors: 0)
 				(DrawPic 43 10 1)
 				(gAddToPics eachElementDo: #init)
@@ -1423,7 +1423,7 @@
 			(3
 				(gCast eachElementDo: #stopUpd)
 				(NormalEgo 0 3)
-				(if (and (not (IsFlag 45)) (== global113 6) (!= gPrevRoomNum 225))
+				(if (and (not (IsFlag 45)) (== gEurekaLocation 6) (!= gPrevRoomNum 225)) ; thrakus
 					(SetScore 184 20)
 				)
 				((ScriptID 240 5) ; chamber
@@ -1487,7 +1487,7 @@
 			(4
 				((ScriptID 240 5) stopUpd:) ; chamber
 				(proc240_7 1)
-				(if (== global164 1)
+				(if (== gBeaState 1)
 					(= next breakBea)
 				else
 					(gGame handsOn:)
@@ -1532,23 +1532,23 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(if (== global113 14)
+				(if (== gEurekaLocation 14) ; goliath
 					(gGame handsOff:)
 				else
 					(SetFlag 75)
 				)
 				(self setScript: blowFuse self)
 				(gEgo setPri: 15 setCycle: Osc)
-				(if (== global164 9)
+				(if (== gBeaState 9)
 					((ScriptID 240 2) setPri: 15 setCycle: Osc) ; bea
 				)
 			)
 			(1
-				(if (== global113 14)
+				(if (== gEurekaLocation 14) ; goliath
 					(SetFlag 72)
 					(ClearFlag 73)
 					(gEgo setCycle: End self)
-					(if (== global164 9)
+					(if (== gBeaState 9)
 						((ScriptID 240 2) setCycle: End) ; bea
 					)
 				else
@@ -1556,7 +1556,7 @@
 				)
 			)
 			(2
-				(if (== global113 14)
+				(if (== gEurekaLocation 14) ; goliath
 					(gMessager say: 26 24 46 0 self) ; "Dang! This piece must have blown a circuit or something!"
 				else
 					(gCurRoom newRoom: 760)
@@ -1564,7 +1564,7 @@
 			)
 			(3
 				(gGame handsOn:)
-				(if (== global164 9)
+				(if (== gBeaState 9)
 					((ScriptID 240 2) setPri: -1) ; bea
 				)
 				(extra1 dispose:)
@@ -1594,7 +1594,7 @@
 			(2
 				(gSq5Music2 stop:)
 				(cond
-					((== global130 8)
+					((== gCliffyState 8)
 						(if (not (& global169 $0010))
 							(|= global169 $0010)
 							(gMessager say: 4 0 0 0 self 246) ; "ARGH!"
@@ -1988,11 +1988,11 @@
 					setStep: 5 2
 					setScale: Scaler 116 71 149 123
 				)
-				(if (== global170 1)
-					(= global130 4)
+				(if (== gWD40State 1)
+					(= gCliffyState 4)
 					(gMessager say: 26 0 36 0 self) ; "I'll get around to installing this device as soon as I finish my repairs to the android."
 				else
-					(= global130 1)
+					(= gCliffyState 1)
 					(gMessager say: 26 0 35 0 self) ; "I'll take this cloaking gizmo and get to work installing it. It'll take some time though, Cap'n."
 				)
 			)
@@ -2002,7 +2002,7 @@
 			(8
 				(self
 					setScript:
-						(if (== global170 1)
+						(if (== gWD40State 1)
 							cliffyGoesBackToWD40
 						else
 							cliffyLeavesThruDoor
@@ -2037,7 +2037,7 @@
 				)
 				(gSq5Music2 number: 260 loop: 1 play:)
 				((ScriptID 240 21) init: setCycle: End self) ; cliffy
-				(if (== global113 3)
+				(if (== gEurekaLocation 3) ; ku
 					(|= global169 $0020)
 				)
 			)
@@ -2047,10 +2047,10 @@
 				(gEgo posn: 109 135 setScale: Scaler 116 71 149 123)
 				(proc240_28 2)
 				((ScriptID 240 21) show: posn: 122 147) ; cliffy
-				(if (== global170 1)
-					(= global130 4)
+				(if (== gWD40State 1)
+					(= gCliffyState 4)
 				else
-					(= global130 2)
+					(= gCliffyState 2)
 				)
 				(= cycles 2)
 			)
@@ -2095,7 +2095,7 @@
 				((ScriptID 240 22) setCycle: Beg self) ; northDoor
 			)
 			(7
-				(= global130 1)
+				(= gCliffyState 1)
 				((ScriptID 240 21) dispose:) ; cliffy
 				((ScriptID 240 22) stopUpd:) ; northDoor
 				(self dispose:)
@@ -2116,21 +2116,21 @@
 				((ScriptID 240 21) setMotion: MoveTo 172 169 self) ; cliffy
 			)
 			(2
-				(if (== global170 1)
+				(if (== gWD40State 1)
 					((ScriptID 240 21) setMotion: MoveTo 227 170 self) ; cliffy
 				else
 					((ScriptID 240 21) setMotion: MoveTo 239 164 self) ; cliffy
 				)
 			)
 			(3
-				(if (== global170 1)
+				(if (== gWD40State 1)
 					((ScriptID 240 21) setHeading: 0 self) ; cliffy
 				else
 					((ScriptID 240 21) setHeading: 90 self) ; cliffy
 				)
 			)
 			(4
-				(if (== global170 1)
+				(if (== gWD40State 1)
 					((ScriptID 240 21) ; cliffy
 						view: 248
 						loop: 0
@@ -2142,7 +2142,7 @@
 						setCycle: Fwd
 						setScript: (ScriptID 240 23) ; bang
 					)
-					(= global130 2)
+					(= gCliffyState 2)
 				else
 					((ScriptID 240 21) ; cliffy
 						view: 191

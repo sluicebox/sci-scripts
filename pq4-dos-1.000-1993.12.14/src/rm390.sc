@@ -360,7 +360,7 @@
 				)
 			)
 			(5
-				(proc30_0 1 0 1 1 390)
+				(EgoDead 1 0 1 1 390) ; "Dennis Walker has mortally wounded you. The life and times of Detective John Carey has come to an end."
 				(self dispose:)
 			)
 		)
@@ -418,7 +418,7 @@
 				)
 			)
 			(2
-				(proc30_0 1 0 1 1 390)
+				(EgoDead 1 0 1 1 390) ; "Dennis Walker has mortally wounded you. The life and times of Detective John Carey has come to an end."
 				(self dispose:)
 			)
 		)
@@ -455,7 +455,7 @@
 				(metzler setCycle: CT 5 -1 self)
 			)
 			(7
-				(proc30_0 1 0 1 1 390)
+				(EgoDead 1 0 1 1 390) ; "Dennis Walker has mortally wounded you. The life and times of Detective John Carey has come to an end."
 				(self dispose:)
 			)
 		)
@@ -508,7 +508,7 @@
 				(metzler view: 391 loop: 1 cel: 8 setCycle: CT 5 -1 self)
 			)
 			(10
-				(proc30_0 1 0 1 1 390)
+				(EgoDead 1 0 1 1 390) ; "Dennis Walker has mortally wounded you. The life and times of Detective John Carey has come to an end."
 				(self dispose:)
 			)
 		)
@@ -666,7 +666,7 @@
 						(gCurRoom setScript: pullGun)
 					else
 						(gGlobalSound1 number: 926 loop: 1 play:)
-						(proc30_0 1 0 2 1 390)
+						(EgoDead 1 0 2 1 390) ; "You have neglected the department's philosophy of minimum force. Dennis Walker is a victim of deadly force... yours."
 					)
 				else
 					(super doVerb: theVerb)

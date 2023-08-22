@@ -59,10 +59,10 @@
 				(HandsOn)
 				(gTheMusic number: 160 setLoop: -1 play:)
 				(= style 7)
-				(gEgo posn: 138 121 setHeading: 180 edgeHit: 0)
+				(gEgo posn: 138 121 setHeading: 180 edgeHit: EDGE_NONE)
 			)
 			(150
-				(gEgo posn: 100 100 setHeading: 90 edgeHit: 0)
+				(gEgo posn: 100 100 setHeading: 90 edgeHit: EDGE_NONE)
 				(SetFlag 7)
 				(SetFFRoom 0)
 				(gEgo get: 0) ; Camcorder
@@ -81,7 +81,7 @@
 			)
 			(north
 				(HandsOn)
-				(gEgo posn: 260 77 setHeading: 180 edgeHit: 0 illegalBits: 0)
+				(gEgo posn: 260 77 setHeading: 180 edgeHit: EDGE_NONE illegalBits: 0)
 			)
 			(east
 				(gEgo y: 160)
@@ -100,7 +100,7 @@
 				)
 				(gEgo
 					posn: (presDoor approachX:) (presDoor approachY:)
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 				)
 				(gTheMusic number: 160 setLoop: -1 play:)
 				(HandsOn)

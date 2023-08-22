@@ -107,16 +107,16 @@
 
 	(method (newRoom newRoomNumber)
 		(cond
-			((and (== (gEgo edgeHit:) 1) (!= script exitScript))
+			((and (== (gEgo edgeHit:) EDGE_TOP) (!= script exitScript))
 				(HandsOff)
 				(self setScript: exitScript 0 1)
 			)
-			((and (== (gEgo edgeHit:) 1) (not (script register:)))
+			((and (== (gEgo edgeHit:) EDGE_TOP) (not (script register:)))
 				(super newRoom: newRoomNumber)
 			)
 			(
 				(and
-					(== (gEgo edgeHit:) 3)
+					(== (gEgo edgeHit:) EDGE_BOTTOM)
 					(> (gEgo x:) 199)
 					(not (IsFlag 0))
 				)

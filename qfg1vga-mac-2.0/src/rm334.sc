@@ -98,7 +98,7 @@
 				)
 				(gCurRoom setScript: stabTheBum)
 			)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(self setScript: sExitRoom)
 			)
 		)

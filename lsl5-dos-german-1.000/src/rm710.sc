@@ -26,12 +26,12 @@
 		(gEgo init: normalize: 711)
 		(switch gPrevRoomNum
 			(720
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 				(gTheIconBar disable: 6)
 			)
 			(north
 				(HandsOff)
-				(gEgo setHeading: 180 edgeHit: 0)
+				(gEgo setHeading: 180 edgeHit: EDGE_NONE)
 				(if (IsFlag 37)
 					(self setScript: sFromNorth 0 1)
 				else
@@ -43,7 +43,7 @@
 			)
 			(else
 				(HandsOn)
-				(gEgo posn: 160 160 edgeHit: 0)
+				(gEgo posn: 160 160 edgeHit: EDGE_NONE)
 			)
 		)
 		(super init:)
@@ -138,12 +138,12 @@
 				(gCurRoom setScript: sClosed)
 			)
 			((StepOn gEgo 2)
-				(gEgo edgeHit: 1)
+				(gEgo edgeHit: EDGE_TOP)
 				(HandsOff)
 				(self setScript: sToNorth 0 1)
 			)
 			((StepOn gEgo 4)
-				(gEgo edgeHit: 1)
+				(gEgo edgeHit: EDGE_TOP)
 				(HandsOff)
 				(self setScript: sToNorth 0 0)
 			)

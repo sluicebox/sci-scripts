@@ -639,14 +639,14 @@
 		)
 	)
 
-	(method (startRoom param1)
+	(method (startRoom roomNum)
 		(if gPMouse
 			(gPMouse stop:)
 		)
 		(if gDebugging
 			((ScriptID 21 0) init:) ; debugRm
 		)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 	)
 
 	(method (newRoom newRoomNumber)

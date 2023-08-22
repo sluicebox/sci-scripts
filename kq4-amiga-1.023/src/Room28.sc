@@ -42,7 +42,7 @@
 		(= horizon 126)
 		(= gIndoors 0)
 		(HandsOn)
-		(gEgo edgeHit: 0 illegalBits: -32768)
+		(gEgo edgeHit: EDGE_NONE illegalBits: -32768)
 		(if (== (gGSound state:) 3)
 			(gGSound play: -15536)
 		)

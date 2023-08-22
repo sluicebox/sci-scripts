@@ -234,7 +234,7 @@
 		(cond
 			(script)
 			((gEgo script:) 0)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(gCurRoom setScript: sExit)
 			)
 		)

@@ -113,7 +113,7 @@
 			((& (gEgo onControl: 1) $4000)
 				(gCurRoom newRoom: 120)
 			)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(gCurRoom setScript: cantGoThatWay)
 			)
 		)

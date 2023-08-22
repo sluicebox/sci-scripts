@@ -34,7 +34,7 @@
 		)
 		(door init:)
 		(signPlate init: stopUpd:)
-		(proc0_1)
+		(NormalEgo)
 		(switch gPrevRoomNum
 			(south
 				(gEgo posn: 133 139)
@@ -74,7 +74,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(gSfx number: 38 play:)
 				(door setCycle: End self)
 			)
@@ -91,7 +91,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(gEgo posn: 136 125 init: setMotion: MoveTo 136 127 self)
 				(if global129
 					(global129 setMotion: NewFollow gEgo 5)
@@ -109,7 +109,7 @@
 					(if global129
 						(global129 setMotion: NewFollow gEgo 30)
 					)
-					(proc0_3)
+					(HandsOn)
 				)
 				(self dispose:)
 			)

@@ -18,7 +18,7 @@
 	)
 
 	(method (init)
-		(proc0_2)
+		(HandsOff)
 		(= global340 0)
 		(= global104 1)
 		(super init:)

@@ -165,7 +165,7 @@
 			((< (gEgo y:) 28)
 				(self setScript: sExitNorth)
 			)
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(gCurRoom setScript: sExitEast)
 			)
 			((< (gEgo y:) 43)

@@ -48,7 +48,7 @@
 				(gCurRoom setScript: sExitElevator)
 			)
 			(else
-				(gEgo posn: 160 160 edgeHit: 0)
+				(gEgo posn: 160 160 edgeHit: EDGE_NONE)
 				(gTheMusic number: 620 flags: 1 setLoop: -1 play:)
 			)
 		)

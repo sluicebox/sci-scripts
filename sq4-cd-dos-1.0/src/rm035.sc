@@ -92,7 +92,7 @@
 			(and
 				(!= (gCurRoom script:) (ScriptID 701 3)) ; cyborgScreams
 				(!= ((ScriptID 701 1) script:) (ScriptID 701 4)) ; deathDroid, droidShoots
-				(== (gEgo edgeHit:) 3)
+				(== (gEgo edgeHit:) EDGE_BOTTOM)
 				(< (gEgo x:) 124)
 			)
 			(= newRoomNumber 45)

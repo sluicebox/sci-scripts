@@ -340,7 +340,7 @@
 				(Say astro self 200 31) ; "If you need to know more about the future, visit me again when it arrives."
 			)
 			(1
-				(gCurRoom edgeHit: 4)
+				(gCurRoom edgeHit: EDGE_LEFT)
 				(self dispose:)
 			)
 		)

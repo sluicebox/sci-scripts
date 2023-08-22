@@ -266,8 +266,8 @@
 	(method (doit)
 		(cond
 			(script)
-			((and (== (gEgo edgeHit:) 3) (< (gEgo y:) 145))
-				(gEgo edgeHit: 0)
+			((and (== (gEgo edgeHit:) EDGE_BOTTOM) (< (gEgo y:) 145))
+				(gEgo edgeHit: EDGE_NONE)
 			)
 		)
 		(super doit: &rest)

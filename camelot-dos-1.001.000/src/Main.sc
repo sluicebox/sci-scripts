@@ -794,7 +794,7 @@
 		)
 	)
 
-	(method (startRoom param1 &tmp temp0 temp1)
+	(method (startRoom roomNum &tmp temp0 temp1)
 		(DisposeScript 985)
 		(DisposeScript 919)
 		(DisposeScript 971)
@@ -818,24 +818,24 @@
 		)
 		(= temp1 0)
 		(cond
-			((or (>= 80 param1 67) (== param1 133) (== param1 92))
+			((or (>= 80 roomNum 67) (== roomNum 133) (== roomNum 92)) ; finalBattle, endGame
 				(if (!= global143 2)
 					(global166 dispose:)
 					(= temp1 139)
 				)
 			)
-			((and (> 90 param1 34) (!= global143 1))
+			((and (> 90 roomNum 34) (!= global143 1)) ; Voyage
 				(= global145 (if (IsFlag 133) 4 else 5))
 				(global166 dispose:)
 				(= temp1 121)
 			)
-			((and (not (> 90 param1 34)) (!= global143 0))
+			((and (not (> 90 roomNum 34)) (!= global143 0)) ; Voyage
 				(= global145 5)
 				(global166 dispose:)
 				(= temp1 120)
 			)
 		)
-		(Load rsSCRIPT param1)
+		(Load rsSCRIPT roomNum)
 		(if temp1
 			(= global166 (ScriptID temp1))
 			(global166 init:)
@@ -869,7 +869,7 @@
 		(if (!= global116 1)
 			(= temp0 EgoLooper)
 		)
-		(if (or (>= 90 param1 1) (== param1 103))
+		(if (or (>= 90 roomNum 1) (== roomNum 103))
 			(gEgo
 				setLoop: -1
 				setPri: -1
@@ -889,7 +889,7 @@
 		(if (gEgo has: 3) ; purse
 			(SetMenu 1281 112 1)
 		)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(Load rsFONT 0)
 		(Load rsFONT 1)
 		(Load rsFONT 4)

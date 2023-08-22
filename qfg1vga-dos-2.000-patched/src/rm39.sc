@@ -464,17 +464,17 @@
 			(0
 				(HandsOff)
 				(switch (gEgo edgeHit:)
-					(1
+					(EDGE_TOP
 						(HandsOn)
 						(gCurRoom newRoom: 41)
 					)
-					(3
+					(EDGE_BOTTOM
 						(gEgo setMotion: MoveTo (+ (gEgo x:) 15) 240 self)
 					)
-					(4
+					(EDGE_LEFT
 						(gEgo setMotion: PolyPath -20 (gEgo y:) self)
 					)
-					(2
+					(EDGE_RIGHT
 						(gEgo setMotion: PolyPath 337 (gEgo y:) self)
 					)
 				)
@@ -482,17 +482,17 @@
 			(1
 				(HandsOn)
 				(switch (gEgo edgeHit:)
-					(3
+					(EDGE_BOTTOM
 						(if gNight
 							(gCurRoom setScript: goTo37)
 						else
 							(gCurRoom newRoom: 37)
 						)
 					)
-					(4
+					(EDGE_LEFT
 						(gCurRoom newRoom: 38)
 					)
-					(2
+					(EDGE_RIGHT
 						(gCurRoom newRoom: 40)
 					)
 				)

@@ -42,7 +42,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(global109 stopUpd:)
 				(teacher init: setLoop: 5 ignoreControl: -1 hide:)
 				(DoAudio audWPLAY 12)

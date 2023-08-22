@@ -95,10 +95,10 @@
 	(method (doit)
 		(if (not script)
 			(switch (gEgo edgeHit:)
-				(2
+				(EDGE_RIGHT
 					(self setScript: toEast)
 				)
-				(4
+				(EDGE_LEFT
 					(self setScript: toWest)
 				)
 			)
@@ -122,7 +122,7 @@
 				(gEgo setMotion: MoveTo -38 (gEgo y:) self)
 			)
 			(1
-				(gEgo x: 280 edgeHit: 0 setMotion: 0)
+				(gEgo x: 280 edgeHit: EDGE_NONE setMotion: 0)
 				(gCurRoom drawPic: 320)
 				(if (== global112 2)
 					(localproc_1)
@@ -148,7 +148,7 @@
 				(gEgo setMotion: MoveTo 358 (gEgo y:) self)
 			)
 			(1
-				(gEgo x: 36 edgeHit: 0 setMotion: 0)
+				(gEgo x: 36 edgeHit: EDGE_NONE setMotion: 0)
 				(gCurRoom drawPic: 320)
 				(if (== global112 2)
 					(localproc_0)

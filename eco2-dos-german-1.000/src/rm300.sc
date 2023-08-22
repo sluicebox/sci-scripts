@@ -185,7 +185,7 @@
 					x: 39
 					y: -10
 					setPri: 10
-					edgeHit: 1
+					edgeHit: EDGE_TOP
 					init:
 					setScale: 0
 				)

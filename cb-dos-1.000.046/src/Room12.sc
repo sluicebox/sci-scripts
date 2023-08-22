@@ -149,7 +149,7 @@
 		(if (& (gEgo onControl: 0) $0002)
 			(gCurRoom newRoom: 35)
 		)
-		(if (== (gEgo edgeHit:) 2)
+		(if (== (gEgo edgeHit:) EDGE_RIGHT)
 			(if (< (gEgo y:) 80)
 				(gCurRoom newRoom: 6)
 			else

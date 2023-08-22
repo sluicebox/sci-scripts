@@ -93,7 +93,7 @@
 			)
 		)
 		(gEgo init:)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(= [local2 0] 94)
 		(= [local2 1] 167)
 		(= [local2 2] 112)

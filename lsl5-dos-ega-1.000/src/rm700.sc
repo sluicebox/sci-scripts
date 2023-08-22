@@ -41,12 +41,12 @@
 		(switch gPrevRoomNum
 			(750
 				(HandsOn)
-				(gEgo posn: 117 164 setHeading: 180 edgeHit: 0)
+				(gEgo posn: 117 164 setHeading: 180 edgeHit: EDGE_NONE)
 				(SetFlag 49)
 			)
 			(north
 				(HandsOn)
-				(gEgo posn: 117 164 setHeading: 180 edgeHit: 0)
+				(gEgo posn: 117 164 setHeading: 180 edgeHit: EDGE_NONE)
 				(gTheMusic fade: 80 10 10 0)
 			)
 			(south

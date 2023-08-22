@@ -159,7 +159,7 @@
 
 	(method (doit &tmp temp0)
 		(super doit:)
-		(if (and (== (gEgo edgeHit:) 4) (not (gEgo script:)))
+		(if (and (== (gEgo edgeHit:) EDGE_LEFT) (not (gEgo script:)))
 			(gEgo setScript: headWest)
 		)
 		(if

@@ -288,7 +288,7 @@
 				(Narrator init: 3 self) ; "The ocean is a huge place. Adam should stick to the path Gregarious showed him between Eluria and the boat."
 			)
 			(2
-				(if (== (gEgo edgeHit:) 4)
+				(if (== (gEgo edgeHit:) EDGE_LEFT)
 					(gEgo
 						setMotion: MoveTo (+ (gEgo x:) 40) (gEgo y:) self
 					)

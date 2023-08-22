@@ -31,16 +31,16 @@
 		(super init:)
 		(if (IsFlag 1)
 			(switch ((ScriptID 30 0) prevEdgeHit:) ; rLab
-				(1
+				(EDGE_TOP
 					(proc401_1)
 				)
-				(3
+				(EDGE_BOTTOM
 					(proc401_0)
 				)
-				(4
+				(EDGE_LEFT
 					(proc401_3)
 				)
-				(2
+				(EDGE_RIGHT
 					(proc401_2)
 				)
 			)
@@ -55,21 +55,21 @@
 			(gCurRoom setScript: dieAlready)
 		)
 		(switch ((ScriptID 30 0) prevEdgeHit:) ; rLab
-			(1
+			(EDGE_TOP
 				((ScriptID 30 0) initCrypt: 1) ; rLab
 			)
-			(3
+			(EDGE_BOTTOM
 				((ScriptID 30 0) initCrypt: 4) ; rLab
 				((ScriptID 30 7) addToPic:) ; topDoor
 				((ScriptID 30 8) addToPic:) ; bottomBlock
 			)
-			(4
+			(EDGE_LEFT
 				((ScriptID 30 0) initCrypt: 4) ; rLab
 				((ScriptID 30 6) addToPic:) ; rightDoor
 				((ScriptID 30 10) addToPic:) ; rightWing
 				((ScriptID 30 8) addToPic:) ; bottomBlock
 			)
-			(2
+			(EDGE_RIGHT
 				((ScriptID 30 0) initCrypt: 2) ; rLab
 				((ScriptID 30 5) addToPic:) ; leftDoor
 				((ScriptID 30 9) addToPic:) ; leftWing
@@ -88,16 +88,16 @@
 				(gGame handsOff:)
 				(gTheIconBar enable: 6)
 				(switch ((ScriptID 30 0) prevEdgeHit:) ; rLab
-					(4
+					(EDGE_LEFT
 						(gEgo posn: 282 164 loop: 1 init:)
 					)
-					(2
+					(EDGE_RIGHT
 						(gEgo posn: 36 164 loop: 0 init:)
 					)
-					(3
+					(EDGE_BOTTOM
 						(gEgo posn: 158 135 loop: 2 init:)
 					)
-					(1
+					(EDGE_TOP
 						(gEgo posn: 158 225 loop: 3 init:)
 					)
 				)
@@ -117,16 +117,16 @@
 			)
 			(2
 				(switch ((ScriptID 30 0) prevEdgeHit:) ; rLab
-					(4
+					(EDGE_LEFT
 						(gEgo setMotion: PolyPath 215 164 self)
 					)
-					(2
+					(EDGE_RIGHT
 						(gEgo setMotion: PolyPath 108 164 self)
 					)
-					(3
+					(EDGE_BOTTOM
 						(gEgo setMotion: PolyPath 158 156 self)
 					)
-					(1
+					(EDGE_TOP
 						(gEgo setMotion: PolyPath 158 185 self)
 					)
 				)
@@ -146,22 +146,22 @@
 			)
 			(4
 				(switch ((ScriptID 30 0) prevEdgeHit:) ; rLab
-					(1
+					(EDGE_TOP
 						(= temp0 3)
 						(= temp1 0)
 						(= temp2 0)
 					)
-					(3
+					(EDGE_BOTTOM
 						(= temp0 2)
 						(= temp1 0)
 						(= temp2 0)
 					)
-					(4
+					(EDGE_LEFT
 						(= temp0 1)
 						(= temp1 -5)
 						(= temp2 0)
 					)
-					(2
+					(EDGE_RIGHT
 						(= temp0 0)
 						(= temp1 7)
 						(= temp2 2)

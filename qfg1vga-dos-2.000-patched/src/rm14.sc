@@ -443,7 +443,7 @@
 			(0
 				(HandsOff)
 				(switch (gEgo edgeHit:)
-					(4
+					(EDGE_LEFT
 						(gEgo
 							setMotion:
 								MoveTo
@@ -452,7 +452,7 @@
 								self
 						)
 					)
-					(3
+					(EDGE_BOTTOM
 						(gEgo
 							setMotion:
 								MoveTo

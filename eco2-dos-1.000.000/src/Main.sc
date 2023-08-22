@@ -602,8 +602,8 @@
 		(super newRoom: newRoomNumber)
 	)
 
-	(method (startRoom param1 &tmp temp0 temp1 temp2 temp3)
-		((ScriptID 6) doit: param1) ; disposeCode
+	(method (startRoom roomNum &tmp temp0 temp1 temp2 temp3)
+		((ScriptID 6) doit: roomNum) ; disposeCode
 		(for ((= temp2 0)) (< temp2 (gTimers size:)) ((++ temp2))
 			(gTimers delete: (= temp0 (gTimers at: 0)))
 			(gTimers add: temp0)
@@ -614,43 +614,43 @@
 		)
 		(statusCode doit:)
 		(cond
-			((OneOf param1 160 100)
+			((OneOf roomNum 160 100)
 				Docks
 				((ScriptID 199 1) init:) ; dockFlags
-				((ScriptID param1) setRegions: 199) ; Docks
+				((ScriptID roomNum) setRegions: 199) ; Docks
 			)
-			((OneOf param1 200 220 240 280 260 290)
+			((OneOf roomNum 200 220 240 280 260 290)
 				(ScriptID 91) ; loadCode2
 				(ScriptID 92) ; loadCode3
 				Jungle
 				((ScriptID 299 1) init:) ; jungleFlags
-				((ScriptID param1) setRegions: 299) ; Jungle
+				((ScriptID roomNum) setRegions: 299) ; Jungle
 			)
-			((OneOf param1 300 330 360 380 390 400 420 430 440 16)
+			((OneOf roomNum 300 330 360 380 390 400 420 430 440 16) ; ceremony
 				(ScriptID 91) ; loadCode2
 				(ScriptID 92) ; loadCode3
 				(ScriptID 93) ; loadCode4
 				Village
 				((ScriptID 399 1) init:) ; villageFlags
-				((ScriptID param1) setRegions: 399) ; Village
+				((ScriptID roomNum) setRegions: 399) ; Village
 			)
-			((OneOf param1 530 560 500 501 580 590)
+			((OneOf roomNum 530 560 500 501 580 590)
 				(ScriptID 93) ; loadCode4
 				(ScriptID 94) ; loadCode5
 				Cibola
 				((ScriptID 599 1) init:) ; cibolaFlags
-				((ScriptID param1) setRegions: 599) ; Cibola
+				((ScriptID roomNum) setRegions: 599) ; Cibola
 			)
-			((OneOf param1 600 630 640 680)
+			((OneOf roomNum 600 630 640 680)
 				(ScriptID 93) ; loadCode4
 				(ScriptID 94) ; loadCode5
 				(ScriptID 95) ; loadCode6
 				(ScriptID 96) ; loadCode7
 				Bats
 				((ScriptID 699 1) init:) ; batFlags
-				((ScriptID param1) setRegions: 699) ; Bats
+				((ScriptID roomNum) setRegions: 699) ; Bats
 			)
-			((OneOf param1 700 701 702 730)
+			((OneOf roomNum 700 701 702 730)
 				(ScriptID 90) ; loadCode1
 				(ScriptID 93) ; loadCode4
 				(ScriptID 94) ; loadCode5
@@ -658,20 +658,20 @@
 				(ScriptID 96) ; loadCode7
 				Flood
 				((ScriptID 799 1) init:) ; floodFlags
-				((ScriptID param1) setRegions: 799) ; Flood
+				((ScriptID roomNum) setRegions: 799) ; Flood
 			)
-			((OneOf param1 800 840 820 860 870 880)
+			((OneOf roomNum 800 840 820 860 870 880)
 				(ScriptID 90) ; loadCode1
 				(ScriptID 93) ; loadCode4
 				(ScriptID 94) ; loadCode5
 				(ScriptID 95) ; loadCode6
 				Gold
 				((ScriptID 899 1) init:) ; goldFlags
-				((ScriptID param1) setRegions: 899) ; Gold
+				((ScriptID roomNum) setRegions: 899) ; Gold
 			)
 		)
 		(gTheIconBar enable:)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(if
 			(and
 				(gEgo cycler:)

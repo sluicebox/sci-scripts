@@ -34,7 +34,7 @@
 					yourself:
 				)
 		)
-		(proc0_1)
+		(NormalEgo)
 		(switch gPrevRoomNum
 			(north
 				(gEgo posn: (proc0_13 53 (gEgo x:) 133) 82)

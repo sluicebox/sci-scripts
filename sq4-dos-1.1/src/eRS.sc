@@ -81,16 +81,16 @@
 					)
 				)
 				(switch ((User alterEgo:) edgeHit:)
-					(1
+					(EDGE_TOP
 						((User alterEgo:) y: 188)
 					)
-					(4
+					(EDGE_LEFT
 						((User alterEgo:) x: (- 319 temp0))
 					)
-					(3
+					(EDGE_BOTTOM
 						((User alterEgo:) y: (+ horizon temp1))
 					)
-					(2
+					(EDGE_RIGHT
 						((User alterEgo:) x: (+ 0 temp0))
 					)
 				)
@@ -111,10 +111,10 @@
 			(
 				(= temp0
 					(switch ((User alterEgo:) edgeHit:)
-						(1 north)
-						(2 east)
-						(3 south)
-						(4 west)
+						(EDGE_TOP north)
+						(EDGE_RIGHT east)
+						(EDGE_BOTTOM south)
+						(EDGE_LEFT west)
 					)
 				)
 				(self setScript: lRS 0 temp0)

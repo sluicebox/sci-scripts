@@ -27,7 +27,7 @@
 	(method (init)
 		(Load rsVIEW 125)
 		(super init:)
-		(proc0_1)
+		(NormalEgo)
 		(door init:)
 		(= global111 wifeBareFoot)
 		(gEgo setMotion: Freeway (= global75 @local0))
@@ -67,7 +67,7 @@
 			)
 			(else
 				(event claimed: 1)
-				(proc0_2)
+				(HandsOff)
 				(self setScript: converse)
 			)
 		)
@@ -104,7 +104,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(Timer set60ths: self (DoAudio audPLAY 38))
 				(door setCycle: End self)
 			)
@@ -122,7 +122,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(door setCycle: CT 2 -1 self)
 			)
 			(1
@@ -134,7 +134,7 @@
 				(if global133
 					(gCurRoom setScript: converse)
 				else
-					(proc0_3)
+					(HandsOn)
 					(gCurRoom setScript: 0)
 				)
 			)
@@ -307,7 +307,7 @@
 		(if global172
 			(gCurRoom newRoom: 45) ; mapRoom
 		)
-		(proc0_3)
+		(HandsOn)
 		(DoSound sndMASTER_VOLUME global125)
 	)
 

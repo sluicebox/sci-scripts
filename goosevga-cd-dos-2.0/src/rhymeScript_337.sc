@@ -25,7 +25,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(Load rsVIEW 81)
 				(Load rsSCRIPT 979)
 				(gEgo setAvoider: (Avoid new:) setMotion: MoveTo 133 90 self)
@@ -211,7 +211,7 @@
 				(gEgo show: setMotion: 0 setLoop: -1)
 				((gEgo head:) show:)
 				(if (or global172 (!= gScore (- gPossibleScore 1)))
-					(proc0_3)
+					(HandsOn)
 				else
 					(gEgo setMotion: MoveTo 134 175)
 				)

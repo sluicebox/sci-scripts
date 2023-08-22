@@ -145,7 +145,7 @@
 			(
 				(and
 					(!= (gCurRoom script:) (ScriptID 812 0)) ; eRS
-					(== (gEgo edgeHit:) 3)
+					(== (gEgo edgeHit:) EDGE_BOTTOM)
 				)
 				(gCurRoom setScript: walkTinyOutFirst)
 				(self dispose:)
@@ -922,7 +922,7 @@
 											1
 									)
 								)
-								((< global165 local4)
+								((< gBuckazoidCount local4)
 									(tinyTalk
 										init: ; "So, what are ya tryin' to pull? If you don't have the cash you can hit the sand. Go on, get out of here. You're wasting my time!"
 											tinyHead
@@ -954,7 +954,7 @@
 											27
 										)
 									)
-									(-= global165 local4)
+									(-= gBuckazoidCount local4)
 									(self setScript: 0)
 								)
 							)

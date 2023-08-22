@@ -133,7 +133,7 @@
 
 	(method (updateViews)
 		(switch roomNum
-			(1
+			(1 ; logoRm
 				(switch curDir
 					(0
 						(if
@@ -541,7 +541,7 @@
 					)
 				)
 			)
-			(5
+			(5 ; movieTestRm
 				(switch curDir
 					(0
 						(if
@@ -1099,7 +1099,7 @@
 					)
 				)
 			)
-			(12
+			(12 ; endChapter
 				(switch curDir
 					(0
 						(if

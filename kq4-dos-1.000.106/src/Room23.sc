@@ -46,7 +46,7 @@
 		(= west 22)
 		(= horizon 74)
 		(= gIndoors 0)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(if gNight
 			(= picture 123)
 		)

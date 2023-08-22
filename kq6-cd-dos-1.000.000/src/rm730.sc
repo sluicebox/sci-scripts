@@ -207,7 +207,7 @@
 		(= local1 (gEgo onControl: 1))
 		(cond
 			(script 0)
-			((== ((User alterEgo:) edgeHit:) 3)
+			((== ((User alterEgo:) edgeHit:) EDGE_BOTTOM)
 				(gEgo y: (- (gEgo y:) 2))
 				(self setScript: don_tLeave)
 			)

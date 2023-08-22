@@ -109,8 +109,8 @@
 	(method (doit &tmp temp0)
 		(cond
 			(script)
-			((and (== script fallScript) (== (gEgo edgeHit:) 3)) 0)
-			((and (not script) (== (gEgo edgeHit:) 1))
+			((and (== script fallScript) (== (gEgo edgeHit:) EDGE_BOTTOM)) 0)
+			((and (not script) (== (gEgo edgeHit:) EDGE_TOP))
 				(HandsOff)
 				(self setScript: exitScript)
 			)

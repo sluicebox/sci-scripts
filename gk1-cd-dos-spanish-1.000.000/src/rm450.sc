@@ -158,7 +158,7 @@
 	)
 
 	(method (newRoom newRoomNumber)
-		(if (== (gEgo edgeHit:) 3)
+		(if (== (gEgo edgeHit:) EDGE_BOTTOM)
 			(if (< (gEgo x:) 200)
 				(= newRoomNumber 420) ; nwJackson
 			else

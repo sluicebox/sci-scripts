@@ -133,12 +133,12 @@
 		)
 		(cond
 			(script 0)
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(HandsOff)
 				((ScriptID 700 0) enterBelt: egoBwGreen) ; mall
 				(self setScript: (ScriptID 700 2) 0 east) ; exS
 			)
-			((or (== (gEgo edgeHit:) 4) (== (gEgo edgeHit:) 3))
+			((or (== (gEgo edgeHit:) EDGE_LEFT) (== (gEgo edgeHit:) EDGE_BOTTOM))
 				(if (StepOn gEgo 4)
 					(gEgo
 						edgeHit: EDGE_NONE

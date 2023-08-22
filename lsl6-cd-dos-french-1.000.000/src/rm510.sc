@@ -347,7 +347,7 @@
 			)
 			(1
 				(gCurRoom setInset: dressInset)
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 				(gGame handsOn:)
 				(self dispose:)
 			)

@@ -257,7 +257,7 @@
 	)
 
 	(method (doit)
-		(if (and (== (gEgo edgeHit:) 3) (not (IsFlag 193)))
+		(if (and (== (gEgo edgeHit:) EDGE_BOTTOM) (not (IsFlag 193)))
 			(= global110 gDay)
 			(gCurRoom newRoom: 320)
 		)

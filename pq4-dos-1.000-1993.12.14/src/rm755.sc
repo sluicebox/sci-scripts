@@ -211,7 +211,7 @@
 				)
 			)
 			(13
-				(proc30_0 4 4 0 1 755)
+				(EgoDead 4 4 0 1 755) ; "A risky move for your final approach!"
 			)
 		)
 	)
@@ -325,7 +325,7 @@
 				(gGlobalSound1 number: 1019 loop: 1 play:)
 			)
 			(3
-				(proc30_0 4 (if (== register 9755) 41 else 42) 7 1 755)
+				(EgoDead 4 (if (== register 9755) 41 else 42) 7 1 755)
 			)
 		)
 	)
@@ -357,7 +357,7 @@
 				(gGlobalSound1 number: 1019 loop: 1 play:)
 			)
 			(1
-				(proc30_0 4 4 0 1 755)
+				(EgoDead 4 4 0 1 755) ; "A risky move for your final approach!"
 			)
 		)
 	)
@@ -382,7 +382,7 @@
 				)
 			)
 			(1
-				(proc30_0 4 4 0 1 755)
+				(EgoDead 4 4 0 1 755) ; "A risky move for your final approach!"
 			)
 		)
 	)

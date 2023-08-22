@@ -169,12 +169,12 @@
 	(method (doit)
 		(cond
 			(script 0)
-			((and (not ((ScriptID 700 7) script:)) (== (gEgo edgeHit:) 2)) ; sp2
+			((and (not ((ScriptID 700 7) script:)) (== (gEgo edgeHit:) EDGE_RIGHT)) ; sp2
 				(HandsOff)
 				((ScriptID 700 0) enterBelt: egoBwRed) ; mall
 				(self setScript: (ScriptID 700 2) 0 east) ; exS
 			)
-			((and (not ((ScriptID 700 7) script:)) (== (gEgo edgeHit:) 4)) ; sp2
+			((and (not ((ScriptID 700 7) script:)) (== (gEgo edgeHit:) EDGE_LEFT)) ; sp2
 				(HandsOff)
 				((ScriptID 700 0) enterBelt: egoBwGreen) ; mall
 				(self setScript: (ScriptID 700 2) 0 west) ; exS

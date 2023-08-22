@@ -47,7 +47,7 @@
 					yourself:
 				)
 		)
-		(proc0_1)
+		(NormalEgo)
 		(switch gPrevRoomNum
 			(north
 				(gEgo posn: (proc0_13 147 (gEgo x:) global60) 101)
@@ -368,7 +368,7 @@
 
 	(method (changeState newState &tmp temp0)
 		(if (not (= state newState))
-			(proc0_2)
+			(HandsOff)
 			(proc0_7 gEgo jack)
 			(theHead
 				setLoop:
@@ -423,8 +423,8 @@
 			(if global172
 				(gCurRoom newRoom: 45) ; mapRoom
 			)
-			(proc0_5)
-			(proc0_3)
+			(RedrawCast)
+			(HandsOn)
 		)
 	)
 )

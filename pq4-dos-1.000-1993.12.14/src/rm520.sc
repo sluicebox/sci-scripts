@@ -218,7 +218,7 @@
 					(= local2 1)
 					(gMessager say: 1 22 7) ; "Destroying Department and City property is punishable by dismissal."
 				else
-					((ScriptID 32 0) doit: 1 22 6 1 520) ; ShootHandgun
+					((ScriptID 32 0) doit: 1 22 6 1 520) ; ShootHandgun, "Your actions are not in keeping with department policy. You're dismissed."
 				)
 			)
 			(else

@@ -42,7 +42,7 @@
 		(if gNight
 			(= picture 112)
 		)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(super init:)
 		(= local15 (Prop new:))
 		(= local16 (Prop new:))

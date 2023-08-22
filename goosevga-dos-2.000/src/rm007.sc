@@ -30,7 +30,7 @@
 
 	(method (init &tmp temp0 temp1)
 		(= global345 outCode)
-		(proc0_1)
+		(NormalEgo)
 		(super init:)
 		(gCurRoom
 			addObstacle:
@@ -307,7 +307,7 @@
 	(method (changeState newState &tmp temp0)
 		(if (not (= state newState))
 			(proc0_7 gEgo cat)
-			(proc0_2)
+			(HandsOff)
 			(= temp0 (gGoals at: 5))
 			(proc0_20)
 			(cond
@@ -345,8 +345,8 @@
 			(if global172
 				(gCurRoom newRoom: 45) ; mapRoom
 			)
-			(proc0_5)
-			(proc0_3)
+			(RedrawCast)
+			(HandsOn)
 			(if (== gScore gPossibleScore)
 				(gCurRoom setScript: (ScriptID 205)) ; walkTo
 			else

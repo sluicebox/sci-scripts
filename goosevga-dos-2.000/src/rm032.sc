@@ -47,7 +47,7 @@
 					yourself:
 				)
 		)
-		(proc0_1)
+		(NormalEgo)
 		(Load rsVIEW 16)
 		(door init: stopUpd:)
 		(switch gPrevRoomNum
@@ -75,7 +75,7 @@
 			)
 			(45 ; mapRoom
 				(gEgo init:)
-				(proc0_3)
+				(HandsOn)
 			)
 			(else
 				(gEgo
@@ -84,7 +84,7 @@
 					posn: 150 124
 					init:
 				)
-				(proc0_3)
+				(HandsOn)
 			)
 		)
 		(if (!= gPrevRoomNum 104) ; night
@@ -204,7 +204,7 @@
 				(= cycles 15)
 			)
 			(6
-				(proc0_6)
+				(clr)
 				(= state -1)
 				(= cycles 1)
 			)
@@ -226,7 +226,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(gEgo setMotion: 0)
 				(door startUpd: setCycle: End self)
 				(gSfx number: 38 play:)
@@ -250,7 +250,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(gEgo init: posn: 82 110)
 				(= cycles 1)
 			)
@@ -262,9 +262,9 @@
 				(gSfx number: 36 play:)
 			)
 			(3
-				(proc0_5)
+				(RedrawCast)
 				(door stopUpd:)
-				(proc0_3)
+				(HandsOn)
 				(self dispose:)
 			)
 		)

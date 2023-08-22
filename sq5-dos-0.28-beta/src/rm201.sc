@@ -156,7 +156,7 @@
 		(
 			(or
 				(OneOf gPrevRoomNum 100 107 206 213 215 280 290)
-				(and (== gPrevRoomNum 222) (== global113 6))
+				(and (== gPrevRoomNum 222) (== gEurekaLocation 6)) ; thrakus
 			)
 			(gSq5Music1 number: 101 loop: -1 flags: 1 play:)
 		)
@@ -232,7 +232,7 @@
 )
 
 (procedure (localproc_10)
-	(if (!= global113 0)
+	(if (!= gEurekaLocation 0) ; Nowhere
 		(if (IsFlag 32)
 			(= local12 0)
 		else
@@ -274,25 +274,25 @@
 				(= local16 (localproc_2))
 				(eureka destination: local16)
 				(cond
-					((== (eureka destination:) 0)
-						(eureka destination: 0)
+					((== (eureka destination:) 0) ; Nowhere
+						(eureka destination: 0) ; Nowhere
 					)
-					((and (== (eureka destination:) 7) (== global142 2))
-						(eureka destination: 8)
+					((and (== (eureka destination:) 7) (== gAct 2)) ; genetix Space Lab
+						(eureka destination: 8) ; genetix environdome
 					)
 				)
 				(cond
 					((== (eureka destination:) (eureka curLocation:))
 						(switch (eureka state:)
 							(3
-								(eureka destination: 0)
+								(eureka destination: 0) ; Nowhere
 							)
 							(1)
 						)
 					)
-					((and (== (eureka destination:) 4) (IsFlag 30))
+					((and (== (eureka destination:) 4) (IsFlag 30)) ; spacebar
 						(gMessager say: 23 0 43 1) ; "We can't go to the space bar Captain, you blew it up. Or don't you remember?"
-						(eureka destination: 0)
+						(eureka destination: 0) ; Nowhere
 					)
 					((IsFlag 32)
 						(eureka warnings: 0 timer: 0 state: 1 setScript: 0)
@@ -300,7 +300,7 @@
 							setScript:
 								(if
 									(and
-										(== (eureka destination:) 3)
+										(== (eureka destination:) 3) ; ku
 										(not (IsFlag 9))
 									)
 									(ScriptID 210 6) ; sWD40Timer
@@ -346,14 +346,14 @@
 					(not local78)
 					(not (IsFlag 86))
 					(or (not (IsFlag 56)) (IsFlag 113) (IsFlag 114))
-					(> global126 1)
+					(> gSpikeState 1)
 				)
 				(self setScript: (ScriptID 202 24)) ; sSpikeComplaint
 				(= local78 1)
 			)
-			((and (IsFlag 76) (== global142 0))
+			((and (IsFlag 76) (== gAct 0))
 				(gCurRoom setScript: (ScriptID 211 1)) ; sDistressCall
-				(= global142 1)
+				(= gAct 1)
 			)
 			((and (IsFlag 84) (not (IsFlag 86)))
 				(SetFlag 85)
@@ -414,7 +414,7 @@
 							setScript:
 								(if
 									(and
-										(== (eureka destination:) 3)
+										(== (eureka destination:) 3) ; ku
 										(not (IsFlag 9))
 									)
 									(ScriptID 210 6) ; sWD40Timer
@@ -430,12 +430,12 @@
 						(cond
 							(
 								(and
-									(== global142 1)
+									(== gAct 1)
 									(IsFlag 45)
 									(not (IsFlag 86))
-									(== global113 6)
+									(== gEurekaLocation 6) ; thrakus
 								)
-								(if (== global164 1)
+								(if (== gBeaState 1)
 									(SetFlag 42)
 									(eureka setScript: 0)
 									(eureka setScript: (ScriptID 210 1) 0 3) ; sGoliathTimer
@@ -443,15 +443,15 @@
 									(= next sBeaDies)
 								)
 							)
-							((and (== global113 3) (IsFlag 9))
+							((and (== gEurekaLocation 3) (IsFlag 9)) ; ku
 								(ClearFlag 61)
 							)
-							((and (== global113 8) (IsFlag 75) (< global164 8))
+							((and (== gEurekaLocation 8) (IsFlag 75) (< gBeaState 8)) ; genetix environdome
 								(= next sBeaDies)
 							)
 							(
 								(and
-									(== global113 14)
+									(== gEurekaLocation 14) ; goliath
 									(not (IsFlag 86))
 									(== (eureka puke:) 1)
 								)
@@ -474,7 +474,7 @@
 					)
 					(222
 						(gGame handsOn:)
-						(if (== global113 6)
+						(if (== gEurekaLocation 6) ; thrakus
 							(eureka setScript: 0)
 							(eureka setScript: (ScriptID 210 1) 0 10) ; sGoliathTimer
 						else
@@ -482,23 +482,23 @@
 						)
 					)
 					(280
-						(++ global127)
+						(++ gGarbagePickupCount)
 						(switch (eureka curLocation:)
-							(1
+							(1 ; garbage1
 								(= next (ScriptID 202 7)) ; sSpikeHere
 							)
-							(2
+							(2 ; garbage2
 								(= next (ScriptID 202 5)) ; sAlienHere
 							)
 						)
 					)
 					(290
-						(++ global127)
+						(++ gGarbagePickupCount)
 						(switch (eureka curLocation:)
-							(1
+							(1 ; garbage1
 								(= next (ScriptID 202 7)) ; sSpikeHere
 							)
-							(2
+							(2 ; garbage2
 								(= next (ScriptID 202 5)) ; sAlienHere
 							)
 							(else
@@ -510,18 +510,18 @@
 						(gGame handsOn:)
 					)
 					(550
-						(= global113 16)
+						(= gEurekaLocation 16) ; empty space
 						(= local12 1)
-						(eureka state: 1 prevLocation: 4 curLocation: 0)
+						(eureka state: 1 prevLocation: 4 curLocation: 0) ; Nowhere
 						(SetFlag 30)
 						(SetFlag 35)
 						(SetFlag 36)
-						(= global126 6)
+						(= gSpikeState 6)
 						(SetFlag 60)
 						(ClearFlag 32)
 						(ClearFlag 86)
-						(= global170 2)
-						(= global130 1)
+						(= gWD40State 2)
+						(= gCliffyState 1)
 						(= next (ScriptID 202 8)) ; sSquishMonkeys
 					)
 					(else
@@ -541,14 +541,14 @@
 						)
 						(switch local1
 							(0
-								(= global113 0)
-								(= global130 1)
+								(= gEurekaLocation 0) ; Nowhere
+								(= gCliffyState 1)
 								(eureka state: 0)
 							)
 							(1
 								(gGame handsOn:)
-								(= global113 16)
-								(= global130 1)
+								(= gEurekaLocation 16) ; empty space
+								(= gCliffyState 1)
 								(eureka state: 1)
 								(= local12 1)
 								(ClearFlag 32)
@@ -557,15 +557,15 @@
 								(eureka
 									warnings: 0
 									state: 1
-									destination: 12
+									destination: 12 ; generic planet 4
 									setScript: (ScriptID 210 4) 0 5 ; sApproachTimer
 								)
-								(= global113 17)
+								(= gEurekaLocation 17) ; empty space
 								(= local12 0)
-								(= global130 1)
-								(= global164 8)
-								(= global170 2)
-								(= global142 2)
+								(= gCliffyState 1)
+								(= gBeaState 8)
+								(= gWD40State 2)
+								(= gAct 2)
 								(= local12 0)
 								(SetFlag 32)
 								(SetFlag 33)
@@ -579,63 +579,63 @@
 								(SetFlag 45)
 							)
 							(3
-								(= global113 17)
-								(= global130 1)
+								(= gEurekaLocation 17) ; empty space
+								(= gCliffyState 1)
 								(SetFlag 32)
 								(eureka state: 1)
 								(= local12 0)
 								(eureka
 									warnings: 0
-									destination: 3
+									destination: 3 ; ku
 									setScript: (ScriptID 210 6) 0 10 ; sWD40Timer
 								)
 							)
 							(4
-								(= global113 17)
+								(= gEurekaLocation 17) ; empty space
 								(SetFlag 32)
 								(= local12 0)
-								(= global127 0)
+								(= gGarbagePickupCount 0)
 								(ClearFlag 35)
-								(= global130 1)
+								(= gCliffyState 1)
 								(ClearFlag 36)
 								(eureka
 									warnings: 0
 									state: 1
-									destination: 1
+									destination: 1 ; garbage1
 									setScript: (ScriptID 210 4) 0 5 ; sApproachTimer
 								)
 								(ClearFlag 30)
 							)
 							(5
-								(= global113 5)
-								(= global170 2)
+								(= gEurekaLocation 5) ; clorox2
+								(= gWD40State 2)
 								(SetFlag 76)
 								(SetFlag 30)
 								(SetFlag 9)
 								(SetFlag 93)
-								(= global130 1)
-								(= global142 0)
-								(eureka state: 3 destination: 0 curLocation: 5)
+								(= gCliffyState 1)
+								(= gAct 0)
+								(eureka state: 3 destination: 0 curLocation: 5) ; Nowhere, clorox2
 								(= local12 1)
-								(= global127 3)
+								(= gGarbagePickupCount 3)
 								(localproc_9)
 							)
 							(6
-								(= global113 14)
+								(= gEurekaLocation 14) ; goliath
 								(eureka
 									state: 3
-									curLocation: 14
+									curLocation: 14 ; goliath
 									puke: 1
-									destination: 0
+									destination: 0 ; Nowhere
 									setScript: (ScriptID 210 5) 0 10 ; sBlobTimer
 								)
 							)
 							(7
-								(= global130 1)
-								(= global126 4)
-								(= global113 17)
+								(= gCliffyState 1)
+								(= gSpikeState 4)
+								(= gEurekaLocation 17) ; empty space
 								(= local12 0)
-								(= global127 3)
+								(= gGarbagePickupCount 3)
 								(SetFlag 32)
 								(SetFlag 35)
 								(SetFlag 36)
@@ -644,7 +644,7 @@
 								(eureka
 									warnings: 0
 									state: 1
-									destination: 4
+									destination: 4 ; spacebar
 									setScript: (ScriptID 210 4) 0 10 ; sApproachTimer
 								)
 							)
@@ -653,8 +653,8 @@
 									state: 3
 									warnings: 0
 									timer: 0
-									destination: 0
-									curLocation: 15
+									destination: 0 ; Nowhere
+									curLocation: 15 ; empty space
 									setScript: 0
 								)
 								(SetFlag 33)
@@ -667,23 +667,23 @@
 								(SetFlag 45)
 								(ClearFlag 42)
 								(ClearFlag 32)
-								(= global170 2)
-								(= global130 1)
-								(= global113 15)
-								(= global142 2)
-								(= global164 1)
+								(= gWD40State 2)
+								(= gCliffyState 1)
+								(= gEurekaLocation 15) ; empty space
+								(= gAct 2)
+								(= gBeaState 1)
 								(= next (ScriptID 221 6)) ; sInTheAsteroids
 							)
 							(9
-								(= global113 6)
-								(= global170 2)
-								(= global142 1)
+								(= gEurekaLocation 6) ; thrakus
+								(= gWD40State 2)
+								(= gAct 1)
 								(eureka
 									state: 3
 									warnings: 0
 									timer: 0
-									destination: 0
-									curLocation: 6
+									destination: 0 ; Nowhere
+									curLocation: 6 ; thrakus
 									setScript: 0
 								)
 								(SetFlag 42)
@@ -695,12 +695,12 @@
 								(SetFlag 63)
 								(SetFlag 30)
 								(SetFlag 45)
-								(= global130 1)
-								(= global164 1)
+								(= gCliffyState 1)
+								(= gBeaState 1)
 								(ClearFlag 32)
 							)
 							(else
-								(= global113 16)
+								(= gEurekaLocation 16) ; empty space
 								(eureka state: 1)
 								(ClearFlag 32)
 							)
@@ -773,7 +773,7 @@
 				(= seconds 1)
 			)
 			(2
-				(if (== global113 6)
+				(if (== gEurekaLocation 6) ; thrakus
 					(gMessager say: 6 0 6 1 self) ; "Captain, I'm sorry--but the ambassador is dead."
 					(= register 37)
 				else
@@ -828,12 +828,12 @@
 						(and (IsFlag 37) (IsFlag 39))
 						(and
 							(== (eureka timer:) 5)
-							(or (== global113 14) (> (eureka warnings:) 1))
+							(or (== gEurekaLocation 14) (> (eureka warnings:) 1)) ; goliath
 						)
-						(== global126 1)
+						(== gSpikeState 1)
 						(and
 							(== (eureka destination:) 32)
-							(>= global127 3)
+							(>= gGarbagePickupCount 3)
 							(not (IsFlag 56))
 						)
 					)
@@ -857,10 +857,10 @@
 						(cond
 							(
 								(or
-									(== global126 1)
+									(== gSpikeState 1)
 									(and
-										(== (eureka destination:) 4)
-										(>= global127 3)
+										(== (eureka destination:) 4) ; spacebar
+										(>= gGarbagePickupCount 3)
 										(not (IsFlag 56))
 									)
 								)
@@ -884,8 +884,8 @@
 									state: 2
 									timer: 0
 									warnings: 0
-									destination: 0
-									curLocation: 14
+									destination: 0 ; Nowhere
+									curLocation: 14 ; goliath
 								)
 							)
 							(else
@@ -894,7 +894,7 @@
 									timer: 0
 									warnings: 0
 									state: 1
-									destination: 0
+									destination: 0 ; Nowhere
 								)
 								(ClearFlag 38)
 								(wasteBeacon dispose:)
@@ -904,7 +904,7 @@
 						)
 					)
 					(3
-						(if (!= global126 1)
+						(if (!= gSpikeState 1)
 							(switch (eureka warnings:)
 								(1
 									(SetFlag 61)
@@ -932,8 +932,8 @@
 						(self dispose:)
 					)
 					(5
-						(switch global113
-							(6
+						(switch gEurekaLocation
+							(6 ; thrakus
 								(switch (eureka warnings:)
 									(1
 										(gMessager say: 13 0 14 0 self 202) ; "We found the Goliath, sir -- or rather she found us."
@@ -966,7 +966,7 @@
 									)
 								)
 							)
-							(14
+							(14 ; goliath
 								(if (IsFlag 39)
 									(= cycles 1)
 								else
@@ -1053,7 +1053,7 @@
 				(= seconds 3)
 			)
 			(2
-				(if (or (== global127 0) (and (== global127 1) (IsFlag 9)))
+				(if (or (== gGarbagePickupCount 0) (and (== gGarbagePickupCount 1) (IsFlag 9)))
 					(SetScore 166 100)
 					(gCurRoom newRoom: 280)
 				else
@@ -1187,7 +1187,7 @@
 				(gSq5Music2 number: 234 setLoop: 1 play:)
 			)
 			(5
-				(if (and (== register 1) (not (IsFlag 34)) (== global113 0))
+				(if (and (== register 1) (not (IsFlag 34)) (== gEurekaLocation 0)) ; Nowhere
 					(= cycles 1)
 				else
 					(proc201_6 self)
@@ -1276,12 +1276,12 @@
 			)
 			(5
 				(Palette palSET_FROM_RESOURCE 412 2)
-				(= global113 17)
+				(= gEurekaLocation 17) ; empty space
 				(= local10 0)
 				(eureka timer: 0 setScript: 0)
 				(eureka
 					setScript:
-						(if (and (== (eureka destination:) 3) (not (IsFlag 9)))
+						(if (and (== (eureka destination:) 3) (not (IsFlag 9))) ; ku
 							(ScriptID 210 6) ; sWD40Timer
 						else
 							(ScriptID 210 4) ; sApproachTimer
@@ -1365,7 +1365,7 @@
 			(5
 				(= cycles 1)
 				(Palette palSET_FROM_RESOURCE 412 2)
-				(= global113 16)
+				(= gEurekaLocation 16) ; empty space
 				(= local11 0)
 			)
 			(6
@@ -1407,14 +1407,14 @@
 			(0
 				(gGame handsOff:)
 				(eureka setScript: 0 timer: 0)
-				(if (> (eureka curLocation:) 14)
-					(eureka state: 1 destination: 0 curLocation: 0)
+				(if (> (eureka curLocation:) 14) ; goliath
+					(eureka state: 1 destination: 0 curLocation: 0) ; Nowhere, Nowhere
 					(proc201_27 0)
 					(gMessager say: 11 0 14 4 self) ; "Here we are Captain, nowhere!"
 					(= state 3)
 				else
 					(switch (eureka curLocation:)
-						(1
+						(1 ; garbage1
 							(if (IsFlag 35)
 								(ClearFlag 38)
 							else
@@ -1422,7 +1422,7 @@
 							)
 							(= cycles 1)
 						)
-						(2
+						(2 ; garbage2
 							(if (IsFlag 36)
 								(ClearFlag 38)
 							else
@@ -1430,7 +1430,7 @@
 							)
 							(= cycles 1)
 						)
-						(5
+						(5 ; clorox2
 							(if (and (not (IsFlag 93)) (IsFlag 30))
 								(= local3 1)
 							else
@@ -1438,7 +1438,7 @@
 							)
 							(= cycles 1)
 						)
-						(6
+						(6 ; thrakus
 							(if (and (not (IsFlag 94)) (IsFlag 33))
 								(= local4 1)
 							else
@@ -1447,7 +1447,7 @@
 							(= cycles 1)
 							((ScriptID 221 0) init:) ; asteroids
 						)
-						(12
+						(12 ; generic planet 4
 							(if (IsFlag 75)
 								(self setScript: (ScriptID 207 6) self) ; sFoundGoliath
 							else
@@ -1485,7 +1485,7 @@
 					)
 					((IsFlag 61)
 						((ScriptID 208 0) cue:) ; sWD40Attacks
-						(eureka state: 1 destination: 0)
+						(eureka state: 1 destination: 0) ; Nowhere
 						(self dispose:)
 					)
 					(else
@@ -1498,7 +1498,7 @@
 					timer: 0
 					setScript: (ScriptID 210 4) 0 30 ; sApproachTimer
 					warnings: 2
-					destination: 0
+					destination: 0 ; Nowhere
 				)
 				(= cycles 1)
 			)
@@ -1526,34 +1526,34 @@
 			(1
 				(= local8 1)
 				(bigPlanet init:)
-				(if (== (eureka curLocation:) 6)
+				(if (== (eureka curLocation:) 6) ; thrakus
 					((ScriptID 221 0) init:) ; asteroids
 				)
 			)
 			(2
-				(= global113 (eureka curLocation:))
+				(= gEurekaLocation (eureka curLocation:))
 				(switch (eureka curLocation:)
-					(7
+					(7 ; genetix Space Lab
 						(= next (ScriptID 202 11)) ; sGenetixAlien
 					)
-					(4
+					(4 ; spacebar
 						(cond
-							((< global127 3)
+							((< gGarbagePickupCount 3)
 								(= next (ScriptID 202 12)) ; sSpaceBarQuirk
 							)
-							((== global127 3)
+							((== gGarbagePickupCount 3)
 								(SetFlag 85)
 								(= next sAbandonShip)
 							)
 						)
 					)
-					(6
-						(if (== global142 1)
+					(6 ; thrakus
+						(if (== gAct 1)
 							(SetScore 181 20)
 						)
 						((ScriptID 221 0) addToPic:) ; asteroids
 					)
-					(5
+					(5 ; clorox2
 						(if (IsFlag 30)
 							(SetScore 177 10)
 							(if (and (not (IsFlag 97)) (not (IsFlag 76)))
@@ -1561,7 +1561,7 @@
 							)
 						)
 					)
-					(8
+					(8 ; genetix environdome
 						(SetScore 180 10)
 					)
 				)
@@ -1601,21 +1601,21 @@
 				(flo startUpd:)
 				(droole startUpd:)
 				(bigPlanet init:)
-				(if (== global113 6)
+				(if (== gEurekaLocation 6) ; thrakus
 					((ScriptID 221 0) init:) ; asteroids
 				)
 				(= local9 1)
 			)
 			(2
-				(= global113 16)
+				(= gEurekaLocation 16) ; empty space
 				(eureka state: 1)
 				(= local9 0)
 				(= cycles 1)
 			)
 			(3
 				(gGame handsOn:)
-				(if (== (eureka curLocation:) 15)
-					(eureka curLocation: 6)
+				(if (== (eureka curLocation:) 15) ; empty space
+					(eureka curLocation: 6) ; thrakus
 				)
 				(gSq5Music2 number: 206 setLoop: -1 play:)
 				(self dispose:)
@@ -1651,7 +1651,7 @@
 	)
 
 	(method (doit)
-		(if (and (== (eureka state:) 2) (== global113 16))
+		(if (and (== (eureka state:) 2) (== gEurekaLocation 16)) ; empty space
 			(self dispose:)
 		)
 		(super doit: &rest)
@@ -1734,7 +1734,7 @@
 							ignoreActors: 1
 							view: [local43 (eureka curLocation:)]
 							setLoop:
-								(if (OneOf (eureka curLocation:) 4 7 8 14)
+								(if (OneOf (eureka curLocation:) 4 7 8 14) ; spacebar, genetix Space Lab, genetix environdome, goliath
 									0
 								else
 									1
@@ -1756,11 +1756,11 @@
 								(if
 									(OneOf
 										(eureka curLocation:)
-										4
-										7
-										8
-										14
-										15
+										4 ; spacebar
+										7 ; genetix Space Lab
+										8 ; genetix environdome
+										14 ; goliath
+										15 ; empty space
 									)
 									0
 								else
@@ -1778,7 +1778,7 @@
 					)
 					(if
 						(and
-							(== (eureka curLocation:) 14)
+							(== (eureka curLocation:) 14) ; goliath
 							(>= (eureka puke:) 1)
 						)
 						(self view: 227)
@@ -1806,13 +1806,13 @@
 				(if (< x -180)
 					(sOutOfOrbit cue:)
 					(switch (eureka curLocation:)
-						(15
+						(15 ; empty space
 							((ScriptID 221 1) dispose:) ; asteroid1
 							((ScriptID 221 2) dispose:) ; asteroid2
 							((ScriptID 221 3) dispose:) ; asteroid3
 							((ScriptID 221 4) dispose:) ; asteroid4
 						)
-						(6
+						(6 ; thrakus
 							((ScriptID 221 0) dispose:) ; asteroids
 						)
 					)
@@ -2134,8 +2134,8 @@
 	)
 
 	(method (init)
-		(switch global113
-			(0
+		(switch gEurekaLocation
+			(0 ; Nowhere
 				(self view: 215 loop: 1)
 				((ScriptID 214 1) init: ignoreActors: 1 addToPic:) ; dockWall
 				((ScriptID 214 0) init: ignoreActors: 1 addToPic:) ; starField
@@ -2144,19 +2144,19 @@
 					((ScriptID 214 2) init: stopUpd: ignoreActors: 1) ; leftBayDoor
 				)
 			)
-			(6
+			(6 ; thrakus
 				((ScriptID 221 0) init: addToPic:) ; asteroids
 			)
-			(15
+			(15 ; empty space
 				((ScriptID 221 1) init:) ; asteroid1
 				((ScriptID 221 2) init:) ; asteroid2
 				((ScriptID 221 3) init:) ; asteroid3
 				((ScriptID 221 4) init:) ; asteroid4
 			)
-			(14
+			(14 ; goliath
 				((ScriptID 207 0) init:) ; blob
 			)
-			(3
+			(3 ; ku
 				(if (IsFlag 61)
 					((ScriptID 208 2) init: addToPic:) ; wd40Ship
 				)
@@ -2171,24 +2171,24 @@
 	(method (doit)
 		(cond
 			(script)
-			((and (== global113 16) (IsFlag 32) (not local77))
+			((and (== gEurekaLocation 16) (IsFlag 32) (not local77)) ; empty space
 				(gGame handsOff:)
 				(self setScript: sFlashWhite)
 			)
-			((and (== global113 17) (not (IsFlag 32)) (not local77))
+			((and (== gEurekaLocation 17) (not (IsFlag 32)) (not local77)) ; empty space
 				(gGame handsOff:)
 				(self setScript: sFlashRed)
 			)
 			(
 				(and
 					(== (eureka state:) 2)
-					(== global113 16)
+					(== gEurekaLocation 16) ; empty space
 					(eureka destination:)
 					(not local77)
 				)
 				(self setScript: sBigPlanet)
 			)
-			((and (== (eureka state:) 3) (== global113 16) (not local77))
+			((and (== (eureka state:) 3) (== gEurekaLocation 16) (not local77)) ; empty space
 				(self setScript: sInToOrbit)
 			)
 			((and (== (eureka state:) 3) (eureka destination:) (not local77))
@@ -2227,21 +2227,21 @@
 					((and (== (eureka state:) 2) (eureka curLocation:))
 						(gMessager say: 23 1 0 (eureka curLocation:) 0 202)
 					)
-					((== global113 0)
+					((== gEurekaLocation 0) ; Nowhere
 						(if (IsFlag 31)
 							(gMessager say: 23 1 88 1 0 202) ; "The stars beckon through the station's open space doors."
 						else
 							(gMessager say: 23 1 20 1 0 202) ; "The massive doors of the station's vehicle bay are visible on the viewscreen."
 						)
 					)
-					((== global113 6)
+					((== gEurekaLocation 6) ; thrakus
 						(if (> gMouseX 136)
 							(gMessager say: 23 1 17 1 0 202) ; "** A belt of asteroids orbits the green planet."
 						else
 							(gMessager say: 23 1 0 6 0 202) ; "The strange new world of Thrakus is visible in the viewscreen."
 						)
 					)
-					((and (== global113 14) (< (eureka puke:) 2))
+					((and (== gEurekaLocation 14) (< (eureka puke:) 2)) ; goliath
 						(cond
 							((== (eureka puke:) 1)
 								(gMessager say: 23 1 92 1 0 202) ; "** The Giant Phelgm wad has attached itself to the Goliath. What now?"
@@ -2259,7 +2259,7 @@
 						(gMessager say: 29 1 0 1 0 202) ; "A sinister looking battle cruiser looms ominously in your viewscreen."
 					)
 					(else
-						(gMessager say: 23 1 0 global113 0 202)
+						(gMessager say: 23 1 0 gEurekaLocation 0 202)
 					)
 				)
 			)

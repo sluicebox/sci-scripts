@@ -38,7 +38,7 @@
 				(gEgo
 					setScale: Scaler 100 48 172 123
 					init:
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 					posn: 308 159
 				)
 				(gGame handsOn:)

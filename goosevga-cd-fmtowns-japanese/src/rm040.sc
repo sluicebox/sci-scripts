@@ -30,7 +30,7 @@
 			(Load rsVIEW 83)
 		)
 		(super init:)
-		(proc0_3)
+		(HandsOn)
 		(if (!= gPrevRoomNum 45) ; mapRoom
 			(gEgo loop: 1 posn: 186 119)
 		)
@@ -69,7 +69,7 @@
 			)
 			(1
 				(DoSound sndMASTER_VOLUME global125)
-				(proc0_3)
+				(HandsOn)
 				(self dispose:)
 			)
 		)
@@ -122,7 +122,7 @@
 			)
 			(else
 				(event claimed: 1)
-				(proc0_2)
+				(HandsOff)
 				(self setScript: converse6 self 136)
 			)
 		)

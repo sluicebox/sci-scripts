@@ -38,7 +38,7 @@
 				(self setScript: entranceScript)
 			)
 			(south
-				(gEgo posn: (gEgo x:) global139 edgeHit: 0)
+				(gEgo posn: (gEgo x:) global139 edgeHit: EDGE_NONE)
 				(self setScript: entranceScript)
 			)
 			(45 ; mapRoom
@@ -87,7 +87,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(switch gPrevRoomNum
 					(13
 						(= global131 global140)
@@ -102,7 +102,7 @@
 			)
 			(1
 				(gEgo setLoop: -1 setPri: -1)
-				(proc0_3)
+				(HandsOn)
 				(gCurRoom setScript: 0)
 			)
 		)
@@ -115,7 +115,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(cond
 					((< (gEgo x:) global63)
 						(= global131 global137)
@@ -129,7 +129,7 @@
 				(gEgo setMotion: MoveTo global131 global132 self)
 			)
 			(1
-				(proc0_3)
+				(HandsOn)
 				(gCurRoom
 					newRoom:
 						(cond

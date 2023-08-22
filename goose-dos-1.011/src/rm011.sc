@@ -86,7 +86,7 @@
 	)
 
 	(method (doit)
-		(if (== (gEgo edgeHit:) 3)
+		(if (== (gEgo edgeHit:) EDGE_BOTTOM)
 			(if (== global111 60)
 				(gGlobalMGSound fade:)
 			)

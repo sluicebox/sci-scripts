@@ -142,7 +142,7 @@
 	(method (doit)
 		(cond
 			(script)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(self setScript: exitRoomScr)
 			)
 		)

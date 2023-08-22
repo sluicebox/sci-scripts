@@ -181,8 +181,8 @@
 					(165
 						(gEgo setPri: 3)
 						(= next sNewCaptain)
-						(= global113 0)
-						(= global130 1)
+						(= gEurekaLocation 0) ; Nowhere
+						(= gCliffyState 1)
 						(droole init: loop: 2 cel: 1 setCycle: Fwd self)
 						(floHead1 init:)
 						(flo
@@ -484,7 +484,7 @@
 					((and (< (eureka puke:) 4) (IsFlag 84))
 						(gMessager say: 4 0 1 1 self) ; "I'm sure you're gonna have a blast Captain, but we've gotta run!"
 					)
-					((and (== (eureka curLocation:) 4) (== global127 3))
+					((and (== (eureka curLocation:) 4) (== gGarbagePickupCount 3)) ; spacebar
 						(gMessager say: 4 0 3 1 self) ; "Let's party! Last one down to the station is a rotten swinefalcon ova!"
 					)
 					(else
@@ -636,28 +636,28 @@
 			)
 			(3
 				(cond
-					((or (IsFlag 86) (== global130 0))
-						(= global130 0)
+					((or (IsFlag 86) (== gCliffyState 0))
+						(= gCliffyState 0)
 					)
-					((== global170 1)
-						(= global130 4)
+					((== gWD40State 1)
+						(= gCliffyState 4)
 					)
-					((== global126 1)
-						(= global130 1)
+					((== gSpikeState 1)
+						(= gCliffyState 1)
 					)
 					((IsFlag 61)
-						(= global130
+						(= gCliffyState
 							(switch (Random 0 1)
 								(0 1)
 								(1 2)
 							)
 						)
 					)
-					((or (== global113 8) (== global113 14) (== global113 3))
-						(= global130 2)
+					((or (== gEurekaLocation 8) (== gEurekaLocation 14) (== gEurekaLocation 3)) ; genetix environdome, goliath, ku
+						(= gCliffyState 2)
 					)
 					(else
-						(= global130 (Random 1 3))
+						(= gCliffyState (Random 1 3))
 					)
 				)
 				(if (== (gSq5Music2 number:) 206)

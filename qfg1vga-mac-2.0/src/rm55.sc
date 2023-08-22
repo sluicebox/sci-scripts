@@ -218,7 +218,7 @@
 			(script)
 			(
 				(or
-					(== (gEgo edgeHit:) 3)
+					(== (gEgo edgeHit:) EDGE_BOTTOM)
 					(< (gEgo x:) 3)
 					(> (gEgo x:) 318)
 				)

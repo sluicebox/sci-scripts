@@ -98,16 +98,16 @@
 			((= temp0 (self edgeToRoom: (gEgo edgeHit:)))
 				(++ global322)
 				(switch (gEgo edgeHit:)
-					(3
+					(EDGE_BOTTOM
 						(++ global315)
 					)
-					(4
+					(EDGE_LEFT
 						(++ global314)
 					)
-					(2
+					(EDGE_RIGHT
 						(-- global314)
 					)
-					(1 0)
+					(EDGE_TOP 0)
 				)
 				(HandsOn)
 				(gCurRoom newRoom: temp0)

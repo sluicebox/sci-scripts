@@ -120,7 +120,7 @@
 			posn: 45 (gEgo y:)
 			setLoop: 2
 			setCycle: Fwd
-			edgeHit: 0
+			edgeHit: EDGE_NONE
 			xStep: 3
 			setMotion: MoveTo 319 186
 		)

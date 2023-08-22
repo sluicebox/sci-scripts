@@ -125,12 +125,12 @@
 		(gLongSong2 vol: (- 127 (/ temp0 3)) changeState:)
 		(cond
 			(script 0)
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(HandsOff)
 				((ScriptID 700 0) enterBelt: egoBwGreen) ; mall
 				(self setScript: (ScriptID 700 2) 0 east) ; exS
 			)
-			((or (== (gEgo edgeHit:) 4) (== (gEgo edgeHit:) 3))
+			((or (== (gEgo edgeHit:) EDGE_LEFT) (== (gEgo edgeHit:) EDGE_BOTTOM))
 				(HandsOff)
 				((ScriptID 700 0) enterBelt: egoBwBlue) ; mall
 				(self setScript: (ScriptID 700 2) 0 west) ; exS

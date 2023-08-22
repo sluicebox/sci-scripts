@@ -24,7 +24,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(DoAudio audWPLAY 17)
 				(gEgo setAvoider: PAvoider setMotion: PolyPath 134 121 self)
 			)
@@ -143,7 +143,7 @@
 				(if (== gScore gPossibleScore)
 					(gCurRoom setScript: (ScriptID 205)) ; walkTo
 				else
-					(proc0_3)
+					(HandsOn)
 				)
 				(self dispose:)
 				(= local0 1)

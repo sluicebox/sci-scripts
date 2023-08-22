@@ -163,7 +163,7 @@
 					setPri: 6
 					setScript: sCliffyNoise
 				)
-				(= global130 (= seconds 1))
+				(= gCliffyState (= seconds 1))
 			)
 			(21
 				(gGame handsOn:)
@@ -223,7 +223,7 @@
 				(gMessager say: 4 2 7 0 self) ; "Captain, ya |f8|gotta|f| do something with that weak-bladdered beastie of yours!"
 			)
 			(1
-				(if (== global126 3)
+				(if (== gSpikeState 3)
 					(gMessager say: 4 2 8 0 self) ; "I think I saw that critter of yours loose in the lab a minute ago, Captain."
 				else
 					(= cycles 1)
@@ -255,10 +255,10 @@
 				(self view: 231 setLoop: 4 setCel: 0 posn: 166 138)
 				(super init: &rest)
 			)
-			((== global130 1)
+			((== gCliffyState 1)
 				(self ignoreActors: 1)
 				(switch
-					(if (or (== gPrevRoomNum 228) (== global126 1) (IsFlag 61))
+					(if (or (== gPrevRoomNum 228) (== gSpikeState 1) (IsFlag 61))
 						1
 					else
 						(Random 1 2)
@@ -273,7 +273,7 @@
 							setPri: 6
 							setScale: 0
 						)
-						(if (!= global126 1)
+						(if (!= gSpikeState 1)
 							(self setScript: sCliffyNoise)
 						)
 					)
@@ -292,8 +292,8 @@
 			)
 			(
 				(and
-					(== global130 4)
-					(== global126 1)
+					(== gCliffyState 4)
+					(== gSpikeState 1)
 					(OneOf gPrevRoomNum 100 200)
 				)
 				(self
@@ -351,10 +351,10 @@
 						(ClearFlag 115)
 						(gMessager say: 4 2 6 0 self) ; "Captain, I think they want you for something up in the cockpit."
 					)
-					((== global126 1)
+					((== gSpikeState 1)
 						(gMessager say: 11 0 0 0 self) ; "There's definitely something in there, Cap'n."
 					)
-					((and (> global126 1) (not (IsFlag 56)) (!= gPrevRoomNum 230))
+					((and (> gSpikeState 1) (not (IsFlag 56)) (!= gPrevRoomNum 230))
 						(self setScript: sTalkAboutSpike self)
 					)
 					(else

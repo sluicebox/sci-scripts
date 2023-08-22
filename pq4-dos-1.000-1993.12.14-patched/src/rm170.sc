@@ -417,7 +417,7 @@
 					)
 				else
 					(gTheCursor show:)
-					(proc30_0 0 0 4 1 170)
+					(EgoDead 0 0 4 1 170) ; "You're hit and killed. You have now become a statistic."
 				)
 			)
 			((== theVerb 4) ; Do
@@ -489,7 +489,7 @@
 			(1
 				(SetCursor -2)
 				(gTheCursor show:)
-				(proc30_0 0 0 4 1 170)
+				(EgoDead 0 0 4 1 170) ; "You're hit and killed. You have now become a statistic."
 			)
 		)
 	)
@@ -1077,7 +1077,7 @@
 				3
 				(gGame handsOff:)
 				(gTheCursor show:)
-				(proc30_0 0 0 4 1 170)
+				(EgoDead 0 0 4 1 170) ; "You're hit and killed. You have now become a statistic."
 			)
 		)
 	)
@@ -1744,7 +1744,7 @@
 			)
 			(1
 				(gTheCursor show:)
-				(proc30_0 0 0 4 1 170)
+				(EgoDead 0 0 4 1 170) ; "You're hit and killed. You have now become a statistic."
 			)
 		)
 	)

@@ -110,7 +110,7 @@
 				(= cycles 3)
 			)
 			(19
-				(proc0_3)
+				(HandsOn)
 				(gEgo setCycle: Walk)
 				(= global104 0)
 				(self dispose:)

@@ -42,7 +42,7 @@
 		)
 		(door init:)
 		(mailBox init: stopUpd:)
-		(proc0_1)
+		(NormalEgo)
 		(switch gPrevRoomNum
 			(43
 				(= global345 outCode1)
@@ -127,7 +127,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(door setCycle: End)
 				(gSfx number: 38 play: self)
 			)
@@ -144,7 +144,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(door setCycle: Beg self)
 				(= cycles 4)
 			)
@@ -154,9 +154,9 @@
 			(2
 				(door stopUpd:)
 				(if (== gScore gPossibleScore)
-					(proc0_2)
+					(HandsOff)
 				else
-					(proc0_3)
+					(HandsOn)
 				)
 				(gCurRoom setScript: 0)
 			)

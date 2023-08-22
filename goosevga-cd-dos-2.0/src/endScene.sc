@@ -19,7 +19,7 @@
 	)
 
 	(method (init)
-		(proc0_2)
+		(HandsOff)
 		(TheMenuBar state: 0)
 		(= global104 1)
 		(super init:)

@@ -361,7 +361,7 @@
 
 	(method (startRoom roomNum)
 		(if gDebugOn
-			(Empty)
+			(SetDebug)
 		)
 		(gRegions addToFront: (= gCurRoom (ScriptID roomNum)))
 		(Purge (gCurRoom purge:))
@@ -801,7 +801,7 @@
 			(= plane gThePlane)
 		)
 		(self drawPic: picture)
-		((gUser alterEgo:) edgeHit: 0)
+		((gUser alterEgo:) edgeHit: EDGE_NONE)
 	)
 
 	(method (reflectPosn theActor theEdge)

@@ -118,7 +118,7 @@
 				(RedrawCast)
 			)
 			(= local2 0)
-			(gEgo edgeHit: 0)
+			(gEgo edgeHit: EDGE_NONE)
 			(= local1 0)
 		)
 	)

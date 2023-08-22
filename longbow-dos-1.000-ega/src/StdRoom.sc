@@ -27,7 +27,7 @@
 		)
 		(cond
 			((or script (and argc param1))
-				(gEgo edgeHit: 0 init:)
+				(gEgo edgeHit: EDGE_NONE init:)
 				(super init:)
 			)
 			((not ((User alterEgo:) edgeHit:))
@@ -83,7 +83,7 @@
 					)
 				)
 				(gEgo
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 					posn: temp0 temp1
 					ignoreActors: 1
 					init:

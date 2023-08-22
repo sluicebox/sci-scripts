@@ -15,12 +15,12 @@
 
 (public
 	MG 0
-	proc0_1 1
-	proc0_2 2
-	proc0_3 3
-	proc0_4 4
-	proc0_5 5
-	proc0_6 6
+	NormalEgo 1
+	HandsOff 2
+	HandsOn 3
+	HaveMem 4
+	RedrawCast 5
+	clr 6
 	proc0_7 7
 	proc0_8 8
 	proc0_9 9
@@ -252,7 +252,7 @@
 	global176 = 1
 	global177 = 1
 	global178
-	global179
+	gSaveSlot
 	; 180
 	global180
 	global181
@@ -468,7 +468,7 @@
 	(return param2)
 )
 
-(procedure (proc0_1 param1 param2)
+(procedure (NormalEgo param1 param2)
 	(if (> argc 0)
 		(gEgo loop: param1)
 		(if (> argc 1)
@@ -486,29 +486,29 @@
 	)
 )
 
-(procedure (proc0_2)
+(procedure (HandsOff)
 	(User canControl: 0)
 	(gEgo setMotion: 0)
 	(TheMenuBar state: 0)
 	(= global103 1)
 )
 
-(procedure (proc0_3)
+(procedure (HandsOn)
 	(= global104 0)
 	(User canControl: 1)
 	(TheMenuBar state: 1)
 	(= global103 0)
 )
 
-(procedure (proc0_4 param1) ; UNUSED
+(procedure (HaveMem param1) ; UNUSED
 	(return (> (MemoryInfo 1) param1)) ; FreeHeap
 )
 
-(procedure (proc0_5) ; UNUSED
+(procedure (RedrawCast) ; UNUSED
 	(Animate (gCast elements:) 0)
 )
 
-(procedure (proc0_6)
+(procedure (clr)
 	(if gModelessDialog
 		(gModelessDialog dispose:)
 	)
@@ -806,7 +806,7 @@
 		(= global170 (StrAt @global190 0))
 		(= global157 (- (StrAt @global190 1) 32))
 		(StrAt gCurSaveDir 0 (- (StrAt @global190 2) 1))
-		(= global179 (- (StrAt @global190 3) 32))
+		(= gSaveSlot (- (StrAt @global190 3) 32))
 		(DoAudio audLANGUAGE global169)
 		(super replay:)
 	)
@@ -906,7 +906,7 @@
 		(super doit:)
 	)
 
-	(method (startRoom param1)
+	(method (startRoom roomNum)
 		(DisposeScript 985)
 		(DisposeScript 986)
 		(DisposeScript 97)
@@ -948,7 +948,7 @@
 			)
 			(= global129 (global150 new:))
 		)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 	)
 
 	(method (handleEvent event &tmp [temp0 5] temp5 temp6 temp7 [temp8 52])
@@ -1309,8 +1309,8 @@
 	(method (changeState newState &tmp temp0 temp1 temp2 temp3 temp4 temp5)
 		(switch (= state newState)
 			(0
-				(gEgo edgeHit: 0)
-				(proc0_2)
+				(gEgo edgeHit: EDGE_NONE)
+				(HandsOff)
 				(= register (gCurRoom roomToEdge: gPrevRoomNum))
 				(= temp5
 					(CelHigh (gEgo view:) (gEgo loop:) (gEgo cel:))
@@ -1347,7 +1347,7 @@
 				)
 			)
 			(1
-				(proc0_3)
+				(HandsOn)
 				(gEgo ignoreActors: 0)
 				(client setScript: 0)
 			)
@@ -1377,11 +1377,11 @@
 						(-= temp0 20)
 					)
 				)
-				(proc0_2)
+				(HandsOff)
 				(gEgo ignoreActors: 1 setMotion: MoveTo temp0 temp1 self)
 			)
 			(1
-				(proc0_3)
+				(HandsOn)
 				(client setScript: 0)
 				(gCurRoom newRoom: (gCurRoom edgeToRoom: register))
 			)
@@ -1397,7 +1397,7 @@
 		(= temp2 (gEgo y:))
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(= temp1
 					(+
 						temp2
@@ -1437,7 +1437,7 @@
 			)
 			(2
 				(gEgo ignoreActors: 0)
-				(proc0_3)
+				(HandsOn)
 				(client setScript: 0)
 			)
 		)
@@ -1452,7 +1452,7 @@
 		(= temp2 (gEgo y:))
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(= temp1
 					(+
 						temp2
@@ -1477,7 +1477,7 @@
 				)
 			)
 			(1
-				(proc0_3)
+				(HandsOn)
 				(client setScript: 0)
 				(gCurRoom newRoom: (gCurRoom north:))
 			)

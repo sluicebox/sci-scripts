@@ -95,7 +95,7 @@
 		(super doit: &rest)
 		(cond
 			(script 0)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(self setScript: NoExit)
 			)
 			((OneOf (gEgo edgeHit:) 4 2)

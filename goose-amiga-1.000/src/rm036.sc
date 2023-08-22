@@ -114,7 +114,7 @@
 
 	(method (doit)
 		(super doit:)
-		(if (== (gEgo edgeHit:) 3)
+		(if (== (gEgo edgeHit:) EDGE_BOTTOM)
 			(gCurRoom newRoom: 10)
 		)
 		(if (> (gEgo distanceTo: jack) 41)

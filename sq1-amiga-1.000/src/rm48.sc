@@ -493,8 +493,8 @@
 								(bugMouth setScript: noMoney)
 							)
 							(1
-								(if (>= global165 local2)
-									(-= global165 local2)
+								(if (>= gBuckazoidCount local2)
+									(-= gBuckazoidCount local2)
 									(SetFlag 32)
 									(bugMouth setScript: soldDroid)
 								else
@@ -510,8 +510,8 @@
 								)
 							)
 							(4
-								(if (>= global165 local3)
-									(-= global165 local3)
+								(if (>= gBuckazoidCount local3)
+									(-= gBuckazoidCount local3)
 									(SetFlag 44)
 									(bugMouth setScript: soldDroid)
 								else
@@ -538,8 +538,8 @@
 								)
 							)
 							(10
-								(if (>= global165 local4)
-									(-= global165 local4)
+								(if (>= gBuckazoidCount local4)
+									(-= gBuckazoidCount local4)
 									(SetFlag 25)
 									(bugMouth setScript: soldDroid)
 								else

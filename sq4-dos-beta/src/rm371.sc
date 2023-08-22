@@ -176,7 +176,7 @@
 				(and
 					(= temp0
 						(switch ((User alterEgo:) edgeHit:)
-							(3 south)
+							(EDGE_BOTTOM south)
 						)
 					)
 					local1

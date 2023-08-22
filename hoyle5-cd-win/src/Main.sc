@@ -1721,11 +1721,11 @@
 		(super newRoom: newRoomNumber)
 	)
 
-	(method (startRoom param1)
+	(method (startRoom roomNum)
 		(if gDebugOn
-			(Empty)
+			(SetDebug)
 		)
-		(gRegions addToFront: (= gCurRoom (ScriptID param1)))
+		(gRegions addToFront: (= gCurRoom (ScriptID roomNum)))
 		(gCurRoom init:)
 		(return
 			(if global538

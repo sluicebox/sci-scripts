@@ -72,14 +72,14 @@
 		(if (& (gEgo onControl: 0) $0004)
 			(gCurRoom newRoom: 65)
 		)
-		(if (== (gEgo edgeHit:) 4)
+		(if (== (gEgo edgeHit:) EDGE_LEFT)
 			(if (< (gEgo y:) 170)
 				(gCurRoom newRoom: 12)
 			else
 				(gCurRoom newRoom: 17)
 			)
 		)
-		(if (== (gEgo edgeHit:) 3)
+		(if (== (gEgo edgeHit:) EDGE_BOTTOM)
 			(if (< (gEgo x:) 120)
 				(gCurRoom newRoom: 23)
 			else

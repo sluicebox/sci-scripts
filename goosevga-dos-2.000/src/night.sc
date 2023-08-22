@@ -104,7 +104,7 @@
 			(Palette palSET_INTENSITY 0 255 temp0)
 			(Wait 1)
 		)
-		(proc0_3)
+		(HandsOn)
 	)
 
 	(method (handleEvent event)
@@ -626,7 +626,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(= local3 1)
 				(gGame setCursor: 7 1)
 				(if local1
@@ -684,7 +684,7 @@
 			)
 			(5
 				(drawer hide:)
-				(proc0_3)
+				(HandsOn)
 				(bedroom seconds: 20)
 				(= local3 0)
 				(gGame setCursor: global75 1)

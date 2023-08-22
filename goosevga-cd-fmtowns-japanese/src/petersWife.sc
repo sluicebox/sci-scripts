@@ -250,11 +250,11 @@
 		)
 		(self dispose:)
 		(DisposeScript 976)
-		(proc0_3)
+		(HandsOn)
 	)
 
 	(method (init &tmp temp0)
-		(proc0_2)
+		(HandsOff)
 		(super init: &rest)
 		(= temp0 (gGoals at: 18))
 		(if (temp0 egoTold:)

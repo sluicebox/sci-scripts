@@ -27,7 +27,7 @@
 		(gEgo init: normalize: 570)
 		(switch gPrevRoomNum
 			(north
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 				(gTheMusic2 number: 436 loop: -1 play:)
 			)
 			(east
@@ -35,11 +35,11 @@
 				(self style: 11)
 			)
 			(west
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 			)
 			(else
 				(HandsOn)
-				(gEgo posn: 160 160 edgeHit: 0)
+				(gEgo posn: 160 160 edgeHit: EDGE_NONE)
 			)
 		)
 		(northDoor init: stopUpd:)

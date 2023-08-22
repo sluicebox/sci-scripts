@@ -80,7 +80,7 @@
 	(method (posn x y onPlane &tmp temp0 temp1 temp2 temp3 temp4 temp5 [temp6 2])
 		(if (< argc 2)
 			(PrintDebug {Bad argc in Plane posn\n})
-			(Empty self)
+			(SetDebug self)
 		)
 		(= temp2 0)
 		(= temp3 0)

@@ -104,7 +104,7 @@
 			((== textRight -1)
 				(if (== textLeft -1)
 					(PrintDebug {Must set at least one of text left/right.\n})
-					(Empty self)
+					(SetDebug self)
 				)
 				(= textRight (+ textLeft textWidth -1))
 			)
@@ -123,7 +123,7 @@
 			((== textBottom -1)
 				(if (== textTop -1)
 					(PrintDebug {Must set at least one of text top/bottom\n})
-					(Empty self)
+					(SetDebug self)
 				)
 				(+= textTop temp0)
 				(= textBottom (+ textTop textHeight -1))
@@ -135,7 +135,7 @@
 			(else
 				(if temp0
 					(PrintDebug {Height ignored if both top/bottom are set\n})
-					(Empty self)
+					(SetDebug self)
 				)
 				(= temp1
 					(&
@@ -177,7 +177,7 @@
 	(method (setText param1)
 		(if (not (OneOf argc 1 5))
 			(PrintDebug {Bad argc(%d) for TextView} argc)
-			(Empty self)
+			(SetDebug self)
 		)
 		(if (not text)
 			(= text (TextField new:))
@@ -212,7 +212,7 @@
 				temp0
 				temp1
 			)
-			(Empty self)
+			(SetDebug self)
 		)
 		(= left x)
 		(= top y)

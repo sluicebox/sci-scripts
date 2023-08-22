@@ -75,7 +75,7 @@
 		(LoadMany rsVIEW 235 0 2 180 230 233 238 239)
 		(gCurRoom
 			addObstacle:
-				(if (== global130 1)
+				(if (== gCliffyState 1)
 					((Polygon new:)
 						type: PContainedAccess
 						init: 222 182 186 165 155 124 147 124 133 108 107 109 110 120 92 134 91 142 117 143 125 169 95 180
@@ -202,7 +202,7 @@
 							posn: 167 141
 							setScale: Scaler 153 42 168 107
 						)
-						(= global126 4)
+						(= gSpikeState 4)
 						(= next sSpikeScoots)
 					)
 					(240
@@ -240,7 +240,7 @@
 						)
 						(switch local3
 							(0
-								(= global113 0)
+								(= gEurekaLocation 0) ; Nowhere
 								(= next sEnterNorth)
 								(ClearFlag 60)
 								(NormalEgo 0 2)
@@ -251,10 +251,10 @@
 								)
 							)
 							(1
-								(= global113 16)
-								(= global126 1)
-								(= global130 4)
-								(= global127 1)
+								(= gEurekaLocation 16) ; empty space
+								(= gSpikeState 1)
+								(= gCliffyState 4)
+								(= gGarbagePickupCount 1)
 								(SetFlag 35)
 								(= next sEnterNorth)
 								(SetFlag 60)
@@ -267,9 +267,9 @@
 							)
 							(2
 								(= next sEnterNorth)
-								(= global113 16)
-								(= global126 4)
-								(= global130 1)
+								(= gEurekaLocation 16) ; empty space
+								(= gSpikeState 4)
+								(= gCliffyState 1)
 								(SetFlag 60)
 								(NormalEgo 0 2)
 								(gEgo
@@ -280,9 +280,9 @@
 							)
 							(3
 								(eureka puke: 4)
-								(= global113 14)
-								(= global126 0)
-								(= global130 0)
+								(= gEurekaLocation 14) ; goliath
+								(= gSpikeState 0)
+								(= gCliffyState 0)
 								(= next sEnterNorth)
 								(SetFlag 60)
 								(NormalEgo 0 2)
@@ -295,9 +295,9 @@
 							(4
 								(eureka puke: 5)
 								(= next sEnterNorth)
-								(= global113 14)
-								(= global126 0)
-								(= global130 0)
+								(= gEurekaLocation 14) ; goliath
+								(= gSpikeState 0)
+								(= gCliffyState 0)
 								(NormalEgo 0 2)
 								(gEgo
 									init:
@@ -309,9 +309,9 @@
 							(5
 								(eureka puke: 6)
 								(SetFlag 60)
-								(= global113 14)
-								(= global126 0)
-								(= global130 0)
+								(= gEurekaLocation 14) ; goliath
+								(= gSpikeState 0)
+								(= gCliffyState 0)
 								(SetFlag 73)
 								(gEgo
 									view: 239
@@ -450,7 +450,7 @@
 				)
 			)
 			(4
-				(= global126 3)
+				(= gSpikeState 3)
 				(spike dispose:)
 				(self dispose:)
 			)
@@ -465,7 +465,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(if (== global126 4)
+				(if (== gSpikeState 4)
 					(self setScript: spikeStuff self)
 				else
 					(= cycles 1)
@@ -481,8 +481,8 @@
 				(= cycles 1)
 			)
 			(4
-				(if (== global126 1)
-					(if (== global130 1)
+				(if (== gSpikeState 1)
+					(if (== gCliffyState 1)
 						(gMessager say: 11 0 0 0 self) ; "There's definitely something in there, Cap'n."
 					else
 						(self setScript: (ScriptID 227 4) self) ; sSpikeComments
@@ -534,7 +534,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(if (== global126 4)
+				(if (== gSpikeState 4)
 					(self setScript: spikeStuff self)
 				else
 					(= cycles 1)
@@ -607,7 +607,7 @@
 			)
 			(1
 				(gEgo setCycle: Beg self)
-				(if (and (== global126 1) (== global130 1))
+				(if (and (== gSpikeState 1) (== gCliffyState 1))
 				)
 			)
 			(2
@@ -667,7 +667,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(if (== global126 4)
+				(if (== gSpikeState 4)
 					(self setScript: spikeStuff self)
 				else
 					(= cycles 1)
@@ -866,7 +866,7 @@
 			)
 			(2
 				(trashDoorTop yStep: 15 heading: 0 setMotion: MoveFwd 17 self)
-				(if (== global126 1)
+				(if (== gSpikeState 1)
 					(gSq5Music2 number: 2451 loop: -1 play:)
 				)
 				(eureka gdoor: 1)
@@ -929,7 +929,7 @@
 				)
 			)
 			(14
-				(if (== global126 1)
+				(if (== gSpikeState 1)
 					(gCurRoom setScript: sSpikeAttacks)
 					(self dispose:)
 				else
@@ -1000,7 +1000,7 @@
 				(gSq5Music2 number: 23 setLoop: -1 play: 0 fade: 127 5 5 0)
 			)
 			(9
-				(= global126 4)
+				(= gSpikeState 4)
 				(theMusic3 dispose:)
 				(gCurRoom newRoom: 230)
 				(self dispose:)
@@ -1346,7 +1346,7 @@
 	)
 
 	(method (init)
-		(if (== global126 1)
+		(if (== gSpikeState 1)
 			(eureka gdoor: 0)
 		)
 		(if (< (eureka puke:) 4)
@@ -1548,7 +1548,7 @@
 
 	(method (init)
 		(cond
-			((and (!= gPrevRoomNum 226) (== global126 4))
+			((and (!= gPrevRoomNum 226) (== gSpikeState 4))
 				(cond
 					((and (IsFlag 114) (not (IsFlag 113)))
 						(self x: 118 y: 110)
@@ -1566,7 +1566,7 @@
 					(theMusic3 number: 23 loop: -1 play:)
 				)
 			)
-			((== global126 1)
+			((== gSpikeState 1)
 				(gSq5Music2 number: 245 loop: -1 play:)
 			)
 		)

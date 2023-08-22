@@ -708,11 +708,11 @@
 		(gTheCursor show:)
 	)
 
-	(method (startRoom param1)
-		(proc1111_29 param1)
+	(method (startRoom roomNum)
+		(proc1111_29 roomNum)
 		((ScriptID 94 0) doit:) ; dispCode
 		(DisposeScript 94)
-		((ScriptID param1) setRegions: 92) ; SoundManager
+		((ScriptID roomNum) setRegions: 92) ; SoundManager
 		(cond
 			(
 				(and
@@ -732,7 +732,7 @@
 						)
 					)
 				)
-				((ScriptID param1) setRegions: 200) ; cplainRegion
+				((ScriptID roomNum) setRegions: 200) ; cplainRegion
 				(cond
 					(
 						(or
@@ -740,10 +740,10 @@
 							(== gNewRoomNum 1020) ; hubCableCar
 							(== gNewRoomNum 1016) ; hubCampLocker4
 						)
-						((ScriptID param1) setRegions: 205) ; HubCampRegion
+						((ScriptID roomNum) setRegions: 205) ; HubCampRegion
 					)
 					((<= 2001 gNewRoomNum 2009) ; baseCampTent1, baseCampTable
-						((ScriptID param1) setRegions: 211) ; baseCampRegion
+						((ScriptID roomNum) setRegions: 211) ; baseCampRegion
 					)
 					(
 						(or
@@ -751,29 +751,29 @@
 							(== gNewRoomNum 4000) ; bkPorch
 							(== gNewRoomNum 4002) ; bkPorchDoor
 						)
-						((ScriptID param1) setRegions: 206) ; bangkokRegion
+						((ScriptID roomNum) setRegions: 206) ; bangkokRegion
 					)
 					((<= 4003 gNewRoomNum 4230) ; bkPuzPorchDoor, bk3MusNWCU3
-						((ScriptID param1) setRegions: 213) ; BangkokInsideRegion
+						((ScriptID roomNum) setRegions: 213) ; BangkokInsideRegion
 					)
 					((<= 2040 gNewRoomNum 2055) ; BeamRgn1, trashBin
-						((ScriptID param1) setRegions: 207) ; beamRegion
+						((ScriptID roomNum) setRegions: 207) ; beamRegion
 					)
 					((<= 2100 gNewRoomNum 2109) ; CPIceport1, icemobileCU
-						((ScriptID param1) setRegions: 208) ; iceportRegion
+						((ScriptID roomNum) setRegions: 208) ; iceportRegion
 					)
 					(
 						(or
 							(<= 2060 gNewRoomNum 2065) ; CPLondon1, CPLondon6
 							(OneOf gNewRoomNum 3001 3009) ; london_1, london_Door_1
 						)
-						((ScriptID param1) setRegions: 209) ; londonRegion
+						((ScriptID roomNum) setRegions: 209) ; londonRegion
 					)
 					((and (not (== gNewRoomNum 3009)) (<= 3002 gNewRoomNum 3071)) ; london_Door_1, london_2, london_Attack
-						((ScriptID param1) setRegions: 212) ; londonInsideRegion
+						((ScriptID roomNum) setRegions: 212) ; londonInsideRegion
 					)
 					((<= 2010 gNewRoomNum 2039) ; wheelRgn1, wheelHubLadder
-						((ScriptID param1) setRegions: 210) ; wheelRegion
+						((ScriptID roomNum) setRegions: 210) ; wheelRegion
 					)
 				)
 			)
@@ -790,25 +790,25 @@
 					(<= 5700 gNewRoomNum 5701) ; NYPort, NYPort2
 					(<= 5500 gNewRoomNum 5524) ; NYMazeA, NYMazeZ
 				)
-				((ScriptID param1) setRegions: 201) ; newYorkRegion
+				((ScriptID roomNum) setRegions: 201) ; newYorkRegion
 				(cond
 					((<= 6001 gNewRoomNum 6911) ; avianLeftShaft1, mirmicatPoolCloseUp
-						((ScriptID param1) setRegions: 202) ; AvianRegion
+						((ScriptID roomNum) setRegions: 202) ; AvianRegion
 					)
 					((<= 7000 gNewRoomNum 7924) ; octoAtriumRamp, ocMorphGateSW
-						((ScriptID param1) setRegions: 203) ; OctoRegion
+						((ScriptID roomNum) setRegions: 203) ; OctoRegion
 					)
 					((<= 8000 gNewRoomNum 8130) ; HumanRamp, HumanBeds
-						((ScriptID param1) setRegions: 204) ; HumanRegion
+						((ScriptID roomNum) setRegions: 204) ; HumanRegion
 					)
 					((or (<= 5001 gNewRoomNum 5030) (== gNewRoomNum 6000)) ; NYAvian1, NYAvianTetraCU, avianShaft
-						((ScriptID param1) setRegions: 214) ; AvianPlazaRegion
+						((ScriptID roomNum) setRegions: 214) ; AvianPlazaRegion
 					)
 					((<= 5301 gNewRoomNum 5331) ; NY_Octospider_Plaza_1, NY_Octospider_Plaza_31
-						((ScriptID param1) setRegions: 215) ; OctoPlazaRegion
+						((ScriptID roomNum) setRegions: 215) ; OctoPlazaRegion
 					)
 					((or (<= 5202 gNewRoomNum 5215) (<= 5401 gNewRoomNum 5419)) ; humanPlazaRm2, NY_Human_Plaza_15, NY_Subway_1, puzzleIconCU
-						((ScriptID param1) setRegions: 216) ; HumanPlazaRegion
+						((ScriptID roomNum) setRegions: 216) ; HumanPlazaRegion
 					)
 				)
 			)
@@ -823,7 +823,7 @@
 			((ScriptID 70 0) doit:) ; InvInitialize
 			(proc70_1 112 1)
 		)
-		(super startRoom: param1 &rest)
+		(super startRoom: roomNum &rest)
 		(if (SoundManager initialized:)
 			(SoundManager updateSFXLocs:)
 		)
@@ -882,7 +882,7 @@
 	)
 
 	(method (replay &tmp [temp0 7])
-		(Empty)
+		(SetDebug)
 	)
 
 	(method (play)

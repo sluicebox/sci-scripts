@@ -526,11 +526,11 @@
 		(return temp0)
 	)
 
-	(method (startRoom param1)
+	(method (startRoom roomNum)
 		(if gPMouse
 			(gPMouse stop:)
 		)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(CueObj client: 0 state: 0)
 	)
 

@@ -106,7 +106,7 @@
 		(if (and argc gKqRespondCode [param1 0])
 			(for ((= temp0 0)) (< temp0 argc) ((++ temp0))
 				(if (== [param1 temp0] 9999)
-					(Empty)
+					(SetDebug)
 				else
 					((ScriptID 0 4) addToEnd: [param1 temp0]) ; respondSet
 					(= temp1 (gKqRespondCode doit: [param1 temp0]))
@@ -119,7 +119,7 @@
 	(method (deleteVerbs param1 &tmp temp0 temp1)
 		(for ((= temp0 0)) (< temp0 argc) ((++ temp0))
 			(if (== [param1 temp0] 9999)
-				(Empty)
+				(SetDebug)
 			else
 				(= temp1 (gKqRespondCode doit: [param1 temp0]))
 				(self _respondVerbs: (& (self _respondVerbs:) (~ temp1)))

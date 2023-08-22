@@ -58,7 +58,7 @@
 			(self readString: temp1 139)
 		else
 			(PrintDebug {Error: No actor found in file})
-			(Empty self)
+			(SetDebug self)
 		)
 		(temp2 dispose:)
 		(temp1 dispose:)

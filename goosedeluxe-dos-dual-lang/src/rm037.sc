@@ -74,7 +74,7 @@
 			(script
 				(script doit:)
 			)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(self setScript: gStdWalkOut 0 3)
 			)
 			((= temp0 (self edgeToRoom: (gEgo edgeHit:)))

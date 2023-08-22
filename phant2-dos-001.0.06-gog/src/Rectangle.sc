@@ -29,7 +29,7 @@
 	(method (check)
 		(if (or (< right left) (< bottom top))
 			(PrintDebug {%s at %d is invalid\n} (self name:) self)
-			(Empty self)
+			(SetDebug self)
 		)
 	)
 

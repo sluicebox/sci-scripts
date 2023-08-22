@@ -347,7 +347,7 @@
 		(super doit:)
 		(cond
 			(script 0)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(self setScript: noExit)
 			)
 		)

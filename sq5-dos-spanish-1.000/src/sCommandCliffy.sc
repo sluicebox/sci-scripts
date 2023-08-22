@@ -68,7 +68,7 @@
 				)
 			)
 			(3
-				(if (and (== global113 14) (not (IsFlag 39)))
+				(if (and (== gEurekaLocation 14) (not (IsFlag 39))) ; goliath
 					(eureka setScript: (ScriptID 210 1) 0 1) ; sGoliathTimer
 				)
 				(if (!= register 4)
@@ -104,10 +104,10 @@
 					((IsFlag 61)
 						(gMessager say: 8 0 13 1 self) ; "Main energizers off line, Cap'n. Weapon systems are knocked out too. We're a sitting duck!"
 					)
-					((and (> global126 1) (not (IsFlag 56)))
+					((and (> gSpikeState 1) (not (IsFlag 56)))
 						(gMessager say: 8 0 12 1 self) ; "Captain! That acid-squirting critter of yours is loose down here!"
 					)
-					((and (== global113 14) (IsFlag 39))
+					((and (== gEurekaLocation 14) (IsFlag 39)) ; goliath
 						(gMessager say: 8 0 55 1 self) ; "The cloaking device is working perfectly Captain. There's no way the Goliath can detect us. Unless of course, you go and do something stupid like order me to decloak!"
 					)
 					((eureka damaged:)
@@ -116,7 +116,7 @@
 					((>= (eureka puke:) 4)
 						(gMessager say: 8 0 16 1 self) ; MISSING MESSAGE
 					)
-					((and (== global170 2) (not (IsFlag 47)))
+					((and (== gWD40State 2) (not (IsFlag 47)))
 						(gMessager say: 8 0 5 1 self) ; "I've finished putting WD40 back together and reprogrammed her to perform as our science officer. You can now reach her through the science station on your com panel."
 						(SetFlag 47)
 					)
@@ -155,7 +155,7 @@
 					((IsFlag 32)
 						(gMessager say: 7 0 45 1 self) ; "We can't cloak the ship while we're at lite speed, sir."
 					)
-					((and (== global142 2) (IsFlag 75))
+					((and (== gAct 2) (IsFlag 75))
 						(SetFlag 39)
 						(self setScript: sCloaking self)
 					)

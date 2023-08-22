@@ -489,7 +489,7 @@
 				else
 					(gTheCursor show:)
 					(gGame setCursor: gWaitCursor 1)
-					(proc30_0 0 0 4 1 170)
+					(EgoDead 0 0 4 1 170) ; "You're hit and killed. You have now become a statistic."
 				)
 			)
 			((== theVerb 4) ; Do
@@ -611,7 +611,7 @@
 				(= ticks 30)
 			)
 			(1
-				(proc30_0 0 0 4 1 170)
+				(EgoDead 0 0 4 1 170) ; "You're hit and killed. You have now become a statistic."
 			)
 		)
 	)
@@ -967,7 +967,7 @@
 				(gEgo setMotion: 0)
 				(gTheCursor show:)
 				(gGame handsOff: setCursor: gWaitCursor 1)
-				(proc30_0 0 0 4 1 170)
+				(EgoDead 0 0 4 1 170) ; "You're hit and killed. You have now become a statistic."
 				(self dispose:)
 				(event claimed: 1)
 				(return)
@@ -1341,7 +1341,7 @@
 				(gMessager say: 4 0 6 1 self) ; "Carey, you've just shot and killed fellow officer Jim Varaz..."
 			)
 			(1
-				(proc30_0 0 0 10 1 170)
+				(EgoDead 0 0 10 1 170) ; "You've killed fellow officer Jim Varaz! You're suspended without pay pending an Internal Affairs investigation..."
 			)
 		)
 	)

@@ -25,7 +25,7 @@
 	(method (setCycle param1)
 		(if (not argc)
 			(PrintDebug {SetCycle for %s(%d) needs parameter(s)\n} name self)
-			(Empty self)
+			(SetDebug self)
 		)
 		(if cycler
 			(cycler dispose:)

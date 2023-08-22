@@ -109,7 +109,7 @@
 						(gEgo
 							x: (+ (/ (* (- (gEgo x:) 88) 19) 51) 10)
 							y: 154
-							edgeHit: 0
+							edgeHit: EDGE_NONE
 						)
 						(self setScript: closeDoorScript)
 					)
@@ -186,7 +186,7 @@
 			((and (== (gEgo onControl: 1) 16384) (!= script openDoorScript))
 				(self setScript: openDoorScript)
 			)
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(if (== global111 55)
 					(gGlobalMGSound fade:)
 				)

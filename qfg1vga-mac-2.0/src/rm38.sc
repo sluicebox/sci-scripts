@@ -90,7 +90,7 @@
 	)
 
 	(method (doit &tmp temp0)
-		(if (and (== (gEgo edgeHit:) 2) (not (gEgo script:)))
+		(if (and (== (gEgo edgeHit:) EDGE_RIGHT) (not (gEgo script:)))
 			(gEgo setScript: headEast)
 		)
 		(super doit:)

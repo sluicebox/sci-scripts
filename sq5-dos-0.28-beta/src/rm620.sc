@@ -70,7 +70,7 @@
 			)
 		)
 		(super init:)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(gCurRoom
 			addObstacle:
 				((Polygon new:)
@@ -84,7 +84,7 @@
 					yourself:
 				)
 		)
-		(if (!= global142 0)
+		(if (!= gAct 0)
 			(pod init:)
 			(podDoor init: setOnMeCheck: 1 (podDoor onMeCheck:))
 			(mist1 init:)
@@ -93,7 +93,7 @@
 			(path init: setOnMeCheck: 1 (path onMeCheck:))
 			(bigStem init: setOnMeCheck: 1 (bigStem onMeCheck:))
 			(chasm init: setOnMeCheck: 1 (chasm onMeCheck:))
-			(if (== global142 1)
+			(if (== gAct 1)
 				(podHeat init:)
 			)
 		)
@@ -204,7 +204,7 @@
 			)
 			(2
 				(gEgo setScript: sBreath)
-				(if (and (!= global142 0) (not (IsFlag 29)))
+				(if (and (!= gAct 0) (not (IsFlag 29)))
 					(myBut init: hide:)
 					(pod setScript: sBeep)
 				)
@@ -299,13 +299,13 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(if (and (!= global142 0) (not (IsFlag 29)))
+				(if (and (!= gAct 0) (not (IsFlag 29)))
 					(myBut init: hide:)
 					(pod setScript: sBeep)
 				)
 				(NormalEgo 18 0)
 				(gEgo
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 					init:
 					ignoreActors: 1
 					setScript: sBreath
@@ -329,7 +329,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(if (and (!= global142 0) (not (IsFlag 29)))
+				(if (and (!= gAct 0) (not (IsFlag 29)))
 					(myBut init: hide:)
 					(pod setScript: sBeep)
 				)
@@ -476,7 +476,7 @@
 			(0
 				(gGame handsOff:)
 				(IsFlag 104)
-				(= local2 (if (or (== global142 0) (IsFlag 104)) 8 else 10))
+				(= local2 (if (or (== gAct 0) (IsFlag 104)) 8 else 10))
 				(theMusic3 number: 603 setLoop: 1 play:)
 				(gEgo view: 553 loop: 8 cel: 0 setCycle: End self)
 			)
@@ -678,7 +678,7 @@
 		(switch theVerb
 			(4 ; Do
 				(if (< (gEgo y:) 120)
-					(if (== global142 1)
+					(if (== gAct 1)
 						(gCurRoom setScript: sBurnMe)
 					else
 						(gCurRoom setScript: sPodScript)

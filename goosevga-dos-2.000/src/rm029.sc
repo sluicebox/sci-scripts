@@ -45,7 +45,7 @@
 					yourself:
 				)
 		)
-		(proc0_1)
+		(NormalEgo)
 		(Load rsSCRIPT 106)
 		(switch gPrevRoomNum
 			(north

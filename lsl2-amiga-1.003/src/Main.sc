@@ -983,7 +983,7 @@
 		)
 	)
 
-	(method (startRoom n &tmp newRegion)
+	(method (startRoom roomNum &tmp newRegion)
 		(LoadMany
 			0
 			985
@@ -1012,7 +1012,7 @@
 			955
 			958
 		)
-		(super startRoom: n)
+		(super startRoom: roomNum)
 	)
 
 	(method (doit &tmp systime)

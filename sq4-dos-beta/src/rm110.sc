@@ -106,11 +106,11 @@
 	(method (doit)
 		(cond
 			(script 0)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(HandsOff)
 				(self setScript: exitScript)
 			)
-			((or (== (gEgo edgeHit:) 4) (== (gEgo edgeHit:) 2))
+			((or (== (gEgo edgeHit:) EDGE_LEFT) (== (gEgo edgeHit:) EDGE_RIGHT))
 				(if (== (sewer location:) 105)
 					(gLongSong2 play:)
 				)

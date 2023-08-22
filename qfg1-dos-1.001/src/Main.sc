@@ -1553,14 +1553,14 @@
 		)
 	)
 
-	(method (startRoom param1 &tmp [temp0 2] temp2)
+	(method (startRoom roomNum &tmp [temp0 2] temp2)
 		(HandsOn)
 		(self setCursor: gWaitCursor 1)
 		(while ((= temp2 (Event new:)) type:)
 			(temp2 dispose:)
 		)
 		(temp2 dispose:)
-		(if (OneOf param1 2 9 200 202 203 299 600)
+		(if (OneOf roomNum 2 9 200 202 203 299 600) ; noticeRoom, notice2Room, intro, selChar, chAlloc, speedChecker, EndGame
 			(MenuBar hide:)
 		else
 			(MenuBar draw:)
@@ -1644,7 +1644,7 @@
 		)
 		(gMouseHandler add: gCast gFeatures)
 		(FixTime)
-		(if (== param1 600)
+		(if (== roomNum 600) ; EndGame
 			(ClearFlag 328)
 			(FixTime 12 0)
 			(= gNight 0)
@@ -1655,7 +1655,7 @@
 		)
 		StopWalk
 		Cycle
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(= global101 0)
 		(if global104
 			(self setCursor: gWaitCursor 1)

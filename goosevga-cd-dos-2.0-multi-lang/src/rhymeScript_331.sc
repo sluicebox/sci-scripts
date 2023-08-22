@@ -26,7 +26,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(gEgo observeControl: 8192 setAvoider: (Avoid new:))
 				(if (& (gEgo onControl:) $4000)
 					(= cycles 2)
@@ -147,7 +147,7 @@
 				(if (== gScore gPossibleScore)
 					(gCurRoom setScript: (ScriptID 205)) ; walkTo
 				else
-					(proc0_3)
+					(HandsOn)
 				)
 				(self dispose:)
 				(DisposeScript 978)

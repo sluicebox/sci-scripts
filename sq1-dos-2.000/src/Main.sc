@@ -247,7 +247,7 @@
 	global163
 	global164
 	; 165
-	global165 = 3
+	gBuckazoidCount = 3
 	global166 = 1
 	global167
 	global168
@@ -1059,12 +1059,12 @@
 		)
 	)
 
-	(method (startRoom param1)
+	(method (startRoom roomNum)
 		(if gPMouse
 			(gPMouse stop:)
 		)
 		(gSounds eachElementDo: #perform soundReset)
-		((ScriptID 801) doit: param1) ; disposeCode
+		((ScriptID 801) doit: roomNum) ; disposeCode
 		(if
 			(and
 				global187
@@ -1079,14 +1079,14 @@
 			(SetDebug)
 		)
 		(cond
-			((OneOf param1 3 4 5 6 7 8 9 10 11 12 13 103)
+			((OneOf roomNum 3 4 5 6 7 8 9 10 11 12 13 103)
 				Elevator
 				(ScriptID 700) ; arcadaRegion
 			)
-			((OneOf param1 37 18 19 20 21 22 23 24 25 26 27)
+			((OneOf roomNum 37 18 19 20 21 22 23 24 25 26 27)
 				(ScriptID 704) ; keronaRegion
 			)
-			((OneOf param1 54 55 57 58 59 60 61 62 63 64 65 66 67)
+			((OneOf roomNum 54 55 57 58 59 60 61 62 63 64 65 66 67)
 				Elevator
 				RegionPath
 				(ScriptID 703) ; DeltaurRegion
@@ -1094,13 +1094,13 @@
 			)
 			(else 0)
 		)
-		(if (OneOf param1 3 35 40 41 42 43 45 46 58 59 60 61 62 63 64 66 68)
+		(if (OneOf roomNum 3 35 40 41 42 43 45 46 58 59 60 61 62 63 64 66 68)
 			RandCycle
 		)
-		(if (and global187 (not (OneOf param1 999)))
+		(if (and global187 (not (OneOf roomNum 999)))
 			((ScriptID 800) init:) ; MISSING SCRIPT
 		)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(if (gCast contains: gEgo)
 			(if
 				(and
@@ -1495,14 +1495,14 @@
 	)
 
 	(method (show)
-		(= view (if (>= global165 3) 560 else 574))
+		(= view (if (>= gBuckazoidCount 3) 560 else 574))
 		(super show: &rest)
 	)
 
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(Printf 0 27 global165 (if (== global165 1) {.} else {s.})) ; "You have %d Buckazoid%s"
+				(Printf 0 27 gBuckazoidCount (if (== gBuckazoidCount 1) {.} else {s.})) ; "You have %d Buckazoid%s"
 			)
 			(else
 				(super doVerb: theVerb invItem)

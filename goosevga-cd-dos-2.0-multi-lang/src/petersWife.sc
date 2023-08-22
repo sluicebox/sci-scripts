@@ -252,11 +252,11 @@
 		(self dispose:)
 		(DoSound sndMASTER_VOLUME global125)
 		(DisposeScript 976)
-		(proc0_3)
+		(HandsOn)
 	)
 
 	(method (init &tmp temp0)
-		(proc0_2)
+		(HandsOff)
 		(super init: &rest)
 		(= temp0 (gGoals at: 18))
 		(proc0_20)

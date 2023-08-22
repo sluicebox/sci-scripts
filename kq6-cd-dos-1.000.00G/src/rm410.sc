@@ -124,7 +124,7 @@
 		)
 		(gGame handsOn:)
 		(super init: &rest)
-		(if (== ((ScriptID 30 0) prevEdgeHit:) 2) ; rLab
+		(if (== ((ScriptID 30 0) prevEdgeHit:) EDGE_RIGHT) ; rLab
 			(= local404 10)
 			(= local403 10)
 		else
@@ -417,7 +417,7 @@
 					(if
 						(and
 							(not (IsFlag 95))
-							(== ((ScriptID 30 0) prevEdgeHit:) 4) ; rLab
+							(== ((ScriptID 30 0) prevEdgeHit:) EDGE_LEFT) ; rLab
 						)
 						(localproc_3)
 					)
@@ -429,7 +429,7 @@
 					(if
 						(and
 							(not (IsFlag 95))
-							(== ((ScriptID 30 0) prevEdgeHit:) 2) ; rLab
+							(== ((ScriptID 30 0) prevEdgeHit:) EDGE_RIGHT) ; rLab
 						)
 						(localproc_3)
 					)
@@ -497,7 +497,7 @@
 					(if
 						(and
 							(not (IsFlag 95))
-							(== ((ScriptID 30 0) prevEdgeHit:) 4) ; rLab
+							(== ((ScriptID 30 0) prevEdgeHit:) EDGE_LEFT) ; rLab
 						)
 						(localproc_3)
 					)
@@ -509,7 +509,7 @@
 					(if
 						(and
 							(not (IsFlag 95))
-							(== ((ScriptID 30 0) prevEdgeHit:) 2) ; rLab
+							(== ((ScriptID 30 0) prevEdgeHit:) EDGE_RIGHT) ; rLab
 						)
 						(localproc_3)
 					)
@@ -554,7 +554,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(if (== ((ScriptID 30 0) prevEdgeHit:) 2) ; rLab
+				(if (== ((ScriptID 30 0) prevEdgeHit:) EDGE_RIGHT) ; rLab
 					(gEgo
 						posn: 10 146
 						init:
@@ -577,7 +577,7 @@
 				)
 			)
 			(1
-				(if (== ((ScriptID 30 0) prevEdgeHit:) 2) ; rLab
+				(if (== ((ScriptID 30 0) prevEdgeHit:) EDGE_RIGHT) ; rLab
 					(gEgo setHeading: 90)
 				else
 					(gEgo setHeading: 270)

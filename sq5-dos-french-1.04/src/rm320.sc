@@ -48,7 +48,7 @@
 			)
 			(325
 				(= style -32758)
-				(gEgo setHeading: 180 x: 288 y: 153 edgeHit: 0 init:)
+				(gEgo setHeading: 180 x: 288 y: 153 edgeHit: EDGE_NONE init:)
 				(gGame handsOn:)
 			)
 			(else
@@ -412,7 +412,7 @@
 					(gEgo
 						x: 55
 						y: 105
-						edgeHit: 0
+						edgeHit: EDGE_NONE
 						init:
 						setMotion: MoveTo 80 117 self
 					)

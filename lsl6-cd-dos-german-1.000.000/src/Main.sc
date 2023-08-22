@@ -529,11 +529,11 @@
 		(return temp0)
 	)
 
-	(method (startRoom param1)
+	(method (startRoom roomNum)
 		(if gPMouse
 			(gPMouse stop:)
 		)
-		((ScriptID 80) doit: param1) ; disposeCode
+		((ScriptID 80) doit: roomNum) ; disposeCode
 		(if
 			(and
 				global100
@@ -560,7 +560,7 @@
 		(if gDebugOn
 			(SetDebug)
 		)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(CueObj client: 0 state: 0)
 	)
 

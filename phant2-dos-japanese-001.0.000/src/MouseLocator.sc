@@ -36,7 +36,7 @@
 		(if (not (& signal $0008))
 			(if (!= self ((gUser hogs:) peek:))
 				(PrintDebug {MouseLoc not at top of hogs!\n})
-				(Empty (gUser hogs:))
+				(SetDebug (gUser hogs:))
 			)
 			((gUser hogs:) pop:)
 			(self hide:)

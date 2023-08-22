@@ -81,7 +81,7 @@
 
 	(method (init)
 		(super init:)
-		(proc0_1)
+		(NormalEgo)
 		(gEgo setMotion: Freeway (= global75 @local1))
 		(switch gPrevRoomNum
 			(north

@@ -47,7 +47,7 @@
 		(= horizon 86)
 		(= gIndoors 0)
 		(Load rsSOUND 65)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(self setRegions: 509) ; sForReg
 		(super init:)
 		(if gNight

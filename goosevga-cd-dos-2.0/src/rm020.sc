@@ -33,7 +33,7 @@
 	(method (init &tmp temp0)
 		(super init:)
 		(water init:)
-		(proc0_1)
+		(NormalEgo)
 		(gEgo setMotion: Freeway (= global75 @local0))
 		(switch gPrevRoomNum
 			(north

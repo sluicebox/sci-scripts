@@ -87,7 +87,7 @@
 		(switch gPrevRoomNum
 			(north
 				(HandsOn)
-				(gEgo view: smallView posn: 204 85 setHeading: 180 edgeHit: 0)
+				(gEgo view: smallView posn: 204 85 setHeading: 180 edgeHit: EDGE_NONE)
 			)
 			(west
 				(self setScript: sFromWest)
@@ -96,7 +96,7 @@
 				(HandsOn)
 				(= smallView 765)
 				(= largeView 768)
-				(gEgo posn: 160 145 edgeHit: 0 skating: 1 normalize: 768)
+				(gEgo posn: 160 145 edgeHit: EDGE_NONE skating: 1 normalize: 768)
 				(= gSkateAbility 2)
 				(= learnCounter 99)
 			)
@@ -186,7 +186,7 @@
 			(= movingOffControl 0)
 			(HandsOn)
 		else
-			(gEgo edgeHit: 1)
+			(gEgo edgeHit: EDGE_TOP)
 			(gCurRoom newRoom: (gCurRoom north:))
 		)
 	)

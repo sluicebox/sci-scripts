@@ -47,7 +47,7 @@
 					yourself:
 				)
 		)
-		(proc0_1)
+		(NormalEgo)
 		(switch gPrevRoomNum
 			(north
 				(gEgo posn: 167 57)
@@ -186,7 +186,7 @@
 		(switch (= state newState)
 			(0
 				(= register 391)
-				(proc0_2)
+				(HandsOff)
 				(proc0_20)
 				(muffetHead show:)
 				(muffet cycleSpeed: 6 loop: 5)
@@ -205,7 +205,7 @@
 			)
 			(4
 				(proc411_1)
-				(proc0_3)
+				(HandsOn)
 				(= global341 0)
 				(muffet cycleSpeed: 15 loop: 0 setScript: scaredScript)
 				(muffetHead hide:)

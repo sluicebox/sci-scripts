@@ -151,7 +151,7 @@
 			(= local2 1)
 			(self setScript: sink)
 		)
-		(if (== (gEgo edgeHit:) 4)
+		(if (== (gEgo edgeHit:) EDGE_LEFT)
 			(if (< (gEgo y:) 165)
 				(gCurRoom newRoom: 18)
 			else

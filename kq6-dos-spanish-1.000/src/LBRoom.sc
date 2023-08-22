@@ -493,16 +493,16 @@
 		(if (== gPrevRoomNum 411)
 			(= temp0 ((ScriptID 30 0) labCoords:)) ; rLab
 			(switch ((ScriptID 30 0) prevEdgeHit:) ; rLab
-				(1
+				(EDGE_TOP
 					(-= temp0 16)
 				)
-				(3
+				(EDGE_BOTTOM
 					(+= temp0 16)
 				)
-				(2
+				(EDGE_RIGHT
 					(++ temp0)
 				)
-				(4
+				(EDGE_LEFT
 					(-- temp0)
 				)
 				(else

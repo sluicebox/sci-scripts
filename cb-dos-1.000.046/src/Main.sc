@@ -1078,7 +1078,7 @@
 		(super doit:)
 	)
 
-	(method (startRoom param1 &tmp temp0 temp1)
+	(method (startRoom roomNum &tmp temp0 temp1)
 		(= global216 0)
 		(LoadMany 0 978 990)
 		(gMmMouseDownHandler release:)
@@ -1093,26 +1093,26 @@
 		(if (== gMustDos 15)
 			(localproc_1)
 		)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(Load rsVIEW 911)
 		(Load rsSCRIPT 413)
 		(LoadMany rsMESSAGE 407 410)
 		(cond
-			((or (< param1 31) (== param1 65))
+			((or (< roomNum 31) (== roomNum 65))
 				(gCurRoom setRegions: 208) ; outsideReg
-				(if (and (& gCorpseFlags $0040) (!= param1 16)) ; Lillian
+				(if (and (& gCorpseFlags $0040) (!= roomNum 16)) ; Lillian
 					(gCurRoom setRegions: 400) ; barkReg
 				)
 			)
 			(
 				(or
-					(< param1 51)
-					(== param1 74)
-					(== param1 73)
-					(== param1 75)
-					(== param1 76)
-					(== param1 53)
-					(== param1 63)
+					(< roomNum 51)
+					(== roomNum 74)
+					(== roomNum 73)
+					(== roomNum 75)
+					(== roomNum 76)
+					(== roomNum 53)
+					(== roomNum 63)
 				)
 				(if (and (& gCorpseFlags $0040) (!= gCurRoomNum 74)) ; Lillian
 					(gCurRoom setRegions: 401) ; scuffReg
@@ -1124,15 +1124,15 @@
 		(if
 			(not
 				(or
-					(== param1 36)
+					(== roomNum 36)
 					(and
-						(== param1 38)
+						(== roomNum 38)
 						(== gAct 0)
 						(not (& gSpyFlags $0002))
 					)
-					(and (== param1 32) (< gAct 4))
-					(and (== param1 44) (== gAct 0))
-					(and (== param1 75) (& gCorpseFlags $0040)) ; Lillian
+					(and (== roomNum 32) (< gAct 4))
+					(and (== roomNum 44) (== gAct 0))
+					(and (== roomNum 75) (& gCorpseFlags $0040)) ; Lillian
 				)
 			)
 			(= temp0 (ScriptID 990))

@@ -1024,8 +1024,8 @@
 		(super newRoom: newRoomNumber)
 	)
 
-	(method (startRoom param1 &tmp temp0 temp1 [temp2 2])
-		((ScriptID 11) doit: param1) ; disposeCode
+	(method (startRoom roomNum &tmp temp0 temp1 [temp2 2])
+		((ScriptID 11) doit: roomNum) ; disposeCode
 		(for ((= temp1 0)) (< temp1 (gTimers size:)) ((++ temp1))
 			(gTimers delete: (= temp0 (gTimers at: 0)))
 			(gTimers add: temp0)
@@ -1037,9 +1037,9 @@
 		(if
 			(and
 				(OneOf
-					param1
+					roomNum
 					335
-					340
+					340 ; testRoom
 					350
 					355
 					360
@@ -1062,11 +1062,11 @@
 					450
 					454
 					455
-					456
+					456 ; magRosetta
 					460
 					480
 					490
-					521
+					521 ; meanWhile
 					600
 					610
 					620
@@ -1088,29 +1088,29 @@
 		)
 		(if
 			(and
-				(OneOf param1 335 340 350 355 360 370 400)
+				(OneOf roomNum 335 340 350 355 360 370 400) ; testRoom
 				(== gAct 2)
 			)
 			(ScriptID 93) ; RotundaRgn
 		)
-		(if (OneOf param1 280 210 260 300)
+		(if (OneOf roomNum 280 210 260 300)
 			(ScriptID 91) ; streetRgn
 		)
 		(if
 			(and
 				(== gAct 5)
-				(OneOf param1 420 430 435 440 448 450 454 460 480 490 660)
+				(OneOf roomNum 420 430 435 440 448 450 454 460 480 490 660)
 			)
 			(ScriptID 94) ; PursuitRgn
 		)
-		(if (OneOf param1 100 105 110 120 140 150 155 160 180 190 220)
+		(if (OneOf roomNum 100 105 110 120 140 150 155 160 180 190 220) ; logo
 			(ScriptID 92) ; intro
 		)
-		(if (and global110 (not (OneOf param1 100)))
+		(if (and global110 (not (OneOf roomNum 100)))
 			((ScriptID 10 0) init:) ; MISSING SCRIPT
 		)
 		(gTheIconBar enable:)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(if
 			(and
 				(gEgo cycler:)

@@ -432,7 +432,7 @@
 				)
 				(= roomNum temp4)
 			)
-			((== roomNum 1)
+			((== roomNum 1) ; logoRm
 				(cond
 					((and temp4 (self gabeAway: temp4))
 						(= roomNum temp4)
@@ -454,7 +454,7 @@
 					(else 0)
 				)
 			)
-			((== roomNum 12)
+			((== roomNum 12) ; endChapter
 				(cond
 					((and temp1 (self gabeAway: temp1))
 						(= roomNum temp1)

@@ -62,7 +62,7 @@
 					)
 				)
 		)
-		(proc0_1)
+		(NormalEgo)
 		(switch gPrevRoomNum
 			(south
 				(gEgo posn: (proc0_13 54 (gEgo x:) 249) 139)
@@ -106,7 +106,7 @@
 				(script doit:)
 			)
 			((& (gEgo onControl:) $0004)
-				(proc0_2)
+				(HandsOff)
 				(self setScript: openDoorScript)
 			)
 			((= temp0 (self edgeToRoom: (gEgo edgeHit:)))
@@ -154,7 +154,7 @@
 				(gEgo setMotion: MoveTo 182 86 self)
 			)
 			(4
-				(proc0_3)
+				(HandsOn)
 				(gCurRoom newRoom: 44)
 			)
 		)
@@ -167,7 +167,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(gEgo setMotion: MoveTo 196 86 self)
 			)
 			(1
@@ -185,7 +185,7 @@
 				(door stopUpd:)
 			)
 			(5
-				(proc0_3)
+				(HandsOn)
 				(if (not ((gGoals at: 11) egoReturned:))
 					(gCurRoom cue:)
 				)
@@ -475,7 +475,7 @@
 					(return)
 				)
 			)
-			(proc0_2)
+			(HandsOff)
 			(= temp0 (gGoals at: 11))
 			(proc0_20)
 			(cond
@@ -502,8 +502,8 @@
 			(if global172
 				(gCurRoom newRoom: 45) ; mapRoom
 			)
-			(proc0_5)
-			(proc0_3)
+			(RedrawCast)
+			(HandsOn)
 		)
 	)
 )

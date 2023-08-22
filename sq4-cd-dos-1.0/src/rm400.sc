@@ -200,13 +200,13 @@
 				(HandsOff)
 				((ScriptID 700 0) ; mall
 					enterBelt:
-						(if (== (gEgo edgeHit:) 2) egoBwRed else egoBwGreen)
+						(if (== (gEgo edgeHit:) EDGE_RIGHT) egoBwRed else egoBwGreen)
 				)
 				(self
 					setScript:
 						(ScriptID 700 2) ; exS
 						0
-						(if (== (gEgo edgeHit:) 2) east else west)
+						(if (== (gEgo edgeHit:) EDGE_RIGHT) east else west)
 				)
 			)
 		)

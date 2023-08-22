@@ -190,7 +190,7 @@
 				(gGame points: 3 100)
 				(cond
 					(local0
-						(proc30_0 noun 0 6 1 885)
+						(EgoDead noun 0 6 1 885)
 					)
 					((and (== (gEgo view:) 9885) (== (gEgo loop:) 0))
 						(gGame handsOff:)
@@ -527,7 +527,7 @@
 				)
 			)
 			(1
-				(proc30_0 24 0 5 1 885)
+				(EgoDead 24 0 5 1 885) ; "You've been caught off guard and killed. May you rest in peace."
 			)
 		)
 	)
@@ -621,7 +621,7 @@
 				(girl setCycle: Beg self)
 			)
 			(10
-				(proc30_0 24 2 10 1 885)
+				(EgoDead 24 2 10 1 885) ; "Your hesitation resulted in a permanent vacation nine feet under."
 			)
 		)
 	)

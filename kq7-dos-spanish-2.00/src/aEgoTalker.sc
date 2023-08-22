@@ -623,7 +623,7 @@
 					((IsFlag 55) 836)
 					(else 870)
 				)
-			edgeHit: 0
+			edgeHit: EDGE_NONE
 			signal: 4129
 			setLoop: -1
 			setLooper: gGrooper

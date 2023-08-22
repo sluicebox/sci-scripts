@@ -29,11 +29,11 @@
 	(method (init)
 		(super init:)
 		(bfly init: setScript: bflyWait)
-		(proc0_1)
+		(NormalEgo)
 		(gEgo setMotion: Freeway (= global75 @local0))
 		(switch gPrevRoomNum
 			(north
-				(gEgo edgeHit: 0 posn: 172 70)
+				(gEgo edgeHit: EDGE_NONE posn: 172 70)
 				(self setScript: gStdWalkIn)
 			)
 			(south

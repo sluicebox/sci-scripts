@@ -116,7 +116,7 @@
 				(gEgo setMotion: 0 setAvoider: 0 setLoop: -1)
 				(gLongSong number: 1 loop: -1 play:)
 				(if (!= gScore gPossibleScore)
-					(proc0_3)
+					(HandsOn)
 				)
 				(self dispose:)
 				(= local0 1)

@@ -170,7 +170,7 @@
 	)
 
 	(method (doit)
-		(if (and (== (gEgo edgeHit:) 3) (not local3))
+		(if (and (== (gEgo edgeHit:) EDGE_BOTTOM) (not local3))
 			(gCurRoom newRoom: 72)
 		)
 		(if (and (not local3) (== (gEgo onControl: 1) 16384))

@@ -180,7 +180,7 @@
 						(gMessager say: 3 22 3) ; "Holster your weapon! There is no tactical rationale for this action!"
 						(++ local0)
 					)
-					(((ScriptID 32 0) doit: 3 22 2 1 880) ; ShootHandgun
+					(((ScriptID 32 0) doit: 3 22 2 1 880) ; ShootHandgun, "Deadly use of force has resulted in a  first degree murder conviction.  Welcome to San Quentin."
 						(self setScript: 0)
 						(naziScr register: 2)
 					)

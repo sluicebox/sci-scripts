@@ -30,7 +30,7 @@
 		(HandsOff)
 		(gEgo init: x: 71 y: 121 view: 406)
 		(clubOwner init: setCycle: Fwd)
-		(gEgo edgeHit: 0 setLoop: 1)
+		(gEgo edgeHit: EDGE_NONE setLoop: 1)
 		(ownersDoor init: setCel: 255)
 		(gTheMusic number: 405 flags: 1 setLoop: -1 play:)
 		(super init:)

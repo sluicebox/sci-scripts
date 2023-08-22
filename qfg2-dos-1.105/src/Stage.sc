@@ -212,7 +212,7 @@
 					)
 				)
 				(= edgeHit 0)
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 			)
 		)
 	)

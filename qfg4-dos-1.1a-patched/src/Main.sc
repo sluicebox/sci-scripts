@@ -1539,9 +1539,9 @@
 		)
 	)
 
-	(method (startRoom param1 &tmp temp0)
+	(method (startRoom roomNum &tmp temp0)
 		(gGlory setCursor: gWaitCursor 1)
-		((ScriptID 27 0) init: param1) ; StartARoom
+		((ScriptID 27 0) init: roomNum) ; StartARoom
 		(DisposeScript 27)
 		StopWalk
 		Cycle
@@ -1555,8 +1555,8 @@
 		(if gDebugOn
 			(SetDebug)
 		)
-		(super startRoom: param1)
-		(statusCode doit: param1)
+		(super startRoom: roomNum)
+		(statusCode doit: roomNum)
 	)
 
 	(method (restart &tmp temp0 temp1 temp2)

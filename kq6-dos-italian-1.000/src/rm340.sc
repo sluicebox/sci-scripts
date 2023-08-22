@@ -231,7 +231,7 @@
 				(gGame handsOff:)
 				(gCurRoom setScript: dieHard)
 			)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(gGame handsOff:)
 				(gGlobalSound fade: 0 10 10)
 				(gCurRoom setScript: goNorth)

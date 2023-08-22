@@ -134,7 +134,7 @@
 				(= local0 1)
 				(gEgo setScript: intoTheTower)
 			)
-			((and (== (gEgo edgeHit:) 3) (not local5))
+			((and (== (gEgo edgeHit:) EDGE_BOTTOM) (not local5))
 				(= local5 1)
 				(= local2 1)
 			)

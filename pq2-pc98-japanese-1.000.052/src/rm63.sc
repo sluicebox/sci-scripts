@@ -371,7 +371,7 @@
 			(airScript changeState: 2)
 		)
 		(cond
-			((== (gEgo edgeHit:) 4)
+			((== (gEgo edgeHit:) EDGE_LEFT)
 				(gCurRoom
 					newRoom:
 						(if local109
@@ -383,7 +383,7 @@
 						)
 				)
 			)
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(gCurRoom newRoom: 65)
 			)
 		)

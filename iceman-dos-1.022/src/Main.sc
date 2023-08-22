@@ -351,19 +351,19 @@
 		)
 	)
 
-	(method (startRoom param1)
+	(method (startRoom roomNum)
 		(gEgo observeControl: -32768)
-		((ScriptID 818) doit: param1) ; disposeCode
+		((ScriptID 818) doit: roomNum) ; disposeCode
 		(if gDebugOn
 			(SetDebug)
 		)
-		((ScriptID 819) doit: param1) ; preloadCode
-		(super startRoom: param1 &rest)
+		((ScriptID 819) doit: roomNum) ; preloadCode
+		(super startRoom: roomNum &rest)
 		(if
 			(and
 				(gCast contains: gEgo)
 				(not (gEgo looper:))
-				(not (OneOf param1 8 15 16 27 39 40))
+				(not (OneOf roomNum 8 15 16 27 39 40)) ; HutSwimRm, tahitiOcean2, beachSwimRm, controlPanel, diceRm, chartRm
 			)
 			(gEgo setLoop: Grooper)
 		)

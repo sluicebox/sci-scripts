@@ -51,7 +51,7 @@
 		(if (== gPrevRoomNum 45) ; hedge4
 			(self setScript: arrived)
 		else
-			(gEgo edgeHit: 1)
+			(gEgo edgeHit: EDGE_TOP)
 			(gEgo x: 105 y: 188)
 		)
 		(super init:)
@@ -117,7 +117,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 				(NormalEgo 2)
 				(if (> (gEgo x:) 227)
 					(= register @local46)

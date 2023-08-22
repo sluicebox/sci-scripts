@@ -69,8 +69,8 @@
 			(
 				(= temp0
 					(switch ((User alterEgo:) edgeHit:)
-						(1 north)
-						(2 east)
+						(EDGE_TOP north)
+						(EDGE_RIGHT east)
 					)
 				)
 				(if (and (== temp0 north) (== gPrevRoomNum 51) (IsFlag 82))

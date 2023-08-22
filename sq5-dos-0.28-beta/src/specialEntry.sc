@@ -89,7 +89,7 @@
 			(11
 				((ScriptID 240 2) view: 25 setLoop: 0 setScale: 0 cel: 15) ; bea
 				(ClearFlag 45)
-				(= global164 9)
+				(= gBeaState 9)
 				(if (== (eureka puke:) 7)
 					(= next beaGoesFirst)
 				else

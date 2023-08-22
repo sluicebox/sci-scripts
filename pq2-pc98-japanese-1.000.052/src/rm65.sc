@@ -652,7 +652,7 @@
 			)
 		)
 		(cond
-			((and (== (gEgo edgeHit:) 4) local105)
+			((and (== (gEgo edgeHit:) EDGE_LEFT) local105)
 				(DisposeScript 988)
 				(gContinuousMusic stop:)
 				(gCurRoom newRoom: 62)

@@ -206,7 +206,7 @@
 	(method (doit)
 		(cond
 			((gEgo script:))
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(gEgo setScript: egoExits)
 			)
 			((and (IsFlag 273) local89 (< (gEgo y:) 140))

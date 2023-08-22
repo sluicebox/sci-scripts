@@ -18,7 +18,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(mother init: stopUpd:)
 				(FakeEgo init: setCycle: Fwd setMotion: MoveTo 266 22 self)
 			)
@@ -121,7 +121,7 @@
 				(= cycles 3)
 			)
 			(20
-				(proc0_3)
+				(HandsOn)
 				(gEgo setCycle: Walk)
 				(= global104 0)
 				(self dispose:)

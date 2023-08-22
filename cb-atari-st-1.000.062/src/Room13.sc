@@ -174,14 +174,14 @@
 			)
 		)
 		(switch (gEgo edgeHit:)
-			(2
+			(EDGE_RIGHT
 				(if (< (gEgo y:) 135)
 					(gCurRoom newRoom: 14)
 				else
 					(gCurRoom newRoom: 21)
 				)
 			)
-			(3
+			(EDGE_BOTTOM
 				(if (> (gEgo x:) 188)
 					(gCurRoom newRoom: 20)
 				else

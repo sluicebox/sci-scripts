@@ -304,10 +304,10 @@
 			(0
 				(HandsOff)
 				(switch (gEgo edgeHit:)
-					(1
+					(EDGE_TOP
 						(gEgo setMotion: PolyPath (gEgo x:) -5 self)
 					)
-					(3
+					(EDGE_BOTTOM
 						(gEgo
 							setMotion:
 								PolyPath
@@ -316,7 +316,7 @@
 								self
 						)
 					)
-					(4
+					(EDGE_LEFT
 						(gEgo
 							setMotion:
 								PolyPath
@@ -325,7 +325,7 @@
 								self
 						)
 					)
-					(2
+					(EDGE_RIGHT
 						(gEgo
 							setMotion:
 								PolyPath

@@ -17,7 +17,7 @@
 	(method (new param1 param2 param3 &tmp temp0)
 		(if (not argc)
 			(PrintDebug {Timers now require caller. See timer.sc\n})
-			(Empty self)
+			(SetDebug self)
 		)
 		(= temp0 (super new: param1))
 		(if (>= argc 3)
@@ -52,7 +52,7 @@
 			)
 			(else
 				(PrintDebug {Unknown Timer type: %d\n} type)
-				(Empty self)
+				(SetDebug self)
 			)
 		)
 	)
@@ -70,7 +70,7 @@
 			)
 			(else
 				(PrintDebug {Unknown Timer type: %d\n} param1)
-				(Empty self)
+				(SetDebug self)
 			)
 		)
 	)

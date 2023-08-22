@@ -58,7 +58,7 @@
 		)
 		(Load rsVIEW 47)
 		(Load rsVIEW 21)
-		(gEgo edgeHit: 0 observeControl: 16384)
+		(gEgo edgeHit: EDGE_NONE observeControl: 16384)
 		(= global186 0)
 		(super init:)
 		(self setRegions: 510 511) ; cemReg, mountReg

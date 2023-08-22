@@ -1075,7 +1075,7 @@
 		(super newRoom: newRoomNumber)
 	)
 
-	(method (startRoom param1 &tmp temp0)
+	(method (startRoom roomNum &tmp temp0)
 		(if (and global216 (HaveMem 1200))
 			(= global216 0)
 			((= global202 (ScriptID 801)) init:) ; DebugMenu
@@ -1086,8 +1086,8 @@
 		)
 		(if
 			(= temp0
-				(switch param1
-					(120 520)
+				(switch roomNum
+					(120 520) ; intro
 					(54 601)
 					(68 603)
 					(49 602)
@@ -1100,7 +1100,7 @@
 			)
 			((ScriptID temp0) init:)
 		)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 	)
 
 	(method (handleEvent event &tmp temp0 temp1 temp2 temp3 [temp4 50])

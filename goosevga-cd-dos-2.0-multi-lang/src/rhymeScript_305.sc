@@ -27,7 +27,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(gEgo setScript: egoGive)
 				(Load rsVIEW 910)
 				(Load rsVIEW 913)
@@ -145,7 +145,7 @@
 				(if (== gScore gPossibleScore)
 					(gCurRoom setScript: (ScriptID 205)) ; walkTo
 				else
-					(proc0_3)
+					(HandsOn)
 					(self dispose:)
 				)
 				(= local8 1)

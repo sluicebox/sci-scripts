@@ -45,17 +45,17 @@
 				(gEgo
 					posn: 268 152
 					setHeading: 270
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 					observeControl: 2 4
 				)
 				(Points 1 150)
 			)
 			(west
-				(gEgo posn: 35 155 setHeading: 90 edgeHit: 0)
+				(gEgo posn: 35 155 setHeading: 90 edgeHit: EDGE_NONE)
 			)
 			(else
 				(HandsOn)
-				(gEgo posn: 160 160 edgeHit: 0)
+				(gEgo posn: 160 160 edgeHit: EDGE_NONE)
 			)
 		)
 		(super init:)

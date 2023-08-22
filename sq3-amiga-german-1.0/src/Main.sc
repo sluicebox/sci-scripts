@@ -1236,7 +1236,7 @@
 		(super doit:)
 	)
 
-	(method (startRoom param1)
+	(method (startRoom roomNum)
 		(LoadMany
 			0
 			963
@@ -1284,7 +1284,7 @@
 			)
 			(SetDebug)
 		)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(= gHandsOff 0)
 		(= global230 gNormalCursor)
 		(self setCursor: global230 1)

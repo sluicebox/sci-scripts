@@ -138,18 +138,18 @@
 			)
 			((= temp0 (self edgeToRoom: (gEgo edgeHit:)))
 				(switch (gEgo edgeHit:)
-					(1
+					(EDGE_TOP
 						(-- global315)
 					)
-					(3
+					(EDGE_BOTTOM
 						(= global314 10)
 						(= global315 8)
 					)
-					(2
+					(EDGE_RIGHT
 						(= global314 9)
 						(= global315 7)
 					)
-					(4
+					(EDGE_LEFT
 						(= global314 11)
 						(= global315 7)
 					)

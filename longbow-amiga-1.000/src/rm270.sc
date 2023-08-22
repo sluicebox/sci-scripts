@@ -120,8 +120,8 @@
 			)
 			(
 				(or
-					(== ((User alterEgo:) edgeHit:) 2)
-					(== ((User alterEgo:) edgeHit:) 3)
+					(== ((User alterEgo:) edgeHit:) EDGE_RIGHT)
+					(== ((User alterEgo:) edgeHit:) EDGE_BOTTOM)
 				)
 				(gCurRoom newRoom: 260)
 			)

@@ -26,7 +26,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(DoAudio audWPLAY 8)
 				(Load rsSCRIPT 991)
 				(gEgo setScript: egoGive)

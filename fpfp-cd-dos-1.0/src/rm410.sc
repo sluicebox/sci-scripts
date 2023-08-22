@@ -39,7 +39,7 @@
 		(gEgo init: normalize: setScale: Scaler 64 67 187 108)
 		(switch gPrevRoomNum
 			(south
-				(gEgo edgeHit: 3 x: 233)
+				(gEgo edgeHit: EDGE_BOTTOM x: 233)
 				(gGame handsOn:)
 			)
 			(else
@@ -191,7 +191,7 @@
 				(gEgo setPri: 12 setMotion: MoveTo 251 138 self)
 			)
 			(1
-				(proc0_5 gEgo chastity)
+				(Face gEgo chastity)
 				(= cycles 2)
 			)
 			(2
@@ -230,7 +230,7 @@
 			)
 			(7
 				(gEgo setPri: -1)
-				(proc0_5 gEgo chastity)
+				(Face gEgo chastity)
 				(= cycles 5)
 			)
 			(8
@@ -303,7 +303,7 @@
 			)
 			(2
 				(if (!= (gEgo cel:) 1)
-					(proc0_5 gEgo madameO)
+					(Face gEgo madameO)
 				)
 				(= cycles 2)
 			)
@@ -314,11 +314,11 @@
 				(gMessager say: 6 0 3 0 self) ; "Hey, big boy! It's about time you showed up. Time to take my pharmacy bill out in trade?"
 			)
 			(5
-				(proc0_5 madameO gEgo)
+				(Face madameO gEgo)
 				(gEgo setMotion: PolyPath 139 130 self)
 			)
 			(6
-				(proc0_5 gEgo madameO)
+				(Face gEgo madameO)
 				(Load rsSOUND 2950)
 				(= seconds 2)
 			)

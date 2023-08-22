@@ -35,7 +35,7 @@
 		(if gNight
 			(+= picture 100)
 		)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(gEgo xStep: 4 init:)
 		(gSounds eachElementDo: #dispose)
 		(super init:)

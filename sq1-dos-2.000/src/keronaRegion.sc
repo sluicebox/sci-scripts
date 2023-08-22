@@ -140,19 +140,19 @@
 				(spider
 					posn:
 						(switch (gEgo edgeHit:)
-							(4
+							(EDGE_LEFT
 								(+ global179 319)
 							)
-							(2
+							(EDGE_RIGHT
 								(- global179 319)
 							)
 							(else global163)
 						)
 						(switch (gEgo edgeHit:)
-							(3
+							(EDGE_BOTTOM
 								(- global180 190)
 							)
-							(1
+							(EDGE_TOP
 								(+ global180 190)
 							)
 							(else global180)

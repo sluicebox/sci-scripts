@@ -30,7 +30,7 @@
 		(Load rsVIEW 129)
 		(super init:)
 		(door init: ignoreActors: stopUpd:)
-		(proc0_1)
+		(NormalEgo)
 		(gEgo setMotion: Freeway (= global75 @local0))
 		(switch gPrevRoomNum
 			(41
@@ -107,7 +107,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(Timer set60ths: self (DoAudio audPLAY 38))
 				(= cycles 10)
 			)
@@ -128,7 +128,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(door setCel: -1 startUpd: setCycle: Beg self)
 				(= cycles 4)
 			)
@@ -138,9 +138,9 @@
 			(2
 				(door stopUpd:)
 				(if (== gScore gPossibleScore)
-					(proc0_2)
+					(HandsOff)
 				else
-					(proc0_3)
+					(HandsOn)
 				)
 				(gCurRoom setScript: 0)
 			)

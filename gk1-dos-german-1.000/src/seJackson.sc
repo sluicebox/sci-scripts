@@ -378,7 +378,7 @@
 		)
 		(DoAudio audSTOP)
 		(gGkSound1 client: 0)
-		(if (and (== (gEgo edgeHit:) 3) (IsFlag 102))
+		(if (and (== (gEgo edgeHit:) EDGE_BOTTOM) (IsFlag 102))
 			(ClearFlag 102)
 		)
 		(gGkMusic1 fade:)

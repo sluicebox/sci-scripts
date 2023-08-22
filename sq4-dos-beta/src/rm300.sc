@@ -102,11 +102,11 @@
 	(method (doit &tmp temp0)
 		(cond
 			(script 0)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(HandsOff)
 				(self setScript: exitSouthScript)
 			)
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(HandsOff)
 				(self setScript: exitEastScript)
 			)

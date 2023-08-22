@@ -157,10 +157,10 @@
 			)
 			((gEgo edgeHit:)
 				(switch (gEgo edgeHit:)
-					(4
+					(EDGE_LEFT
 						(self setScript: sExitWest)
 					)
-					(2
+					(EDGE_RIGHT
 						(self setScript: sExitEast)
 					)
 				)

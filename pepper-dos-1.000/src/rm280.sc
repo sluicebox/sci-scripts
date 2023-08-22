@@ -175,7 +175,7 @@
 		(super doit:)
 		(cond
 			(script)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(gCurRoom setScript: sExit)
 			)
 		)

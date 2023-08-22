@@ -49,7 +49,7 @@
 			)
 			(else
 				(HandsOn)
-				(gEgo posn: 278 104 normalize: edgeHit: 0 setHeading: 270)
+				(gEgo posn: 278 104 normalize: edgeHit: EDGE_NONE setHeading: 270)
 			)
 		)
 		(super init:)

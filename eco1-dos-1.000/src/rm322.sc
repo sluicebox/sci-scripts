@@ -95,7 +95,7 @@
 	(method (doit)
 		(cond
 			(script 0)
-			((== (gEgo edgeHit:) 4)
+			((== (gEgo edgeHit:) EDGE_LEFT)
 				(self setScript: toWest)
 			)
 			((& (gEgo onControl: 1) $0004)
@@ -234,18 +234,18 @@
 	(method (doit)
 		(if (User canControl:)
 			(switch (gEgo edgeHit:)
-				(1
+				(EDGE_TOP
 					(Narrator init: 18) ; "The island has been deserted for a long time. There's nothing interesting about it."
 					(gEgo setMotion: 0 y: 94)
 				)
-				(2
+				(EDGE_RIGHT
 					(Narrator init: 14) ; "Adam can't get through the flow of garbage."
 					(gEgo setMotion: 0 x: 313)
 				)
-				(4
+				(EDGE_LEFT
 					(gEgo setMotion: 0 x: 7)
 				)
-				(3
+				(EDGE_BOTTOM
 					((ScriptID 2 0) init: 2 1) ; Delphineus, "Put those human things on, Adam!"
 					(gEgo
 						setMotion: 0
@@ -322,7 +322,7 @@
 				(NormalEgo)
 				(gEgo
 					x: 280
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 					illegalBits: -32768
 					setMotion: MoveTo 160 130 self
 				)

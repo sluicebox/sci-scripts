@@ -32,8 +32,8 @@
 	)
 
 	(method (init)
-		(proc0_3)
-		(proc0_1)
+		(HandsOn)
+		(NormalEgo)
 		(super init:)
 		(gEgo setMotion: Freeway (= global75 @local0))
 		(if (== gPrevRoomNum 45) ; mapRoom
@@ -69,7 +69,7 @@
 			)
 			(else
 				(event claimed: 1)
-				(proc0_2)
+				(HandsOff)
 				(proc0_7 gEgo mother)
 				(self setScript: converse)
 			)
@@ -172,7 +172,7 @@
 	(properties)
 
 	(method (cue)
-		(proc0_3)
+		(HandsOn)
 		(client setScript: 0)
 		(DoSound sndMASTER_VOLUME global125)
 	)

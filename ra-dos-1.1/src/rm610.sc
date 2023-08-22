@@ -220,7 +220,7 @@
 	)
 
 	(method (doit)
-		(if (and (== (gEgo edgeHit:) 3) (& ((gTheIconBar at: 7) signal:) $0004))
+		(if (and (== (gEgo edgeHit:) EDGE_BOTTOM) (& ((gTheIconBar at: 7) signal:) $0004))
 			(gTheIconBar enable: 7)
 		)
 		(if (and (not (gCurRoom script:)) (StepOn gEgo 64))

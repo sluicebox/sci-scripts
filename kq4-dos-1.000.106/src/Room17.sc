@@ -50,7 +50,7 @@
 		(if gNight
 			(= picture 117)
 		)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(self setRegions: 508) ; Forest_Region
 		(super init:)
 		(if (and gNight (not (gEgo has: 7))) ; Obsidian_Scarab

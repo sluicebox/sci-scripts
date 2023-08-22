@@ -768,10 +768,10 @@
 		)
 	)
 
-	(method (startRoom param1 &tmp [temp0 4])
+	(method (startRoom roomNum &tmp [temp0 4])
 		((ScriptID 37) init:) ; soundRegion
 		(gRegions add: (ScriptID 37)) ; soundRegion
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 	)
 
 	(method (newRoom newRoomNumber)

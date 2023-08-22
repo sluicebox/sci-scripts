@@ -28,7 +28,7 @@
 	)
 
 	(method (init)
-		(proc0_1)
+		(NormalEgo)
 		(super init:)
 		(gEgo setMotion: Freeway (= global75 @local0))
 		(switch gPrevRoomNum
@@ -76,7 +76,7 @@
 			)
 			((not ((gGoals at: 4) egoReturned:))
 				(event claimed: 1)
-				(proc0_2)
+				(HandsOff)
 				(proc0_7 gEgo mary)
 				(self setScript: converse)
 			)
@@ -196,7 +196,7 @@
 		(if global172
 			(gCurRoom newRoom: 45) ; mapRoom
 		)
-		(proc0_3)
+		(HandsOn)
 	)
 
 	(method (init &tmp temp0)

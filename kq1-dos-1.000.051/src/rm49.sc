@@ -113,8 +113,8 @@
 			(
 				(= temp0
 					(switch ((User alterEgo:) edgeHit:)
-						(1 north)
-						(3 south)
+						(EDGE_TOP north)
+						(EDGE_BOTTOM south)
 					)
 				)
 				(self newRoom: temp0)

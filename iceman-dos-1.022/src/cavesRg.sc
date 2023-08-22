@@ -80,16 +80,16 @@
 		(= keep (OneOf newRoomNumber 59 60 63 64 65 66 67 68 62 43)) ; inCave1Rm, inCave2Rm, inCave3Rm, inCave4Rm, nwDeadEndRm, northDeadEndRm, inCave5Rm, caveExitRm, inCave6Rm, inCave7Rm
 		(= initialized 0)
 		(switch ((User alterEgo:) edgeHit:)
-			(1
+			(EDGE_TOP
 				(-- local0)
 			)
-			(3
+			(EDGE_BOTTOM
 				(++ local0)
 			)
-			(2
+			(EDGE_RIGHT
 				(++ local1)
 			)
-			(4
+			(EDGE_LEFT
 				(-- local1)
 			)
 		)

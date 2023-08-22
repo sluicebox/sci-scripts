@@ -259,7 +259,7 @@
 			((& (gEgo onControl: 1) $0800)
 				(gCurRoom setScript: intoShipScript)
 			)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(gCurRoom setScript: cantGoThatWay)
 			)
 		)

@@ -40,7 +40,7 @@
 				(Load rsVIEW 202)
 				(Load rsFONT 8)
 				(Load rsFONT 9)
-				(proc0_2)
+				(HandsOff)
 				(gEgo setScript: egoPlaceCandle)
 				(global109 setScript: jackBeingNimble)
 				(gLongSong stop:)
@@ -173,7 +173,7 @@
 				(if (== gScore gPossibleScore)
 					(gCurRoom setScript: (ScriptID 205)) ; walkTo
 				else
-					(proc0_3)
+					(HandsOn)
 				)
 				(self dispose:)
 				(= local7 1)

@@ -45,7 +45,7 @@
 		(LoadMany rsVIEW 430 430 432 1430)
 		(Load rsSOUND 436)
 		(Load rsSCRIPT 991)
-		(gEgo init: edgeHit: 0 normalize:)
+		(gEgo init: edgeHit: EDGE_NONE normalize:)
 		(desmondDoor init:)
 		(if (== gPrevRoomNum 440)
 			(gEgo x: 300)

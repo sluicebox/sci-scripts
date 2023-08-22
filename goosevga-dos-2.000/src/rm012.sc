@@ -42,7 +42,7 @@
 		(if ((gGoals at: 10) egoReturned:)
 			(local79 points: @local43 size: 18)
 		)
-		(proc0_1)
+		(NormalEgo)
 		(door init:)
 		(= global111 wifeBareFoot)
 		(switch gPrevRoomNum
@@ -116,7 +116,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(gSfx number: 38 play: self)
 				(door setCycle: End self)
 			)
@@ -134,7 +134,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(door setCycle: CT 2 -1 self)
 			)
 			(1
@@ -146,7 +146,7 @@
 				(if global133
 					(gCurRoom setScript: converse)
 				else
-					(proc0_3)
+					(HandsOn)
 					(gCurRoom setScript: 0)
 				)
 			)
@@ -327,7 +327,7 @@
 
 	(method (changeState newState &tmp temp0)
 		(if (not (= state newState))
-			(proc0_2)
+			(HandsOff)
 			(proc0_7 gEgo peter)
 			(= temp0 (gGoals at: 10))
 			(proc0_20)
@@ -374,8 +374,8 @@
 			(if global172
 				(gCurRoom newRoom: 45) ; mapRoom
 			)
-			(proc0_3)
-			(proc0_5)
+			(HandsOn)
+			(RedrawCast)
 			(DoSound sndMASTER_VOLUME global125)
 		)
 	)

@@ -70,7 +70,7 @@
 	(method (addTarget param1 &tmp temp0)
 		(if (or (not argc) (not (param1 respondsTo: #onMe)))
 			(PrintDebug {Invalid target for %s(%d)\n} name self)
-			(Empty self)
+			(SetDebug self)
 		)
 		(if target
 			(if (target isKindOf: OnMeList)

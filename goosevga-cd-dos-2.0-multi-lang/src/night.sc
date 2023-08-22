@@ -100,7 +100,7 @@
 			(Palette palSET_INTENSITY 0 255 temp0)
 			(Wait 2)
 		)
-		(proc0_2)
+		(HandsOff)
 	)
 
 	(method (handleEvent event)

@@ -317,7 +317,7 @@
 			((& (gEgo onControl: 1) $0002)
 				(gCurRoom setScript: sEnterAlley)
 			)
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(gCurRoom setScript: sExitEast)
 			)
 		)

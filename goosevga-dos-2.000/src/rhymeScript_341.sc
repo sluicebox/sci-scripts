@@ -25,7 +25,7 @@
 		(switch (= state newState)
 			(0
 				(DoAudio audWPLAY 4)
-				(proc0_2)
+				(HandsOff)
 				(Load rsSCRIPT 983)
 				(proc0_9)
 				(global129
@@ -146,9 +146,9 @@
 			(18
 				(gEgo setMotion: 0 setLoop: -1)
 				(global109 setLoop: 8 setCel: 0)
-				(proc0_3)
+				(HandsOn)
 				(if (== gScore gPossibleScore)
-					(proc0_2)
+					(HandsOff)
 					(gEgo setAvoider: PAvoider setMotion: MoveTo 209 103)
 				)
 				(gLongSong number: 601 loop: -1 play:)

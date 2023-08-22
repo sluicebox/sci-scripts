@@ -214,7 +214,7 @@
 	)
 
 	(method (dispose)
-		(if (and (== (gEgo edgeHit:) 3) (IsFlag 102))
+		(if (and (== (gEgo edgeHit:) EDGE_BOTTOM) (IsFlag 102))
 			(ClearFlag 102)
 		)
 		(gGkSound1 stop:)

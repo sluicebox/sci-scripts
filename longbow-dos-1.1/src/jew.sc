@@ -103,7 +103,7 @@
 		(= temp1 (GetAngle x y (gEgo x:) (gEgo y:)))
 		(= temp0 (Abs (- temp1 heading)))
 		(cond
-			((and (== (gEgo edgeHit:) 1) (not (Wat script:)))
+			((and (== (gEgo edgeHit:) EDGE_TOP) (not (Wat script:)))
 				(Wat setScript: (Wat theTimer:))
 			)
 			((IsFlag 110)

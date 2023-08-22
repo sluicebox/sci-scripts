@@ -37,7 +37,7 @@
 					yourself:
 				)
 		)
-		(proc0_3)
+		(HandsOn)
 		(if (!= gPrevRoomNum 45) ; mapRoom
 			(gEgo loop: 1 posn: 186 119)
 		)
@@ -82,7 +82,7 @@
 			(2
 				(proc411_1)
 				(DoSound sndMASTER_VOLUME global125)
-				(proc0_3)
+				(HandsOn)
 				(self dispose:)
 			)
 		)

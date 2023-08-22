@@ -242,7 +242,7 @@
 	(method (posn param1 &tmp temp0 temp1)
 		(if (or (< (+= param1 thumbMin) thumbMin) (> param1 thumbMax))
 			(PrintDebug {Illegal pos: %d!<%d!<%d} thumbMin param1 thumbMax)
-			(Empty self)
+			(SetDebug self)
 		)
 		(if (& state $0080)
 			(= temp0 param1)

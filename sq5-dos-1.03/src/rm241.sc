@@ -34,29 +34,29 @@
 	(= local3 param1)
 	(switch local2
 		(0
-			(if (or (!= local3 10) (== global164 1))
-				(if (== global164 1)
-					(= global164 6)
+			(if (or (!= local3 10) (== gBeaState 1))
+				(if (== gBeaState 1)
+					(= gBeaState 6)
 				else
-					(= global164 3)
+					(= gBeaState 3)
 				)
 			else
-				(= global164 1)
+				(= gBeaState 1)
 			)
 		)
 		(2
-			(if (or (!= local3 10) (!= global164 1))
-				(if (OneOf global164 0 2)
-					(= global164 5)
+			(if (or (!= local3 10) (!= gBeaState 1))
+				(if (OneOf gBeaState 0 2)
+					(= gBeaState 5)
 				else
-					(= global164 4)
+					(= gBeaState 4)
 				)
 			else
-				(= global164 2)
+				(= gBeaState 2)
 			)
 		)
 		(else
-			(= global164 7)
+			(= gBeaState 7)
 		)
 	)
 	(gCurRoom setScript: countDownClock)
@@ -96,7 +96,7 @@
 					say:
 						noun
 						1
-						(switch global164
+						(switch gBeaState
 							(0
 								(switch global118
 									(1 11)
@@ -131,11 +131,11 @@
 
 	(method (init)
 		(super init: &rest)
-		(if (== global164 1)
+		(if (== gBeaState 1)
 			(Palette palSET_FROM_RESOURCE 471 2)
 			(PalVary pvINIT 471 0)
 		)
-		(if (<= global164 8)
+		(if (<= gBeaState 8)
 			(face init: stopUpd:)
 		)
 		(chamberControls init: setOnMeCheck: 1 2)
@@ -145,7 +145,7 @@
 	)
 
 	(method (doit)
-		(if (and (GameIsRestarting) (== global164 1))
+		(if (and (GameIsRestarting) (== gBeaState 1))
 			(Palette palSET_FROM_RESOURCE 471 2)
 			(PalVary pvINIT 471 0)
 		)
@@ -213,7 +213,7 @@
 				(= cycles 1)
 			)
 			(1
-				(if (== global164 1)
+				(if (== gBeaState 1)
 					(Palette palSET_FROM_RESOURCE 471 2)
 				)
 				(gGame handsOn:)
@@ -261,7 +261,7 @@
 					(proc242_1)
 				)
 				(cond
-					((not (OneOf global164 1 2))
+					((not (OneOf gBeaState 1 2))
 						(if (or (not local0) (> (- local3 local0) 5))
 							(self dispose:)
 						else
@@ -296,7 +296,7 @@
 				)
 			)
 			(1
-				(switch global164
+				(switch gBeaState
 					(0
 						(= register 8)
 					)
@@ -305,7 +305,7 @@
 						(= register 4)
 					)
 					(2
-						(if (and (== global113 8) (& global169 $0002))
+						(if (and (== gEurekaLocation 8) (& global169 $0002)) ; genetix environdome
 							(SetScore 187 50)
 							(= register 1)
 						else
@@ -365,7 +365,7 @@
 				say:
 					noun
 					1
-					(switch global164
+					(switch gBeaState
 						(0 11)
 						(1 10)
 						(8 9)

@@ -135,7 +135,7 @@
 	)
 
 	(method (doit)
-		(if (== (gEgo edgeHit:) 1)
+		(if (== (gEgo edgeHit:) EDGE_TOP)
 			(if (< (gEgo x:) 195)
 				(gCurRoom newRoom: 26)
 			else

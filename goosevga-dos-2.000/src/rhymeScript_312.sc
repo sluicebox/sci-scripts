@@ -25,7 +25,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(DoAudio audWPLAY 7)
 				(proc0_9)
 				(gLongSong stop:)
@@ -89,7 +89,7 @@
 				(if (== gScore gPossibleScore)
 					(gCurRoom setScript: (ScriptID 205)) ; walkTo
 				else
-					(proc0_3)
+					(HandsOn)
 				)
 				(self dispose:)
 				(DisposeScript 983)

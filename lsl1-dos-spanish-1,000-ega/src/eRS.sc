@@ -83,20 +83,20 @@
 					)
 				)
 				(switch ((User alterEgo:) edgeHit:)
-					(1
+					(EDGE_TOP
 						((User alterEgo:) y: 188)
 					)
-					(4
+					(EDGE_LEFT
 						((User alterEgo:) x: (- 319 wide))
 					)
-					(3
+					(EDGE_BOTTOM
 						((User alterEgo:) y: (+ horizon high))
 					)
-					(2
+					(EDGE_RIGHT
 						((User alterEgo:) x: (+ 0 wide))
 					)
 				)
-				((User alterEgo:) edgeHit: 0 userSpeed:)
+				((User alterEgo:) edgeHit: EDGE_NONE userSpeed:)
 				(HandsOn)
 			)
 			(else
@@ -114,10 +114,10 @@
 			(
 				(= nRoom
 					(switch ((User alterEgo:) edgeHit:)
-						(1 north)
-						(2 east)
-						(3 south)
-						(4 west)
+						(EDGE_TOP north)
+						(EDGE_RIGHT east)
+						(EDGE_BOTTOM south)
+						(EDGE_LEFT west)
 					)
 				)
 				(self setScript: lRS 0 nRoom)

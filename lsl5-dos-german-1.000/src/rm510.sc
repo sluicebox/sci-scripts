@@ -42,7 +42,7 @@
 		(LDoor init: approachVerbs: 3 stopUpd:) ; Do
 		(switch gPrevRoomNum
 			(north
-				(gEgo edgeHit: 0 init: normalize:)
+				(gEgo edgeHit: EDGE_NONE init: normalize:)
 			)
 			(535
 				(HandsOn)
@@ -53,7 +53,7 @@
 					y: (door approachY:)
 					init:
 					normalize:
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 				)
 			)
 			(530
@@ -65,7 +65,7 @@
 					y: (door approachY:)
 					init:
 					normalize:
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 				)
 			)
 			(520

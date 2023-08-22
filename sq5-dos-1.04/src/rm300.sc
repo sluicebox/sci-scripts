@@ -35,7 +35,7 @@
 		(gEgo actions: (ScriptID 350 1)) ; yoFlo
 		(switch gPrevRoomNum
 			(305
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 				(if (IsFlag 11)
 					(treeBranch
 						x: 43
@@ -660,9 +660,9 @@
 						cel: (gEgo lastCel:)
 						setCycle: Beg self
 					)
-					(= global130 6)
+					(= gCliffyState 6)
 				else
-					(= global130 7)
+					(= gCliffyState 7)
 					(gGame handsOn:)
 					(self dispose:)
 				)

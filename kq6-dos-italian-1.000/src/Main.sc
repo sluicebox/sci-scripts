@@ -687,7 +687,7 @@
 		)
 	)
 
-	(method (startRoom param1 &tmp temp0)
+	(method (startRoom roomNum &tmp temp0)
 		(= temp0
 			(if global169
 				(Platform 6)
@@ -696,7 +696,7 @@
 		(if gPMouse
 			(gPMouse stop:)
 		)
-		((ScriptID 919) doit: param1) ; disposeCode
+		((ScriptID 919) doit: roomNum) ; disposeCode
 		(if temp0
 			(Portrait 2 0)
 		)
@@ -727,29 +727,29 @@
 			(SetDebug)
 		)
 		(cond
-			((OneOf param1 200 210 220 230 240 250 260 270 280 290)
+			((OneOf roomNum 200 210 220 230 240 250 260 270 280 290)
 				(ScriptID 10) ; rgCrown
-				((ScriptID param1) setRegions: 10) ; rgCrown
+				((ScriptID roomNum) setRegions: 10) ; rgCrown
 			)
-			((OneOf param1 300 310 320 330 340 350 370 380 390)
+			((OneOf roomNum 300 310 320 330 340 350 370 380 390)
 				(ScriptID 20) ; rSacred
-				(if (OneOf param1 300 320)
+				(if (OneOf roomNum 300 320)
 					(ScriptID 21) ; rCliffs
-					((ScriptID param1) setRegions: 21) ; rCliffs
+					((ScriptID roomNum) setRegions: 21) ; rCliffs
 				)
-				((ScriptID param1) setRegions: 20) ; rSacred
+				((ScriptID roomNum) setRegions: 20) ; rSacred
 			)
 			(
 				(OneOf
-					param1
-					400
+					roomNum
+					400 ; LBRoom
 					405
 					410
 					415
 					420
 					425
 					430
-					435
+					435 ; trapFloor
 					440
 					406
 					407
@@ -758,27 +758,27 @@
 					411
 				)
 				(ScriptID 30) ; rLab
-				((ScriptID param1) setRegions: 30) ; rLab
+				((ScriptID roomNum) setRegions: 30) ; rLab
 			)
-			((OneOf param1 450 460 461 470 475 480 490)
+			((OneOf roomNum 450 460 461 470 475 480 490) ; blackWidowInset
 				(ScriptID 40) ; rWonder
-				((ScriptID param1) setRegions: 40) ; rWonder
+				((ScriptID roomNum) setRegions: 40) ; rWonder
 			)
-			((OneOf param1 500 510 520 530 540)
+			((OneOf roomNum 500 510 520 530 540)
 				(ScriptID 50) ; rBeast
-				((ScriptID param1) setRegions: 50) ; rBeast
+				((ScriptID roomNum) setRegions: 50) ; rBeast
 			)
-			((OneOf param1 550 560 570 580)
+			((OneOf roomNum 550 560 570 580)
 				(ScriptID 60) ; rMist
-				((ScriptID param1) setRegions: 60) ; rMist
+				((ScriptID roomNum) setRegions: 60) ; rMist
 			)
-			((OneOf param1 600 605 615 620 630 640 650 660 670 680 690)
+			((OneOf roomNum 600 605 615 620 630 640 650 660 670 680 690)
 				(ScriptID 70) ; rgDead
-				((ScriptID param1) setRegions: 70) ; rgDead
+				((ScriptID roomNum) setRegions: 70) ; rgDead
 			)
 			(
 				(OneOf
-					param1
+					roomNum
 					700
 					710
 					720
@@ -802,21 +802,21 @@
 					743
 				)
 				(ScriptID 80) ; rgCastle
-				(if (OneOf param1 840 710 720 770 820 780)
+				(if (OneOf roomNum 840 710 720 770 820 780)
 					(ScriptID 81) ; RgBasement
-					((ScriptID param1) setRegions: 81) ; RgBasement
+					((ScriptID roomNum) setRegions: 81) ; RgBasement
 				)
-				((ScriptID param1) setRegions: 80) ; rgCastle
+				((ScriptID roomNum) setRegions: 80) ; rgCastle
 			)
 			(else 0)
 		)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(CueObj client: 0 state: 0)
 		(if (and (gCast contains: gEgo) (not (gEgo looper:)))
 			(gEgo setLoop: EgoGroop)
 		)
 		(if temp0
-			((ScriptID 109 0) doit: param1) ; loadTalker
+			((ScriptID 109 0) doit: roomNum) ; loadTalker
 		)
 	)
 

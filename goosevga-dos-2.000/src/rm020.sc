@@ -53,7 +53,7 @@
 				)
 		)
 		(water init:)
-		(proc0_1)
+		(NormalEgo)
 		(switch gPrevRoomNum
 			(north
 				(gEgo posn: 114 50)

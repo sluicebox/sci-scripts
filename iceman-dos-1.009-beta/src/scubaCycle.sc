@@ -280,19 +280,19 @@
 
 	(method (newRoom)
 		(switch (gEgo edgeHit:)
-			(1
+			(EDGE_TOP
 				(++ local10)
 				(gEgo y: 185)
 			)
-			(3
+			(EDGE_BOTTOM
 				(-- local10)
 				(gEgo y: 0)
 			)
-			(2
+			(EDGE_RIGHT
 				(++ local9)
 				(gEgo x: 0)
 			)
-			(4
+			(EDGE_LEFT
 				(-- local9)
 				(gEgo x: 315)
 			)
@@ -388,19 +388,19 @@
 						(plastic posn: 69 160 show:)
 					)
 					(switch (gEgo edgeHit:)
-						(1
+						(EDGE_TOP
 							(gEgo y: 185)
 						)
-						(3
+						(EDGE_BOTTOM
 							(gEgo y: 70)
 						)
-						(2
+						(EDGE_RIGHT
 							(gEgo x: 97)
 							(if (< (gEgo y:) 70)
 								(gEgo y: 70)
 							)
 						)
-						(4
+						(EDGE_LEFT
 							(gEgo x: 283)
 							(if (< (gEgo y:) 70)
 								(gEgo y: 70)
@@ -452,7 +452,7 @@
 					(air hide:)
 				)
 				(if (and (== local21 1) (< (gEgo y:) 70))
-					(gEgo edgeHit: 1)
+					(gEgo edgeHit: EDGE_TOP)
 				)
 				(if
 					(and
@@ -460,7 +460,7 @@
 						(== local11 local9)
 						(== local12 (+ local10 1))
 					)
-					(gEgo edgeHit: 1)
+					(gEgo edgeHit: EDGE_TOP)
 				)
 			)
 			((not (gEgo script:))

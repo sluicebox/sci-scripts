@@ -67,7 +67,7 @@
 					)
 					(1
 						(gEgo
-							edgeHit: 0
+							edgeHit: EDGE_NONE
 							posn: approachX approachY
 							setHeading: heading
 						)
@@ -187,16 +187,16 @@
 							(entranceTo
 								(switch entranceTo
 									((gCurRoom north:)
-										(gEgo edgeHit: 1)
+										(gEgo edgeHit: EDGE_TOP)
 									)
 									((gCurRoom south:)
-										(gEgo edgeHit: 3)
+										(gEgo edgeHit: EDGE_BOTTOM)
 									)
 									((gCurRoom west:)
-										(gEgo edgeHit: 4)
+										(gEgo edgeHit: EDGE_LEFT)
 									)
 									((gCurRoom east:)
-										(gEgo edgeHit: 2)
+										(gEgo edgeHit: EDGE_RIGHT)
 									)
 								)
 								(gCurRoom newRoom: entranceTo)

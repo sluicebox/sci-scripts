@@ -80,7 +80,7 @@
 			(and
 				(== script exitNest)
 				(< (exitNest state:) 3)
-				(== (gEgo edgeHit:) 3)
+				(== (gEgo edgeHit:) EDGE_BOTTOM)
 			)
 			(= newRoomNumber 0)
 		else

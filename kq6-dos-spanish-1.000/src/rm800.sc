@@ -375,7 +375,7 @@
 				(client setScript: getOnStairs 0 0)
 				(localproc_0 1)
 			)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(client setScript: changeLandings)
 			)
 		)

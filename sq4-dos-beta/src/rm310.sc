@@ -140,7 +140,7 @@
 	(method (doit &tmp temp0)
 		(cond
 			(script)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(HandsOff)
 				(self setScript: exitNorthScript)
 			)
@@ -151,7 +151,7 @@
 			(
 				(and
 					(== script (ScriptID 703 1)) ; butteFallScript
-					(== (gEgo edgeHit:) 3)
+					(== (gEgo edgeHit:) EDGE_BOTTOM)
 					(< (gEgo x:) 160)
 					(> (gEgo y:) 38)
 				)
@@ -160,7 +160,7 @@
 				(self setScript: exitScript)
 			)
 			(script)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(HandsOff)
 				(self setScript: exitScript)
 			)

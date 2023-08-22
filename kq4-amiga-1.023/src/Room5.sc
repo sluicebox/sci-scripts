@@ -49,7 +49,7 @@
 		(= horizon 86)
 		(= gIndoors 0)
 		(Load rsSOUND 65)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(self setRegions: 509) ; sForReg
 		(if (== (gGSound state:) 3)
 			(gGSound play: -15536)

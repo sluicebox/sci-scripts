@@ -102,7 +102,7 @@
 
 	(method (doit &tmp temp0 temp1)
 		(cond
-			((and (== (gEgo edgeHit:) 1) (not (Wat script:)))
+			((and (== (gEgo edgeHit:) EDGE_TOP) (not (Wat script:)))
 				(Wat setScript: (Wat theTimer:))
 			)
 			(global199

@@ -352,7 +352,7 @@
 			)
 			(1
 				(SetFlag 61)
-				(proc0_5 gEgo flame1)
+				(Face gEgo flame1)
 				(= cycles 5)
 			)
 			(2

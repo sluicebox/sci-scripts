@@ -261,10 +261,10 @@
 				)
 				(gEgo view: 3082)
 			)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(gCurRoom newRoom: 470)
 			)
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(gCurRoom setScript: egoExits)
 			)
 			(

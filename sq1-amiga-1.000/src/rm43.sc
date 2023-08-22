@@ -557,7 +557,7 @@
 					init: bartenderBust bartenderEyes bartenderMouth 143 3 0 1 ; "Here is your 5 buckazoids and your free beer."
 				)
 				(gEgo put: 17 43) ; Bar_Coupon
-				(+= global165 5)
+				(+= gBuckazoidCount 5)
 				(self register: (- (bartendScript register:) 8))
 				(self register: (+ (bartendScript register:) 2))
 				(= state 4)
@@ -609,7 +609,7 @@
 						)
 					)
 					(cond
-						((< global165 2)
+						((< gBuckazoidCount 2)
 							(bartenderT say: 143 5 0 1) ; "C'mon, bud. If you haven't got the money, hit the sand."
 							(= global188 0)
 							(if (not (someoneDied client:))
@@ -618,14 +618,14 @@
 							)
 							(= state -1)
 						)
-						((== global165 2)
-							(= global165 0)
+						((== gBuckazoidCount 2)
+							(= gBuckazoidCount 0)
 							(gEgo put: 10) ; buckazoid
 							(self register: (+ (bartendScript register:) 2))
 							(bartenderT say: {"Here ya go."} 0 0 1)
 						)
 						(else
-							(-= global165 2)
+							(-= gBuckazoidCount 2)
 							(self register: (+ (bartendScript register:) 2))
 							(bartenderT say: {"Here ya go."} 0 0 1)
 						)

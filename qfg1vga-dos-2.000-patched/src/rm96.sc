@@ -361,7 +361,7 @@
 						(gEgo setScript: goTo2)
 					)
 				)
-				((and (== (gEgo edgeHit:) 4) (< (gEgo y:) 150))
+				((and (== (gEgo edgeHit:) EDGE_LEFT) (< (gEgo y:) 150))
 					(SetFlag 263)
 					(if local6
 						(= local5 1)

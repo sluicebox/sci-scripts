@@ -420,20 +420,20 @@
 			(self drawPic: picture)
 		)
 		(switch ((User alterEgo:) edgeHit:)
-			(1
+			(EDGE_TOP
 				((User alterEgo:) y: 188)
 			)
-			(4
+			(EDGE_LEFT
 				((User alterEgo:) x: (- 319 ((User alterEgo:) xStep:)))
 			)
-			(3
+			(EDGE_BOTTOM
 				((User alterEgo:) y: (+ horizon ((User alterEgo:) yStep:)))
 			)
-			(2
+			(EDGE_RIGHT
 				((User alterEgo:) x: 1)
 			)
 		)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 	)
 
 	(method (doit)
@@ -441,22 +441,22 @@
 			(script doit:)
 		)
 		(switch ((User alterEgo:) edgeHit:)
-			(1
+			(EDGE_TOP
 				(if north
 					(self newRoom: north)
 				)
 			)
-			(2
+			(EDGE_RIGHT
 				(if east
 					(self newRoom: east)
 				)
 			)
-			(3
+			(EDGE_BOTTOM
 				(if south
 					(self newRoom: south)
 				)
 			)
-			(4
+			(EDGE_LEFT
 				(if west
 					(self newRoom: west)
 				)

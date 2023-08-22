@@ -1130,7 +1130,7 @@
 						(gMessager say: 3 22 13 0) ; "Stupidity is not a crime. Put the gun away."
 					)
 					(else
-						(proc30_0 3 22 14 1 250 972)
+						(EgoDead 3 22 14 1 250 972) ; "Your ethics are deplorable."
 					)
 				)
 			)

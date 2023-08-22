@@ -77,7 +77,7 @@
 		(if (and (not (& gCorpseFlags $0040)) (not (& gElevatorState $0010)) (IsFirstTimeInRoom)) ; Lillian
 			(Print 75 0) ; "What a dark and creepy attic! It helps to have the moonlight shining in through those big windows. Among all the junk, a stack of old newspapers catches your eye."
 		)
-		(if (== (gEgo edgeHit:) 3)
+		(if (== (gEgo edgeHit:) EDGE_BOTTOM)
 			(if (< (gEgo x:) 189)
 				(gCurRoom newRoom: 76)
 			else

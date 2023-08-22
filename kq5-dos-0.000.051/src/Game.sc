@@ -494,20 +494,20 @@
 			(Graph grUPDATE_BOX 0 0 190 320 1)
 		)
 		(switch ((= temp1 (User alterEgo:)) edgeHit:)
-			(1
+			(EDGE_TOP
 				(temp1 y: (- global61 1))
 			)
-			(4
+			(EDGE_LEFT
 				(temp1 x: (- global62 (temp1 xStep:)))
 			)
-			(3
+			(EDGE_BOTTOM
 				(temp1 y: (+ horizon (temp1 yStep:)))
 			)
-			(2
+			(EDGE_RIGHT
 				(temp1 x: (+ global63 1))
 			)
 		)
-		(temp1 edgeHit: 0)
+		(temp1 edgeHit: EDGE_NONE)
 		(if picture
 			(self drawPic: picture)
 		)

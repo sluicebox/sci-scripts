@@ -56,19 +56,19 @@
 		(= local1 0)
 		(= local2 0)
 		(switch (gEgo edgeHit:)
-			(1
+			(EDGE_TOP
 				(= local1 160)
 				(= local2 230)
 			)
-			(3
+			(EDGE_BOTTOM
 				(= local1 145)
 				(= local2 56)
 			)
-			(2
+			(EDGE_RIGHT
 				(= local1 -30)
 				(= local2 110)
 			)
-			(4
+			(EDGE_LEFT
 				(= local1 350)
 				(= local2 110)
 			)
@@ -428,7 +428,7 @@
 				(if (== gNight 0)
 					(++ global287)
 				)
-				(if (== (gEgo edgeHit:) 3)
+				(if (== (gEgo edgeHit:) EDGE_BOTTOM)
 					(= local1 132)
 					(= local2 71)
 				)
@@ -763,7 +763,7 @@
 						yourself:
 					)
 				)
-				(if (== (gEgo edgeHit:) 3)
+				(if (== (gEgo edgeHit:) EDGE_BOTTOM)
 					(= local1 170)
 				)
 			)

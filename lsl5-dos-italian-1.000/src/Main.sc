@@ -1092,21 +1092,21 @@
 		(gEgo moveSpeed:)
 	)
 
-	(method (startRoom n)
+	(method (startRoom roomNum)
 		(LoadMany 0 132 10 40 20)
 		(pointsSound dispose:)
-		((ScriptID 11) doit: n) ; disposeCode
-		(if (OneOf gFfRoom n 1000)
+		((ScriptID 11) doit: roomNum) ; disposeCode
+		(if (OneOf gFfRoom roomNum 1000)
 			(SetFFRoom 0)
 		)
 		(cond
-			((== n 200)
+			((== roomNum 200)
 				(Inv release:)
 				(gEgo setUpInv:)
 			)
 			(
 				(OneOf
-					n
+					roomNum
 					160
 					170
 					180
@@ -1117,7 +1117,7 @@
 					130
 					140
 					150
-					155
+					155 ; passwordTest
 					250
 					258
 					260
@@ -1167,11 +1167,11 @@
 				(EgoIs 24)
 			)
 		)
-		(if (OneOf n 160 170 180 190)
+		(if (OneOf roomNum 160 170 180 190)
 			(ScriptID 40) ; HollywoodRgn
 		)
 		(gTheIconBar enable:)
-		(super startRoom: n)
+		(super startRoom: roomNum)
 		(if gSaveCharge
 			(gChargeTimer setReal: gChargeTimer gSaveCharge)
 		)

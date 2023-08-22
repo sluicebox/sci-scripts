@@ -45,7 +45,7 @@
 		(= west 28)
 		(= horizon 100)
 		(= gIndoors 0)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(if gNight
 			(gGSound play: 608)
 		else

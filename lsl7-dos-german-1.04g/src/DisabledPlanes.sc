@@ -136,7 +136,7 @@
 						gCurRoomNum
 				)
 			)
-			(Dummy (temp0 data:))
+			(DumpClones (temp0 data:))
 			(temp0 dispose:)
 		)
 		(super startRoom: &rest)

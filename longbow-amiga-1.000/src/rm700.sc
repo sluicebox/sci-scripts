@@ -269,7 +269,7 @@
 			)
 			((gEgo script:))
 			((gEgo edgeHit:)
-				(if (== (gEgo edgeHit:) 1)
+				(if (== (gEgo edgeHit:) EDGE_TOP)
 					(gEgo setScript: N)
 				else
 					(gEgo setScript: outtaHere)
@@ -1135,7 +1135,7 @@
 			(0
 				(HandsOff)
 				(switch (gEgo edgeHit:)
-					(3
+					(EDGE_BOTTOM
 						(gEgo
 							setMotion:
 								PolyPath
@@ -1144,7 +1144,7 @@
 								self
 						)
 					)
-					(4
+					(EDGE_LEFT
 						(if local17
 							(client setScript: (ScriptID 704 1)) ; cantGoThere
 						else
@@ -1157,7 +1157,7 @@
 							)
 						)
 					)
-					(2
+					(EDGE_RIGHT
 						(gEgo
 							setMotion:
 								PolyPath

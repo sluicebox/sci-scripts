@@ -44,7 +44,7 @@
 		(= west 31)
 		(= horizon 94)
 		(= gIndoors 0)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(super init:)
 		(wave1
 			isExtra: 1

@@ -139,7 +139,7 @@
 					posn: 164 142
 					setPri: -1
 					illegalBits: 0
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 					init:
 				)
 				(= seconds 2)

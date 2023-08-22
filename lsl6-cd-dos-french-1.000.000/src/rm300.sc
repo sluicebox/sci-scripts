@@ -55,7 +55,7 @@
 			)
 		)
 		(if (not (IsFlag 35))
-			(gEgo normalize: edgeHit: 0 ignoreActors: 0 init:)
+			(gEgo normalize: edgeHit: EDGE_NONE ignoreActors: 0 init:)
 		)
 		(if (not (gGlobalSound2 handle:))
 			(gGlobalSound2 number: 200 play: setLoop: -1)
@@ -66,7 +66,7 @@
 				(if (< (gEgo y:) 106)
 					(gEgo x: 10 y: 109)
 				else
-					(gEgo x: 10 y: (gEgo y:) edgeHit: 0)
+					(gEgo x: 10 y: (gEgo y:) edgeHit: EDGE_NONE)
 				)
 				(gGame handsOn:)
 			)

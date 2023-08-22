@@ -251,7 +251,7 @@
 		(DisposeScript 920)
 		(DisposeScript 51)
 		(gGkMusic2 fade:)
-		(if (and (== (gEgo edgeHit:) 1) (IsFlag 102))
+		(if (and (== (gEgo edgeHit:) EDGE_TOP) (IsFlag 102))
 			(ClearFlag 102)
 		)
 		(mimeTimer2 client: 0 dispose: delete:)

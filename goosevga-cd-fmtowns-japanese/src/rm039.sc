@@ -349,7 +349,7 @@
 			)
 			(((gGoals at: 4) egoReturned:)
 				(event claimed: 1)
-				(proc0_2)
+				(HandsOff)
 				(= local32 1)
 			)
 		)
@@ -516,7 +516,7 @@
 			)
 			(2
 				(DoSound sndMASTER_VOLUME global125)
-				(proc0_3)
+				(HandsOn)
 				(self dispose:)
 			)
 		)

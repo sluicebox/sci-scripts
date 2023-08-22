@@ -420,7 +420,7 @@
 		(switch (= state newState)
 			(0
 				(HandsOff)
-				(if (== (gEgo edgeHit:) 2)
+				(if (== (gEgo edgeHit:) EDGE_RIGHT)
 					(gEgo setMotion: PolyPath 335 (gEgo y:) self)
 				else
 					(gEgo
@@ -434,7 +434,7 @@
 			)
 			(1
 				(HandsOn)
-				(if (== (gEgo edgeHit:) 2)
+				(if (== (gEgo edgeHit:) EDGE_RIGHT)
 					(gCurRoom newRoom: 600)
 				else
 					(gCurRoom newRoom: 580)

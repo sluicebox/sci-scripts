@@ -255,7 +255,7 @@
 	(method (push param1 param2)
 		(if (!= argc 2)
 			(PrintDebug {HogStack needs 2 args, got %d} argc)
-			(Empty self)
+			(SetDebug self)
 		)
 		(modalHogs addToFront: param2)
 		(self setMode:)

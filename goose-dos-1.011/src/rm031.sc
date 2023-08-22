@@ -203,7 +203,7 @@
 		(if (== (gEgo onControl: 1) 2)
 			(gCurRoom newRoom: 32)
 		)
-		(if (== (gEgo edgeHit:) 1)
+		(if (== (gEgo edgeHit:) EDGE_TOP)
 			(cond
 				((< (gEgo x:) 97)
 					(gCurRoom newRoom: 23)

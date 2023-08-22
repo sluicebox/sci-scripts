@@ -89,7 +89,7 @@
 				)
 			)
 			(else
-				(switch global133
+				(switch gGoliathFloorNum
 					(1
 						(= global135 7)
 					)
@@ -142,7 +142,7 @@
 				)
 			)
 		)
-		(switch global133
+		(switch gGoliathFloorNum
 			(1
 				(eView1 cel: 0)
 			)
@@ -186,7 +186,7 @@
 			setPri: 8
 			ignoreActors:
 		)
-		(switch global133
+		(switch gGoliathFloorNum
 			(1
 				(= [local0 0] 6)
 				(= [local0 1] 10)
@@ -411,7 +411,7 @@
 					else
 						(northBlocked cel: 0)
 					)
-					(floorNumber cel: (- global133 1) init:)
+					(floorNumber cel: (- gGoliathFloorNum 1) init:)
 				else
 					(floorNumber dispose:)
 					(if (localproc_0 [local0 global135] 0)
@@ -487,9 +487,9 @@
 			(1
 				(if
 					(or
-						(and (== global133 1) (== global135 13) (not local36))
-						(and (== global133 4) (== global135 21) (not local36))
-						(and (== global133 8) (== global135 7) (not local36))
+						(and (== gGoliathFloorNum 1) (== global135 13) (not local36))
+						(and (== gGoliathFloorNum 4) (== global135 21) (not local36))
+						(and (== gGoliathFloorNum 8) (== global135 7) (not local36))
 					)
 					(= next sPacman)
 					(self dispose:)
@@ -826,7 +826,7 @@
 				(northBlocked setCycle: End self)
 			)
 			(1
-				(switch global133
+				(switch gGoliathFloorNum
 					(1
 						(gCurRoom newRoom: 1035)
 					)
@@ -1270,7 +1270,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(4 ; Do
-				(if (and (== global133 2) (== global135 26))
+				(if (and (== gGoliathFloorNum 2) (== global135 26))
 					(gMessager say: 1 0 0 0) ; "You're directly below the bridge. It probably wouldn't be wise to pop up for a quick visit."
 				else
 					(gCurRoom newRoom: 1010)

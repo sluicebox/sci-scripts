@@ -108,7 +108,7 @@
 
 	(method (doit)
 		(if (and local0 (= local33 (gEgo edgeHit:)))
-			(gEgo edgeHit: 0)
+			(gEgo edgeHit: EDGE_NONE)
 			(gCurRoom setScript: sayBye)
 			(= local0 0)
 		else
@@ -655,7 +655,7 @@
 								)
 							)
 							(local0
-								(if (< global165 99)
+								(if (< gBuckazoidCount 99)
 									(tinyTalker
 										init:
 											tinyBust
@@ -678,7 +678,7 @@
 											1
 									)
 									(SetFlag 19)
-									(-= global165 99)
+									(-= gBuckazoidCount 99)
 								)
 							)
 							(else

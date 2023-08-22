@@ -283,7 +283,7 @@
 		)
 		(if (!= argc 2)
 			(PrintDebug {Got %d args, should be %d\n} argc 2)
-			(Empty self)
+			(SetDebug self)
 		)
 		(if param2
 			(hotList add: param1)

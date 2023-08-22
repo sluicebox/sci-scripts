@@ -70,7 +70,7 @@
 				(gEgo x: (+ (/ (* (- (gEgo x:) 80) 30) 19) 17))
 			)
 			(40
-				(gEgo loop: 0 x: 182 y: 118 edgeHit: 0)
+				(gEgo loop: 0 x: 182 y: 118 edgeHit: EDGE_NONE)
 				(gGlobalMGSound number: 1 priority: 5 loop: -1)
 				(if (== global208 0)
 					(gGlobalMGSound play:)

@@ -105,7 +105,7 @@
 	(method (doVerb theVerb)
 		(if (== theVerb 22) ; handgun
 			(if local0
-				((ScriptID 32 0) doit: 2 22 1 385) ; ShootHandgun
+				((ScriptID 32 0) doit: 2 22 1 385) ; ShootHandgun, "Destroying City property is a crime, and most unbecoming to an officer! You're dismissed!"
 			else
 				(++ local0)
 				(gMessager say: 2 22 0 1) ; "Holster your weapon! There are innocent citizens everywhere!"

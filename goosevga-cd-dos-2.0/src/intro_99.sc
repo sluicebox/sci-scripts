@@ -21,7 +21,7 @@
 	)
 
 	(method (init)
-		(proc0_2)
+		(HandsOff)
 		(SetPort 0 0 190 320 0 0)
 		(gLongSong play:)
 		(Palette palSET_INTENSITY 0 255 0)
@@ -62,7 +62,7 @@
 			(StrAt @global190 0 global170)
 			(StrAt @global190 1 (+ global157 32))
 			(MemorySegment 0 @global190 0)
-			(proc0_3)
+			(HandsOn)
 			(gGame setSpeed: 3)
 			(gCurRoom newRoom: 90) ; intro
 		)

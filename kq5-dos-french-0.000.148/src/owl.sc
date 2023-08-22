@@ -203,7 +203,7 @@
 				else
 					(cedric view: 138)
 				)
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 				(HandsOff)
 				(= register (gCurRoom roomToEdge: gPrevRoomNum))
 				(= temp5

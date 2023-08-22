@@ -759,7 +759,7 @@
 		)
 	)
 
-	(method (startRoom param1 &tmp [temp0 4])
+	(method (startRoom roomNum &tmp [temp0 4])
 		(DisposeScript 5301)
 		(DisposeScript 5302)
 		(DisposeScript 64939)
@@ -768,7 +768,7 @@
 		)
 		(if
 			(OneOf
-				param1
+				roomNum
 				4350
 				4400
 				4050
@@ -786,9 +786,9 @@
 				4700
 			)
 			(ScriptID 4001) ; OogaBooga
-			((ScriptID param1) setRegions: 4001) ; OogaBooga
+			((ScriptID roomNum) setRegions: 4001) ; OogaBooga
 		)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 	)
 
 	(method (masterVolume param1)

@@ -30,7 +30,7 @@
 		(if gNight
 			(= picture 106)
 		)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(super init:)
 		(self setRegions: 508 511) ; Forest_Region, mountReg
 		(switch gPrevRoomNum

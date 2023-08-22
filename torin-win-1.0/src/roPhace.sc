@@ -301,7 +301,7 @@
 					(PrintDebug
 						{attempt to pickup nonexistent tile. 20700.sc djm}
 					)
-					(Empty)
+					(SetDebug)
 				)
 				(goSound1 playSound: 20705)
 				((oTileInvs at: tile) moveTo: -2)

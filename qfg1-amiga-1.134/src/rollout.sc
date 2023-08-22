@@ -58,7 +58,7 @@
 					priority: 2
 					play:
 				)
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 				(gEgo
 					view: 296
 					setLoop: 4

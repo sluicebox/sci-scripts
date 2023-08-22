@@ -23,7 +23,7 @@
 
 	(method (init)
 		(super init:)
-		(proc0_3)
+		(HandsOn)
 		(if (!= gPrevRoomNum 45) ; mapRoom
 			(gEgo loop: 3 posn: 132 130)
 		)
@@ -51,7 +51,7 @@
 			(return)
 		else
 			(event claimed: 1)
-			(proc0_2)
+			(HandsOff)
 			(= global133 1)
 			(= global161 1)
 			(gEgo setAvoider: (Avoid new:) setMotion: MoveTo 130 137)

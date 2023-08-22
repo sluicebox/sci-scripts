@@ -26,7 +26,7 @@
 	)
 
 	(method (init)
-		(proc0_3)
+		(HandsOn)
 		(super init:)
 		(gEgo setMotion: Freeway (= global75 @local0))
 		(if (== gPrevRoomNum 45) ; mapRoom
@@ -256,11 +256,11 @@
 		(if global172
 			(gCurRoom newRoom: 45) ; mapRoom
 		)
-		(proc0_3)
+		(HandsOn)
 	)
 
 	(method (init &tmp temp0 temp1)
-		(proc0_2)
+		(HandsOff)
 		(proc0_7 gEgo jack)
 		(super init: &rest)
 		(= temp0 (gGoals at: 6))

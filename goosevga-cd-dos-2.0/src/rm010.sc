@@ -27,7 +27,7 @@
 		(super init:)
 		(door init:)
 		(gAddToPics add: signPlate doit:)
-		(proc0_1)
+		(NormalEgo)
 		(gEgo setMotion: Freeway (= global75 @local0))
 		(switch gPrevRoomNum
 			(south
@@ -68,7 +68,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(Timer set60ths: self (DoAudio audPLAY 38))
 				(door setCycle: End)
 			)
@@ -85,7 +85,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(gEgo posn: 136 125 init: setMotion: MoveTo 136 127 self)
 				(if global129
 					(global129 setMotion: NewFollow gEgo 5)
@@ -106,7 +106,7 @@
 					(if global129
 						(global129 setMotion: NewFollow gEgo 30)
 					)
-					(proc0_3)
+					(HandsOn)
 				)
 				(self dispose:)
 			)

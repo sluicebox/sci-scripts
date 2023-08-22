@@ -35,7 +35,7 @@
 				(= seconds 3)
 			)
 			(2
-				(if (or (== global127 0) (and (== global127 1) (IsFlag 9)))
+				(if (or (== gGarbagePickupCount 0) (and (== gGarbagePickupCount 1) (IsFlag 9)))
 					(SetScore 166 100)
 					(gCurRoom newRoom: 280)
 				else
@@ -62,7 +62,7 @@
 			(0
 				(gGame handsOff:)
 				(= seconds 2)
-				(= global126 1)
+				(= gSpikeState 1)
 			)
 			(1
 				(proc201_6 self)
@@ -119,7 +119,7 @@
 				(if
 					(and
 						(or (not (IsFlag 56)) (IsFlag 113) (IsFlag 114))
-						(> global126 1)
+						(> gSpikeState 1)
 					)
 					(if (or (IsFlag 113) (IsFlag 114))
 						(ClearFlag 113)

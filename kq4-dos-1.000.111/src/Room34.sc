@@ -48,7 +48,7 @@
 		(= horizon 80)
 		(= gIndoors 0)
 		(= global108 horizon)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(super init:)
 		(self setRegions: 505 501 503 504) ; gfReg, waterReg, beachReg, Gull_Region
 		(wave1

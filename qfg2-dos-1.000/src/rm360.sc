@@ -253,7 +253,7 @@
 					)
 				)
 			)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(self setScript: byeScript)
 			)
 			((and (== gInnState 1) (or (== gTimeODay 4) (== gTimeODay 5)))

@@ -85,7 +85,7 @@
 				(gEgo init: view: 2)
 			)
 		)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(= global105 0)
 		(= global189 1)
 		(= global204 0)

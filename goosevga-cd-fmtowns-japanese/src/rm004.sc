@@ -39,7 +39,7 @@
 		(if (== gPrevRoomNum 37)
 			(door setScript: closeDoorScript)
 		)
-		(proc0_1)
+		(NormalEgo)
 		(switch gPrevRoomNum
 			(37
 				(gEgo posn: 132 66)
@@ -129,7 +129,7 @@
 			)
 			(else
 				(event claimed: 1)
-				(proc0_2)
+				(HandsOff)
 				(self setScript: converse)
 			)
 		)
@@ -166,7 +166,7 @@
 				(gEgo say: (Random 524 573) self)
 			)
 			(1
-				(proc0_3)
+				(HandsOn)
 				(self dispose:)
 			)
 		)
@@ -179,7 +179,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(gEgo setPri: 2 setLoop: 3 setMotion: MoveTo 131 78 self)
 				(= cycles 70)
 			)

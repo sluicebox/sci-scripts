@@ -37,7 +37,7 @@
 			)
 			(else
 				(HandsOn)
-				(gEgo posn: 160 160 edgeHit: 0)
+				(gEgo posn: 160 160 edgeHit: EDGE_NONE)
 			)
 		)
 		(super init:)

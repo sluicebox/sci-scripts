@@ -349,7 +349,7 @@
 					)
 					(else
 						(if (== global150 6)
-							(proc30_0 1 4 54 1 580)
+							(EgoDead 1 4 54 1 580) ; "You have now entered the Criminal Justice Zone! Chester has filed a complaint and you're up for review on sexual harassment charges."
 						else
 							(gMessager say: 1 4 15) ; "Sexual harassment is a violation of Federal and State law, and City and Department policy."
 						)

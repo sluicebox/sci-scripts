@@ -66,8 +66,8 @@
 				(= cycles 1)
 			)
 			(9
-				(= global113 16)
-				(eureka state: 2 curLocation: 3)
+				(= gEurekaLocation 16) ; empty space
+				(eureka state: 2 curLocation: 3) ; ku
 				(self setScript: (ScriptID 201 39) self) ; sBigPlanet
 			)
 			(10
@@ -157,7 +157,7 @@
 			)
 			(26
 				((ScriptID 201 15) talkWidth: 0) ; rogTalker
-				(eureka state: 3 destination: 0 damaged: 1 hits: 1)
+				(eureka state: 3 destination: 0 damaged: 1 hits: 1) ; Nowhere
 				(self setScript: (ScriptID 209 1) self) ; sStopViewPort
 			)
 			(27
@@ -181,7 +181,7 @@
 			(33
 				(Palette palSET_INTENSITY 1 255 100)
 				(eureka setScript: (ScriptID 210 6) 0 120) ; sWD40Timer
-				(++ global127)
+				(++ gGarbagePickupCount)
 				(SetFlag 106)
 				(explosionSound dispose:)
 				(gGame handsOn:)

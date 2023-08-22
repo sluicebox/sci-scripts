@@ -38,7 +38,7 @@
 		)
 		(switch gPrevRoomNum
 			(north
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 				(Delay 5 1 gCurRoom)
 			)
 			(258

@@ -59,10 +59,10 @@
 				(gCurRoom setScript: sEnterFrom500)
 			)
 			(660
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 			)
 			(670
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 			)
 			(680
 				(gGame handsOn:)
@@ -766,7 +766,7 @@
 		(switch theVerb
 			(4 ; Do
 				(= local2 0)
-				(gEgo edgeHit: 1)
+				(gEgo edgeHit: EDGE_TOP)
 				(gCurRoom north: 670)
 				(super doVerb: theVerb)
 			)

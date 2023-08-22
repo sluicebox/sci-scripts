@@ -64,7 +64,7 @@
 				)
 			)
 			(410
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 				(gEgo heading: 180)
 				(gGame handsOn:)
 			)

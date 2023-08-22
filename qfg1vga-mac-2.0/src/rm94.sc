@@ -367,7 +367,7 @@
 			((and local3 (& (gEgo onControl: 1) $0002))
 				(gCurRoom newRoom: 95)
 			)
-			((and (== (gEgo edgeHit:) 3) (not local6))
+			((and (== (gEgo edgeHit:) EDGE_BOTTOM) (not local6))
 				(gCurRoom newRoom: 93)
 			)
 		)

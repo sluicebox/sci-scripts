@@ -1240,10 +1240,10 @@
 		(super newRoom: newRoomNumber)
 	)
 
-	(method (startRoom param1 &tmp [temp0 10] [temp10 10])
+	(method (startRoom roomNum &tmp [temp0 10] [temp10 10])
 		(proc814_30)
 		(gGame setCursor: gWaitCursor 1)
-		(proc896_0 param1)
+		(proc896_0 roomNum)
 		(Message msgGET 999 15 0 1 1 @temp0) ; "%d.scr"
 		(Format @temp10 @temp0 298)
 		(if (FileIO fiEXISTS @temp10)
@@ -1263,22 +1263,22 @@
 			(if
 				(not
 					(OneOf
-						param1
-						299
-						200
-						202
-						203
+						roomNum
+						299 ; speedRoom
+						200 ; intro
+						202 ; selChar
+						203 ; chAlloc
 						204
-						2
-						9
-						32
+						2 ; noticeRoom
+						9 ; notice2Room
+						32 ; wizGame
 						340
 						211
-						171
-						172
-						600
-						602
-						601
+						171 ; rmBear
+						172 ; rmBrig
+						600 ; EndGame
+						602 ; EndGame2
+						601 ; CharSave
 					)
 				)
 				(SetFlag 328)
@@ -1286,7 +1286,7 @@
 		)
 		(if
 			(OneOf
-				param1
+				roomNum
 				11
 				12
 				17
@@ -1327,12 +1327,12 @@
 		)
 		StopWalk
 		Cycle
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(if (not global102)
 			(proc814_31)
 			(gGame setCursor: ((gTheIconBar curIcon:) cursor:) 1)
 		)
-		(statusCode doit: param1)
+		(statusCode doit: roomNum)
 	)
 
 	(method (quitGame)

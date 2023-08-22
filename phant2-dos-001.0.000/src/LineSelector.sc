@@ -92,7 +92,7 @@
 			(+= numLines ((items at: temp0) numLines:))
 			(if (> ((items at: temp0) numLines:) pageSize)
 				(PrintDebug {Item %d larger than page} temp0)
-				(Empty self)
+				(SetDebug self)
 			)
 			(++ temp0)
 		)

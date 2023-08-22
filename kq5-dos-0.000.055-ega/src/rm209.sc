@@ -55,16 +55,16 @@
 			((= temp0 (self edgeToRoom: (gEgo edgeHit:)))
 				(gEgo ignoreControl: 16384)
 				(switch (gEgo edgeHit:)
-					(1
+					(EDGE_TOP
 						(-- global315)
 					)
-					(3
+					(EDGE_BOTTOM
 						(++ global315)
 					)
-					(2
+					(EDGE_RIGHT
 						(-- global314)
 					)
-					(4
+					(EDGE_LEFT
 						(++ global314)
 					)
 				)

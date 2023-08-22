@@ -106,17 +106,17 @@
 	(method (newRoom newRoomNumber)
 		(if (== (gCurRoom script:) 0)
 			(switch (gEgo edgeHit:)
-				(1
+				(EDGE_TOP
 					(if (< (gEgo x:) 159)
 						(= newRoomNumber 60)
 					else
 						(= newRoomNumber 61)
 					)
 				)
-				(2
+				(EDGE_RIGHT
 					(= newRoomNumber 67)
 				)
-				(3
+				(EDGE_BOTTOM
 					(= newRoomNumber 69)
 				)
 			)

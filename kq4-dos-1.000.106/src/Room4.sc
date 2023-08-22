@@ -56,7 +56,7 @@
 			(= picture 104)
 		)
 		(= gIndoors 0)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(super init:)
 		(self setRegions: 508 517) ; Forest_Region, Ogre_s_Region
 		(Load rsVIEW 245)

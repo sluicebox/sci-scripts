@@ -111,16 +111,16 @@
 
 (procedure (localproc_5)
 	(for
-		((= global179 0))
-		(and (< global179 local413) (!= (StrAt @local150 (* global179 36)) 126))
-		((++ global179))
+		((= gSaveSlot 0))
+		(and (< gSaveSlot local413) (!= (StrAt @local150 (* gSaveSlot 36)) 126))
+		((++ gSaveSlot))
 	)
-	(if (< global179 local413)
-		(= global179 [local400 global179])
+	(if (< gSaveSlot local413)
+		(= gSaveSlot [local400 gSaveSlot])
 	else
-		(++ global179)
+		(++ gSaveSlot)
 	)
-	(return global179)
+	(return gSaveSlot)
 )
 
 (instance intro of Rm
@@ -638,10 +638,10 @@
 					(Graph grUPDATE_BOX 137 24 146 294 1)
 					(= cycles 1)
 				else
-					(= global179 [local400 (= global114 [local547 global114])])
-					(if (CheckSaveGame (gGame name:) global179 gVersion)
+					(= gSaveSlot [local400 (= global114 [local547 global114])])
+					(if (CheckSaveGame (gGame name:) gSaveSlot gVersion)
 						(StrAt @global190 2 (+ 1 local412))
-						(StrAt @global190 3 (+ global179 32))
+						(StrAt @global190 3 (+ gSaveSlot 32))
 						(StrAt @global190 4 (StrAt @local150 (* global114 36)))
 						(StrAt
 							@global190

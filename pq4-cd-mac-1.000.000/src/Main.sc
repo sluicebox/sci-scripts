@@ -792,7 +792,7 @@
 		(super doit:)
 	)
 
-	(method (startRoom param1 &tmp temp0)
+	(method (startRoom roomNum &tmp temp0)
 		(Narrator y: 15)
 		(gMouseDownHandler release:)
 		(gKeyDownHandler release:)
@@ -802,13 +802,13 @@
 		)
 		(globalSound0 client: 0)
 		(globalSound1 client: 0)
-		(gRegions addToFront: (= gCurRoom (ScriptID param1)))
+		(gRegions addToFront: (= gCurRoom (ScriptID roomNum)))
 		(Purge (gCurRoom purge:))
 		(gCurRoom init:)
 		(if global105
 			((ScriptID 1) init:) ; debugRoom
 		)
-		(if (and (== gPrevRoomNum 6) (!= param1 3)) ; speedRoom
+		(if (and (== gPrevRoomNum 6) (!= roomNum 3)) ; speedRoom, titleScreen
 			(gTheIconBar show: 0)
 		)
 		(cond

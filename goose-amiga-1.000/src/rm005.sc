@@ -158,7 +158,7 @@
 			((== (gEgo onControl: 1) 2048)
 				(gCurRoom newRoom: 12)
 			)
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(if (== global111 48)
 					(gGlobalMGSound loop: -1)
 					(if (== global208 0)

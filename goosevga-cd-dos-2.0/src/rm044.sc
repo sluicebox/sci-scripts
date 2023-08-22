@@ -25,7 +25,7 @@
 	)
 
 	(method (init)
-		(proc0_3)
+		(HandsOn)
 		(super init:)
 		(gEgo setMotion: Freeway (= global75 @local0))
 		(if (== gPrevRoomNum 45) ; mapRoom
@@ -60,7 +60,7 @@
 			)
 			(((gGoals at: 11) egoReturned:)
 				(event claimed: 1)
-				(proc0_2)
+				(HandsOff)
 				(self setScript: converse6 self 328)
 			)
 		)
@@ -136,7 +136,7 @@
 			(5
 				(proc411_1)
 				(DoSound sndMASTER_VOLUME global125)
-				(proc0_3)
+				(HandsOn)
 				(self dispose:)
 			)
 		)

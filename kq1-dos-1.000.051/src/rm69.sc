@@ -169,13 +169,13 @@
 			(
 				(= temp0
 					(switch ((User alterEgo:) edgeHit:)
-						(1 north)
-						(2 east)
-						(3 south)
-						(4 west)
+						(EDGE_TOP north)
+						(EDGE_RIGHT east)
+						(EDGE_BOTTOM south)
+						(EDGE_LEFT west)
 					)
 				)
-				(if (== (gEgo edgeHit:) 4)
+				(if (== (gEgo edgeHit:) EDGE_LEFT)
 					(ClearFlag 31)
 				)
 				(self newRoom: temp0)

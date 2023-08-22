@@ -810,7 +810,7 @@
 						(= global132 3)
 					)
 					(3
-						(if (>= global142 2)
+						(if (>= gAct 2)
 							(gMessager say: 2 2 3 (Random 1 5))
 						else
 							(gMessager say: 2 2 3 (Random 1 4))

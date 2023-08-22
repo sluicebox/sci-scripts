@@ -712,9 +712,9 @@
 		)
 	)
 
-	(method (startRoom param1 &tmp temp0 temp1)
+	(method (startRoom roomNum &tmp temp0 temp1)
 		(DisposeScript 301)
-		(if (!= param1 13)
+		(if (!= roomNum 13)
 			(= temp1 Avoid)
 		else
 			(DisposeScript 985)
@@ -731,18 +731,18 @@
 		(= global212 2)
 		(if
 			(and
-				(!= param1 1)
-				(!= param1 13)
-				(!= param1 14)
-				(!= param1 22)
-				(!= param1 25)
-				(!= param1 225)
-				(!= param1 27)
-				(!= param1 29)
-				(!= param1 31)
-				(!= param1 33)
-				(!= param1 61)
-				(!= param1 67)
+				(!= roomNum 1)
+				(!= roomNum 13)
+				(!= roomNum 14)
+				(!= roomNum 22)
+				(!= roomNum 25)
+				(!= roomNum 225)
+				(!= roomNum 27)
+				(!= roomNum 29)
+				(!= roomNum 31)
+				(!= roomNum 33)
+				(!= roomNum 61)
+				(!= roomNum 67)
 			)
 			(SetMenu 777 112 0)
 		else
@@ -752,8 +752,8 @@
 		(if (and (< global186 250) global188)
 			(= global188 2)
 		)
-		(super startRoom: param1)
-		(if (== param1 13)
+		(super startRoom: roomNum)
+		(if (== roomNum 13)
 			0
 		else
 			(gCurRoom setLocales: 150)

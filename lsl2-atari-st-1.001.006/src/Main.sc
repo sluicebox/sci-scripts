@@ -950,8 +950,8 @@
 		)
 	)
 
-	(method (startRoom n &tmp newRegion)
-		(super startRoom: n)
+	(method (startRoom roomNum &tmp newRegion)
+		(super startRoom: roomNum)
 	)
 
 	(method (doit &tmp systime)

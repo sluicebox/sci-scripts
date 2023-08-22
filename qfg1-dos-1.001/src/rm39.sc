@@ -121,7 +121,7 @@
 
 	(method (doit)
 		(super doit:)
-		(if (== (gEgo edgeHit:) 1)
+		(if (== (gEgo edgeHit:) EDGE_TOP)
 			(cond
 				((< (gEgo x:) 100)
 					(gEgo x: 1)

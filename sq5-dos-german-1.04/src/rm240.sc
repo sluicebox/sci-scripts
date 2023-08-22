@@ -65,64 +65,64 @@
 (procedure (localproc_0)
 	(cond
 		((== gPrevRoomNum 246)
-			(= global130 8)
+			(= gCliffyState 8)
 		)
 		((!= (eureka puke:) 0)
-			(= global130 0)
+			(= gCliffyState 0)
 		)
-		((and (== global113 4) (not (& global169 $0004)) (>= global127 3))
+		((and (== gEurekaLocation 4) (not (& global169 $0004)) (>= gGarbagePickupCount 3)) ; spacebar
 			(|= global169 $0004)
-			(= global130 9)
+			(= gCliffyState 9)
 		)
-		((and (== global113 8) (<= 700 gPrevRoomNum 799))
+		((and (== gEurekaLocation 8) (<= 700 gPrevRoomNum 799)) ; genetix environdome
 			(SetFlag 103)
-			(= global130 11)
+			(= gCliffyState 11)
 		)
 		(
 			(and
-				(== global113 6)
+				(== gEurekaLocation 6) ; thrakus
 				(!= gPrevRoomNum 225)
-				(== global142 1)
+				(== gAct 1)
 				(not (IsFlag 45))
 			)
-			(= global130 2)
+			(= gCliffyState 2)
 		)
-		((and (== global113 3) (== gPrevRoomNum 325))
+		((and (== gEurekaLocation 3) (== gPrevRoomNum 325)) ; ku
 			(cond
 				((gEgo has: 12) ; Cloaking_Device
 					(SetFlag 80)
 					(if (& global169 $0020)
-						(if (== global170 1)
-							(= global130 4)
+						(if (== gWD40State 1)
+							(= gCliffyState 4)
 						else
-							(= global130 2)
+							(= gCliffyState 2)
 						)
 					else
-						(= global130 10)
+						(= gCliffyState 10)
 					)
 				)
 				((not (& global169 $0020))
-					(= global130 13)
+					(= gCliffyState 13)
 				)
-				((== global170 1)
-					(= global130 4)
+				((== gWD40State 1)
+					(= gCliffyState 4)
 				)
 				(else
-					(= global130 2)
+					(= gCliffyState 2)
 				)
 			)
 		)
 		(
 			(or
-				(== global130 7)
-				(and (== global170 1) (!= global130 0))
-				(and (== global130 6) (== gPrevRoomNum 225))
+				(== gCliffyState 7)
+				(and (== gWD40State 1) (!= gCliffyState 0))
+				(and (== gCliffyState 6) (== gPrevRoomNum 225))
 			)
-			(= global170 1)
-			(= global130 4)
+			(= gWD40State 1)
+			(= gCliffyState 4)
 		)
-		((and (== global113 14) (== (eureka puke:) 0))
-			(= global130 8)
+		((and (== gEurekaLocation 14) (== (eureka puke:) 0)) ; goliath
+			(= gCliffyState 8)
 		)
 	)
 )
@@ -273,7 +273,7 @@
 		(wd40 init:)
 		(spike init:)
 		(proc240_30)
-		(if (== global164 9)
+		(if (== gBeaState 9)
 			(bea init:)
 		)
 		(cond
@@ -308,7 +308,7 @@
 				(switch gPrevRoomNum
 					(300
 						(SetScore 175 175)
-						(if (and (gEgo has: 20) (== global130 4)) ; WD40_Head
+						(if (and (gEgo has: 20) (== gCliffyState 4)) ; WD40_Head
 							(gCurRoom setScript: (ScriptID 243 14)) ; specialBeam
 						else
 							(= local75 2)
@@ -331,8 +331,8 @@
 					)
 				)
 			)
-			((and (== global113 6) (!= gPrevRoomNum 225))
-				(if (and (== global142 1) (not (IsFlag 45)))
+			((and (== gEurekaLocation 6) (!= gPrevRoomNum 225)) ; thrakus
+				(if (and (== gAct 1) (not (IsFlag 45)))
 					(= local74 0)
 					(LoadMany rsVIEW 256 255 257 258 259)
 					(gCurRoom setScript: (ScriptID 243 1)) ; upFromThrakus
@@ -340,11 +340,11 @@
 					(gCurRoom setScript: (ScriptID 243 29)) ; upFromThrakus2
 				)
 			)
-			((and (== global113 8) (!= gPrevRoomNum 225) (not (& global169 $0002)))
+			((and (== gEurekaLocation 8) (!= gPrevRoomNum 225) (not (& global169 $0002))) ; genetix environdome
 				(LoadMany rsVIEW 6 20 0)
 				(self setScript: (ScriptID 243 23)) ; talkAboutBea
 			)
-			((and (== global113 8) (<= 700 gPrevRoomNum 799))
+			((and (== gEurekaLocation 8) (<= 700 gPrevRoomNum 799)) ; genetix environdome
 				(self setScript: (ScriptID 243 31)) ; upFromKU2
 			)
 			((OneOf gPrevRoomNum 300 325 500 400 410 420 730 760 1040)
@@ -406,7 +406,7 @@
 		(super doit: &rest)
 		(cond
 			(script 0)
-			((and (StepOn gEgo 16) (== global126 3))
+			((and (StepOn gEgo 16) (== gSpikeState 3))
 				(self setScript: (ScriptID 243 8)) ; spikeNailsEgo
 			)
 		)
@@ -446,7 +446,7 @@
 			((<= 400 gPrevRoomNum 499)
 				(self setScript: extraLeaves 0 self)
 			)
-			((OneOf global113 4)
+			((OneOf gEurekaLocation 4) ; spacebar
 				(self dispose:)
 			)
 		)
@@ -468,14 +468,14 @@
 			(
 				(and
 					(not (IsFlag 76))
-					(== global113 5)
+					(== gEurekaLocation 5) ; clorox2
 					(== gPrevRoomNum 225)
 					(IsFlag 30)
 				)
 				(super init: &rest)
 				(self cel: (self lastCel:))
 			)
-			((and (not (IsFlag 74)) (== global113 4) (>= global127 3))
+			((and (not (IsFlag 74)) (== gEurekaLocation 4) (>= gGarbagePickupCount 3)) ; spacebar
 				(super init: &rest)
 				(self cel: (self lastCel:))
 			)
@@ -492,13 +492,13 @@
 	)
 
 	(method (cue)
-		(if (== global113 4)
+		(if (== gEurekaLocation 4) ; spacebar
 			(self dispose:)
 		)
 	)
 
 	(method (init)
-		(if (and (not (IsFlag 74)) (== global113 4) (>= global127 3))
+		(if (and (not (IsFlag 74)) (== gEurekaLocation 4) (>= gGarbagePickupCount 3)) ; spacebar
 			(super init: &rest)
 			(self cel: (self lastCel:))
 		)
@@ -517,8 +517,8 @@
 	)
 
 	(method (cue)
-		(if (== global130 9)
-			(= global130 0)
+		(if (== gCliffyState 9)
+			(= gCliffyState 0)
 			(self dispose:)
 		)
 	)
@@ -527,10 +527,10 @@
 		(cond
 			((== theVerb 2) ; Talk
 				(cond
-					((== global130 5)
+					((== gCliffyState 5)
 						(gCurRoom setScript: (ScriptID 243 27)) ; askAboutBea
 					)
-					((== global130 8)
+					((== gCliffyState 8)
 						(gCurRoom setScript: (ScriptID 243 28)) ; goliathConv
 					)
 					((IsFlag 61)
@@ -557,7 +557,7 @@
 		(= local78 53)
 		(localproc_0)
 		(cond
-			((== global130 9)
+			((== gCliffyState 9)
 				(self
 					view: 33
 					loop: 0
@@ -567,20 +567,20 @@
 				)
 				(super init: &rest)
 			)
-			((== global130 11)
+			((== gCliffyState 11)
 				(self view: 33 loop: 0 detailLevel: 0 posn: 122 145 cel: 0)
-				(if (< global164 8)
+				(if (< gBeaState 8)
 					(= local78 5)
 				else
 					(= local78 53)
 				)
 				(super init: &rest)
 			)
-			((== global130 13)
+			((== gCliffyState 13)
 				(self view: 33 loop: 0 detailLevel: 0 posn: 122 145 cel: 0)
 				(super init: &rest)
 			)
-			((== global130 2)
+			((== gCliffyState 2)
 				(super init: &rest)
 				(self
 					view: 191
@@ -593,7 +593,7 @@
 					setScript: bang
 				)
 			)
-			((== global130 4)
+			((== gCliffyState 4)
 				(super init: &rest)
 				(self
 					view: 248
@@ -609,7 +609,7 @@
 				)
 				(= local78 6)
 			)
-			((OneOf global130 5 12 8)
+			((OneOf gCliffyState 5 12 8)
 				(self
 					view: 26
 					loop: 0
@@ -618,14 +618,14 @@
 					setScale: Scaler 116 71 149 123
 					setScript: bang
 				)
-				(if (== global130 5)
+				(if (== gCliffyState 5)
 					(= local78 5)
 				else
 					(= local78 8)
 				)
 				(super init: &rest)
 			)
-			((== global130 10)
+			((== gCliffyState 10)
 				(SetFlag 80)
 				(self
 					view: 21
@@ -679,7 +679,7 @@
 	)
 
 	(method (init param1)
-		(switch global126
+		(switch gSpikeState
 			(7
 				(self
 					view: 245
@@ -719,10 +719,10 @@
 
 	(method (doVerb theVerb)
 		(cond
-			((== global126 2)
+			((== gSpikeState 2)
 				(tank doVerb: theVerb &rest)
 			)
-			((and (== global126 7) (== theVerb 2)) ; Talk
+			((and (== gSpikeState 7) (== theVerb 2)) ; Talk
 				(gCurRoom setScript: (ScriptID 243 27)) ; askAboutBea
 			)
 			(else
@@ -746,19 +746,19 @@
 		(switch theVerb
 			(2 ; Talk
 				(cond
-					((== global113 5)
+					((== gEurekaLocation 5) ; clorox2
 						(gMessager say: noun 2 50 0) ; "What do you make of this situation, WD40?"
 					)
-					((and (== global113 6) (IsFlag 63) (< global164 1))
+					((and (== gEurekaLocation 6) (IsFlag 63) (< gBeaState 1)) ; thrakus
 						(gMessager say: noun 2 47 0) ; "Any ideas what I should do with the ambassador, WD40?"
 					)
-					((and (== global113 8) (not (IsFlag 75)))
+					((and (== gEurekaLocation 8) (not (IsFlag 75))) ; genetix environdome
 						(gMessager say: noun 2 45 0) ; "I recommend a thorough investigation of the installation, Captain."
 					)
-					((and (IsFlag 80) (== global164 8))
+					((and (IsFlag 80) (== gBeaState 8))
 						(gMessager say: noun 2 49 0) ; "Can you give me an analysis on our best course of action now that we have the cloaking device, WD40?"
 					)
-					((and (not (IsFlag 80)) (== global164 8))
+					((and (not (IsFlag 80)) (== gBeaState 8))
 						(gMessager say: noun 2 48 0) ; "Do you have any idea what we can do to stop the Goliath, WD40?"
 					)
 					((== noun 28)
@@ -781,7 +781,7 @@
 
 	(method (init)
 		(cond
-			((== global170 1)
+			((== gWD40State 1)
 				(self
 					view: 248
 					loop: 2
@@ -794,7 +794,7 @@
 				(extraView noun: 19 addToPic:)
 				(super init: &rest)
 			)
-			((and (== global170 2) (== (eureka puke:) 0))
+			((and (== gWD40State 2) (== (eureka puke:) 0))
 				(self
 					view: 265
 					loop: 0
@@ -873,12 +873,12 @@
 		(cond
 			(
 				(and
-					(== global113 14)
+					(== gEurekaLocation 14) ; goliath
 					(> (eureka puke:) 2)
-					(OneOf global164 8 10)
+					(OneOf gBeaState 8 10)
 				)
 				(self view: 24 loop: 1 posn: 203 132 setCycle: Fwd)
-				(= global164 10)
+				(= gBeaState 10)
 				(super init: &rest)
 			)
 			((IsFlag 44)
@@ -898,7 +898,7 @@
 			)
 		)
 		(= noun
-			(switch global164
+			(switch gBeaState
 				(1 7)
 				(8 8)
 				(10 6)
@@ -912,16 +912,16 @@
 		(switch theVerb
 			(1 ; Look
 				(cond
-					((== global164 8)
+					((== gBeaState 8)
 						(gMessager say: 8 1 0 0) ; "Bea is currently spending some quality time recuperating in the cryo."
 					)
 					(local81
 						(gMessager say: 11 1 13 0) ; "You have your hands full right now. Try putting Bea down first."
 					)
-					((== global164 9)
+					((== gBeaState 9)
 						(gMessager say: 11 1 0 0) ; "The cryo chamber is currently unoccupied."
 					)
-					((== global164 10)
+					((== gBeaState 10)
 						(gMessager say: 6 1 0 0) ; "It would seem Bea is anxious to exit the chamber."
 					)
 					((and (IsFlag 45) (== view 259))
@@ -934,22 +934,22 @@
 			)
 			(4 ; Do
 				(cond
-					((== global164 8)
+					((== gBeaState 8)
 						(gMessager say: 8 4 0 0) ; "Bea still needs some time to rest and recuperate from her ordeal."
 					)
-					((== global164 10)
+					((== gBeaState 10)
 						(gCurRoom setScript: (ScriptID 245 1)) ; beaClimbsOut
 					)
-					((== global164 9)
+					((== gBeaState 9)
 						(gMessager say: 7 4 11 0) ; "Opening the chamber would not be prudent at this juncture."
 					)
 					((IsFlag 45)
 						(if (== view 259)
 							(cond
-								((== global130 5)
+								((== gCliffyState 5)
 									(gMessager say: 7 4 8 0) ; "Not now. You better figure out what your 'lil buddy spike is trying to tell you, first."
 								)
-								((OneOf global164 2 1)
+								((OneOf gBeaState 2 1)
 									(gCurRoom setScript: (ScriptID 243 4)) ; openChamber
 								)
 								(else
@@ -1077,7 +1077,7 @@
 	)
 
 	(method (init)
-		(if (== global164 9)
+		(if (== gBeaState 9)
 			(self
 				view: 25
 				loop: 0
@@ -1096,7 +1096,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(4 ; Do
-				(if (== global164 9)
+				(if (== gBeaState 9)
 					(super doVerb: theVerb)
 				else
 					(gCurRoom setScript: (ScriptID 243 5)) ; pickBeaUp
@@ -1184,7 +1184,7 @@
 				(northDoor setCycle: Beg self)
 			)
 			(2
-				(if (== global130 9)
+				(if (== gCliffyState 9)
 					(gSq5Music2 number: 260 loop: 1 play:)
 					(cliffy setCycle: Beg cliffy)
 					(flo setCycle: Beg flo)
@@ -1195,7 +1195,7 @@
 				)
 			)
 			(3
-				(switch global130
+				(switch gCliffyState
 					(5
 						(gMessager say: 5 2 9 0 self) ; "Where'd ya run off to, chief? The ambassador's gettin' kinda ripe--we need to come up with something pronto."
 					)
@@ -1210,10 +1210,10 @@
 			(4
 				(northDoor stopUpd:)
 				(cond
-					((and (gEgo has: 20) (== global130 4)) ; WD40_Head
+					((and (gEgo has: 20) (== gCliffyState 4)) ; WD40_Head
 						(= next (ScriptID 243 14)) ; specialBeam
 					)
-					((and (== global130 8) (not (& global169 $0008)))
+					((and (== gCliffyState 8) (not (& global169 $0008)))
 						(= next (ScriptID 243 28)) ; goliathConv
 					)
 					(else
@@ -1324,7 +1324,7 @@
 							(self setScript: putSpikeBack self)
 						)
 					)
-					((and (== global126 2) (not (IsFlag 56)))
+					((and (== gSpikeState 2) (not (IsFlag 56)))
 						(self setScript: (ScriptID 243 10) self) ; spikeEscapes
 					)
 					(else
@@ -1342,14 +1342,14 @@
 				(if (gAddToPics contains: stain)
 					(ClearFlag 57)
 				)
-				(switch global126
+				(switch gSpikeState
 					(5
-						(= global126 4)
+						(= gSpikeState 4)
 					)
 					(2
 						(if (not (IsFlag 56))
 							(SetFlag 57)
-							(= global126 4)
+							(= gSpikeState 4)
 						)
 					)
 				)
@@ -1487,7 +1487,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(if (and (gEgo has: 8) (not (OneOf global113 4 14))) ; Spike
+				(if (and (gEgo has: 8) (not (OneOf gEurekaLocation 4 14))) ; Spike, spacebar, goliath
 					(self setScript: putSpikeBack self)
 				else
 					(+= state 1)
@@ -1506,23 +1506,23 @@
 			)
 			(3
 				(cond
-					((and (!= global113 14) (IsFlag 84))
+					((and (!= gEurekaLocation 14) (IsFlag 84)) ; goliath
 						(= cycles 1)
 					)
-					((and (== (eureka puke:) 7) (== global126 2) (not register))
+					((and (== (eureka puke:) 7) (== gSpikeState 2) (not register))
 						(self setScript: (ScriptID 245 2) self) ; spikeComesWith
 					)
-					((and (== global113 8) (IsFlag 75) (not register))
+					((and (== gEurekaLocation 8) (IsFlag 75) (not register)) ; genetix environdome
 						(self setScript: (ScriptID 243 24) self) ; cliffyGoesWith
 					)
 					(
 						(and
-							(== global113 3)
+							(== gEurekaLocation 3) ; ku
 							(IsFlag 9)
 							(not (& global169 $0020))
 							(not (IsFlag 80))
 							(not register)
-							(!= global130 0)
+							(!= gCliffyState 0)
 						)
 						(self setScript: (ScriptID 243 24) self) ; cliffyGoesWith
 					)
@@ -1554,7 +1554,7 @@
 					(if (and (gCast contains: cliffy) (== (cliffy view:) 33))
 						(cliffy setCycle: Beg cliffy)
 					)
-					(if (and (== global164 9) (gCast contains: bea))
+					(if (and (== gBeaState 9) (gCast contains: bea))
 						(bea setCycle: Beg)
 					)
 				)
@@ -1563,16 +1563,16 @@
 				(gSq5Music2 stop:)
 				(proc240_30)
 				(cond
-					((and (!= global113 14) (IsFlag 84))
+					((and (!= gEurekaLocation 14) (IsFlag 84)) ; goliath
 						(EgoDead 11) ; "You barely have time to whimper ''Mommy'' before the Eureka's self-destruct mechanism blasts you to microscopic space-hero remnants."
 					)
-					((and (== global113 8) (not (IsFlag 75)))
+					((and (== gEurekaLocation 8) (not (IsFlag 75))) ; genetix environdome
 						(= next (ScriptID 243 13)) ; beamToGenetix
 						(self dispose:)
 					)
 					(
 						(and
-							(== global113 14)
+							(== gEurekaLocation 14) ; goliath
 							(<= 2 (eureka puke:) 6)
 							(not register)
 						)
@@ -1584,7 +1584,7 @@
 							(IsFlag 63)
 							(IsFlag 76)
 							(IsFlag 75)
-							(== global164 1)
+							(== gBeaState 1)
 						)
 						(= next (ScriptID 243 23)) ; talkAboutBea
 						(self dispose:)
@@ -1602,7 +1602,7 @@
 						(if (not (extraLeaves client:))
 							(gGame handsOn:)
 						)
-						(if (and (== global113 14) (== (eureka puke:) 1))
+						(if (and (== gEurekaLocation 14) (== (eureka puke:) 1)) ; goliath
 							(gMessager say: 29 2 55 0) ; "Captain get up here quick! The pukoid blob is attacking the Goliath!"
 						)
 						(self dispose:)
@@ -1616,11 +1616,11 @@
 			)
 			(6
 				(gEgo get: 10) ; Communicator
-				(if (and (!= global113 14) (IsFlag 84))
+				(if (and (!= gEurekaLocation 14) (IsFlag 84)) ; goliath
 					(EgoDead 11) ; "You barely have time to whimper ''Mommy'' before the Eureka's self-destruct mechanism blasts you to microscopic space-hero remnants."
 				else
-					(switch global113
-						(3
+					(switch gEurekaLocation
+						(3 ; ku
 							(if (and (IsFlag 9) (not (IsFlag 89)))
 								(gCurRoom newRoom: 325)
 							else
@@ -1628,8 +1628,8 @@
 								(gCurRoom newRoom: 300)
 							)
 						)
-						(4
-							(if (< global127 3)
+						(4 ; spacebar
+							(if (< gGarbagePickupCount 3)
 								(= next (ScriptID 243 25)) ; bounceEgo
 								(self dispose:)
 							else
@@ -1637,7 +1637,7 @@
 								(gCurRoom newRoom: 500)
 							)
 						)
-						(5
+						(5 ; clorox2
 							(if (not (IsFlag 30))
 								(= next (ScriptID 243 25)) ; bounceEgo
 								(self dispose:)
@@ -1645,24 +1645,24 @@
 								(gCurRoom newRoom: 410)
 							)
 						)
-						(7
+						(7 ; genetix Space Lab
 							(= next (ScriptID 243 25)) ; bounceEgo
 							(self dispose:)
 						)
-						(8
+						(8 ; genetix environdome
 							(if (IsFlag 75)
 								(gCurRoom newRoom: 730)
 							else
 								(gCurRoom newRoom: 760)
 							)
 						)
-						(6
+						(6 ; thrakus
 							(gCurRoom newRoom: 620)
 						)
-						(14
+						(14 ; goliath
 							(cond
 								((== (eureka puke:) 7)
-									(if (== global164 9)
+									(if (== gBeaState 9)
 										(if (IsFlag 59)
 											(gCurRoom newRoom: 1040)
 										else
@@ -1682,7 +1682,7 @@
 							)
 						)
 						(else
-							(if (OneOf global113 9 10 11 12 13)
+							(if (OneOf gEurekaLocation 9 10 11 12 13) ; generic planet 1, genceric planet 2, generic planet 3, generic planet 4, generic planet 5
 								(EgoDead 50) ; "Way to go, Rog... you beamed down to an uninhabitable planet! Next time, pay more attention to your science officer."
 							else
 								(EgoDead 45) ; "Handy transporter safety tip #21: Beaming directly into deep space may cause serious injury or death."
@@ -1754,7 +1754,7 @@
 					(tankTop stopUpd:)
 				)
 				(if (== client gCurRoom)
-					(if (and (== global126 2) (IsFlag 43))
+					(if (and (== gSpikeState 2) (IsFlag 43))
 						(= next (ScriptID 243 11)) ; getSpike
 					else
 						(gGame handsOn:)
@@ -2140,7 +2140,7 @@
 
 	(method (init)
 		(= noun
-			(switch global126
+			(switch gSpikeState
 				(2 25)
 				(else 24)
 			)
@@ -2172,7 +2172,7 @@
 					)
 					(29 ; Antacid
 						(cond
-							((!= global126 2)
+							((!= gSpikeState 2)
 								(gMessager say: 24 29 0 0) ; "That won't have any effect on the empty specimen tank."
 							)
 							((IsFlag 56)
@@ -2232,22 +2232,22 @@
 			(24 ; Order
 				(if local74
 					(cond
-						((== global130 6)
+						((== gCliffyState 6)
 							(gMessager say: 26 24 38 0) ; "Cliffy has the remote unit for the transporter down on the surface. You'll have to wait until he beams up before you can transport."
 						)
 						(
 							(or
-								(and (gCast contains: bea) (!= global164 9))
+								(and (gCast contains: bea) (!= gBeaState 9))
 								local81
 								(and
 									(IsFlag 63)
-									(== global113 6)
-									(not (OneOf global164 1 8))
+									(== gEurekaLocation 6) ; thrakus
+									(not (OneOf gBeaState 1 8))
 								)
 								(and
 									(!= gPrevRoomNum 225)
-									(== global113 8)
-									(!= global164 8)
+									(== gEurekaLocation 8) ; genetix environdome
+									(!= gBeaState 8)
 								)
 							)
 							(gMessager say: noun 24 13 0) ; "Not a good plan, ace. If you don't get Bea on ice quickly, she'll croak."
@@ -2298,7 +2298,7 @@
 				(local81
 					(gMessager say: noun 4 13 0) ; "And just what do you think you're going to do with her in the hall?"
 				)
-				((and (IsFlag 75) (< global164 8))
+				((and (IsFlag 75) (< gBeaState 8))
 					(gMessager say: noun 4 25 0) ; "You better figure out a way to cure Bea. She's getting ''ripe'' rather quickly."
 				)
 				((== (chamber view:) 280)
@@ -2306,23 +2306,23 @@
 				)
 				(
 					(and
-						(== global113 6)
+						(== gEurekaLocation 6) ; thrakus
 						(IsFlag 63)
 						(or
-							(and (IsFlag 45) (not (OneOf global164 1 8)))
+							(and (IsFlag 45) (not (OneOf gBeaState 1 8)))
 							(gCast contains: bea)
 						)
 					)
 					(gMessager say: noun 4 29 0) ; "You still have a few details to take care of--like saving the ambassador."
 				)
-				((and (== global113 4) (not (IsFlag 74)) (>= global127 3))
+				((and (== gEurekaLocation 4) (not (IsFlag 74)) (>= gGarbagePickupCount 3)) ; spacebar
 					(gMessager say: noun 4 30 0) ; "Your crew awaits you on the station. It would be wise of you to join them."
 				)
 				(
 					(and
-						(== global113 4)
+						(== gEurekaLocation 4) ; spacebar
 						(or (not (IsFlag 54)) (IsFlag 49))
-						(>= global127 3)
+						(>= gGarbagePickupCount 3)
 					)
 					(gMessager say: noun 4 30 0) ; "Your crew awaits you on the station. It would be wise of you to join them."
 				)

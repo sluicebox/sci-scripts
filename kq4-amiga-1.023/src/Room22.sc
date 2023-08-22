@@ -55,7 +55,7 @@
 		(= horizon 75)
 		(= gIndoors 0)
 		(gGSound play: 609)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(super init:)
 		(if gNight
 			(gCurRoom overlay: 122)

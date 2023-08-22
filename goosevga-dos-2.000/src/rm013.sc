@@ -30,7 +30,7 @@
 
 	(method (init)
 		(= global345 outCode)
-		(proc0_1)
+		(NormalEgo)
 		(super init:)
 		(gCurRoom
 			addObstacle:
@@ -204,10 +204,10 @@
 			(if (== gScore gPossibleScore)
 				(gCurRoom setScript: (ScriptID 205)) ; walkTo
 			else
-				(proc0_3)
+				(HandsOn)
 			)
 		else
-			(proc0_2)
+			(HandsOff)
 			(= temp0 (gGoals at: 4))
 			(proc0_7 gEgo mary)
 			(proc0_20)

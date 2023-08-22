@@ -459,7 +459,7 @@
 				(if
 					(and
 						(== ((Inv at: 10) owner:) 335) ; bikeCage
-						(== (gEgo edgeHit:) 1)
+						(== (gEgo edgeHit:) EDGE_TOP)
 					)
 					(Narrator init: 18 self) ; "Adam has already fixed the propellers on the fisherman's speedboat. He doesn't need to swim up to the boat again."
 				else
@@ -467,7 +467,7 @@
 				)
 			)
 			(1
-				(if (== (gEgo edgeHit:) 1)
+				(if (== (gEgo edgeHit:) EDGE_TOP)
 					(gEgo setMotion: MoveTo (gEgo x:) 26 self)
 				else
 					(gEgo setMotion: MoveTo 25 (gEgo y:) self)

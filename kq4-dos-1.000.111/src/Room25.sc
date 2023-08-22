@@ -53,7 +53,7 @@
 		(if gNight
 			(= picture 125)
 		)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(super init:)
 		(self setRegions: 504 501 503 506) ; Gull_Region, waterReg, beachReg, meadReg
 		(Load rsVIEW 2)

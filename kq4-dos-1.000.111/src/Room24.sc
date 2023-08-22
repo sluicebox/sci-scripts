@@ -48,7 +48,7 @@
 		(if gNight
 			(= picture 124)
 		)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(= global205 0)
 		(super init:)
 		(self setRegions: 501 512 511 508) ; waterReg, riverReg, mountReg, Forest_Region

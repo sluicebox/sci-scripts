@@ -151,15 +151,15 @@
 	(method (doit)
 		(cond
 			(script 0)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(HandsOff)
 				(self setScript: exitNorth)
 			)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(HandsOff)
 				(self setScript: exitSouth)
 			)
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(if (== (sewer location:) 95)
 					(if (> ((ScriptID 702 2) y:) 120) ; theSlime
 						(sewer status: 8)
@@ -170,7 +170,7 @@
 					)
 				)
 			)
-			((== (gEgo edgeHit:) 4)
+			((== (gEgo edgeHit:) EDGE_LEFT)
 				(if (== (sewer location:) 95)
 					(if (> ((ScriptID 702 2) y:) 120) ; theSlime
 						(sewer status: 8)

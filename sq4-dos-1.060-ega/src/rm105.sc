@@ -109,11 +109,11 @@
 	(method (doit)
 		(cond
 			(script 0)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(HandsOff)
 				(self setScript: exitScript)
 			)
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(if
 					(and
 						(< ((ScriptID 702 2) y:) 85) ; theSlime

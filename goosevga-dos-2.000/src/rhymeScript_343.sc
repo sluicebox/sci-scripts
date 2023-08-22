@@ -23,7 +23,7 @@
 		(switch (= state newState)
 			(0
 				(DoAudio audWPLAY 3)
-				(proc0_2)
+				(HandsOff)
 				(proc0_9)
 				(gLongSong stop:)
 				(gEgo setAvoider: PAvoider setMotion: MoveTo 169 121 self)

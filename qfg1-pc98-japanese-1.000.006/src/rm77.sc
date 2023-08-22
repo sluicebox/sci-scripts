@@ -108,11 +108,11 @@
 
 	(method (doit)
 		(switch (gEgo edgeHit:)
-			(2
+			(EDGE_RIGHT
 				(ClearFlag 202)
 				(gCurRoom newRoom: 78)
 			)
-			(1
+			(EDGE_TOP
 				(ClearFlag 202)
 				(gCurRoom newRoom: 70)
 			)

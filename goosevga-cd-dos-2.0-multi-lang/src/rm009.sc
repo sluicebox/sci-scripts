@@ -35,7 +35,7 @@
 		)
 		(Load rsVIEW 68)
 		(super init:)
-		(proc0_1)
+		(NormalEgo)
 		(gEgo setMotion: Freeway (= global75 @local0))
 		(switch gPrevRoomNum
 			(north
@@ -181,7 +181,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(proc0_20)
 				(muffetHead show:)
 				(muffet cycleSpeed: 0 loop: 5)
@@ -200,7 +200,7 @@
 			)
 			(4
 				(proc411_1)
-				(proc0_3)
+				(HandsOn)
 				(self dispose:)
 				(muffet cycleSpeed: 5 loop: 0 setScript: scaredScript)
 				(muffetHead hide:)

@@ -272,12 +272,12 @@
 			(if gModelessDialog
 				(gModelessDialog dispose:)
 			)
-			(if (>= global179 13)
+			(if (>= gSaveSlot 13)
 				(Print 994 0 #font 0 #button {OK} 1) ; "You can only save 12 games on a disk. You must use another disk."
 			else
-				(if (!= global179 -1)
+				(if (!= gSaveSlot -1)
 					(= num (self setCursor: gWaitCursor 1))
-					(if (not (SaveGame name global179 (+ @global190 4) gVersion))
+					(if (not (SaveGame name gSaveSlot (+ @global190 4) gVersion))
 						(Print 994 1 #font 0 #button {OK} 1) ; "Your save game disk is full. You must use another disk."
 					)
 					(self setCursor: num (HaveMouse))
@@ -293,13 +293,13 @@
 			(if gModelessDialog
 				(gModelessDialog dispose:)
 			)
-			(if (!= global179 0)
+			(if (!= gSaveSlot 0)
 				(gCast eachElementDo: #dispose)
 				(Load rsFONT gSmallFont)
 				(= num (self setCursor: gNormalCursor))
 				(= oldCur (Sound pause: 1))
 				(self setCursor: gWaitCursor 1)
-				(if (CheckSaveGame name global179 gVersion)
+				(if (CheckSaveGame name gSaveSlot gVersion)
 					(for ((= oldPause 100)) oldPause ((-= oldPause 10))
 						(if (== oldPause 40)
 							(Animate (gCast elements:) 1)
@@ -309,7 +309,7 @@
 					)
 					(gCast eachElementDo: #dispose)
 					(gCast eachElementDo: #delete)
-					(RestoreGame name global179 gVersion)
+					(RestoreGame name gSaveSlot gVersion)
 				)
 			else
 				(Print 994 2 #font 0 #button {OK} 1) ; "You don't have a save game to restore from."

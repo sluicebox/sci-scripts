@@ -49,7 +49,7 @@
 				(self setScript: gStdWalkIn)
 			)
 			(south
-				(gEgo posn: (gEgo x:) 139 edgeHit: 0)
+				(gEgo posn: (gEgo x:) 139 edgeHit: EDGE_NONE)
 				(self setScript: gStdWalkIn)
 			)
 			(45 ; mapRoom

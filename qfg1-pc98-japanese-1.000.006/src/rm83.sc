@@ -202,7 +202,7 @@
 				(User canControl: 1)
 			)
 		)
-		(if (and (== (gEgo edgeHit:) 3) (!= (self script:) sLeaving))
+		(if (and (== (gEgo edgeHit:) EDGE_BOTTOM) (!= (self script:) sLeaving))
 			(if (not (IsFlag 73))
 				(self setScript: sLeaving)
 			else

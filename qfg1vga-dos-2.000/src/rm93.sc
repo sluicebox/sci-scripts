@@ -256,11 +256,11 @@
 				)
 				(bush setCycle: End bush)
 			)
-			((or (== (gEgo edgeHit:) 3) (== (gEgo edgeHit:) 2))
+			((or (== (gEgo edgeHit:) EDGE_BOTTOM) (== (gEgo edgeHit:) EDGE_RIGHT))
 				(HandsOff)
 				(gCurRoom setScript: sExitSouth)
 			)
-			((== (gEgo edgeHit:) 4)
+			((== (gEgo edgeHit:) EDGE_LEFT)
 				(if
 					(or
 						(== (minotaur script:) intoCombat)
@@ -274,7 +274,7 @@
 					(gCurRoom setScript: sExitWest)
 				)
 			)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(self setScript: exitNorth)
 			)
 		)

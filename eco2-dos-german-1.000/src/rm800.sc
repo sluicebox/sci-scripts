@@ -1251,7 +1251,7 @@
 				(gGame handsOff:)
 				(gEgo
 					init:
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 					x: 125
 					y: 143
 					normalize: 0

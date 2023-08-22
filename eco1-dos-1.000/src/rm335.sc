@@ -487,7 +487,7 @@
 			)
 			(2
 				(cond
-					((== (gEgo edgeHit:) 4)
+					((== (gEgo edgeHit:) EDGE_LEFT)
 						(gEgo
 							setMotion:
 								MoveTo
@@ -496,7 +496,7 @@
 								self
 						)
 					)
-					((== (gEgo edgeHit:) 2)
+					((== (gEgo edgeHit:) EDGE_RIGHT)
 						(gEgo
 							setMotion:
 								MoveTo
@@ -505,7 +505,7 @@
 								self
 						)
 					)
-					((== (gEgo edgeHit:) 1)
+					((== (gEgo edgeHit:) EDGE_TOP)
 						(gEgo
 							setMotion:
 								MoveTo

@@ -40,7 +40,7 @@
 
 	(method (init)
 		(if (== gPrevRoomNum west)
-			((User alterEgo:) edgeHit: 0)
+			((User alterEgo:) edgeHit: EDGE_NONE)
 		)
 		(super init:)
 		(gEgo init:)

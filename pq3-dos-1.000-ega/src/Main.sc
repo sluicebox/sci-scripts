@@ -816,20 +816,20 @@
 		(return egoMoveSpeed)
 	)
 
-	(method (startRoom param1)
+	(method (startRoom roomNum)
 		(if gPMouse
 			(gPMouse stop:)
 		)
 		(DisposeScript 699)
 		(DisposeScript 941)
 		(cond
-			((OneOf param1 12 13 14 15 16 17 18 19 20 21 22 23 24)
+			((OneOf roomNum 12 13 14 15 16 17 18 19 20 21 22 23 24)
 				(ScriptID 891) ; station
 			)
-			((OneOf param1 1 2 3 5)
+			((OneOf roomNum 1 2 3 5)
 				(ScriptID 127) ; intro
 			)
-			((== param1 25)
+			((== roomNum 25)
 				(ScriptID 130) ; carStuff
 				(if (== gDay 1)
 					(ScriptID 132) ; carDay1Reg
@@ -839,7 +839,7 @@
 			)
 		)
 		(ScriptID 699) ; MISSING EXPORT
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(if (gCast contains: gEgo)
 			(if (not (gEgo looper:))
 				(gEgo setLoop: stopGroop)

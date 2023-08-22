@@ -73,7 +73,7 @@
 			(extra3 init:)
 			(extra4 init:)
 			(extra5 init:)
-			(gEgo init: normalize: posn: 151 234 edgeHit: 0)
+			(gEgo init: normalize: posn: 151 234 edgeHit: EDGE_NONE)
 			(michelle init: setScript: sMichelleEating)
 			(drape4 init: stopUpd:)
 			(self setScript: sEnter)

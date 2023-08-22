@@ -72,7 +72,7 @@
 	)
 
 	(method (doit)
-		(if (== (gEgo edgeHit:) 1)
+		(if (== (gEgo edgeHit:) EDGE_TOP)
 			(cond
 				((< (gEgo x:) 77)
 					(gCurRoom newRoom: 17)
@@ -88,7 +88,7 @@
 				)
 			)
 		)
-		(if (== (gEgo edgeHit:) 3)
+		(if (== (gEgo edgeHit:) EDGE_BOTTOM)
 			(if (< (gEgo x:) 70)
 				(gCurRoom newRoom: 31)
 			else

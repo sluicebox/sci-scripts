@@ -136,7 +136,7 @@
 	)
 
 	(method (doit)
-		(if (== (gEgo edgeHit:) 2)
+		(if (== (gEgo edgeHit:) EDGE_RIGHT)
 			(if (gEgo has: 40) ; mirror
 				(gCurRoom newRoom: 84)
 			else

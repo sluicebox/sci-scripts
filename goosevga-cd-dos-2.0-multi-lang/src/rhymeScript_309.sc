@@ -22,7 +22,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(proc0_9)
 				(Load rsVIEW 68)
 				(Load rsCURSOR 69)
@@ -35,7 +35,7 @@
 				)
 			)
 			(1
-				(proc0_2)
+				(HandsOff)
 				(global129
 					view: 68
 					setCel: 0
@@ -128,7 +128,7 @@
 				(if (== gScore gPossibleScore)
 					(gCurRoom setScript: (ScriptID 205)) ; walkTo
 				else
-					(proc0_3)
+					(HandsOn)
 				)
 				(self dispose:)
 				(= local0 1)

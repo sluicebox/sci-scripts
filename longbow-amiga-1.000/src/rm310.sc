@@ -223,11 +223,11 @@
 	(method (doit)
 		(cond
 			(script)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(HandsOff)
 				(gCurRoom setScript: sExitSouth)
 			)
-			((== (gEgo edgeHit:) 4)
+			((== (gEgo edgeHit:) EDGE_LEFT)
 				(HandsOff)
 				(gCurRoom setScript: sExitWest)
 			)

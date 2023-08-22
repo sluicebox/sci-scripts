@@ -38,7 +38,7 @@
 		(if gNight
 			(= picture 126)
 		)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(self setRegions: 501 512 506 518) ; waterReg, riverReg, meadReg, regUnicorn
 		(switch gPrevRoomNum
 			(2
@@ -168,7 +168,7 @@
 	)
 
 	(method (newRoom newRoomNumber)
-		(if (and (== (gEgo edgeHit:) 1) (> (gEgo x:) 202))
+		(if (and (== (gEgo edgeHit:) EDGE_TOP) (> (gEgo x:) 202))
 			(super newRoom: 21)
 		else
 			(super newRoom: newRoomNumber)

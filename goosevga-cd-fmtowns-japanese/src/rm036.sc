@@ -31,7 +31,7 @@
 		(= global112 plate)
 		(tail init:)
 		(gAddToPics add: spinningWheel doit:)
-		(proc0_1)
+		(NormalEgo)
 		(cond
 			((== gPrevRoomNum 10)
 				(gEgo posn: 128 120)
@@ -320,11 +320,11 @@
 		(if global172
 			(gCurRoom newRoom: 45) ; mapRoom
 		)
-		(proc0_3)
+		(HandsOn)
 	)
 
 	(method (init &tmp temp0)
-		(proc0_2)
+		(HandsOff)
 		(proc0_7 gEgo plate)
 		(super init: &rest)
 		(= temp0 (gGoals at: 8))

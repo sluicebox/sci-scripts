@@ -82,20 +82,20 @@
 					)
 				)
 				(switch ((User alterEgo:) edgeHit:)
-					(1
+					(EDGE_TOP
 						((User alterEgo:) y: 188)
 					)
-					(4
+					(EDGE_LEFT
 						((User alterEgo:) x: (- 319 temp0))
 					)
-					(3
+					(EDGE_BOTTOM
 						((User alterEgo:) y: (+ horizon temp1))
 					)
-					(2
+					(EDGE_RIGHT
 						((User alterEgo:) x: (+ 0 temp0))
 					)
 				)
-				((User alterEgo:) edgeHit: 0)
+				((User alterEgo:) edgeHit: EDGE_NONE)
 			)
 			(else
 				(if (not argc)

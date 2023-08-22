@@ -59,13 +59,13 @@
 
 	(method (doit)
 		(cond
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(if (== global111 58)
 					(gGlobalMGSound fade:)
 				)
 				(gCurRoom newRoom: 15)
 			)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(if (< (gEgo x:) 190)
 					(if (== global111 56)
 						(gGlobalMGSound fade:)

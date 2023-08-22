@@ -49,7 +49,7 @@
 					yourself:
 				)
 		)
-		(proc0_1)
+		(NormalEgo)
 		(switch gPrevRoomNum
 			(north
 				(gEgo posn: 137 43)
@@ -305,7 +305,7 @@
 
 	(method (changeState newState &tmp temp0)
 		(if (not (= state newState))
-			(proc0_2)
+			(HandsOff)
 			(proc0_7 gEgo boy)
 			(= temp0 (gGoals at: 3))
 			(proc0_20)
@@ -351,11 +351,11 @@
 			(if global172
 				(gCurRoom newRoom: 45) ; mapRoom
 			)
-			(proc0_5)
+			(RedrawCast)
 			(if (== gScore gPossibleScore)
 				(gCurRoom setScript: (ScriptID 205)) ; walkTo
 			else
-				(proc0_3)
+				(HandsOn)
 			)
 		)
 	)

@@ -160,7 +160,7 @@
 				)
 				(gCurRoom setScript: sFallDown)
 			)
-			((== (gEgo edgeHit:) 4)
+			((== (gEgo edgeHit:) EDGE_LEFT)
 				(gCurRoom setScript: walkOut)
 			)
 		)

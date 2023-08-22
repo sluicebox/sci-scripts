@@ -31,7 +31,7 @@
 	(method (init)
 		(super init:)
 		(Load rsVIEW 85)
-		(proc0_1)
+		(NormalEgo)
 		(gEgo setMotion: Freeway (= global75 @local0))
 		(tommy init:)
 		(switch gPrevRoomNum
@@ -107,7 +107,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(switch gPrevRoomNum
 					(2
 						(= global131 12)
@@ -121,7 +121,7 @@
 				(gEgo init: setMotion: MoveTo global131 global132 self)
 			)
 			(1
-				(proc0_3)
+				(HandsOn)
 				(gCurRoom setScript: 0)
 			)
 		)
@@ -134,7 +134,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(gEgo
 					setMotion:
 						MoveTo
@@ -144,7 +144,7 @@
 				)
 			)
 			(1
-				(proc0_3)
+				(HandsOn)
 				(gCurRoom newRoom: (if (< (gEgo x:) global140) 2 else 4))
 			)
 		)
@@ -266,11 +266,11 @@
 		(if global172
 			(gCurRoom newRoom: 45) ; mapRoom
 		)
-		(proc0_3)
+		(HandsOn)
 	)
 
 	(method (init &tmp temp0)
-		(proc0_2)
+		(HandsOff)
 		(proc0_7 gEgo tommy)
 		(super init: &rest)
 		(= temp0 (gGoals at: 7))

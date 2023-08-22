@@ -25,7 +25,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(for ((= local54 0)) (<= local54 17) ((++ local54))
 					(if (== gCurRoomNum [local36 local54])
 						(break)

@@ -49,7 +49,7 @@
 		(HandsOn)
 		(switch gPrevRoomNum
 			(north
-				(gEgo posn: 189 86 setHeading: 180 edgeHit: 0)
+				(gEgo posn: 189 86 setHeading: 180 edgeHit: EDGE_NONE)
 				(= askedInToStudio 1)
 				(if (and (not (IsFlag 22)) (not (gEgo has: 5))) ; Michelle_Milken_s_Resume
 					(record init: approachVerbs: 2 3) ; Look, Do
@@ -63,7 +63,7 @@
 				(gEgo
 					posn: 59 139
 					setHeading: 90
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 					setPri: 9
 					setScript: sExitElevator
 				)

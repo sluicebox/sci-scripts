@@ -134,7 +134,7 @@
 	(method (doit)
 		(cond
 			((gEgo script:))
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(gEgo setScript: egoExits)
 			)
 			(local47
@@ -142,7 +142,7 @@
 				(gargoyle setScript: 0)
 				(self setScript: teleportOut)
 			)
-			((and local41 (== (gEgo edgeHit:) 3))
+			((and local41 (== (gEgo edgeHit:) EDGE_BOTTOM))
 				(gCurRoom newRoom: 28)
 			)
 		)

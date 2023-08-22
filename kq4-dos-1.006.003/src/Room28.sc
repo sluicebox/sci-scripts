@@ -41,7 +41,7 @@
 		(= horizon 126)
 		(= gIndoors 0)
 		(HandsOn)
-		(gEgo edgeHit: 0 illegalBits: -32768)
+		(gEgo edgeHit: EDGE_NONE illegalBits: -32768)
 		(super init:)
 		(if gNight
 			(gCurRoom overlay: 128)

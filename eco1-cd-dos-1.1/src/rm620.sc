@@ -100,7 +100,7 @@
 		(Palette palANIMATE 209 222 7)
 		(cond
 			(script 0)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(if (not (IsFlag 124))
 					(self setScript: goingToCetus)
 				else
@@ -114,7 +114,7 @@
 				)
 				(self setScript: intoShip)
 			)
-			((== (gEgo edgeHit:) 4)
+			((== (gEgo edgeHit:) EDGE_LEFT)
 				(self setScript: stayAndHelp)
 			)
 		)

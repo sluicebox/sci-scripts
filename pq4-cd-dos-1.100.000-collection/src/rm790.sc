@@ -616,7 +616,7 @@
 						(gMessager say: 20 22 20) ; "Holster your weapon! Are you insane?"
 						(++ local4)
 					)
-					(((ScriptID 32 0) doit: 20 22 21 1 790) ; ShootHandgun
+					(((ScriptID 32 0) doit: 20 22 21 1 790) ; ShootHandgun, "Deadly use of force was uncalled for. You will spend the rest of your life pondering your decision in a six foot by six foot cell."
 						(return 1)
 					)
 				)
@@ -727,7 +727,7 @@
 						(gMessager say: 4 22 20) ; "Holster your weapon, Carey! Valerie is an innocent child!"
 						(++ local3)
 					)
-					(((ScriptID 32 0) doit: 4 22 22 1 790) ; ShootHandgun
+					(((ScriptID 32 0) doit: 4 22 22 1 790) ; ShootHandgun, "Your deadly aggression slaps you with a life sentence."
 						(return 1)
 					)
 				)

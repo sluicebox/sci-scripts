@@ -356,7 +356,7 @@
 						(gMessager say: 10 22 8) ; "Holster your weapon! She's an innocent child!"
 						(++ local0)
 					)
-					(((ScriptID 32 0) doit: 10 22 9 1 785) ; ShootHandgun
+					(((ScriptID 32 0) doit: 10 22 9 1 785) ; ShootHandgun, "Your deadly aggression slaps you with a life sentence."
 						(val setScript: 0)
 						0
 					)

@@ -206,7 +206,7 @@
 			((& (gEgo onControl: 1) $4000)
 				(self newRoom: 101) ; bedroom
 			)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(self setScript: byeScript)
 			)
 		)

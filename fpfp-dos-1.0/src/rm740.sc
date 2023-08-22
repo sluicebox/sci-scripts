@@ -206,7 +206,7 @@
 				)
 			)
 			(9
-				(proc0_5 gEgo penelope)
+				(Face gEgo penelope)
 				(= cycles 3)
 			)
 			(10

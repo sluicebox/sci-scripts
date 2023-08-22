@@ -180,7 +180,7 @@
 	global110
 	global111
 	global112
-	global113
+	gEurekaLocation
 	global114
 	; 115
 	global115
@@ -196,15 +196,15 @@
 	global124
 	; 125
 	global125
-	global126
-	global127
+	gSpikeState
+	gGarbagePickupCount
 	global128
 	global129
 	; 130
-	global130
+	gCliffyState
 	global131
 	global132
-	global133
+	gGoliathFloorNum
 	global134
 	; 135
 	global135
@@ -215,7 +215,7 @@
 	; 140
 	global140
 	global141
-	global142
+	gAct
 	global143
 	global144
 	; 145
@@ -241,7 +241,7 @@
 	global161 = 1
 	global162
 	global163
-	global164
+	gBeaState
 	; 165
 	global165
 	global166
@@ -249,7 +249,7 @@
 	global168
 	global169
 	; 170
-	global170
+	gWD40State
 	global171
 	global172
 	global173
@@ -762,8 +762,8 @@
 		(super doit: &rest)
 	)
 
-	(method (startRoom param1 &tmp [temp0 4])
-		(if (OneOf param1 100 104 110 106 107)
+	(method (startRoom roomNum &tmp [temp0 4])
+		(if (OneOf roomNum 100 104 110 106 107)
 			(proc0_11)
 		else
 			(sq5StatusLineCode doit:)
@@ -771,11 +771,11 @@
 		(if gPMouse
 			(gPMouse stop:)
 		)
-		((ScriptID 11) doit: param1) ; disposeCode
+		((ScriptID 11) doit: roomNum) ; disposeCode
 		(cond
 			(
 				(OneOf
-					param1
+					roomNum
 					106
 					107
 					200
@@ -803,7 +803,7 @@
 			)
 			(
 				(OneOf
-					param1
+					roomNum
 					110
 					115
 					117
@@ -823,17 +823,17 @@
 				)
 				(ScriptID 109) ; starCon
 			)
-			((OneOf param1 300 305 310 315 320 325 330 335)
+			((OneOf roomNum 300 305 310 315 320 325 330 335)
 				(ScriptID 350) ; kiz
 			)
-			((OneOf param1 500 510 520 530)
+			((OneOf roomNum 500 510 520 530)
 				(ScriptID 505) ; sbar
 			)
-			((OneOf param1 730 740 750 760 770 790)
+			((OneOf roomNum 730 740 750 760 770 790)
 				(ScriptID 31) ; genetix
 			)
 		)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 	)
 
 	(method (handleEvent event &tmp temp0)
@@ -1628,7 +1628,7 @@
 					(24
 						(if (OneOf gCurRoomNum 201 999)
 							(if (== gCurRoomNum 201)
-								(if (== global170 2)
+								(if (== gWD40State 2)
 									(ScriptID 1887 24) ; tkrWD40
 								else
 									(ScriptID 209 16) ; viewPortTalker

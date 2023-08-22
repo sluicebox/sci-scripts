@@ -751,7 +751,7 @@
 		(super doit:)
 	)
 
-	(method (startRoom param1)
+	(method (startRoom roomNum)
 		(LoadMany
 			0
 			985
@@ -803,7 +803,7 @@
 			)
 			(SetDebug)
 		)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(if (and (== gPrevRoomNum 0) (not (IsFlag 40)))
 			(MenuBar draw:)
 			(SL enable:)

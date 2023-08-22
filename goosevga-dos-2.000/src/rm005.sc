@@ -317,8 +317,8 @@
 				(if global172
 					(gCurRoom newRoom: 45) ; mapRoom
 				)
-				(proc0_5)
-				(proc0_3)
+				(RedrawCast)
+				(HandsOn)
 			)
 			((not (and (not (& (gEgo onControl: 0) $4000)) (!= local0 3)))
 				(gSystemWindow speakingObj: gEgo)
@@ -326,7 +326,7 @@
 				(self cue:)
 			)
 			(else
-				(proc0_2)
+				(HandsOff)
 				(proc0_7 gEgo humpty)
 				(= temp0 (gGoals at: 16))
 				(proc0_20)

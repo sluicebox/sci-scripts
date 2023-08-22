@@ -347,7 +347,7 @@
 	(method (startRoom roomNum)
 		(NewRoom gNewRoomNum)
 		(if gDebugOn
-			(Empty roomNum)
+			(SetDebug roomNum)
 		)
 		(= gCurRoom (ScriptID roomNum))
 		(gCurRoom init:)

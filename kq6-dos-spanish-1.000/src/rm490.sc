@@ -84,7 +84,7 @@
 	(method (doit)
 		(cond
 			((gCurRoom script:))
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(gCurRoom walkOffEdge: 1 setScript: walkOut)
 			)
 			((<= (gEgo y:) 128)

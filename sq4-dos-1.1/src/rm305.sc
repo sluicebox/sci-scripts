@@ -142,7 +142,7 @@
 		(if (== newRoomNumber 531)
 			(gLongSong stop:)
 		)
-		(if (and (== script fallScript) (== (gEgo edgeHit:) 3))
+		(if (and (== script fallScript) (== (gEgo edgeHit:) EDGE_BOTTOM))
 			(= newRoomNumber 0)
 		else
 			(super newRoom: newRoomNumber)
@@ -152,7 +152,7 @@
 	(method (doit &tmp temp0)
 		(cond
 			(script 0)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(HandsOff)
 				(self setScript: exitSouthScript)
 			)
@@ -161,7 +161,7 @@
 		(= temp0 (gEgo onControl: 1))
 		(cond
 			(script)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(HandsOff)
 				(self setScript: exitSouthScript)
 			)

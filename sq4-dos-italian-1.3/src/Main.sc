@@ -1032,15 +1032,15 @@
 		(super newRoom: &rest)
 	)
 
-	(method (startRoom param1 &tmp [temp0 15])
+	(method (startRoom roomNum &tmp [temp0 15])
 		(if gPMouse
 			(gPMouse stop:)
 		)
-		((ScriptID 801) doit: param1) ; disposeCode
+		((ScriptID 801) doit: roomNum) ; disposeCode
 		(cond
 			(
 				(OneOf
-					param1
+					roomNum
 					370
 					371
 					375
@@ -1065,28 +1065,28 @@
 				RegionPath
 				(ScriptID 700) ; mall
 				(= global102 700)
-				(if (OneOf param1 405 406 410 411)
+				(if (OneOf roomNum 405 406 410 411)
 					(ScriptID 809) ; MISSING EXPORT
 				)
 			)
-			((OneOf param1 25 30 35 40 45 50 55 60 65)
+			((OneOf roomNum 25 30 35 40 45 50 55 60 65)
 				RegionPath
 				(ScriptID 701) ; street
 				(= global102 701)
-				(if (OneOf param1 25 30 35 40 45 50 55 60 65)
+				(if (OneOf roomNum 25 30 35 40 45 50 55 60 65)
 					(ScriptID 705) ; bunny
 				)
 			)
-			((OneOf param1 75 80 85 90 95 100 105 110 115)
+			((OneOf roomNum 75 80 85 90 95 100 105 110 115)
 				(ScriptID 702) ; sewer
 			)
-			((OneOf param1 609 610 611 612 613 614 615 620)
+			((OneOf roomNum 609 610 611 612 613 614 615 620)
 				(ScriptID 706) ; ulence
 			)
-			((OneOf param1 299 300 305 306 310 315 320 298)
+			((OneOf roomNum 299 300 305 306 310 315 320 298)
 				(ScriptID 703) ; butte
 			)
-			((OneOf param1 150 500 505 510 514 515 520 525 541 544 545)
+			((OneOf roomNum 150 500 505 510 514 515 520 525 541 544 545)
 				RegionPath
 				(ScriptID 704) ; brain
 				(= global102 704)
@@ -1094,19 +1094,19 @@
 			(
 				(and
 					(!= gPrevRoomNum 540)
-					(OneOf param1 1 6 9 10 15 16 17 19 20 21)
+					(OneOf roomNum 1 6 9 10 15 16 17 19 20 21)
 				)
 				(ScriptID 707) ; intro
 			)
-			((OneOf param1 530 535 540)
+			((OneOf roomNum 530 535 540)
 				(ScriptID 709) ; rgLanding
 			)
 		)
 		(if
 			(not
 				(OneOf
-					param1
-					803
+					roomNum
+					803 ; speedTest
 					1
 					6
 					9
@@ -1147,12 +1147,12 @@
 			(ScriptID 808) ; nosePick
 		)
 		(ScriptID 982)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(if (gCast contains: gEgo)
 			(if
 				(and
 					(gEgo normal:)
-					(not (OneOf param1 405 406 410 411))
+					(not (OneOf roomNum 405 406 410 411))
 					(not ((gEgo cycler:) isKindOf: StopWalk))
 				)
 				(gEgo setCycle: StopWalk 4)

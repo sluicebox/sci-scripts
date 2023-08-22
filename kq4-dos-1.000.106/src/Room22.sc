@@ -48,7 +48,7 @@
 		(if gNight
 			(= picture 122)
 		)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(super init:)
 		(self setRegions: 501 512 508) ; waterReg, riverReg, Forest_Region
 		(Load rsVIEW 612)

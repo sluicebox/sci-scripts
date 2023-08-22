@@ -1008,19 +1008,19 @@
 		)
 	)
 
-	(method (startRoom n)
+	(method (startRoom roomNum)
 		(if gPMouse
 			(gPMouse stop:)
 		)
 		(if gModelessDialog
 			(gModelessDialog dispose:)
 		)
-		((ScriptID 801) doit: n) ; disposeCode
+		((ScriptID 801) doit: roomNum) ; disposeCode
 		(UnLoad 130 801)
-		(if (OneOf n 100 300 400 500 600)
+		(if (OneOf roomNum 100 300 400 500 600)
 			(ScriptID 700) ; sidewalk
 		)
-		(if (OneOf n 505 385 355 615 200 250 260)
+		(if (OneOf roomNum 505 385 355 615 200 250 260)
 			(icon0 loop: 15 cursor: 106)
 		else
 			(icon0 loop: 0 cursor: 100)
@@ -1029,7 +1029,7 @@
 			(gGame setCursor: (icon0 cursor:) 1)
 		)
 		(CueObj client: 0 theVerb: 0 theInvItem: 0)
-		(super startRoom: n)
+		(super startRoom: roomNum)
 		(if (gCast contains: gEgo)
 			(if
 				(and

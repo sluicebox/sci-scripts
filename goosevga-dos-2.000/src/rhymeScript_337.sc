@@ -25,7 +25,7 @@
 		(switch (= state newState)
 			(0
 				(DoAudio audWPLAY 2)
-				(proc0_2)
+				(HandsOff)
 				(Load rsVIEW 81)
 				(Load rsSCRIPT 970)
 				(gEgo setAvoider: PAvoider setMotion: MoveTo 133 90 self)
@@ -217,7 +217,7 @@
 				(gEgo show: setMotion: 0 setLoop: -1)
 				((gEgo head:) show:)
 				(if (or global172 (!= gScore (- gPossibleScore 1)))
-					(proc0_3)
+					(HandsOn)
 				else
 					(gEgo setMotion: MoveTo 134 175)
 				)

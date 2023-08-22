@@ -30,7 +30,7 @@
 
 	(method (init &tmp [temp0 50])
 		(super init:)
-		(proc0_1)
+		(NormalEgo)
 		(Load rsVIEW 16)
 		(door init:)
 		(gEgo setMotion: Freeway (= global75 @local0))
@@ -58,7 +58,7 @@
 			)
 			(45 ; mapRoom
 				(gEgo init:)
-				(proc0_3)
+				(HandsOn)
 			)
 			(else
 				(gEgo
@@ -67,7 +67,7 @@
 					posn: 150 124
 					init:
 				)
-				(proc0_3)
+				(HandsOn)
 			)
 		)
 		(if (!= gPrevRoomNum 104) ; night
@@ -188,7 +188,7 @@
 				(= cycles 15)
 			)
 			(6
-				(proc0_6)
+				(clr)
 				(= state -1)
 				(= cycles 1)
 			)
@@ -210,7 +210,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(gEgo setMotion: 0)
 				(door
 					signal: (& (door signal:) $feff)
@@ -239,7 +239,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(gEgo init: posn: 82 110)
 				(= cycles 1)
 			)
@@ -260,7 +260,7 @@
 			)
 			(4
 				(door signal: (| (door signal:) $0101))
-				(proc0_3)
+				(HandsOn)
 				(client setScript: 0)
 			)
 		)

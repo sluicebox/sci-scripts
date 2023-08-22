@@ -75,7 +75,7 @@
 						(gEgo
 							x: (+ (/ (* (- (gEgo x:) 117) 36) 15) 83)
 							y: 184
-							edgeHit: 0
+							edgeHit: EDGE_NONE
 						)
 					)
 				)
@@ -85,7 +85,7 @@
 					loop: 2
 					x: (+ (/ (* (- (gEgo x:) 134) 14) 51) 92)
 					y: 143
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 				)
 				(self setScript: closeDoorScript)
 			)

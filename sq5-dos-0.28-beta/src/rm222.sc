@@ -58,8 +58,8 @@
 				(eurekaShip setMotion: MoveTo 185 72 self)
 			)
 			(3
-				(= global113 15)
-				(eureka curLocation: 15 state: 3)
+				(= gEurekaLocation 15) ; empty space
+				(eureka curLocation: 15 state: 3) ; empty space
 				(gCurRoom newRoom: 201)
 				(self dispose:)
 			)

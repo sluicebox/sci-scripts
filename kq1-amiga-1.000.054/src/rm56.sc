@@ -49,10 +49,10 @@
 			(
 				(= temp0
 					(switch ((User alterEgo:) edgeHit:)
-						(1 north)
-						(2 east)
-						(3 south)
-						(4
+						(EDGE_TOP north)
+						(EDGE_RIGHT east)
+						(EDGE_BOTTOM south)
+						(EDGE_LEFT
 							(if (IsFlag 110) west else 82)
 						)
 					)

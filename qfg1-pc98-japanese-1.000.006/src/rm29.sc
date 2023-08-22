@@ -134,7 +134,7 @@
 				(gargoyle setScript: 0)
 				(self setScript: teleportOut)
 			)
-			((and local0 (== (gEgo edgeHit:) 3))
+			((and local0 (== (gEgo edgeHit:) EDGE_BOTTOM))
 				(gCurRoom newRoom: 28)
 			)
 		)

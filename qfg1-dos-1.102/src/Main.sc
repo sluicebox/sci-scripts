@@ -1562,8 +1562,8 @@
 		(self setCursor: (if global104 gWaitCursor else gNormalCursor) (HaveMouse))
 	)
 
-	(method (startRoom param1 &tmp temp0)
-		(proc896_0 param1)
+	(method (startRoom roomNum &tmp temp0)
+		(proc896_0 roomNum)
 		(DisposeScript 896)
 		(if (u> (MemoryInfo 1) (+ 20 (MemoryInfo 0))) ; FreeHeap, LargestPtr
 			(cond
@@ -1572,7 +1572,7 @@
 						(SetDebug)
 					)
 				)
-				((!= param1 601)
+				((!= roomNum 601) ; CharSave
 					(EgoDead 0 7 80 {Bitten by a program bug}) ; "Suddenly, the deadly poison Fragmentation Bug leaps out of a crack in the system, and injects you with its poison. Alas, there is no cure, save to . . ."
 				)
 			)
@@ -1580,7 +1580,7 @@
 		(gMouseHandler add: gCast gFeatures)
 		StopWalk
 		Cycle
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(= global101 0)
 	)
 

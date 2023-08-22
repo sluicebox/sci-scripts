@@ -133,9 +133,9 @@
 				(super init: 0 wd40Eyes 0 &rest)
 			)
 			(25
-				(switch global142
+				(switch gAct
 					(0
-						(if (and (== global113 5) (IsFlag 93))
+						(if (and (== gEurekaLocation 5) (IsFlag 93)) ; clorox2
 							(gSystemWindow tailY: 100)
 						)
 						(self view: 209 loop: 0 cel: 0)

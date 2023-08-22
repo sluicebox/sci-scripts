@@ -748,13 +748,13 @@
 		)
 	)
 
-	(method (startRoom param1 &tmp [temp0 4])
+	(method (startRoom roomNum &tmp [temp0 4])
 		(if (and oldCurs (== (oldCurs view:) 989))
 			(oldCurs view: 999 loop: 0 cel: 0)
 		)
 		(if
 			(OneOf
-				param1
+				roomNum
 				4350
 				4400
 				4050
@@ -772,9 +772,9 @@
 				4700
 			)
 			(ScriptID 4001) ; OogaBooga
-			((ScriptID param1) setRegions: 4001) ; OogaBooga
+			((ScriptID roomNum) setRegions: 4001) ; OogaBooga
 		)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 	)
 
 	(method (masterVolume param1)

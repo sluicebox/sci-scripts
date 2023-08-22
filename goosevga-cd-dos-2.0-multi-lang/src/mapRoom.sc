@@ -170,7 +170,7 @@
 		(flag2 setCycle: Fwd init:)
 		(flag3 setCycle: Fwd init:)
 		(flag4 setCycle: Fwd init:)
-		(proc0_3)
+		(HandsOn)
 	)
 
 	(method (doit &tmp temp0)

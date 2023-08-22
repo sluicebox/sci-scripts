@@ -206,7 +206,7 @@
 				(if (>= global176 3)
 					(= temp0 (Random 2 global176))
 					(-= global176 temp0)
-					(+= global165 temp0)
+					(+= gBuckazoidCount temp0)
 					(Printf 42 5 temp0) ; "Searching through the pile of dust, you find %u buckazoids!"
 				else
 					(Print 42 6) ; "You find nothing but ashes, which filter through your fingers and blow away."
@@ -346,14 +346,14 @@
 				(mugger setCycle: CT 2 -1 self)
 			)
 			(2
-				(muggerTalker say: (Format @temp0 42 8 global165) 0 0 0 self) ; "%d buckazoids? I guess it's better than nothing. Here, keep five for yourself. I gotta admit you look like you need it."
+				(muggerTalker say: (Format @temp0 42 8 gBuckazoidCount) 0 0 0 self) ; "%d buckazoids? I guess it's better than nothing. Here, keep five for yourself. I gotta admit you look like you need it."
 			)
 			(3
 				(mugger setCycle: End self)
 			)
 			(4
 				(gEgo cel: 5 setCycle: CT 7 1 self)
-				(= global165 5)
+				(= gBuckazoidCount 5)
 			)
 			(5
 				(gEgo setCycle: CT 5 -1 self)

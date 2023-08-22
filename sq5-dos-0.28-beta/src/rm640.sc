@@ -58,7 +58,7 @@
 				(else -32758)
 			)
 		)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(super init:)
 		(NormalEgo 18)
 		(if (== gPrevRoomNum 620)
@@ -85,7 +85,7 @@
 					(and
 						(IsFlag 29)
 						(not (IsFlag 99))
-						(== global142 1)
+						(== gAct 1)
 						(< (gEgo x:) 162)
 					)
 					(gCurRoom setScript: sAmbush)
@@ -328,7 +328,7 @@
 			(0
 				(gGame handsOff:)
 				(SetFlag 91)
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 				(gEgo setMotion: MoveTo 340 108 self)
 			)
 			(1
@@ -537,7 +537,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(= local2 (if (or (== global142 0) (IsFlag 104)) 5 else 6))
+				(= local2 (if (or (== gAct 0) (IsFlag 104)) 5 else 6))
 				(gEgo view: 553 loop: 8 cel: 0 setCycle: End self)
 				(gSq5Music2 number: 603 setLoop: 1 play:)
 			)

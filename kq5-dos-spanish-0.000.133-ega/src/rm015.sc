@@ -273,7 +273,7 @@
 				z: (CelHigh (gEgo view:) (gEgo loop:) (gEgo cel:))
 			)
 			(= local5 0)
-			(gEgo edgeHit: 0)
+			(gEgo edgeHit: EDGE_NONE)
 			(= local0 0)
 		)
 	)

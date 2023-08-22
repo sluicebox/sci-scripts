@@ -760,7 +760,7 @@
 
 (procedure (NormalEgo theLoop theView)
 	(HandsOn)
-	(gEgo edgeHit: 0)
+	(gEgo edgeHit: EDGE_NONE)
 	(switch argc
 		(0
 			(NormalActor
@@ -1088,7 +1088,7 @@
 		)
 	)
 
-	(method (startRoom n)
+	(method (startRoom roomNum)
 		(LoadMany
 			0
 			993
@@ -1116,8 +1116,8 @@
 			(SetDebug)
 		)
 		(gSoundFX stop: number: 1)
-		(super startRoom: n &rest)
-		(if (and (not (OneOf n 530 260 420)) gDebugging)
+		(super startRoom: roomNum &rest)
+		(if (and (not (OneOf roomNum 530 260 420)) gDebugging)
 			(gCurRoom setLocales: 20)
 		)
 		(if (TestFlag 14)
@@ -1126,7 +1126,7 @@
 		(cond
 			(
 				(OneOf
-					n
+					roomNum
 					200
 					203
 					210
@@ -1145,16 +1145,16 @@
 				)
 				(gCurRoom setLocales: 299)
 			)
-			((OneOf n 360 370 375 380 390)
+			((OneOf roomNum 360 370 375 380 390)
 				(gCurRoom setLocales: 399)
 			)
-			((OneOf n 400 410 415 416 420 460)
+			((OneOf roomNum 400 410 415 416 420 460)
 				(gCurRoom setLocales: 499)
 			)
-			((OneOf n 510 520 523 540 550)
+			((OneOf roomNum 510 520 523 540 550)
 				(gCurRoom setLocales: 599)
 			)
-			((OneOf n 610 620 630 640 650)
+			((OneOf roomNum 610 620 630 640 650)
 				(gCurRoom setLocales: 699)
 			)
 		)

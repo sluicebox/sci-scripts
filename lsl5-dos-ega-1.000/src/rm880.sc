@@ -40,11 +40,11 @@
 				(= style 12)
 			)
 			(east
-				(gEgo posn: 250 127 setHeading: 270 edgeHit: 0)
+				(gEgo posn: 250 127 setHeading: 270 edgeHit: EDGE_NONE)
 			)
 			(else
 				(HandsOn)
-				(gEgo posn: 160 160 edgeHit: 0)
+				(gEgo posn: 160 160 edgeHit: EDGE_NONE)
 			)
 		)
 		(super init:)
@@ -95,7 +95,7 @@
 			(script)
 			((StepOn gEgo 2)
 				(if enteredCode
-					(gEgo edgeHit: 1)
+					(gEgo edgeHit: EDGE_TOP)
 					(gCurRoom newRoom: (gCurRoom east:))
 				else
 					(TPrint 880 0) ; "It's locked."

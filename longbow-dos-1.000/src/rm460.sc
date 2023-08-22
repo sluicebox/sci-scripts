@@ -218,7 +218,7 @@
 
 	(method (doit &tmp temp0)
 		(if (and (not script) (& (gEgo onControl: 1) $4000))
-			(gEgo edgeHit: 2)
+			(gEgo edgeHit: EDGE_RIGHT)
 		)
 		(super doit:)
 	)

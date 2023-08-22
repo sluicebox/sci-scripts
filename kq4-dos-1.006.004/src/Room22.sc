@@ -53,7 +53,7 @@
 		(= west 21)
 		(= horizon 75)
 		(= gIndoors 0)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(super init:)
 		(if gNight
 			(gCurRoom overlay: 122)

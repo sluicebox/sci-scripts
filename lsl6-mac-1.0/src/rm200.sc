@@ -151,7 +151,7 @@
 			((gEgo inRect: 309 95 319 138)
 				(self setScript: exitThruRightDoorScr)
 			)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(self setScript: exitSouthScr)
 			)
 		)

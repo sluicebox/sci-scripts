@@ -29,7 +29,7 @@
 	)
 
 	(method (init)
-		(proc0_3)
+		(HandsOn)
 		(super init:)
 		(= global345 outCode)
 		(gCurRoom
@@ -86,14 +86,14 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(gEgo posn: 218 104 setMotion: MoveTo 175 104 self)
 			)
 			(1
 				(if (== global130 44)
 					(gCurRoom setScript: global341)
 				else
-					(proc0_3)
+					(HandsOn)
 					(self dispose:)
 				)
 			)
@@ -163,7 +163,7 @@
 
 	(method (changeState newState &tmp temp0)
 		(if (not (= state newState))
-			(proc0_2)
+			(HandsOff)
 			(proc0_7 gEgo clock)
 			(= temp0 (gGoals at: 1))
 			(proc0_20)
@@ -211,8 +211,8 @@
 			(if global172
 				(gCurRoom newRoom: 45) ; mapRoom
 			)
-			(proc0_5)
-			(proc0_3)
+			(RedrawCast)
+			(HandsOn)
 		)
 	)
 )

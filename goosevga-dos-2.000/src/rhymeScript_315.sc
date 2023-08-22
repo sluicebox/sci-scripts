@@ -27,7 +27,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(DoAudio audWPLAY 6)
 				(gEgo
 					observeControl: 16384

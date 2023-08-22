@@ -197,7 +197,7 @@
 			(0
 				(gGame handsOff:)
 				(ClearFlag 37)
-				(eureka destination: 14)
+				(eureka destination: 14) ; goliath
 				(proc201_26 1)
 				((ScriptID 201 9) ; bigPlanet
 					init:
@@ -209,8 +209,8 @@
 			)
 			(1
 				((ScriptID 201 9) addToPic:) ; bigPlanet
-				(= global113 14)
-				(eureka state: 3 destination: 0 curLocation: 14 timer: 0)
+				(= gEurekaLocation 14) ; goliath
+				(eureka state: 3 destination: 0 curLocation: 14 timer: 0) ; Nowhere, goliath
 				(= cycles 1)
 			)
 			(2

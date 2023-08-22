@@ -1499,8 +1499,8 @@
 		(ShowTheCursor 304 174)
 	)
 
-	(method (startRoom nr &tmp newRegion)
-		(StartARoom nr)
+	(method (startRoom roomNum &tmp newRegion)
+		(StartARoom roomNum)
 		(if (u> (MemoryInfo 1) (+ 20 (MemoryInfo 0))) ; FreeHeap, LargestPtr
 			(cond
 				(gDebugging
@@ -1542,7 +1542,7 @@
 		(gEgo hurtScript: 0)
 		(= gRoomThanks (= gRoomAsks 0))
 		(User verbMessager: verbWords)
-		(super startRoom: nr)
+		(super startRoom: roomNum)
 		(ClearFlag 28)
 		(if gDebugging
 			(gCurRoom setLocales: 99)

@@ -84,7 +84,7 @@
 				else
 					(if
 						(and
-							(>= global165 130)
+							(>= gBuckazoidCount 130)
 							(not (IsFlag 63))
 							(not (IsFlag 67))
 						)
@@ -251,7 +251,7 @@
 			)
 			(5
 				(Print 41 6) ; "You stagger out of the bar after ignoring the bartender's advice. You're so sledged that you don't even notice that you're about to become prime prey for the many parasitic life forms in the area. You quickly pass out due to your low Keronian Ale tolerance."
-				(= global165 0)
+				(= gBuckazoidCount 0)
 				(gEgo put: 9 put: 1 put: 10 put: 2 put: 15) ; Skimmer_Key, keyCard, buckazoid, Gadget, Widget
 				(mugger dispose:)
 				(skimmer dispose:)
@@ -423,7 +423,7 @@
 				)
 			)
 			(3
-				(+= global165 25)
+				(+= gBuckazoidCount 25)
 				(gEgo put: 9) ; Skimmer_Key
 				(SetFlag 15)
 				(ClearFlag 14)
@@ -610,7 +610,7 @@
 				(NormalEgo 0 1 61)
 				(gEgo cycleSpeed: 8 loop: 0 get: 11 get: 18 get: 17 put: 9) ; Jetpack, Droids-B-Us_coupon, Bar_Coupon, Skimmer_Key
 				(SetScore 5 154)
-				(+= global165 30)
+				(+= gBuckazoidCount 30)
 				(SetFlag 15)
 				(ClearFlag 14)
 				(guy

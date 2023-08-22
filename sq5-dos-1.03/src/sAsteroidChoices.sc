@@ -280,7 +280,7 @@
 							(gMessager say: 12 0 34 0 self 202) ; "You pig!"
 						)
 						(3
-							(if (< global127 3)
+							(if (< gGarbagePickupCount 3)
 								(gMessager say: 12 0 35 0 self 202) ; "Of course, Captain."
 							else
 								(gMessager say: 25 0 22 0 self 202) ; "We've finished our mission, Captain. Let's take some R and R at the Space Bar."
@@ -325,7 +325,7 @@
 							(gMessager say: 12 0 29 0 self 202) ; "Don't ask--sir."
 						)
 						(3
-							(if (< global127 3)
+							(if (< gGarbagePickupCount 3)
 								(gMessager say: 12 0 30 0 self 202) ; "Hmph. You should pay more attention to what's going on around you, sir."
 							else
 								(gMessager say: 25 0 22 0 self 202) ; "We've finished our mission, Captain. Let's take some R and R at the Space Bar."
@@ -376,26 +376,26 @@
 									12
 									0
 									44
-									(+ (eureka destination:) 1)
+									(+ (eureka destination:) 1) ; garbage1
 									self
 									202
 							)
 						)
 						(3
 							(cond
-								((< global127 3)
+								((< gGarbagePickupCount 3)
 									(gMessager say: 25 0 21 1 self 202) ; "Our last orders were to proceed to garbage pickups at Gangularis, Peeyu, and Kiz Urazgubi."
 								)
-								((and (not (IsFlag 30)) (== global127 3))
+								((and (not (IsFlag 30)) (== gGarbagePickupCount 3))
 									(gMessager say: 25 0 22 1 self 202) ; "We've finished our mission, Captain. Let's take some R and R at the Space Bar."
 								)
 								((and (IsFlag 30) (not (IsFlag 93)))
 									(gMessager say: 25 0 26 1 self 202) ; "Starcon has ordered us to proceed to Klorox II for an auxiliary garbage pickup, Captain."
 								)
-								((and (== global142 1) (not (IsFlag 94)))
+								((and (== gAct 1) (not (IsFlag 94)))
 									(gMessager say: 25 0 24 0 self 202) ; "Since we don't have any orders, I think we should try to check out the source of the Goliath's last transmission."
 								)
-								((and (>= global142 1) (not (IsFlag 75)))
+								((and (>= gAct 1) (not (IsFlag 75)))
 									(gMessager say: 25 0 25 0 self 202) ; "We don't have any orders to cover this situation, Captain. I think we're on our own."
 								)
 								(else
@@ -404,7 +404,7 @@
 											12
 											0
 											44
-											(+ (eureka destination:) 1)
+											(+ (eureka destination:) 1) ; garbage1
 											self
 											202
 									)
@@ -450,7 +450,7 @@
 							(gMessager say: 12 0 46 0 self 202) ; "I really haven't given it much thought. But I can't say you've given me any reason not to conclude you're a total shmucko."
 						)
 						(3
-							(if (< global127 3)
+							(if (< gGarbagePickupCount 3)
 								(gMessager say: 12 0 60 0 self 202) ; "Our last orders were to proceed to garbage pickups at Gangularis, Peeyu, and Kiz Urazgubi."
 							else
 								(gMessager say: 25 0 22 0 self 202) ; "We've finished our mission, Captain. Let's take some R and R at the Space Bar."

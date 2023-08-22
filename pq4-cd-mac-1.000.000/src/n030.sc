@@ -8,7 +8,7 @@
 (use System)
 
 (public
-	proc30_0 0
+	EgoDead 0
 )
 
 (local
@@ -20,7 +20,7 @@
 	local5
 )
 
-(procedure (proc30_0 param1 param2 param3 param4 param5 param6)
+(procedure (EgoDead param1 param2 param3 param4 param5 param6)
 	(gTheIconBar disable:)
 	(gGame setCursor: gTheCursor 1)
 	(if argc

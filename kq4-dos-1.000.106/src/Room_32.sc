@@ -110,7 +110,7 @@
 	)
 
 	(method (newRoom newRoomNumber)
-		(if (== (gEgo edgeHit:) 1)
+		(if (== (gEgo edgeHit:) EDGE_TOP)
 			(cond
 				((< (gEgo x:) 115)
 					(super newRoom: 39)

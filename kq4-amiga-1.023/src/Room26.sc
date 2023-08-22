@@ -35,7 +35,7 @@
 		(= west 25)
 		(= horizon 75)
 		(= gIndoors 0)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(gGSound play: 609)
 		(super init:)
 		(if gNight
@@ -169,7 +169,7 @@
 	)
 
 	(method (newRoom newRoomNumber)
-		(if (and (== (gEgo edgeHit:) 1) (> (gEgo x:) 202))
+		(if (and (== (gEgo edgeHit:) EDGE_TOP) (> (gEgo x:) 202))
 			(super newRoom: 21)
 		else
 			(super newRoom: newRoomNumber)

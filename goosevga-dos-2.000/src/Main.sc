@@ -21,12 +21,12 @@
 
 (public
 	MG 0
-	proc0_1 1
-	proc0_2 2
-	proc0_3 3
-	proc0_4 4
-	proc0_5 5
-	proc0_6 6
+	NormalEgo 1
+	HandsOff 2
+	HandsOn 3
+	HaveMem 4
+	RedrawCast 5
+	clr 6
 	proc0_7 7
 	proc0_8 8
 	proc0_9 9
@@ -259,7 +259,7 @@
 	global176 = 1
 	global177 = 1
 	global178
-	global179
+	gSaveSlot
 	; 180
 	global180
 	global181
@@ -484,7 +484,7 @@
 	(return param2)
 )
 
-(procedure (proc0_1 param1 param2)
+(procedure (NormalEgo param1 param2)
 	(if (> argc 0)
 		(gEgo loop: param1)
 		(if (> argc 1)
@@ -502,7 +502,7 @@
 	)
 )
 
-(procedure (proc0_2)
+(procedure (HandsOff)
 	(User canControl: 0 canInput: 0)
 	(gEgo setMotion: 0)
 	(= global340 0)
@@ -510,22 +510,22 @@
 	(= global103 1)
 )
 
-(procedure (proc0_3)
+(procedure (HandsOn)
 	(= global104 0)
 	(User canControl: 1 canInput: 1)
 	(= global340 1)
 	(= global103 0)
 )
 
-(procedure (proc0_4 param1) ; UNUSED
+(procedure (HaveMem param1) ; UNUSED
 	(return (> (MemoryInfo 1) param1)) ; FreeHeap
 )
 
-(procedure (proc0_5)
+(procedure (RedrawCast)
 	(Animate (gCast elements:) 0)
 )
 
-(procedure (proc0_6)
+(procedure (clr)
 	(if gModelessDialog
 		(gModelessDialog dispose:)
 	)
@@ -918,7 +918,7 @@
 		(= global170 (StrAt @global190 0))
 		(= gHowFast (- (StrAt @global190 1) 32))
 		(StrAt gCurSaveDir 0 (- (StrAt @global190 2) 1))
-		(= global179 (- (StrAt @global190 3) 32))
+		(= gSaveSlot (- (StrAt @global190 3) 32))
 		(if gLastEvent
 			(gLastEvent dispose:)
 		)
@@ -1123,7 +1123,7 @@
 		(temp5 dispose:)
 	)
 
-	(method (startRoom param1 &tmp temp0 temp1 temp2 [temp3 2])
+	(method (startRoom roomNum &tmp temp0 temp1 temp2 [temp3 2])
 		(LoadMany
 			0
 			985
@@ -1186,7 +1186,7 @@
 		(if gDebugOn
 			(SetDebug)
 		)
-		(gRegions addToFront: (= gCurRoom (ScriptID param1)))
+		(gRegions addToFront: (= gCurRoom (ScriptID roomNum)))
 		(gCurRoom init:)
 		(if global176
 			(return)
@@ -1286,12 +1286,12 @@
 			(if gModelessDialog
 				(gModelessDialog dispose:)
 			)
-			(if (>= global179 13)
+			(if (>= gSaveSlot 13)
 				(proc0_21 0 0 2 30 0 78 {OK} 1)
 			else
-				(if (!= global179 -1)
+				(if (!= gSaveSlot -1)
 					(= temp32 (self setCursor: gWaitCursor 1))
-					(if (not (SaveGame name global179 (+ @global190 4) gVersion))
+					(if (not (SaveGame name gSaveSlot (+ @global190 4) gVersion))
 						(proc0_21 0 0 3 30 0 78 {OK} 1)
 					else
 						(proc0_21 1 0 4 (+ @global190 6))
@@ -1314,8 +1314,8 @@
 			(= temp21 (self setCursor: gNormalCursor))
 			(= temp22 (Sound pause: 1))
 			(self setCursor: gWaitCursor 1)
-			(if (CheckSaveGame name global179 gVersion)
-				(RestoreGame name global179 gVersion)
+			(if (CheckSaveGame name gSaveSlot gVersion)
+				(RestoreGame name gSaveSlot gVersion)
 			)
 			(localproc_0 0)
 		)
@@ -1411,7 +1411,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(gEgo setHeading: 180 self)
 				(= cycles 2)
 			)
@@ -1428,7 +1428,7 @@
 				(= cycles 2)
 			)
 			(4
-				(proc0_3)
+				(HandsOn)
 				(self dispose:)
 			)
 		)
@@ -1818,8 +1818,8 @@
 	(method (changeState newState &tmp temp0 temp1 temp2 temp3 temp4 temp5 temp6)
 		(switch (= state newState)
 			(0
-				(gEgo edgeHit: 0)
-				(proc0_2)
+				(gEgo edgeHit: EDGE_NONE)
+				(HandsOff)
 				(= temp6 (gCurRoom roomToEdge: gPrevRoomNum))
 				(= temp5
 					(CelHigh (gEgo view:) (gEgo loop:) (gEgo cel:))
@@ -1856,7 +1856,7 @@
 				)
 			)
 			(1
-				(proc0_3)
+				(HandsOn)
 				(gEgo ignoreActors: 0)
 				(if
 					(and
@@ -1895,11 +1895,11 @@
 						(-= temp0 20)
 					)
 				)
-				(proc0_2)
+				(HandsOff)
 				(gEgo ignoreActors: 1 setMotion: MoveTo temp0 temp1 self)
 			)
 			(1
-				(proc0_3)
+				(HandsOn)
 				(client setScript: 0)
 				(gCurRoom newRoom: (gCurRoom edgeToRoom: register))
 			)
@@ -1915,7 +1915,7 @@
 		(= temp2 (gEgo y:))
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(= temp1
 					(+
 						temp2
@@ -1955,7 +1955,7 @@
 			)
 			(2
 				(gEgo ignoreActors: 0)
-				(proc0_3)
+				(HandsOn)
 				(if
 					(and
 						(< register 50)
@@ -1979,7 +1979,7 @@
 		(= temp2 (gEgo y:))
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(= temp1
 					(+
 						temp2
@@ -2023,7 +2023,7 @@
 				)
 			)
 			(2
-				(proc0_3)
+				(HandsOn)
 				(if (and (<= 1 global130 47) (!= global130 45))
 					(global129 setPri: -1 setLoop: -1)
 				)

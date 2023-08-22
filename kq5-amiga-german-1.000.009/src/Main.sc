@@ -1286,7 +1286,7 @@
 		)
 	)
 
-	(method (startRoom param1 &tmp temp0)
+	(method (startRoom roomNum &tmp temp0)
 		(gGlobalSound3 stop:)
 		(gGlobalSound4 stop:)
 		(LoadMany
@@ -1329,7 +1329,7 @@
 			)
 			(SetDebug)
 		)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(if (not (IsFlag 33))
 			(signalView init: posn: 1000 1000 setPri: 15 hide:)
 		)

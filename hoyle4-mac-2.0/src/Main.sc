@@ -1400,8 +1400,8 @@
 		(super newRoom: newRoomNumber)
 	)
 
-	(method (startRoom param1)
-		(gRegions addToFront: (= gCurRoom (ScriptID param1)))
+	(method (startRoom roomNum)
+		(gRegions addToFront: (= gCurRoom (ScriptID roomNum)))
 		(gCurRoom init:)
 		(if global538
 			(= global538 0)

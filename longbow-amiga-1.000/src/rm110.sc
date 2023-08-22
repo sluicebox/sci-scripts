@@ -345,7 +345,7 @@
 			(0
 				(HandsOff)
 				(switch (gEgo edgeHit:)
-					(2
+					(EDGE_RIGHT
 						(= global116 1)
 						(gEgo
 							setMotion:
@@ -355,7 +355,7 @@
 								self
 						)
 					)
-					(4
+					(EDGE_LEFT
 						(= global116 0)
 						(gEgo
 							setMotion:
@@ -387,7 +387,7 @@
 						)
 						(gCurRoom newRoom: 160)
 					)
-					((== (gEgo edgeHit:) 4)
+					((== (gEgo edgeHit:) EDGE_LEFT)
 						(switch (Wat travelDir:)
 							(0
 								(Wat enterDir: 2)
@@ -411,7 +411,7 @@
 						(gCurRoom newRoom: 160)
 					)
 					(else
-						(gEgo edgeHit: 2)
+						(gEgo edgeHit: EDGE_RIGHT)
 						(gCurRoom newRoom: 220) ; forest
 					)
 				)

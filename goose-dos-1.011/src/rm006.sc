@@ -86,19 +86,19 @@
 
 	(method (doit)
 		(cond
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(if (== global111 48)
 					(gGlobalMGSound fade:)
 				)
 				(gCurRoom newRoom: 7)
 			)
-			((== (gEgo edgeHit:) 4)
+			((== (gEgo edgeHit:) EDGE_LEFT)
 				(if (not [global675 5])
 					(gGlobalMGSound fade:)
 				)
 				(gCurRoom newRoom: 5)
 			)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(if (< (gEgo x:) 78)
 					(gCurRoom newRoom: 12)
 				else

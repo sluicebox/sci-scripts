@@ -41,7 +41,7 @@
 		)
 		(switch gPrevRoomNum
 			(680
-				(gEgo x: 12 y: (gEgo y:) edgeHit: 0)
+				(gEgo x: 12 y: (gEgo y:) edgeHit: EDGE_NONE)
 				(self style: 16396)
 			)
 			(305
@@ -86,10 +86,10 @@
 	(method (doit)
 		(cond
 			(script)
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(self setScript: exitEastScr)
 			)
-			((== (gEgo edgeHit:) 4)
+			((== (gEgo edgeHit:) EDGE_LEFT)
 				(self setScript: exitWestScr)
 			)
 		)

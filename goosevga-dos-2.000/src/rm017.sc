@@ -51,11 +51,11 @@
 			)
 		)
 		(bfly init: setScript: bflyWait)
-		(proc0_1)
+		(NormalEgo)
 		(switch gPrevRoomNum
 			(north
 				(= global345 outCode1)
-				(gEgo edgeHit: 0 posn: 172 70)
+				(gEgo edgeHit: EDGE_NONE posn: 172 70)
 				(self setScript: gStdWalkIn)
 			)
 			(south

@@ -330,7 +330,7 @@
 	)
 
 	(method (dispose)
-		(Empty)
+		(SetDebug)
 		(if vmdNumbers
 			(vmdNumbers dispose:)
 			(= vmdNumbers 0)

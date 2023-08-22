@@ -75,7 +75,7 @@
 	(method (doit)
 		(cond
 			((gEgo script:))
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(gEgo setScript: backToMap)
 			)
 			((== (gEgo onControl: 1) 2)

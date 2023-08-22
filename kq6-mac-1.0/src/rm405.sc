@@ -72,7 +72,7 @@
 	(method (doit)
 		(cond
 			((gCurRoom script:))
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				((ScriptID 30 0) prevEdgeHit: EDGE_BOTTOM) ; rLab
 				(gCurRoom setScript: walkOut)
 			)

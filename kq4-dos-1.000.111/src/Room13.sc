@@ -61,7 +61,7 @@
 		(if gNight
 			(= picture 113)
 		)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(super init:)
 		(wave1
 			isExtra: 1

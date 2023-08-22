@@ -150,7 +150,7 @@
 
 	(method (findX)
 		(cond
-			((and (< nsLeft 0) (== (gEgo edgeHit:) 4))
+			((and (< nsLeft 0) (== (gEgo edgeHit:) EDGE_LEFT))
 				(if (< (mover x:) 0)
 					(if (< nsRight 0)
 						(= x (- 320 (CelWide view loop cel)))
@@ -168,13 +168,13 @@
 			(
 				(and
 					(< nsLeft 0)
-					(== (gEgo edgeHit:) 2)
+					(== (gEgo edgeHit:) EDGE_RIGHT)
 					(== (mover currentRoom:) gCurRoomNum)
 				)
 				(= x (CelWide view loop cel))
 				(return 0)
 			)
-			((and (> nsRight 320) (== (gEgo edgeHit:) 2))
+			((and (> nsRight 320) (== (gEgo edgeHit:) EDGE_RIGHT))
 				(if (> (mover x:) 320)
 					(if (> nsLeft 320)
 						(= x (CelWide view loop cel))
@@ -192,7 +192,7 @@
 			(
 				(and
 					(> nsRight 320)
-					(== (gEgo edgeHit:) 4)
+					(== (gEgo edgeHit:) EDGE_LEFT)
 					(== (mover currentRoom:) gCurRoomNum)
 				)
 				(= x (- 320 (CelWide view loop cel)))

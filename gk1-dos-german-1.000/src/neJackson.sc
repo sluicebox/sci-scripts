@@ -469,10 +469,10 @@
 
 	(method (dispose)
 		(gGkMusic1 fade: stop:)
-		(if (and (== (gEgo edgeHit:) 1) (IsFlag 102))
+		(if (and (== (gEgo edgeHit:) EDGE_TOP) (IsFlag 102))
 			(ClearFlag 102)
 		)
-		(if (and (== (gEgo edgeHit:) 1) (IsFlag 239))
+		(if (and (== (gEgo edgeHit:) EDGE_TOP) (IsFlag 239))
 			(ClearFlag 239)
 		)
 		(mimeTimer1 client: 0 dispose: delete:)

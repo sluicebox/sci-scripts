@@ -41,7 +41,7 @@
 					normalize: 571
 					posn: 153 143
 					setHeading: 180
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 				)
 				(gTheMusic setVol: gLastVolume)
 				(HandsOn)
@@ -66,7 +66,7 @@
 					normalize: 571
 					posn: 155 153
 					setHeading: 180
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 				)
 				(HandsOn)
 				(self setScript: exitDreamScript)
@@ -97,7 +97,7 @@
 
 	(method (newRoom newRoomNumber)
 		(if (== newRoomNumber 820)
-			(gEgo edgeHit: 1)
+			(gEgo edgeHit: EDGE_TOP)
 		)
 		(if gModelessDialog
 			(gModelessDialog dispose:)
@@ -447,7 +447,7 @@
 					normalize: 571
 					posn: 26 174
 					setHeading: 0
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 				)
 				(= ticks 123)
 			)

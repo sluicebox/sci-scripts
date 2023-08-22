@@ -47,7 +47,7 @@
 				(gGame handsOff:)
 			)
 			(1
-				(= global142 2)
+				(= gAct 2)
 				(= seconds 1)
 			)
 			(2
@@ -205,7 +205,7 @@
 				(staticSound dispose:)
 				(gSq5Music2 number: 233 setLoop: 1 play:)
 				(eureka damaged: 0 hits: 0)
-				(= global130 0)
+				(= gCliffyState 0)
 				(= cycles 1)
 			)
 			(41
@@ -416,7 +416,7 @@
 			(3
 				(= local1 20)
 				(= local0 90)
-				(if (== global113 16)
+				(if (== gEurekaLocation 16) ; empty space
 					(self x: (+ -252 local0) y: (+ 58 local1))
 				else
 					(self x: (+ 48 local0) y: (+ 58 local1))

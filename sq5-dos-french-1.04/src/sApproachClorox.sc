@@ -139,7 +139,7 @@
 				(= seconds 1)
 			)
 			(2
-				(if (== global113 6)
+				(if (== gEurekaLocation 6) ; thrakus
 					(gMessager say: 6 0 6 1 self) ; "Captain, I'm sorry--but the ambassador is dead."
 					(= register 37)
 				else

@@ -197,7 +197,7 @@
 		(cond
 			(
 				(and
-					(== (gEgo edgeHit:) 2)
+					(== (gEgo edgeHit:) EDGE_RIGHT)
 					(>= local0 1)
 					(not (== (gEgo script:) goTo77))
 				)

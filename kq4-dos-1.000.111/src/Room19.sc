@@ -52,7 +52,7 @@
 		(if gNight
 			(= picture 119)
 		)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(super init:)
 		(= local2 (+ (* (- global160 global213) 60) (- global159 global214)))
 		(if (and ((Inv at: 9) ownedBy: 203) (>= local2 3)) ; Lute
@@ -239,7 +239,7 @@
 				((gEgo inRect: 254 104 316 115)
 					(gEgo setPri: 12)
 				)
-				((and (!= global105 10) (== (gEgo edgeHit:) 0))
+				((and (!= global105 10) (== (gEgo edgeHit:) EDGE_NONE))
 					(gEgo setPri: 14)
 				)
 			)

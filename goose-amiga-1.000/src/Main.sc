@@ -1321,7 +1321,7 @@
 		(super newRoom: newRoomNumber)
 	)
 
-	(method (startRoom param1)
+	(method (startRoom roomNum)
 		(LoadMany 0 985 972 971 970 969 964 982 956)
 		(if gDebugOn
 			(SetDebug)
@@ -1334,7 +1334,7 @@
 			)
 			(SetDebug)
 		)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(= global76 0)
 		(Load rsSOUND 2)
 		(LoadMany rsSCRIPT 985 972 971 970 969 964 982 956)

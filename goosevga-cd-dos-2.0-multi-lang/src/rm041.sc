@@ -28,7 +28,7 @@
 	)
 
 	(method (init)
-		(proc0_3)
+		(HandsOn)
 		(super init:)
 		(p0 init:)
 		(clock init:)
@@ -97,11 +97,11 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(gEgo posn: 218 104 setMotion: MoveTo 175 104 self)
 			)
 			(1
-				(proc0_3)
+				(HandsOn)
 				(self dispose:)
 			)
 		)
@@ -174,11 +174,11 @@
 		(if global172
 			(gCurRoom newRoom: 45) ; mapRoom
 		)
-		(proc0_3)
+		(HandsOn)
 	)
 
 	(method (init &tmp temp0)
-		(proc0_2)
+		(HandsOff)
 		(proc0_7 gEgo clock)
 		(super init: &rest)
 		(= temp0 (gGoals at: 1))

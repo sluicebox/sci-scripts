@@ -29,7 +29,7 @@
 		(switch (= state newState)
 			(0
 				(DoAudio audWPLAY 1)
-				(proc0_2)
+				(HandsOff)
 				(gCurRoom
 					addObstacle:
 						(= local3
@@ -152,7 +152,7 @@
 				(if (== gScore gPossibleScore)
 					(gCurRoom setScript: (ScriptID 205)) ; walkTo
 				else
-					(proc0_3)
+					(HandsOn)
 				)
 				(self dispose:)
 				(DisposeScript 969)

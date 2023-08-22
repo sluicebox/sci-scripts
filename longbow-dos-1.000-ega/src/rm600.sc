@@ -322,7 +322,7 @@
 		)
 		(cond
 			((gEgo script:))
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(gEgo setScript: walkDown)
 			)
 			((and (>= (gEgo x:) 310) (== local1 2))
@@ -331,7 +331,7 @@
 			((and (>= (gEgo x:) 319) (< local1 2))
 				(gEgo setScript: headEast)
 			)
-			((== (gEgo edgeHit:) 4)
+			((== (gEgo edgeHit:) EDGE_LEFT)
 				(gEgo setScript: headWest)
 			)
 			(else

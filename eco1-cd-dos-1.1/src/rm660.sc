@@ -239,7 +239,7 @@
 			((& temp0 $0002)
 				(gCurRoom newRoom: 640)
 			)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(self setScript: leaveRoom)
 			)
 			((OneOf (gEgo edgeHit:) 4 2)

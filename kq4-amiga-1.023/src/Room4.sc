@@ -77,7 +77,7 @@
 		(= horizon 75)
 		(= global189 1)
 		(= gIndoors 0)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(if (== (gGSound state:) 3)
 			(gGSound play: -15536)
 		)

@@ -124,10 +124,10 @@
 		(gSFX setVol: (/ (gEgo y:) 2))
 		(cond
 			((gEgo script:) 0)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(gEgo setScript: N)
 			)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(gEgo setScript: S)
 			)
 			((leftSide onMe: gEgo)

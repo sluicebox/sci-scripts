@@ -583,7 +583,7 @@
 		(super newRoom: newRoomNumber)
 	)
 
-	(method (startRoom param1 &tmp temp0 temp1 [temp2 2])
+	(method (startRoom roomNum &tmp temp0 temp1 [temp2 2])
 		((ScriptID 19 0) doit:) ; disposeCode
 		(for ((= temp1 0)) (< temp1 (gTimers size:)) ((++ temp1))
 			(gTimers delete: (= temp0 (gTimers at: 0)))
@@ -592,32 +592,32 @@
 		(if (OneOf gPrevRoomNum 50) ; interrogation
 			(gTheIconBar enable:)
 		)
-		(if (OneOf param1 50)
+		(if (OneOf roomNum 50) ; interrogation
 			(gTheIconBar erase: disable:)
 		)
-		(if (not (OneOf param1 17 94 375 200 205 770 670 216 371))
+		(if (not (OneOf roomNum 17 94 375 200 205 770 670 216 371)) ; speedRoom, titleRoom, deathRm
 			(gGame handsOn:)
 		)
-		(if (OneOf param1 700 710)
+		(if (OneOf roomNum 700 710)
 			(ScriptID 701) ; Africa
-			((ScriptID param1) setRegions: 701) ; Africa
+			((ScriptID roomNum) setRegions: 701) ; Africa
 		)
-		(if (OneOf param1 410 420 430 440 400)
+		(if (OneOf roomNum 410 420 430 440 400) ; neJackson, nwJackson, seJackson, swJackson
 			(ScriptID 401) ; JacksonSq
-			((ScriptID param1) setRegions: 401) ; JacksonSq
+			((ScriptID roomNum) setRegions: 401) ; JacksonSq
 		)
-		(if (OneOf param1 300 310 320 302)
+		(if (OneOf roomNum 300 310 320 302)
 			(ScriptID 301) ; Cemetery
-			((ScriptID param1) setRegions: 301) ; Cemetery
+			((ScriptID roomNum) setRegions: 301) ; Cemetery
 		)
-		(if (OneOf param1 500 510 520 530 540 550)
+		(if (OneOf roomNum 500 510 520 530 540 550)
 			(ScriptID 501) ; Germany
-			((ScriptID param1) setRegions: 501) ; Germany
+			((ScriptID roomNum) setRegions: 501) ; Germany
 		)
 		(gGkSound1 setLoop: 1)
 		(gGkSound2 setLoop: 1)
 		(gGkSound3 setLoop: 1)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(if
 			(and
 				(gEgo cycler:)
@@ -626,7 +626,7 @@
 			)
 			(gEgo setLooper: (ScriptID 18 1)) ; gStopGroop
 		)
-		(if (and (!= param1 17) (!= param1 94) (!= param1 375))
+		(if (and (!= roomNum 17) (!= roomNum 94) (!= roomNum 375)) ; speedRoom, titleRoom
 			(ClearFlag 220)
 		)
 	)

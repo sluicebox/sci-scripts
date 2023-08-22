@@ -48,7 +48,7 @@
 						(gEgo
 							x: (+ (/ (* (- (gEgo x:) 83) 15) 36) 117)
 							y: 124
-							edgeHit: 0
+							edgeHit: EDGE_NONE
 						)
 					)
 				)
@@ -123,7 +123,7 @@
 	)
 
 	(method (doit)
-		(if (== (gEgo edgeHit:) 2)
+		(if (== (gEgo edgeHit:) EDGE_RIGHT)
 			(if (== global111 60)
 				(gGlobalMGSound fade:)
 			)

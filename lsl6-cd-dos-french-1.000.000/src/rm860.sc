@@ -161,7 +161,7 @@
 			((AvoidPath (gEgo x:) (gEgo y:) (deepWater onMeCheck:))
 				(gCurRoom setScript: drownScr)
 			)
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(self setScript: exitEastScr)
 			)
 			((> (gEgo y:) 143)
@@ -1275,7 +1275,7 @@
 				(= seconds 2)
 			)
 			(7
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 				(gCurRoom newRoom: 630)
 			)
 		)

@@ -51,7 +51,7 @@
 		(= horizon 84)
 		(= gIndoors 0)
 		(= global224 0)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(gGSound play: 606)
 		(super init:)
 		(if gNight

@@ -94,7 +94,7 @@
 		(super doit:)
 		(if (gEgo edgeHit:)
 			(= local269 (gEgo edgeHit:))
-			(gEgo edgeHit: 0 illegalBits: 0)
+			(gEgo edgeHit: EDGE_NONE illegalBits: 0)
 			(gGame setCursor: gWaitCursor 1)
 			(HandsOff)
 			(++ local268)

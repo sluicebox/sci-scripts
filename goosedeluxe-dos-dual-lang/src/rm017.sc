@@ -45,7 +45,7 @@
 			(north
 				(= global305 outCode1)
 				(self edgeS: 255)
-				(gEgo edgeHit: 0 posn: 172 70)
+				(gEgo edgeHit: EDGE_NONE posn: 172 70)
 				(self setScript: gStdWalkIn)
 			)
 			(south

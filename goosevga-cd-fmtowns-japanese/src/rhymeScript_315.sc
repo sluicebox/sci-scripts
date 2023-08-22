@@ -26,7 +26,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(gEgo
 					observeControl: 16384
 					setMotion: MoveTo (global109 x:) (+ (global109 y:) 20) self
@@ -144,7 +144,7 @@
 				(if (== gScore gPossibleScore)
 					(gCurRoom setScript: (ScriptID 205)) ; walkTo
 				else
-					(proc0_3)
+					(HandsOn)
 				)
 				(self dispose:)
 				(DisposeScript 979)

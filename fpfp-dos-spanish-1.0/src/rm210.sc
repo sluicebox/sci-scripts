@@ -111,7 +111,7 @@
 			((and (gEgo inRect: 103 90 155 119) local0)
 				(board setScript: sBoardFall)
 			)
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(gCurRoom setScript: sExitEast)
 			)
 		)

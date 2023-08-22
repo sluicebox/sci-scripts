@@ -58,7 +58,7 @@
 				)
 			)
 			(39 ; Oxygen_Mask
-				(if (and (== gCurRoomNum 240) (== global113 6))
+				(if (and (== gCurRoomNum 240) (== gEurekaLocation 6)) ; thrakus
 					(gCurRoom setScript: (ScriptID 243 22)) ; putOnMask
 				else
 					(super doVerb: theVerb &rest)

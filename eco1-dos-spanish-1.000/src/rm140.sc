@@ -626,10 +626,10 @@
 	(method (doit)
 		(cond
 			(script 0)
-			((and (gEgo has: 19) (== ((User alterEgo:) edgeHit:) 3)) ; goldMask
+			((and (gEgo has: 19) (== ((User alterEgo:) edgeHit:) EDGE_BOTTOM)) ; goldMask
 				(gCurRoom setScript: getProphesy)
 			)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(self setScript: NoExit)
 			)
 		)

@@ -21,7 +21,7 @@
 			(0
 				(DoAudio audWPLAY 11)
 				(proc0_9)
-				(proc0_2)
+				(HandsOff)
 				(gLongSong stop:)
 				(rhymeSync init: 11)
 				(global129 illegalBits: -32756)

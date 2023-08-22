@@ -144,7 +144,7 @@
 				)
 			)
 		)
-		(if (== (gEgo edgeHit:) 3)
+		(if (== (gEgo edgeHit:) EDGE_BOTTOM)
 			(if (< (gEgo x:) 275)
 				(gCurRoom newRoom: 13)
 			else

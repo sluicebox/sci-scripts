@@ -75,7 +75,7 @@
 			(script
 				(script doit:)
 			)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(gStdWalkOut register: (gEgo edgeHit:))
 				(self setScript: gStdClimbOut)
 			)

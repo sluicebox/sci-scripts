@@ -86,7 +86,7 @@
 	)
 
 	(method (newRoom newRoomNumber)
-		(if (and (== script fallScript) (== (gEgo edgeHit:) 3))
+		(if (and (== script fallScript) (== (gEgo edgeHit:) EDGE_BOTTOM))
 			(= newRoomNumber 0)
 		else
 			(super newRoom: newRoomNumber)

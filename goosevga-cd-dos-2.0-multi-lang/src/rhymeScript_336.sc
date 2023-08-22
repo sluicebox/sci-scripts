@@ -26,7 +26,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(Load rsSCRIPT 974)
 				(gEgo
 					setAvoider: (Avoid new:)
@@ -105,9 +105,9 @@
 			)
 			(11
 				(gEgo setMotion: 0 setLoop: -1)
-				(proc0_3)
+				(HandsOn)
 				(if (== gScore gPossibleScore)
-					(proc0_2)
+					(HandsOff)
 					(gEgo setMotion: MoveTo 133 130)
 				)
 				(gLongSong number: 1 loop: -1 play:)

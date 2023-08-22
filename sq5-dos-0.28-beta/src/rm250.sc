@@ -73,7 +73,7 @@
 		(gCurRoom setRegions: 210) ; eureka
 		(LoadMany rsVIEW 251 266)
 		(NormalEgo 0)
-		(gEgo init: setScale: Scaler 134 81 164 134 edgeHit: 0)
+		(gEgo init: setScale: Scaler 134 81 164 134 edgeHit: EDGE_NONE)
 		(cliffySuit init:)
 		(otherSuit init:)
 		(oxyTank init:)
@@ -387,7 +387,7 @@
 				(= cycles 1)
 			)
 			(1
-				(if (== global113 14)
+				(if (== gEurekaLocation 14) ; goliath
 					(SetScore 195 300)
 				)
 				(gEgo
@@ -421,7 +421,7 @@
 				)
 			)
 			(6
-				(if (== global113 15)
+				(if (== gEurekaLocation 15) ; empty space
 					(gCurRoom newRoom: 801)
 				else
 					(SetFlag 88)
@@ -868,10 +868,10 @@
 					ignoreActors: 1
 					setPri: 13
 				)
-				(= global130 3)
+				(= gCliffyState 3)
 				(super init: &rest)
 			)
-			((== global130 3)
+			((== gCliffyState 3)
 				(self setScale: Scaler 134 81 164 134 setScript: bang)
 				(super init: &rest)
 			)
@@ -944,15 +944,15 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(4 ; Do
-				(switch global113
-					(15
+				(switch gEurekaLocation
+					(15 ; empty space
 						(if (IsFlag 87)
 							(gMessager say: 13 0 0 0) ; "The pod will have to be refueled and repaired by Cliffy before you can use it again."
 						else
 							(gCurRoom setScript: sGetInPod)
 						)
 					)
-					(14
+					(14 ; goliath
 						(gCurRoom setScript: sGetInPod)
 					)
 					(else

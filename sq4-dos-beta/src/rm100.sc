@@ -87,7 +87,7 @@
 	(method (doit)
 		(cond
 			(script 0)
-			((== (gEgo edgeHit:) 4)
+			((== (gEgo edgeHit:) EDGE_LEFT)
 				(if
 					(and
 						(== (sewer location:) 100)
@@ -97,11 +97,11 @@
 					(sewer location: 115)
 				)
 			)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(HandsOff)
 				(self setScript: exitNorth)
 			)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(HandsOff)
 				(self setScript: exitSouth)
 			)

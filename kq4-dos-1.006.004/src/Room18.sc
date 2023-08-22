@@ -69,7 +69,7 @@
 	(method (init)
 		(= gIndoors 0)
 		(Load rsVIEW 47)
-		(gEgo edgeHit: 0 observeControl: 16384)
+		(gEgo edgeHit: EDGE_NONE observeControl: 16384)
 		(= global186 0)
 		(super init:)
 		(if gNight

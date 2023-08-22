@@ -72,7 +72,7 @@
 							(and
 								(< (eureka puke:) 1)
 								(not (IsFlag 86))
-								(> global130 0)
+								(> gCliffyState 0)
 							)
 							(= next sPushGreen)
 						)
@@ -80,7 +80,7 @@
 					)
 					(1
 						(cond
-							((< global170 2)
+							((< gWD40State 2)
 								(gMessager say: 6 1 0 4 self 202) ; "The Eureka does not currently have a science officer."
 							)
 							((and (< (eureka puke:) 1) (not (IsFlag 86)))

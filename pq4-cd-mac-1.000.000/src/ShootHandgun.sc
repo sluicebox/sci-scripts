@@ -135,10 +135,10 @@
 			(2
 				(cond
 					(register
-						(proc30_0 2 22 9 1 0)
+						(EgoDead 2 22 9 1 0) ; "Deadly use of force was not tactically correct."
 					)
 					((!= global129 -1)
-						(proc30_0
+						(EgoDead
 							global125
 							global126
 							global127
@@ -148,7 +148,7 @@
 						)
 					)
 					(else
-						(proc30_0
+						(EgoDead
 							global125
 							global126
 							global127

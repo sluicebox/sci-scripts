@@ -38,7 +38,7 @@
 		(petal4 init:)
 		(fountainMan init:)
 		(gAddToPics add: namePlate doit:)
-		(proc0_1)
+		(NormalEgo)
 		(gEgo setMotion: Freeway (= global75 @local0))
 		(switch gPrevRoomNum
 			(north
@@ -417,12 +417,12 @@
 		(if global172
 			(gCurRoom newRoom: 45) ; mapRoom
 		)
-		(proc0_3)
+		(HandsOn)
 	)
 
 	(method (init &tmp temp0)
 		(proc0_7 gEgo fountainMan)
-		(proc0_2)
+		(HandsOff)
 		(super init: &rest)
 		(= temp0 (gGoals at: 17))
 		(proc0_20)

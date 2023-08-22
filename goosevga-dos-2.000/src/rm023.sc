@@ -48,7 +48,7 @@
 					yourself:
 				)
 		)
-		(proc0_1)
+		(NormalEgo)
 		(if ((gGoals at: 2) egoReturned:)
 			(= local0 1)
 			(Load rsSCRIPT 423)
@@ -291,7 +291,7 @@
 
 	(method (changeState newState &tmp temp0)
 		(if (not (= state newState))
-			(proc0_2)
+			(HandsOff)
 			(proc0_7 gEgo boPeep)
 			(= temp0 (gGoals at: 2))
 			(proc0_20)
@@ -343,8 +343,8 @@
 				(if global172
 					(gCurRoom newRoom: 45) ; mapRoom
 				)
-				(proc0_5)
-				(proc0_3)
+				(RedrawCast)
+				(HandsOn)
 			)
 		)
 	)

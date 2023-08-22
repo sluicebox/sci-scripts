@@ -90,7 +90,7 @@
 			(script
 				(script doit:)
 			)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(if global523
 					(vDialog init:)
 					(hsDialogArea init:)

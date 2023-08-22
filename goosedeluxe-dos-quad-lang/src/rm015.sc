@@ -63,7 +63,7 @@
 		(door init:)
 		(switch gPrevRoomNum
 			(40
-				(gEgo loop: 0 cel: 1 x: 146 y: 107 edgeHit: 0 init:)
+				(gEgo loop: 0 cel: 1 x: 146 y: 107 edgeHit: EDGE_NONE init:)
 				(self setScript: sOutDoor)
 			)
 			(north
@@ -103,7 +103,7 @@
 			(script
 				(script doit:)
 			)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(gCurRoom newRoom: north)
 			)
 			((= temp0 (self edgeToRoom: (gEgo edgeHit:)))

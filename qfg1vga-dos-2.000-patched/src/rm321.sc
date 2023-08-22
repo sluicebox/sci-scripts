@@ -156,7 +156,7 @@
 	(method (doit)
 		(cond
 			((gEgo script:) 0)
-			((and (== (gEgo edgeHit:) 3) (not (IsFlag 193)))
+			((and (== (gEgo edgeHit:) EDGE_BOTTOM) (not (IsFlag 193)))
 				(if gNight
 					(= global107 gDay)
 					(gCurRoom newRoom: 320)

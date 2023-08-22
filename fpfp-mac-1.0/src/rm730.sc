@@ -148,7 +148,7 @@
 				(penelope setMotion: PolyPath 82 100 self)
 			)
 			(12
-				(proc0_5 penelope gEgo)
+				(Face penelope gEgo)
 				(= cycles 3)
 			)
 			(13
@@ -162,7 +162,7 @@
 				(penelope setMotion: PolyPath 64 88 self)
 			)
 			(16
-				(proc0_5 penelope gEgo)
+				(Face penelope gEgo)
 				(= cycles 3)
 			)
 			(17
@@ -190,7 +190,7 @@
 				(LoadMany rsVIEW 737)
 			)
 			(24
-				(proc0_5 penelope gEgo)
+				(Face penelope gEgo)
 				(= cycles 3)
 			)
 			(25

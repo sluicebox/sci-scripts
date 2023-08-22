@@ -348,7 +348,7 @@
 		(gDirectionHandler addToFront: self)
 		(= facingHeading gRoomExitDir)
 		(= gSpellChecker gAllChecker)
-		(gEgo edgeHit: 0 init:)
+		(gEgo edgeHit: EDGE_NONE init:)
 		(self newAlley: (Room2Alley))
 		(super init:)
 	)

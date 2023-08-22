@@ -739,15 +739,15 @@
 		)
 	)
 
-	(method (startRoom param1)
+	(method (startRoom roomNum)
 		(if gPMouse
 			(gPMouse stop:)
 		)
-		((ScriptID 80) doit: param1) ; disposeCode
+		((ScriptID 80) doit: roomNum) ; disposeCode
 		(if gDebugOn
 			(SetDebug)
 		)
-		(gRegions addToFront: (= gCurRoom (ScriptID param1)))
+		(gRegions addToFront: (= gCurRoom (ScriptID roomNum)))
 		(Purge (gCurRoom purge:))
 		(cond
 			(

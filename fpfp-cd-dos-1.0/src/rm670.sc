@@ -268,10 +268,10 @@
 	(method (doit)
 		(cond
 			(script)
-			((and (IsFlag 85) (== ((User alterEgo:) edgeHit:) 3))
+			((and (IsFlag 85) (== ((User alterEgo:) edgeHit:) EDGE_BOTTOM))
 				(gCurRoom setScript: sRowdyWarning)
 			)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(gCurRoom setScript: sExitSouth)
 			)
 		)

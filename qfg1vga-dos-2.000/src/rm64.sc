@@ -209,7 +209,7 @@
 	)
 
 	(method (doit)
-		(if (and (not (gEgo script:)) (== (gEgo edgeHit:) 3) (not local3))
+		(if (and (not (gEgo script:)) (== (gEgo edgeHit:) EDGE_BOTTOM) (not local3))
 			(gEgo setScript: walkOutTo72)
 		)
 		(if

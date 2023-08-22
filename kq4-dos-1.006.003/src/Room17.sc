@@ -58,7 +58,7 @@
 		(= west 16)
 		(= horizon 100)
 		(= gIndoors 0)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(self setRegions: 508) ; Forest_Region
 		(super init:)
 		(if gNight

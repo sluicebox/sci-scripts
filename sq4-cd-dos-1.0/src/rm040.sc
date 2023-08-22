@@ -132,7 +132,7 @@
 		(cond
 			(
 				(and
-					(== (gEgo edgeHit:) 1)
+					(== (gEgo edgeHit:) EDGE_TOP)
 					(!= script exitScript)
 					(!= script (ScriptID 701 3)) ; cyborgScreams
 					(!= ((ScriptID 701 1) script:) (ScriptID 701 4)) ; deathDroid, droidShoots
@@ -140,12 +140,12 @@
 				(HandsOff)
 				(self setScript: exitScript 0 1)
 			)
-			((and (== (gEgo edgeHit:) 1) (not (script register:)))
+			((and (== (gEgo edgeHit:) EDGE_TOP) (not (script register:)))
 				(super newRoom: newRoomNumber)
 			)
 			(
 				(and
-					(== (gEgo edgeHit:) 3)
+					(== (gEgo edgeHit:) EDGE_BOTTOM)
 					(> (gEgo x:) 199)
 					(not (IsFlag 0))
 					(!= (gCurRoom script:) (ScriptID 701 3)) ; cyborgScreams

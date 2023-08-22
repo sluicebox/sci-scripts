@@ -928,7 +928,7 @@
 		(temp0 dispose:)
 	)
 
-	(method (startRoom param1 &tmp temp0 temp1)
+	(method (startRoom roomNum &tmp temp0 temp1)
 		(= temp1 (= temp0 0))
 		(if darkPlane
 			(darkPlane dispose:)
@@ -943,7 +943,7 @@
 			)
 		)
 		(= global112 temp0)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(gSwatInterface setCursor:)
 		(if global112
 			(if (global112 resetData:)

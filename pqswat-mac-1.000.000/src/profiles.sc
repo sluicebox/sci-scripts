@@ -954,7 +954,7 @@
 
 	(method (cue param1)
 		(if (== 1 param1)
-			(Empty)
+			(SetDebug)
 		)
 		(super cue: &rest)
 	)

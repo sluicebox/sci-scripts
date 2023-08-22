@@ -41,7 +41,7 @@
 			)
 		)
 		(self reflectPosn: (gUser alterEgo:) ((gUser alterEgo:) edgeHit:))
-		((gUser alterEgo:) edgeHit: 0)
+		((gUser alterEgo:) edgeHit: EDGE_NONE)
 		(gGame handsOff:)
 	)
 )

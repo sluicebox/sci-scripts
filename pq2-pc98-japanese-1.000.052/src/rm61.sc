@@ -348,7 +348,7 @@
 				(= global132 0)
 				(carScript changeState: 0)
 			)
-			((== (gEgo edgeHit:) 4)
+			((== (gEgo edgeHit:) EDGE_LEFT)
 				(= global205 0)
 				(gCurRoom newRoom: 60)
 			)
@@ -372,7 +372,7 @@
 				)
 				(gEgo setMotion: MoveTo (gEgo x:) 176)
 			)
-			((and (== (gEgo edgeHit:) 2) (== local11 1))
+			((and (== (gEgo edgeHit:) EDGE_RIGHT) (== local11 1))
 				(gEgo x: 340)
 				(if local6
 					(Print 61 3) ; "She said upriver, not downriver."
@@ -599,7 +599,7 @@
 								)
 							)
 							((Said '/shit,garbage,garbage')
-								(if (== (gEgo edgeHit:) 2)
+								(if (== (gEgo edgeHit:) EDGE_RIGHT)
 									(Print 61 28) ; "It's not a pretty sight. The garbage-filled swamp should be cleaned up."
 								else
 									(Print 61 29) ; "You can't see much of the swamp from here."

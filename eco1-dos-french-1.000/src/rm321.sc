@@ -61,10 +61,10 @@
 	(method (doit)
 		(if (not script)
 			(switch (gEgo edgeHit:)
-				(2
+				(EDGE_RIGHT
 					(self setScript: toEast)
 				)
-				(4
+				(EDGE_LEFT
 					(self setScript: toWest)
 				)
 			)
@@ -150,7 +150,7 @@
 				(gEgo setMotion: MoveTo -19 (gEgo y:) self)
 			)
 			(1
-				(gEgo x: 300 edgeHit: 0 setMotion: 0)
+				(gEgo x: 300 edgeHit: EDGE_NONE setMotion: 0)
 				(ship x: (+ (ship x:) 319))
 				(if (< (ship x:) 480)
 					(ship setMotion: MoveTo 480 70)
@@ -193,7 +193,7 @@
 				(gEgo setMotion: MoveTo 339 (gEgo y:) self)
 			)
 			(1
-				(gEgo x: 20 edgeHit: 0 setMotion: 0)
+				(gEgo x: 20 edgeHit: EDGE_NONE setMotion: 0)
 				(ship x: (- (ship x:) 319))
 				(if (< (ship x:) 480)
 					(ship setMotion: MoveTo 480 70)

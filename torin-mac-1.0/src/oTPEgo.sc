@@ -199,7 +199,7 @@
 			setCycle: StopWalk -1
 			setSpeed: (gGame nGameSpeed:)
 			state: (|= state $0002)
-			edgeHit: 0
+			edgeHit: EDGE_NONE
 			ignoreActors: 1
 		)
 	)

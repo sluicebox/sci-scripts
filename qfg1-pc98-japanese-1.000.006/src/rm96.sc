@@ -843,13 +843,13 @@
 		)
 		(if (and (not (IsFlag 263)) (not (IsFlag 257)))
 			(cond
-				((== (gEgo edgeHit:) 2)
+				((== (gEgo edgeHit:) EDGE_RIGHT)
 					(if (not (IsFlag 260))
 						(SetFlag 263)
 						(gEgo setScript: goTo2)
 					)
 				)
-				((and (== (gEgo edgeHit:) 4) (< (gEgo y:) 150))
+				((and (== (gEgo edgeHit:) EDGE_LEFT) (< (gEgo y:) 150))
 					(SetFlag 263)
 					(if (< (gEgo y:) 100)
 						(gEgo setPri: -1 setScript: goTo15)
@@ -1212,7 +1212,7 @@
 			)
 			(1
 				(effect number: (SoundFX 83) loop: 1 priority: 2 play:)
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 				(gEgo
 					view: 296
 					setLoop: 4

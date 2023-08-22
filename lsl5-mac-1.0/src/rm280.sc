@@ -85,7 +85,7 @@
 					stopUpd:
 					setScript: sRedHead
 				)
-				(gEgo posn: 16 160 edgeHit: 0)
+				(gEgo posn: 16 160 edgeHit: EDGE_NONE)
 			)
 		)
 		(super init:)
@@ -364,7 +364,7 @@
 		)
 		(cond
 			(script)
-			((== (gEgo edgeHit:) 4)
+			((== (gEgo edgeHit:) EDGE_LEFT)
 				(= gRedHeadX (redHead x:))
 				(= gRedHeadLoop (redHead loop:))
 				(= gBlondeX (blonde x:))

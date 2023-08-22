@@ -89,7 +89,7 @@
 					)
 				)
 			)
-			((and (== (gEgo edgeHit:) 1) (not (Wat script:)))
+			((and (== (gEgo edgeHit:) EDGE_TOP) (not (Wat script:)))
 				(Wat setScript: (Wat theTimer:))
 			)
 			(local18

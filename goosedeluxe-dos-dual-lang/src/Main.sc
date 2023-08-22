@@ -1707,7 +1707,7 @@
 	(method (setCursor param1 param2 param3 param4 &tmp temp0)
 		(= temp0 gTheCursor)
 		(if (>= argc 3)
-			(Empty self)
+			(SetDebug self)
 			(if (< param3 0)
 				(= param3 0)
 			)
@@ -1859,7 +1859,7 @@
 		(super doit:)
 	)
 
-	(method (startRoom param1 &tmp [temp0 5])
+	(method (startRoom roomNum &tmp [temp0 5])
 		(Purge 2000)
 		(= global304 1)
 		(= global305 0)
@@ -1887,7 +1887,7 @@
 			)
 			(= global129 (global150 new:))
 		)
-		(gRegions addToFront: (= gCurRoom (ScriptID param1)))
+		(gRegions addToFront: (= gCurRoom (ScriptID roomNum)))
 		(gCurRoom init:)
 		(if global176
 			(return)
@@ -2137,7 +2137,7 @@
 	(method (changeState newState &tmp temp0 temp1 temp2 temp3 temp4 temp5 temp6)
 		(switch (= state newState)
 			(0
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 				(gGame handsOff:)
 				(= temp6 (gCurRoom roomToEdge: gPrevRoomNum))
 				(= temp5

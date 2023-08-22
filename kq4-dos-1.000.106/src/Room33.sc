@@ -30,7 +30,7 @@
 		(= horizon 80)
 		(= gIndoors 0)
 		(= global108 horizon)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(super init:)
 		(= local0 (Prop new:))
 		(= local1 (Prop new:))

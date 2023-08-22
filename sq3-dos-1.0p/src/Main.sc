@@ -1128,7 +1128,7 @@
 		(super doit:)
 	)
 
-	(method (startRoom param1)
+	(method (startRoom roomNum)
 		(DisposeScript 985)
 		(if gDebugOn
 			(= gDebugOn 0)
@@ -1142,7 +1142,7 @@
 			)
 			(SetDebug)
 		)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 	)
 
 	(method (handleEvent event &tmp temp0 temp1 temp2 temp3 temp4 temp5 temp6 temp7 temp8 [temp9 50])

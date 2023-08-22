@@ -162,7 +162,7 @@
 				(spiffPhoneScript1 dispose:)
 				(spiffPhoneScript2 dispose:)
 				(spiffPhoneScript3 dispose:)
-				((ScriptID 32 0) doit: 2 22 15 1 110) ; ShootHandgun
+				((ScriptID 32 0) doit: 2 22 15 1 110) ; ShootHandgun, "You've just committed a crime against society and humankind."
 			)
 		)
 	)
@@ -269,7 +269,7 @@
 						(gMessager say: 1 22 13) ; "An unwise, and unwarranted, tactic, Detective."
 						(++ local1)
 					)
-					(((ScriptID 32 0) doit: 1 22 14 1 110) ; ShootHandgun
+					(((ScriptID 32 0) doit: 1 22 14 1 110) ; ShootHandgun, "Regain your senses! Holster your weapon."
 						(jack setScript: 0)
 					)
 				)

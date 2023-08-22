@@ -31,7 +31,7 @@
 		(super init:)
 		(door init:)
 		(gAddToPics add: mailBox doit:)
-		(proc0_1)
+		(NormalEgo)
 		(gEgo setMotion: Freeway (= global75 @local0))
 		(switch gPrevRoomNum
 			(43
@@ -107,7 +107,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(Timer set60ths: self (DoAudio audPLAY 38))
 				(door setCycle: End)
 			)
@@ -124,7 +124,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(door setCycle: Beg self)
 				(= cycles 4)
 			)
@@ -134,9 +134,9 @@
 			(2
 				(door stopUpd:)
 				(if (== gScore gPossibleScore)
-					(proc0_2)
+					(HandsOff)
 				else
-					(proc0_3)
+					(HandsOn)
 				)
 				(gCurRoom setScript: 0)
 			)

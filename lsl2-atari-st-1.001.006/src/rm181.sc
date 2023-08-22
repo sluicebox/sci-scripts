@@ -88,7 +88,7 @@
 		(if
 			(and
 				(== gCurrentStatus 0)
-				(or (== (gEgo edgeHit:) 3) (== (gEgo edgeHit:) 2))
+				(or (== (gEgo edgeHit:) EDGE_BOTTOM) (== (gEgo edgeHit:) EDGE_RIGHT))
 			)
 			(if (== seenMessage 0)
 				(= seenMessage 1)
@@ -105,7 +105,7 @@
 			)
 		)
 		(cond
-			((and (== (gEgo edgeHit:) 4) (== gCurrentStatus 0))
+			((and (== (gEgo edgeHit:) EDGE_LEFT) (== gCurrentStatus 0))
 				(gCurRoom newRoom: 82)
 			)
 			((and (& (gEgo onControl:) $0002) (== gCurrentStatus 0))

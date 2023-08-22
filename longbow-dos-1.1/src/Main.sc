@@ -1122,10 +1122,10 @@
 		(super newRoom: &rest)
 	)
 
-	(method (startRoom param1)
-		((ScriptID 808 1) doit: param1) ; startUpRoom
-		(super startRoom: param1)
-		(if (not (OneOf param1 97 98 96 95 803))
+	(method (startRoom roomNum)
+		((ScriptID 808 1) doit: roomNum) ; startUpRoom
+		(super startRoom: roomNum)
+		(if (not (OneOf roomNum 97 98 96 95 803)) ; theEnd, logo, cred, open, speedTest
 			(statLine doit:)
 		)
 		(if (and (User controls:) (User input:))

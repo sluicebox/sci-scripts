@@ -118,7 +118,7 @@
 			)
 			((and (== (event type:) evVERB) (== (muffet view:) 42))
 				(event claimed: 1)
-				(proc0_2)
+				(HandsOff)
 				(wave changeState: 3)
 				(muffet setMotion: 0)
 				(proc0_7 gEgo muffet)
@@ -317,7 +317,7 @@
 			(muffet setMotion: NewFollow gEgo 30)
 		)
 		(if (!= gScore gPossibleScore)
-			(proc0_3)
+			(HandsOn)
 			(self dispose:)
 		)
 		(DisposeScript 976)
@@ -445,11 +445,11 @@
 				(if (== global113 0)
 					(-- state)
 				)
-				(proc0_2)
+				(HandsOff)
 				(= cycles 1)
 			)
 			(1
-				(proc0_2)
+				(HandsOff)
 				(gEgo
 					setAvoider: (Avoid new:)
 					setMotion: MoveTo 217 126 self

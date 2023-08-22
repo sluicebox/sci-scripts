@@ -54,7 +54,7 @@
 		(= east 70)
 		(= horizon 85)
 		(= gIndoors 0)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(= global205 0)
 		(super init:)
 		(if gNight

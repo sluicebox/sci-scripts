@@ -32,7 +32,7 @@
 
 	(method (init)
 		(super init:)
-		(proc0_1)
+		(NormalEgo)
 		(if ((gGoals at: 2) egoReturned:)
 			(= local53 1)
 			(Load rsSCRIPT 423)
@@ -298,12 +298,12 @@
 			(if global172
 				(gCurRoom newRoom: 45) ; mapRoom
 			)
-			(proc0_3)
+			(HandsOn)
 		)
 	)
 
 	(method (init &tmp temp0)
-		(proc0_2)
+		(HandsOff)
 		(proc0_7 gEgo boPeep)
 		(super init: &rest)
 		(= temp0 (gGoals at: 2))

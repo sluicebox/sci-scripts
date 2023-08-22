@@ -56,16 +56,16 @@
 			(
 				(= temp0
 					(switch ((User alterEgo:) edgeHit:)
-						(1
+						(EDGE_TOP
 							(gCurRoom north:)
 						)
-						(2
+						(EDGE_RIGHT
 							(gCurRoom east:)
 						)
-						(3
+						(EDGE_BOTTOM
 							(gCurRoom south:)
 						)
-						(4
+						(EDGE_LEFT
 							(gCurRoom west:)
 						)
 					)

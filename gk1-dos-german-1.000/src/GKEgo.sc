@@ -127,7 +127,7 @@
 		)
 		(gEgo
 			view: (if (> argc 1) param2 else 900)
-			edgeHit: 0
+			edgeHit: EDGE_NONE
 			signal: 4129
 			z: 0
 			setLoop: -1

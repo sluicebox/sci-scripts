@@ -722,26 +722,26 @@
 			)
 			(1
 				(switch (gEgo edgeHit:)
-					(2
+					(EDGE_RIGHT
 						(gEgo setMotion: MoveTo 340 (+ (gEgo y:) 10) self)
 					)
-					(3
+					(EDGE_BOTTOM
 						(gEgo setMotion: MoveTo (gEgo x:) 240 self)
 					)
-					(4
+					(EDGE_LEFT
 						(gEgo setMotion: MoveTo -20 (gEgo y:) self)
 					)
 				)
 			)
 			(2
 				(switch (gEgo edgeHit:)
-					(2
+					(EDGE_RIGHT
 						(gCurRoom newRoom: 40)
 					)
-					(3
+					(EDGE_BOTTOM
 						(gCurRoom newRoom: 39)
 					)
-					(4
+					(EDGE_LEFT
 						(gCurRoom newRoom: 38)
 					)
 				)

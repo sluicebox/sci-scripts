@@ -550,13 +550,13 @@
 					)
 					(else
 						(PrintDebug {Error, unknown plane type})
-						(Empty self)
+						(SetDebug self)
 					)
 				)
 			)
 			(else
 				(PrintDebug {Error: no text to set})
-				(Empty self)
+				(SetDebug self)
 			)
 		)
 	)

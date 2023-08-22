@@ -66,7 +66,7 @@
 		(domeF init:)
 		(palmTree init:)
 		(bridgeR init:)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(= style
 			(switch gPrevRoomNum
 				(730 12)
@@ -119,7 +119,7 @@
 			(730
 				(if (IsFlag 22)
 					(proc31_1 40 140)
-					(gEgo edgeHit: 0)
+					(gEgo edgeHit: EDGE_NONE)
 					(gGame handsOn:)
 				else
 					(gCurRoom setScript: sHuman730)

@@ -50,7 +50,7 @@
 		z: (CelHigh (gEgo view:) (gEgo loop:) (gEgo cel:))
 	)
 	(RedrawCast)
-	(gEgo edgeHit: 0)
+	(gEgo edgeHit: EDGE_NONE)
 	(= local0 0)
 )
 

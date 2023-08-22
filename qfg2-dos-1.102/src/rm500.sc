@@ -199,8 +199,8 @@
 		)
 		(cond
 			(gCantMove)
-			((== (gEgo edgeHit:) 3)
-				(gEgo edgeHit: 0 posn: gEgoX (- gEgoY 2))
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
+				(gEgo edgeHit: EDGE_NONE posn: gEgoX (- gEgoY 2))
 				((ScriptID 501 7) register: 1) ; backInS
 				(gCurRoom setScript: (ScriptID 501 7)) ; backInS
 			)

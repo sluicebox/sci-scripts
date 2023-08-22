@@ -86,7 +86,7 @@
 			)
 		else
 			(PrintDebug {Attempt to call Room drawpic on room with no plane\n})
-			(Empty self)
+			(SetDebug self)
 		)
 		(if (and (> argc 2) param3)
 			(= picture param1)

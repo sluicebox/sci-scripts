@@ -253,7 +253,7 @@
 			((& temp0 $0200)
 				(self setScript: distantSwimmer 0 Temple)
 			)
-			((== ((User alterEgo:) edgeHit:) 1)
+			((== ((User alterEgo:) edgeHit:) EDGE_TOP)
 				(self setScript: NoneEscortedEgo)
 			)
 			((& temp0 $1000)

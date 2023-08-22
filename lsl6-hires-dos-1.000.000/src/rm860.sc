@@ -154,7 +154,7 @@
 			((deepWater onMe: (gEgo x:) (gEgo y:))
 				(gCurRoom setScript: drownScr)
 			)
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(gCurRoom setScript: exitEastScr)
 			)
 			((> (gEgo y:) 143)
@@ -1550,7 +1550,7 @@
 					((Print dialog:) dispose:)
 				)
 				(Print modeless: 0)
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 				(PalVary 3) ; PalVaryKill
 				(Palette 1 999 2) ; PalLoad
 				(gCurRoom newRoom: 630)

@@ -41,7 +41,7 @@
 		(if gNight
 			(= picture 129)
 		)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(super init:)
 		(self setRegions: 508) ; Forest_Region
 		(Load rsVIEW 348)

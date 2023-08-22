@@ -708,7 +708,7 @@
 		(proc10_11)
 	)
 
-	(method (startRoom param1)
+	(method (startRoom roomNum)
 		(if gModelessDialog
 			(gModelessDialog dispose:)
 		)
@@ -729,8 +729,8 @@
 			(SetDebug)
 		)
 		(= global148 0)
-		(= global147 (not (OneOf param1 1 100 360 480 500)))
-		(super startRoom: param1)
+		(= global147 (not (OneOf roomNum 1 100 360 480 500))) ; Phono
+		(super startRoom: roomNum)
 		(if global147
 			(gTheIconBar show: enable:)
 		else

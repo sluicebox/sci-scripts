@@ -973,14 +973,14 @@
 		)
 	)
 
-	(method (startRoom param1 &tmp temp0 [temp1 20])
+	(method (startRoom roomNum &tmp temp0 [temp1 20])
 		(if gPMouse
 			(gPMouse stop:)
 		)
 		(if (and (gLongSong2 number:) (== (gLongSong2 prevSignal:) -1))
 			(gLongSong2 number: 0)
 		)
-		((ScriptID 806) doit: param1) ; disposeCode
+		((ScriptID 806) doit: roomNum) ; disposeCode
 		(Format @temp1 0 0 800) ; "%d.scr"
 		(if
 			(and
@@ -997,16 +997,16 @@
 		(if temp0
 			((ScriptID 800) init:) ; MISSING SCRIPT
 		)
-		(if (== param1 320)
+		(if (== roomNum 320)
 			(travelC cel: 2)
 			(gGame setCursor: travelC)
 		)
-		(if (== param1 381)
+		(if (== roomNum 381)
 			(travelC cel: 1)
 			(gGame setCursor: travelC)
 		)
-		(super startRoom: param1)
-		(if (OneOf param1 803 360)
+		(super startRoom: roomNum)
+		(if (OneOf roomNum 803 360) ; speedTest
 			(ecoStatusLine disable:)
 			(gTheIconBar disable:)
 		else

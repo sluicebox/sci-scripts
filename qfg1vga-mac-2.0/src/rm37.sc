@@ -202,7 +202,7 @@
 	(method (doit)
 		(cond
 			((gEgo script:))
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(gEgo setScript: egoExits)
 			)
 			((and (IsFlag 273) local89 (< (gEgo y:) 140))
@@ -844,7 +844,7 @@
 	)
 )
 
-(instance unknown_37_21 of Script
+(instance closeGateSafe of Script
 	(properties)
 
 	(method (changeState newState)
@@ -888,7 +888,7 @@
 					(= local89 0)
 					(gEgo setMotion: MoveTo 160 155 self)
 				else
-					(client setScript: unknown_37_21)
+					(client setScript: closeGateSafe)
 				)
 			)
 			(1

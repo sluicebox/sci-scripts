@@ -194,7 +194,7 @@
 
 	(method (doit)
 		(cond
-			((and local1 (== (gEgo edgeHit:) 4))
+			((and local1 (== (gEgo edgeHit:) EDGE_LEFT))
 				(SetFlag 83)
 				(= global332 (= global333 0))
 				(gCurRoom newRoom: 89)
@@ -204,7 +204,7 @@
 				(= global332 (= global333 0))
 				(gCurRoom newRoom: 94)
 			)
-			((or (== (gEgo edgeHit:) 3) (== (gEgo edgeHit:) 2))
+			((or (== (gEgo edgeHit:) EDGE_BOTTOM) (== (gEgo edgeHit:) EDGE_RIGHT))
 				(SetFlag 83)
 				(= global332 (= global333 0))
 				(gCurRoom newRoom: 91)

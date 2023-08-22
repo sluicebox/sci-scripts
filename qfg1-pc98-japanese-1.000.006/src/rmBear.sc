@@ -154,10 +154,10 @@
 
 	(method (doit)
 		(cond
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(gCurRoom newRoom: 15)
 			)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(gCurRoom newRoom: 13)
 			)
 		)

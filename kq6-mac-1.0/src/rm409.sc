@@ -85,7 +85,7 @@
 				((ScriptID 30 0) prevEdgeHit: EDGE_RIGHT) ; rLab
 				(gCurRoom setScript: walkOut)
 			)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				((ScriptID 30 0) prevEdgeHit: EDGE_BOTTOM) ; rLab
 				(gCurRoom setScript: walkOut)
 			)
@@ -321,14 +321,14 @@
 			(0
 				(gGame handsOff:)
 				(switch ((ScriptID 30 0) prevEdgeHit:) ; rLab
-					(4
+					(EDGE_LEFT
 						(gEgo
 							posn: 282 164
 							init:
 							setMotion: PolyPath 247 164 self
 						)
 					)
-					(1
+					(EDGE_TOP
 						(gEgo
 							posn: 158 225
 							init:
@@ -369,20 +369,20 @@
 			(0
 				(gGame handsOff:)
 				(switch ((ScriptID 30 0) prevEdgeHit:) ; rLab
-					(3
+					(EDGE_BOTTOM
 						(gEgo setMotion: PolyPath (gEgo x:) 250 self)
 					)
-					(2
+					(EDGE_RIGHT
 						(gEgo setMotion: PolyPath 315 (gEgo y:) self)
 					)
 				)
 			)
 			(1
 				(switch ((ScriptID 30 0) prevEdgeHit:) ; rLab
-					(3
+					(EDGE_BOTTOM
 						(gCurRoom newRoom: 400) ; LBRoom
 					)
-					(2
+					(EDGE_RIGHT
 						(gCurRoom newRoom: 440)
 					)
 				)

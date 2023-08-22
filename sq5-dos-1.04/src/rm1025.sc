@@ -21,7 +21,7 @@
 
 	(method (init)
 		(LoadMany rsVIEW 679)
-		(= global133 2)
+		(= gGoliathFloorNum 2)
 		(= global135 26)
 		(bigarrow init: setCycle: Fwd)
 		(shieldSwitch init:)

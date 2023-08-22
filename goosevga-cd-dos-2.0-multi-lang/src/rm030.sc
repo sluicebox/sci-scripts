@@ -30,7 +30,7 @@
 	(method (init)
 		(Load rsVIEW 163)
 		(super init:)
-		(proc0_1)
+		(NormalEgo)
 		(gEgo setMotion: Freeway (= global75 @local0))
 		(switch gPrevRoomNum
 			(north

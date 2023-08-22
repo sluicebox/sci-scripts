@@ -132,7 +132,7 @@
 				)
 			)
 			(else
-				(gEgo posn: 160 160 edgeHit: 0)
+				(gEgo posn: 160 160 edgeHit: EDGE_NONE)
 			)
 		)
 		(LoadMany rsPIC 670 1)

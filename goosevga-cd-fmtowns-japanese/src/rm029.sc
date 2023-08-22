@@ -30,7 +30,7 @@
 
 	(method (init)
 		(super init:)
-		(proc0_1)
+		(NormalEgo)
 		(Load rsSCRIPT 974)
 		(gEgo setMotion: Freeway (= global75 @local0))
 		(switch gPrevRoomNum

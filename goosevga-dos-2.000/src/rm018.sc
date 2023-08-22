@@ -69,7 +69,7 @@
 		(petal4 init:)
 		(fountainMan init: stopUpd:)
 		(namePlate init: stopUpd:)
-		(proc0_1)
+		(NormalEgo)
 		(switch gPrevRoomNum
 			(north
 				(gEgo posn: 111 50)
@@ -418,7 +418,7 @@
 	(method (changeState newState &tmp temp0)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(gEgo setMotion: PolyPath 138 120 self)
 				(= cycles 10000)
 			)
@@ -455,11 +455,11 @@
 				(if global172
 					(gCurRoom newRoom: 45) ; mapRoom
 				)
-				(proc0_5)
+				(RedrawCast)
 				(if (== gScore gPossibleScore)
 					(gCurRoom setScript: (ScriptID 205)) ; walkTo
 				else
-					(proc0_3)
+					(HandsOn)
 				)
 			)
 		)

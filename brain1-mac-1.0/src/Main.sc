@@ -754,7 +754,7 @@
 		(gGame setCursor: ((gTheIconBar curIcon:) cursor:) 1)
 	)
 
-	(method (startRoom param1)
+	(method (startRoom roomNum)
 		(if gModelessDialog
 			(gModelessDialog dispose:)
 		)
@@ -779,7 +779,7 @@
 			(gTheIconBar enable:)
 		)
 		(ScriptID 982)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(gGame setCursor: ((gTheIconBar curIcon:) cursor:) 1)
 	)
 

@@ -30,7 +30,7 @@
 		(switch gPrevRoomNum
 			(north
 				(gTheMusic fade: 80 10 10 0)
-				(gEgo init: normalize: edgeHit: 0)
+				(gEgo init: normalize: edgeHit: EDGE_NONE)
 			)
 			(else
 				(gTheMusic number: 0 stop:)
@@ -40,7 +40,7 @@
 					posn: 24 177 0
 					setLoop: -1
 					setHeading: 180
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 				)
 				(limo init:)
 				(= gLarryLoc 1)

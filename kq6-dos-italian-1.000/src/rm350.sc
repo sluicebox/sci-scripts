@@ -72,7 +72,7 @@
 			((== (gEgo onControl: 1) 64)
 				(gCurRoom setScript: stayOut)
 			)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(gCurRoom setScript: walkOut)
 			)
 		)

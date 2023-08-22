@@ -638,7 +638,7 @@
 				(rm64Script changeState: 1)
 			)
 			(cond
-				((== (gEgo edgeHit:) 2)
+				((== (gEgo edgeHit:) EDGE_RIGHT)
 					(gCurRoom newRoom: 63)
 				)
 				(

@@ -73,10 +73,10 @@
 
 	(method (newRoom newRoomNumber)
 		(cond
-			((and (== gLawyerState 2) (== (gEgo edgeHit:) 3))
+			((and (== gLawyerState 2) (== (gEgo edgeHit:) EDGE_BOTTOM))
 				(= gLawyerState 3)
 			)
-			((and (== gLawyerState 6) (== (gEgo edgeHit:) 3))
+			((and (== gLawyerState 6) (== (gEgo edgeHit:) EDGE_BOTTOM))
 				(= gLawyerState 7)
 			)
 		)

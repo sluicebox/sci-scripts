@@ -33,8 +33,8 @@
 	)
 
 	(method (init)
-		(proc0_3)
-		(proc0_1)
+		(HandsOn)
+		(NormalEgo)
 		(super init:)
 		(= global345 outCode)
 		(gCurRoom
@@ -157,7 +157,7 @@
 	(properties)
 
 	(method (changeState newState &tmp temp0)
-		(proc0_2)
+		(HandsOff)
 		(if (not (= state newState))
 			(if (not global172)
 				(proc0_7 gEgo mother)
@@ -176,7 +176,7 @@
 				)
 			)
 		else
-			(proc0_3)
+			(HandsOn)
 			(client setScript: 0)
 			(DoSound sndMASTER_VOLUME global125)
 		)

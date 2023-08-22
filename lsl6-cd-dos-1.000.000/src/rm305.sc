@@ -46,18 +46,18 @@
 		)
 		(switch gPrevRoomNum
 			(640
-				(gEgo x: 12 y: (gEgo y:) edgeHit: 0)
+				(gEgo x: 12 y: (gEgo y:) edgeHit: EDGE_NONE)
 				(self style: 16396)
 			)
 			(580
-				(gEgo x: 218 y: 104 setLoop: 0 setPri: 5 edgeHit: 0)
+				(gEgo x: 218 y: 104 setLoop: 0 setPri: 5 edgeHit: EDGE_NONE)
 				(if (not (IsFlag 35))
 					(self setScript: enterFrom580Scr)
 				)
 			)
 			(300
 				(self style: 16395)
-				(gEgo x: 310 y: (gEgo y:) edgeHit: 0)
+				(gEgo x: 310 y: (gEgo y:) edgeHit: EDGE_NONE)
 			)
 			(else
 				(gEgo setHeading: 180 posn: 310 118)

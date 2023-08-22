@@ -122,15 +122,15 @@
 	(method (doit)
 		(cond
 			(script 0)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(HandsOff)
 				(self setScript: exitNorth)
 			)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(HandsOff)
 				(self setScript: exitSouth)
 			)
-			((or (== (gEgo edgeHit:) 2) (== (gEgo edgeHit:) 4))
+			((or (== (gEgo edgeHit:) EDGE_RIGHT) (== (gEgo edgeHit:) EDGE_LEFT))
 				(cond
 					((!= (sewer location:) 95)
 						(sewer location: 0 status: 0)

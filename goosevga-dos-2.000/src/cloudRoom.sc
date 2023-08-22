@@ -19,7 +19,7 @@
 
 	(method (init)
 		(super init:)
-		(proc0_2)
+		(HandsOff)
 		(gooseRider
 			view: (+ global114 21)
 			setCycle: Fwd

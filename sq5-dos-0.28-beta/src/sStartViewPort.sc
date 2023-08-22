@@ -133,7 +133,7 @@
 				(super init: 0 wd40Eyes 0 &rest)
 			)
 			(25
-				(switch global142
+				(switch gAct
 					(0
 						(self view: 209 loop: 0 cel: 0)
 						(quirkEyes

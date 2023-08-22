@@ -61,7 +61,7 @@
 		(= east 7)
 		(= west 31)
 		(= horizon 72)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(= local0 0)
 		(= global189 1)
 		(= local9 (Prop new:))

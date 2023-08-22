@@ -810,11 +810,11 @@
 		(return temp0)
 	)
 
-	(method (startRoom param1)
+	(method (startRoom roomNum)
 		(if gPMouse
 			(gPMouse stop:)
 		)
-		((ScriptID 898) doit: param1) ; disposeCode
+		((ScriptID 898) doit: roomNum) ; disposeCode
 		(if
 			(and
 				(> (- (MemoryInfo 1) 2) (MemoryInfo 0)) ; FreeHeap, LargestPtr
@@ -831,16 +831,16 @@
 			(SetDebug)
 		)
 		(cond
-			((OneOf param1 10 11 12 13 14 15 16 17 18 19 20 21 34 35)
+			((OneOf roomNum 10 11 12 13 14 15 16 17 18 19 20 21 34 35)
 				RegionPath
 				(ScriptID 134) ; station
 			)
-			((OneOf param1 51 53)
+			((OneOf roomNum 51 53)
 				(ScriptID 151) ; hotel
 			)
 		)
 		(= global224 {Not supported by this room.})
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(if (and (gCast contains: gEgo) (not (gEgo looper:)))
 			(gEgo setLoop: stopGroop)
 		)

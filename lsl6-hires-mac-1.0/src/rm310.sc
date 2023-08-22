@@ -2014,7 +2014,7 @@
 			(14
 				(proc79_12 351 1030 1035)
 				(gGame handsOn:)
-				(gEgo normalize: 900 7 1 edgeHit: 0)
+				(gEgo normalize: 900 7 1 edgeHit: EDGE_NONE)
 				(self dispose:)
 			)
 		)

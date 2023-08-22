@@ -94,48 +94,48 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(switch global113
-					(1
+				(switch gEurekaLocation
+					(1 ; garbage1
 						(gMessager say: 33 0 48 1 self) ; "This planet has a planetary shield which prevents scanning, Captain."
 					)
-					(2
+					(2 ; garbage2
 						(gMessager say: 33 0 48 1 self) ; "This planet has a planetary shield which prevents scanning, Captain."
 					)
-					(5
+					(5 ; clorox2
 						(if (IsFlag 30)
 							(gMessager say: 33 0 27 1 self) ; "Atmosphere: Nitrogen, oxygen, carbon dioxide.  Gravity: .097 normal.  Average temperature: 27 degrees Celsius.  Life Forms: Indeterminate readings.  The planet can support oxygen breathing life-forms, sir."
 						else
 							(gMessager say: 33 0 27 2 self) ; "The colony shield is up sir. No scan is possible at this time."
 						)
 					)
-					(3
+					(3 ; ku
 						(gMessager say: 33 0 56 1 self) ; "Kiz Urazgubi is a class M planet capable of sustaining humanoid life forms."
 					)
-					(6
+					(6 ; thrakus
 						(gMessager say: 33 0 30 1 self) ; "The atmosphere of this planet is highly toxic to humanoid life forms, Captain."
 					)
-					(7
+					(7 ; genetix Space Lab
 						(gMessager say: 33 0 28 1 self) ; "The station is shielded, Captain. Scans negative."
 					)
-					(8
+					(8 ; genetix environdome
 						(gMessager say: 33 0 28 2 self) ; "I am detecting power fluctuations inside the envirodome, sir. Sensors register debris in the area as well."
 					)
-					(9
+					(9 ; generic planet 1
 						(gMessager say: 33 0 31 1 self) ; "This planet cannot sustain humanoid life, Captain."
 					)
-					(10
+					(10 ; genceric planet 2
 						(gMessager say: 33 0 31 2 self) ; "Humans cannot survive on this planet without a complete vac suit, Captain."
 					)
-					(11
+					(11 ; generic planet 3
 						(gMessager say: 33 0 31 3 self) ; "The surface temperature of this planet is minus 200 degrees."
 					)
-					(12
+					(12 ; generic planet 4
 						(gMessager say: 33 0 31 4 self) ; "This planet is geologically active and highly unstable."
 					)
-					(13
+					(13 ; generic planet 5
 						(gMessager say: 33 0 31 5 self) ; "Surface winds on this planet exceed 500 kilometers per hour."
 					)
-					(14
+					(14 ; goliath
 						(gMessager say: 33 0 5 2 self) ; "We aren't close enough to a planet, sir."
 					)
 					(else
@@ -156,8 +156,8 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(switch global113
-					(6
+				(switch gEurekaLocation
+					(6 ; thrakus
 						(if (IsFlag 42)
 							(if (eureka damaged:)
 								(gMessager say: 34 0 20 1 self) ; "The Goliath is coming around for another pass, Captain. Her weapons are fully charged."
@@ -168,7 +168,7 @@
 							(gMessager say: 34 0 30 1 self) ; "Indeterminate readings, sir. If there are any ships within scanning range, they're jamming us."
 						)
 					)
-					(14
+					(14 ; goliath
 						(if (IsFlag 39)
 							(gMessager say: 34 0 49 4 self) ; "The Goliath has not scanned us, Captain. There is a good chance they are unaware of our presence."
 						else
@@ -227,10 +227,10 @@
 		(switch (= state newState)
 			(0
 				(cond
-					((and (== global113 5) (IsFlag 30) (== global142 0))
+					((and (== gEurekaLocation 5) (IsFlag 30) (== gAct 0)) ; clorox2
 						(gMessager say: 30 0 27 1 self) ; "I recommend we send down an away team to investigate the fate of the colonists, Captain."
 					)
-					((and (== global113 6) (IsFlag 94) (not (IsFlag 63)))
+					((and (== gEurekaLocation 6) (IsFlag 94) (not (IsFlag 63))) ; thrakus
 						(gMessager say: 30 0 30 0 self) ; "The most logical course of action is to beam down to investigate the source of the beacon, Captain."
 					)
 					((IsFlag 42)
@@ -247,16 +247,16 @@
 							(gMessager say: 30 0 49 1 self) ; "I recommend caution, sir. She outguns us a hundred to one."
 						)
 					)
-					((and (== global113 15) (not (IsFlag 87)))
+					((and (== gEurekaLocation 15) (not (IsFlag 87))) ; empty space
 						(gMessager say: 30 0 40 0 self) ; "It would be logical to utilize the Eureka's EVA pod to recover our chief engineer, Captain Wilco."
 					)
-					((and (== global113 8) (not (IsFlag 75)))
+					((and (== gEurekaLocation 8) (not (IsFlag 75))) ; genetix environdome
 						(gMessager say: 30 0 28 0 self) ; "This facility is not listed in the StarCon registry or any of our other library databases, sir."
 					)
 					((eureka damaged:)
 						(gMessager say: 30 0 11 1 self) ; "I recommend we retreat, sir. The Eureka cannot sustain much more damage and retain structural integrity."
 					)
-					((== global113 14)
+					((== gEurekaLocation 14) ; goliath
 						(gMessager say: 30 0 50 0 self) ; "I recommend we attempt to capture the Goliath, Captain."
 					)
 					(else

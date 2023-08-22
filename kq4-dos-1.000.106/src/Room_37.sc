@@ -46,7 +46,7 @@
 		(if gNight
 			(= picture 137)
 		)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(super init:)
 		(self setRegions: 505) ; gfReg
 		(Load rsVIEW 613)

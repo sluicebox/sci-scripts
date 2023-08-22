@@ -52,7 +52,7 @@
 					loop: 0
 					setScale: Scaler 100 65 172 105
 					init:
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 				)
 			)
 			(315

@@ -24,7 +24,7 @@
 			(0
 				(proc0_9)
 				(Load rsCURSOR 69)
-				(proc0_2)
+				(HandsOff)
 				(gLongSong stop:)
 				(rhymeSync init: 11)
 				(global129 illegalBits: -32756)
@@ -88,7 +88,7 @@
 				(if (== gScore gPossibleScore)
 					(gCurRoom setScript: (ScriptID 205)) ; walkTo
 				else
-					(proc0_3)
+					(HandsOn)
 				)
 				(DisposeScript 985)
 				(self dispose:)

@@ -237,11 +237,11 @@
 	(method (doit)
 		(if (and (not script) (gEgo edgeHit:))
 			(switch (gEgo edgeHit:)
-				(2
+				(EDGE_RIGHT
 					(HandsOff)
 					(gCurRoom setScript: sExitEast)
 				)
-				(4
+				(EDGE_LEFT
 					(HandsOff)
 					(gCurRoom setScript: sExitWest)
 				)

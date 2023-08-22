@@ -91,7 +91,7 @@
 		(if global175
 			(info cel: 1 stopUpd:)
 			(localproc_0
-				(Format @temp0 44 0 global175 global165 global175 global165) ; "You Bet $%u You Have $%u"
+				(Format @temp0 44 0 global175 gBuckazoidCount global175 gBuckazoidCount) ; "You Bet $%u You Have $%u"
 			)
 		else
 			(info setCycle: Fwd)
@@ -215,9 +215,9 @@
 							44
 							2
 							global175
-							global165
+							gBuckazoidCount
 							global175
-							global165
+							gBuckazoidCount
 						)
 					)
 				else
@@ -346,7 +346,7 @@
 			)
 			(3
 				(if (!= local0 1000)
-					(+= global165 (* local0 global175))
+					(+= gBuckazoidCount (* local0 global175))
 					(if local0
 						(if (not (gEgo has: 10)) ; buckazoid
 							(gEgo get: 10) ; buckazoid
@@ -358,12 +358,12 @@
 								44
 								10
 								temp30
-								global165
+								gBuckazoidCount
 								temp30
-								global165
+								gBuckazoidCount
 							)
 						)
-						(if (> global165 300)
+						(if (> gBuckazoidCount 300)
 							(SetFlag 63)
 							(Print 44 11) ; "You step back nervously as the over-heated slot machine begins to sputter and smoke."
 							(gCurRoom newRoom: 43)
@@ -563,7 +563,7 @@
 					(10 ; buckazoid
 						(cond
 							((or (pic3 script:) (gCurRoom script:)) 0)
-							((not global165)
+							((not gBuckazoidCount)
 								(Print 44 17) ; "Who are you trying to kid? You don't have any more buckazoids to gamble with. Hit the sand, pal."
 							)
 							((< global175 3)
@@ -572,7 +572,7 @@
 									(info setCycle: 0 cel: 1 stopUpd:)
 								)
 								(++ global175)
-								(if (not (-- global165))
+								(if (not (-- gBuckazoidCount))
 									(Print 44 18) ; "With shaking hands, you insert your last buckazoid into the "Slots-O-Death" machine."
 									(gEgo put: 10) ; buckazoid
 								)
@@ -582,9 +582,9 @@
 										44
 										19
 										global175
-										global165
+										gBuckazoidCount
 										global175
-										global165
+										gBuckazoidCount
 									)
 								)
 							)
@@ -641,7 +641,7 @@
 							)
 						)
 					)
-					((not global165)
+					((not gBuckazoidCount)
 						(= local2 1)
 					)
 					((not (Random 0 6))

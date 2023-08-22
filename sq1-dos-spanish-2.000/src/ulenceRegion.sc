@@ -41,10 +41,10 @@
 				illegalBits: (if (OneOf gCurRoomNum 46 45) 64 else 0)
 				posn:
 					(switch (gEgo edgeHit:)
-						(4
+						(EDGE_LEFT
 							(+ global163 319)
 						)
-						(2
+						(EDGE_RIGHT
 							(- global163 319)
 						)
 						(else
@@ -52,10 +52,10 @@
 						)
 					)
 					(switch (gEgo edgeHit:)
-						(3
+						(EDGE_BOTTOM
 							(- (gCurRoom horizon:) 10)
 						)
-						(1 280)
+						(EDGE_TOP 280)
 						(else global164)
 					)
 				setLoop: roboGroop

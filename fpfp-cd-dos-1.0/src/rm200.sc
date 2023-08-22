@@ -593,7 +593,7 @@
 			)
 			(4 0)
 			(5
-				(proc0_5 gEgo srini)
+				(Face gEgo srini)
 				(= cycles 15)
 			)
 			(6

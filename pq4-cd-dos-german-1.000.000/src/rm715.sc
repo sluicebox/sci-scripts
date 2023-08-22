@@ -145,7 +145,7 @@
 				(return 1)
 			)
 			(22 ; handgun
-				(proc30_0 3 22 0 1 715)
+				(EgoDead 3 22 0 1 715) ; "Blind firing can result in the death of innocent citizens. Think tactics. Think survival for others as well as yourself."
 			)
 			(else
 				(super doVerb: theVerb)
@@ -184,7 +184,7 @@
 				(gMessager say: noun theVerb 0 0) ; "There is no one in sight. The coast appears clear, Detective."
 			)
 			(22 ; handgun
-				(proc30_0 3 22 0 1 715)
+				(EgoDead 3 22 0 1 715) ; "Blind firing can result in the death of innocent citizens. Think tactics. Think survival for others as well as yourself."
 			)
 			(else
 				(super doVerb: theVerb)

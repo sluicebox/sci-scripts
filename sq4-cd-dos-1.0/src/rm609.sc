@@ -91,7 +91,7 @@
 	(method (doit)
 		(cond
 			(script 0)
-			((and (== (gEgo edgeHit:) 2) (< (gEgo y:) 100))
+			((and (== (gEgo edgeHit:) EDGE_RIGHT) (< (gEgo y:) 100))
 				(self setScript: exitRight)
 			)
 		)

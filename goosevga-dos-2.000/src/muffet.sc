@@ -246,7 +246,7 @@
 			(0
 				(= local3 (gEgo x:))
 				(= local4 (gEgo y:))
-				(proc0_2)
+				(HandsOff)
 				(= temp0
 					(+
 						local4
@@ -315,8 +315,8 @@
 				(muffet setMotion: NewFollow gEgo 30)
 			)
 			(if (!= gScore gPossibleScore)
-				(proc0_5)
-				(proc0_3)
+				(RedrawCast)
+				(HandsOn)
 				(self dispose:)
 			)
 			(DisposeScript 929)
@@ -327,7 +327,7 @@
 				(gCurRoom newRoom: 45) ; mapRoom
 			)
 		else
-			(proc0_2)
+			(HandsOff)
 			(wave changeState: 3)
 			(muffet setMotion: 0)
 			(proc0_7 gEgo muffet)
@@ -444,7 +444,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(= global341 0)
 				(muffet
 					moveSpeed: (gEgo moveSpeed:)

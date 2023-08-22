@@ -27,7 +27,7 @@
 		(= west 5)
 		(= horizon 80)
 		(= gIndoors 0)
-		(gEgo view: 2 edgeHit: 0)
+		(gEgo view: 2 edgeHit: EDGE_NONE)
 		(if (== (gGSound state:) 3)
 			(gGSound play: -15536)
 		)

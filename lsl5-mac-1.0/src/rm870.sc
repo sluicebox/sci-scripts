@@ -30,7 +30,7 @@
 			(east
 				(HandsOn)
 				(= style 11)
-				(gEgo init: actions: ActionsKRAP edgeHit: 4 normalize: 872)
+				(gEgo init: actions: ActionsKRAP edgeHit: EDGE_LEFT normalize: 872)
 				(elevator init: setPri: -1 addToPic:)
 				(eDoor init: setPri: -1 addToPic:)
 				(elevatorSide init: setPri: -1 addToPic:)

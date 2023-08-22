@@ -112,7 +112,7 @@
 		else
 			(= global102 0)
 		)
-		(if (== (gEgo edgeHit:) 2)
+		(if (== (gEgo edgeHit:) EDGE_RIGHT)
 			(if (< (gEgo y:) 148)
 				(gCurRoom newRoom: 12)
 			else

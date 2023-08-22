@@ -22,7 +22,7 @@
 	)
 
 	(method (init)
-		(proc0_3)
+		(HandsOn)
 		(super init:)
 		(= global345 outCode)
 		(gCurRoom
@@ -113,7 +113,7 @@
 		(switch (= state newState)
 			(0
 				(= register 328)
-				(proc0_2)
+				(HandsOff)
 				(proc0_7 gEgo woman)
 				(proc411_0 (gEgo head:) woman)
 				(= cycles 1)
@@ -134,7 +134,7 @@
 			(5
 				(proc411_1)
 				(DoSound sndMASTER_VOLUME global125)
-				(proc0_3)
+				(HandsOn)
 				(self dispose:)
 			)
 		)

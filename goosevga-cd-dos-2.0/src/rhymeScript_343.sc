@@ -22,7 +22,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(Load rsCURSOR 69)
 				(proc0_9)
 				(gLongSong stop:)

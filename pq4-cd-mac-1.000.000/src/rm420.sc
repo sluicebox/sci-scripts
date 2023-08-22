@@ -514,7 +514,7 @@
 						(gMessager say: 1 22 1) ; "The dog is not rabid, Detective. Holster your gun!"
 						(++ local0)
 					)
-					(((ScriptID 32 0) doit: 1 22 2 1 420) 0) ; ShootHandgun
+					(((ScriptID 32 0) doit: 1 22 2 1 420) 0) ; ShootHandgun, "Animal control is not your job!"
 				)
 			)
 			((== theVerb 32) ; pretzels

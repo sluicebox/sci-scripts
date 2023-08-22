@@ -29,7 +29,7 @@
 	)
 
 	(method (init)
-		(proc0_3)
+		(HandsOn)
 		(super init:)
 		(= global345 outCode)
 		(if (== gPrevRoomNum 45) ; mapRoom
@@ -248,7 +248,7 @@
 
 	(method (changeState newState &tmp temp0 temp1)
 		(if (not (= state newState))
-			(proc0_2)
+			(HandsOff)
 			(proc0_7 gEgo jack)
 			(= temp0 (gGoals at: 6))
 			(proc0_20)
@@ -299,9 +299,9 @@
 			(if global172
 				(gCurRoom newRoom: 45) ; mapRoom
 			)
-			(proc0_5)
+			(RedrawCast)
 			(if (!= gScore gPossibleScore)
-				(proc0_3)
+				(HandsOn)
 			)
 		)
 	)

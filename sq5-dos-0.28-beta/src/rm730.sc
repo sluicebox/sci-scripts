@@ -53,7 +53,7 @@
 		(domeBack init:)
 		(pondF init:)
 		(smallFalls init:)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(plant init: setScript: swOscilate)
 		(super init:)
 		(if (not (IsFlag 28))

@@ -203,7 +203,7 @@
 		(super doit:)
 		(cond
 			((gCurRoom script:))
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(gCurRoom setScript: walkOut 0 1)
 			)
 			((<= (gEgo x:) 8)

@@ -64,7 +64,7 @@
 			(0
 				(= seconds 3)
 				(gSq5Music2 number: 211 setLoop: 1 play:)
-				(= global113 17)
+				(= gEurekaLocation 17) ; empty space
 				(eureka state: 1)
 				(SetFlag 32)
 			)

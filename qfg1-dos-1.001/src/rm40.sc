@@ -269,7 +269,7 @@
 
 	(method (doit &tmp temp0)
 		(super doit:)
-		(if (== (gEgo edgeHit:) 4)
+		(if (== (gEgo edgeHit:) EDGE_LEFT)
 			(if (> (gEgo y:) 125)
 				(gCurRoom newRoom: 39)
 			else

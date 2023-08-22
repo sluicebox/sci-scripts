@@ -58,7 +58,7 @@
 		)
 		(self setRegions: 507) ; Woods_Region
 		(gEgo view: 2 init:)
-		(gEgo edgeHit: 0 setScript: fall)
+		(gEgo edgeHit: EDGE_NONE setScript: fall)
 		(super init:)
 		(gCurRoom setScript: egoActions)
 		(Load rsVIEW 7)

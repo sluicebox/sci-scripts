@@ -118,15 +118,15 @@
 	(method (doit &tmp temp0)
 		(super doit:)
 		(switch (gEgo edgeHit:)
-			(2
+			(EDGE_RIGHT
 				(= global106 (+ (/ (= temp0 (- (gEgo y:) 105)) 3) 98))
 				(gCurRoom newRoom: 40)
 			)
-			(3
+			(EDGE_BOTTOM
 				(= global105 (+ (/ (gEgo x:) 3) 102))
 				(gCurRoom newRoom: 39)
 			)
-			(4
+			(EDGE_LEFT
 				(= global106 (+ (/ (= temp0 (- (gEgo y:) 105)) 2) 84))
 				(gCurRoom newRoom: 38)
 			)

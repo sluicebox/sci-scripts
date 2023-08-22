@@ -563,7 +563,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(= local0 1)
 				(if ((gGoals at: 4) egoReturned:)
 					(= register 227)
@@ -591,7 +591,7 @@
 					(teach cue:)
 					(= local81 0)
 				)
-				(proc0_3)
+				(HandsOn)
 				(self dispose:)
 			)
 		)

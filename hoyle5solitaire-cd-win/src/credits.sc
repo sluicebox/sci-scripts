@@ -78,7 +78,7 @@
 	(method (changeState newState &tmp [temp0 2])
 		(switch (= state newState)
 			(0
-				(Empty)
+				(SetDebug)
 				(localproc_0)
 				(= ticks 60)
 			)

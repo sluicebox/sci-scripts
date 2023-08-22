@@ -42,7 +42,7 @@
 				(gSq5Music2 number: 202 setLoop: 1 play:)
 				(= seconds 2)
 				(ClearFlag 32)
-				(eureka state: 2 curLocation: 3)
+				(eureka state: 2 curLocation: 3) ; ku
 			)
 			(2
 				(gGame handsOff:)
@@ -70,7 +70,7 @@
 				(eureka state: 3)
 				((ScriptID 201 24) startUpd:) ; droole
 				((ScriptID 201 2) startUpd:) ; flo
-				(= global113 16)
+				(= gEurekaLocation 16) ; empty space
 			)
 			(10
 				(wd40Ship init: addToPic:)
@@ -187,7 +187,7 @@
 			(32
 				(Palette palSET_INTENSITY 1 255 100)
 				(eureka setScript: (ScriptID 210 6) 0 120) ; sWD40Timer
-				(++ global127)
+				(++ gGarbagePickupCount)
 				(SetFlag 106)
 				(explosionSound dispose:)
 				(gGame handsOn:)

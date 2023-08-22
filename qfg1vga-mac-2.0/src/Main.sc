@@ -1209,13 +1209,13 @@
 		(super newRoom: newRoomNumber)
 	)
 
-	(method (startRoom param1 &tmp [temp0 20])
+	(method (startRoom roomNum &tmp [temp0 20])
 		(proc814_30)
 		(gGame setCursor: gWaitCursor 1)
-		(proc896_0 param1)
+		(proc896_0 roomNum)
 		StopWalk
 		Cycle
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(if (not global102)
 			(proc814_31)
 			(gGame setCursor: ((gTheIconBar curIcon:) cursor:) 1)

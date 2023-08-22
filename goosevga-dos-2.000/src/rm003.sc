@@ -40,7 +40,7 @@
 				)
 		)
 		(Load rsVIEW 85)
-		(proc0_1)
+		(NormalEgo)
 		(tommy init:)
 		(= global341 converse)
 		(switch gPrevRoomNum
@@ -232,7 +232,7 @@
 
 	(method (changeState newState &tmp temp0)
 		(if (not (= state newState))
-			(proc0_2)
+			(HandsOff)
 			(proc0_7 gEgo tommy)
 			(theHead
 				setLoop:
@@ -288,8 +288,8 @@
 			(if global172
 				(gCurRoom newRoom: 45) ; mapRoom
 			)
-			(proc0_5)
-			(proc0_3)
+			(RedrawCast)
+			(HandsOn)
 		)
 	)
 )

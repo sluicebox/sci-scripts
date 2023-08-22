@@ -67,7 +67,7 @@
 				)
 			)
 			(north
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 			)
 			(east
 				(blonde init: posn: (+ gBlondeX 319) 82)
@@ -82,7 +82,7 @@
 			)
 			(else
 				(HandsOn)
-				(gEgo posn: 253 185 edgeHit: 0 setHeading: 360)
+				(gEgo posn: 253 185 edgeHit: EDGE_NONE setHeading: 360)
 				(camera setCel: 5)
 			)
 		)
@@ -210,7 +210,7 @@
 		)
 		(cond
 			(script)
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(redHead setScript: 0)
 				(blonde setScript: 0)
 				(= gRedHeadX (redHead x:))

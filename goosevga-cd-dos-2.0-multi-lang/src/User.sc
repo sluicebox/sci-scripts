@@ -117,7 +117,7 @@
 				(not (gCurRoom script:))
 				(User controls:)
 			)
-			(proc0_2)
+			(HandsOff)
 			(temp0 claimed: 1)
 			(gEgo setMotion: 0)
 			(gEgo loop: 13 cel: 1)
@@ -134,7 +134,7 @@
 	(method (cue)
 		(DoSound sndMASTER_VOLUME global125)
 		(proc411_1)
-		(proc0_3)
+		(HandsOn)
 	)
 
 	(method (getInput event &tmp temp0 temp1)

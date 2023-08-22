@@ -35,7 +35,7 @@
 					setStep: 2 1
 					posn: 156 177
 					setHeading: 180
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 				)
 				(flagOne init: cycleSpeed: 18 setCycle: Fwd)
 				(flagTwo init: cycleSpeed: 24 setCycle: Fwd)

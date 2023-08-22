@@ -363,7 +363,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				((ScriptID 32 0) doit: 5 22 22 605) ; ShootHandgun
+				((ScriptID 32 0) doit: 5 22 22 605) ; ShootHandgun, "Deadly use of force results in first degree murder and a life sentence."
 			)
 		)
 	)

@@ -116,7 +116,7 @@
 					init:
 					setLoop: -1
 					ignoreActors: 1
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 					setMotion: MoveTo 132 132 self
 				)
 			)

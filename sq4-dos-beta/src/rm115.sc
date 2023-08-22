@@ -68,12 +68,12 @@
 	(method (doit)
 		(cond
 			(script 0)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(HandsOff)
 				((ScriptID 702 2) setScript: 0) ; theSlime
 				(self setScript: exitNorth)
 			)
-			((== (gEgo edgeHit:) 4)
+			((== (gEgo edgeHit:) EDGE_LEFT)
 				(if (> (sewer distance:) 39)
 					(gLongSong2 fade:)
 				)

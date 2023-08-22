@@ -71,7 +71,7 @@
 	(method (doit)
 		(cond
 			(script 0)
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(switch (sewer status:)
 					(1
 						(sewer status: 0 location: 0)

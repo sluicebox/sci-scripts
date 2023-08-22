@@ -281,7 +281,7 @@
 			(0
 				(if (< (gGame detailLevel:) 3)
 					(= local44 1)
-					(gEgo edgeHit: 0)
+					(gEgo edgeHit: EDGE_NONE)
 					(HandsOff)
 					(= register (gCurRoom roomToEdge: gPrevRoomNum))
 					(= temp5
@@ -331,7 +331,7 @@
 					else
 						(cedric view: 138)
 					)
-					(gEgo edgeHit: 0)
+					(gEgo edgeHit: EDGE_NONE)
 					(HandsOff)
 					(= register (gCurRoom roomToEdge: gPrevRoomNum))
 					(= temp5

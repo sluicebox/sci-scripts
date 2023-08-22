@@ -558,7 +558,7 @@
 		(super doit:)
 		(cond
 			(script)
-			((== (gEgo edgeHit:) 2)
+			((== (gEgo edgeHit:) EDGE_RIGHT)
 				(HandsOff)
 				(gCurRoom setScript: sExitEast)
 			)

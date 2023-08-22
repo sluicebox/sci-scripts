@@ -37,7 +37,7 @@
 		(if (IsFlag 27)
 			(gEgo actions: ActionsKRAP)
 		)
-		(gEgo posn: 270 140 setHeading: 270 edgeHit: 0)
+		(gEgo posn: 270 140 setHeading: 270 edgeHit: EDGE_NONE)
 		(super init:)
 		(officeDoor init:)
 		(sDoor init: approachVerbs: 3 ignoreActors: stopUpd:) ; Do

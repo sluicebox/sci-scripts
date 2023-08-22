@@ -149,7 +149,7 @@
 				(client loop:)
 				(- (client lastCel:) 1)
 			)
-			(Empty client)
+			(SetDebug client)
 		)
 		(= temp1 (client cel:))
 		(while (== temp1 (= temp0 (Random 0 (client lastCel:))))

@@ -106,7 +106,7 @@
 			(script
 				(script doit:)
 			)
-			((== (gEgo edgeHit:) 1)
+			((== (gEgo edgeHit:) EDGE_TOP)
 				(self setScript: gStdClimbOut)
 			)
 			((= temp0 (self edgeToRoom: (gEgo edgeHit:)))

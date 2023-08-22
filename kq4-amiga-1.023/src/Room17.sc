@@ -61,7 +61,7 @@
 		(= west 16)
 		(= horizon 100)
 		(= gIndoors 0)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(self setRegions: 508) ; Forest_Region
 		(if (== (gGSound state:) 3)
 			(gGSound play: -15536)

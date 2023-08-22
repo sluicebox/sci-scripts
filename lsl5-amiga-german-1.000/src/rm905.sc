@@ -65,11 +65,11 @@
 				(self setScript: sEnterFromOutside)
 			)
 			(910
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 			)
 			(915
 				(door entranceTo: 915)
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 			)
 			(else
 				(= gLarryLoc 3)

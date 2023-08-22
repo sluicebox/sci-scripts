@@ -151,7 +151,7 @@
 		(cond
 			((gEgo script:))
 			((gCurRoom script:))
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(gCurRoom setScript: egoExits)
 			)
 			((gEgo inRect: 207 120 312 152)
@@ -1553,7 +1553,7 @@
 
 	(method (doit)
 		(cond
-			((== (gEgo edgeHit:) 3)
+			((== (gEgo edgeHit:) EDGE_BOTTOM)
 				(gCurRoom setScript: egoExits)
 			)
 			((and register (== state 10))

@@ -58,7 +58,7 @@
 			)
 			(east
 				(HandsOn)
-				(gEgo posn: 238 162 setHeading: 270 edgeHit: 0)
+				(gEgo posn: 238 162 setHeading: 270 edgeHit: EDGE_NONE)
 			)
 			(else
 				(= gLarryLoc 1)

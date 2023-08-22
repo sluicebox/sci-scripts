@@ -42,7 +42,7 @@
 	(method (init)
 		(User canControl: 0 canInput: 0)
 		(= picture gPrevRoomNum)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(gEgo xStep: 4 init:)
 		(super init:)
 		(if gNight

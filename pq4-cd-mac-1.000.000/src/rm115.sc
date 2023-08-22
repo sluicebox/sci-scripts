@@ -811,7 +811,7 @@
 			)
 			(5
 				(stealStinger pause: 0)
-				(proc30_0 1 22 6 1 115)
+				(EgoDead 1 22 6 1 115) ; "The consequences of your actions are evident."
 			)
 			(6
 				(self dispose:)

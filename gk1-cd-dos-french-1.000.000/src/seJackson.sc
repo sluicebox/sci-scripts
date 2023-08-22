@@ -376,7 +376,7 @@
 		(if (IsFlag 66)
 			(gWalkHandler delete: cop radio bike)
 		)
-		(if (and (== (gEgo edgeHit:) 3) (IsFlag 102))
+		(if (and (== (gEgo edgeHit:) EDGE_BOTTOM) (IsFlag 102))
 			(ClearFlag 102)
 		)
 		(if (!= gPrevRoomNum 400)

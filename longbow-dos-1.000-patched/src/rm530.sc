@@ -113,14 +113,14 @@
 	(method (init &tmp temp0)
 		(switch gPrevRoomNum
 			(803 ; speedTest
-				(gEgo x: 140 loop: 1 edgeHit: 1)
+				(gEgo x: 140 loop: 1 edgeHit: EDGE_TOP)
 			)
 			(270
-				(gEgo x: 140 loop: 1 edgeHit: 1)
+				(gEgo x: 140 loop: 1 edgeHit: EDGE_TOP)
 			)
 			(else
 				(HandsOn)
-				(gEgo edgeHit: 0)
+				(gEgo edgeHit: EDGE_NONE)
 			)
 		)
 		(++ global159)

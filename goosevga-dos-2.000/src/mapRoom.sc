@@ -156,7 +156,7 @@
 		(flag3 setCycle: Fwd init:)
 		(flag4 setCycle: Fwd init:)
 		(= gDoInvBut doInvBut)
-		(proc0_3)
+		(HandsOn)
 	)
 
 	(method (dispose)

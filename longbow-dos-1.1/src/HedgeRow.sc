@@ -115,16 +115,16 @@
 			(gEgoHead z: 20)
 		)
 		(switch ((User alterEgo:) edgeHit:)
-			(1
+			(EDGE_TOP
 				(self style: 14)
 			)
-			(3
+			(EDGE_BOTTOM
 				(self style: 13)
 			)
-			(2
+			(EDGE_RIGHT
 				(self style: 12)
 			)
-			(4
+			(EDGE_LEFT
 				(self style: 11)
 			)
 			(else
@@ -162,10 +162,10 @@
 		(if (and ((User alterEgo:) edgeHit:) (not (gEgo script:)))
 			(HandsOff)
 			(switch ((User alterEgo:) edgeHit:)
-				(1
+				(EDGE_TOP
 					(gCurRoom newRoom: (+ gCurRoomNum 5))
 				)
-				(3
+				(EDGE_BOTTOM
 					(if (== gCurRoomNum 45) ; hedge4
 						(if (== gDay 10)
 							(gEgo setScript: itsToLate)
@@ -177,10 +177,10 @@
 						(gCurRoom newRoom: (- gCurRoomNum 5))
 					)
 				)
-				(2
+				(EDGE_RIGHT
 					(gCurRoom newRoom: (- gCurRoomNum 15))
 				)
-				(4
+				(EDGE_LEFT
 					(gCurRoom newRoom: (+ gCurRoomNum 15))
 				)
 			)
@@ -316,20 +316,20 @@
 						(gEgo
 							x:
 								(switch ((User alterEgo:) edgeHit:)
-									(1 global104)
-									(3 global104)
-									(2 0)
-									(4 319)
+									(EDGE_TOP global104)
+									(EDGE_BOTTOM global104)
+									(EDGE_RIGHT 0)
+									(EDGE_LEFT 319)
 									(else
 										(gCurRoom teleX:)
 									)
 								)
 							y:
 								(switch ((User alterEgo:) edgeHit:)
-									(2 global105)
-									(4 global105)
-									(1 189)
-									(3 0)
+									(EDGE_RIGHT global105)
+									(EDGE_LEFT global105)
+									(EDGE_TOP 189)
+									(EDGE_BOTTOM 0)
 									(else
 										(gCurRoom teleY:)
 									)
@@ -348,7 +348,7 @@
 							(gEgoHead z: 20)
 						)
 						(cond
-							((== ((User alterEgo:) edgeHit:) 3)
+							((== ((User alterEgo:) edgeHit:) EDGE_BOTTOM)
 								(cond
 									((and (> (gEgo x:) 290) (== gPrevRoomNum 50)) ; hedge5
 										(gEgo
@@ -371,7 +371,7 @@
 									)
 								)
 							)
-							((== ((User alterEgo:) edgeHit:) 1)
+							((== ((User alterEgo:) edgeHit:) EDGE_TOP)
 								(gEgo
 									setMotion:
 										PolyPath
@@ -380,7 +380,7 @@
 										self
 								)
 							)
-							((== ((User alterEgo:) edgeHit:) 2)
+							((== ((User alterEgo:) edgeHit:) EDGE_RIGHT)
 								(cond
 									((and (== gPrevRoomNum 75) (< (gEgo y:) 78)) ; hedge10
 										(gEgo setMotion: PolyPath 13 32 self)
@@ -416,7 +416,7 @@
 									)
 								)
 							)
-							((== ((User alterEgo:) edgeHit:) 4)
+							((== ((User alterEgo:) edgeHit:) EDGE_LEFT)
 								(cond
 									((and (== gPrevRoomNum 60) (< (gEgo y:) 70)) ; hedge7
 										(gEgo

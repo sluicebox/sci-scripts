@@ -34,7 +34,7 @@
 				(= style 11)
 			)
 			(else
-				(gEgo posn: 292 134 setHeading: 270 edgeHit: 0)
+				(gEgo posn: 292 134 setHeading: 270 edgeHit: EDGE_NONE)
 			)
 		)
 		(super init:)

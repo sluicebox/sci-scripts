@@ -71,7 +71,7 @@
 		(doorSound init:)
 		(= gIndoors 0)
 		(Load rsVIEW 47)
-		(gEgo edgeHit: 0 observeControl: 16384)
+		(gEgo edgeHit: EDGE_NONE observeControl: 16384)
 		(= global186 0)
 		(if (== (gGSound state:) 3)
 			(gGSound play: -15536)

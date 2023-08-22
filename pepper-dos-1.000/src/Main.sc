@@ -826,7 +826,7 @@
 		(return temp0)
 	)
 
-	(method (startRoom param1)
+	(method (startRoom roomNum)
 		((ScriptID 2000 3) ; PepperTalker
 			winX: 0
 			winY: 0
@@ -855,7 +855,7 @@
 		(if gPMouse
 			(gPMouse stop:)
 		)
-		((ScriptID 898) doit: param1) ; disposeCode
+		((ScriptID 898) doit: roomNum) ; disposeCode
 		(if
 			(and
 				(> (- (MemoryInfo 1) 2) (MemoryInfo 0)) ; FreeHeap, LargestPtr
@@ -873,7 +873,7 @@
 			(SetDebug)
 		)
 		(statusCode doit:)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 	)
 
 	(method (quitGame)

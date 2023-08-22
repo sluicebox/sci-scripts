@@ -128,7 +128,7 @@
 	(method (doit)
 		(cond
 			(script)
-			((and (gCast contains: poorRichard) (== (gEgo edgeHit:) 2))
+			((and (gCast contains: poorRichard) (== (gEgo edgeHit:) EDGE_RIGHT))
 				(gCurRoom setScript: cantExitEast)
 			)
 			((and (gCast contains: poorRichard) (< (gEgo x:) 5))

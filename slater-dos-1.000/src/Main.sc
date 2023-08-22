@@ -515,7 +515,7 @@
 		)
 	)
 
-	(method (startRoom param1)
+	(method (startRoom roomNum)
 		(if gPMouse
 			(gPMouse stop:)
 		)
@@ -563,7 +563,7 @@
 			(leftArrow view: global119 init: stopUpd:)
 			(rightArrow view: global119 init: stopUpd:)
 		)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 	)
 
 	(method (setCursor param1 param2 param3 param4 &tmp temp0)

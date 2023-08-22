@@ -178,7 +178,7 @@
 		)
 		(cond
 			((gEgo script:))
-			((or (== (gEgo edgeHit:) 3) (== (gEgo edgeHit:) 2))
+			((or (== (gEgo edgeHit:) EDGE_BOTTOM) (== (gEgo edgeHit:) EDGE_RIGHT))
 				(gEgo setScript: walkOut)
 			)
 			((<= (gEgo x:) 5)
@@ -422,7 +422,7 @@
 		(switch (= state newState)
 			(0
 				(HandsOff)
-				(if (== (gEgo edgeHit:) 2)
+				(if (== (gEgo edgeHit:) EDGE_RIGHT)
 					(gEgo setMotion: PolyPath 335 (gEgo y:) self)
 				else
 					(gEgo
@@ -436,7 +436,7 @@
 			)
 			(1
 				(HandsOn)
-				(if (== (gEgo edgeHit:) 2)
+				(if (== (gEgo edgeHit:) EDGE_RIGHT)
 					(gCurRoom newRoom: 600)
 				else
 					(gCurRoom newRoom: 580)

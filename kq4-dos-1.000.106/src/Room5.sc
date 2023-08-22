@@ -39,7 +39,7 @@
 		(if gNight
 			(= picture 105)
 		)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(self setRegions: 509) ; sForReg
 		(super init:)
 		(for ((= local9 1)) (<= local9 7) ((++ local9))

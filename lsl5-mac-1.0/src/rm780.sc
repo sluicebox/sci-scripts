@@ -33,7 +33,7 @@
 		)
 		(if (!= gPrevRoomNum 700)
 			(HandsOn)
-			(gEgo posn: 160 175 setHeading: 0 edgeHit: 0)
+			(gEgo posn: 160 175 setHeading: 0 edgeHit: EDGE_NONE)
 		)
 		(super init:)
 		(sky init:)

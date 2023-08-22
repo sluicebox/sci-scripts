@@ -34,13 +34,13 @@
 						(gEgo posn: 4 118)
 					)
 					((> (gEgo x:) 228)
-						(gEgo posn: 274 125 setPri: -1 edgeHit: 0)
+						(gEgo posn: 274 125 setPri: -1 edgeHit: EDGE_NONE)
 					)
 					(else
 						(gEgo
 							x: (+ (/ (* (- (gEgo x:) 179) 24) 24) 131)
 							y: 125
-							edgeHit: 0
+							edgeHit: EDGE_NONE
 						)
 					)
 				)
@@ -65,7 +65,7 @@
 				(gEgo
 					x: 317
 					y: (+ (/ (* (- (gEgo y:) 106) 5) 20) 123)
-					edgeHit: 0
+					edgeHit: EDGE_NONE
 				)
 			)
 			(25
@@ -111,7 +111,7 @@
 	)
 
 	(method (doit)
-		(if (== (gEgo edgeHit:) 4)
+		(if (== (gEgo edgeHit:) EDGE_LEFT)
 			(if (== global111 60)
 				(gGlobalMGSound fade:)
 			)

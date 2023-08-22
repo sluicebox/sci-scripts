@@ -29,7 +29,7 @@
 
 	(method (init)
 		(super init:)
-		(proc0_1)
+		(NormalEgo)
 		(gEgo setMotion: Freeway (= global75 @local0))
 		(switch gPrevRoomNum
 			(west
@@ -89,7 +89,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(switch gPrevRoomNum
 					(5
 						(= global131 global140)
@@ -108,7 +108,7 @@
 			)
 			(1
 				(gEgo setLoop: -1 setPri: -1)
-				(proc0_3)
+				(HandsOn)
 				(gCurRoom setScript: 0)
 			)
 		)
@@ -121,7 +121,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(cond
 					((> (gEgo x:) global62)
 						(= global131 global138)
@@ -139,7 +139,7 @@
 				(gEgo setMotion: MoveTo global131 global132 self)
 			)
 			(1
-				(proc0_3)
+				(HandsOn)
 				(gCurRoom
 					newRoom:
 						(cond

@@ -29,7 +29,7 @@
 	IsFlag 2
 	SetFlag 3
 	ClearFlag 4
-	proc0_5 5
+	Face 5
 	proc0_6 6
 	proc0_7 7
 	proc0_8 8
@@ -313,7 +313,7 @@
 	(return temp0)
 )
 
-(procedure (proc0_5 param1 param2 param3 param4 &tmp temp0 temp1 temp2 temp3)
+(procedure (Face param1 param2 param3 param4 &tmp temp0 temp1 temp2 temp3)
 	(= temp3 0)
 	(if (IsObject param2)
 		(= temp1 (param2 x:))
@@ -765,8 +765,8 @@
 		(super newRoom: newRoomNumber)
 	)
 
-	(method (startRoom param1 &tmp temp0 temp1 [temp2 2])
-		((ScriptID 11) doit: param1) ; disposeCode
+	(method (startRoom roomNum &tmp temp0 temp1 [temp2 2])
+		((ScriptID 11) doit: roomNum) ; disposeCode
 		(for ((= temp1 0)) (< temp1 (gTimers size:)) ((++ temp1))
 			(gTimers delete: (= temp0 (gTimers at: 0)))
 			(gTimers add: temp0)
@@ -797,20 +797,20 @@
 				(SetFlag 71)
 			)
 		)
-		(if (and (IsFlag 59) (OneOf param1 220 230 235 240 250))
+		(if (and (IsFlag 59) (OneOf roomNum 220 230 235 240 250))
 			(ScriptID 90) ; streetRgn
 		)
-		(if (and (== gCurPuzzle 22) (OneOf param1 220 235 240 250 400))
+		(if (and (== gCurPuzzle 22) (OneOf roomNum 220 235 240 250 400))
 			(ScriptID 91) ; rowdyRgn
 		)
-		(if (and global110 (not (OneOf param1 100)))
+		(if (and global110 (not (OneOf roomNum 100)))
 			((ScriptID 10 0) init:) ; MISSING SCRIPT
 		)
-		(if (OneOf global127 param1 1000)
+		(if (OneOf global127 roomNum 1000)
 			(proc0_9 0)
 		)
 		(gTheIconBar enable:)
-		(super startRoom: param1)
+		(super startRoom: roomNum)
 		(if
 			(and
 				(gEgo cycler:)

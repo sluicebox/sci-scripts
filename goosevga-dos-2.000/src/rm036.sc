@@ -43,7 +43,7 @@
 		(= global112 plate)
 		(tail init:)
 		(spinningWheel init: stopUpd:)
-		(proc0_1)
+		(NormalEgo)
 		(cond
 			((== gPrevRoomNum 10)
 				(gEgo posn: 128 120)
@@ -318,7 +318,7 @@
 
 	(method (changeState newState &tmp temp0)
 		(if (not (= state newState))
-			(proc0_2)
+			(HandsOff)
 			(proc0_7 gEgo plate)
 			(= temp0 (gGoals at: 8))
 			(proc0_20)
@@ -370,8 +370,8 @@
 			(if (not (dog script:))
 				(dog view: 651 loop: 5 setScript: snore)
 			)
-			(proc0_5)
-			(proc0_3)
+			(RedrawCast)
+			(HandsOn)
 		)
 	)
 )

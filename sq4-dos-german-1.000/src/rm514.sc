@@ -78,35 +78,7 @@
 		(self setRegions: 704) ; brain
 		(super init:)
 		(brain
-			makePolygon:
-				0
-				0
-				319
-				0
-				319
-				113
-				178
-				113
-				173
-				78
-				165
-				78
-				165
-				70
-				152
-				70
-				152
-				78
-				140
-				78
-				136
-				126
-				319
-				126
-				319
-				189
-				0
-				189
+			makePolygon: 0 0 319 0 319 113 178 113 173 78 165 78 165 70 152 70 152 78 140 78 136 126 319 126 319 189 0 189
 		)
 		(self setScript: enterScript 0 (== gPrevRoomNum 515))
 	)

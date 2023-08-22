@@ -115,7 +115,7 @@
 			)
 		)
 		(gEgo view: 2 xStep: 2 yStep: 1 init:)
-		(gEgo edgeHit: 0)
+		(gEgo edgeHit: EDGE_NONE)
 		(= [local2 0] 5)
 		(= [local2 1] 167)
 		(= [local2 2] 27)

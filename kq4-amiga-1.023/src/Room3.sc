@@ -68,7 +68,7 @@
 		)
 		(super init:)
 		(gEgo view: 2 init:)
-		(gEgo edgeHit: 0 setScript: fall)
+		(gEgo edgeHit: EDGE_NONE setScript: fall)
 		(if gNight
 			(gCurRoom overlay: 103)
 		)

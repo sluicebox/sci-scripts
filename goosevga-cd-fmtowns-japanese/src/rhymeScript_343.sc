@@ -22,7 +22,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_2)
+				(HandsOff)
 				(Load rsCURSOR 69)
 				(proc0_9)
 				(gLongSong stop:)
@@ -107,9 +107,9 @@
 			(11
 				(global109 setLoop: 13 setCycle: Fwd)
 				(gEgo setMotion: 0 setLoop: -1)
-				(proc0_3)
+				(HandsOn)
 				(if (== gScore gPossibleScore)
-					(proc0_2)
+					(HandsOff)
 					(gEgo setAvoider: (Avoid new:) setMotion: MoveTo 139 146)
 				)
 				(gLongSong number: 1 loop: -1 play:)

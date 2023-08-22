@@ -62,7 +62,7 @@
 				(= seconds 2)
 			)
 			(1
-				(= global113 17)
+				(= gEurekaLocation 17) ; empty space
 				(eureka state: 1)
 				(SetFlag 32)
 				(gCurRoom newRoom: 106)

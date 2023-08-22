@@ -251,7 +251,7 @@
 				(gEgo setMotion: MoveTo 41 158 self)
 			)
 			(6
-				(proc0_5 gEgo outhouseDoor)
+				(Face gEgo outhouseDoor)
 				(= cycles 10)
 			)
 			(7
@@ -299,7 +299,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_5 gEgo srini)
+				(Face gEgo srini)
 				(= cycles 10)
 			)
 			(1

@@ -1428,7 +1428,7 @@
 		)
 	)
 
-	(method (startRoom param1 &tmp temp0)
+	(method (startRoom roomNum &tmp temp0)
 		(if gPMouse
 			(gPMouse stop:)
 		)
@@ -1476,9 +1476,9 @@
 			(gRegions add: (ScriptID 46)) ; phonoReg
 		)
 		(if gDebugOn
-			(Empty)
+			(SetDebug)
 		)
-		(gRegions addToFront: (= gCurRoom (ScriptID param1)))
+		(gRegions addToFront: (= gCurRoom (ScriptID roomNum)))
 		(proc0_17 0)
 		(Purge (gCurRoom purge:))
 		(= global210 0)

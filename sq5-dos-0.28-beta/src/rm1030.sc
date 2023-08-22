@@ -50,7 +50,7 @@
 	(method (init)
 		(LoadMany rsVIEW 670)
 		(gEgo y: 189)
-		(switch global133
+		(switch gGoliathFloorNum
 			(1
 				(= local4 3)
 				(= local5 4)
@@ -117,7 +117,7 @@
 		)
 		(switch gPrevRoomNum
 			(1020
-				(switch global133
+				(switch gGoliathFloorNum
 					(3
 						(localproc_0)
 					)
@@ -207,7 +207,7 @@
 				(gMessager say: 1 0 0 0) ; "You've hit bottom: you can't go any lower."
 			)
 			((and (> (gEgo y:) 160) (not (gCurRoom script:)))
-				(if (and (== global134 3) (> global133 6))
+				(if (and (== global134 3) (> gGoliathFloorNum 6))
 					(gMessager say: 2 0 0 0) ; "You can't go any higher."
 				else
 					(gCurRoom newRoom: 1035)
@@ -255,9 +255,9 @@
 			(4
 				(gGame handsOn:)
 				(if (== register 0)
-					(= global133 local4)
+					(= gGoliathFloorNum local4)
 				else
-					(= global133 local5)
+					(= gGoliathFloorNum local5)
 				)
 				(gCurRoom newRoom: 1020)
 				(self dispose:)
