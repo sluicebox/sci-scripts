@@ -822,7 +822,7 @@
 		)
 		(= temp3 (localproc_6 temp6))
 		(= temp4 (localproc_7 temp6))
-		((ScriptID 911 0) init: temp0 temp1 temp3 temp4 temp2) ; MISSING SCRIPT
+		((ScriptID 911 0) init: temp0 temp1 temp3 temp4 temp2) ; giveTimeCode
 		(DisposeScript 911)
 	)
 )

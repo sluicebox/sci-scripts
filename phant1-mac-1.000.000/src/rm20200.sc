@@ -84,7 +84,7 @@
 					(= temp0 sEnterFromAlcove)
 				)
 			)
-			(911
+			(911 ; altStartupRoom
 				(= global201 0)
 				(gEgo
 					view: 5

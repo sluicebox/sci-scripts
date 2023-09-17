@@ -7,6 +7,7 @@
 (use LL6Inv)
 (use ButtonBar)
 (use LarryTalker)
+(use debugHandler)
 (use ScrollerWindow)
 (use DButton)
 (use DText)
@@ -959,8 +960,8 @@
 						(event claimed: 1)
 						(if global100
 							(event claimed: 0)
-							((ScriptID 911) handleEvent: event) ; MISSING SCRIPT
-							((ScriptID 911) dispose:) ; MISSING SCRIPT
+							((ScriptID 911) handleEvent: event) ; debugHandler
+							((ScriptID 911) dispose:) ; debugHandler
 						)
 					)
 				)

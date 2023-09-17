@@ -144,7 +144,7 @@
 		(if (OneOf global108 90 91 100)
 			(self newRoom: global108)
 		else
-			(self newRoom: 911)
+			(self newRoom: 911) ; altStartupRoom
 		)
 	)
 )
