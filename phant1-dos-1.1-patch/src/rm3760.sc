@@ -25,7 +25,7 @@
 	)
 
 	(method (init)
-		(proc1111_6)
+		(KillRobot)
 		(gEgo init: setScaler: Scaler 111 62 124 89 normalize:)
 		(switch gPrevRoomNum
 			(900
@@ -167,7 +167,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo
 						posn: 157 109
@@ -233,7 +233,7 @@
 						cycleSpeed: 8
 						setCycle: RandCycle
 					)
-					(proc1111_7 450 77 49)
+					(DoRobot 450 77 49)
 					(gCurRoom drawPic: 3760)
 				)
 				(2
@@ -287,7 +287,7 @@
 						cycleSpeed: 8
 						setCycle: RandCycle
 					)
-					(proc1111_7 451 77 49)
+					(DoRobot 451 77 49)
 					(gCurRoom drawPic: 3760)
 				)
 				(4
@@ -313,7 +313,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(global114 endPause: 1)
 					(if (not (IsFlag 376))
@@ -431,7 +431,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(SetFlag 16)
 					(if (gCast contains: theCat)
@@ -486,9 +486,9 @@
 					)
 					(theCat hide:)
 					(if (== gChapter 1)
-						(proc1111_7 490 96 -14)
+						(DoRobot 490 96 -14)
 					else
-						(proc1111_7 491 66 -35)
+						(DoRobot 491 66 -35)
 					)
 					(gCurRoom drawPic: 3960)
 				)
@@ -519,7 +519,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(if (== gChapter 1)
 						(SetFlag 17)

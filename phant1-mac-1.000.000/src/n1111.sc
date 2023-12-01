@@ -16,8 +16,8 @@
 	proc1111_2 2
 	proc1111_3 3
 	proc1111_4 4
-	proc1111_6 6
-	proc1111_7 7
+	KillRobot 6
+	DoRobot 7
 	proc1111_8 8
 	proc1111_9 9
 	proc1111_10 10
@@ -92,7 +92,7 @@
 	(UpdateScreenItem param1)
 )
 
-(procedure (proc1111_6 param1 param2 &tmp temp0 temp1 temp2)
+(procedure (KillRobot param1 param2 &tmp temp0 temp1 temp2)
 	(if (and argc param1)
 		(= temp1 param1)
 	else
@@ -273,7 +273,7 @@
 	)
 )
 
-(procedure (proc1111_7 param1 param2 param3 param4 param5 param6 &tmp temp0 temp1 temp2)
+(procedure (DoRobot param1 param2 param3 param4 param5 param6 &tmp temp0 temp1 temp2)
 	(if (IsFlag 338)
 		(proc1111_14 22 param1)
 	)

@@ -23,7 +23,7 @@
 	)
 
 	(method (init)
-		(proc1111_6)
+		(KillRobot)
 		(if (not (gGDacSound handle:))
 			(gGDacSound number: 9030 setLoop: -1 play: setVol: 50)
 		else
@@ -61,7 +61,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 3000)
+					(DoRobot 3000)
 					(door dispose:)
 					(gCurRoom drawPic: 33220)
 				)
@@ -77,7 +77,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(if (!= gChapter 2)
 						(door init:)
@@ -98,7 +98,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 3010)
+					(DoRobot 3010)
 					(door dispose:)
 					(gCurRoom drawPic: 33220)
 				)
@@ -114,7 +114,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(if (!= gChapter 2)
 						(door init:)
 					)
@@ -135,7 +135,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 3920)
+					(DoRobot 3920)
 					(gCurRoom drawPic: 33220)
 				)
 				(1
@@ -226,8 +226,8 @@
 				(0
 					(gGame handsOff:)
 					(SetFlag 248)
-					(proc1111_6)
-					(proc1111_7 3952 0 0 gEgo -1 1)
+					(KillRobot)
+					(DoRobot 3952 0 0 gEgo -1 1)
 					(gCurRoom drawPic: 33230)
 				)
 				(1
@@ -240,9 +240,9 @@
 					(ethelFeat dispose:)
 					(door init: approachVerbs: 0)
 					(if (== gChapter 6)
-						(proc1111_7 5670)
+						(DoRobot 5670)
 					else
-						(proc1111_7 3921)
+						(DoRobot 3921)
 					)
 					(gCurRoom drawPic: 33220)
 				)
@@ -258,7 +258,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(ClearFlag 248)
 					(gEgo show: normalize: 6)
 					(if (gFeatures contains: ethelFeat)
@@ -285,7 +285,7 @@
 				(0
 					(gGame handsOff:)
 					(southExit init: 12)
-					(proc1111_7 3931)
+					(DoRobot 3931)
 					(gCurRoom drawPic: 33220)
 				)
 				(1
@@ -307,7 +307,7 @@
 					(gEgo show: normalize: 6)
 					(southExit init: 12)
 					(gCurRoom drawPic: 33210)
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gGame handsOn:)
 					(self dispose:)
@@ -324,7 +324,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 3941 0 0)
+					(DoRobot 3941 0 0)
 					(gCurRoom drawPic: 33220)
 				)
 				(1
@@ -340,7 +340,7 @@
 			(switch (= state newState)
 				(0
 					(= global115 0)
-					(proc1111_6)
+					(KillRobot)
 					(if (gFeatures contains: ethelFeat)
 						(ethelFeat dispose:)
 						(door init: setHotspot: 4 3 approachVerbs: 0) ; Do, Move
@@ -365,7 +365,7 @@
 					(ethelFeat dispose:)
 					(door init: setHotspot: 4 3 approachVerbs: 0) ; Do, Move
 					(gEgo hide:)
-					(proc1111_7 3950)
+					(DoRobot 3950)
 					(gCurRoom drawPic: 33220)
 				)
 				(1
@@ -378,7 +378,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gEgo put: 7 hide:) ; invVampBook
 					(doorView init:)
 					(gGDacSound fade: 0 4 2 1)
@@ -397,7 +397,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 4660)
+					(DoRobot 4660)
 					(door dispose:)
 					(gCurRoom drawPic: 33220)
 					(SetFlag 251)
@@ -412,7 +412,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(door init:)
 					(gCurRoom drawPic: 33210)
@@ -431,7 +431,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 4670 -16 -43)
+					(DoRobot 4670 -16 -43)
 					(door dispose:)
 					(gCurRoom drawPic: 33220)
 				)
@@ -445,7 +445,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(door init:)
 					(gCurRoom drawPic: 33210)
@@ -464,7 +464,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 5650)
+					(DoRobot 5650)
 					(gEgo hide:)
 					(ethelFeat
 						init:
@@ -509,7 +509,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(WalkieTalkie showFrame: 5670 0)
 					(ethelFeat
 						init:
@@ -563,7 +563,7 @@
 			(switch (= state newState)
 				(0
 					(gEgo hide:)
-					(proc1111_7 5660)
+					(DoRobot 5660)
 					(door dispose:)
 					(gCurRoom drawPic: 33220)
 					(SetFlag 252)
@@ -612,7 +612,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(WalkieTalkie showFrame: 5670 0)
 					(ethelFeat
 						init:
@@ -671,7 +671,7 @@
 					(gGame handsOff:)
 					(ethelFeat dispose:)
 					(door init: setHotspot: 4 3 approachVerbs: 0) ; Do, Move
-					(proc1111_7 3921)
+					(DoRobot 3921)
 				)
 				(2
 					(gEgo show: normalize: 6)
@@ -683,7 +683,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(ethelFeat dispose:)
 					(gEgo show: normalize: 6)
 					(door init: setHotspot: 4 3 approachVerbs: 0) ; Do, Move
@@ -707,7 +707,7 @@
 					(gGame handsOff:)
 					(southExit init: 12)
 					(ethelFeat dispose:)
-					(proc1111_7 5680)
+					(DoRobot 5680)
 					(gCurRoom drawPic: 33220)
 				)
 				(1
@@ -721,7 +721,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gEgo show: normalize: 6)
 					(southExit init: 12)
 					(ethelFeat dispose:)
@@ -744,7 +744,7 @@
 			(switch (= state newState)
 				(0
 					(ethelFeat dispose:)
-					(proc1111_7 5690)
+					(DoRobot 5690)
 					(gCurRoom drawPic: 33220)
 				)
 				(1
@@ -759,7 +759,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(ethelFeat dispose:)
 					(= global115 0)
 					(gEgo show: normalize: 6)
@@ -782,7 +782,7 @@
 			(switch (= state newState)
 				(0
 					(gEgo put: 11 hide:) ; invPhoto
-					(proc1111_7 5701 0 0 gEgo -1 1)
+					(DoRobot 5701 0 0 gEgo -1 1)
 					(gCurRoom drawPic: 33220)
 				)
 				(1
@@ -793,7 +793,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gEgo put: 11 hide:) ; invPhoto
 					(= global115 0)
 					(gGDacSound fade: 0 4 2 1)
@@ -813,9 +813,9 @@
 				(0
 					(gGame handsOff:)
 					(if (== gChapter 6)
-						(proc1111_7 5670)
+						(DoRobot 5670)
 					else
-						(proc1111_7 3921)
+						(DoRobot 3921)
 					)
 				)
 				(1
@@ -829,7 +829,7 @@
 			(switch (= state newState)
 				(0
 					(= global115 0)
-					(proc1111_6)
+					(KillRobot)
 					(gEgo show: normalize: 6)
 					(gCurRoom drawPic: 33210)
 					(gGame handsOn:)

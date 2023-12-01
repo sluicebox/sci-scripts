@@ -188,7 +188,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9683 -14 0 0 -1 1)
+					(DoRobot 9683 -14 0 0 -1 1)
 					(gCurRoom drawPic: 100)
 				)
 				(1
@@ -217,10 +217,10 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9661 0 0 0)
+					(DoRobot 9661 0 0 0)
 				)
 				(1
-					(proc1111_7 9817 -15 -3 0 -1 1)
+					(DoRobot 9817 -15 -3 0 -1 1)
 					(gCurRoom drawPic: 110)
 				)
 				(2
@@ -264,7 +264,7 @@
 						(temp0 dispose:)
 						(gGame handsOn:)
 					)
-					(proc1111_7 9816 -6 -7 0 -1 1)
+					(DoRobot 9816 -6 -7 0 -1 1)
 				)
 				(1
 					(if (IsFlag 135)
@@ -304,7 +304,7 @@
 						(temp0 dispose:)
 						(gGame handsOn:)
 					)
-					(proc1111_7 9815 -10 -9 0 -1 1)
+					(DoRobot 9815 -10 -9 0 -1 1)
 				)
 				(1
 					(if (IsFlag 135)
@@ -378,9 +378,9 @@
 						(temp0 dispose:)
 					)
 					(if (== global165 10)
-						(proc1111_7 9693 2 27 0 -1 1)
+						(DoRobot 9693 2 27 0 -1 1)
 					else
-						(proc1111_7 9691 4 28 0 -1 1)
+						(DoRobot 9691 4 28 0 -1 1)
 					)
 					(gCurRoom drawPic: 220)
 				)
@@ -440,7 +440,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9660 0 0 0 -1 1)
+					(DoRobot 9660 0 0 0 -1 1)
 					(gCurRoom drawPic: 480)
 				)
 				(1
@@ -508,7 +508,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 21) ; Exit
-			(proc1111_6 0 0)
+			(KillRobot 0 0)
 			(gCurRoom setScript: tryRitualWay)
 		else
 			(super doVerb: theVerb)
@@ -531,7 +531,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 4) ; Do
-			(proc1111_6 0 0)
+			(KillRobot 0 0)
 			(gCurRoom setScript: upLift)
 		else
 			(super doVerb: theVerb)

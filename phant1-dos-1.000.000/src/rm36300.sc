@@ -33,7 +33,7 @@
 	)
 
 	(method (init)
-		(proc1111_6)
+		(KillRobot)
 		(global114 play: 4050)
 		(ClearFlag 121)
 		(Palette 2 55 135 70) ; PalIntensity
@@ -82,7 +82,7 @@
 					(gCurRoom drawPic: 36306)
 					(= scratch 1)
 					(Palette 2 55 135 100) ; PalIntensity
-					(proc1111_7 902 0 -38)
+					(DoRobot 902 0 -38)
 				)
 				(1
 					(= scratch 0)
@@ -120,7 +120,7 @@
 						(= register 0)
 					)
 					(gCurRoom drawPic: 36306)
-					(proc1111_7 909 3 -33)
+					(DoRobot 909 3 -33)
 				)
 				(3
 					(Palette 2 55 135 70) ; PalIntensity
@@ -129,7 +129,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if scratch
 				(self changeState: 1)
@@ -189,14 +189,14 @@
 					(gGame handsOff:)
 					(gCurRoom drawPic: 36305)
 					(Palette 2 55 135 100) ; PalIntensity
-					(proc1111_7 903 -2 -11 gEgo -1 1)
+					(DoRobot 903 -2 -11 gEgo -1 1)
 				)
 				(1
 					(gCurRoom newRoom: 6500)
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gCurRoom newRoom: 6500)
 		)

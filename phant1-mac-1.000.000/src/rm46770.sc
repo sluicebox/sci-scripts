@@ -96,7 +96,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9680 2 -43 0 -1 1)
+					(DoRobot 9680 2 -43 0 -1 1)
 				)
 				(1
 					(if (IsFlag 135)
@@ -125,7 +125,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9681 -7 -41 0 -1 1)
+					(DoRobot 9681 -7 -41 0 -1 1)
 				)
 				(1
 					(if (IsFlag 135)
@@ -154,7 +154,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9684 -9 -43 0 -1 1)
+					(DoRobot 9684 -9 -43 0 -1 1)
 				)
 				(1
 					(if (IsFlag 135)

@@ -38,7 +38,7 @@
 				(SetFlag 6)
 				(SetFlag 7)
 				(SetFlag 8)
-				(proc1111_6)
+				(KillRobot)
 				(= picture 1800)
 				(gEgo view: 1802 setLoop: 0 1 x: 148 y: 117 hide:)
 				(WalkieTalkie showFrame: 660 0 64 8)
@@ -114,14 +114,14 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_6)
+					(KillRobot)
 					(SetFlag 8)
 					(if (gCast contains: movedRug)
 						(movedRug dispose:)
 					)
 					(gEgo hide:)
 					(trapDoor init: setPri: 195)
-					(proc1111_7 660 64 8)
+					(DoRobot 660 64 8)
 				)
 				(1
 					(trapDoor dispose:)
@@ -142,7 +142,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo
 						view: 1802
@@ -181,7 +181,7 @@
 					)
 					(trapDoor x: 204 cel: 1 setPri: 100)
 					(gCurRoom drawPic: 1800)
-					(proc1111_7 550 77 -15 gEgo 1 1)
+					(DoRobot 550 77 -15 gEgo 1 1)
 				)
 				(1
 					(self dispose:)
@@ -193,7 +193,7 @@
 	)
 
 	(method (dispose)
-		(proc1111_6)
+		(KillRobot)
 		(trapDoor setPri: 4)
 		(if global115
 			(= global115 0)
@@ -221,7 +221,7 @@
 					(trapDoor x: 204 cel: 1 setPri: 195)
 					(movedRug dispose:)
 					(gCurRoom drawPic: 1800)
-					(proc1111_7 530 69 -14 gEgo -1 1)
+					(DoRobot 530 69 -14 gEgo -1 1)
 				)
 				(1
 					(self dispose:)
@@ -254,7 +254,7 @@
 						(gCurRoom drawPic: 1800 picture: 1800)
 					)
 					(movedRug init:)
-					(proc1111_7 260 1 1)
+					(DoRobot 260 1 1)
 				)
 				(1
 					(gEgo show:)
@@ -272,7 +272,7 @@
 	)
 
 	(method (dispose)
-		(proc1111_6)
+		(KillRobot)
 		(ClearFlag 8)
 		(if (gCast contains: movedRug)
 			(movedRug dispose:)
@@ -300,7 +300,7 @@
 					(trapDoor dispose:)
 					(gCurRoom drawPic: 1800 picture: 1800)
 					(movedRug init:)
-					(proc1111_7 260 1 1 gEgo -1 1)
+					(DoRobot 260 1 1 gEgo -1 1)
 				)
 				(1
 					(gEgo hide:)
@@ -314,7 +314,7 @@
 	)
 
 	(method (dispose)
-		(proc1111_6)
+		(KillRobot)
 		(gEgo hide:)
 		(ClearFlag 8)
 		(movedRug dispose:)
@@ -334,7 +334,7 @@
 				(0
 					(gGame handsOff:)
 					(trapDoor dispose:)
-					(proc1111_7 213 82 6 gEgo 10 1)
+					(DoRobot 213 82 6 gEgo 10 1)
 				)
 				(1
 					(self dispose:)
@@ -346,7 +346,7 @@
 	)
 
 	(method (dispose)
-		(proc1111_6)
+		(KillRobot)
 		(= global115 0)
 		(movedRug dispose:)
 		(trapDoor init:)
@@ -388,7 +388,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(= gNewRoomNum 20100)
@@ -405,7 +405,7 @@
 				(0
 					(gGame handsOff:)
 					(movedRug init:)
-					(proc1111_7 222 90 -29)
+					(DoRobot 222 90 -29)
 				)
 				(1
 					(self dispose:)
@@ -418,7 +418,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(gEgo view: 1802 setLoop: 0 1 x: 148 y: 117 setCycle: 0 show:)
@@ -508,7 +508,7 @@
 					(gEgo setCycle: End self)
 				)
 				(8
-					(proc1111_7 212 32 7)
+					(DoRobot 212 32 7)
 					(gCurRoom drawPic: 1701 picture: 1701)
 					(if local0
 						(local0 dispose:)
@@ -517,7 +517,7 @@
 				)
 				(9
 					(gEgo hide:)
-					(proc1111_7 213 82 6 gEgo 10 1)
+					(DoRobot 213 82 6 gEgo 10 1)
 					(gCurRoom drawPic: 1800 picture: 1800)
 					(movedRug init:)
 					(trapDoor init:)
@@ -526,7 +526,7 @@
 					(= ticks 30)
 				)
 				(11
-					(proc1111_6)
+					(KillRobot)
 					(self dispose:)
 				)
 			)
@@ -537,7 +537,7 @@
 
 	(method (dispose)
 		(gEgo view: 1802 setLoop: 0 1 x: 148 y: 117 setCycle: 0 show:)
-		(proc1111_6)
+		(KillRobot)
 		(= global115 0)
 		(if local0
 			(local0 dispose:)
@@ -563,7 +563,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 220 71 -40)
+					(DoRobot 220 71 -40)
 					(gCurRoom drawPic: 1600 picture: 1600)
 					(movedRug init:)
 					(trapDoor dispose:)
@@ -596,7 +596,7 @@
 					(movedRug dispose:)
 					(trapDoor dispose:)
 					(gEgo hide:)
-					(proc1111_7 213 82 6 gEgo -1 1)
+					(DoRobot 213 82 6 gEgo -1 1)
 					(gCurRoom drawPic: 1800 picture: 1800)
 					(movedRug init:)
 					(trapDoor init:)
@@ -615,7 +615,7 @@
 
 	(method (dispose)
 		(= local1 1)
-		(proc1111_6)
+		(KillRobot)
 		(trapSnd stop:)
 		(Lock 140 1021 0) ; WAVE
 		(if global115
@@ -651,7 +651,7 @@
 						(egoFeature3 setHotspot: 0 14) ; invMatch
 					)
 					(Load rsVIEW 259)
-					(proc1111_7 270 3 1 gEgo -1 1)
+					(DoRobot 270 3 1 gEgo -1 1)
 					(gCurRoom drawPic: 1800 picture: 1800)
 					(movedRug init:)
 				)
@@ -660,7 +660,7 @@
 					(movedRug dispose:)
 					(SetFlag 8)
 					(gCurRoom drawPic: 1801 picture: 1801)
-					(proc1111_6)
+					(KillRobot)
 					(self dispose:)
 				)
 			)
@@ -670,7 +670,7 @@
 	)
 
 	(method (dispose)
-		(proc1111_6)
+		(KillRobot)
 		(if global115
 			(= global115 0)
 		)
@@ -698,13 +698,13 @@
 					(SetFlag 7)
 					(SetFlag 8)
 					(gEgo hide:)
-					(proc1111_7 230 -30 -76 gEgo -1 1)
+					(DoRobot 230 -30 -76 gEgo -1 1)
 					(gCurRoom drawPic: 1600 picture: 1600)
 					(movedRug init:)
 					(trapDoor dispose:)
 				)
 				(1
-					(proc1111_6)
+					(KillRobot)
 					(movedRug dispose:)
 					(gEgo
 						view: 221
@@ -725,13 +725,13 @@
 					(= register 0)
 					(movedRug dispose:)
 					(global114 pause: 1022)
-					(proc1111_7 240 96 6)
+					(DoRobot 240 96 6)
 					(gCurRoom drawPic: 1900 picture: 1900)
 				)
 				(3
 					(SetFlag 8)
 					(gEgo hide:)
-					(proc1111_7 271 -4 0 gEgo -1 1)
+					(DoRobot 271 -4 0 gEgo -1 1)
 					(gCurRoom drawPic: 1800 picture: 1800)
 				)
 				(4
@@ -747,7 +747,7 @@
 	)
 
 	(method (dispose)
-		(proc1111_6)
+		(KillRobot)
 		(if register
 			(register dispose:)
 		)

@@ -773,7 +773,7 @@
 			(((wizBug mover:) completed:)
 				(Print 32 1) ; "Guess I still have a knack for the old Maze game."
 			)
-			((not (gEgo knows: 20))
+			((not (gEgo knows: 20)) ; dazzleSpell
 				(if (< (= temp0 (+ global593 global593)) 500)
 					(= temp0 500)
 				)

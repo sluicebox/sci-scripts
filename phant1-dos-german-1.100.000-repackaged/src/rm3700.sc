@@ -39,7 +39,7 @@
 	)
 
 	(method (init)
-		(proc1111_6)
+		(KillRobot)
 		(gEgo init: setScaler: Scaler 66 30 129 88 normalize:)
 		((ScriptID 30) init:) ; FidgetCode
 		(switch gPrevRoomNum
@@ -180,7 +180,7 @@
 				)
 				(1
 					(theatreDoors hide:)
-					(proc1111_7 1960 98 33)
+					(DoRobot 1960 98 33)
 					(gCurRoom drawPic: 3870)
 				)
 				(2
@@ -195,7 +195,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(theatreDoors show:)
 					(gEgo posn: 185 96 normalize: 6)
@@ -236,7 +236,7 @@
 				)
 				(1
 					(theatreDoors hide:)
-					(proc1111_7 3520 120 29)
+					(DoRobot 3520 120 29)
 					(gCurRoom drawPic: 3870)
 				)
 				(2
@@ -251,7 +251,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(theatreDoors show:)
 					(gEgo posn: 185 96 normalize: 6)
@@ -293,7 +293,7 @@
 				(1
 					(SetFlag 93)
 					(theatreDoors hide:)
-					(proc1111_7 420 118 33)
+					(DoRobot 420 118 33)
 					(gCurRoom drawPic: 3870)
 				)
 				(2
@@ -308,7 +308,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(SetFlag 93)
 					(gEgo posn: 185 96 normalize: 6)
@@ -360,7 +360,7 @@
 					(crank init:)
 					(theatreDoors hide:)
 					(tdoors init:)
-					(proc1111_7 460 105 9)
+					(DoRobot 460 105 9)
 					(gCurRoom drawPic: 3880)
 				)
 				(2
@@ -430,7 +430,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(theatreDoors hide:)
 			(if (gCast contains: keys)
@@ -490,23 +490,23 @@
 					(cond
 						((not (IsFlag 392))
 							(bottle view: 461 posn: 67 125 init:)
-							(proc1111_7 461 -11 -40)
+							(DoRobot 461 -11 -40)
 						)
 						((not (IsFlag 393))
 							(bottle view: 461 posn: 67 125 init:)
-							(proc1111_7 461 -11 -40)
+							(DoRobot 461 -11 -40)
 						)
 						((not (IsFlag 394))
 							(bottle view: 3140 posn: 58 126 init:)
-							(proc1111_7 3140 24 0)
+							(DoRobot 3140 24 0)
 						)
 						((not (IsFlag 395))
 							(bottle view: 4160 posn: 64 124 init:)
-							(proc1111_7 4160 11 -41)
+							(DoRobot 4160 11 -41)
 						)
 						((not (IsFlag 396))
 							(bottle view: 3140 posn: 58 126 init:)
-							(proc1111_7 3140 24 0)
+							(DoRobot 3140 24 0)
 						)
 					)
 				)
@@ -564,24 +564,24 @@
 					(cond
 						((not (IsFlag 392))
 							(bottle hide: view: 462 posn: 65 125)
-							(proc1111_7 462 2 -44 gEgo -1 1)
+							(DoRobot 462 2 -44 gEgo -1 1)
 						)
 						((not (IsFlag 393))
 							(bottle hide: view: 462 posn: 65 125)
-							(proc1111_7 462 2 -44 gEgo -1 1)
+							(DoRobot 462 2 -44 gEgo -1 1)
 						)
 						((not (IsFlag 394))
 							(bottle hide: view: 3141 posn: 67 124)
-							(proc1111_7 3141 31 0 gEgo -1 1)
+							(DoRobot 3141 31 0 gEgo -1 1)
 						)
 						((not (IsFlag 395))
 							(bottle hide: view: 4161 posn: 65 126)
 							(global114 pause:)
-							(proc1111_7 4161 37 -38 gEgo -1 1)
+							(DoRobot 4161 37 -38 gEgo -1 1)
 						)
 						((not (IsFlag 396))
 							(bottle hide: view: 3141 posn: 67 124)
-							(proc1111_7 3141 31 0 gEgo -1 1)
+							(DoRobot 3141 31 0 gEgo -1 1)
 						)
 					)
 					(gCurRoom drawPic: 3740)
@@ -686,7 +686,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(ClearFlag 248)
 					(if
 						(and
@@ -733,7 +733,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gEgo setCycle: 0)
 			(ClearFlag 248)
@@ -802,7 +802,7 @@
 					(crank init:)
 					(theatreDoors hide:)
 					(tdoors init:)
-					(proc1111_7 460 105 9)
+					(DoRobot 460 105 9)
 					(gCurRoom drawPic: 3880)
 				)
 				(2
@@ -811,7 +811,7 @@
 					(if (gCast contains: keys)
 						(keys dispose:)
 					)
-					(proc1111_7 5410 27 -39)
+					(DoRobot 5410 27 -39)
 					(gCurRoom drawPic: 3740)
 				)
 				(3
@@ -861,7 +861,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(SetFlag 402)
 			(bar dispose:)

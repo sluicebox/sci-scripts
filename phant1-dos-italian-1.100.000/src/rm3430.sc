@@ -36,27 +36,27 @@
 			(switch (= state newState)
 				(0
 					(SetFlag 199)
-					(proc1111_7 5401 40 27)
+					(DoRobot 5401 40 27)
 				)
 				(1
-					(proc1111_7 5402 -14 -41)
+					(DoRobot 5402 -14 -41)
 					(gCurRoom drawPic: 3410)
 				)
 				(2
-					(proc1111_7 5403 -28 -46)
+					(DoRobot 5403 -28 -46)
 					(gCurRoom drawPic: 3420)
 				)
 				(3
 					(global114 pause:)
-					(proc1111_7 5404 20 -22)
+					(DoRobot 5404 20 -22)
 					(gCurRoom drawPic: 3440)
 				)
 				(4
-					(proc1111_7 5405 53 -9)
+					(DoRobot 5405 53 -9)
 					(gCurRoom drawPic: 3450)
 				)
 				(5
-					(proc1111_7 5406 0 0)
+					(DoRobot 5406 0 0)
 					(gCurRoom drawPic: 3470)
 					(rDoor3470 init:)
 				)
@@ -64,7 +64,7 @@
 					(global114 endPause:)
 					(fire init: view: 3481 posn: 27 131 setCycle: RandCycle)
 					(rDoor3470 dispose:)
-					(proc1111_7 5407 -6 -43 gEgo 140 1)
+					(DoRobot 5407 -6 -43 gEgo 140 1)
 					(gCurRoom drawPic: 3480)
 				)
 				(7
@@ -75,7 +75,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(if (gCast contains: fire)
 						(fire dispose:)

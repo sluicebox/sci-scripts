@@ -128,7 +128,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1670 71 33 gEgo 117)
+					(DoRobot 1670 71 33 gEgo 117)
 					(gCurRoom drawPic: 28805)
 				)
 				(1
@@ -142,7 +142,7 @@
 			(switch (= state newState)
 				(0
 					(= global115 0)
-					(proc1111_6)
+					(KillRobot)
 					(gCurRoom drawPic: 28810)
 					(gGame handsOn:)
 					(gEgo normalize: 2 posn: 153 93)
@@ -174,7 +174,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom newRoom: 2200)
 				)
@@ -191,7 +191,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 5000 89 37)
+					(DoRobot 5000 89 37)
 					(gCurRoom drawPic: 28805)
 				)
 				(1
@@ -204,7 +204,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo normalize: 2 posn: 153 93)
 					(gCurRoom drawPic: 28810)

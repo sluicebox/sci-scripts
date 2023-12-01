@@ -167,7 +167,7 @@
 
 	(method (init &tmp temp0)
 		(= temp0 0)
-		(proc1111_6)
+		(KillRobot)
 		(gEgo init: setScaler: Scaler 98 83 129 122)
 		(switch gPrevRoomNum
 			(900)

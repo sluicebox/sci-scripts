@@ -100,7 +100,7 @@
 					(gGame handsOff:)
 					(gCast eachElementDo: #hide)
 					(doorView init:)
-					(proc1111_7 1760 19 26)
+					(DoRobot 1760 19 26)
 					(gCurRoom drawPic: 34300)
 				)
 				(1
@@ -115,7 +115,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo show: posn: 166 108 normalize: 14)
 					(if (gCast contains: doorView)
@@ -140,7 +140,7 @@
 				(0
 					(gGame handsOff:)
 					(gCast eachElementDo: #hide)
-					(proc1111_7 1790 -37 -44)
+					(DoRobot 1790 -37 -44)
 					(doorView init:)
 					(gCurRoom drawPic: 34300)
 				)
@@ -154,7 +154,7 @@
 				)
 				(2
 					(doorView show:)
-					(proc1111_7 1791 -37 -44)
+					(DoRobot 1791 -37 -44)
 					(if (== gChapter 1)
 						(antClosedView dispose:)
 					)
@@ -172,7 +172,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(if (gCast contains: doorView)
 						(doorView dispose:)
@@ -233,7 +233,7 @@
 					(gCast eachElementDo: #hide)
 					(theRealtySign view: 34400 init:)
 					(closedDoor init:)
-					(proc1111_7 1770 -8 -40)
+					(DoRobot 1770 -8 -40)
 					(gCurRoom drawPic: 34400)
 				)
 				(1
@@ -249,7 +249,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(if (gCast contains: theRealtySign)
 						(theRealtySign dispose:)

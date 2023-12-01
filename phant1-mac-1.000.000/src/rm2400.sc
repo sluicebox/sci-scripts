@@ -169,7 +169,7 @@
 		(if global115
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(= global125 0)
 					(SetFlag 202)
@@ -180,7 +180,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 5930 104 27 gEgo 1)
+					(DoRobot 5930 104 27 gEgo 1)
 				)
 				(1
 					(= global125 0)

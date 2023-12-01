@@ -137,7 +137,7 @@
 					(gEgo hide:)
 					(crank init:)
 					(tdoors init:)
-					(proc1111_7 520 133 18 gEgo -1 1)
+					(DoRobot 520 133 18 gEgo -1 1)
 					(gCurRoom drawPic: 3880)
 				)
 				(2
@@ -163,7 +163,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (not (global114 script:))
 				(cond

@@ -160,7 +160,7 @@
 	)
 
 	(method (init &tmp temp0)
-		(proc1111_6)
+		(KillRobot)
 		(= temp0 0)
 		(if (not (OneOf gPrevRoomNum 10701 10702 10703))
 			(gEgo view: 0 init: normalize: setScaler: Scaler 165 67 155 106)
@@ -433,7 +433,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(localproc_0 13100)
@@ -596,7 +596,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(gEgo
@@ -861,18 +861,18 @@
 							(darkDoorView init:)
 						)
 						(UpdateScreenItem darkDoorView)
-						(proc1111_7 3030 -8 -32 gEgo 40)
+						(DoRobot 3030 -8 -32 gEgo 40)
 					)
 				)
 				(1
 					(gCurRoom drawPic: 13370 picture: 13370)
 					(localproc_2)
-					(proc1111_7 3031 5 0)
+					(DoRobot 3031 5 0)
 				)
 				(2
 					(gCurRoom drawPic: 13380 picture: 13380)
 					(localproc_2)
-					(proc1111_7 3032 16 -43)
+					(DoRobot 3032 16 -43)
 				)
 				(3
 					(self dispose:)
@@ -885,7 +885,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(gEgo put: 13) ; invDrainCln
@@ -924,10 +924,10 @@
 						(gCurRoom drawPic: 13380 picture: 13380)
 					)
 					(localproc_2)
-					(proc1111_7 3020 8 -43)
+					(DoRobot 3020 8 -43)
 				)
 				(2
-					(proc1111_7 3021 6 0 gEgo -1 1)
+					(DoRobot 3021 6 0 gEgo -1 1)
 					(darkDoorView view: 3022 x: 162 y: 130 z: 1000)
 					(gCurRoom drawPic: 13370 picture: 13370)
 					(UpdateScreenItem darkDoorView)
@@ -947,7 +947,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(darkDoorView z: 1000)
@@ -979,7 +979,7 @@
 						(gCurRoom drawPic: 13350 picture: 13350)
 					)
 					(localproc_2)
-					(proc1111_7 4890 115 11)
+					(DoRobot 4890 115 11)
 				)
 				(2
 					(self dispose:)
@@ -992,7 +992,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(gEgo
@@ -1038,7 +1038,7 @@
 						(darkDoorView init:)
 					)
 					(UpdateScreenItem darkDoorView)
-					(proc1111_7 2360 1 0)
+					(DoRobot 2360 1 0)
 				)
 				(2
 					(darkDoorView z: 1000)
@@ -1047,11 +1047,11 @@
 				(3
 					(gCurRoom drawPic: 13380 picture: 13380)
 					(localproc_2)
-					(proc1111_7 2361 24 -27)
+					(DoRobot 2361 24 -27)
 				)
 				(4
 					(darkDoorView view: 13360 x: 141 y: 131 z: 1000 init:)
-					(proc1111_7 2362 9 0)
+					(DoRobot 2362 9 0)
 					(gCurRoom drawPic: 13360 picture: 13360)
 				)
 				(5
@@ -1069,7 +1069,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(SetFlag 375)
@@ -1108,7 +1108,7 @@
 					(if (!= (gCurRoom picture:) 13360)
 						(gCurRoom drawPic: 13360 picture: 13360)
 					)
-					(proc1111_7 2370 -14 -19)
+					(DoRobot 2370 -14 -19)
 					(darkDoorView view: 13360 x: 141 y: 132 z: 0 priority: 4)
 					(if (not (gCast contains: darkDoorView))
 						(darkDoorView init:)
@@ -1124,7 +1124,7 @@
 	)
 
 	(method (dispose)
-		(proc1111_6)
+		(KillRobot)
 		(= global115 0)
 		(gEgo
 			view: 7
@@ -1152,7 +1152,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 4040 1 0)
+					(DoRobot 4040 1 0)
 					(if (!= (gCurRoom picture:) 13360)
 						(gCurRoom drawPic: 13360 picture: 13360)
 					)
@@ -1181,7 +1181,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(gEgo
@@ -1224,7 +1224,7 @@
 					else
 						(gCurRoom drawPic: 13350 picture: 13350)
 						(localproc_2)
-						(proc1111_7 4891 113 12)
+						(DoRobot 4891 113 12)
 					)
 				)
 				(2
@@ -1236,9 +1236,9 @@
 						)
 						(localproc_2)
 						(if (IsFlag 221)
-							(proc1111_7 3090 5 -43)
+							(DoRobot 3090 5 -43)
 						else
-							(proc1111_7 3020 8 -43)
+							(DoRobot 3020 8 -43)
 						)
 					)
 				)
@@ -1253,7 +1253,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(gEgo
@@ -1295,13 +1295,13 @@
 						(gCurRoom drawPic: 13380 picture: 13380)
 					)
 					(localproc_2)
-					(proc1111_7 3090 5 -43)
+					(DoRobot 3090 5 -43)
 				)
 				(2
 					(darkDoorView view: 13360 x: 141 y: 132 z: 0 init:)
 					(UpdateScreenItem darkDoorView)
 					(gCurRoom drawPic: 13360 picture: 13360)
-					(proc1111_7 3091 5 -25)
+					(DoRobot 3091 5 -25)
 				)
 				(3
 					(self dispose:)
@@ -1314,7 +1314,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(gEgo
@@ -1343,7 +1343,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(proc1111_6)
+				(KillRobot)
 				(gEgo z: 0 show:)
 				(gCurRoom drawPic: 13300 picture: 13300)
 				(localproc_2)
@@ -1503,19 +1503,19 @@
 					)
 					(UpdateScreenItem darkDoorView)
 					(gEgo hide:)
-					(proc1111_7 3060 60 -9 gEgo 40)
+					(DoRobot 3060 60 -9 gEgo 40)
 				)
 				(2
 					(darkDoorView z: 1000)
 					(UpdateScreenItem darkDoorView)
-					(proc1111_7 3061 -2 0)
+					(DoRobot 3061 -2 0)
 					(gCurRoom drawPic: 13370 picture: 13370)
 				)
 				(3
 					(darkDoorView view: 13360 x: 141 y: 132 z: 0 init:)
 					(UpdateScreenItem darkDoorView)
 					(gCurRoom drawPic: 13360 picture: 13360)
-					(proc1111_7 3062 16 -26 gEgo -1 1)
+					(DoRobot 3062 16 -26 gEgo -1 1)
 				)
 				(4
 					(self dispose:)
@@ -1550,7 +1550,7 @@
 				(1
 					(gCurRoom drawPic: 13380 picture: 13380)
 					(localproc_2)
-					(proc1111_7 3051 0 -27)
+					(DoRobot 3051 0 -27)
 				)
 				(2
 					(gCurRoom drawPic: 13360 picture: 13360)
@@ -1560,12 +1560,12 @@
 					else
 						(UpdateScreenItem darkDoorView)
 					)
-					(proc1111_7 3052 20 -19 gEgo 4 1)
+					(DoRobot 3052 20 -19 gEgo 4 1)
 				)
 				(3
 					(gCurRoom drawPic: 13380 picture: 13380)
 					(localproc_2)
-					(proc1111_7 3032 16 -43)
+					(DoRobot 3032 16 -43)
 				)
 				(4
 					(self dispose:)
@@ -1578,7 +1578,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(darkDoorView z: 1000)
@@ -1607,7 +1607,7 @@
 				)
 				(1
 					(donSounds dispose:)
-					(proc1111_7 5520 106 6)
+					(DoRobot 5520 106 6)
 					(darkDoorView x: 125 y: -1 z: 0 view: 13350 init:)
 					(if (!= (gCurRoom picture:) 13350)
 						(gCurRoom drawPic: 13350 picture: 13350)
@@ -1624,7 +1624,7 @@
 
 	(method (dispose)
 		(SetFlag 385)
-		(proc1111_6)
+		(KillRobot)
 		(= global115 0)
 		(gEgo
 			view: 4

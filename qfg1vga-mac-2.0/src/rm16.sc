@@ -131,7 +131,7 @@
 		)
 		(Load rsSCRIPT 991)
 		(LoadMany rsVIEW 16 518 517 510)
-		(if (gEgo knows: 24)
+		(if (gEgo knows: 24) ; fetchSpell
 			(Load rsVIEW 520)
 		)
 		(LoadMany rsSOUND 2018 2027)

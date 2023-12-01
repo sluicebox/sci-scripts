@@ -109,9 +109,9 @@
 					)
 					(sfxSound1 number: 27070 setLoop: 1 play:)
 					(if (gEgo has: 4) ; invPoker
-						(proc1111_7 9730 -10 -42 0 -1 1)
+						(DoRobot 9730 -10 -42 0 -1 1)
 					else
-						(proc1111_7 9733 -10 -42 0 -1 1)
+						(DoRobot 9733 -10 -42 0 -1 1)
 					)
 				)
 				(1
@@ -161,7 +161,7 @@
 						(coat dispose:)
 					)
 					(sfxSound1 stop:)
-					(proc1111_7 9744 -12 -31 0 200 1)
+					(DoRobot 9744 -12 -31 0 200 1)
 					(gCurRoom drawPic: 27200)
 				)
 				(1
@@ -260,7 +260,7 @@
 						(coat dispose:)
 					)
 					(sfxSound1 stop:)
-					(proc1111_7 9745 -12 -31 0 200 1)
+					(DoRobot 9745 -12 -31 0 200 1)
 					(gCurRoom drawPic: 27200)
 				)
 				(1
@@ -324,7 +324,7 @@
 					(if (gCast contains: coat)
 						(coat dispose:)
 					)
-					(proc1111_7 9741 37 0 0 200 1)
+					(DoRobot 9741 37 0 0 200 1)
 					(gCurRoom drawPic: 27200)
 				)
 				(1
@@ -360,13 +360,13 @@
 						(coat dispose:)
 					)
 					(sfxSound1 stop:)
-					(proc1111_7 9740 -11 0 0 200 1)
+					(DoRobot 9740 -11 0 0 200 1)
 					(gCurRoom drawPic: 27200)
 				)
 				(1
 					(= local1 1)
 					(coat init:)
-					(proc1111_7 9732 -9 -39 0)
+					(DoRobot 9732 -9 -39 0)
 					(gCurRoom drawPic: 27250)
 				)
 				(2
@@ -410,7 +410,7 @@
 					(if (gCast contains: coat)
 						(coat dispose:)
 					)
-					(proc1111_7 9742 23 8 0 200 1)
+					(DoRobot 9742 23 8 0 200 1)
 					(gCurRoom drawPic: 27200)
 				)
 				(1
@@ -448,12 +448,12 @@
 					(SetFlag 141)
 					(gEgo put: 4) ; invPoker
 					(gGDacSound stop:)
-					(proc1111_7 9743 0 0 0 200 1)
+					(DoRobot 9743 0 0 0 200 1)
 					(gCurRoom drawPic: 27200)
 				)
 				(1
 					(gGDacSound number: 10671 play:)
-					(proc1111_7 9750 -11 -41 0 -1 1)
+					(DoRobot 9750 -11 -41 0 -1 1)
 					(gCurRoom drawPic: 27231)
 				)
 				(2
@@ -487,7 +487,7 @@
 					(if (gCast contains: coat)
 						(coat dispose:)
 					)
-					(proc1111_7 9750 -11 -41 0 -1 1)
+					(DoRobot 9750 -11 -41 0 -1 1)
 					(gCurRoom drawPic: 27231)
 				)
 				(1
@@ -526,9 +526,9 @@
 							(or (gEgo has: 14) (gEgo has: 15)) ; invCrucifix, invBeads
 							(or (gEgo has: 10) (gEgo has: 19)) ; invBrooch, invCutter
 						)
-						(proc1111_7 9761 -10 -44 0 -1 1)
+						(DoRobot 9761 -10 -44 0 -1 1)
 					else
-						(proc1111_7 9760 -1 -43 0 -1 1)
+						(DoRobot 9760 -1 -43 0 -1 1)
 					)
 					(gCurRoom drawPic: 27260)
 				)

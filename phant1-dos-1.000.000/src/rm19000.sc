@@ -137,7 +137,7 @@
 		(if (and (== gChapter 5) (not (IsFlag 229)))
 			(mirrorCloud init: setCycle: Fwd cycleSpeed: 10)
 		)
-		(proc1111_6)
+		(KillRobot)
 		(southExit init: 3)
 		(if (not (IsFlag 229))
 			(mirror init: approachVerbs: 0 setHotspot: 4 3) ; Do, Move
@@ -234,7 +234,7 @@
 			(switch (= state newState)
 				(0
 					(global114 pause:)
-					(proc1111_7 4740 12 -8)
+					(DoRobot 4740 12 -8)
 					(if (gCast contains: mirrorCloud)
 						(mirrorCloud hide:)
 					)
@@ -261,7 +261,7 @@
 			(switch (= state newState)
 				(0
 					(= global115 0)
-					(proc1111_6)
+					(KillRobot)
 					(global114 endPause:)
 					(gEgo normalize: 8 posn: 125 116)
 					(if (gCast contains: mirrorCloud)
@@ -285,7 +285,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 4750 12 16)
+					(DoRobot 4750 12 16)
 					(if (gCast contains: mirrorCloud)
 						(mirrorCloud hide:)
 					)
@@ -308,7 +308,7 @@
 			(switch (= state newState)
 				(0
 					(= global115 0)
-					(proc1111_6)
+					(KillRobot)
 					(gEgo normalize: 8 posn: 125 116)
 					(if (gCast contains: mirrorCloud)
 						(mirrorCloud show:)
@@ -359,7 +359,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 4760 -8 0 gEgo 200)
+					(DoRobot 4760 -8 0 gEgo 200)
 					(mirrorMachine init: setScript: mirrorMachineScr 0 0)
 					(gCurRoom drawPic: 19220)
 				)
@@ -376,7 +376,7 @@
 			(switch (= state newState)
 				(0
 					(= global115 0)
-					(proc1111_6)
+					(KillRobot)
 					(gEgo normalize: 0 posn: 219 120)
 					(mirrorMachine dispose:)
 					(gCurRoom drawPic: 19100)
@@ -486,7 +486,7 @@
 					)
 				)
 				(1
-					(proc1111_7 4771 30 6)
+					(DoRobot 4771 30 6)
 					(if (gCast contains: mirrorCloud)
 						(mirrorCloud hide:)
 					)
@@ -506,7 +506,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo normalize: 3 posn: 192 109)
 					(if (gCast contains: mirrorCloud)
@@ -555,7 +555,7 @@
 						(if (gCast contains: mirrorCloud)
 							(mirrorCloud hide:)
 						)
-						(proc1111_7 4781 112 40)
+						(DoRobot 4781 112 40)
 						(gCurRoom drawPic: 19200)
 					)
 				)
@@ -563,7 +563,7 @@
 					(if (gCast contains: mirrorCloud)
 						(mirrorCloud show:)
 					)
-					(proc1111_7 4780 60 39 gEgo -1 1)
+					(DoRobot 4780 60 39 gEgo -1 1)
 					(gCurRoom drawPic: 19100)
 				)
 				(3
@@ -573,7 +573,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom newRoom: 19100)
 				)
@@ -608,7 +608,7 @@
 					)
 				)
 				(1
-					(proc1111_7 5900 65 20)
+					(DoRobot 5900 65 20)
 					(gCurRoom drawPic: 19200)
 				)
 				(2
@@ -621,7 +621,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo normalize: 3 posn: 111 105)
 					(gCurRoom drawPic: 19100)

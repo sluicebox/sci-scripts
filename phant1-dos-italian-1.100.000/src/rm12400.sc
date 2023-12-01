@@ -44,7 +44,7 @@
 
 	(method (init)
 		(gEgo init: setScaler: Scaler 100 62 162 108)
-		(proc1111_6)
+		(KillRobot)
 		(switch gPrevRoomNum
 			(900
 				(gGame handsOn:)
@@ -108,7 +108,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 920 123 31)
+					(DoRobot 920 123 31)
 					(tarot dispose:)
 					(gCurRoom drawPic: 12420)
 					(SetFlag 42)
@@ -124,7 +124,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gEgo get: 9) ; invTarot
 					(gGame handsOn:)
 					(gEgo normalize: 613 posn: 36 150)
@@ -198,7 +198,7 @@
 		(if global115
 			(= global115 0)
 			(global114 endPause: 1)
-			(proc1111_6)
+			(KillRobot)
 			(proc1111_9)
 			(gCurRoom drawPic: 12450)
 			(gEgo normalize: 616 posn: 260 155)
@@ -212,7 +212,7 @@
 					(proc1111_8)
 					(gCurRoom drawPic: 12310)
 					(global114 pause:)
-					(proc1111_7 1000 19 52)
+					(DoRobot 1000 19 52)
 				)
 				(1
 					(proc1111_9)
@@ -261,8 +261,8 @@
 					(Lock 140 12061 1) ; WAVE
 					(Load 140 12063) ; WAVE
 					(Lock 140 12063 1) ; WAVE
-					(proc1111_6)
-					(proc1111_7 12401 103 1 gEgo 200 1)
+					(KillRobot)
+					(DoRobot 12401 103 1 gEgo 200 1)
 				)
 				(3
 					(sfx number: 12061 setLoop: 1 play: self)
@@ -272,7 +272,7 @@
 					(secretPanel setCycle: Beg secretPanel)
 				)
 				(5
-					(proc1111_6)
+					(KillRobot)
 					(sfx stop:)
 					(Lock 140 12061 0) ; WAVE
 					(Lock 140 12063 0) ; WAVE
@@ -291,7 +291,7 @@
 			(Lock 140 12062 0) ; WAVE
 			(Lock 140 12063 0) ; WAVE
 			(sfx stop:)
-			(proc1111_6)
+			(KillRobot)
 			(gEgo normalize: 615 posn: 170 130)
 			(gEgo show: normalize: 615)
 			(gCurRoom drawPic: 12450)
@@ -327,7 +327,7 @@
 						init:
 					)
 					(gCurRoom drawPic: 12460)
-					(proc1111_7 12400 115 3 gEgo 200 1)
+					(DoRobot 12400 115 3 gEgo 200 1)
 				)
 				(1
 					(sfx number: 12061 setLoop: 1 play: self)
@@ -356,7 +356,7 @@
 		else
 			(= global115 0)
 			(sfx stop:)
-			(proc1111_6)
+			(KillRobot)
 			(Lock 140 12061 0) ; WAVE
 			(Lock 140 12062 0) ; WAVE
 			(Lock 140 12063 0) ; WAVE

@@ -198,7 +198,7 @@
 		(if global115
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gGame handsOn:)
 					(gCurRoom drawPic: 28863)
 					(ClearFlag 125)
@@ -258,7 +258,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(if register
 				(register dispose:)
 			)
@@ -281,11 +281,11 @@
 					(SetFlag 65)
 					(SetFlag 231)
 					(shadow dispose:)
-					(proc1111_7 3190 -3 13)
+					(DoRobot 3190 -3 13)
 					(gCurRoom drawPic: 27910)
 				)
 				(1
-					(proc1111_7 3191 -29 -43 gEgo 110)
+					(DoRobot 3191 -29 -43 gEgo 110)
 					(gCurRoom drawPic: 28863)
 				)
 				(2

@@ -97,7 +97,7 @@
 		(super init: &rest)
 		(gCSound number: 500 loop: -1 playBed:)
 		(= egoGuy (ScriptID 32 0)) ; warrior
-		(if (= mage (gEgo knows: 29))
+		(if (= mage (gEgo knows: 29)) ; invisibility
 			(rev init: hide:)
 			(LoadMage)
 		else

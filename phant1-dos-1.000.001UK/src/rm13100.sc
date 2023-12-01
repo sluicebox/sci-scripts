@@ -50,7 +50,7 @@
 			(ClearFlag 223)
 		)
 		(= temp0 0)
-		(proc1111_6)
+		(KillRobot)
 		(switch gPrevRoomNum
 			(900
 				(gEgo init: normalize: setScaler: Scaler 181 50 165 87)
@@ -330,7 +330,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(localproc_0 10200)
@@ -360,7 +360,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(gCurRoom newRoom: 13400)
@@ -403,7 +403,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gEgo
 				view: 4
@@ -455,7 +455,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gEgo
 				view: 2
@@ -509,7 +509,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gEgo
 				view: 5
@@ -582,7 +582,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gEgo
 				view: 3
@@ -664,7 +664,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(if (and (== gChapter 4) (not (IsFlag 222)))
@@ -747,7 +747,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(localproc_0 4200)
@@ -802,7 +802,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(localproc_0 12100)
@@ -880,7 +880,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(if local0
@@ -914,7 +914,7 @@
 						(= local0 1)
 					)
 					(gEgo z: 1000 init:)
-					(proc1111_7 5500 -7 -34)
+					(DoRobot 5500 -7 -34)
 				)
 				(1
 					(self dispose:)
@@ -927,7 +927,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(if (not (gCast contains: gEgo))

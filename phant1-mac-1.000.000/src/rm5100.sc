@@ -24,7 +24,7 @@
 
 	(method (init &tmp temp0)
 		(gGame handsOff:)
-		(proc1111_6)
+		(KillRobot)
 		(= picture (if (IsFlag 159) 5102 else 5101))
 		(gEgo init: setScaler: Scaler 120 40 140 79 normalize:)
 		(magazine
@@ -123,7 +123,7 @@
 				(= global125 0)
 			)
 			(6500
-				(proc1111_6)
+				(KillRobot)
 				(gEgo normalize: 1 posn: 198 104 hide:)
 				(magazine view: 5101 loop: 0 cel: 0 x: 115 y: 87)
 				(= picture 5600)
@@ -418,7 +418,7 @@
 					(if (IsFlag 159)
 						(proc1111_8)
 						(gCurRoom drawPic: 5305)
-						(proc1111_7 2110 76 13 gEgo -1 1)
+						(DoRobot 2110 76 13 gEgo -1 1)
 					else
 						(self cue:)
 					)
@@ -454,7 +454,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 2241 -8 57)
+					(DoRobot 2241 -8 57)
 				)
 				(1
 					(self dispose:)
@@ -478,7 +478,7 @@
 	)
 
 	(method (dispose)
-		(proc1111_6)
+		(KillRobot)
 		(= global115 0)
 		(magazine view: 5103 loop: 0 cel: 0 x: 162 y: 93)
 		(if (and (IsFlag 52) (== gChapter 4))
@@ -553,11 +553,11 @@
 					(if (gCast contains: harriet)
 						(harriet hide:)
 					)
-					(proc1111_7 2029 0 0)
+					(DoRobot 2029 0 0)
 					(gCurRoom drawPic: 5610)
 				)
 				(2
-					(proc1111_7 2030 65 -13)
+					(DoRobot 2030 65 -13)
 					(gCurRoom drawPic: 5350)
 				)
 				(3
@@ -578,7 +578,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gCurRoom drawPic: (if (IsFlag 159) 5102 else 5101))
 					(if (gCast contains: magazine)
 						(magazine show:)
@@ -653,10 +653,10 @@
 						)
 					)
 					(magazine hide:)
-					(proc1111_7 2040 151 19 gEgo 120)
+					(DoRobot 2040 151 19 gEgo 120)
 				)
 				(2
-					(proc1111_6)
+					(KillRobot)
 					(gEgo hide:)
 					(bigMag init:)
 					(gCurRoom drawPic: 5330)
@@ -678,7 +678,7 @@
 								(else 5320)
 							)
 					)
-					(proc1111_7 2041 160 28 gEgo 200)
+					(DoRobot 2041 160 28 gEgo 200)
 				)
 				(5
 					(magazine show:)
@@ -697,7 +697,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(global114 endPause: 1)
 					(ClearFlag 248)
 					(= global115 0)
@@ -778,7 +778,7 @@
 					(harriet hide:)
 					(gEgo put: 9) ; invTarot
 					(SetFlag 179)
-					(proc1111_7 4251 -22 -32)
+					(DoRobot 4251 -22 -32)
 					(gCurRoom drawPic: 5610)
 				)
 				(2
@@ -803,7 +803,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(magazine show:)
 					(harriet show:)
@@ -812,7 +812,7 @@
 					(rightSouthExit dispose:)
 					(gCurRoom picture: (if (IsFlag 159) 5102 else 5101))
 					(gCurRoom drawPic: (gCurRoom picture:))
-					(proc1111_6)
+					(KillRobot)
 					(gGame handsOn:)
 					(self dispose:)
 				)
@@ -870,7 +870,7 @@
 				(1
 					(magazine hide:)
 					(harriet hide:)
-					(proc1111_7 4300 -13 -48)
+					(DoRobot 4300 -13 -48)
 					(gCurRoom drawPic: 5610)
 				)
 				(2
@@ -894,7 +894,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(magazine show:)
 					(harriet show:)
 					(leftSouthExit init: 3)
@@ -960,7 +960,7 @@
 				(1
 					(magazine hide:)
 					(harriet hide:)
-					(proc1111_7 4310 -9 -42)
+					(DoRobot 4310 -9 -42)
 					(gCurRoom drawPic: 5610)
 				)
 				(2
@@ -985,7 +985,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(magazine show:)
 					(harriet show:)
 					(leftSouthExit init: 3)

@@ -179,7 +179,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9501 170 43 0 130 1)
+					(DoRobot 9501 170 43 0 130 1)
 				)
 				(1
 					(if (IsFlag 135)
@@ -222,7 +222,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9531 -1 -42 0 -1 1)
+					(DoRobot 9531 -1 -42 0 -1 1)
 					(gCurRoom drawPic: 16285)
 				)
 				(1
@@ -252,7 +252,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9540 46 25 0 -1 1)
+					(DoRobot 9540 46 25 0 -1 1)
 					(gCurRoom drawPic: 16260)
 				)
 				(1
@@ -281,7 +281,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9500 143 35 0 -1 1)
+					(DoRobot 9500 143 35 0 -1 1)
 				)
 				(1
 					(if (IsFlag 135)
@@ -324,11 +324,11 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9545 0 -44 0)
+					(DoRobot 9545 0 -44 0)
 					(gCurRoom drawPic: 16260)
 				)
 				(1
-					(proc1111_7 9510 -6 -41 0 200 1)
+					(DoRobot 9510 -6 -41 0 200 1)
 					(gCurRoom drawPic: 16270)
 				)
 				(2
@@ -358,11 +358,11 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9546 -5 -42 0)
+					(DoRobot 9546 -5 -42 0)
 					(gCurRoom drawPic: 16260)
 				)
 				(1
-					(proc1111_7 9520 0 0 0 -1 1)
+					(DoRobot 9520 0 0 0 -1 1)
 					(gCurRoom drawPic: 16296)
 				)
 				(2
@@ -417,7 +417,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9543 -8 -42 0 -1 1)
+					(DoRobot 9543 -8 -42 0 -1 1)
 					(gCurRoom drawPic: 16260)
 				)
 				(1
@@ -448,7 +448,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9542 -10 -42 0 -1 1)
+					(DoRobot 9542 -10 -42 0 -1 1)
 					(gCurRoom drawPic: 16260)
 				)
 				(1
@@ -479,7 +479,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9544 -10 -45 0 -1 1)
+					(DoRobot 9544 -10 -45 0 -1 1)
 					(gCurRoom drawPic: 16260)
 				)
 				(1
@@ -510,7 +510,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9541 48 26 0 -1 1)
+					(DoRobot 9541 48 26 0 -1 1)
 					(gCurRoom drawPic: 16260)
 				)
 				(1

@@ -176,7 +176,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9562 -3 -22 0 -1 1)
+					(DoRobot 9562 -3 -22 0 -1 1)
 					(gCurRoom drawPic: 38110)
 				)
 				(1
@@ -206,7 +206,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9701 0 0 0 -1 1)
+					(DoRobot 9701 0 0 0 -1 1)
 					(gCurRoom drawPic: 38130)
 				)
 				(1
@@ -236,7 +236,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9560 -39 -41 0 -1 1)
+					(DoRobot 9560 -39 -41 0 -1 1)
 					(gCurRoom drawPic: 38110)
 				)
 				(1
@@ -265,7 +265,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9550 0 -8 0 -1 1)
+					(DoRobot 9550 0 -8 0 -1 1)
 				)
 				(1
 					(if (IsFlag 135)
@@ -308,10 +308,10 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9700 0 0 0)
+					(DoRobot 9700 0 0 0)
 				)
 				(1
-					(proc1111_7 9551 -12 -39 0 -1 1)
+					(DoRobot 9551 -12 -39 0 -1 1)
 					(gCurRoom drawPic: 38120)
 				)
 				(2
@@ -382,19 +382,19 @@
 							((ScriptID 45951 2) writeString: temp0) ; chase_dat
 							(temp0 dispose:)
 						)
-						(proc1111_7 9561 71 1 0)
+						(DoRobot 9561 71 1 0)
 						(gCurRoom drawPic: 38110)
 					)
 					(1
-						(proc1111_7 9570 0 0 0)
+						(DoRobot 9570 0 0 0)
 						(gCurRoom drawPic: 38130)
 					)
 					(2
-						(proc1111_7 9580 81 12 0)
+						(DoRobot 9580 81 12 0)
 						(gCurRoom drawPic: 38140)
 					)
 					(3
-						(proc1111_7 9571 0 0 0)
+						(DoRobot 9571 0 0 0)
 						(if (not (IsFlag 135))
 							(gGame handsOn:)
 						)
@@ -412,7 +412,7 @@
 							)
 						)
 						(gGame handsOff:)
-						(proc1111_7 9595 -9 -43 0 -1 1)
+						(DoRobot 9595 -9 -43 0 -1 1)
 						(liftView init:)
 						(gCurRoom drawPic: 38150)
 					)
@@ -447,7 +447,7 @@
 						(temp0 dispose:)
 					)
 					(southExit dispose:)
-					(proc1111_7 9590 -12 -42 0 -1 1)
+					(DoRobot 9590 -12 -42 0 -1 1)
 					(liftView init:)
 					(gCurRoom drawPic: 38150)
 				)

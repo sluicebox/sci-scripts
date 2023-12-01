@@ -53,7 +53,7 @@
 				)
 			)
 			(22300
-				(proc1111_6)
+				(KillRobot)
 				(gEgo view: 7 posn: 250 130 setPri: 100)
 				(southExit approachX: 260 approachY: 140)
 				(self setScript: (ScriptID 0 5) 0 10) ; takeLastStep
@@ -94,7 +94,7 @@
 				(0
 					(southExit approachX: 245 approachY: 170)
 					(gCurRoom drawPic: 22130)
-					(proc1111_7 5220 -5 -5)
+					(DoRobot 5220 -5 -5)
 				)
 				(1
 					(gEgo hide:)
@@ -106,7 +106,7 @@
 					(= seconds 4)
 				)
 				(2
-					(proc1111_7 5229 -5 -7)
+					(DoRobot 5229 -5 -7)
 					(gCurRoom drawPic: 22130)
 				)
 				(3
@@ -122,7 +122,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(DoAudio 12 1) ; AudMixCheck
 					(DoAudio 18 0) ; AudDACCritical
 					(if (global114 script:)
@@ -149,7 +149,7 @@
 				(0
 					(southExit approachX: 245 approachY: 170)
 					(gCurRoom drawPic: 22120)
-					(proc1111_7 5240 -8 -4)
+					(DoRobot 5240 -8 -4)
 				)
 				(1
 					(gEgo hide:)
@@ -157,7 +157,7 @@
 					(= seconds 5)
 				)
 				(2
-					(proc1111_7 5249 -8 -4)
+					(DoRobot 5249 -8 -4)
 					(gCurRoom drawPic: 22120)
 				)
 				(3
@@ -171,7 +171,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global125 0)
 					(gCurRoom drawPic: 22100)
 					(gEgo show: posn: 110 105 normalize: 5)
@@ -193,7 +193,7 @@
 				(0
 					(southExit approachX: 245 approachY: 170)
 					(gCurRoom drawPic: 22110)
-					(proc1111_7 5260 -1 -5)
+					(DoRobot 5260 -1 -5)
 				)
 				(1
 					(gEgo hide:)
@@ -201,7 +201,7 @@
 					(= seconds 5)
 				)
 				(2
-					(proc1111_7 5269 -1 -5)
+					(DoRobot 5269 -1 -5)
 					(gCurRoom drawPic: 22110)
 				)
 				(3
@@ -215,7 +215,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global125 0)
 					(gCurRoom drawPic: 22100)
 					(gEgo show: posn: 110 105 normalize: 7)

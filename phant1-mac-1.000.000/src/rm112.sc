@@ -47,7 +47,7 @@
 			)
 			(1
 				(if register
-					(proc1111_7 (local0 asInteger:) 20 20)
+					(DoRobot (local0 asInteger:) 20 20)
 				else
 					(gGame quitGame:)
 				)

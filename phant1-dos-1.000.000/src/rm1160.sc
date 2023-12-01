@@ -41,7 +41,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 4961 55 34 gEgo -1 1)
+					(DoRobot 4961 55 34 gEgo -1 1)
 				)
 				(1
 					(self dispose:)
@@ -54,7 +54,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(= gNewRoomNum 1200)
@@ -70,7 +70,7 @@
 			(switch (= state newState)
 				(0
 					(global114 pause:)
-					(proc1111_7 4960 -20 -42 gEgo -1 1)
+					(DoRobot 4960 -20 -42 gEgo -1 1)
 				)
 				(1
 					(self dispose:)
@@ -84,7 +84,7 @@
 	(method (dispose)
 		(global114 endPause:)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(= gNewRoomNum 1200)

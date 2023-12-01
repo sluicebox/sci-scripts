@@ -135,14 +135,14 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 4480 41 19)
+					(DoRobot 4480 41 19)
 				)
 				(1
 					(self dispose:)
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		)
@@ -155,7 +155,7 @@
 	(method (changeState newState)
 		(if global115
 			(= global115 0)
-			(proc1111_6)
+			(KillRobot)
 			(trowel dispose:)
 			(SetFlag 239)
 			(SetFlag 191)

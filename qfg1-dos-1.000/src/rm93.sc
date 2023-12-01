@@ -88,19 +88,19 @@
 		(LoadMany rsVIEW 93 550 5 523 510 538 426 503 524)
 		(LoadMany rsSOUND 23 (SoundFX 35) (SoundFX 39) (SoundFX 31))
 		(LoadMany rsSCRIPT 103 102 101)
-		(if (gEgo knows: 23)
+		(if (gEgo knows: 23) ; flameDartSpell
 			(Load rsVIEW 522)
 			(Load rsSCRIPT 100)
 		)
-		(if (gEgo knows: 20)
+		(if (gEgo knows: 20) ; dazzleSpell
 			(Load rsVIEW 521)
 			(Load rsSCRIPT 106)
 		)
-		(if (gEgo knows: 22)
+		(if (gEgo knows: 22) ; calmSpell
 			(Load rsVIEW 521)
 			(Load rsSCRIPT 104)
 		)
-		(if (gEgo knows: 17)
+		(if (gEgo knows: 17) ; openSpell
 			(Load rsVIEW 521)
 			(Load rsSCRIPT 105)
 		)

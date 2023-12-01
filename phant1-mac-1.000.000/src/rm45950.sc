@@ -41,7 +41,7 @@
 		(SetFlag 117)
 		(= global115 0)
 		(if (IsFlag 135)
-			(proc1111_6 0 0)
+			(KillRobot 0 0)
 		)
 		(if
 			(and
@@ -299,13 +299,13 @@
 							approachVerbs: 0
 						)
 					)
-					(proc1111_7 6190 115 30 0)
+					(DoRobot 6190 115 30 0)
 					(gGame handsOn:)
 				)
 				(1
 					(gGame handsOff:)
 					(= local0 1)
-					(proc1111_7 6210 91 17 0)
+					(DoRobot 6210 91 17 0)
 					(changeTo10731 doit:)
 				)
 				(2)
@@ -472,7 +472,7 @@
 				)
 				(2
 					(gCurRoom picture: -1)
-					(proc1111_7 5950 -19 -27 0 -1 1)
+					(DoRobot 5950 -19 -27 0 -1 1)
 					(drainCleaner init: setHotspot: 4 3) ; Do, Move
 					(spellBook
 						view: 10751
@@ -522,7 +522,7 @@
 					((ScriptID 45951 2) writeString: temp0) ; chase_dat
 					(temp0 dispose:)
 				)
-				(proc1111_7 5960 109 35 0 100 1)
+				(DoRobot 5960 109 35 0 100 1)
 				(changeTo10731 doit:)
 			)
 			(1
@@ -560,7 +560,7 @@
 						approachVerbs: 0
 					)
 					(SetFlag 227)
-					(proc1111_7 5970 -20 -5 0 140)
+					(DoRobot 5970 -20 -5 0 140)
 					(changeTo10731 doit:)
 				)
 				(1
@@ -605,7 +605,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 5980 -13 -7 0 -1 1)
+					(DoRobot 5980 -13 -7 0 -1 1)
 					(changeTo10751 doit:)
 				)
 				(1
@@ -646,7 +646,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 6230 58 20 0 -1 1)
+					(DoRobot 6230 58 20 0 -1 1)
 					(changeTo10751 doit:)
 				)
 				(1
@@ -680,7 +680,7 @@
 					((ScriptID 45951 2) writeString: temp0) ; chase_dat
 					(temp0 dispose:)
 				)
-				(proc1111_7 6010 41 4 0 -1 1)
+				(DoRobot 6010 41 4 0 -1 1)
 				(changeTo10751 doit:)
 			)
 			(1
@@ -713,7 +713,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 6250 12 -7 0 -1 1)
+					(DoRobot 6250 12 -7 0 -1 1)
 					(changeTo10731 doit:)
 				)
 				(1
@@ -750,7 +750,7 @@
 					(SetFlag 67)
 					(gEgo put: 5) ; invHammer
 					(donFeature dispose:)
-					(proc1111_7 6240 46 1 0)
+					(DoRobot 6240 46 1 0)
 					(changeTo10751 doit:)
 					(= local0 0)
 				)
@@ -792,7 +792,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9309 29 -21 0)
+					(DoRobot 9309 29 -21 0)
 					(changeTo10751 doit:)
 				)
 				(1
@@ -832,18 +832,18 @@
 						init:
 						setPri: 200
 					)
-					(proc1111_7 6180 130 40 0 200)
+					(DoRobot 6180 130 40 0 200)
 					(changeTo10731 doit:)
 					(spellBook dispose:)
 				)
 				(1
 					(gEgo get: 16) ; invSpellBook
 					((ScriptID 45951 1) doit:) ; checkInv
-					(proc1111_7 6182 53 -1 0)
+					(DoRobot 6182 53 -1 0)
 					(gCurRoom drawPic: 13420)
 				)
 				(2
-					(proc1111_7 6210 91 17 0)
+					(DoRobot 6210 91 17 0)
 					(changeTo10731 doit:)
 				)
 				(3
@@ -894,7 +894,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 6211 19 -21 0 -1 1)
+					(DoRobot 6211 19 -21 0 -1 1)
 					(changeTo10751 doit:)
 				)
 				(1
@@ -928,7 +928,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 6220 53 -1 0 1 1)
+					(DoRobot 6220 53 -1 0 1 1)
 					(changeTo10751 doit:)
 				)
 				(1
@@ -977,9 +977,9 @@
 						)
 					)
 					(if (not (gEgo has: 5)) ; invHammer
-						(proc1111_7 6251 85 -3 0 -1 1)
+						(DoRobot 6251 85 -3 0 -1 1)
 					else
-						(proc1111_7 6200 5 35 0 -1 1)
+						(DoRobot 6200 5 35 0 -1 1)
 					)
 					(changeTo10731 doit:)
 				)
@@ -1011,7 +1011,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9310 84 -15 0 -1 1)
+					(DoRobot 9310 84 -15 0 -1 1)
 					(changeTo10751 doit:)
 					(gGDacSound number: 10671 play:)
 				)
@@ -1116,7 +1116,7 @@
 
 	(method (doVerb theVerb)
 		(if (OneOf theVerb 4 3) ; Do, Move
-			(proc1111_6 0 0)
+			(KillRobot 0 0)
 			(gCurRoom setScript: sAcidInFace)
 		else
 			(super doVerb: theVerb)
@@ -1164,7 +1164,7 @@
 				(gCurRoom setScript: grabAdrienne)
 			)
 			(10 ; invPoker
-				(proc1111_6 0 0)
+				(KillRobot 0 0)
 				(if (== (gCurRoom script:) sChaseBegin)
 					(super doVerb: theVerb)
 				else
@@ -1172,7 +1172,7 @@
 				)
 			)
 			(11 ; invHammer
-				(proc1111_6 0 0)
+				(KillRobot 0 0)
 				(if (IsFlag 130)
 					(gCurRoom setScript: thumpDonWithHammer)
 				else
@@ -1180,7 +1180,7 @@
 				)
 			)
 			(27 ; invCutter
-				(proc1111_6 0 0)
+				(KillRobot 0 0)
 				(gCurRoom setScript: stabDon)
 			)
 			(else
@@ -1237,7 +1237,7 @@
 		(if (== theVerb 21) ; Exit
 			(cond
 				((== (gCurRoom script:) sChaseBegin)
-					(proc1111_6 0 0)
+					(KillRobot 0 0)
 					(gCurRoom setScript: sStrangleDeath)
 				)
 				((not (IsFlag 130))
@@ -1247,7 +1247,7 @@
 					(gCurRoom setScript: grabAdrienne)
 				)
 				(else
-					(proc1111_6 0 0)
+					(KillRobot 0 0)
 					(gCurRoom setScript: sExitDoor)
 				)
 			)

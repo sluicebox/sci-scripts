@@ -893,7 +893,7 @@
 		(if (IsFlag 147)
 			(self setLoop: 5)
 		)
-		(if (gEgo knows: 23)
+		(if (gEgo knows: 23) ; flameDartSpell
 			(= global285 (+ 5 (/ [gEgoStats 23] 3))) ; flameDartSpell
 		)
 		(= global286 0)

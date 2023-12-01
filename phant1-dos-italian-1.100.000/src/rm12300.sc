@@ -314,7 +314,7 @@
 				(0
 					(ClearFlag 121)
 					(letter hide:)
-					(proc1111_7 942 67 18 gEgo 200)
+					(DoRobot 942 67 18 gEgo 200)
 					(= register (View new:))
 					(register
 						view: (if (== gChapter 5) 944 else 943)
@@ -342,7 +342,7 @@
 					(hands dispose:)
 					(letter hide:)
 					(register show:)
-					(proc1111_7 943 66 17 gEgo 200)
+					(DoRobot 943 66 17 gEgo 200)
 					(gCurRoom drawPic: 12180)
 				)
 				(4
@@ -360,7 +360,7 @@
 					(global114 endPause: 1)
 					(SetFlag 121)
 					(sfx stop:)
-					(proc1111_6)
+					(KillRobot)
 					(letter cel: 0 show:)
 					(hands dispose:)
 					(register dispose:)
@@ -567,7 +567,7 @@
 					(= local5 0)
 					(gGame handsOff:)
 					(SetFlag 43)
-					(proc1111_7 5490)
+					(DoRobot 5490)
 					(drawer hide:)
 					(if global125
 						(gCurRoom picture: 12440)
@@ -601,8 +601,8 @@
 				)
 				(2
 					(gEgo show:)
-					(proc1111_6)
-					(proc1111_7 5494 30 36)
+					(KillRobot)
+					(DoRobot 5494 30 36)
 				)
 				(3
 					(= local5 -1)
@@ -616,15 +616,15 @@
 					)
 					(= local4 0)
 					(= local5 0)
-					(proc1111_7 5493 34 0)
+					(DoRobot 5493 34 0)
 					(gCurRoom drawPic: 12440)
 				)
 				(5
-					(proc1111_7 5496 -2 8)
+					(DoRobot 5496 -2 8)
 					(gCurRoom drawPic: 12452)
 				)
 				(6
-					(proc1111_7 5497 69 11 gEgo 140)
+					(DoRobot 5497 69 11 gEgo 140)
 					(gCurRoom drawPic: 12464)
 					(book init:)
 					(secretPanel
@@ -651,11 +651,11 @@
 					(sfx stop:)
 					(secretPanel dispose:)
 					(= register 0)
-					(proc1111_7 5492 8 11)
+					(DoRobot 5492 8 11)
 					(gCurRoom drawPic: 12440)
 				)
 				(11
-					(proc1111_7 5495 37 35)
+					(DoRobot 5495 37 35)
 					(gCurRoom drawPic: 12430)
 					(mist priority: 126)
 					(= local4 (List new:))
@@ -706,7 +706,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(global114 endPause:)
 					(sfx stop:)
 					(Lock 140 12063 0) ; WAVE
@@ -749,7 +749,7 @@
 						(gCurRoom drawPic: 12300)
 					)
 					(= global125 0)
-					(proc1111_7 890 189 33)
+					(DoRobot 890 189 33)
 				)
 				(1
 					(proc1111_9)
@@ -764,7 +764,7 @@
 				(0
 					(proc1111_9)
 					(= global115 0)
-					(proc1111_6)
+					(KillRobot)
 					(gEgo normalize: 612 posn: 80 150)
 					(gCurRoom drawPic: 12180)
 					(gGame handsOn:)
@@ -792,7 +792,7 @@
 						else
 							(gCurRoom drawPic: 12150)
 						)
-						(proc1111_7 940 30 6 gEgo 200)
+						(DoRobot 940 30 6 gEgo 200)
 					)
 					(1
 						(= register 0)
@@ -810,7 +810,7 @@
 						(gGame handsOff:)
 						(letter dispose:)
 						(gCurRoom drawPic: 12150)
-						(proc1111_7 941 27 7 gEgo 200)
+						(DoRobot 941 27 7 gEgo 200)
 					)
 					(3
 						(proc1111_9)
@@ -822,7 +822,7 @@
 				)
 			)
 			(register
-				(proc1111_6)
+				(KillRobot)
 				(= global115 0)
 				(= state 0)
 				(self cue:)
@@ -830,7 +830,7 @@
 			(else
 				(ClearFlag 248)
 				(ClearFlag 121)
-				(proc1111_6)
+				(KillRobot)
 				(= global115 0)
 				(proc1111_9)
 				(gCurRoom drawPic: 12180)
@@ -862,7 +862,7 @@
 					else
 						(gCurRoom drawPic: 12150)
 					)
-					(proc1111_7 980 8 42 gEgo 200)
+					(DoRobot 980 8 42 gEgo 200)
 				)
 				(1
 					(gCurRoom drawPic: 12180)
@@ -876,7 +876,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(proc1111_9)
 					(gCurRoom drawPic: 12180)

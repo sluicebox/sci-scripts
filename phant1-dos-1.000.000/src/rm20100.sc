@@ -46,7 +46,7 @@
 	)
 
 	(method (init)
-		(proc1111_6)
+		(KillRobot)
 		(gEgo init: normalize: show: setScaler: Scaler 100 47 130 98 z: 0)
 		(switch gPrevRoomNum
 			(900
@@ -554,7 +554,7 @@
 						(= register 0)
 					else
 						(gEgo hide:)
-						(proc1111_7 540 -75 -38 gEgo -1 1)
+						(DoRobot 540 -75 -38 gEgo -1 1)
 						(gCurRoom drawPic: 20230 picture: 20230)
 						(lantern init: cycleSpeed: 10)
 					)
@@ -570,7 +570,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 		)
 		(= global115 0)
 		(gGDacSound stop:)
@@ -626,7 +626,7 @@
 	(method (dispose)
 		(if global115
 			(hammer dispose:)
-			(proc1111_6)
+			(KillRobot)
 		)
 		(= global115 0)
 		(gEgo
@@ -766,7 +766,7 @@
 	)
 
 	(method (dispose)
-		(proc1111_6)
+		(KillRobot)
 		(if
 			(and
 				(or (== gChapter 6) (and (== gChapter 5) (IsFlag 291)))
@@ -881,7 +881,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(gEgo cel: (gEgo lastCel:))
 		)
 		(= global115 0)

@@ -23,7 +23,7 @@
 	)
 
 	(method (init)
-		(proc1111_6)
+		(KillRobot)
 		(= picture (+ 3600 (== gChapter 5)))
 		(if (> gChapter 5)
 			(SetFlag 126)
@@ -200,7 +200,7 @@
 					(global114 pause: 3049 0 -1)
 					(global114 setVol: 120 1)
 					(gGDacSound number: 3050 init: setVol: 120 setLoop: -1 play:)
-					(proc1111_7 5020 -6 -38)
+					(DoRobot 5020 -6 -38)
 				)
 				(1
 					(gEgo show:)
@@ -215,7 +215,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(SetFlag 376)
 			(if (not (global114 script:))

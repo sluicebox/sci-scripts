@@ -37,7 +37,7 @@
 		(Palette 2 55 135 70) ; PalIntensity
 		(global114 play: 4050)
 		(ClearFlag 121)
-		(proc1111_6)
+		(KillRobot)
 		(gEgo init: setScaler: Scaler 100 50 155 116 normalize:)
 		(switch gPrevRoomNum
 			(900
@@ -128,11 +128,11 @@
 					(gGame handsOff:)
 					(gCurRoom drawPic: 37105)
 					(Palette 2 55 135 100) ; PalIntensity
-					(proc1111_7 901 -16 -42)
+					(DoRobot 901 -16 -42)
 				)
 				(1
 					(= scratch 0)
-					(proc1111_6)
+					(KillRobot)
 					((= register (View new:))
 						name: {hole}
 						view: 37100
@@ -170,14 +170,14 @@
 					(= register 0)
 					(myKnob dispose:)
 					(gCurRoom drawPic: 37105)
-					(proc1111_7 908 -16 -42)
+					(DoRobot 908 -16 -42)
 				)
 				(3
 					(self dispose:)
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if scratch
 				(self changeState: 1)
@@ -208,12 +208,12 @@
 					(cigarette dispose:)
 					(lift dispose:)
 					(Palette 2 55 135 100) ; PalIntensity
-					(proc1111_7 9644 0 0)
+					(DoRobot 9644 0 0)
 					(gCurRoom drawPic: 38130)
 					(ClearFlag 146)
 				)
 				(1
-					(proc1111_7 9646 25 1 gEgo 0 1)
+					(DoRobot 9646 25 1 gEgo 0 1)
 					(gCurRoom drawPic: 37325)
 				)
 				(2
@@ -223,7 +223,7 @@
 			)
 		else
 			(= global115 0)
-			(proc1111_6)
+			(KillRobot)
 			(gCurRoom newRoom: 38200)
 		)
 	)
@@ -241,7 +241,7 @@
 					(cigarette hide:)
 					(gCurRoom drawPic: 37200)
 					(Palette 2 55 135 100) ; PalIntensity
-					(proc1111_7 37200 34 -3)
+					(DoRobot 37200 34 -3)
 				)
 				(1
 					(gCurRoom drawPic: 37100)
@@ -254,11 +254,11 @@
 					(lift dispose:)
 					(cigarette hide:)
 					(Palette 2 55 135 100) ; PalIntensity
-					(proc1111_7 9644 0 0)
+					(DoRobot 9644 0 0)
 					(gCurRoom drawPic: 38130)
 				)
 				(3
-					(proc1111_7 9646 25 1 gEgo 0 1)
+					(DoRobot 9646 25 1 gEgo 0 1)
 					(gCurRoom drawPic: 37325)
 				)
 				(4
@@ -268,7 +268,7 @@
 			)
 		else
 			(= global115 0)
-			(proc1111_6)
+			(KillRobot)
 			(gCurRoom newRoom: 38200)
 		)
 	)
@@ -287,7 +287,7 @@
 					(cigarette dispose:)
 					(lift dispose:)
 					(gCurRoom drawPic: 37205)
-					(proc1111_7 907 -2 1 gEgo -1 1)
+					(DoRobot 907 -2 1 gEgo -1 1)
 				)
 				(1
 					(cond
@@ -307,7 +307,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(cond
 						((== gChapter 5)
@@ -342,11 +342,11 @@
 					(if (gCast contains: lift)
 						(lift hide:)
 					)
-					(proc1111_7 5090 -13 -6)
+					(DoRobot 5090 -13 -6)
 					(gCurRoom drawPic: 37330)
 				)
 				(1
-					(proc1111_7 5095 -3 0)
+					(DoRobot 5095 -3 0)
 					(gCurRoom drawPic: 410)
 				)
 				(2
@@ -365,7 +365,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(cond
 				((IsFlag 261)
 					(gCurRoom setScript: sLookCase3)
@@ -394,7 +394,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 5120 -20 -39)
+					(DoRobot 5120 -20 -39)
 				)
 				(1
 					(cigarette show:)
@@ -409,7 +409,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(cigarette show:)
 					(if (gCast contains: lift)
 						(lift show:)
@@ -437,7 +437,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 5100 -20 -39)
+					(DoRobot 5100 -20 -39)
 				)
 				(1
 					(cigarette show:)
@@ -452,7 +452,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(cigarette show:)
 					(if (gCast contains: lift)
 						(lift show:)
@@ -481,7 +481,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 5110 -18 -43)
+					(DoRobot 5110 -18 -43)
 				)
 				(1
 					(cigarette show:)
@@ -496,7 +496,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(cigarette show:)
 					(if (gCast contains: lift)
 						(lift show:)

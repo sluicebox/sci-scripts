@@ -219,7 +219,7 @@
 						(temp0 dispose:)
 					)
 					(liftExit nsLeft: 36 nsTop: 27 nsRight: 65 nsBottom: 114)
-					(proc1111_7 9307 -5 -40 0 200 1)
+					(DoRobot 9307 -5 -40 0 200 1)
 				)
 				(1
 					(if (IsFlag 135)
@@ -265,7 +265,7 @@
 					(if (gCast contains: thatOldLift)
 						(thatOldLift dispose:)
 					)
-					(proc1111_7 9621 -11 -41 0 -1 1)
+					(DoRobot 9621 -11 -41 0 -1 1)
 					(if (IsFlag 123)
 						(gCurRoom drawPic: 37315)
 					else
@@ -299,7 +299,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9620 -1 -41 0 200)
+					(DoRobot 9620 -1 -41 0 200)
 					(lift37311 init:)
 					(if global125
 						(= global125 0)
@@ -370,7 +370,7 @@
 						(temp0 dispose:)
 					)
 					(global114 pause:)
-					(proc1111_7 6630 -68 -26 0 200 1)
+					(DoRobot 6630 -68 -26 0 200 1)
 					(if (gCast contains: thatOldLift)
 						(thatOldLift dispose:)
 					)
@@ -407,7 +407,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9640 0 0 0 -1 1)
+					(DoRobot 9640 0 0 0 -1 1)
 					(if (gCast contains: thatOldLift)
 						(thatOldLift dispose:)
 					)
@@ -439,7 +439,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9631 -15 -25 0 -1 1)
+					(DoRobot 9631 -15 -25 0 -1 1)
 				)
 				(1
 					(if (IsFlag 135)
@@ -490,7 +490,7 @@
 					)
 					(= local1 1)
 					(thatOldLift init:)
-					(proc1111_7 9630 -12 -41 0)
+					(DoRobot 9630 -12 -41 0)
 					(gCurRoom drawPic: 37300 0 1)
 				)
 				(1
@@ -544,7 +544,7 @@
 							((ScriptID 45951 2) writeString: temp0) ; chase_dat
 							(temp0 dispose:)
 						)
-						(proc1111_7 9308 60 -45 0 200 1)
+						(DoRobot 9308 60 -45 0 200 1)
 						(if (gCast contains: thatOldLift)
 							(thatOldLift dispose:)
 						)
@@ -579,7 +579,7 @@
 						(temp0 dispose:)
 					)
 					(= local1 0)
-					(proc1111_7 9622 -9 -31 0 -1 1)
+					(DoRobot 9622 -9 -31 0 -1 1)
 					(liftExit nsLeft: 93 nsTop: 10 nsRight: 134 nsBottom: 129)
 					(if (gCast contains: thatOldLift)
 						(thatOldLift dispose:)

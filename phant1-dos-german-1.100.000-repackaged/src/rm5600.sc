@@ -22,7 +22,7 @@
 	)
 
 	(method (init)
-		(proc1111_6)
+		(KillRobot)
 		(gGame handsOff:)
 		(gEgo setScaler: Scaler 84 50 127 96 init:)
 		(if (and (IsFlag 52) (== gChapter 4))
@@ -271,11 +271,11 @@
 					(if (gCast contains: harriet)
 						(harriet hide:)
 					)
-					(proc1111_7 2029 0 0)
+					(DoRobot 2029 0 0)
 					(gCurRoom drawPic: 5610)
 				)
 				(2
-					(proc1111_7 2030 65 -13)
+					(DoRobot 2030 65 -13)
 					(gCurRoom drawPic: 5350)
 				)
 				(3
@@ -294,7 +294,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(magazine show:)
 					(if (gCast contains: harriet)
 						(harriet show:)
@@ -351,7 +351,7 @@
 					(if (IsFlag 159)
 						(proc1111_8)
 						(gCurRoom drawPic: 5305)
-						(proc1111_7 2110 76 13 gEgo -1 1)
+						(DoRobot 2110 76 13 gEgo -1 1)
 					else
 						(self cue:)
 					)
@@ -409,7 +409,7 @@
 					(harriet hide:)
 					(gEgo put: 9) ; invTarot
 					(SetFlag 179)
-					(proc1111_7 4251 -22 -32)
+					(DoRobot 4251 -22 -32)
 					(gCurRoom drawPic: 5610)
 				)
 				(2
@@ -440,7 +440,7 @@
 					(leftSouthExit init: 3)
 					(rightSouthExit dispose:)
 					(gCurRoom drawPic: (gCurRoom picture:))
-					(proc1111_6)
+					(KillRobot)
 					(gGame handsOn:)
 					(self dispose:)
 				)
@@ -475,7 +475,7 @@
 				(1
 					(magazine hide:)
 					(harriet hide:)
-					(proc1111_7 4300 -13 -48)
+					(DoRobot 4300 -13 -48)
 					(gCurRoom drawPic: 5610)
 				)
 				(2
@@ -499,7 +499,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(magazine show:)
 					(harriet show:)
 					(leftSouthExit init: 3)
@@ -541,7 +541,7 @@
 				(1
 					(magazine hide:)
 					(harriet hide:)
-					(proc1111_7 4310 -9 -42)
+					(DoRobot 4310 -9 -42)
 					(gCurRoom drawPic: 5610)
 				)
 				(2
@@ -565,7 +565,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(magazine show:)
 					(harriet show:)
 					(leftSouthExit init: 3)

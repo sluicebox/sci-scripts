@@ -121,7 +121,7 @@
 								(flipcardMachine posn: 215 57 view: 8400)
 							)
 							(gEgo hide:)
-							(proc1111_7 5285 -7 28 gEgo -1 1)
+							(DoRobot 5285 -7 28 gEgo -1 1)
 							(gCurRoom drawPic: 8400)
 						)
 						(3
@@ -130,7 +130,7 @@
 								(flipcardMachine posn: 215 57 view: 8400)
 							)
 							(gEgo hide:)
-							(proc1111_7 5285 -7 28 gEgo -1 1)
+							(DoRobot 5285 -7 28 gEgo -1 1)
 							(gCurRoom drawPic: 8400)
 						)
 						(else
@@ -145,7 +145,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(ClearFlag 121)
 			(= global125 0)
@@ -187,7 +187,7 @@
 							(if (gCast contains: flipcardMachine)
 								(flipcardMachine posn: 215 57 view: 8400)
 							)
-							(proc1111_7 5283 -7 28)
+							(DoRobot 5283 -7 28)
 							(gCurRoom drawPic: 8400)
 						)
 						(3
@@ -195,7 +195,7 @@
 							(if (gCast contains: flipcardMachine)
 								(flipcardMachine posn: 215 57 view: 8400)
 							)
-							(proc1111_7 5283 -7 28)
+							(DoRobot 5283 -7 28)
 							(gCurRoom drawPic: 8400)
 						)
 						(else
@@ -233,7 +233,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (< local0 3)
 				(self changeState: 2)
@@ -277,7 +277,7 @@
 							(if (gCast contains: flipcardMachine)
 								(flipcardMachine posn: 215 57 view: 8400)
 							)
-							(proc1111_7 5283 -7 28)
+							(DoRobot 5283 -7 28)
 							(gCurRoom drawPic: 8400)
 						)
 						(3
@@ -285,7 +285,7 @@
 							(if (gCast contains: flipcardMachine)
 								(flipcardMachine posn: 215 57 view: 8400)
 							)
-							(proc1111_7 5283 -7 28)
+							(DoRobot 5283 -7 28)
 							(gCurRoom drawPic: 8400)
 						)
 						(else
@@ -329,7 +329,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (< local0 2)
 				(self changeState: 2)
@@ -374,7 +374,7 @@
 								(flipcardMachine posn: 215 57 view: 8400)
 							)
 							(gEgo hide:)
-							(proc1111_7 5284 -7 28 gEgo -1 1)
+							(DoRobot 5284 -7 28 gEgo -1 1)
 							(gCurRoom drawPic: 8400)
 						)
 						(4
@@ -383,7 +383,7 @@
 								(flipcardMachine posn: 215 57 view: 8400)
 							)
 							(gEgo hide:)
-							(proc1111_7 5284 -7 28 gEgo -1 1)
+							(DoRobot 5284 -7 28 gEgo -1 1)
 							(gCurRoom drawPic: 8400)
 						)
 						(5
@@ -392,7 +392,7 @@
 								(flipcardMachine posn: 215 57 view: 8400)
 							)
 							(gEgo hide:)
-							(proc1111_7 5284 -7 28 gEgo -1 1)
+							(DoRobot 5284 -7 28 gEgo -1 1)
 							(gCurRoom drawPic: 8400)
 						)
 						(else
@@ -407,7 +407,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(ClearFlag 121)
 			(if (< global125 10)
@@ -451,7 +451,7 @@
 								(flipcardMachine posn: 215 57 view: 8400)
 							)
 							(gEgo hide:)
-							(proc1111_7 5284 -7 28 gEgo -1 1)
+							(DoRobot 5284 -7 28 gEgo -1 1)
 							(gCurRoom drawPic: 8400)
 						)
 						(4
@@ -460,7 +460,7 @@
 								(flipcardMachine posn: 215 57 view: 8400)
 							)
 							(gEgo hide:)
-							(proc1111_7 5284 -7 28 gEgo -1 1)
+							(DoRobot 5284 -7 28 gEgo -1 1)
 							(gCurRoom drawPic: 8400)
 						)
 						(5
@@ -469,7 +469,7 @@
 								(flipcardMachine posn: 215 57 view: 8400)
 							)
 							(gEgo hide:)
-							(proc1111_7 5284 -7 28 gEgo -1 1)
+							(DoRobot 5284 -7 28 gEgo -1 1)
 							(gCurRoom drawPic: 8400)
 						)
 						(else
@@ -482,7 +482,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gCurRoom newRoom: 8200)
 		)

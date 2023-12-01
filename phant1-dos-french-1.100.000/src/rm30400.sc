@@ -59,7 +59,7 @@
 	)
 
 	(method (dispose)
-		(proc1111_6)
+		(KillRobot)
 		(ClearFlag 121)
 		(super dispose:)
 	)
@@ -205,8 +205,8 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_6)
-					(proc1111_7 1840 8 -40)
+					(KillRobot)
+					(DoRobot 1840 8 -40)
 				)
 				(1
 					(= local0 1)
@@ -228,7 +228,7 @@
 			(switch (= state newState)
 				(0
 					(= global115 0)
-					(proc1111_6)
+					(KillRobot)
 					(gEgo
 						view: 1841
 						setLoop: 0
@@ -309,7 +309,7 @@
 				(2
 					(gEgo hide:)
 					(cup hide:)
-					(proc1111_7 1861 50 -6)
+					(DoRobot 1861 50 -6)
 					(gCurRoom drawPic: 30220)
 				)
 				(3
@@ -339,7 +339,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(if (not (gCast contains: pornoMag))
 						(pornoMag init:)
 					)
@@ -369,10 +369,10 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1870 14 -1)
+					(DoRobot 1870 14 -1)
 				)
 				(1
-					(proc1111_6)
+					(KillRobot)
 					(= local0 0)
 					(gEgo hide:)
 					(WalkieTalkie showFrame: 1870 200 14 -1)
@@ -383,7 +383,7 @@
 			(switch (= state newState)
 				(0
 					(= global115 0)
-					(proc1111_6)
+					(KillRobot)
 					(gEgo hide:)
 					(WalkieTalkie showFrame: 1870 200 14 -1)
 					(gCurRoom newRoom: 30100)

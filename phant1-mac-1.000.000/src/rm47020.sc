@@ -163,10 +163,10 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 7164 -5 38 0)
+					(DoRobot 7164 -5 38 0)
 				)
 				(1
-					(proc1111_7 7150 -9 -29 0 -1 1)
+					(DoRobot 7150 -9 -29 0 -1 1)
 					(gCurRoom drawPic: 35160)
 				)
 				(2
@@ -196,26 +196,26 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 7151 73 33 0)
+					(DoRobot 7151 73 33 0)
 				)
 				(1
-					(proc1111_7 7152 -39 -42 0)
+					(DoRobot 7152 -39 -42 0)
 					(gCurRoom drawPic: 35180)
 				)
 				(2
 					(roomSnd stop:)
 					(sfxSound number: 22070 play:)
 					(gGDacSound stop:)
-					(proc1111_7 7153 -24 -39 0)
+					(DoRobot 7153 -24 -39 0)
 					(gCurRoom drawPic: 35170)
 				)
 				(3
-					(proc1111_7 7154 -9 -41 0)
+					(DoRobot 7154 -9 -41 0)
 					(gCurRoom drawPic: 35180)
 				)
 				(4
 					(gGDacSound number: 10671 play:)
-					(proc1111_7 7155 -9 -40 0 -1 1)
+					(DoRobot 7155 -9 -40 0 -1 1)
 					(gCurRoom drawPic: 35160)
 				)
 				(5
@@ -277,11 +277,11 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 7156 14 19 0)
+					(DoRobot 7156 14 19 0)
 				)
 				(1
 					(deadCyrus dispose:)
-					(proc1111_7 7163 -7 40 0)
+					(DoRobot 7163 -7 40 0)
 					(gCurRoom drawPic: 35130)
 				)
 				(2

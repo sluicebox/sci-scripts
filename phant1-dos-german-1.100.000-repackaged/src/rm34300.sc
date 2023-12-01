@@ -40,7 +40,7 @@
 	)
 
 	(method (dispose)
-		(proc1111_6)
+		(KillRobot)
 		(super dispose:)
 	)
 )
@@ -53,7 +53,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1769 0 0 gEgo -1 1)
+					(DoRobot 1769 0 0 gEgo -1 1)
 				)
 				(1
 					(gCurRoom newRoom: 32100)
@@ -62,7 +62,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom newRoom: 32100)
 				)
@@ -79,7 +79,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1760 -11 26 gEgo -1 1)
+					(DoRobot 1760 -11 26 gEgo -1 1)
 				)
 				(1
 					(gCurRoom newRoom: 34235)
@@ -88,7 +88,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom newRoom: 34235)
 				)
@@ -105,7 +105,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1761 0 0 gEgo -1 1)
+					(DoRobot 1761 0 0 gEgo -1 1)
 				)
 				(1
 					(gCurRoom newRoom: 34235)
@@ -114,7 +114,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom newRoom: 34235)
 				)

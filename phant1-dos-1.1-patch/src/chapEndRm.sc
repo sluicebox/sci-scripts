@@ -35,7 +35,7 @@
 	(method (changeState newState &tmp temp0 temp1 temp2 temp3)
 		(switch (= state newState)
 			(0
-				(proc1111_6)
+				(KillRobot)
 				(Sounds eachElementDo: #stop)
 				(= cycles 2)
 			)

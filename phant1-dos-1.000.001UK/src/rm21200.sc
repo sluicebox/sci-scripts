@@ -29,7 +29,7 @@
 	)
 
 	(method (init)
-		(proc1111_6)
+		(KillRobot)
 		((ScriptID 30) init:) ; FidgetCode
 		(gEgo init: setScaler: Scaler 146 98 126 99 ignoreActors: 1)
 		(doorExit init: 1)
@@ -79,19 +79,19 @@
 					(gGame handsOff:)
 					(pot hide:)
 					(gCurRoom drawPic: 21110 picture: 21110)
-					(proc1111_7 4500 -4 -43)
+					(DoRobot 4500 -4 -43)
 				)
 				(1
 					(Load rsPIC 21120)
 					(gCurRoom drawPic: 21130 picture: 21130)
-					(proc1111_7 4501 -9 -45)
+					(DoRobot 4501 -9 -45)
 				)
 				(2
 					(gCurRoom drawPic: 21120 picture: 21120)
-					(proc1111_7 4502 -9 -40)
+					(DoRobot 4502 -9 -40)
 				)
 				(3
-					(proc1111_7 4503 -5 -2)
+					(DoRobot 4503 -5 -2)
 				)
 				(4
 					(gEgo hide:)
@@ -103,14 +103,14 @@
 				)
 				(5
 					(gCurRoom drawPic: 21120 picture: 21120)
-					(proc1111_7 4504 -5 -2)
+					(DoRobot 4504 -5 -2)
 				)
 				(6
 					(self dispose:)
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		)
@@ -135,7 +135,7 @@
 					(gGame handsOff:)
 					(bones hide:)
 					(gCurRoom drawPic: 21120 picture: 21120)
-					(proc1111_7 4540 -2 -39)
+					(DoRobot 4540 -2 -39)
 				)
 				(1
 					(gEgo hide:)
@@ -144,14 +144,14 @@
 				)
 				(2
 					(gCurRoom drawPic: 21120 picture: 21120)
-					(proc1111_7 4541 -2 -39)
+					(DoRobot 4541 -2 -39)
 				)
 				(3
 					(self dispose:)
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		)
@@ -175,7 +175,7 @@
 				(0
 					(gGame handsOff:)
 					(bones hide:)
-					(proc1111_7 4510 -9 -42)
+					(DoRobot 4510 -9 -42)
 					(gCurRoom drawPic: 21120 picture: 21120)
 				)
 				(1
@@ -184,7 +184,7 @@
 					(= seconds 4)
 				)
 				(2
-					(proc1111_7 4511 -9 -42)
+					(DoRobot 4511 -9 -42)
 					(gCurRoom drawPic: 21120 picture: 21120)
 				)
 				(3
@@ -192,7 +192,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		)

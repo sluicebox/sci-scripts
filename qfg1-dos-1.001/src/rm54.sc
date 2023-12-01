@@ -262,14 +262,14 @@
 
 	(method (init)
 		(LoadMany rsVIEW 55 510)
-		(if (gEgo knows: 23)
+		(if (gEgo knows: 23) ; flameDartSpell
 			(Load rsVIEW 522)
 			(Load rsSOUND (SoundFX 33))
 		)
-		(if (gEgo knows: 24)
+		(if (gEgo knows: 24) ; fetchSpell
 			(Load rsVIEW 520)
 		)
-		(if (gEgo knows: 20)
+		(if (gEgo knows: 20) ; dazzleSpell
 			(Load rsVIEW 521)
 		)
 		(LoadMany rsSCRIPT 103 235 236 237)

@@ -106,7 +106,7 @@
 				(0
 					(gGame handsOff:)
 					(SetFlag 233)
-					(proc1111_7 2710 0 0)
+					(DoRobot 2710 0 0)
 				)
 				(1
 					(door hide:)
@@ -131,7 +131,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(SetFlag 233)
 					(storeMan show:)
 					(door show:)
@@ -160,7 +160,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 2700 0 0)
+					(DoRobot 2700 0 0)
 				)
 				(1)
 				(2
@@ -184,7 +184,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(SetFlag 233)
 					(storeMan show:)
 					(door show:)
@@ -213,8 +213,8 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_6)
-					(proc1111_7 2720 0 0)
+					(KillRobot)
+					(DoRobot 2720 0 0)
 				)
 				(1
 					(door hide:)
@@ -242,7 +242,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(storeMan show:)
 					(door show:)
 					(gEgo
@@ -273,8 +273,8 @@
 					(= cycles 2)
 				)
 				(1
-					(proc1111_6)
-					(proc1111_7 2730)
+					(KillRobot)
+					(DoRobot 2730)
 				)
 				(2
 					(door hide:)
@@ -306,7 +306,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(storeMan show:)
 					(door show:)
 					(gEgo
@@ -337,7 +337,7 @@
 					(gEgo hide:)
 					(door hide:)
 					(storeMan hide:)
-					(proc1111_7 2770 -6 -40 gEgo 200)
+					(DoRobot 2770 -6 -40 gEgo 200)
 					(gCurRoom drawPic: 31410)
 				)
 				(1
@@ -346,7 +346,7 @@
 				)
 				(2
 					(gEgo hide:)
-					(proc1111_7 2771 -6 -40 gEgo 200)
+					(DoRobot 2771 -6 -40 gEgo 200)
 					(gCurRoom drawPic: 31410)
 				)
 				(3
@@ -361,7 +361,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gEgo posn: 160 116 show: normalize: 1)
 					(storeMan show:)
 					(door show:)
@@ -386,7 +386,7 @@
 					(gEgo hide:)
 					(storeMan hide:)
 					(door hide:)
-					(proc1111_7 2780 -9 -40 gEgo 200)
+					(DoRobot 2780 -9 -40 gEgo 200)
 					(gCurRoom drawPic: 31410)
 				)
 				(1
@@ -401,7 +401,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(door show:)
 					(gEgo show: posn: 160 116 normalize: 1)
@@ -434,11 +434,11 @@
 					(storeMan dispose:)
 					(door dispose:)
 					(gCurRoom drawPic: 31440)
-					(proc1111_7 2791 0 -31)
+					(DoRobot 2791 0 -31)
 				)
 				(2
 					(canisterCU view: 31430 posn: 38 147 init:)
-					(proc1111_7 2792 80 2)
+					(DoRobot 2792 80 2)
 					(gCurRoom drawPic: 31430)
 				)
 				(3
@@ -453,7 +453,7 @@
 						(gCurRoom drawPic: 31400)
 						(self cue:)
 					else
-						(proc1111_7 2800 -57 -31)
+						(DoRobot 2800 -57 -31)
 						(gCurRoom drawPic: 31110)
 					)
 				)
@@ -484,7 +484,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(if (gCast contains: canisterCU)
 						(canisterCU dispose:)
 					)
@@ -559,7 +559,7 @@
 				(0
 					(gGame handsOff:)
 					(storeMan view: 2701 posn: 121 75 hide:)
-					(proc1111_7 2810 63 20 storeMan)
+					(DoRobot 2810 63 20 storeMan)
 				)
 				(1
 					(storeMan show:)
@@ -576,7 +576,7 @@
 					(storeMan show:)
 					(storeMan doit:)
 					(if (Robot 6) ; Exists
-						(proc1111_6 0 storeMan)
+						(KillRobot 0 storeMan)
 					)
 					(= global115 0)
 					(gGame handsOn:)
@@ -604,16 +604,16 @@
 				(1
 					(storeMan hide:)
 					(door hide:)
-					(proc1111_7 2820 69 1)
+					(DoRobot 2820 69 1)
 					(gCurRoom drawPic: 31430)
 				)
 				(2
-					(proc1111_7 2821 -7 -11)
+					(DoRobot 2821 -7 -11)
 					(gCurRoom drawPic: 31440)
 				)
 				(3
 					(storeMan hide:)
-					(proc1111_7 2822 81 -2)
+					(DoRobot 2822 81 -2)
 					(gCurRoom drawPic: 31430)
 				)
 				(4
@@ -632,7 +632,7 @@
 			(switch (= state newState)
 				(0
 					(= local0 1)
-					(proc1111_6)
+					(KillRobot)
 					(gEgo normalize: 3 show:)
 					(door show:)
 					(storeMan show:)
@@ -666,7 +666,7 @@
 					(storeMan hide:)
 					(door hide:)
 					(= register gEgo)
-					(proc1111_7 2799 -2 -30)
+					(DoRobot 2799 -2 -30)
 					(gCurRoom drawPic: 31440)
 				)
 				(2
@@ -679,13 +679,13 @@
 					)
 					(gCurRoom drawPic: 31400)
 					(= register storeMan)
-					(proc1111_7 2812 55 20 storeMan)
+					(DoRobot 2812 55 20 storeMan)
 				)
 				(3
 					(storeMan hide:)
 					(door hide:)
 					(= register gEgo)
-					(proc1111_7 2793 39 -3)
+					(DoRobot 2793 39 -3)
 					(gCurRoom drawPic: 31440)
 				)
 				(4
@@ -704,7 +704,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6 0 register)
+					(KillRobot 0 register)
 					(door show:)
 					(gEgo show:)
 					(storeMan show:)
@@ -740,51 +740,51 @@
 					(SetFlag 162)
 					(storeMan hide:)
 					(door hide:)
-					(proc1111_7 2840 20 -1)
+					(DoRobot 2840 20 -1)
 					(gCurRoom drawPic: 31110)
 				)
 				(1
 					(cashRegSound play:)
-					(proc1111_7 2841 -7 -9)
+					(DoRobot 2841 -7 -9)
 					(gCurRoom drawPic: 31440)
 				)
 				(2
 					(canisterCU view: 31430 posn: 38 147 init:)
-					(proc1111_7 2842)
+					(DoRobot 2842)
 					(gCurRoom drawPic: 31430)
 				)
 				(3
 					(canisterCU dispose:)
-					(proc1111_7 2843 11 -8)
+					(DoRobot 2843 11 -8)
 					(gCurRoom drawPic: 31440)
 				)
 				(4
 					(canisterCU view: 31430 posn: 38 147 init:)
-					(proc1111_7 2844)
+					(DoRobot 2844)
 					(gCurRoom drawPic: 31430)
 				)
 				(5
 					(canisterCU dispose:)
-					(proc1111_7 2845 19 -1)
+					(DoRobot 2845 19 -1)
 					(gCurRoom drawPic: 31110)
 				)
 				(6
-					(proc1111_7 2846)
+					(DoRobot 2846)
 					(gCurRoom drawPic: 31440)
 				)
 				(7
-					(proc1111_7 2847 -48 -29)
+					(DoRobot 2847 -48 -29)
 					(gCurRoom drawPic: 31110)
 				)
 				(8
 					(canisterCU view: 31430 posn: 38 147 init:)
-					(proc1111_7 2848 31 6)
+					(DoRobot 2848 31 6)
 					(gCurRoom drawPic: 31430)
 				)
 				(9
 					(door show:)
 					(canisterCU dispose:)
-					(proc1111_7 2849 69 21)
+					(DoRobot 2849 69 21)
 					(gCurRoom drawPic: 31400)
 				)
 				(10
@@ -818,7 +818,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(if (gCast contains: canisterCU)
 						(canisterCU dispose:)
 					)
@@ -864,7 +864,7 @@
 				(1
 					(door31200 init:)
 					(storeMan hide:)
-					(proc1111_7 2850 139 36)
+					(DoRobot 2850 139 36)
 					(gCurRoom drawPic: 31200)
 				)
 				(2
@@ -879,7 +879,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(if (gCast contains: door31200)
 						(door31200 dispose:)
 					)
@@ -909,7 +909,7 @@
 					(storeMan hide:)
 					(door hide:)
 					(gEgo hide:)
-					(proc1111_7 2701 0 0 gEgo -1 1)
+					(DoRobot 2701 0 0 gEgo -1 1)
 					(gCurRoom drawPic: 31460)
 				)
 				(2)
@@ -922,7 +922,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(DoAudio 12 1) ; AudMixCheck
 					(gGDacSound number: 903 setLoop: -1 play: setVol: 75)
@@ -950,7 +950,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom newRoom: 31200)
 				)

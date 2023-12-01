@@ -181,7 +181,7 @@
 	)
 
 	(method (dispose)
-		(proc1111_6)
+		(KillRobot)
 		(if global115
 			(= global115 0)
 		)
@@ -269,7 +269,7 @@
 
 	(method (dispose)
 		(lightSnd stop:)
-		(proc1111_6)
+		(KillRobot)
 		(if global115
 			(= global115 0)
 		)
@@ -290,7 +290,7 @@
 					(gGame handsOff:)
 					(SetFlag 6)
 					(gEgo view: 50 cel: 13 setPri: 1 init: hide:)
-					(proc1111_7 212 30 7 gEgo 1 1)
+					(DoRobot 212 30 7 gEgo 1 1)
 					(rug z: 1000)
 					(UpdateScreenItem rug)
 				)
@@ -304,7 +304,7 @@
 	)
 
 	(method (dispose)
-		(proc1111_6)
+		(KillRobot)
 		(if global115
 			(= global115 0)
 		)
@@ -354,7 +354,7 @@
 	)
 
 	(method (dispose)
-		(proc1111_6)
+		(KillRobot)
 		(lightSnd stop:)
 		(if global115
 			(gCurRoom drawPic: 1702)

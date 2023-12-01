@@ -18,7 +18,7 @@
 	(method (init)
 		(gEgo init: posn: 0 1000)
 		(super init: &rest)
-		(proc1111_6)
+		(KillRobot)
 		(self setScript: doorScr)
 	)
 )
@@ -30,14 +30,14 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 1621 101 29 gEgo 5 1)
+					(DoRobot 1621 101 29 gEgo 5 1)
 				)
 				(1
 					(gCurRoom newRoom: 28300)
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gCurRoom newRoom: 28300)
 		)

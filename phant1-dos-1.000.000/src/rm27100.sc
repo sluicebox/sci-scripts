@@ -55,7 +55,7 @@
 	)
 
 	(method (init)
-		(proc1111_6)
+		(KillRobot)
 		((ScriptID 30) init:) ; FidgetCode
 		(if (and (not (IsFlag 308)) (== gChapter 6))
 			(mist init:)
@@ -128,7 +128,7 @@
 						(coat posn: 172 102 view: 27100)
 					)
 					(clothes init:)
-					(proc1111_7 5340 79 25)
+					(DoRobot 5340 79 25)
 					(gCurRoom drawPic: 27100)
 				)
 				(2
@@ -143,7 +143,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(proc1111_8)
 			(clothes view: 27210 loop: 0 posn: 60 130 init:)
@@ -170,7 +170,7 @@
 					(proc1111_9)
 					(chair view: 27100 posn: 109 115)
 					(clothes view: 27100 loop: 2 cel: 1 posn: 131 59)
-					(proc1111_7 5342 107 27)
+					(DoRobot 5342 107 27)
 					(gCurRoom drawPic: 27100)
 				)
 				(1
@@ -191,7 +191,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(ClearFlag 248)
 			(if (gCast contains: clothes)
@@ -223,7 +223,7 @@
 					(gEgo hide:)
 					(clothes view: 27160 posn: -1 137 loop: 0 cel: 0)
 					(gCurRoom drawPic: 27160)
-					(proc1111_7 5370 19 -47)
+					(DoRobot 5370 19 -47)
 				)
 				(1
 					(clothes hide:)
@@ -233,7 +233,7 @@
 				(2
 					(clothes show:)
 					(thePhoto dispose:)
-					(proc1111_7 5371 19 -47)
+					(DoRobot 5371 19 -47)
 				)
 				(3
 					(thePhoto
@@ -260,7 +260,7 @@
 				(5
 					(theEyes hide:)
 					(thePhoto hide:)
-					(proc1111_7 5372 19 -47)
+					(DoRobot 5372 19 -47)
 				)
 				(6
 					(theEyes show:)
@@ -285,7 +285,7 @@
 					(thePhoto dispose:)
 					(theEyes dispose:)
 					(global114 endPause:)
-					(proc1111_7 5373 19 -47)
+					(DoRobot 5373 19 -47)
 				)
 				(10
 					(gEgo get: 11) ; invPhoto
@@ -294,7 +294,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(global114 endPause: 1)
 			(gGDacSound stop:)
@@ -335,7 +335,7 @@
 					(if (gCast contains: coat)
 						(coat hide:)
 					)
-					(proc1111_7 5350 0 -43)
+					(DoRobot 5350 0 -43)
 					(gCurRoom drawPic: 27170)
 				)
 				(2
@@ -355,7 +355,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(global114 endPause: 1)
 					(SetFlag 307)
@@ -412,7 +412,7 @@
 						(coat posn: 172 102 view: 27100)
 					)
 					(chair hide:)
-					(proc1111_7 5310 27 33)
+					(DoRobot 5310 27 33)
 					(gCurRoom drawPic: 27100)
 				)
 				(2
@@ -449,7 +449,7 @@
 					)
 					(gEgo hide:)
 					(global114 pause:)
-					(proc1111_7 5473 75 11)
+					(DoRobot 5473 75 11)
 					(gCurRoom drawPic: 27130)
 				)
 				(3
@@ -458,7 +458,7 @@
 						(= scratch (local0 at: temp0))
 						(scratch hide:)
 					)
-					(proc1111_7 5474 -27 -42)
+					(DoRobot 5474 -27 -42)
 					(gCurRoom drawPic: 27140)
 				)
 				(4
@@ -467,7 +467,7 @@
 						(= scratch (local0 at: temp0))
 						(scratch show:)
 					)
-					(proc1111_7 5477 75 11)
+					(DoRobot 5477 75 11)
 					(gCurRoom drawPic: 27130)
 				)
 				(5
@@ -511,7 +511,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(global114 endPause: 1)
 					(if local0
@@ -571,7 +571,7 @@
 				(1
 					(coat hide:)
 					(chair hide:)
-					(proc1111_7 5920 -2 -43)
+					(DoRobot 5920 -2 -43)
 					(gCurRoom drawPic: 27260)
 				)
 				(2
@@ -585,7 +585,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(chair show:)
 			(coat show: setHotspot: 0)
@@ -629,21 +629,21 @@
 					(if (gCast contains: coat)
 						(coat posn: 172 102 view: 27100)
 					)
-					(proc1111_7 5310 27 33)
+					(DoRobot 5310 27 33)
 					(gCurRoom drawPic: 27100)
 				)
 				(2
 					(if (gCast contains: coat)
 						(coat hide:)
 					)
-					(proc1111_7 5330 58 -25 gEgo 200)
+					(DoRobot 5330 58 -25 gEgo 200)
 					(gCurRoom drawPic: 27130)
 				)
 				(3
 					(if (gCast contains: coat)
 						(coat posn: 172 102 view: 27100 show:)
 					)
-					(proc1111_7 5320 86 58)
+					(DoRobot 5320 86 58)
 					(gCurRoom drawPic: 27100)
 				)
 				(4
@@ -664,7 +664,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (gCast contains: coat)
 				(coat posn: 222 89 view: 27110 show:)

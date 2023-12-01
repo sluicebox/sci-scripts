@@ -20,7 +20,7 @@
 		else
 			(= picture 18210)
 		)
-		(proc1111_6)
+		(KillRobot)
 		(gEgo init: normalize: z: 1000)
 		(= temp0 0)
 		(cond
@@ -67,7 +67,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1430 69 -9 gEgo 40 1)
+					(DoRobot 1430 69 -9 gEgo 40 1)
 				)
 				(1
 					(self dispose:)
@@ -80,7 +80,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(= gNewRoomNum 18250)
@@ -96,7 +96,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1460 59 -1 gEgo 40 1)
+					(DoRobot 1460 59 -1 gEgo 40 1)
 				)
 				(1
 					(brush z: 1000)
@@ -117,7 +117,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(brush show:)
 			(= global115 0)
 		)
@@ -264,7 +264,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1450 6 -45 gEgo -1 1)
+					(DoRobot 1450 6 -45 gEgo -1 1)
 				)
 				(1
 					(lipstick z: 1000)
@@ -285,7 +285,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(= gNewRoomNum 18250)
@@ -301,7 +301,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1470 56 -24 gEgo 40 1)
+					(DoRobot 1470 56 -24 gEgo 40 1)
 				)
 				(1
 					(cream z: 1000)
@@ -322,7 +322,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(= gNewRoomNum 18250)
@@ -338,7 +338,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1480 78 0 gEgo -1 1)
+					(DoRobot 1480 78 0 gEgo -1 1)
 				)
 				(1
 					(compact z: 1000)
@@ -359,7 +359,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(= gNewRoomNum 18250)
@@ -375,7 +375,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1420 63 -22 gEgo -1 1)
+					(DoRobot 1420 63 -22 gEgo -1 1)
 				)
 				(1
 					(sinkEdgeR priority: 200)
@@ -407,7 +407,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(= gNewRoomNum 18250)

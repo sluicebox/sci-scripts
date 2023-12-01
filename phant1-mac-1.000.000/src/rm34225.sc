@@ -28,7 +28,7 @@
 	)
 
 	(method (init)
-		(proc1111_6)
+		(KillRobot)
 		(= local0 (Set new:))
 		((ScriptID 30) init:) ; FidgetCode
 		(if (and (== gChapter 1) (gEgo has: 0)) ; invLibKey
@@ -96,7 +96,7 @@
 				(0
 					(DoAudio 12 0) ; AudMixCheck
 					(dog hide:)
-					(proc1111_7 1740 91 30)
+					(DoRobot 1740 91 30)
 					(if (not (OneOf gChapter 2 6))
 						(daryle init:)
 					)
@@ -119,7 +119,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(if (gCast contains: daryle)
 						(daryle dispose:)
 					)
@@ -157,7 +157,7 @@
 					(if (not (OneOf gChapter 2 6))
 						(daryle init:)
 					)
-					(proc1111_7 1720)
+					(DoRobot 1720)
 					(gCurRoom drawPic: 34200)
 				)
 				(1
@@ -181,7 +181,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(if (gCast contains: bigDoggie)
 						(bigDoggie dispose:)
 					)
@@ -225,7 +225,7 @@
 					(if (not (OneOf gChapter 2 6))
 						(daryle init:)
 					)
-					(proc1111_7 1730 56 3)
+					(DoRobot 1730 56 3)
 					(gCurRoom drawPic: 34200)
 				)
 				(1
@@ -252,7 +252,7 @@
 					(if (not (OneOf gChapter 2 6))
 						(daryle init:)
 					)
-					(proc1111_7 1731 48 8)
+					(DoRobot 1731 48 8)
 					(gCurRoom drawPic: 34200)
 				)
 				(3
@@ -280,7 +280,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(if (gCast contains: bigDoggie)
 						(bigDoggie dispose:)
 					)
@@ -327,7 +327,7 @@
 						(daryle init:)
 					)
 					(peopleMover doit:)
-					(proc1111_7 1721 -8 -40 gEgo -1 1)
+					(DoRobot 1721 -8 -40 gEgo -1 1)
 					(gCurRoom drawPic: 34200)
 				)
 				(1
@@ -337,7 +337,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom newRoom: 31100)
 				)

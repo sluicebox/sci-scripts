@@ -63,7 +63,7 @@
 					(gEgo hide:)
 					(SetFlag 14)
 					(floor init:)
-					(proc1111_7 1980 0 0 gEgo -1 1)
+					(DoRobot 1980 0 0 gEgo -1 1)
 					(gCurRoom drawPic: 3620)
 				)
 				(2
@@ -78,7 +78,7 @@
 			(switch (= state newState)
 				(0
 					(= global115 0)
-					(proc1111_6)
+					(KillRobot)
 					(SetFlag 14)
 					(if (gCast contains: libDoor)
 						(libDoor dispose:)
@@ -108,7 +108,7 @@
 						(libDoor hide:)
 					)
 					(gEgo hide:)
-					(proc1111_7 410 33 -51)
+					(DoRobot 410 33 -51)
 					(gCurRoom drawPic: 3620)
 				)
 				(2
@@ -133,7 +133,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo show: posn: 146 104 normalize: 2 setCycle: 0)
 					(if (gCast contains: libDoor)

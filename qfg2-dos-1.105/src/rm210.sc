@@ -394,7 +394,7 @@
 				(SetFlag 64)
 				(WhoPrint 11 210 55) ; "You have shown yourself to be resourceful in your use of spells under simple conditions. To become a Wizard, you must prove that you are capable of using magic under time-critical and life-threatening conditions."
 				(cond
-					((not (and (gEgo knows: 27) (gEgo knows: 28)))
+					((not (and (gEgo knows: 27) (gEgo knows: 28))) ; forceBoltSpell, levitateSpell
 						(WhoPrint 11 210 56) ; "However, we see that you do not yet have knowledge of all the spells required. Go then, and master the spells available to you. Return when you think yourself ready."
 					)
 					((WhoPrint 11 210 57 81 {Yes} 1 81 {No} 0) ; "You will be presented with a series of four tests. They will require all your intelligence and magic. Should you fail, your very life may be endangered. Will you accept the challenge and walk the path of Wizardry?"

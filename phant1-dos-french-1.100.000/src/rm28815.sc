@@ -118,7 +118,7 @@
 			)
 		)
 		((ScriptID 30) init:) ; FidgetCode
-		(proc1111_6)
+		(KillRobot)
 		(Load rsPIC 28815)
 		(Load rsPIC 28850)
 		(gEgo init: fadedY: 90 brightY: 120 setScaler: Scaler 86 19 150 77)
@@ -317,7 +317,7 @@
 							(stump hide:)
 						)
 					)
-					(proc1111_7 1670 71 33 gEgo 117)
+					(DoRobot 1670 71 33 gEgo 117)
 					(gCurRoom drawPic: 28805)
 				)
 				(1
@@ -339,7 +339,7 @@
 			(switch (= state newState)
 				(0
 					(= global115 0)
-					(proc1111_6)
+					(KillRobot)
 					(gCurRoom drawPic: 28815)
 					(gGame handsOn:)
 					(cond
@@ -408,7 +408,7 @@
 		(if global115
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gCast eachElementDo: #show)
 					(gEgo posn: 80 88 normalize: 5)
 					(localproc_1)
@@ -426,7 +426,7 @@
 					else
 						(gCurRoom drawPic: 28225)
 					)
-					(proc1111_7 4380 0 0)
+					(DoRobot 4380 0 0)
 					(cyrus dispose:)
 					(= local0 0)
 					(SetFlag 334)
@@ -434,19 +434,19 @@
 					(gCast eachElementDo: #hide)
 				)
 				(1
-					(proc1111_7 4381 -8 -40)
+					(DoRobot 4381 -8 -40)
 					(gCurRoom drawPic: 28852)
 				)
 				(2
-					(proc1111_7 4382 -8 -40)
+					(DoRobot 4382 -8 -40)
 					(gCurRoom drawPic: 28240)
 				)
 				(3
-					(proc1111_7 4383 9 -31)
+					(DoRobot 4383 9 -31)
 					(gCurRoom drawPic: 28230)
 				)
 				(4
-					(proc1111_7 4384 -8 -40)
+					(DoRobot 4384 -8 -40)
 					(gCurRoom drawPic: 28852)
 				)
 				(5
@@ -484,7 +484,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(= global125 1)
 					(gCurRoom newRoom: 2200)
@@ -501,7 +501,7 @@
 		(if global115
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(cyrus show: cel: 170 setCycle: Fwd)
 					(localproc_1)
 					(gEgo posn: 80 88 normalize: 5)
@@ -521,10 +521,10 @@
 						(gCurRoom drawPic: 28230)
 					)
 					(cyrus hide:)
-					(proc1111_7 4394 -11 -43)
+					(DoRobot 4394 -11 -43)
 				)
 				(1
-					(proc1111_7 4395 -18 -36)
+					(DoRobot 4395 -18 -36)
 					(gCurRoom drawPic: 28854)
 				)
 				(2
@@ -548,7 +548,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 5000 89 29)
+					(DoRobot 5000 89 29)
 					(gCurRoom drawPic: 28805)
 					(stump hide:)
 				)
@@ -565,7 +565,7 @@
 				(0
 					(= global115 0)
 					(stump show:)
-					(proc1111_6)
+					(KillRobot)
 					(gEgo normalize: 1 posn: 14 96)
 					(gCurRoom drawPic: 28815)
 					(gGame handsOn:)
@@ -583,7 +583,7 @@
 		(if global115
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(if (gCast contains: cyrus)
 						(cyrus show: cel: 16)
 					else
@@ -622,7 +622,7 @@
 					else
 						(gCurRoom drawPic: 28854)
 					)
-					(proc1111_7 4410 -13 -39)
+					(DoRobot 4410 -13 -39)
 				)
 				(1
 					(cyrus show: cel: 16)
@@ -643,7 +643,7 @@
 		(if global115
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(localproc_1)
 					(= global115 0)
 					(gGame handsOn:)
@@ -663,18 +663,18 @@
 					else
 						(gCurRoom drawPic: 28854)
 					)
-					(proc1111_7 4400 -31 16)
+					(DoRobot 4400 -31 16)
 				)
 				(1
-					(proc1111_7 4401 -9 -33)
+					(DoRobot 4401 -9 -33)
 					(gCurRoom drawPic: 28230)
 				)
 				(2
-					(proc1111_7 4402 -74 -37)
+					(DoRobot 4402 -74 -37)
 					(gCurRoom drawPic: 28240)
 				)
 				(3
-					(proc1111_7 4403 103 3)
+					(DoRobot 4403 103 3)
 					(gCurRoom drawPic: 28854)
 				)
 				(4

@@ -72,7 +72,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 2070 64 6)
+					(DoRobot 2070 64 6)
 					(gCurRoom drawPic: 5304)
 				)
 				(1
@@ -82,11 +82,11 @@
 				)
 				(2
 					(global114 endPause:)
-					(proc1111_7 2071 54 6)
+					(DoRobot 2071 54 6)
 					(gCurRoom drawPic: -1)
 				)
 				(3
-					(proc1111_7 2072 79 8)
+					(DoRobot 2072 79 8)
 					(gCurRoom drawPic: 5304)
 				)
 				(4
@@ -100,7 +100,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gCurRoom drawPic: 5311)
 					(global114 endPause: 1)
 					(= global115 0)
@@ -121,7 +121,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 2080 10 -9)
+					(DoRobot 2080 10 -9)
 					(gCurRoom drawPic: 5304)
 				)
 				(1
@@ -139,7 +139,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom drawPic: 5311)
 					(if (IsFlag 108)
@@ -163,7 +163,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 2090 64 19)
+					(DoRobot 2090 64 19)
 					(gCurRoom drawPic: 5304)
 				)
 				(1
@@ -181,7 +181,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom drawPic: 5311)
 					(if (IsFlag 107)
@@ -218,7 +218,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo put: 21 5500) ; invFigurine
 					(gCurRoom newRoom: 5100)
@@ -236,8 +236,8 @@
 			(switch (= state newState)
 				(0
 					(gCurRoom drawPic: 5305)
-					(proc1111_6)
-					(proc1111_7 2110 76 13 gEgo -1 1)
+					(KillRobot)
+					(DoRobot 2110 76 13 gEgo -1 1)
 				)
 				(1
 					(gCurRoom newRoom: 6500)
@@ -246,7 +246,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom newRoom: 6500)
 				)
@@ -264,7 +264,7 @@
 				(0
 					(SetFlag 158)
 					(mantel init: setPri: 200)
-					(proc1111_7 2051 68 -5)
+					(DoRobot 2051 68 -5)
 					(brick init:)
 					(gCurRoom drawPic: 5304)
 				)
@@ -286,7 +286,7 @@
 			(switch (= state newState)
 				(0
 					(SetFlag 158)
-					(proc1111_6)
+					(KillRobot)
 					(if (gCast contains: mantel)
 						(mantel dispose:)
 					)

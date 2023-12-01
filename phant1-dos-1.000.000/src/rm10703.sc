@@ -26,7 +26,7 @@
 	)
 
 	(method (init &tmp temp0)
-		(proc1111_6)
+		(KillRobot)
 		(if (== gPrevRoomNum 900)
 			(gEgo init: normalize: setScaler: Scaler 192 71 162 98)
 			(gGame handsOn:)
@@ -76,7 +76,7 @@
 			(switch (= state newState)
 				(0
 					(don dispose:)
-					(proc1111_7 1010 22 11 gEgo -1 1)
+					(DoRobot 1010 22 11 gEgo -1 1)
 					(proc10700_0 10705)
 				)
 				(1
@@ -90,7 +90,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(proc1111_0 0)
@@ -149,7 +149,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc1111_6)
+				(KillRobot)
 				(gEgo
 					view: 10702
 					heading: 360
@@ -319,7 +319,7 @@
 				(0
 					(gGame handsOff:)
 					(don dispose:)
-					(proc1111_7 1551 31 5 gEgo 120 1)
+					(DoRobot 1551 31 5 gEgo 120 1)
 					(proc10700_0 10705)
 				)
 				(1
@@ -333,7 +333,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(proc1111_0 0)

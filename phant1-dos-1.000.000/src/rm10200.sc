@@ -30,7 +30,7 @@
 	(method (init)
 		(switch gPrevRoomNum
 			(900
-				(proc1111_6)
+				(KillRobot)
 				(switch global125
 					(44
 						(gEgo
@@ -146,7 +146,7 @@
 						(necklace init:)
 					)
 					(jBox init:)
-					(proc1111_7 730 161 13)
+					(DoRobot 730 161 13)
 				)
 				(1
 					(if (and (== gChapter 4) (not (IsFlag 294)))
@@ -180,7 +180,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (gCast contains: necklace)
 				(necklace dispose:)
@@ -282,7 +282,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (== (gGDacSound number:) 3019)
 				(gGDacSound stop:)
@@ -848,7 +848,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(ClearFlag 121)
 			(if (gFeatures contains: floor)
@@ -912,7 +912,7 @@
 						(necklace init:)
 					)
 					(jBox init:)
-					(proc1111_7 740 167 16 gEgo -1 1)
+					(DoRobot 740 167 16 gEgo -1 1)
 					(gCurRoom drawPic: 10200)
 				)
 				(2
@@ -921,7 +921,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(= global125 0)
 			(gCurRoom newRoom: 13100)
@@ -943,7 +943,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gCurRoom newRoom: 10100)
 		)
@@ -972,7 +972,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (< global125 20)
 				(+= global125 20)

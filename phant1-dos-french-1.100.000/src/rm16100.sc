@@ -35,7 +35,7 @@
 			(16200
 				(switch global125
 					(41
-						(proc1111_6)
+						(KillRobot)
 						(gEgo show: posn: 38 116 normalize: 7)
 						(gGame handsOn:)
 					)
@@ -184,7 +184,7 @@
 					)
 					(smallPaintings hide:)
 					(global114 pause:)
-					(proc1111_7 1305 -4 -3)
+					(DoRobot 1305 -4 -3)
 					(gCurRoom drawPic: (+ 16140 (== gChapter 5)))
 				)
 				(2
@@ -209,7 +209,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(global114 endPause: 1)
 			(southwestRExit init: 3 approachVerbs: 0)
@@ -280,7 +280,7 @@
 						posn: 62 18
 						loop: 0
 					)
-					(proc1111_7 1297 97 -10)
+					(DoRobot 1297 97 -10)
 					(gCurRoom drawPic: (+ 16105 (== gChapter 5)))
 				)
 				(2
@@ -311,22 +311,22 @@
 					(largePainting hide:)
 					(cond
 						((< gChapter 3)
-							(proc1111_7 1292 -1 -15)
+							(DoRobot 1292 -1 -15)
 						)
 						((== gChapter 3)
-							(proc1111_7 1293 -9 -15)
+							(DoRobot 1293 -9 -15)
 						)
 						((== gChapter 4)
-							(proc1111_7 1294 0 -15)
+							(DoRobot 1294 0 -15)
 						)
 						((== gChapter 5)
-							(proc1111_7 1295 -16 -17)
+							(DoRobot 1295 -16 -17)
 						)
 						((== gChapter 6)
-							(proc1111_7 1295 -16 -17)
+							(DoRobot 1295 -16 -17)
 						)
 						((== gChapter 7)
-							(proc1111_7 1296 -16 -17)
+							(DoRobot 1296 -16 -17)
 						)
 					)
 					(gCurRoom drawPic: (+ 16210 (== gChapter 5)))
@@ -386,22 +386,22 @@
 					(largePainting hide:)
 					(cond
 						((< gChapter 3)
-							(proc1111_7 12922 -1 -15)
+							(DoRobot 12922 -1 -15)
 						)
 						((== gChapter 3)
-							(proc1111_7 12932 -9 -15)
+							(DoRobot 12932 -9 -15)
 						)
 						((== gChapter 4)
-							(proc1111_7 12942 0 -15)
+							(DoRobot 12942 0 -15)
 						)
 						((== gChapter 5)
-							(proc1111_7 12952 -16 -17)
+							(DoRobot 12952 -16 -17)
 						)
 						((== gChapter 6)
-							(proc1111_7 12952 -16 -17)
+							(DoRobot 12952 -16 -17)
 						)
 						((== gChapter 7)
-							(proc1111_7 12962 -16 -17)
+							(DoRobot 12962 -16 -17)
 						)
 					)
 					(gCurRoom drawPic: (+ 16210 (== gChapter 5)))
@@ -459,7 +459,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(global114 endPause: 1)
 			(southwestRExit init: 11 approachVerbs: 0)
@@ -556,7 +556,7 @@
 							(base hide:)
 						)
 					)
-					(proc1111_7 1282 169 9)
+					(DoRobot 1282 169 9)
 					(gCurRoom drawPic: (+ 16130 (== gChapter 5)))
 				)
 				(2
@@ -568,7 +568,7 @@
 				(3
 					(largePainting show:)
 					(closeup dispose:)
-					(proc1111_7 1283 176 8)
+					(DoRobot 1283 176 8)
 				)
 				(4
 					(largePainting
@@ -596,7 +596,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(southwestRExit init: 3 approachVerbs: 0)
 			(southwestLExit init: 3 approachVerbs: 0)
@@ -655,7 +655,7 @@
 					(RemapColors 2 241 15) ; ByPercent
 					(RemapColors 2 242 10) ; ByPercent
 					(gEgo hide:)
-					(proc1111_7 1311 27 25 gEgo 1 1)
+					(DoRobot 1311 27 25 gEgo 1 1)
 					(gCurRoom drawPic: (+ 16120 (== gChapter 5)))
 				)
 				(2
@@ -666,7 +666,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(RemapColors 0) ; Off
 			(= global125 7)

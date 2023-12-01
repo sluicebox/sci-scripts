@@ -92,7 +92,7 @@
 			(Load rsSOUND temp0)
 		)
 		(Load 140 2010) ; WAVE
-		(proc1111_6)
+		(KillRobot)
 		(receptionDoor approachX: 170 approachY: 81)
 		(if (== gChapter 5)
 			(= picture 2201)
@@ -256,7 +256,7 @@
 		(if global115
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(global114 endPause:)
 					(= global115 0)
 					(if register
@@ -272,10 +272,10 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 5934 -7 -13)
+					(DoRobot 5934 -7 -13)
 				)
 				(1
-					(proc1111_7 5930 104 27 gEgo 100)
+					(DoRobot 5930 104 27 gEgo 100)
 					(= register (View new:))
 					(register view: 2400 x: 199 y: 88 init:)
 					(gCurRoom drawPic: 2400)
@@ -307,12 +307,12 @@
 					(gGame handsOff:)
 					(global114 pause:)
 					(SetFlag 202)
-					(proc1111_7 5940 -2 -1)
+					(DoRobot 5940 -2 -1)
 					(gCurRoom drawPic: 2400)
 				)
 				(1
 					(gCurRoom drawPic: 2330)
-					(proc1111_7 5942 -9 -9 gEgo 200 1)
+					(DoRobot 5942 -9 -9 gEgo 200 1)
 				)
 				(2
 					(gEgo hide:)
@@ -333,7 +333,7 @@
 					(backDoor approachX: 170)
 					(global114 pause:)
 					(gCurRoom drawPic: 2505)
-					(proc1111_7 380 11 10)
+					(DoRobot 380 11 10)
 				)
 				(1
 					(SetFlag 121)
@@ -353,7 +353,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(global114 endPause:)
 					(= global115 0)
 					(gCurRoom drawPic: (+ 2200 (== gChapter 5)))
@@ -437,7 +437,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gEgo
 						setCycle: 0
 						normalize: 4
@@ -536,7 +536,7 @@
 					)
 				)
 				(1
-					(proc1111_7 340 0 30)
+					(DoRobot 340 0 30)
 					(stokeSound play:)
 					(if (== gChapter 5)
 						(gCurRoom drawPic: 2341)
@@ -570,7 +570,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(if (== gChapter 5)
 						(gCurRoom drawPic: 2201)
 					else
@@ -644,7 +644,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 300 120 5 gEgo -1 1)
+					(DoRobot 300 120 5 gEgo -1 1)
 					(if (== gChapter 5)
 						(gCurRoom drawPic: 2401)
 					else
@@ -663,7 +663,7 @@
 			(switch (= state newState)
 				(0
 					(= global115 0)
-					(proc1111_6)
+					(KillRobot)
 					(if (and (== gChapter 1) (IsFlag 82) (not (IsFlag 181)))
 						(SetFlag 181)
 					)
@@ -682,7 +682,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 301 130 15 gEgo -1 1)
+					(DoRobot 301 130 15 gEgo -1 1)
 					(if (== gChapter 5)
 						(gCurRoom picture: 2401)
 					else
@@ -691,7 +691,7 @@
 				)
 				(1
 					(gEgo view: 4 loop: 0 cel: 0 posn: 153 79)
-					(proc1111_6)
+					(KillRobot)
 					(if (== gChapter 5)
 						(gCurRoom drawPic: 2201)
 					else
@@ -708,7 +708,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo view: 4 loop: 0 cel: 0 posn: 153 79)
 					(if (== gChapter 5)
@@ -739,7 +739,7 @@
 					(gCurRoom picture: 2341)
 					(gGame setIntensity: 0 0)
 					(backDoor approachX: 170)
-					(proc1111_7 4990 110 24 gEgo -1 1)
+					(DoRobot 4990 110 24 gEgo -1 1)
 					(= cycles 2)
 				)
 				(1
@@ -753,7 +753,7 @@
 					(= ticks 240)
 				)
 				(4
-					(proc1111_6)
+					(KillRobot)
 					(gEgo
 						normalize: 0
 						posn: (fireplace x:) (fireplace y:)
@@ -773,7 +773,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gEgo
 						show:
 						setCycle: 0

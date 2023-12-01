@@ -674,9 +674,9 @@
 								addButton: 0 0 0 0 3 0 18 1 910 ; MISSING MESSAGE
 								init:
 							)
-							(proc1111_6)
+							(KillRobot)
 							(if gAutoRobot
-								(proc1111_6 0 0)
+								(KillRobot 0 0)
 							)
 							(global114 stop: 1)
 							(gGame restore: global124)

@@ -51,7 +51,7 @@
 	)
 
 	(method (dispose)
-		(proc1111_6)
+		(KillRobot)
 		(super dispose:)
 	)
 )
@@ -64,10 +64,10 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1770 -8 -40)
+					(DoRobot 1770 -8 -40)
 				)
 				(1
-					(proc1111_6)
+					(KillRobot)
 					(gEgo hide:)
 					(WalkieTalkie showFrame: 1770 195 -8 -40)
 					(gCurRoom newRoom: 34235)
@@ -76,7 +76,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo hide:)
 					(WalkieTalkie showFrame: 1770 195 -8 -40)
@@ -95,7 +95,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1780 3 0 gEgo -1 1)
+					(DoRobot 1780 3 0 gEgo -1 1)
 				)
 				(1
 					(closedDoor dispose:)
@@ -107,7 +107,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom newRoom: 30100)
 				)
@@ -124,7 +124,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1781 2 0 gEgo -1 1)
+					(DoRobot 1781 2 0 gEgo -1 1)
 				)
 				(1
 					(gCurRoom newRoom: 34235)
@@ -134,7 +134,7 @@
 			(switch (= state newState)
 				(0
 					(= global115 0)
-					(proc1111_6)
+					(KillRobot)
 					(gCurRoom newRoom: 34235)
 				)
 			)
@@ -150,7 +150,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 5640 2 0 gEgo -1 1)
+					(DoRobot 5640 2 0 gEgo -1 1)
 				)
 				(1
 					(= global115 0)
@@ -160,7 +160,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom newRoom: 34235)
 				)

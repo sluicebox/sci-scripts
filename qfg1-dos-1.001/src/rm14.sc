@@ -98,22 +98,22 @@
 	(method (init)
 		(if (not (IsFlag 161))
 			(LoadMany rsVIEW 420 516 15 510)
-			(if (gEgo knows: 23)
+			(if (gEgo knows: 23) ; flameDartSpell
 				(Load rsVIEW 522)
 				(LoadMany rsSOUND (SoundFX 33) (SoundFX 45))
 			)
 			(= global333 133)
 			(= global332 420)
 		)
-		(if (gEgo knows: 20)
+		(if (gEgo knows: 20) ; dazzleSpell
 			(Load rsVIEW 521)
 			(Load rsSCRIPT 106)
 		)
-		(if (gEgo knows: 22)
+		(if (gEgo knows: 22) ; calmSpell
 			(Load rsVIEW 521)
 			(Load rsSCRIPT 104)
 		)
-		(if (gEgo knows: 17)
+		(if (gEgo knows: 17) ; openSpell
 			(Load rsVIEW 521)
 			(Load rsSCRIPT 105)
 		)
@@ -132,7 +132,7 @@
 			)
 		)
 		(if (not (IsFlag 161))
-			(if (gEgo knows: 23)
+			(if (gEgo knows: 23) ; flameDartSpell
 				(egoShoots number: (SoundFX 33) init:)
 				(magicHit number: (SoundFX 45) init:)
 			)

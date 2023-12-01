@@ -165,9 +165,9 @@
 				(0
 					(gGame handsOff:)
 					(if (< (gEgo x:) 160)
-						(proc1111_7 4430 -5 -2)
+						(DoRobot 4430 -5 -2)
 					else
-						(proc1111_7 4432 48 -24)
+						(DoRobot 4432 48 -24)
 					)
 					(water posn: 1 62 view: 29205)
 					(gCurRoom drawPic: 29205)
@@ -186,9 +186,9 @@
 					(water show:)
 					(gCurRoom drawPic: 29205)
 					(if (< (gEgo x:) 160)
-						(proc1111_7 4431 33 -8)
+						(DoRobot 4431 33 -8)
 					else
-						(proc1111_7 4433 31 -25)
+						(DoRobot 4433 31 -25)
 					)
 				)
 				(3
@@ -200,7 +200,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(gEgo get: 12) ; invLensPiece
 			(gCurRoom drawPic: (+ 29200 (== gChapter 5)))
 			(water view: 29200 x: 123 y: 53 show:)

@@ -111,7 +111,7 @@
 					((ScriptID 45951 2) writeString: temp0) ; chase_dat
 					(temp0 dispose:)
 				)
-				(proc1111_6 0 0)
+				(KillRobot 0 0)
 				(= temp3 caughtScript)
 			)
 			((== gPrevRoomNum 46770)
@@ -350,7 +350,7 @@
 						(temp0 dispose:)
 					)
 					(door nsLeft: 20 nsTop: 28 nsRight: 46 nsBottom: 80)
-					(proc1111_7 9250 0 0 0)
+					(DoRobot 9250 0 0 0)
 				)
 				(1
 					(if (IsFlag 135)
@@ -406,9 +406,9 @@
 						(temp0 dispose:)
 					)
 					(if (IsFlag 133)
-						(proc1111_7 9711 81 13 0)
+						(DoRobot 9711 81 13 0)
 					else
-						(proc1111_7 9710 -24 -41 0)
+						(DoRobot 9710 -24 -41 0)
 					)
 				)
 				(1
@@ -461,18 +461,18 @@
 					)
 					(= global165 15)
 					(= local3 1)
-					(proc1111_7 6820 -12 -12 0)
+					(DoRobot 6820 -12 -12 0)
 				)
 				(1
 					(gGDacSound stop:)
-					(proc1111_7 6821 -40 -50 0)
+					(DoRobot 6821 -40 -50 0)
 					(gCurRoom drawPic: 8900)
 				)
 				(2
 					(if (not (gGDacSound handle:))
 						(gGDacSound number: 10671 play:)
 					)
-					(proc1111_7 6822 76 25 0)
+					(DoRobot 6822 76 25 0)
 					(gCurRoom drawPic: 8890)
 				)
 				(3
@@ -486,7 +486,7 @@
 				)
 				(4
 					(sfxSound1 stop:)
-					(proc1111_7 6830 22 -24 0)
+					(DoRobot 6830 22 -24 0)
 					(gCurRoom drawPic: 8920)
 				)
 				(5
@@ -538,7 +538,7 @@
 					(temp2 dispose:)
 				)
 				(if local2
-					(proc1111_7 6830 44 45 0)
+					(DoRobot 6830 44 45 0)
 					(if local5
 						(gCurRoom drawPic: 8890)
 					)
@@ -547,10 +547,10 @@
 				)
 			)
 			(1
-				(proc1111_6 0 0)
+				(KillRobot 0 0)
 				(gCurRoom drawPic: -1)
 				(if (IsFlag 135)
-					(proc1111_6 0 0)
+					(KillRobot 0 0)
 					(self dispose:)
 				else
 					(gCurRoom setScript: doChairScene)
@@ -1048,14 +1048,14 @@
 						(temp0 dispose:)
 					)
 					(if local3
-						(proc1111_7 6824 -73 -22 0)
+						(DoRobot 6824 -73 -22 0)
 						(gCurRoom drawPic: 8890)
 					else
 						(= cycles 2)
 					)
 				)
 				(1
-					(proc1111_7 9712 -8 -44 0 -1 1)
+					(DoRobot 9712 -8 -44 0 -1 1)
 					(gCurRoom drawPic: 8995)
 				)
 				(2
@@ -1101,14 +1101,14 @@
 						(temp0 dispose:)
 					)
 					(if local3
-						(proc1111_7 6826 -17 14 0)
+						(DoRobot 6826 -17 14 0)
 						(gCurRoom drawPic: 8890)
 					else
 						(self cue:)
 					)
 				)
 				(1
-					(proc1111_7 9720 -12 -44 0 -1 1)
+					(DoRobot 9720 -12 -44 0 -1 1)
 					(gCurRoom drawPic: 8210)
 				)
 				(2
@@ -1152,7 +1152,7 @@
 						(temp0 dispose:)
 					)
 					(if local3
-						(proc1111_7 6825 -31 0 0 -1 1)
+						(DoRobot 6825 -31 0 0 -1 1)
 						(gCurRoom drawPic: 8890)
 					else
 						(= cycles 2)
@@ -1457,7 +1457,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9731 -12 -46 0)
+					(DoRobot 9731 -12 -46 0)
 					(gCurRoom drawPic: 27250)
 				)
 				(1

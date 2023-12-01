@@ -873,7 +873,7 @@
 		(ClearFlag 281)
 		(ballSound number: (SoundFX 34) init:)
 		(ballHits number: (SoundFX 45) init:)
-		(if (gEgo knows: 23)
+		(if (gEgo knows: 23) ; flameDartSpell
 			(= global346 (+ 5 (/ [gEgoStats 23] 3))) ; flameDartSpell
 		)
 		(= global348 0)

@@ -135,7 +135,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(if (gCast contains: cyrus)
 				(cyrus show:)
 			)
@@ -148,7 +148,7 @@
 					(gGame handsOff:)
 					(gCurRoom picture: 28415)
 					(water hide:)
-					(proc1111_7 4560 87 -7)
+					(DoRobot 4560 87 -7)
 					(if (gCast contains: cyrus)
 						(cyrus hide:)
 					)

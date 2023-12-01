@@ -33,7 +33,7 @@
 	)
 
 	(method (init &tmp temp0)
-		(proc1111_6)
+		(KillRobot)
 		(= temp0 0)
 		(if (and (IsFlag 372) (IsFlag 373) (IsFlag 374))
 			(= local5 1)
@@ -231,7 +231,7 @@
 					(gGame handsOff:)
 					(don dispose:)
 					(gEgo hide:)
-					(proc1111_7 1021 22 -31 gEgo 20)
+					(DoRobot 1021 22 -31 gEgo 20)
 					(proc10700_0 10685)
 				)
 				(1
@@ -263,7 +263,7 @@
 					(gGame handsOff:)
 					(don dispose:)
 					(gEgo hide:)
-					(proc1111_7 1061 45 -21 gEgo 10)
+					(DoRobot 1061 45 -21 gEgo 10)
 					(proc10700_0 10725)
 				)
 				(1
@@ -323,7 +323,7 @@
 					(= local0 1)
 					(don dispose:)
 					(gEgo hide:)
-					(proc1111_7 1050 46 23)
+					(DoRobot 1050 46 23)
 					(proc10700_0 10695)
 				)
 				(1
@@ -353,7 +353,7 @@
 				(0
 					(gGame handsOff:)
 					(gEgo hide:)
-					(proc1111_7 1110 50 21 gEgo 40)
+					(DoRobot 1110 50 21 gEgo 40)
 				)
 				(1
 					(self dispose:)
@@ -487,10 +487,10 @@
 					(gGame handsOff:)
 					(wrench init: view: 10707 x: 132 y: 81 setPri: 30)
 					(gEgo hide:)
-					(proc1111_7 1015 36 1 gEgo 100)
+					(DoRobot 1015 36 1 gEgo 100)
 				)
 				(1
-					(proc1111_7 1014 61 7)
+					(DoRobot 1014 61 7)
 					(proc10700_0 10665)
 					(wrench
 						view: 10665
@@ -510,14 +510,14 @@
 						y: 73
 						setPri: -1
 					)
-					(proc1111_7 1011 13 -32 gEgo -1 1)
+					(DoRobot 1011 13 -32 gEgo -1 1)
 					(proc10700_0 10685)
 				)
 				(3
 					(wrench dispose:)
 				)
 				(4
-					(proc1111_7 10120 64 46 gEgo 40 1)
+					(DoRobot 10120 64 46 gEgo 40 1)
 					(proc10700_0 10705)
 				)
 				(5
@@ -561,7 +561,7 @@
 					(gGame handsOff:)
 					(don dispose:)
 					(gEgo hide:)
-					(proc1111_7 1030 38 -16 gEgo 20)
+					(DoRobot 1030 38 -16 gEgo 20)
 					(proc10700_0 10725)
 				)
 				(1
@@ -580,7 +580,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc1111_6)
+				(KillRobot)
 				(if (== register sScene105)
 					(gEgo
 						view: 0
@@ -651,7 +651,7 @@
 					(gGame handsOff:)
 					(don dispose:)
 					(gEgo hide:)
-					(proc1111_7 1111 20 5 gEgo 40)
+					(DoRobot 1111 20 5 gEgo 40)
 					(proc10700_0 10705)
 				)
 				(1
@@ -686,11 +686,11 @@
 					(gGame handsOff:)
 					(don dispose:)
 					(gEgo hide:)
-					(proc1111_7 1040 -15 -41)
+					(DoRobot 1040 -15 -41)
 					(proc10700_0 10715)
 				)
 				(1
-					(proc1111_7 1041 11 7 gEgo 100)
+					(DoRobot 1041 11 7 gEgo 100)
 					(proc10700_0 10705)
 				)
 				(2
@@ -730,7 +730,7 @@
 					(gGame handsOff:)
 					(if (not local3)
 						(gEgo z: 1000)
-						(proc1111_7 1121 101 20 gEgo -1 1)
+						(DoRobot 1121 101 20 gEgo -1 1)
 						(proc10700_0 10705)
 					else
 						(gEgo view: 10703 cel: 0 setCycle: End self)
@@ -754,10 +754,10 @@
 					(gGame handsOff:)
 					(gEgo hide:)
 					(if (IsFlag 350)
-						(proc1111_7 1561 164 20)
+						(DoRobot 1561 164 20)
 					else
 						(SetFlag 350)
-						(proc1111_7 1120 139 29)
+						(DoRobot 1120 139 29)
 					)
 				)
 				(1
@@ -772,7 +772,7 @@
 	(method (dispose)
 		(proc1111_0 0)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(southExit init:)

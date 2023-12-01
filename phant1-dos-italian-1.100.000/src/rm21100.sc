@@ -89,7 +89,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 4440 8 -39)
+					(DoRobot 4440 8 -39)
 					(if (== gChapter 5)
 						(waterProp init: 34276)
 						(gCurRoom drawPic: 34276)
@@ -100,7 +100,7 @@
 				)
 				(1
 					(waterProp dispose:)
-					(proc1111_7 4441 65 -1)
+					(DoRobot 4441 65 -1)
 					(if (== gChapter 5)
 						(gCurRoom drawPic: 34296)
 					else
@@ -122,7 +122,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(if (gCast contains: waterProp)
 						(waterProp dispose:)
 					)
@@ -154,9 +154,9 @@
 					(waterProp2 dispose:)
 					(if (and (not (IsFlag 262)) (not (IsFlag 189)))
 						(= temp0 1)
-						(proc1111_7 4440 8 -39)
+						(DoRobot 4440 8 -39)
 					else
-						(proc1111_7 4460 -8 -25 gEgo 200)
+						(DoRobot 4460 -8 -25 gEgo 200)
 					)
 					(cond
 						((== gChapter 5)
@@ -183,7 +183,7 @@
 					(= seconds 7)
 				)
 				(2
-					(proc1111_7 4451 61 -15)
+					(DoRobot 4451 61 -15)
 					(if (== gChapter 5)
 						(gCurRoom drawPic: 34291)
 					else
@@ -205,7 +205,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(if (gCast contains: waterProp)
 						(waterProp dispose:)
 					)
@@ -236,7 +236,7 @@
 					(SetFlag 188)
 					(gEgo put: 12) ; invLensPiece
 					(waterProp2 dispose:)
-					(proc1111_7 4470 -3 -16)
+					(DoRobot 4470 -3 -16)
 					(gCurRoom drawPic: 21288)
 				)
 				(1
@@ -255,7 +255,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(if (gCast contains: lensView)
 						(lensView dispose:)
 					)

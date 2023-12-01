@@ -197,9 +197,9 @@
 					)
 					(ClearFlag 131)
 					(if (IsFlag 140)
-						(proc1111_7 9421 -11 -18 0 -1 1)
+						(DoRobot 9421 -11 -18 0 -1 1)
 					else
-						(proc1111_7 9411 -11 -26 0 -1 1)
+						(DoRobot 9411 -11 -26 0 -1 1)
 					)
 				)
 				(1
@@ -251,7 +251,7 @@
 				(0
 					(gGame handsOff:)
 					(if (not local2)
-						(proc1111_6 0 0)
+						(KillRobot 0 0)
 					)
 					(if (not (IsFlag 135))
 						(= temp0 (Str newWith: 2 {04}))
@@ -259,7 +259,7 @@
 						(temp0 dispose:)
 					)
 					(if local2
-						(proc1111_7 9420 -10 -36 0 -1 1)
+						(DoRobot 9420 -10 -36 0 -1 1)
 						(if (gCast contains: door3830)
 							(door3830 dispose:)
 						)
@@ -313,7 +313,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9410 -37 -37 0 -1 1)
+					(DoRobot 9410 -37 -37 0 -1 1)
 					(if (gCast contains: door3830)
 						(door3830 dispose:)
 					)
@@ -360,7 +360,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9247 -38 -14 0 -1 1)
+					(DoRobot 9247 -38 -14 0 -1 1)
 				)
 				(1
 					(if (IsFlag 135)
@@ -408,7 +408,7 @@
 					)
 					(global114 pause:)
 					(door3830 init:)
-					(proc1111_7 5941 77 22 0)
+					(DoRobot 5941 77 22 0)
 					(gCurRoom drawPic: 3830)
 				)
 				(1

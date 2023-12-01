@@ -140,18 +140,18 @@
 					(SetFlag 294)
 					(necklace view: 10191 posn: 122 116 setHotspot: 0)
 					(jewelryBox view: 10190 posn: 167 117 setHotspot: 0)
-					(proc1111_7 4050 -16 -42)
+					(DoRobot 4050 -16 -42)
 					(gCurRoom drawPic: 10190)
 				)
 				(1
 					(necklace dispose:)
 					(jewelryBox view: 10160 posn: 99 93)
-					(proc1111_7 4051 -55 -44)
+					(DoRobot 4051 -55 -44)
 					(gCurRoom drawPic: 10160)
 				)
 				(2
 					(jewelryBox view: 10190 posn: 167 117)
-					(proc1111_7 4052 -17 -42)
+					(DoRobot 4052 -17 -42)
 					(gCurRoom drawPic: 10190)
 				)
 				(3
@@ -173,7 +173,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(ClearFlag 248)
 			(if local0
@@ -291,7 +291,7 @@
 						(necklace view: 10131 posn: 191 83)
 					)
 					(jewelryBox view: 10132 posn: 237 81)
-					(proc1111_7 860 118 8)
+					(DoRobot 860 118 8)
 					(gCurRoom drawPic: 10130)
 				)
 				(2
@@ -317,7 +317,7 @@
 						(necklace view: 10131 posn: 191 83 show:)
 					)
 					(jewelryBox view: 10132 posn: 237 81 show:)
-					(proc1111_7 861 120 5)
+					(DoRobot 861 120 5)
 					(gCurRoom drawPic: 10130)
 				)
 				(4
@@ -338,7 +338,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(ClearFlag 248)
 			(ClearFlag 121)
@@ -380,7 +380,7 @@
 						(necklace view: 10131 posn: 191 83 show:)
 					)
 					(jewelryBox view: 10132 posn: 237 81 show:)
-					(proc1111_7 4900 117 6)
+					(DoRobot 4900 117 6)
 					(gCurRoom drawPic: 10130)
 				)
 				(1
@@ -421,19 +421,19 @@
 					(jewelryBox view: 10132 posn: 237 81 show:)
 					(cond
 						((or (< gChapter 5) (IsFlag 261))
-							(proc1111_7 4902 124 3)
+							(DoRobot 4902 124 3)
 						)
 						((and (IsFlag 260) (not (IsFlag 259)))
 							(SetFlag 261)
-							(proc1111_7 4901 103 3)
+							(DoRobot 4901 103 3)
 						)
 						((and (IsFlag 260) (IsFlag 259))
 							(SetFlag 261)
-							(proc1111_7 4903 123 4)
+							(DoRobot 4903 123 4)
 						)
 						(else
 							(SetFlag 261)
-							(proc1111_7 4902 124 3)
+							(DoRobot 4902 124 3)
 						)
 					)
 					(gCurRoom drawPic: 10130)
@@ -456,7 +456,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(ClearFlag 248)
 			(ClearFlag 121)
@@ -517,7 +517,7 @@
 						(necklace view: 10181 posn: 112 86)
 					)
 					(jewelryBox hide:)
-					(proc1111_7 844 2 16)
+					(DoRobot 844 2 16)
 					(gCurRoom drawPic: 10180)
 				)
 				(2
@@ -549,7 +549,7 @@
 					(if (> gChapter 5)
 						(self changeState: 10)
 					else
-						(proc1111_7 845 2 16)
+						(DoRobot 845 2 16)
 					)
 					(= local1 1)
 					(gCurRoom drawPic: 10180)
@@ -574,8 +574,8 @@
 					(theLid dispose:)
 					(ring dispose:)
 					(jewelryBox hide:)
-					(proc1111_6)
-					(proc1111_7 842 -4 -9)
+					(KillRobot)
+					(DoRobot 842 -4 -9)
 				)
 				(6
 					(jewelryBox hide:)
@@ -583,7 +583,7 @@
 						(necklace view: 10181 posn: 112 86)
 					)
 					(= local1 0)
-					(proc1111_7 846 2 16)
+					(DoRobot 846 2 16)
 					(gCurRoom drawPic: 10180)
 				)
 				(7
@@ -593,7 +593,7 @@
 					(if (gCast contains: necklace)
 						(necklace view: 10181 posn: 112 86 setHotspot: 0)
 					)
-					(proc1111_7 847 2 16)
+					(DoRobot 847 2 16)
 					(gCurRoom drawPic: 10180)
 				)
 				(8
@@ -623,7 +623,7 @@
 				(10
 					(proc1111_9)
 					(= local0 0)
-					(proc1111_7 843 2 16)
+					(DoRobot 843 2 16)
 				)
 				(11
 					(jewelryBox view: 10100 posn: 182 73 show:)
@@ -651,7 +651,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(ClearFlag 248)
 			(= local1 0)
@@ -700,7 +700,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gCurRoom newRoom: 10200)
 		)
@@ -722,7 +722,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (< global125 20)
 				(+= global125 20)

@@ -47,7 +47,7 @@
 				(0
 					(gGame handsOff:)
 					(proc1111_0 {QA: new art on the way...})
-					(proc1111_7 220 72 -31)
+					(DoRobot 220 72 -31)
 				)
 				(1
 					(gEgo
@@ -72,7 +72,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(= global125 49)
@@ -90,7 +90,7 @@
 				(0
 					(gGame handsOff:)
 					(proc1111_0 {QA: new art on the way...})
-					(proc1111_7 230 -30 -76 gEgo -1 1)
+					(DoRobot 230 -30 -76 gEgo -1 1)
 				)
 				(1
 					(self dispose:)
@@ -105,7 +105,7 @@
 		(SetFlag 7)
 		(SetFlag 8)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(= global125 50)
 			(= gNewRoomNum 1800)

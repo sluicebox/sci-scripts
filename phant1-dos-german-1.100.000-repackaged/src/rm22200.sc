@@ -163,7 +163,7 @@
 				(0
 					(gGame handsOff:)
 					(SetFlag 254)
-					(proc1111_7 5130 -4 -5)
+					(DoRobot 5130 -4 -5)
 				)
 				(1
 					(localproc_1)
@@ -177,7 +177,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(SetFlag 254)
 					(localproc_1)
 					(= global115 0)
@@ -197,7 +197,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 5150 -6 -14)
+					(DoRobot 5150 -6 -14)
 					(if (gCast contains: rosaryBeads)
 						(rosaryBeads hide:)
 					)
@@ -218,7 +218,7 @@
 						(= cycles 1)
 					else
 						(gEgo show:)
-						(proc1111_7 5152 -8 -5)
+						(DoRobot 5152 -8 -5)
 						(gCurRoom drawPic: 22240)
 					)
 				)
@@ -238,7 +238,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(if (global114 script:)
 						(global114 endPause:)
 					)
@@ -268,7 +268,7 @@
 				(0
 					(gGame handsOff:)
 					(SetFlag 332)
-					(proc1111_7 5160 -9 -10)
+					(DoRobot 5160 -9 -10)
 					(gCurRoom drawPic: 22220)
 					(if (gCast contains: rosaryBeads)
 						(rosaryBeads hide:)
@@ -284,7 +284,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gEgo normalize: 614 posn: 130 130 setPri: 170)
 					(localproc_1)
 					(= global115 0)
@@ -305,7 +305,7 @@
 				(0
 					(gGame handsOff:)
 					(localproc_0)
-					(proc1111_7 5170 138 39)
+					(DoRobot 5170 138 39)
 				)
 				(1
 					(gEgo normalize: 614 posn: 130 130 setPri: 170)
@@ -317,7 +317,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gEgo normalize: 614 posn: 130 130 setPri: 170)
 					(localproc_1)
 					(= global115 0)
@@ -340,13 +340,13 @@
 					(SetFlag 256)
 					(carnoLid22200 hide:)
 					(if (== gChapter 5)
-						(proc1111_7 5184 79 24 gEgo 200)
+						(DoRobot 5184 79 24 gEgo 200)
 					else
-						(proc1111_7 5181 157 47 gEgo 200)
+						(DoRobot 5181 157 47 gEgo 200)
 					)
 				)
 				(1
-					(proc1111_7 5180 -84 -43 gEgo 200)
+					(DoRobot 5180 -84 -43 gEgo 200)
 					(if (gCast contains: rosaryBeads)
 						(rosaryBeads hide:)
 					)
@@ -354,18 +354,18 @@
 					(marieLid22200 hide:)
 				)
 				(2
-					(proc1111_7 5183 89 1)
+					(DoRobot 5183 89 1)
 					(gCurRoom drawPic: 22240)
 				)
 				(3
-					(proc1111_7 5189 -14 -22 gEgo 200 1)
+					(DoRobot 5189 -14 -22 gEgo 200 1)
 					(gCurRoom drawPic: 22230)
 				)
 				(4
 					(if (== gChapter 5)
-						(proc1111_7 5185 56 16 gEgo 200)
+						(DoRobot 5185 56 16 gEgo 200)
 					else
-						(proc1111_7 5182 110 17 gEgo 200)
+						(DoRobot 5182 110 17 gEgo 200)
 					)
 					(marieLid22200 show:)
 					(localproc_0)
@@ -383,7 +383,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo normalize: 614 setPri: 170 posn: 130 130)
 					(localproc_1)
@@ -403,7 +403,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 5190 61 38)
+					(DoRobot 5190 61 38)
 					(localproc_0)
 				)
 				(1
@@ -417,7 +417,7 @@
 					(= seconds 5)
 				)
 				(2
-					(proc1111_7 5191 61 38)
+					(DoRobot 5191 61 38)
 					(marieLid22200 show:)
 					(carnoLid22200 show:)
 					(if (gCast contains: rosaryBeads)
@@ -436,7 +436,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gEgo show:)
 					(gEgo normalize: 614 posn: 40 112)
 					(localproc_1)
@@ -457,7 +457,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 5200 77 35)
+					(DoRobot 5200 77 35)
 					(SetFlag 333)
 					(localproc_0)
 				)
@@ -471,7 +471,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo normalize: 614 posn: 40 112)
 					(localproc_1)
@@ -491,7 +491,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 5171 69 44)
+					(DoRobot 5171 69 44)
 					(localproc_0)
 				)
 				(1
@@ -504,7 +504,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo normalize: 614 posn: 40 112)
 					(localproc_1)
@@ -526,23 +526,23 @@
 					(SetFlag 331)
 					(gGame handsOff:)
 					(if (== gChapter 5)
-						(proc1111_7 5214 -3 12 gEgo 200)
+						(DoRobot 5214 -3 12 gEgo 200)
 					else
-						(proc1111_7 5211 64 22 gEgo 200)
+						(DoRobot 5211 64 22 gEgo 200)
 					)
 					(localproc_0)
 					(marieLid22200 hide:)
 				)
 				(1
 					(carnoLid22200 hide:)
-					(proc1111_7 5210 46 -12)
+					(DoRobot 5210 46 -12)
 					(gCurRoom drawPic: 22280)
 				)
 				(2
 					(if (== gChapter 5)
-						(proc1111_7 5215 12 20 gEgo 200)
+						(DoRobot 5215 12 20 gEgo 200)
 					else
-						(proc1111_7 5212 71 32 gEgo 200)
+						(DoRobot 5212 71 32 gEgo 200)
 					)
 					(carnoLid22200 show:)
 					(localproc_0)
@@ -557,7 +557,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gEgo normalize: 614 posn: 40 112)
 					(localproc_1)
 					(= global115 0)
@@ -578,7 +578,7 @@
 				(0
 					(gGame handsOff:)
 					(localproc_0)
-					(proc1111_7 5910 104 44 gEgo 120)
+					(DoRobot 5910 104 44 gEgo 120)
 				)
 				(1
 					(gEgo get: 15) ; invBeads
@@ -594,7 +594,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gEgo get: 15) ; invBeads
 					(rosaryBeads dispose:)
 					(gEgo show:)

@@ -92,7 +92,7 @@
 					(seeDoor
 						(HighPrint 229 0) ; "Your Detect Magic spell has revealed what appears to be a magical door at the end of the hallway. Or is it just an illusion?"
 					)
-					((gEgo knows: 20)
+					((gEgo knows: 20) ; detectSpell
 						(HighPrint 229 1) ; "This dead-end alley looks much like the other streets of Shapeir. You feel a very slight tingling feeling, almost beyond the limits of sensation."
 					)
 					(else

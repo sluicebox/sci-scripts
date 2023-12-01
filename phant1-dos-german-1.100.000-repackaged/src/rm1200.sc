@@ -37,7 +37,7 @@
 			(= picture 1201)
 		)
 		(= temp0 0)
-		(proc1111_6)
+		(KillRobot)
 		(gEgo init: normalize: setScaler: Scaler 121 32 126 71)
 		(switch gPrevRoomNum
 			(900
@@ -221,7 +221,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(gGDacSound stop:)
@@ -722,7 +722,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(ClearFlag 106)
@@ -820,7 +820,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(= global204 6)
@@ -1008,7 +1008,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(Lock rsVIEW 7300 0)
@@ -1041,7 +1041,7 @@
 					(gGame handsOff:)
 					(if (IsFlag 2)
 						(gEgo hide: get: 8) ; invMatch
-						(proc1111_7 161 35 40 gEgo 200 1)
+						(DoRobot 161 35 40 gEgo 200 1)
 					else
 						(Load rsVIEW 160)
 						(gGDacSound number: 10017 setLoop: 1 setVol: 120 play:)
@@ -1073,7 +1073,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(gGDacSound stop:)
@@ -1109,7 +1109,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(gEgo
@@ -1164,7 +1164,7 @@
 							y: 124
 							init:
 						)
-						(proc1111_7 4200 -57 -29 gEgo 40)
+						(DoRobot 4200 -57 -29 gEgo 40)
 						(gCurRoom drawPic: 1165 picture: 1165)
 					)
 				)
@@ -1178,7 +1178,7 @@
 	)
 
 	(method (dispose)
-		(proc1111_6)
+		(KillRobot)
 		(= global115 0)
 		(soapAndStuff dispose:)
 		(coffeeCup dispose:)
@@ -1233,7 +1233,7 @@
 							y: 120
 							init:
 						)
-						(proc1111_7 4180 -70 -32 gEgo 40)
+						(DoRobot 4180 -70 -32 gEgo 40)
 						(gCurRoom drawPic: 1165 picture: 1165)
 						(glass
 							view: 1165
@@ -1274,7 +1274,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(soapAndStuff dispose:)
@@ -1299,7 +1299,7 @@
 	(method (cue)
 		(if global115
 			(= global115 0)
-			(proc1111_6)
+			(KillRobot)
 			(gGame handsOn:)
 		else
 			(switch (++ local0)
@@ -1353,7 +1353,7 @@
 				(= cycles 2)
 			)
 			(1
-				(proc1111_6)
+				(KillRobot)
 				(harriet show:)
 				(gEgo show:)
 				(if (== gChapter 5)
@@ -1403,7 +1403,7 @@
 							y: 120
 							init:
 						)
-						(proc1111_7 4190 -34 -18 gEgo 40)
+						(DoRobot 4190 -34 -18 gEgo 40)
 						(gCurRoom drawPic: 1165 picture: 1165)
 					)
 				)
@@ -1430,7 +1430,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(soapAndStuff dispose:)
@@ -1464,7 +1464,7 @@
 					else
 						(gEgo z: 1000)
 						(harriet z: 1000)
-						(proc1111_7 4220 -46 -32 gEgo 40 1)
+						(DoRobot 4220 -46 -32 gEgo 40 1)
 						(soapAndStuff
 							view: 1165
 							setLoop: 0 1
@@ -1509,7 +1509,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(if (not local2)
@@ -1567,7 +1567,7 @@
 							y: 124
 							init:
 						)
-						(proc1111_7 4210 -75 -49 gEgo 40 1)
+						(DoRobot 4210 -75 -49 gEgo 40 1)
 						(gCurRoom drawPic: 1165 picture: 1165)
 					)
 				)
@@ -1586,7 +1586,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(if (not local2)
@@ -1616,7 +1616,7 @@
 					(= register 0)
 				)
 				(1
-					(proc1111_7 170 17 29)
+					(DoRobot 170 17 29)
 					(if (== gChapter 5)
 						(gCurRoom drawPic: 1206 picture: 1206)
 					else
@@ -1656,7 +1656,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gEgo
 				view: 4
@@ -1714,7 +1714,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(gCurRoom newRoom: 1160)

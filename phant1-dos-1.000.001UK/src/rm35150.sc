@@ -33,7 +33,7 @@
 				(gGame setScript: (ScriptID 0 5) 0 10) ; takeLastStep
 			)
 			(else
-				(proc1111_6)
+				(KillRobot)
 				(gEgo normalize: 2 posn: 176 110 setPri: 70)
 				(gGame setScript: (ScriptID 0 5) 0 10) ; takeLastStep
 			)
@@ -61,14 +61,14 @@
 					(proc1111_8)
 					(gGame handsOff:)
 					(gCurRoom drawPic: 35155 picture: 35155)
-					(proc1111_7 905 -6 -22 gEgo -1 1)
+					(DoRobot 905 -6 -22 gEgo -1 1)
 				)
 				(1
 					(gCurRoom newRoom: 6400)
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gCurRoom newRoom: 6400)
 		)

@@ -205,7 +205,7 @@
 			(switch (= state newState)
 				(0
 					(SetFlag 267)
-					(proc1111_7 3690 -12 19)
+					(DoRobot 3690 -12 19)
 				)
 				(1
 					(gEgo normalize: 614 posn: 65 122)
@@ -217,7 +217,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(SetFlag 267)
 					(gEgo normalize: 614 posn: 65 122)
@@ -237,7 +237,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 3700 66 13)
+					(DoRobot 3700 66 13)
 					(SetFlag 248)
 					(gEgo normalize: 611 posn: 224 124)
 					(gCurRoom drawPic: 26200)
@@ -254,7 +254,7 @@
 				(2
 					(ClearFlag 121)
 					(ClearFlag 248)
-					(proc1111_7 3701 66 13)
+					(DoRobot 3701 66 13)
 					(gCurRoom drawPic: 26200)
 				)
 				(3
@@ -268,7 +268,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(ClearFlag 121)
 					(ClearFlag 248)
 					(proc1111_9)
@@ -293,16 +293,16 @@
 				(0
 					(book dispose:)
 					(bookFeat dispose:)
-					(proc1111_7 3770 131 25)
+					(DoRobot 3770 131 25)
 					(gCurRoom drawPic: 26100)
 				)
 				(1
 					(gEgo hide:)
-					(proc1111_7 3771 -6 -40)
+					(DoRobot 3771 -6 -40)
 					(gCurRoom drawPic: 26120)
 				)
 				(2
-					(proc1111_7 3772 131 25)
+					(DoRobot 3772 131 25)
 					(gCurRoom drawPic: 26100)
 				)
 				(3
@@ -322,7 +322,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gEgo
 						normalize: 616
 						posn: 142 118
@@ -368,7 +368,7 @@
 					)
 				)
 				(1
-					(proc1111_7 3720 97 19)
+					(DoRobot 3720 97 19)
 					(gCurRoom drawPic: 26200)
 				)
 				(2
@@ -381,7 +381,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo normalize: 611 posn: 160 127)
 					(gCurRoom drawPic: 26140)

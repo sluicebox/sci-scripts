@@ -205,7 +205,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9300 -2 -33 0 -1 1)
+					(DoRobot 9300 -2 -33 0 -1 1)
 				)
 				(1
 					(if (IsFlag 135)
@@ -248,10 +248,10 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9304 -1 -48 0)
+					(DoRobot 9304 -1 -48 0)
 				)
 				(1
-					(proc1111_7 9301 -2 -35 0 -1 1)
+					(DoRobot 9301 -2 -35 0 -1 1)
 					(gCurRoom drawPic: 13420 picture: 13420)
 				)
 				(2
@@ -297,9 +297,9 @@
 					)
 					(gGDacSound stop:)
 					(if (and (gEgo has: 5) (!= gPrevRoomNum 46050)) ; invHammer
-						(proc1111_7 9270 -18 -41 0 -1 1)
+						(DoRobot 9270 -18 -41 0 -1 1)
 					else
-						(proc1111_7 9271 -13 -37 0 -1 1)
+						(DoRobot 9271 -13 -37 0 -1 1)
 					)
 					(gCurRoom drawPic: 13440 picture: 13440)
 				)
@@ -335,14 +335,14 @@
 						((IsFlag 67)
 							(ClearFlag 67)
 							(= local0 1)
-							(proc1111_7 9253 0 -42 0 -1 1)
+							(DoRobot 9253 0 -42 0 -1 1)
 						)
 						((not (IsFlag 130))
 							(gGDacSound number: 10672 setLoop: -1 play:)
-							(proc1111_7 9252 59 -40 0 -1 1)
+							(DoRobot 9252 59 -40 0 -1 1)
 						)
 						(else
-							(proc1111_7 9302 -6 -43 0 -1 1)
+							(DoRobot 9302 -6 -43 0 -1 1)
 						)
 					)
 				)
@@ -407,9 +407,9 @@
 					)
 					(gGDacSound stop:)
 					(if (and (== gPrevRoomNum 45950) (gEgo has: 16)) ; invSpellBook
-						(proc1111_7 9261 0 0 0 -1 1)
+						(DoRobot 9261 0 0 0 -1 1)
 					else
-						(proc1111_7 9260 -12 -20 0 -1 1)
+						(DoRobot 9260 -12 -20 0 -1 1)
 					)
 					(if (not (gEgo has: 16)) ; invSpellBook
 						(book init: setPri: 0)
@@ -443,7 +443,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9262 -4 -7 0 -1 1)
+					(DoRobot 9262 -4 -7 0 -1 1)
 					(if (not (gEgo has: 16)) ; invSpellBook
 						(book init: setPri: 0)
 					)

@@ -50,7 +50,7 @@
 			(= picture 18200)
 		)
 		(= temp0 0)
-		(proc1111_6)
+		(KillRobot)
 		(gEgo init: normalize: setScaler: Scaler 156 84 152 97)
 		(switch gPrevRoomNum
 			(900
@@ -198,7 +198,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(gGame handsOn:)
@@ -228,7 +228,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(SetFlag 180)
@@ -258,7 +258,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(SetFlag 180)
@@ -329,7 +329,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(gGame handsOn:)
@@ -455,7 +455,7 @@
 				(0
 					(gGame handsOff:)
 					(harriet dispose:)
-					(proc1111_7 4350 20 -2 gEgo 10)
+					(DoRobot 4350 20 -2 gEgo 10)
 					(localproc_0 18290)
 				)
 				(1
@@ -469,7 +469,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(SetFlag 153)
@@ -533,7 +533,7 @@
 				(0
 					(gGame handsOff:)
 					(harriet dispose:)
-					(proc1111_7 4271 -2 -35 gEgo 10)
+					(DoRobot 4271 -2 -35 gEgo 10)
 					(localproc_0 18290)
 				)
 				(1
@@ -547,7 +547,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(harriet init:)
@@ -568,7 +568,7 @@
 				(0
 					(gGame handsOff:)
 					(harriet dispose:)
-					(proc1111_7 4360 21 -17 gEgo 10)
+					(DoRobot 4360 21 -17 gEgo 10)
 					(localproc_0 18290)
 				)
 				(1
@@ -582,7 +582,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(harriet init:)
@@ -677,7 +677,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(= global125 0)
@@ -707,7 +707,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(= global125 0)
@@ -744,7 +744,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(= global125 80)
@@ -764,7 +764,7 @@
 					(SetFlag 291)
 					(SetFlag 367)
 					(gGame setIntensity: 0)
-					(proc1111_7 5390 -35 -47 gEgo -1 1)
+					(DoRobot 5390 -35 -47 gEgo -1 1)
 					((= register (View new:))
 						view: 18200
 						x: 127
@@ -803,7 +803,7 @@
 		)
 		(gGame fade: 100 0 5)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(hairBrush dispose:)
@@ -881,7 +881,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(switch local1

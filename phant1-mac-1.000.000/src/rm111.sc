@@ -170,7 +170,7 @@
 (procedure (localproc_4 param1)
 	(cond
 		(local7
-			(proc1111_6)
+			(KillRobot)
 		)
 		((act9 onMeCheck:)
 			(Robot 7) ; Terminate
@@ -384,7 +384,7 @@
 	(properties)
 
 	(method (init)
-		(proc1111_6)
+		(KillRobot)
 		(global114 stop:)
 		(gThePlane picture: -1)
 		(UpdatePlane gThePlane)
@@ -735,7 +735,7 @@
 										(= local10 2)
 										(= local3 0)
 										(localproc_8 {turned off robot looping})
-										(proc1111_6)
+										(KillRobot)
 									)
 									((act9 onMeCheck:)
 										(= local7 0)
@@ -955,7 +955,7 @@
 									)
 									(cond
 										(local7
-											(proc1111_6)
+											(KillRobot)
 										)
 										((act9 onMeCheck:)
 											(Robot 7) ; Terminate
@@ -1096,7 +1096,7 @@
 										(= local10 2)
 										(localproc_8 {turned off robot looping})
 										(= local7 0)
-										(proc1111_6)
+										(KillRobot)
 									)
 									(else
 										(Robot 7) ; Terminate
@@ -1104,7 +1104,7 @@
 										(= local10 2)
 										(= local7 1)
 										(localproc_8 {robot looping})
-										(proc1111_7 local45 local43 local44)
+										(DoRobot local45 local43 local44)
 										(FrameOut)
 									)
 								)
@@ -1174,7 +1174,7 @@
 							((OneOf (event message:) KEY_O KEY_o)
 								(if local7
 									(= local7 0)
-									(proc1111_6)
+									(KillRobot)
 								)
 								(= local45 (GetNumber {file number} local45))
 								(if (act9 onMeCheck:)
@@ -1472,8 +1472,8 @@
 						(localproc_10 local45 local43 local44 gEgo local9)
 					)
 					(local7
-						(proc1111_6)
-						(proc1111_7
+						(KillRobot)
+						(DoRobot
 							local45
 							(+ (event x:) local43)
 							(+ (event y:) local44)
@@ -1553,7 +1553,7 @@
 
 	(method (cue)
 		(if local7
-			(proc1111_7 local45 local43 local44)
+			(DoRobot local45 local43 local44)
 		else
 			(gGDacSound pause: 0)
 		)
@@ -1741,7 +1741,7 @@
 		(switch (= state newState)
 			(0
 				(= local2 (Str with: {cue at: }))
-				(proc1111_7 local45 local43 local44 gEgo local9 1)
+				(DoRobot local45 local43 local44 gEgo local9 1)
 			)
 			(1
 				(if (gEgo robot:)
@@ -1771,7 +1771,7 @@
 	)
 
 	(method (dispose)
-		(proc1111_6)
+		(KillRobot)
 		(Robot 7) ; Terminate
 		(act9 onMeCheck: 0)
 		(= local31 1)

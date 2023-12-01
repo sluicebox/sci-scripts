@@ -83,7 +83,7 @@
 	(method (init)
 		(global114 stop: 1)
 		(ClearFlag 145)
-		(proc1111_6 0 0)
+		(KillRobot 0 0)
 		(gThePlane setRect: 0 0 319 199)
 		(= global121 0)
 		(gGame setCursor: gNormalCursor 0)

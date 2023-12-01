@@ -907,7 +907,7 @@
 				(= local11 1)
 				(gMessager say: 4 0 5 0 self) ; "Guess I still have the knack for the old Maze game."
 			)
-			((not (gEgo knows: 20))
+			((not (gEgo knows: 20)) ; dazzleSpell
 				(= local11 1)
 				(if (< (= temp0 (+ global417 global417)) 500)
 					(= temp0 500)

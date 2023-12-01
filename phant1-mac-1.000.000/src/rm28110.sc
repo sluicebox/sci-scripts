@@ -21,7 +21,7 @@
 
 	(method (init)
 		((ScriptID 30) init:) ; FidgetCode
-		(proc1111_6)
+		(KillRobot)
 		(if (== gChapter 5)
 			(= picture 28111)
 			(gEgo fadePalette: 28100)
@@ -82,7 +82,7 @@
 					(gGame handsOff:)
 					(car view: 28113 posn: 215 71)
 					(truck view: 28112 posn: 12 112)
-					(proc1111_7 4570 29 40)
+					(DoRobot 4570 29 40)
 					(gCurRoom drawPic: 28112 picture: 28112)
 				)
 				(1
@@ -90,7 +90,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		)

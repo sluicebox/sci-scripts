@@ -34,8 +34,8 @@
 					(= seconds 3)
 				)
 				(1
-					(proc1111_6)
-					(proc1111_7 240 96 6)
+					(KillRobot)
+					(DoRobot 240 96 6)
 				)
 				(2
 					(WalkieTalkie showFrame: 240 84 96 6)
@@ -52,7 +52,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(= global125 50)

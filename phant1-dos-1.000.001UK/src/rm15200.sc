@@ -302,7 +302,7 @@
 				(0
 					(bathroomDoor hide:)
 					(bear hide:)
-					(proc1111_7 1530 127 12)
+					(DoRobot 1530 127 12)
 					(gCurRoom drawPic: 15330)
 					(SetFlag 82)
 				)
@@ -321,7 +321,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo normalize: 5 posn: 130 91)
 					(bear show:)

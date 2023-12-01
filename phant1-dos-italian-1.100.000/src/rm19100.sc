@@ -93,7 +93,7 @@
 		(gEgo init: posn: 1000 1000 normalize: setScale: 0 hide:)
 		(trunkLid init:)
 		(twister init:)
-		(proc1111_6)
+		(KillRobot)
 		(if (IsFlag 31)
 			(= picture 19200)
 			(gCurRoom setScript: kneelScr)
@@ -162,7 +162,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo hide:)
 					(insetView show:)
@@ -206,7 +206,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom newRoom: 19000)
 				)
@@ -364,7 +364,7 @@
 					(insetView hide:)
 					(blankets view: 19212 posn: 179 130)
 					(gEgo posn: 1000 1000 init:)
-					(proc1111_7 4802 20 -16)
+					(DoRobot 4802 20 -16)
 					(gCurRoom drawPic: 19210)
 				)
 				(1
@@ -404,7 +404,7 @@
 			(switch (= state newState)
 				(0
 					(global114 endPause: 1)
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo setCycle: 0)
 					(gCurRoom newRoom: 19000)

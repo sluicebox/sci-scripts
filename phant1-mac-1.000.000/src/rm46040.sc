@@ -166,7 +166,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9312 -7 -39 0 -1 1)
+					(DoRobot 9312 -7 -39 0 -1 1)
 				)
 				(1
 					(if (IsFlag 135)
@@ -209,7 +209,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9303 -7 -42 0 -1 1)
+					(DoRobot 9303 -7 -42 0 -1 1)
 					(gCurRoom drawPic: 13440)
 				)
 				(1
@@ -239,7 +239,7 @@
 						(temp0 dispose:)
 					)
 					(sfxSound1 number: 10672 setLoop: -1 play:)
-					(proc1111_7 9203 29 -31 0 -1 1)
+					(DoRobot 9203 29 -31 0 -1 1)
 				)
 				(1
 					(if (IsFlag 135)
@@ -283,7 +283,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9202 -5 -41 0 200 1)
+					(DoRobot 9202 -5 -41 0 200 1)
 				)
 				(1
 					(if (not (IsFlag 135))
@@ -350,7 +350,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9210 0 -40 0 -1 1)
+					(DoRobot 9210 0 -40 0 -1 1)
 					(gCurRoom drawPic: 15220 picture: 15220)
 				)
 				(1
@@ -381,10 +381,10 @@
 						(temp0 dispose:)
 					)
 					(if (== (gCurRoom picture:) 15220)
-						(proc1111_7 9221 -14 -34 0 -1 1)
+						(DoRobot 9221 -14 -34 0 -1 1)
 						(gCurRoom drawPic: 15230 picture: 15230)
 					else
-						(proc1111_7 9211 27 -34 0 -1 1)
+						(DoRobot 9211 27 -34 0 -1 1)
 						(gCurRoom drawPic: 15220 picture: 15220)
 					)
 				)
@@ -459,10 +459,10 @@
 	(method (doVerb theVerb)
 		(if (== theVerb 21) ; Exit
 			(if (gEgo has: 16) ; invSpellBook
-				(proc1111_6 0 0)
+				(KillRobot 0 0)
 				(gCurRoom setScript: deadAtTheBottom)
 			else
-				(proc1111_6 0 0)
+				(KillRobot 0 0)
 				(gCurRoom setScript: toSecondFloor)
 			)
 		else
@@ -482,7 +482,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 21) ; Exit
-			(proc1111_6 0 0)
+			(KillRobot 0 0)
 			(gCurRoom newRoom: 46290)
 		else
 			(super doVerb: theVerb)

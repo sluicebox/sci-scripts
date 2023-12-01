@@ -60,7 +60,7 @@
 				(= temp0 (ScriptID 0 5)) ; takeLastStep
 			)
 			(33100
-				(proc1111_6)
+				(KillRobot)
 				(gEgo normalize: 4 posn: 125 128)
 				(waterProp init:)
 				(= temp0 (ScriptID 0 5)) ; takeLastStep
@@ -94,7 +94,7 @@
 					(if (gCast contains: bmw)
 						(bmw hide:)
 					)
-					(proc1111_7 1700)
+					(DoRobot 1700)
 					(if (== (Platform 2) 2)
 						(gGame setIntensity: 0 1)
 						(gGame fade: 0 100 2)
@@ -110,7 +110,7 @@
 						setCycle: Fwd
 						cycleSpeed: 10
 					)
-					(proc1111_7 1601 10 -9 gEgo 200)
+					(DoRobot 1601 10 -9 gEgo 200)
 					(gCurRoom drawPic: 34110)
 				)
 				(2
@@ -129,7 +129,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(SetFlag 336)
 					(waterProp view: 34104 x: 84 y: 79 cycleSpeed: 6)
 					(bmw init:)
@@ -201,13 +201,13 @@
 					(leftPeople dispose:)
 					(rightPeople dispose:)
 					(gEgo hide: posn: 0 300)
-					(proc1111_7 1603 155 49 gEgo 200)
+					(DoRobot 1603 155 49 gEgo 200)
 					(gCurRoom drawPic: 34110 picture: 34110)
 				)
 				(2
 					(ClearFlag 336)
 					(waterProp view: 34104 x: 84 y: 79 cycleSpeed: 6)
-					(proc1111_7 1710 -11 -36)
+					(DoRobot 1710 -11 -36)
 					(gCurRoom drawPic: 34100 picture: 34100)
 				)
 				(3
@@ -236,7 +236,7 @@
 					(leftPeople dispose:)
 					(cameraDude dispose:)
 					(SetFlag 88)
-					(proc1111_7 5590 -7 -34 gEgo -1 1)
+					(DoRobot 5590 -7 -34 gEgo -1 1)
 					(gCurRoom drawPic: 34215)
 				)
 				(1
@@ -249,7 +249,7 @@
 				(0
 					(SetFlag 88)
 					(= global115 0)
-					(proc1111_6)
+					(KillRobot)
 					(gEgo hide:)
 					(gCurRoom newRoom: local2)
 				)

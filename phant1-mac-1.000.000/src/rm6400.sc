@@ -32,7 +32,7 @@
 		(switch gPrevRoomNum
 			(35150
 				(gEgo normalize: 2 posn: 210 82 hide:)
-				(proc1111_6)
+				(KillRobot)
 				(Load 140 6021) ; WAVE
 				(cryptDoor cel: 100 init: setPri: 90)
 				(WalkieTalkie showFrame: 6581 0 68 -20 12)
@@ -108,7 +108,7 @@
 					else
 						(gCurRoom drawPic: 6580)
 					)
-					(proc1111_7 6580 104 -6 gEgo 120 1)
+					(DoRobot 6580 104 -6 gEgo 120 1)
 				)
 				(2
 					(sOpen setLoop: 1 play:)
@@ -160,8 +160,8 @@
 				)
 				(2
 					(sOpen stop:)
-					(proc1111_6)
-					(proc1111_7 6581 68 -20 gEgo 120 1)
+					(KillRobot)
+					(DoRobot 6581 68 -20 gEgo 120 1)
 				)
 				(3
 					(sOpen setLoop: 1 play:)
@@ -172,7 +172,7 @@
 					(sOpen stop:)
 					(sClose stop:)
 					(cryptDoor dispose:)
-					(proc1111_6)
+					(KillRobot)
 					(gEgo
 						posn: 150 90
 						show:
@@ -199,7 +199,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(sOpen stop:)
 					(sClose stop:)
 					(if (gCast contains: cryptDoor)

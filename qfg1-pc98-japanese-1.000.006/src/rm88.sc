@@ -105,7 +105,7 @@
 			)
 			(Load rsVIEW 450)
 			(Load rsSCRIPT 972)
-			(if (gEgo knows: 23)
+			(if (gEgo knows: 23) ; flameDartSpell
 				(Load rsVIEW 522)
 				(Load rsSOUND (SoundFX 33))
 				(Load rsSOUND (SoundFX 45))

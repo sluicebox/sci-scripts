@@ -36,7 +36,7 @@
 				(gCurRoom setScript: sEnterFromDoor)
 			)
 			(36400
-				(proc1111_6)
+				(KillRobot)
 				(gGame handsOff:)
 				(self picture: 8610)
 				(self setScript: sEnterFromPassage)
@@ -99,7 +99,7 @@
 			(switch (= state newState)
 				(0
 					(secretPanelBlack init:)
-					(proc1111_7 5280 71 13 gEgo -1 1)
+					(DoRobot 5280 71 13 gEgo -1 1)
 				)
 				(1
 					(if (IsFlag 327)
@@ -118,7 +118,7 @@
 				)
 				(2
 					(secretPanelBlack show:)
-					(proc1111_7 5281 44 8)
+					(DoRobot 5281 44 8)
 				)
 				(3
 					(secretPanelBlack dispose:)
@@ -139,7 +139,7 @@
 				)
 				(5
 					(if (not (IsFlag 69))
-						(proc1111_6)
+						(KillRobot)
 						(secretPanelBlack hide:)
 						(flipAnim init:)
 						(gCurRoom drawPic: 8225)
@@ -160,7 +160,7 @@
 						(flipAnim dispose:)
 						(secretPanelBlack show:)
 					)
-					(proc1111_7 5287 -21 -24)
+					(DoRobot 5287 -21 -24)
 				)
 				(7
 					(if (gCast contains: tDoors)
@@ -181,7 +181,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(ClearFlag 121)
 			(if (gCast contains: tDoors)
@@ -247,7 +247,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (gCast contains: flipAnim)
 				(gEgo show:)
@@ -285,7 +285,7 @@
 					(if (gCast contains: tDoors)
 						(tDoors hide:)
 					)
-					(proc1111_7 5282 -21 -44)
+					(DoRobot 5282 -21 -44)
 					(gCurRoom drawPic: 8610)
 				)
 				(2
@@ -304,7 +304,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (gCast contains: tDoors)
 				(tDoors show:)
@@ -337,9 +337,9 @@
 				(1
 					(if (IsFlag 15)
 						(gEgo hide:)
-						(proc1111_7 5291 148 64 gEgo -1 1)
+						(DoRobot 5291 148 64 gEgo -1 1)
 					else
-						(proc1111_7 5290 112 26)
+						(DoRobot 5290 112 26)
 					)
 					(if (gCast contains: tDoors)
 						(tDoors view: 8370 posn: 183 102)
@@ -357,12 +357,12 @@
 				)
 				(3
 					(escapeMachine init:)
-					(proc1111_7 5381 -10 -13)
+					(DoRobot 5381 -10 -13)
 					(gCurRoom drawPic: 3520)
 				)
 				(4
 					(escapeMachine dispose:)
-					(proc1111_7 5383 1 -38 gEgo -1 1)
+					(DoRobot 5383 1 -38 gEgo -1 1)
 					(gCurRoom drawPic: 3541)
 				)
 				(5
@@ -380,7 +380,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(SetFlag 15)
 					(if (not (IsFlag 198))
@@ -424,7 +424,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (< global125 10)
 				(+= global125 10)
@@ -458,7 +458,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gCurRoom newRoom: 8100)
 		)

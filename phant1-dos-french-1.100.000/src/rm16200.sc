@@ -25,7 +25,7 @@
 
 	(method (init &tmp temp0)
 		(self picture: (+ 16200 (== gChapter 5)))
-		(proc1111_6)
+		(KillRobot)
 		((ScriptID 30) init:) ; FidgetCode
 		(gEgo init: setScaler: Scaler 200 43 169 83 normalize:)
 		(if (and (>= gChapter 5) (IsFlag 195))
@@ -167,9 +167,9 @@
 						init:
 					)
 					(if (== gChapter 5)
-						(proc1111_7 5053 73 50)
+						(DoRobot 5053 73 50)
 					else
-						(proc1111_7 5052 -2 0)
+						(DoRobot 5052 -2 0)
 					)
 				)
 				(1
@@ -188,7 +188,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(magicLamp show:)
 			(if (== gChapter 5)
@@ -240,11 +240,11 @@
 					(RemapColors 2 240 20) ; ByPercent
 					(RemapColors 2 241 15) ; ByPercent
 					(RemapColors 2 242 10) ; ByPercent
-					(proc1111_7 1311 27 25 gEgo 1)
+					(DoRobot 1311 27 25 gEgo 1)
 					(gCurRoom drawPic: (+ 16120 (== gChapter 5)))
 				)
 				(2
-					(proc1111_6)
+					(KillRobot)
 					(RemapColors 0) ; Off
 					(seeLantern dispose:)
 					(gEgo posn: 65 85 normalize: 7)
@@ -255,7 +255,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(RemapColors 0) ; Off
 			(if (gCast contains: seeLantern)
@@ -307,7 +307,7 @@
 						setPri: 200
 					)
 					(base hide:)
-					(proc1111_7 5040 45 0 gEgo 0)
+					(DoRobot 5040 45 0 gEgo 0)
 					(if (not (== global125 108))
 						(gCurRoom drawPic: 16129)
 					)
@@ -321,7 +321,7 @@
 				(3
 					(gEgo show:)
 					(magicLamp show:)
-					(proc1111_7 5041 -7 -30)
+					(DoRobot 5041 -7 -30)
 					(gCurRoom drawPic: 16129)
 				)
 				(4
@@ -352,7 +352,7 @@
 						play:
 					)
 					(gCurRoom drawPic: 16251)
-					(proc1111_7 5042 -66 -36)
+					(DoRobot 5042 -66 -36)
 				)
 				(5
 					(passage init: setHotspot: 4 3) ; Do, Move
@@ -368,7 +368,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(SetFlag 214)
 			(gGDacSound number: 16052 init: setVol: 100 setLoop: -1 play:)
@@ -437,7 +437,7 @@
 					(beam dispose:)
 					(SetFlag 215)
 					(gEgo hide:)
-					(proc1111_7 5051 40 34 gEgo -1 1)
+					(DoRobot 5051 40 34 gEgo -1 1)
 					(gCurRoom drawPic: 16241)
 				)
 				(2
@@ -515,7 +515,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gGDacSound stop:)
 			(SetFlag 215)
@@ -562,9 +562,9 @@
 					)
 					(gEgo hide:)
 					(if (== gChapter 5)
-						(proc1111_7 5061 47 50 gEgo -1 1)
+						(DoRobot 5061 47 50 gEgo -1 1)
 					else
-						(proc1111_7 5060 1 0 gEgo -1 1)
+						(DoRobot 5060 1 0 gEgo -1 1)
 					)
 					(gCurRoom drawPic: (+ 16240 (== gChapter 5)))
 				)
@@ -583,7 +583,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(= global125 0)
 			(gCurRoom newRoom: 38200)
@@ -754,7 +754,7 @@
 						loop: 0
 						init:
 					)
-					(proc1111_7 1297 97 -10)
+					(DoRobot 1297 97 -10)
 					(gCurRoom drawPic: (+ 16105 (== gChapter 5)))
 				)
 				(2
@@ -798,22 +798,22 @@
 					(largePainting hide:)
 					(cond
 						((< gChapter 3)
-							(proc1111_7 1292 -1 -15)
+							(DoRobot 1292 -1 -15)
 						)
 						((== gChapter 3)
-							(proc1111_7 1293 -9 -15)
+							(DoRobot 1293 -9 -15)
 						)
 						((== gChapter 4)
-							(proc1111_7 1294 0 -15)
+							(DoRobot 1294 0 -15)
 						)
 						((== gChapter 5)
-							(proc1111_7 1295 -16 -17)
+							(DoRobot 1295 -16 -17)
 						)
 						((== gChapter 6)
-							(proc1111_7 1295 -16 -17)
+							(DoRobot 1295 -16 -17)
 						)
 						((== gChapter 7)
-							(proc1111_7 1296 -16 -17)
+							(DoRobot 1296 -16 -17)
 						)
 					)
 					(gCurRoom drawPic: (+ 16210 (== gChapter 5)))
@@ -873,22 +873,22 @@
 					(largePainting hide:)
 					(cond
 						((< gChapter 3)
-							(proc1111_7 12922 -1 -15 gEgo -1 1)
+							(DoRobot 12922 -1 -15 gEgo -1 1)
 						)
 						((== gChapter 3)
-							(proc1111_7 12932 -9 -15 gEgo -1 1)
+							(DoRobot 12932 -9 -15 gEgo -1 1)
 						)
 						((== gChapter 4)
-							(proc1111_7 12942 0 -15 gEgo -1 1)
+							(DoRobot 12942 0 -15 gEgo -1 1)
 						)
 						((== gChapter 5)
-							(proc1111_7 12952 -16 -17 gEgo -1 1)
+							(DoRobot 12952 -16 -17 gEgo -1 1)
 						)
 						((== gChapter 6)
-							(proc1111_7 12952 -16 -17 gEgo -1 1)
+							(DoRobot 12952 -16 -17 gEgo -1 1)
 						)
 						((== gChapter 7)
-							(proc1111_7 12962 -16 -17 gEgo -1 1)
+							(DoRobot 12962 -16 -17 gEgo -1 1)
 						)
 					)
 					(gCurRoom drawPic: (+ 16210 (== gChapter 5)))
@@ -900,7 +900,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(global114 endPause: 1)
 			(= global125 41)

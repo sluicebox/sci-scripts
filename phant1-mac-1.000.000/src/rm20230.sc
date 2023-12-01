@@ -66,7 +66,7 @@
 						(gEgo put: 8) ; invMatch
 					)
 					(if (not (IsFlag 27))
-						(proc1111_7 543 50 28)
+						(DoRobot 543 50 28)
 					else
 						(++ state)
 						(self cue:)
@@ -90,7 +90,7 @@
 					(if (not (IsFlag 27))
 						(gCurRoom drawPic: 20240 picture: 20240)
 						(lantern dispose:)
-						(proc1111_7 542 16 -13 gEgo -1 1)
+						(DoRobot 542 16 -13 gEgo -1 1)
 					else
 						(self dispose:)
 					)
@@ -143,7 +143,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(gGame setIntensity: 100)

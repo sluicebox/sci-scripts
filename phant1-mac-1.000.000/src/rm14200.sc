@@ -22,7 +22,7 @@
 	)
 
 	(method (init)
-		(proc1111_6)
+		(KillRobot)
 		(gEgo
 			init:
 			setScaler: Scaler 69 35 130 93
@@ -67,7 +67,7 @@
 					(global114 pause:)
 					(teddy hide:)
 					(chair hide:)
-					(proc1111_7 1221 101 30)
+					(DoRobot 1221 101 30)
 					(gCurRoom drawPic: (+ 14120 (== gChapter 5)))
 					(SetFlag 58)
 				)
@@ -87,7 +87,7 @@
 				(0
 					(global114 endPause: 1)
 					(cloud view: 14200 x: 220 y: 55)
-					(proc1111_6)
+					(KillRobot)
 					(gEgo posn: 212 103 normalize: 613)
 					(teddy show:)
 					(chair show:)
@@ -112,7 +112,7 @@
 					(global114 pause:)
 					(Load rsPIC 14110)
 					(Lock rsPIC 14110 1)
-					(proc1111_7 2440 -16 28)
+					(DoRobot 2440 -16 28)
 				)
 				(1
 					(DoAudio 12 0) ; AudMixCheck
@@ -124,7 +124,7 @@
 					(cloud hide:)
 					(teddy hide:)
 					(gCurRoom drawPic: 14110)
-					(proc1111_7 2441 -3 -16)
+					(DoRobot 2441 -3 -16)
 				)
 				(3
 					(gGDacSound stop:)
@@ -135,7 +135,7 @@
 					(DoAudio 12 1) ; AudMixCheck
 					(DoAudio 18 0) ; AudDACCritical
 					(gCurRoom drawPic: 14100)
-					(proc1111_7 2442 -6 41 gEgo -1 1)
+					(DoRobot 2442 -6 41 gEgo -1 1)
 				)
 				(5
 					(Lock rsPIC 14110 0)
@@ -146,7 +146,7 @@
 			)
 		else
 			(gGDacSound stop:)
-			(proc1111_6)
+			(KillRobot)
 			(Lock rsPIC 14110 0)
 			(DoAudio 12 1) ; AudMixCheck
 			(global114 endPause: 1)

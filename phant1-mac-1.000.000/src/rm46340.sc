@@ -190,9 +190,9 @@
 					)
 					(= local4 1)
 					(if (== global165 8)
-						(proc1111_7 9240 -7 -39 0 -1 1)
+						(DoRobot 9240 -7 -39 0 -1 1)
 					else
-						(proc1111_7 9241 94 -39 0 -1 1)
+						(DoRobot 9241 94 -39 0 -1 1)
 					)
 				)
 				(1
@@ -222,7 +222,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9248 -7 -23 0 -1 1)
+					(DoRobot 9248 -7 -23 0 -1 1)
 					(changeTo14200 doit:)
 				)
 				(1
@@ -255,7 +255,7 @@
 					(if (gCast contains: shard)
 						(shard dispose:)
 					)
-					(proc1111_7 9315 -7 -39 0 -1 1)
+					(DoRobot 9315 -7 -39 0 -1 1)
 					(gCurRoom drawPic: 15210)
 				)
 				(1
@@ -316,7 +316,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9242 94 -7 0 -1 1)
+					(DoRobot 9242 94 -7 0 -1 1)
 				)
 				(1
 					(if (IsFlag 135)
@@ -363,7 +363,7 @@
 					(doorExit dispose:)
 					(doorBack dispose:)
 					(= local0 1)
-					(proc1111_7 9430 -10 -44 0 90 1)
+					(DoRobot 9430 -10 -44 0 90 1)
 					(changeTo14250 doit:)
 				)
 				(1
@@ -411,7 +411,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9244 -8 -20 0 -1 1)
+					(DoRobot 9244 -8 -20 0 -1 1)
 					(changeTo14200 doit:)
 				)
 				(1
@@ -442,7 +442,7 @@
 						((ScriptID 45951 2) writeString: temp0) ; chase_dat
 						(temp0 dispose:)
 					)
-					(proc1111_7 9243 -6 -36 0 -1 1)
+					(DoRobot 9243 -6 -36 0 -1 1)
 					(changeTo14200 doit:)
 				)
 				(1
@@ -476,16 +476,16 @@
 						(temp0 dispose:)
 					)
 					(if (IsFlag 18)
-						(proc1111_7 9245 -11 -38 0 -1 1)
+						(DoRobot 9245 -11 -38 0 -1 1)
 					else
 						(SetFlag 18)
 						(= local1 1)
 						(donFeat setHotspot: 0)
 						(gGDacSound stop:)
 						(if (gEgo has: 10) ; invBrooch
-							(proc1111_7 9239 -10 -20 0 -1 1)
+							(DoRobot 9239 -10 -20 0 -1 1)
 						else
-							(proc1111_7 9246 -16 -41 0 -1 1)
+							(DoRobot 9246 -16 -41 0 -1 1)
 						)
 					)
 					(changeTo14200 doit:)
@@ -534,7 +534,7 @@
 					(doorExit dispose:)
 					(doorBack dispose:)
 					(shard dispose:)
-					(proc1111_7 9431 -10 -38 0 -1 1)
+					(DoRobot 9431 -10 -38 0 -1 1)
 					(changeTo14250 doit:)
 					(gEgo get: 19) ; invCutter
 					((ScriptID 45951 1) doit:) ; checkInv
@@ -589,7 +589,7 @@
 						(temp0 dispose:)
 					)
 					(shard dispose:)
-					(proc1111_7 9249 -6 -43 0)
+					(DoRobot 9249 -6 -43 0)
 					(changeTo14200 doit:)
 				)
 				(1
@@ -597,7 +597,7 @@
 					((ScriptID 45951 1) doit:) ; checkInv
 				)
 				(2
-					(proc1111_7 9432 -16 -51 0 -1 1)
+					(DoRobot 9432 -16 -51 0 -1 1)
 					(changeTo14250 doit:)
 					(if (IsFlag 135)
 						(= local3 1)

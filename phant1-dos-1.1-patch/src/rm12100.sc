@@ -64,7 +64,7 @@
 		(southExit init: 3)
 		(toVanity init: 4)
 		(door init: 10)
-		(proc1111_6)
+		(KillRobot)
 		(switch gPrevRoomNum
 			(12200
 				(if (== gChapter 5)
@@ -185,7 +185,7 @@
 				(0
 					(proc1111_8)
 					(gCurRoom drawPic: 12421)
-					(proc1111_7 2310 -3 -22)
+					(DoRobot 2310 -3 -22)
 					(if (and (not (IsFlag 42)) (not (IsFlag 325)))
 						(= register (View new:))
 						(register view: 12421 posn: 110 113 init:)
@@ -207,7 +207,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(if register
 						(register dispose:)
 					)
@@ -344,7 +344,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 920 123 31)
+					(DoRobot 920 123 31)
 					(tarot dispose:)
 					(gCurRoom drawPic: 12420)
 					(SetFlag 42)
@@ -361,7 +361,7 @@
 			(switch (= state newState)
 				(0
 					(gEgo get: 9) ; invTarot
-					(proc1111_6)
+					(KillRobot)
 					(gGame handsOn:)
 					(gEgo normalize: 614 posn: 242 115)
 					(gCurRoom drawPic: (gCurRoom picture:))

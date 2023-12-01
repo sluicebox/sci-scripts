@@ -32,7 +32,7 @@
 	)
 
 	(method (init)
-		(proc1111_6)
+		(KillRobot)
 		(gUser canControl: 1)
 		(gEgo init: setScaler: Scaler 139 65 140 103 normalize: hide:)
 		((ScriptID 30) init:) ; FidgetCode
@@ -188,7 +188,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gGame fade: 0 (gGame intensity:) 1)
 					(gGame handsOn:)
@@ -655,7 +655,7 @@
 					(compute init:)
 					(photo view: 17413 posn: 260 125 init:)
 					(gCurRoom drawPic: 17410)
-					(proc1111_7 4330 -38 -13)
+					(DoRobot 4330 -38 -13)
 				)
 				(2
 					(harriet show:)
@@ -676,7 +676,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(compute dispose:)
 					(gEgo
 						posn: 89 145
@@ -713,7 +713,7 @@
 				(1
 					(harriet hide:)
 					(doorView hide:)
-					(proc1111_7 4340 -38 -13)
+					(DoRobot 4340 -38 -13)
 					(compute init:)
 					(photo view: 17413 posn: 260 125 init:)
 					(gCurRoom drawPic: 17410)
@@ -736,7 +736,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(compute dispose:)
 					(doorView show:)
 					(harriet show:)
@@ -776,7 +776,7 @@
 					(compute init:)
 					(photo view: 17413 posn: 260 125 init:)
 					(gCurRoom drawPic: 17410)
-					(proc1111_7 4262 -38 -7 gEgo 200)
+					(DoRobot 4262 -38 -7 gEgo 200)
 				)
 				(2
 					(compute dispose:)
@@ -810,7 +810,7 @@
 						normalize: 0
 						show:
 					)
-					(proc1111_6)
+					(KillRobot)
 					(doorView show:)
 					(harriet show:)
 					(gEgo put: 9) ; invTarot
@@ -842,7 +842,7 @@
 					(harriet hide:)
 					(doorView hide:)
 					(compute init:)
-					(proc1111_7 4320 -38 -17)
+					(DoRobot 4320 -38 -17)
 					(photo view: 17413 posn: 260 125 init:)
 					(gCurRoom drawPic: 17410)
 				)
@@ -865,7 +865,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(compute dispose:)
 					(gEgo
 						posn: 89 145

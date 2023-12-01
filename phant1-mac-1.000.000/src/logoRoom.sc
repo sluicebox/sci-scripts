@@ -58,13 +58,13 @@
 				(= cycles 2)
 			)
 			(1
-				(proc1111_7 91 72 44 0)
+				(DoRobot 91 72 44 0)
 			)
 			(2
 				(= cycles 1)
 			)
 			(3
-				(proc1111_7 90 0 0 0 -1 1)
+				(DoRobot 90 0 0 0 -1 1)
 			)
 			(4
 				(= seconds 4)

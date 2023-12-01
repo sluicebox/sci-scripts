@@ -256,7 +256,7 @@
 				(1
 					(gCurRoom drawPic: 28900)
 					(DoAudio 12 0) ; AudMixCheck
-					(proc1111_7 1690 124 42)
+					(DoRobot 1690 124 42)
 				)
 				(2
 					(DoAudio 12 1) ; AudMixCheck
@@ -267,7 +267,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(gEgo normalize: 1 posn: 71 46)
 			(DoAudio 12 1) ; AudMixCheck
 			(gCurRoom drawPic: 28800)
@@ -288,16 +288,16 @@
 					(gGame handsOff:)
 					(SetFlag 184)
 					(ClearFlag 185)
-					(proc1111_7 4420 -5 -2)
+					(DoRobot 4420 -5 -2)
 					(gCurRoom picture: 28800)
 				)
 				(1
-					(proc1111_7 4421 64 27)
+					(DoRobot 4421 64 27)
 					(gCurRoom drawPic: 28900)
 				)
 				(2
 					(Load rsVIEW 28802)
-					(proc1111_7 4422 9 -24 gEgo -1 1)
+					(DoRobot 4422 9 -24 gEgo -1 1)
 					(gCurRoom drawPic: 28800)
 				)
 				(3
@@ -311,16 +311,16 @@
 				(4
 					(register dispose:)
 					(= register 0)
-					(proc1111_7 4426 125 -6)
+					(DoRobot 4426 125 -6)
 					(gCurRoom drawPic: 28915)
 				)
 				(5
-					(proc1111_7 4427 -20 -17)
+					(DoRobot 4427 -20 -17)
 					(gCurRoom drawPic: 28803)
 				)
 				(6
 					(gCurRoom drawPic: 28910)
-					(proc1111_7 4425 85 48)
+					(DoRobot 4425 85 48)
 				)
 				(7
 					(gEgo normalize: 0 posn: 60 50)
@@ -332,7 +332,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(if register
 				(register dispose:)
 				(= register 0)
@@ -365,7 +365,7 @@
 				(1
 					(gCurRoom drawPic: (+ 28910 (== gChapter 5)))
 					(DoAudio 12 0) ; AudMixCheck
-					(proc1111_7 (+ 4423 register) 84 30 gEgo 200)
+					(DoRobot (+ 4423 register) 84 30 gEgo 200)
 				)
 				(2
 					(gCurRoom drawPic: (+ 28803 (== gChapter 5)))
@@ -384,7 +384,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gCurRoom drawPic: (+ 28803 (== gChapter 5)))
 			(DoAudio 12 1) ; AudMixCheck

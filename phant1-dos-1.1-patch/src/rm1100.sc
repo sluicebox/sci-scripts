@@ -135,7 +135,7 @@
 
 	(method (init &tmp temp0)
 		(= temp0 0)
-		(proc1111_6)
+		(KillRobot)
 		(gEgo z: 0)
 		(switch gPrevRoomNum
 			(900
@@ -1002,7 +1002,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gEgo
 				view: 40
@@ -1323,7 +1323,7 @@
 		(ClearFlag 248)
 		(global114 play: 911)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(localproc_1)
@@ -1390,54 +1390,54 @@
 				(0
 					(gGame handsOff:)
 					(donsCup hide:)
-					(proc1111_7 4230 -5 -33)
+					(DoRobot 4230 -5 -33)
 				)
 				(1
-					(proc1111_7 4231 -7 -7)
+					(DoRobot 4231 -7 -7)
 					(gCurRoom drawPic: 1730 picture: 1730)
 				)
 				(2
-					(proc1111_7 42395 48 -3)
+					(DoRobot 42395 48 -3)
 					(gCurRoom drawPic: 1770 picture: 1770)
 				)
 				(3
-					(proc1111_7 4234 27 8)
+					(DoRobot 4234 27 8)
 					(gCurRoom drawPic: 1730 picture: 1730)
 				)
 				(4
-					(proc1111_7 4235 74 10)
+					(DoRobot 4235 74 10)
 					(gCurRoom drawPic: 1710 picture: 1710)
 				)
 				(5
-					(proc1111_7 4236 57 -6)
+					(DoRobot 4236 57 -6)
 					(gCurRoom drawPic: 1770 picture: 1770)
 				)
 				(6
-					(proc1111_7 4237 34 8)
+					(DoRobot 4237 34 8)
 					(gCurRoom drawPic: 1730 picture: 1730)
 				)
 				(7
-					(proc1111_7 4238 58 -3)
+					(DoRobot 4238 58 -3)
 					(gCurRoom drawPic: 1770 picture: 1770)
 				)
 				(8
-					(proc1111_7 4239 26 16)
+					(DoRobot 4239 26 16)
 					(gCurRoom drawPic: 1730 picture: 1730)
 				)
 				(9
-					(proc1111_7 42390 72 4)
+					(DoRobot 42390 72 4)
 					(gCurRoom drawPic: 1770 picture: 1770)
 				)
 				(10
-					(proc1111_7 42391 34 16)
+					(DoRobot 42391 34 16)
 					(gCurRoom drawPic: 1730 picture: 1730)
 				)
 				(11
-					(proc1111_7 42394 -9 -1)
+					(DoRobot 42394 -9 -1)
 					(gCurRoom drawPic: 1710 picture: 1710)
 				)
 				(12
-					(proc1111_7 42393 113 27 gEgo 30)
+					(DoRobot 42393 113 27 gEgo 30)
 					(gCurRoom drawPic: 1200 picture: 1200)
 				)
 				(13
@@ -1451,7 +1451,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(= global204 1)

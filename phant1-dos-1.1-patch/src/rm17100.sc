@@ -565,7 +565,7 @@
 					(computer setPri: 159 posn: 138 129 init:)
 					(gEgo hide: view: 2)
 					(photo view: 17332 posn: 283 77)
-					(proc1111_7 1380 49 -21 gEgo 200)
+					(DoRobot 1380 49 -21 gEgo 200)
 					(gCurRoom drawPic: 17330)
 				)
 				(2)
@@ -600,7 +600,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(fire init: cycleSpeed: 10 setCycle: Fwd)
 					(farCompute view: 17113 init:)
 					(if (gCast contains: donProp)
@@ -642,7 +642,7 @@
 					(donProp dispose:)
 					(farCompute dispose:)
 					(gEgo hide:)
-					(proc1111_7 1400 -2 19)
+					(DoRobot 1400 -2 19)
 					(photo view: 17305 posn: 145 84)
 					(gCurRoom drawPic: 17305)
 				)
@@ -669,7 +669,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(fire init: cycleSpeed: 10 setCycle: Fwd)
 					(gEgo normalize: 1 show:)
 					(farCompute view: 17113 init: view: 17113 show:)
@@ -752,10 +752,10 @@
 					(= ticks 25)
 				)
 				(5
-					(proc1111_7 3112 107 -10 gEgo 160 1)
+					(DoRobot 3112 107 -10 gEgo 160 1)
 				)
 				(6
-					(proc1111_6)
+					(KillRobot)
 					(computer dispose:)
 					(fire init: cycleSpeed: 10 setCycle: Fwd)
 					(farCompute view: 17113 init: show:)
@@ -784,7 +784,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(ClearFlag 121)
 					(global114 play: 911)
 					(= global115 0)
@@ -835,7 +835,7 @@
 					(fire dispose:)
 					(computer x: 155 y: 115 setPri: 200 init:)
 					(photo view: 17332 posn: 283 77)
-					(proc1111_7 3110 90 -10 gEgo 160)
+					(DoRobot 3110 90 -10 gEgo 160)
 					(gCurRoom drawPic: 17330)
 				)
 				(3
@@ -851,7 +851,7 @@
 					((ScriptID 0 14) dispose:) ; exitButt
 					(computer hide:)
 					(global114 pause:)
-					(proc1111_7 3111 137 15 gEgo 160)
+					(DoRobot 3111 137 15 gEgo 160)
 					(gCurRoom drawPic: 17330)
 				)
 				(5)
@@ -881,7 +881,7 @@
 					(proc1111_9)
 					((ScriptID 0 14) dispose:) ; exitButt
 					(SetFlag 243)
-					(proc1111_6)
+					(KillRobot)
 					(computer dispose:)
 					(desk dispose:)
 					(farCompute view: 17113 init:)
@@ -915,9 +915,9 @@
 					(farCompute hide:)
 					(fire dispose:)
 					(if (not (IsFlag 246))
-						(proc1111_7 3120 9 -42)
+						(DoRobot 3120 9 -42)
 					else
-						(proc1111_7 3130 11 -40)
+						(DoRobot 3130 11 -40)
 					)
 					(photo view: 17305 posn: 145 84)
 					(Load rsVIEW 17100)
@@ -950,7 +950,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(photo view: 17100 posn: 280 101)
 					(gEgo
 						view: 7
@@ -993,8 +993,8 @@
 					(= cycles 25)
 				)
 				(2
-					(proc1111_6)
-					(proc1111_7 3990 -5 -35)
+					(KillRobot)
+					(DoRobot 3990 -5 -35)
 					(gCurRoom drawPic: 17410)
 				)
 				(3
@@ -1020,7 +1020,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(fire view: 17107 posn: 56 110 cycleSpeed: 10 setCycle: Fwd)
 					(farCompute view: 17113 posn: 156 83)
 					(gEgo
@@ -1136,7 +1136,7 @@
 						init:
 					)
 					(photo dispose:)
-					(proc1111_7 3110 90 -10 gEgo 160)
+					(DoRobot 3110 90 -10 gEgo 160)
 					(gCurRoom drawPic: 17331)
 				)
 				(2
@@ -1160,7 +1160,7 @@
 					(ClearFlag 121)
 					(computer hide:)
 					(global114 pause:)
-					(proc1111_7 3111 137 15 gEgo 160)
+					(DoRobot 3111 137 15 gEgo 160)
 					(gCurRoom drawPic: 17331)
 				)
 				(4
@@ -1208,7 +1208,7 @@
 					(ClearFlag 121)
 					(desk dispose:)
 					((ScriptID 0 14) dispose:) ; exitButt
-					(proc1111_6)
+					(KillRobot)
 					(SetFlag 244)
 					(if (gCast contains: computer)
 						(computer dispose:)
@@ -1263,7 +1263,7 @@
 					)
 					(photo view: 17332 posn: 283 77)
 					(suitcase view: 17333 x: 253 y: 81)
-					(proc1111_7 5480 142 27 gEgo 160)
+					(DoRobot 5480 142 27 gEgo 160)
 					(gCurRoom drawPic: 17330)
 				)
 				(2
@@ -1274,7 +1274,7 @@
 				)
 				(4
 					(gEgo hide:)
-					(proc1111_6)
+					(KillRobot)
 					(= cycles 3)
 				)
 				(5
@@ -1290,7 +1290,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gGame setIntensity: 0)
 					(= global125 52)
 					(SetFlag 245)
@@ -1323,7 +1323,7 @@
 					(compute init:)
 					(photo view: 17413 posn: 260 125 init:)
 					(gCurRoom drawPic: 17410)
-					(proc1111_7 4330 -38 -13 gEgo -1 1)
+					(DoRobot 4330 -38 -13 gEgo -1 1)
 				)
 				(2
 					(SetFlag 249)
@@ -1360,7 +1360,7 @@
 					(harriet hide:)
 					(farCompute hide:)
 					(fire hide:)
-					(proc1111_7 4340 -38 -13 gEgo -1 1)
+					(DoRobot 4340 -38 -13 gEgo -1 1)
 					(compute init:)
 					(photo view: 17413 posn: 258 124 init:)
 					(gCurRoom drawPic: 17410)
@@ -1402,7 +1402,7 @@
 					(compute init:)
 					(photo view: 17413 posn: 260 125 init:)
 					(gCurRoom drawPic: 17410)
-					(proc1111_7 4262 -38 -7 gEgo 200 1)
+					(DoRobot 4262 -38 -7 gEgo 200 1)
 				)
 				(2
 					(gEgo put: 9) ; invTarot
@@ -1442,7 +1442,7 @@
 					(compute init:)
 					(fire hide:)
 					(gEgo hide:)
-					(proc1111_7 4320 -38 -17 gEgo -1 1)
+					(DoRobot 4320 -38 -17 gEgo -1 1)
 					(photo view: 17413 posn: 260 125 init:)
 					(gCurRoom drawPic: 17410)
 				)

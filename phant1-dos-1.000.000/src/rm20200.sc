@@ -51,7 +51,7 @@
 	)
 
 	(method (init &tmp temp0)
-		(proc1111_6)
+		(KillRobot)
 		(= temp0 0)
 		(if (and (< gChapter 6) (not (IsFlag 33)))
 			(milStone init: approachVerbs: 0 setHotspot: 4 3) ; Do, Move
@@ -627,7 +627,7 @@
 	(method (dispose)
 		(sFx stop:)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 		)
 		(= global115 0)
 		(SetFlag 26)
@@ -680,7 +680,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 		)
 		(= global115 0)
 		(gEgo
@@ -770,7 +770,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 		)
 		(= global115 0)
 		(hammer dispose:)
@@ -852,7 +852,7 @@
 				(0
 					(gGame handsOff:)
 					(= global125 0)
-					(proc1111_7 590 108 8)
+					(DoRobot 590 108 8)
 					(gCurRoom drawPic: 20260 picture: 20260)
 				)
 				(1
@@ -866,7 +866,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 		)
 		(= global115 0)
 		(if (and (not (gEgo has: 5)) (not (IsFlag 128))) ; invHammer
@@ -990,7 +990,7 @@
 					(if (gCast contains: hammer)
 						(hammer z: 1000)
 					)
-					(proc1111_7 631 75 16)
+					(DoRobot 631 75 16)
 					(gCurRoom drawPic: 20320 picture: 20320)
 				)
 				(6
@@ -1015,7 +1015,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 		)
 		(= global115 0)
 		(= global125 0)
@@ -1190,7 +1190,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 580 120 9)
+					(DoRobot 580 120 9)
 					(gCurRoom drawPic: 20260 picture: 20260)
 				)
 				(1
@@ -1204,7 +1204,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 		)
 		(= global115 0)
 		(SetFlag 29)
@@ -1272,7 +1272,7 @@
 				(3
 					(= global125 0)
 					(gEgo setPri: -1)
-					(proc1111_7 570 92 8)
+					(DoRobot 570 92 8)
 					(gCurRoom drawPic: 20250 picture: 20250)
 					(if local0
 						(hammer dispose:)
@@ -1293,7 +1293,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 		)
 		(= global115 0)
 		(dust dispose:)
@@ -1422,7 +1422,7 @@
 				)
 				(1
 					(gEgo hide:)
-					(proc1111_7 3160 60 5 gEgo 100 1)
+					(DoRobot 3160 60 5 gEgo 100 1)
 					(if (gCast contains: hammer)
 						(hammer x: 241 y: 122 view: 602)
 						(UpdateScreenItem hammer)
@@ -1430,7 +1430,7 @@
 					(gCurRoom drawPic: 20200 picture: 20200)
 				)
 				(2
-					(proc1111_7 3161 56 12 gEgo -1 1)
+					(DoRobot 3161 56 12 gEgo -1 1)
 				)
 				(3
 					(self dispose:)
@@ -1441,7 +1441,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(SetFlag 25)

@@ -101,7 +101,7 @@
 				(0
 					(gGame handsOff:)
 					(SetFlag 2)
-					(proc1111_7 162 54 -9 gEgo 120 1)
+					(DoRobot 162 54 -9 gEgo 120 1)
 				)
 				(1
 					(matches dispose:)

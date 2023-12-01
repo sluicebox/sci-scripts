@@ -31,20 +31,20 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 6750 97 0)
+					(DoRobot 6750 97 0)
 				)
 				(1
 					(global114 pause:)
-					(proc1111_7 6751 3 -26)
+					(DoRobot 6751 3 -26)
 					(gCurRoom drawPic: 210 picture: 210)
 				)
 				(2
 					(global114 endPause:)
-					(proc1111_7 6752 115 -4)
+					(DoRobot 6752 115 -4)
 					(gCurRoom drawPic: 36440 picture: 36440)
 				)
 				(3
-					(proc1111_7 6753 108 0 gEgo -1 1)
+					(DoRobot 6753 108 0 gEgo -1 1)
 					(gCurRoom drawPic: 221 picture: 221)
 				)
 				(4
@@ -52,7 +52,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(global114 endPause: 1)
 			(= global115 0)
 			(gCurRoom newRoom: 36200)

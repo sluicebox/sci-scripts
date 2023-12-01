@@ -159,7 +159,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 2002 -14 -27 gEgo -1 1)
+					(DoRobot 2002 -14 -27 gEgo -1 1)
 					(gCurRoom drawPic: 5202)
 				)
 				(1
@@ -170,7 +170,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo hide:)
 					(gCurRoom newRoom: 5100)
@@ -184,7 +184,7 @@
 	(properties)
 
 	(method (dispose)
-		(proc1111_6)
+		(KillRobot)
 		(= global115 0)
 		(gCurRoom drawPic: 5203)
 		(gEgo
@@ -204,7 +204,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 2000 140 -23)
+					(DoRobot 2000 140 -23)
 				)
 				(1
 					(self dispose:)
@@ -229,7 +229,7 @@
 			(switch (= state newState)
 				(0
 					(bigExitFeat dispose:)
-					(proc1111_7 2001 97 -4 gEgo 200)
+					(DoRobot 2001 97 -4 gEgo 200)
 					(figurine dispose:)
 					(gCurRoom drawPic: 5202)
 				)
@@ -247,7 +247,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(bigExitFeat init: 1)
 					(gCurRoom drawPic: 5203)
@@ -270,7 +270,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 2020 19 27)
+					(DoRobot 2020 19 27)
 					(gCurRoom drawPic: 5202)
 				)
 				(1
@@ -281,7 +281,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo hide:)
 					(gCurRoom setScript: theDrawerScr)
@@ -341,7 +341,7 @@
 							init:
 						)
 					)
-					(proc1111_7 2023 34 25)
+					(DoRobot 2023 34 25)
 					(gCurRoom drawPic: 5202)
 				)
 				(2
@@ -357,7 +357,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(if (gCast contains: (ScriptID 0 14)) ; exitButt
 						((ScriptID 0 14) dispose:) ; exitButt
 					)
@@ -487,7 +487,7 @@
 							setHotspot: 4 3 ; Do, Move
 						)
 					)
-					(proc1111_7 2021 60 31)
+					(DoRobot 2021 60 31)
 					(gCurRoom drawPic: 5202)
 				)
 				(1
@@ -517,7 +517,7 @@
 							init:
 						)
 					)
-					(proc1111_7 2022 31 25)
+					(DoRobot 2022 31 25)
 					(gCurRoom drawPic: 5202)
 				)
 				(4
@@ -541,7 +541,7 @@
 			(switch (= state newState)
 				(0
 					(ClearFlag 248)
-					(proc1111_6)
+					(KillRobot)
 					(global114 endPause: 1)
 					(if
 						(or

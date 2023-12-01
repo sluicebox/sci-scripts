@@ -130,7 +130,7 @@
 									((gEgo has: 2) ; sword
 										(gMessager say: 1 0 3 0 0 215) ; "You cannot make the arcane gestures to cast spells while carrying your shield."
 									)
-									((gEgo knows: 23)
+									((gEgo knows: 23) ; flameDartSpell
 										(if (CastSpell 23)
 											(client setEgoMP: [gEgoStats 16]) ; mana
 											(HandsOff)
@@ -151,7 +151,7 @@
 									((gEgo has: 2) ; sword
 										(gMessager say: 1 0 3 0 0 215) ; "You cannot make the arcane gestures to cast spells while carrying your shield."
 									)
-									((gEgo knows: 21)
+									((gEgo knows: 21) ; zapSpell
 										(if (CastSpell 21)
 											(client setEgoMP: [gEgoStats 16]) ; mana
 											(HandsOff)
@@ -176,7 +176,7 @@
 									((gEgo has: 2) ; sword
 										(gMessager say: 1 0 3 0 0 215) ; "You cannot make the arcane gestures to cast spells while carrying your shield."
 									)
-									((gEgo knows: 20)
+									((gEgo knows: 20) ; dazzleSpell
 										(if (CastSpell 20)
 											(client setEgoMP: [gEgoStats 16]) ; mana
 											(HandsOff)
@@ -249,7 +249,7 @@
 							((gEgo has: 2) ; sword
 								(gMessager say: 1 0 3 0 0 215) ; "You cannot make the arcane gestures to cast spells while carrying your shield."
 							)
-							((gEgo knows: 23)
+							((gEgo knows: 23) ; flameDartSpell
 								(if (CastSpell 23)
 									(client setEgoMP: [gEgoStats 16]) ; mana
 									(HandsOff)
@@ -271,7 +271,7 @@
 							((gEgo has: 2) ; sword
 								(gMessager say: 1 0 3 0 0 215) ; "You cannot make the arcane gestures to cast spells while carrying your shield."
 							)
-							((gEgo knows: 20)
+							((gEgo knows: 20) ; dazzleSpell
 								(if (CastSpell 20)
 									(client setEgoMP: [gEgoStats 16]) ; mana
 									(HandsOff)
@@ -293,7 +293,7 @@
 							((gEgo has: 2) ; sword
 								(gMessager say: 1 0 3 0 0 215) ; "You cannot make the arcane gestures to cast spells while carrying your shield."
 							)
-							((gEgo knows: 21)
+							((gEgo knows: 21) ; zapSpell
 								(if (CastSpell 21)
 									(client setEgoMP: [gEgoStats 16]) ; mana
 									(HandsOff)

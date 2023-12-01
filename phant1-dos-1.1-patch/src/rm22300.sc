@@ -40,7 +40,7 @@
 				(0
 					(gGame handsOff:)
 					(gCurRoom picture: 22350)
-					(proc1111_7 5144 115 28)
+					(DoRobot 5144 115 28)
 				)
 				(1
 					(gGDacSound
@@ -50,18 +50,18 @@
 					)
 					(gGDacSound setVol: 60)
 					(gCurRoom drawPic: 22300)
-					(proc1111_7 5140 84 -15)
+					(DoRobot 5140 84 -15)
 				)
 				(2
 					(gCurRoom drawPic: 22310)
-					(proc1111_7 5143 -52 -16 gEgo 250)
+					(DoRobot 5143 -52 -16 gEgo 250)
 				)
 				(3
-					(proc1111_7 5141 89 -29 gEgo -1 1)
+					(DoRobot 5141 89 -29 gEgo -1 1)
 					(gCurRoom drawPic: 22300)
 				)
 				(4
-					(proc1111_7 5142 94 -38 gEgo -1 1)
+					(DoRobot 5142 94 -38 gEgo -1 1)
 				)
 				(5
 					(gGDacSound stop:)
@@ -70,7 +70,7 @@
 			)
 		else
 			(gGDacSound stop:)
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gCurRoom newRoom: 22100)
 		)

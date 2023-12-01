@@ -44,7 +44,7 @@
 	(method (init &tmp temp0)
 		(= temp0 0)
 		(= global115 0)
-		(proc1111_6)
+		(KillRobot)
 		(if (!= gChapter 5)
 			(= picture 18100)
 		else
@@ -328,7 +328,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(if (IsFlag 264)
@@ -400,7 +400,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gEgo
 				view: 3
@@ -463,7 +463,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(if register
@@ -667,7 +667,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(gGDacSound stop:)
@@ -802,7 +802,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(gGDacSound stop:)

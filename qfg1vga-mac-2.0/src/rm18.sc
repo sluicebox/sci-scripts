@@ -161,7 +161,7 @@
 			)
 			(6
 				(User canInput: 1)
-				(if (gEgo knows: 23)
+				(if (gEgo knows: 23) ; flameDartSpell
 					(gTheIconBar enable: 6)
 				)
 				(unknown_18_4 setMotion: MoveTo 205 173 self)

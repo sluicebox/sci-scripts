@@ -106,7 +106,7 @@
 				(1
 					(SetFlag 177)
 					(chokeMachine posn: 189 136 view: 9111)
-					(proc1111_7 1150 77 29)
+					(DoRobot 1150 77 29)
 					(gCurRoom drawPic: 9110)
 				)
 				(2
@@ -123,7 +123,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(SetFlag 177)
 			(chokeMachine
@@ -168,7 +168,7 @@
 						view: (+ 9220 (== gChapter 5))
 						setPri: 200
 					)
-					(proc1111_7 1160 171 46)
+					(DoRobot 1160 171 46)
 					(gCurRoom drawPic: (+ 9220 (== gChapter 5)))
 				)
 				(2
@@ -185,7 +185,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(chokeMachine
 				posn: 152 133
@@ -210,7 +210,7 @@
 				(0
 					(chokeMachine posn: 145 100 view: 9000)
 					(record init: setCycle: Fwd cycleSpeed: 14)
-					(proc1111_7 2401 -12 21)
+					(DoRobot 2401 -12 21)
 				)
 				(1
 					(record dispose:)
@@ -230,7 +230,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (gCast contains: record)
 				(record dispose:)
@@ -277,7 +277,7 @@
 				)
 				(1
 					(chokeMachine posn: 174 148 view: (+ 9220 (== gChapter 5)))
-					(proc1111_7 2410 108 49 gEgo 10)
+					(DoRobot 2410 108 49 gEgo 10)
 					(gCurRoom drawPic: (+ 9220 (== gChapter 5)))
 				)
 				(2
@@ -294,7 +294,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(chokeMachine
 				posn: 152 133
@@ -334,7 +334,7 @@
 				)
 				(1
 					(chokeMachine posn: 145 100 view: (+ 9000 (== gChapter 5)))
-					(proc1111_7 1130 99 36)
+					(DoRobot 1130 99 36)
 					(gCurRoom drawPic: (+ 9000 (== gChapter 5)))
 				)
 				(2
@@ -351,7 +351,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(chokeMachine
 				posn: 152 133
@@ -396,7 +396,7 @@
 						view: (+ 9000 (== gChapter 5))
 						setPri: 100
 					)
-					(proc1111_7 4030 110 41)
+					(DoRobot 4030 110 41)
 					(gCurRoom drawPic: (+ 9000 (== gChapter 5)))
 				)
 				(2
@@ -414,7 +414,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(SetFlag 404)
 			(chokeMachine
@@ -457,7 +457,7 @@
 				)
 				(1
 					(chokeMachine posn: 133 117 view: (+ 9210 (== gChapter 5)))
-					(proc1111_7 1140 -36 -38 gEgo 126)
+					(DoRobot 1140 -36 -38 gEgo 126)
 					(gCurRoom drawPic: (+ 9210 (== gChapter 5)))
 				)
 				(2
@@ -490,7 +490,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(global114 endPause: 1)
 			(chokeMachine
@@ -569,7 +569,7 @@
 				(1
 					(global114 pause:)
 					(chokeMachine posn: 131 147 view: 9200)
-					(proc1111_7 4020 41 -43 gEgo 200)
+					(DoRobot 4020 41 -43 gEgo 200)
 					(gCurRoom drawPic: 9200)
 				)
 				(2
@@ -585,7 +585,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (gFeatures contains: mirror)
 				(mirror dispose:)

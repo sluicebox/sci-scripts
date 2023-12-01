@@ -27,7 +27,7 @@
 	)
 
 	(method (init)
-		(proc1111_6)
+		(KillRobot)
 		(global114 play: 4050)
 		(Palette 2 55 135 70) ; PalIntensity
 		(gEgo
@@ -95,7 +95,7 @@
 				(0
 					(proc1111_8)
 					(Palette 2 55 135 100) ; PalIntensity
-					(proc1111_7 906 88 -10 gEgo -1 1)
+					(DoRobot 906 88 -10 gEgo -1 1)
 					(gCurRoom drawPic: 36405 picture: 36405)
 				)
 				(1
@@ -114,7 +114,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(cond
 				((== gChapter 5)

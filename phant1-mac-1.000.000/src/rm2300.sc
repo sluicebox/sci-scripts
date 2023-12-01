@@ -96,7 +96,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(global114 endPause: 1)
 			(gEgo
 				show:
@@ -129,7 +129,7 @@
 					else
 						(gCurRoom drawPic: 2310)
 					)
-					(proc1111_7 401 122 27)
+					(DoRobot 401 122 27)
 				)
 				(1
 					(global114 pause:)

@@ -82,10 +82,10 @@
 				(0
 					(gGame handsOff:)
 					(if (gEgo has: 10) ; invBrooch
-						(proc1111_7 5890 19 18)
+						(DoRobot 5890 19 18)
 					else
 						(glass dispose:)
-						(proc1111_7 5880 19 18)
+						(DoRobot 5880 19 18)
 					)
 					(teddy posn: 194 48)
 					(glass posn: 49 124)
@@ -109,7 +109,7 @@
 					(if (not (gEgo has: 10)) ; invBrooch
 						(gEgo get: 19) ; invCutter
 					)
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(teddy posn: 174 52)
 					(gCurRoom drawPic: 14260)
@@ -180,7 +180,7 @@
 					)
 					(teddy hide:)
 					(= global125 0)
-					(proc1111_7 1260 149 32)
+					(DoRobot 1260 149 32)
 					(if (== gChapter 7)
 						(glass posn: 49 124)
 					else
@@ -192,7 +192,7 @@
 					(if (gCast contains: glass)
 						(glass hide:)
 					)
-					(proc1111_7 1261 23 -4)
+					(DoRobot 1261 23 -4)
 					(gCurRoom drawPic: 14270)
 				)
 				(2
@@ -200,7 +200,7 @@
 						(glass show:)
 					)
 					(gCurRoom drawPic: 14200)
-					(proc1111_7 1262 116 23)
+					(DoRobot 1262 116 23)
 				)
 				(3
 					(global114 endPause:)
@@ -219,7 +219,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(global114 endPause: 1)
 					(gEgo normalize: 614 posn: 149 110)
 					(if (gCast contains: glass)

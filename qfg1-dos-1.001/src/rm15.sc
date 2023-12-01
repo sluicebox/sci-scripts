@@ -286,16 +286,16 @@
 				(Load rsVIEW 512 524)
 			)
 		)
-		(if (gEgo knows: 24)
+		(if (gEgo knows: 24) ; fetchSpell
 			(Load rsVIEW 520)
 		)
-		(if (or (gEgo knows: 17) (gEgo knows: 20))
+		(if (or (gEgo knows: 17) (gEgo knows: 20)) ; openSpell, dazzleSpell
 			(Load rsVIEW 521)
 		)
-		(if (or (gEgo knows: 17) (gEgo knows: 19) (CanPickLocks))
+		(if (or (gEgo knows: 17) (gEgo knows: 19) (CanPickLocks)) ; openSpell, triggerSpell
 			(LoadMany rsSOUND (SoundFX 36) (SoundFX 62))
 		)
-		(if (gEgo knows: 23)
+		(if (gEgo knows: 23) ; flameDartSpell
 			(Load rsVIEW 522)
 			(Load rsVIEW 532)
 			(Load rsSOUND (SoundFX 33))

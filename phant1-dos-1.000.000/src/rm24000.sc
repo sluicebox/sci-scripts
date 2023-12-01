@@ -297,7 +297,7 @@
 	)
 
 	(method (init &tmp temp0 temp1 temp2)
-		(proc1111_6)
+		(KillRobot)
 		(= temp2 0)
 		(= temp1 0)
 		(= temp0 0)
@@ -997,7 +997,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
@@ -1014,7 +1014,7 @@
 						)
 						(localproc_3 24130)
 					)
-					(proc1111_7 3350 115 0)
+					(DoRobot 3350 115 0)
 				)
 				(1
 					(self dispose:)
@@ -1042,7 +1042,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
@@ -1054,7 +1054,7 @@
 					(ladder init:)
 					(localproc_4 24370)
 					(localproc_3 24370)
-					(proc1111_7 3213 88 24 gEgo 5)
+					(DoRobot 3213 88 24 gEgo 5)
 				)
 				(1
 					(self dispose:)
@@ -1078,14 +1078,14 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 2480 165 50)
+					(DoRobot 2480 165 50)
 				)
 				(1
 					(self dispose:)
@@ -1111,7 +1111,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
@@ -1122,7 +1122,7 @@
 					(global114 pause:)
 					(gCast eachElementDo: #hide)
 					(gCurRoom drawPic: 24360 picture: 24360)
-					(proc1111_7 2510 49 43)
+					(DoRobot 2510 49 43)
 				)
 				(1
 					(self dispose:)
@@ -1144,7 +1144,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
@@ -1155,15 +1155,15 @@
 					(global114 pause:)
 					(gCast eachElementDo: #hide)
 					(gCurRoom drawPic: 24360 picture: 24360)
-					(proc1111_7 2520 -13 2 gEgo 200)
+					(DoRobot 2520 -13 2 gEgo 200)
 				)
 				(1
 					(gCurRoom drawPic: 24690 picture: 24690)
-					(proc1111_7 2521 -20 -41)
+					(DoRobot 2521 -20 -41)
 				)
 				(2
 					(gCurRoom drawPic: 24360 picture: 24360)
-					(proc1111_7 2522 96 34 gEgo 200 1)
+					(DoRobot 2522 96 34 gEgo 200 1)
 				)
 				(3
 					(self dispose:)
@@ -1189,7 +1189,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
@@ -1202,7 +1202,7 @@
 					(localproc_2 24530)
 					(gGame handsOff:)
 					(gCurRoom drawPic: 24530 picture: 24530)
-					(proc1111_7 2530 97 53)
+					(DoRobot 2530 97 53)
 				)
 				(1
 					(self dispose:)
@@ -1256,7 +1256,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gCurRoom newRoom: 24100)
 		else
@@ -1274,7 +1274,7 @@
 						)
 						(localproc_3 24130)
 					)
-					(proc1111_7 3300 113 12 gEgo -1 1)
+					(DoRobot 3300 113 12 gEgo -1 1)
 				)
 				(1
 					(gCurRoom newRoom: 24100)
@@ -1300,7 +1300,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
@@ -1315,7 +1315,7 @@
 					(ladder show:)
 					(gCurRoom drawPic: 24370 picture: 24370)
 					(localproc_4 24370)
-					(proc1111_7 3230 88 33 gEgo 1)
+					(DoRobot 3230 88 33 gEgo 1)
 				)
 				(2
 					(self dispose:)
@@ -1341,7 +1341,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
@@ -1357,7 +1357,7 @@
 					(ladder show:)
 					(localproc_4 24370)
 					(gCurRoom drawPic: 24370 picture: 24370)
-					(proc1111_7 3250 84 26 gEgo 1)
+					(DoRobot 3250 84 26 gEgo 1)
 				)
 				(2
 					(self dispose:)
@@ -1383,7 +1383,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
@@ -1397,7 +1397,7 @@
 					(localproc_3 24370)
 					(localproc_4 24370)
 					(gCurRoom drawPic: 24370 picture: 24370)
-					(proc1111_7 3260 100 24 gEgo 1)
+					(DoRobot 3260 100 24 gEgo 1)
 				)
 				(2
 					(self dispose:)
@@ -1424,7 +1424,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
@@ -1438,7 +1438,7 @@
 					(localproc_3 24360)
 					(localproc_4 24360)
 					(gCurRoom drawPic: 24360 picture: 24360)
-					(proc1111_7 3271 77 37)
+					(DoRobot 3271 77 37)
 				)
 				(2
 					(self dispose:)
@@ -1465,7 +1465,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
@@ -1479,7 +1479,7 @@
 					(localproc_3 24360)
 					(localproc_4 24360)
 					(gCurRoom drawPic: 24360 picture: 24360)
-					(proc1111_7 3281 71 37)
+					(DoRobot 3281 71 37)
 				)
 				(2
 					(self dispose:)
@@ -1505,7 +1505,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
@@ -1519,7 +1519,7 @@
 					(localproc_3 24360)
 					(localproc_4 24360)
 					(gCurRoom drawPic: 24360 picture: 24360)
-					(proc1111_7 3290 71 37)
+					(DoRobot 3290 71 37)
 				)
 				(2
 					(self dispose:)
@@ -1548,7 +1548,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
@@ -1562,52 +1562,52 @@
 					(ladder init: show:)
 					(localproc_4 24200)
 					(gCurRoom drawPic: 24200 picture: 24200)
-					(proc1111_7 3450 91 42)
+					(DoRobot 3450 91 42)
 				)
 				(1
 					(pulley hide:)
 					(localproc_4 24480)
 					(gCurRoom drawPic: 24480 picture: 24480)
-					(proc1111_7 3451 0 35)
+					(DoRobot 3451 0 35)
 				)
 				(2
 					(ladder hide:)
 					(gCurRoom drawPic: 24490 picture: 24490)
-					(proc1111_7 3452 23 -12)
+					(DoRobot 3452 23 -12)
 				)
 				(3
 					(gCurRoom drawPic: 24530 picture: 24530)
-					(proc1111_7 3453 -20 -43)
+					(DoRobot 3453 -20 -43)
 				)
 				(4
 					(localproc_4 24480)
 					(ladder show:)
 					(gCurRoom drawPic: 24480 picture: 24480)
-					(proc1111_7 3454 0 45)
+					(DoRobot 3454 0 45)
 				)
 				(5
 					(ladder hide:)
 					(gCurRoom drawPic: 24490 picture: 24490)
-					(proc1111_7 3455 -9 -36)
+					(DoRobot 3455 -9 -36)
 				)
 				(6
 					(ladder show:)
 					(gCurRoom drawPic: 24480 picture: 24480)
-					(proc1111_7 3456 0 35)
+					(DoRobot 3456 0 35)
 				)
 				(7
 					(global114 pause:)
-					(proc1111_7 3457 -13 35)
+					(DoRobot 3457 -13 35)
 				)
 				(8
 					(ladder hide:)
 					(gCurRoom drawPic: 24540 picture: 24540)
-					(proc1111_7 3458 -4 -4)
+					(DoRobot 3458 -4 -4)
 				)
 				(9
 					(ladder show:)
 					(gCurRoom drawPic: 24480 picture: 24480)
-					(proc1111_7 3459 -3 35)
+					(DoRobot 3459 -3 35)
 				)
 				(10
 					(self dispose:)

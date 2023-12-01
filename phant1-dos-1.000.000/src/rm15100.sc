@@ -84,7 +84,7 @@
 				(self setScript: (ScriptID 0 5)) ; takeLastStep
 			)
 			(14200
-				(proc1111_6)
+				(KillRobot)
 				(gEgo
 					setScaler: Scaler 160 44 153 91
 					normalize: 0
@@ -218,7 +218,7 @@
 				)
 				(1
 					(gEgo hide:)
-					(proc1111_7 1171 132 39 gEgo 5)
+					(DoRobot 1171 132 39 gEgo 5)
 					(gCurRoom drawPic: 15120)
 					(ClearFlag 121)
 				)
@@ -236,7 +236,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gGDacSound stop:)
 					(gCurRoom newRoom: 13500)
@@ -253,7 +253,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 1170 125 39 gEgo 5)
+					(DoRobot 1170 125 39 gEgo 5)
 				)
 				(1
 					(gEgo
@@ -270,7 +270,7 @@
 			(switch (= state newState)
 				(0
 					(= global115 0)
-					(proc1111_6)
+					(KillRobot)
 					(gEgo
 						normalize: 2
 						setScaler: Scaler 160 44 153 91
@@ -292,7 +292,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 3651 0 0)
+					(DoRobot 3651 0 0)
 				)
 				(1
 					(gEgo normalize: 2 posn: 167 95)
@@ -305,7 +305,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo normalize: 2 posn: 167 95)
 					(doorView z: 0)
@@ -329,8 +329,8 @@
 				)
 				(1
 					(gGame fade: 0 (gGame intensity:) 1)
-					(proc1111_6)
-					(proc1111_7 3651 0 0)
+					(KillRobot)
+					(DoRobot 3651 0 0)
 				)
 				(2
 					(gEgo normalize: 2 posn: 167 95 show:)
@@ -343,7 +343,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo normalize: 2 posn: 167 95 show:)
 					(doorView z: 0)
@@ -363,7 +363,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 2430 92 19 gEgo 40)
+					(DoRobot 2430 92 19 gEgo 40)
 				)
 				(1
 					(gEgo
@@ -379,7 +379,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo
 						normalize: 2
@@ -402,7 +402,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 2431 -3 23)
+					(DoRobot 2431 -3 23)
 				)
 				(1
 					(gEgo
@@ -418,7 +418,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo
 						normalize: 2
@@ -441,7 +441,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 3580 -12 -41)
+					(DoRobot 3580 -12 -41)
 					(gCurRoom drawPic: 15140)
 					(SetFlag 170)
 					(gEgo put: 3) ; invNewspaper
@@ -457,7 +457,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(paperView init:)
 					(gEgo normalize: 3 posn: 167 95)
@@ -479,7 +479,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 3590 98 -5)
+					(DoRobot 3590 98 -5)
 					(gCurRoom drawPic: 15140)
 				)
 				(1
@@ -492,7 +492,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo normalize: 3 posn: 167 95)
 					(gCurRoom drawPic: 15100)
@@ -511,7 +511,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 3630 119 -3 gEgo 200)
+					(DoRobot 3630 119 -3 gEgo 200)
 					(gCurRoom drawPic: 15140)
 				)
 				(1
@@ -527,7 +527,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(SetFlag 169)
 					(gEgo normalize: 3 posn: 167 95)
@@ -552,9 +552,9 @@
 					(gGame handsOff:)
 					(gEgo hide:)
 					(if (not (IsFlag 46))
-						(proc1111_7 3640 130 0)
+						(DoRobot 3640 130 0)
 					else
-						(proc1111_7 3650 -2 0)
+						(DoRobot 3650 -2 0)
 					)
 					(doorView dispose:)
 					(gCurRoom drawPic: 15140)
@@ -573,7 +573,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(SetFlag 46)
 					(gCurRoom newRoom: 15500)
@@ -590,7 +590,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 3542 133 -5)
+					(DoRobot 3542 133 -5)
 					(gCurRoom drawPic: 15140)
 				)
 				(1
@@ -603,7 +603,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo normalize: 3 posn: 167 95)
 					(gCurRoom drawPic: 15100)
@@ -622,11 +622,11 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 3540 -7 -44)
+					(DoRobot 3540 -7 -44)
 					(gCurRoom drawPic: 15140)
 				)
 				(1
-					(proc1111_7 3541 -12 -42)
+					(DoRobot 3541 -12 -42)
 					(gCurRoom drawPic: 15130)
 				)
 				(2
@@ -642,7 +642,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo put: 2) ; invNail
 					(SetFlag 167)
@@ -664,7 +664,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 3600 -10 -43)
+					(DoRobot 3600 -10 -43)
 					(paperView hide:)
 					(gCurRoom drawPic: 15140)
 				)
@@ -682,7 +682,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo normalize: 3 posn: 167 95)
 					(gCurRoom drawPic: 15100)
@@ -704,15 +704,15 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 1180 -6 -44)
+					(DoRobot 1180 -6 -44)
 					(gCurRoom drawPic: 15140)
 				)
 				(1
-					(proc1111_7 1181 -13 -26)
+					(DoRobot 1181 -13 -26)
 					(gCurRoom drawPic: 15130)
 				)
 				(2
-					(proc1111_7 1182 -9 -43)
+					(DoRobot 1182 -9 -43)
 					(gCurRoom drawPic: 15140)
 				)
 				(3
@@ -721,7 +721,7 @@
 					(= seconds 5)
 				)
 				(4
-					(proc1111_7 1183 -9 -43)
+					(DoRobot 1183 -9 -43)
 					(gCurRoom drawPic: 15140)
 				)
 				(5
@@ -735,7 +735,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo normalize: 3 posn: 167 95)
 					(gCurRoom drawPic: 15100)
@@ -755,7 +755,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 1190 -9 -43)
+					(DoRobot 1190 -9 -43)
 					(gCurRoom drawPic: 15140)
 				)
 				(1
@@ -764,7 +764,7 @@
 					(= seconds 5)
 				)
 				(2
-					(proc1111_7 1191 -9 -43)
+					(DoRobot 1191 -9 -43)
 					(gCurRoom drawPic: 15140)
 				)
 				(3
@@ -777,7 +777,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo normalize: 3 posn: 167 95)
 					(gCurRoom drawPic: 15100)
@@ -809,7 +809,7 @@
 					)
 				)
 				(1
-					(proc1111_7 3550 77 -16)
+					(DoRobot 3550 77 -16)
 					(gCurRoom drawPic: 15140)
 				)
 				(2
@@ -819,7 +819,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom setScript: underDoorScr)
 				)
@@ -883,7 +883,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 3560 -17 -42)
+					(DoRobot 3560 -17 -42)
 					(gCurRoom drawPic: 15140)
 				)
 				(1
@@ -896,7 +896,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo normalize: 3 posn: 167 95 show:)
 					(gCurRoom drawPic: 15100)
@@ -915,7 +915,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 3570 86 1)
+					(DoRobot 3570 86 1)
 					(gCurRoom drawPic: 15140)
 				)
 				(1
@@ -928,7 +928,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo normalize: 3 posn: 167 95 show:)
 					(gCurRoom drawPic: 15100)
@@ -960,7 +960,7 @@
 					)
 				)
 				(1
-					(proc1111_7 3610 -8 -41)
+					(DoRobot 3610 -8 -41)
 					(paperView dispose:)
 					(gCurRoom drawPic: 15140)
 				)
@@ -979,7 +979,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gEgo normalize: 3 posn: 167 95 show:)
 					(= global115 0)
 					(gCurRoom drawPic: 15100)
@@ -1017,7 +1017,7 @@
 					)
 				)
 				(1
-					(proc1111_7 3620 75 11)
+					(DoRobot 3620 75 11)
 					(gCurRoom drawPic: 15140)
 				)
 				(2
@@ -1033,7 +1033,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo normalize: 3 posn: 167 95 get: 6) ; invStairKey
 					(gCurRoom drawPic: 15100)
@@ -1055,7 +1055,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 1970 125 -6)
+					(DoRobot 1970 125 -6)
 					(gCurRoom drawPic: 15140)
 				)
 				(1
@@ -1068,7 +1068,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo normalize: 3 posn: 167 95)
 					(gCurRoom drawPic: 15100)
@@ -1128,7 +1128,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(if
 						(and

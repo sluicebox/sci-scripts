@@ -364,7 +364,7 @@
 				(0
 					(gGame handsOff:)
 					(biggerHole init:)
-					(proc1111_7 3421 74 34 gEgo 60)
+					(DoRobot 3421 74 34 gEgo 60)
 				)
 				(1
 					(self dispose:)
@@ -372,7 +372,7 @@
 			)
 		else
 			(= global115 0)
-			(proc1111_6)
+			(KillRobot)
 			(self dispose:)
 		)
 	)
@@ -394,7 +394,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
@@ -411,7 +411,7 @@
 					(gCast eachElementDo: #hide)
 					(localproc_1 24400)
 					(gCurRoom drawPic: 24400 picture: 24400)
-					(proc1111_7 3320 2 -26)
+					(DoRobot 3320 2 -26)
 				)
 				(2
 					(self dispose:)
@@ -436,7 +436,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
@@ -445,7 +445,7 @@
 					(gGame handsOff:)
 					(gCast eachElementDo: #hide)
 					(gCurRoom drawPic: 24399 picture: 24399)
-					(proc1111_7 3330 -12 -45 gEgo 75)
+					(DoRobot 3330 -12 -45 gEgo 75)
 				)
 				(1
 					(self dispose:)
@@ -470,7 +470,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
@@ -486,7 +486,7 @@
 				(1
 					(localproc_4 24150)
 					(gCurRoom drawPic: 24150 picture: 24150)
-					(proc1111_7 3340 108 33)
+					(DoRobot 3340 108 33)
 				)
 				(2
 					(self dispose:)
@@ -528,9 +528,9 @@
 					(gGame handsOff:)
 					(if (and (== gChapter 3) (not (IsFlag 164)))
 						(localproc_1 24430)
-						(proc1111_7 3351 119 29 gEgo 5)
+						(DoRobot 3351 119 29 gEgo 5)
 					else
-						(proc1111_7 3312 153 49 gEgo 5)
+						(DoRobot 3312 153 49 gEgo 5)
 					)
 				)
 				(1
@@ -538,7 +538,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		)
@@ -555,7 +555,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(gCast delete: gEgo)
 			(gCast eachElementDo: #dispose)
 			(gCast add: gEgo)
@@ -576,7 +576,7 @@
 					(localproc_0 24430)
 					(gCurRoom drawPic: 24430 picture: 24430)
 					(if (and (== gChapter 3) (not (IsFlag 164)))
-						(proc1111_7 3352 119 29 gEgo -1 1)
+						(DoRobot 3352 119 29 gEgo -1 1)
 					else
 						(gEgo
 							view: 3311
@@ -799,7 +799,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
@@ -812,7 +812,7 @@
 					(localproc_1 24150)
 					(localproc_2 24150)
 					(gCurRoom drawPic: 24150 picture: 24150)
-					(proc1111_7 3400 -2 -1)
+					(DoRobot 3400 -2 -1)
 				)
 				(1
 					(self dispose:)
@@ -846,7 +846,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
@@ -856,31 +856,31 @@
 					(= global162 1)
 					(gCast eachElementDo: #hide)
 					(gCurRoom drawPic: 24400)
-					(proc1111_7 3401 -11 -27 gEgo 60)
+					(DoRobot 3401 -11 -27 gEgo 60)
 				)
 				(1
 					(gCurRoom drawPic: 24450)
-					(proc1111_7 3411 -12 -43 gEgo 1)
+					(DoRobot 3411 -12 -43 gEgo 1)
 				)
 				(2
 					(biggerHole init:)
 					(gCurRoom drawPic: 24400)
-					(proc1111_7 3412 -7 -31 gEgo 60)
+					(DoRobot 3412 -7 -31 gEgo 60)
 				)
 				(3
 					(biggerHole hide:)
 					(gCurRoom drawPic: 24440)
-					(proc1111_7 3413 6 -25)
+					(DoRobot 3413 6 -25)
 				)
 				(4
 					(biggerHole show:)
 					(gCurRoom drawPic: 24400 picture: 24400)
-					(proc1111_7 3414 20 2 gEgo 60)
+					(DoRobot 3414 20 2 gEgo 60)
 				)
 				(5
 					(biggerHole dispose:)
 					(gCurRoom drawPic: 24730 picture: 24730)
-					(proc1111_7 3415 -50 -35)
+					(DoRobot 3415 -50 -35)
 				)
 				(6
 					(pitchfork show:)
@@ -890,7 +890,7 @@
 						(localproc_0 24430)
 					)
 					(gCurRoom drawPic: 24430 picture: 24430)
-					(proc1111_7 3416 132 37)
+					(DoRobot 3416 132 37)
 				)
 				(7
 					(self dispose:)
@@ -914,7 +914,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
@@ -926,7 +926,7 @@
 				(1
 					(localproc_4 24150)
 					(gCurRoom drawPic: 24150 picture: 24150)
-					(proc1111_7 3380 165 34)
+					(DoRobot 3380 165 34)
 				)
 				(2
 					(self dispose:)
@@ -952,7 +952,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
@@ -962,19 +962,19 @@
 					(gGame handsOff:)
 					(gCast eachElementDo: #hide)
 					(gCurRoom drawPic: 24399 picture: 24399)
-					(proc1111_7 3370 0 -45)
+					(DoRobot 3370 0 -45)
 				)
 				(1
 					(gCurRoom drawPic: 24400 picture: 24400)
-					(proc1111_7 3371 -11 -34)
+					(DoRobot 3371 -11 -34)
 				)
 				(2
 					(gCurRoom drawPic: 24399 picture: 24399)
-					(proc1111_7 3372 -8 -45)
+					(DoRobot 3372 -8 -45)
 				)
 				(3
 					(gCurRoom drawPic: 24400 picture: 24400)
-					(proc1111_7 3373 -5 -40)
+					(DoRobot 3373 -5 -40)
 				)
 				(4
 					(self dispose:)
@@ -998,7 +998,7 @@
 					(gGame handsOff:)
 					(biggerHole init:)
 					(gCurRoom drawPic: 24400 picture: 24400)
-					(proc1111_7 3420 60 10 gEgo 60 1)
+					(DoRobot 3420 60 10 gEgo 60 1)
 				)
 				(2
 					(gCurRoom newRoom: 24110)
@@ -1007,7 +1007,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gCast eachElementDo: #hide)
 					(= global115 0)
 					(gCurRoom newRoom: 24110)

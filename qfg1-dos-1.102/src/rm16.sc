@@ -130,7 +130,7 @@
 
 	(method (init)
 		(LoadMany rsVIEW 16 518 517 510)
-		(if (gEgo knows: 24)
+		(if (gEgo knows: 24) ; fetchSpell
 			(Load rsVIEW 520)
 		)
 		(LoadMany rsSCRIPT 291 292)

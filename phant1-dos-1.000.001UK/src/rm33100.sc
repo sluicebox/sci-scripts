@@ -107,7 +107,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1910 -8 -31)
+					(DoRobot 1910 -8 -31)
 					(SetFlag 100)
 				)
 				(1
@@ -127,7 +127,7 @@
 			(switch (= state newState)
 				(0
 					(SetFlag 100)
-					(proc1111_6)
+					(KillRobot)
 					(if (not (gCast contains: mailBoxView2))
 						(mailBoxView2 init:)
 					)
@@ -157,7 +157,7 @@
 			(switch (= state newState)
 				(0
 					(gEgo hide:)
-					(proc1111_7 5831 31 2 gEgo 2 1)
+					(DoRobot 5831 31 2 gEgo 2 1)
 					(mailBoxView2 dispose:)
 					(mailBoxView init:)
 					(gCurRoom drawPic: 33500)
@@ -190,7 +190,7 @@
 				)
 				(1
 					(gate init: setHotspot: 4 3) ; Do, Move
-					(proc1111_7 2980 -25 -39 gEgo 200)
+					(DoRobot 2980 -25 -39 gEgo 200)
 					(gateView init:)
 					(mailBoxView init:)
 					(mailBoxView2 dispose:)
@@ -213,7 +213,7 @@
 			(switch (= state newState)
 				(0
 					(= global115 0)
-					(proc1111_6)
+					(KillRobot)
 					(if (barkSnd handle:)
 						(barkSnd stop:)
 					)
@@ -254,9 +254,9 @@
 					(gEgo hide:)
 					(mailBoxView init:)
 					(if (== gPrevRoomNum 33200)
-						(proc1111_7 5832 14 2 gEgo -1 1)
+						(DoRobot 5832 14 2 gEgo -1 1)
 					else
-						(proc1111_7 5830 14 2 gEgo -1 1)
+						(DoRobot 5830 14 2 gEgo -1 1)
 					)
 				)
 				(1
@@ -267,7 +267,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gGDacSound setVol: 127)
 					(gCurRoom newRoom: 34100)
@@ -285,7 +285,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1930 39 11)
+					(DoRobot 1930 39 11)
 					(gateView init:)
 					(mailBoxView2 dispose:)
 					(if (gCast contains: doggie)
@@ -336,7 +336,7 @@
 						(letter dispose:)
 						(= local0 1)
 						(SetFlag 321)
-						(proc1111_7 1931 39 11)
+						(DoRobot 1931 39 11)
 						(if (not (gCast contains: gateView))
 							(gateView init:)
 						)
@@ -380,7 +380,7 @@
 			(switch (= state newState)
 				(0
 					(gEgo show:)
-					(proc1111_6)
+					(KillRobot)
 					(if (gCast contains: gateView)
 						(gateView dispose:)
 					)
@@ -428,7 +428,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1940 61 -40)
+					(DoRobot 1940 61 -40)
 					(gateView init:)
 					(mailBoxView init:)
 					(mailBoxView2 dispose:)
@@ -455,7 +455,7 @@
 				(0
 					(gateView dispose:)
 					(mailBoxView dispose:)
-					(proc1111_6)
+					(KillRobot)
 					(if (not (gCast contains: mailBoxView2))
 						(mailBoxView2 init:)
 					)

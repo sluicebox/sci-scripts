@@ -88,7 +88,7 @@
 				(self setScript: (ScriptID 0 5)) ; takeLastStep
 			)
 			(else
-				(proc1111_6)
+				(KillRobot)
 				(gEgo
 					view: 3670
 					loop: 0
@@ -370,7 +370,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom newRoom: 15100)
 				)
@@ -401,7 +401,7 @@
 				(1
 					(gEgo hide:)
 					(towerDoor dispose:)
-					(proc1111_7 3680 24 14 gEgo -1 1)
+					(DoRobot 3680 24 14 gEgo -1 1)
 					(gCurRoom drawPic: 15500)
 				)
 				(2
@@ -411,7 +411,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom newRoom: 26100)
 				)
@@ -446,7 +446,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom newRoom: 26100)
 				)
@@ -463,10 +463,10 @@
 			(switch (= state newState)
 				(0
 					(if (IsFlag 205)
-						(proc1111_7 4690 135 -10)
+						(DoRobot 4690 135 -10)
 					else
 						(SetFlag 205)
-						(proc1111_7 4681 160 -5)
+						(DoRobot 4681 160 -5)
 					)
 					(gCurRoom drawPic: 15500)
 				)
@@ -480,7 +480,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gEgo posn: 26 117 normalize: 1)
 					(gCurRoom drawPic: 15505)
 					(= global115 0)
@@ -507,13 +507,13 @@
 				(0
 					(Load rsVIEW 15501)
 					(fakeWall setHotspot: 4 3) ; Do, Move
-					(proc1111_7 4700 75 4)
+					(DoRobot 4700 75 4)
 					(gCurRoom drawPic: 15500)
 				)
 				(1
 					(SetFlag 204)
 					(blackHole init: posn: 238 110)
-					(proc1111_7 4701 153 5)
+					(DoRobot 4701 153 5)
 				)
 				(2
 					(atticDoor init: setPri: 20 hide:)
@@ -531,7 +531,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(SetFlag 204)
 					(fakeWall setHotspot: 4 3) ; Do, Move
@@ -566,7 +566,7 @@
 				(1
 					(openWallExit dispose:)
 					(gEgo hide:)
-					(proc1111_7 4702 68 5 gEgo -1 1)
+					(DoRobot 4702 68 5 gEgo -1 1)
 					(gCurRoom drawPic: 15500)
 				)
 				(2
@@ -576,7 +576,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom newRoom: 19000)
 				)
@@ -592,7 +592,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 4703 68 5)
+					(DoRobot 4703 68 5)
 				)
 				(1
 					(gEgo posn: 26 117 normalize: 1)
@@ -604,7 +604,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo posn: 26 117 normalize: 1)
 					(gCurRoom drawPic: 15505)
@@ -626,7 +626,7 @@
 					(= cycles 1)
 				)
 				(1
-					(proc1111_7 4703 68 5)
+					(DoRobot 4703 68 5)
 					(gGame fade: 0 (gGame intensity:) 1)
 				)
 				(2
@@ -640,7 +640,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo posn: 26 117 normalize: 1 show:)
 					(global114 endPause:)

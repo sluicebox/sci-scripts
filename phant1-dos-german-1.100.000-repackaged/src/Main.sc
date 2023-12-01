@@ -1897,7 +1897,7 @@
 			((gCurRoom inset:) 0)
 			((IsFlag 135)
 				(SetFlag 390)
-				(proc1111_6 0 0)
+				(KillRobot 0 0)
 				(((gCurRoom script:) script:) dispose:)
 				(SetFlag 121)
 			)

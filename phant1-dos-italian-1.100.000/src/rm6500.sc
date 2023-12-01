@@ -141,7 +141,7 @@
 				)
 			)
 			(36300
-				(proc1111_6)
+				(KillRobot)
 				(gEgo hide:)
 				(= picture 6570)
 				(secretDoor init: setPri: 90 cel: 100)
@@ -149,7 +149,7 @@
 				(self setScript: fromCryptScr)
 			)
 			(else
-				(proc1111_6)
+				(KillRobot)
 				(= picture 6400)
 				(if (== gChapter 7)
 					(chest view: 64001 x: 280 y: 123 setPri: 300)
@@ -186,7 +186,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 2130 71 51 gEgo 119)
+					(DoRobot 2130 71 51 gEgo 119)
 				)
 				(1
 					(gEgo
@@ -208,7 +208,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(localproc_3)
 					(localproc_1)
@@ -235,7 +235,7 @@
 			(switch (= state newState)
 				(0
 					(localproc_0)
-					(proc1111_7 2179 136 49)
+					(DoRobot 2179 136 49)
 					(gCurRoom drawPic: 6600)
 				)
 				(1
@@ -254,7 +254,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(localproc_1)
 					(gEgo
@@ -282,9 +282,9 @@
 					(localproc_0)
 					(if (not (IsFlag 412))
 						(SetFlag 412)
-						(proc1111_7 2131 144 40)
+						(DoRobot 2131 144 40)
 					else
-						(proc1111_7 2132 144 42)
+						(DoRobot 2132 144 42)
 					)
 					(gCurRoom drawPic: 6600)
 				)
@@ -306,7 +306,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(SetFlag 208)
 					(localproc_1)
@@ -343,7 +343,7 @@
 						)
 						(else
 							(localproc_0)
-							(proc1111_7 2242 164 46)
+							(DoRobot 2242 164 46)
 							(gCurRoom drawPic: 6600)
 						)
 					)
@@ -352,7 +352,7 @@
 					(localproc_2)
 					(gEgo hide:)
 					(chest view: 64001 x: 280 y: 123 setPri: 300 show:)
-					(proc1111_7 2240 66 51 gEgo 119 1)
+					(DoRobot 2240 66 51 gEgo 119 1)
 					(gCurRoom drawPic: 6400)
 				)
 				(2
@@ -364,7 +364,7 @@
 				(0
 					(= global115 0)
 					(gEgo hide:)
-					(proc1111_6)
+					(KillRobot)
 					(gCurRoom newRoom: 5100)
 				)
 			)
@@ -391,7 +391,7 @@
 							(gEgo hide:)
 							(localproc_0)
 							(gCurRoom drawPic: 6600)
-							(proc1111_7 2242 164 46 gEgo -1 1)
+							(DoRobot 2242 164 46 gEgo -1 1)
 						)
 					)
 				)
@@ -402,7 +402,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom newRoom: 6400)
 				)
@@ -434,7 +434,7 @@
 						(else
 							(localproc_0)
 							(gCurRoom drawPic: 6600)
-							(proc1111_7 2242 164 46)
+							(DoRobot 2242 164 46)
 						)
 					)
 				)
@@ -444,7 +444,7 @@
 					(localproc_2)
 					(secretDoor init: cel: 100)
 					(gCurRoom drawPic: 6570)
-					(proc1111_7 6570 14 12 gEgo 120 1)
+					(DoRobot 6570 14 12 gEgo 120 1)
 				)
 				(2
 					(sOpen setLoop: 1 play:)
@@ -465,7 +465,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(sClose stop:)
 					(sOpen stop:)
@@ -499,7 +499,7 @@
 				)
 				(2
 					(sOpen stop:)
-					(proc1111_7 6571 -6 -15 gEgo 120 1)
+					(DoRobot 6571 -6 -15 gEgo 120 1)
 				)
 				(3
 					(sOpen setLoop: 1 play:)
@@ -510,7 +510,7 @@
 					(sOpen stop:)
 					(sClose stop:)
 					(secretDoor dispose:)
-					(proc1111_6)
+					(KillRobot)
 					(gEgo
 						normalize: 4
 						cel: 0
@@ -533,7 +533,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(sOpen stop:)
 					(sClose stop:)
 					(if (gCast contains: secretDoor)
@@ -597,7 +597,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(SetFlag 209)
 					(if (not (gCast contains: bible))
@@ -642,7 +642,7 @@
 					(if (gCast contains: bible)
 						(bible hide:)
 					)
-					(proc1111_7 2152 142 36 gEgo 111)
+					(DoRobot 2152 142 36 gEgo 111)
 					(gCurRoom drawPic: 6600)
 				)
 				(1
@@ -660,7 +660,7 @@
 					(proc1111_9)
 					((ScriptID 0 14) dispose:) ; exitButt
 					(gGame handsOff:)
-					(proc1111_7 2157 144 35 gEgo 111)
+					(DoRobot 2157 144 35 gEgo 111)
 					(gCurRoom drawPic: 6600)
 				)
 				(3
@@ -687,7 +687,7 @@
 						(= local0 0)
 						(proc1111_9)
 					)
-					(proc1111_6)
+					(KillRobot)
 					(localproc_1)
 					(gCurRoom drawPic: 6500)
 					(ClearFlag 248)
@@ -719,7 +719,7 @@
 			(switch (= state newState)
 				(0
 					(= local0 0)
-					(proc1111_7 2154 141 42 gEgo 120)
+					(DoRobot 2154 141 42 gEgo 120)
 					(localproc_2)
 					(gCurRoom drawPic: 6600)
 				)
@@ -735,7 +735,7 @@
 				(2
 					((ScriptID 0 14) dispose:) ; exitButt
 					(ClearFlag 248)
-					(proc1111_7 2155 140 44 gEgo 120)
+					(DoRobot 2155 140 44 gEgo 120)
 					(gCurRoom drawPic: 6600)
 				)
 				(3
@@ -758,7 +758,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(ClearFlag 248)
 					(if local0
@@ -796,7 +796,7 @@
 					(= local0 0)
 					(localproc_0)
 					(chest setPri: 111)
-					(proc1111_7 2160 148 45 gEgo 111)
+					(DoRobot 2160 148 45 gEgo 111)
 					(gCurRoom drawPic: 6600)
 				)
 				(1
@@ -814,7 +814,7 @@
 					(proc1111_9)
 					((ScriptID 0 14) dispose:) ; exitButt
 					(gGame handsOff:)
-					(proc1111_7 2161 143 46 gEgo 111)
+					(DoRobot 2161 143 46 gEgo 111)
 					(gCurRoom drawPic: 6600)
 				)
 				(3
@@ -833,7 +833,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(ClearFlag 248)
 					(if local0
 						(= local0 0)
@@ -892,7 +892,7 @@
 
 	(method (dispose)
 		(SetFlag 39)
-		(proc1111_6)
+		(KillRobot)
 		(= global115 0)
 		(gGame fadeSpeed: 4)
 		(gGDacSound fade: 0 4 2 1)
@@ -909,7 +909,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 2190 141 51 gEgo 111)
+					(DoRobot 2190 141 51 gEgo 111)
 					(localproc_2)
 					(SetFlag 112)
 					(gCurRoom drawPic: 6600)
@@ -921,7 +921,7 @@
 				)
 				(2
 					(theBook dispose:)
-					(proc1111_7 2193 122 34 gEgo 111)
+					(DoRobot 2193 122 34 gEgo 111)
 					(gCurRoom drawPic: 6600)
 				)
 				(3
@@ -935,7 +935,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(theBook dispose:)
 					(localproc_3)
 					(= global115 0)
@@ -958,7 +958,7 @@
 			(switch (= state newState)
 				(0
 					(localproc_2)
-					(proc1111_7 2220 143 50 gEgo 111)
+					(DoRobot 2220 143 50 gEgo 111)
 					(SetFlag 113)
 					(gCurRoom drawPic: 6600)
 				)
@@ -973,7 +973,7 @@
 			(switch (= state newState)
 				(0
 					(localproc_3)
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom drawPic: 6500)
 					(SetFlag 113)

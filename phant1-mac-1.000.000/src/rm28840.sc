@@ -145,7 +145,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(gCurRoom drawPic: (gCurRoom picture:))
 			(gEgo normalize: 6 posn: 217 65)
 			(= global115 0)
@@ -157,7 +157,7 @@
 					(westExit approachX: 0 approachY: 165)
 					(eastExit approachX: 300 approachY: 110)
 					(gCurRoom drawPic: (+ 22320 (== gChapter 5)))
-					(proc1111_7 1640 3 -19)
+					(DoRobot 1640 3 -19)
 				)
 				(1
 					(gCurRoom drawPic: (gCurRoom picture:))

@@ -168,7 +168,7 @@
 		)
 		(if (not (IsFlag 161))
 			(bear init:)
-			(if (gEgo knows: 23)
+			(if (gEgo knows: 23) ; flameDartSpell
 				(egoShoots number: 2033 init:)
 				(magicHit number: 2045 init:)
 				(dart init:)

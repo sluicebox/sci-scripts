@@ -17,7 +17,7 @@
 	)
 
 	(method (init)
-		(proc1111_6)
+		(KillRobot)
 		(switch gPrevRoomNum
 			(900
 				(gGame handsOn:)

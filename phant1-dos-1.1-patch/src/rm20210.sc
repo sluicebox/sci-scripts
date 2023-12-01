@@ -33,7 +33,7 @@
 	)
 
 	(method (init &tmp temp0)
-		(proc1111_6)
+		(KillRobot)
 		(if (and (< 2 gChapter 6) (not (IsFlag 351)))
 			(gGDacSound setVol: 127)
 		)
@@ -172,7 +172,7 @@
 						(ClearFlag 353)
 						(sFx number: 20031 setLoop: 1 play:)
 					)
-					(proc1111_7 612 local0 local1 gEgo 90 1)
+					(DoRobot 612 local0 local1 gEgo 90 1)
 				)
 				(1
 					(self dispose:)
@@ -185,7 +185,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 		)
 		(= global115 0)
 		(gCurRoom newRoom: 20200)
@@ -229,7 +229,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 610 118 10)
+					(DoRobot 610 118 10)
 				)
 				(1
 					(hand1
@@ -269,7 +269,7 @@
 	)
 
 	(method (dispose)
-		(proc1111_6)
+		(KillRobot)
 		(gGDacSound stop:)
 		(if global115
 			(gEgo hide: setCycle: 0)
@@ -306,7 +306,7 @@
 					)
 				)
 				(1
-					(proc1111_7 611 121 16 gEgo -1 1)
+					(DoRobot 611 121 16 gEgo -1 1)
 				)
 				(2
 					(self dispose:)
@@ -319,7 +319,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(gEgo hide: setCycle: 0)
 		)
 		(= global115 0)
@@ -366,7 +366,7 @@
 				(1
 					(rat dispose:)
 					(sFx stop:)
-					(proc1111_7 611 121 16 gEgo -1 1)
+					(DoRobot 611 121 16 gEgo -1 1)
 				)
 				(2
 					(self dispose:)
@@ -379,7 +379,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(gEgo hide: setCycle: 0)
 			(rat dispose:)
 		)
@@ -456,7 +456,7 @@
 						(= local6 143)
 						(= local7 11)
 					)
-					(proc1111_7 620 local6 local7 gEgo -1 1)
+					(DoRobot 620 local6 local7 gEgo -1 1)
 				)
 				(1
 					(manacles z: 1000)
@@ -476,7 +476,7 @@
 	)
 
 	(method (dispose)
-		(proc1111_6)
+		(KillRobot)
 		(= global115 0)
 		(manacles x: local4 y: local5 z: 0)
 		(SetFlag 297)
@@ -499,7 +499,7 @@
 				(0
 					(gGame handsOff:)
 					(gEgo hide:)
-					(proc1111_7 611 121 16 gEgo -1 1)
+					(DoRobot 611 121 16 gEgo -1 1)
 				)
 				(1
 					(self dispose:)
@@ -512,7 +512,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(gEgo hide: setCycle: 0)
 		)
 		(= global115 0)

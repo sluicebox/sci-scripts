@@ -83,7 +83,7 @@
 		(global114 stop: 1)
 		(ClearFlag 145)
 		(OneOf gPrevRoomNum 100 90) ; introRoom, logoRoom
-		(proc1111_6 0 0)
+		(KillRobot 0 0)
 		(gThePlane setRect: 0 0 319 199)
 		(= global121 0)
 		(gGame setCursor: gNormalCursor 0)

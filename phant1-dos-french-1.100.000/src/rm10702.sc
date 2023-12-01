@@ -30,7 +30,7 @@
 
 	(method (init &tmp temp0)
 		(= temp0 0)
-		(proc1111_6)
+		(KillRobot)
 		(gEgo init: normalize:)
 		(if (not (IsFlag 339))
 			(= temp0 sScene108)
@@ -209,7 +209,7 @@
 				(0
 					(gGame handsOff:)
 					(don dispose:)
-					(proc1111_7 1091 -7 -2 gEgo 40 1)
+					(DoRobot 1091 -7 -2 gEgo 40 1)
 					(proc10700_0 10715)
 				)
 				(1
@@ -223,7 +223,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(proc1111_0 0)
@@ -240,7 +240,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc1111_6)
+				(KillRobot)
 				(if (== register sScene110)
 					(gEgo x: 197 y: 131)
 				else
@@ -334,7 +334,7 @@
 					(Load 140 10610) ; WAVE
 					(Lock 140 10610 1) ; WAVE
 					(gEgo hide:)
-					(proc1111_7 1080 144 31 gEgo 40)
+					(DoRobot 1080 144 31 gEgo 40)
 				)
 				(1
 					(don
@@ -359,7 +359,7 @@
 				(3
 					(gGDacSound stop:)
 					(don dispose:)
-					(proc1111_7 1084 -5 -20 gEgo -1 1)
+					(DoRobot 1084 -5 -20 gEgo -1 1)
 					(proc10700_0 10705)
 				)
 				(4
@@ -373,7 +373,7 @@
 
 	(method (dispose)
 		(Lock 140 10610 0) ; WAVE
-		(proc1111_6)
+		(KillRobot)
 		(gGDacSound stop:)
 		(= global115 0)
 		(proc1111_0 0)
@@ -482,7 +482,7 @@
 				)
 				(1
 					(don dispose:)
-					(proc1111_7 1101 -4 -12 gEgo 40 1)
+					(DoRobot 1101 -4 -12 gEgo 40 1)
 					(proc10700_0 10715)
 				)
 				(2
@@ -496,7 +496,7 @@
 
 	(method (dispose)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 		)
 		(proc1111_0 0)

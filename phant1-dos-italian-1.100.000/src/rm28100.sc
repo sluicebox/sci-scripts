@@ -75,7 +75,7 @@
 			(4200
 				(= picture 34440)
 				(gGame doRemap: 2 253 75)
-				(proc1111_6)
+				(KillRobot)
 				(= stepSound 4)
 				(frontDoor approachY: 64)
 				(southExit approachX: 123 approachY: 164)
@@ -146,7 +146,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1571 137 28)
+					(DoRobot 1571 137 28)
 				)
 				(1
 					(self dispose:)
@@ -154,7 +154,7 @@
 			)
 		else
 			(= global115 0)
-			(proc1111_6)
+			(KillRobot)
 			(self dispose:)
 		)
 	)
@@ -169,7 +169,7 @@
 				(0
 					(proc1111_8)
 					(gCurRoom drawPic: 34440 picture: 34440)
-					(proc1111_7 1570 148 29 gEgo 30 1)
+					(DoRobot 1570 148 29 gEgo 30 1)
 				)
 				(1
 					(gCurRoom newRoom: 4200)
@@ -178,7 +178,7 @@
 			)
 		else
 			(= global115 0)
-			(proc1111_6)
+			(KillRobot)
 			(gCurRoom newRoom: 4200)
 		)
 	)

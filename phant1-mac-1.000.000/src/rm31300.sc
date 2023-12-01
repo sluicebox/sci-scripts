@@ -71,7 +71,7 @@
 				)
 				(1
 					(daBone dispose:)
-					(proc1111_7 2760 46 20)
+					(DoRobot 2760 46 20)
 					(gCurRoom drawPic: 31300)
 				)
 				(2
@@ -88,7 +88,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(daBone init:)
 					(gEgo get: 20 posn: 123 115 normalize: 6) ; invDogBone
 					(gCurRoom drawPic: 31450)

@@ -364,7 +364,7 @@
 				(Lock 140 (listOfSounds at: local7) 0) ; WAVE
 			)
 		)
-		(proc1111_6)
+		(KillRobot)
 		(super dispose: &rest)
 	)
 )
@@ -806,7 +806,7 @@
 			)
 			(1
 				(gEgo hide:)
-				(proc1111_7 4600 172 92)
+				(DoRobot 4600 172 92)
 				(gEgo show:)
 			)
 			(2
@@ -825,7 +825,7 @@
 				(SetFlag 121)
 				(gGame handsOn:)
 				(gCurRoom drawPic: 24340 picture: 24340)
-				(proc1111_7 4605 20 55)
+				(DoRobot 4605 20 55)
 			)
 			(1
 				(ClearFlag 121)
@@ -918,7 +918,7 @@
 	(method (changeState newState)
 		(if global115
 			(= global115 0)
-			(proc1111_6)
+			(KillRobot)
 			(gCurRoom drawPic: 24160 picture: 24160)
 			(westExit init: 4)
 			(gGame handsOn:)
@@ -933,12 +933,12 @@
 					)
 					(gGame handsOff:)
 					(westExit dispose:)
-					(proc1111_6)
+					(KillRobot)
 					(self cue:)
 				)
 				(1
 					(gCurRoom drawPic: 24340 picture: 24340)
-					(proc1111_7 3481)
+					(DoRobot 3481)
 				)
 				(2
 					(gCurRoom drawPic: 24160 picture: 24160)
@@ -958,7 +958,7 @@
 	(method (changeState newState)
 		(if global115
 			(= global115 0)
-			(proc1111_6)
+			(KillRobot)
 			(cyrusCooker setHotspot: 0)
 			(westExit init: 4)
 			(gGame handsOn:)
@@ -977,23 +977,23 @@
 				)
 				(1
 					(gCurRoom drawPic: 24610 picture: 24610)
-					(proc1111_7 3490 27 -32)
+					(DoRobot 3490 27 -32)
 				)
 				(2
 					(gCurRoom drawPic: 24580 picture: 24580)
-					(proc1111_7 3491 80 -37 gEgo 200)
+					(DoRobot 3491 80 -37 gEgo 200)
 				)
 				(3
 					(gCurRoom drawPic: 24610 picture: 24610)
-					(proc1111_7 3492 17 -31)
+					(DoRobot 3492 17 -31)
 				)
 				(4
 					(gCurRoom drawPic: 24580 picture: 24580)
-					(proc1111_7 3493 67 -27)
+					(DoRobot 3493 67 -27)
 				)
 				(5
 					(gCurRoom drawPic: 24610 picture: 24610)
-					(proc1111_7 3494 38 -31)
+					(DoRobot 3494 38 -31)
 				)
 				(6
 					(cyrusCooker setHotspot: 0)
@@ -1032,7 +1032,7 @@
 	(method (changeState newState)
 		(if global115
 			(= global115 0)
-			(proc1111_6)
+			(KillRobot)
 			(self dispose:)
 		else
 			(switch (= state newState)
@@ -1050,15 +1050,15 @@
 				)
 				(1
 					(gCurRoom drawPic: 24610 picture: 24610)
-					(proc1111_7 3500 -3 -22)
+					(DoRobot 3500 -3 -22)
 				)
 				(2
 					(gCurRoom drawPic: 24570 picture: 24570)
-					(proc1111_7 3501 -4 -39)
+					(DoRobot 3501 -4 -39)
 				)
 				(3
 					(gCurRoom drawPic: 24340 picture: 24340)
-					(proc1111_7 3502 -4 -39)
+					(DoRobot 3502 -4 -39)
 				)
 				(4
 					(self dispose:)
@@ -1074,7 +1074,7 @@
 	(method (changeState newState)
 		(if global115
 			(= global115 0)
-			(proc1111_6)
+			(KillRobot)
 			(gGame handsOn:)
 			(gCurRoom setScript: sCooking)
 			(self dispose:)
@@ -1090,7 +1090,7 @@
 				)
 				(1
 					(gCurRoom drawPic: 24340 picture: 24340)
-					(proc1111_7 3510 0 -35)
+					(DoRobot 3510 0 -35)
 				)
 				(2
 					(gGame handsOn:)
@@ -1123,7 +1123,7 @@
 			(= global115 0)
 			(SetFlag 121)
 			(SetFlag 292)
-			(proc1111_6)
+			(KillRobot)
 			(gEgo normalize: 613 z: 1000)
 			(= state 6)
 			(self cue:)
@@ -1144,23 +1144,23 @@
 					(localproc_0 24300)
 					(harrietsJunk setPri: 1)
 					(gCurRoom drawPic: 24300 picture: 24300)
-					(proc1111_7 2570 53 11 gEgo 150)
+					(DoRobot 2570 53 11 gEgo 150)
 				)
 				(2
 					(localproc_0 24320)
 					(gCurRoom drawPic: 24320 picture: 24320)
-					(proc1111_7 2571 -8 0)
+					(DoRobot 2571 -8 0)
 					(ClearFlag 121)
 				)
 				(3
 					(harrietsJunk hide:)
 					(gCurRoom drawPic: 24330 picture: 24330)
-					(proc1111_7 2572 -8 0)
+					(DoRobot 2572 -8 0)
 				)
 				(4
 					(localproc_0 24340)
 					(gCurRoom drawPic: 24340 picture: 24340)
-					(proc1111_7 2573 13 -6 gEgo -1)
+					(DoRobot 2573 13 -6 gEgo -1)
 				)
 				(5
 					(harrietsJunk cel: 1)
@@ -1170,7 +1170,7 @@
 				(6
 					(harrietsJunk hide:)
 					(gCurRoom drawPic: 24350 picture: 24350)
-					(proc1111_7 2574 -10 0)
+					(DoRobot 2574 -10 0)
 				)
 				(7
 					(gGame handsOn:)
@@ -1213,7 +1213,7 @@
 					(if (gFeatures contains: southExit)
 						(southExit dispose:)
 					)
-					(proc1111_7 2575 136 23 gEgo 100)
+					(DoRobot 2575 136 23 gEgo 100)
 				)
 				(8
 					(gGame handsOff:)
@@ -1221,12 +1221,12 @@
 					(= local0 0)
 					(donHotspot dispose:)
 					(gCurRoom drawPic: 24350 picture: 24350)
-					(proc1111_7 2650 -16 -9)
+					(DoRobot 2650 -16 -9)
 				)
 				(9
 					(localproc_0 24300)
 					(gCurRoom drawPic: 24300 picture: 24300)
-					(proc1111_7 2591 108 20)
+					(DoRobot 2591 108 20)
 				)
 				(10
 					(gCurRoom drawPic: 24160 picture: 24160)
@@ -1251,7 +1251,7 @@
 				(if (gFeatures contains: donHotspot)
 					(donHotspot dispose:)
 				)
-				(proc1111_6)
+				(KillRobot)
 				(gCast eachElementDo: #hide)
 				(self cue:)
 			)
@@ -1259,7 +1259,7 @@
 				(SetFlag 121)
 				(gGame handsOff:)
 				(gCurRoom drawPic: 24350 picture: 24350)
-				(proc1111_7 2580)
+				(DoRobot 2580)
 			)
 			(2
 				(gGame handsOn:)
@@ -1299,10 +1299,10 @@
 				)
 				(localproc_0 24300)
 				(gCurRoom drawPic: 24300 picture: 24300)
-				(proc1111_7 2581 128 13)
+				(DoRobot 2581 128 13)
 			)
 			(3
-				(proc1111_6)
+				(KillRobot)
 				(donFarHotspot dispose:)
 				(gGame handsOff:)
 				(= next sIGoToWork)
@@ -1331,7 +1331,7 @@
 	(method (changeState newState)
 		(if global115
 			(= global115 0)
-			(proc1111_6)
+			(KillRobot)
 			(if (gFeatures contains: donHotspot)
 				(donHotspot dispose:)
 			)
@@ -1355,7 +1355,7 @@
 					)
 					(= local0 0)
 					(= local1 0)
-					(proc1111_6)
+					(KillRobot)
 					(if (gFeatures contains: donFarHotspot)
 						(donFarHotspot dispose:)
 					)
@@ -1364,13 +1364,13 @@
 				(1
 					(gCast eachElementDo: #hide)
 					(gCurRoom drawPic: 24350 picture: 24350)
-					(proc1111_7 2620 -10 -45)
+					(DoRobot 2620 -10 -45)
 				)
 				(2
 					(ClearFlag 121)
 					(localproc_0 24300)
 					(gCurRoom drawPic: 24300 picture: 24300)
-					(proc1111_7 2591 108 20)
+					(DoRobot 2591 108 20)
 				)
 				(3
 					(gCurRoom drawPic: 24160 picture: 24160)
@@ -1410,7 +1410,7 @@
 	(method (changeState newState)
 		(if global115
 			(= global115 0)
-			(proc1111_6)
+			(KillRobot)
 			(self dispose:)
 		else
 			(switch (= state newState)
@@ -1421,19 +1421,19 @@
 					(if (gFeatures contains: donFarHotspot)
 						(donFarHotspot dispose:)
 					)
-					(proc1111_6)
+					(KillRobot)
 					(gGame handsOff:)
 					(self cue:)
 					(gCast eachElementDo: #hide)
 				)
 				(1
 					(gCurRoom drawPic: 24350 picture: 24350)
-					(proc1111_7 2640 -6 -6)
+					(DoRobot 2640 -6 -6)
 				)
 				(2
 					(localproc_0 24300)
 					(gCurRoom drawPic: 24300 picture: 24300)
-					(proc1111_7 2591 108 20)
+					(DoRobot 2591 108 20)
 				)
 				(3
 					(self dispose:)
@@ -1470,7 +1470,7 @@
 						(gEgo put: 13) ; invDrainCln
 					)
 					(SetFlag 163)
-					(proc1111_6)
+					(KillRobot)
 					(if (gFeatures contains: donHotspot)
 						(donHotspot dispose:)
 					)
@@ -1499,18 +1499,18 @@
 					(if (gCast contains: harrietsJunk)
 						(harrietsJunk hide:)
 					)
-					(proc1111_6)
+					(KillRobot)
 					(self cue:)
 				)
 				(1
 					(gCurRoom drawPic: 24350 picture: 24350)
-					(proc1111_7 2630 -25 0)
+					(DoRobot 2630 -25 0)
 				)
 				(2
 					(ClearFlag 121)
 					(localproc_0 24300)
 					(gCurRoom drawPic: 24300 picture: 24300)
-					(proc1111_7 2591 108 20)
+					(DoRobot 2591 108 20)
 				)
 				(3
 					(self dispose:)
@@ -1525,7 +1525,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gGame handsOn:)
 			(bob setScript: sSkinning)
@@ -1534,22 +1534,22 @@
 			(switch (= state newState)
 				(0
 					(SetFlag 378)
-					(proc1111_6)
+					(KillRobot)
 					(gGame handsOff:)
 					(bob setScript: 0)
 					(self cue:)
 				)
 				(1
 					(gCurRoom drawPic: 24340 picture: 24340)
-					(proc1111_7 4601 -53 -41)
+					(DoRobot 4601 -53 -41)
 				)
 				(2
 					(gCurRoom drawPic: 24580 picture: 24580)
-					(proc1111_7 4602 -12 -51)
+					(DoRobot 4602 -12 -51)
 				)
 				(3
 					(gCurRoom drawPic: 24340 picture: 24340)
-					(proc1111_7 4603 -33 -51)
+					(DoRobot 4603 -33 -51)
 				)
 				(4
 					(gGame handsOn:)
@@ -1568,14 +1568,14 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(bob setScript: 0)
 					(gGame handsOff:)
 					(self cue:)
 				)
 				(1
 					(gCurRoom drawPic: 24340 picture: 24340)
-					(proc1111_7 4610 -53 -41 gEgo 20)
+					(DoRobot 4610 -53 -41 gEgo 20)
 				)
 				(2
 					(gGame handsOn:)
@@ -1584,7 +1584,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gGame handsOn:)
 			(bob setScript: sSkinning)
@@ -1598,7 +1598,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(SetFlag 185)
 			(= global115 0)
 			(gCurRoom newRoom: 28300)
@@ -1608,16 +1608,16 @@
 				(0
 					(gGame handsOff:)
 					(gCurRoom drawPic: 24340 picture: 24340)
-					(proc1111_7 4620 -15 -45)
+					(DoRobot 4620 -15 -45)
 				)
 				(1
 					(gCurRoom drawPic: 24580 picture: 24580)
-					(proc1111_7 4623 85 -10)
+					(DoRobot 4623 85 -10)
 				)
 				(2
 					(gCurRoom drawPic: 24340 picture: 24340)
 					(gEgo hide:)
-					(proc1111_7 4624 28 -43 gEgo -1 1)
+					(DoRobot 4624 28 -43 gEgo -1 1)
 				)
 				(3
 					(SetFlag 185)
@@ -1643,7 +1643,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(if (gCast contains: getPacking)
 						(getPacking dispose:)
 					)
@@ -1656,23 +1656,23 @@
 				)
 				(1
 					(gCurRoom drawPic: 24330 picture: 24330)
-					(proc1111_7 5540 -5 -60 gEgo 200)
+					(DoRobot 5540 -5 -60 gEgo 200)
 				)
 				(2
 					(global114 pause:)
 					(gCurRoom drawPic: 24570 picture: 24570)
-					(proc1111_7 5541 -33 -44)
+					(DoRobot 5541 -33 -44)
 				)
 				(3
 					(gCurRoom drawPic: 24330 picture: 24330)
-					(proc1111_7 5542 -13 -44)
+					(DoRobot 5542 -13 -44)
 				)
 				(4
 					(self dispose:)
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		)
@@ -1684,14 +1684,14 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gCurRoom setScript: sBumsPack)
 			(self dispose:)
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(if (gSounds contains: packNoises)
 						(packNoises dispose:)
 					)
@@ -1707,13 +1707,13 @@
 				)
 				(1
 					(gCurRoom drawPic: 24340 picture: 24340)
-					(proc1111_7 5570 -22 -25)
+					(DoRobot 5570 -22 -25)
 				)
 				(2
 					(gCurRoom setScript: sBumsPack)
 				)
 				(3
-					(proc1111_6)
+					(KillRobot)
 					(gCurRoom setScript: sBumsPack)
 					(self dispose:)
 				)
@@ -1727,7 +1727,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gGame handsOn:)
 			(gCurRoom setScript: sBumsPack)
@@ -1742,7 +1742,7 @@
 						(cyrusPacker dispose:)
 					)
 					(SetFlag 369)
-					(proc1111_6)
+					(KillRobot)
 					(if (gCast contains: getPacking)
 						(getPacking dispose:)
 					)
@@ -1751,17 +1751,17 @@
 				)
 				(1
 					(gCurRoom drawPic: 24340 picture: 24340)
-					(proc1111_7 5580 -32 -29)
+					(DoRobot 5580 -32 -29)
 				)
 				(2
 					(SetFlag 121)
 					(gCurRoom drawPic: 24580 picture: 24580)
-					(proc1111_7 5581 -10 -52)
+					(DoRobot 5581 -10 -52)
 				)
 				(3
 					(ClearFlag 121)
 					(gCurRoom drawPic: 24340 picture: 24340)
-					(proc1111_7 5582 -6 -37)
+					(DoRobot 5582 -6 -37)
 				)
 				(4
 					(gCurRoom setScript: sBumsPack)
@@ -1793,14 +1793,14 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 5530 115 28)
+					(DoRobot 5530 115 28)
 				)
 				(1
 					(self dispose:)

@@ -58,7 +58,7 @@
 				(0
 					(SetFlag 360)
 					(gGame handsOff:)
-					(proc1111_7 1610 79 24 gEgo -1 1)
+					(DoRobot 1610 79 24 gEgo -1 1)
 				)
 				(1
 					(gEgo hide:)
@@ -66,7 +66,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gCurRoom newRoom: 28700)
 		)

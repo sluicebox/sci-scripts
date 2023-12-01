@@ -48,10 +48,10 @@
 				(0
 					(gGame handsOff:)
 					(SetFlag 173)
-					(proc1111_7 3960 50 -39)
+					(DoRobot 3960 50 -39)
 				)
 				(1
-					(proc1111_7 3961 126 -2)
+					(DoRobot 3961 126 -2)
 				)
 				(2
 					(gCurRoom newRoom: 33100)
@@ -60,7 +60,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(SetFlag 173)
 					(= global115 0)
 					(gCurRoom newRoom: 33100)

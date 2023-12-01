@@ -189,7 +189,7 @@
 					(gGame handsOff:)
 					(car view: 34262 posn: 209 131)
 					(gEgo hide:)
-					(proc1111_7 1605 55 46 gEgo -1 1)
+					(DoRobot 1605 55 46 gEgo -1 1)
 					(gCurRoom drawPic: 34261 picture: 34261)
 				)
 				(1
@@ -215,7 +215,7 @@
 				(if (== (Platform 2) 2)
 					(gGame fade: 100 0 2)
 				)
-				(proc1111_6)
+				(KillRobot)
 				(= global115 0)
 			)
 			((== (Platform 2) 2)
@@ -238,7 +238,7 @@
 						(closedDoor dispose:)
 					)
 					(gEgo hide:)
-					(proc1111_7 1603 155 50 gEgo 100 1)
+					(DoRobot 1603 155 50 gEgo 100 1)
 					(gCurRoom drawPic: 34260 picture: 34260)
 				)
 				(1
@@ -265,7 +265,7 @@
 					(if (gCast contains: closedDoor)
 						(closedDoor hide:)
 					)
-					(proc1111_7 1630 91 29 gEgo -1 1)
+					(DoRobot 1630 91 29 gEgo -1 1)
 					(SetFlag 207)
 					(gCurRoom drawPic: 34220 picture: 34220)
 				)
@@ -277,7 +277,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(SetFlag 207)
 					(gCurRoom drawPic: 28300 picture: 28300)
@@ -318,7 +318,7 @@
 					(if (gCast contains: closedDoor)
 						(closedDoor hide:)
 					)
-					(proc1111_7 1631 107 32)
+					(DoRobot 1631 107 32)
 				)
 				(1
 					(self dispose:)
@@ -327,7 +327,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(self dispose:)
 				)
@@ -359,7 +359,7 @@
 					)
 					(closedDoor hide:)
 					(gGame handsOff:)
-					(proc1111_7 1632 -6 -34)
+					(DoRobot 1632 -6 -34)
 					(gCurRoom drawPic: 34220 picture: 34220)
 				)
 				(1
@@ -367,7 +367,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		)
@@ -386,14 +386,14 @@
 						(car dispose:)
 					)
 					(Load rsPIC 24020)
-					(proc1111_7 3200 35 0 gEgo 200)
+					(DoRobot 3200 35 0 gEgo 200)
 				)
 				(1
-					(proc1111_7 3201 -28 -43 gEgo -1)
+					(DoRobot 3201 -28 -43 gEgo -1)
 					(gCurRoom drawPic: 24020 picture: 24020)
 				)
 				(2
-					(proc1111_7 3202 45 -41 gEgo -1)
+					(DoRobot 3202 45 -41 gEgo -1)
 					(gCurRoom drawPic: 24010 picture: 24010)
 				)
 				(3
@@ -405,7 +405,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(SetFlag 231)
 					(gCurRoom newRoom: 24000)
@@ -453,7 +453,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1601 10 -9)
+					(DoRobot 1601 10 -9)
 					(if (== (Platform 2) 2)
 						(gGame fade: 0 100 2)
 					)
@@ -464,7 +464,7 @@
 			)
 		else
 			(= global115 0)
-			(proc1111_6)
+			(KillRobot)
 			(self dispose:)
 		)
 	)

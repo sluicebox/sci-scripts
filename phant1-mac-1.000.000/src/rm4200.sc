@@ -401,7 +401,7 @@
 				(0
 					46
 					(Load rsSOUND 3020)
-					(proc1111_7 2390 43 -21 gEgo 1)
+					(DoRobot 2390 43 -21 gEgo 1)
 				)
 				(1
 					(global114 pause: 3020 0 -1)
@@ -420,7 +420,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(SetFlag 196)
 					(if (not (global114 script:))
@@ -454,9 +454,9 @@
 					(gGDacSound number: 3051 init: setVol: 60 setLoop: -1 play:)
 					(rDoor3470 init:)
 					(if (== gChapter 5)
-						(proc1111_7 433 145 -35)
+						(DoRobot 433 145 -35)
 					else
-						(proc1111_7 432 106 -17)
+						(DoRobot 432 106 -17)
 					)
 				)
 				(1
@@ -469,7 +469,7 @@
 						(harriet hide:)
 					)
 					(SetFlag 376)
-					(proc1111_7 5020 -6 -38)
+					(DoRobot 5020 -6 -38)
 					(gCurRoom drawPic: 3840)
 				)
 				(2
@@ -491,7 +491,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(SetFlag 376)
 					(if (not (global114 script:))
@@ -555,9 +555,9 @@
 					)
 					(rDoor3470 init:)
 					(if (== gChapter 5)
-						(proc1111_7 433 145 -35)
+						(DoRobot 433 145 -35)
 					else
-						(proc1111_7 432 106 -17)
+						(DoRobot 432 106 -17)
 					)
 				)
 				(1
@@ -588,7 +588,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (gCast contains: rDoor3470)
 				(lPhone3470 dispose:)
@@ -646,9 +646,9 @@
 					)
 					(rDoor3470 init:)
 					(if (== gChapter 5)
-						(proc1111_7 433 145 -35)
+						(DoRobot 433 145 -35)
 					else
-						(proc1111_7 432 106 -17)
+						(DoRobot 432 106 -17)
 					)
 				)
 				(1
@@ -688,7 +688,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(ClearFlag 121)
 			(if (gCast contains: mike)
@@ -719,7 +719,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 471 38 30)
+					(DoRobot 471 38 30)
 				)
 				(1
 					(if (and (== gChapter 4) (IsFlag 190))
@@ -762,7 +762,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (and (== gChapter 4) (IsFlag 190))
 				(SetFlag 51)
@@ -840,7 +840,7 @@
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 438 85 -39)
+							(DoRobot 438 85 -39)
 							(gCurRoom drawPic: 3640)
 						)
 						(23
@@ -853,7 +853,7 @@
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 436 -5 -31)
+							(DoRobot 436 -5 -31)
 							(gCurRoom drawPic: 3640)
 						)
 						(24
@@ -871,7 +871,7 @@
 							)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 436 -10 -31)
+							(DoRobot 436 -10 -31)
 							(gCurRoom drawPic: 3640)
 						)
 						(else
@@ -914,9 +914,9 @@
 					)
 					(rDoor3470 init:)
 					(if (== gChapter 5)
-						(proc1111_7 431 98 0 gEgo -1 1)
+						(DoRobot 431 98 0 gEgo -1 1)
 					else
-						(proc1111_7 430 133 -21 gEgo -1 1)
+						(DoRobot 430 133 -21 gEgo -1 1)
 					)
 					(gCurRoom drawPic: (+ 3470 (== gChapter 5)))
 				)
@@ -929,7 +929,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (and (== gChapter 1) (IsFlag 82) (not (IsFlag 181)))
 				(SetFlag 181)
@@ -980,21 +980,21 @@
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 438 95 -39)
+							(DoRobot 438 95 -39)
 							(gCurRoom drawPic: 3640)
 						)
 						(23
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 438 15 -39)
+							(DoRobot 438 15 -39)
 							(gCurRoom drawPic: 3640)
 						)
 						(24
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 438 -10 -39)
+							(DoRobot 438 -10 -39)
 							(gCurRoom drawPic: 3640)
 						)
 						(else
@@ -1013,7 +1013,7 @@
 						(libDoor dispose:)
 					)
 					(gEgo hide:)
-					(proc1111_7 470 57 30 gEgo -1 1)
+					(DoRobot 470 57 30 gEgo -1 1)
 					(gCurRoom drawPic: (+ 3560 (== gChapter 5)))
 				)
 				(3
@@ -1024,7 +1024,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(= global125 0)
 					(gCurRoom newRoom: 13100)
@@ -1069,7 +1069,7 @@
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
 							(gEgo hide:)
-							(proc1111_7 439 81 -14 gEgo -1 1)
+							(DoRobot 439 81 -14 gEgo -1 1)
 							(gCurRoom drawPic: 3640)
 						)
 						(21
@@ -1077,7 +1077,7 @@
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
 							(gEgo hide:)
-							(proc1111_7 439 40 -14 gEgo -1 1)
+							(DoRobot 439 40 -14 gEgo -1 1)
 							(gCurRoom drawPic: 3640)
 						)
 						(22
@@ -1085,7 +1085,7 @@
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
 							(gEgo hide:)
-							(proc1111_7 439 40 -14 gEgo -1 1)
+							(DoRobot 439 40 -14 gEgo -1 1)
 							(gCurRoom drawPic: 3640)
 						)
 						(else
@@ -1139,7 +1139,7 @@
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
 							(gEgo hide:)
-							(proc1111_7 437 -40 -15 gEgo -1 1)
+							(DoRobot 437 -40 -15 gEgo -1 1)
 							(gCurRoom drawPic: 3640)
 						)
 						(21
@@ -1147,7 +1147,7 @@
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
 							(gEgo hide:)
-							(proc1111_7 437 -84 -15 gEgo -1 1)
+							(DoRobot 437 -84 -15 gEgo -1 1)
 							(gCurRoom drawPic: 3640)
 						)
 						(22
@@ -1155,7 +1155,7 @@
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
 							(gEgo hide:)
-							(proc1111_7 437 -84 -15 gEgo -1 1)
+							(DoRobot 437 -84 -15 gEgo -1 1)
 							(gCurRoom drawPic: 3640)
 						)
 						(else
@@ -1182,23 +1182,23 @@
 			(switch (= local1 (= state newState))
 				(0
 					(SetFlag 248)
-					(proc1111_7 471 38 30)
+					(DoRobot 471 38 30)
 				)
 				(1
 					(gEgo hide:)
-					(proc1111_7 4060 77 -8)
+					(DoRobot 4060 77 -8)
 					(gCurRoom drawPic: 3925)
 				)
 				(2
-					(proc1111_7 4061 -28 -24 gEgo 200)
+					(DoRobot 4061 -28 -24 gEgo 200)
 					(gCurRoom drawPic: 3935)
 				)
 				(3
-					(proc1111_7 4062 14 -10)
+					(DoRobot 4062 14 -10)
 					(gCurRoom drawPic: (+ 3560 (== gChapter 5)))
 				)
 				(4
-					(proc1111_7 4063 26 -3)
+					(DoRobot 4063 26 -3)
 					(gCurRoom drawPic: 3925)
 				)
 				(5
@@ -1206,7 +1206,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if local1
 				(gCurRoom setScript: sAnythingElse)
@@ -1224,7 +1224,7 @@
 		(if (not global115)
 			(switch (= state newState)
 				(0
-					(proc1111_7 4070 18 -37 gEgo 200)
+					(DoRobot 4070 18 -37 gEgo 200)
 					(gCurRoom drawPic: 3935)
 				)
 				(1
@@ -1270,7 +1270,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(harrietStill dispose:)
 			(if local0
@@ -1294,9 +1294,9 @@
 					(SetFlag 175)
 					(if (gEgo has: 3) ; invNewspaper
 						(gEgo put: 3) ; invNewspaper
-						(proc1111_7 4130 -12 -41 gEgo -1 1)
+						(DoRobot 4130 -12 -41 gEgo -1 1)
 					else
-						(proc1111_7 4080 -4 -38 gEgo -1 1)
+						(DoRobot 4080 -4 -38 gEgo -1 1)
 					)
 					(gCurRoom drawPic: 3925)
 				)
@@ -1305,7 +1305,7 @@
 					(= cycles 100)
 				)
 				(2
-					(proc1111_6)
+					(KillRobot)
 					(gEgo show: posn: 138 88 normalize: 0)
 					(= global125 20)
 					(gCurRoom drawPic: (+ 3900 (== gChapter 5)))
@@ -1322,7 +1322,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(ClearFlag 248)
 			(if (gEgo has: 3) ; invNewspaper
@@ -1348,7 +1348,7 @@
 				(0
 					(harrietStill dispose:)
 					(gEgo hide:)
-					(proc1111_7 4100 101 13)
+					(DoRobot 4100 101 13)
 					(gCurRoom drawPic: 3925)
 				)
 				(1
@@ -1356,7 +1356,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gCurRoom setScript: sAnythingElse)
 		)
@@ -1371,7 +1371,7 @@
 			(switch (= state newState)
 				(0
 					(harrietStill dispose:)
-					(proc1111_7 4090 79 8)
+					(DoRobot 4090 79 8)
 					(gCurRoom drawPic: 3925)
 				)
 				(1
@@ -1386,7 +1386,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (IsFlag 190)
 				(gEgo show:)
@@ -1410,15 +1410,15 @@
 					(SetFlag 153)
 					(gGame handsOff:)
 					(harrietStill dispose:)
-					(proc1111_7 4110 27 -50)
+					(DoRobot 4110 27 -50)
 					(gCurRoom drawPic: 3560)
 				)
 				(1
-					(proc1111_7 4111 59 -15 gEgo 200)
+					(DoRobot 4111 59 -15 gEgo 200)
 					(gCurRoom drawPic: 3935)
 				)
 				(2
-					(proc1111_7 4112 102 23 gEgo 200 1)
+					(DoRobot 4112 102 23 gEgo 200 1)
 					(gCurRoom drawPic: 3925)
 				)
 				(3
@@ -1426,7 +1426,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(SetFlag 153)
 			(gCurRoom setScript: sAnythingElse)
@@ -1442,11 +1442,11 @@
 			(switch (= state newState)
 				(0
 					(harrietStill dispose:)
-					(proc1111_7 4120 -8 -10 gEgo 200)
+					(DoRobot 4120 -8 -10 gEgo 200)
 					(gCurRoom drawPic: 3560)
 				)
 				(1
-					(proc1111_7 4121 -8 -26)
+					(DoRobot 4121 -8 -26)
 					(gCurRoom drawPic: 3950)
 				)
 				(2
@@ -1455,7 +1455,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gEgo put: 9) ; invTarot
 			(gCurRoom setScript: sAnythingElse)
@@ -1503,7 +1503,7 @@
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 438 85 -39)
+							(DoRobot 438 85 -39)
 							(gCurRoom drawPic: 3640)
 						)
 						(23
@@ -1516,7 +1516,7 @@
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 436 -5 -31)
+							(DoRobot 436 -5 -31)
 							(gCurRoom drawPic: 3640)
 						)
 						(24
@@ -1534,7 +1534,7 @@
 							)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 436 -10 -31)
+							(DoRobot 436 -10 -31)
 							(gCurRoom drawPic: 3640)
 						)
 						(else
@@ -1553,7 +1553,7 @@
 						(libDoor dispose:)
 					)
 					(harriet hide:)
-					(proc1111_7 4241 -77 0)
+					(DoRobot 4241 -77 0)
 					(gCurRoom drawPic: 3920)
 				)
 				(3
@@ -1572,7 +1572,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (gCast contains: fire)
 				(fire dispose:)
@@ -1608,15 +1608,15 @@
 				(0
 					(SetFlag 153)
 					(harriet hide:)
-					(proc1111_7 4110 -42 -50 gEgo 200)
+					(DoRobot 4110 -42 -50 gEgo 200)
 					(gCurRoom drawPic: 3560)
 				)
 				(1
-					(proc1111_7 4111 59 -15 gEgo 200)
+					(DoRobot 4111 59 -15 gEgo 200)
 					(gCurRoom drawPic: 3935)
 				)
 				(2
-					(proc1111_7 4112 102 23 gEgo 200)
+					(DoRobot 4112 102 23 gEgo 200)
 					(gCurRoom drawPic: 3925)
 				)
 				(3
@@ -1634,7 +1634,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(SetFlag 153)
 			(harriet show:)
@@ -1692,21 +1692,21 @@
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 438 95 -39)
+							(DoRobot 438 95 -39)
 							(gCurRoom drawPic: 3640)
 						)
 						(23
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 438 15 -39)
+							(DoRobot 438 15 -39)
 							(gCurRoom drawPic: 3640)
 						)
 						(24
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 438 -10 -39)
+							(DoRobot 438 -10 -39)
 							(gCurRoom drawPic: 3640)
 						)
 						(else
@@ -1725,7 +1725,7 @@
 						(libDoor dispose:)
 					)
 					(gEgo hide:)
-					(proc1111_7 4290 175 30)
+					(DoRobot 4290 175 30)
 					(gCurRoom drawPic: 3970)
 				)
 				(3
@@ -1747,7 +1747,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gEgo
 						setScaler: Scaler 65 32 128 82
@@ -1803,21 +1803,21 @@
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 438 85 -39)
+							(DoRobot 438 85 -39)
 							(gCurRoom drawPic: 3640)
 						)
 						(23
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 436 -5 -31)
+							(DoRobot 436 -5 -31)
 							(gCurRoom drawPic: 3640)
 						)
 						(24
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 436 -10 -31)
+							(DoRobot 436 -10 -31)
 							(gCurRoom drawPic: 3640)
 						)
 						(else
@@ -1837,23 +1837,23 @@
 					)
 					(lPhone3970 init:)
 					(lToolBox3970 init:)
-					(proc1111_7 4580 111 -8)
+					(DoRobot 4580 111 -8)
 					(gCurRoom drawPic: 3970)
 				)
 				(3
 					(lPhone3970 hide:)
 					(lToolBox3970 hide:)
-					(proc1111_7 4581 45 -27)
+					(DoRobot 4581 45 -27)
 					(gCurRoom drawPic: 3980)
 				)
 				(4
-					(proc1111_7 4582 -16 -44)
+					(DoRobot 4582 -16 -44)
 					(gCurRoom drawPic: 3990)
 				)
 				(5
 					(lPhone3970 show:)
 					(lToolBox3970 show:)
-					(proc1111_7 4583 120 9)
+					(DoRobot 4583 120 9)
 					(gCurRoom drawPic: 3970)
 				)
 				(6
@@ -1868,7 +1868,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (gCast contains: lPhone3970)
 				(lPhone3970 dispose:)
@@ -1903,15 +1903,15 @@
 					(if (gCast contains: mike)
 						(mike dispose:)
 					)
-					(proc1111_7 4831 46 -31)
+					(DoRobot 4831 46 -31)
 				)
 				(1
-					(proc1111_7 4832 79 37)
+					(DoRobot 4832 79 37)
 					(gCurRoom drawPic: (+ 3560 (== gChapter 5)))
 				)
 				(2
 					(gEgo hide:)
-					(proc1111_7 4833 1 0 gEgo -1 1)
+					(DoRobot 4833 1 0 gEgo -1 1)
 					(gCurRoom drawPic: 3570)
 				)
 				(3
@@ -1924,7 +1924,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(gEgo hide:)
 			(gGame fadeSpeed: 4)
@@ -1968,21 +1968,21 @@
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 438 85 -39)
+							(DoRobot 438 85 -39)
 							(gCurRoom drawPic: 3640)
 						)
 						(23
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 436 -5 -31)
+							(DoRobot 436 -5 -31)
 							(gCurRoom drawPic: 3640)
 						)
 						(24
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 436 -10 -31)
+							(DoRobot 436 -10 -31)
 							(gCurRoom drawPic: 3640)
 						)
 						(else
@@ -2003,7 +2003,7 @@
 					(lDoor3470 init:)
 					(rDoor3470 init:)
 					(global114 pause:)
-					(proc1111_7 5430 -17 -33)
+					(DoRobot 5430 -17 -33)
 					(lPhone3470 init:)
 					(lToolBox3470 init:)
 					(gCurRoom drawPic: 3470)
@@ -2013,15 +2013,15 @@
 					(lToolBox3470 hide:)
 					(lDoor3470 hide:)
 					(rDoor3470 hide:)
-					(proc1111_7 5431 66 -43)
+					(DoRobot 5431 66 -43)
 					(gCurRoom drawPic: 3980)
 				)
 				(4
-					(proc1111_7 5432 58 -42)
+					(DoRobot 5432 58 -42)
 					(gCurRoom drawPic: 3990)
 				)
 				(5
-					(proc1111_7 5433 5 -42)
+					(DoRobot 5433 5 -42)
 					(gCurRoom drawPic: 3980)
 				)
 				(6
@@ -2029,7 +2029,7 @@
 					(rDoor3470 show:)
 					(lPhone3470 show:)
 					(lToolBox3470 show:)
-					(proc1111_7 5434 -16 -35)
+					(DoRobot 5434 -16 -35)
 					(gCurRoom drawPic: (+ 3470 (== gChapter 5)))
 				)
 				(7
@@ -2047,7 +2047,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (gCast contains: fire)
 				(fire dispose:)
@@ -2110,21 +2110,21 @@
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 438 85 -39)
+							(DoRobot 438 85 -39)
 							(gCurRoom drawPic: 3640)
 						)
 						(23
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 436 -5 -31)
+							(DoRobot 436 -5 -31)
 							(gCurRoom drawPic: 3640)
 						)
 						(24
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 436 -10 -31)
+							(DoRobot 436 -10 -31)
 							(gCurRoom drawPic: 3640)
 						)
 						(else
@@ -2144,7 +2144,7 @@
 					)
 					(lPhone3970 init:)
 					(lToolBox3970 init:)
-					(proc1111_7 4590 104 5)
+					(DoRobot 4590 104 5)
 					(gCurRoom drawPic: 3970)
 				)
 				(3
@@ -2159,7 +2159,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (gCast contains: fire)
 				(fire dispose:)
@@ -2197,13 +2197,13 @@
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 438 85 -39)
+							(DoRobot 438 85 -39)
 						)
 						(23
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 436 -5 -31)
+							(DoRobot 436 -5 -31)
 						)
 					)
 				)
@@ -2220,7 +2220,7 @@
 					(lDoor3470 init:)
 					(rDoor3470 init:)
 					(lPhone3470 init:)
-					(proc1111_7 5840 -4 -27)
+					(DoRobot 5840 -4 -27)
 					(gCurRoom drawPic: 3470)
 				)
 				(2
@@ -2233,7 +2233,7 @@
 					(lPhone3470 hide:)
 					(lDoor3470 hide:)
 					(rDoor3470 hide:)
-					(proc1111_7 5841 24 -43)
+					(DoRobot 5841 24 -43)
 					(gCurRoom drawPic: 3990)
 				)
 				(5
@@ -2241,7 +2241,7 @@
 					(rDoor3470 show:)
 					(lPhone3470 show:)
 					(lToolBoxClosed3470 init:)
-					(proc1111_7 5842 46 -16)
+					(DoRobot 5842 46 -16)
 					(gCurRoom drawPic: 3470)
 				)
 				(6
@@ -2252,17 +2252,17 @@
 					(lDoor3470 dispose:)
 					(rDoor3470 dispose:)
 					(lDoor3590 init:)
-					(proc1111_7 5843 -122 -11)
+					(DoRobot 5843 -122 -11)
 					(gCurRoom drawPic: 3590)
 				)
 				(8
 					(lDoor3590 dispose:)
-					(proc1111_7 5844 2 -44)
+					(DoRobot 5844 2 -44)
 					(gCurRoom drawPic: 3980)
 				)
 				(9
 					(gEgo hide:)
-					(proc1111_7 5845 0 0 gEgo -1 1)
+					(DoRobot 5845 0 0 gEgo -1 1)
 					(gCurRoom drawPic: 3590)
 				)
 				(10
@@ -2272,7 +2272,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(SetFlag 200)
 			(= global125 0)
@@ -2292,9 +2292,9 @@
 					(lPhone3470 init:)
 					(rDoor3470 init:)
 					(if (== gChapter 5)
-						(proc1111_7 433 145 -35)
+						(DoRobot 433 145 -35)
 					else
-						(proc1111_7 432 106 -17)
+						(DoRobot 432 106 -17)
 					)
 				)
 				(1
@@ -2310,7 +2310,7 @@
 					(rDoor3470 show:)
 					(lDoor3470 init:)
 					(lPhone3470 show:)
-					(proc1111_7 5840 -4 -27)
+					(DoRobot 5840 -4 -27)
 					(gCurRoom drawPic: 3470)
 				)
 				(3
@@ -2323,7 +2323,7 @@
 					(lDoor3470 hide:)
 					(rDoor3470 hide:)
 					(lPhone3470 hide:)
-					(proc1111_7 5841 24 -43)
+					(DoRobot 5841 24 -43)
 					(gCurRoom drawPic: 3990)
 				)
 				(6
@@ -2331,7 +2331,7 @@
 					(rDoor3470 show:)
 					(lPhone3470 show:)
 					(lToolBoxClosed3470 init:)
-					(proc1111_7 5842 46 -16)
+					(DoRobot 5842 46 -16)
 					(gCurRoom drawPic: 3470)
 				)
 				(7
@@ -2342,17 +2342,17 @@
 					(lDoor3470 dispose:)
 					(rDoor3470 dispose:)
 					(lDoor3590 init:)
-					(proc1111_7 5843 -122 -11)
+					(DoRobot 5843 -122 -11)
 					(gCurRoom drawPic: 3590)
 				)
 				(9
 					(lDoor3590 dispose:)
-					(proc1111_7 5844 2 -44)
+					(DoRobot 5844 2 -44)
 					(gCurRoom drawPic: 3980)
 				)
 				(10
 					(gEgo hide:)
-					(proc1111_7 5845 0 0 gEgo -1 1)
+					(DoRobot 5845 0 0 gEgo -1 1)
 					(gCurRoom drawPic: 3590)
 				)
 				(11
@@ -2362,7 +2362,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(SetFlag 200)
 			(= global125 0)
@@ -2378,13 +2378,13 @@
 		(if (not global115)
 			(switch (= local1 (= state newState))
 				(0
-					(proc1111_7 471 38 30)
+					(DoRobot 471 38 30)
 				)
 				(1
 					(lDoor3470 init:)
 					(rDoor3470 init:)
 					(lPhone3470 init:)
-					(proc1111_7 5840 -4 -27)
+					(DoRobot 5840 -4 -27)
 					(gCurRoom drawPic: 3470)
 				)
 				(2
@@ -2397,7 +2397,7 @@
 					(lDoor3470 hide:)
 					(rDoor3470 hide:)
 					(lPhone3470 hide:)
-					(proc1111_7 5841 24 -43)
+					(DoRobot 5841 24 -43)
 					(gCurRoom drawPic: 3990)
 				)
 				(5
@@ -2405,7 +2405,7 @@
 					(rDoor3470 show:)
 					(lPhone3470 show:)
 					(lToolBoxClosed3470 init:)
-					(proc1111_7 5842 46 -16)
+					(DoRobot 5842 46 -16)
 					(gCurRoom drawPic: 3470)
 				)
 				(6
@@ -2416,17 +2416,17 @@
 					(lDoor3470 dispose:)
 					(rDoor3470 dispose:)
 					(lDoor3590 init:)
-					(proc1111_7 5843 -122 -11)
+					(DoRobot 5843 -122 -11)
 					(gCurRoom drawPic: 3590)
 				)
 				(8
 					(lDoor3590 dispose:)
-					(proc1111_7 5844 2 -44)
+					(DoRobot 5844 2 -44)
 					(gCurRoom drawPic: 3980)
 				)
 				(9
 					(gEgo hide:)
-					(proc1111_7 5845 0 0 gEgo -1 1)
+					(DoRobot 5845 0 0 gEgo -1 1)
 					(gCurRoom drawPic: 3590)
 				)
 				(10
@@ -2436,7 +2436,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if local1
 				(SetFlag 200)
@@ -2458,31 +2458,31 @@
 				(0
 					(gGame handsOff:)
 					(SetFlag 194)
-					(proc1111_7 4920 0 0)
+					(DoRobot 4920 0 0)
 				)
 				(1
 					(lDoor3951 init:)
-					(proc1111_7 4921 27 -44)
+					(DoRobot 4921 27 -44)
 					(gCurRoom drawPic: 3951)
 				)
 				(2
 					(lDoor3951 hide:)
-					(proc1111_7 4922 -5 -27 gEgo 200)
+					(DoRobot 4922 -5 -27 gEgo 200)
 					(gCurRoom drawPic: 3561)
 				)
 				(3
 					(lDoor3951 show:)
-					(proc1111_7 4923 -41 -32)
+					(DoRobot 4923 -41 -32)
 					(gCurRoom drawPic: 3951)
 				)
 				(4
 					(lDoor3951 dispose:)
 					(global114 pause:)
 					(if (gEgo has: 9) ; invTarot
-						(proc1111_7 4925 97 1)
+						(DoRobot 4925 97 1)
 						(gEgo put: 9) ; invTarot
 					else
-						(proc1111_7 4924 76 -23)
+						(DoRobot 4924 76 -23)
 					)
 					(gCurRoom drawPic: 3941)
 				)
@@ -2496,7 +2496,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(if (gCast contains: lDoor3951)
 				(lDoor3951 dispose:)
@@ -2545,21 +2545,21 @@
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 438 85 -39)
+							(DoRobot 438 85 -39)
 							(gCurRoom drawPic: 3640)
 						)
 						(23
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 436 -5 -31)
+							(DoRobot 436 -5 -31)
 							(gCurRoom drawPic: 3640)
 						)
 						(24
 							(fire init: cycleSpeed: 8 setCycle: RandCycle)
 							(theCat init: cycleSpeed: 60 setCycle: RandCycle)
 							(libDoor init:)
-							(proc1111_7 436 -10 -31)
+							(DoRobot 436 -10 -31)
 							(gCurRoom drawPic: 3640)
 						)
 						(else
@@ -2580,7 +2580,7 @@
 					(gEgo hide:)
 					(global114 pause:)
 					(= register 1)
-					(proc1111_7 5931 0 0 gEgo -1 1)
+					(DoRobot 5931 0 0 gEgo -1 1)
 					(gCurRoom drawPic: 3830)
 				)
 				(3
@@ -2592,7 +2592,7 @@
 			(if (not register)
 				(global114 pause:)
 			)
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(SetFlag 202)
 			(gCurRoom newRoom: 2200)
@@ -2609,7 +2609,7 @@
 				(0
 					(gEgo hide:)
 					(lDoor3830 init:)
-					(proc1111_7 5941 79 17)
+					(DoRobot 5941 79 17)
 				)
 				(1
 					(lDoor3830 dispose:)
@@ -2629,7 +2629,7 @@
 				)
 			)
 		else
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(global114 endPause:)
 			(if (gCast contains: lDoor3830)
@@ -2691,13 +2691,13 @@
 					)
 					(switch gChapter
 						(1
-							(proc1111_7 500 12 -10)
+							(DoRobot 500 12 -10)
 						)
 						(2
-							(proc1111_7 505 41 16)
+							(DoRobot 505 41 16)
 						)
 						(else
-							(proc1111_7 507 104 30)
+							(DoRobot 507 104 30)
 						)
 					)
 					(gCurRoom drawPic: 3780)
@@ -2716,10 +2716,10 @@
 					(coin dispose:)
 					(switch gChapter
 						(1
-							(proc1111_7 501 23 18)
+							(DoRobot 501 23 18)
 						)
 						(2
-							(proc1111_7 506 60 21)
+							(DoRobot 506 60 21)
 						)
 					)
 					(gCurRoom drawPic: 3780)
@@ -2727,15 +2727,15 @@
 				(4
 					(gGDacSound pause: 1)
 					(if (== gChapter 7)
-						(proc1111_7 50405 98 0)
+						(DoRobot 50405 98 0)
 					else
-						(proc1111_7 (+ 50399 gChapter) 98 0)
+						(DoRobot (+ 50399 gChapter) 98 0)
 					)
 					(gCurRoom drawPic: 3790)
 				)
 				(5
 					(gGDacSound pause: 0)
-					(proc1111_7 502 74 26)
+					(DoRobot 502 74 26)
 					(gCurRoom drawPic: 3780)
 				)
 				(6
@@ -2786,7 +2786,7 @@
 				)
 				(8
 					(fortuneView dispose:)
-					(proc1111_7 503 55 16)
+					(DoRobot 503 55 16)
 					(gCurRoom drawPic: 3780)
 				)
 				(9
@@ -2812,7 +2812,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(if local1
 						(global114 endPause: 1)
@@ -2906,7 +2906,7 @@
 					(if (gCast contains: harriet)
 						(harriet hide:)
 					)
-					(proc1111_7 510 6 16)
+					(DoRobot 510 6 16)
 					(gCurRoom drawPic: 3780)
 				)
 				(2
@@ -2930,7 +2930,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(if (gCast contains: mike)
 						(mike show:)

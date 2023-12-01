@@ -106,7 +106,7 @@
 			(gContMusic priority: 1 number: 20 loop: -1 play:)
 		)
 		(if (not (IsFlag 161))
-			(if (gEgo knows: 23)
+			(if (gEgo knows: 23) ; flameDartSpell
 				(egoShoots number: (SoundFX 33) init:)
 				(magicHit number: (SoundFX 45) init:)
 			)

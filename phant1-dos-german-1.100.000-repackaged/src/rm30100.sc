@@ -129,7 +129,7 @@
 		(if global115
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gCurRoom drawPic: 30100)
 					(gCast eachElementDo: #show)
 					(gEgo view: 3 posn: 160 109)
@@ -143,7 +143,7 @@
 				(0
 					(gGame handsOff:)
 					(gCast eachElementDo: #hide)
-					(proc1111_7 1798)
+					(DoRobot 1798)
 				)
 				(1
 					(gCurRoom drawPic: 30100)
@@ -166,7 +166,7 @@
 				(0
 					(gGame handsOff:)
 					(gCast eachElementDo: #hide)
-					(proc1111_7 1799 0 0 gEgo -1 1)
+					(DoRobot 1799 0 0 gEgo -1 1)
 					(gCurRoom drawPic: 30130)
 				)
 				(1
@@ -177,7 +177,7 @@
 			(switch (= state newState)
 				(0
 					(= global115 0)
-					(proc1111_6)
+					(KillRobot)
 					(gCurRoom newRoom: 34400)
 				)
 			)
@@ -192,7 +192,7 @@
 		(if global115
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(SetFlag 94)
 					(chair dispose:)
 					(gCurRoom drawPic: 30100)
@@ -207,31 +207,31 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1798)
+					(DoRobot 1798)
 				)
 				(1
 					(SetFlag 94)
 					(chair init:)
-					(proc1111_7 1802 -18 -13)
+					(DoRobot 1802 -18 -13)
 					(gCurRoom drawPic: 30160)
 				)
 				(2
 					(chair dispose:)
 				)
 				(3
-					(proc1111_7 1803 -7 -8)
+					(DoRobot 1803 -7 -8)
 					(gCurRoom drawPic: 30170)
 				)
 				(4
-					(proc1111_7 1804 -8 -36)
+					(DoRobot 1804 -8 -36)
 					(gCurRoom drawPic: 30180)
 				)
 				(5
-					(proc1111_7 1808 -18 0)
+					(DoRobot 1808 -18 0)
 					(gCurRoom drawPic: 30160)
 				)
 				(6
-					(proc1111_7 1809 -5 -4)
+					(DoRobot 1809 -5 -4)
 					(gCurRoom drawPic: 30170)
 				)
 				(7
@@ -253,7 +253,7 @@
 		(if global115
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gCurRoom drawPic: 30100)
 					(chair dispose:)
 					(desk setHotspot: 0)
@@ -272,7 +272,7 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1798)
+					(DoRobot 1798)
 				)
 				(1
 					(desk setHotspot: 0)
@@ -281,7 +281,7 @@
 					(SetFlag 263)
 					(gCast eachElementDo: #hide)
 					(chair init:)
-					(proc1111_7 1880 52 -6)
+					(DoRobot 1880 52 -6)
 					(gCurRoom drawPic: 30160)
 				)
 				(2
@@ -305,7 +305,7 @@
 		(if global115
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(gCurRoom drawPic: 30100)
 					(chair dispose:)
 					(gCast eachElementDo: #show)
@@ -322,13 +322,13 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1798)
+					(DoRobot 1798)
 				)
 				(1
 					(SetFlag 263)
 					(gCast eachElementDo: #hide)
 					(chair init:)
-					(proc1111_7 1890 -21 -42)
+					(DoRobot 1890 -21 -42)
 					(gCurRoom drawPic: 30160)
 				)
 				(2
@@ -354,7 +354,7 @@
 		(if global115
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom drawPic: 30100)
 					(desk setHotspot: 0)
@@ -369,19 +369,19 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1798)
+					(DoRobot 1798)
 				)
 				(1
 					(gCast eachElementDo: #hide)
-					(proc1111_7 1900 -13 -41)
+					(DoRobot 1900 -13 -41)
 					(gCurRoom drawPic: 30140)
 				)
 				(2
-					(proc1111_7 1901 -20 -31)
+					(DoRobot 1901 -20 -31)
 					(gCurRoom drawPic: 30170)
 				)
 				(3
-					(proc1111_7 1902 -14 -42)
+					(DoRobot 1902 -14 -42)
 					(gCurRoom drawPic: 30140)
 				)
 				(4
@@ -405,7 +405,7 @@
 		(if global115
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(SetFlag 270)
 					(gEgo normalize: 3)
 					(if (gCast contains: deskStuff)
@@ -422,14 +422,14 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1798)
+					(DoRobot 1798)
 				)
 				(1
 					(gGame handsOff:)
 					(SetFlag 270)
 					(gCast eachElementDo: #hide)
 					(deskStuff init:)
-					(proc1111_7 3890 -14 -40)
+					(DoRobot 3890 -14 -40)
 					(gCurRoom drawPic: 30140)
 				)
 				(2
@@ -452,7 +452,7 @@
 		(if global115
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(if (gCast contains: deskStuff)
 						(deskStuff dispose:)
 					)
@@ -469,25 +469,25 @@
 				(0
 					(gGame handsOff:)
 					(gCast eachElementDo: #hide)
-					(proc1111_7 3900 4 -35)
+					(DoRobot 3900 4 -35)
 					(gCurRoom drawPic: 30160)
 				)
 				(1
-					(proc1111_7 3901 -12 -42)
+					(DoRobot 3901 -12 -42)
 					(gCurRoom drawPic: 30140)
 				)
 				(2
-					(proc1111_7 3902 -34 -36)
+					(DoRobot 3902 -34 -36)
 					(gCurRoom drawPic: 30170)
 				)
 				(3
 					(deskStuff init:)
-					(proc1111_7 3903 -12 -37)
+					(DoRobot 3903 -12 -37)
 					(gCurRoom drawPic: 30140)
 				)
 				(4
 					(deskStuff dispose:)
-					(proc1111_7 3904 7 -32)
+					(DoRobot 3904 7 -32)
 					(gCurRoom drawPic: 30160)
 				)
 				(5
@@ -510,12 +510,12 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1798)
+					(DoRobot 1798)
 				)
 				(1
 					(gCast eachElementDo: #hide)
 					(deskStuff init:)
-					(proc1111_7 3910 -11 -43)
+					(DoRobot 3910 -11 -43)
 					(gCurRoom drawPic: 30140)
 				)
 				(2
@@ -530,7 +530,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(if (gCast contains: deskStuff)
 						(deskStuff dispose:)
 					)
@@ -555,7 +555,7 @@
 				(0
 					(gGame handsOff:)
 					(gCast eachElementDo: #hide)
-					(proc1111_7 3910 -11 -36)
+					(DoRobot 3910 -11 -36)
 					(deskStuff init:)
 					(gCurRoom drawPic: 30140)
 				)
@@ -571,7 +571,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom drawPic: 30100)
 					(gCast eachElementDo: #show)
@@ -595,10 +595,10 @@
 			(switch (= state newState)
 				(0
 					(gGame handsOff:)
-					(proc1111_7 1798)
+					(DoRobot 1798)
 				)
 				(1
-					(proc1111_7 5630 -11 -42)
+					(DoRobot 5630 -11 -42)
 					(gCurRoom drawPic: 30160)
 				)
 				(2
@@ -609,7 +609,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom newRoom: 34400)
 				)
@@ -623,7 +623,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(gCurRoom drawPic: 30100)
 			(chair dispose:)
 			(SetFlag 95)
@@ -642,7 +642,7 @@
 					(SetFlag 95)
 					(gCast eachElementDo: #hide)
 					(chair init: posn: 26 134)
-					(proc1111_7 1810 50 -5)
+					(DoRobot 1810 50 -5)
 					(gCurRoom drawPic: 30160)
 				)
 				(1
@@ -668,7 +668,7 @@
 		(if global115
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(SetFlag 95)
 					(= global115 0)
 					(SetFlag 97)
@@ -689,7 +689,7 @@
 					(SetFlag 95)
 					(gCast eachElementDo: #hide)
 					(chair init:)
-					(proc1111_7 1820 -20 -40)
+					(DoRobot 1820 -20 -40)
 					(if register
 						(gCurRoom drawPic: 30160)
 					)
@@ -701,7 +701,7 @@
 				)
 				(2
 					(chair init:)
-					(proc1111_7 1821 56 -18)
+					(DoRobot 1821 56 -18)
 					(gCurRoom drawPic: 30160)
 				)
 				(3

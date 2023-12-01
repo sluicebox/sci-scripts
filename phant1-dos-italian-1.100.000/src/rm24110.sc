@@ -22,12 +22,12 @@
 	)
 
 	(method (notify)
-		(proc1111_6)
+		(KillRobot)
 		(gCurRoom newRoom: 24100)
 	)
 
 	(method (init)
-		(proc1111_6)
+		(KillRobot)
 		(super init: &rest)
 		(SetFlag 104)
 		(if (not (IsFlag 165))
@@ -59,7 +59,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(= global115 0)
 			(self dispose:)
 		else
@@ -67,8 +67,8 @@
 				(0
 					(gGame handsOff:)
 					((ScriptID 0 14) dispose:) ; exitButt
-					(proc1111_6)
-					(proc1111_7 3430 -26 -11 gEgo 25 1)
+					(KillRobot)
+					(DoRobot 3430 -26 -11 gEgo 25 1)
 				)
 				(1
 					(self dispose:)
@@ -83,7 +83,7 @@
 
 	(method (changeState newState)
 		(if global115
-			(proc1111_6)
+			(KillRobot)
 			(gEgo get: 2) ; invNail
 			(SetFlag 165)
 			(nail dispose:)
@@ -98,8 +98,8 @@
 					(gGame handsOff:)
 					((ScriptID 0 14) dispose:) ; exitButt
 					(SetFlag 165)
-					(proc1111_6)
-					(proc1111_7 3442 -25 -7 gEgo -1 1)
+					(KillRobot)
+					(DoRobot 3442 -25 -7 gEgo -1 1)
 				)
 				(1
 					(nail dispose:)

@@ -28,7 +28,7 @@
 
 	(method (init)
 		(Palette 2 55 135 70) ; PalIntensity
-		(proc1111_6)
+		(KillRobot)
 		(gEgo init: setScaler: Scaler 85 79 145 116 normalize:)
 		(switch gPrevRoomNum
 			(36200
@@ -79,11 +79,11 @@
 					(SetFlag 147)
 					(lift dispose:)
 					(gCurRoom drawPic: 37320 picture: 37320)
-					(proc1111_7 9641 0 0 gEgo 0)
+					(DoRobot 9641 0 0 gEgo 0)
 				)
 				(1
 					(gCurRoom drawPic: 38135)
-					(proc1111_7 9647 0 0 gEgo -1 1)
+					(DoRobot 9647 0 0 gEgo -1 1)
 				)
 				(2
 					(gEgo hide:)
@@ -108,7 +108,7 @@
 					(SetFlag 147)
 					(Palette 2 55 135 100) ; PalIntensity
 					(gCurRoom drawPic: 37320)
-					(proc1111_7 37320 -4 2)
+					(DoRobot 37320 -4 2)
 				)
 				(1
 					(gCurRoom drawPic: 37300)
@@ -120,11 +120,11 @@
 					(Palette 2 55 135 100) ; PalIntensity
 					(lift dispose:)
 					(gCurRoom drawPic: 37320)
-					(proc1111_7 9641 0 0 gEgo 0)
+					(DoRobot 9641 0 0 gEgo 0)
 				)
 				(3
 					(gCurRoom drawPic: 38135)
-					(proc1111_7 9647 0 0 gEgo -1 1)
+					(DoRobot 9647 0 0 gEgo -1 1)
 				)
 				(4
 					(gEgo hide:)
@@ -133,7 +133,7 @@
 			)
 		else
 			(= global115 0)
-			(proc1111_6)
+			(KillRobot)
 			(gEgo hide:)
 			(gCurRoom newRoom: 36200)
 		)

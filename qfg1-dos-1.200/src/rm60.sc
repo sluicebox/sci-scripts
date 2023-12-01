@@ -247,7 +247,7 @@
 			54
 			(SoundFX 31)
 		)
-		(if (gEgo knows: 23)
+		(if (gEgo knows: 23) ; flameDartSpell
 			(Load rsVIEW 522)
 			(Load rsSCRIPT 100)
 		)

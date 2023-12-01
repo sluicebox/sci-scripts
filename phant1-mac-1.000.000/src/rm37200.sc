@@ -61,7 +61,7 @@
 					(gGame handsOff:)
 					(proc1111_8)
 					(gCurRoom drawPic: 37205 picture: 37205)
-					(proc1111_7 907 -2 1 gEgo -1 1)
+					(DoRobot 907 -2 1 gEgo -1 1)
 				)
 				(1
 					(gCurRoom newRoom: 12400)
@@ -70,7 +70,7 @@
 		else
 			(switch (= state newState)
 				(0
-					(proc1111_6)
+					(KillRobot)
 					(= global115 0)
 					(gCurRoom newRoom: 12400)
 				)
@@ -123,7 +123,7 @@
 					(gGame handsOff:)
 					(gEgo hide:)
 					(gCurRoom drawPic: 38130 picture: 38130)
-					(proc1111_7 9644 0 0 gEgo -1 1)
+					(DoRobot 9644 0 0 gEgo -1 1)
 				)
 				(1
 					(ClearFlag 146)
