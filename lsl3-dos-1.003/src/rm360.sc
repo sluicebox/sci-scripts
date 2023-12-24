@@ -243,7 +243,7 @@
 				(NormalEgo)
 				(HandsOff)
 				(if (not (TestFlag 33))
-					(SetFlag 33)
+					(SetFlag 33) ; beenIn360
 					(gGame changeScore: 3)
 					(Print 360 24 #icon 9 0 0) ; "You insert Suzi's keycard into the slot. The door opens automatically."
 				)
@@ -279,7 +279,7 @@
 			)
 			(9
 				(if (not (TestFlag 34))
-					(SetFlag 34)
+					(SetFlag 34) ; beenIn395
 					(gGame changeScore: 3)
 					(Print 360 24 #icon 9 0 0) ; "You insert Suzi's keycard into the slot. The door opens automatically."
 				)

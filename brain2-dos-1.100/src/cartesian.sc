@@ -54,16 +54,16 @@
 		(Graph grDRAW_LINE 86 (- 122 (* temp0 10)) 90 (- 122 (* temp0 10)) 41 -1 -1)
 		(Graph grDRAW_LINE 86 (+ 122 (* temp0 10)) 90 (+ 122 (* temp0 10)) 41 -1 -1)
 	)
-	(switch global114
-		(0
+	(switch gDifficulty
+		(0 ; Novice
 			(localproc_2 51 [local51 0])
 			(localproc_2 11 0 [local51 1])
 		)
-		(1
+		(1 ; Standard
 			(localproc_2 51 [local51 0] [local51 1] [local51 2])
 			(localproc_2 11 [local51 3] [local51 4] [local51 5])
 		)
-		(2
+		(2 ; Expert
 			(localproc_2 51 [local51 0] [local51 1] [local51 2])
 			(localproc_2 11 [local51 3] [local51 4] [local51 5] [local51 6])
 		)
@@ -75,13 +75,13 @@
 )
 
 (procedure (localproc_1 &tmp temp0 temp1 temp2 temp3 temp4 temp5 temp6)
-	(switch global114
-		(0
+	(switch gDifficulty
+		(0 ; Novice
 			(= temp1
 				(and (== [local51 0] [local58 0]) (== [local51 1] [local58 1]))
 			)
 		)
-		(1
+		(1 ; Standard
 			(= temp1 1)
 			(for ((= temp5 0)) (and temp1 (< temp5 local449)) ((++ temp5))
 				(= temp0
@@ -132,7 +132,7 @@
 				)
 			)
 		)
-		(2
+		(2 ; Expert
 			(= temp1 1)
 			(for ((= temp5 0)) (and temp1 (< temp5 local449)) ((++ temp5))
 				(= temp0
@@ -341,12 +341,12 @@
 )
 
 (procedure (localproc_3 param1 param2 &tmp temp0 temp1)
-	(switch global114
-		(0
+	(switch gDifficulty
+		(0 ; Novice
 			(= temp0 (< param2 (- 88 (* [local58 0] 8))))
 			(= temp1 (> param1 (+ 122 (* [local58 1] 10))))
 		)
-		(1
+		(1 ; Standard
 			(= temp0
 				(localproc_6 param1 param2 [local58 0] [local58 1] [local58 2])
 			)
@@ -354,7 +354,7 @@
 				(localproc_6 param1 param2 [local58 3] [local58 4] [local58 5])
 			)
 		)
-		(2
+		(2 ; Expert
 			(= temp0
 				(localproc_6 param1 param2 [local58 0] [local58 1] [local58 2])
 			)
@@ -428,14 +428,14 @@
 )
 
 (procedure (localproc_7)
-	(switch global114
-		(0
+	(switch gDifficulty
+		(0 ; Novice
 			(while (== [local51 0] (= [local58 0] (- (Random 0 14) 7)))
 			)
 			(while (== [local51 0] (= [local58 1] (- (Random 0 14) 7)))
 			)
 		)
-		(1
+		(1 ; Standard
 			(= [local58 1] (- (Random 0 8) 4))
 			(if [local58 1]
 				(= [local58 0] (Random 1 4))
@@ -465,7 +465,7 @@
 			)
 			(= [local58 5] (- (Random 0 14) 7))
 		)
-		(2
+		(2 ; Expert
 			(= [local58 0] (Random 0 6))
 			(if [local58 0]
 				(= [local58 1] (- (Random 0 12) 6))
@@ -534,35 +534,35 @@
 					)
 			)
 		)
-		(for ((= temp0 0)) (< temp0 [local3 global114]) ((++ temp0))
+		(for ((= temp0 0)) (< temp0 [local3 gDifficulty]) ((++ temp0))
 			(= temp10
-				(if (or (not temp0) (and global114 (< temp0 3))) 14 else 1)
+				(if (or (not temp0) (and gDifficulty (< temp0 3))) 14 else 1)
 			)
 			(self
 				add:
 					((upButton new:)
 						loop: temp10
-						nsLeft: [local21 (+ [local0 global114] temp0)]
+						nsLeft: [local21 (+ [local0 gDifficulty] temp0)]
 						yourself:
 					)
 			)
 		)
-		(for ((= temp0 0)) (< temp0 [local3 global114]) ((++ temp0))
+		(for ((= temp0 0)) (< temp0 [local3 gDifficulty]) ((++ temp0))
 			(= temp10
-				(if (or (not temp0) (and global114 (< temp0 3))) 15 else 2)
+				(if (or (not temp0) (and gDifficulty (< temp0 3))) 15 else 2)
 			)
 			(self
 				add:
 					((= temp1 (downButton new:))
 						loop: temp10
-						nsLeft: [local21 (+ [local0 global114] temp0)]
+						nsLeft: [local21 (+ [local0 gDifficulty] temp0)]
 						value: temp0
 						text: [local44 temp0]
 						textColor:
 							(if
 								(or
 									(> temp0 2)
-									(and (not global114) (> temp0 0))
+									(and (not gDifficulty) (> temp0 0))
 								)
 								11
 							else
@@ -571,7 +571,7 @@
 						yourself:
 					)
 			)
-			(= [local51 temp0] [local6 (+ [local0 global114] temp0)])
+			(= [local51 temp0] [local6 (+ [local0 gDifficulty] temp0)])
 			((self at: (+ temp0 4)) cursor: temp1)
 		)
 		(for ((= temp9 1)) temp9 ((= temp9 (localproc_1)))
@@ -599,7 +599,7 @@
 					)
 				)
 			)
-			(if global114
+			(if gDifficulty
 				(= local449 0)
 				(for ((= temp3 0)) (< temp3 16) ((++ temp3))
 					(for ((= temp4 0)) (< temp4 16) ((++ temp4))
@@ -686,12 +686,12 @@
 							(= temp1 4)
 						)
 						((< temp1 3)
-							(= temp1 (+ [local3 global114] 3))
+							(= temp1 (+ [local3 gDifficulty] 3))
 						)
-						((< temp1 (+ [local3 global114] 4))
-							(+= temp1 [local3 global114])
+						((< temp1 (+ [local3 gDifficulty] 4))
+							(+= temp1 [local3 gDifficulty])
 						)
-						((< temp1 (+ (* [local3 global114] 2) 4))
+						((< temp1 (+ (* [local3 gDifficulty] 2) 4))
 							(= temp1 (- size 4))
 						)
 						((< temp1 (- size 3))
@@ -710,14 +710,14 @@
 						((< temp1 4)
 							(-= temp1 2)
 						)
-						((< temp1 (+ (/ [local3 global114] 2) 4))
+						((< temp1 (+ (/ [local3 gDifficulty] 2) 4))
 							(= temp1 2)
 						)
-						((< temp1 (+ [local3 global114] 4))
+						((< temp1 (+ [local3 gDifficulty] 4))
 							(= temp1 3)
 						)
-						((< temp1 (+ (* [local3 global114] 2) 4))
-							(-= temp1 [local3 global114])
+						((< temp1 (+ (* [local3 gDifficulty] 2) 4))
+							(-= temp1 [local3 gDifficulty])
 						)
 						((< temp1 (- size 3))
 							(-- temp1)
@@ -739,14 +739,14 @@
 								(= temp1 2)
 							)
 						)
-						((< temp1 (+ [local3 global114] 4))
-							(if (>= (++ temp1) (+ [local3 global114] 4))
+						((< temp1 (+ [local3 gDifficulty] 4))
+							(if (>= (++ temp1) (+ [local3 gDifficulty] 4))
 								(= temp1 4)
 							)
 						)
-						((< temp1 (+ (* [local3 global114] 2) 4))
-							(if (>= (++ temp1) (+ (* [local3 global114] 2) 4))
-								(= temp1 (+ [local3 global114] 4))
+						((< temp1 (+ (* [local3 gDifficulty] 2) 4))
+							(if (>= (++ temp1) (+ (* [local3 gDifficulty] 2) 4))
+								(= temp1 (+ [local3 gDifficulty] 4))
 							)
 						)
 						((< temp1 (- size 3)) 0)
@@ -767,14 +767,14 @@
 								(= temp1 3)
 							)
 						)
-						((< temp1 (+ [local3 global114] 4))
+						((< temp1 (+ [local3 gDifficulty] 4))
 							(if (< (-- temp1) 4)
-								(= temp1 (+ [local3 global114] 3))
+								(= temp1 (+ [local3 gDifficulty] 3))
 							)
 						)
-						((< temp1 (+ (* [local3 global114] 2) 4))
-							(if (< (-- temp1) (+ [local3 global114] 4))
-								(= temp1 (+ (* [local3 global114] 2) 3))
+						((< temp1 (+ (* [local3 gDifficulty] 2) 4))
+							(if (< (-- temp1) (+ [local3 gDifficulty] 4))
+								(= temp1 (+ (* [local3 gDifficulty] 2) 3))
 							)
 						)
 						((< temp1 (- size 3)) 0)
@@ -800,7 +800,7 @@
 		(if (super buyClue: &rest)
 			(= temp1 1)
 			(cond
-				((and (not global114) (== [local51 0] [local58 0]))
+				((and (not gDifficulty) (== [local51 0] [local58 0]))
 					(= temp1 0)
 				)
 				(
@@ -828,14 +828,14 @@
 			)
 			(if temp1
 				(= temp2 0)
-				(= temp3 (if global114 2 else 0))
+				(= temp3 (if gDifficulty 2 else 0))
 			else
-				(= temp2 (if global114 3 else 1))
+				(= temp2 (if gDifficulty 3 else 1))
 				(= temp3
-					(if (not global114)
+					(if (not gDifficulty)
 						1
 					else
-						(+ 4 global114)
+						(+ 4 gDifficulty)
 					)
 				)
 			)
@@ -844,7 +844,7 @@
 				(if (<= [local51 temp4] [local58 temp4])
 					(= temp5 (self at: (+ 4 temp4)))
 				else
-					(= temp5 (self at: (+ 4 [local3 global114] temp4)))
+					(= temp5 (self at: (+ 4 [local3 gDifficulty] temp4)))
 				)
 				(while (!= [local51 temp4] [local58 temp4])
 					(self select: temp5 0)
@@ -870,16 +870,16 @@
 		(DrawCel 162 0 1 120 21 -1)
 		(DrawCel 162 0 2 0 156 -1)
 		(DrawCel 162 0 3 120 156 -1)
-		(switch global114
-			(0
+		(switch gDifficulty
+			(0 ; Novice
 				(DrawCel 162 9 0 28 165 -1)
 				(DrawCel 162 10 0 158 165 -1)
 			)
-			(1
+			(1 ; Standard
 				(DrawCel 162 11 0 9 165 -1)
 				(DrawCel 162 11 0 141 165 -1)
 			)
-			(2
+			(2 ; Expert
 				(DrawCel 162 11 0 9 165 -1)
 				(DrawCel 162 12 0 109 163 -1)
 			)

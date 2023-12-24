@@ -175,7 +175,7 @@
 				(== (++ learnCounter) 100)
 			)
 			(= learnCounter 0)
-			(if (and (== (++ gSkateAbility) 3) (not (IsFlag 3)))
+			(if (and (== (++ gSkateAbility) 3) (not (IsFlag 3))) ; fSeenLL
 				(lana init:)
 			)
 		)
@@ -1378,7 +1378,7 @@
 				(gEgo setLoop: 4 setCel: 255)
 				(lana setLoop: 1 setCycle: Fwd setMotion: MoveTo -20 145 lana)
 				(skater5 setPri: 10)
-				(SetFlag 3)
+				(SetFlag 3) ; fSeenLL
 				(self dispose:)
 			)
 		)

@@ -128,7 +128,7 @@
 					)
 					(else
 						(Say fakir self 291 21 291 22 291 23 291 24) ; "That's it! I give up. I've tried to help you save the universe and you won't even buy my lousy saurus."
-						(SetFlag 172)
+						(SetFlag 172) ; fLoseIfLeaves
 					)
 				)
 			)
@@ -488,7 +488,7 @@
 					)
 					(else
 						(fakir tLoop: 2)
-						(SetFlag 45)
+						(SetFlag 45) ; fBoughtSaurus
 						(= next hiSaurusSP)
 						(= cycles 1)
 					)
@@ -515,7 +515,7 @@
 				(Say fakir self 291 73) ; "Just a minute and I'll introduce your saurus to you."
 			)
 			(1
-				(ClearFlag 172)
+				(ClearFlag 172) ; fLoseIfLeaves
 				(gEgo setLoop: -1 setMotion: MoveTo 213 146)
 				(fakir
 					setScript: 0
@@ -601,7 +601,7 @@
 				((ScriptID 290 3) setCycle: Beg) ; gate
 			)
 			(11
-				(SetFlag 173)
+				(SetFlag 173) ; fGuardWillDoIt
 				(gCurRoom notify:)
 				(gMiscSound fade:)
 				(MakeSaurusPoly)

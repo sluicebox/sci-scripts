@@ -27,7 +27,7 @@
 	(method (init)
 		(HandsOff)
 		(User canInput: 1)
-		(SetFlag 5)
+		(SetFlag 5) ; noCursor
 		(= gOldEgoState gEgoState)
 		(= gEgoState gCurRoomNum)
 		(Load rsSOUND 206)
@@ -231,7 +231,7 @@
 				(= seconds 3)
 			)
 			(26
-				(SetFlag 16)
+				(SetFlag 16) ; beenIn206
 				(gGame changeScore: 2 setSpeed: gOldGameSpeed)
 				(Print 206 15) ; "You wipe the sweat from your hands as you remove your eyes from the binoculars."
 				(= gEgoState gOldEgoState)

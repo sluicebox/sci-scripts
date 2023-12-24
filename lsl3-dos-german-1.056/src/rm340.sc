@@ -421,7 +421,7 @@
 				(aAlTop stopUpd:)
 				(aBillTop stopUpd:)
 				(if (not (TestFlag 13))
-					(SetFlag 13)
+					(SetFlag 13) ; sawAl&BillPoof
 					(gGame changeScore: 5)
 				)
 			)
@@ -625,7 +625,7 @@
 			(14
 				(Print 340 56) ; "And it goes something like this..."
 				(if (not (TestFlag 43))
-					(SetFlag 43)
+					(SetFlag 43) ; scoredDuckPoints
 					(gGame changeScore: 100)
 				)
 				(= seconds 2)

@@ -33,7 +33,7 @@
 )
 
 (procedure (localproc_0 &tmp temp0 temp1 temp2 temp3 temp4 temp5 temp6 temp7 temp8 temp9 temp10 temp11 temp12 temp13 temp14 temp15 temp16)
-	(if (not global114)
+	(if (not gDifficulty)
 		(return (localproc_4))
 	)
 	(= temp0 0)
@@ -427,14 +427,14 @@
 		(DrawCel 304 8 3 84 172 -1)
 		(DrawCel 304 15 0 (+ (- (blPipe x:) 65) 1) (- (blPipe y:) 1) -1)
 		(DrawCel 304 14 0 (+ (- (brPipe x:) 65) 1) (- (brPipe y:) 1) -1)
-		(if global114
+		(if gDifficulty
 			(DrawCel 304 1 6 68 131 -1)
 		else
 			(DrawCel 304 13 0 (+ (- (tlPipe x:) 65) 1) (- (tlPipe y:) 1) -1)
 			(DrawCel 304 12 0 (+ (- (trPipe x:) 65) 1) (- (trPipe y:) 1) -1)
 		)
 		(DrawCel 304 1 5 172 106 -1)
-		(if (== global114 2)
+		(if (== gDifficulty 2) ; Expert
 			(DrawCel 304 11 3 172 117 -1)
 			(localproc_1 local23 local24 167 172)
 		else
@@ -453,7 +453,7 @@
 	(method (init &tmp temp0 temp1 temp2)
 		(= window geneticWin)
 		(self puzzleCast: (Set new:))
-		(if (not global114)
+		(if (not gDifficulty)
 			((genetics puzzleCast:) add: tlPipe trPipe)
 		else
 			(= local45 (scanLine new:))
@@ -517,18 +517,18 @@
 				breedIcon
 				recDomButton
 		)
-		(if global114
+		(if gDifficulty
 			(self add: upArrow downArrow)
 		)
 		(self add: (child cel: 2 value: 255 cursor: 255 modifiers: 0))
-		(if global114
+		(if gDifficulty
 			(self add: matchIcon)
 		)
 		(super init: &rest)
 	)
 
 	(method (doit)
-		(if global114
+		(if gDifficulty
 			(local45 hide:)
 			(scanLine hide:)
 			(explode hide:)
@@ -576,19 +576,19 @@
 							(-- temp1)
 						)
 						((== temp1 14)
-							(if global114
+							(if gDifficulty
 								(= temp1 10)
 							)
 						)
 						((== temp1 15)
-							(if global114
+							(if gDifficulty
 								(-- temp1)
 							else
 								(= temp1 13)
 							)
 						)
 						((== temp1 16)
-							(if global114
+							(if gDifficulty
 								(= temp1 5)
 							else
 								(= temp1 10)
@@ -632,7 +632,7 @@
 							(+= temp1 2)
 						)
 						((== temp1 11)
-							(if (== global114 0)
+							(if (== gDifficulty 0) ; Novice
 								(= temp1 6)
 							else
 								(= temp1 17)
@@ -645,26 +645,26 @@
 							(= temp1 (- size 3))
 						)
 						((== temp1 14)
-							(if global114
+							(if gDifficulty
 								(++ temp1)
 							)
 						)
 						((== temp1 15)
-							(if global114
+							(if gDifficulty
 								(++ temp1)
 							else
 								(= temp1 1)
 							)
 						)
 						((== temp1 16)
-							(if global114
+							(if gDifficulty
 								(= temp1 19)
 							else
 								(= temp1 4)
 							)
 						)
 						((== temp1 17)
-							(if global114
+							(if gDifficulty
 								(= temp1 20)
 							else
 								(= temp1 8)
@@ -702,12 +702,12 @@
 							(= temp1 10)
 						)
 						((== temp1 13)
-							(if global114
+							(if gDifficulty
 								(++ temp1)
 							)
 						)
 						((== temp1 14)
-							(if global114
+							(if gDifficulty
 								(= temp1 16)
 							)
 						)
@@ -715,7 +715,7 @@
 							(++ temp1)
 						)
 						((== temp1 17)
-							(if global114
+							(if gDifficulty
 								(= temp1 13)
 							else
 								(= temp1 15)
@@ -750,19 +750,19 @@
 							(-- temp1)
 						)
 						((== temp1 13)
-							(if global114
+							(if gDifficulty
 								(= temp1 17)
 							)
 						)
 						((< temp1 16)
-							(if global114
+							(if gDifficulty
 								(= temp1 12)
 							else
 								(= temp1 17)
 							)
 						)
 						((== temp1 16)
-							(if global114
+							(if gDifficulty
 								(= temp1 14)
 							else
 								(= temp1 15)
@@ -798,7 +798,7 @@
 	(method (solvePuzzle &tmp temp0)
 		(= global188 (| (leftParent value:) (leftParent cursor:)))
 		(= global189 (| (rightParent value:) (rightParent cursor:)))
-		(if global114
+		(if gDifficulty
 			(= global200
 				(|
 					[local25 (= temp0 (mod (child modifiers:) 16))]
@@ -817,14 +817,14 @@
 			(++ temp0)
 			(if
 				(or
-					(and (not global114) (== temp0 2))
-					(and global114 (== temp0 4))
+					(and (not gDifficulty) (== temp0 2))
+					(and gDifficulty (== temp0 4))
 				)
 				(return)
 			)
 		)
 		(if (super buyClue:)
-			(if global114
+			(if gDifficulty
 				(if (< temp0 2)
 					(leftParent select:)
 				else
@@ -943,7 +943,7 @@
 	(method (show &tmp temp0 temp1)
 		(= temp0 (mod modifiers 16))
 		(cond
-			(global114
+			(gDifficulty
 				(if modifiers
 					(localproc_2
 						nsLeft
@@ -971,7 +971,7 @@
 	(method (highlight))
 
 	(method (select)
-		(if global114
+		(if gDifficulty
 			(if (== (rightParent cel:) 1)
 				(rightParent cel: 2 show:)
 			else
@@ -1064,7 +1064,7 @@
 			(= temp2 leftParent)
 			(= local21 self)
 			(cond
-				((not global114)
+				((not gDifficulty)
 					(= [local51 0] (genetics indexOf: self))
 				)
 				((== (leftParent cel:) 1)
@@ -1080,7 +1080,7 @@
 			(= temp2 rightParent)
 			(= local22 self)
 			(cond
-				((not global114)
+				((not gDifficulty)
 					(= [local51 1] (genetics indexOf: self))
 				)
 				((== (leftParent cel:) 1)
@@ -1094,7 +1094,7 @@
 		(if temp0
 			(temp0 cel: (+ 2 (temp0 modifiers:)) show:)
 		)
-		(if (not global114)
+		(if (not gDifficulty)
 			(gCSoundFX number: 150 loop: 1 play:)
 			(temp1 show: cel: 0 setCycle: CT 0 1)
 			(while (temp1 cycler:)
@@ -1146,7 +1146,7 @@
 
 	(method (select &tmp temp0 temp1 temp2 temp3 temp4 temp5 temp6 temp7)
 		(super select: &rest)
-		(if global114
+		(if gDifficulty
 			(if (!= (child cel:) 1)
 				(if (or (== local21 0) (== local22 0))
 					(gCSoundFX number: 135 setLoop: 0 play:)

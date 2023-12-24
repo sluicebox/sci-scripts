@@ -260,7 +260,7 @@
 					(AzizaChangeMood 0 0)
 					(= didBeast 1)
 				)
-				(if (IsFlag 42)
+				(if (IsFlag 42) ; fAlScurvaFreed
 					(HighPrint 180 11) ; "You tell Aziza about Al Scurva."
 					(Say aziza 180 12) ; "Your words are distressing. Ad Avis is a most dangerous Wizard."
 				else
@@ -327,7 +327,7 @@
 					((== gDay 15)
 						(Say aziza self 180 17 180 18) ; "I wish to speak with you tomorrow about Raseir. I intend to work some magic tonight to gather information about the things you will face. I will let you know at our meeting what I find out."
 					)
-					((IsFlag 122)
+					((IsFlag 122) ; fGotFruit
 						(Say aziza self 180 19 180 20) ; "Thank you for the kindness you have shown Julanar. You are a true Hero for helping her."
 					)
 					(
@@ -609,7 +609,7 @@
 				(if (not interrupted)
 					(Say aziza 180 38) ; "Shall we share tea?"
 				)
-				(SetFlag 41)
+				(SetFlag 41) ; fOfferedTea
 			)
 			(1
 				(DontTalk 1)
@@ -676,10 +676,10 @@
 					((>= 4 register 0)
 						(Say aziza self 180 41) ; "Perhaps it would be well to show you as well as to tell you about such things."
 					)
-					((and (== register 5) (IsFlag 43))
+					((and (== register 5) (IsFlag 43)) ; fDidPlant
 						(Say aziza self 180 42) ; "You did that already, remember?"
 					)
-					((and (== register 5) (IsFlag 44))
+					((and (== register 5) (IsFlag 44)) ; fHeardPlant
 						(Say aziza self 180 43) ; "You must give her the gifts of Water, Earth, and a hug."
 					)
 					((== register 5)
@@ -764,14 +764,14 @@
 					(Say self 180 8) ; "Please, you must sit down and relax before we shall speak of what you seek."
 				)
 			)
-			((and (== (gEgo view:) 180) (not (IsFlag 41)) (== gEnchLastHere 0))
+			((and (== (gEgo view:) 180) (not (IsFlag 41)) (== gEnchLastHere 0)) ; fOfferedTea
 				(AzizaChangeMood 1 0)
 				(if (not (== gAzizaTemper 3))
 					(Say self 180 47) ; "First we shall enjoy our tea before we speak."
 				)
 			)
 			((== what 6)
-				(if (IsFlag 42)
+				(if (IsFlag 42) ; fAlScurvaFreed
 					(Say self 180 48) ; "You could not have forgotten already?"
 				else
 					(Say self 180 49) ; "Since the beast is protected from my true sight, then it is probably not what it seems. You will need a dispel potion to find its true form."

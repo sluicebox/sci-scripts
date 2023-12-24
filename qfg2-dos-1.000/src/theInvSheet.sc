@@ -37,8 +37,8 @@
 	(if
 		(or
 			(and (== spellNum 23) gZapPower)
-			(and (== spellNum 28) (IsFlag 90))
-			(and (== spellNum 29) (IsFlag 86))
+			(and (== spellNum 28) (IsFlag 90)) ; fLevitating
+			(and (== spellNum 29) (IsFlag 86)) ; fReversal
 		)
 		(Display 71 13 dsCOORD (+ xLoc 22) yLoc dsALIGN alLEFT dsFONT gSmallFont dsCOLOR 12) ; "*"
 	)

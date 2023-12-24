@@ -116,7 +116,7 @@
 		(= [local125 2] @local114)
 		(InfoTeller init: info @local103 @local125 @local121)
 		(info init:)
-		(proc5_1)
+		(HandsOff)
 		(gMouseDownHandler add: self)
 		(gKeyDownHandler add: self)
 		(super init:)
@@ -143,7 +143,7 @@
 						(FileIO fiEXISTS @temp0)
 					)
 					(event claimed: 0)
-					(proc5_2)
+					(HandsOn)
 					(Palette palSET_INTENSITY 0 255 100)
 					((ScriptID 800) handleEvent: event) ; MISSING SCRIPT
 				)
@@ -1059,7 +1059,7 @@
 			)
 		)
 		(= query (Abs query))
-		(proc15_0 0 (client noun:) 5 query 0)
+		(Say 0 (client noun:) 5 query 0)
 		(return 1)
 	)
 

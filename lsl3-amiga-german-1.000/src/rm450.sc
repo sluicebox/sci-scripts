@@ -89,7 +89,7 @@
 			(aPatti init:)
 			(PattiScript changeState: 1)
 			(blockPatti init:)
-			(SetFlag 67)
+			(SetFlag 67) ; tipsIn450
 			(gEgo observeBlocks: blockPatti observeControl: 16384)
 		)
 		(if (TestFlag 67)
@@ -224,7 +224,7 @@
 						(Format ((Inv at: 6) name:) 450 10) ; "Tips", A_Twenty_Dollar_Bill
 						(gGame changeScore: 25)
 						(= gDollars 43)
-						(ClearFlag 67)
+						(ClearFlag 67) ; tipsIn450
 						(aTips dispose:)
 						(Print 450 11) ; "Let's see; did we have a good night tonight? Oh, well; a few bucks is better than nothing. Where you're going you're not going to need a lot of money anyway."
 					)
@@ -449,7 +449,7 @@
 			)
 			(14
 				(if (not (TestFlag 9))
-					(SetFlag 9)
+					(SetFlag 9) ; seenPatti
 					(gGame changeScore: 5)
 					(Print 450 49) ; "And hello to you, Larry," replies Passionate Patti. "I'm the girl of your dreams, Passionate Patti!"
 				)

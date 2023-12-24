@@ -93,7 +93,7 @@
 				(HandsOff)
 				(Say gEgo 915 5) ; "I can't take any more of this, Ms. Lambada," you cry, "I hate the taste of latex gloves!"
 				(gTheMusic fade:)
-				(SetFlag 4)
+				(SetFlag 4) ; fSeenCC
 				(gCurRoom newRoom: 905)
 			)
 			(else
@@ -186,7 +186,7 @@
 						(Say gEgo 915 18 108 self) ; ""Owefggh wfqqafd," you reply."
 					)
 					(5
-						(SetFlag 51)
+						(SetFlag 51) ; fScoredCC
 						(Points 5)
 						(gCurRoom newRoom: 910)
 					)
@@ -506,7 +506,7 @@
 			)
 			(5
 				(gEgo put: 21) ; Green_Card
-				(SetFlag 51)
+				(SetFlag 51) ; fScoredCC
 				(gCurRoom newRoom: 910)
 			)
 		)

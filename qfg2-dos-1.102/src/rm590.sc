@@ -73,7 +73,7 @@
 			(LoadMany rsVIEW 8 47)
 		)
 		(LoadMany rsSOUND 600 551 590 591)
-		(SetFlag 116)
+		(SetFlag 116) ; fLightOn
 		(= gEgoGait 4) ; holdingLamp
 		(= gSpellChecker gAllChecker)
 		(SolvePuzzle 636 7)
@@ -898,7 +898,7 @@
 
 	(method (doit)
 		(cond
-			((and (IsFlag 116) (== (gEgo view:) 585))
+			((and (IsFlag 116) (== (gEgo view:) 585)) ; fLightOn
 				(if (& signal $0008)
 					(self show:)
 				)

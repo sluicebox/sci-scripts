@@ -123,7 +123,7 @@
 	)
 
 	(method (crossIntersection)
-		(if (and (not (IsFlag 144)) (== gDay 3) (<= 0 gTimeODay 4))
+		(if (and (not (IsFlag 144)) (== gDay 3) (<= 0 gTimeODay 4)) ; fSeenHarpo
 			(gGame setScript: harpoCrosses)
 		else
 			(super crossIntersection:)
@@ -185,9 +185,9 @@
 	)
 
 	(method (init)
-		(if (not (IsFlag 109))
+		(if (not (IsFlag 109)) ; fSeenEarthElem
 			(= gMonsterHealth 0)
-			(SetFlag 109)
+			(SetFlag 109) ; fSeenEarthElem
 		else
 			(= health gEarthElemHealth)
 			(= stamina gEarthElemStamina)
@@ -586,7 +586,7 @@
 			)
 			(1
 				(harpo posn: 107 80 init:)
-				(SetFlag 144)
+				(SetFlag 144) ; fSeenHarpo
 				(gCurRoom isMoving: 0)
 				(gEgo setMotion: 0)
 			)

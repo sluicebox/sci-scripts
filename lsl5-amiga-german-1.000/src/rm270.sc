@@ -63,8 +63,8 @@
 		(switch gPrevRoomNum
 			(south
 				(camera setCel: 5)
-				(if (IsFlag 8)
-					(ClearFlag 38)
+				(if (IsFlag 8) ; fBeenToTown
+					(ClearFlag 38) ; fLimoParked
 				)
 			)
 			(north
@@ -249,7 +249,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(3 ; Do
-				(if (and (not (gEgo has: 10)) (not (IsFlag 13))) ; Some_Change
+				(if (and (not (gEgo has: 10)) (not (IsFlag 13))) ; Some_Change, fGotQuarterNY
 					(Load rsVIEW 291)
 					(gCurRoom setScript: sStealChange)
 				else
@@ -258,7 +258,7 @@
 				)
 			)
 			(2 ; Look
-				(if (and (not (gEgo has: 10)) (not (IsFlag 13))) ; Some_Change
+				(if (and (not (gEgo has: 10)) (not (IsFlag 13))) ; Some_Change, fGotQuarterNY
 					(TPrint 270 3) ; "Directly beneath the security camera is a charity cannister containing many pennies, nickels and dimes, but only one quarter."
 				else
 					(TPrint 270 4) ; "Directly beneath the security camera is a charity cannister containing many pennies, nickels and dimes, but no more quarters."

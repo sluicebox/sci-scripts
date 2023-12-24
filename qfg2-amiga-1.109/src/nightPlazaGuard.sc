@@ -96,23 +96,23 @@
 				(not script)
 				(< 1 pwState 6)
 				(or
-					(IsFlag 87)
-					(IsFlag 88)
-					(IsFlag 117)
+					(IsFlag 87) ; fCastingSpell
+					(IsFlag 88) ; fClimbingRope
+					(IsFlag 117) ; fPickingLock
 					(and gPlazaDoorOpen (not (== gCurRoomNum 300))) ; rmSPlazaGates
 				)
 			)
 			(cond
 				(
 					(and
-						(IsFlag 87)
-						(not (IsFlag 90))
-						(not (IsFlag 88))
+						(IsFlag 87) ; fCastingSpell
+						(not (IsFlag 90)) ; fLevitating
+						(not (IsFlag 88)) ; fClimbingRope
 						(== ((gEgo script:) type:) 5)
 					)
 					(EgoDead 1 89 7 #title {Guards Hate Knife Throwers}) ; "Throwing knives when guards are around is not the wisest course of action."
 				)
-				((IsFlag 117)
+				((IsFlag 117) ; fPickingLock
 					(EgoDead 1 89 8 #title {Blatant Thievery}) ; "By picking a lock you were choosing your fate."
 				)
 				(gPlazaDoorOpen
@@ -146,13 +146,13 @@
 			(0
 				(Say client self 89 12) ; "What are you doing there?"
 				(cond
-					((IsFlag 90)
+					((IsFlag 90) ; fLevitating
 						(= theMsg
 							{Do you not know that practicing Magic is best done outside of the city?  Do not let me see you using magic around here again unless it is needed!}
 						)
 						(= theScript (ScriptID 62 1)) ; fallDown
 					)
-					((IsFlag 88)
+					((IsFlag 88) ; fClimbingRope
 						(= theMsg
 							{The punishment for thievery in this city is to lose a hand.  Do not let me catch you trying to steal again!}
 						)

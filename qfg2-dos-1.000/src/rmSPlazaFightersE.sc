@@ -58,7 +58,7 @@
 			(= saveIllegal -20480)
 		)
 		(weaponsShopDoor init:)
-		(if (not (IsFlag 85))
+		(if (not (IsFlag 85)) ; fBellowsGone
 			(bellows palette: (if gNight 2 else 1) init:)
 		)
 		(InitAddToPics mosaic rightWindow alleySign weaponsShopSign doorFrame)
@@ -91,18 +91,18 @@
 
 	(method (init)
 		(super init: &rest)
-		(= barred (IsFlag 115))
+		(= barred (IsFlag 115)) ; fWeaponBarred
 	)
 
 	(method (cue)
-		(if (and (IsFlag 115) (== state 1))
+		(if (and (IsFlag 115) (== state 1)) ; fWeaponBarred
 			(HighPrint 330 0) ; "As the door closes, you hear the bar fall into place behind you. The door is now barred from the inside."
 		)
 		(super cue:)
 	)
 
 	(method (enter)
-		(if (IsFlag 25)
+		(if (IsFlag 25) ; fIssurMad
 			(gCurRoom inOut: 3)
 			(= xIn 55)
 			(= yIn 110)
@@ -178,12 +178,12 @@
 				(Say self 330 5) ; "The Weapon Shop of Issur is right here in this Plaza."
 			)
 			((Said 'tell>')
-				(if (and (Said '//elemental<earth>') (not (IsFlag 84)))
+				(if (and (Said '//elemental<earth>') (not (IsFlag 84))) ; fToldKiram
 					(Say self 330 6) ; "If this bag of cloth will but aid you, it shall be yours!"
 					(TrySkill 13 100) ; communication
 					(SolvePuzzle 625 7)
 					(gEgo get: 38) ; ClothBag
-					(SetFlag 84)
+					(SetFlag 84) ; fToldKiram
 					(= kiramThankable 1)
 				else
 					(Say self 330 7) ; "You should become a storyteller like my sister Sava."
@@ -336,11 +336,11 @@
 				(if
 					(and
 						(Said '//plant,(elemental<fire),(elemental<water)>')
-						(not (IsFlag 83))
+						(not (IsFlag 83)) ; fToldMirak
 					)
 					(Say self 330 17) ; "Since your need is great, this waterskin shall be a gift."
 					(gEgo get: 37) ; Waterskin
-					(SetFlag 83)
+					(SetFlag 83) ; fToldMirak
 					(= mirakThankable 1)
 				else
 					(Say self 330 18) ; "We live in interesting times."
@@ -508,7 +508,7 @@
 		(SolvePuzzle 609 7)
 		(gEgo get: 25) ; Bellows
 		(SkillUsed 14 -100) ; honor
-		(SetFlag 85)
+		(SetFlag 85) ; fBellowsGone
 		(return 1)
 	)
 
@@ -589,7 +589,7 @@
 			((< state 2))
 			((Said 'get,get/bellows')
 				(cond
-					((IsFlag 85)
+					((IsFlag 85) ; fBellowsGone
 						(HighPrint 330 22) ; "There are no bellows here to get."
 					)
 					((> (- (gEgo y:) (gEgo z:)) 75)
@@ -625,7 +625,7 @@
 				(SolvePuzzle 609 7)
 				(SkillUsed 14 -100) ; honor
 				(gEgo get: 25) ; Bellows
-				(SetFlag 85)
+				(SetFlag 85) ; fBellowsGone
 				(bellows dispose:)
 			)
 			(3

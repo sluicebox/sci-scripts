@@ -912,12 +912,12 @@
 				((< local1 0)
 					((ScriptID 310 0) init:) ; genetics
 					(localproc_2)
-					(= local1 global114)
+					(= local1 gDifficulty)
 				)
-				((!= local1 global114)
+				((!= local1 gDifficulty)
 					((ScriptID 310 0) dispose: init:) ; genetics
 					(localproc_2)
-					(= local1 global114)
+					(= local1 gDifficulty)
 				)
 			)
 			(switch ((ScriptID 310 0) show:) ; genetics
@@ -1077,16 +1077,16 @@
 					((< local0 0)
 						((ScriptID 320 0) init:) ; programmer
 						((ScriptID 320 1) init:) ; maze
-						(= local0 global114)
-						(= [global184 0] (- 3 global114))
-						(= [global184 1] (- 3 global114))
-						(= [global184 2] (- 3 global114))
+						(= local0 gDifficulty)
+						(= [global184 0] (- 3 gDifficulty))
+						(= [global184 1] (- 3 gDifficulty))
+						(= [global184 2] (- 3 gDifficulty))
 					)
-					((!= local0 global114)
+					((!= local0 gDifficulty)
 						((ScriptID 320 0) dispose: init:) ; programmer
 						((ScriptID 320 1) dispose: init:) ; maze
-						(localproc_0 (- local0 global114))
-						(= local0 global114)
+						(localproc_0 (- local0 gDifficulty))
+						(= local0 gDifficulty)
 						(if (not [global184 (cartSlot sightAngle:)])
 							(gCSoundFX number: 257 loop: 1 play:)
 							(cartSmoke
@@ -1099,7 +1099,7 @@
 					)
 					((not [global184 (cartSlot sightAngle:)])
 						(gCSoundFX number: 135 setLoop: 0 play:)
-						(proc15_0 0 55 48 0 1)
+						(Say 0 55 48 0 1) ; "ERROR: Cartridge burned out."
 						(return)
 					)
 				)

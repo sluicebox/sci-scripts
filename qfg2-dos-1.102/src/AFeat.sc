@@ -1087,7 +1087,7 @@
 			)
 			(1
 				(gEgo view: 47 loop: (+ 4 pickLeft) cel: 0 setCycle: End self)
-				(SetFlag 117)
+				(SetFlag 117) ; fPickingLock
 			)
 			(2
 				(= cycles 20)
@@ -1101,7 +1101,7 @@
 			(5
 				(NormalEgo)
 				(gEgo loop: (if pickLeft 7 else 6))
-				(ClearFlag 117)
+				(ClearFlag 117) ; fPickingLock
 				(if (PickLock 80 1 1)
 					(HighPrint 700 14) ; "You got some useful lockpicking practice, but the door has been bolted from the inside. No amount of skill will allow you to open it."
 				)

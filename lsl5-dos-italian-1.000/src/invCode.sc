@@ -854,7 +854,7 @@
 					)
 					(1
 						(TPrint 19 64 30 1) ; "Reverse Biaz des Rever Records Suite 900 Shill Building 1000 Upson Downs Lane Baltimore, MD"
-						(SetFlag 17)
+						(SetFlag 17) ; fSeenRBOffice
 					)
 					(2
 						(Points 1 78)
@@ -1128,7 +1128,7 @@
 		(switch theVerb
 			(2 ; Look
 				(TPrint 19 89 30 1) ; "Reverse Biaz Fax --------------- Reverse Biaz des Rever Records Suite 900 Shill Building 1000 Upson Downs Lane Baltimore, MD"
-				(SetFlag 17)
+				(SetFlag 17) ; fSeenRBOffice
 			)
 			(3 ; Do
 				(TPrint 19 90) ; "This fax paper sure is flimsy!"

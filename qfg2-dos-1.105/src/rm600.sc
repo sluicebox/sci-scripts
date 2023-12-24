@@ -45,7 +45,7 @@
 		(treas4 init: stopUpd:)
 		(treas5 init: stopUpd:)
 		(armor init: stopUpd:)
-		(if (IsFlag 116)
+		(if (IsFlag 116) ; fLightOn
 			(glow setPri: 0 init:)
 			(floorShine init:)
 		else
@@ -57,7 +57,7 @@
 		(dr3 init: stopUpd:)
 		(gEgo posn: 295 61 init:)
 		(= gSpellChecker gAllChecker)
-		(if (IsFlag 116)
+		(if (IsFlag 116) ; fLightOn
 			(= global61 0)
 		else
 			(= global61 2)
@@ -75,7 +75,7 @@
 		(cond
 			(
 				(and
-					(IsFlag 116)
+					(IsFlag 116) ; fLightOn
 					(< (gEgo x:) (glow x:))
 					(< (gEgo distanceTo: glow) 30)
 				)
@@ -105,7 +105,7 @@
 		(cond
 			((super handleEvent: event))
 			((Said 'search,look,look[<at,around][/room,area][/!*]')
-				(if (IsFlag 116)
+				(if (IsFlag 116) ; fLightOn
 					(HighPrint 600 2) ; "You are in a roughly-hewn cave or old mine."
 				else
 					(Blind)
@@ -114,14 +114,14 @@
 			((Said 'look,look>')
 				(cond
 					((Said '<up')
-						(if (IsFlag 116)
+						(if (IsFlag 116) ; fLightOn
 							(HighPrint 600 3) ; "The lamp barely illuminates the dull rock above."
 						else
 							(Blind)
 						)
 					)
 					((Said '<down')
-						(if (IsFlag 116)
+						(if (IsFlag 116) ; fLightOn
 							(HighPrint 600 4) ; "The floor of this chamber is smooth stone."
 						else
 							(Blind)
@@ -138,7 +138,7 @@
 			((Said 'use,rub,rub,light,(turn<on)/lamp,light')
 				(DontMove 0)
 				(= darkTimer 0)
-				(SetFlag 116)
+				(SetFlag 116) ; fLightOn
 				(gCast eachElementDo: #show)
 				(gEgo view: 585 setCycle: Walk)
 				(= global61 0)
@@ -150,7 +150,7 @@
 			)
 			((Said 'grab,get,get,get/loot,gem,gold,chest,armor')
 				(cond
-					((not (IsFlag 116))
+					((not (IsFlag 116)) ; fLightOn
 						(Blind)
 					)
 					(
@@ -172,7 +172,7 @@
 				)
 			)
 			((Said 'look,look<at/loot,gem,gold')
-				(if (not (IsFlag 116))
+				(if (not (IsFlag 116)) ; fLightOn
 					(Blind)
 				else
 					(Print 600 8) ; "All that glitters is not gold."
@@ -180,7 +180,7 @@
 			)
 			((Said 'cast/trigger,fetch')
 				(cond
-					((not (IsFlag 116))
+					((not (IsFlag 116)) ; fLightOn
 						(Blind)
 					)
 					(
@@ -202,7 +202,7 @@
 				)
 			)
 			((Said 'cast/open,open')
-				(if (IsFlag 116)
+				(if (IsFlag 116) ; fLightOn
 					(gEgo setScript: downTheTube)
 				else
 					(Blind)
@@ -234,7 +234,7 @@
 	)
 
 	(method (doit)
-		(if (and (IsFlag 116) (== (gEgo view:) 585))
+		(if (and (IsFlag 116) (== (gEgo view:) 585)) ; fLightOn
 			(self setPri: (- (gEgo priority:) 1))
 			(if (or (gEgo mover:) justTurnedOn)
 				(if justTurnedOn
@@ -332,7 +332,7 @@
 			)
 			(7
 				(cond
-					((not (IsFlag 116))
+					((not (IsFlag 116)) ; fLightOn
 						(Blind)
 					)
 					(
@@ -360,7 +360,7 @@
 	)
 
 	(method (doit)
-		(if (IsFlag 116)
+		(if (IsFlag 116) ; fLightOn
 			(if (and (== (gEgo loop:) 6) (not cel))
 				(self setCycle: End)
 			)
@@ -397,7 +397,7 @@
 	)
 
 	(method (doit)
-		(if (IsFlag 116)
+		(if (IsFlag 116) ; fLightOn
 			(if (and (== (gEgo loop:) 3) (not cel))
 				(self setCycle: End)
 			)
@@ -434,7 +434,7 @@
 	)
 
 	(method (doit)
-		(if (IsFlag 116)
+		(if (IsFlag 116) ; fLightOn
 			(if (and (== (gEgo loop:) 3) (not cel))
 				(self setCycle: End)
 			)
@@ -471,7 +471,7 @@
 	)
 
 	(method (doit)
-		(if (IsFlag 116)
+		(if (IsFlag 116) ; fLightOn
 			(if (and (== (gEgo loop:) 3) (not cel))
 				(self setCycle: End)
 			)
@@ -508,7 +508,7 @@
 	)
 
 	(method (doit)
-		(if (IsFlag 116)
+		(if (IsFlag 116) ; fLightOn
 			(if (and (== (gEgo loop:) 7) (not cel))
 				(self setCycle: End)
 			)
@@ -563,7 +563,7 @@
 	)
 
 	(method (doit)
-		(if (IsFlag 116)
+		(if (IsFlag 116) ; fLightOn
 			(if (and (== (gEgo loop:) 2) cel)
 				(self setCycle: Beg)
 			)
@@ -806,7 +806,7 @@
 				(if (< (stag y:) (- (gEgo y:) 54))
 					(self changeState: 1)
 				else
-					(if (IsFlag 116)
+					(if (IsFlag 116) ; fLightOn
 						(gEgo cel: 1)
 					)
 					(stag setPri: 15 posn: (gEgo x:) (- (gEgo y:) 50))
@@ -832,7 +832,7 @@
 					posn: (- (stag x:) 23) (+ (stag y:) 3)
 				)
 				(stag2 setPri: 14 posn: (+ (stag x:) 18) (+ (stag y:) 3) init:)
-				(if (IsFlag 116)
+				(if (IsFlag 116) ; fLightOn
 					(lamp posn: (+ (gEgo x:) 20) (- (gEgo y:) 15) init:)
 				)
 				(= cycles 1)
@@ -845,7 +845,7 @@
 					posn: (- (stag x:) 12) (+ (stag y:) 23)
 				)
 				(stag2 setPri: 14 posn: (+ (stag2 x:) 5) (+ (stag2 y:) 7))
-				(if (IsFlag 116)
+				(if (IsFlag 116) ; fLightOn
 					(lamp posn: (lamp x:) (- (gEgo y:) 5))
 				)
 				(= cycles 1)
@@ -858,7 +858,7 @@
 					posn: (- (stag x:) 11) (- (stag y:) 11)
 				)
 				(stag2 setPri: 14 posn: (+ (stag2 x:) 2) (+ (stag2 y:) 17))
-				(if (IsFlag 116)
+				(if (IsFlag 116) ; fLightOn
 					(lamp posn: (lamp x:) (- (gEgo y:) 5))
 				)
 				(= cycles 1)
@@ -871,7 +871,7 @@
 					posn: (- (stag x:) 14) (- (stag y:) 2)
 				)
 				(stag2 setPri: 14 posn: (+ (stag2 x:) 8) (- (stag2 y:) 3))
-				(if (IsFlag 116)
+				(if (IsFlag 116) ; fLightOn
 					(lamp posn: (lamp x:) (- (gEgo y:) 5))
 				)
 				(= cycles 1)
@@ -884,7 +884,7 @@
 					posn: (- (stag x:) 12) (+ (stag y:) 6)
 				)
 				(stag2 setPri: 14 posn: (+ (stag2 x:) 9) (- (stag2 y:) 4))
-				(if (IsFlag 116)
+				(if (IsFlag 116) ; fLightOn
 					(lamp posn: (lamp x:) (- (gEgo y:) 5))
 				)
 				(= cycles 1)
@@ -898,7 +898,7 @@
 				)
 				(stag2 setPri: 14 posn: (+ (stag2 x:) 4) (+ (stag2 y:) 6))
 				(floorShine posn: (lamp x:) (lamp y:) show:)
-				(if (IsFlag 116)
+				(if (IsFlag 116) ; fLightOn
 					(lamp posn: (lamp x:) (- (gEgo y:) 5))
 				)
 				(= cycles 1)
@@ -930,7 +930,7 @@
 			(1
 				(gCast eachElementDo: #hide)
 				(gEgo setMotion: 0)
-				(ClearFlag 116)
+				(ClearFlag 116) ; fLightOn
 				(gCurRoom drawPic: 2)
 				(= seconds 2)
 			)
@@ -939,7 +939,7 @@
 				(= seconds 5)
 			)
 			(3
-				(if (not (IsFlag 116))
+				(if (not (IsFlag 116)) ; fLightOn
 					(= darkTimer 50)
 					(Print 600 17) ; "Light the lamp!!!!"
 				)

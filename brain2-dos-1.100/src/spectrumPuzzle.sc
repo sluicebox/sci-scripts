@@ -178,7 +178,7 @@
 	(method (init &tmp temp0 temp1 temp2 temp3 temp4 temp5 temp6 [temp7 4] temp11 [temp12 10])
 		(LoadMany rsVIEW 244 246 247)
 		(LoadMany rsSOUND 104 106 144 152 154 207 236)
-		(= local1 global114)
+		(= local1 gDifficulty)
 		(= local0 iconHeight)
 		(= window spectrumWindow)
 		(= local122 0)

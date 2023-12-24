@@ -41,7 +41,7 @@
 			(750
 				(HandsOn)
 				(gEgo posn: 117 164 setHeading: 180 edgeHit: EDGE_NONE)
-				(SetFlag 49)
+				(SetFlag 49) ; fDidLana
 			)
 			(north
 				(HandsOn)
@@ -131,7 +131,7 @@
 
 	(method (doit)
 		(super doit: &rest)
-		(if (and (IsFlag 0) (> (Abs (- gGameTime cycleTime)) 6))
+		(if (and (IsFlag 0) (> (Abs (- gGameTime cycleTime)) 6)) ; isVga
 			(= cycleTime gGameTime)
 			(Palette palANIMATE 33 48 -1)
 			(Palette palANIMATE 227 231 -1)

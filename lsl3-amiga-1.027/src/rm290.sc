@@ -89,8 +89,8 @@
 			(= gNormalEgoView 718)
 			(= gEgoState 19)
 			(= gEgoName (Format @gEgoNameBuffer 290 1)) ; "Larry"
-			(ClearFlag 4)
-			(ClearFlag 3)
+			(ClearFlag 4) ; preventAutoSave
+			(ClearFlag 3) ; cantSave
 			(TheMenuBar draw:)
 			(SL enable:)
 			(gCurRoom newRoom: 200)

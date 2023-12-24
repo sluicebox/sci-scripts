@@ -53,8 +53,8 @@
 				)
 			)
 			(9
-				(if (not (IsFlag 71))
-					(SetFlag 71)
+				(if (not (IsFlag 71)) ; fBabyMessage
+					(SetFlag 71) ; fBabyMessage
 					(= babyMessage 1)
 					(baby setScript: babyTurns)
 				else
@@ -91,8 +91,8 @@
 				)
 			)
 			((Said 'ask/simba,baby')
-				(if (not (IsFlag 71))
-					(SetFlag 71)
+				(if (not (IsFlag 71)) ; fBabyMessage
+					(SetFlag 71) ; fBabyMessage
 					(= babyMessage 1)
 					(baby setScript: babyTurns)
 				else
@@ -145,11 +145,11 @@
 			(
 				(and
 					(== what 27)
-					(not (IsFlag 72))
+					(not (IsFlag 72)) ; fRakeeshSword
 					(== gOrigHeroType 0)
 					(== gDay 13)
 				)
-				(SetFlag 72)
+				(SetFlag 72) ; fRakeeshSword
 				(rakeeshBod setScript: tellOfSword)
 			)
 			((and (== what 5) (<= 5 gElementalState 6))
@@ -239,8 +239,8 @@
 				(HighPrint 322 7) ; "At the west end of the Plaza of the Fighters is the entrance to the local Guild Hall. Sitting near the entrance is a rather large Liontaur."
 			)
 			((Said 'thank[/rakeesh]')
-				(if (and (IsFlag 72) (not (IsFlag 186)))
-					(SetFlag 186)
+				(if (and (IsFlag 72) (not (IsFlag 186))) ; fRakeeshSword, fSwordThanks
+					(SetFlag 186) ; fSwordThanks
 					(SkillUsed 14 50) ; honor
 				)
 				(SayThanks rakeesh 322 8)
@@ -264,8 +264,8 @@
 						(Say rakeesh 322 13) ; "The Elemental of Earth would be a fearsome adversary to face."
 					)
 					((== gElementalState 5)
-						(if (not (IsFlag 72))
-							(SetFlag 72)
+						(if (not (IsFlag 72)) ; fRakeeshSword
+							(SetFlag 72) ; fRakeeshSword
 							(rakeeshBod setScript: tellOfSword)
 						else
 							(Say rakeesh 322 14) ; "Soulforge was given to you to deal with the Earth Elemental."
@@ -284,10 +284,10 @@
 					'get,get,get,borrow/(blade[<flaming]),(forge<soul),soulforge'
 				)
 				(if (and (== gDay 13) (== gOrigHeroType 0))
-					(if (IsFlag 72)
+					(if (IsFlag 72) ; fRakeeshSword
 						(Say rakeesh 322 16) ; "You have my sword, Hero."
 					else
-						(SetFlag 72)
+						(SetFlag 72) ; fRakeeshSword
 						(rakeeshBod setScript: tellOfSword)
 					)
 				else

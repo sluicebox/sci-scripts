@@ -230,7 +230,7 @@
 	(method (init)
 		(LoadMany rsSCRIPT 401 381)
 		(LoadMany rsVIEW 0 6 4 533 31 532 47 83 382 381 383 410 460)
-		(if (IsFlag 96)
+		(if (IsFlag 96) ; fTeleFromIblis
 			(= gDay 30)
 			(FixTime 21 0)
 		)
@@ -266,7 +266,7 @@
 		(cond
 			((and (== gDay 30) gNight)
 				(eunuch init: setScript: (ScriptID 401 6)) ; eunuchPace
-				(if (IsFlag 138)
+				(if (IsFlag 138) ; fVisitedHaremGirl
 					(scarf init: setCycle: Fwd)
 				)
 			)
@@ -399,7 +399,7 @@
 				(and
 					isInRoom
 					(> (gEgo y:) 188)
-					(IsFlag 96)
+					(IsFlag 96) ; fTeleFromIblis
 					(not script)
 					triedToLeave
 					(== backToRoom 0)
@@ -412,7 +412,7 @@
 				(and
 					isInRoom
 					(> (gEgo y:) 188)
-					(IsFlag 96)
+					(IsFlag 96) ; fTeleFromIblis
 					(not script)
 					(not triedToLeave)
 				)
@@ -569,7 +569,7 @@
 			((Said 'climb,climb')
 				(HighPrint 400 22) ; "The pillars are too slick to climb."
 			)
-			((and (Said 'look,look<at/djinn') (IsFlag 96))
+			((and (Said 'look,look<at/djinn') (IsFlag 96)) ; fTeleFromIblis
 				(HighPrint 400 23) ; "If you could see him, you would."
 			)
 			((Said 'open,open/gate,door')
@@ -587,7 +587,7 @@
 			)
 			((Said 'ask/djinn')
 				(cond
-					((IsFlag 96)
+					((IsFlag 96) ; fTeleFromIblis
 						(djinniPrint 400 27) ; "Silly Master. We don't have time for that now. We need to hurry."
 					)
 					((and (== gDay 30) gNight)
@@ -641,7 +641,7 @@
 		(= gLevScript (= gRopeScript 0))
 		(disposeGuards)
 		(DisposeScript 401)
-		(ClearFlag 96)
+		(ClearFlag 96) ; fTeleFromIblis
 		(= global61 0)
 		(super dispose:)
 	)
@@ -1274,7 +1274,7 @@
 			)
 			(2
 				(gEgo setMotion: 0)
-				(if (IsFlag 138)
+				(if (IsFlag 138) ; fVisitedHaremGirl
 					(EgoDead
 						1
 						{By golly, you discovered the tower guard house.  Guess you should have tried the side with the scarf. }

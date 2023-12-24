@@ -78,7 +78,7 @@
 	(method (doit)
 		(super doit:)
 		(if (and (& (gEgo onControl:) $0004) (TestFlag 49))
-			(SetFlag 50)
+			(SetFlag 50) ; wetBody
 		)
 	)
 
@@ -105,7 +105,7 @@
 					(else
 						(Ok) ; "O.K."
 						(gEgo view: (if (>= gFilthLevel 3) 376 else 378))
-						(ClearFlag 49)
+						(ClearFlag 49) ; showerRunning
 						(gCurRoom drawPic: 375 8)
 						(aWater1 hide:)
 						(aWater2 hide:)
@@ -132,7 +132,7 @@
 					(else
 						(Ok) ; "O.K."
 						(gEgo view: 377)
-						(SetFlag 49)
+						(SetFlag 49) ; showerRunning
 						(gCurRoom drawPic: 376 8)
 						(if (> gMachineSpeed 16)
 							(aWater1 show:)
@@ -173,8 +173,8 @@
 					)
 					(else
 						(Ok) ; "O.K."
-						(ClearFlag 8)
-						(ClearFlag 10)
+						(ClearFlag 8) ; needsShower
+						(ClearFlag 10) ; needsSoap
 						(gGame changeScore: 60)
 						(gEgo put: 5 -1) ; Soap-On-A-Rope
 						(Print 375 9 #icon 5 0 0) ; "You were so wise to bring your "Soap-On-A-Rope" into the shower with you."

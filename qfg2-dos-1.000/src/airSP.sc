@@ -198,7 +198,7 @@
 				(SolvePuzzle 687 7 1)
 				(gCurRoom notify: 6 0)
 				(HandsOn 1)
-				(SetFlag 67)
+				(SetFlag 67) ; fPassedAir
 				(gCurRoom setScript: (ScriptID 220 3)) ; zapInSP
 				(client dispose:)
 			)
@@ -415,7 +415,7 @@
 				(SolvePuzzle 688 7 1)
 				(gCurRoom notify: 6 0)
 				(HandsOn)
-				(SetFlag 68)
+				(SetFlag 68) ; fPassedEarth
 				(gCurRoom setScript: (ScriptID 220 3)) ; zapInSP
 				(client dispose:)
 			)
@@ -630,7 +630,7 @@
 	(properties)
 
 	(method (doit)
-		(if (and (not (IsFlag 87)) register)
+		(if (and (not (IsFlag 87)) register) ; fCastingSpell
 			(self cue:)
 		)
 		(super doit:)

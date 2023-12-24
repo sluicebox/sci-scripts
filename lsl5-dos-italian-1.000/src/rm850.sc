@@ -32,8 +32,8 @@
 		(LoadMany rsVIEW 850 851 842)
 		(LoadMany rsSOUND 851 852 853 800 801 802)
 		(HandsOn)
-		(gEgo init: normalize: (if (IsFlag 27) 842 else 570))
-		(if (IsFlag 27)
+		(gEgo init: normalize: (if (IsFlag 27) 842 else 570)) ; fPattiBlackface
+		(if (IsFlag 27) ; fPattiBlackface
 			(gEgo actions: ActionsKRAP)
 		)
 		(gEgo posn: 270 140 setHeading: 270 edgeHit: EDGE_NONE)
@@ -105,7 +105,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(3 ; Do
-				(if (IsFlag 27)
+				(if (IsFlag 27) ; fPattiBlackface
 					(gEgo setScript: TakeAShowerScript)
 				else
 					(TPrint 850 1) ; "You don't need a shower right now, Patti. You're not dirty."
@@ -325,7 +325,7 @@
 				(TPrint 850 6) ; "Made of hand-carved, gold-flecked marble with gold-plated faucets, you bet this sink alone is worth more than your grand piano!"
 			)
 			(3 ; Do
-				(if (IsFlag 27)
+				(if (IsFlag 27) ; fPattiBlackface
 					(TPrint 850 7) ; "What you really need is a shower."
 				else
 					(TPrint 850 8) ; "Your hands aren't dirty."

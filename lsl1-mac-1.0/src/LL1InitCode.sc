@@ -20,7 +20,7 @@
 	(method (init)
 		(cond
 			((== (Graph grGET_COLOURS) 256)
-				(SetFlag 44)
+				(SetFlag 44) ; isVga
 				(= gColBlack (Palette palFIND_COLOR 31 31 31))
 				(= gColGray1 (Palette palFIND_COLOR 63 63 63))
 				(= gColGray2 (Palette palFIND_COLOR 95 95 95))
@@ -49,7 +49,7 @@
 				(= gColWindow (Palette palFIND_COLOR 255 255 120))
 			)
 			((== (Graph grGET_COLOURS) 32)
-				(ClearFlag 44)
+				(ClearFlag 44) ; isVga
 				(= gColBlack 0)
 				(= gColGray1 1)
 				(= gColGray2 1)
@@ -78,7 +78,7 @@
 				(= gColWindow 15)
 			)
 			((== (Graph grGET_COLOURS) 16)
-				(ClearFlag 44)
+				(ClearFlag 44) ; isVga
 				(= gColBlack 0)
 				(= gColGray1 7)
 				(= gColGray2 8)
@@ -109,9 +109,9 @@
 		)
 		(= gNumVoices (DoSound sndGET_POLYPHONY))
 		(if (and (>= (= gNumColors (Graph grGET_COLOURS)) 2) (<= gNumColors 32))
-			(ClearFlag 44)
+			(ClearFlag 44) ; isVga
 		else
-			(SetFlag 44)
+			(SetFlag 44) ; isVga
 		)
 		(= gUseSortedFeatures 1)
 		PolyPath

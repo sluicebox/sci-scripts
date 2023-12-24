@@ -49,7 +49,7 @@
 				(self style: 12)
 			)
 			(410
-				(if (IsFlag 11)
+				(if (IsFlag 11) ; fWhereDidSheGo
 					(self setScript: sWhereIsShe)
 				else
 					(HandsOff)
@@ -173,7 +173,7 @@
 				(= cycles 1)
 			)
 			(4
-				(ClearFlag 11)
+				(ClearFlag 11) ; fWhereDidSheGo
 				(HandsOn)
 				(self dispose:)
 			)

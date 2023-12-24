@@ -23,7 +23,7 @@
 
 (procedure (FadeIt)
 	(gTheIconBar disable:)
-	(if (not (IsFlag 44))
+	(if (not (IsFlag 44)) ; isVga
 		(gCurRoom drawPic: 720)
 		(gCast eachElementDo: #hide)
 	)
@@ -41,11 +41,11 @@
 			(suiteDoor dispose:)
 		)
 	)
-	(if (IsFlag 44)
+	(if (IsFlag 44) ; isVga
 		(gCurRoom drawPic: (gCurRoom picture:))
 		(Animate (gCast elements:) 0)
 	)
-	(if (not (IsFlag 44))
+	(if (not (IsFlag 44)) ; isVga
 		(Animate (gCast elements:) 0)
 		(gCurRoom drawPic: (gCurRoom picture:))
 		(Animate (gCast elements:) 0)
@@ -102,11 +102,11 @@
 
 	(method (init)
 		(if gDebugging
-			(SetFlag 12)
+			(SetFlag 12) ; fFawnInRoom
 			(gEgo get: 11) ; pocketKnife
 		)
 		(if (> gDebugging 1)
-			(SetFlag 24)
+			(SetFlag 24) ; fOrderedWine
 		)
 		(LoadMany rsVIEW 340 332 333 331 808)
 		(LoadMany rsSOUND 340 310 341)
@@ -410,8 +410,8 @@
 				(= cycles 1)
 			)
 			(3
-				(if (not (IsFlag 97))
-					(SetFlag 97)
+				(if (not (IsFlag 97)) ; fGotDizzy
+					(SetFlag 97) ; fGotDizzy
 					(Print 340 5) ; "Whew! You're dizzy."
 				)
 				(HandsOn)
@@ -629,13 +629,13 @@
 				(= seconds 3)
 			)
 			(3
-				(if (not (IsFlag 12))
+				(if (not (IsFlag 12)) ; fFawnInRoom
 					(Print 340 34) ; "There is no response to your knock, but now your knuckles hurt."
 					(NormalEgo)
 					(HandsOn)
 					(self dispose:)
 				else
-					(if (and (IsFlag 24) (not (IsFlag 36)))
+					(if (and (IsFlag 24) (not (IsFlag 36))) ; fOrderedWine, fSeenDeliveryBoyGag
 						(Print 340 35) ; "Fawn's sexy voice oozes through the door, "Oh, baby, it's you! You're back!!""
 						(Print 340 36) ; "There's a click as she unlocks the door, then "Come on in, you wonderful hunk!""
 						(Print 340 37) ; "You can't wait!"

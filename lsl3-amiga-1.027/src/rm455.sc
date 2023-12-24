@@ -261,7 +261,7 @@
 						(if (not (gEgo has: 9)) ; Spa_Keycard
 							(Print 455 60) ; "As you hand your hard-earned divorce decree to Patti, something flutters to the floor."
 							(gEgo get: 9) ; Spa_Keycard
-							(SetFlag 70)
+							(SetFlag 70) ; missedKeycardPoints
 							(Print 455 61) ; "Well, well," you say, "look at this. Somehow Suzi Cheatem's Fat City Membership Card got mixed in with these papers. I suppose I could always return it to her."
 						)
 						(gGame changeScore: 100)

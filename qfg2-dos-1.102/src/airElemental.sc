@@ -147,7 +147,7 @@
 	(method (doit)
 		(if
 			(and
-				(or (IsFlag 90) (IsFlag 88))
+				(or (IsFlag 90) (IsFlag 88)) ; fLevitating, fClimbingRope
 				(< (self distanceTo: gEgo) attackDist)
 				(< (gEgo z:) 30)
 			)
@@ -160,14 +160,14 @@
 		(cond
 			(airGrounded)
 			((> (gEgo z:) 30))
-			((IsFlag 90)
+			((IsFlag 90) ; fLevitating
 				(gEgo setScript: (ScriptID 62 1)) ; fallDown
 			)
-			((IsFlag 88)
+			((IsFlag 88) ; fClimbingRope
 				(gEgo setScript: (ScriptID 61 3)) ; ropeFall
 			)
-			((IsFlag 91))
-			((IsFlag 95))
+			((IsFlag 91)) ; fUsingRope
+			((IsFlag 95)) ; fFalling
 			((gCurRoom script:))
 			(else
 				(UseStamina 20)

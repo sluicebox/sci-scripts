@@ -57,27 +57,27 @@
 		(windowL init: stopUpd:)
 		(switch gPrevRoomNum
 			(500
-				(SetFlag 9)
+				(SetFlag 9) ; fBeenInNewYork
 			)
 			(600
 				(= gPattiLoc 1)
 			)
 			(690
 				(= gPattiLoc 1)
-				(SetFlag 29)
+				(SetFlag 29) ; fBeenInBaltimore
 			)
 			(700
-				(SetFlag 10)
+				(SetFlag 10) ; fBeenInAtlanticCity
 			)
 			(800
 				(= gPattiLoc 2)
 			)
 			(890
 				(= gPattiLoc 2)
-				(SetFlag 28)
+				(SetFlag 28) ; fBeenInPhilly
 			)
 			(900
-				(SetFlag 11)
+				(SetFlag 11) ; fBeenInMiami
 			)
 		)
 		(if gEgoIsLarry
@@ -136,10 +136,10 @@
 				edgeHit: EDGE_NONE
 			)
 			(legs init: setScript: sLegs)
-			(if (not (IsFlag 30))
+			(if (not (IsFlag 30)) ; fTookBottle
 				(bottle init: stopUpd:)
 			)
-			(if (and (IsFlag 28) (IsFlag 29))
+			(if (and (IsFlag 28) (IsFlag 29)) ; fBeenInPhilly, fBeenInBaltimore
 				(Delay 20 1 gCurRoom)
 				(HandsOff)
 				(= gPattiDest 3)
@@ -162,7 +162,7 @@
 			posn: (Random 241 304) (Random 87 106)
 			setScript: sFishScript
 		)
-		(if (and (== gLarryLoc 1) (not (IsFlag 31)) (== gPrevRoomNum 250))
+		(if (and (== gLarryLoc 1) (not (IsFlag 31)) (== gPrevRoomNum 250)) ; fTookDayTrotter
 			(dayTrotter init:)
 		)
 		(Load rsPIC 1)
@@ -224,7 +224,7 @@
 					)
 				)
 				(3
-					(SetFlag 8)
+					(SetFlag 8) ; fBeenToTown
 					(gEgo stopUpd:)
 					(driver doVerb: 4 7)
 				)
@@ -667,7 +667,7 @@
 					(Points 12)
 				)
 				(gEgo get: 11) ; DayTrotter
-				(SetFlag 31)
+				(SetFlag 31) ; fTookDayTrotter
 				(dayTrotter dispose:)
 				(Delay 2 1 self)
 			)
@@ -718,7 +718,7 @@
 			)
 			(3 ; Do
 				(HandsOff)
-				(SetFlag 30)
+				(SetFlag 30) ; fTookBottle
 				(gCurRoom setScript: sGetBottle)
 			)
 			(else
@@ -1225,9 +1225,9 @@
 				)
 			)
 			(31
-				(ClearFlag 1)
+				(ClearFlag 1) ; fCalledLimo
 				(if (!= gDestination 250)
-					(ClearFlag 38)
+					(ClearFlag 38) ; fLimoParked
 				)
 				(if (and (== gDestination 900) (gEgo has: 10)) ; Some_Change
 					(Say gEgo 200 41) ; "Thank you for an excellent journey, my good woman," you tell your chauffeur. "I'll leave a little something for you on the seat back here."
@@ -1239,7 +1239,7 @@
 					(= missedDayTrotter 1)
 					(dayTrotter doVerb: 3 &rest)
 				else
-					(if (and (IsFlag 9) (gEgo has: 11)) ; DayTrotter
+					(if (and (IsFlag 9) (gEgo has: 11)) ; fBeenInNewYork, DayTrotter
 						(gEgo put: 11 put: 13 put: 12) ; DayTrotter, Credit_Cards, Money
 						(TPrint 200 43) ; "You think, "Who wants a stupid old DayTrotter\05 anyway?" So you leave it and all the things that came with it on the seat of your limo. "Let somebody else hassle with that thing!" you think. "I've got better things to do!""
 					)
@@ -1311,14 +1311,14 @@
 					(600
 						(TPrint 200 49 80 {Bobby}) ; "The Shill Building, eh?" says Bobby. "It's a great place--if you like music!"
 						(if (== gPrevRoomNum 800)
-							(SetFlag 28)
+							(SetFlag 28) ; fBeenInPhilly
 						)
 						(Delay 2 1 self)
 					)
 					(800
 						(TPrint 200 50 80 {Bobby}) ; "K-RAP Radio, eh?" says Bobby. "It's a great place--if you like rap!"
 						(if (== gPrevRoomNum 600)
-							(SetFlag 29)
+							(SetFlag 29) ; fBeenInBaltimore
 						)
 						(Delay 2 1 self)
 					)
@@ -1426,7 +1426,7 @@
 					((== gPattiLoc 1)
 						(TPrint 200 67 80 {Bobby}) ; "I thought I already tried that!"
 					)
-					((IsFlag 29)
+					((IsFlag 29) ; fBeenInBaltimore
 						(TPrint 200 68 80 {Bobby}) ; "I thought I tried that when we were in Baltimore?!"
 					)
 					(driving
@@ -1468,7 +1468,7 @@
 									((not (OneOf gPrevRoomNum 205 250))
 										(TPrint 200 74 80 {Bobbi}) ; "Waddayou, crazy?" shouts Bobbi, "you're already there!"
 									)
-									((IsFlag 9)
+									((IsFlag 9) ; fBeenInNewYork
 										(TPrint 200 75 80 {Bobbi}) ; "You have no need to return to New York City."
 									)
 									(else
@@ -1493,7 +1493,7 @@
 									((not (OneOf gPrevRoomNum 205 250))
 										(TPrint 200 74 80 {Bobbi}) ; "Waddayou, crazy?" shouts Bobbi, "you're already there!"
 									)
-									((IsFlag 10)
+									((IsFlag 10) ; fBeenInAtlanticCity
 										(TPrint 200 77) ; "You have no need to return to Atlantic City."
 									)
 									(else
@@ -1518,7 +1518,7 @@
 									((not (OneOf gPrevRoomNum 205 250))
 										(TPrint 200 74 80 {Bobbi}) ; "Waddayou, crazy?" shouts Bobbi, "you're already there!"
 									)
-									((IsFlag 11)
+									((IsFlag 11) ; fBeenInMiami
 										(TPrint 200 79) ; "You have no need to return to Miami."
 									)
 									(else
@@ -1547,7 +1547,7 @@
 								((== gPattiLoc 1)
 									(TPrint 200 80 80 {Bobby}) ; "Oh, come on, lady!" says Bobby, "that's where you are now!"
 								)
-								((IsFlag 29)
+								((IsFlag 29) ; fBeenInBaltimore
 									(TPrint 200 81 80 {Bobby}) ; "Oh, come on, lady!" says Bobby, "I'm not taking you back there!"
 								)
 								(gDestination
@@ -1575,7 +1575,7 @@
 								((== gPattiLoc 2)
 									(TPrint 200 80 80 {Bobby}) ; "Oh, come on, lady!" says Bobby, "that's where you are now!"
 								)
-								((IsFlag 28)
+								((IsFlag 28) ; fBeenInPhilly
 									(TPrint 200 81 80 {Bobby}) ; "Oh, come on, lady!" says Bobby, "I'm not taking you back there!"
 								)
 								(gDestination
@@ -1608,7 +1608,7 @@
 										((== gPattiLoc 1)
 											(TPrint 200 80 80 {Bobby}) ; "Oh, come on, lady!" says Bobby, "that's where you are now!"
 										)
-										((IsFlag 29)
+										((IsFlag 29) ; fBeenInBaltimore
 											(TPrint 200 81 80 {Bobby}) ; "Oh, come on, lady!" says Bobby, "I'm not taking you back there!"
 										)
 										(gDestination
@@ -1636,7 +1636,7 @@
 										((== gPattiLoc 2)
 											(TPrint 200 80 80 {Bobby}) ; "Oh, come on, lady!" says Bobby, "that's where you are now!"
 										)
-										((IsFlag 28)
+										((IsFlag 28) ; fBeenInPhilly
 											(TPrint 200 80 80 {Bobby}) ; "Oh, come on, lady!" says Bobby, "that's where you are now!"
 										)
 										(gDestination

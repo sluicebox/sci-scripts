@@ -184,10 +184,10 @@
 					((gEgo has: 25) ; Bellows
 						(Say Issur 141 7) ; "You have the bellows. What more do you want?"
 					)
-					((not (IsFlag 22))
+					((not (IsFlag 22)) ; fBellows
 						(Say Issur 141 8) ; "The bellows is a sign of my trade. What about it?"
 					)
-					((IsFlag 165)
+					((IsFlag 165) ; fIssurMellow
 						(SolvePuzzle 609 7)
 						(Say Issur 141 9) ; "Hey, what are friends for? Let me get them down for you."
 						(Print 141 10) ; "He gets the bellows down for you and you put it away. Good thing your spell lasted long enough."
@@ -221,10 +221,10 @@
 	)
 
 	(method (calmMe)
-		(if (IsFlag 165)
+		(if (IsFlag 165) ; fIssurMellow
 			(HighPrint 141 13) ; "Issur continues to smile at you."
 		else
-			(SetFlag 165)
+			(SetFlag 165) ; fIssurMellow
 			(HighPrint 141 14) ; "Issur seems much more mellow now."
 		)
 		(return 1)
@@ -298,7 +298,7 @@
 			)
 			(1
 				(gEgo setHeading: 0)
-				(if (IsFlag 26)
+				(if (IsFlag 26) ; fWeaponRobbed
 					(gEgo setScript: busted 0 0)
 				else
 					(StartTimer bustTimer 150)
@@ -349,7 +349,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(SetFlag 25)
+				(SetFlag 25) ; fIssurMad
 				(shopWindow color: 0 back: 11)
 				(HighPrint 141 17 35 shopWindow 103) ; "That does it!!"
 				(Issur setLoop: 6 cel: 0 setCycle: CT 2 1)
@@ -447,14 +447,14 @@
 					((== gEnter140 1)
 						(Say Issur self 145 16) ; "I am Issur, and this is my weapon shop. I make the best swords and daggers. What do you want?"
 					)
-					((IsFlag 25)
+					((IsFlag 25) ; fIssurMad
 						(Say Issur self 141 18) ; "You back again? I'll let you stay if you want to buy something, but don't push it."
-						(ClearFlag 25)
+						(ClearFlag 25) ; fIssurMad
 					)
-					((IsFlag 23)
+					((IsFlag 23) ; fWrestlingWin
 						(Say Issur self 141 19) ; "What do you want now?"
 					)
-					((IsFlag 17)
+					((IsFlag 17) ; fWrestledOnce
 						(= theMessage (ChooseFromCycle gEnter140 18 25))
 						(Say Issur self 145 theMessage)
 					)

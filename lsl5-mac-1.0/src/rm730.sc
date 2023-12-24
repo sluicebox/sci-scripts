@@ -54,7 +54,7 @@
 			(else
 				(gEgo get: 17) ; Silver_Dollar
 				(= gSilvDollars 5000)
-				(SetFlag 3)
+				(SetFlag 3) ; fSeenLL
 				(HandsOn)
 				(self setScript: sFromSouth)
 			)
@@ -72,14 +72,14 @@
 		)
 		(gTheMusic number: 738 setLoop: -1 flags: 1 play: 127)
 		(cond
-			((IsFlag 3)
+			((IsFlag 3) ; fSeenLL
 				(LoadMany rsVIEW 1731 552)
 				(LoadMany rsSOUND 744 743)
 				(= mainEvent 1)
 				(ring init: stopUpd:)
 				(ropes init: stopUpd:)
 			)
-			((IsFlag 5)
+			((IsFlag 5) ; fMudWrestled
 				(= mainEvent 0)
 			)
 			(else

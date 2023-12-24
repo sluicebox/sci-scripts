@@ -178,7 +178,7 @@
 				(= seconds (PrintPlot))
 			)
 			(2
-				(SetFlag 19)
+				(SetFlag 19) ; beenIn210
 				(if (not (TestFlag 20))
 					(aCredit1
 						view: 53
@@ -288,7 +288,7 @@
 				(= cycles 22)
 			)
 			(3
-				(SetFlag 25)
+				(SetFlag 25) ; sawCredits210
 				(aCredit1 setCycle: Beg)
 				(aCredit2 setCycle: Beg self)
 			)

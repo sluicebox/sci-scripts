@@ -34,7 +34,7 @@
 		(super init:)
 		(herEyes init: cycleSpeed: gLarrySpeed setScript: sFlap)
 		(herMouth init: cycleSpeed: gLarrySpeed)
-		(if (and (not gSpraySeconds) (IsFlag 20))
+		(if (and (not gSpraySeconds) (IsFlag 20)) ; fMouthSmellsBad
 			(= breathLineTimer 60)
 			(herMouth setScript: sFrown)
 		)

@@ -49,16 +49,16 @@
 
 	(method (init)
 		(LoadMany rsVIEW 0 4 380 450)
-		(if (and (== gDay 28) (not (IsFlag 97)))
+		(if (and (== gDay 28) (not (IsFlag 97))) ; fUgarteBusted
 			(LoadMany rsVIEW 362 465 382 383 397)
 		)
 		(super init:)
 		(InitAddToPics leftDoorBlock rightFullBlock backDoorBlock lWindow rWindow)
-		(if (and (== gDay 28) (IsFlag 97))
+		(if (and (== gDay 28) (IsFlag 97)) ; fUgarteBusted
 			(InitAddToPics wawa)
 		)
 		(cond
-			((and (== gDay 28) (not (IsFlag 97)) (<= 0 gTimeODay 4))
+			((and (== gDay 28) (not (IsFlag 97)) (<= 0 gTimeODay 4)) ; fUgarteBusted
 				(ugarte init: setPri: 7 setScript: uSquirms)
 				(khaveen init: stopUpd:)
 				(rGuard1 init: stopUpd:)
@@ -92,14 +92,14 @@
 					(Said 'search,look,look[<at,around][/room,area][/!*]')
 					(Said 'look,look/courtyard')
 				)
-				(if (and (== gDay 28) (not (IsFlag 97)))
+				(if (and (== gDay 28) (not (IsFlag 97))) ; fUgarteBusted
 					(LowPrint 450 3) ; "The Plaza seems to be busy today."
 				else
 					(LowPrint 450 4) ; "This looks like a nice, quiet spot."
 				)
 			)
 			((Said 'ask,tell')
-				(if (and (== gDay 28) (not (IsFlag 97)))
+				(if (and (== gDay 28) (not (IsFlag 97))) ; fUgarteBusted
 					(LowPrint 450 5) ; "Don't bother the guards."
 				else
 					(LowPrint 450 6) ; "There is no one to talk to."
@@ -514,7 +514,7 @@
 				(gard_Ugarte dispose:)
 				(khaveen dispose:)
 				(gCSound stop:)
-				(SetFlag 97)
+				(SetFlag 97) ; fUgarteBusted
 				(self dispose:)
 			)
 		)

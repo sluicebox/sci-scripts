@@ -48,7 +48,7 @@
 
 (procedure (localproc_1 &tmp temp0 temp1 temp2 [temp3 30])
 	(= local85 (= temp1 0))
-	(= temp0 [local82 global114])
+	(= temp0 [local82 gDifficulty])
 	(while (Message msgGET temp0 (+ local85 2) 7 0 1 @temp3)
 		(= [local96 local85] temp1)
 		(++ local85)
@@ -78,16 +78,16 @@
 		(for ((= temp0 0)) (< temp0 6) ((++ temp0))
 			(= [local23 temp0] 0)
 		)
-		(switch global114
-			(0
+		(switch gDifficulty
+			(0 ; Novice
 				(= local1 9)
 				(= local0 3)
 			)
-			(1
+			(1 ; Standard
 				(= local1 12)
 				(= local0 2)
 			)
-			(2
+			(2 ; Expert
 				(= local1 15)
 				(= local0 2)
 			)
@@ -143,7 +143,7 @@
 
 	(method (showHelp)
 		(super showHelp: &rest)
-		(proc15_0 self (+ local3 2) 1 0 1 0 [local82 global114])
+		(Say self (+ local3 2) 1 0 1 0 [local82 gDifficulty])
 	)
 
 	(method (hide)
@@ -168,14 +168,14 @@
 			(= temp2 [local20 (temp1 value:)])
 			(Message
 				msgGET
-				[local82 global114]
+				[local82 gDifficulty]
 				1
 				4
 				(temp1 message:)
 				(temp1 modifiers:)
 				@temp3
 			)
-			(Message msgGET [local82 global114] 1 1 (temp2 message:) 1 @local62)
+			(Message msgGET [local82 gDifficulty] 1 1 (temp2 message:) 1 @local62)
 			(Message msgGET msgModule 13 4 7 1 @temp23)
 			(Printf @temp23 @temp3 @local62)
 		)
@@ -383,7 +383,7 @@
 					modeless: 1
 					x: (+ nsLeft 80)
 					y: (+ nsTop 14)
-					addText: 1 4 message modifiers 0 0 [local82 global114]
+					addText: 1 4 message modifiers 0 0 [local82 gDifficulty]
 					init:
 				)
 			)
@@ -457,7 +457,7 @@
 			(|= modifiers (<< $0001 temp0))
 		)
 		(= [local35 param1] modifiers)
-		(= [local29 param1] (proc15_6 [local82 global114] 1 4 message))
+		(= [local29 param1] (proc15_6 [local82 gDifficulty] 1 4 message))
 		(= [local20 param1] self)
 	)
 
@@ -482,7 +482,7 @@
 				)
 			)
 		)
-		(Message msgGET [local82 global114] 1 1 message 1 @temp3)
+		(Message msgGET [local82 gDifficulty] 1 1 message 1 @temp3)
 		(Display @temp3 dsCOORD 17 [local259 value] dsWIDTH 118 dsALIGN alCENTER dsFONT 999)
 	)
 

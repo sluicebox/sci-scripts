@@ -43,7 +43,7 @@
 		(Load rsSOUND 9)
 		(Load rsSOUND 261)
 		(super init:)
-		(SetFlag 52)
+		(SetFlag 52) ; hadBambi
 		(HandsOff)
 		(SL disable:)
 		(TheMenuBar hide: state: 0)

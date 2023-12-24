@@ -954,7 +954,7 @@
 		(if
 			(or
 				(and (== theVerb 4) (== invItem 13)) ; Inventory, Credit_Cards
-				(and (== theVerb 3) (IsFlag 35)) ; Do
+				(and (== theVerb 3) (IsFlag 35)) ; Do, fWearingBra
 			)
 			(Points 100)
 			(gCurRoom setScript: sCartoon2)

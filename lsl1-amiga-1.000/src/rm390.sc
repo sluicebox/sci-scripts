@@ -39,11 +39,11 @@
 	(method (init &tmp foo)
 		(= foo 991)
 		(if gDebugging
-			(SetFlag 12)
+			(SetFlag 12) ; fFawnInRoom
 			(gEgo get: 11) ; pocketKnife
 		)
 		(if (> gDebugging 1)
-			(SetFlag 24)
+			(SetFlag 24) ; fOrderedWine
 		)
 		(if (> gDebugging 2)
 			(= pouredWine 1)
@@ -81,15 +81,15 @@
 			init:
 		)
 		(ribbon init: approachVerbs: 3 4 10 11 2) ; Do, Inventory, Zipper, Taste/Smell, Look
-		(if (IsFlag 41)
+		(if (IsFlag 41) ; fTurnedOnRadio
 			(gTheMusic number: 390 play: 127)
-			(if (not (IsFlag 24))
+			(if (not (IsFlag 24)) ; fOrderedWine
 				(= radioTimer
 					(Random (* (+ 1 global101) 200) (* (+ 1 global101) 300))
 				)
 			)
 		)
-		(if (IsFlag 24)
+		(if (IsFlag 24) ; fOrderedWine
 			(Load rsVIEW 393 803)
 			(LoadMany rsSOUND 171 393 394 396 167 111)
 			(wine init: stopUpd: approachVerbs: 2 3 4 10 11) ; Look, Do, Inventory, Zipper, Taste/Smell
@@ -135,7 +135,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(if (IsFlag 12)
+				(if (IsFlag 12) ; fFawnInRoom
 					(Print 390 3) ; "You are in the casino hotel's honeymoon suite. The heart-shaped bed is just waiting for you and Fawn. There is a radio by the bed. This place is perfect for your wedding night!"
 					(Print 390 4) ; "The dim lighting sets the perfect atmosphere. What a lovely room!"
 					(Print 390 5 #at -1 140) ; "(You've always been a fan of the "Early American Gaudy" school of decorating.)"
@@ -187,7 +187,7 @@
 				)
 				(10 ; Zipper
 					(cond
-						((not (IsFlag 24))
+						((not (IsFlag 24)) ; fOrderedWine
 							(Print 390 12) ; "Hey, don't rush it, buster! Can't a gal even have a drink first?" she "wines." "Geez, what a romantic!"
 						)
 						((not pouredWine)
@@ -259,8 +259,8 @@
 				(= cycles 10)
 			)
 			(5
-				(if (and (IsFlag 24) (not (IsFlag 36)))
-					(SetFlag 36)
+				(if (and (IsFlag 24) (not (IsFlag 36))) ; fOrderedWine, fSeenDeliveryBoyGag
+					(SetFlag 36) ; fSeenDeliveryBoyGag
 					(Print 390 16 #at -1 20) ; "Oh, Larry, it's you!" Fawn says. "I thought it was that cute, young delivery boy again."
 					(Print 390 17) ; "Hmm. What does she mean by that? Oh, well. You decide to let it pass. After all, this IS your wedding night!"
 				else
@@ -280,7 +280,7 @@
 
 	(method (doit)
 		(super doit: &rest)
-		(if (and (== (gTheMusic prevSignal:) -1) state (IsFlag 41))
+		(if (and (== (gTheMusic prevSignal:) -1) state (IsFlag 41)) ; fTurnedOnRadio
 			(gTheMusic number: 390 loop: -1 vol: 127 play:)
 		)
 	)
@@ -345,7 +345,7 @@
 			)
 			(9
 				(gTheMusic3 stop:)
-				(if (not (IsFlag 41))
+				(if (not (IsFlag 41)) ; fTurnedOnRadio
 					(gTheMusic fade:)
 				)
 				(if (> gLarryDollars 10)
@@ -381,7 +381,7 @@
 				(fawn setMotion: PolyPath 241 88 self)
 			)
 			(15
-				(ClearFlag 12)
+				(ClearFlag 12) ; fFawnInRoom
 				(gTheMusic3 number: 802 play:)
 				(door setCycle: Beg self)
 			)
@@ -412,7 +412,7 @@
 
 	(method (doit)
 		(super doit: &rest)
-		(if (and (== (gTheMusic prevSignal:) -1) (IsFlag 41))
+		(if (and (== (gTheMusic prevSignal:) -1) (IsFlag 41)) ; fTurnedOnRadio
 			(gTheMusic number: 390 loop: -1 vol: 127 play:)
 		)
 	)
@@ -563,7 +563,7 @@
 					)
 					(Print 390 37) ; "Sounds like a nice mellow station..."
 					(Print 390 38) ; "The tuning knob on the radio is stuck. Looks like you're stuck with the Easy Listening station."
-					(if (not (IsFlag 24))
+					(if (not (IsFlag 24)) ; fOrderedWine
 						(= radioTimer
 							(Random
 								(* (+ 1 global101) 200)
@@ -900,7 +900,7 @@
 					(Print 390 50) ; "Hmmm. Was "Tuesday" a good year?"
 				)
 				(3 ; Do
-					(if (not (IsFlag 12))
+					(if (not (IsFlag 12)) ; fFawnInRoom
 						(Print 390 51) ; "You grab the bottle that once held the suggestion of a happy marriage but now holds nothing more than the bitter dregs of your "honeymoon-gone-bad." You unscrew the top and fortify your courage with a long, hard belt! You screw the lid down tight and quickly replace the bottle in the wine bucket."
 					else
 						(HandsOff)
@@ -951,7 +951,7 @@
 					(pouredWine
 						(Print 390 53) ; "She looks ready, Larry."
 					)
-					((IsFlag 24)
+					((IsFlag 24) ; fOrderedWine
 						(Print 390 54) ; "She looks like she could use some of that wine."
 					)
 					(else
@@ -961,7 +961,7 @@
 			)
 			(5 ; Talk
 				(cond
-					((not (IsFlag 24))
+					((not (IsFlag 24)) ; fOrderedWine
 						(if (Random 0 1)
 							(Print 390 56) ; "You know, a little wine would help me get in the mood, Larry."
 						else
@@ -979,7 +979,7 @@
 			)
 			(3 ; Do
 				(cond
-					((not (IsFlag 24))
+					((not (IsFlag 24)) ; fOrderedWine
 						(Print 390 60) ; "She doesn't appear to be in the mood yet, Larry."
 					)
 					((not pouredWine)
@@ -994,7 +994,7 @@
 			)
 			(10 ; Zipper
 				(cond
-					((not (IsFlag 24))
+					((not (IsFlag 24)) ; fOrderedWine
 						(Print 390 12) ; "Hey, don't rush it, buster! Can't a gal even have a drink first?" she "wines." "Geez, what a romantic!"
 					)
 					((not pouredWine)
@@ -1051,11 +1051,11 @@
 			(switch theVerb
 				(3 ; Do
 					(HandsOff)
-					(if (IsFlag 41)
-						(ClearFlag 41)
+					(if (IsFlag 41) ; fTurnedOnRadio
+						(ClearFlag 41) ; fTurnedOnRadio
 						(gCurRoom setScript: sDoRadio 0 0)
 					else
-						(SetFlag 41)
+						(SetFlag 41) ; fTurnedOnRadio
 						(gCurRoom setScript: sDoRadio 0 1)
 					)
 				)
@@ -1283,7 +1283,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(if (IsFlag 12)
+				(if (IsFlag 12) ; fFawnInRoom
 					(Print 390 73) ; "Why, Fawn," you say, "you placed my rose in a different vase."
 					(Print 390 74) ; "But, of course, my dear," she replies, "but let's not talk about flora at a time like this!"
 				else
@@ -1291,7 +1291,7 @@
 				)
 			)
 			(3 ; Do
-				(if (IsFlag 12)
+				(if (IsFlag 12) ; fFawnInRoom
 					(Print 390 76) ; "You only gave it to her a little while ago. Don't take it now."
 				else
 					(Print 390 77) ; "Why take it? You don't want to remember Fawn (that scum-sucking gutterslug!)."

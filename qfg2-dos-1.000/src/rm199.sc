@@ -73,7 +73,7 @@
 		else
 			(self setScript: enterS)
 		)
-		(SetFlag 130)
+		(SetFlag 130) ; f199
 		(= gSpellChecker gAllChecker)
 	)
 
@@ -212,16 +212,16 @@
 						(or
 							noMore4Now
 							(and (== gEnchAlleyLast gNow) gAzizaTemper)
-							(IsFlag 182)
+							(IsFlag 182) ; fAzizaSaurus
 						)
 						(HighPrint 199 2) ; "There is no response."
 						(self changeState: 2)
 					)
 					((== gDay 16)
-						(SetFlag 182)
+						(SetFlag 182) ; fAzizaSaurus
 						(gCurRoom setScript: goInside)
 					)
-					((and (IsFlag 40) (not (== gAzizaTemper 3)))
+					((and (IsFlag 40) (not (== gAzizaTemper 3))) ; fAzizaOnce
 						(AzizaPrint (Format @tmpName 199 3 @gUserName)) ; "Welcome, %s"
 						(gCurRoom setScript: goInside)
 					)
@@ -377,7 +377,7 @@
 				(gEgo setMotion: MoveTo 158 80 self)
 			)
 			(2
-				(SetFlag 40)
+				(SetFlag 40) ; fAzizaOnce
 				(gCurRoom newRoom: 180)
 			)
 		)

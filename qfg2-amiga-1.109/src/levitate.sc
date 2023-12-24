@@ -49,8 +49,8 @@
 	(properties)
 
 	(method (init)
-		(SetFlag 90)
-		(SetFlag 87)
+		(SetFlag 90) ; fLevitating
+		(SetFlag 87) ; fCastingSpell
 		(gDirectionHandler addToFront: self)
 		(gMouseDownHandler addToFront: self)
 		(= oldSig (gEgo signal:))
@@ -69,8 +69,8 @@
 		(= deltaZ 0)
 		(gGame setCursor: gWaitCursor)
 		(gEgo signal: oldSig)
-		(ClearFlag 90)
-		(ClearFlag 87)
+		(ClearFlag 90) ; fLevitating
+		(ClearFlag 87) ; fCastingSpell
 		(leviTimer dispose:)
 		(super dispose:)
 	)
@@ -326,12 +326,12 @@
 	(properties)
 
 	(method (init)
-		(SetFlag 95)
+		(SetFlag 95) ; fFalling
 		(super init: &rest)
 	)
 
 	(method (dispose)
-		(ClearFlag 95)
+		(ClearFlag 95) ; fFalling
 		(super dispose:)
 	)
 

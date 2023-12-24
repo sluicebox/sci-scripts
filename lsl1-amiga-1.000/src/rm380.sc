@@ -75,7 +75,7 @@
 	(method (init)
 		(LoadMany rsVIEW 381 382 380)
 		(LoadMany rsSOUND 381 380)
-		(if (not (IsFlag 6))
+		(if (not (IsFlag 6)) ; fEveHasApple
 			(Load rsSOUND 384)
 			(Load rsVIEW 803)
 		)
@@ -116,12 +116,12 @@
 				posn: 120 139
 				init:
 			)
-			(if (IsFlag 17)
+			(if (IsFlag 17) ; fJetsOff
 				(JetsOff)
 			else
 				(JetsOn)
 			)
-			(if (IsFlag 6)
+			(if (IsFlag 6) ; fEveHasApple
 				(aEve
 					cycleSpeed: (* 2 global101)
 					moveSpeed: (* 2 global101)
@@ -136,12 +136,12 @@
 				(gTheMusic send: 4 78 1 send: 9 78 1 send: 5 78 0)
 			)
 		else
-			(if (IsFlag 17)
+			(if (IsFlag 17) ; fJetsOff
 				(JetsOff)
 			else
 				(JetsOn)
 			)
-			(if (IsFlag 4)
+			(if (IsFlag 4) ; fDollFlies
 				(aDoll cycleSpeed: global101 moveSpeed: global101 init:)
 				(gEgo posn: 231 113)
 				(gCurRoom setScript: sFlyingDoll)
@@ -205,11 +205,11 @@
 	(method (doVerb theVerb)
 		(if (or (== theVerb 3) (== theVerb 10)) ; Do, Zipper
 			(cond
-				((not (IsFlag 2))
+				((not (IsFlag 2)) ; fComeOnIn
 					(Print 380 3) ; "As much as you'd like to get undressed and join that young lady in her hot tub, you haven't been invited yet."
 					(Print 380 4 #at -1 140) ; "(And you know about hotel security...)"
 				)
-				((not (IsFlag 7))
+				((not (IsFlag 7)) ; fEveKnowsLarry
 					(Print 380 5) ; "Perhaps if you introduced yourself to her first..."
 				)
 				((!= (gEgo view:) 381)
@@ -277,7 +277,7 @@
 			)
 			(6
 				(gEgo view: 381 setPri: -1 x: 120 y: 139)
-				(if (IsFlag 17)
+				(if (IsFlag 17) ; fJetsOff
 					(gEgo setLoop: 2 setCel: 0 setCycle: 0)
 				else
 					(gEgo setLoop: 1 setCycle: Fwd)
@@ -460,7 +460,7 @@
 				(HandsOn)
 				(UnLoad 128 373)
 				(UnLoad 132 372)
-				(ClearFlag 4)
+				(ClearFlag 4) ; fDollFlies
 				(aDoll dispose:)
 				(self dispose:)
 			)
@@ -495,13 +495,13 @@
 		(switch theVerb
 			(2 ; Look
 				(cond
-					((IsFlag 2)
+					((IsFlag 2) ; fComeOnIn
 						(Print 380 9) ; "You ask yourself, "Why am I standing here when I was invited into a spa with a woman like her?""
 					)
-					((IsFlag 7)
+					((IsFlag 7) ; fEveKnowsLarry
 						(Print 380 10) ; "Hey, handsome, why don't you slip into the water with me, so we can REALLY get to know each other!"
 						(Print 380 11 #at -1 140) ; "(Was she talking to you, Larry?)"
-						(SetFlag 2)
+						(SetFlag 2) ; fComeOnIn
 					)
 					(else
 						(Print 380 12) ; "A beautiful black woman relaxes in the penthouse suite's rooftop garden's spa. You begin to get the feeling that your evening in Lost Wages may be successful after all!"
@@ -510,23 +510,23 @@
 			)
 			(5 ; Talk
 				(cond
-					((IsFlag 2)
+					((IsFlag 2) ; fComeOnIn
 						(Print 380 13) ; "Yes, of course I'd like to join you," you stammer. "In fact, I can think of nothing I'd like better!"
 						(Print 380 14 #at -1 140) ; ""(If I could only figure out how to take off these clothes)," you think."
 					)
-					((IsFlag 7)
+					((IsFlag 7) ; fEveKnowsLarry
 						(Print 380 15) ; "Well, uh," you stutter, "I've always felt it is a look that's right for me. `A man has to do what a man has to do,' I always say."
 						(Print 380 16) ; "She smiles up at you, "I agree completely. I'm so tired of men who wear or say anything just to gain a woman's favors!""
 						(Print 380 17) ; "Gee," you think, "I would never do that!"
 						(Print 380 18) ; "To her, you say with a smile, "And I so love what YOU are wearing!""
 						(Print 380 19) ; "She laughs, "And, a sense of humor! Larry, you are one special man. Why don't you slip into the water and we'll see if we can REALLY get to know each other!""
-						(SetFlag 2)
+						(SetFlag 2) ; fComeOnIn
 					)
 					(else
 						(Print 380 20) ; "Hey, Gorgeous! Allow me to introduce myself," you say. "My name is Larry; Larry Laffer."
 						(Print 380 21) ; "Hello, yourself, Larry," she replies. "What an attractive leisure suit--I so miss them! It's refreshing to meet a man with so much self-confidence that he's willing to flaunt the fickle trends of fashion mores and deeply travel the road of his own secure masculinity."
 						(Print 380 11 #at -1 140) ; "(Was she talking to you, Larry?)"
-						(SetFlag 7)
+						(SetFlag 7) ; fEveKnowsLarry
 					)
 				)
 			)
@@ -760,12 +760,12 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(3 ; Do
-				(if (IsFlag 17)
-					(ClearFlag 17)
+				(if (IsFlag 17) ; fJetsOff
+					(ClearFlag 17) ; fJetsOff
 					(JetsOn)
 					(Print 380 26) ; "Because you are such a wimp, you turn the bubblers back on."
 				else
-					(SetFlag 17)
+					(SetFlag 17) ; fJetsOff
 					(JetsOff)
 					(Print 380 27) ; "You coyly "happen" to step on the spa bubbler control switch."
 				)

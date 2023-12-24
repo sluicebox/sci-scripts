@@ -59,7 +59,7 @@
 		(aSpaButton init: stopUpd:)
 		(super init:)
 		(gCurRoom setScript: sWanderEyes)
-		(if (IsFlag 17)
+		(if (IsFlag 17) ; fJetsOff
 			(JetsOff)
 		else
 			(JetsOn)
@@ -164,7 +164,7 @@
 						(HandsOff)
 						(gCurRoom setScript: sEveEatsApple)
 						(Points 59 15)
-						(SetFlag 6)
+						(SetFlag 6) ; fEveHasApple
 					)
 					(10 ; discoPass
 						(Print 385 19) ; "Why, Larry," she smiles, "are you trying to throw a `pass' at me?"
@@ -362,7 +362,7 @@
 				(aSpaButton setCel: 0 setCycle: End self)
 			)
 			(1
-				(if (IsFlag 17)
+				(if (IsFlag 17) ; fJetsOff
 					(Print 385 32) ; "You slyly brush the spa bubbler control switch."
 					(JetsOff)
 				else
@@ -605,11 +605,11 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(SetFlag 18)
+				(SetFlag 18) ; fKnowsEvesName
 				(Print 385 41) ; "Her hand rests near a expensive fluffy bath towel, embroidered in a florid script with the name, "Eve.""
 			)
 			(11 ; Taste/Smell
-				(Printf 385 42 (if (IsFlag 18) {Eve's} else {Her})) ; "%s towel has a clean, fresh aroma."
+				(Printf 385 42 (if (IsFlag 18) {Eve's} else {Her})) ; "%s towel has a clean, fresh aroma.", fKnowsEvesName
 			)
 			(3 ; Do
 				(Print 385 43) ; "You can't reach her bath towel, and you have no desire to leave the water at a time like this!"
@@ -654,7 +654,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(Printf 385 44 (if (IsFlag 18) {Eve's} else {her})) ; "You can picture %s gentle arms winding their way around you."
+				(Printf 385 44 (if (IsFlag 18) {Eve's} else {her})) ; "You can picture %s gentle arms winding their way around you.", fKnowsEvesName
 			)
 			(3 ; Do
 				(if (!= (gCurRoom script:) sEveHappy)
@@ -685,10 +685,10 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(if (IsFlag 17)
+				(if (IsFlag 17) ; fJetsOff
 					(Print 385 45) ; "What a good idea to turn off those bubblers!"
 				else
-					(Printf 385 46 (if (IsFlag 18) {Eve's} else {her})) ; "Even through the bubbles, %s assets are outstanding."
+					(Printf 385 46 (if (IsFlag 18) {Eve's} else {her})) ; "Even through the bubbles, %s assets are outstanding.", fKnowsEvesName
 				)
 			)
 			(3 ; Do

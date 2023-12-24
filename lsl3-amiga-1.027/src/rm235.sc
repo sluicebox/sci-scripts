@@ -144,7 +144,7 @@
 						(Print 235 13) ; "Fortunately for you, there are plenty of orchids available."
 					)
 					(else
-						(SetFlag 54)
+						(SetFlag 54) ; scoredOrchids
 						(gGame changeScore: 25)
 						(Print 235 14) ; "You pluck a few fresh orchids from the walls of the crevice."
 					)

@@ -26,7 +26,7 @@
 
 (procedure (initRugs)
 	(InitAddToPics smallRug bigRug)
-	(if (not (IsFlag 57))
+	(if (not (IsFlag 57)) ; fStoleTeapot
 		(teapot init: stopUpd:)
 	)
 	(doorR init: stopUpd:)
@@ -61,7 +61,7 @@
 				(= cycles 14)
 			)
 			(7
-				(SetFlag 60)
+				(SetFlag 60) ; fHingesOiled
 				(NormalEgo)
 				(self dispose:)
 			)
@@ -132,8 +132,8 @@
 				(SolvePuzzle 702 3 2)
 				(SkillUsed 14 -50) ; honor
 				(gEgo get: 53) ; Teapot
-				(SetFlag 57)
-				(SetFlag 13)
+				(SetFlag 57) ; fStoleTeapot
+				(SetFlag 13) ; fMoneyDone
 				(teapot dispose:)
 				(HighPrint 261 0) ; "You take the tea service and stash it away."
 				(NormalEgo)
@@ -187,7 +187,7 @@
 				)
 			)
 			(2
-				(if (not (IsFlag 60))
+				(if (not (IsFlag 60)) ; fHingesOiled
 					(HighPrint 261 1) ; "The doors are difficult to open. The hinges make a loud squeaking sound."
 					(HighPrint 261 2) ; "Fortunately, nobody seems to have heard it."
 				)
@@ -234,7 +234,7 @@
 				(= cycles 4)
 			)
 			(2
-				(if (not (IsFlag 60))
+				(if (not (IsFlag 60)) ; fHingesOiled
 					(HighPrint 261 3) ; "The doors open slowly. The hinges make a loud squeaking sound."
 					(HighPrint 261 2) ; "Fortunately, nobody seems to have heard it."
 				)
@@ -264,7 +264,7 @@
 				(= cycles 4)
 			)
 			(1
-				(if (not (IsFlag 60))
+				(if (not (IsFlag 60)) ; fHingesOiled
 					(HighPrint 261 3) ; "The doors open slowly. The hinges make a loud squeaking sound."
 					(HighPrint 261 2) ; "Fortunately, nobody seems to have heard it."
 				)
@@ -295,7 +295,7 @@
 				(doorR setCycle: Beg self)
 			)
 			(2
-				(if (not (IsFlag 60))
+				(if (not (IsFlag 60)) ; fHingesOiled
 					(HighPrint 261 4) ; "Someone really should oil those hinges."
 				)
 				(doorL stopUpd:)
@@ -338,7 +338,7 @@
 				(gEgo loop: 3 heading: 0 setMotion: MoveTo 159 116 self)
 			)
 			(4
-				(if (not (IsFlag 60))
+				(if (not (IsFlag 60)) ; fHingesOiled
 					(HighPrint 261 4) ; "Someone really should oil those hinges."
 				)
 				(doorL stopUpd:)
@@ -386,7 +386,7 @@
 					((not (and (< 131 (gEgo x:) 196) (< 124 (gEgo x:))))
 						(HighPrint 261 6) ; "Get closer to the wardrobe."
 					)
-					((IsFlag 60)
+					((IsFlag 60) ; fHingesOiled
 						(gEgo loop: 3)
 						(RedrawCast)
 						(HighPrint 261 7) ; "The hinges look well oiled."
@@ -409,13 +409,13 @@
 								cel
 							)
 						)
-						(if (IsFlag 58)
+						(if (IsFlag 58) ; fStoleBowl
 							(HighPrint 261 9) ; "You find nothing of value."
 						else
 							(HighPrint 261 10) ; "You find an emerald-studded silver bowl and stash it away."
 							(SolvePuzzle 703 3 2)
-							(SetFlag 58)
-							(SetFlag 13)
+							(SetFlag 58) ; fStoleBowl
+							(SetFlag 13) ; fMoneyDone
 							(SkillUsed 14 -50) ; honor
 							(gEgo get: 57) ; Bowl
 						)
@@ -508,7 +508,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 7)
-			(if (IsFlag 57)
+			(if (IsFlag 57) ; fStoleTeapot
 				(AlreadyDone)
 			else
 				(gEgo setScript: getTeapotS)
@@ -522,8 +522,8 @@
 		(SolvePuzzle 702 3 2)
 		(SkillUsed 14 -50) ; honor
 		(gEgo get: 53) ; Teapot
-		(SetFlag 57)
-		(SetFlag 13)
+		(SetFlag 57) ; fStoleTeapot
+		(SetFlag 13) ; fMoneyDone
 		(return 1)
 	)
 )

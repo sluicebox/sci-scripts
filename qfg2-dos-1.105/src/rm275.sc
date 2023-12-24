@@ -328,7 +328,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(SetFlag 154)
+				(SetFlag 154) ; fNotKilledEOF
 				(gEgo setCycle: Beg)
 				(fighter view: 272 loop: 5 cel: 0)
 				(issur
@@ -469,7 +469,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(SetFlag 159)
+				(SetFlag 159) ; fPracticeFight
 				(= cycles 2)
 			)
 			(1

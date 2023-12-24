@@ -38,7 +38,7 @@
 
 	(method (init)
 		(larryPic init:)
-		(self style: (if (IsFlag 0) 9 else 8))
+		(self style: (if (IsFlag 0) 9 else 8)) ; isVga
 		(super init:)
 		(LoadMany rsPIC 1)
 		(LoadMany rsVIEW 115 116)

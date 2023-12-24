@@ -65,12 +65,12 @@
 			)
 			((not (TestFlag 23))
 				(HandsOff)
-				(SetFlag 17)
-				(SetFlag 19)
-				(SetFlag 20)
-				(SetFlag 21)
-				(SetFlag 22)
-				(SetFlag 23)
+				(SetFlag 17) ; beenIn200
+				(SetFlag 19) ; beenIn210
+				(SetFlag 20) ; beenIn216
+				(SetFlag 21) ; beenIn220
+				(SetFlag 22) ; beenIn250
+				(SetFlag 23) ; beenIn350
 				(= gEgoState 4)
 				(gEgo illegalBits: 0 loop: 1 posn: 295 144 init:)
 				(RoomScript changeState: 1)

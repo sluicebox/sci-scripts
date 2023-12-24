@@ -44,7 +44,7 @@
 		(pimp init:)
 		(switch gPrevRoomNum
 			(110
-				(ClearFlag 27)
+				(ClearFlag 27) ; fPimpStandingAside
 				(gEgo posn: 20 155)
 			)
 			(150
@@ -73,7 +73,7 @@
 						)
 					setScript: sFromHooker
 				)
-				(if (IsFlag 27)
+				(if (IsFlag 27) ; fPimpStandingAside
 					(pimp
 						setLoop: 7
 						setCel: 4
@@ -91,7 +91,7 @@
 		)
 		(gEgo init: illegalBits: -32768)
 		(super init:)
-		(if (IsFlag 42)
+		(if (IsFlag 42) ; fTVOn
 			(gTheMusic
 				loop: -1
 				flags: 1
@@ -126,7 +126,7 @@
 		(thePeephole init: approachVerbs: 3 4 10 11) ; Do, Inventory, Zipper, Taste/Smell
 		(barrel1 init:)
 		(barrel2 init:)
-		(if (IsFlag 42)
+		(if (IsFlag 42) ; fTVOn
 			(tvLights
 				cycleSpeed: global101
 				init:
@@ -170,7 +170,7 @@
 						)
 				)
 			)
-			((not (IsFlag 27))
+			((not (IsFlag 27)) ; fPimpStandingAside
 				(if (and (not (pimp script:)) (== (gGame detailLevel:) 3))
 					(pimp setScript: sPimp checkDetail:)
 				)
@@ -243,7 +243,7 @@
 				)
 				(= madeComment 1)
 				(Print 140 2 #at -1 20) ; ""Pretty sweet stuff, eh, boy?" laughs the pimp."
-				(ClearFlag 27)
+				(ClearFlag 27) ; fPimpStandingAside
 				(pimp loop: 7 cel: 4 setCycle: Beg pimp)
 				((gCurRoom obstacles:) dispose:)
 				(gCurRoom
@@ -274,7 +274,7 @@
 				(Printf ; "The bar's storage room is almost empty. Its most significant feature is that big, mean-looking dude %s."
 					140
 					3
-					(if (IsFlag 28) {watching TV} else {blocking the stairs})
+					(if (IsFlag 28) {watching TV} else {blocking the stairs}) ; fPimpWatchingTV
 				)
 			)
 			(else
@@ -378,10 +378,10 @@
 			)
 			(2
 				(gTheMusic3 number: 140 play:)
-				(if (not (IsFlag 42))
+				(if (not (IsFlag 42)) ; fTVOn
 					(Print 140 4 #at -1 20) ; "You aim your remote control at the pimp's TV and click the power switch."
 					(Points 93 3)
-					(SetFlag 42)
+					(SetFlag 42) ; fTVOn
 					(tvLights cycleSpeed: global101 init: setCycle: End)
 				else
 					(Print 140 5 #at -1 20) ; "You aim your remote control at the TV and click the channel selector."
@@ -443,7 +443,7 @@
 						(Print 141 (+ 1 (* 2 gTvChannel)) #at -1 20)
 					)
 					((== gTvChannel 7)
-						(SetFlag 28)
+						(SetFlag 28) ; fPimpWatchingTV
 						(+= state 1)
 					)
 					(else
@@ -456,7 +456,7 @@
 				(Printf ; "The pimp seems vaguely interested in this program%s"
 					140
 					7
-					(if (IsFlag 27)
+					(if (IsFlag 27) ; fPimpStandingAside
 						{.}
 					else
 						{, but not interested enough to leave his post guarding the stairs.}
@@ -469,8 +469,8 @@
 			)
 			(6
 				(pimp setScript: 0)
-				(if (IsFlag 27)
-					(ClearFlag 27)
+				(if (IsFlag 27) ; fPimpStandingAside
+					(ClearFlag 27) ; fPimpStandingAside
 					(++ state)
 					(= cycles 1)
 				else
@@ -594,7 +594,7 @@
 	)
 
 	(method (doVerb theVerb invItem)
-		(if (IsFlag 28)
+		(if (IsFlag 28) ; fPimpWatchingTV
 			(Print 140 9) ; "The pimp ignores you. He's "totally engrossed" in something else right now."
 		else
 			(switch theVerb
@@ -616,7 +616,7 @@
 					(switch invItem
 						(0 ; wallet
 							(cond
-								((IsFlag 28)
+								((IsFlag 28) ; fPimpWatchingTV
 									(Print 140 16) ; "There is no need to pay the pimp; he's pleasantly distracted. Help yourself!"
 								)
 								((< gLarryDollars 200)
@@ -626,11 +626,11 @@
 									(= gaveWarning 1)
 									(-= gLarryDollars 200)
 									(Print 140 18 #at -1 20) ; "Thanks," he growls. "Remember, no refunds!"
-									(if (IsFlag 35)
+									(if (IsFlag 35) ; fScoredHooker
 										(Print 140 19 #at -1 20) ; "You mus' really like that stuff, eh, boy?"
 									)
-									(if (not (IsFlag 27))
-										(SetFlag 27)
+									(if (not (IsFlag 27)) ; fPimpStandingAside
+										(SetFlag 27) ; fPimpStandingAside
 										(pimp
 											setLoop: 7
 											setCel: 0
@@ -828,7 +828,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(if (IsFlag 42)
+				(if (IsFlag 42) ; fTVOn
 					(switch gTvChannel
 						(4
 							(Print 141 (+ 1 (* 2 gTvChannel)) #at -1 20)

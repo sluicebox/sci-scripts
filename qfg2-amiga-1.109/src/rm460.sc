@@ -36,22 +36,22 @@
 
 	(method (init)
 		(LoadMany rsVIEW 0 4 380 450 31 445)
-		(if (or (== gPrevRoomNum 610) (and (IsFlag 28) (>= gDay 30)))
+		(if (or (== gPrevRoomNum 610) (and (IsFlag 28) (>= gDay 30))) ; fTeleporting
 			(= gDay 30)
 			(FixTime 21 0)
 		)
-		(if (IsFlag 96)
+		(if (IsFlag 96) ; fTeleFromIblis
 			(= gSpellChecker gAllChecker)
-			(SetFlag 28)
+			(SetFlag 28) ; fTeleporting
 			(= inOut 3)
 			(gEgo view: 4 loop: 4 cel: 0 posn: 72 115)
 		)
 		(super init:)
-		(if (IsFlag 96)
+		(if (IsFlag 96) ; fTeleFromIblis
 			(gEgo init: hide:)
 			(gCSound number: 520 loop: -1 priority: 0 playBed:)
 		)
-		(if (IsFlag 96)
+		(if (IsFlag 96) ; fTeleFromIblis
 			(self setScript: backWithDjinn)
 		)
 		(InitFeatures topAlleyDoor leftAlleyDoor)
@@ -62,7 +62,7 @@
 		(cond
 			(
 				(and
-					(IsFlag 96)
+					(IsFlag 96) ; fTeleFromIblis
 					(not triedLeave)
 					isInRoom
 					(or (< (gEgo x:) 6) (< (gEgo y:) 93))
@@ -98,7 +98,7 @@
 	)
 
 	(method (dispose)
-		(ClearFlag 28)
+		(ClearFlag 28) ; fTeleporting
 		(super dispose:)
 	)
 
@@ -234,7 +234,7 @@
 				(= seconds 1)
 			)
 			(4
-				(if (IsFlag 94)
+				(if (IsFlag 94) ; fSharafFriend
 					(self cue:)
 				else
 					(HandsOn)

@@ -74,7 +74,7 @@
 				add:
 					((= [local24 local0] (topdisc new:))
 						value: local0
-						modifiers: (if local0 0 else [local27 global114])
+						modifiers: (if local0 0 else [local27 gDifficulty])
 						cursor: (if local0 0 else 7)
 						yourself:
 					)
@@ -201,26 +201,26 @@
 		(DrawCel 168 8 0 94 153 -1)
 		(Wait 0)
 		(cond
-			((== local38 [local39 global114])
+			((== local38 [local39 gDifficulty])
 				(if (= temp0 (Message msgSIZE 160 6 27 17 1)) ; "Great! You've solved this puzzle with the minimum number of moves which is %d."
 					(= temp1 (Memory memALLOC_CRIT (+ temp0 15)))
 				)
 				(Message msgGET 160 6 27 17 1 temp1) ; "Great! You've solved this puzzle with the minimum number of moves which is %d."
 				(proc15_4 self 99 temp1 local38)
 			)
-			((< (- local38 [local39 global114]) 10)
+			((< (- local38 [local39 gDifficulty]) 10)
 				(if (= temp0 (Message msgSIZE 160 6 27 17 2)) ; "Wow! That was close. You solved this puzzle in %d moves. Actually, the minimum number of moves is %d. Perhaps you'd like to make this your goal next time."
 					(= temp1 (Memory memALLOC_CRIT (+ temp0 15)))
 				)
 				(Message msgGET 160 6 27 17 2 temp1) ; "Wow! That was close. You solved this puzzle in %d moves. Actually, the minimum number of moves is %d. Perhaps you'd like to make this your goal next time."
-				(proc15_4 self 99 temp1 local38 [local39 global114])
+				(proc15_4 self 99 temp1 local38 [local39 gDifficulty])
 			)
 			(else
 				(if (= temp0 (Message msgSIZE 160 6 27 17 3)) ; "Great! You completed this puzzle in %d moves. Next time, you might like to solve this puzzle with fewer moves. In fact, the minimum number of moves is %d."
 					(= temp1 (Memory memALLOC_CRIT (+ temp0 15)))
 				)
 				(Message msgGET 160 6 27 17 3 temp1) ; "Great! You completed this puzzle in %d moves. Next time, you might like to solve this puzzle with fewer moves. In fact, the minimum number of moves is %d."
-				(proc15_4 self 99 temp1 local38 [local39 global114])
+				(proc15_4 self 99 temp1 local38 [local39 gDifficulty])
 			)
 		)
 		(if temp0
@@ -231,7 +231,7 @@
 
 	(method (buyClue)
 		(if (super buyClue: &rest)
-			(proc15_0 self noun 21 0 0)
+			(Say self noun 21 0 0) ; "Count the number of disks in a stack. If this is an odd number, move the top disk to the destination pole (on the far right). If this is an even number, move the top disk to a temporary pole (in the center or on the left)."
 		)
 	)
 )
@@ -468,7 +468,7 @@
 					)
 					(temp1 show:)
 					(disc hide:)
-					(if (== ([local24 2] modifiers:) [local27 global114])
+					(if (== ([local24 2] modifiers:) [local27 gDifficulty])
 						(hanoi animateOnce:)
 						(hanoi solvePuzzle:)
 					)

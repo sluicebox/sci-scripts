@@ -47,7 +47,7 @@
 			)
 			(535
 				(HandsOn)
-				(SetFlag 16)
+				(SetFlag 16) ; fMCloseUp
 				((Inv at: 14) state: 4) ; Membership_Tape
 				(gEgo
 					x: (door approachX:)
@@ -83,7 +83,7 @@
 		)
 		(door init:)
 		(super init:)
-		(if (and (!= gPrevRoomNum 535) (not (IsFlag 16)))
+		(if (and (!= gPrevRoomNum 535) (not (IsFlag 16))) ; fMCloseUp
 			(self
 				addObstacle:
 					((Polygon new:)
@@ -165,8 +165,8 @@
 				(TPrint 510 0) ; "You change your mind and hang up the phone."
 			)
 			(4668
-				(if (not (IsFlag 1))
-					(SetFlag 1)
+				(if (not (IsFlag 1)) ; fCalledLimo
+					(SetFlag 1) ; fCalledLimo
 					(Points 2 110)
 					(TPrint 510 1) ; "Hello," says the voice on the telephone, "You've reached the `Fabulous Checker Limo Company.' I hope you're having a nice day!"
 					(Say gEgo 510 2) ; ""Hello! This is Larry; Larry Laffer," you say. "Please send my limo to The Hard Disk Cafe immediately!"
@@ -458,7 +458,7 @@
 					((== ((Inv at: 14) state:) 4) ; Membership_Tape
 						(Say gEgo 510 24) ; "Uhh, I seemed to have misplaced my membership tape," you tell the maitre d'. "Could you cut me a new one?"
 					)
-					((IsFlag 2)
+					((IsFlag 2) ; fSeenMM
 						(Say gEgo 510 25) ; "Excuse me," you say to the maitre d', "How do I get into that inner door?"
 					)
 					((== ((Inv at: 14) state:) 1) ; Membership_Tape
@@ -511,7 +511,7 @@
 					((== ((Inv at: 14) state:) 4) ; Membership_Tape
 						(Say the_maitre_d_ 510 8 108) ; ""I suggest you find transportation to another location, Mr. (heh, heh) Laffer!" he smirks."
 					)
-					((IsFlag 2)
+					((IsFlag 2) ; fSeenMM
 						(gCurRoom setScript: sDoubleTalk)
 					)
 					((== ((Inv at: 14) state:) 1) ; Membership_Tape
@@ -658,7 +658,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(if (IsFlag 16)
+				(if (IsFlag 16) ; fMCloseUp
 					(TPrint 510 41) ; "A telephone rests near the maitre d's podium--and it's finally available for your use!"
 				else
 					(TPrint 510 42) ; "That woman has tied up the telephone for as long as you've been here."
@@ -669,10 +669,10 @@
 			)
 			(3 ; Do
 				(cond
-					((IsFlag 1)
+					((IsFlag 1) ; fCalledLimo
 						(TPrint 510 43) ; "There's no need to use the telephone again, since you've already contacted the limo company. Shouldn't you walk outside? Your limo may be waiting for you."
 					)
-					((IsFlag 16)
+					((IsFlag 16) ; fMCloseUp
 						(gCurRoom setScript: sPhone)
 					)
 					(else
@@ -1087,7 +1087,7 @@
 			(4 ; Inventory
 				(switch invItem
 					(14 ; Membership_Tape
-						(SetFlag 14)
+						(SetFlag 14) ; fUsedTape
 						(gCurRoom newRoom: 520)
 					)
 					(else

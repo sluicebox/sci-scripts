@@ -124,7 +124,7 @@
 	)
 
 	(method (dispose)
-		(SetFlag 17)
+		(SetFlag 17) ; fWrestledOnce
 		(= gSpeed 6)
 		(gCSound fade:)
 		(gDirectionHandler delete: self)
@@ -390,7 +390,7 @@
 			(cond
 				((and (== (arms cel:) 6) (not gameOver))
 					(= gameOver 1)
-					(SetFlag 23)
+					(SetFlag 23) ; fWrestlingWin
 					(arms setScript: byeBye)
 				)
 				((and (== (arms cel:) 0) (== (arms loop:) 1) (not gameOver))

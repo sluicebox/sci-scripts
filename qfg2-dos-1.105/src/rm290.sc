@@ -49,12 +49,12 @@
 	)
 
 	(method (init)
-		(SetFlag 152)
+		(SetFlag 152) ; f290
 		(LoadMany rsVIEW 290 11 295 299)
 		(Load rsSCRIPT 985)
 		(Load rsSOUND 290)
-		(ClearFlag 82)
-		(SetFlag 16)
+		(ClearFlag 82) ; fDesert
+		(SetFlag 16) ; fShapeir
 		(if (== gEgoGait 3) ; riding
 			(= gEgoGait 3) ; riding
 		else
@@ -62,10 +62,10 @@
 		)
 		(NormalEgo)
 		(gEgo illegalBits: -32766 init:)
-		(if (IsFlag 149)
+		(if (IsFlag 149) ; fReturningSaurus
 			(= inOut 3)
 		)
-		(= fakirGone (IsFlag 45))
+		(= fakirGone (IsFlag 45)) ; fBoughtSaurus
 		(= global76 1)
 		(super init:)
 		(self addObstacle: guardPoly)
@@ -95,7 +95,7 @@
 						(not fakirGone)
 						(>= gDay 2)
 						(< gDay 17)
-						(not (IsFlag 149))
+						(not (IsFlag 149)) ; fReturningSaurus
 					)
 					dayTime
 				)
@@ -116,10 +116,10 @@
 		)
 		(if
 			(and
-				(IsFlag 45)
+				(IsFlag 45) ; fBoughtSaurus
 				(!= gEgoGait 3) ; riding
-				(not (IsFlag 149))
-				(not (IsFlag 155))
+				(not (IsFlag 149)) ; fReturningSaurus
+				(not (IsFlag 155)) ; fRodeSaurusOut
 			)
 			((ScriptID 660 1) ; saurus
 				init:
@@ -130,17 +130,17 @@
 				setScript: wimpInCorral
 			)
 		)
-		(if (and (not (IsFlag 155)) (not (gCast contains: (ScriptID 660 1)))) ; saurus
+		(if (and (not (IsFlag 155)) (not (gCast contains: (ScriptID 660 1)))) ; fRodeSaurusOut, saurus
 			((ScriptID 660 1) init:) ; saurus
 		)
 		(if (< gDay 17)
 			(if (== gEgoGait 3) ; riding
-				(SetFlag 173)
-				(ClearFlag 155)
+				(SetFlag 173) ; fGuardWillDoIt
+				(ClearFlag 155) ; fRodeSaurusOut
 			)
 			(self setRegions: 660) ; desertReg
 		)
-		(if (IsFlag 149)
+		(if (IsFlag 149) ; fReturningSaurus
 			(gEgo view: 4 loop: 1 cel: 0 posn: 143 140)
 			(NormalEgo)
 			(gEgo illegalBits: -32766)
@@ -174,18 +174,18 @@
 			(
 				(and
 					(> (gEgo y:) 180)
-					(not (IsFlag 48))
+					(not (IsFlag 48)) ; fIntoDesertOnce
 					(not (gEgo has: 50)) ; Saurus
 					(< gDay 17)
 				)
 				(Say theGuard 290 1) ; "You are not likely to live long if you go that way. One cannot travel in the desert unless one is better prepared, or joins a caravan."
-				(SetFlag 48)
+				(SetFlag 48) ; fIntoDesertOnce
 			)
 			((and (== gEgoGait 3) (< (gEgo y:) 120) (not (gEgo script:))) ; riding
 				(gEgo setScript: guardStopsEgo)
 			)
 			((gEgo edgeHit:)
-				(if (IsFlag 172)
+				(if (IsFlag 172) ; fLoseIfLeaves
 					(EgoDead 1 290 2 #title {Terminal Stubbornness}) ; "You just can't take a hint, can you? The Saurus you should have bought went to the wrong customer, and the entire free world will soon be enslaved as a result."
 				else
 					(gCurRoom setScript: 0)
@@ -197,12 +197,12 @@
 
 	(method (dispose)
 		(if (== gEgoGait 3) ; riding
-			(SetFlag 155)
+			(SetFlag 155) ; fRodeSaurusOut
 		else
-			(ClearFlag 155)
+			(ClearFlag 155) ; fRodeSaurusOut
 		)
-		(ClearFlag 149)
-		(ClearFlag 173)
+		(ClearFlag 149) ; fReturningSaurus
+		(ClearFlag 173) ; fGuardWillDoIt
 		(gCSound fade:)
 		(gMiscSound stop:)
 		(DisposeScript 291)
@@ -210,10 +210,10 @@
 	)
 
 	(method (notify)
-		(if (IsFlag 173)
+		(if (IsFlag 173) ; fGuardWillDoIt
 			(Say theGuard 290 3) ; "I will be honored to put your saurus back into the stable for you, Effendi."
 		)
-		(ClearFlag 173)
+		(ClearFlag 173) ; fGuardWillDoIt
 		(= guardSaidIt 1)
 		(super notify: &rest)
 	)
@@ -239,10 +239,10 @@
 					((== gEgoGait 3) ; riding
 						(HighPrint 290 6) ; "You are riding your saurus."
 					)
-					((IsFlag 155)
+					((IsFlag 155) ; fRodeSaurusOut
 						(HighPrint 290 7) ; "You left your saurus out in the desert. You would never find him if you went out looking. Better hope he wanders in like the guard said."
 					)
-					((not (IsFlag 45))
+					((not (IsFlag 45)) ; fBoughtSaurus
 						(HighPrint 290 8) ; "Those sauruses don't belong to you."
 					)
 					(
@@ -257,14 +257,14 @@
 						(HighPrint 290 8) ; "Those sauruses don't belong to you."
 					)
 					(else
-						(SetFlag 173)
+						(SetFlag 173) ; fGuardWillDoIt
 						(event claimed: 0)
 					)
 				)
 			)
 			((Said 'replace,put/saurii,roget')
 				(cond
-					((IsFlag 173)
+					((IsFlag 173) ; fGuardWillDoIt
 						(self notify:)
 					)
 					((== guardSaidIt 1)
@@ -273,10 +273,10 @@
 					((== gEgoGait 3) ; riding
 						(HighPrint 290 10) ; "You need to dismount to do that."
 					)
-					((IsFlag 155)
+					((IsFlag 155) ; fRodeSaurusOut
 						(HighPrint 290 7) ; "You left your saurus out in the desert. You would never find him if you went out looking. Better hope he wanders in like the guard said."
 					)
-					((not (IsFlag 45))
+					((not (IsFlag 45)) ; fBoughtSaurus
 						(HighPrint 290 8) ; "Those sauruses don't belong to you."
 					)
 					(
@@ -305,28 +305,28 @@
 					(
 						(and
 							(== gDay 12)
-							(not (IsFlag 93))
-							(not (IsFlag 168))
+							(not (IsFlag 93)) ; fDervishMsg
+							(not (IsFlag 168)) ; fDervishDailyMsg
 						)
 						(Say theGuard self 290 13) ; "The Dervish, passing a message through one of the local bedouins, has sent for you. The Dervish says, "Man who looks for trouble comes to right place." He also says, "Good comes from evil when dark is enlightened.""
-						(SetFlag 93)
+						(SetFlag 93) ; fDervishMsg
 					)
-					((and (== gDay 1) (not (IsFlag 46)))
+					((and (== gDay 1) (not (IsFlag 46))) ; fFromGateOnce
 						(Say theGuard self 290 14) ; "So, you are the stranger the merchants are talking about. The gate to Shapeir is always open, but never have I seen an entrance to the city like yours. To fly in on a carpet, it must be grand."
-						(SetFlag 46)
+						(SetFlag 46) ; fFromGateOnce
 					)
 					(
 						(and
-							(IsFlag 45)
-							(not (IsFlag 93))
-							(not (IsFlag 174))
+							(IsFlag 45) ; fBoughtSaurus
+							(not (IsFlag 93)) ; fDervishMsg
+							(not (IsFlag 174)) ; fSawDervish
 							(== gPrevRoomNum (gCurRoom north:))
 						)
 						(Say theGuard self 290 15) ; "If you are exploring the desert, you should visit the Dervish at the Oasis. He is a very wise man."
 					)
 					(
 						(and
-							(not (IsFlag 47))
+							(not (IsFlag 47)) ; fFromDesertOnce
 							(== gPrevRoomNum (gCurRoom south:))
 							(not fakirHere)
 						)
@@ -335,7 +335,7 @@
 						else
 							(Say theGuard self 290 17) ; "Thank heavens that thee hast survived the night desert. It can be truly dangerous when the sun has set."
 						)
-						(SetFlag 47)
+						(SetFlag 47) ; fFromDesertOnce
 					)
 					((and (< gDay 7) (not fakirHere))
 						(if dayTime
@@ -346,9 +346,9 @@
 					)
 					((< 6 gDay 14)
 						(cond
-							((and (== gDay 11) (not (IsFlag 145)))
+							((and (== gDay 11) (not (IsFlag 145))) ; f1msgCaravan
 								(Say theGuard self 290 20) ; "There is a caravan which will pass by us six days from now. If you wish to journey to Raseir, you will need to join it."
-								(SetFlag 145)
+								(SetFlag 145) ; f1msgCaravan
 							)
 							(dayTime
 								(Say theGuard self 290 21) ; "Good day, Hero."
@@ -360,9 +360,9 @@
 					)
 					((and (== gDay 15) (== gPrevRoomNum (gCurRoom north:)))
 						(cond
-							((and (== gDay 15) (not (IsFlag 146)))
+							((and (== gDay 15) (not (IsFlag 146))) ; f2msgCaravan
 								(Say theGuard self 290 23) ; "The caravan to Raseir will leave here at the light of dawn in two days time."
-								(SetFlag 146)
+								(SetFlag 146) ; f2msgCaravan
 							)
 							(dayTime
 								(Say theGuard self 290 24) ; "Hero, the Caravan to Raseir leaves here in two days time, granting that there are no elementals in the city."
@@ -388,7 +388,7 @@
 				)
 			)
 			(1
-				(if (and (IsFlag 155) (== gEgoGait 0)) ; walking
+				(if (and (IsFlag 155) (== gEgoGait 0)) ; fRodeSaurusOut, walking
 					(Say theGuard self 290 28) ; "I see you left your saurus out in the desert. Most sauruses find their way back here to the stables."
 				)
 				(gate stopUpd:)
@@ -814,10 +814,10 @@
 					((== gEgoGait 3) ; riding
 						(HighPrint 290 47) ; "You can't open the gate while you're riding your saurus."
 					)
-					((IsFlag 155)
+					((IsFlag 155) ; fRodeSaurusOut
 						(HighPrint 290 48) ; "You left your saurus out in the desert. You would never find him if you went out looking. Better hope he wanders in like the guard said."
 					)
-					((not (IsFlag 45))
+					((not (IsFlag 45)) ; fBoughtSaurus
 						(HighPrint 290 8) ; "Those sauruses don't belong to you."
 					)
 					(
@@ -856,10 +856,10 @@
 			)
 			(2
 				(Print 290 50) ; "You run and say goodbye to Shema and Shameen. They give you some food and clothing and wish you luck, knowing you will need it."
-				(ClearFlag 3)
-				(ClearFlag 137)
-				(ClearFlag 4)
-				(ClearFlag 5)
+				(ClearFlag 3) ; fThirsty
+				(ClearFlag 137) ; fDyingOfThirst
+				(ClearFlag 4) ; fHungry
+				(ClearFlag 5) ; fStarving
 				(gEgo get: 49 get: 3 12) ; SpareClothes, Food
 				(if (not (gEgo has: 37)) ; Waterskin
 					(gEgo get: 37) ; Waterskin

@@ -103,7 +103,7 @@
 			((Said 'stand,(get,get<up),done')
 				(switch gInnState
 					(1
-						(if (and (not (IsFlag 110)) ((ScriptID 360 2) script:)) ; bartender
+						(if (and (not (IsFlag 110)) ((ScriptID 360 2) script:)) ; fHasDrink, bartender
 							((ScriptID 360 2) setLoop: -1 setLoop: Grooper) ; bartender
 							(((ScriptID 360 2) script:) changeState: 5) ; bartender
 						)
@@ -116,14 +116,14 @@
 			)
 			((Said 'drink>')
 				(cond
-					((not (IsFlag 110))
+					((not (IsFlag 110)) ; fHasDrink
 						(HighPrint 366 0) ; "You have nothing to drink."
 						(return)
 					)
-					((and (Said '/coffee') (IsFlag 102))
+					((and (Said '/coffee') (IsFlag 102)) ; fDjinnSling
 						(HighPrint 366 1) ; "The drink you ordered resembles nothing you've dared to drink in the past. Therefore, it must be a Djinn Sling."
 					)
-					((and (Said '/sling') (not (IsFlag 102)))
+					((and (Said '/sling') (not (IsFlag 102))) ; fDjinnSling
 						(HighPrint 366 2) ; "The cup of black liquid before you more resembles coffee than a Djinn Sling. Come to think of it, you did order coffee."
 					)
 					((not (or (Said '/coffee') (Said '/sling') (Said '[/!*]')))
@@ -135,10 +135,10 @@
 			)
 			((Said 'look,look>')
 				(cond
-					((not (IsFlag 110))
+					((not (IsFlag 110)) ; fHasDrink
 						(HighPrint 366 4) ; "Have patience! The bartender doesn't seem too interested in moving quickly."
 					)
-					((IsFlag 102)
+					((IsFlag 102) ; fDjinnSling
 						(cond
 							((Said '/coffee')
 								(HighPrint 366 5) ; "It looks more like a Djinn Sling."
@@ -209,19 +209,19 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(if (IsFlag 102)
+				(if (IsFlag 102) ; fDjinnSling
 					(HighPrint 366 9) ; "The drink is sweet, with a very bitter aftertaste."
 				else
 					(HighPrint 366 10) ; "You drink the bitter, thick liquid."
 				)
 				(HighPrint 366 11) ; "It has an odd, almost chemical, taste."
-				(ClearFlag 110)
+				(ClearFlag 110) ; fHasDrink
 				(= cycles 1)
 			)
 			(1
 				(cond
-					((or (TrySkill 3 125) (IsFlag 121)) ; Vitality
-						(ClearFlag 121)
+					((or (TrySkill 3 125) (IsFlag 121)) ; Vitality, fAntidote
+						(ClearFlag 121) ; fAntidote
 						(HighPrint 366 12) ; "You feel strange for a few seconds, but the feeling passes. Ferrari starts to ask some very probing questions, but you evade most of them."
 						(Say (ScriptID 360 1) self 366 13) ; "You are a very closed-mouth individual. You handle your drink very well. I trust you will handle yourself in Raseir as well.", ferrari
 						(AdvanceTime 1 0)
@@ -309,7 +309,7 @@
 		(cond
 			((super handleEvent: event))
 			((Said 'talk,talk,ask')
-				(if (IsFlag 112)
+				(if (IsFlag 112) ; fWaiting4Drink
 					(Say (ScriptID 360 1) 366 18) ; "Now, now. Pleasure before business. Here come our drinks even as we speak.", ferrari
 				else
 					(event claimed: 0)
@@ -322,7 +322,7 @@
 		(switch (= state newState)
 			(0
 				(DontTalk 0)
-				(SetFlag 112)
+				(SetFlag 112) ; fWaiting4Drink
 				((ScriptID 360 3) dispose:) ; barMoveTimer
 				((ScriptID 360 4) dispose:) ; wipeTimer
 				((ScriptID 360 2) setLoop: 9 setCycle: End self) ; bartender
@@ -347,8 +347,8 @@
 			)
 			(4
 				(LookLeft)
-				(ClearFlag 112)
-				(SetFlag 110)
+				(ClearFlag 112) ; fWaiting4Drink
+				(SetFlag 110) ; fHasDrink
 				(theDrink init:)
 				((ScriptID 360 2) ; bartender
 					setLoop: -1
@@ -475,7 +475,7 @@
 					)
 					(2
 						(GiveMoney theCost)
-						(SetFlag 111)
+						(SetFlag 111) ; fUgartePaid
 						(self changeState: 3)
 					)
 					(0

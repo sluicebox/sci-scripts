@@ -51,10 +51,10 @@
 			(north
 				(gEgo posn: 189 86 setHeading: 180 edgeHit: EDGE_NONE)
 				(= askedInToStudio 1)
-				(if (and (not (IsFlag 22)) (not (gEgo has: 5))) ; Michelle_Milken_s_Resume
+				(if (and (not (IsFlag 22)) (not (gEgo has: 5))) ; fRecordOnTurntable, Michelle_Milken_s_Resume
 					(record init: approachVerbs: 2 3) ; Look, Do
 				)
-				(if (IsFlag 22)
+				(if (IsFlag 22) ; fRecordOnTurntable
 					(record2 init: approachVerbs: 2 3) ; Look, Do
 				)
 				(gTheMusic number: 620 setVol: 127 flags: 1 play:)
@@ -438,7 +438,7 @@
 				(button33 init: stopUpd:)
 				(button78 init: stopUpd:)
 				(needle init:)
-				(if (IsFlag 22)
+				(if (IsFlag 22) ; fRecordOnTurntable
 					(turnTableWRecord
 						init:
 						setCycle:
@@ -491,7 +491,7 @@
 				(needle dispose:)
 				(message1 dispose:)
 				(recordSwitch dispose:)
-				(if (IsFlag 22)
+				(if (IsFlag 22) ; fRecordOnTurntable
 					(if (turnTableWRecord cycler:)
 						(cond
 							(((turnTableWRecord cycler:) isKindOf: Fwd)
@@ -566,7 +566,7 @@
 					((not (turnTableWRecord cycler:))
 						(TPrint 640 14 67 -1 185) ; "The record player is STILL stopped!"
 					)
-					((not (IsFlag 22))
+					((not (IsFlag 22)) ; fRecordOnTurntable
 						(TPrint 640 15 67 -1 185) ; "You should see how well it stops when there's a record on it!"
 					)
 					((needle cel:)
@@ -617,7 +617,7 @@
 							)
 						)
 					)
-					((IsFlag 22)
+					((IsFlag 22) ; fRecordOnTurntable
 						(turnTableWRecord setCycle: Fwd)
 					)
 					(else
@@ -663,7 +663,7 @@
 							)
 						)
 					)
-					((IsFlag 22)
+					((IsFlag 22) ; fRecordOnTurntable
 						(turnTableWRecord setCycle: Rev)
 					)
 					(else
@@ -875,7 +875,7 @@
 			)
 			(4 ; Inventory
 				(if (== invItem 5) ; Michelle_Milken_s_Resume
-					(SetFlag 22)
+					(SetFlag 22) ; fRecordOnTurntable
 					(gEgo put: 5) ; Michelle_Milken_s_Resume
 					(gCurRoom setScript: sUsesStereo)
 				else
@@ -1011,11 +1011,11 @@
 			)
 			(3 ; Do
 				(cond
-					((IsFlag 21)
+					((IsFlag 21) ; fWarned
 						(gCurRoom setScript: sEnterElevator)
 					)
 					(askedInToStudio
-						(SetFlag 21)
+						(SetFlag 21) ; fWarned
 						(Say Reverse_Biaz 640 26 108) ; "Where are you going, Patti? There are a lot of people in this town who would love a chance to blow synth on a session here. I was happy to give you the gig. But, if you leave me now, I promise you I'll be on the phone to the Union before you're downstairs!"
 					)
 					(else
@@ -1099,7 +1099,7 @@
 			(4 ; Inventory
 				(switch invItem
 					(5 ; Michelle_Milken_s_Resume
-						(SetFlag 22)
+						(SetFlag 22) ; fRecordOnTurntable
 						(gEgo put: 5) ; Michelle_Milken_s_Resume
 						(turnTableWRecord init:)
 						(gTheIconBar curIcon: (gTheIconBar at: 2))
@@ -1144,7 +1144,7 @@
 				(if (self cycler:)
 					(TPrint 640 38) ; "Don't remove the gold record while it's spinning!"
 				else
-					(ClearFlag 22)
+					(ClearFlag 22) ; fRecordOnTurntable
 					(gEgo get: 5) ; Michelle_Milken_s_Resume
 					(turntable init:)
 					(self dispose:)
@@ -1197,7 +1197,7 @@
 							)
 						)
 					)
-					((IsFlag 22)
+					((IsFlag 22) ; fRecordOnTurntable
 						(if
 							(and
 								(turnTableWRecord cycler:)

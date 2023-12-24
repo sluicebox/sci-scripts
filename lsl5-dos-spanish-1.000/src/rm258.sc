@@ -74,13 +74,13 @@
 	(method (init)
 		(super init:)
 		(cond
-			((IsFlag 46)
+			((IsFlag 46) ; fPrintedPass
 				(card y: 97)
 				(boardPass init:)
 				(SetupExit 1)
 				(HandsOn)
 			)
-			((and (IsFlag 8) (not (gEgo has: 8))) ; Boarding_Pass
+			((and (IsFlag 8) (not (gEgo has: 8))) ; fBeenToTown, Boarding_Pass
 				(SetupExit 1)
 				(slot init:)
 				(dispenser init:)
@@ -155,7 +155,7 @@
 			(1 ; Walk
 				(if (== ((gTheIconBar at: 0) cursor:) 6)
 					(cond
-						((or (IsFlag 46) (gEgo has: 7)) ; AeroDork_Gold_Card
+						((or (IsFlag 46) (gEgo has: 7)) ; fPrintedPass, AeroDork_Gold_Card
 							(gCurRoom newRoom: 250)
 						)
 						((gCast contains: card)
@@ -257,7 +257,7 @@
 		else
 			(Display 258 9 dsCOORD 144 75 dsCOLOR gColWhite dsWIDTH 110 dsFONT gSmallFont) ; "Please take your boarding pass now."
 		)
-		(if (not (SetFlag 46))
+		(if (not (SetFlag 46)) ; fPrintedPass
 			(gTheMusic2 number: 257 setLoop: 0 play:)
 			(self setPri: 3 setMotion: MoveTo x 178 self)
 		else
@@ -285,7 +285,7 @@
 				(Points 4)
 				(gEgo get: 8) ; Boarding_Pass
 				(card init:)
-				(ClearFlag 46)
+				(ClearFlag 46) ; fPrintedPass
 				(self dispose:)
 			)
 			(else
@@ -362,7 +362,7 @@
 					gSmallFont
 				)
 				(= i 0)
-				(if (not (IsFlag 9))
+				(if (not (IsFlag 9)) ; fBeenInNewYork
 					(FormatTime i 5)
 					(Display
 						{New York}
@@ -391,7 +391,7 @@
 					(= [dest i] 5)
 					(++ i)
 				)
-				(if (not (IsFlag 10))
+				(if (not (IsFlag 10)) ; fBeenInAtlanticCity
 					(FormatTime i 4)
 					(Display
 						{Atlantic City}
@@ -420,7 +420,7 @@
 					(= [dest i] 4)
 					(++ i)
 				)
-				(if (not (IsFlag 11))
+				(if (not (IsFlag 11)) ; fBeenInMiami
 					(FormatTime i 2)
 					(Display
 						{Miami}

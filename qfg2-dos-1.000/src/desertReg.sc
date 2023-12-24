@@ -85,8 +85,8 @@
 				)
 				((Said 'dismount,(climb,climb,get,get<off,down)[/saurii,roget]')
 					(HighPrint 660 19) ; "You have to be ON a saurus to get OFF a saurus."
-					(if (not (IsFlag 75))
-						(SetFlag 75)
+					(if (not (IsFlag 75)) ; fDumbDownJoke
+						(SetFlag 75) ; fDumbDownJoke
 						(Print 660 20) ; "Q. How do you get down off a saurus?"
 						(Print 660 21) ; "A. You don't. You get down off a duck."
 					)

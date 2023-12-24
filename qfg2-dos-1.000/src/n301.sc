@@ -95,8 +95,8 @@
 				(gEgo setMotion: MoveTo 158 260 self)
 			)
 			(10
-				(SetFlag 149)
-				(SetFlag 150)
+				(SetFlag 149) ; fReturningSaurus
+				(SetFlag 150) ; fReturnedSaurus300
 				(gCurRoom newRoom: 290)
 			)
 		)

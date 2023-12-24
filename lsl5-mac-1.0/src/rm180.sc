@@ -560,7 +560,7 @@
 
 	(method (doVerb theVerb &tmp [str 100])
 		(if (== theVerb 2) ; Look
-			(Format @str 180 23 (if (IsFlag 0) {red} else {blonde})) ; "This poster is your personal favorite. You've always had a soft spot for %s-haired twins."
+			(Format @str 180 23 (if (IsFlag 0) {red} else {blonde})) ; "This poster is your personal favorite. You've always had a soft spot for %s-haired twins.", isVga
 			(TPrint @str)
 		else
 			(super doVerb: theVerb &rest)

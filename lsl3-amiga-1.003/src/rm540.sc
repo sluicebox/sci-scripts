@@ -351,7 +351,7 @@
 				(NormalEgo 3)
 				(Print 540 33 #at -1 144) ; "(But have you noticed how you're running dangerously low on clothing?)"
 				(gMusic number: 599 loop: gBgMusicLoops play:)
-				(SetFlag 68)
+				(SetFlag 68) ; killedPorky
 				(gGame changeScore: 100)
 				(gGame setSpeed: gOldGameSpeed)
 			)

@@ -58,7 +58,7 @@
 		(mouthPic init:)
 		(SetupExit 1)
 		(HandsOn)
-		(SetFlag 4)
+		(SetFlag 4) ; fSeenCC
 		(chiChi init:)
 		(switch gPrevRoomNum
 			(915
@@ -69,7 +69,7 @@
 					setCel: 0
 					cycleSpeed: 8
 				)
-				(if (IsFlag 51)
+				(if (IsFlag 51) ; fScoredCC
 					(gEgo setCel: 1)
 					(gCurRoom setScript: sScored)
 				else

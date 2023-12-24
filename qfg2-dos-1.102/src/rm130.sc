@@ -198,7 +198,7 @@
 						(event claimed: 1)
 						(self setScript: welcome)
 					)
-					((IsFlag 37)
+					((IsFlag 37) ; fGotBurnPowder
 						(Say harikHead 130 4) ; "I have already given you my very last speck of powder."
 					)
 					((and (!= gOrigHeroType 2) (== gElementalState 5))
@@ -222,7 +222,7 @@
 						(event claimed: 1)
 						(self setScript: welcome)
 					)
-					((IsFlag 37)
+					((IsFlag 37) ; fGotBurnPowder
 						(Say harikHead 130 10) ; "I have already given you my very last speck of it."
 					)
 					(else
@@ -255,7 +255,7 @@
 			)
 			((or (Said 'tell/elemental<fire') (Said 'tell//elemental<fire'))
 				(HighPrint 130 16) ; "You ardently describe the Fire Elemental to Harik."
-				(if (not (SetFlag 178))
+				(if (not (SetFlag 178)) ; fToldHarikOfFire
 					(SkillUsed 13 25) ; communication
 				)
 				(cond
@@ -291,7 +291,7 @@
 				(Say harikHead 130 22) ; "Such a thing is not nearly so grand as the Fire Elemental."
 			)
 			((or (Said 'tell/elemental<water') (Said 'tell//elemental<water'))
-				(if (not (SetFlag 179))
+				(if (not (SetFlag 179)) ; fToldHarikOfWater
 					(SkillUsed 13 20) ; communication
 				)
 				(HighPrint 130 23) ; "You fluidly describe the Water Elemental to Harik."
@@ -422,7 +422,7 @@
 						(event claimed: 1)
 						(self setScript: welcome)
 					)
-					((IsFlag 35)
+					((IsFlag 35) ; fMadeDispelPotion
 						(Say harikHead 130 34) ; "I have already made this potion for you. I have no more ingredients with which to make another."
 					)
 					(else
@@ -444,8 +444,8 @@
 					)
 					(else
 						(gEgo put: 28) ; Feather
-						(SetFlag 33)
-						(if (IsFlag 34)
+						(SetFlag 33) ; fGaveFeather
+						(if (IsFlag 34) ; fGaveFruit
 							(= doing 6)
 						else
 							(= doing 7)
@@ -465,8 +465,8 @@
 					)
 					(else
 						(gEgo put: 36) ; CompassionFruit
-						(SetFlag 34)
-						(if (IsFlag 33)
+						(SetFlag 34) ; fGaveFruit
+						(if (IsFlag 33) ; fGaveFeather
 							(= doing 6)
 						else
 							(= doing 8)
@@ -603,7 +603,7 @@
 				(harik cycleSpeed: 1 setScript: mixingS)
 				(SolvePuzzle 697 5 2)
 				(gEgo get: 39 6) ; BurningPowder
-				(SetFlag 37)
+				(SetFlag 37) ; fGotBurnPowder
 				(self dispose:)
 			)
 		)
@@ -790,7 +790,7 @@
 						)
 					)
 					(2
-						(if (and (== gOrigHeroType 2) (not (IsFlag 37)))
+						(if (and (== gOrigHeroType 2) (not (IsFlag 37))) ; fGotBurnPowder
 							(Say harikHead self 130 63) ; "Maybe you could use some magical fire to burn magical earth? I do have some Powder of Burning that might work. But it is very rare, and it makes such pretty flames! I'd hate to have it wasted."
 						else
 							(self cue:)
@@ -1051,14 +1051,14 @@
 		(switch (= state newState)
 			(0
 				(cond
-					((not (IsFlag 36))
-						(SetFlag 36)
+					((not (IsFlag 36)) ; fHeardDispelTalk
+						(SetFlag 36) ; fHeardDispelTalk
 						(Say harikHead self 130 84 130 85 130 86) ; "A potion to break enchantments? I know of one in which the victim drinks the potion and the spell ends."
 					)
 					((not (and (gEgo has: 28) (gEgo has: 36))) ; Feather, CompassionFruit
 						(Say harikHead self 130 87 130 88) ; "I cannot make the potion without all the ingredients."
 					)
-					((IsFlag 35)
+					((IsFlag 35) ; fMadeDispelPotion
 						(Say harikHead self 130 89) ; "Oh yes. Have you had a chance to use it yet? I would be most anxious to hear how it worked."
 					)
 					(else
@@ -1089,7 +1089,7 @@
 			)
 			(2
 				(harik loop: 3 cel: 5)
-				(SetFlag 35)
+				(SetFlag 35) ; fMadeDispelPotion
 				(= cycles 10)
 			)
 			(3
@@ -1167,7 +1167,7 @@
 						((not noticedEgo)
 							(self setScript: welcome)
 						)
-						((IsFlag 37)
+						((IsFlag 37) ; fGotBurnPowder
 							(Say harikHead 130 10) ; "I have already given you my very last speck of it."
 						)
 						(else
@@ -1178,13 +1178,13 @@
 				)
 				(-5
 					(cond
-						((IsFlag 35)
+						((IsFlag 35) ; fMadeDispelPotion
 							(Say harikHead 130 98) ; "But I have already given the dispel potion to you."
 						)
-						((IsFlag 34)
+						((IsFlag 34) ; fGaveFruit
 							(Say harikHead 130 99) ; "If you can but get me the Griffin's feather, I will give you the potion."
 						)
-						((IsFlag 33)
+						((IsFlag 33) ; fGaveFeather
 							(Say harikHead 130 100) ; "If you can but get me the "Fruit of Compassion", I will give you the potion."
 						)
 						(else

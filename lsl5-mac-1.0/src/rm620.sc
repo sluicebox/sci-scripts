@@ -44,7 +44,7 @@
 			)
 			(north
 				(gEgo init: normalize: 570 setPri: 8 posn: 57 141)
-				(SetFlag 29)
+				(SetFlag 29) ; fBeenInBaltimore
 				(gCurRoom setScript: sExitElevator)
 			)
 			(else
@@ -247,7 +247,7 @@
 			)
 			(1
 				(cond
-					((IsFlag 45)
+					((IsFlag 45) ; fGuardKnows
 						(Say The_Guard 620 11 108) ; "Lady, I already told you: Reverse Biaz says, `you blew the gig when you split'--whatever that means!"
 						(HandsOn)
 						(guard setScript: sBackToSleep)
@@ -279,7 +279,7 @@
 					)
 					(else
 						(Say The_Guard 620 16 108) ; ""Huh? Oh, right. Give me just a second while I make sure he's in," sighs the overworked guard."
-						(SetFlag 48)
+						(SetFlag 48) ; fDirectorySol
 					)
 				)
 				(self cue:)
@@ -303,9 +303,9 @@
 				(guard setLoop: 5 setCycle: End self)
 			)
 			(8
-				(if (IsFlag 21)
+				(if (IsFlag 21) ; fWarned
 					(Say The_Guard 620 17 108) ; "I'm sorry, but he says he's found someone else. Take a hike!"
-					(SetFlag 45)
+					(SetFlag 45) ; fGuardKnows
 					(HandsOn)
 					(guard setScript: sBackToSleep)
 					(self dispose:)
@@ -499,7 +499,7 @@
 					(guard setScript: sGuardWakes)
 				else
 					(ll5Timer dispose: delete:)
-					(if (IsFlag 17)
+					(if (IsFlag 17) ; fSeenRBOffice
 						(gCurRoom setScript: sGuardApproves)
 					else
 						(guard setScript: sGuardSleeps)
@@ -760,12 +760,12 @@
 		(return
 			(switch theVerb
 				(2 ; Look
-					(SetFlag 17)
+					(SetFlag 17) ; fSeenRBOffice
 					(Points 3 120)
 					(TPrint 620 39 67 -1 28) ; "That's it, Patti! "des Rever Records" is located in Room 900."
 				)
 				(3 ; Do
-					(SetFlag 17)
+					(SetFlag 17) ; fSeenRBOffice
 					(Points 3 120)
 					(TPrint 620 39 67 -1 28) ; "That's it, Patti! "des Rever Records" is located in Room 900."
 				)

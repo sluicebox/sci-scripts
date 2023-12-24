@@ -62,7 +62,7 @@
 			(TopWindow color: 0 back: 11)
 		)
 		(self setScript: printResponses)
-		(SetFlag 159)
+		(SetFlag 159) ; fPracticeFight
 		(whoToFight barMessage: 0 opponent: (ScriptID 32 0) initCombat:) ; warrior
 		((ScriptID 32 0) ; warrior
 			barMessage: 0

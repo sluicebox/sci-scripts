@@ -31,9 +31,9 @@
 		(= global155 12)
 		(= gNumVoices (DoSound sndGET_POLYPHONY))
 		(if (and (>= (= gNumColors (Graph grGET_COLOURS)) 2) (<= gNumColors 16))
-			(ClearFlag 0)
+			(ClearFlag 0) ; isVga
 		else
-			(SetFlag 0)
+			(SetFlag 0) ; isVga
 		)
 		(gSystemWindow color: 0 back: gColWindow)
 		((ScriptID 19 1) ; invWin

@@ -69,7 +69,7 @@
 			)
 			(gCurRoom setScript: 0)
 			(Print 130 0 #at -1 20) ; "Carefully finishing your duties, you wipe and toss the newspaper behind the toilet for the next user."
-			(SetFlag 40)
+			(SetFlag 40) ; fToiletPaperOnShoe
 			(NormalEgo 2)
 			(if (!= (CueObj client:) toilet)
 				(gEgo

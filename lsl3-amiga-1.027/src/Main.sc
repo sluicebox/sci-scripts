@@ -615,8 +615,8 @@
 			)
 			(gMusic fade:)
 		)
-		(ClearFlag 3)
-		(ClearFlag 5)
+		(ClearFlag 3) ; cantSave
+		(ClearFlag 5) ; noCursor
 		(cls)
 		(Load rsFONT gBigFont)
 		(Load rsFONT gUserFont)

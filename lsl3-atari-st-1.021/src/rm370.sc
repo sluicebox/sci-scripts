@@ -83,7 +83,7 @@
 
 	(method (newRoom newRoomNumber)
 		(if (< (aLocker y:) 999)
-			(SetFlag 51)
+			(SetFlag 51) ; lockerRippedOff
 		)
 		(if (and (== newRoomNumber 375) (== gEgoState 8) (gEgo has: 8)) ; Beach_Towel
 			(Print 370 0 #at 10 -1 #width 290) ; "You hang your towel just outside the shower room where you'll be able to reach it easily upon exit."
@@ -231,7 +231,7 @@
 						)
 						(else
 							(if (not (TestFlag 40))
-								(SetFlag 40)
+								(SetFlag 40) ; scoredLocker
 								(gGame changeScore: 100)
 								(Print 370 14) ; "You did it!"
 							else
@@ -379,7 +379,7 @@
 						(Format @string 370 33) ; "Gosh! Don't you look sweet in a pair of (newly-larger) women's sweats!"
 						(= gEgoState 9)
 						(if (not (TestFlag 41))
-							(SetFlag 41)
+							(SetFlag 41) ; scoredSweats
 							(gGame changeScore: 4)
 						)
 						(self changeState: 1)
@@ -465,9 +465,9 @@
 					((or (== gEgoState 5) (== gEgoState 6) (== gEgoState 8))
 						(Print 370 52) ; "Pssssssst."
 						(Print 370 52) ; "Pssssssst."
-						(ClearFlag 62)
+						(ClearFlag 62) ; needsDeodorant
 						(if (not (TestFlag 60))
-							(SetFlag 60)
+							(SetFlag 60) ; sprayedDeodorant
 							(gGame changeScore: 27)
 						)
 						(Print 370 53) ; "You spray on some deodorant, then return the can to the locker."
@@ -499,9 +499,9 @@
 						(Print 370 58) ; "Didn't you leave your towel inside the locker?"
 					)
 					(else
-						(ClearFlag 50)
+						(ClearFlag 50) ; wetBody
 						(if (not (TestFlag 39))
-							(SetFlag 39)
+							(SetFlag 39) ; scoredTowel
 							(gGame changeScore: 22)
 						)
 						(Print 370 59 #icon 8 0 0) ; "Good idea. You carefully dry every tiny pore to prevent chafing!"

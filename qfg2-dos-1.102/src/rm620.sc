@@ -102,7 +102,7 @@
 	)
 
 	(method (dispose)
-		(SetFlag 174)
+		(SetFlag 174) ; fSawDervish
 		(gCSound stop:)
 		(super dispose:)
 	)
@@ -113,7 +113,7 @@
 		(Load rsSCRIPT 985)
 		(self setRegions: 660) ; desertReg
 		(= saurus (ScriptID 660 1)) ; saurus
-		(if (or (not (IsFlag 28)) (not (== gRoomExitDir 1)))
+		(if (or (not (IsFlag 28)) (not (== gRoomExitDir 1))) ; fTeleporting
 			(gEgo init:)
 		)
 		(NormalEgo)
@@ -126,7 +126,7 @@
 		else
 			(dervishReflection setCycle: Fwd)
 		)
-		(if (IsFlag 28)
+		(if (IsFlag 28) ; fTeleporting
 			(= inOut 3)
 		)
 		(if (== gRoomExitDir 1)
@@ -159,7 +159,7 @@
 		(InitFeatures plant pond frond beard trunk sky everythingElse)
 		(gCSound number: 620 loop: -1 priority: 2 playBed:)
 		(cond
-			((IsFlag 28)
+			((IsFlag 28) ; fTeleporting
 				(gEgo posn: 160 160 loop: 2 init:)
 			)
 			((== gRoomExitDir 1)
@@ -183,8 +183,8 @@
 					((and (>= gDay 12) (not (IsFlag 645)))
 						(Say dervish 620 0) ; "To the west of Shapeir and north of here stands a puzzle. Five W's."
 					)
-					((not (IsFlag 169))
-						(SetFlag 169)
+					((not (IsFlag 169)) ; fDervishPeanutMsg
+						(SetFlag 169) ; fDervishPeanutMsg
 						(Say dervish 620 1) ; "Hero business like eating peanuts."
 						(if (gCast contains: saurus)
 							(saurus setScript: waterSaurus)
@@ -252,8 +252,8 @@
 			((Said 'rest')
 				(HighPrint 620 7) ; "Yes, this does seem like a nice place for a short nap."
 				(EgoRests 1)
-				(ClearFlag 3)
-				(ClearFlag 137)
+				(ClearFlag 3) ; fThirsty
+				(ClearFlag 137) ; fDyingOfThirst
 			)
 			((Said 'nap')
 				(HighPrint 620 8) ; "This does seem like a good place. You curl up near the pool, and soon fall asleep."
@@ -264,8 +264,8 @@
 					(EgoSleeps 20 0)
 					(HighPrint 620 10) ; "You awaken just after sunset, much refreshed."
 				)
-				(ClearFlag 3)
-				(ClearFlag 137)
+				(ClearFlag 3) ; fThirsty
+				(ClearFlag 137) ; fDyingOfThirst
 			)
 			((Said 'tell,hello')
 				(Say dervish 620 11) ; "Quest for Glory is like same old story."
@@ -276,7 +276,7 @@
 						(Say dervish 620 12) ; "Man who keep one hand on weapon have difficulty walking in public."
 					)
 					((== thatsOne 1)
-						(SetFlag 70)
+						(SetFlag 70) ; fDervishCurse
 						(Say dervish 620 13) ; "Man who wrongfully attack peaceful dervish will soon find himself up to his earlobes in wrongful attacks."
 					)
 					(else
@@ -411,7 +411,7 @@
 				(Say dervish 620 17) ; "He who attacks without cause soon attracts without pause."
 			)
 			((== throwOne 1)
-				(SetFlag 70)
+				(SetFlag 70) ; fDervishCurse
 				(Say dervish 620 13) ; "Man who wrongfully attack peaceful dervish will soon find himself up to his earlobes in wrongful attacks."
 			)
 			(else
@@ -537,8 +537,8 @@
 				)
 			)
 			(2
-				(ClearFlag 3)
-				(ClearFlag 137)
+				(ClearFlag 3) ; fThirsty
+				(ClearFlag 137) ; fDyingOfThirst
 				(if waterGotten
 					(HighPrint 620 18) ; "You take another deep drink of the warm, but refreshing water."
 				else
@@ -801,13 +801,13 @@
 					((gEgo has: 14) ; Beard
 						(LowPrint 620 27) ; "You have some of his beard already."
 					)
-					((IsFlag 184)
+					((IsFlag 184) ; fWhirlForBucks
 						(Say dervish 620 28) ; "Beard must stay or dervish drift away."
 					)
 					(else
 						(SolvePuzzle 642 5)
 						(gEgo get: 14) ; Beard
-						(SetFlag 184)
+						(SetFlag 184) ; fWhirlForBucks
 						(Print 620 29) ; "You take a small piece of the Dervishes' beard and put it carefully away."
 					)
 				)
@@ -849,10 +849,10 @@
 		(switch (= state newState)
 			(0
 				(= entering 1)
-				(if (IsFlag 168)
+				(if (IsFlag 168) ; fDervishDailyMsg
 					(= cycles 1)
 				else
-					(SetFlag 168)
+					(SetFlag 168) ; fDervishDailyMsg
 					(if (< gDay 13)
 						(Say
 							dervish

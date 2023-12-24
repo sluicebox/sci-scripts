@@ -39,7 +39,7 @@
 				(gEgo view: 291 setLoop: 5 setCycle: 0 posn: 152 93)
 				(door posn: 111 118)
 				(SetupExit 0)
-				(ClearFlag 32)
+				(ClearFlag 32) ; fOkToBoard
 				(self setScript: sReturning)
 			)
 			(south
@@ -56,10 +56,10 @@
 			((not gPrevRoomNum)
 				(Delay 90 0 gCurRoom)
 			)
-			((IsFlag 32)
+			((IsFlag 32) ; fOkToBoard
 				(boardingSign init:)
 			)
-			((and (gEgo has: 8) (IsFlag 8)) ; Boarding_Pass
+			((and (gEgo has: 8) (IsFlag 8)) ; Boarding_Pass, fBeenToTown
 				(Delay 90 0 gCurRoom)
 			)
 		)
@@ -212,7 +212,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(if (IsFlag 32)
+				(if (IsFlag 32) ; fOkToBoard
 					(TPrint 290 5) ; "The Boarding Pass sign is currently flashing. Are you going to miss the plane?"
 				else
 					(TPrint 290 6) ; "It appears to be a sign."
@@ -278,7 +278,7 @@
 						(TPrint 290 7) ; "Your AeroDork Gold Card will only work in the ATM outside the airport."
 					)
 					(8 ; Boarding_Pass
-						(if (IsFlag 32)
+						(if (IsFlag 32) ; fOkToBoard
 							(gEgo put: 8 0) ; Boarding_Pass
 							(gCurRoom setScript: sJetWay)
 						else
@@ -443,7 +443,7 @@
 		(switch (= state newState)
 			(0
 				(HandsOff)
-				(SetFlag 32)
+				(SetFlag 32) ; fOkToBoard
 				(boardingSign init:)
 				(= ticks 180)
 			)
@@ -589,13 +589,13 @@
 			)
 			(6
 				(cond
-					((IsFlag 9)
+					((IsFlag 9) ; fBeenInNewYork
 						(Format @local75 {New York})
 					)
-					((IsFlag 11)
+					((IsFlag 11) ; fBeenInMiami
 						(Format @local75 {Miami})
 					)
-					((IsFlag 10)
+					((IsFlag 10) ; fBeenInAtlanticCity
 						(Format @local75 {Atlantic City})
 					)
 					(else

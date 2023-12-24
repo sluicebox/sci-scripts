@@ -27,10 +27,10 @@
 	)
 
 	(method (init)
-		(SetFlag 82)
-		(ClearFlag 16)
+		(SetFlag 82) ; fDesert
+		(ClearFlag 16) ; fShapeir
 		(gEgo init:)
-		(if (or (== gPrevRoomNum 290) (IsFlag 28))
+		(if (or (== gPrevRoomNum 290) (IsFlag 28)) ; fTeleporting
 			(= gPrevRoomNum 290)
 			(= inOut 3)
 		)

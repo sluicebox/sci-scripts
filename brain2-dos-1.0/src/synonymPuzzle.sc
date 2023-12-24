@@ -47,7 +47,7 @@
 (procedure (localproc_0 &tmp temp0 [temp1 10])
 	(for
 		((= temp0 0))
-		(Message msgGET 266 (+ temp0 1) [local54 global114] 1 1)
+		(Message msgGET 266 (+ temp0 1) [local54 gDifficulty] 1 1)
 		((++ temp0))
 	)
 	(return temp0)
@@ -164,7 +164,7 @@
 						init:
 							266
 							temp0
-							[local54 global114]
+							[local54 gDifficulty]
 							[local57 (mod temp11 2)]
 							(/ temp11 2)
 							260
@@ -179,8 +179,8 @@
 					(-
 						(= temp1
 							(+
-								(= local9 [local66 global114])
-								[local63 global114]
+								(= local9 [local66 gDifficulty])
+								[local63 gDifficulty]
 							)
 						)
 						1
@@ -189,10 +189,10 @@
 				1
 			)
 		)
-		(= [local80 1] (+ [local80 0] 2 global114))
+		(= [local80 1] (+ [local80 0] 2 gDifficulty)) ; Expert
 		(for ((= temp6 0)) (< temp6 2) ((++ temp6))
 			(= temp0 [local42 temp6])
-			(for ((= temp3 0)) (< temp3 (+ 2 global114)) ((++ temp3))
+			(for ((= temp3 0)) (< temp3 (+ 2 gDifficulty)) ((++ temp3)) ; Expert
 				(= temp2 (localproc_1 local37 0 (- temp1 1)))
 				(|= local37 (<< $0001 temp2))
 				(if
@@ -201,7 +201,7 @@
 							msgGET
 							266
 							temp0
-							[local54 global114]
+							[local54 gDifficulty]
 							[local59 temp3]
 							2
 							[local20 temp2]
@@ -212,11 +212,11 @@
 				(= [local10 temp2] (+ temp3 1 (* temp6 10)))
 			)
 		)
-		(= [local82 0] (proc15_6 266 [local42 0] [local54 global114] 3))
-		(= [local82 1] (proc15_6 266 [local42 1] [local54 global114] 3))
+		(= [local82 0] (proc15_6 266 [local42 0] [local54 gDifficulty] 3))
+		(= [local82 1] (proc15_6 266 [local42 1] [local54 gDifficulty] 3))
 		(= temp7 (+ [local82 0] [local82 1]))
 		(= temp8 0)
-		(for ((= temp3 0)) (< temp3 [local63 global114]) ((++ temp3))
+		(for ((= temp3 0)) (< temp3 [local63 gDifficulty]) ((++ temp3))
 			(= temp9 (localproc_1 temp8 1 temp7))
 			(|= temp8 (<< $0001 temp9))
 			(if (<= temp9 [local82 0])
@@ -235,7 +235,7 @@
 						msgGET
 						266
 						temp0
-						[local54 global114]
+						[local54 gDifficulty]
 						3
 						temp9
 						[local20 temp2]
@@ -311,7 +311,7 @@
 	(method (buyClue &tmp temp0 temp1 [temp2 50] temp52 temp53 temp54 temp55 temp56)
 		(if (super buyClue: &rest)
 			(= temp56 0)
-			(= temp1 (Memory memALLOC_CRIT (+ 400 (* 200 global114))))
+			(= temp1 (Memory memALLOC_CRIT (+ 400 (* 200 gDifficulty))))
 			(StrAt temp1 0 0)
 			(for ((= temp0 0)) (< temp0 2) ((++ temp0))
 				(for ((= temp55 0)) (< temp55 4) ((++ temp55))
@@ -320,7 +320,7 @@
 							msgGET
 							267
 							[local42 temp0]
-							[local54 global114]
+							[local54 gDifficulty]
 							1
 							(+ temp55 1)
 							@temp2
@@ -336,7 +336,7 @@
 				(StrAt temp1 0 0)
 				(= temp56 0)
 			)
-			(for ((= temp0 0)) (< temp0 [local63 global114]) ((++ temp0))
+			(for ((= temp0 0)) (< temp0 [local63 gDifficulty]) ((++ temp0))
 				(if (/ [local78 temp0] 100)
 					(= temp52 1)
 					(= temp53 (- [local78 temp0] 100))
@@ -349,7 +349,7 @@
 						msgGET
 						267
 						[local42 temp52]
-						[local54 global114]
+						[local54 gDifficulty]
 						1
 						(+ 4 temp53)
 						@temp2
@@ -364,12 +364,12 @@
 					(= temp56 0)
 				)
 			)
-			(if global114
+			(if gDifficulty
 				(for ((= temp0 0)) (< temp0 2) ((++ temp0))
 					(= temp55 0)
 					(for
 						((= temp53 (+ 5 [local82 temp0])))
-						(< temp55 (* global114 2))
+						(< temp55 (* gDifficulty 2))
 						((++ temp53))
 						
 						(if
@@ -377,7 +377,7 @@
 								msgGET
 								267
 								[local42 temp0]
-								[local54 global114]
+								[local54 gDifficulty]
 								1
 								temp53
 								@temp2
@@ -602,7 +602,7 @@
 		(= text (= cursor [local29 param1]))
 		(= temp0 [local42 (/ value 10)])
 		(= temp1 [local59 (- (mod value 10) 1)])
-		(if (not (Message msgGET 266 temp0 [local54 global114] temp1 1 text))
+		(if (not (Message msgGET 266 temp0 [local54 gDifficulty] temp1 1 text))
 			(Printf {theSet: %d theword: %d} temp0 temp1)
 		)
 	)
@@ -634,7 +634,7 @@
 				(parent showSentence:)
 				(synonymPuzzle eachElementDo: #show)
 				(if (== (modifiers value:) value)
-					(if (and (== global114 0) (= temp0 (localproc_2 self)))
+					(if (and (== gDifficulty 0) (= temp0 (localproc_2 self))) ; Novice
 						(Wait 0)
 						(Wait 15)
 						(gCSoundFX number: 247 setLoop: 1 play:)

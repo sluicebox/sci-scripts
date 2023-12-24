@@ -88,8 +88,8 @@
 				setCel: 255
 				setCycle: 0
 			)
-			(if (not (IsFlag 16))
-				(SetFlag 16)
+			(if (not (IsFlag 16)) ; fMCloseUp
+				(SetFlag 16) ; fMCloseUp
 				(drape4 init: setCel: 0 stopUpd:)
 				(self setScript: sCloseCurtain)
 			else

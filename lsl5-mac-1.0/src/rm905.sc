@@ -89,7 +89,7 @@
 		)
 		(nurseWindow init: approachVerbs: 2 5 3) ; Look, Talk, Do
 		(glass init: approachVerbs: 2 5 3 stopUpd:) ; Look, Talk, Do
-		(if (not (IsFlag 4))
+		(if (not (IsFlag 4)) ; fSeenCC
 			(girl init: stopUpd:)
 		)
 		(phone init: approachVerbs: 3 stopUpd:) ; Do
@@ -107,7 +107,7 @@
 		(lipPic init:)
 		(magazines init: approachVerbs: 3 2 4) ; Do, Look, Inventory
 		(thePhone init: approachVerbs: 3) ; Do
-		(if (and (not (IsFlag 33)) (not (gEgo has: 22))) ; Doily
+		(if (and (not (IsFlag 33)) (not (gEgo has: 22))) ; fUsedDoily, Doily
 			(laceDoily init: stopUpd: approachVerbs: 3) ; Do
 		)
 		(door init:)
@@ -186,7 +186,7 @@
 					(9 ; AeroDork_s_In-Flight_Magazine
 						(TPrint 905 3) ; "Being totally bored with the AeroDork In-Flight Magazine, you shove it into Doc's magazine rack, where it is sure to delight and amaze his primarily Spanish-speaking customers."
 						(gEgo put: 9) ; AeroDork_s_In-Flight_Magazine
-						(SetFlag 52)
+						(SetFlag 52) ; fDumpedMagazine
 					)
 					(else
 						(super doVerb: theVerb invItem &rest)
@@ -772,11 +772,11 @@
 						(TPrint 905 14) ; "Hello, North Beach Limousine Service."
 						(Say gEgo 905 15) ; "This is Mr. Laffer," you say. "Would you please send my limousine over to Doc Pulliam's right away?"
 						(cond
-							((not (IsFlag 4))
+							((not (IsFlag 4)) ; fSeenCC
 								(TPrint 905 16) ; "No, I'm sorry, Mr. Laffer. All of our drivers are on break right now. Could you call back again in a few minutes?"
 							)
-							((not (IsFlag 1))
-								(SetFlag 1)
+							((not (IsFlag 1)) ; fCalledLimo
+								(SetFlag 1) ; fCalledLimo
 								(TPrint 905 17) ; "Why, yes sir, Mr. Laffer. In fact, one of our drivers is in that vicinity right now. Just look outside. I bet you'll see her!"
 							)
 							(else
@@ -785,9 +785,9 @@
 						)
 					)
 					(3627
-						(if (not (SetFlag 18))
-							(SetFlag 18)
-							(if (IsFlag 4)
+						(if (not (SetFlag 18)) ; fCalledDoc
+							(SetFlag 18) ; fCalledDoc
+							(if (IsFlag 4) ; fSeenCC
 								(Say Alberta 905 19 108) ; "Good afternoon. You've reached Dr. Pulliam's exchange. I'm sorry, but everyone in their office has gone home for the evening. But please feel free to call back tomorrow. This has been a recording."
 							else
 								(TPrint 905 20) ; "Good afternoon. Dr. Pulliam's office."
@@ -844,7 +844,7 @@
 							(gEgo setScript: sChair 0 self)
 						)
 					)
-					((IsFlag 4)
+					((IsFlag 4) ; fSeenCC
 						(TPrint 905 27) ; "There is no answer from beyond the sliding glass windows. Either they're avoiding you, or they've all gone home."
 					)
 					((and (not (IsFlag 164)) (not talkedToGirl))
@@ -964,7 +964,7 @@
 						(Say Alberta 905 33 108 139 self) ; "Yeah, what is it?"
 					)
 				)
-				(if (or (IsFlag 18) (== (gEgo view:) 908))
+				(if (or (IsFlag 18) (== (gEgo view:) 908)) ; fCalledDoc
 					(= state 15)
 				)
 			)
@@ -1121,10 +1121,10 @@
 					((== (gEgo view:) 908)
 						(Say gEgo 905 57) ; "Hepowafww, mmapwffoj," you mumble with your jaw tied shut, while you pretend to be unable to speak, "maywppf asqd waf ffvppf?"
 						(Points 17 162)
-						(SetFlag 33)
+						(SetFlag 33) ; fUsedDoily
 						(Say Alberta 905 58 108 139 self) ; "Oh, you poor dear! You look like you're in terrible pain! Why, just go right on in. I'll have one of our technicians attend to you right away!"
 					)
-					((IsFlag 18)
+					((IsFlag 18) ; fCalledDoc
 						(Say gEgo 905 59) ; "Excuse me, ma'am," you say, hoping she doesn't recognize your voice. "My name is Larry; Larry Laffer."
 						(Points 13 163)
 						(Say Alberta 905 60 108 139 self) ; "Well, Larry, that was a quick trip! Please, just walk through the door to the right! I'll have one of our technicians attend to you right away!"
@@ -1132,7 +1132,7 @@
 				)
 			)
 			(17
-				(SetFlag 4)
+				(SetFlag 4) ; fSeenCC
 				(gTheMusic fade: 0 5 1 1)
 				(NormalEgo 3)
 				(door setPri: 8 locked: 0 open:)

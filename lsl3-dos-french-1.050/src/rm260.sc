@@ -33,15 +33,15 @@
 	)
 
 	(method (newRoom newRoomNumber)
-		(ClearFlag 3)
-		(ClearFlag 4)
+		(ClearFlag 3) ; cantSave
+		(ClearFlag 4) ; preventAutoSave
 		(super newRoom: newRoomNumber)
 	)
 
 	(method (init &tmp i)
 		(super init:)
-		(SetFlag 4)
-		(SetFlag 3)
+		(SetFlag 4) ; preventAutoSave
+		(SetFlag 3) ; cantSave
 		(self setScript: RoomScript)
 		(if (and (TestFlag 23) (== gBeachState 0))
 			(= gBeachState 1)
@@ -115,7 +115,7 @@
 				(Load rsVIEW 22)
 				(Load rsVIEW 34)
 				(HandsOff)
-				(SetFlag 5)
+				(SetFlag 5) ; noCursor
 				(= gCurVendor 707)
 				(= gEgoState 10)
 				(aTawni init:)
@@ -459,7 +459,7 @@
 					(Print 260 28) ; "You had a pretty good tan when you laid down here."
 					(= seconds 4)
 				else
-					(SetFlag 11)
+					(SetFlag 11) ; scoredTan
 					(gGame changeScore: 30)
 					(Print 260 29) ; "Your tan now looks MAHvelous."
 					(= seconds 10)
@@ -516,7 +516,7 @@
 			)
 			(29
 				(HandsOff)
-				(SetFlag 5)
+				(SetFlag 5) ; noCursor
 				(= seconds 0)
 				(aTawni setScript: 0 setCycle: End self)
 				(gMusic number: 8 loop: -1 play:)
@@ -657,7 +657,7 @@
 				(gMusic number: 9 loop: 1 play: self)
 				(Print 260 59) ; "There is no response."
 				(NormalEgo 2)
-				(ClearFlag 5)
+				(ClearFlag 5) ; noCursor
 				(gEgo observeControl: 16384)
 				(= gBeachState 4)
 				(= gEgoState 0)
@@ -781,7 +781,7 @@
 									(Printf 260 83 global386 global387) ; ""Hello," you say to the beautiful young girl on the towel. %s%"
 								)
 								(HandsOff)
-								(SetFlag 5)
+								(SetFlag 5) ; noCursor
 								(= gBeachState 2)
 								(TawniScript changeState: 5)
 							)
@@ -830,7 +830,7 @@
 			(7
 				(if (== gBeachState 2)
 					(if (not (TestFlag 61))
-						(SetFlag 61)
+						(SetFlag 61) ; saidHiToTawni
 						(Print 260 84) ; "Hello, Larry," replies the blond. "My name is Tawni."
 					)
 					(= gEgoState 14)

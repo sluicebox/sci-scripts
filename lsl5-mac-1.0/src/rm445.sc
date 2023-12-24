@@ -312,7 +312,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(3 ; Do
-				(if (or (IsFlag 41) (IsFlag 42) (IsFlag 43))
+				(if (or (IsFlag 41) (IsFlag 42) (IsFlag 43)) ; fVibratorMan, fBraMan, fFartMan
 					(TPrint 445 5) ; "After seeing the results of Commander Twit's earlier experiments, you think it best not to touch anything here unless truly necessary."
 				else
 					(TPrint 445 6) ; "There's nothing on that bench that could be useful to you in your mission."

@@ -60,7 +60,7 @@
 				(= seconds 3)
 			)
 			(4
-				(if (IsFlag 20)
+				(if (IsFlag 20) ; fChampagneSolution
 					(TPrint 690 2 67 -1 28 80 {Agent Smith} 108 self) ; "Well, I dunno, Inspector Desmond, it's kinda hard to figure out. Either I'm picking up a lot of RF interference, or she's consuming way too much fluid!"
 				else
 					(TPrint 690 3 67 -1 28 80 {Agent Smith} 108 self) ; "Well, I dunno, Inspector Desmond, it's kinda hard to figure out. Either she's in a tunnel somewhere near Baltimore, or she's dilated 3 cm!"
@@ -81,7 +81,7 @@
 				(= seconds 3)
 			)
 			(8
-				(if (IsFlag 20)
+				(if (IsFlag 20) ; fChampagneSolution
 					(TPrint 690 4) ; "After getting Reverse Biaz totally sloshed (then finishing off the bottle yourself), you slip out of the control room, through the studio, down the elevator and back to your limo."
 				else
 					(TPrint 690 5) ; "After "sacrificing" yourself for your country, you slip out of the control room, through the studio, down the elevator and back to your limo."

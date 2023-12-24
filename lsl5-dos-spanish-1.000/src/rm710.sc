@@ -32,7 +32,7 @@
 			(north
 				(HandsOff)
 				(gEgo setHeading: 180 edgeHit: EDGE_NONE)
-				(if (IsFlag 37)
+				(if (IsFlag 37) ; fCasinoSide
 					(self setScript: sFromNorth 0 1)
 				else
 					(self setScript: sFromNorth 0 0)
@@ -112,7 +112,7 @@
 		(person3 init:)
 		(person4 init:)
 		(person5 init:)
-		(if (IsFlag 49)
+		(if (IsFlag 49) ; fDidLana
 			(rope1 init: stopUpd:)
 			(rope2 init: stopUpd:)
 		)
@@ -133,7 +133,7 @@
 		(super doit:)
 		(cond
 			(script)
-			((and (IsFlag 49) (StepOn gEgo 6))
+			((and (IsFlag 49) (StepOn gEgo 6)) ; fDidLana
 				(HandsOff)
 				(gCurRoom setScript: sClosed)
 			)
@@ -192,9 +192,9 @@
 			(1
 				(gEgo setPri: -1)
 				(if register
-					(SetFlag 37)
+					(SetFlag 37) ; fCasinoSide
 				else
-					(ClearFlag 37)
+					(ClearFlag 37) ; fCasinoSide
 				)
 				(gCurRoom newRoom: (gCurRoom north:))
 			)

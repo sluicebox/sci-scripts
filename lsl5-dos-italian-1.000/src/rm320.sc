@@ -131,7 +131,7 @@
 					)
 					(1
 						(larry init: setCel: 1 stopUpd:)
-						(if (and (IsFlag 28) (IsFlag 29))
+						(if (and (IsFlag 28) (IsFlag 29)) ; fBeenInPhilly, fBeenInBaltimore
 							(= gREMState 3)
 						else
 							(= gREMState 2)
@@ -139,7 +139,7 @@
 						(self setScript: sWakeUpVenice)
 					)
 					(2
-						(if (and (IsFlag 28) (IsFlag 29))
+						(if (and (IsFlag 28) (IsFlag 29)) ; fBeenInPhilly, fBeenInBaltimore
 							(= gREMState 3)
 						else
 							(= gREMState 1)
@@ -155,7 +155,7 @@
 				(arm init: stopUpd:)
 				(tray init: stopUpd:)
 				(arm2 init: stopUpd:)
-				(if (and (not (IsFlag 52)) (not (gEgo has: 9))) ; AeroDork_s_In-Flight_Magazine
+				(if (and (not (IsFlag 52)) (not (gEgo has: 9))) ; fDumpedMagazine, AeroDork_s_In-Flight_Magazine
 					(theMagazine init:)
 					(magazine init: stopUpd:)
 				)
@@ -169,7 +169,7 @@
 		(switch theVerb
 			(2 ; Look
 				(TPrint 320 0) ; "For the first game in your life, you are traveling First Class. You feel certain you could easily grow accustomed to such luxury. You kick back in the leather seat, relax, and find yourself growing rather sleepy."
-				(if (and (not (IsFlag 52)) (not (gEgo has: 9))) ; AeroDork_s_In-Flight_Magazine
+				(if (and (not (IsFlag 52)) (not (gEgo has: 9))) ; fDumpedMagazine, AeroDork_s_In-Flight_Magazine
 					(TPrint 320 1) ; "In fact, you feel too sleepy to even read the stupid "AeroDork In-Flight Magazine" in the seatback pocket in front of you."
 				)
 				(return 1)
@@ -688,7 +688,7 @@
 	(method (changeState newState &tmp [temp0 2])
 		(switch (= state newState)
 			(0
-				(if (and (not (IsFlag 52)) (not (gEgo has: 9))) ; AeroDork_s_In-Flight_Magazine
+				(if (and (not (IsFlag 52)) (not (gEgo has: 9))) ; fDumpedMagazine, AeroDork_s_In-Flight_Magazine
 					(magazine dispose:)
 				)
 				(dreamProp1 dispose:)
@@ -913,7 +913,7 @@
 				(gCurRoom drawPic: (gCurRoom picture:))
 				(body init: stopUpd:)
 				(tray init: stopUpd:)
-				(if (and (not (IsFlag 52)) (not (gEgo has: 9))) ; AeroDork_s_In-Flight_Magazine
+				(if (and (not (IsFlag 52)) (not (gEgo has: 9))) ; fDumpedMagazine, AeroDork_s_In-Flight_Magazine
 					(magazine init:)
 				)
 				(patti dispose:)
@@ -1057,7 +1057,7 @@
 				)
 				(= dreaming 0)
 				(gCurRoom drawPic: (gCurRoom picture:))
-				(if (and (not (IsFlag 52)) (not (gEgo has: 9))) ; AeroDork_s_In-Flight_Magazine
+				(if (and (not (IsFlag 52)) (not (gEgo has: 9))) ; fDumpedMagazine, AeroDork_s_In-Flight_Magazine
 					(magazine init:)
 				)
 				(cloud show:)
@@ -1148,7 +1148,7 @@
 	(method (changeState newState &tmp [temp0 2])
 		(switch (= state newState)
 			(0
-				(if (and (not (IsFlag 52)) (not (gEgo has: 9))) ; AeroDork_s_In-Flight_Magazine
+				(if (and (not (IsFlag 52)) (not (gEgo has: 9))) ; fDumpedMagazine, AeroDork_s_In-Flight_Magazine
 					(magazine dispose:)
 				)
 				(body dispose:)
@@ -1315,7 +1315,7 @@
 				(body init: stopUpd:)
 				(arm init:)
 				(tray init:)
-				(if (and (not (IsFlag 52)) (not (gEgo has: 9))) ; AeroDork_s_In-Flight_Magazine
+				(if (and (not (IsFlag 52)) (not (gEgo has: 9))) ; fDumpedMagazine, AeroDork_s_In-Flight_Magazine
 					(magazine init:)
 				)
 				(dreamProp1 dispose:)
@@ -1380,7 +1380,7 @@
 	(method (changeState newState &tmp [temp0 2])
 		(switch (= state newState)
 			(0
-				(if (and (not (IsFlag 52)) (not (gEgo has: 9))) ; AeroDork_s_In-Flight_Magazine
+				(if (and (not (IsFlag 52)) (not (gEgo has: 9))) ; fDumpedMagazine, AeroDork_s_In-Flight_Magazine
 					(magazine dispose:)
 				)
 				(body dispose:)
@@ -1531,7 +1531,7 @@
 	(method (changeState newState &tmp [temp0 2])
 		(switch (= state newState)
 			(0
-				(if (and (not (IsFlag 52)) (not (gEgo has: 9))) ; AeroDork_s_In-Flight_Magazine
+				(if (and (not (IsFlag 52)) (not (gEgo has: 9))) ; fDumpedMagazine, AeroDork_s_In-Flight_Magazine
 					(magazine dispose:)
 				)
 				(body dispose:)

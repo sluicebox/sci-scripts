@@ -41,7 +41,7 @@
 )
 
 (procedure (localproc_2 &tmp temp0)
-	(if (or (not (-- local37)) (== global114 0))
+	(if (or (not (-- local37)) (== gDifficulty 0)) ; Novice
 		(for ((= temp0 1)) (<= temp0 local10) ((++ temp0))
 			(cond
 				(
@@ -51,7 +51,7 @@
 					)
 					(-- local38)
 				)
-				((and (== global114 0) ([local10 temp0] value:))
+				((and (== gDifficulty 0) ([local10 temp0] value:)) ; Novice
 					(([local10 temp0] value:) mask: 0)
 					([local10 temp0] view: 0 value: 0 show: 2)
 					(++ local37)
@@ -62,7 +62,7 @@
 			(pattern solvePuzzle:)
 		else
 			(= local38 local10)
-			(if (== global114 2)
+			(if (== gDifficulty 2) ; Expert
 				(for ((= temp0 1)) (<= temp0 local10) ((++ temp0))
 					(([local10 temp0] value:) mask: 0)
 					([local10 temp0] view: 0 value: 0 show: 2)
@@ -431,7 +431,7 @@
 	)
 
 	(method (mask param1)
-		(if (== global114 0)
+		(if (== gDifficulty 0) ; Novice
 			(if (or (not argc) param1)
 				(|= signal $0004)
 				(super mask: param1)

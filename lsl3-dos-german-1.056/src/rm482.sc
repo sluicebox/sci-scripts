@@ -179,7 +179,7 @@
 				(== (event message:) KEY_F8)
 			)
 			(Print 482 0) ; "Skipping ahead..."
-			(SetFlag 69)
+			(SetFlag 69) ; tookShortcut
 			(gCurRoom newRoom: 484)
 		)
 	)

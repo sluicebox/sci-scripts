@@ -38,7 +38,7 @@
 
 	(method (init)
 		(super init:)
-		(SetFlag 5)
+		(SetFlag 5) ; noCursor
 		(= gOldEgoState gEgoState)
 		(= gEgoState gCurRoomNum)
 		(if (> (Graph grGET_COLOURS) 4)

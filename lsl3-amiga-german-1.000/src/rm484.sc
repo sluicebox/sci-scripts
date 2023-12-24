@@ -149,12 +149,12 @@
 			(gEgo posn: 159 188 loop: 3 init:)
 		else
 			(if (or (TestFlag 69) (== gPrevRoomNum 0))
-				(ClearFlag 69)
+				(ClearFlag 69) ; tookShortcut
 				(gSystemWindow color: gTextColor back: gBackgroundColor)
 				(gTheMenuBar draw: state: 1)
 				(SL enable:)
-				(ClearFlag 4)
-				(ClearFlag 5)
+				(ClearFlag 4) ; preventAutoSave
+				(ClearFlag 5) ; noCursor
 			)
 			(= gNormalEgoView 800)
 			(= gEgoIsPatti 1)

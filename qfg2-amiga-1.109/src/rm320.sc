@@ -58,7 +58,7 @@
 			(= gEnter320 1)
 			(= gLastTimeIn gDay)
 		)
-		(if (IsFlag 28)
+		(if (IsFlag 28) ; fTeleporting
 			(= inOut 3)
 		)
 		(if (<= 0 gTimeODay 4)
@@ -69,10 +69,10 @@
 		(if (== gPrevRoomNum south)
 			(= bottomToX (= bottomFromX (- 319 (gEgo x:))))
 		)
-		(if (and (== gPrevRoomNum 160) (IsFlag 157))
+		(if (and (== gPrevRoomNum 160) (IsFlag 157)) ; fUhuraMad
 			(= inOut 3)
 		)
-		(if (not (IsFlag 28))
+		(if (not (IsFlag 28)) ; fTeleporting
 			(gEgo init:)
 		)
 		(super init:)
@@ -94,7 +94,7 @@
 					(== gDay 10)
 					(not gNight)
 					(gEgo has: 50) ; Saurus
-					(not (IsFlag 151))
+					(not (IsFlag 151)) ; fReturnedSaurus320
 				)
 				(self entranceScript: saurusAndGuard west: 290)
 				(saurus init:)
@@ -116,7 +116,7 @@
 			)
 		)
 		(cond
-			((and (== gPrevRoomNum 160) (IsFlag 157))
+			((and (== gPrevRoomNum 160) (IsFlag 157)) ; fUhuraMad
 				(doorL cel: 3 init:)
 				(doorR cel: 3 init:)
 				(gEgo setScript: thrownOut)
@@ -130,18 +130,18 @@
 				(doorR cel: 0 init: stopUpd:)
 			)
 		)
-		(if (IsFlag 28)
+		(if (IsFlag 28) ; fTeleporting
 			(NormalEgo)
 			(gEgo posn: 160 165 init:)
-			(ClearFlag 28)
+			(ClearFlag 28) ; fTeleporting
 		)
 	)
 
 	(method (dispose)
-		(if (not (IsFlag 160))
-			(SetFlag 160)
+		(if (not (IsFlag 160)) ; fFirstTime320
+			(SetFlag 160) ; fFirstTime320
 		)
-		(ClearFlag 15)
+		(ClearFlag 15) ; fTightrope
 		(super dispose:)
 	)
 
@@ -465,8 +465,8 @@
 				)
 			)
 			(6
-				(SetFlag 149)
-				(SetFlag 151)
+				(SetFlag 149) ; fReturningSaurus
+				(SetFlag 151) ; fReturnedSaurus320
 				(gCurRoom newRoom: 290)
 			)
 		)

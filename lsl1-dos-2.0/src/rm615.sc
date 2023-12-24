@@ -28,7 +28,7 @@
 
 	(method (init)
 		(gEgo init: hide:)
-		(SetFlag 45)
+		(SetFlag 45) ; fLookedAtFawn
 		(herMouth cycleSpeed: (+ 2 global101) init:)
 		(rightEye cycleSpeed: (+ 2 global101) init:)
 		(leftEye cycleSpeed: (+ 2 global101) init:)
@@ -38,33 +38,33 @@
 		(fawnNeck init:)
 		(super init:)
 		(if gDebugging
-			(SetFlag 60)
-			(SetFlag 62)
-			(SetFlag 61)
-			(SetFlag 3)
+			(SetFlag 60) ; pGaveFawnRose
+			(SetFlag 62) ; pGaveFawnCandy
+			(SetFlag 61) ; pGaveFawnDiamond
+			(SetFlag 3) ; fDancedWithFawn
 		)
 	)
 
 	(method (doit)
 		(super doit: &rest)
 		(cond
-			((and (IsFlag 60) (IsFlag 62) (IsFlag 61) (not (IsFlag 3)))
+			((and (IsFlag 60) (IsFlag 62) (IsFlag 61) (not (IsFlag 3))) ; pGaveFawnRose, pGaveFawnCandy, pGaveFawnDiamond, fDancedWithFawn
 				(Print 615 0) ; "So, Fawn, have I given you enough presents that you would dance with me?"
 				(Print 615 1) ; "But, of course, Larry," Fawn replies, "You should have asked sooner!"
-				(SetFlag 31)
+				(SetFlag 31) ; fReadyToDance
 				(HandsOff)
 				(gCurRoom newRoom: 610)
 			)
 			(
 				(and
-					(IsFlag 60)
-					(IsFlag 62)
-					(IsFlag 61)
-					(IsFlag 3)
-					(not (IsFlag 10))
+					(IsFlag 60) ; pGaveFawnRose
+					(IsFlag 62) ; pGaveFawnCandy
+					(IsFlag 61) ; pGaveFawnDiamond
+					(IsFlag 3) ; fDancedWithFawn
+					(not (IsFlag 10)) ; fFawnAskedForBucks
 				)
 				(= moneyTimer 400)
-				(SetFlag 10)
+				(SetFlag 10) ; fFawnAskedForBucks
 				(Print 615 2) ; "Oooh, you're so sweet. I just LOVE you! Larry, I want you to make wild, passionate love to me!"
 				(Print 615 3) ; "(All right, Larry. At last, you're gonna get lucky!!)"
 				(Print 615 4) ; "She continues, "But first, we must get married. I could never make love to a man unless he's my husband. If you would loan me two hundred dollars, I'd rent the Honeymoon Suite at the Casino Hotel for us. Then, after we're married, we'll celebrate there.""
@@ -270,7 +270,7 @@
 						)
 					)
 					(else
-						(if (IsFlag 10)
+						(if (IsFlag 10) ; fFawnAskedForBucks
 							(Print 615 19) ; "So, how about it, Larry?" Fawn says in her petite voice. "May I have a measly hundred bucks, or not?"
 						else
 							(Print 615 20) ; "I'd really like to get to know you better," you say. "What kind of girl are you, anyway?"
@@ -286,10 +286,10 @@
 				)
 			)
 			(3 ; Do
-				(if (IsFlag 3)
+				(if (IsFlag 3) ; fDancedWithFawn
 					(Print 615 25) ; "Not again. That trip through the ceiling gave me a headache!"
 				else
-					(SetFlag 31)
+					(SetFlag 31) ; fReadyToDance
 					(if (!= (gCurRoom script:) sSmile)
 						(gCurRoom setScript: sSmile)
 					)
@@ -316,13 +316,13 @@
 				(switch invItem
 					(0 ; wallet
 						(cond
-							((not (IsFlag 10))
+							((not (IsFlag 10)) ; fFawnAskedForBucks
 								(Print 615 30) ; "Well, really. I'm not that kind of girl!!"
 								(if (!= (gCurRoom script:) sFrown)
 									(gCurRoom setScript: sFrown)
 								)
 							)
-							((and (IsFlag 10) (<= gLarryDollars 200))
+							((and (IsFlag 10) (<= gLarryDollars 200)) ; fFawnAskedForBucks
 								(= moneyTimer 0)
 								(Printf 615 31 gLarryDollars) ; "Uh, gosh, Fawn," you mumble. "I've only got $%d.00 bucks on me!"
 								(Print 615 32) ; "I'm sorry, but I'll need at least a hundred dollars," she says with a coy smile. "You know it'll be worth it!"
@@ -331,12 +331,12 @@
 								(Print 615 35) ; "Conveniently, she offers, "I'll wait right here until you return.""
 								(Print 615 36) ; "Gee, Larry, this is working out swell."
 							)
-							((and (IsFlag 10) (> gLarryDollars 200))
+							((and (IsFlag 10) (> gLarryDollars 200)) ; fFawnAskedForBucks
 								(Points 63 7)
 								(Print 615 37) ; "Ooh you're so sweet. I just love money."
 								(Print 615 38) ; "Thanks, Larry. You won't regret this. Meet me at the Marriage Chapel near the Casino in a few minutes. I'll get us a room. Hurry, Larry, I can hardly wait!"
-								(SetFlag 32)
-								(SetFlag 14)
+								(SetFlag 32) ; fReadyToMarry
+								(SetFlag 14) ; fFawnLeaves
 								(if (!= (gCurRoom script:) sSmile)
 									(gCurRoom setScript: sSmile)
 								)

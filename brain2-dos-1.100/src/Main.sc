@@ -165,7 +165,7 @@
 	global111
 	global112
 	global113
-	global114
+	gDifficulty
 	; 115
 	global115 = 1
 	global116
@@ -426,10 +426,10 @@
 			param1
 			0
 			0
-			(switch global114
-				(0 {Novice})
-				(1 {Standard})
-				(2 {Expert})
+			(switch gDifficulty
+				(0 {Novice}) ; Novice
+				(1 {Standard}) ; Standard
+				(2 {Expert}) ; Expert
 			)
 		)
 	)
@@ -566,10 +566,10 @@
 
 	(method (detailLevel param1)
 		(if argc
-			(= global114 (/ param1 5))
+			(= gDifficulty (/ param1 5))
 			(SL doit:)
 		)
-		(return (* global114 7))
+		(return (* gDifficulty 7))
 	)
 
 	(method (quitGame &tmp temp0)
@@ -644,7 +644,7 @@
 					(if (FileIO fiEXISTS @temp1)
 						(event claimed: 0)
 						(if (== (event message:) KEY_ALT_t)
-							(proc5_2)
+							(HandsOn)
 							(Palette palSET_INTENSITY 0 255 100)
 						)
 						((ScriptID 800) handleEvent: event) ; MISSING SCRIPT

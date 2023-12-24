@@ -63,7 +63,7 @@
 		(door init:)
 		(if (OneOf gPrevRoomNum 210 215 220)
 			(gEgo posn: 158 100 hide:)
-			(SetFlag 2)
+			(SetFlag 2) ; fInMainGame
 			(self setScript: zapInScript)
 		)
 		(= gSpellChecker gAllChecker)
@@ -151,8 +151,8 @@
 			)
 			(5
 				(= gRoomExitDir 1)
-				(SetFlag 28)
-				(ClearFlag 2)
+				(SetFlag 28) ; fTeleporting
+				(ClearFlag 2) ; fInMainGame
 				(gCurRoom newRoom: 210)
 			)
 		)
@@ -232,9 +232,9 @@
 				(= cycles 2)
 			)
 			(6
-				(if (and (== gPrevRoomNum 220) (not (IsFlag 65)))
+				(if (and (== gPrevRoomNum 220) (not (IsFlag 65))) ; fPassedTest
 					(HighPrint 229 5) ; "You hear the voices."
-					(if (IsFlag 162)
+					(if (IsFlag 162) ; fRanOutaMagic
 						(VoicesPrint 229 6) ; "Our time is much too valuable to be wasted upon one with so little magic. Do not bother returning until you have acquired more power."
 					else
 						(VoicesPrint 229 7) ; "You will certainly have to be more clever and more skilled if you hope to be initiated. Perhaps you should practice your spells more."
@@ -293,7 +293,7 @@
 	)
 
 	(method (openMe)
-		(if (IsFlag 65)
+		(if (IsFlag 65) ; fPassedTest
 			(Print 229 8) ; "Nothing happens."
 			(return 0)
 		else

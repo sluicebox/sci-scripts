@@ -46,7 +46,7 @@
 		)
 		(switch gPrevRoomNum
 			(360
-				(if (IsFlag 6)
+				(if (IsFlag 6) ; fEveHasApple
 					(gEgo
 						egoSpeed: (+ 3 gHowFast)
 						init:
@@ -95,14 +95,14 @@
 		(fDoor init: approachVerbs: 3 4 10 11 2) ; Do, Inventory, Zipper, Taste/Smell, Look
 		(InitRoomFeas)
 		(cond
-			((and (IsFlag 23) (IsFlag 29))
+			((and (IsFlag 23) (IsFlag 29)) ; fOpenedDoor, fPuncturedDoll
 				(door init: setLoop: 1 setCel: 0 stopUpd:)
 			)
-			((and (IsFlag 23) (not (IsFlag 29)))
+			((and (IsFlag 23) (not (IsFlag 29))) ; fOpenedDoor, fPuncturedDoll
 				(flatDoll init: approachVerbs: 3 4 10 11) ; Do, Inventory, Zipper, Taste/Smell
 				(door init: setLoop: 0 setCel: 3 stopUpd:)
 			)
-			((and (not (IsFlag 23)) (not (IsFlag 29)))
+			((and (not (IsFlag 23)) (not (IsFlag 29))) ; fOpenedDoor, fPuncturedDoll
 				(door cycleSpeed: (+ 3 gHowFast) init:)
 			)
 		)
@@ -200,7 +200,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(if (and (== (door cel:) 0) (not (IsFlag 23)))
+				(if (and (== (door cel:) 0) (not (IsFlag 23))) ; fOpenedDoor
 					(= cycles 1)
 				else
 					(Print 370 0) ; "The closet door is already open."
@@ -209,7 +209,7 @@
 			)
 			(1
 				(gEgo view: 808 setLoop: 2 setCel: 0 setCycle: Beg self)
-				(SetFlag 23)
+				(SetFlag 23) ; fOpenedDoor
 			)
 			(2
 				(gTheMusic3 number: 801 loop: 1 flags: 1 play:)
@@ -218,7 +218,7 @@
 				(= cycles 1)
 			)
 			(3
-				(if (not (IsFlag 29))
+				(if (not (IsFlag 29)) ; fPuncturedDoll
 					(flatDoll init: approachVerbs: 3 4 10 11) ; Do, Inventory, Zipper, Taste/Smell
 				)
 				(= cycles 1)
@@ -240,7 +240,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(if (not (IsFlag 58))
+				(if (not (IsFlag 58)) ; pDidDoll
 					(Print 370 1) ; "Walking out of the closet, you clumsily catch your new latex friend on a protruding nail! There's a loud, flatulent sound, and suddenly..."
 				)
 				(gEgo z: 0 show:)
@@ -264,8 +264,8 @@
 				(gEgo egoSpeed: setMotion: PolyPath 56 119 self)
 			)
 			(3
-				(SetFlag 4)
-				(SetFlag 29)
+				(SetFlag 4) ; fDollFlies
+				(SetFlag 29) ; fPuncturedDoll
 				(gCurRoom newRoom: 360)
 			)
 		)
@@ -316,7 +316,7 @@
 			)
 			(2
 				(= seconds 0)
-				(if (not (IsFlag 23))
+				(if (not (IsFlag 23)) ; fOpenedDoor
 					(door setCycle: End self)
 					(gTheMusic3 number: 801 loop: 1 flags: 1 play:)
 				else
@@ -426,7 +426,7 @@
 			(23
 				(aKen dispose:)
 				(Print 370 21 #at -1 20) ; "Love ya, baby!"
-				(SetFlag 46)
+				(SetFlag 46) ; fCredits
 				(gCurRoom newRoom: 375)
 			)
 		)
@@ -578,13 +578,13 @@
 			)
 			(2 ; Look
 				(cond
-					((and (door cel:) (not (IsFlag 29)))
+					((and (door cel:) (not (IsFlag 29))) ; fPuncturedDoll
 						(Print 370 26) ; "You've found a closet full of uninteresting stuff, plus one inflatable doll."
 					)
-					((and (IsFlag 29) (door cel:))
+					((and (IsFlag 29) (door cel:)) ; fPuncturedDoll
 						(Print 370 25) ; "The rest of the closet is rather dull compared to the inflatable doll."
 					)
-					((and (IsFlag 29) (IsFlag 23))
+					((and (IsFlag 29) (IsFlag 23)) ; fPuncturedDoll, fOpenedDoor
 						(Print 370 27) ; "Peering into the empty closet brings back sad but dear memories of your latex friend."
 					)
 					(else

@@ -264,7 +264,7 @@
 				(= seconds (PrintPlot))
 			)
 			(4
-				(SetFlag 22)
+				(SetFlag 22) ; beenIn250
 				(Format @string 250 18) ; "Surely, it won't make any difference to Ken. My meteoric rise through the ranks of `Natives, Inc.' is because of my superior managerial abilities, not just because I married the boss' daughter!"
 				(= seconds (PrintPlot))
 			)
@@ -397,7 +397,7 @@
 				(= cycles 16)
 			)
 			(9
-				(SetFlag 29)
+				(SetFlag 29) ; sawCredits250
 				(aCredit1 setCycle: Beg)
 				(aCredit2 setCycle: Beg self)
 			)

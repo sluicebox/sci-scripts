@@ -339,11 +339,11 @@
 							(not ((ScriptID 291 0) inited:)) ; gearsPuzzle
 						)
 						((ScriptID 291 0) init:) ; gearsPuzzle
-						(= local1 global114)
+						(= local1 gDifficulty)
 					)
-					((!= local1 global114)
+					((!= local1 gDifficulty)
 						((ScriptID 291 0) dispose: init:) ; gearsPuzzle
-						(= local1 global114)
+						(= local1 gDifficulty)
 					)
 				)
 				(switch ((ScriptID 291 0) show:) ; gearsPuzzle
@@ -384,11 +384,11 @@
 							(not ((ScriptID 293 0) inited:)) ; weightsPuzzle
 						)
 						((ScriptID 293 0) init:) ; weightsPuzzle
-						(= local0 global114)
+						(= local0 gDifficulty)
 					)
-					((!= local0 global114)
+					((!= local0 gDifficulty)
 						((ScriptID 293 0) dispose: init:) ; weightsPuzzle
-						(= local0 global114)
+						(= local0 gDifficulty)
 					)
 				)
 				(switch ((ScriptID 293 0) show:) ; weightsPuzzle

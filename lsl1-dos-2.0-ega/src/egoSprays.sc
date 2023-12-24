@@ -20,14 +20,14 @@
 
 	(method (dispose)
 		(super dispose:)
-		(ClearFlag 5)
+		(ClearFlag 5) ; fEgoUsingSpray
 		(DisposeScript 812)
 	)
 
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(SetFlag 5)
+				(SetFlag 5) ; fEgoUsingSpray
 				(HandsOff)
 				(if (!= (gEgo loop:) 1)
 					(gEgo setHeading: 90)
@@ -70,9 +70,9 @@
 			(7
 				(++ gSprayCounter)
 				(= gSpraySeconds 600)
-				(ClearFlag 20)
-				(if (IsFlag 21)
-					(ClearFlag 21)
+				(ClearFlag 20) ; fMouthSmellsBad
+				(if (IsFlag 21) ; fNearPerson
+					(ClearFlag 21) ; fNearPerson
 					(Print 812 1) ; "It's about time!!"
 				)
 				(if (> gSprayCounter 9)

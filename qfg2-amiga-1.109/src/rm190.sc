@@ -549,7 +549,7 @@
 				(Say azizaVoice self (Format @str 190 6 @gUserName)) ; "You will find her within a day's ride to the east, at the base of the mountains. May you heal the healer, %s."
 			)
 			(31
-				(SetFlag 44)
+				(SetFlag 44) ; fHeardPlant
 				(self dispose:)
 			)
 			(32

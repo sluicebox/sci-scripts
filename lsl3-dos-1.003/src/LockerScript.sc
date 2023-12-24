@@ -38,7 +38,7 @@
 					(Format @name3 45 1 46 gLockerCombination3) ; "%s"
 					(Printf 45 2 @name1 @name2 @name3) ; "Don't you ever take notes? It says, "%s," "%s," and "%s!""
 				else
-					(SetFlag 44)
+					(SetFlag 44) ; scoredCombination
 					(Format @name1 45 1 46 (= gLockerCombination1 0)) ; "%s"
 					(while (== 32 (StrAt @name1 0))
 						(= gLockerCombination1 (Random 1 24))

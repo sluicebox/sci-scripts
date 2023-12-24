@@ -278,16 +278,16 @@
 		(Load rsVIEW 220)
 		(Load rsPIC 220)
 		(self add: puzzleCoin2 puzzleOK2 puzzleHelp2)
-		(switch global114
-			(0
+		(switch gDifficulty
+			(0 ; Novice
 				(= local730 8)
 				(= local739 8)
 			)
-			(1
+			(1 ; Standard
 				(= local730 12)
 				(= local739 6)
 			)
-			(2
+			(2 ; Expert
 				(= local730 16)
 				(= local739 5)
 			)
@@ -320,8 +320,8 @@
 								(<< $0001 (mod temp1 16))
 							)
 						)
-						(switch global114
-							(0
+						(switch gDifficulty
+							(0 ; Novice
 								(= temp3
 									(+
 										[local0 temp1]
@@ -329,7 +329,7 @@
 									)
 								)
 							)
-							(1
+							(1 ; Standard
 								(= temp3
 									(+
 										[local0 temp1]
@@ -337,7 +337,7 @@
 									)
 								)
 							)
-							(2
+							(2 ; Expert
 								(= temp3 (- [local0 (+ temp1 1)] 1))
 							)
 						)
@@ -658,7 +658,7 @@
 				(= local746 gGameTime)
 				(if (> (++ local747) idleTime)
 					(if (not puzzleStatus)
-						(proc15_0 self 1 9 0 (Random 1 16) 0 20)
+						(Say self 1 9 0 (Random 1 16) 0 20)
 					)
 					(= local747 0)
 				)
@@ -929,15 +929,15 @@
 						(self showHelp: 1)
 					)
 					(KEY_k
-						(proc15_0 self 33 46 0 0 0 1)
+						(Say self 33 46 0 0 0 1) ; "|c4|KEYBOARD SUPPORT:|c|  |c4|ENTER|c| - Select |c4|Arrow keys|c| - Move the cursor up, down, left, or right |c4|ESC|c|ape - Exit puzzle |c4|?|c| - Brings up puzzle instructions |c4|k|c| - View this screen"
 						(if (Message msgSIZE msgModule noun 46 0 1)
-							(proc15_0 self noun 46 0 0 0 msgModule)
+							(Say self noun 46 0 0 0 msgModule) ; MISSING MESSAGE
 						)
 					)
 					(KEY_K
-						(proc15_0 self 33 46 0 0 0 1)
+						(Say self 33 46 0 0 0 1) ; "|c4|KEYBOARD SUPPORT:|c|  |c4|ENTER|c| - Select |c4|Arrow keys|c| - Move the cursor up, down, left, or right |c4|ESC|c|ape - Exit puzzle |c4|?|c| - Brings up puzzle instructions |c4|k|c| - View this screen"
 						(if (Message msgSIZE msgModule noun 46 0 1)
-							(proc15_0 self noun 46 0 0 0 msgModule)
+							(Say self noun 46 0 0 0 msgModule) ; MISSING MESSAGE
 						)
 					)
 					(KEY_F2
@@ -1088,7 +1088,7 @@
 			(DrawPic 220 9 1)
 			(Animate (animalCast elements:) 0)
 			(localproc_2 28 1 temp2 temp3 temp4 temp5)
-			(if (== global114 0)
+			(if (== gDifficulty 0) ; Novice
 				(gCSoundFX number: 154 setLoop: 0 play: 127)
 			)
 			(Wait 0)
@@ -1102,7 +1102,7 @@
 					(= [local735 temp0] 0)
 				)
 			)
-			(if (not (== global114 0))
+			(if (not (== gDifficulty 0)) ; Novice
 				(Wait 0)
 				(Wait 30)
 				(if temp1

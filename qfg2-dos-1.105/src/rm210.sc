@@ -67,7 +67,7 @@
 		(NormalEgo)
 		(gCSound number: 211)
 		(cond
-			((IsFlag 65)
+			((IsFlag 65) ; fPassedTest
 				(= inOut 3)
 				(self setScript: passedTestS)
 			)
@@ -75,14 +75,14 @@
 				(= inOut 3)
 				(self setScript: passedPretestS)
 			)
-			((IsFlag 64)
+			((IsFlag 64) ; fPassedPretest
 				(= entranceScript playItAgainS)
 			)
-			((IsFlag 63)
+			((IsFlag 63) ; fWITSponsor
 				(= entranceScript failedPretestS)
 			)
 			(else
-				(SetFlag 28)
+				(SetFlag 28) ; fTeleporting
 				(gCSound number: 210)
 				(= entranceScript whoBU)
 			)
@@ -194,13 +194,13 @@
 						)
 						((and (== whichQuestion 1) (== whichStr 2))
 							(TrySkill 13 100) ; communication
-							(SetFlag 66)
+							(SetFlag 66) ; fWITName
 							(= whichQuestion 0)
 							(whoBU cue:)
 						)
 						((and (== whichQuestion 2) (<= 3 whichStr 6))
 							(TrySkill 13 100) ; communication
-							(SetFlag 183)
+							(SetFlag 183) ; fWITWhyHere
 							(= whichQuestion 0)
 							(whoBU cue:)
 						)
@@ -258,7 +258,7 @@
 								)
 								(13
 									(= whichQuestion 0)
-									(SetFlag 63)
+									(SetFlag 63) ; fWITSponsor
 									(HighPrint 210 18) ; "There is a moment of silence."
 									(WhoPrint 7 210 19) ; "Do you actually request such a ... whimsical Wizard to be your sponsor?"
 									(WhoPrint 8 210 20) ; "It was the choice he made."
@@ -337,24 +337,24 @@
 	(method (changeState newState &tmp [tmpName 21])
 		(switch (= state newState)
 			(0
-				(if (not (IsFlag 62))
+				(if (not (IsFlag 62)) ; f210
 					(SolvePuzzle 684 11 1)
 					(HighPrint 210 47) ; "You have entered a very strange place The path you walk upon seems to be carved from ivory. The walls around you seem carved of marble."
 					(HighPrint 210 48) ; "Between the walls and the path is a gap through which you view total darkness when you look down. When you look up, you see the same limitless black."
 					(HighPrint 210 49) ; "You have a funny feeling you aren't in Shapeir anymore."
 					(HighPrint 210 50) ; "You have been walking through halls hung with the portraits of many Wizards. At last, you come to some pictures that you recognize."
-					(SetFlag 62)
+					(SetFlag 62) ; f210
 				)
 				(cond
-					((not (IsFlag 66))
+					((not (IsFlag 66)) ; fWITName
 						(HighPrint 210 51) ; "You hear several voices."
 						(WhoPrint 11 210 52) ; "Who are you that enters the lofty portals of the Wizard's Institute of Technocery?"
 						(= whichQuestion 1)
 					)
-					((not (IsFlag 183))
+					((not (IsFlag 183)) ; fWITWhyHere
 						(self cue:)
 					)
-					((not (IsFlag 63))
+					((not (IsFlag 63)) ; fWITSponsor
 						(self changeState: 2)
 					)
 				)
@@ -391,7 +391,7 @@
 				(erasmusPic setCycle: Beg self)
 			)
 			(3
-				(SetFlag 64)
+				(SetFlag 64) ; fPassedPretest
 				(WhoPrint 11 210 55) ; "You have shown yourself to be resourceful in your use of spells under simple conditions. To become a Wizard, you must prove that you are capable of using magic under time-critical and life-threatening conditions."
 				(cond
 					((not (and (gEgo knows: 27) (gEgo knows: 28))) ; forceBoltSpell, levitateSpell

@@ -157,12 +157,12 @@
 
 	(method (dispose)
 		(SL code: gDftStatusCode)
-		(SetFlag 2)
+		(SetFlag 2) ; fInMainGame
 		(super dispose:)
 	)
 
 	(method (init)
-		(ClearFlag 2)
+		(ClearFlag 2) ; fInMainGame
 		(SL code: endStatus enable:)
 		(super init: &rest)
 		(gCSound stop:)

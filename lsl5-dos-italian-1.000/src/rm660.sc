@@ -125,7 +125,7 @@
 		(switch gPrevRoomNum
 			(south
 				(gEgo posn: 292 250)
-				(if (IsFlag 19)
+				(if (IsFlag 19) ; fBeenIn660
 					(gCurRoom setScript: sWalkIn)
 				else
 					(gCurRoom setScript: sEntersRoom)
@@ -213,7 +213,7 @@
 		(switch (= state newState)
 			(0
 				(HandsOff)
-				(SetFlag 19)
+				(SetFlag 19) ; fBeenIn660
 				(= cycles 1)
 			)
 			(1
@@ -764,7 +764,7 @@
 				(= ticks 120)
 			)
 			(18
-				(SetFlag 29)
+				(SetFlag 29) ; fBeenInBaltimore
 				(gCurRoom newRoom: 200 7)
 				(self dispose:)
 			)
@@ -964,7 +964,7 @@
 				(= cycles 3)
 			)
 			(34
-				(SetFlag 20)
+				(SetFlag 20) ; fChampagneSolution
 				(gCurRoom newRoom: 690)
 			)
 		)

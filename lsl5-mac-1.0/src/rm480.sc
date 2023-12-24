@@ -66,7 +66,7 @@
 		(LoadMany rsSOUND 100)
 		(copter init: setCycle: Fwd)
 		(super init:)
-		(if (IsFlag 47)
+		(if (IsFlag 47) ; fFFto480
 			(gTheMusic number: 462 flags: 1 setLoop: -1 setVol: 127 play:)
 		)
 		(gTheMusic2 number: 468 flags: 1 setLoop: -1 setVol: 127 play:)

@@ -33,7 +33,7 @@
 		(EgoGait -1 0)
 		(gEgo loop: (+ theLoop 4) setLoop: -1)
 		(gEgo looper: savedLooper)
-		(ClearFlag 87)
+		(ClearFlag 87) ; fCastingSpell
 		(HandsOn)
 		(super dispose:)
 	)
@@ -42,7 +42,7 @@
 		(switch (= state newState)
 			(0
 				(HandsOff)
-				(SetFlag 87)
+				(SetFlag 87) ; fCastingSpell
 				(= savedLooper (gEgo looper:))
 				(gEgo looper: 0)
 				(gEgo
@@ -142,7 +142,7 @@
 						(HighPrint 64 1) ; "Your weapon is now magically charged."
 					)
 					(29
-						(SetFlag 86)
+						(SetFlag 86) ; fReversal
 						(= gReversalTimer [gEgoStats 29]) ; invisibility
 						(HighPrint 64 2) ; "You are now protected by the power of Reversal."
 					)

@@ -26,7 +26,7 @@
 	)
 
 	(method (init)
-		(SetFlag 37)
+		(SetFlag 37) ; beenIn510
 		(Load rsVIEW 511)
 		(Load rsVIEW 812)
 		(Load rsSOUND 6)
@@ -171,7 +171,7 @@
 			)
 			(10
 				(gGame changeScore: 42)
-				(SetFlag 6)
+				(SetFlag 6) ; drankRiverWater
 				(NormalEgo 1)
 				(= gEgoState 0)
 				(Print 510 10) ; "You find the stream's water remarkably refreshing, without a trace of caffeine."

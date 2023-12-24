@@ -47,8 +47,8 @@
 		)
 		(= gSpeed 0)
 		(= machineSpeed 0)
-		(= fastThreshold (if (IsFlag 44) 90 else 60))
-		(= mediumThreshold (if (IsFlag 44) 39 else 15))
+		(= fastThreshold (if (IsFlag 44) 90 else 60)) ; isVga
+		(= mediumThreshold (if (IsFlag 44) 39 else 15)) ; isVga
 	)
 
 	(method (doit)

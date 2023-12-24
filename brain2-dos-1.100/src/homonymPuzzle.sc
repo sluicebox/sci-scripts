@@ -40,7 +40,7 @@
 (procedure (localproc_0 &tmp temp0 [temp1 10])
 	(for
 		((= temp0 0))
-		(Message msgGET 262 (+ temp0 1) [local109 global114] 2 1)
+		(Message msgGET 262 (+ temp0 1) [local109 gDifficulty] 2 1)
 		((++ temp0))
 	)
 	(return temp0)
@@ -152,7 +152,7 @@
 			numberOfLines: 2
 			wordsArray: @local101
 			theHeight: 16
-			init: 262 local113 [local109 global114] 2 0 260
+			init: 262 local113 [local109 gDifficulty] 2 0 260
 		)
 		((= local6 (IconSentence new:))
 			theWidth: 279
@@ -164,9 +164,9 @@
 			wordsArray: @[local101 4]
 			lineHeight: 8
 			nsTop: 113
-			init: 262 local113 [local109 global114] 3 1 260
+			init: 262 local113 [local109 gDifficulty] 3 1 260
 		)
-		(= temp0 (proc15_6 262 local113 [local109 global114] 1))
+		(= temp0 (proc15_6 262 local113 [local109 gDifficulty] 1))
 		(= temp1 (= local7 (+ (local5 numWords:) (local6 numWords:))))
 		(if temp0
 			(++ temp1)
@@ -179,7 +179,7 @@
 				msgGET
 				262
 				local113
-				[local109 global114]
+				[local109 gDifficulty]
 				4
 				(+ temp3 1)
 				[local87 temp2]
@@ -194,7 +194,7 @@
 				msgGET
 				262
 				local113
-				[local109 global114]
+				[local109 gDifficulty]
 				5
 				(+ temp3 1)
 				[local87 temp2]
@@ -209,7 +209,7 @@
 				msgGET
 				262
 				local113
-				[local109 global114]
+				[local109 gDifficulty]
 				1
 				local112
 				[local87 temp2]
@@ -278,7 +278,7 @@
 	(method (buyClue &tmp temp0 temp1 [temp2 50] temp52)
 		(if (super buyClue: &rest)
 			(= temp52 0)
-			(= temp0 (Memory memALLOC_CRIT (+ 400 (* 200 global114))))
+			(= temp0 (Memory memALLOC_CRIT (+ 400 (* 200 gDifficulty))))
 			(StrAt temp0 0 0)
 			(for ((= temp1 0)) (< temp1 local7) ((++ temp1))
 				(if
@@ -286,7 +286,7 @@
 						msgGET
 						263
 						local113
-						[local109 global114]
+						[local109 gDifficulty]
 						1
 						(+ temp1 1)
 						@temp2
@@ -306,7 +306,7 @@
 					msgGET
 					263
 					local113
-					[local109 global114]
+					[local109 gDifficulty]
 					1
 					(+ temp1 local112)
 					@temp2
@@ -544,7 +544,7 @@
 				(parent showSentence:)
 				(homonymPuzzle eachElementDo: #show)
 				(if (== (modifiers value:) value)
-					(if (and (== global114 0) (= temp0 (localproc_2 value)))
+					(if (and (== gDifficulty 0) (= temp0 (localproc_2 value))) ; Novice
 						(Wait 0)
 						(Wait 15)
 						(gCSoundFX number: 247 setLoop: 1 play:)
@@ -559,7 +559,7 @@
 					)
 					(if
 						(and
-							(< global114 2)
+							(< gDifficulty 2) ; Expert
 							(= temp1
 								(localproc_3
 									(parent wordsArray:)

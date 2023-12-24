@@ -370,11 +370,11 @@
 				(script changeState: 2)
 			)
 			(1
-				(proc15_0 0 noun 4)
+				(Say 0 noun 4) ; "You overhear an important transmission:"
 				(= temp0 1)
 				(= temp1 (Random 6 local31))
 				(while (Message msgSIZE 260 noun 4 temp1 temp0)
-					(proc15_0 0 noun 4 temp1 temp0 0 260)
+					(Say 0 noun 4 temp1 temp0 0 260)
 					(++ temp0)
 				)
 			)
@@ -582,11 +582,11 @@
 				(cond
 					((< [local0 0] 0)
 						((ScriptID 265 0) init:) ; synonymPuzzle
-						(= [local0 0] global114)
+						(= [local0 0] gDifficulty)
 					)
-					((!= [local0 0] global114)
+					((!= [local0 0] gDifficulty)
 						((ScriptID 265 0) dispose: init:) ; synonymPuzzle
-						(= [local0 0] global114)
+						(= [local0 0] gDifficulty)
 					)
 				)
 				(switch ((ScriptID 265 0) show:) ; synonymPuzzle
@@ -630,11 +630,11 @@
 				(cond
 					((< [local0 1] 0)
 						((ScriptID 270 0) init:) ; homonymPuzzle
-						(= [local0 1] global114)
+						(= [local0 1] gDifficulty)
 					)
-					((!= [local0 1] global114)
+					((!= [local0 1] gDifficulty)
 						((ScriptID 270 0) dispose: init:) ; homonymPuzzle
-						(= [local0 1] global114)
+						(= [local0 1] gDifficulty)
 					)
 				)
 				(switch ((ScriptID 270 0) show:) ; homonymPuzzle
@@ -678,11 +678,11 @@
 				(cond
 					((< [local0 2] 0)
 						((ScriptID 275 0) init:) ; antonymPuzzle
-						(= [local0 2] global114)
+						(= [local0 2] gDifficulty)
 					)
-					((!= [local0 2] global114)
+					((!= [local0 2] gDifficulty)
 						((ScriptID 275 0) dispose: init:) ; antonymPuzzle
-						(= [local0 2] global114)
+						(= [local0 2] gDifficulty)
 					)
 				)
 				(switch ((ScriptID 275 0) show:) ; antonymPuzzle

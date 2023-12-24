@@ -10,8 +10,8 @@
 
 (public
 	proc5_0 0
-	proc5_1 1
-	proc5_2 2
+	HandsOff 1
+	HandsOn 2
 	proc5_3 3
 	proc5_4 4
 	IsFlag 5
@@ -32,7 +32,7 @@
 	[local1 4]
 )
 
-(procedure (proc5_1)
+(procedure (HandsOff)
 	(if (not global122)
 		(User canControl: 0 canInput: 0)
 		(gTheIconBar disable:)
@@ -41,7 +41,7 @@
 	(++ global122)
 )
 
-(procedure (proc5_2 param1 &tmp temp0 temp1)
+(procedure (HandsOn param1 &tmp temp0 temp1)
 	(if (or (and argc param1) (<= (-- global122) 0))
 		(= global122 0)
 		(User canControl: 1 canInput: 1)

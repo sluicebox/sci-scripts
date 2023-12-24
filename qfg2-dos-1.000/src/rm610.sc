@@ -106,7 +106,7 @@
 		(Load rsTEXT 615)
 		(Load rsSOUND 12 15 16 34)
 		(SolvePuzzle 640 5)
-		(SetFlag 116)
+		(SetFlag 116) ; fLightOn
 		(= gEgoGait 4) ; holdingLamp
 		(NormalEgo)
 		(gEgo loop: 5 posn: 244 120 init:)
@@ -534,7 +534,7 @@
 				(= [gEgoStats 16] (MaxHealth)) ; health
 				(= [gEgoStats 18] (MaxMana)) ; mana
 				(= [gEgoStats 17] (MaxStamina)) ; stamina
-				(ClearFlag 7)
+				(ClearFlag 7) ; fWornOut
 				(= cycles 8)
 			)
 			(2
@@ -695,7 +695,7 @@
 			)
 			(5
 				(= gEgoGait 0) ; walking
-				(SetFlag 96)
+				(SetFlag 96) ; fTeleFromIblis
 				(gCurRoom newRoom: 460)
 			)
 		)

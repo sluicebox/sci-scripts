@@ -350,10 +350,10 @@
 		354
 		1
 		0
-		(switch global114
-			(0 1)
-			(1 2)
-			(2 3)
+		(switch gDifficulty
+			(0 1) ; Novice
+			(1 2) ; Standard
+			(2 3) ; Expert
 		)
 		(= temp1 (Random 1 35))
 		param1
@@ -642,7 +642,7 @@
 	(method (showHelp param1)
 		(super showHelp: param1 &rest)
 		(if (and (not (& state $2000)) param1 shown)
-			(proc15_0
+			(Say
 				self
 				noun
 				0
@@ -749,7 +749,7 @@
 				(= cycles 1)
 			)
 			(1
-				(proc15_0 music 2 0 8 0)
+				(Say music 2 0 8 0) ; "|c2|Lesson 1 - Sight Reading:|c| Listen and read each note as it is displayed on the staff then click the corresponding key on the keyboard. If you need help, just use your Hint Watch."
 				(localproc_2 44 38 @local91)
 				(= local211 0)
 				(= local217 -1)
@@ -829,11 +829,11 @@
 				(= cycles 1)
 			)
 			(1
-				(proc15_0 music 2 0 9 0)
+				(Say music 2 0 9 0) ; "|c2|Lesson 2 - Placing Notes:|c| Listen and watch each key on the keyboard as it is played. Place the corresponding note onto the music staff. If you get stuck, just use your Hint Watch."
 				(music eachElementDo: #perform kbSwitch 1)
 				(localproc_7)
 				(localproc_10 @local91)
-				(if global114
+				(if gDifficulty
 					(music eachElementDo: #perform noEditNotes 6 1)
 				)
 				(replayBut signal: (& (replayBut signal:) $fffb) show:)
@@ -967,7 +967,7 @@
 				(= cycles 1)
 			)
 			(1
-				(proc15_0 music 2 0 10 0)
+				(Say music 2 0 10 0) ; "|c2|Lesson 3 - Memorize The Tune:|c| Listen to the song and observe each note as it is displayed on the music staff. Your goal is to memorize the tune. After the musical staff clears, reconstruct the tune from memory by placing notes on the staff. You may press the |c1|repeat button|c| to hear the song again. If you get stuck, use your Hint Watch."
 				(replayBut signal: (& (replayBut signal:) $fffb) show:)
 				(localproc_10 @local91)
 				(for ((= register 0)) (< register 15) ((++ register))
@@ -981,7 +981,7 @@
 							)
 					)
 				)
-				(if global114
+				(if gDifficulty
 					(music eachElementDo: #perform noEditNotes 1 1)
 				else
 					(StrCpy @local151 @local91)
@@ -1012,7 +1012,7 @@
 						(+ 1 (* (/ (localproc_8 @local91 @local151) 3) 3))
 					)
 					(-= state 3)
-					(proc15_0 music 2 0 12)
+					(Say music 2 0 12) ; "Oops! That's not quite it. Listen again."
 				else
 					(fineBut signal: (| (fineBut signal:) $0004) mask: 0)
 					(replayBut signal: (| (playBut signal:) $0004) mask: 0)
@@ -1022,7 +1022,7 @@
 				(= cycles 1)
 			)
 			(5
-				(proc15_0 music 2 0 13)
+				(Say music 2 0 13) ; "|c2|Free Play:|c| You have mastered all three lessons! Just click on 'EXIT' at anytime when you're through. If you'd like to play Dr. Brain's keyboard some more, you may play anything you wish."
 				(music eachElementDo: #perform noEditNotes 1 1)
 				(self dispose:)
 			)
@@ -1283,7 +1283,7 @@
 				(if param1
 					(if (not local215)
 						(localproc_6 @local151 modifiers)
-						(if (and (== (music script:) partThree) (not global114))
+						(if (and (== (music script:) partThree) (not gDifficulty))
 							(= local219 (- (StrAt @local151 modifiers) 46))
 						)
 					)
@@ -1542,7 +1542,7 @@
 	(method (doit param1 &tmp temp0 temp1)
 		(if (== (param1 name:) {place})
 			(= temp1
-				(if (or (!= (music script:) partThree) global114)
+				(if (or (!= (music script:) partThree) gDifficulty)
 					local211
 				else
 					(- local211 3)

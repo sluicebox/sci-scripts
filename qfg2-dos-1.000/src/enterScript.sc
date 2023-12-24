@@ -53,22 +53,22 @@
 			(1
 				(switch gInnState
 					(0
-						(SetFlag 113)
+						(SetFlag 113) ; fSpose2Sit
 						(HighPrint 367 1) ; "Of all the djinn joints in all the world, you had to walk into this one."
 						(HighPrint 367 2) ; "A hush comes over the bar as people notice you and eye you sullenly."
 						(= cycles 1)
 					)
 					(2
-						(SetFlag 113)
+						(SetFlag 113) ; fSpose2Sit
 						(Say (ScriptID 360 1) self 367 3) ; "Come join me here, my dear sir. You are still a novelty in Raseir, and I take a vested interest in all things new. It is time we discussed some things together, you and I.", ferrari
 					)
 					(5
-						(if (IsFlag 99)
-							(SetFlag 113)
+						(if (IsFlag 99) ; fThiefShown
+							(SetFlag 113) ; fSpose2Sit
 						else
-							(ClearFlag 113)
+							(ClearFlag 113) ; fSpose2Sit
 						)
-						(if (not (SetFlag 119))
+						(if (not (SetFlag 119)) ; fPityMessage
 							(Say (ScriptID 360 1) self 367 4 367 5 367 6) ; "It is a pity about our friend Ugarte, is it not? I can see you are as broken up by the affair as I am.", ferrari
 						else
 							(= cycles 1)
@@ -90,7 +90,7 @@
 						(Say (ScriptID 360 2) self 367 8) ; "Will you look what crawled in from the desert? He has been out in the sun so long, his hair has gone yellow!", bartender
 					)
 					(5
-						(if (IsFlag 99)
+						(if (IsFlag 99) ; fThiefShown
 							(Say (ScriptID 360 1) self 367 9) ; "If you wish to discuss something to our mutual advantage, come sit down.", ferrari
 						else
 							(= cycles 1)
@@ -148,7 +148,7 @@
 				(if register
 					(Say (ScriptID 360 1) 367 13) ; "Bring it here, quickly. Give it to me!", ferrari
 					(= birdCount 2)
-					(SetFlag 113)
+					(SetFlag 113) ; fSpose2Sit
 					(StartTimer birdTimer 10)
 				else
 					(Say (ScriptID 360 1) self 367 14) ; "No? No? What do you mean, "No?"", ferrari
@@ -156,7 +156,7 @@
 			)
 			(1
 				(HighPrint 367 15) ; "You leave Ferrari a sorely disappointed man."
-				(ClearFlag 113)
+				(ClearFlag 113) ; fSpose2Sit
 				(self dispose:)
 			)
 		)

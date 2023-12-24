@@ -38,7 +38,7 @@
 	)
 
 	(method (init)
-		(ClearFlag 2)
+		(ClearFlag 2) ; fInMainGame
 		(LoadMany rsSCRIPT 988 969)
 		(LoadMany rsPIC 2 780)
 		(LoadMany rsVIEW 750 755 758 760 780)

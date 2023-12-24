@@ -68,7 +68,7 @@
 		)
 		(SetFlag 22)
 		((ScriptID 365) init:) ; gates
-		(= local2 global114)
+		(= local2 gDifficulty)
 	)
 
 	(method (dispose)
@@ -267,7 +267,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc5_1)
+				(HandsOff)
 				(= cycles 1)
 			)
 			(1
@@ -283,7 +283,7 @@
 			)
 			(4
 				(= local0 0)
-				(proc5_2)
+				(HandsOn)
 			)
 		)
 	)
@@ -300,7 +300,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc5_1)
+				(HandsOff)
 				(bigArrows dispose:)
 				(gCSoundFX number: 213 loop: 1 play:)
 				(lightL init: setCycle: Fwd)
@@ -347,7 +347,7 @@
 				(butt noun: 3)
 				(ptrnPuz init:)
 				(ptrnPanel signal: (| (ptrnPanel signal:) $0100) stopUpd:)
-				(proc5_2)
+				(HandsOn)
 				(self dispose:)
 			)
 		)
@@ -360,15 +360,15 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc5_1)
-				(if (and (not (IsFlag 22)) (!= register global114))
+				(HandsOff)
+				(if (and (not (IsFlag 22)) (!= register gDifficulty))
 					((ScriptID 370) dispose:) ; pattern
 					(DisposeScript 370)
 					(SetFlag 22)
 				)
 				(if (IsFlag 22)
 					(ClearFlag 22)
-					(= register global114)
+					(= register gDifficulty)
 					((ScriptID 370) init:) ; pattern
 				)
 				(if (not (ptrnPanel cel:))
@@ -386,10 +386,10 @@
 				(gCSoundFX number: 191 loop: 1 play: self)
 			)
 			(2
-				(proc5_2)
+				(HandsOn)
 				((ScriptID 370) show:) ; pattern
 				(if [global135 25]
-					(proc5_1)
+					(HandsOff)
 					(if (IsFlag 22)
 						((ScriptID 370) dispose:) ; pattern
 						(DisposeScript 370)
@@ -408,7 +408,7 @@
 				(ptrnPanel signal: (| (ptrnPanel signal:) $0100) stopUpd:)
 				(gCSoundFX number: 191 loop: 1 play:)
 				(if (>= local0 2)
-					(proc5_2)
+					(HandsOn)
 					(self dispose:)
 				else
 					(gCSoundFX number: 176 loop: 1 play:)
@@ -433,7 +433,7 @@
 			)
 			(5
 				(= local0 2)
-				(proc5_2)
+				(HandsOn)
 				(self dispose:)
 			)
 		)
@@ -446,7 +446,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc5_1)
+				(HandsOff)
 				(lever
 					signal: (& (lever signal:) $feff)
 					startUpd:
@@ -482,7 +482,7 @@
 				(chipPanel dispose:)
 				(blow dispose:)
 				(= local0 3)
-				(proc5_2)
+				(HandsOn)
 				(self dispose:)
 			)
 		)
@@ -495,7 +495,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc5_1)
+				(HandsOff)
 				(SetCursor 400 1 0)
 				((= register (Prop new:))
 					view: 404
@@ -513,23 +513,23 @@
 			)
 			(2
 				(= local1 [global135 24])
-				(proc5_2)
-				(if (!= local2 global114)
+				(HandsOn)
+				(if (!= local2 gDifficulty)
 					((ScriptID 365) dispose:) ; gates
 					(DisposeScript 365)
 					((ScriptID 365) init:) ; gates
-					(= local2 global114)
+					(= local2 gDifficulty)
 				)
 				(if (== ((ScriptID 365) show:) 1) ; gates
 					(= local2 100)
 				)
-				(proc5_1)
+				(HandsOff)
 				(register setCycle: Beg self)
 			)
 			(3
 				(register dispose:)
 				(if (or local1 (not [global135 24]))
-					(proc5_2)
+					(HandsOn)
 					(self dispose:)
 				else
 					(self setScript: (ScriptID 369) self 1) ; chipPull
@@ -568,7 +568,7 @@
 				(= local0 5)
 				(rooroo dispose:)
 				(DisposeScript 369)
-				(proc5_2)
+				(HandsOn)
 				(self dispose:)
 			)
 		)
@@ -581,7 +581,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc5_1)
+				(HandsOff)
 				(lever
 					signal: (& (lever signal:) $feff)
 					startUpd:

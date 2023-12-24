@@ -329,7 +329,7 @@
 				(SkillUsed 14 100) ; honor
 				(fireElemental dispose: delete:)
 				(gCSound fade:)
-				(ClearFlag 181)
+				(ClearFlag 181) ; fBurntTailSign
 				(++ gElementalState)
 				(lamp setCycle: Fwd)
 				(gEgo setScript: doLamp 0 0)

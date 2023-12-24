@@ -147,11 +147,11 @@
 							(return 0)
 						)
 						((< local0 0)
-							(= local0 global114)
+							(= local0 gDifficulty)
 							((ScriptID 169 0) init:) ; hanoi
 						)
-						((!= local0 global114)
-							(= local0 global114)
+						((!= local0 gDifficulty)
+							(= local0 gDifficulty)
 							((ScriptID 169 0) dispose: init:) ; hanoi
 						)
 					)
@@ -212,11 +212,11 @@
 							(return 0)
 						)
 						((< local1 0)
-							(= local1 global114)
+							(= local1 gDifficulty)
 							((ScriptID 175 0) init:) ; sarc
 						)
-						((!= local1 global114)
-							(= local1 global114)
+						((!= local1 gDifficulty)
+							(= local1 gDifficulty)
 							((ScriptID 175 0) dispose: init:) ; sarc
 						)
 					)
@@ -273,11 +273,11 @@
 							(return 0)
 						)
 						((< local2 0)
-							(= local2 global114)
+							(= local2 gDifficulty)
 							((ScriptID 165 0) init:) ; cartesian
 						)
-						((!= local2 global114)
-							(= local2 global114)
+						((!= local2 gDifficulty)
+							(= local2 gDifficulty)
 							((ScriptID 165 0) dispose: init:) ; cartesian
 						)
 					)

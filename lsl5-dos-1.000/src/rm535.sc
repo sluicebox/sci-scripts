@@ -67,7 +67,7 @@
 		(super init:)
 		(HandsOff)
 		(michelle init: stopUpd: setScript: sConversation)
-		(if (not (IsFlag 16))
+		(if (not (IsFlag 16)) ; fMCloseUp
 			(Load rsSOUND 536)
 			(mEyes init: setScript: sBlink)
 			(mMouth init: hide:)
@@ -81,7 +81,7 @@
 			(iceCream init:)
 			(mMouth init: hide:)
 			(LoadMany rsSOUND 538 537)
-			(if (not (IsFlag 40))
+			(if (not (IsFlag 40)) ; fCherryGone
 				(cherry init:)
 			)
 			(self setScript: sGoDown)
@@ -340,7 +340,7 @@
 				(= seconds 2)
 			)
 			(4
-				(SetFlag 40)
+				(SetFlag 40) ; fCherryGone
 				(Say gEgo 535 13 67 -1 185) ; ""Well, there goes her cherry," you think."
 				(mEyes show:)
 				(HandsOn)

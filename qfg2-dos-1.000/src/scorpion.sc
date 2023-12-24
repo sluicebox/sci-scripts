@@ -223,8 +223,8 @@
 					((== ((ScriptID 32 0) action:) 3) ; warrior
 						(scorpion setCycle: End self)
 					)
-					((IsFlag 121)
-						(ClearFlag 121)
+					((IsFlag 121) ; fAntidote
+						(ClearFlag 121) ; fAntidote
 						(LowPrint 670 0) ; "The antidote has lost its strength."
 						(scorpion setCycle: End self)
 					)

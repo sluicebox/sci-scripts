@@ -110,11 +110,11 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(1
-				(proc15_0 0 21 1)
-				(proc15_0 0 21 1 24)
+				(Say 0 21 1) ; "The console beside the battery is labeled "Volcano Stack Computer.""
+				(Say 0 21 1 24) ; "Examining the Volcano Stack Computer's console, you notice a sparking, defective chip. (It must be removed and replaced.)"
 			)
 			(4
-				(proc15_0 0 21 4 24)
+				(Say 0 21 4 24) ; "Remove the defective (sparking) chip."
 			)
 			(else
 				(super doVerb: theVerb &rest)

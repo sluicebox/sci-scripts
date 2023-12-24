@@ -196,7 +196,7 @@
 		(= y 64)
 		(|= signal $0100)
 		(self stopUpd:)
-		(proc5_2)
+		(HandsOn)
 	)
 
 	(method (doVerb theVerb &tmp temp0 temp1)
@@ -205,7 +205,7 @@
 			(if
 				(or
 					(== local394 -1)
-					(!= global114 local395)
+					(!= gDifficulty local395)
 					(Print
 						addButton: 0 {Same old puzzle}
 						addButton: 3 {Generate a new one} 85 0
@@ -222,7 +222,7 @@
 				(if (== local394 -1)
 					(return)
 				)
-				(= local395 global114)
+				(= local395 gDifficulty)
 			)
 			((ScriptID 190) ; word
 				init: @local105 @local0 @local84 @local377 @local393 @local394
@@ -399,7 +399,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc5_1)
+				(HandsOff)
 				(note init: setCycle: End self)
 			)
 			(1
@@ -423,7 +423,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc5_1)
+				(HandsOff)
 				(note init: setCycle: CT 2 1 self)
 			)
 			(1
@@ -433,7 +433,7 @@
 				(note init: setCycle: Beg self)
 			)
 			(3
-				(proc5_2)
+				(HandsOn)
 				(note dispose:)
 			)
 		)
@@ -516,11 +516,11 @@
 				(cond
 					((< local396 0)
 						((ScriptID 195 0) init:) ; jigsaw
-						(= local396 global114)
+						(= local396 gDifficulty)
 					)
-					((!= local396 global114)
+					((!= local396 gDifficulty)
 						((ScriptID 195 0) dispose: init:) ; jigsaw
-						(= local396 global114)
+						(= local396 gDifficulty)
 					)
 				)
 				(switch ((ScriptID 195 0) show:) ; jigsaw

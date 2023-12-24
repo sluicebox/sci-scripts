@@ -260,10 +260,10 @@
 				(gEgo view: 526 setLoop: 0 setCycle: End self)
 			)
 			(1
-				(if (IsFlag 2)
+				(if (IsFlag 2) ; fSeenMM
 					(HandsOn)
 				else
-					(SetFlag 2)
+					(SetFlag 2) ; fSeenMM
 					(User canInput: 1)
 					(gTheIconBar enable: 1 3)
 					(gTheIconBar curIcon: (gTheIconBar at: 1))
@@ -354,7 +354,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(if (IsFlag 2)
+				(if (IsFlag 2) ; fSeenMM
 					(TPrint 525 3) ; "You know it's possible to get in there, but how will you? Michelle used that paper tape reader."
 				else
 					(TPrint 525 4) ; "You wonder what lies behind "The Magenta Door.""

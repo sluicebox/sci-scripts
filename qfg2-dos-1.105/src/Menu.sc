@@ -166,7 +166,7 @@
 				)
 			)
 			(513
-				(if (IsFlag 1)
+				(if (IsFlag 1) ; fSaveAllowed
 					(gGame save:)
 				)
 			)

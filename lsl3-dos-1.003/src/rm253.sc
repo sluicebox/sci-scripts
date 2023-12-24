@@ -355,7 +355,7 @@
 			(9
 				(gSoundFX stop:)
 				(if (not (TestFlag 7))
-					(SetFlag 7)
+					(SetFlag 7) ; drankSinkWater
 					(gGame changeScore: 2)
 				)
 				(Print 253 32 #at -1 10) ; "Ahhhhh."
@@ -388,7 +388,7 @@
 				((Inv at: 13) view: 29) ; Bottle_of_Wine
 				(Format ((Inv at: 13) name:) 253 34) ; "Bottle of Water", Bottle_of_Wine
 				(if (not (TestFlag 42))
-					(SetFlag 42)
+					(SetFlag 42) ; scoredWater
 					(gGame changeScore: 37)
 				)
 				(NormalEgo 0)
@@ -397,7 +397,7 @@
 				(HandsOff)
 				(Ok) ; "O.K."
 				(if (not (TestFlag 59))
-					(SetFlag 59)
+					(SetFlag 59) ; woreGrassSkirt
 					(gGame changeScore: 10)
 				)
 				(gEgo
@@ -572,7 +572,7 @@
 				(aJodi loop: 4 cel: 0 cycleSpeed: 2 setCycle: End self)
 			)
 			(5
-				(SetFlag 64)
+				(SetFlag 64) ; seenJodiStrip
 				(if
 					(or
 						(& (gEgo onControl:) $0040)
@@ -686,7 +686,7 @@
 				(= cycles 22)
 			)
 			(3
-				(SetFlag 30)
+				(SetFlag 30) ; sawCredits253
 				(aCredit1 setCycle: Beg)
 				(aCredit2 setCycle: Beg self)
 			)

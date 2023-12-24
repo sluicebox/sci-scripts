@@ -167,7 +167,7 @@
 			)
 			(20
 				(Print 324 14) ; "Enough of this legalistic foreplay, Larry," she says. "What do you say we spend the rest of the afternoon `going through your briefs!'"
-				(SetFlag 45)
+				(SetFlag 45) ; scoredSuzi
 				(gGame changeScore: 100)
 				(aSuzi hide:)
 				(gEgo

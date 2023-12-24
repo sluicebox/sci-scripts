@@ -197,7 +197,7 @@
 			)
 			(4
 				(if (not (TestFlag 63))
-					(SetFlag 63)
+					(SetFlag 63) ; usedElevator
 					(gGame changeScore: 4)
 					(Print 470 21 #icon 12 0 0) ; "You insert Patti's penthouse key into the ninth floor penthouse access lock and turn it one-quarter turn to the right. Both you and the elevator begin to rise."
 				)

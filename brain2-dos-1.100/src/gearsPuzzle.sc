@@ -89,20 +89,20 @@
 	(for ((= temp1 0)) (< temp1 10) ((++ temp1))
 		(= [local21 temp1] 0)
 	)
-	(switch global114
-		(0
+	(switch gDifficulty
+		(0 ; Novice
 			(= [local75 1] (Random 2 5))
 			(= [local75 0] 1)
 			(= local67 2)
 			(= local68 3)
 		)
-		(1
+		(1 ; Standard
 			(= [local75 1] (Random 2 8))
 			(= [local75 0] (Random 1 2))
 			(= local67 3)
 			(= local68 5)
 		)
-		(2
+		(2 ; Expert
 			(= [local75 1] (Random 5 9))
 			(= [local75 0] (Random 2 5))
 			(= local67 5)
@@ -169,7 +169,7 @@
 			)
 		)
 	)
-	(if (== global114 2)
+	(if (== gDifficulty 2) ; Expert
 		(= local74 (Random 900 1000))
 		(= temp3 (localproc_2 [local75 1] [local75 0]))
 		(= temp2 (localproc_3 25 temp3))
@@ -394,9 +394,9 @@
 		)
 		(localproc_7)
 		(gGame setCursor: local81 1)
-		(if (not (& shown (<< $0001 global114)))
+		(if (not (& shown (<< $0001 gDifficulty)))
 			(self showHelp: 0)
-			(|= shown (<< $0001 global114))
+			(|= shown (<< $0001 gDifficulty))
 		)
 		(if puzzleCast
 			(puzzleCast eachElementDo: #show)
@@ -612,19 +612,19 @@
 			)
 		)
 		(if (super buyClue: &rest)
-			(switch global114
-				(0
+			(switch gDifficulty
+				(0 ; Novice
 					(= temp2 21)
 				)
-				(1
+				(1 ; Standard
 					(= temp2 22)
 				)
-				(2
+				(2 ; Expert
 					(= temp2 23)
 				)
 			)
 			(cond
-				((or (== global114 0) (== global114 1))
+				((or (== gDifficulty 0) (== gDifficulty 1)) ; Novice, Standard
 					(if (= temp1 (Message msgSIZE msgModule 13 temp2 0 1))
 						(= temp0 (Memory memALLOC_CRIT temp1))
 						(Message msgGET msgModule 13 temp2 0 1 temp0)
@@ -652,7 +652,7 @@
 				)
 				(
 					(and
-						(== global114 2)
+						(== gDifficulty 2) ; Expert
 						(= temp1 (Message msgSIZE msgModule 13 temp2 0 1))
 					)
 					(= temp0 (Memory memALLOC_CRIT temp1))

@@ -53,7 +53,7 @@
 			(0
 				(Face gEgo (ScriptID 160 3)) ; uhuraBody
 				(cond
-					((IsFlag 177)
+					((IsFlag 177) ; fUhuraEnterMsg
 						(RandomEnterMsg)
 					)
 					((== gDay 1)
@@ -88,7 +88,7 @@
 				)
 			)
 			(1
-				(if (and (== gDay 2) (not (IsFlag 177)))
+				(if (and (== gDay 2) (not (IsFlag 177))) ; fUhuraEnterMsg
 					(Face gEgo (ScriptID 160 4)) ; rakeeshBody
 					(Say (ScriptID 160 2) self 163 14) ; "You are most welcome in Shapeir. The sultan has been seeking a Hero since the forces of Dark Magic overwhelmed Raseir.", rakeesh
 				else

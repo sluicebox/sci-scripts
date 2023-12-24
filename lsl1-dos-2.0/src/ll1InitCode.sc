@@ -76,9 +76,9 @@
 		)
 		(= gNumVoices (DoSound sndGET_POLYPHONY))
 		(if (and (>= (= gNumColors (Graph grGET_COLOURS)) 2) (<= gNumColors 16))
-			(ClearFlag 44)
+			(ClearFlag 44) ; isVga
 		else
-			(SetFlag 44)
+			(SetFlag 44) ; isVga
 		)
 		(= gUseSortedFeatures 1)
 		PolyPath

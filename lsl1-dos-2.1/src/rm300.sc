@@ -76,7 +76,7 @@
 		(statue init:)
 		(super init:)
 		(if (or gDebugging (ObjInRoom 3))
-			(if (IsFlag 100)
+			(if (IsFlag 100) ; fApplemanTgl
 				(= appleManTimer (Random 100 300))
 				(LoadMany rsVIEW 302 808)
 				(Load rsSOUND 302)

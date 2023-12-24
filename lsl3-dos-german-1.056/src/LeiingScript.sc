@@ -49,7 +49,7 @@
 				((Inv at: 11) view: 26) ; some_Orchids
 				(Format ((Inv at: 11) name:) 42 1) ; "A Quick Lei%", some_Orchids
 				(if (not (TestFlag 55))
-					(SetFlag 55)
+					(SetFlag 55) ; madeLei
 					(gGame changeScore: 50)
 					(Print 42 2 #at -1 144) ; "(Welcome to the islands, Meester Laffer!)"
 				else

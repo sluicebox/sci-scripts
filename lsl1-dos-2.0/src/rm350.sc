@@ -66,7 +66,7 @@
 
 	(method (init)
 		(if gDebugging
-			(SetFlag 9)
+			(SetFlag 9) ; fFaithGone
 		)
 		(LoadMany rsVIEW 350 808 333 331 332)
 		(LoadMany rsSOUND 350 340 351 353)
@@ -90,7 +90,7 @@
 			approachVerbs: 3 4 10 11 ; Do, Inventory, Zipper, Taste/Smell
 		)
 		(deskF init: approachVerbs: 3 4 10 11) ; Do, Inventory, Zipper, Taste/Smell
-		(if (not (IsFlag 9))
+		(if (not (IsFlag 9)) ; fFaithGone
 			(LoadMany rsVIEW 352)
 			(faith
 				cycleSpeed: global101
@@ -159,7 +159,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(if (IsFlag 9)
+				(if (IsFlag 9) ; fFaithGone
 					(Print 350 0) ; "You are at the top floor of the hotel. That desk is where you lost your Faith, remember?"
 					(Print 350 1 #at -1 140) ; "(Al's so proud he finally got to use THAT line!)"
 				else
@@ -204,8 +204,8 @@
 				(gEgo x: 156 y: 137 z: 0 show:)
 				(NormalEgo 2)
 				(elevator view: 332 stopUpd:)
-				(if (not (IsFlag 97))
-					(SetFlag 97)
+				(if (not (IsFlag 97)) ; fGotDizzy
+					(SetFlag 97) ; fGotDizzy
 					(Print 350 5) ; "Whew! You're dizzy."
 				)
 				(HandsOn)
@@ -303,7 +303,7 @@
 			(3
 				(gTheMusic number: 351 loop: -1 play:)
 				(Print 350 9) ; "Sorry, Larry. It appears Faith is true to her name."
-				(SetFlag 9)
+				(SetFlag 9) ; fFaithGone
 				(deskF
 					lookStr:
 						{Now that you're no longer staring at Faith's ample weapons, you notice an unlabeled button on her desk.}
@@ -635,7 +635,7 @@
 		(switch theVerb
 			(3 ; Do
 				(cond
-					((not (IsFlag 9))
+					((not (IsFlag 9)) ; fFaithGone
 						(Print 350 18) ; "Touch that button, and you're dead meat, White-Suit!"
 					)
 					((not (doors cel:))

@@ -162,7 +162,7 @@
 					(else
 						(Print 520 6) ; "O.K. They're on again. Now what?"
 						(gGame changeScore: -15)
-						(ClearFlag 72)
+						(ClearFlag 72) ; pantyhoseOff
 					)
 				)
 			)
@@ -335,7 +335,7 @@
 			)
 			(11
 				(gGame changeScore: 42)
-				(SetFlag 6)
+				(SetFlag 6) ; drankRiverWater
 				(NormalEgo 1)
 				(= gEgoState 0)
 				(Print 520 32) ; "You find the stream's water remarkably refreshing, without a trace of caffeine."
@@ -375,7 +375,7 @@
 				(HandsOff)
 				(Ok) ; "O.K."
 				(gGame changeScore: 15)
-				(SetFlag 72)
+				(SetFlag 72) ; pantyhoseOff
 				(gEgo
 					view: 521
 					loop: 0

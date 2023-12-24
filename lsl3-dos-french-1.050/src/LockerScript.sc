@@ -81,7 +81,7 @@
 						@local210
 					)
 				else
-					(SetFlag 44)
+					(SetFlag 44) ; scoredCombination
 					(Printf ; "Closer examination reveals the words to be: "%s," "%s," and "%s."%"
 						45
 						3

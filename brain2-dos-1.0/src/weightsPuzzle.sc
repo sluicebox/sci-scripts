@@ -130,7 +130,7 @@
 				(= [local72 temp1] (localproc_3 1 [local72 temp1] temp6))
 			)
 		)
-		(if (== global114 2)
+		(if (== gDifficulty 2) ; Expert
 			(cond
 				((> [local72 0] [local72 2])
 					(= temp8 (localproc_3 0 [local72 0] [local72 2]))
@@ -172,7 +172,7 @@
 				((!= [local72 temp1] [local75 temp1])
 					(= temp7 0)
 				)
-				((!= global114 2)
+				((!= gDifficulty 2) ; Expert
 					(switch temp1
 						(0
 							(|= local8 $0080)
@@ -270,8 +270,8 @@
 		(= [local63 temp0] 0)
 		(= [local54 temp0] 0)
 	)
-	(switch global114
-		(0
+	(switch gDifficulty
+		(0 ; Novice
 			(if (not (& local8 $0100))
 				(= [local63 1] (+ (Random 1 15) 5))
 			)
@@ -283,7 +283,7 @@
 			)
 			(localproc_2 1)
 		)
-		(1
+		(1 ; Standard
 			(if
 				(and
 					(not (& local8 $0080))
@@ -356,7 +356,7 @@
 			)
 			(localproc_2 1)
 		)
-		(2
+		(2 ; Expert
 			(= temp5 0)
 			(while (== temp5 0)
 				(for ((= temp0 0)) (< temp0 3) ((++ temp0))
@@ -378,7 +378,7 @@
 		)
 	)
 	(for ((= temp0 0)) (< temp0 3) ((++ temp0))
-		(if (== global114 2)
+		(if (== gDifficulty 2) ; Expert
 			(+=
 				[local51 1]
 				(+ (/ [local63 temp0] 4) (mod (mod [local63 temp0] 4) 4))
@@ -591,9 +591,9 @@
 		else
 			(gGame setCursor: local1 1)
 		)
-		(if (not (& shown (<< $0001 global114)))
+		(if (not (& shown (<< $0001 gDifficulty)))
 			(self showHelp: 0)
-			(|= shown (<< $0001 global114))
+			(|= shown (<< $0001 gDifficulty))
 		)
 		(if puzzleCast
 			(puzzleCast eachElementDo: #show)
@@ -843,7 +843,7 @@
 			)
 		)
 		(if temp1
-			(proc15_0 self noun 27 15 0)
+			(Say self noun 27 15 0) ; "Wow! You solved the puzzle and still have liquid left over! You've really mastered your measuring skills."
 		)
 		(gGame setCursor: local1)
 		(weightsPuzzle pHandsOff: 0)
@@ -892,7 +892,7 @@
 							(continue)
 						)
 					)
-					(if (and (== global114 2) (== temp6 0))
+					(if (and (== gDifficulty 2) (== temp6 0)) ; Expert
 						(+= temp10 (+ (/ temp5 4) (mod (mod temp5 4) 4)))
 					else
 						(+=
@@ -1102,7 +1102,7 @@
 				)
 			)
 			(if (not temp9)
-				(if (== global114 2)
+				(if (== gDifficulty 2) ; Expert
 					(Print
 						x: 68
 						first: 2
@@ -1116,15 +1116,15 @@
 						(return)
 					)
 				else
-					(proc15_0 self noun 9 5 0)
+					(Say self noun 9 5 0) ; "Oops! This puzzle is now unsolvable and will automatically reset. Please try again."
 				)
 				(Animate (cupCast elements:) 0)
 				(localproc_4 1)
 				(Wait 0)
 				(Wait 120)
 			)
-			(switch global114
-				(0
+			(switch gDifficulty
+				(0 ; Novice
 					(repeat
 						(switch local93
 							(0
@@ -1169,7 +1169,7 @@
 						temp11
 					)
 				)
-				(1
+				(1 ; Standard
 					(repeat
 						(switch local93
 							(1
@@ -1220,9 +1220,9 @@
 						[local63 temp4]
 						temp11
 					)
-					(proc15_0 self 14 22 0 2)
+					(Say self 14 22 0 2) ; "There are four cups in a quart and sixteen cups in a gallon."
 				)
-				(2
+				(2 ; Expert
 					(switch local93
 						(1
 							(= temp23 0)
@@ -1282,7 +1282,7 @@
 						[local63 temp4]
 						temp11
 					)
-					(proc15_0 self 14 22 0 2)
+					(Say self 14 22 0 2) ; "There are four cups in a quart and sixteen cups in a gallon."
 				)
 			)
 			(Animate (cupCast elements:) 0)
@@ -1508,7 +1508,7 @@
 						(if (!= [local51 (self value:)] 0)
 							(if
 								(and
-									(== global114 2)
+									(== gDifficulty 2) ; Expert
 									(== (local4 value:) 0)
 									(== (self value:) 1)
 									(or (== local5 0) (== local5 2))
@@ -1590,21 +1590,21 @@
 			(cupCursor setScript: pourCup)
 			(cond
 				((& (local4 state:) $0008)
-					(if (== global114 0)
+					(if (== gDifficulty 0) ; Novice
 						(= local5 0)
 					)
 					(= temp0 1)
 					(local4 state: (& (local4 state:) $fff7))
 				)
 				((& (local4 state:) $0004)
-					(if (== global114 0)
+					(if (== gDifficulty 0) ; Novice
 						(= local5 1)
 					)
 					(= temp0 0)
 					(local4 state: (& (local4 state:) $fffb))
 				)
 				((& (local4 state:) $0010)
-					(if (== global114 0)
+					(if (== gDifficulty 0) ; Novice
 						(= local5 2)
 					)
 					(= temp0 2)
@@ -1622,7 +1622,7 @@
 					(= temp1 1)
 				)
 			)
-			(if (== global114 0)
+			(if (== gDifficulty 0) ; Novice
 				((weightWinCast at: temp3) cel: 0 lowlightColor: 4)
 				((weightWinCast at: local5) cel: 1 lowlightColor: 2)
 				(weightWinCast eachElementDo: #show)
@@ -1838,7 +1838,7 @@
 	(method (show))
 
 	(method (select)
-		(proc15_0 weightsPuzzle (weightsPuzzle noun:) 9 16 1)
+		(Say weightsPuzzle (weightsPuzzle noun:) 9 16 1)
 	)
 )
 
@@ -2118,7 +2118,7 @@
 					(cupCursor setScript: resetCup)
 					(return)
 				)
-				(if (== global114 2)
+				(if (== gDifficulty 2) ; Expert
 					(cond
 						((& local8 $0004)
 							(bucketTilting cel: 2)
@@ -2228,7 +2228,7 @@
 				(weightsPuzzle pHandsOff: 0)
 				(&= local8 $fffd)
 				(&= local7 $ffef)
-				(proc15_0 weightsPuzzle (bucketDumping noun:) 9 0 0)
+				(Say weightsPuzzle (bucketDumping noun:) 9 0 0)
 				(self dispose:)
 			)
 		)
@@ -2280,7 +2280,7 @@
 				(localproc_4 1)
 				(weightsPuzzle pHandsOff: 0)
 				(&= local7 $ffef)
-				(proc15_0 weightsPuzzle (bucketTilting noun:) 9 0 0 self)
+				(Say weightsPuzzle (bucketTilting noun:) 9 0 0 self)
 			)
 			(6
 				(bucketTilting cycleSpeed: 14)

@@ -282,8 +282,8 @@
 				(if (!= ((Inv at: 1) owner:) 23) ; Battery_Charger
 					((Inv at: 1) owner: 0) ; Battery_Charger
 				)
-				(ClearFlag 8)
-				(ClearFlag 32)
+				(ClearFlag 8) ; fBeenToTown
+				(ClearFlag 32) ; fOkToBoard
 				(gCurRoom newRoom: 290)
 			)
 		)

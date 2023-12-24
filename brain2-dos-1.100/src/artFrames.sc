@@ -54,14 +54,14 @@
 			(= [local26 local0] 16)
 		)
 		(= [local26 5] 0)
-		(switch global114
-			(0
+		(switch gDifficulty
+			(0 ; Novice
 				(= global130 6)
 			)
-			(1
+			(1 ; Standard
 				(= global130 12)
 			)
-			(2
+			(2 ; Expert
 				(= global130 18)
 			)
 		)

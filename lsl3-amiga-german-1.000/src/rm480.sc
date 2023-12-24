@@ -222,7 +222,7 @@
 				(>= state 9)
 			)
 			(Print 480 0) ; "Skipping ahead..."
-			(SetFlag 69)
+			(SetFlag 69) ; tookShortcut
 			(gCurRoom newRoom: 484)
 		)
 		(if (or (!= (event type:) evSAID) (event claimed:))
@@ -316,7 +316,7 @@
 				(if (TestFlag 66)
 					(Print 480 16) ; ""Where the hell did you go?" she asks."
 				else
-					(SetFlag 66)
+					(SetFlag 66) ; beenIn480
 					(Print 480 17) ; ""And I remembered to wear your lei, Larry!" she smiles."
 				)
 				(= gEgoState 0)
@@ -389,8 +389,8 @@
 				(gMusic number: 480 loop: -1 play:)
 				(SL disable:)
 				(gTheMenuBar hide: state: 0)
-				(SetFlag 5)
-				(SetFlag 4)
+				(SetFlag 5) ; noCursor
+				(SetFlag 4) ; preventAutoSave
 				(Format @string 480 21) ; "Perhaps I should explain... I have a history of not finishing what I begin. Just don't be surprised if something happens before we finish!"
 				(= seconds (PrintLarry))
 				(gEgo loop: 2)

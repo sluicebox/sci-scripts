@@ -50,7 +50,7 @@
 		)
 		(switch gPrevRoomNum
 			(380
-				(if (IsFlag 6)
+				(if (IsFlag 6) ; fEveHasApple
 					(HandsOff)
 					(aEve
 						cycleSpeed: (gEgo cycleSpeed:)
@@ -67,7 +67,7 @@
 			)
 			(370
 				(HandsOff)
-				(if (IsFlag 4)
+				(if (IsFlag 4) ; fDollFlies
 					(Load rsVIEW 373)
 					(Load rsSOUND 372)
 					(aDoll

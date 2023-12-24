@@ -89,8 +89,8 @@
 
 	(method (doit)
 		(if (and (& (gEgo onControl: 1) $0002) (!= inOut 1))
-			(if (not (IsFlag 131))
-				(SetFlag 131)
+			(if (not (IsFlag 131)) ; f200
+				(SetFlag 131) ; f200
 				(self setScript: firstTimeOut)
 			else
 				(= edgeHit 4)
@@ -117,10 +117,10 @@
 				)
 				(if (== gFortuneDay -1)
 					(if (TrySkill 13 50) ; communication
-						(SetFlag 18)
+						(SetFlag 18) ; fGoodFortune
 						(SkillUsed 4 100) ; luck
 					else
-						(SetFlag 19)
+						(SetFlag 19) ; fBadFortune
 						(SkillUsed 4 -100) ; luck
 					)
 					(Say astro 200 1 200 2 200 3) ; "You have lived a most interesting life."
@@ -170,7 +170,7 @@
 					(2
 						(if
 							(and
-								(or (IsFlag 19) (IsFlag 18))
+								(or (IsFlag 19) (IsFlag 18)) ; fBadFortune, fGoodFortune
 								(!= gFortuneDay gDay)
 							)
 							(Say astro self 200 12 200 13) ; "It is good that you returned; there is much I need to tell you."
@@ -479,17 +479,17 @@
 			else
 				(= toldFortune 1)
 				(cond
-					((not (or (IsFlag 18) (IsFlag 19)))
+					((not (or (IsFlag 18) (IsFlag 19))) ; fGoodFortune, fBadFortune
 						(Say astro 200 33 200 34) ; "If you wish to know your fortune, I will need to know your guiding signs."
 					)
 					((== gFortuneDay gDay)
 						(Say astro 200 35 200 36) ; "I have not yet had time to find your answers."
 					)
-					((IsFlag 19)
+					((IsFlag 19) ; fBadFortune
 						(SolvePuzzle 615 5)
 						(Say astro 200 37 200 38) ; "The portents foretell you will be deceived by darkness and become its pawn in the destruction of all this world."
 					)
-					((IsFlag 18)
+					((IsFlag 18) ; fGoodFortune
 						(SolvePuzzle 615 5)
 						(Say astro 200 39 200 40 200 41) ; "Darkness will lead you into a tomb. You will walk in fire, earth, water, and air, through temptation, and at last into despair and desolation."
 					)

@@ -388,8 +388,8 @@
 				(TPrint 260 10 67 -1 28) ; "You feel around in the cigarette vending machine's change slot and find..."
 				(if
 					(and
-						(not (IsFlag 34))
-						(not (IsFlag 11))
+						(not (IsFlag 34)) ; fTookQuarters260
+						(not (IsFlag 11)) ; fBeenInMiami
 						(not (gEgo has: 10)) ; Some_Change
 					)
 					(gEgo get: 10) ; Some_Change
@@ -855,7 +855,7 @@
 				)
 			)
 			(2
-				(if (and (not (IsFlag 36)) (== whichSlot 2))
+				(if (and (not (IsFlag 36)) (== whichSlot 2)) ; fPulledSlots
 					(handle2 setCel: 255 cycleSpeed: 8 hide:)
 					(gEgo setCycle: End self)
 				else
@@ -863,7 +863,7 @@
 				)
 			)
 			(3
-				(if (and (not (IsFlag 36)) (== whichSlot 2))
+				(if (and (not (IsFlag 36)) (== whichSlot 2)) ; fPulledSlots
 					(handle2 show: setCycle: Beg)
 					(gTheMusic2 number: 262 loop: 1 play: self)
 				else
@@ -872,10 +872,10 @@
 			)
 			(4
 				(cond
-					((or (!= whichSlot 2) (IsFlag 36))
+					((or (!= whichSlot 2) (IsFlag 36)) ; fPulledSlots
 						(TPrint 260 36 67 -1 185 108 self) ; "You try to pull the handle of the slot machine but since there's no quarter in it, nothing happens."
 					)
-					((not (IsFlag 36))
+					((not (IsFlag 36)) ; fPulledSlots
 						(gTheMusic number: 263 loop: 1 play: self)
 						(= register 1)
 					)
@@ -889,7 +889,7 @@
 			)
 			(6
 				(gTheMusic stop:)
-				(if (and register (not (IsFlag 36)))
+				(if (and register (not (IsFlag 36))) ; fPulledSlots
 					(Points 5 36)
 					(TPrint 260 37) ; "Hey, all right! Someone left a quarter in that machine. Pulling the handle yields only one lonely cherry, but that's enough to pay you a quarter. You reach into the slot machine's coin bin and grab it."
 					(gEgo get: 10) ; Some_Change

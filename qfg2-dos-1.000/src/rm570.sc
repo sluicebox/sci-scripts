@@ -45,7 +45,7 @@
 		(LoadMany rsSOUND 600 570)
 		(EgoGait 4 0) ; holdingLamp
 		(= gSpellChecker gAllChecker)
-		(if (IsFlag 107)
+		(if (IsFlag 107) ; fWindShutOff
 			(rocks cel: 4)
 		else
 			(air setCycle: Fwd init:)
@@ -104,7 +104,7 @@
 			((and (& thisControl $0020) noScript)
 				(gEgo setScript: downStream)
 			)
-			((and (gEgo inRect: 26 113 91 158) (not (IsFlag 107)) noScript)
+			((and (gEgo inRect: 26 113 91 158) (not (IsFlag 107)) noScript) ; fWindShutOff
 				(gEgo setScript: suckedIn)
 			)
 		)
@@ -154,7 +154,7 @@
 			)
 			((Said 'block/chasm')
 				(cond
-					((IsFlag 107)
+					((IsFlag 107) ; fWindShutOff
 						(HighPrint 570 8) ; "You have already stopped the wind."
 					)
 					((< (gEgo y:) 75)
@@ -184,7 +184,7 @@
 					(Said 'use/lockpick,implement,kit')
 				)
 				(cond
-					((IsFlag 107)
+					((IsFlag 107) ; fWindShutOff
 						(HighPrint 570 8) ; "You have already stopped the wind."
 					)
 					((not (CanPickLocks 1)))
@@ -195,7 +195,7 @@
 			)
 			((or (Said 'pry,lockpick/boulder,brick') (Said 'use/dagger'))
 				(cond
-					((IsFlag 107)
+					((IsFlag 107) ; fWindShutOff
 						(HighPrint 570 8) ; "You have already stopped the wind."
 					)
 					((not (or [gInvNum 5] [gInvNum 56])) ; Dagger, SilverDagger
@@ -211,7 +211,7 @@
 					(Said 'use/strength')
 					(Said 'force,force,shake,move,dislodge/brick,boulder,brick')
 				)
-				(if (IsFlag 107)
+				(if (IsFlag 107) ; fWindShutOff
 					(HighPrint 570 8) ; "You have already stopped the wind."
 				else
 					(gEgo setScript: ramRocks)
@@ -795,7 +795,7 @@
 					setPri: 2
 					setMotion: MoveTo 311 67 self
 				)
-				(SetFlag 116)
+				(SetFlag 116) ; fLightOn
 			)
 			(1
 				(gEgo setMotion: MoveTo 291 50 self)
@@ -1122,7 +1122,7 @@
 				(self cue:)
 			)
 			(6
-				(if (not (IsFlag 107))
+				(if (not (IsFlag 107)) ; fWindShutOff
 					(Print 570 24) ; "You just aren't strong enough to dislodge the pile of rocks."
 				)
 				(gEgo loop: 3)
@@ -1200,7 +1200,7 @@
 				)
 				(air dispose:)
 				(SolvePuzzle 633 7)
-				(SetFlag 107)
+				(SetFlag 107) ; fWindShutOff
 				(= cycles 4)
 			)
 			(2
@@ -1512,7 +1512,7 @@
 			)
 			(27
 				(cond
-					((IsFlag 107)
+					((IsFlag 107) ; fWindShutOff
 						(HighPrint 570 8) ; "You have already stopped the wind."
 					)
 					((> hitY 109)
@@ -1706,7 +1706,7 @@
 	)
 
 	(method (doit)
-		(if (and (not (& signal $0080)) (IsFlag 116) (== (gEgo view:) 585))
+		(if (and (not (& signal $0080)) (IsFlag 116) (== (gEgo view:) 585)) ; fLightOn
 			(switch (gEgo loop:)
 				(0
 					(self posn: (+ (gEgo x:) 10) (- (gEgo y:) 20))

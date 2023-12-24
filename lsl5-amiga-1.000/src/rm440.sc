@@ -43,7 +43,7 @@
 				)
 		)
 		(gEgo init: normalize: x: 20)
-		(if (not (IsFlag 43))
+		(if (not (IsFlag 43)) ; fFartMan
 			(Load rsSOUND 443 444 445 446 447 448 449)
 			(fartman init: setScript: sMix)
 		)
@@ -81,11 +81,11 @@
 				(twit init: setCycle: StopWalk -1 setMotion: MoveTo 40 100 self)
 			)
 			(2
-				(if (IsFlag 44)
+				(if (IsFlag 44) ; fHasFBINumber
 					(HandsOn)
 					(self dispose:)
 				else
-					(SetFlag 44)
+					(SetFlag 44) ; fHasFBINumber
 					(= seconds 2)
 				)
 			)
@@ -250,7 +250,7 @@
 		(switch (= state newState)
 			(0
 				(gGame setCursor: gTheCursor 1 500 500)
-				(SetFlag 43)
+				(SetFlag 43) ; fFartMan
 				(Say Commander_Twit 440 20 108 139 self) ; "Ah, yes, Patti. I see you're interested in one of my pet projects, which I find fascinating. This man has developed a high-yield, space-age polymer, macrobiotic, flatulence-inducing powder."
 			)
 			(1
@@ -383,7 +383,7 @@
 				(TPrint 440 23) ; "There's nothing you can do to Commander Twit that he hasn't done already."
 			)
 			(5 ; Talk
-				(if (not (IsFlag 43))
+				(if (not (IsFlag 43)) ; fFartMan
 					(HandsOff)
 					(gCurRoom setScript: sFart)
 				else

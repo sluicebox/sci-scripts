@@ -464,7 +464,7 @@
 			(59
 				(TPrint 150 29 67 -1 28) ; "Heh, heh. Always a good idea," you think."
 				(Say Silas_Scruemall_a 150 30 108 139 self) ; "Okay, Wopner, you've got one, maybe two days max! You'd better grab the girls' bios and get going!"
-				(SetFlag 7)
+				(SetFlag 7) ; fBeenIn150
 			)
 			(60
 				(= ticks 123)

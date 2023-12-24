@@ -248,7 +248,7 @@
 				(= cycles 33)
 			)
 			(25
-				(SetFlag 21)
+				(SetFlag 21) ; beenIn220
 				(gEgo setMotion: MoveTo 107 153 self)
 				(Format @string 220 13) ; "Look out, girls! Just when you thought it was safe to dive back into the gene pool, the original swinger is at it again!"
 				(= seconds (PrintPlot))
@@ -323,7 +323,7 @@
 				(= cycles 22)
 			)
 			(5
-				(SetFlag 28)
+				(SetFlag 28) ; sawCredits220
 				(aCredit1 setCycle: Beg)
 				(aCredit2 setCycle: Beg self)
 			)

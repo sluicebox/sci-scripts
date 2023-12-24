@@ -94,17 +94,17 @@
 		(movedSand
 			(if (TrySkill 0 60) ; strength
 				(HighPrint 650 3) ; "The rock was heavy, but after the sand was moved, you manage to get the rock off the feather."
-				(SetFlag 73)
+				(SetFlag 73) ; fMovedRock
 				(= rockFeather 2)
 			)
 		)
 		((TrySkill 0 85) ; strength
 			(HighPrint 650 4) ; "The rock was heavy, but you manage to move it off the feather."
-			(SetFlag 73)
+			(SetFlag 73) ; fMovedRock
 			(= rockFeather 2)
 		)
 	)
-	(IsFlag 73)
+	(IsFlag 73) ; fMovedRock
 )
 
 (instance rm650 of Stage
@@ -130,7 +130,7 @@
 		(= gLevScript goToLevitate)
 		(= gRopeHighY (= gLevHighY 60))
 		(= gSpellChecker gAllChecker)
-		(if (not (IsFlag 74))
+		(if (not (IsFlag 74)) ; fGriffinPOed
 			(griffin init:)
 		)
 		(nest init:)
@@ -168,7 +168,7 @@
 						)
 					)
 					((Said '/bird')
-						(if (IsFlag 74)
+						(if (IsFlag 74) ; fGriffinPOed
 							(HighPrint 650 12) ; "It's a Griffin; it's a plane; it's....gone!"
 						else
 							(HighPrint 650 13) ; "It may have wings and feathers, but the Griffin is not what you'd normally call a bird!"
@@ -336,7 +336,7 @@
 				(caller cue:)
 			)
 			(3
-				(if (and (IsFlag 74) (gCast contains: griffin))
+				(if (and (IsFlag 74) (gCast contains: griffin)) ; fGriffinPOed
 					(gEgo setScript: (ScriptID 62 1) self 175) ; fallDown
 				else
 					(self cue:)
@@ -480,7 +480,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(if (or (IsFlag 90) (IsFlag 88))
+				(if (or (IsFlag 90) (IsFlag 88)) ; fLevitating, fClimbingRope
 					(self changeState: 4)
 				else
 					(self setScript: moveToRock self)
@@ -501,7 +501,7 @@
 				(self changeState: 7)
 			)
 			(4
-				(if (IsFlag 88)
+				(if (IsFlag 88) ; fClimbingRope
 					(gEgo setLoop: 6 cel: 0 setCycle: End self)
 				else
 					(gEgo setCycle: CT 3 -1 self)
@@ -520,7 +520,7 @@
 				)
 			)
 			(6
-				(if (IsFlag 88)
+				(if (IsFlag 88) ; fClimbingRope
 					(gEgo setCycle: Beg self)
 				else
 					(gEgo setCycle: End self)
@@ -528,7 +528,7 @@
 			)
 			(7
 				(cond
-					((IsFlag 88)
+					((IsFlag 88) ; fClimbingRope
 						(gEgo setLoop: 9)
 						(if birdAnnoyance
 							(magicRope cue:)
@@ -536,7 +536,7 @@
 							((ScriptID 61 2) cue:) ; ropeClimb
 						)
 					)
-					((IsFlag 90)
+					((IsFlag 90) ; fLevitating
 						(if birdAnnoyance
 							(goToLevitate cue:)
 						else
@@ -629,7 +629,7 @@
 					)
 				)
 				(SolvePuzzle 681 -10 3)
-				(SetFlag 74)
+				(SetFlag 74) ; fGriffinPOed
 				(= gGriffinHealth 100)
 				(self cue:)
 			)
@@ -850,7 +850,7 @@
 	)
 
 	(method (init)
-		(if (IsFlag 73)
+		(if (IsFlag 73) ; fMovedRock
 			(= movedSand 1)
 			(= rockFeather 3)
 			(rock cel: 3)

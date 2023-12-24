@@ -490,7 +490,7 @@
 				(= cycles 22)
 			)
 			(3
-				(SetFlag 26)
+				(SetFlag 26) ; sawCredits213
 				(aCredit1 setCycle: Beg)
 				(aCredit2 setCycle: Beg self)
 			)

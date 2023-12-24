@@ -45,7 +45,7 @@
 			(= saveIllegal (gEgo illegalBits:))
 			(= staged 1)
 			(= whichEntrance (+ (mod (+ gRoomExitDir 1) 4) 1))
-			(if (IsFlag 28)
+			(if (IsFlag 28) ; fTeleporting
 				(cond
 					(north
 						(= whichEntrance topExit)

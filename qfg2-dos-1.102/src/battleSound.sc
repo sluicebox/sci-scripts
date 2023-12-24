@@ -92,7 +92,7 @@
 		(= gMonsterHealth health)
 		(if (gSounds contains: battleSound)
 			(battleSound stop: dispose:)
-			(if (not (IsFlag 159))
+			(if (not (IsFlag 159)) ; fPracticeFight
 				(gMiscSound
 					number: (if (<= health 0) endMusic else 23)
 					priority: 6
@@ -100,7 +100,7 @@
 					play:
 				)
 			else
-				(ClearFlag 159)
+				(ClearFlag 159) ; fPracticeFight
 			)
 		)
 		(super dispose:)

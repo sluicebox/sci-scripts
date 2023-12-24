@@ -166,7 +166,7 @@
 			shield
 			bow
 		)
-		(SetFlag 127)
+		(SetFlag 127) ; f160
 		(while ((= event (Event new:)) type:)
 			(event dispose:)
 		)
@@ -198,8 +198,8 @@
 				(Face gEgo uhuraBody)
 				(Say uhura 160 0) ; "That be my place to stay. I think you shall not go there."
 			)
-			((and (gEgo inRect: 225 117 260 130) (not (IsFlag 176)))
-				(SetFlag 176)
+			((and (gEgo inRect: 225 117 260 130) (not (IsFlag 176))) ; fSeenPractice
+				(SetFlag 176) ; fSeenPractice
 				(gEgo setMotion: 0)
 				(Face gEgo uhuraBody)
 				(Say uhura 160 1 160 2) ; "That will be the place to see just how good a fighter you are. I get tired of not using spear and shield for so long a while. Maybe you and I will go check out skills there."
@@ -239,10 +239,10 @@
 						(HighPrint 160 6) ; "You don't see any spare swords lying around."
 					)
 					((and (== gDay 12) (== gElementalState 5) (== gOrigHeroType 0))
-						(if (IsFlag 72)
+						(if (IsFlag 72) ; fRakeeshSword
 							(Say rakeesh 160 7) ; "You have my sword, Hero."
 						else
-							(SetFlag 72)
+							(SetFlag 72) ; fRakeeshSword
 							(rakeeshBody setScript: egoTakesSword)
 						)
 					)
@@ -267,7 +267,7 @@
 					((not (gEgo inRect: 260 130 310 140))
 						(HighPrint 160 9) ; "Step over to the book if you wish to read it."
 					)
-					((IsFlag 139)
+					((IsFlag 139) ; fBookSigned
 						(HighPrint (Format @str 160 10 @gUserName)) ; "The last entry is "%s, Hero of Spielburg.""
 					)
 					(else
@@ -284,11 +284,11 @@
 					((not (gEgo inRect: 260 130 310 140))
 						(HighPrint 160 12) ; "Step over to the book if you wish to sign it."
 					)
-					((IsFlag 139)
+					((IsFlag 139) ; fBookSigned
 						(HighPrint 160 13) ; "You have already signed it."
 					)
 					(else
-						(SetFlag 139)
+						(SetFlag 139) ; fBookSigned
 						(SolvePuzzle 611 3)
 						(HighPrint 160 14) ; "You sign your name in the book."
 					)
@@ -716,8 +716,8 @@
 		(cond
 			((super handleEvent: event))
 			((Said 'thank[/rakeesh]')
-				(if (and (IsFlag 72) (not (IsFlag 186)))
-					(SetFlag 186)
+				(if (and (IsFlag 72) (not (IsFlag 186))) ; fRakeeshSword, fSwordThanks
+					(SetFlag 186) ; fSwordThanks
 					(SkillUsed 14 50) ; honor
 				)
 				(SayThanks rakeesh 160 34)
@@ -727,7 +727,7 @@
 			)
 			((Said 'give,replace,refuse/purse,alm,prize')
 				(cond
-					((SetFlag 158)
+					((SetFlag 158) ; fRefusedReward
 						(HighPrint 160 36) ; "You've already returned the reward."
 					)
 					((or (not (IsFlag 610)) (IsFlag 600))
@@ -748,12 +748,12 @@
 			(
 				(and
 					(== what 27)
-					(not (IsFlag 72))
+					(not (IsFlag 72)) ; fRakeeshSword
 					(== gOrigHeroType 0)
 					(== gDay 12)
 					(== gElementalState 5)
 				)
-				(SetFlag 72)
+				(SetFlag 72) ; fRakeeshSword
 				(rakeeshBody setScript: egoTakesSword)
 			)
 			((and (== what 5) (<= 5 gElementalState 6))
@@ -912,8 +912,8 @@
 				)
 			)
 			(9
-				(if (not (IsFlag 71))
-					(SetFlag 71)
+				(if (not (IsFlag 71)) ; fBabyMessage
+					(SetFlag 71) ; fBabyMessage
 					(= babyMessage 1)
 					(simba setScript: babyTurns)
 				else
@@ -933,8 +933,8 @@
 		(cond
 			((super handleEvent: event))
 			((Said 'ask/simba,baby')
-				(if (not (IsFlag 71))
-					(SetFlag 71)
+				(if (not (IsFlag 71)) ; fBabyMessage
+					(SetFlag 71) ; fBabyMessage
 					(= babyMessage 1)
 					(simba setScript: babyTurns)
 				else
@@ -975,7 +975,7 @@
 			(2
 				(gEgo use: 31) ; Soulforge
 				(CantBePaladin)
-				(SetFlag 157)
+				(SetFlag 157) ; fUhuraMad
 				(gCurRoom newRoom: 320)
 			)
 		)

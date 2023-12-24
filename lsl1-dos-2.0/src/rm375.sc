@@ -55,7 +55,7 @@
 	(method (init &tmp foo)
 		(= foo JumpTo)
 		(gGame setCursor: gTheCursor 0 333 199)
-		(if (IsFlag 46)
+		(if (IsFlag 46) ; fCredits
 			(gCurRoom drawPic: 720)
 			(gCurRoom setScript: sCredits)
 		else

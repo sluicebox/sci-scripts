@@ -125,7 +125,7 @@
 				(= gSpellChecker gAllChecker)
 			)
 		)
-		(SetFlag 132)
+		(SetFlag 132) ; f240
 	)
 
 	(method (handleEvent event)

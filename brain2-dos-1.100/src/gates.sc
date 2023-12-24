@@ -152,7 +152,7 @@
 	(Graph grFILL_BOX 41 91 param1 92 1 34)
 	(Graph grFILL_BOX 41 92 param1 93 1 33)
 	(Graph grFILL_BOX 41 103 param1 104 1 34)
-	(if (!= global114 2)
+	(if (!= gDifficulty 2) ; Expert
 		(Graph grFILL_BOX param1 temp2 (+ param1 1) 114 1 34)
 	)
 	(Graph grUPDATE_BOX 41 51 131 119 1)
@@ -188,14 +188,14 @@
 		)
 		(= curInvIcon @local1)
 		(= window chipWin)
-		(switch global114
-			(0
+		(switch gDifficulty
+			(0 ; Novice
 				(= local59 2)
 			)
-			(1
+			(1 ; Standard
 				(= local59 3)
 			)
-			(2
+			(2 ; Expert
 				(= local59 4)
 			)
 		)
@@ -290,7 +290,7 @@
 			(super showHelp: param1 &rest)
 		)
 		(if (and (not (& state $2000)) (or (and argc param1) [local65 local64]))
-			(proc15_0
+			(Say
 				self
 				noun
 				9
@@ -316,10 +316,10 @@
 				(Print
 					addText:
 						1
-						(switch global114
-							(0 21)
-							(1 22)
-							(2 23)
+						(switch gDifficulty
+							(0 21) ; Novice
+							(1 22) ; Standard
+							(2 23) ; Expert
 						)
 						0
 						2
@@ -335,10 +335,10 @@
 				(Print
 					addText:
 						1
-						(switch global114
-							(0 21)
-							(1 22)
-							(2 23)
+						(switch gDifficulty
+							(0 21) ; Novice
+							(1 22) ; Standard
+							(2 23) ; Expert
 						)
 						0
 						1
@@ -477,12 +477,12 @@
 		(DrawCel 403 1 0 127 21 -1)
 		(if local78
 			(localproc_7
-				(switch global114
-					(0 74)
-					(1 98)
-					(2 131)
+				(switch gDifficulty
+					(0 74) ; Novice
+					(1 98) ; Standard
+					(2 131) ; Expert
 				)
-				(if (== global114 2) 5 else 6)
+				(if (== gDifficulty 2) 5 else 6) ; Expert
 			)
 			(if (!= (progSock value:) 0)
 				(= local61 0)
@@ -570,7 +570,7 @@
 				(+
 					(inputArea nsTop:)
 					9
-					(* local63 (if (== global114 2) 5 else 6))
+					(* local63 (if (== gDifficulty 2) 5 else 6)) ; Expert
 				)
 			)
 			(Graph grFILL_BOX temp1 temp0 (+ temp1 5) (+ temp0 3) 1 36)
@@ -587,7 +587,7 @@
 				(+
 					(inputArea nsTop:)
 					9
-					(* local63 (if (== global114 2) 5 else 6))
+					(* local63 (if (== gDifficulty 2) 5 else 6)) ; Expert
 				)
 				-1
 			)
@@ -1073,7 +1073,7 @@
 					)
 				)
 				(if temp1
-					(proc15_0 gates 30 1)
+					(Say gates 30 1) ; "Chip programmed."
 					(= local64 3)
 					(gates showHelp:)
 				else
@@ -1235,13 +1235,13 @@
 	(method (select &tmp temp0 [temp1 40] temp41 temp42 temp43)
 		(if (super select: &rest)
 			(= temp43
-				(switch global114
-					(0 74)
-					(1 98)
-					(2 131)
+				(switch gDifficulty
+					(0 74) ; Novice
+					(1 98) ; Standard
+					(2 131) ; Expert
 				)
 			)
-			(= temp42 (if (== global114 2) 5 else 6))
+			(= temp42 (if (== gDifficulty 2) 5 else 6)) ; Expert
 			(switch (testSock value:)
 				(1
 					(localproc_6 1)
@@ -1274,14 +1274,14 @@
 						1
 					)
 					(testSock value: 3)
-					(proc15_0 gates 5 9)
+					(Say gates 5 9) ; "The old computer chip is discarded."
 					(= local64 2)
 					(inputArea
 						nsLeft:
-							(switch global114
-								(0 73)
-								(1 64)
-								(2 55)
+							(switch gDifficulty
+								(0 73) ; Novice
+								(1 64) ; Standard
+								(2 55) ; Expert
 							)
 						nsBottom: temp43
 					)
@@ -1372,7 +1372,7 @@
 						1
 						0
 						(if (== noun 23)
-							(+ global114 1)
+							(+ gDifficulty 1) ; Standard
 						else
 							1
 						)

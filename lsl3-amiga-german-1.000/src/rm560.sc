@@ -82,7 +82,7 @@
 			)
 			(Print 560 0) ; "Skipping ahead..."
 			(= gScore startingScore)
-			(SetFlag 77)
+			(SetFlag 77) ; skippedLogRide
 			(gCurRoom newRoom: 580)
 			(return)
 		)

@@ -683,8 +683,8 @@
 				(Print 0 0) ; "You talk to yourself, and are amazed to discover you already know what you're going to say."
 			)
 			(3 ; Do
-				(if (IsFlag 43)
-					(ClearFlag 43)
+				(if (IsFlag 43) ; fWearingRubber
+					(ClearFlag 43) ; fWearingRubber
 					(gEgo put: 8 0) ; lubber
 					(Points 87 1)
 					(Print 0 1) ; "Good idea. You carefully remove your lubber and dispose of it in a way that will not be described here."
@@ -697,7 +697,7 @@
 			)
 			(11 ; Taste/Smell
 				(cond
-					((IsFlag 37)
+					((IsFlag 37) ; fSmellsLikeDogPiss
 						(Print 0 4) ; "Phew! You smell like a used fire hydrant!"
 					)
 					((Random 0 1)
@@ -755,8 +755,8 @@
 						(Print 0 17) ; "You prick yourself with the rose."
 					)
 					(8 ; lubber
-						(if (IsFlag 43)
-							(ClearFlag 43)
+						(if (IsFlag 43) ; fWearingRubber
+							(ClearFlag 43) ; fWearingRubber
 							(gEgo put: 8 0) ; lubber
 							(Points 87 1)
 							(Print 0 1) ; "Good idea. You carefully remove your lubber and dispose of it in a way that will not be described here."
@@ -1202,12 +1202,12 @@
 					(!= gCurRoomNum 710)
 					(!= gCurRoomNum 720)
 					(!= gCurRoomNum 190)
-					(not (IsFlag 6))
+					(not (IsFlag 6)) ; fEveHasApple
 					(== (-- gSpraySeconds) 1)
 				)
 				(= gSpraySeconds 0)
-				(SetFlag 20)
-				(if (not (IsFlag 5))
+				(SetFlag 20) ; fMouthSmellsBad
+				(if (not (IsFlag 5)) ; fEgoUsingSpray
 					(if gModelessDialog
 						(gModelessDialog dispose:)
 					)
@@ -1230,7 +1230,7 @@
 					)
 				)
 			)
-			(if (and (< gLarryDollars 1) (not (IsFlag 1)))
+			(if (and (< gLarryDollars 1) (not (IsFlag 1))) ; fBetInProgress
 				(if gModelessDialog
 					(gModelessDialog dispose:)
 				)
@@ -1891,9 +1891,9 @@
 	(method (doit)
 		(super doit:)
 		(cond
-			((IsFlag 40)
+			((IsFlag 40) ; fToiletPaperOnShoe
 				(if (< (self distanceTo: gEgo) 30)
-					(ClearFlag 40)
+					(ClearFlag 40) ; fToiletPaperOnShoe
 					(if gModelessDialog
 						(gModelessDialog dispose:)
 					)
@@ -1901,9 +1901,9 @@
 					(Print 0 60) ; "You nonchalantly scrape it off."
 				)
 			)
-			((IsFlag 37)
+			((IsFlag 37) ; fSmellsLikeDogPiss
 				(if (< (self distanceTo: gEgo) 30)
-					(ClearFlag 37)
+					(ClearFlag 37) ; fSmellsLikeDogPiss
 					(if gModelessDialog
 						(gModelessDialog dispose:)
 					)
@@ -1913,7 +1913,7 @@
 			(
 				(and
 					(not gSpraySeconds)
-					(IsFlag 20)
+					(IsFlag 20) ; fMouthSmellsBad
 					(not complained)
 					(< (self distanceTo: gEgo) 30)
 				)

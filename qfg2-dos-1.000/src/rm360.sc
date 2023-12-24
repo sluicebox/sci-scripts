@@ -180,7 +180,7 @@
 		)
 		(InitFeatures curtains bar lamps perch hole)
 		(InitAddToPics table1 table2 table3 table4 table5 shelf1 shelf2 parrot)
-		(if (not (IsFlag 55))
+		(if (not (IsFlag 55)) ; fLampTaken
 			(oilLamp init:)
 		)
 		(if (or (== gTimeODay 4) (== gTimeODay 5))
@@ -236,8 +236,8 @@
 			(script)
 			((!= gCurRoomNum gNewRoomNum))
 			((and (gCast contains: ferrari) (& (gEgo onControl: 1) $0010))
-				(if (and (IsFlag 113) (not (IsFlag 171)))
-					(SetFlag 171)
+				(if (and (IsFlag 113) (not (IsFlag 171))) ; fSpose2Sit, fInvited2Sit
+					(SetFlag 171) ; fInvited2Sit
 					(Say ferrari self 360 13) ; "Welcome to the Blue Parrot. I am Ferrari, Signor Ferrari. Sit down, my dear sir, relax. You are among friends here."
 				)
 			)
@@ -290,7 +290,7 @@
 				(HighPrint 360 17) ; "It is locked. Apparently, the sleeping rooms are only accessible at night."
 			)
 			((Said 'talk,talk,ask')
-				(if (IsFlag 113)
+				(if (IsFlag 113) ; fSpose2Sit
 					(HighPrint 360 18) ; "The person glares at you, then glances nervously over at Signor Ferrari."
 				else
 					(event claimed: 0)
@@ -404,7 +404,7 @@
 					(
 						(and
 							gNight
-							(not (IsFlag 98))
+							(not (IsFlag 98)) ; fFerrariPOed
 							(!= gInnState 6)
 							(gCast contains: ferrari)
 						)
@@ -432,7 +432,7 @@
 					(gNight
 						(KillEgo 2 {Persona non Grata})
 					)
-					((IsFlag 113)
+					((IsFlag 113) ; fSpose2Sit
 						(KillEgo 1 {You took too long})
 					)
 					(else
@@ -457,14 +457,14 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(if (and (IsFlag 99) (== gDay 27))
+				(if (and (IsFlag 99) (== gDay 27)) ; fThiefShown
 					(Say ferrari self 360 33) ; "I should like to speak with you tomorrow about the use of your skills. As head of all illegal activity in Raseir, I am an influential and respected man, and I have no intention of letting an amateur jeopardize my position, if you understand my meaning. Good night, for now."
 				else
 					(self cue:)
 				)
 			)
 			(1
-				(if (IsFlag 166)
+				(if (IsFlag 166) ; f361
 					(= gInnState 9)
 				else
 					(= gInnState 4)
@@ -493,7 +493,7 @@
 					((OneOf gInnState 1 3 6 8)
 						(Say ferrari self 360 34) ; "Please do not disturb me. I need to think."
 					)
-					((not (IsFlag 113))
+					((not (IsFlag 113)) ; fSpose2Sit
 						(HighPrint 360 35) ; "Ferrari ignores you."
 						(= cycles 1)
 					)
@@ -503,7 +503,7 @@
 				)
 			)
 			(3
-				(if (or (OneOf gInnState 1 3 6 8) (not (IsFlag 113)))
+				(if (or (OneOf gInnState 1 3 6 8) (not (IsFlag 113))) ; fSpose2Sit
 					(self changeState: 8)
 				else
 					(gEgo setHeading: 135 self)
@@ -511,7 +511,7 @@
 			)
 			(4
 				(gEgo view: 361 setLoop: 0 setCel: 0 setCycle: End self)
-				(ClearFlag 113)
+				(ClearFlag 113) ; fSpose2Sit
 			)
 			(5
 				(gEgo
@@ -682,7 +682,7 @@
 				(if (MakeSign)
 					(SolvePuzzle 709 5 2)
 					(Say ferrari 360 39 360 40) ; "Ah, when I first saw you, I said to myself, there is a man who knows how to play the game. I appreciate that in a man."
-					(SetFlag 99)
+					(SetFlag 99) ; fThiefShown
 				else
 					(Say ferrari 360 41) ; "Ha ha, heh! You seem very sure of yourself, don't you?"
 				)
@@ -699,7 +699,7 @@
 
 	(method (respond event)
 		(cond
-			((IsFlag 113)
+			((IsFlag 113) ; fSpose2Sit
 				(event claimed: 1)
 				(Say self 360 43) ; "I asked you to SIT DOWN! Please."
 			)
@@ -707,7 +707,7 @@
 				(event claimed: 1)
 				(HighPrint 360 44) ; "Ferrari just gestures you away with his fly-swatter. You find the bartender glaring at you."
 			)
-			((and (== gInnState 3) (not (IsFlag 111)))
+			((and (== gInnState 3) (not (IsFlag 111))) ; fUgartePaid
 				(event claimed: 1)
 				(Say self 360 45) ; "I do not know what Ugarte has to say, and I am most intrigued. Perhaps you should relieve our curiosity and pay the man."
 			)
@@ -828,7 +828,7 @@
 	(method (handleEvent event)
 		(cond
 			((super handleEvent: event))
-			((and (== (event type:) evSAID) (IsFlag 113) (== gInnState 6))
+			((and (== (event type:) evSAID) (IsFlag 113) (== gInnState 6)) ; fSpose2Sit
 				(event claimed: 1)
 				(Say self 360 49) ; "Do as Signor Ferrari orders."
 			)
@@ -1132,7 +1132,7 @@
 				(HighPrint 360 50) ; "You stealthily nab the oil lamp."
 				(oilLamp dispose:)
 				(gEgo get: 42) ; Oil
-				(SetFlag 55)
+				(SetFlag 55) ; fLampTaken
 			else
 				(HighPrint 360 51) ; "If you're going to steal a lamp, you'd better choose one in a less conspicuous corner of the room."
 			)

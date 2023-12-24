@@ -33,7 +33,7 @@
 		(gEgo init: normalize: 553 setStep: 2 1)
 		(plane init: setLoop: 0 setCel: (Random 4 6) setScript: sPlane)
 		(door init: setPri: 4)
-		(if (or (IsFlag 38) (IsFlag 1))
+		(if (or (IsFlag 38) (IsFlag 1)) ; fLimoParked, fCalledLimo
 			(limo init: posn: 277 115)
 		)
 		(switch gPrevRoomNum
@@ -47,7 +47,7 @@
 			)
 			(else
 				(gEgo posn: 1000 1000 0)
-				(if (not (IsFlag 38))
+				(if (not (IsFlag 38)) ; fLimoParked
 					(if (not (gCast contains: limo))
 						(limo init:)
 					)
@@ -77,10 +77,10 @@
 		(trashCan init: approachVerbs: 3) ; Do
 		(if
 			(and
-				(IsFlag 12)
+				(IsFlag 12) ; fCalledGreenCard
 				(== gLarryLoc 3)
 				(not (gEgo has: 21)) ; Green_Card
-				(not (IsFlag 11))
+				(not (IsFlag 11)) ; fBeenInMiami
 			)
 			(envelope init: approachVerbs: 3) ; Do
 			(= cardHere 1)
@@ -677,7 +677,7 @@
 				(= cycles 2)
 			)
 			(1
-				(if (IsFlag 38)
+				(if (IsFlag 38) ; fLimoParked
 					(self changeState: 5)
 				else
 					(theMusic3 number: 255 loop: 1 play: flags: 1 hold: 10)
@@ -715,7 +715,7 @@
 				(theMusic3 number: 192 loop: 1 play:)
 				(HandsOn)
 				(gEgo normalize: 553 setStep: 2 1)
-				(SetFlag 38)
+				(SetFlag 38) ; fLimoParked
 				(self dispose:)
 			)
 		)

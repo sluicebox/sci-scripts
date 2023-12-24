@@ -51,22 +51,22 @@
 			(
 				(and
 					inAlley200
-					(not (IsFlag 142))
+					(not (IsFlag 142)) ; fFollowingSlave
 					(or
 						(and (== facingHeading 3) (== (- length scrBotPos) 36))
 						(and (== facingHeading 1) (== (- length scrBotPos) 36))
 					)
 					(== gDay 28)
-					(IsFlag 97)
-					(not (IsFlag 138))
+					(IsFlag 97) ; fUgarteBusted
+					(not (IsFlag 138)) ; fVisitedHaremGirl
 				)
-				(SetFlag 142)
+				(SetFlag 142) ; fFollowingSlave
 				(gGame setScript: slaveBeckons)
 			)
 			(
 				(and
 					(not (gGame script:))
-					(IsFlag 142)
+					(IsFlag 142) ; fFollowingSlave
 					(or
 						(and (== facingHeading 1) (== (- length scrBotPos) 20))
 						(and (== facingHeading 3) (== (- length scrBotPos) 20))
@@ -93,7 +93,7 @@
 			(and
 				(not inAlley200)
 				(== gDay 28)
-				(not (IsFlag 138))
+				(not (IsFlag 138)) ; fVisitedHaremGirl
 				(not (gGame script:))
 				(or
 					(and

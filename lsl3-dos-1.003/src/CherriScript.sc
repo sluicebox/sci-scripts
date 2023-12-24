@@ -95,7 +95,7 @@
 			)
 			(2
 				(if (not (TestFlag 48))
-					(SetFlag 48)
+					(SetFlag 48) ; seenCherri
 					(gGame changeScore: 5)
 				)
 				(Print 422 5) ; "Hello yourself, Larry," replies the bathrobed beauty, turning to face you. "I'm Cherri Tart."

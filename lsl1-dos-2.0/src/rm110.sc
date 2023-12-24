@@ -1003,9 +1003,9 @@
 							(Print 110 29 #at -1 20 #time 2) ; "Ahhhh."
 							(++ gSprayCounter)
 							(= gSpraySeconds 600)
-							(ClearFlag 20)
-							(if (IsFlag 21)
-								(ClearFlag 21)
+							(ClearFlag 20) ; fMouthSmellsBad
+							(if (IsFlag 21) ; fNearPerson
+								(ClearFlag 21) ; fNearPerson
 								(Print 110 30) ; "It's about time!!"
 							)
 							(if (> gSprayCounter 9)

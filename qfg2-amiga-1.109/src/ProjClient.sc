@@ -164,15 +164,15 @@
 		(= theLoop (gEgo loop:))
 		(EgoGait -1 0)
 		(gEgo loop: (+ theLoop 4) setLoop: -1)
-		(ClearFlag 87)
-		(ClearFlag 92)
+		(ClearFlag 87) ; fCastingSpell
+		(ClearFlag 92) ; fSpellCritical
 		(super dispose:)
 	)
 
 	(method (changeState newState &tmp dist aMiss moveScript theLoop angleToTarg testAngle index theRoom)
 		(switch (= state newState)
 			(0
-				(SetFlag 87)
+				(SetFlag 87) ; fCastingSpell
 				(self setScript: (AimSpell new:) self type)
 			)
 			(1
@@ -244,7 +244,7 @@
 			)
 			(3
 				(if (== type 26)
-					(SetFlag 92)
+					(SetFlag 92) ; fSpellCritical
 					(findViewLoop type)
 					(if targetHit
 						(if (not soundObj)
@@ -299,7 +299,7 @@
 					(theLasso dispose:)
 				)
 				(= targetHit (= theLasso 0))
-				(ClearFlag 92)
+				(ClearFlag 92) ; fSpellCritical
 				(gEgo setCycle: End self)
 			)
 			(5

@@ -263,8 +263,8 @@
 		(if (!= gPrevRoomNum 330)
 			(gEgo y: 180)
 		)
-		(if (IsFlag 98)
-			(ClearFlag 98)
+		(if (IsFlag 98) ; fCaberetTgl
+			(ClearFlag 98) ; fCaberetTgl
 			(LoadMany rsVIEW 321 322 324)
 			(= trickTimer (Random 1200 2000))
 			(= mcOnStage 1)
@@ -275,7 +275,7 @@
 				(jokes addToEnd: i)
 			)
 		else
-			(SetFlag 98)
+			(SetFlag 98) ; fCaberetTgl
 			(LoadMany rsVIEW 323)
 			(gTheMusic number: 320 loop: -1 vol: 127 flags: 1 play:)
 			(for

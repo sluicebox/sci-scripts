@@ -171,7 +171,7 @@
 		)
 		(if
 			(or
-				(IsFlag 133)
+				(IsFlag 133) ; fCantUseMap
 				(gEgo script:)
 				(gCurRoom script:)
 				(gGame script:)
@@ -348,7 +348,7 @@
 		)
 		(notHiddenList eachElementDo: #show release: dispose:)
 		(if (and roomToGoTo (or (!= roomToGoTo gCurRoomNum) (== gCurRoomNum 704))) ; alleyRoom
-			(SetFlag 28)
+			(SetFlag 28) ; fTeleporting
 			(= gRoomExitDir 3)
 			(= gCurRoomNum 0)
 			(gCurRoom newRoom: roomToGoTo)

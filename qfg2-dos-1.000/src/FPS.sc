@@ -57,7 +57,7 @@
 					yourself:
 				)
 		)
-		(if (IsFlag 136)
+		(if (IsFlag 136) ; fPurseInPlaza
 			(purse init:)
 		)
 		(if (and (== gDay 7) (< gPlazaLastHere 700))
@@ -176,8 +176,8 @@
 		else
 			(HighPrint 315 3) ; "You try it and find that you like it. It is soon eaten."
 			(= gFreeMeals 1)
-			(ClearFlag 4)
-			(ClearFlag 5)
+			(ClearFlag 4) ; fHungry
+			(ClearFlag 5) ; fStarving
 		)
 	)
 
@@ -678,7 +678,7 @@
 				(Say omar self 315 17) ; "And they ask "What is a Hero?",  though the answer's evident, He's the one who faces death  knowing that his life's well spent."
 			)
 			(5
-				(SetFlag 136)
+				(SetFlag 136) ; fPurseInPlaza
 				(SolvePuzzle 603 3)
 				(self dispose:)
 			)
@@ -728,7 +728,7 @@
 			)
 			(4
 				(HighPrint 315 18) ; "You pick up the purse and open it. It has 6 dinars and 25 centimes. It also has a small scrap of paper with the words, "Quelling Chaos from Shapeir, Driving Darkness from Raseir"."
-				(ClearFlag 136)
+				(ClearFlag 136) ; fPurseInPlaza
 				(gEgo get: 55) ; Purse
 				(= cycles 1)
 			)

@@ -38,11 +38,11 @@
 		(NormalEgo)
 		(super init:)
 		(door init:)
-		(if (or (== gPrevRoomNum 430) (IsFlag 142))
+		(if (or (== gPrevRoomNum 430) (IsFlag 142)) ; fFollowingSlave
 			(door cel: 2)
 		)
 		(= saveIllegal -384)
-		(if (IsFlag 142)
+		(if (IsFlag 142) ; fFollowingSlave
 			(&= saveIllegal $f7ff)
 		)
 		(InitAddToPics barricade)
@@ -54,7 +54,7 @@
 				((== gPrevRoomNum 430)
 					(door setCycle: Beg)
 				)
-				((IsFlag 142)
+				((IsFlag 142) ; fFollowingSlave
 					(&= saveIllegal $f7ff)
 					(HighPrint 429 0) ; "You see an open doorway."
 					(TimePrint

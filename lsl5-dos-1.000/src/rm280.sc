@@ -261,7 +261,7 @@
 					((!= gLarryLoc 1)
 						(gCurRoom setScript: sPhone 0 50)
 					)
-					((not (IsFlag 1))
+					((not (IsFlag 1)) ; fCalledLimo
 						(= validNumber 1)
 						(gCurRoom setScript: sPhone 0 10)
 					)
@@ -276,7 +276,7 @@
 					((!= gLarryLoc 2)
 						(gCurRoom setScript: sPhone 0 50)
 					)
-					((not (IsFlag 1))
+					((not (IsFlag 1)) ; fCalledLimo
 						(= validNumber 1)
 						(gCurRoom setScript: sPhone 0 30)
 					)
@@ -291,7 +291,7 @@
 					((!= gLarryLoc 3)
 						(gCurRoom setScript: sPhone 0 50)
 					)
-					((and (not (IsFlag 8)) (not (IsFlag 1)))
+					((and (not (IsFlag 8)) (not (IsFlag 1))) ; fBeenToTown, fCalledLimo
 						(= validNumber 1)
 						(gCurRoom setScript: sPhone 0 20)
 					)
@@ -306,7 +306,7 @@
 					((!= gLarryLoc 3)
 						(gCurRoom setScript: sPhone 0 50)
 					)
-					((not (IsFlag 12))
+					((not (IsFlag 12)) ; fCalledGreenCard
 						(= validNumber 1)
 						(gCurRoom setScript: sPhone 0 40)
 					)
@@ -1266,7 +1266,7 @@
 			)
 			(10
 				(Points 3 1)
-				(SetFlag 38)
+				(SetFlag 38) ; fLimoParked
 				(TPrint 280 55 67 -1 20) ; "Hello, Checker Limo. Wearya? Weardjawannago?"
 				(= ticks 30)
 			)
@@ -1300,7 +1300,7 @@
 			)
 			(20
 				(Points 3 1)
-				(SetFlag 38)
+				(SetFlag 38) ; fLimoParked
 				(TPrint 280 63 67 -1 20) ; "Good afternoon, and welcome to lovely Miami," a pleasant voice answers the telephone. "How may North Beach Limousine Service assist you today?"
 				(= ticks 30)
 			)
@@ -1327,7 +1327,7 @@
 			)
 			(30
 				(Points 3 1)
-				(SetFlag 38)
+				(SetFlag 38) ; fLimoParked
 				(TPrint 280 69 67 -1 20) ; "Good day. Tramp Limousine at your service."
 				(= ticks 30)
 			)
@@ -1345,7 +1345,7 @@
 			)
 			(40
 				(Points 7 12)
-				(SetFlag 38)
+				(SetFlag 38) ; fLimoParked
 				(TPrint 280 72) ; "`JesGreeenCars.' Si habla Espanol y Eeengleesh. Haf ju `lost jour carrrd?'"
 				(= ticks 30)
 			)

@@ -58,7 +58,7 @@
 			setCycle: RandCycle
 			approachVerbs: 3 4 10 11 5 2 ; Do, Inventory, Zipper, Taste/Smell, Talk, Look
 		)
-		(if (IsFlag 32)
+		(if (IsFlag 32) ; fReadyToMarry
 			(fawn init: setLoop: 3 setCel: 0 x: 117 y: 135)
 			(preacherHead cycleSpeed: gHowFast init:)
 			(aPreacher cycleSpeed: gHowFast moveSpeed: gHowFast init:)
@@ -73,7 +73,7 @@
 
 	(method (doit)
 		(super doit: &rest)
-		(if (and (not script) (IsFlag 32))
+		(if (and (not script) (IsFlag 32)) ; fReadyToMarry
 			(gCurRoom setScript: sGetMarried)
 		)
 	)
@@ -91,7 +91,7 @@
 		(switch (= state newState)
 			(0
 				(HandsOff)
-				(if (not (IsFlag 8))
+				(if (not (IsFlag 8)) ; fFailedCeremony
 					(Print 410 0 #at -1 19 #width 280) ; "Your heart fills with eager anticipation as you see your lovely bride, Fawn, waiting for you at the end of the aisle. You've always been a sucker for beautiful weddings and you feel sure that this will be your most special wedding of all!"
 				)
 				(gEgo setMotion: PolyPath 136 133 self)
@@ -104,7 +104,7 @@
 				(gEgo hide:)
 				(fawn hide:)
 				(egoAtAlter init: setCycle: End)
-				(if (IsFlag 8)
+				(if (IsFlag 8) ; fFailedCeremony
 					(Print 410 1 #at -1 20) ; "So... shall we try again?"
 					(Print 410 2 #at 120 30) ; ""Yes, that's why I came back in," you reply."
 					(Print 410 3 #at 120 30) ; "To Fawn you whisper, "Thanks for waiting, Babe!""
@@ -169,7 +169,7 @@
 						(self changeState: 17)
 					)
 					(else
-						(SetFlag 12)
+						(SetFlag 12) ; fFawnInRoom
 						(Print 410 17 #at 120 30) ; ""Of course," you reply, forking over some of your hard-won dough."
 						(-= gLarryDollars 100)
 						(preacherHead setCycle: RandCycle 35 self)
@@ -180,8 +180,8 @@
 				(Print 410 18 #at -1 20) ; "Ok, now where were we? Oh, let's see here... let me skip some of this..."
 				(Print 410 19 #at -1 20) ; "Oh well, let's cut to the chase. I now pronounce you man and wife, till death do you part, or until you get tired of each other, per the currently acceptable social standards!"
 				(Points 71 12)
-				(ClearFlag 32)
-				(ClearFlag 8)
+				(ClearFlag 32) ; fReadyToMarry
+				(ClearFlag 8) ; fFailedCeremony
 				(preacherHead setCycle: RandCycle 20 self)
 			)
 			(13
@@ -213,7 +213,7 @@
 				(Print 410 26) ; "Somehow this entire ceremony was less than you expected. The sacred bonds of marriage certainly get tied loosely in this joint!"
 			)
 			(16
-				(SetFlag 11)
+				(SetFlag 11) ; fWhereDidSheGo
 				(HandsOn)
 				(self dispose:)
 			)
@@ -221,7 +221,7 @@
 				(preacherHead setCycle: RandCycle 10 self)
 			)
 			(18
-				(if (IsFlag 8)
+				(if (IsFlag 8) ; fFailedCeremony
 					(Print 410 27 #at -1 20) ; "So?" the preacher asks sarcastically, "Did you bring the cash with you THIS time?"
 					(Print 410 28 #at 120 30) ; ""Well, er, ah, no, I'm sorry. I suppose I forgot," you reply."
 					(Print 410 29 #at -1 20) ; "I told you, buddy, come back with 100 cold, hard ones!"
@@ -234,7 +234,7 @@
 					(egoAtAlter dispose:)
 					(self changeState: 22)
 				else
-					(SetFlag 8)
+					(SetFlag 8) ; fFailedCeremony
 					(Print 410 30 #at 120 30) ; "Not me," you reply. "I thought this was a temple of love!"
 					(Print 410 31 #at -1 20) ; ""Sorry, buddy, you two are SOL until you can come back here with 100 cold, hard ones!" he says indignantly."
 				)

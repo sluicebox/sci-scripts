@@ -59,8 +59,8 @@
 
 	(method (init)
 		(HandsOff)
-		(SetFlag 3)
-		(SetFlag 5)
+		(SetFlag 3) ; cantSave
+		(SetFlag 5) ; noCursor
 		(super init:)
 		(self setScript: RoomScript)
 		(gGame setSpeed: 6)

@@ -240,7 +240,7 @@
 			((<= gDay 4)
 				(= probAdj 0)
 			)
-			((and (>= gDay 16) (not (IsFlag 15)))
+			((and (>= gDay 16) (not (IsFlag 15))) ; fTightrope
 				(= probAdj 5)
 			)
 			(else
@@ -292,10 +292,10 @@
 						(+ 36 (mod gEnter320 4))
 					)
 				)
-				((not (IsFlag 160))
+				((not (IsFlag 160)) ; fFirstTime320
 					(self setScript: chooseOff)
 				)
-				((IsFlag 14)
+				((IsFlag 14) ; fTightropeWin
 					(if (== 1 gEnter320)
 						(Say challenger (challenger msgFile:) 40)
 					else
@@ -308,7 +308,7 @@
 				)
 				((or (== gDay 2) (== gDay 4))
 					(cond
-						((IsFlag 15)
+						((IsFlag 15) ; fTightrope
 							(Say
 								challenger
 								(challenger msgFile:)
@@ -468,12 +468,12 @@
 						(= moneyPot (if (== gDay 8) {ten} else {five}))
 						(Say challenger (Format @rmnString 321 14 moneyPot)) ; "But Effendi, I have your dinar. But climb up and cross the rope, and %s dinars are yours."
 					)
-					((and (< (challenger y:) 110) (IsFlag 15) (!= challengeStatus 2))
+					((and (< (challenger y:) 110) (IsFlag 15) (!= challengeStatus 2)) ; fTightrope
 						(= challengeStatus 2)
 						(Say challenger 321 15) ; "So, Effendi, let us see if you can walk the rope again."
 					)
 					((not (< (challenger y:) 110))
-						(SetFlag 15)
+						(SetFlag 15) ; fTightrope
 						(= challengeStatus 2)
 						(GiveMoney 100)
 						(self setScript: showEmHow)

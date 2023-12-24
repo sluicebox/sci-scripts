@@ -1860,7 +1860,7 @@
 						(++ global187)
 						(= local407 0)
 						(local402 nsLeft: 209 nsTop: 118 cel: 8)
-						(proc15_0 maze 13 1 8 global187)
+						(Say maze 13 1 8 global187)
 						(if (>= (++ local401) 3)
 							(maze solvePuzzle:)
 						else

@@ -28,8 +28,8 @@
 	(method (init &tmp theCost)
 		(super init:)
 		(gEgo view: 361 setLoop: 6 setCel: 0 posn: 216 129 init:)
-		(SetFlag 166)
-		(if (IsFlag 99)
+		(SetFlag 166) ; f361
+		(if (IsFlag 99) ; fThiefShown
 			(= theCost 500)
 		else
 			(= theCost 1000)

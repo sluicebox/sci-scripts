@@ -32,7 +32,7 @@
 )
 
 (procedure (localproc_0 param1 &tmp temp0 temp1 [temp2 72] temp74 temp75 temp76)
-	(localproc_3 @temp2 (* 36 (+ global114 1)))
+	(localproc_3 @temp2 (* 36 (+ gDifficulty 1))) ; Standard
 	(= temp76 (= temp0 0))
 	(while (< temp0 20)
 		(= [local624 temp0] (localproc_2 @temp2))
@@ -360,7 +360,7 @@
 		(= temp0 (- param5 (mod param5 16)))
 		(= temp2 (+ param1 24))
 		(if (== (StrAt temp2 0) 255)
-			(localproc_3 temp2 (if global114 8 else 3))
+			(localproc_3 temp2 (if gDifficulty 8 else 3))
 		)
 		(if (== (= temp1 (localproc_2 temp2)) 255)
 			(return 255)

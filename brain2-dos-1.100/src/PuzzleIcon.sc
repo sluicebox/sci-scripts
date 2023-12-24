@@ -10,7 +10,7 @@
 (use System)
 
 (public
-	proc15_0 0
+	Say 0
 	puzzleCoin 1
 	puzzleOK 2
 	puzzleHelp 3
@@ -29,7 +29,7 @@
 	local6
 )
 
-(procedure (proc15_0 param1 &tmp temp0)
+(procedure (Say param1 &tmp temp0)
 	(gMessager say: &rest)
 	(= gGameTime (+ gTickOffset (GetTime)))
 	(if gFastCast
@@ -151,7 +151,7 @@
 			(= global133 param2)
 			(= global132 (+ param3 1))
 			((ScriptID 30 0) disposeWhenDone: 0) ; brainTalker
-			(proc15_0 param5 2 9 0 4 0 20)
+			(Say param5 2 9 0 4 0 20) ; "Congratulations!"
 			(= global132 0)
 			((ScriptID 30 0) disposeWhenDone: 1 dispose:) ; brainTalker
 		else
@@ -165,7 +165,7 @@
 			(proc15_4 param5 3 @temp6)
 		)
 	else
-		(proc15_0 param5 10 4 0 (Random 1 5) 0 20)
+		(Say param5 10 4 0 (Random 1 5) 0 20)
 	)
 	(return
 		(if (> (+ gScore global134) temp0)
@@ -291,9 +291,9 @@
 			)
 		)
 		(proc15_7)
-		(if (not (& shown (<< $0001 global114)))
+		(if (not (& shown (<< $0001 gDifficulty)))
 			(self showHelp: 0)
-			(|= shown (<< $0001 global114))
+			(|= shown (<< $0001 gDifficulty))
 		)
 		(if puzzleCast
 			(puzzleCast eachElementDo: #show)
@@ -435,7 +435,7 @@
 				(= local4 gGameTime)
 				(if (> (++ local3) idleTime)
 					(if (not puzzleStatus)
-						(proc15_0 self 1 9 0 (Random 1 16) 0 20)
+						(Say self 1 9 0 (Random 1 16) 0 20)
 					)
 					(= local3 0)
 				)
@@ -505,15 +505,15 @@
 						(self showHelp: 1)
 					)
 					(KEY_k
-						(proc15_0 self 33 46 0 0 0 1)
+						(Say self 33 46 0 0 0 1) ; "|c4|KEYBOARD SUPPORT:|c|  |c4|ENTER|c| - Select |c4|Arrow keys|c| - Move the cursor up, down, left, or right |c4|ESC|c|ape - Exit puzzle |c4|?|c| - Brings up puzzle instructions |c4|k|c| - View this screen"
 						(if (Message msgSIZE msgModule noun 46 0 1)
-							(proc15_0 self noun 46 0 0 0 msgModule)
+							(Say self noun 46 0 0 0 msgModule)
 						)
 					)
 					(KEY_K
-						(proc15_0 self 33 46 0 0 0 1)
+						(Say self 33 46 0 0 0 1) ; "|c4|KEYBOARD SUPPORT:|c|  |c4|ENTER|c| - Select |c4|Arrow keys|c| - Move the cursor up, down, left, or right |c4|ESC|c|ape - Exit puzzle |c4|?|c| - Brings up puzzle instructions |c4|k|c| - View this screen"
 						(if (Message msgSIZE msgModule noun 46 0 1)
-							(proc15_0 self noun 46 0 0 0 msgModule)
+							(Say self noun 46 0 0 0 msgModule)
 						)
 					)
 					(KEY_F2
@@ -591,7 +591,7 @@
 			(cond
 				((and hintFlag (IsFlag hintFlag)) 1)
 				((not global115)
-					(proc15_0 self 2 1 2 1 0 1)
+					(Say self 2 1 2 1 0 1) ; "Your Hint Watch Battery has no more hint charges left."
 					0
 				)
 				(else
@@ -600,7 +600,7 @@
 					)
 					(++ local5)
 					(if (not (-- global115))
-						(proc15_0 self 2 1 3 1 0 1)
+						(Say self 2 1 3 1 0 1) ; "You use your last hint charge."
 					)
 					1
 				)
@@ -610,14 +610,14 @@
 
 	(method (showHelp param1 &tmp temp0)
 		(if (and (not (& state $2000)) (or param1 (not shown)))
-			(proc15_0 self noun 9 0 0 0 msgModule)
+			(Say self noun 9 0 0 0 msgModule)
 		)
 		(if
 			(and
 				(not (& state $2000))
-				(Message msgGET msgModule noun [local0 global114] 0 1)
+				(Message msgGET msgModule noun [local0 gDifficulty] 0 1)
 			)
-			(proc15_0 self noun [local0 global114] 0 0 0 msgModule)
+			(Say self noun [local0 gDifficulty] 0 0 0 msgModule)
 		)
 	)
 
@@ -639,7 +639,7 @@
 		(= temp0
 			(proc15_5
 				solvedFlag
-				(if argc param1 else global114)
+				(if argc param1 else gDifficulty)
 				personalID
 				temp1
 				self

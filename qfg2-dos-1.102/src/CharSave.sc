@@ -224,7 +224,7 @@
 				(if (gEgo has: 54) ; Glasses
 					(|= svMiscEquip $0020)
 				)
-				(if (IsFlag 156)
+				(if (IsFlag 156) ; fBabaFrog
 					(|= svMiscEquip $0030)
 				)
 				(if (gEgo has: 4) ; Sword

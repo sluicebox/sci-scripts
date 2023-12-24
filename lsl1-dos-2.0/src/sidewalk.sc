@@ -70,7 +70,7 @@
 					(!= (gTheMusic2 number:) 800)
 					(== (gTheMusic2 prevSignal:) -1)
 				)
-				(not (IsFlag 38))
+				(not (IsFlag 38)) ; fStiffedCabbie
 			)
 			(gTheMusic2 number: 800 loop: -1 vol: 127 play:)
 		)
@@ -95,7 +95,7 @@
 		(= dogTimer 1000)
 		(if (== gPrevRoomNum 200)
 			(HandsOff)
-			(if (IsFlag 38)
+			(if (IsFlag 38) ; fStiffedCabbie
 				(Load rsVIEW 171)
 			)
 			(gCurRoom setScript: sDropoff)
@@ -287,7 +287,7 @@
 					y: taxiY
 				)
 				(gEgo x: 150 y: (- flatY 10) z: 0)
-				(if (IsFlag 38)
+				(if (IsFlag 38) ; fStiffedCabbie
 					(gEgo egoSpeed: view: 171 loop: 0 setCycle: Fwd)
 					(++ state)
 					(= cycles 1)
@@ -299,7 +299,7 @@
 				(= register 1)
 			)
 			(2
-				(if (IsFlag 38)
+				(if (IsFlag 38) ; fStiffedCabbie
 					(gTheMusic number: 171 loop: -1 vol: 127 flags: 1 play:)
 					(gEgo setCycle: Fwd)
 					(= seconds 5)
@@ -384,7 +384,7 @@
 			(3
 				(sPiss play:)
 				(dog loop: (+ 4 register) setCycle: Fwd)
-				(SetFlag 37)
+				(SetFlag 37) ; fSmellsLikeDogPiss
 				(= beenPissedOn 1)
 				(= seconds 3)
 			)
@@ -841,8 +841,8 @@
 					)
 					(Print 700 18) ; "It's too late now, Larry!"
 				else
-					(if (not (IsFlag 34))
-						(SetFlag 34)
+					(if (not (IsFlag 34)) ; fRodeInCab
+						(SetFlag 34) ; fRodeInCab
 						(if gModelessDialog
 							(gModelessDialog dispose:)
 						)

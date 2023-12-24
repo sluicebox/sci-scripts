@@ -42,13 +42,13 @@
 (procedure (CheckFlags)
 	(if
 		(and
-			(IsFlag 77)
-			(IsFlag 81)
-			(IsFlag 78)
-			(IsFlag 76)
-			(IsFlag 79)
-			(IsFlag 80)
-			(not (IsFlag 122))
+			(IsFlag 77) ; fWaterDown
+			(IsFlag 81) ; fPlantName
+			(IsFlag 78) ; fHeroStory
+			(IsFlag 76) ; fDirtDown
+			(IsFlag 79) ; fDirtStory
+			(IsFlag 80) ; fPlantHug
+			(not (IsFlag 122)) ; fGotFruit
 			(!= (gSpareSound number:) 643)
 		)
 		(gSpareSound number: 643 loop: 1 priority: 8 play:)
@@ -98,7 +98,7 @@
 
 (procedure (turnToEgo)
 	(gMiscSound number: 641 loop: 0 priority: 8 play:)
-	(SetFlag 123)
+	(SetFlag 123) ; fTreeTurned
 	(CheckFlags)
 	(julanar setCycle: End self)
 )
@@ -156,10 +156,10 @@
 					((== gEgoGait 3) ; riding
 						(GetDown)
 					)
-					((not (IsFlag 77))
+					((not (IsFlag 77)) ; fWaterDown
 						(HighPrint 640 7) ; "No matter how hard you try, you seem unable to communicate with the tree about your good deeds."
 					)
-					((IsFlag 78)
+					((IsFlag 78) ; fHeroStory
 						(HighPrint 640 8) ; "Not again! We've heard it before."
 					)
 					((TrySkill 13 (* 10 (- 6 toldJulanarNumTimes))) ; communication
@@ -175,10 +175,10 @@
 					((== gEgoGait 3) ; riding
 						(GetDown)
 					)
-					((not (IsFlag 76))
+					((not (IsFlag 76)) ; fDirtDown
 						(HighPrint 640 9) ; "No matter how hard you try, you seem unable to communicate with the tree about your heroics."
 					)
-					((IsFlag 79)
+					((IsFlag 79) ; fDirtStory
 						(HighPrint 640 10) ; "Please! Not that story again!!!"
 					)
 					((TrySkill 13 (* 10 (- 6 toldJulanarNumTimes))) ; communication
@@ -196,19 +196,19 @@
 					)
 					(
 						(or
-							(not (IsFlag 77))
-							(not (IsFlag 78))
-							(not (IsFlag 76))
-							(not (IsFlag 79))
+							(not (IsFlag 77)) ; fWaterDown
+							(not (IsFlag 78)) ; fHeroStory
+							(not (IsFlag 76)) ; fDirtDown
+							(not (IsFlag 79)) ; fDirtStory
 						)
 						(HighPrint 640 11) ; "The tree shows no sign of recognition."
 					)
 					(else
 						(HighPrint 640 12) ; "Julanar's leaves rustle lightly at the sound of her name."
-						(if (not (IsFlag 81))
-							(SetFlag 81)
+						(if (not (IsFlag 81)) ; fPlantName
+							(SetFlag 81) ; fPlantName
 							(TrySkill 13 100) ; communication
-							(if (and (IsFlag 80) (not (IsFlag 122)))
+							(if (and (IsFlag 80) (not (IsFlag 122))) ; fPlantHug, fGotFruit
 								(CheckFlags)
 								(self setScript: fruitFall)
 							)
@@ -232,15 +232,15 @@
 		(gCurRoom addObstacle: poly1 poly2 poly3)
 		(super init:)
 		(gMiscSound number: 645)
-		(if (IsFlag 76)
+		(if (IsFlag 76) ; fDirtDown
 			(InitAddToPics dirt)
 		)
 		(cond
-			((IsFlag 124)
+			((IsFlag 124) ; fTreeBloomed
 				(julanar cel: 9 palette: (if gNight 2 else 1) init:)
 				(AddBranches)
 			)
-			((IsFlag 123)
+			((IsFlag 123) ; fTreeTurned
 				(julanar cel: 9 palette: (if gNight 2 else 1) init:)
 			)
 			(else
@@ -274,7 +274,7 @@
 						(HighPrint 640 14) ; "Take nothing from the tree except what may be offered."
 					)
 					((Said '/fruit')
-						(if (IsFlag 122)
+						(if (IsFlag 122) ; fGotFruit
 							(HighPrint 640 15) ; "The tree has provided the fruit you need."
 						else
 							(HighPrint 640 16) ; "There is no fruit on the tree."
@@ -295,10 +295,10 @@
 					)
 					((Said '<at/plant,tree')
 						(cond
-							((IsFlag 123)
+							((IsFlag 123) ; fTreeTurned
 								(HighPrint 640 18) ; "The plant resembles a woman very much. It has no leaves or other signs of life."
 							)
-							((IsFlag 124)
+							((IsFlag 124) ; fTreeBloomed
 								(HighPrint 640 19) ; "The plant resembles a woman very much. It has a beautiful canopy of green leaves."
 							)
 							(else
@@ -313,7 +313,7 @@
 			)
 			((Said 'rest')
 				(cond
-					((IsFlag 122)
+					((IsFlag 122) ; fGotFruit
 						(HighPrint 640 22) ; "You curl up under Julanar for a brief nap."
 						(EgoRests 1)
 					)
@@ -327,7 +327,7 @@
 			)
 			((Said 'nap')
 				(cond
-					((IsFlag 122)
+					((IsFlag 122) ; fGotFruit
 						(if gNight
 							(EgoSleeps 5 0)
 							(HighPrint 640 24) ; "You awaken at dawn."
@@ -354,7 +354,7 @@
 					((not (gEgo has: 21)) ; DispelPotion
 						(DontHave)
 					)
-					((IsFlag 44)
+					((IsFlag 44) ; fHeardPlant
 						(HighPrint 640 27) ; "You remember Aziza's story, and you know that the gifts you have given to Julanar are what needed to be done for her. Her shape is by her own choice, and cannot be dispelled."
 					)
 					(else
@@ -375,7 +375,7 @@
 						(HighPrint 640 29) ; "You have no water to give."
 					)
 					(else
-						(SetFlag 77)
+						(SetFlag 77) ; fWaterDown
 						(= waterTime 1)
 						(SolvePuzzle 652 7)
 						(SkillUsed 14 25) ; honor
@@ -398,7 +398,7 @@
 						(GetDown)
 					)
 					((gEgo has: 52) ; MagicEarth
-						(SetFlag 76)
+						(SetFlag 76) ; fDirtDown
 						(= waterTime 0)
 						(SolvePuzzle 646 7)
 						(SkillUsed 14 50) ; honor
@@ -437,7 +437,7 @@
 					((== gEgoGait 3) ; riding
 						(GetDown)
 					)
-					((IsFlag 80)
+					((IsFlag 80) ; fPlantHug
 						(HighPrint 640 32) ; "You don't want to push your luck."
 					)
 					(else
@@ -534,7 +534,7 @@
 	)
 
 	(method (openMe)
-		(if (IsFlag 122)
+		(if (IsFlag 122) ; fGotFruit
 			(HighPrint 640 40) ; "You have already opened her heart."
 		else
 			(HighPrint 640 41) ; "Nice try, but you'll have to find a more traditional method of opening her heart."
@@ -554,13 +554,13 @@
 		(switch theVerb
 			(1
 				(cond
-					((IsFlag 80)
+					((IsFlag 80) ; fPlantHug
 						(HighPrint 640 43) ; "You think she likes you."
 					)
-					((IsFlag 124)
+					((IsFlag 124) ; fTreeBloomed
 						(HighPrint 640 44) ; "The plant surely was once a woman."
 					)
-					((IsFlag 123)
+					((IsFlag 123) ; fTreeTurned
 						(HighPrint 640 45) ; "You admire the way she rotates her crops."
 					)
 					(else
@@ -651,11 +651,11 @@
 		(super dispose:)
 		(if
 			(and
-				(IsFlag 79)
-				(IsFlag 76)
-				(IsFlag 78)
-				(IsFlag 77)
-				(not (IsFlag 124))
+				(IsFlag 79) ; fDirtStory
+				(IsFlag 76) ; fDirtDown
+				(IsFlag 78) ; fHeroStory
+				(IsFlag 77) ; fWaterDown
+				(not (IsFlag 124)) ; fTreeBloomed
 			)
 			(gCurRoom setScript: springTime)
 		)
@@ -682,7 +682,7 @@
 					(if (< (-= gDrinksLeft 10) 0)
 						(= gDrinksLeft 0)
 					)
-					(ClearFlag 3)
+					(ClearFlag 3) ; fThirsty
 					(HighPrint 640 53) ; "The water, as you pour it out on the ground, quickly sinks into the soil and vanishes."
 					(= cycles 2)
 				else
@@ -710,7 +710,7 @@
 					setHeading: 45
 				)
 				(NormalEgo)
-				(if (and waterTime (IsFlag 78) (not (IsFlag 123)))
+				(if (and waterTime (IsFlag 78) (not (IsFlag 123))) ; fHeroStory, fTreeTurned
 					(turnToEgo)
 				else
 					(= cycles 4)
@@ -729,7 +729,7 @@
 
 	(method (dispose)
 		(super dispose:)
-		(if (and (IsFlag 76) (IsFlag 79) (IsFlag 77) (not (IsFlag 124)))
+		(if (and (IsFlag 76) (IsFlag 79) (IsFlag 77) (not (IsFlag 124))) ; fDirtDown, fDirtStory, fWaterDown, fTreeBloomed
 			(gCurRoom setScript: springTime)
 		)
 	)
@@ -744,14 +744,14 @@
 					(HighPrint 640 58) ; "You tell her how you took the Famous Adventurer's Correspondence Course and journeyed to Spielburg to become a hero. You mention how you came to Shapeir and the things you have done here so far."
 				)
 				(= toldJulanarNumTimes 1)
-				(if (and (IsFlag 77) (not (IsFlag 123)))
+				(if (and (IsFlag 77) (not (IsFlag 123))) ; fWaterDown, fTreeTurned
 					(turnToEgo)
 				else
 					(self cue:)
 				)
 			)
 			(1
-				(SetFlag 78)
+				(SetFlag 78) ; fHeroStory
 				(CheckFlags)
 				(self dispose:)
 			)
@@ -764,7 +764,7 @@
 
 	(method (dispose)
 		(super dispose:)
-		(if (and (IsFlag 76) (IsFlag 78) (IsFlag 77) (not (IsFlag 124)))
+		(if (and (IsFlag 76) (IsFlag 78) (IsFlag 77) (not (IsFlag 124))) ; fDirtDown, fHeroStory, fWaterDown, fTreeBloomed
 			(gCurRoom setScript: springTime)
 		)
 	)
@@ -779,14 +779,14 @@
 					(HighPrint 640 61) ; "You tell about how you fought the Earth Elemental and how hard it was to defeat. You tell how your friends needed you. The Hero business is a dirty business, but someone's got to do it."
 				)
 				(= toldJulanarNumTimes 1)
-				(if (and (IsFlag 76) (not (IsFlag 123)))
+				(if (and (IsFlag 76) (not (IsFlag 123))) ; fDirtDown, fTreeTurned
 					(turnToEgo)
 				else
 					(self cue:)
 				)
 			)
 			(1
-				(SetFlag 79)
+				(SetFlag 79) ; fDirtStory
 				(CheckFlags)
 				(self dispose:)
 			)
@@ -799,7 +799,7 @@
 
 	(method (dispose)
 		(super dispose:)
-		(if (and (IsFlag 81) (not (IsFlag 122)))
+		(if (and (IsFlag 81) (not (IsFlag 122))) ; fPlantName, fGotFruit
 			(gCurRoom setScript: fruitFall)
 		)
 	)
@@ -824,7 +824,7 @@
 					x: (- (julanar x:) 13)
 					setCycle: End self
 				)
-				(if (and (IsFlag 124) (not (IsFlag 80)))
+				(if (and (IsFlag 124) (not (IsFlag 80))) ; fTreeBloomed, fPlantHug
 					(branches
 						x: 160
 						y: 106
@@ -841,7 +841,7 @@
 				(gEgo setCycle: Beg self)
 				(if (== (julanar loop:) 1)
 					(julanar setCycle: Beg)
-					(SetFlag 80)
+					(SetFlag 80) ; fPlantHug
 					(CheckFlags)
 				else
 					(HighPrint 640 62) ; "The act of hugging the tree is fruitless."
@@ -907,7 +907,7 @@
 					([branch Index] signal: -32735)
 				)
 				(= Index 0)
-				(SetFlag 124)
+				(SetFlag 124) ; fTreeBloomed
 				(self dispose:)
 			)
 		)
@@ -949,7 +949,7 @@
 				(SkillUsed 14 50) ; honor
 				(theFruit dispose:)
 				(gEgo get: 36 setCycle: Beg) ; CompassionFruit
-				(SetFlag 122)
+				(SetFlag 122) ; fGotFruit
 			)
 			(5
 				(HighPrint 640 65) ; "You carefully put the fruit away."

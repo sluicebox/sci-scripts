@@ -251,14 +251,14 @@
 				(JaafarTalk 4 self 821 2)
 			)
 			(8
-				(if (IsFlag 154)
+				(if (IsFlag 154) ; fNotKilledEOF
 					(self setScript: warriorSpeak self)
 				else
 					(self cue:)
 				)
 			)
 			(9
-				(if (IsFlag 122)
+				(if (IsFlag 122) ; fGotFruit
 					(self setScript: azizaSpeak self)
 				else
 					(self cue:)

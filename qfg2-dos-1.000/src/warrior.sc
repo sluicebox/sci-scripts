@@ -43,7 +43,7 @@
 	)
 
 	(method (initCombat &tmp warLoad)
-		(ClearFlag 1)
+		(ClearFlag 1) ; fSaveAllowed
 		(= strength [gEgoStats 0]) ; strength
 		(= intell [gEgoStats 1]) ; intelligence
 		(= agil [gEgoStats 2]) ; agility
@@ -131,7 +131,7 @@
 		(= [gEgoStats 17] stamina) ; stamina
 		(= [gEgoStats 18] mana) ; mana
 		(= gSpellChecker oldChecker)
-		(SetFlag 1)
+		(SetFlag 1) ; fSaveAllowed
 		(gDirectionHandler delete: self)
 		(super endCombat: &rest)
 	)
@@ -491,7 +491,7 @@
 						(client type: wpnType)
 					)
 					(29
-						(SetFlag 86)
+						(SetFlag 86) ; fReversal
 						(= gReversalTimer [gEgoStats 29]) ; invisibility
 						(HighPrint 32 7) ; "You are now protected by the power of Reversal."
 					)

@@ -44,7 +44,7 @@
 					(omar setScript: omarJaAfarTalk self 16)
 				)
 				(SkillUsed 14 50) ; honor
-				(ClearFlag 158)
+				(ClearFlag 158) ; fRefusedReward
 			)
 			(2
 				(jaAfar loop: 2 setCycle: End)
@@ -159,7 +159,7 @@
 					((not (gEgo use: 55)) ; Purse
 						(Say self 116 2) ; "There is no need for that. I am a poet rich in spirit already."
 					)
-					((IsFlag 135)
+					((IsFlag 135) ; fRobbedPurse
 						(SkillUsed 14 -100) ; honor
 						(CantBePaladin)
 						(self setScript: omarJaAfarTalk 0 14)

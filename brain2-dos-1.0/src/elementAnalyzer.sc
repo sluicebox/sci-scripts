@@ -52,7 +52,7 @@
 		)
 		(= local5 0)
 		(= local6 0)
-		(DrawCel 268 0 1 22 102 -1)
+		(DrawCel 269 6 0 22 102 -1)
 	)
 	(Graph grFILL_BOX 159 14 183 227 1 32 -1 -1)
 	(Graph grUPDATE_BOX 159 14 183 227 1)
@@ -61,7 +61,7 @@
 (procedure (localproc_2 &tmp temp0 [temp1 10])
 	(for
 		((= temp0 0))
-		(Message msgGET 268 (+ 3 temp0) [local131 global114] 21 1 @temp1)
+		(Message msgGET 268 (+ 3 temp0) [local131 gDifficulty] 21 1 @temp1)
 		((++ temp0))
 	)
 	(return temp0)
@@ -115,7 +115,7 @@
 			(self
 				add:
 					((anItem new:)
-						loop: (+ (* global114 2) (/ temp1 16))
+						loop: (+ (* gDifficulty 2) (/ temp1 16))
 						cel: (mod temp1 16)
 						nsTop: [local41 temp0]
 						nsLeft: [local44 temp0]
@@ -144,7 +144,7 @@
 		)
 		(= [local73 25] 25)
 		(for ((= temp0 0)) (<= temp0 25) ((++ temp0))
-			(= temp2 (proc15_6 268 1 [local131 global114] [local47 temp0]))
+			(= temp2 (proc15_6 268 1 [local131 gDifficulty] [local47 temp0]))
 			(Message msgGET 268 1 1 [local47 [local73 temp0]] 2 [local10 temp0])
 			(self
 				add:
@@ -449,13 +449,13 @@
 			(3
 				(localproc_1 1)
 				(= local4 0)
-				(= local5 (proc15_6 268 register [local131 global114] 26))
+				(= local5 (proc15_6 268 register [local131 gDifficulty] 26))
 				(for ((= temp0 0)) (< temp0 local5) ((++ temp0))
 					(Message
 						msgGET
 						268
 						register
-						[local131 global114]
+						[local131 gDifficulty]
 						26
 						(+ temp0 1)
 						@temp2
@@ -512,7 +512,7 @@
 
 	(method (show &tmp [temp0 75])
 		(DrawCel view loop cel nsLeft nsTop -1)
-		(Message msgGET 268 (local3 value:) [local131 global114] 25 modifiers @temp0)
+		(Message msgGET 268 (local3 value:) [local131 gDifficulty] 25 modifiers @temp0)
 		(Display @temp0 dsCOORD 24 (+ nsTop 0) dsWIDTH 21 dsALIGN alRIGHT dsCOLOR textColor dsFONT 999)
 		(Graph grFILL_BOX (+ nsTop 0) 55 (+ nsTop 8) 109 1 0 -1 -1)
 		(Graph grUPDATE_BOX (+ nsTop 0) 55 (+ nsTop 8) 109 1)
@@ -523,7 +523,7 @@
 				msgGET
 				268
 				1
-				[local131 global114]
+				[local131 gDifficulty]
 				[local47 value]
 				([local99 value] modifiers:)
 				@temp0
@@ -624,7 +624,7 @@
 			(gModelessDialog dispose:)
 		)
 		(super highlight: param1 &rest)
-		(if (and param1 (== global114 0))
+		(if (and param1 (== gDifficulty 0)) ; Novice
 			((Print new:)
 				modeless: 1
 				x: 195
@@ -657,7 +657,7 @@
 		lowlightColor 106
 	)
 
-	(method (select)
+	(method (select &tmp temp0)
 		(self highlight: 0)
 		(cond
 			((not local2)
@@ -684,7 +684,9 @@
 			)
 			(else
 				(gCSoundFX number: 145 setLoop: 1 play:)
-				(local2 show:)
+				(= temp0 local2)
+				(= local2 self)
+				(temp0 show:)
 				(gGame setCursor: 996 1 (+ nsLeft 11) (+ nsTop 11))
 				(moveProp
 					loop: loop
@@ -694,9 +696,7 @@
 					show:
 				)
 				(DrawCel maskView maskLoop maskCel nsLeft nsTop -1)
-				(Wait 10)
 				(gCSoundFX number: 144 setLoop: 1 play:)
-				(= local2 self)
 			)
 		)
 	)
@@ -727,7 +727,7 @@
 				modeless: 1
 				x: (+ nsLeft 85)
 				y: (+ nsTop 2)
-				addText: value [local131 global114] 21 0 0 0 268
+				addText: value [local131 gDifficulty] 21 0 0 0 268
 				init:
 			)
 		)
@@ -758,7 +758,7 @@
 							y: (+ nsTop 2)
 							addText:
 								(local3 value:)
-								[local131 global114]
+								[local131 gDifficulty]
 								21
 								0
 								0

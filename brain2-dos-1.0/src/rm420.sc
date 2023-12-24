@@ -88,7 +88,7 @@
 	)
 
 	(method (dispose)
-		(proc5_2 1)
+		(HandsOn 1)
 		(fasterCast release: dispose:)
 		(computer dispose:)
 		(super dispose: &rest)
@@ -101,7 +101,7 @@
 	(method (changeState newState &tmp [temp0 3] temp3 temp4 temp5 temp6 temp7 temp8 [temp9 3] temp12 temp13 temp14 temp15 temp16)
 		(switch (= state newState)
 			(0
-				(proc5_1)
+				(HandsOff)
 				(massage1 init: setCycle: Fwd)
 				(massage2 init: setCycle: Fwd)
 				(drEyes init: cel: 1 x: 142 y: 61 setCycle: drBlink 180)

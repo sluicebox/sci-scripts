@@ -571,8 +571,8 @@
 				@str
 				180
 				24
-				(if (IsFlag 0) {red} else {blonde})
-				(if (IsFlag 0) {rojo} else {rubio})
+				(if (IsFlag 0) {red} else {blonde}) ; isVga
+				(if (IsFlag 0) {rojo} else {rubio}) ; isVga
 			)
 			(TPrint @str)
 		else

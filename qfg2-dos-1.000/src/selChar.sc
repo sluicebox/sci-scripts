@@ -45,7 +45,7 @@
 
 	(method (init)
 		(LoadMany rsVIEW 800 801 802 803 804)
-		(ClearFlag 2)
+		(ClearFlag 2) ; fInMainGame
 		(gCSound number: 800 loop: -1 priority: 2 playBed:)
 		(charSound init:)
 		(super init: &rest)

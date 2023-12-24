@@ -54,7 +54,7 @@
 		)
 		(super init:)
 		(InitAddToPics fountainSpout fountainBasin)
-		(if (IsFlag 16)
+		(if (IsFlag 16) ; fShapeir
 			(fountainWater init:)
 		)
 		(if (== gElementalState 7)
@@ -94,7 +94,7 @@
 
 	(method (doVerb theVerb)
 		(if (== theVerb 1)
-			(if (IsFlag 16)
+			(if (IsFlag 16) ; fShapeir
 				(HighPrint 81 0) ; "The crystal clear water of the fountain is a priceless treasure in a land such as this."
 			else
 				(HighPrint 81 1) ; "The cracked and dry fountain is a pitiful sight."
@@ -175,8 +175,8 @@
 						(gEgo inRect: 92 150 233 300)
 						(gEgo inRect: 110 135 215 160)
 					)
-					(ClearFlag 3)
-					(ClearFlag 137)
+					(ClearFlag 3) ; fThirsty
+					(ClearFlag 137) ; fDyingOfThirst
 					(HighPrint 81 2) ; "The fountain water is cool and refreshing."
 				else
 					(NotClose)
@@ -186,9 +186,9 @@
 				(cond
 					((not (gEgo has: 37)) ; Waterskin
 						(HighPrint 81 3) ; "You don't have a waterskin."
-						(if (IsFlag 3)
-							(ClearFlag 3)
-							(ClearFlag 137)
+						(if (IsFlag 3) ; fThirsty
+							(ClearFlag 3) ; fThirsty
+							(ClearFlag 137) ; fDyingOfThirst
 							(HighPrint 81 4) ; "But you do take advantage of the opportunity to quench your thirst."
 						)
 					)
@@ -209,8 +209,8 @@
 						)
 					)
 					(else
-						(ClearFlag 3)
-						(ClearFlag 137)
+						(ClearFlag 3) ; fThirsty
+						(ClearFlag 137) ; fDyingOfThirst
 						(= gDrinksLeft (* [gInvNum 37] 10)) ; Waterskin
 						(HighPrint
 							(Format ; "You fill your waterskin%c with cool, clear water from the fountain."

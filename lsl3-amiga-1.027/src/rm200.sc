@@ -141,7 +141,7 @@
 					((Said '/awning')
 						(if (& (gEgo onControl:) $0002)
 							(if (not (TestFlag 18))
-								(SetFlag 18)
+								(SetFlag 18) ; beenIn203
 								(gGame changeScore: 2)
 							)
 							(Ok) ; "O.K."
@@ -171,7 +171,7 @@
 				(= seconds (PrintPlot))
 			)
 			(2
-				(SetFlag 17)
+				(SetFlag 17) ; beenIn200
 				(if (not (TestFlag 20))
 					(Format @string 200 19) ; "Such is the cost of progress. At least your job as Vice-President of Marketing for "Natives, Inc." has enabled you to provide a lovely home for you and your beloved wife, Kalalau."
 					(= seconds (PrintPlot))
@@ -249,7 +249,7 @@
 				(= cycles 22)
 			)
 			(3
-				(SetFlag 24)
+				(SetFlag 24) ; sawCredits200
 				(aCredit1 setCycle: Beg)
 				(aCredit2 setCycle: Beg self)
 			)

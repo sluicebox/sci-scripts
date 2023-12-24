@@ -363,7 +363,7 @@
 				(= gMonsterNum 0)
 				((ScriptID 32 0) endCombat: dispose:) ; warrior
 				(gEgo show:)
-				(SetFlag 143)
+				(SetFlag 143) ; fFlyBy
 				(self dispose:)
 			)
 		)

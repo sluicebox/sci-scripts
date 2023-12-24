@@ -42,7 +42,7 @@
 (procedure (localproc_0 &tmp temp0 [temp1 10])
 	(for
 		((= temp0 0))
-		(Message msgGET 264 (+ temp0 1) [local60 global114] 3 1)
+		(Message msgGET 264 (+ temp0 1) [local60 gDifficulty] 3 1)
 		((++ temp0))
 	)
 	(return temp0)
@@ -56,7 +56,7 @@
 
 (procedure (localproc_2 param1 &tmp temp0 temp1 temp2)
 	(= temp0 (* (/ (param1 value:) 10) 3))
-	(for ((= temp1 0)) (< temp1 (+ global114 1)) ((++ temp1))
+	(for ((= temp1 0)) (< temp1 (+ gDifficulty 1)) ((++ temp1)) ; Standard
 		(= temp2 [local51 temp0])
 		(++ temp0)
 		(if
@@ -149,7 +149,7 @@
 					wordsArray: @[local51 (* temp3 3)]
 					theHeight: 17
 					numberOfLines: 2
-					init: 264 temp0 [local60 global114] 3 temp3 260
+					init: 264 temp0 [local60 gDifficulty] 3 temp3 260
 					yourself:
 				)
 			)
@@ -157,16 +157,16 @@
 		(= [local79 0]
 			(+
 				(= local78
-					(- (= temp1 (+ (= local8 (* 3 (+ global114 1))) local63)) 1)
+					(- (= temp1 (+ (= local8 (* 3 (+ gDifficulty 1))) local63)) 1) ; Standard
 				)
 				1
 			)
 		)
-		(= [local79 1] (+ [local79 0] global114 1))
-		(= [local79 2] (+ [local79 1] global114 1))
+		(= [local79 1] (+ [local79 0] gDifficulty 1)) ; Standard
+		(= [local79 2] (+ [local79 1] gDifficulty 1)) ; Standard
 		(for ((= temp4 0)) (< temp4 3) ((++ temp4))
 			(= temp0 [local48 temp4])
-			(for ((= temp3 0)) (< temp3 (+ 1 global114)) ((++ temp3))
+			(for ((= temp3 0)) (< temp3 (+ 1 gDifficulty)) ((++ temp3)) ; Standard
 				(= temp2 (localproc_1 local43 0 (- temp1 1)))
 				(|= local43 (<< $0001 temp2))
 				(if
@@ -175,7 +175,7 @@
 							msgGET
 							264
 							temp0
-							[local60 global114]
+							[local60 gDifficulty]
 							4
 							(+ temp3 1)
 							[local22 temp2]
@@ -192,7 +192,7 @@
 		)
 		(for ((= temp3 0)) (< temp3 3) ((++ temp3))
 			(= temp0 [local48 temp3])
-			(= temp5 (proc15_6 264 temp0 [local60 global114] 2))
+			(= temp5 (proc15_6 264 temp0 [local60 gDifficulty] 2))
 			(= [local75 temp3] (Random 1 temp5))
 			(= temp2 (localproc_1 local43 0 (- temp1 1)))
 			(|= local43 (<< $0001 temp2))
@@ -202,7 +202,7 @@
 						msgGET
 						264
 						temp0
-						[local60 global114]
+						[local60 gDifficulty]
 						2
 						[local75 temp3]
 						[local22 temp2]
@@ -279,10 +279,10 @@
 	(method (buyClue &tmp temp0 temp1 temp2 [temp3 50] temp53 temp54 temp55 temp56)
 		(if (super buyClue: &rest)
 			(= temp56 0)
-			(= temp0 (Memory memALLOC_CRIT (+ 400 (* 200 global114))))
+			(= temp0 (Memory memALLOC_CRIT (+ 400 (* 200 gDifficulty))))
 			(StrAt temp0 0 0)
-			(= temp55 (* 2 (+ global114 1)))
-			(= temp54 [local60 global114])
+			(= temp55 (* 2 (+ gDifficulty 1))) ; Standard
+			(= temp54 [local60 gDifficulty])
 			(for ((= temp1 0)) (< temp1 3) ((++ temp1))
 				(for ((= temp2 0)) (< temp2 temp55) ((++ temp2))
 					(if
@@ -313,7 +313,7 @@
 						msgGET
 						265
 						[local48 temp1]
-						[local60 global114]
+						[local60 gDifficulty]
 						1
 						temp53
 						@temp3
@@ -564,7 +564,7 @@
 					msgGET
 					264
 					temp0
-					[local60 global114]
+					[local60 gDifficulty]
 					1
 					(+ (mod param1 3) 1)
 					text
@@ -608,12 +608,12 @@
 				(parent showSentence:)
 				(antonymPuzzle eachElementDo: #show)
 				(if (== (modifiers value:) value)
-					(if (and (< global114 2) (localproc_2 self))
+					(if (and (< gDifficulty 2) (localproc_2 self)) ; Expert
 						(= temp0 (* (/ value 10) 3))
 						(Wait 0)
 						(for
 							((= temp1 0))
-							(< temp1 (+ global114 1))
+							(< temp1 (+ gDifficulty 1)) ; Standard
 							((++ temp1))
 							
 							(gCSoundFX number: 247 setLoop: 1 play:)

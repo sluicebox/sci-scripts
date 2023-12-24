@@ -95,7 +95,7 @@
 		(gEHead actions: egoActions)
 		(super init:)
 		(theHooker cycleSpeed: global101 init: approachVerbs: 3 4 10 11 5 2) ; Do, Inventory, Zipper, Taste/Smell, Talk, Look
-		(if (IsFlag 35)
+		(if (IsFlag 35) ; fScoredHooker
 			(theHooker z: 6 setCel: 0 setLoop: 7 setScript: sSmoke)
 		else
 			(theHooker stopUpd:)
@@ -104,7 +104,7 @@
 		(if (== ((gInventory at: 9) owner:) 150) ; candy
 			(candy init: approachVerbs: 3 4 10 11) ; Do, Inventory, Zipper, Taste/Smell
 		)
-		(if (IsFlag 16)
+		(if (IsFlag 16) ; fHookerWindowOpen
 			(aWindow cel: 2)
 		)
 		(aWindow cycleSpeed: global101 approachVerbs: 3 4 10 11 init:) ; Do, Inventory, Zipper, Taste/Smell
@@ -216,13 +216,13 @@
 						(gCurRoom setScript: sGetDressed)
 						(return 1)
 					)
-					((IsFlag 43)
-						(ClearFlag 43)
+					((IsFlag 43) ; fWearingRubber
+						(ClearFlag 43) ; fWearingRubber
 						(gEgo put: 8 0) ; lubber
 						(Points 87 1)
 						(Print 150 12) ; "Good idea. You carefully remove your lubber and dispose of it in a way that will not be described here."
 					)
-					((IsFlag 35)
+					((IsFlag 35) ; fScoredHooker
 						(Print 150 13) ; "Not again! A guy can only take so much!!"
 					)
 					(else
@@ -246,7 +246,7 @@
 						(gCurRoom setScript: sScrew)
 						(return 1)
 					)
-					((IsFlag 35)
+					((IsFlag 35) ; fScoredHooker
 						(Print 150 13) ; "Not again! A guy can only take so much!!"
 					)
 					(else
@@ -259,10 +259,10 @@
 				(switch invItem
 					(8 ; lubber
 						(cond
-							((IsFlag 43)
+							((IsFlag 43) ; fWearingRubber
 								(Print 150 14) ; "You already are wearing your "lubber.""
 							)
-							((IsFlag 35)
+							((IsFlag 35) ; fScoredHooker
 								(Print 150 15) ; "Now's a great time to think of that! A little late now, isn't it, Larry?"
 							)
 							(
@@ -277,7 +277,7 @@
 							)
 							(else
 								(Print 150 18) ; "Yep! This would be a perfect time! Your Surgeon General is proud!"
-								(SetFlag 43)
+								(SetFlag 43) ; fWearingRubber
 								((Inv at: 8) state: 1) ; lubber
 								(Points 96 10)
 								(return 1)
@@ -424,7 +424,7 @@
 				(= cycles (Random 3 6))
 			)
 			(5
-				(if (IsFlag 20)
+				(if (IsFlag 20) ; fMouthSmellsBad
 					(Print 150 20) ; "Jeez, Mister!" cries the hooker, "What've you been eating? Buffalo chips???"
 				else
 					(Print 150 21) ; "She certainly seems to enjoy that gum."
@@ -544,7 +544,7 @@
 				(= seconds 3)
 			)
 			(10
-				(SetFlag 35)
+				(SetFlag 35) ; fScoredHooker
 				(Points 90 11)
 				(NormalEgo 3)
 				(theHooker setScript: sSmoke)
@@ -552,10 +552,10 @@
 			)
 			(11
 				(Print 150 22) ; "Although successful, you feel less than satisfied. Technically speaking, you're no longer a virgin, but for some reason, the thrill just wasn't there. You vow to continue your quest until you please your heart, not just your other organs!"
-				(if (IsFlag 43)
+				(if (IsFlag 43) ; fWearingRubber
 					(Print 150 23) ; "It's a good thing you were wearing your raincoat!"
 				else
-					(SetFlag 15)
+					(SetFlag 15) ; fHasClap
 				)
 				(HandsOn)
 				(self dispose:)
@@ -652,7 +652,7 @@
 			)
 			(1
 				(gTheMusic3 number: 151 play:)
-				(SetFlag 16)
+				(SetFlag 16) ; fHookerWindowOpen
 				(aWindow setCycle: End)
 				(gEgo setCycle: Beg self)
 			)
@@ -769,7 +769,7 @@
 		(switch theVerb
 			(2 ; Look
 				(cond
-					((IsFlag 35)
+					((IsFlag 35) ; fScoredHooker
 						(Print 150 24) ; "She seems more interested in that cigarette than she was in you."
 					)
 					((== (gEgo view:) 803)
@@ -801,7 +801,7 @@
 				)
 			)
 			(5 ; Talk
-				(if (IsFlag 35)
+				(if (IsFlag 35) ; fScoredHooker
 					(Print 150 26) ; ""Was it good for you, baby?" you ask her."
 					(Print 150 27) ; ""Was what good?" she replies."
 				else
@@ -912,7 +912,7 @@
 					((== (gEgo view:) 803)
 						(Print 150 45) ; "NOW!?"
 					)
-					((IsFlag 16)
+					((IsFlag 16) ; fHookerWindowOpen
 						(HandsOff)
 						(gCurRoom setScript: sExitWindow)
 					)

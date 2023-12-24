@@ -359,7 +359,7 @@
 				(iceL dispose:)
 				(iceR dispose:)
 				(SolvePuzzle 690 7 1)
-				(SetFlag 69)
+				(SetFlag 69) ; fPassedWater
 				(HandsOn)
 				(gCurRoom setScript: (ScriptID 220 3)) ; zapInSP
 				(client dispose:)
@@ -554,7 +554,7 @@
 			)
 			(5
 				(SolvePuzzle 689 15 1)
-				(SetFlag 65)
+				(SetFlag 65) ; fPassedTest
 				(SkillUsed 14 100) ; honor
 				(door setLoop: 11 setCel: 0)
 				(RedrawCast)
@@ -1025,7 +1025,7 @@
 	(properties)
 
 	(method (doit)
-		(if (and (not (IsFlag 87)) register)
+		(if (and (not (IsFlag 87)) register) ; fCastingSpell
 			(self cue:)
 		)
 		(super doit:)

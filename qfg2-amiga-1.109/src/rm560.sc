@@ -68,9 +68,9 @@
 
 	(method (cue)
 		(super cue: &rest)
-		(if (not (IsFlag 118))
+		(if (not (IsFlag 118)) ; f560msg
 			(HighPrint 560 1) ; "The heat of this room is painful. You feel the sweat pour down from you and hear it sizzle on the ground below. There is the distinct odor of brimstone around you."
-			(SetFlag 118)
+			(SetFlag 118) ; f560msg
 		)
 	)
 

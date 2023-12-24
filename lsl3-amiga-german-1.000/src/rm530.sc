@@ -587,7 +587,7 @@
 			)
 			(7
 				(if (not (TestFlag 58))
-					(SetFlag 58)
+					(SetFlag 58) ; pickedPot
 					(gGame changeScore: 10)
 				)
 				(Ok) ; "O.K."

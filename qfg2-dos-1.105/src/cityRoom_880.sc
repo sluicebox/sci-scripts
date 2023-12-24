@@ -32,9 +32,9 @@
 	)
 
 	(method (init)
-		(SetFlag 82)
+		(SetFlag 82) ; fDesert
 		(gEgo init:)
-		(if (or (== gPrevRoomNum 380) (IsFlag 28))
+		(if (or (== gPrevRoomNum 380) (IsFlag 28)) ; fTeleporting
 			(= gPrevRoomNum 380)
 			(= inOut 3)
 			(if (gEgo has: 50) ; Saurus
@@ -50,8 +50,8 @@
 		(InitAddToPics raseir)
 		(if (== gPrevRoomNum 380)
 			(gEgo posn: 150 97 setScript: (ScriptID 660 8)) ; twoDunesIn
-			(if (and (gEgo has: 50) (not (IsFlag 89))) ; Saurus
-				(SetFlag 89)
+			(if (and (gEgo has: 50) (not (IsFlag 89))) ; Saurus, fSaurusMessage
+				(SetFlag 89) ; fSaurusMessage
 				(self setScript: delayedMessage)
 			)
 		)

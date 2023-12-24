@@ -121,7 +121,7 @@
 				)
 			)
 			(1
-				(SetFlag 32)
+				(SetFlag 32) ; beenIn266
 				(Print 266 10) ; "WOW! She looks even better vertical!"
 				(Print 266 11 #at -1 144) ; "(Bet she has a great "horizontal hold!")"
 			)

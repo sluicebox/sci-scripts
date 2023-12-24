@@ -55,8 +55,8 @@
 		(if (gEgo has: 7) ; Land_Deed
 			(Load rsVIEW 7)
 		)
-		(SetFlag 4)
-		(SetFlag 3)
+		(SetFlag 4) ; preventAutoSave
+		(SetFlag 3) ; cantSave
 		(super init:)
 		(gAddToPics
 			add: atpPoster1
@@ -121,8 +121,8 @@
 			(= gSomeObject 0)
 			(DisposeScript 421)
 		)
-		(ClearFlag 4)
-		(ClearFlag 3)
+		(ClearFlag 4) ; preventAutoSave
+		(ClearFlag 3) ; cantSave
 		(super newRoom: newRoomNumber)
 	)
 )
@@ -669,7 +669,7 @@
 			)
 			(3
 				(aMaitreD setCel: 0 stopUpd:)
-				(SetFlag 46)
+				(SetFlag 46) ; passedSRcopyCheck
 				(if (not (TestFlag 47))
 					(Format @local0 420 71) ; ""Well, well. Very good, sir," says the maitre d', his tone and mannerisms changing entirely. "But, I must have made a mistake. It appears there are no more seats available for this show! I'm so, so sorry. But, perhaps something will open up later."%"
 					(handIcon view: 422 loop: 4)
@@ -724,7 +724,7 @@
 						(PrintMD 422 3 0)
 						(PutInRoom 6)
 						(gGame changeScore: 50)
-						(SetFlag 47)
+						(SetFlag 47) ; tippedMaitreD
 						(HandsOn)
 					)
 					(else
@@ -732,7 +732,7 @@
 						(Format @local0 420 76) ; ""Why, thank you very much, sir, Well, well, look at this! I seem to have found a nice, front row seat available here. Allow me to show you to your seat!"%"
 						(PrintMD 422 3 1)
 						(PutInRoom 6)
-						(SetFlag 47)
+						(SetFlag 47) ; tippedMaitreD
 						(gGame changeScore: 50)
 						(= seconds 2)
 					)

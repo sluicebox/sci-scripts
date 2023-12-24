@@ -97,7 +97,7 @@
 					yourself:
 				)
 		)
-		(SetFlag 16)
+		(SetFlag 16) ; fShapeir
 		(LoadMany rsSCRIPT 972 969)
 		(LoadMany rsVIEW 0 300)
 		(if (== gElementalState 1)
@@ -111,7 +111,7 @@
 		(if
 			(and
 				(== gDay 8)
-				(not (IsFlag 150))
+				(not (IsFlag 150)) ; fReturnedSaurus300
 				(gEgo has: 50) ; Saurus
 				(== gPrevRoomNum 100)
 			)
@@ -138,7 +138,7 @@
 				((ScriptID 302 0) init:) ; beggar
 			)
 		)
-		(if (IsFlag 181)
+		(if (IsFlag 181) ; fBurntTailSign
 			(kattaInnSign
 				view: 340
 				loop: 9
@@ -186,14 +186,14 @@
 					(or (gEgo edgeHit:) (& (gEgo onControl: 1) $0010))
 					(gCast contains: alichica)
 					(== inOut 3)
-					(not (IsFlag 108))
+					(not (IsFlag 108)) ; fVisitedAlichica
 				)
 				(if (not boughtAnything)
 					(= makingExitSpeech 1)
 					(gEgo setMotion: 0)
 					(Say alichica self 300 4) ; "Whatsa matta you? You no like a big deal when you see it?"
 				)
-				(SetFlag 108)
+				(SetFlag 108) ; fVisitedAlichica
 			)
 			((and (== gElementalState 1) (gEgo edgeHit:))
 				(super doit:)
@@ -406,7 +406,7 @@
 		(if
 			(and
 				(not beenNearMapStand)
-				(not (IsFlag 108))
+				(not (IsFlag 108)) ; fVisitedAlichica
 				(< (gEgo distanceTo: alichica) 60)
 			)
 			(Say self 300 14 300 15 300 16) ; "You look like sucha fine person, have I gotta deal for you!"
@@ -523,10 +523,10 @@
 	)
 
 	(method (sayMoneyNeedsChanging)
-		(if (IsFlag 185)
+		(if (IsFlag 185) ; fFreeFlowers
 			(Say self self 300 19) ; "I am sorry, but I really cannot afford to give you any more free flowers. Please visit the Money Changer."
 		else
-			(SetFlag 185)
+			(SetFlag 185) ; fFreeFlowers
 			(Say self self 300 20) ; "You will need to go to the Changer of Money to trade your coins for those of Shapeir. But since you are a Hero to my people, you may have some of my flowers anyway."
 			(curWare price: 0)
 			(= cueMethod 643)
@@ -881,7 +881,7 @@
 					((== (alichicaStand cel:) 1)
 						(Say alichica self 300 38) ; "Fire sale today!  I sella you real wood burned by real Fire Elemental. Be the first on your block to owna this."
 					)
-					((IsFlag 108)
+					((IsFlag 108) ; fVisitedAlichica
 						(Say
 							alichica
 							self

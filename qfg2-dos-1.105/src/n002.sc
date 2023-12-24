@@ -74,7 +74,7 @@
 	(= gStamCounter 20)
 	(= gHealCounter 15)
 	(= gManaCounter 5)
-	(SetFlag 1)
+	(SetFlag 1) ; fSaveAllowed
 	(= gDay 1)
 	(FixTime 8)
 	(= gSillyClowns 0)
@@ -94,10 +94,10 @@
 		(= [gInvNum 37] 1) ; Waterskin
 		(= gDrinksLeft 10)
 		(StrCpy @gUserName {Hero})
-		(SetFlag 2)
+		(SetFlag 2) ; fInMainGame
 		(= nr (GotoPlaceAndTime))
 	else
-		(ClearFlag 2)
+		(ClearFlag 2) ; fInMainGame
 	)
 	(if (not nr)
 		(if (GameIsRestarting)
@@ -208,7 +208,7 @@
 		(&= global61 $fffe)
 	)
 	(if (== nr 820)
-		(ClearFlag 2)
+		(ClearFlag 2) ; fInMainGame
 		(FixTime 12 0)
 		(= gNight 0)
 		(= global61 0)
@@ -250,9 +250,9 @@
 		)
 	)
 	(if haveEaten
-		(if (IsFlag 4)
-			(ClearFlag 4)
-			(ClearFlag 5)
+		(if (IsFlag 4) ; fHungry
+			(ClearFlag 4) ; fHungry
+			(ClearFlag 5) ; fStarving
 		else
 			(= gFreeMeals 1)
 		)
@@ -316,10 +316,10 @@
 			)
 		)
 		((== index 48)
-			(if (IsFlag 121)
+			(if (IsFlag 121) ; fAntidote
 				(HighPrint 2 14) ; "Unlike heads, two poison cure pills are no better than one. But the pill does no harm either."
 			else
-				(SetFlag 121)
+				(SetFlag 121) ; fAntidote
 				(HighPrint 2 15) ; "The only effect is a tingling sensation. But, if the apothecary is to be trusted, you should be safe from the effects of poison for a while."
 			)
 		)
@@ -338,8 +338,8 @@
 			(HighPrint 2 17) ; "Alas, you are out of water."
 		)
 	else
-		(ClearFlag 3)
-		(ClearFlag 137)
+		(ClearFlag 3) ; fThirsty
+		(ClearFlag 137) ; fDyingOfThirst
 		(cond
 			((not gDrinksLeft)
 				(HighPrint 2 18) ; "You drink the last drops from your waterskin. You might want to start looking around for a place where you can refill it."
@@ -487,7 +487,7 @@
 			(and
 				(== charType 3)
 				(!= gHeroType 3) ; Paladin
-				(not (IsFlag 153))
+				(not (IsFlag 153)) ; fCantBePaladin
 				(not (IsFlag pFlag))
 			)
 			(+= gPaladinPoints pValue)
@@ -558,7 +558,7 @@
 	)
 	(cond
 		((> (= foo (-= [gEgoStats 17] pointsUsed)) 4) ; stamina
-			(ClearFlag 7)
+			(ClearFlag 7) ; fWornOut
 			(if (> foo (MaxStamina))
 				(= [gEgoStats 17] (MaxStamina)) ; stamina
 			)
@@ -566,8 +566,8 @@
 		((>= foo 0))
 		((TakeDamage (/ (- -3 [gEgoStats 17]) 4)) ; stamina
 			(= [gEgoStats 17] 0) ; stamina
-			(if (not (IsFlag 7))
-				(SetFlag 7)
+			(if (not (IsFlag 7)) ; fWornOut
+				(SetFlag 7) ; fWornOut
 				(HighPrint 2 23) ; "You are so exhausted that everything you do hurts. Better get some rest."
 			)
 		)
@@ -612,7 +612,7 @@
 		)
 	)
 	(if (< 0 gTimeODay 4)
-		(ClearFlag 115)
+		(ClearFlag 115) ; fWeaponBarred
 	)
 	(if (> gTimeODay 4)
 		(= gNight 1)
@@ -630,10 +630,10 @@
 
 (procedure (NextDay)
 	(++ gDay)
-	(ClearFlag 161)
-	(ClearFlag 168)
-	(ClearFlag 169)
-	(ClearFlag 177)
+	(ClearFlag 161) ; fSeenShow
+	(ClearFlag 168) ; fDervishDailyMsg
+	(ClearFlag 169) ; fDervishPeanutMsg
+	(ClearFlag 177) ; fUhuraEnterMsg
 	(cond
 		((and (OneOf gElementalState 1 3 5 7) (OneOf gDay 7 11 14 16))
 			(gCurRoom newRoom: 340)
@@ -681,8 +681,8 @@
 				(LowPrint 2 28) ; "You just ate your last ration; you'd better get some more food soon."
 			)
 		)
-		((IsFlag 4)
-			(SetFlag 5)
+		((IsFlag 4) ; fHungry
+			(SetFlag 5) ; fStarving
 			(if (TakeDamage 1)
 				(LowPrint 2 29) ; "You're starving. Better find some food *soon*!"
 			else
@@ -690,7 +690,7 @@
 			)
 		)
 		(else
-			(SetFlag 4)
+			(SetFlag 4) ; fHungry
 			(LowPrint 2 31) ; "You're really getting hungry."
 		)
 	)
@@ -834,13 +834,13 @@
 		)
 	)
 	(if nr
-		(SetFlag 28)
+		(SetFlag 28) ; fTeleporting
 	)
 	(return nr)
 )
 
 (procedure (CantBePaladin)
-	(if (SetFlag 153)
+	(if (SetFlag 153) ; fCantBePaladin
 		(SkillUsed 14 -200) ; honor
 	else
 		(SkillUsed 14 -50) ; honor
@@ -853,7 +853,7 @@
 (procedure (CheckPaladin &tmp ptValue)
 	(if
 		(and
-			(not (IsFlag 153))
+			(not (IsFlag 153)) ; fCantBePaladin
 			(!= gHeroType 3) ; Paladin
 			(>= gPaladinPoints 25)
 			(>= [gEgoStats 14] 75) ; honor

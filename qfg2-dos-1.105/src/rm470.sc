@@ -123,7 +123,7 @@
 				(djinniPrint 470 6) ; "No, Master, you can't! We have to get to Iblis!"
 			)
 			(58
-				(SetFlag 141)
+				(SetFlag 141) ; fKhaveenDead
 				(SolvePuzzle 665 15 0)
 				(ResetWarning)
 			)
@@ -237,7 +237,7 @@
 				)
 			)
 			((Said 'search,strip/body,khaveen,captain,man')
-				(if (IsFlag 141)
+				(if (IsFlag 141) ; fKhaveenDead
 					(if (not djinniSearchMsg)
 						(djinniPrint 470 11) ; "There is no time, Master. Iblis will be free!"
 						(= djinniSearchMsg 1)
@@ -1356,7 +1356,7 @@
 					posn: 165 145
 					initCombat:
 				)
-				(SetFlag 159)
+				(SetFlag 159) ; fPracticeFight
 				(gEgo dispose:)
 				((ScriptID 475 1) ; rm470Warrior
 					barMessage: 0

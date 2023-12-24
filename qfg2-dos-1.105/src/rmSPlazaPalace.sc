@@ -95,7 +95,7 @@
 			(3
 				(SolvePuzzle 627 5)
 				(gEgo setAvoider: 0 get: 27) ; SapphPin
-				(SetFlag 148)
+				(SetFlag 148) ; fBoughtSapphPin
 				(HighPrint 335 9) ; "You take the sapphire pin and place it through your lapel."
 				(if [gEgoStats 9] ; pick locks
 					(HighPrint 335 10) ; "The shape of the pin stirs an old memory. You recall how you used to practice with such simple pins when first learning how to pick locks. You decide not to mention this to the honest merchant."
@@ -186,15 +186,15 @@
 				(Say self 335 14) ; "Such a shame that we could not make a deal. The pin was truly perfect for you."
 				(event claimed: 1)
 			)
-			((and givenPin (not (IsFlag 148)) (Said 'thank'))
-				(SetFlag 148)
+			((and givenPin (not (IsFlag 148)) (Said 'thank')) ; fBoughtSapphPin
+				(SetFlag 148) ; fBoughtSapphPin
 				(gCurRoom setScript: thanksForPin)
 			)
 			((Said 'buy,bargain/gem,gem,necklace,bracelet')
 				(self showText: -2)
 			)
 			((or (Said 'buy,bargain/pin') (Said 'bargain//pin'))
-				(if (IsFlag 148)
+				(if (IsFlag 148) ; fBoughtSapphPin
 					(Say self 335 15) ; "I have no other suitable pins, Effendi."
 				else
 					(Say self 335 16) ; "It has a value of 500 dinars. Would you care to bargain?"
@@ -202,7 +202,7 @@
 				)
 			)
 			((Said 'get,get,look,look/pin')
-				(if (IsFlag 148)
+				(if (IsFlag 148) ; fBoughtSapphPin
 					(HighPrint 335 17) ; "No other pin is as fine as the one you already obtained from Sashanan."
 				else
 					(HighPrint 335 18) ; "There is a beautiful sapphire pin in Sashanan's display case."
@@ -250,9 +250,9 @@
 		(if (gCurRoom script:)
 			(return)
 		)
-		(if (and (not (IsFlag 50)) (< (gEgo distanceTo: sashanan) 50))
+		(if (and (not (IsFlag 50)) (< (gEgo distanceTo: sashanan) 50)) ; fVisitedSashanan
 			(Say self 335 20) ; "Jewelry of the finest gems inlaid in rings of gold and silver, necklaces of beautiful stones, things of beauty which will last forever--all of which I sell."
-			(SetFlag 50)
+			(SetFlag 50) ; fVisitedSashanan
 		)
 	)
 
@@ -331,9 +331,9 @@
 		(if (gCurRoom script:)
 			(return)
 		)
-		(if (and (not (IsFlag 49)) (< (gEgo distanceTo: tiram) 60))
+		(if (and (not (IsFlag 49)) (< (gEgo distanceTo: tiram) 60)) ; fVisitedTiram
 			(Say self 335 25) ; "The finest of carpets in all of the land I have for your perusal, Hero of the North."
-			(SetFlag 49)
+			(SetFlag 49) ; fVisitedTiram
 		)
 	)
 

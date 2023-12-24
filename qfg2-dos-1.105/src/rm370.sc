@@ -69,7 +69,7 @@
 		(rightHand init:)
 		(StartTimer nodTimer 5)
 		(StartTimer blinkTimer 3)
-		(ClearFlag 2)
+		(ClearFlag 2) ; fInMainGame
 		(switch gInnState
 			(0
 				(gCurRoom setScript: meeting1)
@@ -90,7 +90,7 @@
 		(++ gInnState)
 		(DontMove 0)
 		(gTimers eachElementDo: #dispose eachElementDo: #delete)
-		(SetFlag 2)
+		(SetFlag 2) ; fInMainGame
 		(super dispose:)
 	)
 )
@@ -134,7 +134,7 @@
 				(self cue:)
 			)
 			((or (Said '/sling,djinn') (Said '//sling,djinn'))
-				(SetFlag 102)
+				(SetFlag 102) ; fDjinnSling
 				(self cue:)
 			)
 			(else
@@ -180,7 +180,7 @@
 				(self setScript: ferrariLaughs self)
 			)
 			(8
-				(if (IsFlag 102)
+				(if (IsFlag 102) ; fDjinnSling
 					(Say ferrariHead self 370 7 370 8) ; "A wise choice. I dislike a man who doesn't drink."
 				else
 					(Say ferrariHead self 370 9) ; "A most prudent decision upon your part."
@@ -191,7 +191,7 @@
 			)
 			(10
 				(LeftHandSwat)
-				(if (IsFlag 102)
+				(if (IsFlag 102) ; fDjinnSling
 					(Say ferrariHead self 370 10) ; "Wilmer, a drink for our young friend."
 				else
 					(Say ferrariHead self 370 11) ; "Wilmer, the coffee."

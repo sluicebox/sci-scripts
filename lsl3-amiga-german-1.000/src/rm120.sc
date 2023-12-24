@@ -36,9 +36,9 @@
 		(gGame setSpeed: 6)
 		(SL disable:)
 		(gTheMenuBar hide:)
-		(SetFlag 3)
-		(SetFlag 5)
-		(SetFlag 4)
+		(SetFlag 3) ; cantSave
+		(SetFlag 5) ; noCursor
+		(SetFlag 4) ; preventAutoSave
 		(Load rsVIEW (LangSwitch 110 901))
 		(Load rsVIEW 120)
 		(Load rsSOUND 110)

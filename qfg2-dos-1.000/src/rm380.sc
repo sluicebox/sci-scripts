@@ -43,7 +43,7 @@
 	)
 
 	(method (init)
-		(SetFlag 100)
+		(SetFlag 100) ; fRaseir
 		(Load rsVIEW 0 4 465 385 382 383 380 410 450)
 		(Load rsSCRIPT 78)
 		(if gNight
@@ -71,7 +71,7 @@
 				(NormalEgo)
 				(gEgo setScript: backAgain)
 			)
-			((and (== gPrevRoomNum 872) (not (IsFlag 134)))
+			((and (== gPrevRoomNum 872) (not (IsFlag 134))) ; f1stTimeRaseir
 				(khaveen init: stopUpd:)
 				(kMouth
 					init:
@@ -83,7 +83,7 @@
 				)
 				(self setScript: comeIn)
 			)
-			((or (== gPrevRoomNum 703) (IsFlag 28)) ; alleyRas
+			((or (== gPrevRoomNum 703) (IsFlag 28)) ; alleyRas, fTeleporting
 				(gEgo loop: 2 posn: 160 80 init: setMotion: MoveTo 160 100)
 			)
 		)
@@ -124,7 +124,7 @@
 				(not guardsUp)
 				(not (gEgo script:))
 				(not script)
-				(IsFlag 134)
+				(IsFlag 134) ; f1stTimeRaseir
 			)
 			(= guardsUp 1)
 			(guard1 setScript: gateBlock)
@@ -155,7 +155,7 @@
 					(Said 'search,look,look[<at,around][/room,area][/!*]')
 					(Said 'look,look/courtyard')
 				)
-				(if (IsFlag 134)
+				(if (IsFlag 134) ; f1stTimeRaseir
 					(HighPrint 380 3) ; "It remains a dismal sight."
 				else
 					(HighPrint 380 4) ; "This first view of the city does not impress you. The people of this city seem to have little civic pride. The walls are grey from smoke and dirt, and the plaster is chipping off."
@@ -652,7 +652,7 @@
 				)
 			)
 			(24
-				(SetFlag 134)
+				(SetFlag 134) ; f1stTimeRaseir
 				(gCSound fade:)
 				(DontMove 0)
 				(DontTalk 0)

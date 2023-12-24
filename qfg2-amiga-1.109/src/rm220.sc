@@ -73,10 +73,10 @@
 	)
 
 	(method (dispose)
-		(ClearFlag 67)
-		(ClearFlag 68)
-		(ClearFlag 69)
-		(SetFlag 163)
+		(ClearFlag 67) ; fPassedAir
+		(ClearFlag 68) ; fPassedEarth
+		(ClearFlag 69) ; fPassedWater
+		(SetFlag 163) ; fWITAgain
 		(DisposeScript 221)
 		(DisposeScript 222)
 		(gCSound fade:)
@@ -89,7 +89,7 @@
 		(LoadMany rsSOUND 221 222 223)
 		(= gLevScript (ScriptID 221 1)) ; levitateSP
 		(= gLevHighY 88)
-		(= backAgain (IsFlag 163))
+		(= backAgain (IsFlag 163)) ; fWITAgain
 		(super init:)
 		(gMouseDownHandler add: self)
 		(= gSpellChecker gAllChecker)
@@ -237,17 +237,17 @@
 				(stopEgo)
 				(= whichTest
 					(cond
-						((IsFlag 69)
+						((IsFlag 69) ; fPassedWater
 							(= wizColor 3)
 							(wizP title: {Fire Wizard:} color: 4 back: 14)
 							(ScriptID 222 1) ; fireSP
 						)
-						((IsFlag 68)
+						((IsFlag 68) ; fPassedEarth
 							(= wizColor 2)
 							(wizP title: {Water Wizard:} color: 15 back: 1)
 							(ScriptID 222 0) ; waterSP
 						)
-						((IsFlag 67)
+						((IsFlag 67) ; fPassedAir
 							(= wizColor 4)
 							(wizP title: {Earth Wizard:} color: 14 back: 6)
 							(ScriptID 221 2) ; earthSP
@@ -511,7 +511,7 @@
 				(Say wizP self 220 22) ; "We see that you haven't enough magical power remaining to finish Our Tests. We dismiss you from Our Presence."
 			)
 			(2
-				(SetFlag 162)
+				(SetFlag 162) ; fRanOutaMagic
 				(client setScript: fallSP 0 2048)
 			)
 		)

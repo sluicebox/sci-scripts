@@ -179,9 +179,9 @@
 				(self setScript: outWinS)
 			)
 			((== spellDeath -1)
-				(= spellDeath (IsFlag 87))
+				(= spellDeath (IsFlag 87)) ; fCastingSpell
 			)
-			((and spellDeath (not (IsFlag 87)))
+			((and spellDeath (not (IsFlag 87))) ; fCastingSpell
 				(if hitKhaveen
 					(EgoDead 1 410 1 #title {Aggression was the death of you}) ; "Khaveen cries out in pain and the guard summons other guards who quickly subdue you. Khaveen makes certain that you will never bother him again."
 				else

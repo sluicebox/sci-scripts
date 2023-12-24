@@ -142,7 +142,7 @@
 				)
 			)
 			((and (TestFlag 74) (Said 'drain,(out<get),(get<out)/coconut'))
-				(ClearFlag 74)
+				(ClearFlag 74) ; braLoaded
 				(Print 540 8) ; "O.K. You remove the coconuts from your brassiere. Now what?"
 			)
 			((Said 'drop/coconut/bra')
@@ -240,9 +240,9 @@
 			(0)
 			(1
 				(HandsOff)
-				(SetFlag 73)
+				(SetFlag 73) ; braLess
 				(if (not (TestFlag 75))
-					(SetFlag 75)
+					(SetFlag 75) ; scoredBraLess
 					(gGame changeScore: 5)
 				)
 				(Ok) ; "O.K."
@@ -262,8 +262,8 @@
 			(3
 				(HandsOff)
 				(Ok) ; "O.K."
-				(ClearFlag 73)
-				(ClearFlag 74)
+				(ClearFlag 73) ; braLess
+				(ClearFlag 74) ; braLoaded
 				(gEgo
 					view: 541
 					setLoop: 0
@@ -279,9 +279,9 @@
 			)
 			(5
 				(HandsOff)
-				(SetFlag 74)
+				(SetFlag 74) ; braLoaded
 				(if (not (TestFlag 76))
-					(SetFlag 76)
+					(SetFlag 76) ; scoredBraLoaded
 					(gGame changeScore: 45)
 				)
 				(Ok) ; "O.K."
@@ -302,7 +302,7 @@
 			(7
 				(HandsOff)
 				(Ok) ; "O.K."
-				(ClearFlag 73)
+				(ClearFlag 73) ; braLess
 				(gMusic stop:)
 				(= gOldGameSpeed (gGame setSpeed: 6))
 				(= gEgoState 540)
@@ -357,7 +357,7 @@
 				(= gEgoState 0)
 				(Print 540 33 #at -1 144) ; "(But have you noticed how you're running dangerously low on clothing?)"
 				(gMusic number: 599 loop: gBgMusicLoops play:)
-				(SetFlag 68)
+				(SetFlag 68) ; killedPorky
 				(gGame changeScore: 100)
 				(gGame setSpeed: gOldGameSpeed)
 			)

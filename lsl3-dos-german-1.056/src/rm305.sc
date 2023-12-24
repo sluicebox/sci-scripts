@@ -104,7 +104,7 @@
 		(switch (= state newState)
 			(0
 				(if (== gEgoState 4)
-					(SetFlag 22)
+					(SetFlag 22) ; beenIn250
 					(= gEgoState 0)
 					(= state 1)
 					(= cycles 20)

@@ -86,7 +86,7 @@
 			((and (== gDay 28) (> gTimeODay 4))
 				(rGuard6 init:)
 			)
-			((and (== gDay 28) (not (IsFlag 97)))
+			((and (== gDay 28) (not (IsFlag 97))) ; fUgarteBusted
 				(rGuard1 init:)
 				(rGuard2 init:)
 				(rGuard3 init:)
@@ -139,14 +139,14 @@
 					(Said 'search,look,look[<at,around][/room,area][/!*]')
 					(Said 'look,look/courtyard')
 				)
-				(if (and (== gDay 28) (not (IsFlag 97)))
+				(if (and (== gDay 28) (not (IsFlag 97))) ; fUgarteBusted
 					(LowPrint 390 6) ; "The Plaza seems to be busy today."
 				else
 					(LowPrint 390 7) ; "The fountain in Raseir's Plaza of the Fountain is cracked and dry."
 				)
 			)
 			((Said 'ask,tell,talk,talk')
-				(if (and (== gDay 28) (not (IsFlag 97)))
+				(if (and (== gDay 28) (not (IsFlag 97))) ; fUgarteBusted
 					(LowPrint 390 8) ; "Do not bother the guards."
 				else
 					(LowPrint 390 9) ; "There is no one to talk to."

@@ -148,14 +148,14 @@
 		(cond
 			(airGrounded)
 			((> (gEgo z:) 30))
-			((IsFlag 90)
+			((IsFlag 90) ; fLevitating
 				(gCurRoom setScript: (ScriptID 62 1)) ; fallDown
 			)
-			((IsFlag 88)
+			((IsFlag 88) ; fClimbingRope
 				(gCurRoom setScript: (ScriptID 61 3)) ; ropeFall
 			)
-			((IsFlag 91))
-			((IsFlag 95))
+			((IsFlag 91)) ; fUsingRope
+			((IsFlag 95)) ; fFalling
 			(else
 				(UseStamina 20)
 				(gEgo hurtScript: blowEgo)

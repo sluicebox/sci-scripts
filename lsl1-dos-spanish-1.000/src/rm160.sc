@@ -89,16 +89,16 @@
 			(gTheMusic2 number: 800 loop: -1 flags: 1 play: 127)
 		)
 		(cond
-			((and (IsFlag 0) (ObjInRoom 15))
+			((and (IsFlag 0) (ObjInRoom 15)) ; fAlleyWindowBroken
 				(bottle init:)
 			)
 			((and (gEgo has: 16) (gEgo has: 14)) ; ribbon, hammer
 				(Load rsSOUND 167)
 			)
 		)
-		(eastWindow setCel: (and (IsFlag 0) 4) init:)
+		(eastWindow setCel: (and (IsFlag 0) 4) init:) ; fAlleyWindowBroken
 		(hotelSign cycleSpeed: 30 init: setCycle: Fwd)
-		(if (IsFlag 16)
+		(if (IsFlag 16) ; fHookerWindowOpen
 			(hookerWindow init:)
 		)
 		(binF init:)
@@ -877,8 +877,8 @@
 						)
 						(8 ; lubber
 							(gEgo put: invItem 0)
-							(if (IsFlag 43)
-								(ClearFlag 43)
+							(if (IsFlag 43) ; fWearingRubber
+								(ClearFlag 43) ; fWearingRubber
 								(Points 87 1)
 								(Print 160 29) ; "Good idea, you properly dispose of your "lubber." You're mother would be proud."
 							else
@@ -1176,7 +1176,7 @@
 						(HandsOff)
 						(gCurRoom setScript: sJumpRail)
 					)
-					((not (IsFlag 0))
+					((not (IsFlag 0)) ; fAlleyWindowBroken
 						(Print 160 53) ; "You consider sticking your hand through a solid glass window, but realize that if you did, you wouldn't be able to play the violin."
 						(Print 160 54 #at -1 140) ; "(Of course, you can't play the violin now, but you get the idea.)"
 					)
@@ -1194,10 +1194,10 @@
 				(switch invItem
 					(14 ; hammer
 						(if (and (== (gEgo view:) 162) (> (gEgo loop:) 1))
-							(if (IsFlag 0)
+							(if (IsFlag 0) ; fAlleyWindowBroken
 								(Print 160 56) ; "You already smashed the window. Why do it again?"
 							else
-								(SetFlag 0)
+								(SetFlag 0) ; fAlleyWindowBroken
 								(HandsOff)
 								(gCurRoom setScript: sSmashWindow)
 							)

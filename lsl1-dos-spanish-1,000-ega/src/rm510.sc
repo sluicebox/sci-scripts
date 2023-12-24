@@ -1228,7 +1228,7 @@
 			)
 			(3 ; Do
 				(cond
-					((IsFlag 70)
+					((IsFlag 70) ; pGotMagazine
 						(if gModelessDialog
 							(gModelessDialog dispose:)
 						)

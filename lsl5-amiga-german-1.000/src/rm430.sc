@@ -59,11 +59,11 @@
 			(HandsOff)
 			(self setScript: sRoom)
 		)
-		(if (not (IsFlag 41))
+		(if (not (IsFlag 41)) ; fVibratorMan
 			(LoadMany rsSOUND 431 432 433)
 			(vibMan init: setScript: sWork)
 		)
-		(if (not (IsFlag 42))
+		(if (not (IsFlag 42)) ; fBraMan
 			(LoadMany rsSOUND 434 435)
 			(gCurRoom addObstacle: braPolygon)
 			(braMan init: stopUpd:)
@@ -242,7 +242,7 @@
 				(= ticks 60)
 			)
 			(2
-				(SetFlag 41)
+				(SetFlag 41) ; fVibratorMan
 				(Say Commander_Twit 430 9 108 139 self) ; "I suspected you might be intrigued. Dr. Rolfing is working on refining our new `infrared, heat-seeking, surface-to-air vibrator.' We feel it will be of considerable value as a protective device against certain types of enemy agents."
 			)
 			(3
@@ -301,7 +301,7 @@
 		(switch (= state newState)
 			(0
 				(gGame setCursor: gTheCursor 1 500 500)
-				(SetFlag 42)
+				(SetFlag 42) ; fBraMan
 				(techMan setScript: sWork)
 				(Face gEgo braMan self)
 			)
@@ -435,11 +435,11 @@
 			)
 			(5 ; Talk
 				(cond
-					((not (IsFlag 41))
+					((not (IsFlag 41)) ; fVibratorMan
 						(HandsOff)
 						(gCurRoom setScript: sVibrator)
 					)
-					((not (IsFlag 42))
+					((not (IsFlag 42)) ; fBraMan
 						(HandsOff)
 						(gCurRoom setScript: sBra)
 					)
@@ -553,7 +553,7 @@
 	)
 
 	(method (doVerb theVerb invItem)
-		(if (not (IsFlag 42))
+		(if (not (IsFlag 42)) ; fBraMan
 			(Points 3 98)
 			(HandsOff)
 			(gCurRoom setScript: sBra)
@@ -578,7 +578,7 @@
 	)
 
 	(method (doVerb theVerb invItem)
-		(if (IsFlag 42)
+		(if (IsFlag 42) ; fBraMan
 			(TPrint 430 28) ; "Knowing what excellent medical coverage the government offers key employees like these, you feel certain this man will make a full and complete recovery!"
 		else
 			(braMan doVerb: theVerb invItem)

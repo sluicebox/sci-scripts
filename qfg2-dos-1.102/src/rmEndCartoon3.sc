@@ -192,14 +192,14 @@
 				(self setScript: saurusSpeak self)
 			)
 			(4
-				(if (not (IsFlag 135))
+				(if (not (IsFlag 135)) ; fRobbedPurse
 					(JaafarTalk 4 self 822 1)
 				else
 					(self cue:)
 				)
 			)
 			(5
-				(if (IsFlag 135)
+				(if (IsFlag 135) ; fRobbedPurse
 					(self cue:)
 				else
 					(self setScript: sultanSpeak self)

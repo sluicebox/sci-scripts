@@ -1006,7 +1006,7 @@
 		(localproc_0)
 		(cond
 			((== gFfRoom 1155)
-				(SetFlag 7)
+				(SetFlag 7) ; fBeenIn150
 				(PasswordTest)
 				(DisposeScript 175)
 				(if gQuit
@@ -1019,10 +1019,10 @@
 			((> gFfRoom 1000)
 				(switch gFfRoom
 					(1155
-						(SetFlag 7)
+						(SetFlag 7) ; fBeenIn150
 					)
 					(1480
-						(SetFlag 47)
+						(SetFlag 47) ; fFFto480
 					)
 				)
 				(-= gFfRoom 1000)

@@ -60,7 +60,7 @@
 			(HandsOff)
 			(gCurRoom setScript: sRoomScript)
 		)
-		(ClearFlag 22)
+		(ClearFlag 22) ; fNoFawnInDisco
 		(= badgerTimer 400)
 	)
 
@@ -92,7 +92,7 @@
 				(gEgo setMotion: 0)
 			else
 				(if (not paidCabbie)
-					(SetFlag 38)
+					(SetFlag 38) ; fStiffedCabbie
 					(Print 200 2) ; "Waddaya tryin' to do, peahead! You're not gonna stiff me, and get away with it! Step outside, Deadbeat!!"
 				else
 					(Points 88 1)
@@ -347,7 +347,7 @@
 					(else
 						(switch destCount
 							(0
-								(if (not (IsFlag 88))
+								(if (not (IsFlag 88)) ; pRodeInCab
 									(Print 200 23) ; "You ask the cabbie, "Where's the action?""
 									(Print 200 24) ; "Lookin' for action, eh? Dis town is really full of it. We gotta disco full of foxes this time of night. Den dere's the casino, next to the all-night weddin' chapel. And we gotta lovely bar, but you've already been dere. Me, I like da convenience store next to da disco, but of course, that's just personal preference."
 								)
@@ -455,7 +455,7 @@
 								(if (< gLarryDollars cabFare)
 									(Print 200 31) ; "Sheepishly, you apologize to the cabbie for not carrying enough money to pay for the ride."
 									(Print 200 32) ; "Waddaya mean, `no money!!'" snarls the driver. "Step outsid'a ma office, chump!"
-									(SetFlag 38)
+									(SetFlag 38) ; fStiffedCabbie
 									(gCurRoom newRoom: destination)
 								else
 									(-= gLarryDollars cabFare)

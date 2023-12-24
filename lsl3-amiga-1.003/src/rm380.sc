@@ -67,9 +67,9 @@
 (procedure (NormalJock)
 	(= curMachine 0)
 	(= workOutState 0)
-	(SetFlag 8)
-	(SetFlag 10)
-	(SetFlag 62)
+	(SetFlag 8) ; needsShower
+	(SetFlag 10) ; needsSoap
+	(SetFlag 62) ; needsDeodorant
 	(NormalEgo 2 (+ 704 gEgoIsHunk))
 	(gEgo posn: previousX previousY setPri: previousPri viewer: egoViewer)
 	(aBigEgo cycleSpeed: 0 posn: 1234 1234 setMotion: 0 stopUpd:)

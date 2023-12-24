@@ -39,14 +39,14 @@
 		(gEgo init: normalize: 552 setStep: 2 2)
 		(if (== gPrevRoomNum 920)
 			(SetupExit 0)
-			(SetFlag 4)
+			(SetFlag 4) ; fSeenCC
 			(self style: 7)
 		)
 		(if (not gLarryLoc)
 			(= gLarryLoc 3)
 		)
 		(super init:)
-		(if (IsFlag 1)
+		(if (IsFlag 1) ; fCalledLimo
 			(limo init: approachVerbs: 3) ; Do
 		)
 		(switch gPrevRoomNum
@@ -62,7 +62,7 @@
 			)
 			(else
 				(= gLarryLoc 3)
-				(ClearFlag 1)
+				(ClearFlag 1) ; fCalledLimo
 				(limo init:)
 				(gCurRoom setScript: sExitLimo)
 			)

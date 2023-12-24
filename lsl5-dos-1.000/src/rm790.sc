@@ -72,7 +72,7 @@
 
 	(method (dispose)
 		(if (gEgo has: 18) ; Roller-skates
-			(SetFlag 6)
+			(SetFlag 6) ; fSkated
 		)
 		(gTheMusic fade:)
 		(super dispose:)
@@ -240,13 +240,13 @@
 			(5 ; Talk
 				(cond
 					((gEgo has: 18) ; Roller-skates
-						(if (IsFlag 6)
+						(if (IsFlag 6) ; fSkated
 							(Say Ivana_b 790 16 108) ; ""So, didja have a good time on them blades, my little `Chicken Fat?'" says Ivana."
 						else
 							(Say Ivana_b 790 17 108) ; "Happy rolling!" says Ivana. "Remember: `keep your tips up!'"
 						)
 					)
-					((IsFlag 6)
+					((IsFlag 6) ; fSkated
 						(Say Ivana_b 790 18 108) ; ""Come back any time!" says Ivana."
 					)
 					((not talked)
@@ -262,10 +262,10 @@
 				(switch invItem
 					(17 ; Silver_Dollar
 						(cond
-							((and (gEgo has: 18) (not (IsFlag 6))) ; Roller-skates
+							((and (gEgo has: 18) (not (IsFlag 6))) ; Roller-skates, fSkated
 								(Say Ivana_b 790 20 108) ; "Oh, no money is necessary yet. We'll settle up when you return the skates!"
 							)
-							((IsFlag 6)
+							((IsFlag 6) ; fSkated
 								(Say Ivana_b 790 21 108) ; "Thanks for the offer, Cutie-pie, but I never accept tips!"
 							)
 							((not talked)
@@ -295,7 +295,7 @@
 					)
 					(0 ; Camcorder
 						(cond
-							((IsFlag 6)
+							((IsFlag 6) ; fSkated
 								(Say Ivana_b 790 26 108) ; "Oh, no," says Ivana Tramp. "that's yours! But, thanks anyway."
 							)
 							((gEgo has: 18) ; Roller-skates
@@ -308,7 +308,7 @@
 						)
 					)
 					(18 ; Roller-skates
-						(if (IsFlag 6)
+						(if (IsFlag 6) ; fSkated
 							(HandsOff)
 							(gCurRoom setScript: sRollerblades)
 						else

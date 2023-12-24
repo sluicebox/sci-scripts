@@ -15,7 +15,7 @@
 	)
 
 	(method (init)
-		(proc5_1)
+		(HandsOff)
 		(= oldIllBits (gEgo illegalBits:))
 		(= saveIgnrAct (& (gEgo signal:) $4000))
 		(gEgo illegalBits: 0 ignoreActors: 1)
@@ -23,7 +23,7 @@
 	)
 
 	(method (dispose)
-		(proc5_2)
+		(HandsOn)
 		(gEgo illegalBits: oldIllBits ignoreActors: saveIgnrAct)
 		(super dispose:)
 	)

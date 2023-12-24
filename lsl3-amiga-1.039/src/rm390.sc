@@ -378,7 +378,7 @@
 				(if (TestFlag 71)
 					(Print 390 26) ; "Hi, Larry. How's it going?"
 				else
-					(SetFlag 71)
+					(SetFlag 71) ; seenBambi
 					(if gEgoIsHunk
 						(Print 390 27) ; "Wow, Larry! How come I've never seen you before? A hunk like you would be hard to forget!"
 					else

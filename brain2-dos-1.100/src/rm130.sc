@@ -82,16 +82,16 @@
 (procedure (localproc_1 &tmp temp0 temp1 [temp2 200] [temp202 300] [temp502 5] [temp507 6])
 	(= local5 (+ (localproc_3 local8 1) [local26 local0]))
 	(= local6 (+ (localproc_3 local7 0) [local13 local0]))
-	(proc15_0 0 2 9)
-	(switch global114
-		(0
-			(proc15_0 0 2 3 0 1)
+	(Say 0 2 9) ; "Dr. Brain's pilot is standing by to take you to his private island."
+	(switch gDifficulty
+		(0 ; Novice
+			(Say 0 2 3 0 1) ; "Please give him the proper coordinates of the location of the island. These can be found on page 5 in your EncycloAlmanac- TionaryOgraphy."
 		)
-		(1
-			(proc15_0 0 2 10 0 1)
+		(1 ; Standard
+			(Say 0 2 10 0 1) ; "Please give him the proper coordinates of the location of the island. These can be found on page 5 in your EncycloAlmanac- TionaryOgraphy."
 		)
 		(else
-			(proc15_0 0 2 11 0 1)
+			(Say 0 2 11 0 1) ; "Please give him the proper coordinates of the location of the island. These can be found on page 5 in your EncycloAlmanac- TionaryOgraphy."
 		)
 	)
 	(= temp0 (- local7 74))
@@ -300,7 +300,7 @@
 				(= global173 gMouseY)
 			)
 			(else
-				(proc5_1)
+				(HandsOff)
 				(if
 					(and
 						(< (- local5 3) (localproc_3 gMouseX 1) (+ local5 3))
@@ -329,7 +329,7 @@
 				(= cycles 1)
 			)
 			(1
-				(proc5_2)
+				(HandsOn)
 				(gTheIconBar disable:)
 				(gGame setCursor: gTheCursor 1 300 160)
 				(gCMusic number: 4 setLoop: -1 play:)
@@ -515,7 +515,7 @@
 						(localproc_1)
 						(= local1 0)
 						(= local3 -1)
-						(proc5_2)
+						(HandsOn)
 						(gTheIconBar disable:)
 						(gGame setCursor: 996 1 local11 local9)
 						(self dispose:)
@@ -524,7 +524,7 @@
 			)
 			(8
 				(if register
-					(proc5_2)
+					(HandsOn)
 					(gTheIconBar enable:)
 					(gCurRoom newRoom: 140)
 				else

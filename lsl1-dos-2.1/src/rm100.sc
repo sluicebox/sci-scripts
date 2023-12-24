@@ -32,10 +32,10 @@
 
 	(method (init)
 		(if (== gDebugging 2)
-			(SetFlag 43)
+			(SetFlag 43) ; fWearingRubber
 		)
 		(if (== gDebugging 1)
-			(SetFlag 15)
+			(SetFlag 15) ; fHasClap
 		)
 		(Load rsVIEW 100)
 		(LoadMany rsSOUND 801 802)
@@ -96,12 +96,12 @@
 		(building init:)
 		(doormat init: approachVerbs: 3 4 10 11) ; Do, Inventory, Zipper, Taste/Smell
 		(cans init: approachVerbs: 3 4 10 11) ; Do, Inventory, Zipper, Taste/Smell
-		(if (IsFlag 15)
+		(if (IsFlag 15) ; fHasClap
 			(Load rsVIEW 101)
 			(LoadMany rsSOUND 105 101)
 			(= clapTimer 150)
 		)
-		(if (and (not (IsFlag 38)) (IsFlag 43))
+		(if (and (not (IsFlag 38)) (IsFlag 43)) ; fStiffedCabbie, fWearingRubber
 			(Load rsVIEW 104)
 			(Load rsSOUND 104)
 			(aCop
@@ -145,7 +145,7 @@
 				else
 					(= n 160)
 				)
-				(if (not (IsFlag 15))
+				(if (not (IsFlag 15)) ; fHasClap
 					(super newRoom: n)
 				else
 					(HandsOff)

@@ -50,7 +50,7 @@
 		(InitAddToPics egoSilhouette omarFeet lamp1 lamp2 pillow)
 		(gCSound number: 106 loop: -1 priority: 0 playBed:)
 		(StartTimer jaAfarTimer 3 10)
-		(ClearFlag 2)
+		(ClearFlag 2) ; fInMainGame
 		(switch gDay
 			(3
 				(self setScript: poem1S)
@@ -66,7 +66,7 @@
 
 	(method (dispose)
 		(gTimers eachElementDo: #dispose eachElementDo: #delete)
-		(SetFlag 2)
+		(SetFlag 2) ; fInMainGame
 		(super dispose:)
 	)
 )
@@ -102,7 +102,7 @@
 			)
 			(8
 				(gCSound fade:)
-				(SetFlag 161)
+				(SetFlag 161) ; fSeenShow
 				(gCurRoom newRoom: 100)
 			)
 		)
@@ -140,7 +140,7 @@
 			)
 			(8
 				(gCSound fade:)
-				(SetFlag 161)
+				(SetFlag 161) ; fSeenShow
 				(gCurRoom newRoom: 100)
 			)
 		)
@@ -187,7 +187,7 @@
 			)
 			(11
 				(gCSound fade:)
-				(SetFlag 161)
+				(SetFlag 161) ; fSeenShow
 				(gCurRoom newRoom: 100)
 			)
 		)

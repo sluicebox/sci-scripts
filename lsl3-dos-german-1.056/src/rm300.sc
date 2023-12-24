@@ -35,7 +35,7 @@
 			(gEgo posn: 155 190 setPri: 4 setLoop: 2)
 			(RoomScript changeState: 1)
 			(if (and gEgoIsHunk (not (TestFlag 10)) (not (TestFlag 8)))
-				(SetFlag 53)
+				(SetFlag 53) ; missedBambi
 			)
 		else
 			(gEgo posn: 318 184 loop: 1)

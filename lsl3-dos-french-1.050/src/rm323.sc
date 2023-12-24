@@ -271,7 +271,7 @@
 				)
 			)
 			(1
-				(SetFlag 38)
+				(SetFlag 38) ; beenIn323
 				(Print 323 43) ; "Good day, Mr. Laffer," says the attorney from her desk with a smile, "I'm Suzi Cheatem. How may I help you?"
 				(Print 323 44) ; "Please, make yourself at home. Have a seat on my couch."
 			)

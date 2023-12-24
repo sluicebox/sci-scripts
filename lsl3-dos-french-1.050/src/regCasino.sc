@@ -45,7 +45,7 @@
 					((Said '/mirror')
 						(Print 417 8) ; ".kcab gnikool flesruoy ees uoY"
 						(if (not (TestFlag 12))
-							(SetFlag 12)
+							(SetFlag 12) ; lookedInMirror
 							(gGame changeScore: 2)
 						)
 					)

@@ -46,7 +46,7 @@
 
 (procedure (MoveAnvil &tmp anvilStrength)
 	(if (< (++ anvilTries) 5)
-		(= anvilStrength (if (IsFlag 164) 60 else 120))
+		(= anvilStrength (if (IsFlag 164) 60 else 120)) ; fOiledAnvil
 		(gEgo setScript: moveAnvil 0 (TrySkill 0 anvilStrength)) ; strength
 	else
 		(gEgo setScript: (ScriptID 141 0) 0 1) ; busted
@@ -139,7 +139,7 @@
 		(= global76 1)
 		(poly1 points: @pts1 size: 4)
 		(self addObstacle: poly1)
-		(ClearFlag 115)
+		(ClearFlag 115) ; fWeaponBarred
 		(cond
 			((== gPrevRoomNum 150)
 				(= global61 0)
@@ -147,35 +147,35 @@
 				(fire init: setCycle: Fwd)
 				(gEgo loop: 7 init: posn: 126 155)
 				((ScriptID 141 5) posn: 90 143 init:) ; Issur
-				(if (IsFlag 23)
+				(if (IsFlag 23) ; fWrestlingWin
 					(SolvePuzzle 658 7 0)
 				)
 				(cond
-					((and (IsFlag 38) (IsFlag 23))
+					((and (IsFlag 38) (IsFlag 23)) ; fBargainBet, fWrestlingWin
 						(gEgo get: 2 (* gWrestlingBet 2)) ; Dinar
-						(ClearFlag 38)
+						(ClearFlag 38) ; fBargainBet
 						(gEgo setScript: bellowsScored)
 					)
-					((and (IsFlag 38) (not (IsFlag 23)))
+					((and (IsFlag 38) (not (IsFlag 23))) ; fBargainBet, fWrestlingWin
 						(Say (ScriptID 141 5) 140 4) ; "Ha! Easiest 10 dinars I ever made. Let me know if you want to try again.", Issur
-						(ClearFlag 38)
+						(ClearFlag 38) ; fBargainBet
 						(if (== 0 (mod gEnter140 3))
 							((ScriptID 141 5) setScript: (ScriptID 141 3)) ; Issur, IssurFlex
 						)
 					)
-					((and (IsFlag 21) (IsFlag 23))
+					((and (IsFlag 21) (IsFlag 23)) ; fWorthy, fWrestlingWin
 						(gEgo get: 2 (* gWrestlingBet 3)) ; Dinar
-						(ClearFlag 38)
+						(ClearFlag 38) ; fBargainBet
 						(gEgo setScript: bellowsScored)
 					)
-					((and (IsFlag 21) (not (IsFlag 23)))
+					((and (IsFlag 21) (not (IsFlag 23))) ; fWorthy, fWrestlingWin
 						(Say (ScriptID 141 5) 140 5) ; "Ha! Easiest way I know of to get 20 dinars. Let me know if you want to try again.", Issur
-						(ClearFlag 38)
+						(ClearFlag 38) ; fBargainBet
 						(if (== 0 (mod gEnter140 3))
 							((ScriptID 141 5) setScript: (ScriptID 141 3)) ; Issur, IssurFlex
 						)
 					)
-					((IsFlag 23)
+					((IsFlag 23) ; fWrestlingWin
 						(Say (ScriptID 141 5) 140 6) ; "Aw right. Anyone can get lucky. Here's your dough.", Issur
 						(gEgo get: 2 (* 2 gWrestlingBet)) ; Dinar
 					)
@@ -193,7 +193,7 @@
 				(self setScript: (ScriptID 141 6)) ; enterScript
 			)
 			(niteTime
-				(SetFlag 115)
+				(SetFlag 115) ; fWeaponBarred
 				(poly2 points: @pts2 size: 4)
 				(poly3 points: @pts3 size: 5)
 				(= gSpellChecker gAllChecker)
@@ -207,7 +207,7 @@
 			loop: -1
 			playBed:
 		)
-		(SetFlag 128)
+		(SetFlag 128) ; f140
 	)
 
 	(method (dispose)
@@ -226,8 +226,8 @@
 			(gEgo setScript: (ScriptID 141 0) 0 1) ; busted
 		)
 		(if (& (gEgo onControl: 1) $0002)
-			(if (IsFlag 114)
-				(SetFlag 26)
+			(if (IsFlag 114) ; fAnvilMoved
+				(SetFlag 26) ; fWeaponRobbed
 			)
 			(if (and niteTime (gTimers contains: (ScriptID 141 7))) ; bustTimer
 				((ScriptID 141 7) dispose:) ; bustTimer
@@ -304,20 +304,20 @@
 					((gEgo has: 25) ; Bellows
 						(Say (ScriptID 141 5) 140 14) ; "You have the bellows. What more do you want?", Issur
 					)
-					((not (IsFlag 21))
+					((not (IsFlag 21)) ; fWorthy
 						(Say (ScriptID 141 5) 140 15) ; "You must need my bellows badly.", Issur
 					)
 					((TrySkill 13 80) ; communication
-						(if (IsFlag 165)
+						(if (IsFlag 165) ; fIssurMellow
 							(Say (ScriptID 141 5) 140 16) ; "Well, since you put it that way, I guess you do need the bellows. I'll get it for you.", Issur
-							(ClearFlag 21)
-							(ClearFlag 38)
+							(ClearFlag 21) ; fWorthy
+							(ClearFlag 38) ; fBargainBet
 							(gEgo setScript: bellowsScored)
 						else
 							(Say (ScriptID 141 5) 140 17) ; "OK, OK. Since you are such a wimp, you only have to pay me 10 dinars if you lose at arm wrestling.", Issur
 							(= betMade 1)
 							(= gWrestlingBet 10)
-							(SetFlag 38)
+							(SetFlag 38) ; fBargainBet
 						)
 					)
 					(else
@@ -340,15 +340,15 @@
 					((gEgo has: 25) ; Bellows
 						(Say (ScriptID 141 5) 140 19) ; "You told me the story already, and besides, you have the bellows. What else do you want?", Issur
 					)
-					((IsFlag 21)
+					((IsFlag 21) ; fWorthy
 						(Say (ScriptID 141 5) 140 20) ; "You have told me that story already!", Issur
 					)
-					((not (IsFlag 23))
+					((not (IsFlag 23)) ; fWrestlingWin
 						(if (TrySkill 13 50) ; communication
 							(Say (ScriptID 141 5) 140 21) ; "Do tell. Well, if you want to use my bellows, then you've got to prove your worth. You'll have to defeat me at Arm Wrestling. You win, you get the bellows. You lose, I get 20 dinars.", Issur
 							(= betMade 1)
 							(= gWrestlingBet 20)
-							(SetFlag 21)
+							(SetFlag 21) ; fWorthy
 						else
 							(Say (ScriptID 141 5) 140 22) ; "That's a nice speech impediment you have there, but I don't know what you're saying.", Issur
 						)
@@ -373,16 +373,16 @@
 					((not (gCast contains: (ScriptID 141 5))) ; Issur
 						(HighPrint 140 24) ; "There's no one to wrestle with. Wasn't the purpose of breaking in to steal something?"
 					)
-					((IsFlag 23)
+					((IsFlag 23) ; fWrestlingWin
 						(Say (ScriptID 141 5) 140 25) ; "Go away. I've got better things to do than waste my time on you.", Issur
 					)
 					((not betMade)
 						(cond
-							((and (not (gCast contains: emblem)) (IsFlag 21))
+							((and (not (gCast contains: emblem)) (IsFlag 21)) ; fWorthy
 								(Say (ScriptID 141 5) 140 26) ; "It will cost you another 20 dinar to wrestle me for the bellows.", Issur
 								(= gWrestlingBet 20)
 							)
-							((IsFlag 24)
+							((IsFlag 24) ; fWrestlingFun
 								(Say
 									(ScriptID 141 5) ; Issur
 									(Format @str 140 27 gWrestlingBet) ; "It'll cost you more to bet me this time. You'll have to put down %d Dinars."
@@ -443,12 +443,12 @@
 				(cond
 					(magicOpen
 						(= magicOpen 0)
-						(if (IsFlag 26)
+						(if (IsFlag 26) ; fWeaponRobbed
 							(HighPrint 140 33) ; "Unfortunately, it appears that someone has already stolen all of its contents. Now who would have done such a thing?"
 						else
 							(SolvePuzzle 699 3 2)
 							(HighPrint 140 34) ; "You find 100 dinars and 500 centimes, which you happily put away."
-							(SetFlag 26)
+							(SetFlag 26) ; fWeaponRobbed
 							(gEgo get: 2 100) ; Dinar
 							(gEgo get: 1 500) ; Centime
 						)
@@ -474,12 +474,12 @@
 			)
 			(5
 				(HighPrint 140 36) ; "You got it! The chest is now open."
-				(if (IsFlag 26)
+				(if (IsFlag 26) ; fWeaponRobbed
 					(HighPrint 140 33) ; "Unfortunately, it appears that someone has already stolen all of its contents. Now who would have done such a thing?"
 				else
 					(SolvePuzzle 699 3 2)
 					(HighPrint 140 34) ; "You find 100 dinars and 500 centimes, which you happily put away."
-					(SetFlag 26)
+					(SetFlag 26) ; fWeaponRobbed
 					(gEgo get: 2 100) ; Dinar
 					(gEgo get: 1 500) ; Centime
 				)
@@ -505,7 +505,7 @@
 		(switch (= state newState)
 			(0
 				(cond
-					((not (IsFlag 114))
+					((not (IsFlag 114)) ; fAnvilMoved
 						(HighPrint 140 37) ; "You'll have to get the anvil out of the way first."
 						(self dispose:)
 					)
@@ -566,7 +566,7 @@
 				(gEgo
 					setMotion: PolyPath (+ (anvil x:) 28) (+ (anvil y:) 9) self
 				)
-				(= anvilDelta (if (IsFlag 114) 1 else -1))
+				(= anvilDelta (if (IsFlag 114) 1 else -1)) ; fAnvilMoved
 			)
 			(1
 				(gEgo setHeading: 315 self)
@@ -598,7 +598,7 @@
 			(4
 				(anvil posn: (+ (anvil x:) xChange) (+ (anvil y:) yChange))
 				(gEgo setCel: 3)
-				(if (IsFlag 114)
+				(if (IsFlag 114) ; fAnvilMoved
 					(gEgo
 						posn: (+ (gEgo x:) xChange) (+ (gEgo y:) yChange)
 					)
@@ -609,7 +609,7 @@
 			)
 			(5
 				(gEgo setCel: 2)
-				(if (IsFlag 114)
+				(if (IsFlag 114) ; fAnvilMoved
 					(= cycles 5)
 				else
 					(gEgo
@@ -624,15 +624,15 @@
 						(*= anvilDelta 2)
 						(self changeState: 4)
 					)
-					((IsFlag 114)
-						(ClearFlag 114)
+					((IsFlag 114) ; fAnvilMoved
+						(ClearFlag 114) ; fAnvilMoved
 						(gCurRoom addObstacle: poly1)
 						(HighPrint 140 41) ; "You've returned the anvil to its original position to hide your illicit activity."
 						(HandsOn)
 						(self dispose:)
 					)
 					(else
-						(SetFlag 114)
+						(SetFlag 114) ; fAnvilMoved
 						(gCurRoom addObstacle: poly2)
 						(HighPrint 140 42) ; "You move the anvil aside. Now you can get to the trapdoor."
 						(HandsOn)
@@ -650,7 +650,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(if (IsFlag 165)
+				(if (IsFlag 165) ; fIssurMellow
 					(= seconds 3)
 				else
 					(Say (ScriptID 141 5) self 140 43) ; "All right, you can have the stupid bellows. See if I care.", Issur
@@ -661,7 +661,7 @@
 				(HighPrint 140 44) ; "He gets the bellows down for you and throws them at you."
 				(= betMade 0)
 				(emblem dispose:)
-				(SetFlag 85)
+				(SetFlag 85) ; fBellowsGone
 				(gEgo get: 25) ; Bellows
 				(self dispose:)
 			)
@@ -747,7 +747,7 @@
 				(SolvePuzzle 609 7)
 				(HighPrint 140 50) ; "He gets the bellows down for you and tosses them to you."
 				(emblem dispose:)
-				(SetFlag 85)
+				(SetFlag 85) ; fBellowsGone
 				(gEgo get: 25) ; Bellows
 				(self dispose:)
 			)
@@ -777,7 +777,7 @@
 				)
 			)
 			(1
-				(SetFlag 24)
+				(SetFlag 24) ; fWrestlingFun
 				(gCurRoom newRoom: 150)
 				(self dispose:)
 			)
@@ -1042,7 +1042,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(1
-				(if (IsFlag 114)
+				(if (IsFlag 114) ; fAnvilMoved
 					(HighPrint 140 66) ; "The small wooden trap door is now accessible."
 				else
 					(HighPrint 140 67) ; "You can just see the small wooden trap door underneath the anvil."
@@ -1087,7 +1087,7 @@
 			((== (trapDoor cel:) 1)
 				(HighPrint 140 72) ; "That's funny -- your Open spell doesn't seem to work on an already open door. Oh, yeah, that's right -- it isn't supposed to. You resolve to be more diligent about your studies in the future."
 			)
-			((not (IsFlag 114))
+			((not (IsFlag 114)) ; fAnvilMoved
 				(HighPrint 140 37) ; "You'll have to get the anvil out of the way first."
 			)
 			((self onMe: gEgo)
@@ -1132,7 +1132,7 @@
 					(Said 'use,put,pour/grease[/anvil,floor]')
 				)
 				(cond
-					((IsFlag 164)
+					((IsFlag 164) ; fOiledAnvil
 						(HighPrint 140 73) ; "The anvil is oiled."
 					)
 					((not (gEgo has: 42)) ; Oil
@@ -1143,21 +1143,21 @@
 					)
 					(niteTime
 						(HighPrint 140 76) ; "You spread some oil around the base of the anvil."
-						(SetFlag 164)
+						(SetFlag 164) ; fOiledAnvil
 					)
 					(else
 						(HighPrint 140 77) ; "You surreptitiously spread some oil around the base of the anvil, making sure Issur isn't watching."
-						(SetFlag 164)
+						(SetFlag 164) ; fOiledAnvil
 					)
 				)
 			)
 			((Said 'replace,(put<back)/anvil')
-				(= anvilStrength (if (IsFlag 164) 60 else 120))
+				(= anvilStrength (if (IsFlag 164) 60 else 120)) ; fOiledAnvil
 				(cond
 					((== (trapDoor cel:) 1)
 						(HighPrint 140 78) ; "You can't move the anvil -- the trap door is in your way."
 					)
-					((IsFlag 114)
+					((IsFlag 114) ; fAnvilMoved
 						(MoveAnvil)
 					)
 					(else
@@ -1247,13 +1247,13 @@
 						(HighPrint 140 84) ; "You have the bellows."
 					)
 				)
-				((IsFlag 23)
+				((IsFlag 23) ; fWrestlingWin
 					(gEgo setScript: yourWorthy)
 				)
 				((not (gCast contains: (ScriptID 141 5))) ; Issur
 					(HighPrint 140 85) ; "The bellows are not in here."
 				)
-				((not (IsFlag 22))
+				((not (IsFlag 22)) ; fBellows
 					(Say (ScriptID 141 5) 140 86) ; "Why would you need my bellows? What's the story, bub?", Issur
 				)
 				(else

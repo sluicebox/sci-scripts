@@ -106,7 +106,7 @@
 					y: 150
 				)
 				(HandsOff)
-				(if (IsFlag 19)
+				(if (IsFlag 19) ; fLarryPanting
 					(gCurRoom setScript: sHot_Bothered)
 				else
 					(gCurRoom setScript: sFromTelephone)
@@ -123,7 +123,7 @@
 		(gEgo init:)
 		(super init:)
 		(if (and (ObjInRoom 11) (> (gEgo x:) 50) (!= gPrevRoomNum 505))
-			(if (IsFlag 99)
+			(if (IsFlag 99) ; fBumTgl
 				(aBum setScript: sBumBegs)
 				(Load rsSOUND 111 120)
 				(aBum cycleSpeed: global101 moveSpeed: (+ 1 global101) init:)
@@ -132,10 +132,10 @@
 			(ToggleFlag 99)
 		)
 		(self setRegions: 700) ; sidewalk
-		(if (and (!= gPrevRoomNum 505) (IsFlag 39))
+		(if (and (!= gPrevRoomNum 505) (IsFlag 39)) ; fSurveyCalled
 			(sfxPhoneRinging prevSignal: 0)
 			(sfxPhoneRinging play:)
-			(SetFlag 26)
+			(SetFlag 26) ; fPhoneRinging
 		)
 	)
 
@@ -642,7 +642,7 @@
 			(5
 				(Print 500 32 #at -1 20) ; "You hang up the telephone and wipe the sweat from your hands!"
 				(HandsOn)
-				(ClearFlag 19)
+				(ClearFlag 19) ; fLarryPanting
 				(gEgo normal: 1)
 				(NormalEgo 0)
 				(self dispose:)
@@ -702,14 +702,14 @@
 				)
 			)
 			(2
-				(if (IsFlag 26)
+				(if (IsFlag 26) ; fPhoneRinging
 					(sfxPhoneRinging stop:)
 				)
 				(sfxHangUpHere play:)
 				(gEgo setCycle: End self)
 			)
 			(3
-				(if (IsFlag 26)
+				(if (IsFlag 26) ; fPhoneRinging
 					(Points 48 5)
 				)
 				(gCurRoom newRoom: 505)

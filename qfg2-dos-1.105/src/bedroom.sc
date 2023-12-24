@@ -78,8 +78,8 @@
 						(EgoRests 0)
 					)
 					(else
-						(ClearFlag 4)
-						(ClearFlag 5)
+						(ClearFlag 4) ; fHungry
+						(ClearFlag 5) ; fStarving
 						(= wakenTime (if (== sleepTime 1) 20 else 5))
 						(EgoSleeps wakenTime 0)
 					)
@@ -92,10 +92,10 @@
 				)
 				(HandsOn)
 				(if (== gDay 17)
-					(ClearFlag 3)
-					(ClearFlag 137)
-					(ClearFlag 4)
-					(ClearFlag 5)
+					(ClearFlag 3) ; fThirsty
+					(ClearFlag 137) ; fDyingOfThirst
+					(ClearFlag 4) ; fHungry
+					(ClearFlag 5) ; fStarving
 					(gEgo get: 49 get: 3 12) ; SpareClothes, Food
 					(if (not (gEgo has: 37)) ; Waterskin
 						(gEgo get: 37) ; Waterskin

@@ -193,7 +193,7 @@
 					(HighPrint 120 2) ; "This small alcove at the end of the alley has a small window with an iron grate above it. The two oil sconces used for illumination are doused and there is no one about."
 				else
 					(HighPrint 120 3) ; "This small alcove at the end of the alley has a small window with an iron grate above it. Two oil sconces illuminate the guard standing nearby and the woman behind the window."
-					(if (not (IsFlag 9))
+					(if (not (IsFlag 9)) ; fMoneyOnce
 						(HighPrint 120 4) ; "You have found the Money Changer."
 					)
 				)
@@ -239,18 +239,18 @@
 		(cond
 			((== what 18)
 				(cond
-					((not (IsFlag 12))
+					((not (IsFlag 12)) ; fMoneyMission
 						(= what 16)
 					)
-					((IsFlag 26)
+					((IsFlag 26) ; fWeaponRobbed
 						(= what 17)
 					)
-					((IsFlag 13)
+					((IsFlag 13) ; fMoneyDone
 						(= what 39)
 					)
 				)
 			)
-			((and (or (== what 39) (== what 40)) (not (IsFlag 39)))
+			((and (or (== what 39) (== what 40)) (not (IsFlag 39))) ; fMoneyRumor
 				(= what 0)
 			)
 		)
@@ -326,13 +326,13 @@
 			)
 			((Said 'make,give,show/sign[<thief]')
 				(cond
-					((IsFlag 11)
+					((IsFlag 11) ; fMoneySign
 						(MakeSign)
 						(Say self 120 15) ; "Well, young Jackal, may fortune always favor you."
 					)
 					((MakeSign)
 						(SolvePuzzle 694 3 2)
-						(SetFlag 11)
+						(SetFlag 11) ; fMoneySign
 						(= gMoneyDate (+ gDay 1))
 						(Say self 120 16 120 17 120 18) ; "So you are a Jackal among the goats, then. I am very fond of those of the profession. This could be the start of a beautiful relationship."
 					)
@@ -616,34 +616,34 @@
 			)
 			(2
 				(cond
-					((and (IsFlag 12) (IsFlag 13) (not (IsFlag 39)))
-						(SetFlag 39)
+					((and (IsFlag 12) (IsFlag 13) (not (IsFlag 39))) ; fMoneyMission, fMoneyDone, fMoneyRumor
+						(SetFlag 39) ; fMoneyRumor
 						(Say dinarzad self 120 39 120 40) ; "Rumor has it that a thief broke into the Metal Worker's house the other night.  There will be extra guards patrolling the streets tonight. It will be a good night to sleep in."
 					)
-					((or (IsFlag 13) (IsFlag 12))
+					((or (IsFlag 13) (IsFlag 12)) ; fMoneyDone, fMoneyMission
 						(beHappy self)
 					)
 					(
 						(and
-							(IsFlag 11)
+							(IsFlag 11) ; fMoneySign
 							(== gDay gMoneyDate)
 							(>= gTimeODay 4)
-							(not (IsFlag 13))
+							(not (IsFlag 13)) ; fMoneyDone
 						)
-						(SetFlag 12)
+						(SetFlag 12) ; fMoneyMission
 						(Say dinarzad self 120 41 120 42 120 43 120 44) ; "If you are interested, and I think you will be, I do have a job for you."
 						(= yesNoState 4)
 					)
-					((IsFlag 10)
+					((IsFlag 10) ; fMoneyTwice
 						(beHappy self)
 					)
-					((IsFlag 9)
-						(SetFlag 10)
+					((IsFlag 9) ; fMoneyOnce
+						(SetFlag 10) ; fMoneyTwice
 						(= yesNoState 2)
 						(Say dinarzad self 120 45) ; "Ah, the sunshine returns to our corner of the alley. Would you like me to be of service to you?"
 					)
 					(else
-						(SetFlag 9)
+						(SetFlag 9) ; fMoneyOnce
 						(= yesNoState 1)
 						(Say dinarzad self 120 46 120 47) ; "So, we have a stranger to our fair land. Welcome, Traveler from afar. Come closer, that you might find all that you seek here."
 					)
@@ -758,7 +758,7 @@
 				(gEgo use: [fenceItems register])
 				(gEgo get: 2 (/ (+ [curPrices register] 50) 100)) ; Dinar
 				(= lastShown -1)
-				(if (and (not (IsFlag 26)) (not saidOnce))
+				(if (and (not (IsFlag 26)) (not saidOnce)) ; fWeaponRobbed
 					(= saidOnce 1)
 					(Say dinarzad self 120 54) ; "By the way, you might like to know where a certain someone (who shall be nameless, yet for whom I have little love) conceals his safe."
 				else

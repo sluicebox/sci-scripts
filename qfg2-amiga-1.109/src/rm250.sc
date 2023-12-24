@@ -70,7 +70,7 @@
 		(self addObstacle: cloudPoly sunPoly)
 		(InitFeatures booksRight booksLeft ceiling floor)
 		(gCSound number: 250 loop: -1 playBed:)
-		(SetFlag 129)
+		(SetFlag 129) ; f250
 	)
 
 	(method (doit)
@@ -342,8 +342,8 @@
 						)
 						(Say keapon self 250 14 250 15) ; "It's sad, Dad, but if you need to climb to the sublime, you need a rope, Dope."
 					)
-					((and [gEgoStats 12] (not (IsFlag 180))) ; magic use
-						(SetFlag 180)
+					((and [gEgoStats 12] (not (IsFlag 180))) ; magic use, fToldMagic250
+						(SetFlag 180) ; fToldMagic250
 						(Say keapon self 250 16) ; "I see by your outfit that you know some magic. You see by my outfit that I know some, too. We can see by our outfits that we both know magic. I guess that we two must eschew the Hoodoo."
 					)
 					(else
@@ -578,7 +578,7 @@
 			)
 			(2
 				(= local25 1)
-				(if (or (not (IsFlag 120)) (== (Random 1 10) 1))
+				(if (or (not (IsFlag 120)) (== (Random 1 10) 1)) ; fKeaponZoomed
 					(if (== (keapon script:) laughS)
 						(laughS cycles: 0 cue:)
 					)
@@ -740,7 +740,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(SetFlag 120)
+				(SetFlag 120) ; fKeaponZoomed
 				(boredTimer dispose:)
 				(Say keapon self 250 45) ; "Now let me see where I last saw it. I'll have to look for it in the back room. I'll be back in a flash with the stash, Nash!"
 			)

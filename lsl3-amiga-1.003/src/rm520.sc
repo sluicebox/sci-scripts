@@ -337,7 +337,7 @@
 			)
 			(11
 				(gGame changeScore: 42)
-				(SetFlag 6)
+				(SetFlag 6) ; drankRiverWater
 				(NormalEgo 1)
 				(= gEgoState 0)
 				(Print 520 33) ; "You find the stream's water remarkably refreshing, without a trace of caffeine."

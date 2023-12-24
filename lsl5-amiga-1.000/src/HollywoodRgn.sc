@@ -14,7 +14,7 @@
 	(properties)
 
 	(method (init)
-		(if (IsFlag 7)
+		(if (IsFlag 7) ; fBeenIn150
 			(self setScript: sRemember)
 		)
 		(super init:)

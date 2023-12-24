@@ -23,9 +23,9 @@
 
 	(method (init)
 		(HandsOff)
-		(SetFlag 3)
-		(SetFlag 5)
-		(SetFlag 4)
+		(SetFlag 3) ; cantSave
+		(SetFlag 5) ; noCursor
+		(SetFlag 4) ; preventAutoSave
 		(= gOldGameSpeed (gGame setSpeed: 6))
 		(= gEgoIsPatti 1)
 		(= gNormalEgoView 801)
@@ -277,9 +277,9 @@
 				(gEgo loop: 1)
 			)
 			(30
-				(ClearFlag 3)
-				(ClearFlag 5)
-				(ClearFlag 4)
+				(ClearFlag 3) ; cantSave
+				(ClearFlag 5) ; noCursor
+				(ClearFlag 4) ; preventAutoSave
 				(gGame setSpeed: gOldGameSpeed)
 				(NormalEgo 1)
 				(gEgo setPri: 7)

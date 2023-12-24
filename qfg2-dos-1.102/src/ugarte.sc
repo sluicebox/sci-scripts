@@ -177,7 +177,7 @@
 			((or (Said 'buy/water') (Said 'bargain//water'))
 				(cond
 					(mover)
-					((not (IsFlag 111))
+					((not (IsFlag 111)) ; fUgartePaid
 						(Say self 364 7) ; "Please, sir, my dinars?"
 					)
 					(else
@@ -189,7 +189,7 @@
 	)
 
 	(method (respond event)
-		(if (and (== gInnState 3) (not (IsFlag 111)))
+		(if (and (== gInnState 3) (not (IsFlag 111))) ; fUgartePaid
 			(event claimed: 1)
 			(Say self 364 8) ; "It seems before I give you what you want, you should give me what I want. It is only fair, no? My dinars, please."
 		else

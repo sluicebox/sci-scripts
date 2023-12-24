@@ -84,7 +84,7 @@
 				(== (event message:) KEY_F8)
 			)
 			(Print 483 0) ; "Skipping ahead..."
-			(SetFlag 69)
+			(SetFlag 69) ; tookShortcut
 			(gCurRoom newRoom: 484)
 		)
 	)
@@ -179,8 +179,8 @@
 				(gSystemWindow color: gTextColor back: gBackgroundColor)
 				(gTheMenuBar draw: state: 1)
 				(SL enable:)
-				(ClearFlag 4)
-				(ClearFlag 5)
+				(ClearFlag 4) ; preventAutoSave
+				(ClearFlag 5) ; noCursor
 				(gCurRoom newRoom: 484)
 			)
 		)

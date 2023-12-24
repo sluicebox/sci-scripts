@@ -172,7 +172,7 @@
 	)
 
 	(method (dispose)
-		(SetFlag 161)
+		(SetFlag 161) ; fSeenShow
 		(HighPrint 112 0) ; "You applaud loudly and long for your friend Shema's dancing prowess."
 		(gCurRoom newRoom: 100)
 		(super dispose:)

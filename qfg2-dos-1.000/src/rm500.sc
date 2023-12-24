@@ -92,7 +92,7 @@
 		(LoadMany rsSCRIPT 501 78)
 		(LoadMany rsSOUND 500 821)
 		(LoadMany rsVIEW 1 4 41 500 501 502 503 505 510 612 613)
-		(SetFlag 140)
+		(SetFlag 140) ; fEndGame
 		(SolvePuzzle 691 7 1)
 		(super init: &rest)
 		(gCSound number: 500 loop: -1 playBed:)
@@ -303,7 +303,7 @@
 	(method (changeState newState &tmp i moveScript)
 		(switch (= state newState)
 			(0
-				(if (IsFlag 86)
+				(if (IsFlag 86) ; fReversal
 					((= moveScript (Projectile new:))
 						type: (register type:)
 						xStart: gEgoX
@@ -391,7 +391,7 @@
 	(method (doit)
 		(super doit:)
 		(cond
-			((and mage (gEgo mover:) (not (IsFlag 87)) (not spellReturning))
+			((and mage (gEgo mover:) (not (IsFlag 87)) (not spellReturning)) ; fCastingSpell
 				(= cycles 0)
 				(self changeState: 0)
 			)
@@ -468,7 +468,7 @@
 				)
 			)
 			(6
-				(if (or (IsFlag 87) spellReturning)
+				(if (or (IsFlag 87) spellReturning) ; fCastingSpell
 					(self changeState: 5)
 				else
 					(self changeState: 0)
@@ -594,7 +594,7 @@
 					setMotion: 0
 					setHeading:
 						(cond
-							((IsFlag 86) 0)
+							((IsFlag 86) 0) ; fReversal
 							((< gEgoX (adAvis x:)) 45)
 							(else 315)
 						)
@@ -602,7 +602,7 @@
 			)
 			(2
 				(adAvis cel: 0 setCycle: CT 5 1 self)
-				(if (not (IsFlag 141))
+				(if (not (IsFlag 141)) ; fKhaveenDead
 					(khav init: setCycle: Walk setMotion: MoveTo 44 176)
 				)
 			)
@@ -616,7 +616,7 @@
 				)
 			)
 			(4
-				(if (IsFlag 86)
+				(if (IsFlag 86) ; fReversal
 					(rev setScript: (ScriptID 501 6)) ; comeAndGoS
 					(client setScript: transKhavS)
 				else
@@ -654,7 +654,7 @@
 			)
 			(1
 				(trans dispose:)
-				(if (IsFlag 141)
+				(if (IsFlag 141) ; fKhaveenDead
 					(self changeState: 5)
 				else
 					(khav
@@ -749,7 +749,7 @@
 				(= cycles 6)
 			)
 			(5
-				(if (and (IsFlag 87) (-- waitCntr))
+				(if (and (IsFlag 87) (-- waitCntr)) ; fCastingSpell
 					(self changeState: 4)
 				else
 					(adAvis setCycle: Beg self)
@@ -802,7 +802,7 @@
 				(Say adAvis self 500 21) ; "You! My spell is broken! You will die!"
 			)
 			(2
-				(if (IsFlag 87)
+				(if (IsFlag 87) ; fCastingSpell
 					(self changeState: 7)
 				else
 					(adAvis setLoop: 0 cel: 0 setCycle: CT 2 1 self)
@@ -1418,7 +1418,7 @@
 			((> hitY 106)
 				(djinniPrint 500 32) ; "Aim a little higher, Master. Maybe you can tip it over onto him."
 			)
-			((or (< gEgoX 92) (IsFlag 147))
+			((or (< gEgoX 92) (IsFlag 147)) ; fBouncedBolt
 				(gCurRoom setScript: burnAvisUpS)
 			)
 			(else

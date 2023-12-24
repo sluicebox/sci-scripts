@@ -19,9 +19,9 @@
 
 	(method (init)
 		(HandsOff)
-		(SetFlag 3)
-		(SetFlag 5)
-		(SetFlag 4)
+		(SetFlag 3) ; cantSave
+		(SetFlag 5) ; noCursor
+		(SetFlag 4) ; preventAutoSave
 		(gMusic number: 600 loop: -1 play:)
 		(super init:)
 		(= gOldGameSpeed (gGame setSpeed: 3))

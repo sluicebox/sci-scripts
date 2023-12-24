@@ -65,7 +65,7 @@
 		(= beastWatered (> gBeastCare 1))
 		(= beastFed (mod gBeastCare 2))
 		(cond
-			((IsFlag 42))
+			((IsFlag 42)) ; fAlScurvaFreed
 			((or (not gCageLastHere) (< (- gNow gCageLastHere) 90))
 				(= beastCondition 1)
 			)
@@ -95,7 +95,7 @@
 			((== beastCondition 3)
 				(InitAddToPics deadBeast)
 			)
-			((IsFlag 42))
+			((IsFlag 42)) ; fAlScurvaFreed
 			(else
 				(beastBody init:)
 				(beastHead init: setScript: beastWakesUp)
@@ -220,7 +220,7 @@
 				)
 			)
 			((== gEgoGait 3)) ; riding
-			((IsFlag 42))
+			((IsFlag 42)) ; fAlScurvaFreed
 			((Said 'attack,kill/creature,beast,animal,monster')
 				(if (== beastCondition 3)
 					(HighPrint 630 6) ; "It's dead enough already, thank you."
@@ -437,7 +437,7 @@
 			)
 			(16
 				(alScurva setLoop: 7 setCel: 0 setCycle: End self)
-				(SetFlag 42)
+				(SetFlag 42) ; fAlScurvaFreed
 				(= beastCondition 0)
 			)
 			(17
@@ -729,7 +729,7 @@
 				)
 			)
 			(1
-				(if (or (== beastCondition 3) (IsFlag 42))
+				(if (or (== beastCondition 3) (IsFlag 42)) ; fAlScurvaFreed
 					(Print 630 33) ; "The cage door is stuck fast."
 					(self changeState: 5)
 				else
@@ -756,7 +756,7 @@
 			)
 			(5
 				(cond
-					((or (== beastCondition 3) (IsFlag 42))
+					((or (== beastCondition 3) (IsFlag 42)) ; fAlScurvaFreed
 						(self dispose:)
 					)
 					(lookedInEyes

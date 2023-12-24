@@ -29,7 +29,7 @@
 )
 
 (procedure (localproc_0 &tmp temp0 temp1 temp2 temp3 temp4 [temp5 6])
-	(checkProp view: [local8 global114] init:)
+	(checkProp view: [local8 gDifficulty] init:)
 	(= local3 (NumLoops checkProp))
 	(= temp1 (Random 0 (- local3 2)))
 	(checkProp loop: temp1)
@@ -136,7 +136,7 @@
 			(self
 				add:
 					((= [local13 temp0] (maskIcon new:))
-						view: [local8 global114]
+						view: [local8 gDifficulty]
 						loop: temp5
 						cel: temp2
 						value: temp1

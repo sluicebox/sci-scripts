@@ -34,8 +34,8 @@
 		(LoadMany rsSOUND 841 843 800 801 802)
 		(LoadMany rsSCRIPT 969)
 		(HandsOn)
-		(gEgo init: normalize: (if (IsFlag 27) 842 else 570))
-		(if (IsFlag 27)
+		(gEgo init: normalize: (if (IsFlag 27) 842 else 570)) ; fPattiBlackface
+		(if (IsFlag 27) ; fPattiBlackface
 			(gEgo actions: ActionsKRAP)
 		)
 		(switch gPrevRoomNum
@@ -158,7 +158,7 @@
 		(switch theVerb
 			(2 ; Look
 				(cond
-					((not (IsFlag 24))
+					((not (IsFlag 24)) ; fDrawerOpen
 						(TPrint 840 2) ; "John Krapper's granite and stainless steel desk is spotless. It holds only a computer and a telephone..."
 						(if (not (gEgo has: 8)) ; Boarding_Pass
 							(TPrint 840 3) ; "...and an imitation gold-plated needle-sharp letter opener."
@@ -166,8 +166,8 @@
 							(TPrint 840 4) ; "...and a locked file drawer."
 						)
 					)
-					((not (IsFlag 25))
-						(SetFlag 25)
+					((not (IsFlag 25)) ; fHasNumber
+						(SetFlag 25) ; fHasNumber
 						(gEgo setScript: lookDeskScript)
 					)
 					((not (gEgo has: 10)) ; Some_Change
@@ -181,17 +181,17 @@
 			)
 			(3 ; Do
 				(cond
-					((and (not (gEgo has: 8)) (not (IsFlag 24))) ; Boarding_Pass
+					((and (not (gEgo has: 8)) (not (IsFlag 24))) ; Boarding_Pass, fDrawerOpen
 						(Points 4 149)
 						(TPrint 840 5) ; "Never knowing when you might get some mail, you decide to take Krapper's letter opener from his desk."
 						(opener hide:)
 						(gEgo get: 8) ; Boarding_Pass
 					)
-					((not (IsFlag 24))
+					((not (IsFlag 24)) ; fDrawerOpen
 						(TPrint 840 6) ; "Trying the drawers of Krapper's desk, you find them securely locked."
 					)
-					((not (IsFlag 25))
-						(SetFlag 25)
+					((not (IsFlag 25)) ; fHasNumber
+						(SetFlag 25) ; fHasNumber
 						(gEgo setScript: openDeskScript)
 					)
 					((not (gEgo has: 10)) ; Some_Change
@@ -206,27 +206,27 @@
 			(4 ; Inventory
 				(switch invItem
 					(8 ; Boarding_Pass
-						(if (IsFlag 24)
+						(if (IsFlag 24) ; fDrawerOpen
 							(TPrint 840 7) ; "You carefully return the letter opener to the exact same location on Krapper's desk and make sure the drawer is securely locked. He'll never even know you touched it."
 							(gEgo put: 8) ; Boarding_Pass
 							(opener show: stopUpd:)
-							(ClearFlag 24)
+							(ClearFlag 24) ; fDrawerOpen
 						else
-							(SetFlag 24)
+							(SetFlag 24) ; fDrawerOpen
 							(gEgo setScript: pickLockScript)
 						)
 					)
 					(9 ; AeroDork_s_In-Flight_Magazine
-						(if (IsFlag 24)
-							(ClearFlag 24)
+						(if (IsFlag 24) ; fDrawerOpen
+							(ClearFlag 24) ; fDrawerOpen
 							(gEgo setScript: lockDeskScript)
 						else
-							(SetFlag 24)
+							(SetFlag 24) ; fDrawerOpen
 							(gEgo setScript: unlockDeskScript)
 						)
 					)
 					(10 ; Some_Change
-						(if (IsFlag 24)
+						(if (IsFlag 24) ; fDrawerOpen
 							(gEgo put: 10) ; Some_Change
 							(gEgo setScript: putPapersScript)
 						else
@@ -266,18 +266,18 @@
 					((gEgo has: 9) ; AeroDork_s_In-Flight_Magazine
 						(TPrint 840 9) ; "Hmm. This tree could use a good watering."
 					)
-					((IsFlag 23)
+					((IsFlag 23) ; fSeenGlint
 						(TPrint 840 10) ; "Look! There's a key almost hidden in the plant's humus."
 					)
 					(else
 						(TPrint 840 11) ; "You see a glint of metal coming from the humus in the pot at the base of the tree."
-						(SetFlag 23)
+						(SetFlag 23) ; fSeenGlint
 					)
 				)
 			)
 			(3 ; Do
 				(if (not (gEgo has: 9)) ; AeroDork_s_In-Flight_Magazine
-					(if (IsFlag 23)
+					(if (IsFlag 23) ; fSeenGlint
 						(gEgo setScript: getKeyScript)
 					else
 						(gEgo setScript: sPawThruPlant)
@@ -820,7 +820,7 @@
 			(3
 				(lobbyDoor setCel: 0)
 				(gEgo
-					normalize: (if (IsFlag 27) 842 else 570)
+					normalize: (if (IsFlag 27) 842 else 570) ; fPattiBlackface
 					observeControl: 2 4
 					setScript: 0
 				)
@@ -839,7 +839,7 @@
 				(HandsOff)
 				(gEgo
 					view: 841
-					loop: (if (IsFlag 27) 7 else 2)
+					loop: (if (IsFlag 27) 7 else 2) ; fPattiBlackface
 					setCel: 0
 					cycleSpeed: 18
 					setCycle: End self
@@ -847,7 +847,7 @@
 			)
 			(1
 				(gEgo
-					normalize: (if (IsFlag 27) 842 else 570)
+					normalize: (if (IsFlag 27) 842 else 570) ; fPattiBlackface
 					observeControl: 2 4
 					get: 9 ; AeroDork_s_In-Flight_Magazine
 					loop: 0
@@ -873,7 +873,7 @@
 				(HandsOff)
 				(gEgo
 					view: 841
-					loop: (if (IsFlag 27) 7 else 2)
+					loop: (if (IsFlag 27) 7 else 2) ; fPattiBlackface
 					setCel: 0
 					cycleSpeed: 18
 					setCycle: CT 5 1 self
@@ -884,7 +884,7 @@
 			)
 			(2
 				(gEgo
-					normalize: (if (IsFlag 27) 842 else 570)
+					normalize: (if (IsFlag 27) 842 else 570) ; fPattiBlackface
 					observeControl: 2 4
 					loop: 0
 				)
@@ -892,7 +892,7 @@
 			)
 			(3
 				(TPrint 840 34) ; "Pawing through the humus in the tree's pot, you see a glint of metal."
-				(SetFlag 23)
+				(SetFlag 23) ; fSeenGlint
 				(HandsOn)
 				(self dispose:)
 			)
@@ -909,7 +909,7 @@
 				(HandsOff)
 				(gEgo
 					view: 841
-					loop: (if (IsFlag 27) 7 else 2)
+					loop: (if (IsFlag 27) 7 else 2) ; fPattiBlackface
 					setCel: 255
 					cycleSpeed: 18
 					setCycle: Beg self
@@ -917,7 +917,7 @@
 			)
 			(1
 				(gEgo
-					normalize: (if (IsFlag 27) 842 else 570)
+					normalize: (if (IsFlag 27) 842 else 570) ; fPattiBlackface
 					observeControl: 2 4
 					loop: 0
 				)
@@ -941,7 +941,7 @@
 				(HandsOff)
 				(gEgo
 					view: 841
-					loop: (if (IsFlag 27) 6 else 0)
+					loop: (if (IsFlag 27) 6 else 0) ; fPattiBlackface
 					setCel: 0
 					cycleSpeed: 18
 					setCycle: End self
@@ -967,7 +967,7 @@
 				(Points 4 144)
 				(TPrint @str)
 				(gEgo
-					normalize: (if (IsFlag 27) 842 else 570)
+					normalize: (if (IsFlag 27) 842 else 570) ; fPattiBlackface
 					observeControl: 2 4
 					loop: 2
 					setScript: 0
@@ -987,7 +987,7 @@
 				(HandsOff)
 				(gEgo
 					view: 841
-					loop: (if (IsFlag 27) 6 else 0)
+					loop: (if (IsFlag 27) 6 else 0) ; fPattiBlackface
 					setCel: 0
 					cycleSpeed: 18
 					setCycle: End self
@@ -1006,7 +1006,7 @@
 				(Format @str 840 37 gRoomBNumber gRoomBNumber) ; "Where's that little blue stickum? Oh, here it is! %u"
 				(TPrint @str)
 				(gEgo
-					normalize: (if (IsFlag 27) 842 else 570)
+					normalize: (if (IsFlag 27) 842 else 570) ; fPattiBlackface
 					observeControl: 2 4
 					loop: 2
 					setScript: 0
@@ -1026,7 +1026,7 @@
 				(HandsOff)
 				(gEgo
 					view: 841
-					loop: (if (IsFlag 27) 6 else 0)
+					loop: (if (IsFlag 27) 6 else 0) ; fPattiBlackface
 					cycleSpeed: 18
 					setCel: 0
 					setCycle: End self
@@ -1052,7 +1052,7 @@
 				(Points 5 144)
 				(TPrint @str)
 				(gEgo
-					normalize: (if (IsFlag 27) 842 else 570)
+					normalize: (if (IsFlag 27) 842 else 570) ; fPattiBlackface
 					observeControl: 2 4
 					loop: 2
 					setScript: 0
@@ -1072,7 +1072,7 @@
 				(HandsOff)
 				(gEgo
 					view: 841
-					loop: (if (IsFlag 27) 6 else 0)
+					loop: (if (IsFlag 27) 6 else 0) ; fPattiBlackface
 					setCel: 0
 					cycleSpeed: 18
 					setCycle: End self
@@ -1091,7 +1091,7 @@
 				(Format @str 840 37 gRoomBNumber gRoomBNumber) ; "Where's that little blue stickum? Oh, here it is! %u"
 				(TPrint @str)
 				(gEgo
-					normalize: (if (IsFlag 27) 842 else 570)
+					normalize: (if (IsFlag 27) 842 else 570) ; fPattiBlackface
 					observeControl: 2 4
 					loop: 2
 					setScript: 0
@@ -1111,7 +1111,7 @@
 				(HandsOff)
 				(gEgo
 					view: 841
-					loop: (if (IsFlag 27) 6 else 0)
+					loop: (if (IsFlag 27) 6 else 0) ; fPattiBlackface
 					setCel: 0
 					cycleSpeed: 18
 					setCycle: End self
@@ -1125,7 +1125,7 @@
 				(Points 5 147)
 				(TPrint 840 38) ; "Prying away at the desk's inefficient lock with Krapper's letter opener, you find a weak spot and carefully pry the drawer open."
 				(gEgo
-					normalize: (if (IsFlag 27) 842 else 570)
+					normalize: (if (IsFlag 27) 842 else 570) ; fPattiBlackface
 					observeControl: 2 4
 					loop: 2
 					setScript: 0
@@ -1145,7 +1145,7 @@
 				(HandsOff)
 				(gEgo
 					view: 841
-					loop: (if (IsFlag 27) 6 else 0)
+					loop: (if (IsFlag 27) 6 else 0) ; fPattiBlackface
 					setCel: 0
 					cycleSpeed: 18
 					setCycle: End self
@@ -1159,7 +1159,7 @@
 				(Points 13 147)
 				(TPrint 840 39) ; "Trying the key you found buried in the tree's pot, you insert into the desk and turn it carefully. It opens."
 				(gEgo
-					normalize: (if (IsFlag 27) 842 else 570)
+					normalize: (if (IsFlag 27) 842 else 570) ; fPattiBlackface
 					observeControl: 2 4
 					loop: 2
 					setScript: 0
@@ -1179,7 +1179,7 @@
 				(HandsOff)
 				(gEgo
 					view: 841
-					loop: (if (IsFlag 27) 6 else 0)
+					loop: (if (IsFlag 27) 6 else 0) ; fPattiBlackface
 					setCel: 0
 					cycleSpeed: 18
 					setCycle: End self
@@ -1192,7 +1192,7 @@
 			(2
 				(TPrint 840 40) ; "You lock the desk."
 				(gEgo
-					normalize: (if (IsFlag 27) 842 else 570)
+					normalize: (if (IsFlag 27) 842 else 570) ; fPattiBlackface
 					observeControl: 2 4
 					loop: 2
 					setScript: 0
@@ -1212,7 +1212,7 @@
 				(HandsOff)
 				(gEgo
 					view: 841
-					loop: (if (IsFlag 27) 6 else 0)
+					loop: (if (IsFlag 27) 6 else 0) ; fPattiBlackface
 					setCel: 0
 					cycleSpeed: 18
 					setCycle: End self
@@ -1221,7 +1221,7 @@
 			(1
 				(gEgo
 					view: 841
-					loop: (if (IsFlag 27) 8 else 1)
+					loop: (if (IsFlag 27) 8 else 1) ; fPattiBlackface
 					setCel: 0
 					cycleSpeed: 18
 					setCycle: End self
@@ -1234,7 +1234,7 @@
 				(Points 5 145)
 				(TPrint 840 41) ; "Searching the desk drawer, you find the folders marked "Personal.""
 				(gEgo
-					normalize: (if (IsFlag 27) 842 else 570)
+					normalize: (if (IsFlag 27) 842 else 570) ; fPattiBlackface
 					observeControl: 2 4
 					loop: 2
 					setScript: 0
@@ -1254,7 +1254,7 @@
 				(HandsOff)
 				(gEgo
 					view: 841
-					loop: (if (IsFlag 27) 6 else 0)
+					loop: (if (IsFlag 27) 6 else 0) ; fPattiBlackface
 					setCel: 0
 					cycleSpeed: 18
 					setCycle: End self
@@ -1271,7 +1271,7 @@
 			(3
 				(gEgo
 					view: 841
-					loop: (if (IsFlag 27) 8 else 1)
+					loop: (if (IsFlag 27) 8 else 1) ; fPattiBlackface
 					setCel: 0
 					cycleSpeed: 18
 					setCycle: End self
@@ -1284,7 +1284,7 @@
 			)
 			(5
 				(gEgo
-					normalize: (if (IsFlag 27) 842 else 570)
+					normalize: (if (IsFlag 27) 842 else 570) ; fPattiBlackface
 					observeControl: 2 4
 					loop: 2
 					setScript: 0
@@ -1304,7 +1304,7 @@
 				(HandsOff)
 				(gEgo
 					view: 841
-					setLoop: (if (IsFlag 27) 8 else 1)
+					setLoop: (if (IsFlag 27) 8 else 1) ; fPattiBlackface
 					setCel: 255
 					cycleSpeed: 18
 					setCycle: Beg self
@@ -1315,7 +1315,7 @@
 			)
 			(2
 				(gEgo
-					loop: (if (IsFlag 27) 6 else 0)
+					loop: (if (IsFlag 27) 6 else 0) ; fPattiBlackface
 					setCel: 255
 					cycleSpeed: 18
 					setCycle: Beg self
@@ -1327,7 +1327,7 @@
 			(4
 				(TPrint 840 45) ; "You return the folder of evidence to Krapper's desk, and close his desk drawer, being careful to leave everything exactly as you found it."
 				(gEgo
-					normalize: (if (IsFlag 27) 842 else 570)
+					normalize: (if (IsFlag 27) 842 else 570) ; fPattiBlackface
 					observeControl: 2 4
 					loop: 2
 					setScript: 0
@@ -1440,7 +1440,7 @@
 			(20
 				(Say gEgo 840 51) ; "GREAT!" you think. "Now just look at me! I'm covered with toner from head to toe!"
 				(copier stopUpd:)
-				(SetFlag 27)
+				(SetFlag 27) ; fPattiBlackface
 				(gEgo get: 11 actions: ActionsKRAP setScript: 0) ; DayTrotter
 				(HandsOn)
 			)

@@ -433,7 +433,7 @@
 		(= window wordWindow)
 		(wordWindow back: [local0 9])
 		(super init: &rest)
-		(= local265 global114)
+		(= local265 gDifficulty)
 	)
 
 	(method (buyClue &tmp temp0)
@@ -479,9 +479,9 @@
 
 	(method (showHelp)
 		(= local261
-			(switch global114
-				(0 10)
-				(1 15)
+			(switch gDifficulty
+				(0 10) ; Novice
+				(1 15) ; Standard
 				(else 20)
 			)
 		)
@@ -873,7 +873,7 @@
 				(gCSoundFX number: 106 loop: 1 play: self)
 			)
 			(2
-				(word solvePuzzle: global114 6)
+				(word solvePuzzle: gDifficulty 6)
 				(Memory memPOKE local242 -1)
 				(gGame setCursor: 900)
 				(self dispose:)

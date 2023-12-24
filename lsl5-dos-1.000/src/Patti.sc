@@ -27,7 +27,7 @@
 					(Say gEgo 24 1) ; ""I really enjoy these little talks," you say to yourself."
 				)
 				(3 ; Do
-					(if (IsFlag 35)
+					(if (IsFlag 35) ; fWearingBra
 						(TPrint 24 2) ; "You begin to adjust a bra strap before remembering you'd need a crowbar!"
 					else
 						(TPrint 24 3) ; "You begin to adjust your bra strap before remembering you'd need a bra!"
@@ -49,15 +49,15 @@
 							(Say gEgo 24 8) ; "Ahhh!"
 						)
 						(13 ; Credit_Cards
-							(if (IsFlag 35)
+							(if (IsFlag 35) ; fWearingBra
 								(Points -5)
 								(TPrint 24 9) ; "You gladly remove your double-barrelled bra."
-								(ClearFlag 35)
+								(ClearFlag 35) ; fWearingBra
 							else
 								(Points 5)
 								(TPrint 24 10) ; "You slip your genuine F.B.I. bra over your shoulders."
 								(Say gEgo 24 11) ; "YOW! That sucker's cold!"
-								(SetFlag 35)
+								(SetFlag 35) ; fWearingBra
 							)
 						)
 						(else

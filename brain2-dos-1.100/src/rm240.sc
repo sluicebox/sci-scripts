@@ -39,11 +39,11 @@
 		(= gUseSortedFeatures 1)
 		(cond
 			((not (IsFlag 1))
-				(= local0 global114)
+				(= local0 gDifficulty)
 				((ScriptID 245 0) init:) ; barMagic
 			)
 			((not (IsFlag 3))
-				(= local1 global114)
+				(= local1 gDifficulty)
 				((ScriptID 244 0) init:) ; spectrumPuzzle
 			)
 		)
@@ -316,11 +316,11 @@
 							(not ((ScriptID 245 0) inited:)) ; barMagic
 						)
 						((ScriptID 245 0) init:) ; barMagic
-						(= local0 global114)
+						(= local0 gDifficulty)
 					)
-					((!= local0 global114)
+					((!= local0 gDifficulty)
 						((ScriptID 245 0) dispose: init:) ; barMagic
-						(= local0 global114)
+						(= local0 gDifficulty)
 					)
 				)
 				(if (IsFlag 1)
@@ -597,11 +597,11 @@
 							(not ((ScriptID 244 0) inited:)) ; spectrumPuzzle
 						)
 						((ScriptID 244 0) init:) ; spectrumPuzzle
-						(= local1 global114)
+						(= local1 gDifficulty)
 					)
-					((!= local1 global114)
+					((!= local1 gDifficulty)
 						((ScriptID 244 0) dispose: init:) ; spectrumPuzzle
-						(= local1 global114)
+						(= local1 gDifficulty)
 					)
 				)
 				(switch ((ScriptID 244 0) show:) ; spectrumPuzzle

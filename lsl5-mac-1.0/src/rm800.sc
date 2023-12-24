@@ -352,7 +352,7 @@
 				(HandsOff)
 				(gCast eachElementDo: #hide)
 				(SetFFRoom 820)
-				(if (not (IsFlag 26))
+				(if (not (IsFlag 26)) ; fNotFirstTimeInKRAP
 					(rm800 style: 7)
 					(gCurRoom drawPic: 810 picture: 810 curPic: 810)
 					(logo init: setCycle: Fwd)
@@ -365,7 +365,7 @@
 						setStep: 1 1
 					)
 					(gCast eachElementDo: #checkDetail)
-					(SetFlag 26)
+					(SetFlag 26) ; fNotFirstTimeInKRAP
 					(= seconds 5)
 				else
 					(gCurRoom newRoom: 820)

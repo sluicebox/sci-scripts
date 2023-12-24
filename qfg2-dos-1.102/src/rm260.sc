@@ -221,7 +221,7 @@
 			)
 			((Said 'look,look/shelf')
 				(HighPrint 260 4) ; "The pots on the shelf are pretty, but pretty worthless."
-				(if (not (IsFlag 57))
+				(if (not (IsFlag 57)) ; fStoleTeapot
 					(HighPrint 260 5) ; "There is, however, a silver tea service on the top shelf which looks valuable."
 				)
 			)
@@ -384,7 +384,7 @@
 			)
 			((Said 'search/chest')
 				(cond
-					((IsFlag 59)
+					((IsFlag 59) ; fStoleDagger
 						(HighPrint 260 26) ; "You find nothing of value."
 					)
 					((or (not (rugRoll cel:)) (not (trapdoor cel:)))
@@ -427,7 +427,7 @@
 			(2
 				(door stopUpd:)
 				(cond
-					((or (not (IsFlag 12)) (IsFlag 13) (< gTimeODay 6))
+					((or (not (IsFlag 12)) (IsFlag 13) (< gTimeODay 6)) ; fMoneyMission, fMoneyDone
 						(beingRobbedS start: 7)
 						(gCurRoom setScript: beingRobbedS)
 					)
@@ -604,7 +604,7 @@
 							(SolvePuzzle 705 3 2)
 							(gEgo get: 2 60) ; Dinar
 						)
-						(SetFlag 59)
+						(SetFlag 59) ; fStoleDagger
 						(SolvePuzzle 704 5 2)
 						(gEgo get: 56) ; SilverDagger
 						(HighPrint 260 32) ; "Searching further, you find a false bottom in the chest.  Beneath it, you find a silver dagger which you take and stash away."
@@ -653,7 +653,7 @@
 		(switch (= state newState)
 			(0
 				(HighPrint 260 33) ; "You hear the sound of someone singing something about a "Whirling dervisssh" and the sound of a key trying to find a lock."
-				(SetFlag 13)
+				(SetFlag 13) ; fMoneyDone
 				(= cycles 4)
 			)
 			(1

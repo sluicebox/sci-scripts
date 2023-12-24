@@ -50,7 +50,7 @@
 		(super init:)
 		(door init: approachVerbs: 3) ; Do
 		(doorR init: approachVerbs: 3) ; Do
-		(if (or (== gPrevRoomNum 200) (IsFlag 1))
+		(if (or (== gPrevRoomNum 200) (IsFlag 1)) ; fCalledLimo
 			(limo init: approachVerbs: 3) ; Do
 		)
 		(gCurRoom
@@ -92,7 +92,7 @@
 					((== gPrevRoomNum 200)
 						(TPrint 500 1) ; "Your limo is gone, Larry. Why not walk inside?"
 					)
-					((IsFlag 1)
+					((IsFlag 1) ; fCalledLimo
 						(TPrint 500 2) ; "The limousine you ordered has arrived. Why not get in?"
 					)
 					(else

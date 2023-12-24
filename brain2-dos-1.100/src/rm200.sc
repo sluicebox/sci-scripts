@@ -303,11 +303,11 @@
 				(cond
 					((< local2 0)
 						((ScriptID 205 0) init:) ; cipher
-						(= local2 global114)
+						(= local2 gDifficulty)
 					)
-					((!= local2 global114)
+					((!= local2 gDifficulty)
 						((ScriptID 205 0) dispose: init:) ; cipher
-						(= local2 global114)
+						(= local2 gDifficulty)
 					)
 				)
 				(switch ((ScriptID 205 0) show:) ; cipher
@@ -389,11 +389,11 @@
 							(not ((ScriptID 220 0) inited:)) ; hiddenFolPuzzle
 						)
 						((ScriptID 220 0) init:) ; hiddenFolPuzzle
-						(= local3 global114)
+						(= local3 gDifficulty)
 					)
-					((!= local3 global114)
+					((!= local3 gDifficulty)
 						((ScriptID 220 0) dispose: init:) ; hiddenFolPuzzle
-						(= local3 global114)
+						(= local3 gDifficulty)
 					)
 				)
 				(gCMusic fade: 0 10 10 0)
@@ -585,7 +585,7 @@
 		(cond
 			((or (== theVerb 4) (== theVerb 38))
 				(if (or (not (IsFlag 16)) (not (IsFlag 17)))
-					(proc5_1)
+					(HandsOff)
 					(Wait 0)
 					(for ((= temp0 0)) (< temp0 4) ((++ temp0))
 						(gCSoundFX number: 112 setLoop: 0 play: 127)
@@ -593,9 +593,9 @@
 					)
 					(= temp0 1)
 					(= temp1 (Random 1 local0))
-					(proc5_2)
+					(HandsOn)
 					(while (Message msgSIZE 201 noun 4 temp1 temp0)
-						(proc15_0 0 noun 4 temp1 temp0 0 201)
+						(Say 0 noun 4 temp1 temp0 0 201)
 						(++ temp0)
 					)
 					(return)
@@ -607,11 +607,11 @@
 				(cond
 					((< local1 0)
 						((ScriptID 268 0) init:) ; elementAnalyzer
-						(= local1 global114)
+						(= local1 gDifficulty)
 					)
-					((!= local1 global114)
+					((!= local1 gDifficulty)
 						((ScriptID 268 0) dispose: init:) ; elementAnalyzer
-						(= local1 global114)
+						(= local1 gDifficulty)
 					)
 				)
 				(switch ((ScriptID 268 0) show:) ; elementAnalyzer

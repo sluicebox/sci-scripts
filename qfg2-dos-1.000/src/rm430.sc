@@ -60,8 +60,8 @@
 		(LoadMany rsVIEW 0 4 47 382 383 432 435 436 437 438 440)
 		(LoadMany rsTEXT 435 432)
 		(LoadMany rsSOUND 430 431)
-		(SetFlag 138)
-		(ClearFlag 142)
+		(SetFlag 138) ; fVisitedHaremGirl
+		(ClearFlag 142) ; fFollowingSlave
 		(= gNow (+ (* gDay 100) gTimeODay))
 		(= entranceScript enterS)
 		(gEgo init:)
@@ -81,7 +81,7 @@
 		(gCSound number: 430 loop: -1 priority: 0 playBed:)
 		(zayishah init:)
 		(servant init:)
-		(veil setCel: (IsFlag 125) init:)
+		(veil setCel: (IsFlag 125) init:) ; fWearingXRay
 	)
 
 	(method (doit)
@@ -91,7 +91,7 @@
 			((and (& (gEgo onControl: 1) $0200) (== inOut 3))
 				(gCurRoom setScript: byeS)
 			)
-			((IsFlag 125)
+			((IsFlag 125) ; fWearingXRay
 				(if (< 45 (gEgo heading:) 135)
 					(veil setCel: 0)
 				else
@@ -151,7 +151,7 @@
 					((not (gEgo has: 54)) ; Glasses
 						(DontHave)
 					)
-					((IsFlag 125)
+					((IsFlag 125) ; fWearingXRay
 						(HighPrint 430 7) ; "You're already wearing them."
 					)
 					(else
@@ -160,7 +160,7 @@
 						else
 							(HighPrint 430 9) ; "You put on the Ali Fakir Genuine X-Ray Glasses."
 						)
-						(SetFlag 125)
+						(SetFlag 125) ; fWearingXRay
 						(if canSee
 							(veil setCel: 1)
 						)
@@ -173,9 +173,9 @@
 					((not (gEgo has: 54)) ; Glasses
 						(DontHave)
 					)
-					((IsFlag 125)
+					((IsFlag 125) ; fWearingXRay
 						(HighPrint 430 10) ; "You take them off and put them away."
-						(ClearFlag 125)
+						(ClearFlag 125) ; fWearingXRay
 						(veil setCel: 0)
 					)
 					(else
@@ -329,7 +329,7 @@
 				(= canSee 1)
 			)
 			(4
-				(veil setCel: (IsFlag 125))
+				(veil setCel: (IsFlag 125)) ; fWearingXRay
 			)
 			(5
 				(zayishah
@@ -391,7 +391,7 @@
 					setMotion: PolyPath (- (gEgo x:) 40) (gEgo y:) self
 				)
 				(NormalEgo)
-				(veil setCel: (IsFlag 125))
+				(veil setCel: (IsFlag 125)) ; fWearingXRay
 				(= canSee 1)
 				(= cycles 1)
 			)

@@ -399,7 +399,7 @@
 	)
 
 	(method (init)
-		(ClearFlag 2)
+		(ClearFlag 2) ; fInMainGame
 		(Load rsSCRIPT 70)
 		(Load rsSCRIPT 24)
 		(Load rsVIEW 805)
@@ -613,7 +613,7 @@
 			)
 		)
 		(if (== nextRoom 100)
-			(SetFlag 2)
+			(SetFlag 2) ; fInMainGame
 			(= gDay 1)
 			(FixTime 8 0)
 			(= gElementalState 0)

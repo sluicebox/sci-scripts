@@ -270,7 +270,7 @@
 	(method (init &tmp temp0 temp1 temp2 temp3 temp4)
 		(Load rsVIEW 241 242)
 		(Load rsSOUND 104 106 144 207 236)
-		(= local4 global114)
+		(= local4 gDifficulty)
 		(= local3 iconHeight)
 		(= window puz2Window)
 		(= local85 0)
@@ -412,7 +412,7 @@
 			((& (event type:) $0040) ; direction
 				(if (IsObject highlightedIcon)
 					(= local104 (self indexOf: highlightedIcon))
-					(= temp1 (if global114 4 else 3))
+					(= temp1 (if gDifficulty 4 else 3))
 					(switch (event message:)
 						(JOY_DOWN
 							(cond

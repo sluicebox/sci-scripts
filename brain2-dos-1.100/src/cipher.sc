@@ -197,15 +197,15 @@
 
 (procedure (localproc_11)
 	(StrCpy local230 local228)
-	(switch global114
-		(0
+	(switch gDifficulty
+		(0 ; Novice
 			(if (< (Random 0 99) 50)
 				(localproc_15)
 			else
 				(localproc_16)
 			)
 		)
-		(1
+		(1 ; Standard
 			(if (< (Random 0 99) 50)
 				(localproc_14)
 			else
@@ -213,7 +213,7 @@
 				(localproc_16)
 			)
 		)
-		(2
+		(2 ; Expert
 			(if (< (Random 0 99) 50)
 				(localproc_15)
 				(localproc_14)
@@ -721,10 +721,10 @@
 			msgGET
 			205
 			1
-			(switch global114
-				(0 13)
-				(1 14)
-				(2 15)
+			(switch gDifficulty
+				(0 13) ; Novice
+				(1 14) ; Standard
+				(2 15) ; Expert
 			)
 			1
 			temp0
@@ -734,10 +734,10 @@
 			msgGET
 			205
 			1
-			(switch global114
-				(0 13)
-				(1 14)
-				(2 15)
+			(switch gDifficulty
+				(0 13) ; Novice
+				(1 14) ; Standard
+				(2 15) ; Expert
 			)
 			2
 			temp0
@@ -911,7 +911,7 @@
 						(if (== (++ global171) 3)
 							(cipher solvePuzzle:)
 						else
-							(proc15_0 cipher 1 27 0 global171 0 205)
+							(Say cipher 1 27 0 global171 0 205)
 							(if local254
 								(local254 loop: (- (local254 loop:) 1) show:)
 							)

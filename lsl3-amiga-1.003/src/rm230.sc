@@ -632,7 +632,7 @@
 				)
 			)
 			(22
-				(SetFlag 65)
+				(SetFlag 65) ; gaveHead
 				(Print 230 54) ; "You think, "If I walked like that...""
 				(gEgo setLoop: -1 setCel: -1 setPri: -1 setCycle: Walk)
 				(= cycles 12)

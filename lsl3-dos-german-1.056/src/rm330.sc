@@ -32,7 +32,7 @@
 	)
 
 	(method (init)
-		(SetFlag 36)
+		(SetFlag 36) ; beenIn330
 		(= gEgoState 17)
 		(Load rsVIEW 330)
 		(Load rsVIEW 333)
@@ -411,7 +411,7 @@
 			)
 			(19
 				(if (not (TestFlag 56))
-					(SetFlag 56)
+					(SetFlag 56) ; seenDale
 					(gGame changeScore: 1)
 					(Print 330 42) ; "Thanks, Patti," he responds, "and you may call me Dale."
 				)

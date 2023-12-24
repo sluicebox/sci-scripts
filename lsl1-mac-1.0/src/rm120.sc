@@ -95,7 +95,7 @@
 			(script)
 			(
 				(and
-					(IsFlag 40)
+					(IsFlag 40) ; fToiletPaperOnShoe
 					(> (gEgo y:) 140)
 					(not drunkMessage)
 					(not seenTPmsg)

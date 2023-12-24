@@ -1040,11 +1040,11 @@
 		(cond
 			((> (= curW (WtCarried)) (= maxW (MaxLoad)))
 				(HighPrint 0 0) ; "You are carrying so much that you can hardly move. You'd better drop something soon."
-				(SetFlag 6)
+				(SetFlag 6) ; fOverloaded
 			)
-			((and (< num oldNum) (IsFlag 6) (> (- maxW curW) 180))
+			((and (< num oldNum) (IsFlag 6) (> (- maxW curW) 180)) ; fOverloaded
 				(HighPrint 0 1) ; "Ah, that's better. You're no longer so overloaded."
-				(ClearFlag 6)
+				(ClearFlag 6) ; fOverloaded
 			)
 		)
 		(return (- num oldNum))
@@ -1331,7 +1331,7 @@
 	)
 
 	(method (init &tmp promptString)
-		(SetFlag 16)
+		(SetFlag 16) ; fShapeir
 		(= gHowMuchMemory (if (>= (MemoryInfo 4) 17408) 1 else 0)) ; TotalHunk
 		(= gSfWin sfWin)
 		(= gCustomWindow cWin)
@@ -1389,7 +1389,7 @@
 
 	(method (doit &tmp thisTime sickBits [egoView 2])
 		(super doit:)
-		(if (IsFlag 2)
+		(if (IsFlag 2) ; fInMainGame
 			(= thisTime (GetTime 1)) ; SysTime12
 			(if (!= gOldSysTime thisTime)
 				(= gOldSysTime thisTime)
@@ -1428,22 +1428,22 @@
 						(
 							(or
 								(> gLostSleep 1)
-								(IsFlag 6)
-								(IsFlag 5)
-								(IsFlag 137)
+								(IsFlag 6) ; fOverloaded
+								(IsFlag 5) ; fStarving
+								(IsFlag 137) ; fDyingOfThirst
 							)
 							(UseStamina 5)
-							(if (IsFlag 6)
+							(if (IsFlag 6) ; fOverloaded
 								(SkillUsed 0 2) ; strength
 							)
 						)
-						((or (== gEgoGait 1) (IsFlag 3)) ; running
+						((or (== gEgoGait 1) (IsFlag 3)) ; running, fThirsty
 							(UseStamina 2)
 						)
 						((== gEgoGait 2) ; sneaking
 							(UseStamina 1)
 						)
-						((and (not (IsFlag 4)) (not gLostSleep))
+						((and (not (IsFlag 4)) (not gLostSleep)) ; fHungry
 							(UseStamina -1)
 						)
 					)
@@ -1453,7 +1453,7 @@
 					)
 					(if (not (-- gHealCounter))
 						(= gHealCounter 15)
-						(if (not (or (> gLostSleep 1) (IsFlag 5) (IsFlag 137)))
+						(if (not (or (> gLostSleep 1) (IsFlag 5) (IsFlag 137))) ; fStarving, fDyingOfThirst
 							(TakeDamage -1)
 						)
 					)
@@ -1461,26 +1461,26 @@
 						(= gThirstCounter 50)
 						(cond
 							((DrinkWater 0))
-							((IsFlag 137)
+							((IsFlag 137) ; fDyingOfThirst
 								(if (not (TakeDamage 2))
 									(EgoDead 1 0 14 #title {Too thirsty to go on}) ; "You collapse in the hot desert air and never awaken. Truly it is said that "Water is life itself in a desert land.""
 								)
 							)
-							((IsFlag 3)
-								(SetFlag 137)
+							((IsFlag 3) ; fThirsty
+								(SetFlag 137) ; fDyingOfThirst
 								(HighPrint 0 15) ; "You must get water soon, or you will surely die of thirst."
 							)
 							(else
-								(SetFlag 3)
+								(SetFlag 3) ; fThirsty
 								(HighPrint 0 16) ; "The dry desert air seems to suck the moisture right out of your body."
 							)
 						)
 					)
 				)
-				(if (and (not (IsFlag 140)) (IsFlag 86))
+				(if (and (not (IsFlag 140)) (IsFlag 86)) ; fEndGame, fReversal
 					(switch (-- gReversalTimer)
 						(0
-							(ClearFlag 86)
+							(ClearFlag 86) ; fReversal
 							(gMiscSound number: 35 loop: 1 priority: 12 play:)
 							(HighPrint 0 17) ; "Your Reversal spell has worn off."
 						)
@@ -1509,7 +1509,7 @@
 						(SetDebug)
 					)
 				)
-				((not (SetFlag 187))
+				((not (SetFlag 187)) ; fFragment
 					(HighPrint 0 20) ; "You thought for a moment that you saw a deadly Fragmentation Bug, but then realize that it is actually the harmless Southern variety. You squash it under your boot, and it vanishes."
 				)
 			)
@@ -1543,7 +1543,7 @@
 		(= gRoomThanks (= gRoomAsks 0))
 		(User verbMessager: verbWords)
 		(super startRoom: roomNum)
-		(ClearFlag 28)
+		(ClearFlag 28) ; fTeleporting
 		(if gDebugging
 			(gCurRoom setLocales: 99)
 		)
@@ -1604,11 +1604,11 @@
 					)
 					((Said 'use,wear,(put<on)/glasses[<ray]')
 						(cond
-							((IsFlag 125)
+							((IsFlag 125) ; fWearingXRay
 								(HighPrint 0 25) ; "Silly you! They're right there on the end of your nose!"
 							)
 							((gEgo has: 54) ; Glasses
-								(SetFlag 125)
+								(SetFlag 125) ; fWearingXRay
 								(HighPrint 0 26) ; "You put on the Ali Fakir Genuine X-Ray Glasses. Suddenly, everything appears as though you were looking through a veil."
 							)
 							(else
@@ -1617,8 +1617,8 @@
 						)
 					)
 					((Said 'get,(put<away),(get<off)/glasses[<ray]')
-						(if (IsFlag 125)
-							(ClearFlag 125)
+						(if (IsFlag 125) ; fWearingXRay
+							(ClearFlag 125) ; fWearingXRay
 							(HighPrint 0 28) ; "You take off the glasses and put them away."
 						else
 							(HighPrint 0 29) ; "You're not wearing them."
@@ -1631,7 +1631,7 @@
 								'get,get,get,grab/alm,dinar,cent/purse,bag,pouch'
 							)
 						)
-						(if (SetFlag 135)
+						(if (SetFlag 135) ; fRobbedPurse
 							(AlreadyDone)
 						else
 							(gEgo get: 2 6) ; Dinar

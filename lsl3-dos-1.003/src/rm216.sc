@@ -332,7 +332,7 @@
 				(= seconds (PrintKalalau))
 			)
 			(10
-				(SetFlag 20)
+				(SetFlag 20) ; beenIn216
 				(Print
 					(Format ; "Poor Larry. Not only does Kalalau no longer love you, she's fallen in love with another woman! What could Kalalua possibly see in an Amazonian Harley-riding former-cannibal%s slot-machine repairwoman?"
 						@string
@@ -633,7 +633,7 @@
 				(= cycles 22)
 			)
 			(5
-				(SetFlag 27)
+				(SetFlag 27) ; sawCredits216
 				(aCredit1 setCycle: Beg)
 				(aCredit2 setCycle: Beg self)
 			)

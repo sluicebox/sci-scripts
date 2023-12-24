@@ -53,8 +53,8 @@
 		)
 		(cond
 			((not (TestFlag 35))
-				(SetFlag 35)
-				(SetFlag 5)
+				(SetFlag 35) ; beenIn440
+				(SetFlag 5) ; noCursor
 				(Load rsVIEW 443)
 				(Load rsVIEW 442)
 				(Load rsSOUND 8)

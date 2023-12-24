@@ -43,7 +43,7 @@
 		(SetFFRoom 0)
 		(switch gPrevRoomNum
 			(140
-				(if (not (IsFlag 7))
+				(if (not (IsFlag 7)) ; fBeenIn150
 					(= gRestartRoom 100)
 					(SetFFRoom 155)
 					(gTheIconBar enable: 5)
@@ -63,7 +63,7 @@
 			)
 			(150
 				(gEgo posn: 100 100 setHeading: 90 edgeHit: EDGE_NONE)
-				(SetFlag 7)
+				(SetFlag 7) ; fBeenIn150
 				(SetFFRoom 0)
 				(gEgo get: 0) ; Camcorder
 				(= gScore 2)
@@ -88,7 +88,7 @@
 			)
 			(else
 				(if (!= gPrevRoomNum 150)
-					(SetFlag 7)
+					(SetFlag 7) ; fBeenIn150
 					(= gScore 2)
 					(if (IsFlag 80)
 						(+= gScore 1)
@@ -109,7 +109,7 @@
 		(super init:)
 		(fileDoor init: approachVerbs: 3) ; Do
 		(presDoor init:)
-		(if (not (IsFlag 7))
+		(if (not (IsFlag 7)) ; fBeenIn150
 			(coffee init: approachVerbs: 3 setScript: sCoffee) ; Do
 		)
 		(coffeeMaker init:)
@@ -143,7 +143,7 @@
 					yourself:
 				)
 		)
-		(if (not (IsFlag 7))
+		(if (not (IsFlag 7)) ; fBeenIn150
 			(helpTimer set: helpTimer 45)
 		)
 		(= oldDoVerbCode gDoVerbCode)
@@ -169,13 +169,13 @@
 		(cond
 			(script)
 			((StepOn gEgo 2)
-				(if (not (IsFlag 7))
+				(if (not (IsFlag 7)) ; fBeenIn150
 					(self setScript: sMoveOffControl 0 10)
 				else
 					(self newRoom: west)
 				)
 			)
-			((and (StepOn gEgo 4) (not (IsFlag 7)))
+			((and (StepOn gEgo 4) (not (IsFlag 7))) ; fBeenIn150
 				(self setScript: sMoveOffControl 0 -10)
 			)
 			(
@@ -364,7 +364,7 @@
 	)
 
 	(method (open)
-		(if (not (IsFlag 7))
+		(if (not (IsFlag 7)) ; fBeenIn150
 			(TPrint 160 0) ; "Don't leave now, when they're crying for coffee in there!"
 			(= usedHand 1)
 		else
@@ -399,7 +399,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(3 ; Do
-				(if (IsFlag 7)
+				(if (IsFlag 7) ; fBeenIn150
 					(TPrint 160 4) ; "Remembering your boss' "open door" policy, you decide to just follow your orders. Besides, that's what you do best!"
 				else
 					(super doVerb: theVerb invItem &rest)
@@ -422,7 +422,7 @@
 	)
 
 	(method (open)
-		(if (and (gCast contains: coffee) (not (IsFlag 7)))
+		(if (and (gCast contains: coffee) (not (IsFlag 7))) ; fBeenIn150
 			(coffee setScript: sCoffee)
 		else
 			(super open: &rest)

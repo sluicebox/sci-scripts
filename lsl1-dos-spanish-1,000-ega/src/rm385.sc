@@ -59,7 +59,7 @@
 		(aSpaButton init: stopUpd:)
 		(super init:)
 		(gCurRoom setScript: sWanderEyes)
-		(if (IsFlag 17)
+		(if (IsFlag 17) ; fJetsOff
 			(JetsOff)
 		else
 			(JetsOn)
@@ -164,7 +164,7 @@
 						(HandsOff)
 						(gCurRoom setScript: sEveEatsApple)
 						(Points 59 15)
-						(SetFlag 6)
+						(SetFlag 6) ; fEveHasApple
 					)
 					(10 ; discoPass
 						(Print 385 19) ; "Why, Larry," she smiles, "are you trying to throw a `pass' at me?"
@@ -362,7 +362,7 @@
 				(aSpaButton setCel: 0 setCycle: End self)
 			)
 			(1
-				(if (IsFlag 17)
+				(if (IsFlag 17) ; fJetsOff
 					(Print 385 32) ; "You slyly brush the spa bubbler control switch."
 					(JetsOff)
 				else
@@ -605,15 +605,15 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(SetFlag 18)
+				(SetFlag 18) ; fKnowsEvesName
 				(Print 385 41) ; "Her hand rests near a expensive fluffy bath towel, embroidered in a florid script with the name, "Eve.""
 			)
 			(11 ; Taste/Smell
 				(Printf ; "%s towel has a clean, fresh aroma."
 					385
 					42
-					(if (IsFlag 18) {Eve's} else {Her})
-					(if (IsFlag 18) {Eva} else {ella})
+					(if (IsFlag 18) {Eve's} else {Her}) ; fKnowsEvesName
+					(if (IsFlag 18) {Eva} else {ella}) ; fKnowsEvesName
 				)
 			)
 			(3 ; Do
@@ -662,8 +662,8 @@
 				(Printf ; "You can picture %s gentle arms winding their way around you."
 					385
 					44
-					(if (IsFlag 18) {Eve's} else {her})
-					(if (IsFlag 18) {Eva} else {ella})
+					(if (IsFlag 18) {Eve's} else {her}) ; fKnowsEvesName
+					(if (IsFlag 18) {Eva} else {ella}) ; fKnowsEvesName
 				)
 			)
 			(3 ; Do
@@ -695,14 +695,14 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(if (IsFlag 17)
+				(if (IsFlag 17) ; fJetsOff
 					(Print 385 45) ; "What a good idea to turn off those bubblers!"
 				else
 					(Printf ; "Even through the bubbles, %s assets are outstanding."
 						385
 						46
-						(if (IsFlag 18) {Eve's} else {her})
-						(if (IsFlag 18) {Eva} else {ella})
+						(if (IsFlag 18) {Eve's} else {her}) ; fKnowsEvesName
+						(if (IsFlag 18) {Eva} else {ella}) ; fKnowsEvesName
 					)
 				)
 			)

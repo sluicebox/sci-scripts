@@ -149,8 +149,8 @@
 		(zero init:)
 		(star init:)
 		(pound init:)
-		(if (IsFlag 26)
-			(ClearFlag 26)
+		(if (IsFlag 26) ; fPhoneRinging
+			(ClearFlag 26) ; fPhoneRinging
 			(HandsOff)
 			(gCurRoom setScript: sSurveyResponse)
 		else
@@ -218,7 +218,7 @@
 		(switch (= state newState)
 			(0
 				(ResetPhone)
-				(if (IsFlag 57)
+				(if (IsFlag 57) ; pDialedSurvey
 					(sfxDialTone stop:)
 					(sfxPhoneBusy play:)
 					(Print 505 3) ; "Hmmm... it's busy."
@@ -381,7 +381,7 @@
 				(sfxDialTone play: hold: 10)
 				(Print 505 16) ; "...."
 				(Print 505 17) ; "Hum. Looks like they hung up on you. Oh, well. It was probably a bummer prize anyway!"
-				(SetFlag 39)
+				(SetFlag 39) ; fSurveyCalled
 				(= cycles 10)
 			)
 			(16
@@ -399,7 +399,7 @@
 		(switch (= state newState)
 			(0
 				(sfxDialTone stop:)
-				(ClearFlag 39)
+				(ClearFlag 39) ; fSurveyCalled
 				(= seconds 2)
 			)
 			(1
@@ -429,7 +429,7 @@
 				(= seconds 3)
 			)
 			(7
-				(SetFlag 19)
+				(SetFlag 19) ; fLarryPanting
 				(HandsOn)
 				(self dispose:)
 				(gCurRoom newRoom: 500)
@@ -446,14 +446,14 @@
 			(0
 				(ResetPhone)
 				(if gDebugging
-					(SetFlag 80)
+					(SetFlag 80) ; pHeardLiquorStoreNumber
 				)
 				(cond
-					((and (IsFlag 80) (not (IsFlag 55)))
+					((and (IsFlag 80) (not (IsFlag 55))) ; pHeardLiquorStoreNumber, pDialedAjax
 						(Points 55 5)
 						(sfxPhoneRinging loop: 3 play: self)
 					)
-					((or (not (IsFlag 80)) (IsFlag 55))
+					((or (not (IsFlag 80)) (IsFlag 55)) ; pHeardLiquorStoreNumber, pDialedAjax
 						(sfxPhoneBusy play:)
 						(Print 505 24) ; "Hmmm... Ajax Liquor Store's line is busy."
 						(sfxPhoneBusy stop:)
@@ -489,7 +489,7 @@
 			(6
 				(sfxDialTone play: hold: 10)
 				(Print 505 31 #at -1 140) ; "(What did he mean, "hottest?")"
-				(SetFlag 24)
+				(SetFlag 24) ; fOrderedWine
 				(= cycles 1)
 			)
 			(7

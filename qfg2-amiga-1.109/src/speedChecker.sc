@@ -29,7 +29,7 @@
 
 	(method (init)
 		(HandsOff)
-		(= wasTeleporting (IsFlag 28))
+		(= wasTeleporting (IsFlag 28)) ; fTeleporting
 		(super init:)
 		(while (u> (GetTime) 64512)
 		)
@@ -74,7 +74,7 @@
 			(gGame setSpeed: 5)
 			(RedrawCast)
 			(if wasTeleporting
-				(SetFlag 28)
+				(SetFlag 28) ; fTeleporting
 			)
 			(gCurRoom newRoom: gTransferRoom)
 		)

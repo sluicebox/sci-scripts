@@ -68,7 +68,7 @@
 					((IsFlag 119)
 						(Say You 380 5 108 139 self) ; "It was easy. I got past that guard in the Shill Building Lobby just by showing him Reverse Biaz's fax."
 					)
-					((IsFlag 48)
+					((IsFlag 48) ; fDirectorySol
 						(Say You 380 6 108 139 self) ; "It was easy. I got past that guard in the Shill Building Lobby just by finding Reverse Biaz's office in the building directory."
 					)
 					(else
@@ -80,7 +80,7 @@
 				(= ticks 60)
 			)
 			(11
-				(if (or (IsFlag 118) (IsFlag 119) (IsFlag 48))
+				(if (or (IsFlag 118) (IsFlag 119) (IsFlag 48)) ; fDirectorySol
 					(Say Desmond 380 8 108 139 self) ; "Good work, Patti. But what happened after you were upstairs? Did you learn anything about des Rever or Biaz?"
 				else
 					(= state 24)
@@ -232,7 +232,7 @@
 				(if
 					(and
 						(not (IsFlag 150))
-						(not (or (IsFlag 118) (IsFlag 119) (IsFlag 48)))
+						(not (or (IsFlag 118) (IsFlag 119) (IsFlag 48))) ; fDirectorySol
 					)
 					(Say Desmond 380 36 108 139 self) ; "Patti, I don't know if this is an appropriate time, but I must tell you: I find myself strongly attracted to you."
 				else

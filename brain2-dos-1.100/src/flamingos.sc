@@ -68,7 +68,7 @@
 			([local0 6] show:)
 		)
 	)
-	(if (> (++ [local46 param1]) global114)
+	(if (> (++ [local46 param1]) gDifficulty)
 		(= [local46 param1] 0)
 	)
 )
@@ -119,8 +119,8 @@
 					)
 			)
 		)
-		(switch global114
-			(0
+		(switch gDifficulty
+			(0 ; Novice
 				(= temp0
 					(switch (Random 1 3)
 						(1 1)
@@ -144,14 +144,14 @@
 					)
 				)
 			)
-			(1
+			(1 ; Standard
 				(= [local37 2] 4)
 				(= [local37 4] 2)
 				(= local127 100)
 				(= local128 102)
 				(= local129 104)
 			)
-			(2
+			(2 ; Expert
 				(= [local37 2] 4)
 				(= [local37 4] 2)
 				(= [local37 6] 6)
@@ -181,7 +181,7 @@
 		)
 		(localproc_3)
 		(localproc_1 20)
-		(for ((= temp0 0)) (< temp0 (+ 4 global114)) ((++ temp0))
+		(for ((= temp0 0)) (< temp0 (+ 4 gDifficulty)) ((++ temp0))
 			(localproc_3)
 			(localproc_1 10)
 			(localproc_4)
@@ -209,10 +209,10 @@
 				msgGET
 				msgModule
 				1
-				(switch global114
-					(0 21)
-					(1 22)
-					(2 23)
+				(switch gDifficulty
+					(0 21) ; Novice
+					(1 22) ; Standard
+					(2 23) ; Expert
 				)
 				0
 				1

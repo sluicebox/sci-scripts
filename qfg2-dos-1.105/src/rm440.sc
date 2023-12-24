@@ -68,7 +68,7 @@
 	(gEgo illegalBits: -32768 ignoreActors: 0)
 	(gCurRoom style: 15 drawPic: 2)
 	(gCurRoom drawPic: 440 overlay: 442 7)
-	(if (and (IsFlag 94) (gCast contains: shar))
+	(if (and (IsFlag 94) (gCast contains: shar)) ; fSharafFriend
 		(gCurRoom setScript: dualEscapeS)
 	)
 )
@@ -131,7 +131,7 @@
 		)
 		(cond
 			((gCurRoom script:))
-			((and spellMsg (not (IsFlag 87)))
+			((and spellMsg (not (IsFlag 87))) ; fCastingSpell
 				(= spellMsg 0)
 				(EgoDead 1 440 1 #title {What were you thinking?}) ; "The Katta cries out in pain, causing the guards to rush in.  They take you to a cell from which you can find no escape."
 			)
@@ -158,7 +158,7 @@
 			)
 			((Said 'give/food')
 				(cond
-					((IsFlag 94)
+					((IsFlag 94) ; fSharafFriend
 						(SkillUsed 14 25) ; honor
 						(if (> (gEgo use: 3) 0) ; Food
 							(Say shar 440 3) ; "Thank you, for your kindness. Now it's time to think about escaping."
@@ -186,7 +186,7 @@
 			)
 			((Said 'thank/catperson,cousin,friend')
 				(cond
-					((not (IsFlag 94))
+					((not (IsFlag 94)) ; fSharafFriend
 						(HighPrint 440 10) ; "The Katta raises his eyebrows in surprise, but then resumes his silent, suspicious stare."
 					)
 					((TrySkill 14 50) ; honor
@@ -200,7 +200,7 @@
 			((Said 'make,give,show/sign[<thief]')
 				(MakeSign)
 				(HighPrint 440 13) ; "That does not seem to be a sign the Katta recognizes, for he watches you with amusement."
-				(if (IsFlag 94)
+				(if (IsFlag 94) ; fSharafFriend
 					(HighPrint 440 14) ; "But he soon resumes his silent stare."
 				)
 			)
@@ -277,7 +277,7 @@
 					(Said 'ask//catperson,cousin,friend')
 				)
 				(cond
-					((IsFlag 94)
+					((IsFlag 94) ; fSharafFriend
 						(HighPrint 440 21) ; "Now that you've made friends and told tales, it's time to think about escaping."
 					)
 					((TrySkill 13 120) ; communication
@@ -390,7 +390,7 @@
 					(Said 'come,follow,heel')
 					(Said 'lockpick//catperson,cousin,friend')
 				)
-				(if (IsFlag 94)
+				(if (IsFlag 94) ; fSharafFriend
 					(if (door cel:)
 						(= maybeOk 1)
 						(Say shar 440 33) ; "After you, my friend. I will humbly follow."
@@ -558,7 +558,7 @@
 							(didDoorMsg
 								(self cue:)
 							)
-							((not (IsFlag 94))
+							((not (IsFlag 94)) ; fSharafFriend
 								(HighPrint 440 40) ; "The katta watches you calmly with a mixture of interest and suspicion."
 								(self cue:)
 							)
@@ -665,7 +665,7 @@
 				)
 			)
 			(4
-				(SetFlag 94)
+				(SetFlag 94) ; fSharafFriend
 				(self dispose:)
 			)
 		)
@@ -689,7 +689,7 @@
 				)
 			)
 			(2
-				(if (not (IsFlag 94))
+				(if (not (IsFlag 94)) ; fSharafFriend
 					(HighPrint 440 40) ; "The katta watches you calmly with a mixture of interest and suspicion."
 					(self dispose:)
 				else
@@ -979,7 +979,7 @@
 				(gEgo view: 47 setLoop: 0 cel: 0 setCycle: End self)
 			)
 			(2
-				(= tst (IsFlag 94))
+				(= tst (IsFlag 94)) ; fSharafFriend
 				(gCast eachElementDo: #hide)
 				(gCurRoom drawPic: 2)
 				(if (not gotInv)
@@ -1269,7 +1269,7 @@
 		(cond
 			(
 				(and
-					(IsFlag 94)
+					(IsFlag 94) ; fSharafFriend
 					(door cel:)
 					didDoorMsg
 					(not (<= (gEgo y:) 136))
@@ -1297,7 +1297,7 @@
 					)
 				)
 			)
-			((or (IsFlag 94) maybeOk)
+			((or (IsFlag 94) maybeOk) ; fSharafFriend
 				(= maybeOk 0)
 				(sharaf show: setCycle: Fwd)
 				(super messages: &rest)

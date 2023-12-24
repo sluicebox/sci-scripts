@@ -63,14 +63,14 @@
 		(super init: &rest)
 		(self release:)
 		(= window 0)
-		(switch global114
-			(0
+		(switch gDifficulty
+			(0 ; Novice
 				(= global130 6)
 			)
-			(1
+			(1 ; Standard
 				(= global130 12)
 			)
-			(2
+			(2 ; Expert
 				(= global130 18)
 			)
 		)
@@ -602,7 +602,7 @@
 					(art solvePuzzle:)
 				)
 				(if (== local1 6)
-					(proc15_0 art 10 1 0 1 0 349)
+					(Say art 10 1 0 1 0 349) ; "Oops! Are you guessing? Sorry, but we can't have that."
 					(art puzzleStatus: 1)
 					(art goAway:)
 				)

@@ -181,7 +181,7 @@
 	)
 
 	(method (respond event)
-		(if (and (== gInnState 3) (not (IsFlag 111)))
+		(if (and (== gInnState 3) (not (IsFlag 111))) ; fUgartePaid
 			(event claimed: 1)
 			(Say self 364 7) ; "It seems before I give you what you want, you should give me what I want. It is only fair, no? My dinars, please."
 		else

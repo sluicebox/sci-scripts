@@ -42,12 +42,12 @@
 )
 
 (procedure (EatDrink numMeals eatToo)
-	(ClearFlag 3)
-	(ClearFlag 137)
+	(ClearFlag 3) ; fThirsty
+	(ClearFlag 137) ; fDyingOfThirst
 	(if eatToo
 		(= gFreeMeals numMeals)
-		(ClearFlag 4)
-		(ClearFlag 5)
+		(ClearFlag 4) ; fHungry
+		(ClearFlag 5) ; fStarving
 		(= gInnLastAte gNow)
 	)
 )
@@ -86,8 +86,8 @@
 	)
 
 	(method (init &tmp shadowPeople)
-		(SetFlag 2)
-		(SetFlag 16)
+		(SetFlag 2) ; fInMainGame
+		(SetFlag 16) ; fShapeir
 		(LoadMany rsVIEW 0 100 102 103 104 302)
 		(LoadMany rsTEXT 104 102)
 		(LoadMany rsSOUND 100 109)
@@ -496,7 +496,7 @@
 		(switch (= state newState)
 			(0
 				(cond
-					((or (== gInnLastHere gNow) (IsFlag 161))
+					((or (== gInnLastHere gNow) (IsFlag 161)) ; fSeenShow
 						(= cycles 1)
 					)
 					((and (or (== gTimeODay 4) (== gTimeODay 5)) (== innAction 1))
@@ -529,7 +529,7 @@
 							)
 						)
 					)
-					((and (== innAction 5) (not (SetFlag 170)))
+					((and (== innAction 5) (not (SetFlag 170))) ; f100Message
 						(if (== gOrigHeroType 0)
 							(Say shameen self (shameen msgFile:) 38 100 39)
 						else
@@ -545,7 +545,7 @@
 				(if
 					(and
 						(or (== gTimeODay 4) (== gTimeODay 5))
-						(not (IsFlag 161))
+						(not (IsFlag 161)) ; fSeenShow
 						(< gInnLastHere gNow)
 						(or (== gDay 11) (== gDay 16))
 					)
@@ -630,7 +630,7 @@
 						)
 					)
 					((and (or (== gTimeODay 4) (== gTimeODay 5)) (== innAction 2))
-						(if (IsFlag 161)
+						(if (IsFlag 161) ; fSeenShow
 							(= cycles 1)
 						else
 							(= gInnLastHere gNow)
@@ -638,7 +638,7 @@
 						)
 					)
 					((and (or (== gTimeODay 4) (== gTimeODay 5)) (== innAction 3))
-						(if (IsFlag 161)
+						(if (IsFlag 161) ; fSeenShow
 							(= cycles 1)
 						else
 							(= gInnLastHere gNow)
@@ -848,12 +848,12 @@
 		(switch (= state newState)
 			(0
 				(cond
-					((and (== innAction 2) (not (IsFlag 161)))
+					((and (== innAction 2) (not (IsFlag 161))) ; fSeenShow
 						(gEgo setMotion: 0)
 						(Face gEgo shameen)
 						(Say shameen self 100 48) ; "Do not forget that Shema dances this night!"
 					)
-					((and (== innAction 3) (not (IsFlag 161)))
+					((and (== innAction 3) (not (IsFlag 161))) ; fSeenShow
 						(gEgo setMotion: 0)
 						(Face gEgo shameen)
 						(Say shameen self 100 49) ; "The Poet Omar will thrill all who hear with his words of song after the setting of the sun, in our own Inn!"

@@ -32,8 +32,8 @@
 )
 
 (procedure (localproc_0 &tmp temp0 temp1 temp2 temp3 temp4 temp5 temp6 temp7)
-	(= temp7 [local0 global114])
-	(for ((= temp1 0)) (< temp1 (+ 3 global114)) ((++ temp1))
+	(= temp7 [local0 gDifficulty])
+	(for ((= temp1 0)) (< temp1 (+ 3 gDifficulty)) ((++ temp1))
 		(for ((= temp2 0)) (not (& temp2 temp7)) ((= temp2 (<< $0001 temp6)))
 			(= temp6 (Random 0 12))
 		)
@@ -188,7 +188,7 @@
 			)
 		)
 		(self add: enterBut)
-		(for ((= temp0 0)) (< temp0 (+ 3 global114)) ((++ temp0))
+		(for ((= temp0 0)) (< temp0 (+ 3 gDifficulty)) ((++ temp0))
 			(self
 				add:
 					((= [local57 temp0] (answerBut new:))
@@ -309,7 +309,7 @@
 	(method (buyClue &tmp temp0 temp1 temp2 temp3 temp4)
 		(if (super buyClue: &rest)
 			(if (< local18 0)
-				(for ((= local18 0)) (< local18 (+ global114 3)) ((++ local18))
+				(for ((= local18 0)) (< local18 (+ gDifficulty 3)) ((++ local18))
 					(= temp2 (self at: (+ local18 5)))
 					(if (!= (temp2 value:) (temp2 cursor:))
 						(break)
@@ -343,10 +343,10 @@
 	)
 
 	(method (open &tmp temp0 temp1 [temp2 3])
-		(= bottom (+ 149 (* 20 global114)))
+		(= bottom (+ 149 (* 20 gDifficulty)))
 		(super open: &rest)
 		(DrawCel 166 0 0 0 21 -1)
-		(for ((= temp0 0)) (< temp0 (+ global114 3)) ((++ temp0))
+		(for ((= temp0 0)) (< temp0 (+ gDifficulty 3)) ((++ temp0))
 			(DrawCel 166 1 0 0 (+ 78 (* 20 temp0)) -1)
 			(if local64
 				(for ((= temp1 0)) (< temp1 7) ((++ temp1))
@@ -474,14 +474,14 @@
 				(if (== value ([local57 local18] cursor:))
 					(gCSoundFX number: 135 setLoop: 1 play:)
 					([local57 local18] loop: 2 show:)
-					(if (>= (++ local62) (+ global114 3))
+					(if (>= (++ local62) (+ gDifficulty 3))
 						(lock setScript: openLock)
 					else
 						(= temp2 (+ local18 1))
 						(= temp1 0)
 						(for
 							((= temp0 0))
-							(and (< temp0 (+ 2 global114)) (not temp1))
+							(and (< temp0 (+ 2 gDifficulty)) (not temp1)) ; Expert
 							((++ temp0))
 							
 							(if
@@ -489,7 +489,7 @@
 									([local57
 											(mod
 												(+ temp0 temp2)
-												(+ 3 global114)
+												(+ 3 gDifficulty)
 											)
 										]
 										value:
@@ -497,7 +497,7 @@
 									([local57
 											(mod
 												(+ temp0 temp2)
-												(+ 3 global114)
+												(+ 3 gDifficulty)
 											)
 										]
 										cursor:
@@ -505,7 +505,7 @@
 								)
 								(= local18 -1)
 								(= temp1 1)
-								([local57 (mod (+ temp0 temp2) (+ 3 global114))]
+								([local57 (mod (+ temp0 temp2) (+ 3 gDifficulty))]
 									select:
 								)
 							)
@@ -539,7 +539,7 @@
 							(octoeyesrght cel: 2)
 							(octoeyesleft cel: 2)
 							(sarc animateOnce:)
-							(if global114
+							(if gDifficulty
 								(Wait 60)
 								(Prints
 									{You have angered the spirit of the tomb}

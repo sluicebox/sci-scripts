@@ -96,7 +96,7 @@
 				(gEgo init:)
 			)
 			(615
-				(SetFlag 45)
+				(SetFlag 45) ; fLookedAtFawn
 				(gEgo
 					normal: 0
 					init:
@@ -107,17 +107,17 @@
 					y: 73
 				)
 				(cond
-					((IsFlag 31)
+					((IsFlag 31) ; fReadyToDance
 						(gTheMusic2 prevSignal: 0)
 						(Load rsPALETTE 610)
 						(HandsOff)
-						(if (not (IsFlag 44))
+						(if (not (IsFlag 44)) ; isVga
 							(floorLight1 init:)
 							(floorLight2 init:)
 						)
 						(gCurRoom setScript: sDance)
 					)
-					((IsFlag 14)
+					((IsFlag 14) ; fFawnLeaves
 						(gCurRoom setScript: sFawnIsHistory)
 					)
 					(else
@@ -130,7 +130,7 @@
 				(gEgo init: x: 165 y: 100)
 			)
 		)
-		(if (not (IsFlag 31))
+		(if (not (IsFlag 31)) ; fReadyToDance
 			(ReviveActors)
 		)
 		(louZerr init:)
@@ -147,7 +147,7 @@
 		(skirvin init:)
 		(aquarium init:)
 		(chair init: approachVerbs: 3 4 10 11) ; Do, Inventory, Zipper, Taste/Smell
-		(if (not (IsFlag 13))
+		(if (not (IsFlag 13)) ; fFawnIsGone
 			(aFawn
 				cycleSpeed: gHowFast
 				moveSpeed: gHowFast
@@ -251,7 +251,7 @@
 					(and
 						(== (aFawn view:) 612)
 						(== (aFawn loop:) 4)
-						(not (IsFlag 49))
+						(not (IsFlag 49)) ; pAskedToSit
 					)
 					(Points 49 1)
 					(Print 610 0) ; "You smile at the girl and say, "May I join you?""
@@ -333,7 +333,7 @@
 				)
 			)
 			(3
-				(SetFlag 13)
+				(SetFlag 13) ; fFawnIsGone
 				(HandsOn)
 				(self dispose:)
 			)
@@ -374,10 +374,10 @@
 			)
 		)
 		(cond
-			((and (IsFlag 44) (>= state 1) (<= state 27))
+			((and (IsFlag 44) (>= state 1) (<= state 27)) ; isVga
 				(Palette palANIMATE 64 79 1)
 			)
-			((and (not (IsFlag 44)) (>= state 1) (<= state 27))
+			((and (not (IsFlag 44)) (>= state 1) (<= state 27)) ; isVga
 				(floorLight1 x: (Random 110 223) y: (Random 90 135))
 				(floorLight2 x: (Random 110 223) y: (Random 90 135))
 			)
@@ -387,7 +387,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(if (not (IsFlag 44))
+				(if (not (IsFlag 44)) ; isVga
 					(floorLight1 setCycle: Fwd)
 					(floorLight2 setCycle: Fwd)
 				)
@@ -570,7 +570,7 @@
 				(= cycles 2)
 			)
 			(28
-				(if (IsFlag 44)
+				(if (IsFlag 44) ; isVga
 					(Palette palSET_FROM_RESOURCE 610 2)
 				else
 					(floorLight1 dispose:)
@@ -591,8 +591,8 @@
 				(NormalEgo 2)
 				(gTheMusic3 play:)
 				(ReviveActors)
-				(SetFlag 3)
-				(ClearFlag 31)
+				(SetFlag 3) ; fDancedWithFawn
+				(ClearFlag 31) ; fReadyToDance
 				(self dispose:)
 				(HandsOn)
 			)
@@ -869,15 +869,15 @@
 			)
 			(3 ; Do
 				(cond
-					((IsFlag 3)
+					((IsFlag 3) ; fDancedWithFawn
 						(Print 610 5) ; "Not again. That trip through the ceiling gave me a headache!"
 					)
-					((IsFlag 45)
+					((IsFlag 45) ; fLookedAtFawn
 						(Print 610 6) ; "You screw up your courage and ask, "What would you say to a spin around the dance floor with the nearest thing to John Travolta, baby?""
 						(Print 610 7) ; "Well, okay, I guess," she replies, thinking to herself, "near as I'm gonna get!"
 						(Points 54 5)
 						(HandsOff)
-						(if (not (IsFlag 44))
+						(if (not (IsFlag 44)) ; isVga
 							(floorLight1 init:)
 							(floorLight2 init:)
 						)
@@ -899,17 +899,17 @@
 				(cond
 					(
 						(and
-							(not (IsFlag 13))
+							(not (IsFlag 13)) ; fFawnIsGone
 							(== (gEgo view:) 610)
 							(== (gEgo loop:) 11)
 						)
 						(HandsOff)
 						(gCurRoom newRoom: 615)
 					)
-					((and (not (IsFlag 32)) (IsFlag 13))
+					((and (not (IsFlag 32)) (IsFlag 13)) ; fReadyToMarry, fFawnIsGone
 						(Print 610 12) ; "Gosh, Larry. Maybe you should have loaned her some money!"
 					)
-					((not (IsFlag 13))
+					((not (IsFlag 13)) ; fFawnIsGone
 						(Print 610 13) ; "There's a gorgeous blond sitting at the table, and she's all alone!"
 						(Print 610 14) ; "Perhaps you should sit with her."
 					)

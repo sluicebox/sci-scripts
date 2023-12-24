@@ -156,13 +156,13 @@
 		(= local44 0)
 		(= local13 -1)
 		(= local43 1)
-		(if (== global114 1)
+		(if (== gDifficulty 1) ; Standard
 			(for ((= temp0 0)) (< temp0 8) ((++ temp0))
 				(= [local18 temp0] [local74 temp0])
 				(= [local26 temp0] [local74 temp0])
 			)
 		)
-		(if global114
+		(if gDifficulty
 			(= local0 183)
 			(= local6 12)
 			(= local7 10)
@@ -196,7 +196,7 @@
 			(theChest nsTop: 113 nsLeft: 133)
 			(LoadMany rsVIEW local0 local3)
 		)
-		(= local8 [local37 global114])
+		(= local8 [local37 gDifficulty])
 		(= local1 8)
 		(= showCast 1)
 		(= puzzleCast
@@ -240,7 +240,7 @@
 				(temp4 show:)
 			)
 		)
-		(if (== global114 1)
+		(if (== gDifficulty 1) ; Standard
 			(localproc_0)
 		)
 		(if (pieceSet size:)
@@ -292,14 +292,14 @@
 							)
 							((< temp5 2)
 								(localproc_3
-									[local162 global114]
-									[local165 global114]
+									[local162 gDifficulty]
+									[local165 gDifficulty]
 								)
 							)
 							(temp0
 								(localproc_3 (-- temp0) temp1)
 							)
-							((< [local171 global114] temp1 [local177 global114])
+							((< [local171 gDifficulty] temp1 [local177 gDifficulty])
 								(localproc_4)
 							)
 							(else
@@ -315,16 +315,16 @@
 							((< temp5 2)
 								(proc5_9 (self at: 0))
 							)
-							((< temp0 [local162 global114])
+							((< temp0 [local162 gDifficulty])
 								(localproc_3 (++ temp0) temp1)
 							)
 							((== temp0 (- local7 1))
 								(localproc_3 0 temp1)
 							)
-							((and (not global114) (== temp0 3) (== temp1 4))
+							((and (not gDifficulty) (== temp0 3) (== temp1 4))
 								(localproc_3 (++ temp0) temp1)
 							)
-							((< [local171 global114] temp1 [local177 global114])
+							((< [local171 gDifficulty] temp1 [local177 gDifficulty])
 								(localproc_4)
 							)
 							(else
@@ -336,14 +336,14 @@
 						(cond
 							((< temp5 2)
 								(localproc_3
-									[local174 global114]
-									[local177 global114]
+									[local174 gDifficulty]
+									[local177 gDifficulty]
 								)
 							)
 							(
 								(and
-									(== temp1 [local171 global114])
-									(> temp0 [local162 global114])
+									(== temp1 [local171 gDifficulty])
+									(> temp0 [local162 gDifficulty])
 								)
 								(localproc_4)
 							)
@@ -359,13 +359,13 @@
 						(cond
 							((< temp5 2)
 								(localproc_3
-									[local168 global114]
-									[local171 global114]
+									[local168 gDifficulty]
+									[local171 gDifficulty]
 								)
 							)
 							(
 								(and
-									(not global114)
+									(not gDifficulty)
 									(or
 										(and (== temp0 3) (== temp1 4))
 										(and (== temp0 4) (== temp1 5))
@@ -375,9 +375,9 @@
 							)
 							(
 								(and
-									global114
-									(> temp0 [local162 global114])
-									(== temp1 [local177 global114])
+									gDifficulty
+									(> temp0 [local162 gDifficulty])
+									(== temp1 [local177 gDifficulty])
 								)
 								(localproc_4)
 							)
@@ -429,7 +429,7 @@
 	)
 
 	(method (solvePuzzle &tmp temp0 [temp1 5] [temp6 5] [temp11 70])
-		(= temp0 (* global114 3))
+		(= temp0 (* gDifficulty 3))
 		(if
 			(or
 				(< local14 [global175 temp0])
@@ -446,7 +446,7 @@
 				[global175 (+ temp0 2)]
 				@temp6
 			)
-			(Message msgGET msgModule noun [local34 global114] 16 1 @temp11)
+			(Message msgGET msgModule noun [local34 gDifficulty] 16 1 @temp11)
 			(proc15_4 self 99 @temp11 @temp6 @temp1)
 			(= [global175 temp0] local14)
 			(= [global175 (+ temp0 1)] local15)
@@ -631,7 +631,7 @@
 				(PicNotValid 1)
 				(Graph grFILL_BOX 0 0 190 320 1 5 -1 -1)
 				(theChest show:)
-				(if (== global114 1)
+				(if (== gDifficulty 1) ; Standard
 					(localproc_0)
 				)
 				(if (pieceSet size:)
@@ -738,19 +738,19 @@
 	(method (changeState newState &tmp temp0 temp1 temp2 temp3 temp4 temp5 [temp6 5] [temp11 50])
 		(switch (= state newState)
 			(0
-				(= register [local67 global114])
+				(= register [local67 gDifficulty])
 				(= ticks 3)
 				((jigsaw puzzleCast:)
 					add:
 						((= local73 (Actor new:))
-							view: (if global114 183 else 180)
+							view: (if gDifficulty 183 else 180)
 							loop: 0
 							x: 500
 							moveSpeed: 1
 							signal: 26627
 							setPri: 15
 							illegalBits: 0
-							cel: (if (== global114 1) 3 else -1)
+							cel: (if (== gDifficulty 1) 3 else -1) ; Standard
 							yourself:
 						)
 				)
@@ -779,7 +779,7 @@
 					(local73 nsTop:)
 					-1
 				)
-				(if (<= (++ register) [local70 global114])
+				(if (<= (++ register) [local70 gDifficulty])
 					(-= state 2)
 					(= ticks 1)
 				else
@@ -794,15 +794,15 @@
 				)
 				((jigsaw puzzleCast:) delete: local73)
 				(local73 dispose: delete:)
-				(if (== global114 1)
+				(if (== gDifficulty 1) ; Standard
 					(localproc_0)
 				)
 				(gCSoundFX number: 125 setLoop: 1 play:)
 				(theChest view: local0 show:)
 				(theExitButton show:)
-				(= temp5 (* global114 3))
+				(= temp5 (* gDifficulty 3))
 				(if (not (jigsaw shown:))
-					(proc15_0 jigsaw 23 9 0 0 0 180)
+					(Say jigsaw 23 9 0 0 0 180) ; "This is the animated jigsaw puzzle. You'll find all the pieces to it in the chest. If you wish to quit this puzzle before solving it, just click on the Exit button (on the front of the chest). To see what the jigsaw puzzle looks like, just click anywhere on the gray screen."
 					(jigsaw shown: 1)
 				)
 				(if (< [global175 temp5] 99)
@@ -812,7 +812,7 @@
 						[global175 (+ temp5 2)]
 						@temp6
 					)
-					(Message msgGET 180 23 [local34 global114] 15 1 @temp11)
+					(Message msgGET 180 23 [local34 gDifficulty] 15 1 @temp11)
 					(proc15_4 jigsaw 99 @temp11 @temp6)
 				)
 				(= local17 (+ gTickOffset (GetTime)))

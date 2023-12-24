@@ -119,8 +119,8 @@
 				((ScriptID 349 0) init:) ; art
 				(= local0 0)
 			)
-			(if (!= local0 global114)
-				(= local0 global114)
+			(if (!= local0 gDifficulty)
+				(= local0 gDifficulty)
 				(Message msgGET 340 23 4 0 1 @temp0) ; "Close your eyes..."
 				(Prints @temp0)
 				(localproc_0 10)
@@ -346,7 +346,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc5_1)
+				(HandsOff)
 				(gCSoundFX number: 182 loop: -1 play:)
 				(artPanel setMotion: MoveTo 4 133 self)
 			)
@@ -357,13 +357,13 @@
 			(2
 				(gCSoundFX stop:)
 				(onOffSwitch stopUpd:)
-				(proc5_2)
+				(HandsOn)
 				(Animate (gCast elements:) 0)
 				(if (== ((ScriptID 349 0) show:) 1) ; art
 					((ScriptID 349 0) dispose:) ; art
 					(= local0 15)
 				)
-				(proc5_1)
+				(HandsOff)
 				(gCSoundFX number: 182 loop: -1 play:)
 				(artPanel setMotion: MoveTo 4 122 self)
 				(onOffSwitch startUpd: setCycle: Beg)
@@ -371,7 +371,7 @@
 			(3
 				(gCSoundFX stop:)
 				(onOffSwitch stopUpd:)
-				(proc5_2)
+				(HandsOn)
 				(self dispose:)
 			)
 		)
@@ -448,8 +448,8 @@
 
 	(method (doVerb theVerb)
 		(if (and (== theVerb 4) (IsFlag 36))
-			(if (!= local1 global114)
-				(= local1 global114)
+			(if (!= local1 gDifficulty)
+				(= local1 gDifficulty)
 				(= local2 0)
 			)
 			((ScriptID 350 0) init: @local2) ; music

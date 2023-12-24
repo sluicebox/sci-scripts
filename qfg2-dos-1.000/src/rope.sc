@@ -61,7 +61,7 @@
 		(if (not gRopeHighY)
 			(= gRopeHighY 100)
 		)
-		(SetFlag 91)
+		(SetFlag 91) ; fUsingRope
 		(-- gRopeUses)
 		(super init: &rest)
 	)
@@ -69,8 +69,8 @@
 	(method (dispose)
 		(gDirectionHandler delete: self)
 		(gMouseDownHandler delete: self)
-		(ClearFlag 88)
-		(ClearFlag 91)
+		(ClearFlag 88) ; fClimbingRope
+		(ClearFlag 91) ; fUsingRope
 		(if overTheTop
 			(gEgo signal: oldSig)
 		)
@@ -338,7 +338,7 @@
 				(= cycles 2)
 			)
 			(7
-				(SetFlag 88)
+				(SetFlag 88) ; fClimbingRope
 				(gGame setCursor: gNormalCursor)
 				(gEgo setLoop: 9 cel: 0 y: (- (gEgo y:) 9))
 				(= lowY (gEgo y:))
@@ -346,7 +346,7 @@
 			)
 			(8
 				(HandsOff)
-				(ClearFlag 88)
+				(ClearFlag 88) ; fClimbingRope
 				(if (not (gEgo z:))
 					(self cue:)
 				else
@@ -404,14 +404,14 @@
 	(properties)
 
 	(method (init)
-		(SetFlag 95)
+		(SetFlag 95) ; fFalling
 		(super init: &rest)
 	)
 
 	(method (dispose)
-		(ClearFlag 88)
-		(ClearFlag 91)
-		(ClearFlag 95)
+		(ClearFlag 88) ; fClimbingRope
+		(ClearFlag 91) ; fUsingRope
+		(ClearFlag 95) ; fFalling
 		(super dispose:)
 	)
 

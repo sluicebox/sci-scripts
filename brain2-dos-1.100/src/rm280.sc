@@ -460,11 +460,11 @@
 				(cond
 					((< local1 0)
 						((ScriptID 283 0) init:) ; hutMasks
-						(= local1 global114)
+						(= local1 gDifficulty)
 					)
-					((!= local1 global114)
+					((!= local1 gDifficulty)
 						((ScriptID 283 0) dispose: init:) ; hutMasks
-						(= local1 global114)
+						(= local1 gDifficulty)
 					)
 				)
 				(switch ((ScriptID 283 0) show:) ; hutMasks
@@ -790,11 +790,11 @@
 				(cond
 					((< local0 0)
 						((ScriptID 285 0) init:) ; bookCase
-						(= local0 global114)
+						(= local0 gDifficulty)
 					)
-					((!= local0 global114)
+					((!= local0 gDifficulty)
 						((ScriptID 285 0) dispose: init:) ; bookCase
-						(= local0 global114)
+						(= local0 gDifficulty)
 					)
 				)
 				(switch ((ScriptID 285 0) show:) ; bookCase

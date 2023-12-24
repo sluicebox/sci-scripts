@@ -274,7 +274,7 @@
 				description: {the very burnt sign}
 				forceUpd:
 			)
-			(SetFlag 181)
+			(SetFlag 181) ; fBurntTailSign
 		)
 		(super doit:)
 	)

@@ -240,7 +240,7 @@
 					cel: 0
 					setCycle: End self
 				)
-				(SetFlag 117)
+				(SetFlag 117) ; fPickingLock
 			)
 			(2
 				(= cycles 20)
@@ -254,7 +254,7 @@
 			(5
 				(NormalEgo)
 				(gEgo loop: (if (< (client x:) 160) 7 else 6))
-				(ClearFlag 117)
+				(ClearFlag 117) ; fPickingLock
 				(if (PickLock 100 1 1)
 					(if (client barred:)
 						(HighPrint 90 9) ; "This door appears to be barred from the inside. Picking the lock will not help you enter."

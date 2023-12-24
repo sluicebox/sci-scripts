@@ -254,7 +254,7 @@
 								(gEgo y:)
 							)
 					)
-					(SetFlag 147)
+					(SetFlag 147) ; fBouncedBolt
 					(self setScript: moveScript self 0)
 				)
 				(return 0)
