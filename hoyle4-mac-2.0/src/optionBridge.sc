@@ -474,7 +474,7 @@
 
 	(method (doit &tmp temp0)
 		(gGameControls hide: dispose:)
-		(proc0_1)
+		(RedrawCast)
 		(= gGameControls local0)
 		(gBridge_opt doit: 3)
 	)

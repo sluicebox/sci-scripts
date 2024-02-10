@@ -253,7 +253,7 @@
 			(if global108
 				(= global108 0)
 			)
-			(proc0_1)
+			(RedrawCast)
 		)
 	)
 
@@ -287,7 +287,7 @@
 		(SpeakWindow speakObj: self)
 		(TextSize @[temp400 0] temp404 gUserFont 0)
 		(Characters eachElementDo: #stop self)
-		(proc0_1)
+		(RedrawCast)
 		(= temp408 (characterPrint width:))
 		(if (not global109)
 			(characterPrint width: [temp400 3])

@@ -22,7 +22,7 @@
 
 (procedure (localproc_0)
 	(= local0 gGameControls)
-	(proc0_3)
+	(HandsOn)
 	((= gGameControls giveTime)
 		window: giveTimeWindow
 		okIconItem: iconOK

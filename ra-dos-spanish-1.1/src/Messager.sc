@@ -9,7 +9,7 @@
 (class Messager of Obj
 	(properties
 		caller 0
-		oldIconBarState 0
+		talkerList 0
 		disposeWhenDone 1
 		oneOnly 0
 		killed 0
@@ -17,13 +17,13 @@
 	)
 
 	(method (dispose &tmp temp0)
-		(if oldIconBarState
-			(oldIconBarState
+		(if talkerList
+			(talkerList
 				eachElementDo: #caller 0
 				eachElementDo: #dispose 1
 				dispose:
 			)
-			(= oldIconBarState 0)
+			(= talkerList 0)
 		)
 		(gTheIconBar state: oldIconBarState)
 		(= oldIconBarState 0)
@@ -60,8 +60,8 @@
 		else
 			(= temp3 gCurRoomNum)
 		)
-		(if (not oldIconBarState)
-			((= oldIconBarState (Set new:)) add:)
+		(if (not talkerList)
+			((= talkerList (Set new:)) add:)
 		)
 		(if (== param1 -1)
 			(if (and (> argc 1) (IsObject param2))
@@ -114,7 +114,7 @@
 	(method (sayNext theMod theNoun theVerb theCase theSeq &tmp temp0)
 		(if (= temp0 (Message msgNEXT 0))
 			(= temp0 (self findTalker: temp0))
-			(oldIconBarState add: temp0)
+			(talkerList add: temp0)
 			(if argc
 				(temp0 say: theNoun theVerb theCase theSeq self theMod)
 			else

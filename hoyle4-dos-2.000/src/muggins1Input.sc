@@ -16,7 +16,7 @@
 )
 
 (procedure (localproc_0)
-	(proc0_3)
+	(HandsOn)
 	(= global491 0)
 	(= local0 gGameControls)
 	((= gGameControls muggins1InputControls)
@@ -96,7 +96,7 @@
 
 	(method (doit)
 		(gGameControls hide: dispose:)
-		(proc0_1)
+		(RedrawCast)
 		(= gGameControls local0)
 		(= global491 returnValue)
 	)

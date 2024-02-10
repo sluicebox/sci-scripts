@@ -86,7 +86,7 @@
 
 (procedure (localproc_1 &tmp temp0 temp1)
 	(StrCpy @local32 {})
-	(proc0_3)
+	(HandsOn)
 	(Message msgGET 700 20 0 0 1 @global550) ; "Hand to restore:           (or press Enter)"
 	(Print addText: @global550 addEdit: @local32 10 init:)
 	(if (StrLen @local32)
@@ -132,7 +132,7 @@
 
 (procedure (localproc_3 &tmp temp0 temp1 temp2 temp3 [temp4 50] temp54 temp55 [temp56 3] [temp59 2] [temp61 20] temp81)
 	(= temp81 (User controls:))
-	(proc0_4)
+	(HandsOff)
 	(GetCWD @temp4)
 	(if (> (CheckFreeSpace @temp4 1) 4)
 		((= temp54 (File new:)) name: {lastHand.brh})
@@ -166,27 +166,27 @@
 				)
 				(temp54 close:)
 				(temp55 close:)
-				(proc0_3)
+				(HandsOn)
 				(Prints {Hand saved})
 			else
-				(proc0_3)
+				(HandsOn)
 				(Message msgGET 700 24 0 0 1 @global550) ; "Error saving the hand. Not saved."
 				(Print addText: @global550 init:)
 			)
 		else
-			(proc0_3)
+			(HandsOn)
 			(Message msgGET 700 24 0 0 1 @global550) ; "Error saving the hand. Not saved."
 			(Print addText: @global550 init:)
 		)
 		(temp54 dispose:)
 		(temp55 dispose:)
 	else
-		(proc0_3)
+		(HandsOn)
 		(Message msgGET 700 25 0 0 1 @global550) ; "Not enough disk space to save."
 		(Print addText: @global550 init:)
 	)
 	(if temp81
-		(proc0_3)
+		(HandsOn)
 	)
 )
 
@@ -333,7 +333,7 @@
 			(= global290 0)
 			(global117 eachElementDo: #sort)
 			(Animate (gCast elements:) 1)
-			(proc0_3)
+			(HandsOn)
 		)
 		(if global438
 			(for ((= temp0 0)) (< temp0 (global117 size:)) ((++ temp0))
@@ -556,7 +556,7 @@
 		(= global458 param1)
 		(if (gTrick validPlay: param1 self)
 			(self moveCard: gTrick)
-			(proc0_1)
+			(RedrawCast)
 			(= local42 1)
 			(if size
 				(KeyMouse
@@ -1648,14 +1648,14 @@
 				(PicNotValid 0)
 				(if local4
 					(= script roomScript)
-					(proc0_1)
-					(proc0_3)
+					(RedrawCast)
+					(HandsOn)
 					(gGameControls hide:)
 					(= local5 (gSystemWindow back:))
 					(gSystemWindow back: 53)
 					((ScriptID 790 0) init:) ; optionBridge
 					(gSystemWindow back: local5)
-					(proc0_4)
+					(HandsOff)
 					(= script 0)
 				)
 				(gSong fade:)
@@ -1758,7 +1758,7 @@
 				(if (== (temp42 type:) 1)
 					(= temp27 (temp42 bid:))
 				else
-					(proc0_3)
+					(HandsOn)
 					(BidBox move: temp42)
 					((ScriptID 701 0) init:) ; bridgeInput
 					(= temp27 (BidBox newBid: global425))
@@ -2180,7 +2180,7 @@
 				(Dealer nextToPlay: global429)
 				(Dealer nextToPlay:)
 				(gTrick leader: (global429 LHO:))
-				(proc0_3)
+				(HandsOn)
 				(= global430 0)
 				(if (and (!= global432 2) (== (global431 origType:) 0))
 					(global429 sort: 1 flip: 1)
@@ -2342,7 +2342,7 @@
 							)
 						)
 					)
-					(proc0_3)
+					(HandsOn)
 				)
 			)
 			(12

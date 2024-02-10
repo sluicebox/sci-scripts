@@ -17,8 +17,8 @@
 
 (local
 	[local0 5] = [0 85 0 0 1]
-	local5 = 1
-	local6
+	choice = 1
+	choice2
 	local7
 	local8
 	[local9 3] = [8 12 14]
@@ -291,35 +291,35 @@
 					)
 					(0
 						(gGameMusic1 pause: 0)
-						(= local5 0)
-						(= local6 0)
+						(= choice 0)
+						(= choice2 0)
 					)
 					(1
 						(gGame restore:)
-						(= local5 1)
-						(= local6 0)
+						(= choice 1)
+						(= choice2 0)
 					)
 					(2
-						(= local5 0)
-						(= local6 0)
+						(= choice 0)
+						(= choice2 0)
 						(= gQuit 1)
 					)
 					(3
-						(= local5 0)
+						(= choice 0)
 						(gGameMusic1 fade:)
 						(gCast eachElementDo: #hide)
 						(Animate (gCast elements:) 0)
 						(gCurRoom newRoom: 26) ; actBreak
 					)
 					(4
-						(= local5 1)
-						(= local6 1)
+						(= choice 1)
+						(= choice2 1)
 					)
 				)
 				(= cycles 1)
 			)
 			(1
-				(if local6
+				(if choice2
 					(switch
 						(Print
 							window: SysWindow
@@ -335,8 +335,8 @@
 							init:
 						)
 						(0
-							(= local5 1)
-							(= local6 0)
+							(= choice 1)
+							(= choice2 0)
 							(= cycles 1)
 						)
 						(1
@@ -363,14 +363,14 @@
 				)
 			)
 			(2
-				(if local6
+				(if choice2
 					(self changeState: 1)
 				else
 					(= cycles 1)
 				)
 			)
 			(3
-				(if local5
+				(if choice
 					(self changeState: 0)
 				else
 					(= cycles 1)

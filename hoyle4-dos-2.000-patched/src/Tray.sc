@@ -30,7 +30,7 @@
 	(method (enterKey param1 param2)
 		(= global458 param1)
 		(self moveCard: (Dealer curPlayer:))
-		(proc0_1)
+		(RedrawCast)
 		(if size
 			(KeyMouse
 				setCursor:
@@ -145,7 +145,7 @@
 		(trayParts dispose:)
 		(aTray hide: dispose:)
 		(theOkButton hide: dispose:)
-		(proc0_1)
+		(RedrawCast)
 		(= theOkButton 0)
 		(Piles delete: self)
 		(if (not (Piles size:))
@@ -189,7 +189,7 @@
 			associatedObj: trayParts
 		)
 		(self add: param1)
-		(proc0_1)
+		(RedrawCast)
 		(gSound play: 907)
 	)
 

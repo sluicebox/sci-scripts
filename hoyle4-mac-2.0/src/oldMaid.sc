@@ -137,7 +137,7 @@
 			(= global290 0)
 			(global117 eachElementDo: #sort)
 			(Animate (gCast elements:) 1)
-			(proc0_3)
+			(HandsOn)
 		)
 	)
 
@@ -190,7 +190,7 @@
 	(method (changeState newState &tmp temp0 temp1 temp2)
 		(switch (= state newState)
 			(0
-				(proc0_4)
+				(HandsOff)
 				(gTheIconBar disable:)
 				(= local2 (register at: local0))
 				(= local3 (register at: local1))
@@ -448,14 +448,14 @@
 			(1
 				(PicNotValid 0)
 				(if local16
-					(proc0_1)
-					(proc0_3)
+					(RedrawCast)
+					(HandsOn)
 					(gGameControls hide:)
 					(= local17 (gSystemWindow back:))
 					(gSystemWindow back: 53)
 					((ScriptID 290 0) init:) ; optionOldMaid
 					(gSystemWindow back: local17)
-					(proc0_4)
+					(HandsOff)
 				)
 				(gSong fade:)
 				(= ticks 10)
@@ -465,7 +465,7 @@
 				(Dealer init: hand1 hand2 hand3 hand4)
 			)
 			(3
-				(proc0_4)
+				(HandsOff)
 				(= local4 0)
 				(global117
 					eachElementDo: #total 0
@@ -529,7 +529,7 @@
 					(cond
 						((== ((Dealer curPlayer:) type:) 0)
 							(if ((Dealer curPlayer:) findPair:)
-								(proc0_3)
+								(HandsOn)
 								(if local12
 									(pairButton init:)
 								else
@@ -575,7 +575,7 @@
 				(if (!= (theDiscard size:) 52)
 					(if (== ((Dealer curPlayer:) type:) 0)
 						(if (hand4 size:)
-							(proc0_3)
+							(HandsOn)
 							(= local10 hand1)
 							(Dealer curPlayer: hand4)
 							((KeyMouse objList:) release:)
@@ -658,7 +658,7 @@
 								eachElementDo: #offsetY 20
 								eachElementDo: #addKeyMouse
 							)
-							(proc0_3)
+							(HandsOn)
 							(Tray init: handleEventList self theDiscard)
 							(if (not (HaveMouse))
 								(KeyMouse
@@ -680,7 +680,7 @@
 				(= ticks 10)
 			)
 			(14
-				(proc0_4)
+				(HandsOff)
 				(= local4 0)
 				(for ((= temp0 0)) (< temp0 (global117 size:)) ((++ temp0))
 					(if ((global117 at: temp0) size:)
@@ -737,7 +737,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(proc0_4)
+				(HandsOff)
 				(UnLoad 128 999)
 				(UnLoad 128 997)
 				(UnLoad 128 908)
@@ -962,7 +962,7 @@
 	(method (changeState newState &tmp [temp0 3])
 		(switch (= state newState)
 			(0
-				(proc0_4)
+				(HandsOff)
 				(UnLoad 128 999)
 				(UnLoad 128 997)
 				(UnLoad 128 908)
@@ -1265,7 +1265,7 @@
 		(if gTray
 			(if (gTray validPlay: param1)
 				(self moveCard: gTray)
-				(proc0_1)
+				(RedrawCast)
 				(cond
 					((== (gTray size:) 1)
 						(KeyMouse setCursor: (gTray theOkButton:))
@@ -1372,7 +1372,7 @@
 			init:
 		)
 		(if (and local4 (not gTray) (not (gCast contains: pairButton)))
-			(proc0_4)
+			(HandsOff)
 			(hand4 eliminateCard: self)
 			(gTheCard1 setScript: getCardScript 0 self)
 		else
@@ -1573,7 +1573,7 @@
 						eachElementDo: #offsetY 20
 						eachElementDo: #addKeyMouse
 					)
-					(proc0_3)
+					(HandsOn)
 					(Tray init: handleEventList roomScript theDiscard)
 				)
 			)
@@ -1592,7 +1592,7 @@
 	(method (init)
 		(super init:)
 		(pairBack init: stopUpd:)
-		(proc0_3)
+		(HandsOn)
 		(self associatedObj: pairBack)
 		(self stopUpd:)
 		((KeyMouse objList:) release: add: self)
@@ -1604,7 +1604,7 @@
 		(pairBack dispose:)
 		((KeyMouse objList:) release:)
 		(handleEventList delete: self)
-		(proc0_4)
+		(HandsOff)
 		(super dispose:)
 	)
 

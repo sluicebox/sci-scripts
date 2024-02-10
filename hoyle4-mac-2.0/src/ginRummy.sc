@@ -154,7 +154,7 @@
 				(= global290 0)
 				(global117 eachElementDo: #sort)
 				(Animate (gCast elements:) 1)
-				(proc0_3)
+				(HandsOn)
 			else
 				(Message msgGET 400 19 0 0 1 @global550) ; "You can't sort now."
 				(Print addText: @global550 init:)
@@ -226,7 +226,7 @@
 			)
 			(gChar1 say: 400 0 78 0 1)
 		else
-			(proc0_4)
+			(HandsOff)
 			(super getCard:)
 			(self discardOnly: 1)
 			(if local3
@@ -243,7 +243,7 @@
 
 	(method (validPlay param1 &tmp temp0)
 		(if discardOnly
-			(proc0_4)
+			(HandsOff)
 			(return 1)
 		else
 			(= temp0 (param1 signal:))
@@ -309,7 +309,7 @@
 	)
 
 	(method (getCard)
-		(proc0_4)
+		(HandsOff)
 		(= global422 0)
 		(super getCard:)
 		(if local3
@@ -414,9 +414,9 @@
 	(method (enterKey param1 param2)
 		(= global458 (= local10 param1))
 		(if (discardPile validPlay: param1)
-			(proc0_4)
+			(HandsOff)
 			(self moveCard: discardPile)
-			(proc0_1)
+			(RedrawCast)
 			(if size
 				(KeyMouse
 					setCursor:
@@ -545,11 +545,11 @@
 				(= local31 self)
 				(if (= temp3 (- bestDeadWood highestDeadWood))
 					(gChar1 say: 1000 1 0 (+ temp3 11) 16 464 1)
-					(proc0_4)
+					(HandsOff)
 					(= local11 1)
 				else
 					(gChar1 say: 1000 1 0 22 16 464 1)
-					(proc0_4)
+					(HandsOff)
 					(= local11 1)
 				)
 				(return highestDeadWoodCard)
@@ -568,7 +568,7 @@
 				(return temp2)
 			)
 		else
-			(proc0_4)
+			(HandsOff)
 			(= local11 1)
 			(gChar1 say: 1000 1 0 22 16 464 1)
 			(= local31 self)
@@ -1297,14 +1297,14 @@
 			(1
 				(PicNotValid 0)
 				(if local23
-					(proc0_3)
-					(proc0_1)
+					(HandsOn)
+					(RedrawCast)
 					(gGameControls hide:)
 					(= local24 (gSystemWindow back:))
 					(gSystemWindow back: 53)
 					((ScriptID 490 0) init:) ; optionGinRummy
 					(gSystemWindow back: local24)
-					(proc0_4)
+					(HandsOff)
 				)
 				(= global547 0)
 				(gSong fade:)
@@ -1343,7 +1343,7 @@
 				(= ticks 10)
 			)
 			(6
-				(proc0_4)
+				(HandsOff)
 				(= local11 0)
 				(knockButton setLoop: 0 init: stopUpd:)
 				(discardPile init:)
@@ -1397,11 +1397,11 @@
 				(if (== ((Dealer curPlayer:) type:) 1)
 					((Dealer curPlayer:) thinkGetCard:)
 				else
-					(proc0_3)
+					(HandsOn)
 				)
 			)
 			(8
-				(proc0_4)
+				(HandsOff)
 				(if (== ((Dealer curPlayer:) type:) 0)
 					(= local4 1)
 				)
@@ -1429,14 +1429,14 @@
 							)
 						)
 					)
-					(proc0_3)
+					(HandsOn)
 				)
 				(discardPile discardOnly: 1)
 				(global419 active: 0)
 				(if (== ((Dealer curPlayer:) type:) 1)
 					((Dealer curPlayer:) thinkDiscard:)
 				else
-					(proc0_3)
+					(HandsOn)
 				)
 			)
 			(10
@@ -1554,7 +1554,7 @@
 		(= local3 0)
 		(= global243 0)
 		(super dispose:)
-		(proc0_1)
+		(RedrawCast)
 	)
 )
 
@@ -1667,7 +1667,7 @@
 	(properties)
 
 	(method (doit)
-		(proc0_4)
+		(HandsOff)
 		(if (IsObject okieBox)
 			(okieBox dispose:)
 		)

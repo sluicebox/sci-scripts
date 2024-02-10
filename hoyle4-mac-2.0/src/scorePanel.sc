@@ -50,7 +50,7 @@
 		(gTheIconBar disable:)
 		(gChar3 hide:)
 		((gChar3 face:) hide:)
-		(proc0_1)
+		(RedrawCast)
 		(= local0 63)
 		(= local1 118)
 		(= local2 (+ local0 (CelHigh 781 0 0)))
@@ -107,12 +107,12 @@
 			stopUpd:
 			addKeyMouse:
 		)
-		(proc0_1)
+		(RedrawCast)
 		(PicNotValid temp1)
 		(Graph grUPDATE_BOX local0 local1 local2 local3 1)
 		((ScriptID 700 10) add: scoreOKButton) ; handleEventList
-		(proc0_3)
-		(proc0_7)
+		(HandsOn)
+		(EatMouseEvents)
 	)
 
 	(method (dispose)
@@ -125,7 +125,7 @@
 		((ScriptID 700 10) delete: scoreOKButton) ; handleEventList
 		(UnLoad 128 781)
 		(gChar3 show:)
-		(proc0_1)
+		(RedrawCast)
 		(gTheIconBar enable:)
 		((gCurRoom script:) cue:)
 		(DisposeScript 762)

@@ -158,7 +158,7 @@
 			(= global290 0)
 			(global117 eachElementDo: #sort)
 			(Animate (gCast elements:) 1)
-			(proc0_3)
+			(HandsOn)
 		)
 	)
 
@@ -208,14 +208,14 @@
 			(1
 				(PicNotValid 0)
 				(if local0
-					(proc0_1)
-					(proc0_3)
+					(RedrawCast)
+					(HandsOn)
 					(gGameControls hide:)
 					(= local1 (gSystemWindow back:))
 					(gSystemWindow back: 53)
 					((ScriptID 190 0) init:) ; optionCrazy8s
 					(gSystemWindow back: local1)
-					(proc0_4)
+					(HandsOff)
 				)
 				(gSong fade:)
 				(= ticks 1)
@@ -237,7 +237,7 @@
 			(4
 				(discardPile condition: 0)
 				(= global421 0)
-				(proc0_4)
+				(HandsOff)
 				(Dealer playDirection: 0 deal: self)
 			)
 			(5
@@ -273,7 +273,7 @@
 				(if (== ((Dealer curPlayer:) type:) 1)
 					((Dealer curPlayer:) think:)
 				else
-					(proc0_3)
+					(HandsOn)
 				)
 			)
 			(9
@@ -305,7 +305,7 @@
 				)
 			)
 			(10
-				(proc0_3)
+				(HandsOn)
 				(Arrow endHand:)
 				(directionArrow init: -1)
 				(global419 endHand: deleteKeyMouse:)
@@ -360,7 +360,7 @@
 				)
 			)
 			(12
-				(proc0_1)
+				(RedrawCast)
 				(global117 eachElementDo: #calcScore 1)
 				((ScriptID 180 0) init:) ; scoreCrazy8s
 				(global117 eachElementDo: #endHand)
@@ -482,7 +482,7 @@
 		(if (discardPile validPlay: param1)
 			(self moveCard: discardPile)
 			(= local2 1)
-			(proc0_1)
+			(RedrawCast)
 			(if size
 				(KeyMouse
 					setCursor:
@@ -528,7 +528,7 @@
 		(super cue:)
 		((ScriptID 15 6) setCycle: 0) ; littleCard
 		(discardPile setCard: global458)
-		(proc0_1)
+		(RedrawCast)
 		(if local2
 			(= local2 0)
 			(discardPile doCode: global458)
@@ -761,7 +761,7 @@
 
 	(method (pass)
 		(gSound play: 907)
-		(proc0_1)
+		(RedrawCast)
 		(super pass:)
 		(discardPile condition: 0)
 		(= global421 0)
@@ -804,9 +804,9 @@
 					(if (== size -1)
 						(discardPile condition: 0)
 						(= global421 0)
-						(proc0_1 1)
+						(RedrawCast 1)
 						(if ((Dealer curPlayer:) owner:)
-							(proc0_1)
+							(RedrawCast)
 							(((Dealer curPlayer:) owner:) say: 1000 1 0 0 14)
 						)
 					)
@@ -1095,7 +1095,7 @@
 
 	(method (doCode param1)
 		(if (and (== (param1 rank:) 8) ((Dealer curPlayer:) size:))
-			(proc0_1)
+			(RedrawCast)
 			((ScriptID 150 0) init:) ; chooseSuit
 			(= global395 1)
 			(transition init: (+ 101 (* (param1 suit:) 4) global420))

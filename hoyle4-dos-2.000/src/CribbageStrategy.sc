@@ -176,7 +176,7 @@
 	)
 
 	(method (thinkCrib param1 &tmp temp0 temp1 temp2 temp3 temp4 temp5 temp6 temp7 temp8)
-		(proc0_1)
+		(RedrawCast)
 		(= ability global196)
 		(= myCrib (if (== 1 ((Dealer dealer:) location:)) 1 else -1))
 		(for ((= temp1 1)) (< temp1 14) ((++ temp1))

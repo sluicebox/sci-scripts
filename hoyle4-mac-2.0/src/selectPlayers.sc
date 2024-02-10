@@ -108,7 +108,7 @@
 	else
 		(DrawCel 906 temp1 8 (frameGuy9 x:) (frameGuy9 y:) 8)
 	)
-	(proc0_1)
+	(RedrawCast)
 )
 
 (procedure (localproc_1)

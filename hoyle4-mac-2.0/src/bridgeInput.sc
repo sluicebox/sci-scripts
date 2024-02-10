@@ -454,7 +454,7 @@
 		(= global500 1)
 		(gGameControls hide: dispose:)
 		(= global500 2)
-		(proc0_1)
+		(RedrawCast)
 		(= global500 3)
 		(cond
 			((== returnValue 0)

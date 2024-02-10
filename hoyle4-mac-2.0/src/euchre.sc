@@ -274,7 +274,7 @@
 		(cond
 			((== (roomScript state:) 10)
 				(self moveCard: discardPile self)
-				(proc0_1)
+				(RedrawCast)
 				(KeyMouse
 					setCursor:
 						(if param2
@@ -286,7 +286,7 @@
 			)
 			((gTrick validPlay: param1 self)
 				(self moveCard: gTrick)
-				(proc0_1)
+				(RedrawCast)
 				(if size
 					(KeyMouse
 						setCursor:
@@ -552,7 +552,7 @@
 			(= global290 0)
 			(global117 eachElementDo: #sort)
 			(Animate (gCast elements:) 1)
-			(proc0_3)
+			(HandsOn)
 		)
 		(if global388
 			(= global388 0)
@@ -707,14 +707,14 @@
 			(1
 				(PicNotValid 0)
 				(if local0
-					(proc0_1)
-					(proc0_3)
+					(RedrawCast)
+					(HandsOn)
 					(gGameControls hide:)
 					(= local1 (gSystemWindow back:))
 					(gSystemWindow back: 53)
 					((ScriptID 890 0) init:) ; optionEuchre
 					(gSystemWindow back: local1)
-					(proc0_4)
+					(HandsOff)
 				)
 				(gSong fade:)
 				(= ticks 1)
@@ -753,7 +753,7 @@
 					westPlayer: hand2
 				)
 				(= global287 -1)
-				(proc0_4)
+				(HandsOff)
 				(Dealer playDirection: 0 deal: self)
 				(Piles delete: gTrick add: discardPile)
 			)
@@ -767,7 +767,7 @@
 				(EScore handInit:)
 				(Arrow x: 260 y: 20 init:)
 				(global419 init:)
-				(proc0_4)
+				(HandsOff)
 				(handleEventList add: hand1 hand2 hand3 hand4 discardPile)
 				(= ticks 20)
 			)
@@ -842,7 +842,7 @@
 						)
 					)
 				else
-					(proc0_3)
+					(HandsOn)
 					((ScriptID 801 0) init:) ; bidEuchre
 					(DisposeScript 801)
 					(if (OneOf global425 0 1 2 3 5)
@@ -931,7 +931,7 @@
 					((Dealer dealer:) thinkDiscard:)
 				else
 					((Dealer dealer:) eachElementDo: #addKeyMouse)
-					(proc0_3)
+					(HandsOn)
 				)
 			)
 			(11
@@ -973,7 +973,7 @@
 				(if (== ((Dealer curPlayer:) type:) 1)
 					((Dealer curPlayer:) think:)
 				else
-					(proc0_3)
+					(HandsOn)
 				)
 			)
 			(15
@@ -1004,7 +1004,7 @@
 				(= ticks 1)
 			)
 			(17
-				(proc0_3)
+				(HandsOn)
 				(Arrow endHand:)
 				(handleEventList delete: hand1 hand2 hand3 hand4)
 				(= ticks 1)

@@ -18,7 +18,7 @@
 
 (procedure (localproc_0)
 	(= local0 gGameControls)
-	(proc0_3)
+	(HandsOn)
 	((= gGameControls oldMaidScore)
 		window: oldMaidScoreWindow
 		okIconItem: iconOK
@@ -116,7 +116,7 @@
 
 	(method (doit &tmp temp0)
 		(gGameControls hide: dispose:)
-		(proc0_1)
+		(RedrawCast)
 		(= gGameControls local0)
 	)
 )

@@ -241,7 +241,7 @@
 			(gTray
 				(if (gTray validPlay: param1)
 					(self moveCard: gTray)
-					(proc0_1)
+					(RedrawCast)
 					(cond
 						((== (gTray size:) 2)
 							(KeyMouse setCursor: (gTray theOkButton:))
@@ -272,7 +272,7 @@
 					(= global481 1)
 				)
 				(self moveCard: gTrick)
-				(proc0_1)
+				(RedrawCast)
 				(if size
 					(KeyMouse
 						setCursor:
@@ -724,14 +724,14 @@
 			(1
 				(PicNotValid 0)
 				(if local0
-					(proc0_3)
-					(proc0_1)
+					(HandsOn)
+					(RedrawCast)
 					(gGameControls hide:)
 					(= local1 (gSystemWindow back:))
 					(gSystemWindow back: 53)
 					((ScriptID 390 0) init:) ; optionHearts
 					(gSystemWindow back: local1)
-					(proc0_4)
+					(HandsOff)
 				)
 				(gSong fade:)
 				(= global480 0)
@@ -752,7 +752,7 @@
 				(= ticks 1)
 			)
 			(4
-				(proc0_4)
+				(HandsOff)
 				(= global482 0)
 				(= global237 0)
 				(hand1 tempTotal: 0)
@@ -822,8 +822,8 @@
 							self
 							((Dealer curPlayer:) passList:)
 					)
-					(proc0_1)
-					(proc0_3)
+					(RedrawCast)
+					(HandsOn)
 				)
 			)
 			(8
@@ -861,7 +861,7 @@
 				)
 			)
 			(12
-				(proc0_1)
+				(RedrawCast)
 				(if (not (Piles contains: gTrick))
 					(Piles add: gTrick)
 				)
@@ -869,7 +869,7 @@
 					(for ((= temp2 0)) (< temp2 4) ((++ temp2))
 						(if ((global117 at: temp2) hasCard: 2 1)
 							(Dealer nextToPlay: (global117 at: temp2))
-							(proc0_1)
+							(RedrawCast)
 							(= global482 1)
 							(break)
 						)
@@ -887,7 +887,7 @@
 					(if (not (gTrick size:))
 						(= global528 -1)
 					)
-					(proc0_3)
+					(HandsOn)
 				)
 			)
 			(14
@@ -899,7 +899,7 @@
 							(gTrick leader:)
 						)
 				)
-				(proc0_1)
+				(RedrawCast)
 				(if (and global459 (not (gTrick size:)))
 					(= ticks 1)
 				else
@@ -916,7 +916,7 @@
 				)
 			)
 			(15
-				(proc0_3)
+				(HandsOn)
 				(Arrow endHand:)
 				(handleEventList delete: hand1 hand2 hand3 hand4)
 				(= ticks 1)
@@ -952,7 +952,7 @@
 				(= ticks 1)
 			)
 			(17
-				(proc0_1)
+				(RedrawCast)
 				(global117 eachElementDo: #calcScore 1)
 				((ScriptID 380 0) init:) ; scoreHearts
 				((ScriptID 15 1) release:) ; discardList
@@ -1049,7 +1049,7 @@
 			else
 				(Characters say: 1000 1 23 0 (Random 4 5))
 			)
-			(proc0_1)
+			(RedrawCast)
 		)
 		(super endTrick:)
 	)

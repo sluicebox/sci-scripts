@@ -67,7 +67,7 @@
 
 (procedure (localproc_1)
 	(= local0 gGameControls)
-	(proc0_3)
+	(HandsOn)
 	((= gGameControls euchreScore)
 		window: euchreScoreWindow
 		okIconItem: iconOK
@@ -124,7 +124,7 @@
 
 	(method (doit &tmp temp0)
 		(gGameControls hide: dispose:)
-		(proc0_1)
+		(RedrawCast)
 		(= gGameControls local0)
 	)
 )

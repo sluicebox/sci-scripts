@@ -294,9 +294,9 @@
 	(method (doit &tmp temp0)
 		(gGameControls hide: dispose:)
 		(if global290
-			(proc0_4)
+			(HandsOff)
 		)
-		(proc0_1)
+		(RedrawCast)
 		(= gGameControls local0)
 		(gCrazy8s_opt doit: 3)
 	)

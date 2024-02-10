@@ -108,7 +108,7 @@
 		(DrawCel 906 temp1 8 (frameGuy9 x:) (frameGuy9 y:) 8)
 	)
 	(PicNotValid temp3)
-	(proc0_1)
+	(RedrawCast)
 )
 
 (procedure (localproc_1)

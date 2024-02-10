@@ -77,7 +77,7 @@
 
 (procedure (localproc_1)
 	(= local0 gGameControls)
-	(proc0_3)
+	(HandsOn)
 	(if (== global263 1)
 		(iconOK nsLeft: 42 nsTop: 98)
 	else
@@ -182,7 +182,7 @@
 
 	(method (doit)
 		(gGameControls hide: dispose:)
-		(proc0_1)
+		(RedrawCast)
 		(= gGameControls local0)
 	)
 )

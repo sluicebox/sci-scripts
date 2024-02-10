@@ -21,13 +21,13 @@
 
 (public
 	hoyle4 0
-	proc0_1 1
-	proc0_2 2
-	proc0_3 3
-	proc0_4 4
+	RedrawCast 1
+	IsEnter 2
+	HandsOn 3
+	HandsOff 4
 	proc0_5 5
 	proc0_6 6
-	proc0_7 7
+	EatMouseEvents 7
 	proc0_8 8
 )
 
@@ -934,7 +934,7 @@
 	global749
 )
 
-(procedure (proc0_7 &tmp temp0)
+(procedure (EatMouseEvents &tmp temp0)
 	(while ((= temp0 (Event new: 3)) type:)
 		(temp0 dispose:)
 	)
@@ -954,11 +954,11 @@
 	)
 )
 
-(procedure (proc0_1 param1)
+(procedure (RedrawCast param1)
 	(Animate (gCast elements:) (if argc param1 else 0))
 )
 
-(procedure (proc0_2 param1)
+(procedure (IsEnter param1)
 	(return (and (== (param1 type:) 4) (== (param1 message:) 13)))
 )
 
@@ -1009,7 +1009,7 @@
 	)
 )
 
-(procedure (proc0_4 param1)
+(procedure (HandsOff param1)
 	(if
 		(or
 			(User controls:)
@@ -1031,7 +1031,7 @@
 	)
 )
 
-(procedure (proc0_3)
+(procedure (HandsOn)
 	(if (not (User controls:))
 		(User canControl: 1 canInput: 1)
 		(if (not (HaveMouse))
@@ -1101,14 +1101,14 @@
 			(IconBar disable:)
 			(= temp1 picture)
 			(= picture (+ global385 901))
-			(proc0_4)
+			(HandsOff)
 			(Lock rsPIC temp1 0)
 			(UnLoad 129 temp1)
 			(if (self beforeNewPic:)
 				(for ((= temp0 0)) (< temp0 (gDelayCast size:)) ((++ temp0))
 					(gCast add: (gDelayCast at: temp0))
 				)
-				(proc0_1)
+				(RedrawCast)
 				(self drawNewPic:)
 				(if (gChar1 active:)
 					(gChar1 init:)
@@ -1119,7 +1119,7 @@
 				(if (gChar3 active:)
 					(gChar3 init:)
 				)
-				(proc0_1)
+				(RedrawCast)
 				(for ((= temp0 0)) (< temp0 (gDelayCast size:)) ((++ temp0))
 					(gCast delete: (gDelayCast at: temp0))
 				)
@@ -1128,7 +1128,7 @@
 				(= picture temp1)
 				(Lock rsPIC picture)
 			)
-			(proc0_3)
+			(HandsOn)
 			(IconBar enable:)
 		else
 			(Lock rsPIC picture)
@@ -1211,7 +1211,7 @@
 				(if caller
 					(caller cue:)
 				)
-				(proc0_1)
+				(RedrawCast)
 			)
 		)
 	)
@@ -1235,7 +1235,7 @@
 				(if caller
 					(caller cue:)
 				)
-				(proc0_1)
+				(RedrawCast)
 			)
 		)
 	)
@@ -1259,7 +1259,7 @@
 				(if caller
 					(caller cue:)
 				)
-				(proc0_1)
+				(RedrawCast)
 			)
 		)
 	)
@@ -1273,7 +1273,7 @@
 		(= global191 319)
 		(= global192 199)
 		(= gHowFast 2)
-		(proc0_4)
+		(HandsOff)
 		(localproc_1)
 		(TextColors 0 55 7 6 5)
 		(TextFonts 0 2107 2107)
@@ -1319,7 +1319,7 @@
 		(= gGcWindow gcWindow)
 		(= gGameControls hoyle4GameControls)
 		((ScriptID 14 0) doit:) ; setGC
-		(proc0_3)
+		(HandsOn)
 		(Characters
 			add: (= gChar1 char1) (= gChar2 char2) (= gChar3 char3)
 		)

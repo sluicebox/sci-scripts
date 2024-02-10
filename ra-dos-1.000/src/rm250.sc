@@ -100,7 +100,7 @@
 			(inset dispose:)
 		)
 		(gWalkHandler delete: gCurRoom)
-		(if (gMessager oldIconBarState:)
+		(if (gMessager talkerList:)
 			(gMessager dispose:)
 		)
 		(proc0_8 0)

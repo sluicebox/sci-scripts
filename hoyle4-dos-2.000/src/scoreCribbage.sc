@@ -37,7 +37,7 @@
 
 (procedure (localproc_2)
 	(= local0 gGameControls)
-	(proc0_3)
+	(HandsOn)
 	((= gGameControls cribbageScore)
 		window: cribbageScoreWindow
 		okIconItem: iconOK
@@ -190,7 +190,7 @@
 
 	(method (doit &tmp temp0)
 		(gGameControls hide: dispose:)
-		(proc0_1)
+		(RedrawCast)
 		(= gGameControls local0)
 	)
 )

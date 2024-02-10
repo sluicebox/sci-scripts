@@ -190,7 +190,7 @@
 
 	(method (doit &tmp temp0)
 		(gGameControls hide: dispose:)
-		(proc0_1)
+		(RedrawCast)
 		(= gGameControls local0)
 		(gGinrummy_opt doit: 3)
 	)

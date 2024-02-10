@@ -49,7 +49,7 @@
 			(gSong stop:)
 			(PlaySong play: 1010)
 		)
-		(proc0_1)
+		(RedrawCast)
 		(if (not (HaveMouse))
 			(KeyMouse setCursor: chooseCrazy8s)
 		)
@@ -103,7 +103,7 @@
 			(1
 				(Wait 1)
 				(Wait 10)
-				(proc0_1)
+				(RedrawCast)
 				(= cycles 1)
 			)
 			(2

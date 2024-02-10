@@ -55,7 +55,7 @@
 	)
 	(gGame setCursor: 999)
 	(gGameControls show:)
-	(proc0_3)
+	(HandsOn)
 	(if (not (HaveMouse))
 		(gMouseCursor x: (+ 75 (iconOK nsLeft:)) y: (+ 48 (iconOK nsTop:)))
 		(SetCursor (gMouseCursor x:) (gMouseCursor y:))
@@ -263,7 +263,7 @@
 
 	(method (doit &tmp temp0)
 		(gGameControls hide: dispose:)
-		(proc0_1)
+		(RedrawCast)
 		(= gGameControls local0)
 	)
 )

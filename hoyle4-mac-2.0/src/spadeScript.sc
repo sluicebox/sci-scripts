@@ -124,7 +124,7 @@
 				(client cel: 0 setLoop: 9 cycleSpeed: 8 setCycle: End self)
 			)
 			(6
-				(proc0_1)
+				(RedrawCast)
 				(ShakeScreen 4 ssLEFTRIGHT)
 				(= ticks 60)
 			)

@@ -149,7 +149,7 @@
 			(param1 startUpd:)
 		)
 		(self add: param1)
-		(proc0_1)
+		(RedrawCast)
 		(if (== size numCardsInATrick)
 			((gCurRoom script:) setScript: trickScript)
 		else
@@ -184,7 +184,7 @@
 	(method (changeState newState &tmp temp0 temp1 temp2 temp3 temp4 temp5)
 		(switch (= state newState)
 			(0
-				(proc0_4)
+				(HandsOff)
 				(= ticks (* global386 20))
 			)
 			(1
@@ -300,7 +300,7 @@
 						)
 					)
 				)
-				(proc0_1)
+				(RedrawCast)
 				(gSound play: 906)
 			)
 			(2 0)

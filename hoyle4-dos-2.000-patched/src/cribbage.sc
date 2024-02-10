@@ -145,7 +145,7 @@
 			(= global290 0)
 			(global117 eachElementDo: #sort)
 			(Animate (gCast elements:) 1)
-			(proc0_3)
+			(HandsOn)
 		)
 	)
 
@@ -326,7 +326,7 @@
 			(gTray
 				(if (gTray validPlay: param1)
 					(self moveCard: gTray self)
-					(proc0_1)
+					(RedrawCast)
 					(cond
 						((== (gTray size:) 1)
 							(KeyMouse setCursor: (gTray theOkButton:))
@@ -346,7 +346,7 @@
 			)
 			((gTrick validPlay: param1 self)
 				(self moveCard: gTrick)
-				(proc0_1)
+				(RedrawCast)
 				(if size
 					(KeyMouse
 						setCursor:
@@ -1216,7 +1216,7 @@
 
 	(method (setCard param1 &tmp temp0 [temp1 20] temp21 [temp22 20] temp42)
 		(= temp42 0)
-		(proc0_4)
+		(HandsOff)
 		(= local10 (Dealer curPlayer:))
 		(+=
 			global493
@@ -1239,7 +1239,7 @@
 			stopUpd:
 		)
 		(self add: param1)
-		(proc0_1)
+		(RedrawCast)
 		(if (== size 8)
 			(= local598 0)
 		)
@@ -1487,8 +1487,8 @@
 		(PicNotValid temp1)
 		(Graph grUPDATE_BOX local6 local7 local8 local9 1)
 		(handleEventList add: scoreOKButton)
-		(proc0_3)
-		(proc0_7)
+		(HandsOn)
+		(EatMouseEvents)
 		(if temp3
 			(gSound play: 504)
 			(if (== ((Dealer curPlayer:) location:) 3)
@@ -1660,21 +1660,21 @@
 	(method (changeState newState &tmp [temp0 2] temp2 [temp3 3] temp6 temp7 [temp8 100])
 		(switch (= state newState)
 			(0
-				(proc0_4)
+				(HandsOff)
 				(Wait 1)
 				(= ticks 1)
 			)
 			(1
 				(PicNotValid 0)
 				(if local0
-					(proc0_1)
-					(proc0_3)
+					(RedrawCast)
+					(HandsOn)
 					(gGameControls hide:)
 					(= local1 (gSystemWindow back:))
 					(gSystemWindow back: 53)
 					((ScriptID 590 0) init:) ; optionCribbage
 					(gSystemWindow back: local1)
-					(proc0_4)
+					(HandsOff)
 				)
 				(gSong fade:)
 				(Dealer init: hand1 hand2)
@@ -1764,11 +1764,11 @@
 					((Dealer curPlayer:) thinkCrib:)
 				else
 					(Tray x: 170 y: 63 init: handleEventList self theCrib)
-					(proc0_3)
+					(HandsOn)
 				)
 			)
 			(8
-				(proc0_4)
+				(HandsOff)
 				(if (== ((Dealer curPlayer:) type:) 0)
 					((ScriptID 15 6) ; littleCard
 						init:
@@ -1813,11 +1813,11 @@
 				(global419 flip: 1)
 				(countBox init:)
 				(countNumber init:)
-				(proc0_3)
+				(HandsOn)
 				(Piles add: gTrick)
 				(= global490 0)
 				(if (== ((global419 topCard:) rank:) 11)
-					(proc0_1)
+					(RedrawCast)
 					(Message msgGET 500 22 0 0 1 @global550) ; "Heels: 2"
 					(gSound play: 503)
 					(Print posn: 213 86 width: 90 addText: @global550 init:)
@@ -1846,7 +1846,7 @@
 				(if (== ((Dealer curPlayer:) type:) 1)
 					((Dealer curPlayer:) think:)
 				else
-					(proc0_3)
+					(HandsOn)
 				)
 			)
 			(12
@@ -1889,7 +1889,7 @@
 				)
 			)
 			(13
-				(proc0_4)
+				(HandsOff)
 				(if local15
 					(= local15 0)
 					(cond
@@ -2037,7 +2037,7 @@
 			)
 			(15
 				(Piles delete: gTrick)
-				(proc0_3)
+				(HandsOn)
 				(handleEventList delete: hand1 hand2 theCrib global419)
 				(= ticks 1)
 			)
@@ -2350,7 +2350,7 @@
 				(= gNewRoomNum 975) ; chooseGame
 			)
 			(37
-				(proc0_3)
+				(HandsOn)
 				(Piles delete: gTrick)
 				(handleEventList release:)
 				(hand2 eachElementDo: #flip 1)

@@ -76,7 +76,7 @@
 							)
 							(> (event y:) 0)
 						)
-						(proc0_1)
+						(RedrawCast)
 						(gSound play: 901)
 						(gCurRoom newRoom: 975) ; chooseGame
 					)
@@ -395,7 +395,7 @@
 					(temp2 dispose:)
 				)
 				(temp2 dispose:)
-				(proc0_3)
+				(HandsOn)
 				(gTheIconBar enable:)
 				(gGame setCursor: 999 1)
 				(= local2 0)

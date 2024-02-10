@@ -113,7 +113,7 @@
 	(method (doit &tmp temp0)
 		(gGameControls hide: dispose:)
 		(gGame_opt doit: 3)
-		(proc0_1)
+		(RedrawCast)
 		(= gGameControls local0)
 	)
 )

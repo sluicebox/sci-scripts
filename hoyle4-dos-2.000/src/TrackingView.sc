@@ -41,7 +41,7 @@
 				(<= nsTop (event y:) (- nsBottom 1))
 			)
 			(cond
-				((proc0_2 event)
+				((IsEnter event)
 					(self enterKey:)
 					(= temp0 1)
 					(event claimed: 1)
@@ -167,7 +167,7 @@
 				(<= nsTop (event y:) (- nsBottom 1))
 			)
 			(cond
-				((proc0_2 event)
+				((IsEnter event)
 					(event claimed: 1)
 					(= temp0 1)
 				)
@@ -194,7 +194,7 @@
 				)
 				(return (self track:))
 			)
-			((proc0_2 param1)
+			((IsEnter param1)
 				(return (self flash:))
 			)
 		)
