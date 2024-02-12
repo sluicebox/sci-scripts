@@ -4,7 +4,7 @@
 (include sci.sh)
 (use Main)
 (use StatusBar)
-(use Skilled_J_X_L_________________________B)
+(use Skilled)
 (use FileSelector)
 (use Inventory)
 (use Actor)
@@ -13,7 +13,7 @@
 	warrior 0
 )
 
-(class Warrior of Skilled_J_X_L_________________________B
+(class Warrior of Skilled
 	(properties
 		yStep 10
 		xStep 16
@@ -65,7 +65,7 @@
 	(method (drawStatus)
 		(SaveSubLang)
 		(= heroTitle
-			(Display ; "Hero Status%j\cb\b0\db\b0 \bd\c3\b0\c0\bd"
+			(Display ; "Hero Status"
 				213
 				1
 				dsWIDTH
@@ -231,7 +231,7 @@
 					213
 					2
 					80
-					{What a monster!%j\c5\dd\c4\b2\b3 \bd\ba\de\b2 \d3\dd\bd\c0\b0 \c0\de!}
+					{What a monster!}
 					82
 					516
 					0

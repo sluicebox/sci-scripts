@@ -55,7 +55,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"Comfy, Mr. Wilco?"#j\a2\f7\98\e6\9c\e3\f9\96\92\fe\a0 \b3\a8\d9\ba\9b\fd\a1\a3}
+							{"Comfy, Mr. Wilco?"}
 							67
 							2
 							1
@@ -106,7 +106,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"Hey! What are you doing?"#j\a2\95\92\ff\a0 \e5\e6\86\9c\e3\92\f9\fd\e0\de\ff\fe\a3}
+							{"Hey! What are you doing?"}
 							67
 							2
 							1
@@ -127,7 +127,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"Let me go b. . . witch!"#j\a2\9a\e9\a5\a5\a5\a5\ea\e5\9e\ff\ff\a0 \98\a5\a5\a5\a5\ef\9c\de\8e\f2\ff\a3}
+							{"Let me go b. . . witch!"}
 							67
 							2
 							1
@@ -149,7 +149,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"Shut up! Your whimpering sickens me!"#j\a2\95\e0\de\ef\f8\ff\a0 \b7\de\ac\b0\b7\de\ac\b0\e4\a0\93\f9\9b\98\e3\e0\ef\f7\e5\92\f6\ff\a3}
+							{"Shut up! Your whimpering sickens me!"}
 							67
 							2
 							1
@@ -170,7 +170,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"I'll teach you not to run out on ME!"#j\a2\e6\99\de\e0\de\9b\e5\92\e0\f2\e6\a4\92\92\9a\e4\86\a0\95\9c\94\e3\91\99\de\f9\fc\ff\a3}
+							{"I'll teach you not to run out on ME!"}
 							67
 							2
 							1
@@ -191,7 +191,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"Thoreen is quite knowledgeable in the ways of torture."#j\a2\bf\d8\b0\dd\ea\a4\9a\de\93\f3\fd\e9\a0\9e\f2\96\e0\e6\a0\98\fc\9c\92\e9\f6\a1\a3}
+							{"Thoreen is quite knowledgeable in the ways of torture."}
 							67
 							2
 							1
@@ -212,7 +212,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"I'll let you two get acquainted. Thoreen, do your stuff."#j\a2\bf\d8\b0\dd\e4\e5\96\f6\98\a0\e5\f8\e5\9b\92\a1\9b\91\a4\bf\d8\b0\dd\a0 \f4\8f\e3\92\92\fc\f6\a1\a3}
+							{"I'll let you two get acquainted. Thoreen, do your stuff."}
 							67
 							2
 							1
@@ -233,7 +233,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"With PLEASURE, Zondra."#j\a2\f6\fb\9a\fd\e3\de\a1\a0 \bf\de\dd\c4\de\d7\9b\ef\a1\a3}
+							{"With PLEASURE, Zondra."}
 							67
 							2
 							1

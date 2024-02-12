@@ -117,7 +117,7 @@
 	)
 
 	(method (showStr where)
-		(Format where 993 0 name name) ; "File: %s%%j\cc\a7\b2\d9:%s"
+		(Format where 993 0 name name) ; "File: %s%"
 	)
 )
 

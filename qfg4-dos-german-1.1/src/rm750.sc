@@ -841,7 +841,7 @@
 			)
 			(3
 				(if (not (gEgo takeDamage: 10))
-					(EgoDead 13)
+					(EgoDead 13) ; "Your social life has gone rather flat. That wall is HARDly a place to keep banging your head."
 				)
 				(if (== gHeroType 2) ; Thief
 					(= ticks 180)
@@ -925,7 +925,7 @@
 				(torchEff hide:)
 			)
 			(3
-				(EgoDead 4)
+				(EgoDead 4) ; "Do you suppose that you created a vacuum inside the tentacle by blowing so hard? Or was it just hungry? Whatever the reason, explosive decompression has set in."
 			)
 		)
 	)
@@ -1164,7 +1164,7 @@
 				(torchEff hide:)
 			)
 			(3
-				(EgoDead 4)
+				(EgoDead 4) ; "Do you suppose that you created a vacuum inside the tentacle by blowing so hard? Or was it just hungry? Whatever the reason, explosive decompression has set in."
 			)
 		)
 	)

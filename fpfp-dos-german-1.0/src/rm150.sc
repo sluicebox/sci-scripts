@@ -17,13 +17,13 @@
 )
 
 (local
-	local0
-	local1 = 85
-	local2
-	local3
-	local4 = 1
-	local5 = 1
-	local6
+	i
+	curX = 85
+	destX
+	xDiff
+	doThis = 1
+	choice = 1
+	choice2
 	local7
 	local8
 	local9 = 8
@@ -35,7 +35,7 @@
 	[local308 270] = [85 106 152 189 221 114 155 211 262 66 97 119 151 181 204 229 255 120 154 174 226 119 163 211 242 63 80 118 137 184 202 229 251 103 128 128 161 196 219 219 219 86 110 133 150 172 202 227 86 122 146 146 180 215 237 237 237 101 123 148 173 222 222 222 222 222 222 222 222 115 170 204 227 93 143 202 247 61 90 114 178 193 218 248 269 93 111 176 225 105 153 197 239 42 79 121 140 171 241 263 280 117 173 211 235 78 138 192 239 41 98 144 178 212 235 287 287 88 122 180 227 103 132 188 255 61 87 126 159 184 227 262 262 103 128 128 161 196 219 219 219 91 113 132 161 180 200 216 86 122 146 146 180 215 237 237 237 109 138 170 198 217 217 217 217 217 217 217 217 135 168 198 230 101 155 209 244 58 95 127 159 207 230 230 261 80 108 169 210 94 122 211 245 43 65 95 134 178 236 283 283 135 184 221 240 117 154 191 224 53 112 132 189 223 250 278 278 87 109 214 231 107 164 204 256 35 77 112 134 208 259 285 285 103 128 128 161 196 219 219 219 95 132 154 174 192 210 229 86 122 146 146 180 215 237 237 237 96 123 154 174 219 219 219 219 219 219 325 325 325]
 )
 
-(procedure (localproc_0)
+(procedure (SlideViewRight)
 	(if (<= gHowFast local10)
 		(vignette setLoop: (+ (vignette loop:) 1))
 	else
@@ -48,7 +48,7 @@
 	)
 )
 
-(procedure (localproc_1)
+(procedure (SlideViewLeft)
 	(if (<= gHowFast local10)
 		(vignette setLoop: (+ (vignette loop:) 1))
 	else
@@ -165,42 +165,42 @@
 						(bouncingBall show:)
 					)
 					((== temp0 159)
-						(localproc_1)
+						(SlideViewLeft)
 					)
 					((== temp0 175)
-						(localproc_0)
+						(SlideViewRight)
 					)
 					((== temp0 211)
-						(localproc_1)
+						(SlideViewLeft)
 					)
 					((== temp0 227)
 						(vignette view: 151)
-						(localproc_0)
+						(SlideViewRight)
 					)
 					((== temp0 243)
 						(vignette1 view: 151)
-						(localproc_1)
+						(SlideViewLeft)
 					)
 					((== temp0 275)
 						(UnLoad 128 150)
-						(localproc_0)
+						(SlideViewRight)
 					)
 					((== temp0 311)
-						(localproc_1)
+						(SlideViewLeft)
 					)
 					((== temp0 327)
 						(vignette view: 152)
-						(localproc_0)
+						(SlideViewRight)
 					)
 					((== temp0 343)
 						(vignette1 view: 152)
-						(localproc_1)
+						(SlideViewLeft)
 					)
 					((== temp0 359)
-						(localproc_0)
+						(SlideViewRight)
 					)
 					((== temp0 375)
-						(localproc_1)
+						(SlideViewLeft)
 					)
 				)
 			)
@@ -262,26 +262,26 @@
 				(< (gGameMusic1 prevSignal:) 412)
 				(> gHowFast local9)
 			)
-			(= local3
+			(= xDiff
 				(-
-					(= local2
+					(= destX
 						(switch (gGame printLang:)
-							(49 [local308 local0])
-							(else [local38 local0])
+							(49 [local308 i])
+							(else [local38 i])
 						)
 					)
-					local1
+					curX
 				)
 			)
-			(= [local13 2] (+ local1 (/ local3 10)))
-			(= [local13 6] (+ local1 (/ (* local3 3) 10)))
-			(= [local13 10] (+ local1 (/ local3 2)))
-			(= [local13 14] (- local2 (/ (* local3 3) 10)))
-			(= [local13 18] (- local2 (/ local3 10)))
-			(= [local13 22] local2)
+			(= [local13 2] (+ curX (/ xDiff 10)))
+			(= [local13 6] (+ curX (/ (* xDiff 3) 10)))
+			(= [local13 10] (+ curX (/ xDiff 2)))
+			(= [local13 14] (- destX (/ (* xDiff 3) 10)))
+			(= [local13 18] (- destX (/ xDiff 10)))
+			(= [local13 22] destX)
 			(bouncingBall setCycle: MCyc @local13)
-			(++ local0)
-			(= local1 local2)
+			(++ i)
+			(= curX destX)
 		)
 	)
 )
@@ -306,35 +306,35 @@
 					)
 					(0
 						(gGameMusic1 pause: 0)
-						(= local5 0)
-						(= local6 0)
+						(= choice 0)
+						(= choice2 0)
 					)
 					(1
 						(gGame restore:)
-						(= local5 1)
-						(= local6 0)
+						(= choice 1)
+						(= choice2 0)
 					)
 					(2
-						(= local5 0)
-						(= local6 0)
+						(= choice 0)
+						(= choice2 0)
 						(= gQuit 1)
 					)
 					(3
-						(= local5 0)
+						(= choice 0)
 						(gGameMusic1 fade:)
 						(gCast eachElementDo: #hide)
 						(Animate (gCast elements:) 0)
 						(gCurRoom newRoom: 26) ; actBreak
 					)
 					(4
-						(= local5 1)
-						(= local6 1)
+						(= choice 1)
+						(= choice2 1)
 					)
 				)
 				(= cycles 1)
 			)
 			(1
-				(if local6
+				(if choice2
 					(switch
 						(Print
 							window: SysWindow
@@ -350,8 +350,8 @@
 							init:
 						)
 						(0
-							(= local5 1)
-							(= local6 0)
+							(= choice 1)
+							(= choice2 0)
 							(= cycles 1)
 						)
 						(1
@@ -378,14 +378,14 @@
 				)
 			)
 			(2
-				(if local6
+				(if choice2
 					(self changeState: 1)
 				else
 					(= cycles 1)
 				)
 			)
 			(3
-				(if local5
+				(if choice
 					(self changeState: 0)
 				else
 					(= cycles 1)

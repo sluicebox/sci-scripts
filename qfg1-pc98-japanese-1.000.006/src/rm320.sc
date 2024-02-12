@@ -3,7 +3,7 @@
 (script# 320)
 (include sci.sh)
 (use Main)
-(use Door_J__)
+(use Door)
 (use FileSelector)
 (use LoadMany)
 (use RFeature)
@@ -89,7 +89,7 @@
 			(Load rsVIEW 325)
 			(centaur init:)
 		)
-		((= local0 (Door_J__ new:))
+		((= local0 (Door new:))
 			view: 320
 			loop: 0
 			cel: 0
@@ -101,7 +101,7 @@
 			init:
 			setPri: 8
 		)
-		((= local1 (Door_J__ new:))
+		((= local1 (Door new:))
 			view: 320
 			loop: 1
 			cel: 0

@@ -1038,7 +1038,7 @@
 					70
 					26
 					80
-					{Land of 1000 Dances%j1000\b7\ae\b8 \c0\de\dd\bd\c9 \b8\c6}
+					{Land of 1000 Dances}
 					82
 					71
 					2

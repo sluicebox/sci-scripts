@@ -270,7 +270,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(Display 815 3 dsFONT 3 dsCOORD 26 29 dsWIDTH 166 dsALIGN alCENTER dsCOLOR global135) ; "Okay, here's the dumb copy protection. In your documentation find the X/Y coordinates (letters) for each of the two displayed symbols. Enter the four letters by clicking either the appropriate buttons or typing the correct keys, and finish by pressing either 'DONE' or the 'ENTER' key.#j\9b\87\e3\a4\9a\fa\96\de\97\8e\93\ec\e9 \ba\cb\df\b0\cc\df\db\c3\b8\c4\e0\de\f6\ff\a0 2\e2\e9\bc\dd\ce\de\d9\e9\a0X/Y\9b\de\eb\8e\93 (\b1\d9\cc\a7\cd\de\af\c4\f3\9c\de) \86 \97\f0\e9 \cf\c6\ad\b1\d9\96\f7\f0\e2\99\f9\fd\e0\de\a1 \e0\e0\de\9c\92\ce\de\c0\dd\96\a0\b7\b0\86\a0\e6\8d\93\f8\8e\98\9c\e3\a4\a0 \a2DONE\a3\86\95\9d\96\a4\a0 \a2ENTER\a3\b7\b0\86\a0\95\9c\e3\98\fa\ff"
+				(Display 815 3 dsFONT 3 dsCOORD 26 29 dsWIDTH 166 dsALIGN alCENTER dsCOLOR global135) ; "Okay, here's the dumb copy protection. In your documentation find the X/Y coordinates (letters) for each of the two displayed symbols. Enter the four letters by clicking either the appropriate buttons or typing the correct keys, and finish by pressing either 'DONE' or the 'ENTER' key."
 				(= cycles 1)
 			)
 			(1

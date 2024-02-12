@@ -1094,7 +1094,7 @@
 			(1
 				(switch gCombatResult
 					(1
-						(EgoDead 45 500)
+						(EgoDead 45 500) ; "The Rusalka's unfaithful lover got you!"
 					)
 					(2
 						(SetFlag 228)

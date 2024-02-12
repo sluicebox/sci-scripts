@@ -500,7 +500,7 @@
 					(aRusalka hide: dispose:)
 					(gEgo setLoop: 1 1 setCel: 0 show: setCycle: End self)
 				else
-					(EgoDead 6 520)
+					(EgoDead 6 520) ; "You quickly discover that you really don't know how to breathe water."
 				)
 			)
 			(7

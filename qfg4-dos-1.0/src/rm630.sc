@@ -409,7 +409,7 @@
 				(gMessager say: 16 6 2 0 self) ; "Now that you think back on it, none of the castle doors seems to have been used much recently."
 			)
 			(9
-				(EgoDead 2 630 970 1)
+				(EgoDead 2 630 970 1) ; "That really burns you up! Just as you were looking in on your old flame, you got fired."
 			)
 		)
 	)
@@ -455,7 +455,7 @@
 				(gMessager say: 16 6 3 0 self) ; "You seem to have startled a couple of the castle's residents. One of them is your old nemesis Ad Avis!"
 			)
 			(6
-				(EgoDead 3 630 970 1)
+				(EgoDead 3 630 970 1) ; "You've been tried and fried on charges of failing to have looked before you leapt."
 			)
 		)
 	)

@@ -244,7 +244,7 @@
 							41
 							16
 							80
-							{Getting into the castle the hard way.%j\d1\c2\b6\bc\b2 \d4\d8\b6\c0\c3\de \b5\bc\db\c6 \ca\b2\d9\dd\c0\de\c8}
+							{Getting into the castle the hard way.}
 							82
 							39
 							3

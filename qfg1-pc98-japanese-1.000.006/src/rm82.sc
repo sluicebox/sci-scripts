@@ -7,7 +7,7 @@
 (use n105)
 (use n106)
 (use Interface)
-(use Door_J__)
+(use Door)
 (use LoadMany)
 (use Sound)
 (use Jump)
@@ -158,7 +158,7 @@
 	)
 )
 
-(instance hermitDoor of Door_J__
+(instance hermitDoor of Door
 	(properties
 		y 49
 		x 53
@@ -952,7 +952,7 @@
 						0
 						0
 						80
-						{...and thin...%j...\bf\bc\c3 \b3\bd\cd\de\af\c0\b2}
+						{...and thin...}
 					)
 				)
 			)
@@ -1020,7 +1020,7 @@
 					82
 					41
 					80
-					{You're all wet%j\b7\d0\ca \cb\de\bc\ae\cb\de\bc\ae}
+					{You're all wet}
 					82
 					537
 					0
@@ -1291,7 +1291,7 @@
 						2
 						5
 						80
-						{Your figure remains still and silent.%j\b7\d0\c9\b6\d7\c0\de\dc \bc\bd\de\b6\c6 \bc\de\af\c4 \c4\cf\af\c3\b2\d9}
+						{Your figure remains still and silent.}
 					)
 				else
 					(gEgo
@@ -1402,7 +1402,7 @@
 						82
 						52
 						80
-						{the Hermit mutters...%j\ca\b0\d0\af\c4\ca \cc\de\c2\cc\de\c2\c4 \b8\c1\ba\de\d3\af\c0}
+						{the Hermit mutters...}
 					)
 					(= cycles 1)
 				)

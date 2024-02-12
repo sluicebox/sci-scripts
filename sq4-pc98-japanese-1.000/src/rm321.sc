@@ -57,7 +57,7 @@
 				(self
 					save1:
 						(proc0_12
-							{You hope these women soon realize that they MUST have the wrong guy.#j\96\e9\9c\de\8e\e0\e1\96\de\a0 \f1\9c\de\e2\e9\9c\de\ec\de\fd\86\a0\ef\e1\96\de\8f\e3\e4\f7\94\e0\e6\a0\e1\96\de\92\e5\92\a4\a0 \n\96\e5\f7\9d\de\a0 \97\96\de\e2\92\e3\98\fa\f9\e4\a0\97\f0\ea\95\f3\8f\e3\f9\fd\e0\de\a1}
+							{You hope these women soon realize that they MUST have the wrong guy.}
 							67
 							2
 							2
@@ -84,7 +84,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"This is Zondra. We are approaching checkpoint six. Prepare to open the tunnel door."#j\9a\e1\f7\ea\a4\bf\de\dd\c4\de\d7\a1\a0 \c1\aa\af\b8\ce\df\b2\dd\c46\e6\9e\8f\97\fd\e1\8d\93\a1\a0 \c4\dd\c8\d9\e9\c4\de\b1\86\a0\91\99\f9\9c\de\8d\fd\eb\de\86\9c\e3\98\e0\de\9b\92\a1}
+							{"This is Zondra. We are approaching checkpoint six. Prepare to open the tunnel door."}
 							67
 							2
 							2
@@ -111,7 +111,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"Activate the door."#j\a2\c4\de\b1\86\a0\91\99\e3\98\e0\de\9b\92\a1\a3}
+							{"Activate the door."}
 							67
 							2
 							2

@@ -166,7 +166,7 @@
 							38
 							13
 							80
-							{OH NOOOOOOO!%j\b1\b1\af \c0\de\d2\c0\de\d6\b3...}
+							{OH NOOOOOOO!}
 							82
 							39
 							3

@@ -791,7 +791,7 @@
 				(= cycles 1)
 			)
 			(1
-				(EgoDead 1 535)
+				(EgoDead 1 535) ; "Got to HAND it to you, you walked into an alARMing situation. Bet you WRIST you hadn't done that."
 				(self dispose:)
 			)
 		)

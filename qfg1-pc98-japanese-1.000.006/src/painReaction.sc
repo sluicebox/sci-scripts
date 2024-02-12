@@ -50,7 +50,7 @@
 						155
 						0
 						80
-						{What a monster!%j\cf\af\c0\b8 \c5\dd\c4\b2\b3 \d3\dd\bd\c0\b0 \c0\de!}
+						{What a monster!}
 						82
 						516
 						0

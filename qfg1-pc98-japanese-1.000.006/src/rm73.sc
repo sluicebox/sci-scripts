@@ -100,7 +100,7 @@
 (instance brunoWin of SysWindow
 	(properties
 		color 8
-		title {Bruno:%j\cc\de\d9\b0\c9}
+		title {Bruno:}
 	)
 
 	(method (open &tmp temp0)
@@ -114,7 +114,7 @@
 (instance brutusWin of SysWindow
 	(properties
 		color 1
-		title {Brutus:%j\cc\de\d9\b0\c0\bd}
+		title {Brutus:}
 	)
 
 	(method (open &tmp temp0)
@@ -761,7 +761,7 @@
 					2
 					5
 					80
-					{Keep your mouth shut.%j\c0\de\cf\af\c3\b2\db\d6}
+					{Keep your mouth shut.}
 				)
 			)
 		)
@@ -969,7 +969,7 @@
 					2
 					5
 					80
-					{Daggered to death.%j\c0\dd\b9\dd\c3\de \bb\bc\ba\db\bb\da\c0}
+					{Daggered to death.}
 				)
 			)
 		)

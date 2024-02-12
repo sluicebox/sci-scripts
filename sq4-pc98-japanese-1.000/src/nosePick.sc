@@ -90,7 +90,7 @@
 					)
 					(= local2
 						(proc0_12
-							{"So why am I standing around?"#j\a2\e4\de\93\9c\e3\a4\9a\9a\e6\9d\de\8f\e4\e0\8f\e3\f9\fd\e0\de\92\fe\a3}
+							{"So why am I standing around?"}
 							67
 							100
 							(- (gEgo y:) temp1)

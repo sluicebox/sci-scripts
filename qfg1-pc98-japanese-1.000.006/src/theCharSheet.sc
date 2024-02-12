@@ -98,27 +98,27 @@
 		(if (== gHeroType 1) ; Magic User
 			(DrawCel 802 1 0 40 52 -1)
 		)
-		(localproc_1 10 8 204 1) ; "Name :%j\c5\cf\b4 :"
-		(localproc_1 83 35 204 2) ; "Strength%j\bd\c4\da\dd\b8\de\bd"
-		(localproc_1 83 47 204 3) ; "Intelligence%j\b2\dd\c3\d8\bc\de\aa\dd\bd"
-		(localproc_1 83 59 204 4) ; "Agility%j\b1\bc\de\d8\c3\a8"
-		(localproc_1 83 71 204 5) ; "Vitality%j\ca\de\b2\c0\d8\c3\a8"
-		(localproc_1 83 83 204 6) ; "Luck%j\d7\af\b8"
+		(localproc_1 10 8 204 1) ; "Name :"
+		(localproc_1 83 35 204 2) ; "Strength"
+		(localproc_1 83 47 204 3) ; "Intelligence"
+		(localproc_1 83 59 204 4) ; "Agility"
+		(localproc_1 83 71 204 5) ; "Vitality"
+		(localproc_1 83 83 204 6) ; "Luck"
 		(if showBars
-			(localproc_1 10 112 204 7) ; "Puzzle Points%j\ca\df\bd\de\d9 \ce\df\b2\dd\c4"
-			(localproc_1 10 124 204 8) ; "Experience%j\b9\b2\b9\dd\c1"
+			(localproc_1 10 112 204 7) ; "Puzzle Points"
+			(localproc_1 10 124 204 8) ; "Experience"
 		)
-		(localproc_1 10 148 204 9) ; "Health Points%j\cd\d9\bd \ce\df\b2\dd\c4"
-		(localproc_1 10 160 204 10) ; "Stamina Points%j\bd\c0\d0\c5 \ce\df\b2\dd\c4"
-		(localproc_1 10 172 204 11) ; "Magic Points%j\cf\bc\de\af\b8 \ce\df\b2\dd\c4"
-		(localproc_1 207 28 204 12) ; "Weapon Use%j\b3\aa\ce\df\dd \d5\b0\bd"
-		(localproc_1 207 40 204 13) ; "Parry%j\ca\df\d8\b0"
-		(localproc_1 207 52 204 14) ; "Dodge%j\c4\de\af\bc\de"
-		(localproc_1 207 64 204 15) ; "Stealth%j\bd\c3\d9\bd"
-		(localproc_1 207 76 204 16) ; "Pick Locks%j\cb\df\af\b8 \db\af\b8"
-		(localproc_1 207 88 204 17) ; "Throwing%j\bd\db\b0\b2\dd\b8\de"
-		(localproc_1 207 100 204 18) ; "Climbing%j\b8\d7\b2\d0\dd\b8\de"
-		(localproc_1 207 112 204 19) ; "Magic%j\cf\bc\de\af\b8"
+		(localproc_1 10 148 204 9) ; "Health Points"
+		(localproc_1 10 160 204 10) ; "Stamina Points"
+		(localproc_1 10 172 204 11) ; "Magic Points"
+		(localproc_1 207 28 204 12) ; "Weapon Use"
+		(localproc_1 207 40 204 13) ; "Parry"
+		(localproc_1 207 52 204 14) ; "Dodge"
+		(localproc_1 207 64 204 15) ; "Stealth"
+		(localproc_1 207 76 204 16) ; "Pick Locks"
+		(localproc_1 207 88 204 17) ; "Throwing"
+		(localproc_1 207 100 204 18) ; "Climbing"
+		(localproc_1 207 112 204 19) ; "Magic"
 		(self update:)
 	)
 

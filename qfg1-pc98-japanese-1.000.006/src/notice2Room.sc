@@ -193,7 +193,7 @@
 		(RedrawCast)
 		(SaveSubLang)
 		(Display
-			{Introduction%j\b2\dd\c4\db\c0\de\b8\bc\ae\dd}
+			{Introduction}
 			dsCOORD
 			213
 			76
@@ -205,7 +205,7 @@
 			6
 		)
 		(Display
-			{Start New Hero%j\bd\c0\b0\c4 \c6\ad\b0\cb\b0\db\b0}
+			{Start New Hero}
 			dsCOORD
 			205
 			105
@@ -217,7 +217,7 @@
 			6
 		)
 		(Display
-			{Continue Quest%j \b8\b4\bd\c4\c9\c2\c2\de\b7}
+			{Continue Quest}
 			dsCOORD
 			206
 			139
@@ -229,7 +229,7 @@
 			6
 		)
 		(Display
-			{Introduction%j\b2\dd\c4\db\c0\de\b8\bc\ae\dd}
+			{Introduction}
 			dsCOORD
 			212
 			76
@@ -241,7 +241,7 @@
 			0
 		)
 		(Display
-			{Start New Hero%j\bd\c0\b0\c4 \c6\ad\b0\cb\b0\db\b0}
+			{Start New Hero}
 			dsCOORD
 			204
 			105
@@ -253,7 +253,7 @@
 			0
 		)
 		(Display
-			{Continue Quest%j \b8\b4\bd\c4\c9\c2\c2\de\b7}
+			{Continue Quest}
 			dsCOORD
 			205
 			139

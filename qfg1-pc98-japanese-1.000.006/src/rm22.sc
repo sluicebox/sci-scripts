@@ -449,7 +449,7 @@
 						(if (not (hut script:))
 							(hut setScript: walkEm)
 						else
-							(Print 22 7 #title {HUT%j\ba\d4} #at -1 20) ; "I'm moving as fast as I can!"
+							(Print 22 7 #title {HUT} #at -1 20) ; "I'm moving as fast as I can!"
 						)
 					)
 					(else
@@ -1075,7 +1075,7 @@
 						22
 						69
 						80
-						{ Bad strategy! %j\d6\b8\c5\b2\c0\b2\bb\b8\c0\de!}
+						{ Bad strategy! }
 						82
 						516
 						3

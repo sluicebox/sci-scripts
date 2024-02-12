@@ -773,10 +773,10 @@
 					0
 					2
 					81
-					{Quit for now#j\ca\df\bd\de\d9 \a6 \d4\d2\d9}
+					{Quit for now}
 					1
 					81
-					{Keep solving#j\d4\af\ca\df\d8 \c2\c2\de\b9\d9}
+					{Keep solving}
 					0
 					82
 					brainSaysBye
@@ -1700,7 +1700,7 @@
 		)
 		(Graph grUPDATE_BOX temp2 temp3 (+ temp5 1) (+ temp4 1) 1)
 		(proc5_18)
-		(Format @temp14 0 9 gScore gScore) ; "Your Score: %d#j\bd\ba\b1: %d"
+		(Format @temp14 0 9 gScore gScore) ; "Your Score: %d"
 		(TextSize @temp39 @temp14 999 0)
 		(Display
 			@temp14
@@ -1947,7 +1947,7 @@
 					{Cancel}
 					0
 					#button
-					{Japanese Messages#jEnglish Messages}
+					{Japanese Messages}
 					2
 					#mode
 					1

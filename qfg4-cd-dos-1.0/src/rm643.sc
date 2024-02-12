@@ -402,7 +402,7 @@
 			)
 			(4
 				(if (<= [gEgoStats 17] 0) ; health
-					(EgoDead 16 640)
+					(EgoDead 16 640) ; "You opened the case; the trap shut your eyes. It's hard to make a living when you're dying."
 				else
 					(= local4 1)
 					(gEgo get: 0 15) ; thePurse

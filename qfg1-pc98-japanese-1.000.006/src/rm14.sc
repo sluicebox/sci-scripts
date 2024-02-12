@@ -723,7 +723,7 @@
 					14
 					41
 					80
-					{OH NOOOOOOO!%j\b5\b0 \c9\b0\b0\b0!}
+					{OH NOOOOOOO!}
 					82
 					800
 					0
@@ -767,7 +767,7 @@
 					14
 					42
 					80
-					{OH NOOOOOOO!%j\b5\b0 \c9\b0\b0\b0!}
+					{OH NOOOOOOO!}
 					82
 					800
 					0

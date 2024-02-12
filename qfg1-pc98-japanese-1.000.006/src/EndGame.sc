@@ -74,7 +74,7 @@
 	(properties)
 
 	(method (doit param1)
-		(Format param1 600 0 gScore gScore) ; "So You've Become A Hero!  [score %d of 500]%%j    \c2\b2\c6\a4 \b7\d0\ca \cb\b0\db\b0\c6 \c5\af\c0\d6!   [\bd\ba\b1 %d/500]"
+		(Format param1 600 0 gScore gScore) ; "So You've Become A Hero!  [score %d of 500]%"
 	)
 )
 

@@ -28,7 +28,7 @@
 	local7
 	local8
 	[local9 2] = [{Mighty careless of you to walk right in front of that knife!  Or did the Chief Thief hit you on purpose?  Or did you just discover an obscure bug in the program???  Maybe you'll never really know.} {You can't believe the Chief Thief's reflexes as he instantly reacts to your intention to pull a fast one.  A dagger flies like lightning and....}]
-	[local11 2] = [{Trouble with sharp, pointy objects%j\bd\d9\c4\de\b2 \d3\c9\ca \b5\bf\db\bc\b2\c8} {These guys are MEAN!%j\d4\c2\d7\ca \b2\bc\de\dc\d9\c0\de\b0!}]
+	[local11 2] = [{Trouble with sharp, pointy objects} {These guys are MEAN!}]
 	[local13 7] = [250 40 75 30 25 100 35]
 )
 

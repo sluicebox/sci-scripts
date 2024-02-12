@@ -982,7 +982,7 @@
 			)
 			(5
 				5
-				(EgoDead 1 710 6)
+				(EgoDead 1 710 6) ; "The tentacle is faster than the eye. It's strong, too, as you are unceremoniously yanked to the Horror and then apart."
 			)
 			(6
 				6

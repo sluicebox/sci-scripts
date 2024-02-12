@@ -24,7 +24,7 @@
 (instance baronWin of SysWindow
 	(properties
 		color 1
-		title {Baron von Spielburg says:%j\cc\ab\dd \bd\cb\df\d9\ca\de\b0\b8\de \c0\de\dd\bc\ac\b8\b6\de \b2\b3:}
+		title {Baron von Spielburg says:}
 	)
 
 	(method (open &tmp temp0)
@@ -38,7 +38,7 @@
 (instance sonWin of SysWindow
 	(properties
 		color 8
-		title {The Baronet says:%j\bc\de\ad\dd\c0\de\dd\bc\ac\b8\b6\de \b2\b3}
+		title {The Baronet says:}
 	)
 
 	(method (open &tmp temp0)

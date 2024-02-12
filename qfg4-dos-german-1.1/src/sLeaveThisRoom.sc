@@ -108,7 +108,7 @@
 				)
 			)
 			(1
-				(EgoDead 5 740)
+				(EgoDead 5 740) ; "Apparently that was a little TOO risky for you. Remember hearing that "practice makes perfect?""
 			)
 		)
 	)

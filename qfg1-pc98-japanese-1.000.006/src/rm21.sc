@@ -591,7 +591,7 @@
 					21
 					33
 					80
-					{ Now you're really in the soup!%j\b7\d0\dc \ce\dd\c4\b3\c6 \bd\b0\cc\df\c9\c5\b6\c6 \b2\d9\dd\c0\de\be\de}
+					{ Now you're really in the soup!}
 					82
 					myIcon
 					0
@@ -628,7 +628,7 @@
 					21
 					36
 					80
-					{ Shame on you!%j\ca\bc\de\a6\bc\da!}
+					{ Shame on you!}
 					82
 					myIcon
 					0
@@ -665,7 +665,7 @@
 					21
 					39
 					80
-					{ Of all the lazy....!%j\c5\dd\c3 \c5\cf\b9\d3\c9!...}
+					{ Of all the lazy....!}
 					82
 					myIcon
 					0
@@ -700,7 +700,7 @@
 					21
 					42
 					80
-					{Breakfast of Champions?%j\c1\ac\dd\cb\df\b5\dd\c9 \c1\ae\b3\bc\ae\b8?}
+					{Breakfast of Champions?}
 					82
 					myIcon
 					0
@@ -794,7 +794,7 @@
 					21
 					47
 					80
-					{Baba Yaga says you have good taste.%j\ca\de\ca\de\d4\b6\de\b6\de \b7\d0\dc \c5\b6\c5\b6 \b2\b9\d9\c4 \b2\af\c3\b2\d9\d6}
+					{Baba Yaga says you have good taste.}
 					82
 					myIcon
 					0

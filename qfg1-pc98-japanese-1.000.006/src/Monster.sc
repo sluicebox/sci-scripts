@@ -4,10 +4,10 @@
 (include sci.sh)
 (use Main)
 (use StatusBar)
-(use Skilled_J_X_L_________________________B)
+(use Skilled)
 (use FileSelector)
 
-(class Monster of Skilled_J_X_L_________________________B
+(class Monster of Skilled
 	(properties
 		attackRange 50
 		ateEgo 0
@@ -37,7 +37,7 @@
 		(= stamina (self calcStamina:))
 		(= mana (self calcMana:))
 		(= monsterTitle
-			(Display ; "Enemy Status%j\c3\b7 \c9 \bd\c3\b0\c0\bd"
+			(Display ; "Enemy Status"
 				214
 				1
 				dsWIDTH

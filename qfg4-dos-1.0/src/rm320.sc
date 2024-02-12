@@ -1090,7 +1090,7 @@
 						(gMessager say: 22 6 25 0 self) ; "A voice from behind the door says, "Oops, sorry! Seems I forgot about my burglar alarm. Hope it wasn't too shocking for you.""
 					)
 				else
-					(EgoDead 18 320 961 1 912)
+					(EgoDead 18 320 961 1 912) ; "That one zapped you clean out of the inn... and this life."
 				)
 			)
 			(4

@@ -613,7 +613,7 @@
 				(= cycles 1)
 			)
 			(13
-				(= local6 (Display 480 22 dsALIGN alCENTER dsCOORD 80 80 dsFONT 200 dsCOLOR 0 dsSAVEPIXELS)) ; "I ' L L  B E  B A C K !#j\cf\c0 \b1\c4\c3\de \d3\c4\de\af\c3\b8\d9 \d6!"
+				(= local6 (Display 480 22 dsALIGN alCENTER dsCOORD 80 80 dsFONT 200 dsCOLOR 0 dsSAVEPIXELS)) ; "I ' L L  B E  B A C K !"
 				(= ticks 60)
 			)
 			(14

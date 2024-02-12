@@ -331,7 +331,7 @@
 
 	(method (cue)
 		(if local5
-			(EgoDead 73 480 970 1)
+			(EgoDead 73 480 970 1) ; "You see the light! Your whole life goes past your eyes in a flash... Or maybe those were just the skulls' laser eyes flash-frying you."
 		else
 			(theLaser setLoop: 7 1 setCel: 0 setCycle: End theLaser)
 		)
@@ -718,7 +718,7 @@
 				)
 			)
 			(2
-				(EgoDead 73 480 970 1)
+				(EgoDead 73 480 970 1) ; "You see the light! Your whole life goes past your eyes in a flash... Or maybe those were just the skulls' laser eyes flash-frying you."
 			)
 		)
 	)

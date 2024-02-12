@@ -146,7 +146,7 @@
 							97
 							1
 							80
-							{Z-Z-Z-Z-Z-Z-Z-Z-Z-Z%j\b8\de\b3\b8\de\b3... \b8\de\b3\b8\de\b3...}
+							{Z-Z-Z-Z-Z-Z-Z-Z-Z-Z}
 							82
 							800
 							0
@@ -611,11 +611,11 @@
 				(= cycles 10)
 			)
 			(1
-				(localproc_0 {Elsa%j\b4\d9\bb} 97 32)
-				(localproc_0 {Elsa%j\b4\d9\bb} 97 33)
-				(localproc_0 {Elsa%j\b4\d9\bb} 97 34)
-				(localproc_0 {Elsa%j\b4\d9\bb} 97 35)
-				(localproc_0 {Elsa%j} 97 36)
+				(localproc_0 {Elsa} 97 32)
+				(localproc_0 {Elsa} 97 33)
+				(localproc_0 {Elsa} 97 34)
+				(localproc_0 {Elsa} 97 35)
+				(localproc_0 {Elsa} 97 36)
 				(= cycles 1)
 			)
 			(2
@@ -629,21 +629,21 @@
 				(= local4 1)
 			)
 			(3
-				(localproc_0 {Yorick%j\d6\b0\d8\af\b8} 97 37)
-				(localproc_0 {Yorick%j\d6\b0\d8\af\b8} 97 38)
-				(localproc_0 {Yorick%j\d6\b0\d8\af\b8} 97 39)
+				(localproc_0 {Yorick} 97 37)
+				(localproc_0 {Yorick} 97 38)
+				(localproc_0 {Yorick} 97 39)
 				(= cycles 2)
 			)
 			(4
-				(localproc_0 {Elsa%j\b4\d9\bb} 97 40)
-				(localproc_0 {Elsa%j\b4\d9\bb} 97 41)
-				(localproc_0 {Elsa%j\b4\d9\bb} 97 42)
-				(localproc_0 {Elsa%j\b4\d9\bb} 97 43)
+				(localproc_0 {Elsa} 97 40)
+				(localproc_0 {Elsa} 97 41)
+				(localproc_0 {Elsa} 97 42)
+				(localproc_0 {Elsa} 97 43)
 				(= cycles 2)
 			)
 			(5
 				(tromp number: (SoundFX 66) init: loop: 4 play:)
-				(localproc_0 {Yorick%j\d6\b0\d8\af\b8} 97 44)
+				(localproc_0 {Yorick} 97 44)
 				(= cycles 2)
 			)
 			(6
@@ -698,7 +698,7 @@
 					0
 					9
 					80
-					{Wearing out your welcome.%j\c5\b6\de\b2 \bc\bd\b7\de\c0\c8}
+					{Wearing out your welcome.}
 				)
 			)
 		)
@@ -740,7 +740,7 @@
 				(= cycles 32)
 			)
 			(5
-				(localproc_0 {Yorick%j\d6\b0\d8\af\b8} 97 47)
+				(localproc_0 {Yorick} 97 47)
 				(= cycles 1)
 			)
 			(6
@@ -752,7 +752,7 @@
 					0
 					7
 					80
-					{One thrust...and that's it???%j\c0\af\c0 \cb\c4\c2\b7\c3\de \ba\db\bb\da\c3 \bc\cf\af\c0\c9\b6\b2??}
+					{One thrust...and that's it???}
 				)
 			)
 		)

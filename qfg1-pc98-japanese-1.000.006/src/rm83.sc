@@ -50,7 +50,7 @@
 (instance hermitWin of SysWindow
 	(properties
 		color 8
-		title {Hermit:%j\ca\b0\d0\af\c4}
+		title {Hermit:}
 	)
 
 	(method (open &tmp temp0)

@@ -588,7 +588,7 @@
 			((== theVerb 2)
 				(= temp0 0)
 				(if (gEgo has: 19)
-					(= temp1 { #j })
+					(= temp1 { })
 				else
 					(++ temp0)
 					(= temp1
@@ -596,7 +596,7 @@
 					)
 				)
 				(if (gEgo has: 18)
-					(= temp2 { #j })
+					(= temp2 { })
 				else
 					(++ temp0)
 					(= temp2
@@ -604,7 +604,7 @@
 					)
 				)
 				(if (gEgo has: 21)
-					(= temp3 { #j })
+					(= temp3 { })
 				else
 					(++ temp0)
 					(= temp3

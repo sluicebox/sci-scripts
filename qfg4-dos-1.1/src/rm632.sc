@@ -274,7 +274,7 @@
 				(gEgo setCycle: End self)
 			)
 			(2
-				(EgoDead 29 620)
+				(EgoDead 29 620) ; "The badders just swooped down and did you in. Even weak monsters can be dangerous if there are enough of them."
 			)
 		)
 	)

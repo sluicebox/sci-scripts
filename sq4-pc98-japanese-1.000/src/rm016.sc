@@ -71,7 +71,7 @@
 		(rHand init:)
 		(= local0
 			(proc0_12
-				{We join Roger as he relates one of his (greatly exaggerated) tales of adventure. #j\db\bc\de\ac\b0\96\de\a4\ee\de\93\99\fd\e0\de\fd\a0 (\96\e5\f8\95\95\99\de\9b\e6\a0 \n\eb\8e\93\99\de\fd\9c\e3\92\f9\96\de\a5\a5\a5\a5)\a0 \86\96\e0\8f\e3\92\f9\e4\9a\fb\e0\de\a1}
+				{We join Roger as he relates one of his (greatly exaggerated) tales of adventure. }
 				67
 				1
 				5
@@ -89,7 +89,7 @@
 		)
 		(= local1
 			(proc0_12
-				{The aliens are only too happy to listen\n(as long as Roger is buying).#j\b4\b2\d8\b1\dd\e0\e1\ea\a4(\96\fa\96\de\a0 \9b\99\86\95\9a\de\8f\e3\92\f9\96\97\de\f8\ea\a5\a5\a5)\a0 \n\f6\fb\9a\fd\e3\de\a0 \ea\e5\9c\86\97\92\e3\92\f9\a1}
+				{The aliens are only too happy to listen\n(as long as Roger is buying).}
 				67
 				1
 				160
@@ -279,7 +279,7 @@
 				(lAnt setCel: 2)
 				(= local0
 					(proc0_12
-						{"Are you Roger Wilco?"#j\a2\db\bc\de\ac\b0\a5\b3\a8\d9\ba\96\fe\a3}
+						{"Are you Roger Wilco?"}
 						67
 						95
 						15
@@ -308,7 +308,7 @@
 				(rogMouth setCel: 0 setCycle: RandCycle 8)
 				(= local0
 					(proc0_12
-						{"Uh, yeah."#j\a2\9f\93\e0\de\96\de\a5\a5\a5\a1\a3}
+						{"Uh, yeah."}
 						67
 						45
 						15
@@ -334,7 +334,7 @@
 				(spHead init: setCycle: RandCycle)
 				(= local0
 					(proc0_12
-						{"Please come with me."#j\a2\92\8f\9c\8e\e6\a0\97\e3\f3\f7\95\93\a1\a3}
+						{"Please come with me."}
 						67
 						90
 						15

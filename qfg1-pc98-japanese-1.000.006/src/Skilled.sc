@@ -5,9 +5,8 @@
 (use Main)
 (use Actor)
 
-(class Skilled_J_X_L_________________________B of Act
+(class Skilled of Act
 	(properties
-		name {Skilled}
 		strength 0
 		intell 0
 		agil 0

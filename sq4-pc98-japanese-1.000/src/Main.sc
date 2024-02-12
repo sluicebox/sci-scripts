@@ -908,10 +908,10 @@
 					0
 					7
 					#button
-					{Do something of redeeming\nsocial value (Quit)#j\9d\9a\9c\ea\a4\eb\e4\e9\e0\f2\e6\a0 \n\e5\f9\9a\e4\86\9c\fb\f6\ff(\f4\f2\f9)}
+					{Do something of redeeming\nsocial value (Quit)}
 					1
 					#button
-					{Changed My Mind.\nLet's Play!#j\97\96\de\96\fc\8f\e0\ff\a0 \n\cc\df\da\b2\9c\f6\93\ff}
+					{Changed My Mind.\nLet's Play!}
 					0
 					#icon
 					babbleIcon
@@ -928,10 +928,10 @@
 				0
 				8
 				#button
-				{Of course I'm sure!\nWhy else would I have chosen it?#j\f3\e1\fb\fd\a0 \ee\fd\e4\93\9b\ff\n\e3\de\e5\99\fa\ea\de\a4\94\f7\ec\de\fc\99\e5\92\e0\de\fb\ff\fe}
+				{Of course I'm sure!\nWhy else would I have chosen it?}
 				1
 				#button
-				{Changed My Mind.\nLet's Play!#j\97\96\de\96\fc\8f\e0\ff\a0 \n\f4\8f\ea\df\f8\a4\f4\f2\f9\f6\a1}
+				{Changed My Mind.\nLet's Play!}
 				0
 				#icon
 				babbleIcon

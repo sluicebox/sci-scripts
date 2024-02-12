@@ -19,7 +19,7 @@
 	numGames
 	selected
 	theStatus
-	[okIText 4] = [{ Restore } {   Save   } {Replace#jOver Write} {Replace#jOver Write}]
+	[okIText 4] = [{ Restore } {   Save   } {Replace} {Replace}]
 	[textIText 4] = [{Select the game that you would like to restore.} {Type the description of this saved game.} {This directory/disk can hold no more saved games. You must replace one of your saved games or use Change Directory to save on a different directory/disk.} {This directory/disk can hold no more saved games. You must replace one of your saved games or use Change Directory to save on a different directory/disk.}]
 )
 
@@ -309,13 +309,13 @@
 
 (class Restore of SRDialog
 	(properties
-		text {Restore a Game#jRestore Game}
+		text {Restore a Game}
 	)
 )
 
 (class Save of SRDialog
 	(properties
-		text {Save a Game#jSave Game}
+		text {Save a Game}
 	)
 )
 
@@ -395,7 +395,7 @@
 
 (instance text1 of DText
 	(properties
-		text {Replace#jReplace Game}
+		text {Replace}
 		font 0
 	)
 )
@@ -419,7 +419,7 @@
 
 (instance button1 of DButton
 	(properties
-		text {Replace#jOver Write}
+		text {Replace}
 	)
 )
 

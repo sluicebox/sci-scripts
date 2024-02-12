@@ -541,7 +541,7 @@
 				(gEgo takeDamage: curDamage)
 			)
 			(if (<= [gEgoStats 17] 0) ; health
-				(EgoDead 25 580 43 End)
+				(EgoDead 25 580 43 End) ; "Do we have to spell it out for you? Hostile magic can be harmful to your health! Maybe you'd do better if you had a staff of assistants like the Faerie Queen... or even if you used a staff to assist you."
 			)
 			(self setMotion: 0 dispose:)
 		)
@@ -1603,7 +1603,7 @@
 				(= seconds 2)
 			)
 			(3
-				(EgoDead 25 580 43 End)
+				(EgoDead 25 580 43 End) ; "Do we have to spell it out for you? Hostile magic can be harmful to your health! Maybe you'd do better if you had a staff of assistants like the Faerie Queen... or even if you used a staff to assist you."
 			)
 		)
 	)

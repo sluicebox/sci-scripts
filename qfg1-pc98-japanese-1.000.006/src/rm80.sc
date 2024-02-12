@@ -192,7 +192,7 @@
 					2
 					5
 					80
-					{Timing is everything.%j\c0\b2\d0\dd\b8\de\b6\de \bd\cd\de\c3\a6 \b7\d2\d9\c9\bb}
+					{Timing is everything.}
 				)
 			)
 		)

@@ -388,7 +388,7 @@
 					88
 					34
 					80
-					{WHATA TROLL!%j\c5\dd\c4\b2\b3 \c4\db\d9!}
+					{WHATA TROLL!}
 					82
 					800
 					0

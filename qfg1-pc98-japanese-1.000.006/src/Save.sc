@@ -18,7 +18,7 @@
 	numGames
 	selected
 	theStatus
-	[okIText 4] = [{Restore%j\d8\bd\c4\b1} {  Save  %j \be\b0\cc\de } {Replace%j\b5\b7\b6\b4\d9} {Replace%j\b5\b7\b6\b4\d9}]
+	[okIText 4] = [{Restore} {  Save  } {Replace} {Replace}]
 	[textIText 4] = [{Select the game that you would like to restore.} {Type the description for this save game.} {This directory/disk can hold no more saved games. You must replace one of your saved games or use Change Directory to save on a different directory/disk.} {This directory/disk can hold no more saved games. You must replace one of your saved games or use Change Directory to save on a different directory/disk.}]
 )
 
@@ -38,7 +38,7 @@
 		(= saveParseLang (gGame parseLang:))
 		(gGame parseLang: 1)
 		(= result
-			(Print ; "New save-game directory:%j\c6\ad\b0 \be\b0\cc\de \b9\de\b0\d1 \c3\de\a8\da\b8\c4\d8"
+			(Print ; "New save-game directory:"
 				990
 				1
 				#font
@@ -47,10 +47,10 @@
 				(StrCpy @newDir where)
 				29
 				#button
-				{OK%j\b5\af\b9\b0}
+				{OK}
 				1
 				#button
-				{Cancel%j\b7\ac\dd\be\d9}
+				{Cancel}
 				0
 			)
 		)
@@ -65,7 +65,7 @@
 			(StrCpy where @newDir)
 			(return 1)
 		else
-			(Print (Format @str 990 2 @newDir @newDir) #font 0) ; "%s is not a valid directory%%j%s \d5\b3\ba\b3\c5 \c3\de\a8\da\b8\c4\d8 \c3\de\ca\c5\b2\c8"
+			(Print (Format @str 990 2 @newDir @newDir) #font 0) ; "%s is not a valid directory%"
 		)
 	)
 )
@@ -287,13 +287,13 @@
 
 (class Restore of SRDialog
 	(properties
-		text {Restore a Game%j\b9\de\b0\d1 \a6 \d8\bd\c4\b1\bd\d9}
+		text {Restore a Game}
 	)
 )
 
 (class Save of SRDialog
 	(properties
-		text {Save a Game%j\b9\de\b0\d1 \a6 \be\b0\cc\de\bd\d9}
+		text {Save a Game}
 	)
 )
 
@@ -349,13 +349,13 @@
 
 (instance cancelI of DButton
 	(properties
-		text { Cancel %j\b7\ac\dd\be\d9}
+		text { Cancel }
 	)
 )
 
 (instance changeDirI of DButton
 	(properties
-		text {Change\r\nDirectory%j\c3\de\a8\da\b8\c4\d8\r\n\a6 \b6\b4\d9}
+		text {Change\r\nDirectory}
 	)
 )
 
@@ -391,13 +391,13 @@
 
 (instance button1 of DButton
 	(properties
-		text {Replace%j\b5\b7\b6\b4\d9}
+		text {Replace}
 	)
 )
 
 (instance button2 of DButton
 	(properties
-		text {Cancel%j\b7\ac\dd\be\d9}
+		text {Cancel}
 	)
 )
 

@@ -3,14 +3,14 @@
 (script# 218)
 (include sci.sh)
 (use Main)
-(use Skilled_J_X_L_________________________B)
+(use Skilled)
 (use Inventory)
 
 (public
 	fighter 0
 )
 
-(class Fighter of Skilled_J_X_L_________________________B
+(class Fighter of Skilled
 	(properties
 		fighterView 501
 		endFight 0

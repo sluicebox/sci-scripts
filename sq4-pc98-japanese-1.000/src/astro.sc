@@ -340,7 +340,7 @@
 
 	(method (die)
 		(if (not (-- livesLeft))
-			(Print 290 0) ; "Game Over#jGame Over"
+			(Print 290 0) ; "Game Over"
 			(if gModelessDialog
 				(gModelessDialog dispose:)
 			)

@@ -573,7 +573,7 @@
 				)
 			)
 			(7
-				(EgoDead 33 250 978 1 912)
+				(EgoDead 33 250 978 1 912) ; "That hectapus has had the munchies ever since it got "stoned." Fortunately for it (but not for you), it occasionally gets its meals delivered right to the door."
 			)
 		)
 	)

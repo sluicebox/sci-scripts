@@ -97,7 +97,7 @@
 		(= global408 (Memory memALLOC_CRIT (StrLen ((consSet at: global171) name:))))
 		(= global409 (Memory memALLOC_CRIT (StrLen ((consSet at: global171) name:))))
 		(StrSplitInTwo global408 global409 ((consSet at: global171) name:))
-		(Format @temp4 425 5 global408 global409) ; "Please find %s.#j%s \a6 \d0\c2\b9\c3\c8"
+		(Format @temp4 425 5 global408 global409) ; "Please find %s."
 		(Memory memFREE global408)
 		(Memory memFREE global409)
 	)
@@ -123,13 +123,11 @@
 	(gFeatures addToFront: eventFeature)
 	(eventFeature init:)
 	(Starselected posn: -1 -1 init:)
-	(Perseus_j________ init:)
-	(Ursa_Major_j_______ init:)
-	(Cancer_j____ init:)
-	(Orion_j______ init:)
-	(consSet
-		add: Perseus_j________ Ursa_Major_j_______ Cancer_j____ Orion_j______
-	)
+	(Perseus init:)
+	(Ursa_Major init:)
+	(Cancer init:)
+	(Orion init:)
+	(consSet add: Perseus Ursa_Major Cancer Orion)
 	(localproc_0)
 	(localproc_2
 		0
@@ -883,9 +881,8 @@
 	(properties)
 )
 
-(instance Perseus_j________ of constellation
+(instance Perseus of constellation
 	(properties
-		name {Perseus#j\cd\df\d9\be\b3\bd\bb\de}
 		kanjiName {Perseus}
 	)
 
@@ -897,9 +894,9 @@
 	)
 )
 
-(instance Ursa_Major_j_______ of constellation
+(instance Ursa_Major of constellation
 	(properties
-		name {Ursa Major#j\b5\b5\b8\de\cf\bb\de}
+		name {Ursa Major}
 		kanjiName {Ursa Major}
 	)
 
@@ -911,9 +908,8 @@
 	)
 )
 
-(instance Cancer_j____ of constellation
+(instance Cancer of constellation
 	(properties
-		name {Cancer#j\b6\c6\bb\de}
 		kanjiName {Cancer}
 	)
 
@@ -925,9 +921,8 @@
 	)
 )
 
-(instance Orion_j______ of constellation
+(instance Orion of constellation
 	(properties
-		name {Orion#j\b5\d8\b5\dd\bb\de}
 		kanjiName {Orion}
 	)
 

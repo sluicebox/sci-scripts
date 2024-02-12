@@ -3,7 +3,7 @@
 (script# 221)
 (include sci.sh)
 (use Main)
-(use Skilled_J_X_L_________________________B)
+(use Skilled)
 (use Motion)
 (use System)
 
@@ -54,7 +54,7 @@
 	)
 )
 
-(class WeaponMaster of Skilled_J_X_L_________________________B
+(class WeaponMaster of Skilled
 	(properties
 		strength 65
 		intell 60

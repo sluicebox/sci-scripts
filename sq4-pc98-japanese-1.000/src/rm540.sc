@@ -454,7 +454,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"Dad?"#j\a2\95\e4\93\9b\fd\ff\a3}
+							{"Dad?"}
 							67
 							2
 							2
@@ -479,7 +479,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"I'm glad I got to see you, even if for only a few minutes. Xenon owes you a lot. Goodbye, Dad."#j\a2\91\94\e3\a0\e4\e3\f3 \93\fa\9c\96\8f\e0\f6\a1\a0 \e0\e4\94 \f0\9c\de\96\92\91\92\e0\de\e3\de\f3\e8\a1\a0 \be\de\c9\dd\9e\92\86 \e0\9d\99\e3\98\fa\e3 \e4\de\93\f3\91\f8\96\de\e4\93\a1\a0 \n\9b\f6\93\e5\f7\a4\95\e4\93\9b\fd\a1\a3}
+							{"I'm glad I got to see you, even if for only a few minutes. Xenon owes you a lot. Goodbye, Dad."}
 							67
 							2
 							2

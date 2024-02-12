@@ -578,7 +578,7 @@
 						#mode
 						1
 						#title
-						{ Erasmus%j\b4\d7\bd\d1\bd}
+						{ Erasmus}
 						#dispose
 						#time
 						local2
@@ -623,7 +623,7 @@
 						#mode
 						1
 						#title
-						{ Fenrus%j\cc\aa\dd\d7\bd}
+						{ Fenrus}
 						#dispose
 						#time
 						local2
@@ -1067,7 +1067,7 @@
 					#mode
 					1
 					#title
-					{ Erasmus %j\b4\d7\bd\d1\bd}
+					{ Erasmus }
 					#dispose
 					#time
 					3
@@ -1107,7 +1107,7 @@
 					#mode
 					1
 					#title
-					{ Erasmus %j\b4\d7\bd\d1\bd}
+					{ Erasmus }
 					#dispose
 					#time
 					4
@@ -1138,7 +1138,7 @@
 					#mode
 					1
 					#title
-					{ Fenrus %j\cc\aa\dd\d7\bd}
+					{ Fenrus }
 					#dispose
 					#time
 					3
@@ -1186,7 +1186,7 @@
 					#mode
 					1
 					#title
-					{ Fenrus %j\cc\aa\dd\d7\bd}
+					{ Fenrus }
 					#dispose
 					#time
 					3
@@ -1369,7 +1369,7 @@
 					#mode
 					1
 					#title
-					{ Erasmus %j\b4\d7\bd\d1\bd}
+					{ Erasmus }
 					#dispose
 					#time
 					5

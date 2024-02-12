@@ -1397,7 +1397,7 @@
 				(guy2 signal: (& (guy2 signal:) $fffe))
 				(if (not register)
 					(if (< (gEgo takeDamage: 30) 1)
-						(EgoDead 1 510 973 1 912)
+						(EgoDead 1 510 973 1 912) ; "You should have axed permission before searching that relief. Now the chopper has made chop suey of you."
 					else
 						(gEgo setLoop: 3 setCel: 0 setCycle: End self)
 					)

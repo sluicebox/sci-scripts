@@ -339,7 +339,7 @@
 						95
 						1
 						80
-						{Z-Z-Z-Z-Z-Z-Z-Z-Z-Z%j\b8\de\b0\b8\de\b0\b8\de\b0\b8\de\b0\b8\de\b0}
+						{Z-Z-Z-Z-Z-Z-Z-Z-Z-Z}
 						82
 						800
 						0
@@ -870,7 +870,7 @@
 					0
 					9
 					80
-					{Molasses in January.%j\c5\dd\c4\d3 \c9\db\b2\c8}
+					{Molasses in January.}
 				)
 			)
 		)
@@ -972,7 +972,7 @@
 						0
 						9
 						80
-						{Those guys look familiar.%j\d4\c2\d7\c6\dc \d0\b5\ce\de\b4\b6\de \b1\d9}
+						{Those guys look familiar.}
 					)
 				)
 			)
@@ -1142,7 +1142,7 @@
 					0
 					9
 					80
-					{Don't you feel a draft?%j\bd\b7\cf\b6\be\de\a6 \b6\dd\bc\de\c5\b2\b6\b2?}
+					{Don't you feel a draft?}
 				)
 			)
 		)
@@ -1183,7 +1183,7 @@
 						0
 						9
 						80
-						{Nyuk Nyuk Nyuk -- Mee Mee Mee Mee Mee...%j\cc\af\cc\af\cc\af... \c6\b6\af\c6\b6\af\c6\b6\af...}
+						{Nyuk Nyuk Nyuk -- Mee Mee Mee Mee Mee...}
 					)
 				else
 					(moe setMotion: MoveTo 76 106 self)
@@ -1204,7 +1204,7 @@
 						0
 						9
 						80
-						{Woo Woo Woo -- Ruff Ruff Ruff.%j\b3\af\b3\af\b3... \b8\af\b8\af\b8\af...}
+						{Woo Woo Woo -- Ruff Ruff Ruff.}
 					)
 				)
 			)
@@ -1709,7 +1709,7 @@
 					0
 					9
 					80
-					{You're half right but completely dead.%j\b7\d0\ca \ca\dd\cc\de\dd\c0\c0\de\bc\b2\b6\de \b6\dd\be\de\dd\c6\bc\dd\c3\de\b2\d9\d6}
+					{You're half right but completely dead.}
 				)
 			)
 		)

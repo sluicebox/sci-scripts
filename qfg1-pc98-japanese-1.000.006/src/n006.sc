@@ -53,7 +53,7 @@
 							6
 							7
 							80
-							{Where did all the pretty horses go?%j\b6\dc\b2\b2 \b3\cf\c0\c1\ca \c4\de\ba\b4 \b2\af\c1\ac\c0\c9?}
+							{Where did all the pretty horses go?}
 							82
 							800
 							1

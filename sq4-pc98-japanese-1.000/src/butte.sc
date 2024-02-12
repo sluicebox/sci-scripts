@@ -200,7 +200,7 @@
 				(if (== (Random 1 2) 1)
 					(= local30
 						(proc0_12
-							{"This is Buford! You there, Delphoid? I found Wilco... repeat, I found Wilco!"#j\a2\9a\e1\f7\ea\a4\cb\de\ad\b0\cc\ab\b0\c4\de\ff\a0 \n\c3\de\d9\cc\ab\b2\c4\de\a4\a0 \97\9a\94\f9\96\fe\a0 \b3\a8\d9\ba\86\f0\e2\99\e0\ff\ff\a0 \n\98\f8\96\94\9d\ff\a0 \b3\a8\d9\ba\86\f0\e2\99\e0\ff\ff\a3}
+							{"This is Buford! You there, Delphoid? I found Wilco... repeat, I found Wilco!"}
 							67
 							2
 							150
@@ -217,7 +217,7 @@
 				else
 					(= local30
 						(proc0_12
-							{"This is Buford! You there, Delphoid? I found Wilco... repeat, I found Wilco!"#j\a2\9a\e1\f7\ea\a4\cb\de\ad\b0\cc\ab\b0\c4\de\ff\a0 \n\c3\de\d9\cc\ab\b2\c4\de\a4\a0 \97\9a\94\f9\96\fe\a0 \b3\a8\d9\ba\86\f0\e2\99\e0\ff\ff\a0 \n\98\f8\96\94\9d\ff\a0 \b3\a8\d9\ba\86\f0\e2\99\e0\ff\ff\a3}
+							{"This is Buford! You there, Delphoid? I found Wilco... repeat, I found Wilco!"}
 							67
 							2
 							150
@@ -430,7 +430,7 @@
 				(if (== gCurRoomNum 305)
 					(= local30
 						(proc0_12
-							{"Let's split up, I'll check out Wilco's time pod. Our sensors picked up some movement near there."#j\a2\ec\e0\e3\e6\a0 \fc\96\fa\f6\93\ff\a0 \b5\da\ea\a4\a0 \b3\a8\d9\ba\e9\c0\b2\d1\ce\df\af\c4\86\9c\f7\ed\de\f9\f6\a1\a0 \91\e9\e1\96\98\e3\de\a4\a0 \be\dd\bb\b0\96\de\a0 \e5\e6\96\86\b7\ac\af\c1\9c\e0\f6\93\e0\de\a1\a3}
+							{"Let's split up, I'll check out Wilco's time pod. Our sensors picked up some movement near there."}
 							67
 							2
 							10
@@ -448,7 +448,7 @@
 				else
 					(= local30
 						(proc0_12
-							{"Let's split up, I'll check out Wilco's time pod."#j\a2\ec\e0\e3\e6\a0 \fc\96\fa\f6\93\ff\a0 \b5\da\ea\a4\a0 \b3\a8\d9\ba\e9\c0\b2\d1\ce\df\af\c4\86\9c\f7\ed\de\f9\a1\a3}
+							{"Let's split up, I'll check out Wilco's time pod."}
 							67
 							2
 							10
@@ -469,7 +469,7 @@
 				(Display 703 0 dsRESTOREPIXELS local30)
 				(= local30
 					(proc0_12
-						{"Yeah, Wilco is around here somewhere. I'll search the vicinity."#j\a2\ef\e1\96\de\92\e5\92\a1\a0 \b3\a8\d9\ba\ea\a4\a0 \e4\de\9a\96\9a\e9\ed\fd\e6\92\f9\f6\93\e0\de\a1\a0 \b5\da\ea\a4\a0 \ef\fc\f8\86\a0 \9b\96\de\9c\e3\f0\f9\ff\a3}
+						{"Yeah, Wilco is around here somewhere. I'll search the vicinity."}
 						67
 						2
 						150

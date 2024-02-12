@@ -245,7 +245,7 @@
 			)
 			(22
 				(gGlory handsOff:)
-				(EgoDead 10 490 978 1 912)
+				(EgoDead 10 490 978 1 912) ; "How Humiliating -- Hors de Combat as an Hors d'oeuvre. Perhaps next time you should try to talk your way out of becoming the main course."
 			)
 			(23
 				(gGlory handsOff:)
@@ -543,7 +543,7 @@
 				(gMessager say: 2 6 32 0 self) ; "Enough of this! If you won't give me something to eat, I'll just have to help myself. How about some 'Green Legs and Man'?"
 			)
 			(1
-				(EgoDead 63 490 978 1 912)
+				(EgoDead 63 490 978 1 912) ; "Next time you visit Baba Yaga, don't forget to bring something suitably gruesome to gnaw on besides yourself."
 			)
 		)
 	)

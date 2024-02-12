@@ -865,7 +865,7 @@
 							94
 							1
 							80
-							{Z-Z-Z-Z-Z-Z-Z-Z-Z-Z%j\b8\de\b3\b8\de\b3...\b8\de\b3\b8\de\b3...}
+							{Z-Z-Z-Z-Z-Z-Z-Z-Z-Z}
 							82
 							800
 							0
@@ -1688,7 +1688,7 @@
 					0
 					9
 					80
-					{You knew this job was dangerous....%j\ba\c9\bc\ba\de\c4\dc \b7\b9\dd\c0\de\c4\b2\b3\ba\c4\a6 \b7\d0\dc \bc\af\c3\b2\c0}
+					{You knew this job was dangerous....}
 				)
 			)
 		)
@@ -1794,7 +1794,7 @@
 					0
 					2
 					80
-					{I wasn't ready.%j\bc\de\ad\dd\cb\de\b6\de \cc\bc\de\ad\b3\cc\de\dd \c0\de\af\c0\dd\c0\de}
+					{I wasn't ready.}
 				)
 				(self dispose:)
 			)
@@ -1856,7 +1856,7 @@
 					0
 					2
 					80
-					{The thought sends quills up your spine.%j\bf\b3 \b6\dd\b6\de\b4\d9\c4 \bf\de\af\c4\bc\c3\b7\c0}
+					{The thought sends quills up your spine.}
 				)
 				(self dispose:)
 			)
@@ -1925,7 +1925,7 @@
 					0
 					6
 					80
-					{This is a ridiculous way to die%j\ba\da\dc \cf\af\c0\b8 \ca\de\b6\c5 \bc\c6\b6\c0\c0\de\d6}
+					{This is a ridiculous way to die}
 				)
 				(self dispose:)
 			)
@@ -2073,7 +2073,7 @@
 					0
 					2
 					80
-					{The old "rug over the pit" trick.%j\d6\b8\b1\d9 \cc\d9\b2\da\b2\c9 "\b5\c4\bc\b1\c5" \c9 \dc\c5\c0\de\c5}
+					{The old "rug over the pit" trick.}
 				)
 				(self dispose:)
 			)
@@ -2157,7 +2157,7 @@
 					0
 					2
 					80
-					{A travelling man.%j\c0\cb\de\a6 \bc\c3\b2\d9 \b5\c4\ba}
+					{A travelling man.}
 				)
 				(self dispose:)
 			)

@@ -615,7 +615,7 @@
 				(if temp1
 					(Format @temp8 285 0 local37 (localproc_18 temp1)) ; "%d : %s"
 				else
-					(Format @temp8 285 1 local37) ; "%d : NO ENTRY#j\cc\df\db\b8\de\d7\d1 \c5\bc"
+					(Format @temp8 285 1 local37) ; "%d : NO ENTRY"
 				)
 				(proc5_8 @temp8 [local0 3] 10 134)
 				(switch global364

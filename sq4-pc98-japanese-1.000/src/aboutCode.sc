@@ -26,7 +26,7 @@
 					{Cancel}
 					0
 					#button
-					{Japanese Messages#jEnglish Messages}
+					{Japanese Messages}
 					2
 					#mode
 					1

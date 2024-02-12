@@ -87,7 +87,7 @@
 								811
 								8
 								80
-								{ Nobody said this job was easy. %j\ba\c9\bc\ba\de\c4\b6\de \d4\bb\bc\b2\c5\dd\c3 \c0\de\da\d3 \b2\dc\c5\b6\af\c0\be\de}
+								{ Nobody said this job was easy. }
 								82
 								503
 								1

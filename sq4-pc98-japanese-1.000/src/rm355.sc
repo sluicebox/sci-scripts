@@ -93,7 +93,7 @@
 				(gLongSong number: 48 loop: 1 vol: 127 playBed:)
 				(= local0
 					(proc0_12
-						{Meanwhile...back in Space Quest \1d.#j\92\8f\ee\df\93\a4\bd\cd\df\b0\bd\a5\b8\b4\bd\c4 \1d \e3\de\ea\a5\a5\a5\a5\a5\a5}
+						{Meanwhile...back in Space Quest \1d.}
 						67
 						20
 						140

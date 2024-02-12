@@ -1223,7 +1223,7 @@
 							15
 							59
 							80
-							{Your plan seems to have backfired%j\b7\d0\c9 \cc\df\d7\dd\b6\de \b1\c0\de\c6 \c5\af\c0\c8}
+							{Your plan seems to have backfired}
 							82
 							15
 							2
@@ -1231,14 +1231,14 @@
 						)
 					)
 					(local17
-						(EgoDead 15 60 80 {Blast!%j\ca\de\b0\dd!} 82 15 2 6) ; "You could not withstand the force of the blast from the Kobold's magically protected chest."
+						(EgoDead 15 60 80 {Blast!} 82 15 2 6) ; "You could not withstand the force of the blast from the Kobold's magically protected chest."
 					)
 					(else
 						(EgoDead ; "You are overcome by the power of the Kobold Wizard's magic. You need to either practice your skills more or plan a better attack strategy."
 							15
 							61
 							80
-							{You've been deep-fried%j\b7\d0\ca \c3\dd\cc\df\d7\c6 \bb\da\c3 \bc\cf\af\c0\d6}
+							{You've been deep-fried}
 							82
 							532
 							0

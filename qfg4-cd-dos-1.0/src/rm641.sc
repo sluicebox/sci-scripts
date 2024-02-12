@@ -328,7 +328,7 @@
 				(= seconds 3)
 			)
 			(1
-				(EgoDead 24 640 43 End 852)
+				(EgoDead 24 640 43 End 852) ; "You've just had a close encounter with a spirit of the ghost kind. When all is said, however, your life's done."
 			)
 		)
 	)
@@ -387,7 +387,7 @@
 			)
 			(4
 				(if (<= [gEgoStats 17] 0) ; health
-					(EgoDead 16 640)
+					(EgoDead 16 640) ; "You opened the case; the trap shut your eyes. It's hard to make a living when you're dying."
 				else
 					(gEgo setMotion: PolyPath 144 140 self)
 				)

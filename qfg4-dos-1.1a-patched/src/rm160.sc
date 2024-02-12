@@ -44,7 +44,7 @@
 		(cond
 			((OneOf (event type:) evMOUSEBUTTON evKEYBOARD $0020) ; joyUp
 				(if (== gPrevRoomNum 635)
-					(EgoDead)
+					(EgoDead) ; "It's all over for now. Please try again."
 				else
 					(gCurRoom newRoom: 100)
 				)

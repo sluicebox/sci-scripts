@@ -1215,9 +1215,9 @@
 				(switch gCombatResult
 					(1
 						(if (IsFlag 398)
-							(EgoDead 17 50)
+							(EgoDead 17 50) ; "The Wraith has sucked your life force right out of you. Should you return here (in another life), you will need to be properly protected and strike quickly."
 						else
-							(EgoDead 45 500)
+							(EgoDead 45 500) ; "The Rusalka's unfaithful lover got you!"
 						)
 					)
 					(2

@@ -362,7 +362,7 @@
 				(gMessager say: 1 6 44 0 self) ; "You realize that attacking this sweet little girl really wasn't very nice, and that you really have to go up and hug her."
 			)
 			(7
-				(EgoDead 3 650)
+				(EgoDead 3 650) ; "That'll teeth you a lesson! Don't go around trying to hurt sweet, innocent little girls, especially when they have sharper canines than yours."
 			)
 		)
 	)

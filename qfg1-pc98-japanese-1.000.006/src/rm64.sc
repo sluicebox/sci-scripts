@@ -30,7 +30,7 @@
 )
 
 (procedure (localproc_0)
-	(EgoDead 64 0 80 { Oh-h-h-h-h-h-h! %j\b1\b0\b1\b1\b1...!} 70 250 82 516 0 0) ; "As the ghosts suck the life out of your body, and you crumple into the dust of the old graveyard, you think unspeakable thoughts of torture and torment directed at programmers, game designers, and vicious artists named Kenn."
+	(EgoDead 64 0 80 { Oh-h-h-h-h-h-h! } 70 250 82 516 0 0) ; "As the ghosts suck the life out of your body, and you crumple into the dust of the old graveyard, you think unspeakable thoughts of torture and torment directed at programmers, game designers, and vicious artists named Kenn."
 )
 
 (instance twister of Act
@@ -871,7 +871,7 @@
 					1
 					5
 					80
-					{ Watch your step! %j\b1\bc\d3\c4\c6 \b7\a6\c2\b9\db!}
+					{ Watch your step! }
 				)
 			)
 		)

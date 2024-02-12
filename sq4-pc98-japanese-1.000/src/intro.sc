@@ -50,15 +50,15 @@
 					60
 					106
 					81
-					{Skip it#j          Skip it          }
+					{Skip it}
 					0
 					106
 					81
-					{Watch it#j         Continue        }
+					{Watch it}
 					1
 					106
 					81
-					{Restore a Game#j     Restore Game     }
+					{Restore a Game}
 					2
 				)
 				(0

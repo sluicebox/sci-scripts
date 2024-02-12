@@ -207,7 +207,7 @@
 							93
 							1
 							80
-							{Z-Z-Z-Z-Z-Z-Z-Z-Z-Z%j\b8\de\b0\b8\de\b0\b8\de\b0\b8\de\b0\b8\de\b0}
+							{Z-Z-Z-Z-Z-Z-Z-Z-Z-Z}
 							82
 							800
 							0
@@ -1288,7 +1288,7 @@
 						0
 						9
 						80
-						{Greedy Greedy Greedy .%j\d6\b8\ca\de\d8 \d6\b8\ca\de\d8 \d6\b8\ca\de\d8}
+						{Greedy Greedy Greedy .}
 					)
 				else
 					(= local1 1)
@@ -1355,7 +1355,7 @@
 						0
 						9
 						80
-						{Greedy Greedy Greedy .%j\d6\b8\ca\de\d8 \d6\b8\ca\de\d8 \d6\b8\ca\de\d8}
+						{Greedy Greedy Greedy .}
 					)
 				else
 					(= local1 1)
@@ -1827,7 +1827,7 @@
 					0
 					9
 					80
-					{You ring the bell and your bell gets rung.%j\cd\de\d9\a6 \c5\d7\bc\c3 \cc\b8\db\c0\de\c0\b7 \c6 \bb\da\c1\ac\af\c0}
+					{You ring the bell and your bell gets rung.}
 				)
 			)
 		)

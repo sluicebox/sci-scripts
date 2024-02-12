@@ -55,7 +55,7 @@
 			(1
 				(EgoSleeps 6 0)
 				(= temp0
-					{Asleep at the Hero's Tale Inn.\nThe sleep heals and refreshes you.%j\cb\b0\db\b0\bd\de \c3\b0\d9 \b2\dd \c3\de \c8\d1\af\c0.\n\c2\b6\da\b6\de \c4\da\c3 \bb\dc\d4\b6\c0\de.}
+					{Asleep at the Hero's Tale Inn.\nThe sleep heals and refreshes you.}
 				)
 				(= temp1 (if (< global211 16) 15 else 13))
 				(SaveSubLang)

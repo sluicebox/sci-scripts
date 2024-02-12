@@ -166,7 +166,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"That will be 5 Buckazoids."#j\a2\e3\de\ea\a45\ca\de\af\b6\bf\de\b2\c4\de\e6\e5\f8\ef\9d\a1\a3}
+							{"That will be 5 Buckazoids."}
 							67
 							2
 							5
@@ -207,7 +207,7 @@
 					(self
 						save1:
 							(proc0_12
-								{"I wouldn't try that if I was you."#j\a2\ee\de\98\e5\f7\a0\9f\fd\e5\9a\e4\ea\a0 \9e\de\8f\e0\92\9c\e5\92\f6\a1\a3}
+								{"I wouldn't try that if I was you."}
 								67
 								2
 								5
@@ -226,7 +226,7 @@
 						save1:
 							(if (OneOf (gEgo view:) 373 374)
 								(proc0_12
-									{"Excuse me, ma'am! Would you like to pay for that?"#j\a2\91\e9\a5\a5\a5\a5\a4\a0 \9a\e9\ec\de\fd\86\a0\95\9c\ea\f7\92\e6\a0 \e5\8f\e3\98\e0\de\9b\92\a1\a3}
+									{"Excuse me, ma'am! Would you like to pay for that?"}
 									67
 									2
 									5
@@ -241,7 +241,7 @@
 								)
 							else
 								(proc0_12
-									{"Excuse me, sir! Would you like to pay for that?"#j\a2\9c\e2\fa\92\e3\de\9d\96\de\a4\a0 \9a\e9\ec\de\fd\86\a0\95\9c\ea\f7\92\e6\a0 \e5\8f\e3\98\e0\de\9b\92\a1\a3}
+									{"Excuse me, sir! Would you like to pay for that?"}
 									67
 									2
 									5
@@ -348,7 +348,7 @@
 						(self
 							save1:
 								(proc0_12
-									{"Ah, I see you've made a selection from our box of slop..er, bargain bin."#j\a2\91\91\a4\e5\f9\ee\e4\de\a1\9a\de\f0\a5\a5\a5\a5\a5\a5\9c\de\8c\e5\98\e3\a4\a0 \ca\de\b0\b9\de\dd\ea\de\9a\96\f7\a0\95\94\f7\eb\de\e6\a0\e5\f8\ef\9c\e0\e8\a1\a3}
+									{"Ah, I see you've made a selection from our box of slop..er, bargain bin."}
 									67
 									2
 									5
@@ -368,7 +368,7 @@
 						(self
 							save1:
 								(proc0_12
-									{"I'm sure you'll be satisfied with your selection."#j\a2\9a\fa\ea\a4\97\8f\e4\a0\97\e6\92\8f\e3\a0\92\e0\e0\de\99\ef\9d\f6\a1\a3}
+									{"I'm sure you'll be satisfied with your selection."}
 									67
 									2
 									5
@@ -390,7 +390,7 @@
 						(self
 							save1:
 								(proc0_12
-									{"Didn't find anything you liked, eh?"#j\a2\97\e6\92\8f\e0\f3\e9\96\de\a0 \f0\e2\96\f8\ef\9e\fd\e3\de\9c\e0\96\fe\a3}
+									{"Didn't find anything you liked, eh?"}
 									67
 									2
 									5
@@ -411,7 +411,7 @@
 						(self
 							save1:
 								(proc0_12
-									{"Sorry, but the crowd completely cleaned out my stock of Sierra software. The only thing that's left is boring home and business applications software along with a few inferior games. But feel free to look around anyway."#j\a2\f3\93\9c\fc\99\91\f8\ef\9e\fd\96\de\a4\a0 \bc\b4\d7\e9\bf\cc\c4\ea\a4\a0 \e0\e0\de\92\ef\a0 \9d\ed\de\e3\93\f8\97\fa\e6\e5\8f\e3\95\f8\ef\9d\a1\a0 \91\e4\a0 \e9\9a\8f\e3\92\f9\e9\ea\a4\a0 \e3\de\97\e9\fc\f9\92\b9\de\b0\d1\e4\a0\cb\de\bc\de\c8\bd\bf\cc\c4\e0\de\99\e3\de\9d\f6\a1\a0 \e3\de\f3\a4\a0 \e4\e6\96\98\a0 \9a\de\9c\de\f5\93\e6\a0\f0\ef\fc\8f\e3\98\e0\de\9b\92\a1\a3}
+									{"Sorry, but the crowd completely cleaned out my stock of Sierra software. The only thing that's left is boring home and business applications software along with a few inferior games. But feel free to look around anyway."}
 									67
 									2
 									5
@@ -436,9 +436,9 @@
 						save1:
 							(proc0_12
 								(switch (Random 0 2)
-									(0 {"So, are ya looking for a good data base? We've got one coming in next week."#j\a2\e5\e6\96\a0\92\92\c3\de\b0\c0\b0\cd\de\b0\bd\86\a0\9b\96\de\9c\e3\f9\e9\e3\de\9c\e0\f7\a4\a0 \f7\92\9c\8d\93\a0\ea\92\f8\ef\9d\96\de\a5\a5\a5\a5\a5\a5\a5\a5\a1\a3})
-									(1 {"Hey, have you seen the newest time travel simulator? Neither have I. I'm sure we're getting some in soon."#j\a2\9b\92\9c\fd\e9\a0"\c0\b2\d1\c4\d7\cd\de\d9\a5\bc\ad\d0\da\b0\c0\b0"\a0 \86\a0\f0\ef\9c\e0\96\fe\a0 \fc\e0\9c\f3\a0 \ef\e0\de\e5\fd\e3\de\9d\99\e4\de\e8\a1\a0 \e3\de\f3\a4\a0 \9f\fb\9f\fb\a0 \e6\8d\93\96\9c\ef\9d\f6\a1\a3})
-									(2 {"If you're here to return something, forget it. We have a strict 'No Returns' policy. I'd like to help you out, guy. But you know how corporations are."#j\a2\f3\9c\a4\a0 \e5\e6\96\a0\9a\93\96\fd\e6\97\e0\e9\e5\f7\a0 \c0\de\d2\e3\de\9d\f6\a1\a0 \93\e1\f3\a0\9c\8e\93\ea\de\92\e3\de\9d\96\f7\e8\a1\a0 \9a\93\96\fd\ef\e3\de\a0 \9c\e3\e0\f7\a4\a0 \9c\8e\93\ea\de\92\a0\91\96\de\8f\e0\f8\e3\de\9d\f6\a1\a3})
+									(0 {"So, are ya looking for a good data base? We've got one coming in next week."})
+									(1 {"Hey, have you seen the newest time travel simulator? Neither have I. I'm sure we're getting some in soon."})
+									(2 {"If you're here to return something, forget it. We have a strict 'No Returns' policy. I'd like to help you out, guy. But you know how corporations are."})
 								)
 								67
 								2
@@ -515,7 +515,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"Thank You."#j\a2\e4\de\93\f3\a0 \91\f8\96\de\e4\93\a0 \9a\de\9b\de\92\ef\9c\e0\a1\a3}
+							{"Thank You."}
 							67
 							2
 							5

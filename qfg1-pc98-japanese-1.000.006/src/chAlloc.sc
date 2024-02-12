@@ -365,7 +365,7 @@
 	(properties
 		nsTop 156
 		nsLeft 210
-		text { Start Game %j\b9\de\b0\d1\a6 \ca\bc\de\d2\d9}
+		text { Start Game }
 	)
 )
 
@@ -373,7 +373,7 @@
 	(properties
 		nsTop 171
 		nsLeft 226
-		text { Cancel %j\b7\ac\dd\be\d9 \bd\d9}
+		text { Cancel }
 	)
 )
 
@@ -500,11 +500,11 @@
 		)
 		((ScriptID 204 0) useWindow: 0 showBars: 0 init:) ; theCharSheet
 		(SaveSubLang)
-		(Display 203 1 dsCOORD 62 109 dsALIGN alLEFT dsFONT 300 dsCOLOR global275) ; "Points Available%j\b6\c9\b3\c5 \ce\df\b2\dd\c4"
+		(Display 203 1 dsCOORD 62 109 dsALIGN alLEFT dsFONT 300 dsCOLOR global275) ; "Points Available"
 		(RestoreSubLang)
 		(poolBar max: local1 value: local0 init:)
 		(SaveSubLang)
-		(Display 203 2 dsCOORD 165 127 dsWIDTH 150 dsALIGN alLEFT dsFONT 300 dsCOLOR global275) ; "TAB to move around, Arrows to adjust values.%j\c0\cc\de\b7\b0 \c3\de \be\dd\c0\b8 \b1\db\b0\b7\b0 \c3\de \ce\df\b2\dd\c4 \ca\b2\cc\de\dd"
+		(Display 203 2 dsCOORD 165 127 dsWIDTH 150 dsALIGN alLEFT dsFONT 300 dsCOLOR global275) ; "TAB to move around, Arrows to adjust values."
 		(RestoreSubLang)
 		(localproc_2)
 		(RedrawCast)
@@ -521,10 +521,10 @@
 									203
 									3
 									#button
-									{Yes%j\ca\b2}
+									{Yes}
 									1
 									#button
-									{No%j\b2\b2\b4}
+									{No}
 									2
 								)
 							)
@@ -542,10 +542,10 @@
 									203
 									4
 									#button
-									{Start the Game%j\b9\de\b0\d1\a6 \ca\bc\de\d2\d9}
+									{Start the Game}
 									1
 									#button
-									{Use More Points%j\d3\af\c4 \ce\df\b2\dd\c4\a6 \c2\b6\b3}
+									{Use More Points}
 									2
 								)
 							)

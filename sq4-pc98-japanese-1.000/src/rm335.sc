@@ -110,7 +110,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"AAAIIIIHHHH!!! It's a sea slug! Run, girls!"#j\a2\97\8c\87\b0\b0\b0\b0\b0\b0\ff\ff\ff\a0 \c5\d2\b8\bc\de\f6\ff\a0 \e6\99\de\f9\e9\f6\a4\f0\fd\e5\ff\a3}
+							{"AAAIIIIHHHH!!! It's a sea slug! Run, girls!"}
 							67
 							2
 							10
@@ -225,7 +225,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"Sit down!"#j\a2\9d\fc\f8\e5\9b\92\ff\a3}
+							{"Sit down!"}
 							67
 							2
 							10
@@ -398,7 +398,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"OUR HERO!!"#j\a2\cb\b0\db\b0\e0\de\fc\ff\ff\a3}
+							{"OUR HERO!!"}
 							67
 							2
 							10
@@ -475,7 +475,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"Wasn't he great, girls?"#j\a2\e8\94\a4\96\fa\ea\a0\bd\c3\b7\e0\de\8f\e0\fc\e8\a4\a0 \f0\fd\e5\a1\a3}
+							{"Wasn't he great, girls?"}
 							67
 							2
 							10
@@ -495,7 +495,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"Well Rog...I guess we can call it even. Thank you for ridding our fortress of that slimy, awful, sea slug."#j\a2\9f\fa\9c\de\8c\91\a4 \db\bc\de\a5\a5\a5\a5\a5\a5\a1\a0 \n\ef\91\a4\a0 \9a\fa\e3\de\95\91\92\9a\e6\9d\f9\fc\a1\a0 \n\91\e9\c5\d2\b8\bc\de\86\a0\e0\92\9c\de\9c\e3\98\fa\e3\91\f8\96\de\e4\93\a1\a3}
+							{"Well Rog...I guess we can call it even. Thank you for ridding our fortress of that slimy, awful, sea slug."}
 							67
 							2
 							20
@@ -515,7 +515,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"I..uh..I know I can't blame you for backing out at the last minute. I guess I was a little overbearing. Sorry. Can we still be good friends?"#j\a2\91\e9\93\a5\a5\a5\a5\91\a4\91\e9\e8\a5\a5\a5\a5\a4\a0 \91\e5\e0\96\de\9c\f8\9a\de\f0\9c\e0\9a\e4\e6\e2\92\e3\ea\a0 \f3\93\9e\f2\e5\92\fc\a1\a0 \fc\e0\9c\96\de\a4\a0 \9d\9a\9c\a0\9a\de\93\92\fd\9d\97\de\e0\a0\f0\e0\92\e0\de\9c\a5\a5\a5\a5\a1 \n\e3\de\f3\a4\a0 \ef\e0\de\a0 \92\92\e4\f3\e0\de\e1\e3\de\92\f7\fa\f9\96\9c\f7\fe\a3}
+							{"I..uh..I know I can't blame you for backing out at the last minute. I guess I was a little overbearing. Sorry. Can we still be good friends?"}
 							67
 							2
 							20
@@ -535,7 +535,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"Well,... now wait a minute. Let's talk about this."#j\a2\9f\93\e0\de\e5\a5\a5\a5\a5\a4\e1\8e\8f\e4\ef\8f\e3\98\fa\a1\n\9f\fa\e6\e2\92\e3\ea\a4\a0 \f3\8f\e4\ea\e5\9c\91\95\93\a1\a3}
+							{"Well,... now wait a minute. Let's talk about this."}
 							67
 							2
 							10
@@ -555,7 +555,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"No Roger - you were right. You don't need to spare my feelings. It just wasn't meant to be. It's better this way."#j\a2\92\92\94\a4\db\bc\de\ac\b0\a1\a0 \91\e5\e0\ea\a4\e0\e0\de\9c\96\8f\e0\fc\a1\a0 \fc\e0\9c\e9\9a\e4\e5\fd\96\a0\97\e6\9c\e5\98\e3\92\92\fc\a1\a0 \n\97\8f\e4\a4\93\ef\98\92\98\a0\93\fd\f2\92\9c\de\8c\e5\96\8f\e0\e9\f6\a1\a3}
+							{"No Roger - you were right. You don't need to spare my feelings. It just wasn't meant to be. It's better this way."}
 							67
 							2
 							20
@@ -575,7 +575,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"Well girls, I feel like celebrating. LET'S GO SHOPPING!!!"#j\a2\9b\91\a4\f0\fd\e5\a1\a0 \fc\e0\9c\ea\a0 \95\92\fc\92\86\9c\e0\98\e5\8f\e0\fc\a1\a0 \96\92\f3\e9\e6\a0\92\97\ef\9c\8e\93\a1\a3}
+							{"Well girls, I feel like celebrating. LET'S GO SHOPPING!!!"}
 							67
 							2
 							20

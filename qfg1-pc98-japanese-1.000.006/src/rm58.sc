@@ -534,7 +534,7 @@
 						58
 						24
 						80
-						{The bigger they come, the harder they hit%j\c3\de\af\b6\b2\ce\c4\de \c2\d6\b8 \c5\b8\de\af\c3\b8\d9\dd\c0\de!}
+						{The bigger they come, the harder they hit}
 						82
 						59
 						3
@@ -727,7 +727,7 @@
 					58
 					31
 					80
-					{Just because he's big doesn't mean he's stupid! %j\b5\b5\b7\b2\b6\d7\c4\b2\af\c3 \ca\de\b6\c0\de\c4\dc \b6\b7\de\d7\c5\b2\d6}
+					{Just because he's big doesn't mean he's stupid! }
 					82
 					59
 					0

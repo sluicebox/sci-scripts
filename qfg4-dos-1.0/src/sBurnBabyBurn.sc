@@ -79,7 +79,7 @@
 				(= seconds 1)
 			)
 			(4
-				(EgoDead 124 260 262 0 912)
+				(EgoDead 124 260 262 0 912) ; "You nimbly evade capture and escape into the forest.  Unfortunately, a strangely familiar Vampire soon "converts" you. Pity you didn't find Igor to prove the gypsy's innocence."
 			)
 		)
 	)

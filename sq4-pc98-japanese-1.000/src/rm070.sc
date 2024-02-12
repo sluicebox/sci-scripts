@@ -316,8 +316,8 @@
 			(10
 				(gLongSong number: 814 loop: -1 play:)
 				(localproc_0
-					{"Data Entry 22795: This message is to whomever may be so fortunate as to find it. I am Professor Lloyd, lead designer of the Xenon Super Computer Project, the ultimate in artificial\nintelligence."#j\a2Data Entry 22795:\a0 \9a\e9\d2\af\be\b0\bc\de\ea\a4\a0 \9a\fa\86\f0\e2\99\e0 \eb\e4\e9\e0\f2\e9\f3\e9\e3\de\9d\a1\a0 \fc\e0\9c\ea\a4\a0 \db\b2\c4\de\97\8e\93\9c\de\8d\e3\de\9d\a1\a0 \9c\de\fd\9a\93\e1\e9\93\e9\a0 \9a\de\98\e1\e3\de\91\f9\a4\a0 \n\bd\b0\ca\df\b0\a5\n\ba\dd\cb\df\ad\b0\c0\b0\a5\cc\df\db\bc\de\aa\b8\c4\e9\a0\n\97\96\98\9e\97\e6\fd\9c\8c\e3\de\9d\a1\a3}
-					{"The computer was designed to enhance our lives but, instead, ended up being the ruin of us all."#j\a2\9a\e9\ba\dd\cb\df\ad\b0\c0\b0\ea\a4\a0 \fc\fa\fc\fa\e9\a0\9e\92\96\e2\86\a0\9a\93\9c\de\8e\93\9b\9e\f9\e0\f2\e6\a0 \e2\98\f7\fa\e0\f3\e9\e3\de\9d\96\de\a4\a0 \9f\fa\e4\ea\a0 \97\de\8c\98\e6\a0\ea\96\92\86\a0 \f3\e0\f7\9c\e3\9c\ef\8f\e0\e9\e3\de\9d\a1\a3}
+					{"Data Entry 22795: This message is to whomever may be so fortunate as to find it. I am Professor Lloyd, lead designer of the Xenon Super Computer Project, the ultimate in artificial\nintelligence."}
+					{"The computer was designed to enhance our lives but, instead, ended up being the ruin of us all."}
 				)
 				(= seconds 30)
 			)
@@ -327,8 +327,8 @@
 			)
 			(12
 				(localproc_0
-					{"We made the mistake of tying it into the most important facets of our existence here on Xenon including our weather control and defense systems."#j\a2\9f\f3\9f\f3\e9\a0\91\f4\ef\f8\ea\a4\a0 \9a\e9\ba\dd\cb\df\ad\b0\c0\b0\e6\a0\n\be\de\c9\dd\9e\92\e9\a0\97\9a\93\ba\dd\c4\db\b0\d9\f4\a0\ee\de\93\97\de\8e\ba\dd\c4\db\b0\d9\e5\e4\de\86\a0\n\f1\9d\eb\de\e2\99\e3\9c\ef\93\a0 \n\e4\92\93\9a\e4\96\f7\ea\9c\de\ef\f8\ef\9c\e0\a1\a3}
-					{"It seemed like a sound idea at the time and all proceeded well for about three years."#j\a2\e4\93\9c\de\ea\a0\96\8f\97\e3\97\e5\e3\92\91\fd\e3\de\a4\a0 3\e8\fd\96\fd\ea\a0\9d\ed\de\e3 \9c\de\8d\fd\e1\8e\93\e6\a0 \f3\e9\9a\de\e4\96\de\a0 \ea\9a\eb\de\ef\9c\e0\a1\a3}
+					{"We made the mistake of tying it into the most important facets of our existence here on Xenon including our weather control and defense systems."}
+					{"It seemed like a sound idea at the time and all proceeded well for about three years."}
 				)
 				(= seconds 30)
 			)
@@ -338,8 +338,8 @@
 			)
 			(14
 				(localproc_0
-					{"It was around then that a deep space salvage operation recovered what appeared to be some sort of antiquated data storage unit contained in a flimsy cardboard box on which\nthe words "Leisure Suit\nLarry" were imprinted.#j\a2\e1\8e\93\e4\de\a0 \9f\e9\9a\fb\e6\a4\a0 \93\e1\8d\93\ea\8f\98\e2\e0\de\fd\96\de\a4\a0 "\da\bc\de\ac\b0\a5\bd\b0\c4\a5\d7\d8\b0"\e4\a0\92\fd\9b\e2\9b\fa\e0\a0\93\9d\92\c0\de\dd\ce\de\b0\d9\ea\9a\e6\a0\ea\92\8f\e0\a0 \ec\f9\92\c3\de\b0\c0\ee\96\fd\d5\c6\af\c4\86\a0\ea\8f\98\e2\9c\e0\e9\e3\de\9d\a1\a3}
-					{"On its back was the picture of a not particularly wholesome gentleman, but that's another story."#j\a2\9f\e9\ea\9a\e9\a0\93\f7\96\de\fc\e6\ea\a4\a0 \e4\98\e6\a0\f8\8f\ea\df\e4\f3\92\94\e5\92\a0 \9c\fd\9c\e9\9c\8c\9c\fd\96\de\a0 \e9\8f\e3\ef\9c\e0\f6\a1\a0 \9c\96\9c\a4\9f\fa\ea\91\ef\f8\a0 \9c\de\8d\93\f6\93\e3\de\ea\a0\91\f8\ef\9e\fd\a1\a3}
+					{"It was around then that a deep space salvage operation recovered what appeared to be some sort of antiquated data storage unit contained in a flimsy cardboard box on which\nthe words "Leisure Suit\nLarry" were imprinted."}
+					{"On its back was the picture of a not particularly wholesome gentleman, but that's another story."}
 				)
 				(= seconds 30)
 			)
@@ -349,8 +349,8 @@
 			)
 			(16
 				(localproc_0
-					{"My counterparts exhibited shameful behavior as they tore open the box to get at its contents. I could not understand the commotion it generated. The data was uploaded into the Super\nComputer for analysis."#j\a2\fc\e0\9c\e9\a0 \e4\de\93\f8\8e\93\e0\e1\ea\a4\a0 \ea\9a\e9\a0\91\99\96\e0\96\de\fc\96\f7\9d\de\a4\a0 \ea\9a\86\f4\ec\de\8f\e3\a0 \e4\f8\e0\de\9c\ef\9c\e0\a1\a0 \ef\8f\e0\98\a4\a0 \99\de\fd\9c\e3\97\e5\a0 \ec\f9\ef\92\e3\de\9c\e0\a1\a0 \9f\e9\9a\de\a4\a0 \9f\e9\c3\de\b0\c0\ea\a0\ec\de\fd\9e\97\e9 \e0\f2\e6\a0\bd\b0\ca\df\b0\a5\ba\dd\cb\df\ad\b0\c0\b0\e6\a0\n\db\b0\c4\de\9c\e0\e9\e3\de\9d\a1\a3}
-					{"As a result, a crippling virus spread through the machine like a bad social disease. All control of the computer was lost."#j\a2\e4\9a\fb\96\de\a4\a0 \e5\e6\96\a0\e4\fd\e3\de\f3\e5\92\b3\a8\d9\bd\96\de\a0 \ba\dd\cb\df\ad\b0\c0\b0\9e\de\fd\e0\92\e6\a0\eb\fb\96\de\8f\e3\9c\ef\8f\e3\a4\a0 \9d\ed\de\e3\e9\a0 \ba\dd\c4\db\b0\d9\96\de\a0 \93\9c\e5\fc\fa\e3\a0 \9c\ef\8f\e0\e9\e3\de\9d\a1\a3}
+					{"My counterparts exhibited shameful behavior as they tore open the box to get at its contents. I could not understand the commotion it generated. The data was uploaded into the Super\nComputer for analysis."}
+					{"As a result, a crippling virus spread through the machine like a bad social disease. All control of the computer was lost."}
 				)
 				(= seconds 30)
 			)
@@ -360,8 +360,8 @@
 			)
 			(18
 				(localproc_0
-					{"All screens went blank, then these words were displayed by the monitors and uttered by the vocal outputs -\n"WILCO MUST PAY!""#j\a2\9d\ed\de\e3\e9\96\de\f2\fd\96\de\a0 \cc\de\d7\dd\b8\e6\e5\f8\a4\a0 \e2\97\de\e9\f6\93\e5\a0 \d2\af\be\b0\bc\de\96\de\a0 \d3\c6\c0\b0\e4\a0\bd\cb\df\b0\b6\b0\96\f7\a0 \e3\de\e3\97\e0\e9\e3\de\9d\a1\n"\b3\a8\d9\ba\ea\a0\9e\97\e6\fd\86\a0\e4\f7\e8\ea\de\e5\f7\e7\ff"\a3}
-					{"From that day forth the possessed computer waged war on the inhabitants of Xenon using our own weapons against us. Some managed to escape to other planets."#j\a2\9f\e9\eb\96\f7\a4\a0 \e5\e6\f3\e9\96\e6\a0 \e4\f8\e2\96\fa\e0\ba\dd\cb\df\ad\b0\c0\b0\ea\a4\a0 \fc\fa\fc\fa\e9\ec\de\97\86\a0 \be\de\c9\dd\e9\9c\de\8d\93\f0\fd\e6\a0\e0\92\9c\e3\e2\96\92\e0\de\9c\a4\a0 \e0\e0\96\92\86\a0\e9\9f\de\fd\e3\de\97\e0\e9\e3\de\9d\a1\n\9c\de\8d\93\f0\fd\e9\a0\e5\fd\e6\fd\96\ea\a4\a0 \ee\96\e9\a0\fc\98\9e\92\ed\a0\e6\99\de\f9\9a\e4\96\de\a0 \e3\de\97\ef\9c\e0\a1\a3}
+					{"All screens went blank, then these words were displayed by the monitors and uttered by the vocal outputs -\n"WILCO MUST PAY!""}
+					{"From that day forth the possessed computer waged war on the inhabitants of Xenon using our own weapons against us. Some managed to escape to other planets."}
 				)
 				(= seconds 30)
 			)
@@ -371,8 +371,8 @@
 			)
 			(20
 				(localproc_0
-					{"Those of us who remained stayed to fight the machines and robots under its control. It was a bloody war. Those of us that were not killed were taken captive and 'modified.'"#j\a2\9c\96\9c\a4\a0 \fc\e0\9c\e0\e1\e9\f6\93\e6\a0\e9\9a\8f\e0\f3\e9\e0\e1\ea\a4\a0 \ba\dd\cb\df\ad\b0\c0\b0\96\de\a0 \9c\ea\92\9c\e3\92\f9\a4\a0 \db\ce\de\af\c4\e0\e1\e4\a0\e0\e0\96\92\e2\e2\de\99\ef\9c\e0\a1\n\e0\98\9b\fd\e9\a0\eb\e4\eb\de\e4\96\de\a0 \n\9a\fb\9b\fa\ef\9c\e0\a1\a0 \n\9a\fb\9b\fa\e5\96\8f\e0\f3\e9\e0\e1\ea\a4\a0 \n\ee\f8\8e\e4\e5\f8\a4\a0 "\9e\fd\e9\93"\9b\fa\e3\a0\n\9c\ef\8f\e0\e9\e3\de\9d\a1\a3}
-					{"These 'cyborgs' infiltrated the loyal ranks of resistance, rooting out almost all of our hiding places and exposing us to the mechanical menace. Some of these poor souls still wander the streets."#j\a2"\bb\b2\ce\de\b0\b8\de"\e0\e1\ea\a4\a0 \da\bc\de\bd\c0\dd\bd\e9\a0\e5\96\ef\e9\e5\96\e6\a0\ef\97\de\fa\9a\f0\a4\a0 \96\98\fa\ea\de\9c\8e\e9\a0\ee\e4\fd\e4\de\86\f0\e2\99\e0\de\9c\a4\a0 \fc\fa\fc\fa\86\a0\97\8e\93\ec\e6\a0\95\e4\9c\92\fa\e0\e9\e3\de\9d\a1\a0 \bb\b2\ce\de\b0\b8\de\e0\e1\ea\a0\92\ef\e3\de\f3\a0\ef\e1\86\a0\9b\ef\f6\92\91\f9\92\e3\92\ef\9d\a1\a3}
+					{"Those of us who remained stayed to fight the machines and robots under its control. It was a bloody war. Those of us that were not killed were taken captive and 'modified.'"}
+					{"These 'cyborgs' infiltrated the loyal ranks of resistance, rooting out almost all of our hiding places and exposing us to the mechanical menace. Some of these poor souls still wander the streets."}
 				)
 				(= seconds 30)
 			)
@@ -382,8 +382,8 @@
 			)
 			(22
 				(localproc_0
-					{"As of this recording, we are down to only a handful of rebels. My health is deteriorating rapidly. To make matters worse, I've just learned that the computer has unraveled the mysteries\nof time travel."#j\a2\9a\e9\da\ba\b0\c3\de\a8\dd\b8\de\86\9c\e3\92\f9\a0\99\de\fd\9b\de\92\e3\de\ea\a4\a0 \f3\93\a0 \fc\9d\de\96\e5\a0 \e5\96\ef\9c\96\a0\e9\9a\8f\e3\92\e5\92\e9\e3\de\9d\a1\a0 \n\fc\e0\9c\e9\a0 \99\fd\9a\93\9c\de\8e\93\e0\92\f3\a0\e4\de\fd\e4\de\fd\a0 \fc\f9\98\e5\8f\e3\92\ef\9d\a1\a0 \9b\f7\e6\a0\fc\f9\92\9a\e4\e6\a0 \n\ba\dd\cb\df\ad\b0\c0\b0\96\de\a0 \n\c0\b2\d1\c4\d7\cd\de\d9\e9\a0\n\97\de\9c\de\8d\e2\86\a0\ea\8f\99\fd\9c\e3\n\9c\ef\8f\e0\e9\e3\de\9d\a1\a3}
-					{"I've sent my two best men to attempt to steal this new technology. If you are not a machine then perhaps they were successful. Please realize - YOU are Xenon's last hope."#j\a2\9a\e9\a0 \91\e0\f7\9c\92\97\de\9c\de\8d\e2\86\a0\e3\e6\92\fa\f9\e0\f2\e6\a4\a0 \f3\8f\e4\f3\9c\fd\f7\92\e3\de\97\f9\a0 \ec\e0\f8\e9\a0 \ec\de\96\86\a0 \95\98\f8\ef\9c\e0\a1\a0 \n\f3\9c\a4\a0 \91\e5\e0\96\de\a0 \97\96\92\e3\de\e5\99\fa\ea\de\a4\a0 \e0\ec\de\fd\a0 \9e\92\9a\93\9c\e0\e9\e3\de\9c\8e\93\a1\a0 \e4\de\93\96\a0 \fc\96\8f\e3\98\e0\de\9b\92\a1\a0 \91\e5\e0\ea\a0 \be\de\c9\dd\9e\92\e9\a0\9b\92\9a\de\e9\a0\ce\b0\cc\df\e5\e9\e3\de\9d\a1\a3}
+					{"As of this recording, we are down to only a handful of rebels. My health is deteriorating rapidly. To make matters worse, I've just learned that the computer has unraveled the mysteries\nof time travel."}
+					{"I've sent my two best men to attempt to steal this new technology. If you are not a machine then perhaps they were successful. Please realize - YOU are Xenon's last hope."}
 				)
 				(= seconds 30)
 			)

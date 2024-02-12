@@ -206,7 +206,7 @@
 					215
 					8
 					80
-					{Bare Hands vs. Teeth and Claws, etc.%j\c0\dd\b9\dd \c5\bc \c9 \c0\c0\b6\b2 \ca \d1\d8\c0\de\c8}
+					{Bare Hands vs. Teeth and Claws, etc.}
 					82
 					516
 					0
@@ -435,7 +435,7 @@
 					215
 					10
 					80
-					{You should have studied harder%j\d3\af\c4\cd\de\dd\b7\ae\b3 \bd\d9\cd\de\b7 \c0\de\af\c0\c8}
+					{You should have studied harder}
 					82
 					521
 					1
@@ -706,7 +706,7 @@
 						215
 						11
 						80
-						{What a monster!%j\cf\af\c0\b8 \c5\dd\c4\b2\b3 \d3\dd\bd\c0\b0 \c0\de!}
+						{What a monster!}
 						82
 						516
 						0

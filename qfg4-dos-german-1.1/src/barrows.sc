@@ -315,7 +315,7 @@
 					(= temp0 (/ (* temp0 (- 100 (/ [gEgoStats 39] 7))) 100)) ; resistanceSpell
 				)
 				(if (and (not (IsFlag 8)) (not (gEgo takeDamage: temp0)))
-					(EgoDead 16 53)
+					(EgoDead 16 53) ; "The Wraith has sucked your life force right out of you. Should you return here (in another life), you will need to be properly protected and strike quickly."
 				)
 			)
 			(self

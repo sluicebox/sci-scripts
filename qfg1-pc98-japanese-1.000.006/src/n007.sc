@@ -76,7 +76,7 @@
 				1
 				0
 				80
-				{Night Gaunt Got ya.%j\c5\b2\c4 \ba\de\b0\dd\c4 \b6\de \b7\d0\a6 \c0\cd\de\af\c1\cf\af\c0\d6}
+				{Night Gaunt Got ya.}
 			)
 		)
 	)

@@ -697,7 +697,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"SALE!!"#j\a2\be\b0\d9\f6\ff\a3}
+							{"SALE!!"}
 							67
 							190
 							100
@@ -879,7 +879,7 @@
 				(self
 					save1:
 						(proc0_12
-							{HALT, WILCO!#j\e4\ef\fa\ff\a0 \b3\a8\d9\ba\ff}
+							{HALT, WILCO!}
 							67
 							-1
 							100
@@ -1115,7 +1115,7 @@
 				(self
 					save1:
 						(proc0_12
-							{HALT, WILCO!#j\e4\ef\fa\ff\a0 \b3\a8\d9\ba\ff}
+							{HALT, WILCO!}
 							67
 							-1
 							100
@@ -1351,7 +1351,7 @@
 				(self
 					save1:
 						(proc0_12
-							{I shall pursue the Wilco unit.\n   Stay and guard the area.#j\95\fa\ea\a4\a0 \b3\a8\d9\ba\86\a0\e2\92\9e\97\9d\f9\ff\n   \9a\9a\e6\92\e3\a0\ef\fc\f8\86\a0 \b6\de\b0\c4\de\9d\f9\fd\e0\de\ff}
+							{I shall pursue the Wilco unit.\n   Stay and guard the area.}
 							67
 							-1
 							40
@@ -1375,7 +1375,7 @@
 				(self
 					save1:
 						(proc0_12
-							{Affirmative.#j\f8\8e\93\96\92\a1}
+							{Affirmative.}
 							67
 							-1
 							123

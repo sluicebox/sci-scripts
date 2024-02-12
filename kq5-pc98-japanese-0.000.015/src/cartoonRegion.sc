@@ -38,13 +38,13 @@
 						#width
 						(LangSwitch 240 280)
 						#button
-						{Skip it#jSkip}
+						{Skip it}
 						0
 						#button
-						{Watch it#jContinue}
+						{Watch it}
 						1
 						#button
-						{Restore A Game#jRestore Game}
+						{Restore A Game}
 						2
 					)
 					(0
@@ -69,10 +69,10 @@
 						#width
 						(LangSwitch 240 280)
 						#button
-						{Skip it#jSkip}
+						{Skip it}
 						0
 						#button
-						{Watch it#jContinue}
+						{Watch it}
 						1
 					)
 					(0

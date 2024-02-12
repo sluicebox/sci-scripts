@@ -1438,7 +1438,7 @@
 										(not (gEgo takeDamage: 3))
 										(== gNewRoomNum gCurRoomNum)
 									)
-									(EgoDead 27 28 977 1)
+									(EgoDead 27 28 977 1) ; "You are completely strychnine by poison. No curare for you now. Next time, take some poison cure pills before it's too late."
 								)
 								(
 									(<

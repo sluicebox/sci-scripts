@@ -3,7 +3,7 @@
 (script# 311)
 (include sci.sh)
 (use Main)
-(use Door_J__)
+(use Door)
 (use FileSelector)
 (use RFeature)
 (use Motion)
@@ -180,7 +180,7 @@
 			cycleSpeed: 1
 			startUpd:
 		)
-		((= local1 (Door_J__ new:))
+		((= local1 (Door new:))
 			view: 311
 			loop: 0
 			posn: 315 158

@@ -99,7 +99,7 @@
 	(if (and temp0 (!= gCurRoomNum 544) (!= (gCurRoom curPic:) 699))
 		(if (not local10)
 			(proc0_12
-				{Time to Format:#j\cc\ab\b0\cf\af\c4\ef\e3\de:}
+				{Time to Format:}
 				67
 				0
 				180

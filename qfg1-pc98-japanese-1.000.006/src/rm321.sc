@@ -1371,7 +1371,7 @@
 						321
 						77
 						80
-						{ Try to stay "in character" next time %j\c2\b7\de\c9\c4\b7\ca \c6\b1\dc\c5\b2\ba\c4\a6 \bd\d9\c5\d6}
+						{ Try to stay "in character" next time }
 						82
 						503
 						1
@@ -1384,7 +1384,7 @@
 						321
 						79
 						80
-						{ Criminal carelessness. %j\bd\ba\bc \cc\c1\ad\b3\b2 \c0\de\af\c0\c8}
+						{ Criminal carelessness. }
 						82
 						602
 						4
@@ -1482,7 +1482,7 @@
 					321
 					87
 					80
-					{ Criminal carelessness. %j\bd\ba\bc \cc\c1\ad\b3\b2 \c0\de\af\c0\c8}
+					{ Criminal carelessness. }
 					82
 					503
 					1
@@ -1565,7 +1565,7 @@
 					321
 					88
 					80
-					{ Criminal carelessness. %j\bd\ba\bc \cc\c1\ad\b3\b2 \c0\de\af\c0\c8}
+					{ Criminal carelessness. }
 					82
 					602
 					4
@@ -1699,7 +1699,7 @@
 					321
 					89
 					80
-					{ Criminal carelessness. %j\bd\ba\bc \cc\c1\ad\b3\b2 \c0\de\af\c0\c8}
+					{ Criminal carelessness. }
 					82
 					503
 					1
@@ -1864,7 +1864,7 @@
 					321
 					92
 					80
-					{ Criminal carelessness. %j\bd\ba\bc \cc\c1\ad\b3\b2 \c0\de\af\c0\c8}
+					{ Criminal carelessness. }
 					82
 					507
 					6

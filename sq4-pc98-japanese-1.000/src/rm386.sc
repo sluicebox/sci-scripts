@@ -224,9 +224,9 @@
 							save1:
 								(proc0_12
 									(if (== (gEgo view:) 373)
-										{"I would like to buy a Mommy burger, please."#j\a2\cf\d0\b0\ca\de\b0\b6\de\b0\86\eb\e4\e2\98\e0\de\9b\92\a1\a3}
+										{"I would like to buy a Mommy burger, please."}
 									else
-										{"I'd like a..."#j\a2\94\94\8f\e4\a5\a5\a5\a5\a5\a5\a1\a3}
+										{"I'd like a..."}
 									)
 									67
 									5
@@ -252,11 +252,11 @@
 								60
 								106
 								81
-								{Here!? I'd rather not.#j\9a\9a\e3\de\ff\fe \ea\e0\f7\97\e0\98\e5\92\e5\a1}
+								{Here!? I'd rather not.}
 								0
 								106
 								81
-								{Yes! I'm hard up for cash!#j\ea\92\a4\95\96\e8\96\de \e5\98\e3 \9a\ef\8f\e3\f9\fd\e3\de\9d\a1}
+								{Yes! I'm hard up for cash!}
 								1
 							)
 							(0
@@ -267,9 +267,9 @@
 									save1:
 										(proc0_12
 											(if (== (gEgo view:) 373)
-												{"I can cook."#j\a2\f8\8e\93\f8\96\de\a0 \e3\de\97\ef\9d\a1\a3}
+												{"I can cook."}
 											else
-												{"I want a job."#j\a2\9c\9a\de\e4\96\de\a0 \ee\9c\92\fd\e3\de\9d\a1\a3}
+												{"I want a job."}
 											)
 											67
 											5
@@ -303,9 +303,9 @@
 							save1:
 								(proc0_12
 									(if (== (gEgo view:) 373)
-										{"What can I do for ya, doll?"#j\a2\e5\e6\96\de\ee\9c\92\fd\e0\de\92\fe\a3}
+										{"What can I do for ya, doll?"}
 									else
-										{"Yeah?"#j\a2\e5\fd\96 \f6\93\96\fe\a3}
+										{"Yeah?"}
 									)
 									67
 									5
@@ -334,9 +334,9 @@
 												)
 											)
 										)
-										{"Oh, you again, whatdaya want?"#j\a2\ec\f1\a4\ef\e0\95\ef\94\96\a1 \92\8f\e0\92\e5\e6\96\de\ee\9c\92\fd\e0\de\fe\a3}
+										{"Oh, you again, whatdaya want?"}
 									else
-										{"We're out of it. We're outta everything, including employees."#j\a2\f0\fd\e5 \9c\e5\97\de\fa \e0\de\f6\a1\b1\d9\ca\de\b2\c4\f3 \e0\de\fa\f3\92\e5\92\fd\e0\de\ff\a3}
+										{"We're out of it. We're outta everything, including employees."}
 									)
 									67
 									5
@@ -355,7 +355,7 @@
 							(self
 								save1:
 									(proc0_12
-										{"I'm tired of firing ya, now scram!"#j\a2\95\ef\94\86\b8\cb\de\e6\9d\f9\e9\e6\f3\93\e2\96\fa\e0\a1\f3\93\e3\de\e3\92\99\ff\a3}
+										{"I'm tired of firing ya, now scram!"}
 										67
 										5
 										(LangSwitch 150 140)
@@ -371,9 +371,9 @@
 								save1:
 									(proc0_12
 										(cond
-											((== (gEgo view:) 373) {"No can do, what with you bein' female and all."#j\a2\c0\de\d2\e0\de\ff\a0 \9c\de\8e\9e\92\e0\de\96\f7\8f\e3\a4\a0 \f5\93\98\de\93\ea\e3\de\97\e5\92\fd\e3\de\e8\a1\a3})
-											((IsFlag 70) {"You would, huh? Well, this is the greatest oppor... aah, ya heard the pitch before, just don't screw up or I'll land ya on yer ear again, GOT IT?"#j\a2\9f\93\96\92\fe\a0 \9a\fa\ea\a4\95\ef\94\e6\e4\8f\e3 \9b\92\a5\a5\a5\a5 \a1 \n\92\f4\a4\9f\e9\a4\f3\93\92\92\e0\92\9a\e4\ea \fc\96\8f\e3\f9\e0\de\fb\93\a1 \n\e0\e0\de \9c\8f\ea\df\92\9c\e5\92\f6\93\e6\e5\a1 \9a\fd\e4\de\ef\e0\a4\9c\8f\ea\df\92\9c\e0\f7\a4 \n\91\e0\ef\86\9c\de\f2\fd\e6\95\9c\e2\99\e3\f4\f9\96\f7\e5\a1\fc\96\8f\e0\96\fe\a3})
-											(else {"You would, huh? Well, this is the greatest opportunity you've ever had, kid. Benefits up the wazoo, and if ya stick wit' me a half an hour or so, I'll make ya my Assistant Manager. How wouldja like that?"#j\a2\9f\93\96\92\fe\a0 \9a\fa\ea\a4\95\ef\94\e6\e4\8f\e3 \9b\92\9a\93\e9\c1\ac\dd\bd\e0\de\9e\de\a1\a0 \n\e0\92\98\de\93\ea\e4\8f\e3\f3\92\92\9c\a4\f3\9c30\ec\df\fd\92\9c\de\8e\93\n\96\de\fd\ea\de\fa\ea\de\a4\95\ef\94\86\b1\bc\bd\c0\dd\c4\cf\c8\b0\bc\de\ac\b0\e6 \9c\e3\f4\f9\f6\a1\n\e4\de\93\e0\de\92\fe\a3})
+											((== (gEgo view:) 373) {"No can do, what with you bein' female and all."})
+											((IsFlag 70) {"You would, huh? Well, this is the greatest oppor... aah, ya heard the pitch before, just don't screw up or I'll land ya on yer ear again, GOT IT?"})
+											(else {"You would, huh? Well, this is the greatest opportunity you've ever had, kid. Benefits up the wazoo, and if ya stick wit' me a half an hour or so, I'll make ya my Assistant Manager. How wouldja like that?"})
 										)
 										67
 										5
@@ -407,9 +407,9 @@
 						save1:
 							(proc0_12
 								(cond
-									((== (gEgo view:) 373) {"You male sexist pig!!"#j\a2\e0\de\fd\9f\fd \9c\de\8e\eb\e9\cc\de\c0\ff\ff\a3})
-									((IsFlag 70) {"Gee, thanks, what a swell boss!"#j\a2\fc\87\ff\a0 \91\f8\96\de\e4\93\a1 \e5\fd\e3\92\92\ce\de\bd\e5\fd\e0\de\ff\a3})
-									(else {"Gee, thanks."#j\a2\fc\87\ff\a0 \91\f8\96\de\e4\93\a1\a3})
+									((== (gEgo view:) 373) {"You male sexist pig!!"})
+									((IsFlag 70) {"Gee, thanks, what a swell boss!"})
+									(else {"Gee, thanks."})
 								)
 								67
 								5
@@ -478,11 +478,11 @@
 						36
 						106
 						81
-						{Let me at it! I love a challenge!#j\f4\f7\9e\e3\98\fa\ff\a0 \c1\ac\da\dd\bc\de\96\de\9d\97\e5\fd\e0\de\ff}
+						{Let me at it! I love a challenge!}
 						1
 						106
 						81
-						{Please let me WIMP OUT.\n(But can I have the cash?)#j\f4\f2\9b\9e\e3\98\e0\de\9b\92\a1\n(\e3\de\f3 \97\8d\93\f8\8e\93\ea \98\fa\ef\9e\fd\96\fe)}
+						{Please let me WIMP OUT.\n(But can I have the cash?)}
 						0
 					)
 					(0

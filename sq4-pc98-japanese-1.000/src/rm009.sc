@@ -42,7 +42,7 @@
 			(1
 				(= local0
 					(proc0_12
-						{We rejoin our friend and semi-hero Roger Wilco as he rockets back toward his home planet, Xenon, which he hasn't seen since Space Quest II. Having successfully rescued those two ingrates from Andromeda, he decides a pit stop on Magmetheus is in order.#j\9a\e9\f3\e9\96\de\e0\f8\e9\cb\b0\db\b0\e3\de\91\f9\a0 \db\bc\de\ac\b0\a5\b3\a8\d9\ba\96\de\a4\a0 \n\93\e1\8d\93\9e\fd\a0 \b1\d9\d0\c6\ad\b0\d1\a5\cf\d7\b0\c4\de\9a\de\93\e3\de\a0 \n\96\fa\e9\93\ef\fa\9a\97\8e\93\e3\de\91\f9\be\de\c9\dd\9e\92\ed\a0\f1\96\8f\e3\92\f9\e4\9a\fb\e3\de\91\f9\a1\a0 \n\n\e0\eb\de\e9\e4\e1\8d\93\a4\96\fa\ea\a0\cf\b8\de\d2\c3\a8\b3\bd\9e\92\e9\a0\93\e1\8d\93\ca\de\b0\e3\de\a0 \n\9c\ea\de\f7\98\a0 \97\8d\93\99\92\86\9d\f9\9a\e4\e6\9c\e0\a1}
+						{We rejoin our friend and semi-hero Roger Wilco as he rockets back toward his home planet, Xenon, which he hasn't seen since Space Quest II. Having successfully rescued those two ingrates from Andromeda, he decides a pit stop on Magmetheus is in order.}
 						67
 						2
 						(LangSwitch 5 15)

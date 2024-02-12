@@ -6,9 +6,8 @@
 (use Motion)
 (use Actor)
 
-(class Door_J__ of Prop
+(class Door of Prop
 	(properties
-		name {Door}
 		entranceTo 0
 		locked 0
 		openSnd 0

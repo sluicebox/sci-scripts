@@ -533,7 +533,7 @@
 					-1
 					15
 					#title
-					{Little Birdie%j\b6\dc\b2\b2 \ba\c4\d8\c1\ac\dd}
+					{Little Birdie}
 				)
 				(Print ; "Kitty, you'd better not be bothering the little birdie again!"
 					313
@@ -542,7 +542,7 @@
 					-1
 					15
 					#title
-					{Little Old Lady%j\ba\b6\de\d7\c5 \b5\ca\de\b1\c1\ac\dd}
+					{Little Old Lady}
 				)
 				(HighPrint 313 39) ; "Who would think a little birdie could be so noisy!"
 				(self cue:)
@@ -949,7 +949,7 @@
 						313
 						53
 						80
-						{ Better stay downstairs next time. %j\c6\b6\b2\c6 \b2\b8\dd\bc\de\ac \c5\b6\af\c0\c8;\c2\b7\de\c9\c4\b7\c6\ca \b2\af\b6\b2\c6 \c4\c4\de\cf\d9\cd\de\b7\c0\de\c8}
+						{ Better stay downstairs next time. }
 						82
 						637
 						1
@@ -960,7 +960,7 @@
 						313
 						54
 						80
-						{ What a cute little kitty! %j\c5\dd\c3\b6\dc\b2\b2 \ba\c8\ba\c1\ac\dd!}
+						{ What a cute little kitty! }
 						82
 						637
 						1
@@ -1046,7 +1046,7 @@
 					#mode
 					1
 					#title
-					{Little Old Lady%j\ba\b6\de\d7\c5 \b5\ca\de\b1\c1\ac\dd}
+					{Little Old Lady}
 				)
 				(= local14 1)
 				(gEgo setScript: climbDown)
@@ -1078,7 +1078,7 @@
 						-1
 						15
 						#title
-						{L.O.L.%j\c1\b2\bb\b2 \b5\ca\de\b1\c1\ac\dd}
+						{L.O.L.}
 					)
 					(gEgo setLoop: -1 setScript: catAttack)
 					(cat setScript: 0)

@@ -49,7 +49,7 @@
 						lowlightColor: (proc0_1 19 3)
 						yourself:
 					)
-					((BigDummy_J_______l__ new:)
+					((BigDummy new:)
 						nsTop: 0
 						nsLeft: 0
 						nsBottom: (- (window bottom:) (window top:))
@@ -269,10 +269,8 @@
 	)
 )
 
-(instance BigDummy_J_______l__ of IconI
-	(properties
-		name {BigDummy}
-	)
+(instance BigDummy of IconI
+	(properties)
 
 	(method (show))
 

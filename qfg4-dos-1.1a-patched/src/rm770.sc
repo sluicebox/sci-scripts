@@ -1217,7 +1217,7 @@
 
 	(method (doit)
 		(if (and local17 (== cel 3))
-			(EgoDead 24)
+			(EgoDead 24) ; "Better bone up on your acrobatics skills. You'll need to be quicker than that to make a career playing the bones."
 		)
 		(super doit:)
 	)

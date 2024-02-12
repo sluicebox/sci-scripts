@@ -649,7 +649,7 @@
 			)
 			((> [gEgoStats 17] 0)) ; health
 			(temp1
-				(EgoDead 7 28)
+				(EgoDead 7 28) ; "Talk about over-exerting yourself... That last little move wore you out so much it hurt. In fact, it hurt so much, it killed you. Take it easier next time."
 			)
 		)
 		((ScriptID 0 21) doit:) ; statusCode
@@ -931,7 +931,7 @@
 				(if (self useStamina: 8 0)
 					(gMessager say: 1 6 5 1 0 28) ; "You're starving. You'd better find some food SOON!"
 				else
-					(EgoDead 8 28 995 1)
+					(EgoDead 8 28 995 1) ; "While it's true that some foods may be bad for your health, NO food is even worse. You have, quite literally, starved to death."
 				)
 			)
 			((IsFlag 2)

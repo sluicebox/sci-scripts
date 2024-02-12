@@ -108,7 +108,7 @@
 				(theEyes init: setCycle: ForwardCounter 4)
 				(localproc_0
 					0
-					{Well... what have we here?#j\ec\b0\f1\a5\a5\a5\a5\a5\a5\a4\e0\de\fa\86\e2\fa\e3\97\e0\fd\e0\de\fe}
+					{Well... what have we here?}
 				)
 				(= seconds 4)
 			)
@@ -120,28 +120,28 @@
 			(3
 				(localproc_0
 					1
-					{This is the rebel scum we captured in the SQ4 time sector.#j\bd\cd\df\b0\bd\a5\b8\b4\bd\c4\80\e9\c0\b2\d1\be\b8\c0\b0\e3\de\n\e2\96\ef\94\e0 \ea\fd\97\de\8c\98\9c\8c\e3\de\9d\a1}
+					{This is the rebel scum we captured in the SQ4 time sector.}
 				)
 				(= seconds 5)
 			)
 			(4
 				(localproc_0
 					1
-					{He had just aided Wilco in escaping.#j\9a\92\e2\ea\a4\9b\8f\97 \b3\a8\d9\ba\96\de\e6\99\de\f9\e9\86\e3\e2\e0\de\8f\e0\fd\e3\de\9d\a1}
+					{He had just aided Wilco in escaping.}
 				)
 				(= seconds 5)
 			)
 			(5
 				(localproc_0
 					1
-					{The read-out on his time gun indicates that Wilco was successfully transported...#j\9a\92\e2\e9\c0\b2\d1\a5\b6\de\dd\e9\eb\8e\93\9c\de\e6\f6\f9\e4\a4\n\b3\a8\d9\ba\ea\c4\d7\dd\bd\ce\df\b0\c4\e6\9e\92\9a\93\9c\ef\9c\e0\a5\a5\a5\a5\a1}
+					{The read-out on his time gun indicates that Wilco was successfully transported...}
 				)
 				(= seconds 6)
 			)
 			(6
 				(localproc_0
 					1
-					{...into this time sector as you feared.#j\a5\a5\a5\a5\a5\a5\9c\fd\ea\df\92\9c\e0\e4\93\f8\a4\b3\a8\d9\ba\ea\a4\n\9a\e9\c0\b2\d1\be\b8\c0\b0\e6\f4\8f\e3\97\e0\f6\93\e3\de\9d\a1}
+					{...into this time sector as you feared.}
 				)
 				(= seconds 5)
 			)
@@ -150,7 +150,7 @@
 				(theEyes show: setCycle: ForwardCounter 3)
 				(localproc_0
 					0
-					{That is no longer a concern.#j\9f\fd\e5\9a\e4\ea\a4\92\ef\ea\a0\f3\fd\e0\de\92\9c\de\8c\e5\92\a1\n\9f\92\e2\ea\a4\a0 \b3\a8\d9\ba\e9\a0\f1\9d\9a\e0\de\ff}
+					{That is no longer a concern.}
 				)
 				(= seconds 4)
 			)
@@ -159,7 +159,7 @@
 				(theEyes setCycle: ForwardCounter 6)
 				(localproc_0
 					0
-					{Wilco will surrender to us once he has learned we have captured his SON!#j\b5\da\e0\e1\96\de\a4\f1\9d\9a\86\e2\96\ef\94\e0\e4\92\93\9a\e4\86\9c\fa\ea\de\a4 \b3\a8\d9\ba\ea\9a\93\9b\fd\9d\f9\ea\9d\de\e0\de\a1}
+					{Wilco will surrender to us once he has learned we have captured his SON!}
 				)
 				(= seconds 6)
 			)
@@ -168,7 +168,7 @@
 				(theEyes setCycle: ForwardCounter 6)
 				(localproc_0
 					0
-					{Then he will be destroyed once and for all. Ha ha ha....#j\9f\93\9d\fa\ea\de\a4\f4\e2\ea\95\9c\ef\92\e0\de\a1\ca\af\ca\af\ca\a5\a5\a5\a5\a5\a5}
+					{Then he will be destroyed once and for all. Ha ha ha....}
 				)
 				(= seconds 4)
 			)

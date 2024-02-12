@@ -315,7 +315,7 @@
 				(sp2 stopUpd:)
 				(= local0
 					(proc0_12
-						{"I have just completed a scan of the Labion sector of Space Quest II."#j \a2\bd\cd\df\b0\bd\a5\b8\b4\bd\c4II\e9 \d7\cb\de\b5\dd\a5\be\b8\c0\b0\e3\de\e9 \e1\8e\93\9b\96\de\95\fc\8f\e0\e4\9a\fb\e0\de\a1\a3}
+						{"I have just completed a scan of the Labion sector of Space Quest II."}
 						67
 						(LangSwitch 200 100)
 						1
@@ -333,7 +333,7 @@
 				(proc0_12 local0)
 				(= local0
 					(proc0_12
-						{"No sign of presence at this time."#j\a2\99\de\fd\9b\de\92\e9\e4\9a\fb\a4\92\f9\99\ea\92\ea\e5\9c\e0\de\a1\a3}
+						{"No sign of presence at this time."}
 						67
 						(LangSwitch 178 80)
 						10
@@ -352,7 +352,7 @@
 				(proc0_12 local0)
 				(= local0
 					(proc0_12
-						{"Ghraa... slooh... uuhrp."#j\a2\cd\df\d7\a5\a5\a5\a5\cd\df\a5\a5\d7\a1\a3}
+						{"Ghraa... slooh... uuhrp."}
 						67
 						25
 						25
@@ -368,7 +368,7 @@
 				(proc0_12 local0)
 				(= local0
 					(proc0_12
-						{"Mrghl... pifhh... zaaft."#j\a2\cd\df\b0\d7\fe\a0 \cd\df\d7\a5\a5\ff\a3}
+						{"Mrghl... pifhh... zaaft."}
 						67
 						178
 						25
@@ -386,7 +386,7 @@
 				(proc0_12 local0)
 				(= local0
 					(proc0_12
-						{"Jobhr... fhelz... klogd."#j\a2\cd\df\d7\ff\ff\a0 \cd\df\d7\b0\a5\a5\cd\df\a5\a5\d7\ff\a3}
+						{"Jobhr... fhelz... klogd."}
 						67
 						25
 						25
@@ -457,7 +457,7 @@
 			(24
 				(= local0
 					(proc0_12
-						{"HALT."#j\a2\93\9a\de\98\e5\ff\ff\a3}
+						{"HALT."}
 						67
 						85
 						25
@@ -473,7 +473,7 @@
 				(proc0_12 local0)
 				(= local0
 					(proc0_12
-						{"Some people just won't follow instructions."#j\a2\9c\9c\de\e6\a0\9c\e0\96\de\fc\e5\92\96\f7\a0\9a\fb\9b\fa\f9\fd\e0\de\a1\a3}
+						{"Some people just won't follow instructions."}
 						67
 						25
 						25

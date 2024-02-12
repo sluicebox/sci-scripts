@@ -655,7 +655,7 @@
 						37
 						18
 						80
-						{OH NOOOOOOO!%j\b5\b0\c9\b0\b0\b0}
+						{OH NOOOOOOO!}
 						82
 						800
 						0
@@ -762,7 +762,7 @@
 						2
 						5
 						80
-						{Your figure remains still and silent.%j\b7\d0\c9 \bd\b6\de\c0\ca \c4\cf\d8 \c1\dd\d3\b8\a6 \c2\c2\de\b9\d9}
+						{Your figure remains still and silent.}
 					)
 				else
 					(gEgo

@@ -852,13 +852,13 @@
 				#width
 				250
 				#button
-				{Restore%j\d8\bd\c4\b1}
+				{Restore}
 				1
 				#button
-				{ Restart %j \d8\bd\c0\b0\c4 }
+				{ Restart }
 				2
 				#button
-				{ Quit %j \d4\d2\d9 }
+				{ Quit }
 				3
 			)
 			(1
@@ -1228,7 +1228,7 @@
 					0
 					60
 					80
-					{Death from Overwork%j\b6\db\b3 \c9 \c0\d2 \bc\dd\c0\de}
+					{Death from Overwork}
 					82
 					800
 					1
@@ -1364,12 +1364,12 @@
 			0
 			67
 			#title
-			{Giving up, huh?%j\b1\b7\d7\d2\d9?}
+			{Giving up, huh?}
 			#button
-			{Quit%j\d4\d2\d9}
+			{Quit}
 			1
 			#button
-			{Don't Quit%j\d4\d2\c5\b2}
+			{Don't Quit}
 			0
 			#icon
 			800
@@ -1514,7 +1514,7 @@
 	(properties)
 
 	(method (doit param1)
-		(Format param1 0 1 gScore gScore) ; "Quest for Glory I     [score %d of 500]%%j  \b8\b4\bd\c4 \cc\ab\b0 \b8\de\db\b0\d8\a8        [\bd\ba\b1 %d/500]"
+		(Format param1 0 1 gScore gScore) ; "Quest for Glory I     [score %d of 500]%"
 	)
 )
 
@@ -1592,7 +1592,7 @@
 					)
 					(HandsOff)
 					(HighPrint 0 2) ; "Suddenly, you hear voices, seeming to come from everywhere at once.  They all sound like Baba Yaga, and they all say: "Wheeeeeere's myyyyyy Maaaandraaaaake Rooooooooooooot????""
-					(EgoDead 0 3 82 800 1 2 80 {Curses!%j\c9\db\b2\c0\de!}) ; "Because you failed to meet Baba Yaga's DEADline, her curse turns you into a frog on the spot, and you are forced to live out your years dodging Sauruses (Saurii?) with large feet."
+					(EgoDead 0 3 82 800 1 2 80 {Curses!}) ; "Because you failed to meet Baba Yaga's DEADline, her curse turns you into a frog on the spot, and you are forced to live out your years dodging Sauruses (Saurii?) with large feet."
 				)
 				(if global334
 					(-- global334)
@@ -1648,7 +1648,7 @@
 		(if (u> (MemoryInfo 1) (+ 20 (MemoryInfo 0))) ; FreeHeap, LargestPtr
 			(cond
 				(global101
-					(if (Print 0 6 #button {Debug%j\c3\de\a8\ca\de\af\b8\de} 1) ; "Memory fragmented."
+					(if (Print 0 6 #button {Debug} 1) ; "Memory fragmented."
 						(SetDebug)
 					)
 				)
@@ -1657,7 +1657,7 @@
 						0
 						7
 						80
-						{Bitten by a program bug%j\cc\df\db\b8\de\d7\d1\ca\de\b8\de \c6 \d4\d7\da\c0}
+						{Bitten by a program bug}
 					)
 				)
 			)
@@ -1862,7 +1862,7 @@
 									0
 									28
 									80
-									{The surgeon general warns . . . %j\bb\b0\bc\de\ae\dd \bc\de\aa\c8\d7\d9 \c9 \b9\b2\ba\b8... }
+									{The surgeon general warns . . . }
 									82
 									800
 									0
@@ -1970,15 +1970,15 @@
 			(SL enable:)
 		)
 		(if (DoSound sndSET_SOUND)
-			(SetMenu 774 113 1 110 {Turn off%j\b7\d9})
+			(SetMenu 774 113 1 110 {Turn off})
 		else
-			(SetMenu 774 113 0 110 {Turn on%j\c2\b9\d9})
+			(SetMenu 774 113 0 110 {Turn on})
 		)
 		(super replay:)
 	)
 
 	(method (wordFail param1 &tmp [temp0 40])
-		(Print 0 46 #title (Format @temp0 0 47 param1 param1)) ; "You will not need to use that word in this game.", "%s???%%j%s???"
+		(Print 0 46 #title (Format @temp0 0 47 param1 param1)) ; "You will not need to use that word in this game.", "%s???%"
 	)
 
 	(method (syntaxFail)

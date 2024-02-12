@@ -646,7 +646,7 @@
 				(gEgo setCycle: End self)
 			)
 			(4
-				(EgoDead 10 600 0 0 912)
+				(EgoDead 10 600 0 0 912) ; "You climbed the gate just fine. You climbed down just fine too. The Necrotaurs killed you quite nicely before you could reach the ground. Isn't that nice?"
 			)
 		)
 	)
@@ -840,7 +840,7 @@
 				(gEgo setCycle: End self)
 			)
 			(10
-				(EgoDead 10 600 0 0 912)
+				(EgoDead 10 600 0 0 912) ; "You climbed the gate just fine. You climbed down just fine too. The Necrotaurs killed you quite nicely before you could reach the ground. Isn't that nice?"
 			)
 		)
 	)
@@ -919,7 +919,7 @@
 				(zappedSound stop:)
 				(aZap dispose:)
 				(if (< (-= [gEgoStats 17] 50) 0) ; health
-					(EgoDead 9 600 0 0 912)
+					(EgoDead 9 600 0 0 912) ; "Your whole life flashes before your eyes (along with lots of other bright lights) as the gate spell zaps you into oblivion. Touchy, these homeowners."
 				else
 					(gEgo setCycle: CT 0 -1 self)
 				)
@@ -946,7 +946,7 @@
 				(= seconds 5)
 			)
 			(1
-				(EgoDead 12 600 0 0 912)
+				(EgoDead 12 600 0 0 912) ; "You heroically slaughtered one of the guardian Necrotaurs. Unfortunately, the second one unheroically made mincemeat of you. You'll need to work up to this encounter in your next life."
 			)
 		)
 	)
@@ -962,7 +962,7 @@
 				(= seconds 5)
 			)
 			(1
-				(EgoDead 11 600 0 0 912)
+				(EgoDead 11 600 0 0 912) ; "The Necrotaurs are having you for a midnight snack. You might want to leave frontal assaults for later, or at least prepare for combat better."
 			)
 		)
 	)

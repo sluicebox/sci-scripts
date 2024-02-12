@@ -549,7 +549,7 @@
 					78
 					17
 					80
-					{Trounced by a bounce!%j\c4\cb\de\ca\c8\d9 \d4\c2\c6 \d4\d7\da\c0!}
+					{Trounced by a bounce!}
 					82
 					800
 					0

@@ -435,7 +435,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"You've got a lot of nerve coming back here, Roger Wilco."#j\a2\9a\9a\e6\a0\f3\e4\de\8f\e3\98\f9\e5\fd\e3\a4\a0 \e4\de\93\92\93\a0\9c\fd\99\92\e5\e9\fe\a0 \db\bc\de\ac\b0\a5\b3\a8\d9\ba\a1\a3}
+							{"You've got a lot of nerve coming back here, Roger Wilco."}
 							67
 							2
 							2
@@ -457,7 +457,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"After leaving me the way you did, you male Scum!"#j\a2\91\fd\e5\ec\93\e6\9c\e3\a0 \fc\e0\9c\86\9d\e3\e3\92\8f\e0\e5\fd\e3\a4\a0 \95\e4\9a\e9\98\9d\de\e0\de\fc\ff\a3}
+							{"After leaving me the way you did, you male Scum!"}
 							67
 							2
 							2
@@ -479,7 +479,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"This is the last woman you'll ever dump on! Right, girls?!"#j\a2\9d\e3\f9\95\fd\e5\ea\a0 \fc\e0\9c\96\de\9b\92\9a\de\f6\ff\a0 \9f\93\e3\de\9c\8e\a4\a0 \f0\fd\e5\ff\a3}
+							{"This is the last woman you'll ever dump on! Right, girls?!"}
 							67
 							2
 							2
@@ -499,7 +499,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"RIGHT!"#j\a2\9f\e9\e4\93\f8\ff\a3}
+							{"RIGHT!"}
 							67
 							3
 							160
@@ -515,7 +515,7 @@
 				)
 				(= local2
 					(proc0_12
-						{"RIGHT!"#j\a2\9f\e9\e4\93\f8\ff\a3}
+						{"RIGHT!"}
 						67
 						245
 						125
@@ -537,7 +537,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"Said ya couldn't be tied down..."#j\a2\95\fd\e5\e6\e5\fd\96\a0\9c\ea\de\f7\fa\e5\92\a5\a5\a5\a5\a4\8f\e3\92\8f\e0\fc\a1\a3}
+							{"Said ya couldn't be tied down..."}
 							67
 							2
 							2
@@ -557,7 +557,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"I said that?"#j\a2\ee\de\98\a0\9f\fd\e5\9a\e4\a0\92\8f\e0\99\fe\a3}
+							{"I said that?"}
 							67
 							48
 							155
@@ -579,7 +579,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"You said ya had to be free to roam the galaxy."#j\a2\93\e1\8d\93\86\a0\96\99\ef\fc\f9\e6\ea\a4\a0 \9c\de\f5\93\e3\de\e5\92\e4\a0\c0\de\d2\e0\de\8f\e3\92\8f\e0\fc\a1\a3}
+							{"You said ya had to be free to roam the galaxy."}
 							67
 							2
 							2
@@ -599,7 +599,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"Was that me?"#j\a2\9f\fa\a4\a0 \ce\dd\c4\e6\a0\ee\de\98\fe\a3}
+							{"Was that me?"}
 							67
 							48
 							155
@@ -621,7 +621,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"You'll be sorrier than you look. We'll see to that!"#j\a2\92\ef\f6\f8\a4\a0 \9d\de\8f\e4\a0 \f0\9c\de\f2\e6\9c\e3\91\99\de\f9\fc\a1\a0 \9e\de\8f\e0\92\a0\9f\93\9c\e3\f4\f9\ff\ff\a3}
+							{"You'll be sorrier than you look. We'll see to that!"}
 							67
 							2
 							2
@@ -641,7 +641,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"YEAH!"#j\a2\9f\93\e0\de\ff\a3}
+							{"YEAH!"}
 							67
 							3
 							160
@@ -657,7 +657,7 @@
 				)
 				(= local2
 					(proc0_12
-						{"YEAH!"#j\a2\9f\93\e0\de\ff\a3}
+						{"YEAH!"}
 						67
 						245
 						125
@@ -679,7 +679,7 @@
 				(self
 					save1:
 						(proc0_12
-							{"Into the sub, fly boy."#j\a2\9e\fd\9d\92\96\fd\e9\a0\e5\96\e6\a0\95\ea\92\f8\ff\a0 \93\e1\8d\93\9c\8e\93\e8\fd\ff\a3}
+							{"Into the sub, fly boy."}
 							67
 							2
 							2

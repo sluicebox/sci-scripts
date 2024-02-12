@@ -391,7 +391,7 @@
 					334
 					43
 					80
-					{ Erana missed this spot. %j\b4\d7\c5\ca\a4 \ba\ba\a6 \dc\bd\da\c0\dd\c0\de\c8}
+					{ Erana missed this spot. }
 					82
 					800
 					0

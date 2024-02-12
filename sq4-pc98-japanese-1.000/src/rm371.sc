@@ -48,14 +48,14 @@
 (procedure (localproc_1)
 	(return
 		(switch (Random 0 7)
-			(0 {Trying to weasel out of paying, huh?#j\95\96\e8\86\a0 \ea\f7\fc\e5\92\e3\de\a0 \e6\99\de\f6\93\e4\9c\e3\92\f9\e9\fe })
-			(1 {Cut the chit chat and hand over the cash.#j\93\f9\9b\92\a0 \f8\98\e2\ea\a0 \f6\9c\e3\a4\a0 \95\96\e8\86\a0 \e0\de\9c\e5\9b\92\a1})
-			(2 {It really is nice weather, but then this is an artificial computer controlled climate. Now how about some cash?#j\ee\fd\e4\e6\a0 \e4\e3\f3\a0\92\92\a0 \95\e3\fd\97\e0\de\fc\e8\a1\a0 \e3\de\f3\a4\a0 \9a\9a\ea\a0\ba\dd\cb\df\ad\b0\c0\b0\e3\de\a0 \e3\fd\97\86\a0 \e2\98\f8\e0\de\9c\e3\92\f9\96\f7\a0 \e4\93\9e\de\fd\e9\a0\9a\e4\e0\de\fc\a1\a0 \9b\91\a4\a0 \95\96\e8\ea\a0 \e4\de\93\9c\e0\e9\fe})
+			(0 {Trying to weasel out of paying, huh?})
+			(1 {Cut the chit chat and hand over the cash.})
+			(2 {It really is nice weather, but then this is an artificial computer controlled climate. Now how about some cash?})
 			(3 {I think you're cute too, but looks won't pay for those designer duds.})
 			(4 {We don't haggle over prices here hon, either pay up or put the dress back!})
 			(5 {I don't want to have to throw you out, but if you don't hand over the cash, I'll have no choice.})
-			(6 {Stop wasting my time, you sickos are all the same, now pay up!#j\f3\93\a0 \91\e0\9c\e9\a0 \9c\de\8c\ef\ea\a0\9c\e5\92\e3\de\f6\a1\a0 \cd\dd\c0\b2\ea\a0\f0\fd\e5\95\e5\9c\de\e0\de\fc\a1\a0 \9b\91\a4\a0 \95\96\e8\86\a0 \ea\f7\8f\e3\e1\8e\93\e0\de\92\ff})
-			(7 {Listen, you twerp, the dress is 60 buckazoids, now hand over the cash or the dress!#j\91\e9\e8\a4\95\ca\de\b6\9b\fd\ff\a0 \9f\e9\a0 \c4\de\da\bd\ea\a4\a0 60\ca\de\af\b6\bf\de\b2\c4\de\a0 \e5\e9\f6\a1\a0 \9b\91\a4\a0 \95\96\e8\86\a0 \e0\de\9d\96\a4\a0 \c4\de\da\bd\86\a0\f3\e4\de\9c\e5\9b\92\ff})
+			(6 {Stop wasting my time, you sickos are all the same, now pay up!})
+			(7 {Listen, you twerp, the dress is 60 buckazoids, now hand over the cash or the dress!})
 		)
 	)
 )
@@ -1347,7 +1347,7 @@
 								(self
 									save1:
 										(proc0_12
-											(Format @local4 371 48 local2 local2) ; ""Are you in need of an auditory exam or what? I said it will be %3d buckazoids please."#j\a2\91\e5\e0\a4\a0 \f0\f0\e9\99\fd\9b\e3\de\f3\a0\eb\e2\f6\93\9c\de\8c\e5\92\fe\a0 \fc\e0\9c\ea\a4\a0 %3d\ca\de\af\b6\bf\de\b2\c4\de\e6\e5\f8\ef\9d\8f\e3\92\8f\e0\ea\9d\de\f6\a1\a3"
+											(Format @local4 371 48 local2 local2) ; "Are you in need of an auditory exam or what? I said it will be %3d buckazoids please."
 											67
 											1
 											1

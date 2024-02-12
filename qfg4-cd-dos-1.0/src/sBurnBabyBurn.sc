@@ -78,7 +78,7 @@
 				(= seconds 1)
 			)
 			(4
-				(EgoDead 127 260 262 0 912)
+				(EgoDead 127 260 262 0 912) ; "The unjustly executed Gypsy's dying curse took you and the villagers with him."
 			)
 		)
 	)

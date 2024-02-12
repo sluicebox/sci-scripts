@@ -370,13 +370,13 @@
 						#mode
 						0
 						#button
-						{ Balance #j \9b\de\fd\e0\de\96\86\f0\f9 }
+						{ Balance }
 						0
 						#button
-						{ Clean House #j \9d\ed\de\e3\eb\97\e0\de\9d  }
+						{ Clean House }
 						1
 						#button
-						{ Done #j \f4\f2\f9  }
+						{ Done }
 						2
 					)
 					(0

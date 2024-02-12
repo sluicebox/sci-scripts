@@ -653,9 +653,9 @@
 		(switch iconValue
 			(11 ; Open Door
 				(if (OneOf local0 4 5 6)
-					(EgoDead 54 300 970 1)
+					(EgoDead 54 300 970 1) ; "The prisoner was behind the OTHER door! This one led to the Burgomeister's bedroom. In the morning, you and the gypsy are both burned at the stake."
 				else
-					(EgoDead 111 300 970 1)
+					(EgoDead 111 300 970 1) ; "Of all the buildings in all the little towns, you had to pick this one to rob. Choose your victims more carefully next time; the Burgomeister was not at all pleased when you woke him up."
 				)
 			)
 			(else

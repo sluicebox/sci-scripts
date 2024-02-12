@@ -984,7 +984,7 @@
 					76
 					74
 					80
-					{Plant it, fella!%j\bb\b1 \b3\b4\db\d6!}
+					{Plant it, fella!}
 					82
 					79
 					2
@@ -1035,7 +1035,7 @@
 				(gEgo setLoop: 1 cel: 0 setCycle: End self)
 			)
 			(4
-				(EgoDead 76 80 80 {Oh, deer!%j\cf\b1 \c5\dd\c4\b2\b3} 82 79 1 5) ; "You are staggered by the Dryad's spell. She appears to enjoy having lots of bucks."
+				(EgoDead 76 80 80 {Oh, deer!} 82 79 1 5) ; "You are staggered by the Dryad's spell. She appears to enjoy having lots of bucks."
 			)
 		)
 	)

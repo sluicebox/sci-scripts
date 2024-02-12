@@ -4,7 +4,7 @@
 (include sci.sh)
 (use Main)
 (use Interface)
-(use Door_J__)
+(use Door)
 (use FileSelector)
 (use LoadMany)
 (use RFeature)
@@ -85,7 +85,7 @@
 		(if (< gTimeOfDay 4)
 			(sheriff init:)
 		)
-		((= local1 (Door_J__ new:))
+		((= local1 (Door new:))
 			view: 300
 			loop: 0
 			posn: 71 122

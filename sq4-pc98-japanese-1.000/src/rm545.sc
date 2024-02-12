@@ -417,7 +417,7 @@
 				(theEyes setCycle: RandCycle)
 				(localproc_0
 					(LangSwitch 0 1)
-					{Take a good look, Roger:#j\db\bc\de\ac\b0\a4\f6\98\f0\fb\a1}
+					{Take a good look, Roger:}
 					851
 					self
 				)
@@ -432,7 +432,7 @@
 			(3
 				(localproc_0
 					(LangSwitch 0 1)
-					{Remember this poor wretched soul...#j\9a\92\e2\e9\9a\e4\86\95\ee\de\94\e3\f9\e0\de\fb\a5\a5\a5\a5\a1}
+					{Remember this poor wretched soul...}
 					852
 					self
 				)
@@ -444,7 +444,7 @@
 				(theEyes show: setCycle: RandCycle)
 				(localproc_0
 					(LangSwitch 0 1)
-					{...for he is your SON!#j\a5\a5\a5\a5\9a\92\e2\ea\a4\95\ef\94\e9\f1\9d\9a\e5\fd\e0\de\96\f7\e5\ff}
+					{...for he is your SON!}
 					853
 					self
 				)

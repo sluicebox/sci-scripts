@@ -395,7 +395,7 @@
 				(pAdavis setCycle: CT 15 1 self)
 			)
 			(18
-				(EgoDead 11 680)
+				(EgoDead 11 680) ; "You really helped Ad Avis this time. By getting rid of Katrina, you only turned him loose."
 			)
 		)
 	)

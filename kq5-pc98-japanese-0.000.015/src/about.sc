@@ -31,7 +31,7 @@
 					{Cancel}
 					0
 					#button
-					{Japanese\nMessage#jEnglish\nMessage}
+					{Japanese\nMessage}
 					3
 				)
 			)

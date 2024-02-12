@@ -101,7 +101,7 @@
 		(SaveSubLang)
 		(super init:)
 		(= theWindow (NewWindow nsTop nsLeft nsBottom nsRight {} 0 -1 1 15))
-		(Display 206 1 dsCOORD 10 8 dsALIGN alLEFT dsFONT 300 dsCOLOR 1) ; "You Are Carrying:%j\b7\d0\b6\de \d3\af\c3\b2\d9\d3\c9\ca :"
+		(Display 206 1 dsCOORD 10 8 dsALIGN alLEFT dsFONT 300 dsCOLOR 1) ; "You Are Carrying:"
 		(= temp4 (WtCarried))
 		(= temp0 1)
 		(= temp2 24)
@@ -116,10 +116,10 @@
 		)
 		(cond
 			((== temp2 24)
-				(Display 206 2 dsCOORD 40 (+ temp2 5) dsALIGN alLEFT dsFONT 300 dsCOLOR 1) ; "Nothing%j\c5\c6\d3\c5\b2"
+				(Display 206 2 dsCOORD 40 (+ temp2 5) dsALIGN alLEFT dsFONT 300 dsCOLOR 1) ; "Nothing"
 			)
 			((>= temp2 174)
-				(Display 206 3 dsCOORD 40 172 dsALIGN alLEFT dsFONT 300 dsCOLOR 1) ; ". . . and more%j...\d3\af\c4"
+				(Display 206 3 dsCOORD 40 172 dsALIGN alLEFT dsFONT 300 dsCOLOR 1) ; ". . . and more"
 			)
 		)
 		(= temp3 (if (< global211 16) 4 else 12))
@@ -137,7 +137,7 @@
 			dsWIDTH
 			25
 		)
-		(Display 206 4 dsCOORD 220 10 dsALIGN alLEFT dsFONT 300 dsCOLOR temp3) ; "Gold Coins%j\b7\dd\b6"
+		(Display 206 4 dsCOORD 220 10 dsALIGN alLEFT dsFONT 300 dsCOLOR temp3) ; "Gold Coins"
 		(= temp3 (if (< global211 16) 8 else 7))
 		(Display
 			(Format @temp5 206 0 [gInvNum 1]) ; "%d", silver
@@ -153,7 +153,7 @@
 			dsWIDTH
 			25
 		)
-		(Display 206 5 dsCOORD 220 23 dsALIGN alLEFT dsFONT 300 dsCOLOR temp3) ; "Silver Coins%j\b7\de\dd\b6"
+		(Display 206 5 dsCOORD 220 23 dsALIGN alLEFT dsFONT 300 dsCOLOR temp3) ; "Silver Coins"
 		(= temp3
 			(cond
 				((< temp4 (/ (* (MaxLoad) 90) 100)) 1)
@@ -175,7 +175,7 @@
 			dsWIDTH
 			25
 		)
-		(Display 206 7 dsCOORD 220 36 dsALIGN alLEFT dsFONT 300 dsCOLOR temp3) ; "Weight Carried%j\b2\cf\c9 \b3\aa\b2\c4"
+		(Display 206 7 dsCOORD 220 36 dsALIGN alLEFT dsFONT 300 dsCOLOR temp3) ; "Weight Carried"
 		(Display
 			(Format @temp5 206 6 (MaxLoad)) ; "%d#"
 			dsCOORD
@@ -190,11 +190,11 @@
 			dsWIDTH
 			25
 		)
-		(Display 206 8 dsCOORD 220 49 dsALIGN alLEFT dsFONT 300 dsCOLOR temp3) ; "Max Weight%j\cf\af\b8\bd \b3\aa\b2\c4"
+		(Display 206 8 dsCOORD 220 49 dsALIGN alLEFT dsFONT 300 dsCOLOR temp3) ; "Max Weight"
 		(if [gEgoStats 12] ; magic
-			(Display 206 9 dsCOORD 185 75 dsALIGN alLEFT dsFONT 300 dsCOLOR 1) ; "MP%jMP"
-			(Display 206 10 dsCOORD 218 75 dsALIGN alLEFT dsFONT 300 dsCOLOR 1) ; "Spells:%j\bd\cd\df\d9 :"
-			(Display 206 11 dsCOORD 280 75 dsALIGN alLEFT dsFONT 300 dsCOLOR 1) ; "Skill%j\bd\b7\d9"
+			(Display 206 9 dsCOORD 185 75 dsALIGN alLEFT dsFONT 300 dsCOLOR 1) ; "MP"
+			(Display 206 10 dsCOORD 218 75 dsALIGN alLEFT dsFONT 300 dsCOLOR 1) ; "Spells:"
+			(Display 206 11 dsCOORD 280 75 dsALIGN alLEFT dsFONT 300 dsCOLOR 1) ; "Skill"
 			(= temp2 91)
 			(= temp0 17)
 			(= temp2 91)

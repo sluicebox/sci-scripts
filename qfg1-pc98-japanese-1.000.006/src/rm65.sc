@@ -687,7 +687,7 @@
 						2
 						5
 						80
-						{Your figure remains still and silent.%j\b7\d0\c9\b6\d7\c0\de\ca \be\b2\bc\bc \c1\dd\d3\b8\a6 \c2\c2\de\b9\d9}
+						{Your figure remains still and silent.}
 					)
 				else
 					(EgoDead ; "It takes too long to draw your weapon against someone with a dagger in his hand. It doesn't pay to try to fight someone who uses poisoned daggers."
@@ -698,7 +698,7 @@
 						2
 						5
 						80
-						{Your figure remains still and silent.%j\b7\d0\c9\b6\d7\c0\de\ca \be\b2\bc\bc \c1\dd\d3\b8\a6 \c2\c2\de\b9\d9}
+						{Your figure remains still and silent.}
 					)
 				)
 			)

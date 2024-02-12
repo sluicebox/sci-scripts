@@ -177,7 +177,7 @@
 		(switch (= state newState)
 			(0
 				(gGlory handsOff:)
-				(EgoDead 22 620)
+				(EgoDead 22 620) ; "The two Goons decide to have a Taffy (or maybe it's a Patsy) pulling contest. They're very disappointed when you break instead of stretching any further."
 			)
 		)
 	)

@@ -1005,7 +1005,7 @@
 							0
 							0
 							80
-							{He who hesitates...%j\c5\dd\bc\de \c4\cf\c4\de\b3\d3\c9}
+							{He who hesitates...}
 						)
 					)
 					((Said 'force/button,door,box')
@@ -1089,7 +1089,7 @@
 						96
 						93
 						80
-						{You're the Fall Guy again.%j\b7\d0\ca \cf\c0\bc\c3\d3 \cc\ab\b0\d9 \b6\de\b2 \c0\de\d6}
+						{You're the Fall Guy again.}
 						82
 						517
 						2
@@ -1148,7 +1148,7 @@
 						96
 						94
 						80
-						{You're the Fall Guy again.%j\b7\d0\ca \cf\c0\bc\c3\d3 \cc\ab\b0\d9 \b6\de\b2 \c0\de\d6}
+						{You're the Fall Guy again.}
 						82
 						517
 						2
@@ -1258,7 +1258,7 @@
 						96
 						96
 						80
-						{You're the Fall Guy again%j\b7\d0\ca \cf\c0\bc\c3\d3 \cc\ab\b0\d9 \b6\de\b2 \c0\de\d6}
+						{You're the Fall Guy again}
 						82
 						517
 						2
@@ -1939,7 +1939,7 @@
 						96
 						96
 						80
-						{You're the Fall Guy again%j\b7\d0\ca \cf\c0\bc\c3\d3 \cc\ab\b0\d9 \b6\de\b2 \c0\de\d6}
+						{You're the Fall Guy again}
 						82
 						517
 						2
@@ -2149,7 +2149,7 @@
 						5
 						8
 						80
-						{This way to the Egress%j\c6\b9\de\b8\de\c1\ca \ba\c1\d7}
+						{This way to the Egress}
 					)
 				)
 			)
@@ -2328,7 +2328,7 @@
 						96
 						96
 						80
-						{You're the Fall Guy again%j\b7\d0\ca \cf\c0\bc\c3\d3 \cc\ab\b0\d9 \b6\de\b2 \c0\de\d6}
+						{You're the Fall Guy again}
 						82
 						517
 						2

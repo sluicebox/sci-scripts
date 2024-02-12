@@ -152,7 +152,7 @@
 					)
 					(IsFlag 14)
 				)
-				(EgoDead 27 28 977 1 912)
+				(EgoDead 27 28 977 1 912) ; "You are completely strychnine by poison. No curare for you now. Next time, take some poison cure pills before it's too late."
 				(return)
 			)
 			(= [gEgoStats 19] (gEgo maxMana:)) ; mana

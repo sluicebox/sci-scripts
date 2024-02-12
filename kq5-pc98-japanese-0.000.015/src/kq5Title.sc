@@ -169,10 +169,10 @@
 							#time
 							15
 							#button
-							{   No   #j   Yes   }
+							{   No   }
 							0
 							#button
-							{   Yes   #j   No   }
+							{   Yes   }
 							1
 						)
 					)

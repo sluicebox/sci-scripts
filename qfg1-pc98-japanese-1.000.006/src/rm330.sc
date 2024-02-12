@@ -3,7 +3,7 @@
 (script# 330)
 (include sci.sh)
 (use Main)
-(use Door_J__)
+(use Door)
 (use LoadMany)
 (use RFeature)
 (use Extra)
@@ -89,7 +89,7 @@
 			(gEgo view: 503 init: hide:)
 		)
 		(if (not (IsFlag 117))
-			((= local1 (Door_J__ new:))
+			((= local1 (Door new:))
 				view: 330
 				loop: 0
 				cel: 0
@@ -437,7 +437,7 @@
 				(ShakeScreen 5)
 				(local4 dispose:)
 				(local2 dispose:)
-				((= local1 (Door_J__ new:))
+				((= local1 (Door new:))
 					view: 330
 					loop: 0
 					cel: 0

@@ -203,7 +203,7 @@
 			((or (Said 'look,look/mummy,coffin') (MouseClaimed mummy event 3))
 				(HighPrint 30 17) ; "Dredging up your ancient Egyptian, you translate the hieroglyphs:  "She of the golden hair.""
 				(HighPrint 30 18) ; "This is an excerpt from the Rosella Stone! There is a picture next to the message."
-				(Print 30 19 #title {The Picture.%j\b4} #icon 30 6 4)
+				(Print 30 19 #title {The Picture.} #icon 30 6 4)
 			)
 			((or (Said 'look,look/onklunk') (MouseClaimed lunk event 3))
 				(HighPrint 30 20) ; "By golly, it's a rare Peruvian Onklunk!"

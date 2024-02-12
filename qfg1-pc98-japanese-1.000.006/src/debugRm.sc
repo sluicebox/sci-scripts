@@ -59,7 +59,7 @@
 				(switch (event message:)
 					(KEY_QUESTION
 						(SaveSubLang)
-						(Print 298 1) ; "Key commands: ALT-S Show cast ALT-M Show Memory ALT-T Teleport ALT-V Visual ALT-P Priority ALT-C Control ALT-I Get InvItem ALT-B Set Ego's Bucks ALT-K Set one of Ego's sKills ALT-X Make Ego eXtra special %j\b7\b2 \ba\cf\dd\c4\de: CTRL-A Show cast CTRL-Y Show Memory CTRL-O Teleport CTRL-W Visual CTRL-F Priority CTRL-H Control CTRL-D Get InvItem CTRL-B Set Ego's Bucks CTRL-K Set one of Ego's sKills CTRL-X Make Ego eXtra special"
+						(Print 298 1) ; "Key commands: ALT-S Show cast ALT-M Show Memory ALT-T Teleport ALT-V Visual ALT-P Priority ALT-C Control ALT-I Get InvItem ALT-B Set Ego's Bucks ALT-K Set one of Ego's sKills ALT-X Make Ego eXtra special"
 						(RestoreSubLang)
 					)
 					((LangSwitch 7936 1 7936 1)
@@ -121,7 +121,7 @@
 					((LangSwitch 5888 4 5888 4)
 						(= temp4
 							(GetNumber
-								{ID number of the object?%j\b5\cc\de\bc\de\aa\b8\c4\c9 ID \c5\dd\ca\de\b0?}
+								{ID number of the object?}
 							)
 						)
 						(gEgo get: temp4)
@@ -148,21 +148,21 @@
 					)
 					((LangSwitch 12288 2 12288 2)
 						(Print
-							(Format @temp6 298 4 [gInvNum 1] [gInvNum 1]) ; "Our Hero has %d silvers.%%j\cb\b0\db\b0\ca %d \bc\d9\ca\de\b0 \d3\af\c3\b2\d9", silver, silver
+							(Format @temp6 298 4 [gInvNum 1] [gInvNum 1]) ; "Our Hero has %d silvers.%", silver, silver
 						)
 						(= [gInvNum 1] ; silver
-							(GetNumber {Enter Silvers.%jEnter Silvers.})
+							(GetNumber {Enter Silvers.})
 						)
 					)
 					((LangSwitch 9472 11 9472 11)
 						(= temp5
 							(GetNumber
-								{Change which Stat/Skill?%j\c4\de\c9 \bd\c0\af\c4/\bd\b7\d9 \a6 \b6\b4\d9?}
+								{Change which Stat/Skill?}
 							)
 						)
 						(= [gEgoStats temp5]
 							(GetNumber
-								{Enter new value:%j\b1\c0\d7\bc\b2 \c5\dd\ca\de\b0:}
+								{Enter new value:}
 								[gEgoStats temp5]
 							)
 						)
@@ -175,7 +175,7 @@
 						(= [gEgoStats 14] (MaxHealth)) ; health
 						(= [gEgoStats 15] (MaxStamina)) ; stamina
 						(= [gEgoStats 16] (MaxMana)) ; mana
-						(Print 298 5) ; "Why, you feel better already!%j\b7\d0\ca \d3\b3 \bd\af\b6\d8 \b9\de\dd\b7\c6 \c5\af\c0\d6!"
+						(Print 298 5) ; "Why, you feel better already!"
 					)
 					(else
 						(event claimed: 0)

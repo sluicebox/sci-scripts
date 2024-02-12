@@ -83,7 +83,7 @@
 				(egoMouth setCycle: RandCycle)
 				(= local0
 					(proc0_12
-						{"Hey! I wanna know what the..."#j\a2\95\92\a4\92\8f\e0\92\a5\a5\a1\a3}
+						{"Hey! I wanna know what the..."}
 						67
 						5
 						132
@@ -117,7 +117,7 @@
 				(trMouth setCycle: RandCycle)
 				(= local0
 					(proc0_12
-						{"Listen! I can't explain it all to you now! They've got a bead on our coordinates! We've got to move fast!"#j\a2\92\ef\ea\a4\9e\e2\f2\92\e5\fd\96 \n\9c\e3\f7\fa\e5\92\fd\e0\de\ff\a0 \n\f4\e2\f7\96\de\a4\95\fa\e0\e1\e9\e4\9a\fb\e6 \n\e8\f7\92\86\9b\e0\de\f2\e3\92\f9\ff\a0 \n\92\9f\96\de\e5\98\e3\ea\ff\a3}
+						{"Listen! I can't explain it all to you now! They've got a bead on our coordinates! We've got to move fast!"}
 						67
 						138
 						132

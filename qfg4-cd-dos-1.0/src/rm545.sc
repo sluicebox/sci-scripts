@@ -128,7 +128,7 @@
 		)
 		(gEgo solvePuzzle: 436 6)
 		(if (and (== gPrevRoomNum 810) (== gCombatResult 1)) ; combat
-			(EgoDead 3)
+			(EgoDead 3) ; "Overwhelmed by the power of the Chernovy Wizard's magic, you finally succumb and sink into the swamp."
 		else
 			(if (not (IsFlag 361))
 				(if
@@ -1645,7 +1645,7 @@
 					(gMessager say: 6 6 11) ; "Evidently the Chernovy's magic is so powerful that they could see you despite your Invisibility spell. In any case, the attack has now broken your spell."
 				)
 				(if (<= [gEgoStats 17] 0) ; health
-					(EgoDead 3)
+					(EgoDead 3) ; "Overwhelmed by the power of the Chernovy Wizard's magic, you finally succumb and sink into the swamp."
 				)
 			)
 			(self dispose:)

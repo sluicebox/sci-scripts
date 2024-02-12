@@ -114,7 +114,7 @@
 			)
 			(10
 				(if (== gPrevRoomNum 730)
-					(EgoDead 1 180)
+					(EgoDead 1 180) ; "As the Shadows of Darkness cover the land, and thousands of voices cry out in agony and grief, you think to yourself, "Maybe that wasn't QUITE the right thing to do.""
 					(= register 0)
 					(= local0 5)
 				else

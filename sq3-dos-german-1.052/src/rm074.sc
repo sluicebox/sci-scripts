@@ -129,7 +129,7 @@
 								)
 							)
 							(global170
-								(Print 74 8) ; "It's pointing to a small moon high in the Ortegian sky.  The beam is no longer being emitted. %g Das Ding zeigt auf einen kleinen Mond hoch droben im orteganischen Himmel. Es wird kein Energiestrahl mehr ausgesandt."
+								(Print 74 8) ; "It's pointing to a small moon high in the Ortegian sky.  The beam is no longer being emitted."
 							)
 							(else
 								(Print 74 9) ; "It's pointing into the Ortegian sky. The beam is no longer being emitted."

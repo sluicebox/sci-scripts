@@ -1260,28 +1260,28 @@
 			(1
 				(switch gCombatMonsterNum
 					(825 ; badder
-						(EgoDead 11 50)
+						(EgoDead 11 50) ; "Badly bruised, beaten, and battered by the badders, you gruesomely give up the ghost."
 					)
 					(840 ; chernovy
-						(EgoDead 12 50)
+						(EgoDead 12 50) ; "Chernovy Wizards are not to be taken lightly. This one's magic has "spelled" doom for you."
 					)
 					(870 ; nectar
-						(EgoDead 13 50)
+						(EgoDead 13 50) ; "And all this time, you thought Necrotaurs were vegetarians. Your final battle certainly ruled out THAT theory!"
 					)
 					(820
-						(EgoDead 14 50)
+						(EgoDead 14 50) ; "Aw, the cute little bunny has ripped out your throat and is hopping up and down on your dead body. Maybe you should treat gentle woodland creatures with more respect."
 					)
 					(830 ; revenant
-						(EgoDead 15 50)
+						(EgoDead 15 50) ; "Apparently, the Revenant was a little lonely. Now it has company in death."
 					)
 					(835 ; wyvern
-						(EgoDead 16 50)
+						(EgoDead 16 50) ; "Technically, a Wyvern isn't a true Dragon. In practice, it's nearly as deadly. In fact, in your case, it was QUITE as deadly."
 					)
 					(850 ; wraith
-						(EgoDead 17 50)
+						(EgoDead 17 50) ; "The Wraith has sucked your life force right out of you. Should you return here (in another life), you will need to be properly protected and strike quickly."
 					)
 					(else
-						(EgoDead)
+						(EgoDead) ; "It's all over for now. Please try again."
 					)
 				)
 			)

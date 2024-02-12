@@ -16,7 +16,7 @@
 	(DeviceInfo diGET_DEVICE gCurSaveDir @saveDevice)
 	(DeviceInfo diGET_CURRENT_DEVICE @curDevice)
 	(if (and (DeviceInfo diPATHS_EQUAL @saveDevice @curDevice) (!= 81 81) (DeviceInfo diIS_FLOPPY @curDevice))
-		(Format ; "Please insert your %s disk in drive %s.%j%s\85\c1\85\dc\85\a6\85\bb\85\b6\85\a4%s\85\c2\85\dc\85\d5\85\a6\85\ca\85\dc\85\c4\85\b0\85\d8\85\c1\85\b6\85\be\85\dc\85\b9\85\b0"
+		(Format ; "Please insert your %s disk in drive %s."
 			@str
 			994
 			7
@@ -39,17 +39,17 @@
 							#font
 							0
 							#button
-							{OK%j\b5\af\b9\b0}
+							{OK}
 							1
 							#button
-							{Cancel%j \b7\ac\dd\be\d9}
+							{Cancel}
 							0
 							#button
-							{Change Directory%j \c3\de\a8\da\b8\c4\d8 \a6 \b6\b4\d9}
+							{Change Directory}
 							2
 						)
 					else
-						(Print @str #font 0 #button {OK%j \b5\af\b9\b0} 1)
+						(Print @str #font 0 #button {OK} 1)
 					)
 				)
 				2
@@ -292,7 +292,7 @@
 			(if (!= (= num (Save doit: @comment)) -1)
 				(= oldCur (self setCursor: gWaitCursor 1))
 				(if (not (SaveGame name num @comment gVersion))
-					(Print 994 0 #font 0 #button {OK%j\b5\af\b9\b0} 1) ; "Your save game disk is full. You must either use another disk or save over an existing saved game."
+					(Print 994 0 #font 0 #button {OK} 1) ; "Your save game disk is full. You must either use another disk or save over an existing saved game."
 				)
 				(self setCursor: oldCur (HaveMouse))
 			)
@@ -315,7 +315,7 @@
 				(if (CheckSaveGame name num gVersion)
 					(RestoreGame name num gVersion)
 				else
-					(Print 994 1 #font 0 #button {OK%j\b5\af\b9\b0} 1) ; "That game was saved under a different interpreter. It cannot be restored."
+					(Print 994 1 #font 0 #button {OK} 1) ; "That game was saved under a different interpreter. It cannot be restored."
 					(self setCursor: oldCur (HaveMouse))
 				)
 			)
@@ -339,7 +339,7 @@
 
 	(method (showMem)
 		(Printf
-			{Free Heap: %u Bytes\nLargest ptr: %u Bytes\nFreeHunk: %u KBytes\nLargest hunk: %u Bytes%jFree Heap: %u Bytes\nLargest ptr: %u Bytes\nFreeHunk: %u KBytes\nLargest hunk: %u Bytes }
+			{Free Heap: %u Bytes\nLargest ptr: %u Bytes\nFreeHunk: %u KBytes\nLargest hunk: %u Bytes}
 			(MemoryInfo 1) ; FreeHeap
 			(MemoryInfo 0) ; LargestPtr
 			(>> (MemoryInfo miFREEHUNK) $0006)
@@ -352,7 +352,7 @@
 	)
 
 	(method (wordFail word &tmp [str 40])
-		(Print 994 2 #title (Format @str 994 3 word word)) ; "I don't understand that word.", "%s???%j%s???"
+		(Print 994 2 #title (Format @str 994 3 word word)) ; "I don't understand that word.", "%s???"
 		(return 0)
 	)
 

@@ -482,7 +482,7 @@
 					(gEgo takeDamage: 50)
 					(if (<= [gEgoStats 17] 0) ; health
 						(= local6 1)
-						(EgoDead 1 570 43 End 912)
+						(EgoDead 1 570 43 End 912) ; "You've been bitten by a bury bush and you're bound to be buried."
 					else
 						(gMessager say: 2 6 2 0 self) ; "That hurt. That REALLY hurt. Think of being stung by a 10-foot-long wasp..."
 					)

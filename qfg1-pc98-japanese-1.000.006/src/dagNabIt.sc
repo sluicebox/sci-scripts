@@ -732,7 +732,7 @@
 	(properties)
 
 	(method (doit param1)
-		(Format param1 340 12 gScore gScore) ; "Dag-Nab-It [score %d of 500]%%j      \c0\de\b8\de\c5\cb\de\af\c4   [\bd\ba\b1 %d/500]"
+		(Format param1 340 12 gScore gScore) ; "Dag-Nab-It [score %d of 500]%"
 	)
 )
 

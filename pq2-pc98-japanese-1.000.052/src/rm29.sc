@@ -288,7 +288,7 @@
 										)
 										(gInventory
 											carrying:
-												{The car's trunk contains: %j \8cN\82\cc\83g\83\89\83\93\83N\82\c9\82\cd\81A}
+												{The car's trunk contains: }
 											empty:
 												{The car's trunk is empty.}
 											showSelf: 13

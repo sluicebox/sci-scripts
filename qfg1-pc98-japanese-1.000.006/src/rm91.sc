@@ -856,7 +856,7 @@
 					0
 					9
 					80
-					{You knew this job was dangerous....%j\ba\c9\bc\ba\de\c4\b6\de \b7\b9\dd\c5\c9\ca \dc\b6\af\c3 \b2\c0\bb...}
+					{You knew this job was dangerous....}
 				)
 			)
 		)

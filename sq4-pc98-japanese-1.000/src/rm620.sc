@@ -106,7 +106,7 @@
 						(if (> global105 16)
 							(= local1
 								(Display
-									{"Well, lookee here! If it ain't Mister\nLook-at-me-I'm-in-VGA."#j\a2\9a\92\e2\86\f0\e3\f0\fb\f4\ff \d0\bd\c0\b0\a5VGA \e3\de\e8\94\96\a1\a3}
+									{"Well, lookee here! If it ain't Mister\nLook-at-me-I'm-in-VGA."}
 									dsWIDTH
 									160
 									dsALIGN
@@ -127,7 +127,7 @@
 							)
 							(= local2
 								(Display
-									{"Well, lookee here! If it ain't Mister\nLook-at-me-I'm-in-VGA."#j\a2\9a\92\e2\86\f0\e3\f0\fb\f4\ff \d0\bd\c0\b0\a5VGA \e3\de\e8\94\96\a1\a3}
+									{"Well, lookee here! If it ain't Mister\nLook-at-me-I'm-in-VGA."}
 									dsWIDTH
 									160
 									dsALIGN
@@ -149,7 +149,7 @@
 						else
 							(= local1
 								(Display
-									{"Well, lookee here! If it ain't Mister\nLook-at-me-I'm-in-16 Colors."#j\a2\9a\92\e2\86\f0\e3\f0\fb\f4\ff \d0\bd\c0\b0\a516\b6\d7\b0 \e3\de\e8\94\96\a1\a3}
+									{"Well, lookee here! If it ain't Mister\nLook-at-me-I'm-in-16 Colors."}
 									dsWIDTH
 									160
 									dsALIGN
@@ -170,7 +170,7 @@
 							)
 							(= local2
 								(Display
-									{"Well, lookee here! If it ain't Mister\nLook-at-me-I'm-in-16 Colors."#j\a2\9a\92\e2\86\f0\e3\f0\fb\f4\ff \d0\bd\c0\b0\a516\b6\d7\b0 \e3\de\e8\94\96\a1\a3}
+									{"Well, lookee here! If it ain't Mister\nLook-at-me-I'm-in-16 Colors."}
 									dsWIDTH
 									160
 									dsALIGN
@@ -194,7 +194,7 @@
 					(2
 						(= local1
 							(Display
-								{"Whatsamatter, monochrome not\ngood enough for you?"#j\a2\91\fd\e0\de\87\fe \d3\c9\b8\db\b0\d1\ea \97\e6\92\f7\e5\92\fd\96\87\fe\a3}
+								{"Whatsamatter, monochrome not\ngood enough for you?"}
 								dsWIDTH
 								160
 								dsALIGN
@@ -215,7 +215,7 @@
 						)
 						(= local2
 							(Display
-								{"Whatsamatter, monochrome not\ngood enough for you?"#j\a2\91\fd\e0\de\87\fe \d3\c9\b8\db\b0\d1\ea \97\e6\92\f7\e5\92\fd\96\87\fe\a3}
+								{"Whatsamatter, monochrome not\ngood enough for you?"}
 								dsWIDTH
 								160
 								dsALIGN
@@ -238,7 +238,7 @@
 					(3
 						(if (> global105 16)
 							(= local1
-								(Display ; "" What's dis? 256 colors all for one little bitmapped WIMP?! Whatta waste of VGA. Har, har!"#j\a2\9a\fa\ea \e5\fd\e0\de\87\fe 256\b6\d7\b0 \9e\de\fd\ec\de\86 \eb\e4\e2\e9\e1\92\9b\e5\cb\de\af\c4\cf\af\cc\df\a5\b3\a8\dd\cc\df \e9\e0\f2\e6\e0\de\99\96\f4\fe VGA\e9 \d1\c0\de\e2\de\96\92\e0\de\e5\f4\ff \ca\af\ca\ca\ca\ca\ff\a3"
+								(Display ; "What's dis? 256 colors all for one little bitmapped WIMP?! Whatta waste of VGA. Har, har!"
 									620
 									0
 									dsWIDTH
@@ -260,7 +260,7 @@
 								)
 							)
 							(= local2
-								(Display ; "" What's dis? 256 colors all for one little bitmapped WIMP?! Whatta waste of VGA. Har, har!"#j\a2\9a\fa\ea \e5\fd\e0\de\87\fe 256\b6\d7\b0 \9e\de\fd\ec\de\86 \eb\e4\e2\e9\e1\92\9b\e5\cb\de\af\c4\cf\af\cc\df\a5\b3\a8\dd\cc\df \e9\e0\f2\e6\e0\de\99\96\f4\fe VGA\e9 \d1\c0\de\e2\de\96\92\e0\de\e5\f4\ff \ca\af\ca\ca\ca\ca\ff\a3"
+								(Display ; "What's dis? 256 colors all for one little bitmapped WIMP?! Whatta waste of VGA. Har, har!"
 									620
 									0
 									dsWIDTH
@@ -283,7 +283,7 @@
 							)
 						else
 							(= local1
-								(Display ; "" What's dis? 16 colors all for one little bitmapped WIMP?! Whatta waste of GDC. Har, har!"#j\a2\9a\fa\ea\e5\fd\e0\de\87\fe 16\b6\d7\b0 \9e\de\fd\ec\de\86 \eb\e4\e2\e9\e1\92\9b\e5\cb\de\af\c4\cf\af\cc\df\a5\b3\a8\dd\cc\df \e9\e0\f2\e6\e0\de\99\96\f4\fe GDC\e9\a0\d1\c0\de\e2\de\96\92\e0\de\e5\f4\ff \ca\af\ca\ca\ca\ca\ff\a3"
+								(Display ; "What's dis? 16 colors all for one little bitmapped WIMP?! Whatta waste of GDC. Har, har!"
 									620
 									1
 									dsWIDTH
@@ -305,7 +305,7 @@
 								)
 							)
 							(= local2
-								(Display ; "" What's dis? 16 colors all for one little bitmapped WIMP?! Whatta waste of GDC. Har, har!"#j\a2\9a\fa\ea\e5\fd\e0\de\87\fe 16\b6\d7\b0 \9e\de\fd\ec\de\86 \eb\e4\e2\e9\e1\92\9b\e5\cb\de\af\c4\cf\af\cc\df\a5\b3\a8\dd\cc\df \e9\e0\f2\e6\e0\de\99\96\f4\fe GDC\e9\a0\d1\c0\de\e2\de\96\92\e0\de\e5\f4\ff \ca\af\ca\ca\ca\ca\ff\a3"
+								(Display ; "What's dis? 16 colors all for one little bitmapped WIMP?! Whatta waste of GDC. Har, har!"
 									620
 									1
 									dsWIDTH
@@ -331,7 +331,7 @@
 					(4
 						(= local1
 							(Display
-								{"Hey, fellas! I bet I can toss him all the way out from the bottom of the stairs. Bet ya an ale."#j\a2\b5\d2\f7\ff \96\92\e0\de\fd\e9\92\e1\ea\de\fd\9c\e0\96\f7\a4 \9a\92\e2\86\e5\99\de\e0\de\9e\f9\ea\9d\de\e0\de\9c\de\8a\a1\e3\de\97\e0\f7 \cb\de\b0\d9 \95\9a\de\fa\ff\a3}
+								{"Hey, fellas! I bet I can toss him all the way out from the bottom of the stairs. Bet ya an ale."}
 								dsWIDTH
 								160
 								dsALIGN
@@ -352,7 +352,7 @@
 						)
 						(= local2
 							(Display
-								{"Hey, fellas! I bet I can toss him all the way out from the bottom of the stairs. Bet ya an ale."#j\a2\b5\d2\f7\ff \96\92\e0\de\fd\e9\92\e1\ea\de\fd\9c\e0\96\f7\a4 \9a\92\e2\86\e5\99\de\e0\de\9e\f9\ea\9d\de\e0\de\9c\de\8a\a1\e3\de\97\e0\f7 \cb\de\b0\d9 \95\9a\de\fa\ff\a3}
+								{"Hey, fellas! I bet I can toss him all the way out from the bottom of the stairs. Bet ya an ale."}
 								dsWIDTH
 								160
 								dsALIGN

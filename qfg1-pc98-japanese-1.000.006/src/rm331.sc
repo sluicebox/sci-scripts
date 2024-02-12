@@ -1641,7 +1641,7 @@
 					331
 					95
 					80
-					{ Talk about a "fiery brew". %j\bc\de\c2\c6 \cb\a6\ca\b8\d6\b3\c5 \bb\b9\c0\de\c8}
+					{ Talk about a "fiery brew". }
 					82
 					331
 					0

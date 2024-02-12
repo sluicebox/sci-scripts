@@ -333,7 +333,7 @@
 						setCycle: End self
 					)
 				else
-					(EgoDead 2 31)
+					(EgoDead 2 31) ; "You are forcefully reminded that it's not the fall that kills you, it's the sudden stop at the end."
 				)
 			)
 			(11
