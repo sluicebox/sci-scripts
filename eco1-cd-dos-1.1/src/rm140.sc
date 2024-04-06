@@ -2101,7 +2101,7 @@
 		(switch (= state newState)
 			(0
 				(HandsOff)
-				(= [local126 (- local19 1)] (+ [local126 (- local19 1)] 1))
+				(+= [local126 (- local19 1)] 1)
 				(eye
 					cel: local19
 					init:

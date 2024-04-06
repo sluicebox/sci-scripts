@@ -564,17 +564,13 @@
 
 (procedure (SetFlag param1 &tmp temp0)
 	(= temp0 (IsFlag param1))
-	(= [global204 (/ param1 16)]
-		(| [global204 (/ param1 16)] (>> $8000 (mod param1 16)))
-	)
+	(|= [global204 (/ param1 16)] (>> $8000 (mod param1 16)))
 	(return temp0)
 )
 
 (procedure (ClearFlag param1 &tmp temp0)
 	(= temp0 (IsFlag param1))
-	(= [global204 (/ param1 16)]
-		(& [global204 (/ param1 16)] (~ (>> $8000 (mod param1 16))))
-	)
+	(&= [global204 (/ param1 16)] (~ (>> $8000 (mod param1 16))))
 	(return temp0)
 )
 

@@ -311,11 +311,9 @@
 				[local23 (+ (* value 2) (/ modifiers 16))]
 			)
 		)
-		(= [local23 (+ (* value 2) (/ modifiers 16))]
-			(|
-				[local23 (+ (* value 2) (/ modifiers 16))]
-				(<< $0001 (mod modifiers 16))
-			)
+		(|=
+			[local23 (+ (* value 2) (/ modifiers 16))]
+			(<< $0001 (mod modifiers 16))
 		)
 		(= temp0 1)
 		(while temp0
@@ -326,9 +324,7 @@
 						(<< $0001 (mod temp1 8))
 					)
 				)
-				(= [local35 (/ temp1 8)]
-					(| [local35 (/ temp1 8)] (<< $0001 (mod temp1 8)))
-				)
+				(|= [local35 (/ temp1 8)] (<< $0001 (mod temp1 8)))
 				(= nsTop [local256 (/ temp1 8)])
 				(= nsLeft (+ 8 (* 16 (mod temp1 8))))
 				(= nsBottom (+ nsTop 41))

@@ -181,9 +181,7 @@
 				(= local56 local63)
 				(for ((= temp0 0)) (< temp0 60) ((++ temp0))
 					(= [local0 (+ temp0 1)] [local0 (+ temp0 1)])
-					(= [local0 (+ temp0 1)]
-						(^ [local0 (+ temp0 1)] [local0 temp0])
-					)
+					(^= [local0 (+ temp0 1)] [local0 temp0])
 				)
 				(= temp2 (Str newWith: 1 {*}))
 				(temp2 at: 0 10)

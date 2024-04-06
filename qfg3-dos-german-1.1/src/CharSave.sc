@@ -218,9 +218,7 @@
 				(= local48 local55)
 				(for ((= temp0 0)) (< temp0 52) ((++ temp0))
 					(= [local0 (+ temp0 1)] [local0 (+ temp0 1)])
-					(= [local0 (+ temp0 1)]
-						(^ [local0 (+ temp0 1)] [local0 temp0])
-					)
+					(^= [local0 (+ temp0 1)] [local0 temp0])
 				)
 				(= temp2 {*})
 				(StrAt temp2 0 10)

@@ -615,15 +615,11 @@
 										local7
 									)
 								)
-								(= [local73 (+ curIndex 2)]
-									(| [local73 (+ curIndex 2)] $c800)
-								)
+								(|= [local73 (+ curIndex 2)] $c800)
 							)
 							(= local1 0)
 							(if (& [local73 (+ curIndex 1)] $8000)
-								(= [local73 (- curIndex 1)]
-									(| [local73 (- curIndex 1)] $8000)
-								)
+								(|= [local73 (- curIndex 1)] $8000)
 								(= local4 curIndex)
 							)
 							(-= local3 2)
@@ -757,14 +753,10 @@
 							(if (& [local73 (- curIndex 1)] $8000)
 								(= [local73 curIndex] [local73 (- curIndex 2)])
 								(= [local73 (+ curIndex 1)] [local73 (- curIndex 1)])
-								(= [local73 (- curIndex 1)]
-									(& [local73 (- curIndex 1)] $03ff)
-								)
+								(&= [local73 (- curIndex 1)] $03ff)
 							else
 								(&= [local73 curIndex] $03ff)
-								(= [local73 (+ curIndex 1)]
-									(& [local73 (+ curIndex 1)] $03ff)
-								)
+								(&= [local73 (+ curIndex 1)] $03ff)
 							)
 							(= local5 (& curX $03ff))
 							(= local6 (& curY $03ff))
@@ -1065,7 +1057,7 @@
 			(if gotPath
 				(if (& [local73 (+ i 1)] $8000)
 					(&= [local73 i] $03ff)
-					(= [local73 (+ i 1)] (& [local73 (+ i 1)] $03ff))
+					(&= [local73 (+ i 1)] $03ff)
 					(gCurRoom
 						addObstacle:
 							((Clone Polygon)
@@ -1083,7 +1075,7 @@
 					(= gotPath 1)
 				)
 				(&= [local73 i] $03ff)
-				(= [local73 (+ i 1)] (& [local73 (+ i 1)] $03ff))
+				(&= [local73 (+ i 1)] $03ff)
 			)
 		)
 	)
@@ -1109,13 +1101,13 @@
 				((+= temp0 2))
 				
 				(&= [local73 temp0] $03ff)
-				(= [local73 (+ temp0 1)] (& [local73 (+ temp0 1)] $03ff))
+				(&= [local73 (+ temp0 1)] $03ff)
 			)
 			(+= local3 (* (thePoly size:) 2))
 			(StrCpy @[local73 local3] (thePoly points:) -4)
 			(= local4 (+= local3 2))
-			(= [local73 (- local3 2)] (& [local73 (- local3 2)] $03ff))
-			(= [local73 (- local3 1)] (| [local73 (- local3 1)] $8000))
+			(&= [local73 (- local3 2)] $03ff)
+			(|= [local73 (- local3 1)] $8000)
 			(= [local23 (++ local659)] (thePoly type:))
 		)
 	)

@@ -50,18 +50,12 @@
 				(<< $0001 (mod temp3 16))
 			)
 		)
-		(= [local57 (/ temp3 16)]
-			(| [local57 (/ temp3 16)] (<< $0001 (mod temp3 16)))
-		)
+		(|= [local57 (/ temp3 16)] (<< $0001 (mod temp3 16)))
 		(= global117 @local46)
 		(= temp2 0)
 		(for ((*= temp3 3)) (< temp2 3) ((++ temp3))
-			(= [local46 (/ temp3 16)]
-				(| [local46 (/ temp3 16)] (<< $0001 (mod temp3 16)))
-			)
-			(= [temp5 (/ temp3 16)]
-				(| [temp5 (/ temp3 16)] (<< $0001 (mod temp3 16)))
-			)
+			(|= [local46 (/ temp3 16)] (<< $0001 (mod temp3 16)))
+			(|= [temp5 (/ temp3 16)] (<< $0001 (mod temp3 16)))
 			(++ temp2)
 		)
 	)
@@ -80,12 +74,8 @@
 				(<< $0001 (mod temp3 16))
 			)
 		)
-		(= [temp5 (/ temp3 16)]
-			(| [temp5 (/ temp3 16)] (<< $0001 (mod temp3 16)))
-		)
-		(= [local46 (/ temp3 16)]
-			(| [local46 (/ temp3 16)] (<< $0001 (mod temp3 16)))
-		)
+		(|= [temp5 (/ temp3 16)] (<< $0001 (mod temp3 16)))
+		(|= [local46 (/ temp3 16)] (<< $0001 (mod temp3 16)))
 	)
 	(return temp1)
 )
@@ -123,9 +113,7 @@
 					)
 				)
 			)
-			(= [local46 (/ temp1 16)]
-				(& [local46 (/ temp1 16)] (~ (<< $0001 (mod temp1 16))))
-			)
+			(&= [local46 (/ temp1 16)] (~ (<< $0001 (mod temp1 16))))
 			(if (< (/= temp1 3) local4)
 				(= temp2 temp1)
 				(= temp5 temp3)
@@ -329,9 +317,7 @@
 						(= [local43 temp30] 0)
 						(Wait 10)
 					)
-					(= [local57 (/ value 16)]
-						(& [local57 (/ value 16)] (~ (<< $0001 (mod value 16))))
-					)
+					(&= [local57 (/ value 16)] (~ (<< $0001 (mod value 16))))
 					(if (>= (++ local1) 5)
 						(hutMasks solvePuzzle:)
 					else

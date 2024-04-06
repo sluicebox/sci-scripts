@@ -252,21 +252,15 @@
 )
 
 (procedure (SetFlag param1)
-	(= [global110 (/ param1 16)]
-		(| [global110 (/ param1 16)] (>> $8000 (mod param1 16)))
-	)
+	(|= [global110 (/ param1 16)] (>> $8000 (mod param1 16)))
 )
 
 (procedure (ClearFlag param1)
-	(= [global110 (/ param1 16)]
-		(& [global110 (/ param1 16)] (~ (>> $8000 (mod param1 16))))
-	)
+	(&= [global110 (/ param1 16)] (~ (>> $8000 (mod param1 16))))
 )
 
 (procedure (SetEcorderFlag param1)
-	(= [global124 (/ param1 16)]
-		(| [global124 (/ param1 16)] (>> $8000 (mod param1 16)))
-	)
+	(|= [global124 (/ param1 16)] (>> $8000 (mod param1 16)))
 )
 
 (procedure (IsEcorderFlag param1)

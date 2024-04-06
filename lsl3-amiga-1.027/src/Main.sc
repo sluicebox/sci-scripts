@@ -448,21 +448,15 @@
 (procedure (LameResponse &tmp [string 50]))
 
 (procedure (SetFlag flag)
-	(= [gFlagArray (/ flag 16)]
-		(| [gFlagArray (/ flag 16)] (>> $8000 (mod flag 16)))
-	)
+	(|= [gFlagArray (/ flag 16)] (>> $8000 (mod flag 16)))
 )
 
 (procedure (ClearFlag flag)
-	(= [gFlagArray (/ flag 16)]
-		(& [gFlagArray (/ flag 16)] (~ (>> $8000 (mod flag 16))))
-	)
+	(&= [gFlagArray (/ flag 16)] (~ (>> $8000 (mod flag 16))))
 )
 
 (procedure (ToggleFlag flag) ; UNUSED
-	(= [gFlagArray (/ flag 16)]
-		(^ [gFlagArray (/ flag 16)] (>> $8000 (mod flag 16)))
-	)
+	(^= [gFlagArray (/ flag 16)] (>> $8000 (mod flag 16)))
 )
 
 (procedure (TestFlag flag)

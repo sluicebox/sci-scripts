@@ -370,15 +370,11 @@
 )
 
 (procedure (SetFlag param1)
-	(= [global209 (/ param1 16)]
-		(| [global209 (/ param1 16)] (>> $8000 (mod param1 16)))
-	)
+	(|= [global209 (/ param1 16)] (>> $8000 (mod param1 16)))
 )
 
 (procedure (ClearFlag param1)
-	(= [global209 (/ param1 16)]
-		(& [global209 (/ param1 16)] (~ (>> $8000 (mod param1 16))))
-	)
+	(&= [global209 (/ param1 16)] (~ (>> $8000 (mod param1 16))))
 )
 
 (procedure (IsFlag param1)

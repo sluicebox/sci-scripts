@@ -140,9 +140,7 @@
 				(= [local14 (+ (* param1 7) temp0)] param2)
 			)
 			(if (>= argc 3)
-				(= [local14 (+ (* param1 7) temp0)]
-					(+ [local14 (+ (* param1 7) temp0)] param3)
-				)
+				(+= [local14 (+ (* param1 7) temp0)] param3)
 			)
 		)
 		(for ((= temp0 0)) (< temp0 7) ((++ temp0))
@@ -150,9 +148,7 @@
 				(= [local14 (+ (* temp0 7) param1)] param2)
 			)
 			(if (and (>= argc 3) (!= temp0 param1))
-				(= [local14 (+ (* param1 7) temp0)]
-					(+ [local14 (+ (* param1 7) temp0)] param3)
-				)
+				(+= [local14 (+ (* param1 7) temp0)] param3)
 			)
 		)
 	)

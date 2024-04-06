@@ -31,17 +31,13 @@
 
 (procedure (localproc_1 param1 &tmp temp0)
 	(= temp0 (localproc_0 param1))
-	(= [global197 (/ param1 16)]
-		(| [global197 (/ param1 16)] (>> $8000 (mod param1 16)))
-	)
+	(|= [global197 (/ param1 16)] (>> $8000 (mod param1 16)))
 	(return temp0)
 )
 
 (procedure (localproc_2 param1 &tmp temp0)
 	(= temp0 (localproc_0 param1))
-	(= [global197 (/ param1 16)]
-		(& [global197 (/ param1 16)] (~ (>> $8000 (mod param1 16))))
-	)
+	(&= [global197 (/ param1 16)] (~ (>> $8000 (mod param1 16))))
 	(return temp0)
 )
 

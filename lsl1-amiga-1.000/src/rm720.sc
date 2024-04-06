@@ -67,9 +67,7 @@
 )
 
 (procedure (SetFlgTrivia flag)
-	(= [filesSeen (/ flag 16)]
-		(| [filesSeen (/ flag 16)] (>> $8000 (mod flag 16)))
-	)
+	(|= [filesSeen (/ flag 16)] (>> $8000 (mod flag 16)))
 )
 
 (procedure (TstFlgTrivia flag)

@@ -45,9 +45,7 @@
 					(>> $8000 (mod temp1 16))
 				)
 				(gEgo get: temp0)
-				(= [global155 (/ temp1 16)]
-					(& [global155 (/ temp1 16)] (~ (>> $8000 (mod temp1 16))))
-				)
+				(&= [global155 (/ temp1 16)] (~ (>> $8000 (mod temp1 16))))
 			)
 		)
 	)

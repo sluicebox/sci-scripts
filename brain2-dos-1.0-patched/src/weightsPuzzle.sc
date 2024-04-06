@@ -1627,9 +1627,7 @@
 				((weightWinCast at: local5) cel: 1 lowlightColor: 2)
 				(weightWinCast eachElementDo: #show)
 			)
-			(= [local54 (+ local5 (* temp0 3))]
-				(+ [local54 (+ local5 (* temp0 3))] temp1)
-			)
+			(+= [local54 (+ local5 (* temp0 3))] temp1)
 			(= temp2 (weightWinCast at: local5))
 			(temp2 textColor: 28 show:)
 			(localproc_2 0)

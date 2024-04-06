@@ -912,15 +912,11 @@
 )
 
 (procedure (SetFlag flag)
-	(= [global350 (/ flag 16)]
-		(| [global350 (/ flag 16)] (>> $8000 (mod flag 16)))
-	)
+	(|= [global350 (/ flag 16)] (>> $8000 (mod flag 16)))
 )
 
 (procedure (ClearFlag flag)
-	(= [global350 (/ flag 16)]
-		(& [global350 (/ flag 16)] (~ (>> $8000 (mod flag 16))))
-	)
+	(&= [global350 (/ flag 16)] (~ (>> $8000 (mod flag 16))))
 )
 
 (procedure (IsFlag flag)

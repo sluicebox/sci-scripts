@@ -75,9 +75,7 @@
 	)
 
 	(method (setFlag)
-		(= [global112 (/ flag 16)]
-			(| [global112 (/ flag 16)] (>> $8000 (mod flag 16)))
-		)
+		(|= [global112 (/ flag 16)] (>> $8000 (mod flag 16)))
 	)
 )
 

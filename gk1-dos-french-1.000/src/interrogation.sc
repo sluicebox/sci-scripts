@@ -38,17 +38,13 @@
 
 (procedure (SetFlag param1 &tmp temp0)
 	(= temp0 (IsFlag param1))
-	(= [global127 (/ param1 16)]
-		(| [global127 (/ param1 16)] (>> $8000 (mod param1 16)))
-	)
+	(|= [global127 (/ param1 16)] (>> $8000 (mod param1 16)))
 	(return temp0)
 )
 
 (procedure (ClearFlag param1 &tmp temp0)
 	(= temp0 (IsFlag param1))
-	(= [global127 (/ param1 16)]
-		(& [global127 (/ param1 16)] (~ (>> $8000 (mod param1 16))))
-	)
+	(&= [global127 (/ param1 16)] (~ (>> $8000 (mod param1 16))))
 	(return temp0)
 )
 
@@ -62,17 +58,13 @@
 
 (procedure (SetInterrogationFlag param1 &tmp temp0)
 	(= temp0 (IsInterrogationFlag param1))
-	(= [global182 (/ param1 16)]
-		(| [global182 (/ param1 16)] (>> $8000 (mod param1 16)))
-	)
+	(|= [global182 (/ param1 16)] (>> $8000 (mod param1 16)))
 	(return temp0)
 )
 
 (procedure (ClearInterrogationFlag param1 &tmp temp0)
 	(= temp0 (IsInterrogationFlag param1))
-	(= [global182 (/ param1 16)]
-		(& [global182 (/ param1 16)] (~ (>> $8000 (mod param1 16))))
-	)
+	(&= [global182 (/ param1 16)] (~ (>> $8000 (mod param1 16))))
 	(return temp0)
 )
 

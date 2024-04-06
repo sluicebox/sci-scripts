@@ -23,12 +23,7 @@
 (procedure (localproc_0 param1 param2 param3 param4 param5 &tmp temp0)
 	(TextSize @[local2 param5] param1 param4)
 	(for ((= temp0 0)) (< temp0 4) ((++ temp0))
-		(= [local2 (+ temp0 param5)]
-			(+
-				[local2 (+ temp0 param5)]
-				(if (& temp0 $0001) param2 else param3)
-			)
-		)
+		(+= [local2 (+ temp0 param5)] (if (& temp0 $0001) param2 else param3))
 	)
 )
 

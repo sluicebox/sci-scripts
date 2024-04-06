@@ -383,9 +383,7 @@
 					)
 					((& [global163 (/ who 16)] (>> $8000 (mod who 16))) 0)
 					(else
-						(= [global163 (/ who 16)]
-							(| [global163 (/ who 16)] (>> $8000 (mod who 16)))
-						)
+						(|= [global163 (/ who 16)] (>> $8000 (mod who 16)))
 						(localproc_5 who whoX whoY)
 						(if (== who 32)
 							(Animate (gCast elements:) 0)

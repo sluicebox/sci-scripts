@@ -174,8 +174,8 @@
 		(efExitBack dispose:)
 		(hsBack init:)
 		(for ((= temp0 0)) (< temp0 12) ((++ temp0))
-			(= [local32 temp0] (Random 0 7))
-			(while
+			(for
+				((= [local32 temp0] (Random 0 7)))
 				(and
 					(> temp0 0)
 					(or
@@ -183,7 +183,7 @@
 						(== [local32 temp0] [local32 0])
 					)
 				)
-				(= [local32 temp0] (mod (+ [local32 temp0] 1) 8))
+				((= [local32 temp0] (mod (+ [local32 temp0] 1) 8)))
 			)
 		)
 		(= cel 1)

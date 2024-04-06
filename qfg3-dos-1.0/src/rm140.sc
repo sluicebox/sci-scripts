@@ -718,23 +718,17 @@
 				(cond
 					((not local221) 0)
 					((< local221 5)
-						(= [local222 [local92 state]]
-							(+ [local222 [local92 state]] local221)
-						)
+						(+= [local222 [local92 state]] local221)
 						(= local221 0)
 					)
 					((not [local222 [local92 state]])
 						(if (>= local221 30)
-							(= [local222 [local92 state]]
-								(+ [local222 [local92 state]] 10)
-							)
+							(+= [local222 [local92 state]] 10)
 							(-= local221 30)
 						)
 					)
 					(else
-						(= [local222 [local92 state]]
-							(+ [local222 [local92 state]] 5)
-						)
+						(+= [local222 [local92 state]] 5)
 						(-= local221 5)
 					)
 				)
@@ -773,20 +767,16 @@
 								[local236 [local92 state]]
 							)
 						)
-						(= [local222 [local92 state]]
+						(-=
+							[local222 [local92 state]]
 							(-
 								[local222 [local92 state]]
-								(-
-									[local222 [local92 state]]
-									[local236 [local92 state]]
-								)
+								[local236 [local92 state]]
 							)
 						)
 					)
 					(else
-						(= [local222 [local92 state]]
-							(- [local222 [local92 state]] 5)
-						)
+						(-= [local222 [local92 state]] 5)
 						(+= local221 5)
 					)
 				)
@@ -796,18 +786,14 @@
 					((not local221) 0)
 					((not [local222 [local92 state]])
 						(if (>= local221 30)
-							(= [local222 [local92 state]]
-								(+ [local222 [local92 state]] 10)
-							)
+							(+= [local222 [local92 state]] 10)
 							(-= local221 30)
 						else
 							0
 						)
 					)
 					(else
-						(= [local222 [local92 state]]
-							(+ [local222 [local92 state]] 1)
-						)
+						(+= [local222 [local92 state]] 1)
 						(-= local221 1)
 					)
 				)
@@ -824,9 +810,7 @@
 						(+= local221 30)
 					)
 					(else
-						(= [local222 [local92 state]]
-							(- [local222 [local92 state]] 1)
-						)
+						(-= [local222 [local92 state]] 1)
 						(+= local221 1)
 					)
 				)

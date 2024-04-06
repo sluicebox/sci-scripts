@@ -587,17 +587,13 @@
 					(0
 						(proc951_2 -10)
 						(gSounds play: 15010 0 82 self)
-						(= [global164 (+ (* local6 2) 1)]
-							(+ [global164 (+ (* local6 2) 1)] 10)
-						)
+						(+= [global164 (+ (* local6 2) 1)] 10)
 						(proc951_1 local6)
 					)
 					(1
 						(proc951_2 -20)
 						(gSounds play: 15010 0 82 self)
-						(= [global164 (+ (* local6 2) 1)]
-							(+ [global164 (+ (* local6 2) 1)] 20)
-						)
+						(+= [global164 (+ (* local6 2) 1)] 20)
 						(proc951_1 local6)
 						(= local17 1)
 					)

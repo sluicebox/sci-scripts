@@ -479,17 +479,13 @@
 
 (procedure (proc0_6 param1 &tmp temp0)
 	(= temp0 (proc0_5 param1))
-	(= [global200 (/ param1 16)]
-		(| [global200 (/ param1 16)] (>> $8000 (mod param1 16)))
-	)
+	(|= [global200 (/ param1 16)] (>> $8000 (mod param1 16)))
 	(return temp0)
 )
 
 (procedure (proc0_7 param1 &tmp temp0)
 	(= temp0 (proc0_5 param1))
-	(= [global200 (/ param1 16)]
-		(& [global200 (/ param1 16)] (~ (>> $8000 (mod param1 16))))
-	)
+	(&= [global200 (/ param1 16)] (~ (>> $8000 (mod param1 16))))
 	(return temp0)
 )
 

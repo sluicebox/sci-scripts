@@ -909,23 +909,17 @@
 				(cond
 					((not local311) 0)
 					((and (< local311 5) [local312 [local182 state]])
-						(= [local312 [local182 state]]
-							(+ [local312 [local182 state]] local311)
-						)
+						(+= [local312 [local182 state]] local311)
 						(= local311 0)
 					)
 					((not [local312 [local182 state]])
 						(if (>= local311 30)
-							(= [local312 [local182 state]]
-								(+ [local312 [local182 state]] 10)
-							)
+							(+= [local312 [local182 state]] 10)
 							(-= local311 30)
 						)
 					)
 					(else
-						(= [local312 [local182 state]]
-							(+ [local312 [local182 state]] 5)
-						)
+						(+= [local312 [local182 state]] 5)
 						(-= local311 5)
 					)
 				)
@@ -970,20 +964,16 @@
 								[local326 [local182 state]]
 							)
 						)
-						(= [local312 [local182 state]]
+						(-=
+							[local312 [local182 state]]
 							(-
 								[local312 [local182 state]]
-								(-
-									[local312 [local182 state]]
-									[local326 [local182 state]]
-								)
+								[local326 [local182 state]]
 							)
 						)
 					)
 					(else
-						(= [local312 [local182 state]]
-							(- [local312 [local182 state]] 5)
-						)
+						(-= [local312 [local182 state]] 5)
 						(+= local311 5)
 					)
 				)
@@ -993,18 +983,14 @@
 					((not local311) 0)
 					((not [local312 [local182 state]])
 						(if (>= local311 30)
-							(= [local312 [local182 state]]
-								(+ [local312 [local182 state]] 10)
-							)
+							(+= [local312 [local182 state]] 10)
 							(-= local311 30)
 						else
 							0
 						)
 					)
 					(else
-						(= [local312 [local182 state]]
-							(+ [local312 [local182 state]] 1)
-						)
+						(+= [local312 [local182 state]] 1)
 						(-= local311 1)
 					)
 				)
@@ -1027,9 +1013,7 @@
 						(+= local311 30)
 					)
 					(else
-						(= [local312 [local182 state]]
-							(- [local312 [local182 state]] 1)
-						)
+						(-= [local312 [local182 state]] 1)
 						(+= local311 1)
 					)
 				)

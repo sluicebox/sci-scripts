@@ -496,17 +496,13 @@
 
 (procedure (SetFlag flagEnum &tmp oldState)
 	(= oldState (IsFlag flagEnum))
-	(= [gGameFlags (/ flagEnum 16)]
-		(| [gGameFlags (/ flagEnum 16)] (>> $8000 (mod flagEnum 16)))
-	)
+	(|= [gGameFlags (/ flagEnum 16)] (>> $8000 (mod flagEnum 16)))
 	(return oldState)
 )
 
 (procedure (ClearFlag flagEnum &tmp oldState)
 	(= oldState (IsFlag flagEnum))
-	(= [gGameFlags (/ flagEnum 16)]
-		(& [gGameFlags (/ flagEnum 16)] (~ (>> $8000 (mod flagEnum 16))))
-	)
+	(&= [gGameFlags (/ flagEnum 16)] (~ (>> $8000 (mod flagEnum 16))))
 	(return oldState)
 )
 

@@ -122,9 +122,7 @@
 
 (procedure (SetFlag param1 &tmp temp0)
 	(= temp0 (IsFlag param1 1))
-	(= [global300 (/ param1 16)]
-		(| [global300 (/ param1 16)] (>> $8000 (mod param1 16)))
-	)
+	(|= [global300 (/ param1 16)] (>> $8000 (mod param1 16)))
 	(return temp0)
 )
 
@@ -134,16 +132,12 @@
 
 (procedure (ClearFlag param1 &tmp temp0)
 	(= temp0 (IsFlag param1))
-	(= [global300 (/ param1 16)]
-		(& [global300 (/ param1 16)] (~ (>> $8000 (mod param1 16))))
-	)
+	(&= [global300 (/ param1 16)] (~ (>> $8000 (mod param1 16))))
 	(return temp0)
 )
 
 (procedure (proc1111_25 param1) ; UNUSED
-	(= [global300 (/ param1 16)]
-		(^ [global300 (/ param1 16)] (>> $8000 (mod param1 16)))
-	)
+	(^= [global300 (/ param1 16)] (>> $8000 (mod param1 16)))
 )
 
 (procedure (proc1111_21 param1 param2 param3) ; UNUSED

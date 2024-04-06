@@ -139,9 +139,7 @@
 				(<< $0001 (mod local113 16))
 			)
 		)
-		(= [local98 (/ local113 16)]
-			(| [local98 (/ local113 16)] (<< $0001 (mod local113 16)))
-		)
+		(|= [local98 (/ local113 16)] (<< $0001 (mod local113 16)))
 		((= local5 (IconSentence new:))
 			theWidth: 279
 			nsLeft: 3

@@ -446,9 +446,7 @@
 	(if (and (== param1 248) (controlPanelButton scratch:))
 		(controlPanelButton setHotspot: 0)
 	)
-	(= [global250 (/ param1 16)]
-		(| [global250 (/ param1 16)] (>> $8000 (mod param1 16)))
-	)
+	(|= [global250 (/ param1 16)] (>> $8000 (mod param1 16)))
 )
 
 (procedure (ClearFlag param1)
@@ -464,9 +462,7 @@
 	(if (== param1 248)
 		(controlPanelButton setHotspot: 4 3) ; Do, Move
 	)
-	(= [global250 (/ param1 16)]
-		(& [global250 (/ param1 16)] (~ (>> $8000 (mod param1 16))))
-	)
+	(&= [global250 (/ param1 16)] (~ (>> $8000 (mod param1 16))))
 )
 
 (procedure (IsFlag param1)

@@ -694,9 +694,7 @@
 		(= temp0 0)
 		(if (not (OneOf value 26 27 29 30))
 			(if (not (& [local11 (/ value 16)] (>> $8000 (mod value 16))))
-				(= [local11 (/ value 16)]
-					(| [local11 (/ value 16)] (>> $8000 (mod value 16)))
-				)
+				(|= [local11 (/ value 16)] (>> $8000 (mod value 16)))
 				(= temp0 (super drawButton: &rest))
 				(gGlobalSound3 number: 910 setLoop: 1 play:)
 			else

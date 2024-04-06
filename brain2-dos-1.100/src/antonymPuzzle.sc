@@ -134,9 +134,7 @@
 					(<< $0001 (mod temp0 16))
 				)
 			)
-			(= [local45 (/ temp0 16)]
-				(| [local45 (/ temp0 16)] (<< $0001 (mod temp0 16)))
-			)
+			(|= [local45 (/ temp0 16)] (<< $0001 (mod temp0 16)))
 			(= [local48 temp3] temp0)
 			(= [local5 temp3]
 				((IconSentence new:)

@@ -207,7 +207,7 @@
 (procedure (localproc_9 param1 param2 param3 param4 param5 &tmp temp0 temp1 temp2)
 	(= temp0 (+ (* param3 50) (* param2 5) (/ param1 2)))
 	(= temp1 (if (& param1 $0001) -256 else 255))
-	(= [local85 (+ param4 temp0)] (& [local85 (+ param4 temp0)] temp1))
+	(&= [local85 (+ param4 temp0)] temp1)
 	(&= param5 $00ff)
 	(= temp1
 		(if (& param1 $0001)
@@ -216,7 +216,7 @@
 			(<< param5 $0008)
 		)
 	)
-	(= [local85 (+ param4 temp0)] (| [local85 (+ param4 temp0)] temp1))
+	(|= [local85 (+ param4 temp0)] temp1)
 )
 
 (procedure (localproc_10 &tmp temp0)

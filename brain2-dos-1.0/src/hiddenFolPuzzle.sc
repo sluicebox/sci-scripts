@@ -314,12 +314,7 @@
 								(<< $0001 (mod temp1 16))
 							)
 						)
-						(= [local728 (/ temp1 16)]
-							(|
-								[local728 (/ temp1 16)]
-								(<< $0001 (mod temp1 16))
-							)
-						)
+						(|= [local728 (/ temp1 16)] (<< $0001 (mod temp1 16)))
 						(switch gDifficulty
 							(0 ; Novice
 								(= temp3

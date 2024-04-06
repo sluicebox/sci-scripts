@@ -495,9 +495,7 @@
 		(cond
 			((!= local13 -1)
 				(gCSoundFX number: 244 setLoop: 1 play:)
-				(= [local18 (/ local13 16)]
-					(& [local18 (/ local13 16)] (~ (<< $0001 (mod local13 16))))
-				)
+				(&= [local18 (/ local13 16)] (~ (<< $0001 (mod local13 16))))
 				(= local13 -1)
 				(moveProp hide:)
 				(gGame setCursor: 900)
@@ -512,9 +510,7 @@
 						(<< $0001 (mod local13 16))
 					)
 				)
-				(= [local18 (/ local13 16)]
-					(| [local18 (/ local13 16)] (<< $0001 (mod local13 16)))
-				)
+				(|= [local18 (/ local13 16)] (<< $0001 (mod local13 16)))
 				(= temp1 (mod local13 (* local6 5)))
 				(gCSoundFX number: 145 setLoop: 1 play:)
 				(moveProp
@@ -560,9 +556,7 @@
 						(moveProp x: temp2 y: temp3)
 						(SetNowSeen moveProp (moveProp nsTop:))
 						(++ local5)
-						(= [local26 (/ temp4 16)]
-							(| [local26 (/ temp4 16)] (<< $0001 (mod temp4 16)))
-						)
+						(|= [local26 (/ temp4 16)] (<< $0001 (mod temp4 16)))
 						(= temp8 1)
 						(gCSoundFX number: 242 setLoop: 1 play:)
 					else
@@ -618,11 +612,9 @@
 						[local26 (/ (temp6 value:) 16)]
 						(<< $0001 (mod (temp6 value:) 16))
 					)
-					(= [local26 (/ (temp6 value:) 16)]
-						(&
-							[local26 (/ (temp6 value:) 16)]
-							(~ (<< $0001 (mod (temp6 value:) 16)))
-						)
+					(&=
+						[local26 (/ (temp6 value:) 16)]
+						(~ (<< $0001 (mod (temp6 value:) 16)))
 					)
 					(-- local5)
 				)

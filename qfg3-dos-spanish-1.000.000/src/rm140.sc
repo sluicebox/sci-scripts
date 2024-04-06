@@ -921,23 +921,17 @@
 				(cond
 					((not local401) 0)
 					((and (< local401 5) [local402 [local272 state]])
-						(= [local402 [local272 state]]
-							(+ [local402 [local272 state]] local401)
-						)
+						(+= [local402 [local272 state]] local401)
 						(= local401 0)
 					)
 					((not [local402 [local272 state]])
 						(if (>= local401 30)
-							(= [local402 [local272 state]]
-								(+ [local402 [local272 state]] 10)
-							)
+							(+= [local402 [local272 state]] 10)
 							(-= local401 30)
 						)
 					)
 					(else
-						(= [local402 [local272 state]]
-							(+ [local402 [local272 state]] 5)
-						)
+						(+= [local402 [local272 state]] 5)
 						(-= local401 5)
 					)
 				)
@@ -982,20 +976,16 @@
 								[local416 [local272 state]]
 							)
 						)
-						(= [local402 [local272 state]]
+						(-=
+							[local402 [local272 state]]
 							(-
 								[local402 [local272 state]]
-								(-
-									[local402 [local272 state]]
-									[local416 [local272 state]]
-								)
+								[local416 [local272 state]]
 							)
 						)
 					)
 					(else
-						(= [local402 [local272 state]]
-							(- [local402 [local272 state]] 5)
-						)
+						(-= [local402 [local272 state]] 5)
 						(+= local401 5)
 					)
 				)
@@ -1005,18 +995,14 @@
 					((not local401) 0)
 					((not [local402 [local272 state]])
 						(if (>= local401 30)
-							(= [local402 [local272 state]]
-								(+ [local402 [local272 state]] 10)
-							)
+							(+= [local402 [local272 state]] 10)
 							(-= local401 30)
 						else
 							0
 						)
 					)
 					(else
-						(= [local402 [local272 state]]
-							(+ [local402 [local272 state]] 1)
-						)
+						(+= [local402 [local272 state]] 1)
 						(-= local401 1)
 					)
 				)
@@ -1039,9 +1025,7 @@
 						(+= local401 30)
 					)
 					(else
-						(= [local402 [local272 state]]
-							(- [local402 [local272 state]] 1)
-						)
+						(-= [local402 [local272 state]] 1)
 						(+= local401 1)
 					)
 				)

@@ -710,9 +710,7 @@
 						(<< $0001 (mod temp0 16))
 					)
 				)
-				(= [local260 (/ temp0 16)]
-					(| [local260 (/ temp0 16)] (<< $0001 (mod temp0 16)))
-				)
+				(|= [local260 (/ temp0 16)] (<< $0001 (mod temp0 16)))
 				(break)
 			)
 		)

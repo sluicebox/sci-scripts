@@ -141,9 +141,7 @@
 						(< [global790 (+ (* global802 3) global800)] 2)
 					)
 					(= global188 1)
-					(= [global790 (+ (* global802 3) global800)]
-						(+ [global790 (+ (* global802 3) global800)] 1)
-					)
+					(+= [global790 (+ (* global802 3) global800)] 1)
 					(localproc_2
 						global803
 						(+ [global805 global803] global804)

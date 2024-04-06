@@ -428,7 +428,7 @@
 				)
 			)
 		)
-		(= [global184 (global458 suit:)] (+ [global184 (global458 suit:)] 1))
+		(+= [global184 (global458 suit:)] 1)
 		(if (not (gTrick size:))
 			(proc307_0 self)
 			(DisposeScript 307)

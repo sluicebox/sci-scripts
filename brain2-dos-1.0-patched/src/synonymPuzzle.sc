@@ -145,9 +145,7 @@
 					(<< $0001 (mod temp0 16))
 				)
 			)
-			(= [local39 (/ temp0 16)]
-				(| [local39 (/ temp0 16)] (<< $0001 (mod temp0 16)))
-			)
+			(|= [local39 (/ temp0 16)] (<< $0001 (mod temp0 16)))
 			(= [local42 temp3] temp0)
 			(for ((= temp6 0)) (< temp6 2) ((++ temp6))
 				(= temp11 (+ (* temp3 2) temp6))

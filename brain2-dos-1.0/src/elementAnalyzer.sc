@@ -109,9 +109,7 @@
 					(<< $0001 (mod temp1 16))
 				)
 			)
-			(= [temp6 (/ temp1 16)]
-				(| [temp6 (/ temp1 16)] (<< $0001 (mod temp1 16)))
-			)
+			(|= [temp6 (/ temp1 16)] (<< $0001 (mod temp1 16)))
 			(self
 				add:
 					((anItem new:)
@@ -137,9 +135,7 @@
 					(<< $0001 (mod temp4 16))
 				)
 			)
-			(= [temp8 (/ temp4 16)]
-				(| [temp8 (/ temp4 16)] (<< $0001 (mod temp4 16)))
-			)
+			(|= [temp8 (/ temp4 16)] (<< $0001 (mod temp4 16)))
 			(= [local73 temp0] temp4)
 		)
 		(= [local73 25] 25)

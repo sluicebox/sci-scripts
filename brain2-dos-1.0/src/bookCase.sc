@@ -316,9 +316,7 @@
 						(<< $0001 (mod temp1 8))
 					)
 				)
-				(= [local32 (/ temp1 8)]
-					(| [local32 (/ temp1 8)] (<< $0001 (mod temp1 8)))
-				)
+				(|= [local32 (/ temp1 8)] (<< $0001 (mod temp1 8)))
 				(= nsTop [local253 (/ temp1 8)])
 				(= nsLeft (+ 8 (* 16 (mod temp1 8))))
 				(= nsBottom (+ nsTop 41))

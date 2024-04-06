@@ -390,15 +390,11 @@
 )
 
 (procedure (proc0_1 param1)
-	(= [global250 (/ param1 16)]
-		(| [global250 (/ param1 16)] (>> $8000 (mod param1 16)))
-	)
+	(|= [global250 (/ param1 16)] (>> $8000 (mod param1 16)))
 )
 
 (procedure (proc0_2 param1)
-	(= [global250 (/ param1 16)]
-		(& [global250 (/ param1 16)] (~ (>> $8000 (mod param1 16))))
-	)
+	(&= [global250 (/ param1 16)] (~ (>> $8000 (mod param1 16))))
 )
 
 (procedure (proc0_3 param1) ; UNUSED
