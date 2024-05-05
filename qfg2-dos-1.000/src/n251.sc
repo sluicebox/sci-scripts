@@ -58,7 +58,7 @@
 		y 32
 		noun '/wing'
 		description {the wings}
-		lookStr {They are waxen Icarus wings.  The label admonishes:   Do not attempt to use these wings in hot climates.}
+		lookStr {They are waxen Icarus wings.__The label admonishes:___Do not attempt to use these wings in hot climates.}
 		view 250
 		loop 2
 		cel 1
@@ -130,7 +130,7 @@
 		y 58
 		noun '/chicken'
 		description {the rubber chickens}
-		lookStr {A lady once asked Keapon for liniment with which "to rub her chickens," but he thought she said "two rubber chickens."  Oddly, she never paid for them or took them home.}
+		lookStr {A lady once asked Keapon for liniment with which "to rub her chickens," but he thought she said "two rubber chickens."__Oddly, she never paid for them or took them home.}
 		view 250
 		loop 1
 		cel 4
@@ -145,7 +145,7 @@
 		y 55
 		noun '/enterprise,enterprise'
 		description {the starship}
-		lookStr {No, you're wrong.  It's the USS Exitprise.}
+		lookStr {No, you're wrong.__It's the USS Exitprise.}
 		view 250
 		loop 1
 		cel 3
@@ -175,7 +175,7 @@
 		y 74
 		noun '/helicopter'
 		description {the helicopter}
-		lookStr {Keapon calls it a Self-Motivating Horizontally-Situated Windmill.  Then again, it might be a giant.}
+		lookStr {Keapon calls it a Self-Motivating Horizontally-Situated Windmill.__Then again, it might be a giant.}
 		view 250
 		loop 1
 		cel 2
@@ -190,7 +190,7 @@
 		y 112
 		noun '/orat,stick'
 		description {the orats}
-		lookStr {You'll have to agree that these are quite clearly "Orats-On-A-Stick."  Extremely useful.  Somewhere.}
+		lookStr {You'll have to agree that these are quite clearly "Orats-On-A-Stick."__Extremely useful.__Somewhere.}
 		view 250
 		loop 1
 		priority 8
@@ -204,7 +204,7 @@
 		y 27
 		noun '/fan'
 		description {the fan}
-		lookStr {This was Keapon's biggest fan until things took a turn for the worse.  Keapon grew tired of being blade for a fool.}
+		lookStr {This was Keapon's biggest fan until things took a turn for the worse.__Keapon grew tired of being blade for a fool.}
 		view 250
 		priority 10
 		signal 16400
@@ -217,7 +217,7 @@
 		y 47
 		noun '/television'
 		description {the television}
-		lookStr {Don't watch this so much.  You'll ruin your eyes!}
+		lookStr {Don't watch this so much.__You'll ruin your eyes!}
 		view 250
 		cel 1
 		priority 10
@@ -245,7 +245,7 @@
 		y 33
 		noun '/doll'
 		description {the Pillsboory Doeboy}
-		lookStr {The Michelin Man?  The StayPuft MarshMallow Man?  No, it's the Doughbury Pills Boy!}
+		lookStr {The Michelin Man?__The StayPuft MarshMallow Man?__No, it's the Doughbury Pills Boy!}
 		view 250
 		cel 3
 		signal 16384
@@ -311,7 +311,7 @@
 		y 88
 		noun '/oven'
 		description {the toaster}
-		lookStr {You can burn two pieces of toast at once with this baby.   Now, if only someone would invent electricity.  And maybe an outlet and extension cord.}
+		lookStr {You can burn two pieces of toast at once with this baby.___Now, if only someone would invent electricity.__And maybe an outlet and extension cord.}
 		view 250
 		cel 9
 		priority 15
@@ -325,7 +325,7 @@
 		y 110
 		noun '/cushion'
 		description {the whoopee cushions}
-		lookStr {Ah ha!  So the windbag's been pushin' whoopee cushions!}
+		lookStr {Ah ha!__So the windbag's been pushin' whoopee cushions!}
 		view 250
 		cel 10
 		priority 15
@@ -426,7 +426,7 @@
 		nsBottom 96
 		nsRight 49
 		description {the Cookie Monster puppet}
-		lookStr {It is a hand puppet labeled "Cookie Monster".  How odd!}
+		lookStr {It is a hand puppet labeled "Cookie Monster".__How odd!}
 	)
 )
 

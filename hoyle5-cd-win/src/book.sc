@@ -608,7 +608,7 @@
 	(method (doit &tmp temp0 [temp1 79])
 		(temp0 ; UNINIT
 			format:
-				{%3d%3d%3d%3d\r\n}
+				{%3d%3d%3d%3d\0d\n}
 				global801
 				global802
 				(global809 fromSqr:)

@@ -148,7 +148,7 @@
 	(if (or global323 (IsFlag 541))
 		(return 1)
 	)
-	(= temp0 (Str with: {c:\carlos.kq7}))
+	(= temp0 (Str with: {c:\\carlos.kq7}))
 	(if (FileIO fiEXISTS (temp0 data:))
 		(SetFlag 541)
 	else

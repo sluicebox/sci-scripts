@@ -777,7 +777,7 @@
 		y 46
 		noun '/sign[<alley,bearing,street]'
 		description {the alley sign}
-		lookStr {The symbol on the sign indicates "North".  The sign itself reads "Junub Tarik," which means "South Street."}
+		lookStr {The symbol on the sign indicates "North".__The sign itself reads "Junub Tarik," which means "South Street."}
 		view 310
 		loop 2
 		priority 6

@@ -1011,14 +1011,14 @@
 (procedure (HighPrint &tmp [temp0 4] [temp4 800])
 	(clr)
 	(Format @temp4 0 50 &rest) ; "%s"
-	(TextSize @[temp0 0] @temp4 gUserFont 0 {\r\n----------\r\n})
+	(TextSize @[temp0 0] @temp4 gUserFont 0 {\0d\n----------\0d\n})
 	(Print &rest #at -1 5 #width (if (> [temp0 2] 24) 300 else 0) #mode 1)
 )
 
 (procedure (TimePrint numSeconds &tmp [temp0 4] [temp4 400])
 	(clr)
 	(Format @temp4 0 50 &rest) ; "%s"
-	(TextSize @[temp0 0] @temp4 gUserFont 0 {\r\n----------\r\n})
+	(TextSize @[temp0 0] @temp4 gUserFont 0 {\0d\n----------\0d\n})
 	(Print
 		&rest
 		#at
@@ -1036,7 +1036,7 @@
 
 (procedure (LowPrint &tmp [temp0 4] [temp4 400])
 	(Format @temp4 0 50 &rest) ; "%s"
-	(TextSize @[temp0 0] @temp4 gUserFont 0 {\r\n----------\r\n})
+	(TextSize @[temp0 0] @temp4 gUserFont 0 {\0d\n----------\0d\n})
 	(Print &rest #at -1 115 #width (if (> [temp0 2] 24) 300 else 0) #mode 1)
 )
 

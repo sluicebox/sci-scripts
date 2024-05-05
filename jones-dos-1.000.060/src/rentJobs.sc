@@ -118,7 +118,7 @@
 		nsTop 60
 		nsLeft 25
 		key 1
-		text {Groundskeeper      ||||}
+		text {Groundskeeper______||||}
 		shadowColor 107
 		indexNum 62
 		basePrice 6
@@ -133,7 +133,7 @@
 		nsTop 70
 		nsLeft 25
 		key 2
-		text {Apartment Manager  }
+		text {Apartment Manager__}
 		shadowColor 107
 		indexNum 63
 		basePrice 8

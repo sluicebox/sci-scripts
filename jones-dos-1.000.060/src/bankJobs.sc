@@ -121,7 +121,7 @@
 		nsTop 45
 		nsLeft 25
 		key 1
-		text {Janitor            |}
+		text {Janitor____________|}
 		shadowColor 107
 		indexNum 43
 		basePrice 6
@@ -136,7 +136,7 @@
 		nsTop 55
 		nsLeft 25
 		key 2
-		text {Teller              ||}
+		text {Teller______________||}
 		shadowColor 107
 		indexNum 58
 		basePrice 10
@@ -153,7 +153,7 @@
 		nsTop 65
 		nsLeft 25
 		key 3
-		text {Assistant Manager  }
+		text {Assistant Manager__}
 		shadowColor 107
 		indexNum 45
 		basePrice 14
@@ -170,7 +170,7 @@
 		nsTop 75
 		nsLeft 25
 		key 4
-		text {Manager           |}
+		text {Manager___________|}
 		shadowColor 107
 		indexNum 46
 		basePrice 19
@@ -187,7 +187,7 @@
 		nsTop 85
 		nsLeft 25
 		key 5
-		text {Investment Broker  |||}
+		text {Investment Broker__|||}
 		shadowColor 107
 		indexNum 59
 		basePrice 22

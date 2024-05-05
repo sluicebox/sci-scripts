@@ -535,7 +535,7 @@
 			(2
 				(= local2
 					(Display
-						{    To fetch a pail of water;}
+						{____To fetch a pail of water;}
 						dsWIDTH
 						320
 						dsCOORD

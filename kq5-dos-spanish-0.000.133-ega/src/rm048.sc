@@ -139,7 +139,7 @@
 			)
 			(2
 				(= global330
-					{Oh no!  The water is too cold for swimming!}
+					{Oh no!__The water is too cold for swimming!}
 				)
 				(EgoDead)
 			)

@@ -119,7 +119,7 @@
 		nsTop 50
 		nsLeft 25
 		key 1
-		text {Janitor            |}
+		text {Janitor____________|}
 		shadowColor 107
 		indexNum 43
 		basePrice 5
@@ -132,7 +132,7 @@
 		nsTop 60
 		nsLeft 25
 		key 2
-		text {Teacher            }
+		text {Teacher____________}
 		shadowColor 107
 		indexNum 48
 		basePrice 11
@@ -149,7 +149,7 @@
 		nsTop 70
 		nsLeft 25
 		key 3
-		text {Professor          }
+		text {Professor__________}
 		shadowColor 107
 		indexNum 49
 		basePrice 20

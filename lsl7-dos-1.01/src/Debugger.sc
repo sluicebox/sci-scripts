@@ -117,7 +117,7 @@
 		(if (param1 scaler:)
 			(temp26
 				format:
-					{Scaler %d  %d  %d  %d}
+					{Scaler %d__%d__%d__%d}
 					((param1 scaler:) frontSize:)
 					((param1 scaler:) backSize:)
 					((param1 scaler:) frontY:)
@@ -262,24 +262,24 @@
 	(PrintDebug {Checking for verb text})
 	(poly_pol
 		writeString:
-			{Dump of L7 Message Problems\r\n\r\nAll Verb Text (1-254):\r\n}
+			{Dump of L7 Message Problems\0d\n\0d\nAll Verb Text (1-254):\0d\n}
 	)
 	(for ((= temp2 1)) (< temp2 255) ((++ temp2))
 		(cond
 			((= temp0 (MakeMessageText 0 temp2 0 1 13 1))
-				(= temp1 (Str format: {%5d  Verbs  (13) %s\r\n} temp2 temp0))
+				(= temp1 (Str format: {%5d__Verbs__(13) %s\0d\n} temp2 temp0))
 				(poly_pol writeString: temp1)
 			)
 			((= temp0 (MakeMessageText 0 temp2 0 1 12 1))
-				(= temp1 (Str format: {%5d  Topics (12) %s\r\n} temp2 temp0))
+				(= temp1 (Str format: {%5d__Topics (12) %s\0d\n} temp2 temp0))
 				(poly_pol writeString: temp1)
 			)
 			((= temp0 (MakeMessageText 0 temp2 0 1 11 1))
-				(= temp1 (Str format: {%5d  Inv    (11) %s\r\n} temp2 temp0))
+				(= temp1 (Str format: {%5d__Inv____(11) %s\0d\n} temp2 temp0))
 				(poly_pol writeString: temp1)
 			)
 			(else
-				(= temp1 (Str format: {%5d  None\r\n} temp2))
+				(= temp1 (Str format: {%5d__None\0d\n} temp2))
 				(poly_pol writeString: temp1)
 			)
 		)
@@ -307,7 +307,7 @@
 						(= temp1
 							(Str
 								format:
-									{No NAME V: Noun %d, Room %d\r\n}
+									{No NAME V: Noun %d, Room %d\0d\n}
 									temp3
 									temp2
 							)
@@ -321,7 +321,7 @@
 						(= temp1
 							(Str
 								format:
-									{No LOOK V: Noun %s, Room %d\r\n}
+									{No LOOK V: Noun %s, Room %d\0d\n}
 									(temp7 data:)
 									temp2
 							)
@@ -393,7 +393,7 @@
 										(= temp1
 											(Str
 												format:
-													{No ALL case: Noun: %s, Verb %s, Room %d\r\n}
+													{No ALL case: Noun: %s, Verb %s, Room %d\0d\n}
 													(temp7 data:)
 													(temp8 data:)
 													temp2
@@ -415,14 +415,14 @@
 	)
 	(poly_pol
 		writeString:
-			{\r\n\r\n***\r\nVerb use info\r\n***\r\n\r\nVerb    Room used\r\n}
+			{\0d\n\0d\n***\0d\nVerb use info\0d\n***\0d\n\0d\nVerb____Room used\0d\n}
 	)
 	(for ((= temp2 1)) (< temp2 255) ((++ temp2))
 		(if (temp6 at: temp2)
-			(= temp1 (Str format: {%4d    %4d\r\n} temp2 (temp6 at: temp2)))
+			(= temp1 (Str format: {%4d____%4d\0d\n} temp2 (temp6 at: temp2)))
 			(poly_pol writeString: temp1)
 		else
-			(= temp1 (Str format: {%4d    *** NONE ***\r\n} temp2))
+			(= temp1 (Str format: {%4d____*** NONE ***\0d\n} temp2))
 			(poly_pol writeString: temp1)
 		)
 	)
@@ -462,7 +462,7 @@
 					(KEY_QUESTION
 						(event claimed: 1)
 						(Prints
-							{ ALT-Drag - drag&scale cast member around screen\nCTRL-LShft-Click - make nearest cast member current\nCTRL-Click - mouse coordinates\nCTRL-Arrow - move current view 1 pixel\n ALT-A     - add animation/view\n ALT-B     - caputure BMP\n ALT-C     - show Cast info\n ALT-D     - show current view info\n ALT-E     - show Ego\n ALT-F     - edit Features\n ALT-G     - show/set/clear Flag\n ALT-H     - show features and obstacles\n ALT-I     - get Inventory Item\n ALT-J     - load a pic\n ALT-K     - blinK current view\n ALT-M     - duMp a L7 message debug log\n ALT-N     - New palette\n ALT-P     - edit Polygons\n ALT-R     - show Room info\n ALT-S     - scaler tool on current actor\n ALT-T     - teleport\n ALT-U     - handsOn\n ALT-X     - exit the Game\n ALT-Y     - show room polygons\nDELETE     - delete current object\n8          - Rotate current (actor) right\n2          - Rotate current (actor) left\n4          - Decrease current (prop) cel\n6          - Increase current (prop) cel\n1          - Decrease current (prop) loop\n3          - Increase current (prop) loop\nCTRL-C     - Check audio card\nCTRL-G     - Give ego necessary items for room\nCTRL-L     - error logging\nCTRL-R     - Play a robot\nCTRL-D     - test a sounD\n}
+							{ ALT-Drag - drag&scale cast member around screen\nCTRL-LShft-Click - make nearest cast member current\nCTRL-Click - mouse coordinates\nCTRL-Arrow - move current view 1 pixel\n_ALT-A_____- add animation/view\n_ALT-B_____- caputure BMP\n_ALT-C_____- show Cast info\n_ALT-D_____- show current view info\n_ALT-E_____- show Ego\n_ALT-F_____- edit Features\n_ALT-G_____- show/set/clear Flag\n_ALT-H_____- show features and obstacles\n_ALT-I_____- get Inventory Item\n_ALT-J_____- load a pic\n_ALT-K_____- blinK current view\n_ALT-M_____- duMp a L7 message debug log\n_ALT-N_____- New palette\n_ALT-P_____- edit Polygons\n_ALT-R_____- show Room info\n_ALT-S_____- scaler tool on current actor\n_ALT-T_____- teleport\n_ALT-U_____- handsOn\n_ALT-X_____- exit the Game\n_ALT-Y_____- show room polygons\nDELETE_____- delete current object\n8__________- Rotate current (actor) right\n2__________- Rotate current (actor) left\n4__________- Decrease current (prop) cel\n6__________- Increase current (prop) cel\n1__________- Decrease current (prop) loop\n3__________- Increase current (prop) loop\nCTRL-C_____- Check audio card\nCTRL-G_____- Give ego necessary items for room\nCTRL-L_____- error logging\nCTRL-R_____- Play a robot\nCTRL-D_____- test a sounD\n}
 						)
 					)
 					(KEY_DELETE
@@ -740,7 +740,7 @@
 					)
 					(JOY_RIGHT
 						(Printf
-							{Num Channels: %d\nAudio Rate:       %d\nAudio Bits:         %d}
+							{Num Channels: %d\nAudio Rate:_______%d\nAudio Bits:_________%d}
 							(DoAudio 13) ; AudChannels
 							(DoAudio audRATE)
 							(DoAudio 10) ; AudBits
@@ -758,7 +758,7 @@
 						)
 						(if (< local0 999)
 							(SaveScreen (temp5 data:))
-							(Printf {Screen saved as\n   %s} (temp5 data:))
+							(Printf {Screen saved as\n___%s} (temp5 data:))
 						else
 							(Prints
 								{Sorry, no can do. How did you get so many files?}
@@ -859,7 +859,7 @@
 						(FrameOut)
 						(poly_pol name: (temp3 data:) open: 0)
 						(poly_pol
-							writeString: {;***************************\r\n}
+							writeString: {;***************************\0d\n}
 						)
 						(= temp6 0)
 						(if (PEditor size:)
@@ -871,11 +871,11 @@
 								
 								(= temp9 (KList 6 temp8)) ; NextNode
 								(= temp11 (KList 8 temp8)) ; NodeValue
-								(poly_pol writeString: {\r\n})
+								(poly_pol writeString: {\0d\n})
 								(poly_pol writeString: {(instance })
 								(poly_pol writeString: (temp11 name:))
-								(poly_pol writeString: { of Feature\r\n})
-								(poly_pol writeString: {\t(properties\r\n})
+								(poly_pol writeString: { of Feature\0d\n})
+								(poly_pol writeString: {\t(properties\0d\n})
 								(poly_pol writeString: {\t\tx})
 								(= temp12 (= temp14 32767))
 								(= temp13 (= temp15 0))
@@ -903,26 +903,26 @@
 								(poly_pol writeString: {\t\t\t\t})
 								(temp6 format: {%d} temp0)
 								(poly_pol writeString: (temp6 data:))
-								(poly_pol writeString: {\r\n})
+								(poly_pol writeString: {\0d\n})
 								(poly_pol writeString: {\t\ty})
 								(poly_pol writeString: {\t\t\t\t})
 								(temp6 format: {%d} temp1)
 								(poly_pol writeString: (temp6 data:))
-								(poly_pol writeString: {\r\n})
-								(poly_pol writeString: {\t)\r\n})
-								(poly_pol writeString: {\t(method (init)\r\n})
+								(poly_pol writeString: {\0d\n})
+								(poly_pol writeString: {\t)\0d\n})
+								(poly_pol writeString: {\t(method (init)\0d\n})
 								(poly_pol
-									writeString: {\t\t(self setPolygon:\r\n}
+									writeString: {\t\t(self setPolygon:\0d\n}
 								)
 								(temp11 writeToFile: poly_pol)
-								(poly_pol writeString: {\t\t)\r\n})
+								(poly_pol writeString: {\t\t)\0d\n})
 								(poly_pol
-									writeString: {\t\t(super init: &rest)\r\n}
+									writeString: {\t\t(super init: &rest)\0d\n}
 								)
-								(poly_pol writeString: {\t)\r\n})
+								(poly_pol writeString: {\t)\0d\n})
 								(poly_pol writeString: {);})
 								(poly_pol writeString: (temp11 name:))
-								(poly_pol writeString: {\r\n})
+								(poly_pol writeString: {\0d\n})
 							)
 						)
 						(poly_pol close:)
@@ -1152,8 +1152,8 @@
 						)
 						(FrameOut)
 						(poly_pol name: (temp3 data:) open: 0)
-						(poly_pol writeString: {\t\t;********************\r\n})
-						(poly_pol writeString: {\t\t(curRoom addObstacle:\r\n})
+						(poly_pol writeString: {\t\t;********************\0d\n})
+						(poly_pol writeString: {\t\t(curRoom addObstacle:\0d\n})
 						(if (PEditor size:)
 							(PEditor eachElementDo: #writeToFile poly_pol)
 							(if (gCurRoom obstacles:)
@@ -1182,7 +1182,7 @@
 								)
 							)
 						)
-						(poly_pol writeString: {\t\t)\r\n})
+						(poly_pol writeString: {\t\t)\0d\n})
 						(poly_pol close:)
 						(temp3 dispose:)
 						(PEditor dispose:)

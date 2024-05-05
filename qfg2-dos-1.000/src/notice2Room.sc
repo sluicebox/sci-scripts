@@ -71,7 +71,7 @@
 		x 280
 		y 68
 		description {the candlestick}
-		lookStr {Is this your "Trial by Fire?"\n\nNah.  Too small.}
+		lookStr {Is this your "Trial by Fire?"\n\nNah.__Too small.}
 		view 765
 		cel 2
 	)

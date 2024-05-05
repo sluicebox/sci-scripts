@@ -27,7 +27,7 @@
 	lampDown
 	theDiag
 	egoCycler
-	[owTable 25] = [0 {Ow!  Hey!} {Man, that's hot!} {Wowf!} {Yowp!} {Watch out!} {Ouch!} {Yikes!} {Geez!} 2 3 0 2 0 1 2 3 -15 -15 15 -15 -15 15 15 15]
+	[owTable 25] = [0 {Ow!__Hey!} {Man, that's hot!} {Wowf!} {Yowp!} {Watch out!} {Ouch!} {Yikes!} {Geez!} 2 3 0 2 0 1 2 3 -15 -15 15 -15 -15 15 15 15]
 )
 
 (instance rm303 of Stage
@@ -619,7 +619,7 @@
 		y 140
 		noun '/door'
 		description {the door}
-		lookStr {Huh?  It's only PAINTED on.}
+		lookStr {Huh?__It's only PAINTED on.}
 		view 700
 		priority 1
 		signal 24596

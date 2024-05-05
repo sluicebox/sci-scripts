@@ -10,7 +10,7 @@
 
 (instance The_Kid___ of Person
 	(properties
-		name {The Kid   }
+		name {The Kid___}
 		view 1
 		song 11
 		crazy8sSkill 2

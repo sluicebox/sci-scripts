@@ -10,7 +10,7 @@
 
 (instance BullDog___ of Person
 	(properties
-		name {BullDog   }
+		name {BullDog___}
 		view 12
 		song 1
 		crazy8sSkill 2

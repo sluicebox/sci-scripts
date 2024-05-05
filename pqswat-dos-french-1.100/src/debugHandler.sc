@@ -311,7 +311,7 @@
 						)
 						(FrameOut)
 						(poly_pol name: (temp10 data:) open: 2)
-						(poly_pol writeString: {\t\t(curRoom addObstacle:\r\n})
+						(poly_pol writeString: {\t\t(curRoom addObstacle:\0d\n})
 						(if (PEditor size:)
 							(PEditor eachElementDo: #writeToFile poly_pol)
 							(if (gCurRoom obstacles:)
@@ -340,7 +340,7 @@
 								)
 							)
 						)
-						(poly_pol writeString: {\t\t)\r\n})
+						(poly_pol writeString: {\t\t)\0d\n})
 						(poly_pol close:)
 						(temp10 dispose:)
 						(PEditor dispose:)
@@ -668,7 +668,7 @@
 						(poly_pol name: (temp10 data:) open: 0)
 						(poly_pol
 							writeString:
-								{\t\t\t;***************************\r\n}
+								{\t\t\t;***************************\0d\n}
 						)
 						(if (PEditor size:)
 							(PEditor eachElementDo: #writeToFile poly_pol 1)

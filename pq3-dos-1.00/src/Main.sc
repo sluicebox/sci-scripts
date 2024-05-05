@@ -346,7 +346,7 @@
 					{Restart}
 					2
 					#button
-					{    Quit    }
+					{____Quit____}
 					3
 				)
 				(1
@@ -1515,7 +1515,7 @@
 		loop 2
 		cel 10
 		cursor 42
-		description {On the back of the bronze star is a number:\n       09987.}
+		description {On the back of the bronze star is a number:\n_______09987.}
 		owner 30
 	)
 )
@@ -1534,7 +1534,7 @@
 		view 700
 		cel 3
 		cursor 44
-		description {News article about you.  A pentagram has been drawn over your face}
+		description {News article about you.__A pentagram has been drawn over your face}
 	)
 )
 

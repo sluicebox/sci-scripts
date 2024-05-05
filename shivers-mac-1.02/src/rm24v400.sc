@@ -100,7 +100,7 @@
 					(= local0
 						(Str
 							format:
-								{ Plato first coined the word 'Mythologia' or the telling of stories. Fictional or     historical, myths are a universal creation. They attempt to explain the unexplainable --the world, god, monsters, man's very existence itself, and death. }
+								{ Plato first coined the word 'Mythologia' or the telling of stories. Fictional or_____historical, myths are a universal creation. They attempt to explain the unexplainable --the world, god, monsters, man's very existence itself, and death. }
 						)
 					)
 					(gCurRoom drawText: local0 0 0)

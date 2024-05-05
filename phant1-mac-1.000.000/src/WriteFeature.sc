@@ -244,7 +244,7 @@
 		(if (param1 isMemberOf: Feature)
 			(temp1
 				format:
-					{ \t\tnsLeft\t\t\t%d\r\n\t\tnsTop\t\t\t\t%d\r\n\t\tnsRight\t\t\t%d\r\n\t\tnsBottom\t\t\t%d\r\n}
+					{ \t\tnsLeft\t\t\t%d\0d\n\t\tnsTop\t\t\t\t%d\0d\n\t\tnsRight\t\t\t%d\0d\n\t\tnsBottom\t\t\t%d\0d\n}
 					(param1 nsLeft:)
 					(param1 nsTop:)
 					(param1 nsRight:)
@@ -267,7 +267,7 @@
 		else
 			(temp1
 				format:
-					{ \t\tview\t\t\t%d\r\n\t\tloop\t\t\t%d\r\n\t\tcel\t\t\t%d\r\n}
+					{ \t\tview\t\t\t%d\0d\n\t\tloop\t\t\t%d\0d\n\t\tcel\t\t\t%d\0d\n}
 					(param1 view:)
 					(param1 loop:)
 					(param1 cel:)
@@ -275,13 +275,13 @@
 		)
 		(temp2
 			format:
-				{ \t\tapproachX\t\t%d\r\n\t\tapproachY\t\t%d\r\n}
+				{ \t\tapproachX\t\t%d\0d\n\t\tapproachY\t\t%d\0d\n}
 				(param1 approachX:)
 				(param1 approachY:)
 		)
 		(temp0
 			format:
-				{ \r\n(instance %s of %s\r\n\t(properties\r\n\t\tx\t\t\t\t\t%d\r\n\t\ty\t\t\t\t\t%d\r\n\t\tz\t\t\t\t\t%d\r\n%s %s \t)\r\n)\r\n}
+				{ \0d\n(instance %s of %s\0d\n\t(properties\0d\n\t\tx\t\t\t\t\t%d\0d\n\t\ty\t\t\t\t\t%d\0d\n\t\tz\t\t\t\t\t%d\0d\n%s %s \t)\0d\n)\0d\n}
 				local0
 				((param1 -super-:) name:)
 				(param1 x:)

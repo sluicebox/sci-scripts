@@ -405,7 +405,7 @@
 		nsBottom 200
 		nsRight 320
 		description {buttes}
-		lookStr {From way up here, the view is simply gorges and steep rocky hills.  The giant sun of Estros mercilessly pounds sand all around you, until you can feel the heat through the soles of your boots.}
+		lookStr {From way up here, the view is simply gorges and steep rocky hills.__The giant sun of Estros mercilessly pounds sand all around you, until you can feel the heat through the soles of your boots.}
 	)
 
 	(method (doVerb theVerb)

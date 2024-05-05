@@ -1466,7 +1466,7 @@
 		(Load rsSCRIPT 1)
 		(= gHSW hSW)
 		((= gEgo egoObj) baseSetter: egoBase)
-		(= gVersion {1.000    })
+		(= gVersion {1.000____})
 		(= gWaitCursor 996)
 		(SL code: (= gStatusCode statusCode))
 		(= temp0 StopWalk)

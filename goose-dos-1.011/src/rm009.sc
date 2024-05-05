@@ -401,7 +401,7 @@
 			(2)
 			(3
 				(Display
-					{     Eating her curds and whey;}
+					{_____Eating her curds and whey;}
 					dsWIDTH
 					300
 					dsCOORD
@@ -420,7 +420,7 @@
 					(rhymeScript changeState: 5)
 				)
 				(Display
-					{     There came a big spider,}
+					{_____There came a big spider,}
 					dsWIDTH
 					300
 					dsCOORD
@@ -436,7 +436,7 @@
 			)
 			(5
 				(Display
-					{     And sat down beside her,}
+					{_____And sat down beside her,}
 					dsWIDTH
 					300
 					dsCOORD

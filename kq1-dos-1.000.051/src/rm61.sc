@@ -113,7 +113,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {The clouds drift over the edge of the land here, making it impossible to see where the land ends!  Though the clouds look very thick, it would be unwise to venture too far out into them.}
+		lookStr {The clouds drift over the edge of the land here, making it impossible to see where the land ends!__Though the clouds look very thick, it would be unwise to venture too far out into them.}
 	)
 )
 
@@ -132,7 +132,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {The clouds drift over the edge of the land here, making it impossible to see where the land ends!  Though the clouds look very thick, it would be unwise to venture too far out into them.}
+		lookStr {The clouds drift over the edge of the land here, making it impossible to see where the land ends!__Though the clouds look very thick, it would be unwise to venture too far out into them.}
 	)
 )
 

@@ -22,7 +22,7 @@
 
 	(method (init)
 		(AddMenu { \01 } {About game`^a :Help`#1 })
-		(AddMenu { Game } {Kids  `#5 :Disk  `#7 })
+		(AddMenu { Game } {Kids__`#5 :Disk__`#7 })
 		(AddMenu { Speed } {Change...`^s :--! :Faster`+ :Normal`= :Slower`- })
 		(AddMenu { Sound } {Volume...`^v :Sound Off`#2=1 })
 		(if global100

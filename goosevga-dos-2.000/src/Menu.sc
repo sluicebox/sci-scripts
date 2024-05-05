@@ -8,7 +8,7 @@
 
 (local
 	local0 = {English}
-	[local1 5] = [{ German} {  French} {  Spanish} { Japanese} {ENGLISH}]
+	[local1 5] = [{ German} {__French} {__Spanish} { Japanese} {ENGLISH}]
 )
 
 (procedure (localproc_0 param1 param2 &tmp [temp0 40]) ; UNUSED

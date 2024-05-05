@@ -599,7 +599,7 @@
 		(= gPossibleScore 200)
 		(= gUserFont 4)
 		(= gEatMice 10)
-		(= gVersion {x.yyy    })
+		(= gVersion {x.yyy____})
 		(= global106 (DoSound sndGET_POLYPHONY))
 		(if (and (>= (= global105 (Graph grGET_COLOURS)) 2) (<= global105 16))
 			(ClearFlag 0)

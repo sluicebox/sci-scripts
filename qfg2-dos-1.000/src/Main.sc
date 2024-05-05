@@ -1329,7 +1329,7 @@
 		(= gCustomWindow cWin)
 		(= gEgo ego)
 		(= gEgoBaseSetter egoBase)
-		(= gVersion {x.yyy    })
+		(= gVersion {x.yyy____})
 		(= gWaitCursor 997)
 		(SL code: (= gDftStatusCode statLn))
 		Cycle
@@ -2113,7 +2113,7 @@
 	(method (doit str)
 		(Format
 			str
-			{\r\nDay %d Time %d cantMove %d cantTalk %d totalHunk/16 %u}
+			{\0d\nDay %d Time %d cantMove %d cantTalk %d totalHunk/16 %u}
 			gDay
 			gTimeODay
 			gCantMove

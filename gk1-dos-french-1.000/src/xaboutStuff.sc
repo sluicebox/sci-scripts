@@ -36,9 +36,9 @@
 			addButton:
 				1
 				(switch (gGame printLang:)
-					(49 {     Kredit     })
-					(33 {  Remerciements  })
-					(else {   Credits   })
+					(49 {_____Kredit_____})
+					(33 {__Remerciements__})
+					(else {___Credits___})
 				)
 				0
 				20
@@ -54,9 +54,9 @@
 			addButton:
 				3
 				(switch (gGame printLang:)
-					(49 {    L\94sungen    })
-					(33 {    Aides    })
-					(else {    Hints    })
+					(49 {____L\94sungen____})
+					(33 {____Aides____})
+					(else {____Hints____})
 				)
 				(proc13_6 50 50 65 50 50)
 				40

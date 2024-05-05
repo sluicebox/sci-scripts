@@ -312,12 +312,12 @@
 	(method (writeToFile theFile showName &tmp aStr index len)
 		(if (and (> argc 1) showName)
 			(theFile
-				writeString: {\r\n\t\t\t; *** }
+				writeString: {\0d\n\t\t\t; *** }
 				writeString: (self name:)
-				writeString: { ***\r\n}
+				writeString: { ***\0d\n}
 			)
 		)
-		(theFile writeString: {\t\t\t((Polygon new:)\r\n\t\t\t\ttype: })
+		(theFile writeString: {\t\t\t((Polygon new:)\0d\n\t\t\t\ttype: })
 		(= aStr
 			(Str
 				with:
@@ -329,7 +329,7 @@
 					)
 			)
 		)
-		(aStr cat: {Access,\r\n\t\t\t\tinit: })
+		(aStr cat: {Access,\0d\n\t\t\t\tinit: })
 		(theFile writeString: aStr)
 		(aStr with: {})
 		(= len 0)
@@ -341,14 +341,14 @@
 			(cond
 				((> len 49)
 					(= len 0)
-					(theFile writeString: {\r\n\t\t\t\t\t\t})
+					(theFile writeString: {\0d\n\t\t\t\t\t\t})
 				)
 				((< (+ index 1) size)
 					(theFile writeString: { })
 				)
 			)
 		)
-		(theFile writeString: {,\r\n\t\t\t\tyourself:\r\n\t\t\t)\r\n})
+		(theFile writeString: {,\0d\n\t\t\t\tyourself:\0d\n\t\t\t)\0d\n})
 		(aStr dispose:)
 	)
 

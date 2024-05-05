@@ -93,7 +93,7 @@
 		x 60
 		y 60
 		description {KQ43Icon}
-		lookStr {Probably represents some tertiary function of the super computer brain.  Certainly nothing important.}
+		lookStr {Probably represents some tertiary function of the super computer brain.__Certainly nothing important.}
 		view 544
 		priority 15
 		signal 16
@@ -178,7 +178,7 @@
 		x 150
 		y 60
 		description {SFIcon}
-		lookStr {Hmm.  Never heard of it.}
+		lookStr {Hmm.__Never heard of it.}
 		view 544
 		loop 2
 		priority 15
@@ -258,7 +258,7 @@
 		x 100
 		y 95
 		description {brainIcon}
-		lookStr {This is your brain.  This is only your brain.  Had this been a real brain, you would have known how to use it.}
+		lookStr {This is your brain.__This is only your brain.__Had this been a real brain, you would have known how to use it.}
 		view 544
 		loop 4
 		priority 15

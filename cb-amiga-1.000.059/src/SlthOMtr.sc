@@ -439,7 +439,7 @@
 					#width
 					280
 					#button
-					{  MORE  }
+					{__MORE__}
 					1
 					#button
 					{ RESTORE }
@@ -448,7 +448,7 @@
 					{ RESTART }
 					3
 					#button
-					{  QUIT  }
+					{__QUIT__}
 					4
 				)
 				(2
@@ -617,10 +617,10 @@
 						#mode
 						1
 						#button
-						{   Yes  }
+						{___Yes__}
 						1
 						#button
-						{  Quit  }
+						{__Quit__}
 						2
 					)
 					(1
@@ -717,13 +717,13 @@
 												#mode
 												1
 												#button
-												{  RESTORE  }
+												{__RESTORE__}
 												1
 												#button
-												{  RESTART  }
+												{__RESTART__}
 												2
 												#button
-												{   QUIT   }
+												{___QUIT___}
 												3
 											)
 											(1
@@ -750,7 +750,7 @@
 											#mode
 											1
 											#button
-											{  HINTS  }
+											{__HINTS__}
 											1
 											#button
 											{ RESTORE }
@@ -759,7 +759,7 @@
 											{ RESTART }
 											3
 											#button
-											{  QUIT  }
+											{__QUIT__}
 											4
 										)
 										(1

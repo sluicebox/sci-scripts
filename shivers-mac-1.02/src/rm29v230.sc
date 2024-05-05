@@ -103,7 +103,7 @@
 					(= local0
 						(Str
 							format:
-								{ Since 1947, when American pilot Kenneth Arnold described what he saw as      "they flew like a saucer would if you skipped it across the water," man has reported thousands of UFOs. Hysteria? }
+								{ Since 1947, when American pilot Kenneth Arnold described what he saw as______"they flew like a saucer would if you skipped it across the water," man has reported thousands of UFOs. Hysteria? }
 						)
 					)
 					(gCurRoom drawText: local0 0 0)

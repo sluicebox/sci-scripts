@@ -71,39 +71,39 @@
 						@temp0
 						55
 						3
-						(if (IsFlag 218) {} else { \n    Fairy Dust})
-						(if (IsFlag 219) {} else { \n    Green Fur})
+						(if (IsFlag 218) {} else { \n____Fairy Dust})
+						(if (IsFlag 219) {} else { \n____Green Fur})
 						(if (IsFlag 220)
 							{}
 						else
-							{ \n    Flowers from Erana's Peace}
+							{ \n____Flowers from Erana's Peace}
 						)
-						(if (IsFlag 221) {} else { \n    Magic Acorn})
-						(if (IsFlag 222) {} else { \n    Flying Water})
+						(if (IsFlag 221) {} else { \n____Magic Acorn})
+						(if (IsFlag 222) {} else { \n____Flying Water})
 						(if (IsFlag 218)
 							{}
 						else
-							{ \r\n   \83t\83F\83A\83\8a\81[\81E\83_\83X\83g}
+							{ \0d\n___\83t\83F\83A\83\8a\81[\81E\83\_\83X\83g}
 						)
 						(if (IsFlag 219)
 							{}
 						else
-							{ \r\n   \97\ce\82\cc\96\d1\94\e7}
+							{ \0d\n___\97\ce\82\cc\96\d1\94\e7}
 						)
 						(if (IsFlag 220)
 							{}
 						else
-							{ \r\n   \83G\83\89\83i\82\cc\8ay\89\80\82\cc\89\d4}
+							{ \0d\n___\83G\83\89\83i\82\cc\8ay\89\80\82\cc\89\d4}
 						)
 						(if (IsFlag 221)
 							{}
 						else
-							{ \r\n   \96\82\96@\82\cc\82\c7\82\f1\82\ae\82\e8}
+							{ \0d\n___\96\82\96@\82\cc\82\c7\82\f1\82\ae\82\e8}
 						)
 						(if (IsFlag 222)
 							{}
 						else
-							{ \r\n   \83t\83\89\83C\83\93\83O\81E\83E\83H\81[\83^\81[}
+							{ \0d\n___\83t\83\89\83C\83\93\83O\81E\83E\83H\81[\83^\81[}
 						)
 					)
 				)

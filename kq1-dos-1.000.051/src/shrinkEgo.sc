@@ -69,7 +69,7 @@
 				(User canControl: 0)
 				(if (and (== gCurRoomNum 78) (== (gEgo onControl: 1) 2))
 					(EgoDead
-						{The mushroom wore off and you enlarged.  But you can't squeeze a five-foot Knight into a 6-inch hole!}
+						{The mushroom wore off and you enlarged.__But you can't squeeze a five-foot Knight into a 6-inch hole!}
 					)
 				else
 					((ScriptID 0 21) number: 21 play:) ; gameSound

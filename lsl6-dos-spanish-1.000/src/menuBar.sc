@@ -29,10 +29,10 @@
 				(else { File })
 			)
 			(switch (gGame printLang:)
-				(34 {Nuevo            ~~~~~~F9 :Abrir             ~~~~~F7 :Guardar          ~~~~F3 :Guardar Como...  F5 :-! :Salir         ~~~~~~Ctrl-Q })
-				(49 {Neu              ~~~~F9 :\99ffnen           ~F7 :Speichern       F3 :Speicher Als...  ~~F5 :-! :Ende         ~~Ctrl-Q })
-				(33 {Nouveau              F9 :Ouvrir                ~F7 :Enregistrer          ~F3 :Enregistrer Sous...  F5 :-! :Quitter           Ctrl-Q })
-				(else {New          ~~F9 :Open         F7 :Save         F3 :Save As...   ~~F5 :-! :Quit    ~~~~~Ctrl-Q })
+				(34 {Nuevo____________~~~~~~F9 :Abrir_____________~~~~~F7 :Guardar__________~~~~F3 :Guardar Como...__F5 :-! :Salir_________~~~~~~Ctrl-Q })
+				(49 {Neu______________~~~~F9 :\99ffnen___________~F7 :Speichern_______F3 :Speicher Als...__~~F5 :-! :Ende_________~~Ctrl-Q })
+				(33 {Nouveau______________F9 :Ouvrir________________~F7 :Enregistrer__________~F3 :Enregistrer Sous...__F5 :-! :Quitter___________Ctrl-Q })
+				(else {New__________~~F9 :Open_________F7 :Save_________F3 :Save As...___~~F5 :-! :Quit____~~~~~Ctrl-Q })
 			)
 		)
 		(AddMenu
@@ -43,10 +43,10 @@
 				(else { Game })
 			)
 			(switch (gGame printLang:)
-				(34 {Controles      ~Ctrl-C :M\a3sica no/si      F2 :-! :Save-O-Matic\05 :Auto-Save\05 })
-				(49 {Kontrollen            Ctrl-C :Musik Aus/An            ~~F2 :-! :Speicher-O-Matic\05 :AutoSpeichern\05-Intervall })
-				(33 {Contr\93les                ~Ctrl-C :Musique Marche/Arr\88t     F2 :-! :Sauvegarde-Toutes-Les\05 :Sauvegarde-Automatique\05 })
-				(else {Controls     ~~Ctrl-C :Music off/on     F2 :-! :Save-O-Matic\05 :Auto-Save\05 })
+				(34 {Controles______~Ctrl-C :M\a3sica no/si______F2 :-! :Save-O-Matic\05 :Auto-Save\05 })
+				(49 {Kontrollen____________Ctrl-C :Musik Aus/An____________~~F2 :-! :Speicher-O-Matic\05 :AutoSpeichern\05-Intervall })
+				(33 {Contr\93les________________~Ctrl-C :Musique Marche/Arr\88t_____F2 :-! :Sauvegarde-Toutes-Les\05 :Sauvegarde-Automatique\05 })
+				(else {Controls_____~~Ctrl-C :Music off/on_____F2 :-! :Save-O-Matic\05 :Auto-Save\05 })
 			)
 		)
 		(AddMenu
@@ -67,7 +67,7 @@
 
 	(method (draw)
 		(= state 1)
-		(DrawStatus {                  Leisure Suit Larry 6} 75 56)
+		(DrawStatus {__________________Leisure Suit Larry 6} 75 56)
 	)
 
 	(method (handleEvent event &tmp temp0 temp1)

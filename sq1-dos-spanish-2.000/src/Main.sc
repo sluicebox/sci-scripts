@@ -412,7 +412,7 @@
 				{Restart}
 				2
 				#button
-				{    Quit    }
+				{____Quit____}
 				3
 				#icon
 				temp0
@@ -538,7 +538,7 @@
 )
 
 (procedure (proc0_14 param1) ; UNUSED
-	(StrCpy @param1 {  Space Quest I - The Sarien Encounter})
+	(StrCpy @param1 {__Space Quest I - The Sarien Encounter})
 	(DrawStatus @param1 0 (proc0_17 global158 global155 global155))
 )
 
@@ -584,8 +584,8 @@
 	(Format @temp61 0 32 gCurRoomNum @temp180 ((gTheIconBar curIcon:) helpStr:)) ; "New response: rm%03d %s  %s"
 	(if (== param1 4)
 		(StrCat @temp61 ((gTheIconBar curInvIcon:) name:))
-		(StrCat @temp61 (Format @temp161 {\r\n(switch theItem (%d} param3))
-		(StrCat @temp61 {\r\n})
+		(StrCat @temp61 (Format @temp161 {\0d\n(switch theItem (%d} param3))
+		(StrCat @temp61 {\0d\n})
 	)
 	(StrCpy @temp210 {})
 	(if (== param1 4)
@@ -611,7 +611,7 @@
 	)
 	(Format @temp161 0 33 @temp210) ; "(%s"
 	(StrCat @temp61 @temp161)
-	(StrCat @temp61 {\t\t\t(Print\r\n})
+	(StrCat @temp61 {\t\t\t(Print\0d\n})
 	(StrCat @temp61 {\t\t\t\t"})
 	(= temp60 (FileIO fiOPEN @temp0 0))
 	(FileIO fiWRITE_STRING temp60 @temp61)
@@ -619,15 +619,15 @@
 		(= temp61 0)
 		(GetInput @temp61 50 {doVerb message:})
 		(if (== (StrLen @temp61) 0)
-			(FileIO fiWRITE_STRING temp60 {\r\n\t\t\t\t"\r\n})
-			(FileIO fiWRITE_STRING temp60 {\t\t\t)\r\n})
-			(FileIO fiWRITE_STRING temp60 {\t\t)\r\n})
-			(FileIO fiWRITE_STRING temp60 {\t\t\r\n\r\n})
+			(FileIO fiWRITE_STRING temp60 {\0d\n\t\t\t\t"\0d\n})
+			(FileIO fiWRITE_STRING temp60 {\t\t\t)\0d\n})
+			(FileIO fiWRITE_STRING temp60 {\t\t)\0d\n})
+			(FileIO fiWRITE_STRING temp60 {\t\t\0d\n\0d\n})
 			(FileIO fiCLOSE temp60)
 			(break)
 		)
 		(FileIO fiWRITE_STRING temp60 @temp61)
-		(FileIO fiWRITE_STRING temp60 {\r\n\t\t\t\t})
+		(FileIO fiWRITE_STRING temp60 {\0d\n\t\t\t\t})
 	)
 	(gGame setCursor: global113)
 )

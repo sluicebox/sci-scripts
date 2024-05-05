@@ -84,7 +84,7 @@
 					)
 					(proc45951_3)
 					(proc45951_3)
-					(= temp0 (Str newWith: 9 {\r\n15021614}))
+					(= temp0 (Str newWith: 9 {\0d\n15021614}))
 					((ScriptID 45951 2) writeString: temp0) ; chase_dat
 					(temp0 dispose:)
 					(= local7 1)
@@ -107,7 +107,7 @@
 					)
 					(proc45951_3)
 					(proc45951_3)
-					(= temp0 (Str newWith: 3 {\r\n15}))
+					(= temp0 (Str newWith: 3 {\0d\n15}))
 					((ScriptID 45951 2) writeString: temp0) ; chase_dat
 					(temp0 dispose:)
 				)
@@ -158,7 +158,7 @@
 				((ScriptID 45951 2) close:) ; chase_dat
 			)
 			((and (not local6) (not (IsFlag 135)))
-				(= temp0 (Str newWith: 3 {99\r\n}))
+				(= temp0 (Str newWith: 3 {99\0d\n}))
 				((ScriptID 45951 2) writeString: temp0 close:) ; chase_dat
 				(temp0 dispose:)
 			)

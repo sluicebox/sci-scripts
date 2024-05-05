@@ -1051,7 +1051,7 @@
 		y 40
 		noun '/pinwheel,(wheel<pin)'
 		description {pinwheels}
-		lookStr {They're pinwheels.  Just something for Keapon to toy around with.}
+		lookStr {They're pinwheels.__Just something for Keapon to toy around with.}
 		view 250
 		loop 3
 		cel 1
@@ -1065,7 +1065,7 @@
 		y 113
 		noun '/face,glasses,disguise'
 		description {the x-ray glasses}
-		lookStr {The tag says "Ali Fakir Genuine X-Ray Glasses - 15 Dinars."  They look incredibly large, but the tag also says "One size fits all."  It must be magic.}
+		lookStr {The tag says "Ali Fakir Genuine X-Ray Glasses - 15 Dinars."__They look incredibly large, but the tag also says "One size fits all."__It must be magic.}
 		view 250
 		cel 7
 		signal 16384
@@ -1148,7 +1148,7 @@
 	(properties
 		noun '/floor'
 		description {the floor}
-		lookStr {Talk about topsy-turvy.  The sun shines up from the floor onto the clouds above.}
+		lookStr {Talk about topsy-turvy.__The sun shines up from the floor onto the clouds above.}
 	)
 
 	(method (onMe theObj)

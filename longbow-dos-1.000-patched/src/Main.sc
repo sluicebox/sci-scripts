@@ -784,8 +784,8 @@
 
 	(method (doit &tmp [temp0 70] [temp70 100] [temp170 8] [temp178 12] [temp190 10] [temp200 6] [temp206 4] [temp210 4] [temp214 4] [temp218 4] [temp222 4] temp226)
 		(StrCpy @temp170 {Ransom: })
-		(StrCpy @temp178 {     Outlaws: })
-		(StrCpy @temp190 {     Score: })
+		(StrCpy @temp178 {_____Outlaws: })
+		(StrCpy @temp190 {_____Score: })
 		(Format @temp200 0 0 gRansom) ; "%u"
 		(Format @temp206 0 1 gOutlaws) ; "%d"
 		(Format @temp210 0 1 gScore) ; "%d"
@@ -2079,7 +2079,7 @@
 		nsLeft 89
 		nsTop 49
 		signal 128
-		helpStr {Raises and lowers the level of graphics detail (animation level).  Setting the slider to a low level may increase the speed of game play on slower machines.}
+		helpStr {Raises and lowers the level of graphics detail (animation level).__Setting the slider to a low level may increase the speed of game play on slower machines.}
 		sliderView 950
 		topValue 3
 	)
@@ -2141,7 +2141,7 @@
 		nsLeft 227
 		nsTop 49
 		signal 128
-		helpStr {Adjusts the level of difficulty during arcade sequences.  Set the slider to its lowest level to "win" and bypass these sequences.}
+		helpStr {Adjusts the level of difficulty during arcade sequences.__Set the slider to its lowest level to "win" and bypass these sequences.}
 		sliderView 950
 		bottomValue 1
 		topValue 22

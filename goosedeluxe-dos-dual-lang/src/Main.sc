@@ -2011,7 +2011,7 @@
 		(Sound pause: 1)
 		(= temp0 (Save 0 {MG} gMacSaveNumber (gEgoName data:) (KString 9 gVersion))) ; SaveGame, StrGetData
 		(= temp2 (Str format: {%s%d.DTA} gCurSaveDir gMacSaveNumber))
-		(= temp4 (Str format: {\r\n%d} (gEgo view:)))
+		(= temp4 (Str format: {\0d\n%d} (gEgo view:)))
 		(= temp3 (File new:))
 		(temp3 name: (temp2 data:))
 		(temp3

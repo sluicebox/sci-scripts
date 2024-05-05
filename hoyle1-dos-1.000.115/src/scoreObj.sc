@@ -57,25 +57,25 @@
 			)
 		)
 		(= global199 (Format @temp0 404 0))
-		(StrCat global199 {           })
+		(StrCat global199 {___________})
 		(StrCat global199 ((gPlayer2 altrEgo:) name:))
 		(StrCat global199 @global138)
 		(StrCat global199 {\n})
 		(StrCat global199 { ------------------------------ })
 		(StrCat global199 {\n})
-		(StrCat global199 { Prev Score  })
+		(StrCat global199 { Prev Score__})
 		(StrCat global199 (Format @global520 404 1 temp201)) ; "%3d"
-		(StrCat global199 {       })
+		(StrCat global199 {_______})
 		(StrCat global199 (Format @global520 404 1 temp200)) ; "%3d"
 		(StrCat global199 {\n})
-		(StrCat global199 { This Hand   })
+		(StrCat global199 { This Hand___})
 		(StrCat global199 (Format @global520 404 1 temp203)) ; "%3d"
-		(StrCat global199 {       })
+		(StrCat global199 {_______})
 		(StrCat global199 (Format @global520 404 1 temp202)) ; "%3d"
 		(StrCat global199 {\n})
-		(StrCat global199 { Bonus       })
+		(StrCat global199 { Bonus_______})
 		(StrCat global199 (Format @global520 404 1 temp209)) ; "%3d"
-		(StrCat global199 {       })
+		(StrCat global199 {_______})
 		(StrCat global199 (Format @global520 404 1 temp208)) ; "%3d"
 		(StrCat global199 {\n})
 		(StrCat global199 { ------------------------------ })
@@ -86,14 +86,14 @@
 			(StrCat global199 { Total Score })
 		)
 		(StrCat global199 (Format @global520 404 1 temp205)) ; "%3d"
-		(StrCat global199 {       })
+		(StrCat global199 {_______})
 		(StrCat global199 (Format @global520 404 1 temp204)) ; "%3d"
 		(StrCat global199 {\n})
 		(StrCat global199 { ------------------------------ })
 		(StrCat global199 {\n})
-		(StrCat global199 { Hands Won    })
+		(StrCat global199 { Hands Won____})
 		(StrCat global199 (Format @global520 404 2 temp207)) ; "%2d"
-		(StrCat global199 {        })
+		(StrCat global199 {________})
 		(StrCat global199 (Format @global520 404 2 temp206)) ; "%2d"
 		(StrCat global199 {\n})
 		(= global305 (Print global199 #font sFont #title title #at x y #dispose))

@@ -919,7 +919,7 @@
 		y 134
 		noun '/beast,animal,monster,creature,body'
 		description {the dead beast}
-		lookStr {You see an ex-beast.  As you stare at it, you seem to hear a voice in your mind, saying "I'm dead.  Go away.   Trust me, I'm dead.  Aaaaahhhhhhh".}
+		lookStr {You see an ex-beast.__As you stare at it, you seem to hear a voice in your mind, saying "I'm dead.__Go away.___Trust me, I'm dead.__Aaaaahhhhhhh".}
 		view 633
 		loop 2
 		cel 10

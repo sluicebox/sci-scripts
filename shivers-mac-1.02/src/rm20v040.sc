@@ -167,7 +167,7 @@
 					(= local1
 						(Str
 							format:
-								{ Much of what we know about early man comes from burial sites--but not         without a price. Eternal life was the sustaining ideology for many ancient cultures and they went to great lengths to prevent their dead from being violated. Venture on if you will, but beware the curse of the tomb. }
+								{ Much of what we know about early man comes from burial sites--but not_________without a price. Eternal life was the sustaining ideology for many ancient cultures and they went to great lengths to prevent their dead from being violated. Venture on if you will, but beware the curse of the tomb. }
 						)
 					)
 					(gCurRoom drawText: local1 0 0)

@@ -105,7 +105,7 @@
 				(= cycles 2)
 			)
 			(3
-				(self setScript: roboTalk self {ALLOW ME TO\n  SERVE YOU!})
+				(self setScript: roboTalk self {ALLOW ME TO\n__SERVE YOU!})
 			)
 			(4
 				(gCast eachElementDo: #hide)
@@ -127,7 +127,7 @@
 			(0
 				(switch
 					(PrintD
-						{   }
+						{___}
 						101
 						{ }
 						101
@@ -209,7 +209,7 @@
 					(gLongSong number: (Random 392 395) play:)
 					(if
 						(PrintD
-							{Shopping our Automated Catalog is as easy as snapping your digital appendages. Using your mouse or cursor, simply point to the menu item of your choice and press <CR> or click the left mouse button. Should you get confused, simply return to the Top Menu and begin anew. \n\nThank you for choosing Radio Shock for all your electronic needs! We know you'll find just what you're looking for, and if you don't, we're wrong and you should look somewhere else. \n\n  --Your Radio Shock Manager }
+							{Shopping our Automated Catalog is as easy as snapping your digital appendages. Using your mouse or cursor, simply point to the menu item of your choice and press <CR> or click the left mouse button. Should you get confused, simply return to the Top Menu and begin anew. \n\nThank you for choosing Radio Shock for all your electronic needs! We know you'll find just what you're looking for, and if you don't, we're wrong and you should look somewhere else. \n\n__--Your Radio Shock Manager }
 							101
 							81
 							{Return to Top Menu}
@@ -413,7 +413,7 @@
 				(self
 					changeState:
 						(PrintD
-							{Welcome to our Automated Catalog!  Please select from the following departments: }
+							{Welcome to our Automated Catalog!__Please select from the following departments: }
 							101
 							{ }
 							101
@@ -592,7 +592,7 @@
 				4
 				(switch
 					(PrintD
-						{PocketPal Portable Terminal \n\n"Say, is that a complete workstation in your pocket, or are you just glad to see me?" Now you can carry the power of a dumb terminal around with you without even creasing your jumpsuit. Includes RIGA-compatible monitor (Really Incredible Graphics Adapter), chiclet-style keyboard and dentyne-style mouse.  2001 Buckazoids. }
+						{PocketPal Portable Terminal \n\n"Say, is that a complete workstation in your pocket, or are you just glad to see me?" Now you can carry the power of a dumb terminal around with you without even creasing your jumpsuit. Includes RIGA-compatible monitor (Really Incredible Graphics Adapter), chiclet-style keyboard and dentyne-style mouse.__2001 Buckazoids. }
 						101
 						{ }
 						101
@@ -632,7 +632,7 @@
 				5
 				(switch
 					(PrintD
-						{PocketPal Connector \n\nIf you are a proud owner of our ever-popular PocketPal Portable Terminal, you have no doubt noticed that, without the proper connector, it is virtually useless.   Fortunately, at this moment, our exclusive PocketPal Connector is on sale for just 1999 Buckazoids!  Get yours now, before the price goes up even further. }
+						{PocketPal Connector \n\nIf you are a proud owner of our ever-popular PocketPal Portable Terminal, you have no doubt noticed that, without the proper connector, it is virtually useless.___Fortunately, at this moment, our exclusive PocketPal Connector is on sale for just 1999 Buckazoids!__Get yours now, before the price goes up even further. }
 						101
 						{ }
 						101

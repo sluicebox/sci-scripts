@@ -282,7 +282,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {The dense clouds start to flow over the land here.  Somewhere just out in those clouds the land comes to an end; better be careful where you walk!}
+		lookStr {The dense clouds start to flow over the land here.__Somewhere just out in those clouds the land comes to an end; better be careful where you walk!}
 	)
 )
 
@@ -301,7 +301,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {The dense clouds start to flow over the land here.  Somewhere just out in those clouds the land comes to an end; better be careful where you walk!}
+		lookStr {The dense clouds start to flow over the land here.__Somewhere just out in those clouds the land comes to an end; better be careful where you walk!}
 	)
 )
 
@@ -320,7 +320,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {The dense clouds start to flow over the land here.  Somewhere just out in those clouds the land comes to an end; better be careful where you walk!}
+		lookStr {The dense clouds start to flow over the land here.__Somewhere just out in those clouds the land comes to an end; better be careful where you walk!}
 	)
 )
 
@@ -339,7 +339,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {The dense clouds start to flow over the land here.  Somewhere just out in those clouds the land comes to an end; better be careful where you walk!}
+		lookStr {The dense clouds start to flow over the land here.__Somewhere just out in those clouds the land comes to an end; better be careful where you walk!}
 	)
 )
 
@@ -358,7 +358,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {The dense clouds start to flow over the land here.  Somewhere just out in those clouds the land comes to an end; better be careful where you walk!}
+		lookStr {The dense clouds start to flow over the land here.__Somewhere just out in those clouds the land comes to an end; better be careful where you walk!}
 	)
 )
 
@@ -377,7 +377,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {The dense clouds start to flow over the land here.  Somewhere just out in those clouds the land comes to an end; better be careful where you walk!}
+		lookStr {The dense clouds start to flow over the land here.__Somewhere just out in those clouds the land comes to an end; better be careful where you walk!}
 	)
 )
 

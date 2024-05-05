@@ -545,7 +545,7 @@
 		y 55
 		noun '/shield[<black]'
 		description {the Shield of Falworth}
-		lookStr {It's the Black Shield of Falworth.  It's been repainted.}
+		lookStr {It's the Black Shield of Falworth.__It's been repainted.}
 		view 140
 		cel 1
 	)
@@ -839,7 +839,7 @@
 		y 69
 		noun '/tusk,(blade<ivory)'
 		description {the ivory tusk}
-		lookStr {Put on layaway by a desert brigand, this appears to be a sword made from the tusk of the fierce desert creature known as a Tisk.  Obtaining a Tisk tusk is a task, because of the risk of getting a Tisk ticked.}
+		lookStr {Put on layaway by a desert brigand, this appears to be a sword made from the tusk of the fierce desert creature known as a Tisk.__Obtaining a Tisk tusk is a task, because of the risk of getting a Tisk ticked.}
 		view 140
 		loop 2
 		cel 1

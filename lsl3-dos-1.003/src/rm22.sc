@@ -70,7 +70,7 @@
 							)
 							(gamefile_sh
 								name: @temp4
-								write: @temp34 @temp64 {\r\n}
+								write: @temp34 @temp64 {\0d\n}
 								close:
 							)
 							(= temp64 0)

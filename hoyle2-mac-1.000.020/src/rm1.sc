@@ -498,7 +498,7 @@
 
 (instance gameName of DEdit
 	(properties
-		text {                              }
+		text {______________________________}
 		max 24
 	)
 )

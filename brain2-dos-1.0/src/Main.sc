@@ -489,7 +489,7 @@
 		(self setCursor: gWaitCursor 1 304 172)
 		(= gPossibleScore 390)
 		(= gEatMice 10)
-		(= gVersion {x.yyy    })
+		(= gVersion {x.yyy____})
 		(= temp0 (FileIO fiOPEN {version} 1))
 		(FileIO fiREAD_STRING gVersion 7 temp0)
 		(FileIO fiCLOSE temp0)

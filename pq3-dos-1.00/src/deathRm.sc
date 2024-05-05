@@ -24,7 +24,7 @@
 (procedure (localproc_0)
 	(repeat
 		(switch
-			(Print 877 0 #button {Restore} 1 #button {Restart} 2 #button {    Quit    } 3)
+			(Print 877 0 #button {Restore} 1 #button {Restart} 2 #button {____Quit____} 3)
 			(1
 				(gGame restore:)
 			)

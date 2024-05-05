@@ -1107,7 +1107,7 @@
 			(Platform 0 4 {SHIVER} global539 (global528 data:))
 			(= temp1 (Str format: {%s%d.SG} gCurSaveDir global539))
 			(= temp4 (Str new: 20))
-			(= temp4 (Str format: {%s\r\n} (global528 data:)))
+			(= temp4 (Str format: {%s\0d\n} (global528 data:)))
 			(if global349
 				(cond
 					((== gScore 0)

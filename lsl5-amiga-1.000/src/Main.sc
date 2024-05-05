@@ -554,7 +554,7 @@
 		((User curEvent:) x:)
 		((User curEvent:) y:)
 	)
-	(File name: @fileName writeString: @str {\r\n} close:)
+	(File name: @fileName writeString: @str {\0d\n} close:)
 )
 
 (procedure (SetupExit turnOn)

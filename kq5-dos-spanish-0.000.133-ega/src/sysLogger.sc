@@ -57,7 +57,7 @@
 			)
 		)
 	)
-	(StrCat @buffer {\r\n})
+	(StrCat @buffer {\0d\n})
 	(FileIO fiWRITE_STRING logHandle @buffer)
 	(return retval)
 )
@@ -268,7 +268,7 @@
 				{DEPARTMENT}
 				(Print 952 8 #button {PROG} {P} #button {ART} {A} #button {DESIGN} {D})
 			)
-			(FileIO fiWRITE_STRING logHandle {**********************************\r\n})
+			(FileIO fiWRITE_STRING logHandle {**********************************\0d\n})
 			(FileIO fiCLOSE logHandle)
 		)
 		(Format @cfgPath 952 4 @thePath)

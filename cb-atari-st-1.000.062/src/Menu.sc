@@ -74,7 +74,7 @@
 			)
 			(516
 				(= temp5 (Sound pause: 1))
-				(if (Print 997 3 #font 0 #button {  Restart  } 1 #button { Continue } 0) ; "Do you wish to start over?"
+				(if (Print 997 3 #font 0 #button {__Restart__} 1 #button { Continue } 0) ; "Do you wish to start over?"
 					(gGame restart:)
 				)
 				(Sound pause: temp5)
@@ -82,13 +82,13 @@
 			(517
 				(= temp5 (Sound pause: 1))
 				(= gQuit
-					(Print 997 4 #font 0 #button {    Quit    } 1 #button { Continue } 0) ; "Do you really want to quit?"
+					(Print 997 4 #font 0 #button {____Quit____} 1 #button { Continue } 0) ; "Do you really want to quit?"
 				)
 				(Sound pause: temp5)
 			)
 			(769
 				(= temp5 (Sound pause: 1))
-				(Print 997 5 #font 0 #button {  Continue  } 0) ; "INTERMISSION"
+				(Print 997 5 #font 0 #button {__Continue__} 0) ; "INTERMISSION"
 				(Sound pause: temp5)
 			)
 			(770

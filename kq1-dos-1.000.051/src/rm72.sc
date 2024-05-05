@@ -284,7 +284,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {What a beautiful sight!  The clouds stretch out in every direction beyond you; near the beanstalk, they even seem thick enough to stand on!}
+		lookStr {What a beautiful sight!__The clouds stretch out in every direction beyond you; near the beanstalk, they even seem thick enough to stand on!}
 	)
 )
 
@@ -303,7 +303,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {What a beautiful sight!  The clouds stretch out in every direction beyond you; near the beanstalk, they even seem thick enough to stand on!}
+		lookStr {What a beautiful sight!__The clouds stretch out in every direction beyond you; near the beanstalk, they even seem thick enough to stand on!}
 	)
 )
 
@@ -322,7 +322,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {What a beautiful sight!  The clouds stretch out in every direction beyond you; near the beanstalk, they even seem thick enough to stand on!}
+		lookStr {What a beautiful sight!__The clouds stretch out in every direction beyond you; near the beanstalk, they even seem thick enough to stand on!}
 	)
 )
 
@@ -341,7 +341,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {What a beautiful sight!  The clouds stretch out in every direction beyond you; near the beanstalk, they even seem thick enough to stand on!}
+		lookStr {What a beautiful sight!__The clouds stretch out in every direction beyond you; near the beanstalk, they even seem thick enough to stand on!}
 	)
 )
 
@@ -360,7 +360,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {What a beautiful sight!  The clouds stretch out in every direction beyond you; near the beanstalk, they even seem thick enough to stand on!}
+		lookStr {What a beautiful sight!__The clouds stretch out in every direction beyond you; near the beanstalk, they even seem thick enough to stand on!}
 	)
 )
 
@@ -378,7 +378,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {What a beautiful sight!  The clouds stretch out in every direction beyond you; near the beanstalk, they even seem thick enough to stand on!}
+		lookStr {What a beautiful sight!__The clouds stretch out in every direction beyond you; near the beanstalk, they even seem thick enough to stand on!}
 	)
 )
 
@@ -397,7 +397,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {What a beautiful sight!  The clouds stretch out in every direction beyond you; near the beanstalk, they even seem thick enough to stand on!}
+		lookStr {What a beautiful sight!__The clouds stretch out in every direction beyond you; near the beanstalk, they even seem thick enough to stand on!}
 	)
 )
 
@@ -416,7 +416,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {What a beautiful sight!  The clouds stretch out in every direction beyond you; near the beanstalk, they even seem thick enough to stand on!}
+		lookStr {What a beautiful sight!__The clouds stretch out in every direction beyond you; near the beanstalk, they even seem thick enough to stand on!}
 	)
 )
 

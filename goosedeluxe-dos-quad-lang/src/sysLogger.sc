@@ -61,7 +61,7 @@
 			)
 		)
 	)
-	(buffer cat: {\r\n})
+	(buffer cat: {\0d\n})
 	(FileIO fiWRITE_STRING logHandle (buffer data:))
 	(buffer dispose:)
 	(return retval)
@@ -346,7 +346,7 @@
 			(Log 3 {TOTAL-HUNK} (>> (MemoryInfo 0) $0006))
 			(Log 3 {LARGEST-HUNK} (MemoryInfo 0))
 			(Log 3 {FREE-HUNK} (>> (MemoryInfo 0) $0006))
-			(FileIO fiWRITE_STRING logHandle {**********************************\r\n})
+			(FileIO fiWRITE_STRING logHandle {**********************************\0d\n})
 			(FileIO fiCLOSE logHandle)
 		)
 		(thePath format: {%s.mem} (KString 9 gSysLogPath)) ; StrGetData

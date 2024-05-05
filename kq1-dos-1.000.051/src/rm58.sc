@@ -989,7 +989,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {The trees here are astonishingly tall; they loom over the land above the clouds.  You can barely see the tops!}
+		lookStr {The trees here are astonishingly tall; they loom over the land above the clouds.__You can barely see the tops!}
 	)
 )
 
@@ -1008,7 +1008,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {The trees here are astonishingly tall; they loom over the land above the clouds.  You can barely see the tops!}
+		lookStr {The trees here are astonishingly tall; they loom over the land above the clouds.__You can barely see the tops!}
 	)
 )
 
@@ -1027,7 +1027,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {The trees here are astonishingly tall; they loom over the land above the clouds.  You can barely see the tops!}
+		lookStr {The trees here are astonishingly tall; they loom over the land above the clouds.__You can barely see the tops!}
 	)
 )
 
@@ -1046,7 +1046,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {The trees here are astonishingly tall; they loom over the land above the clouds.  You can barely see the tops!}
+		lookStr {The trees here are astonishingly tall; they loom over the land above the clouds.__You can barely see the tops!}
 	)
 )
 
@@ -1065,7 +1065,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {The trees here are astonishingly tall; they loom over the land above the clouds.  You can barely see the tops!}
+		lookStr {The trees here are astonishingly tall; they loom over the land above the clouds.__You can barely see the tops!}
 	)
 )
 
@@ -1084,7 +1084,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {The trees here are astonishingly tall; they loom over the land above the clouds.  You can barely see the tops!}
+		lookStr {The trees here are astonishingly tall; they loom over the land above the clouds.__You can barely see the tops!}
 	)
 )
 
@@ -1102,7 +1102,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {The trees here are astonishingly tall; they loom over the land above the clouds.  You can barely see the tops!}
+		lookStr {The trees here are astonishingly tall; they loom over the land above the clouds.__You can barely see the tops!}
 	)
 )
 
@@ -1121,7 +1121,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {The trees here are astonishingly tall; they loom over the land above the clouds.  You can barely see the tops!}
+		lookStr {The trees here are astonishingly tall; they loom over the land above the clouds.__You can barely see the tops!}
 	)
 )
 
@@ -1140,7 +1140,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {The trees here are astonishingly tall; they loom over the land above the clouds.  You can barely see the tops!}
+		lookStr {The trees here are astonishingly tall; they loom over the land above the clouds.__You can barely see the tops!}
 	)
 )
 

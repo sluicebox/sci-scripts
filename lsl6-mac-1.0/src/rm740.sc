@@ -50,7 +50,7 @@
 	(method (init)
 		(SetPort 0)
 		(SetPort 0 0 190 320 10 0)
-		(DrawStatus {      } 0 0)
+		(DrawStatus {______} 0 0)
 		(gMenuBar hide: state: 0)
 		(DrawPic 98)
 		(gTheIconBar

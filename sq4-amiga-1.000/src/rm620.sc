@@ -255,7 +255,7 @@
 							((== global105 256)
 								(= local1
 									(Display
-										{" What's dis? 256 colors all for one  little bitmapped WIMP?! Whatta waste of color. Har, har!"}
+										{" What's dis? 256 colors all for one__little bitmapped WIMP?! Whatta waste of color. Har, har!"}
 										dsWIDTH
 										160
 										dsALIGN
@@ -272,7 +272,7 @@
 								)
 								(= local2
 									(Display
-										{" What's dis? 256 colors all for one  little bitmapped WIMP?! Whatta waste of color. Har, har!"}
+										{" What's dis? 256 colors all for one__little bitmapped WIMP?! Whatta waste of color. Har, har!"}
 										dsWIDTH
 										160
 										dsALIGN
@@ -291,7 +291,7 @@
 							((== global105 16)
 								(= local1
 									(Display
-										{" What's dis? 16 colors all for one\n little bitmapped WIMP?! Whatta\nwaste of EGA. Har, har!"}
+										{" What's dis? 16 colors all for one\n_little bitmapped WIMP?! Whatta\nwaste of EGA. Har, har!"}
 										dsWIDTH
 										160
 										dsALIGN
@@ -308,7 +308,7 @@
 								)
 								(= local2
 									(Display
-										{" What's dis? 16 colors all for one\n little bitmapped WIMP?! Whatta\nwaste of EGA. Har, har!"}
+										{" What's dis? 16 colors all for one\n_little bitmapped WIMP?! Whatta\nwaste of EGA. Har, har!"}
 										dsWIDTH
 										160
 										dsALIGN
@@ -327,7 +327,7 @@
 							((== global105 32)
 								(= local1
 									(Display
-										{" What's dis? 32 colors all for one  little bitmapped WIMP?! Whatta waste of color. Har, har!"}
+										{" What's dis? 32 colors all for one__little bitmapped WIMP?! Whatta waste of color. Har, har!"}
 										dsWIDTH
 										160
 										dsALIGN
@@ -344,7 +344,7 @@
 								)
 								(= local2
 									(Display
-										{" What's dis? 32 colors all for one  little bitmapped WIMP?! Whatta waste of color. Har, har!"}
+										{" What's dis? 32 colors all for one__little bitmapped WIMP?! Whatta waste of color. Har, har!"}
 										dsWIDTH
 										160
 										dsALIGN

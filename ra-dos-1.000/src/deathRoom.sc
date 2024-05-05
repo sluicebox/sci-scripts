@@ -34,7 +34,7 @@
 					addIcon: 99 0 global145 0 0
 					addButton: 1 {Restore} 0 temp1
 					addButton: 2 {Restart} 70 temp1
-					addButton: 3 {    Quit    } 140 temp1
+					addButton: 3 {____Quit____} 140 temp1
 					init:
 				)
 				(1

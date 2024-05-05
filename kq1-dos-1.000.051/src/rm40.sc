@@ -785,7 +785,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {This hole, carved into the side of the rock, is the entrance to the gnome's home.  It's too dark inside to make out any details, and the gnome probably prefers it that way.}
+		lookStr {This hole, carved into the side of the rock, is the entrance to the gnome's home.__It's too dark inside to make out any details, and the gnome probably prefers it that way.}
 	)
 )
 

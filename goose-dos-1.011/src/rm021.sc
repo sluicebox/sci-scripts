@@ -808,7 +808,7 @@
 			)
 			(2
 				(Display
-					{     Who lived in a shoe.}
+					{_____Who lived in a shoe.}
 					dsWIDTH
 					300
 					dsCOORD
@@ -840,7 +840,7 @@
 			)
 			(4
 				(Display
-					{     She didn't know what to do.}
+					{_____She didn't know what to do.}
 					dsWIDTH
 					300
 					dsCOORD
@@ -872,7 +872,7 @@
 			)
 			(6
 				(Display
-					{     Without any bread.}
+					{_____Without any bread.}
 					dsWIDTH
 					300
 					dsCOORD
@@ -904,7 +904,7 @@
 			)
 			(8
 				(Display
-					{     And put them to bed.}
+					{_____And put them to bed.}
 					dsWIDTH
 					300
 					dsCOORD

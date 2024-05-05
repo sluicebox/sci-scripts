@@ -434,7 +434,7 @@
 		nsBottom 137
 		nsRight 319
 		description {the pizza elemental}
-		lookStr {Is it...?\nIt is!  It's a simulacrum of the Pizza Elemental!!}
+		lookStr {Is it...?\nIt is!__It's a simulacrum of the Pizza Elemental!!}
 	)
 )
 
@@ -1005,7 +1005,7 @@
 				(if crashJump
 					(EgoDead
 						1
-						{With all the damage you took to get here, it's really a shame you couldn't take any more.  You should've tended to your healing, but now it's too late.}
+						{With all the damage you took to get here, it's really a shame you couldn't take any more.__You should've tended to your healing, but now it's too late.}
 						#title
 						{You Fell for It}
 					)

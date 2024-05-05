@@ -485,82 +485,82 @@
 				(switch local13
 					(0
 						(= local17
-							{I will seek out the devil where he lies and I will cross many seas to do so.  Then I shall blast him with fire from heaven.}
+							{I will seek out the devil where he lies and I will cross many seas to do so.__Then I shall blast him with fire from heaven.}
 						)
 					)
 					(1
 						(= local17
-							{Demons dance to my call.  I am a thief none can catch.  No sharp blade worries me.  What do I have?}
+							{Demons dance to my call.__I am a thief none can catch.__No sharp blade worries me.__What do I have?}
 						)
 					)
 					(2
 						(= local17
-							{I would comfort a friend who is ill and fears that death will come upon him without warning.  But if death should come, let my gifts guide him beyond demon's reach and to new life. What should I give him?}
+							{I would comfort a friend who is ill and fears that death will come upon him without warning.__But if death should come, let my gifts guide him beyond demon's reach and to new life. What should I give him?}
 						)
 					)
 					(3
 						(= local17
-							{I have a fever which has driven me to madness.  My teeth loosen and I taste blood in my mouth.}
+							{I have a fever which has driven me to madness.__My teeth loosen and I taste blood in my mouth.}
 						)
 					)
 					(4
 						(= local17
-							{I am old and my hearing fails me, I am ill and wonder when death will come for me, my mouth is dry.  What would you give me?}
+							{I am old and my hearing fails me, I am ill and wonder when death will come for me, my mouth is dry.__What would you give me?}
 						)
 					)
 					(5
 						(= local17
-							{I must go into battle where I may well be wounded.  Then I will know great thirst and my eyes will burn.}
+							{I must go into battle where I may well be wounded.__Then I will know great thirst and my eyes will burn.}
 						)
 					)
 					(6
 						(= local17
-							{Sadness weighs upon my soul.  My heart aches to be filled.  Would that I could steal into my love's chamber unseen.}
+							{Sadness weighs upon my soul.__My heart aches to be filled.__Would that I could steal into my love's chamber unseen.}
 						)
 					)
 					(7
 						(= local17
-							{I have three fears:  I fear travelling by ship;  I fear my wife will be unfaithful:  I fear the lies of men.  What should I take with me?}
+							{I have three fears:__I fear travelling by ship;__I fear my wife will be unfaithful:__I fear the lies of men.__What should I take with me?}
 						)
 					)
 					(8
 						(= local17
-							{I'll build a ship to carry me skyward.  If it falls, I'll not be harmed.  But I will never tell how it is done.  What do I have?}
+							{I'll build a ship to carry me skyward.__If it falls, I'll not be harmed.__But I will never tell how it is done.__What do I have?}
 						)
 					)
 					(9
 						(= local17
-							{A piece of sky fell to my feet and I picked it up.  Where it touched me, it raised boils.  I fear it poisons me.  What would you give me?}
+							{A piece of sky fell to my feet and I picked it up.__Where it touched me, it raised boils.__I fear it poisons me.__What would you give me?}
 						)
 					)
 					(10
 						(= local17
-							{My trees are heavy with fruit, my heart is full of all desires, and my wife gives birth to a holy child.  What do I have?}
+							{My trees are heavy with fruit, my heart is full of all desires, and my wife gives birth to a holy child.__What do I have?}
 						)
 					)
 					(11
 						(= local17
-							{The drought lengthens, the corn withers in my field, and a witch curses me with a glance.  What would you give me?}
+							{The drought lengthens, the corn withers in my field, and a witch curses me with a glance.__What would you give me?}
 						)
 					)
 					(12
 						(= local17
-							{I must ride upon a fiery horse, through valleys filled with adders and seek the fate that awaits me.  What should I take with me?}
+							{I must ride upon a fiery horse, through valleys filled with adders and seek the fate that awaits me.__What should I take with me?}
 						)
 					)
 					(13
 						(= local17
-							{In summer, my ice does not melt.  The red eye becomes clear.  Demons run when I raise my hand.  What do I have?}
+							{In summer, my ice does not melt.__The red eye becomes clear.__Demons run when I raise my hand.__What do I have?}
 						)
 					)
 					(14
 						(= local17
-							{Alas, sadness clothes me like a leaden cloak.  A wicked woman lies to me, but I fear danger will come upon me by surprise.  What would you give me?}
+							{Alas, sadness clothes me like a leaden cloak.__A wicked woman lies to me, but I fear danger will come upon me by surprise.__What would you give me?}
 						)
 					)
 					(15
 						(= local17
-							{I lie dying, cut deeply by the sword, my flesh burns, spirits of Hades hover to take my soul.  What would you give me?}
+							{I lie dying, cut deeply by the sword, my flesh burns, spirits of Hades hover to take my soul.__What would you give me?}
 						)
 					)
 				)
@@ -588,7 +588,7 @@
 			(0
 				(= gDeathNum 21)
 				(= local17
-					{                                                                                                     }
+					{_____________________________________________________________________________________________________}
 				)
 				(Display 621 0 dsRESTOREPIXELS local16)
 				(SetFlag 149)
@@ -649,7 +649,7 @@
 			(0
 				(= local14 0)
 				(= local17
-					{                                                                                                     }
+					{_____________________________________________________________________________________________________}
 				)
 				(Display 621 0 dsRESTOREPIXELS local16)
 				(Converse 1 @local25 11 2) ; "Good. Here is the second riddle."
@@ -677,7 +677,7 @@
 			(0
 				(= local14 0)
 				(= local17
-					{                                                                                                     }
+					{_____________________________________________________________________________________________________}
 				)
 				(Display 621 0 dsRESTOREPIXELS local16)
 				(Converse 1 @local29 11 2) ; "Well done, Brother. Here is the final riddle."
@@ -704,7 +704,7 @@
 		(switch (= state newState)
 			(0
 				(= local17
-					{                                                                                                     }
+					{_____________________________________________________________________________________________________}
 				)
 				(Display 621 0 dsRESTOREPIXELS local16)
 				(Monastery backFromJewels: 1)

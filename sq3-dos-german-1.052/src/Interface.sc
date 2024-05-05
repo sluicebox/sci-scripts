@@ -465,7 +465,7 @@
 			text
 			font
 			(if argc w else 0)
-			{\r\n----------\r\n}
+			{\0d\n----------\0d\n}
 		)
 		(= nsBottom (+ nsTop [r 2]))
 		(= nsRight (+ nsLeft [r 3]))

@@ -533,7 +533,7 @@
 (instance largeCompartment of Feature
 	(properties
 		description {large compartment}
-		lookStr {It's a large compartment, probably full of instruction manuals, code books, time maps, and the like.  But, you'll probably never know, since it's locked.}
+		lookStr {It's a large compartment, probably full of instruction manuals, code books, time maps, and the like.__But, you'll probably never know, since it's locked.}
 	)
 
 	(method (onMe param1)

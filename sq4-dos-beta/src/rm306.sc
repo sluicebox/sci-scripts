@@ -298,7 +298,7 @@
 		nsBottom 200
 		nsRight 320
 		description {buttes}
-		lookStr {You're surrounded by spires of sand and rock.  Over the years, the ravages of wind, water and time have exposed strata in the butte which seem to serve nicely as steps.   Far below, the serene and tempting Sea of Estros beckons to you.}
+		lookStr {You're surrounded by spires of sand and rock.__Over the years, the ravages of wind, water and time have exposed strata in the butte which seem to serve nicely as steps.___Far below, the serene and tempting Sea of Estros beckons to you.}
 	)
 )
 

@@ -94,7 +94,7 @@
 						#font
 						0
 						#button
-						{    Quit    }
+						{____Quit____}
 						1
 						#button
 						{ Continue }

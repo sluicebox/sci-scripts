@@ -231,19 +231,19 @@
 			(310 ; FPN
 				(self
 					lookStr:
-						{You see a dark passage leading West.  The street sign reads "Naufara Darb," which means "Fountain Avenue."}
+						{You see a dark passage leading West.__The street sign reads "Naufara Darb," which means "Fountain Avenue."}
 				)
 			)
 			(315 ; FPS
 				(self
 					lookStr:
-						{You see a dark passage leading East.  The street sign reads "Sultan Darb," which means "Sultan's Avenue."}
+						{You see a dark passage leading East.__The street sign reads "Sultan Darb," which means "Sultan's Avenue."}
 				)
 			)
 			(335 ; rmSPlazaPalace
 				(self
 					lookStr:
-						{You see a dark passage leading South.  The street sign reads "Tarik of Stars," which means "Street of Stars."  Gosh, that one was a lot easier to translate!}
+						{You see a dark passage leading South.__The street sign reads "Tarik of Stars," which means "Street of Stars."__Gosh, that one was a lot easier to translate!}
 				)
 			)
 		)
@@ -268,7 +268,7 @@
 			(335 ; rmSPlazaPalace
 				(self
 					lookStr:
-						{You see a dark passage leading North.  The street sign reads "Hawa Darb," which means "Air Avenue."}
+						{You see a dark passage leading North.__The street sign reads "Hawa Darb," which means "Air Avenue."}
 				)
 			)
 		)
@@ -293,31 +293,31 @@
 			(300 ; rmSPlazaGates
 				(self
 					lookStr:
-						{You see a dark passage leading North.  The street sign reads "Junub Tarik," which means "South Street."}
+						{You see a dark passage leading North.__The street sign reads "Junub Tarik," which means "South Street."}
 				)
 			)
 			(310 ; FPN
 				(self
 					lookStr:
-						{You see a dark passage leading North.  The street sign reads "Shmali Tarik," which means "North Street."}
+						{You see a dark passage leading North.__The street sign reads "Shmali Tarik," which means "North Street."}
 				)
 			)
 			(315 ; FPS
 				(self
 					lookStr:
-						{You see a dark passage leading South.  The street sign reads "Junub Tarik," which means "South Street."}
+						{You see a dark passage leading South.__The street sign reads "Junub Tarik," which means "South Street."}
 				)
 			)
 			(330 ; rmSPlazaFightersE
 				(self
 					lookStr:
-						{You see a dark passage leading East.  The street sign reads "Kital Darb," which means "Battle Avenue."}
+						{You see a dark passage leading East.__The street sign reads "Kital Darb," which means "Battle Avenue."}
 				)
 			)
 			(335 ; rmSPlazaPalace
 				(self
 					lookStr:
-						{You see a dark passage leading West.  The street sign reads "Sultan Darb," which means "Sultan's Avenue."}
+						{You see a dark passage leading West.__The street sign reads "Sultan Darb," which means "Sultan's Avenue."}
 				)
 			)
 		)

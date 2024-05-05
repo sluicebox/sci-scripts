@@ -887,7 +887,7 @@
 		sightAngle 40
 		approachX 62
 		approachY 107
-		lookStr {This place looks pretty rugged.  Better be on your toes.}
+		lookStr {This place looks pretty rugged.__Better be on your toes.}
 		view 504
 		loop 3
 		signal 16384
@@ -1122,7 +1122,7 @@
 		description {the window}
 		sightAngle 40
 		onMeCheck 16
-		lookStr {The windows are tinted.  You can't see inside from here.}
+		lookStr {The windows are tinted.__You can't see inside from here.}
 	)
 
 	(method (doVerb theVerb invItem)
@@ -1158,7 +1158,7 @@
 		description {the sign}
 		sightAngle 40
 		onMeCheck 32
-		lookStr {Billboards are not uncommon in this part of town.  They make streets even uglier than they already are.}
+		lookStr {Billboards are not uncommon in this part of town.__They make streets even uglier than they already are.}
 	)
 
 	(method (doVerb theVerb invItem)

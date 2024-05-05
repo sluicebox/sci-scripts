@@ -24,7 +24,7 @@
 					(HighPrint 6 2) ; "You eat some of the Kobold's fungus. Within seconds your insides feel like they're on fire. Guess you're not a Kobold, huh?"
 					(if (<= [gEgoStats 14] 20) ; health
 						(EgoDead
-							{Didn't anyone warn you about eating other people's food?  Death by Toadstools doesn't leave mushroom for improvement. }
+							{Didn't anyone warn you about eating other people's food?__Death by Toadstools doesn't leave mushroom for improvement. }
 							82
 							800
 							1

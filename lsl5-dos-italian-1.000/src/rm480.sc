@@ -453,17 +453,17 @@
 							(proc0_28 50 50 50 45 35)
 							106
 							81
-							{  Airport PA #1  }
+							{__Airport PA #1__}
 							1
 							81
-							{  Airport PA #2  }
+							{__Airport PA #2__}
 							2
 							106
 							81
-							{  Airport PA #3  }
+							{__Airport PA #3__}
 							3
 							81
-							{  Airport PA #4  }
+							{__Airport PA #4__}
 							4
 							106
 							81
@@ -480,20 +480,20 @@
 							8
 							106
 							81
-							{  Folding Chair  }
+							{__Folding Chair__}
 							9
 							81
-							{   Wolf Whistle    }
+							{___Wolf Whistle____}
 							10
 							106
 							81
 							{Knocking}
 							11
 							81
-							{  Glass #1  }
+							{__Glass #1__}
 							12
 							81
-							{  Glass #2  }
+							{__Glass #2__}
 							13
 							106
 							81
@@ -503,13 +503,13 @@
 							{ Oh }
 							15
 							81
-							{  AH!  }
+							{__AH!__}
 							16
 							81
-							{  OH!  }
+							{__OH!__}
 							17
 							81
-							{ Oooh!  }
+							{ Oooh!__}
 							18
 							106
 							81
@@ -519,14 +519,14 @@
 							{Slob Eating}
 							20
 							81
-							{  Flush  }
+							{__Flush__}
 							21
 							106
 							81
-							{  Belch  }
+							{__Belch__}
 							22
 							81
-							{   Barf   }
+							{___Barf___}
 							23
 							81
 							{ Do Not Touch }

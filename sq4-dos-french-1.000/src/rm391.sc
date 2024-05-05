@@ -141,7 +141,7 @@
 				(= gSystemWindow BlueWindow)
 				(= gUserFont 0)
 				(BlueWindow color: global141 back: global149)
-				(DrawStatus {   } global129 0)
+				(DrawStatus {___} global129 0)
 				(gCast eachElementDo: #hide)
 				(if (== (gCurRoom style:) 13)
 					(gCurRoom style: 14)
@@ -200,15 +200,15 @@
 				(localproc_0 {INSTRUCTIONS} (Format @temp0 391 3) 102 global135) ; "Welcome to the Radio Shock Automated Catalog! Let us be your gateway to what's new and exciting in the world of 24th Century Electronics.  Through the pages of our Automated Catalog, you will find gifts for the whole family. For Dad, look in Electronic Gadgets for our selection of Realrustic Stereo Components. For Mom, peek into The Electronic Mommy for a variety of labor- saving devices and marital aids! For Sis and Little Brother, browse our TechnoTots(R) Toy department for the latest in electronic playborgs!"
 				(if
 					(PrintD
-						{  }
+						{__}
 						81
 						{Continue}
 						0
-						{  }
+						{__}
 						81
 						{Return to Top Menu}
 						1
-						{  }
+						{__}
 						67
 						-1
 						175
@@ -229,7 +229,7 @@
 							81
 							{Return to Top Menu}
 							0
-							{  }
+							{__}
 							81
 							{Limited Time Specials}
 							1
@@ -312,7 +312,7 @@
 						(0
 							(gLongSong number: (Random 392 395) play:)
 							(PrintD
-								{Sorry - dealers only!  }
+								{Sorry - dealers only!__}
 								81
 								{Continue}
 								1
@@ -364,7 +364,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - sold out.  }
+							{Sorry - sold out.__}
 							81
 							{Continue}
 							1
@@ -413,7 +413,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Not available as such.  }
+							{Sorry - Not available as such.__}
 							106
 							81
 							{Return to Top Menu}
@@ -461,7 +461,7 @@
 							81
 							{Electronic Gadgets}
 							1
-							{  }
+							{__}
 							81
 							{The Electronic Mommy}
 							7
@@ -473,7 +473,7 @@
 							81
 							{TechnoTots Toy Dept.}
 							11
-							{  }
+							{__}
 							81
 							{Return to Top Menu}
 							15
@@ -568,7 +568,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Discontinued.  }
+							{Sorry - Discontinued.__}
 							81
 							{Continue}
 							1
@@ -856,7 +856,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Recalled by manufacturer.  }
+							{Sorry - Recalled by manufacturer.__}
 							81
 							{Continue}
 							1
@@ -908,7 +908,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Not available in the Spiral Arm.  }
+							{Sorry - Not available in the Spiral Arm.__}
 							106
 							81
 							{Continue}
@@ -1064,7 +1064,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Sold out.  }
+							{Sorry - Sold out.__}
 							81
 							{Continue}
 							1
@@ -1116,7 +1116,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Discontinued.  }
+							{Sorry - Discontinued.__}
 							81
 							{Continue}
 							1
@@ -1217,7 +1217,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Sold out.  }
+							{Sorry - Sold out.__}
 							81
 							{Continue}
 							1

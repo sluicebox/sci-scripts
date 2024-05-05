@@ -56,9 +56,9 @@
 	(WhoPrint
 		0
 		(switch (Random 0 2)
-			(0 {Huh.  Must've been my imagination again.})
-			(1 {Huh.  I'm hearing things again, I guess.})
-			(2 {Huh.  Kamar, your father is becoming senile.})
+			(0 {Huh.__Must've been my imagination again.})
+			(1 {Huh.__I'm hearing things again, I guess.})
+			(2 {Huh.__Kamar, your father is becoming senile.})
 		)
 	)
 	(WhoPrint 4 {Yes, Father.})
@@ -1457,7 +1457,7 @@
 				else
 					(EgoDead
 						1
-						{While running for home.  Looks like a squeeze play!  You'll never get to first base if you don't remember the basics.   Thieves' Handbook rule number one: When in doubt, don't.}
+						{While running for home.__Looks like a squeeze play!__You'll never get to first base if you don't remember the basics.___Thieves' Handbook rule number one: When in doubt, don't.}
 						#title
 						{Caught stealing...}
 					)
@@ -1507,7 +1507,7 @@
 					0
 					(Format
 						@str
-						{What a blitz!  It looks like you lost yardage on that play.  Brothers: 6, %s: 0. }
+						{What a blitz!__It looks like you lost yardage on that play.__Brothers: 6, %s: 0. }
 						@gUserName
 					)
 					#title
@@ -1551,7 +1551,7 @@
 	(properties
 		noun '/man,son,guard'
 		description {Kamar}
-		lookStr {He is wearing the uniform of a palace guard.  This is bad.  Very bad.}
+		lookStr {He is wearing the uniform of a palace guard.__This is bad.__Very bad.}
 		yStep 3
 		view 294
 		illegalBits 0
@@ -1572,7 +1572,7 @@
 	(properties
 		noun '/man,son,guard'
 		description {Jabbar}
-		lookStr {He is wearing the uniform of a palace guard.  This is bad.  Very bad.}
+		lookStr {He is wearing the uniform of a palace guard.__This is bad.__Very bad.}
 		yStep 3
 		view 294
 		illegalBits 0
@@ -1605,7 +1605,7 @@
 	(method (fetchMe)
 		(EgoDead
 			1
-			{As the pieces of pottery hurtle towards you, you realize that you can't possibly catch them all.  Several fall to the floor, crashing loudly and alerting the old man.  The pottery was worthless, so your sentence is less severe than it might have been.  (They cut only one of your hands off.)}
+			{As the pieces of pottery hurtle towards you, you realize that you can't possibly catch them all.__Several fall to the floor, crashing loudly and alerting the old man.__The pottery was worthless, so your sentence is less severe than it might have been.__(They cut only one of your hands off.)}
 			#title
 			{Give Me a Hand}
 		)
@@ -1626,7 +1626,7 @@
 		y 144
 		noun '[<at]/carpet[<big,red]'
 		description {the large rug}
-		lookStr {The large rug is too large to steal.  It simply covers what's beneath it.}
+		lookStr {The large rug is too large to steal.__It simply covers what's beneath it.}
 		view 260
 		loop 1
 		priority 8
@@ -1692,7 +1692,7 @@
 	(method (cue)
 		(EgoDead
 			1
-			{As it strikes the drapes, the sound frightens the old man.  He calls for his sons, who are angry.  VERY angry.  And violent.  VERY, VERY violent.}
+			{As it strikes the drapes, the sound frightens the old man.__He calls for his sons, who are angry.__VERY angry.__And violent.__VERY, VERY violent.}
 			#title
 			{Painful, VERY Painful!}
 		)

@@ -599,7 +599,7 @@
 		(= gPossibleScore 200)
 		(= gUserFont 4)
 		(= gEatMice 10)
-		(= gVersion {x.yyy    })
+		(= gVersion {x.yyy____})
 		(= temp0 (FileIO fiOPEN {version} 1))
 		(FileIO fiREAD_STRING gVersion 9 temp0)
 		(FileIO fiCLOSE temp0)

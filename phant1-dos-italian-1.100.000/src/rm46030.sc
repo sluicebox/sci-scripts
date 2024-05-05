@@ -32,7 +32,7 @@
 			)
 			((or (not (IsFlag 130)) (IsFlag 151))
 				(temp0 dispose:)
-				(= temp0 (Str newWith: 13 {0102041499\r\n02}))
+				(= temp0 (Str newWith: 13 {0102041499\0d\n02}))
 				((ScriptID 45951 2) open: 2 writeString: temp0) ; chase_dat
 				(ClearFlag 151)
 				(ClearFlag 150)
@@ -111,7 +111,7 @@
 				((ScriptID 45951 2) close:) ; chase_dat
 			)
 			((not (IsFlag 135))
-				(= temp0 (Str newWith: 3 {99\r\n}))
+				(= temp0 (Str newWith: 3 {99\0d\n}))
 				((ScriptID 45951 2) writeString: temp0 close:) ; chase_dat
 				(temp0 dispose:)
 			)

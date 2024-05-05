@@ -426,7 +426,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {The banks of the river are tall and steep.  If you fell down, you'd never be able to climb back up again.}
+		lookStr {The banks of the river are tall and steep.__If you fell down, you'd never be able to climb back up again.}
 	)
 )
 
@@ -445,7 +445,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {The banks of the river are tall and steep.  If you fell down, you'd never be able to climb back up again.}
+		lookStr {The banks of the river are tall and steep.__If you fell down, you'd never be able to climb back up again.}
 	)
 )
 

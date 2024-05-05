@@ -496,7 +496,7 @@
 		font 999
 		x 15
 		y 8
-		text { Backgammon     Baseball       Basketball     Billiards      Blackjack      Bowling        Bridge         Checkers       Chess          Cribbage       Dominos        Football       Golf           Hearts         Hockey         Horseshoes     Jacks          Jigsaw         Poker          Pool           Puzzle         Soccer         Spades         Tennis         TicTacToe     }
+		text { Backgammon_____Baseball_______Basketball_____Billiards______Blackjack______Bowling________Bridge_________Checkers_______Chess__________Cribbage_______Dominos________Football_______Golf___________Hearts_________Hockey_________Horseshoes_____Jacks__________Jigsaw_________Poker__________Pool___________Puzzle_________Soccer_________Spades_________Tennis_________TicTacToe_____}
 	)
 
 	(method (init)

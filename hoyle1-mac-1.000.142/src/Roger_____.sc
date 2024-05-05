@@ -10,7 +10,7 @@
 
 (instance Roger_____ of Person
 	(properties
-		name {Roger     }
+		name {Roger_____}
 		view 11
 		song 18
 		ginSkill 1

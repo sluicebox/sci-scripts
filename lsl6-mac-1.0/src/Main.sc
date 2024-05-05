@@ -760,7 +760,7 @@
 			(SetPort 0)
 			(SetPort 0 0 190 320 10 0)
 			(gGame hideControls:)
-			(DrawStatus {         } 0 0)
+			(DrawStatus {_________} 0 0)
 			(DrawPic 98 6)
 			(super restart: &rest)
 		)

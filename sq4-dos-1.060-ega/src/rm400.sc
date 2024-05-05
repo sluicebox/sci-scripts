@@ -1282,7 +1282,7 @@
 				(self
 					save1:
 						(proc0_12
-							{I shall pursue the Wilco unit.\n   Stay and guard the area.}
+							{I shall pursue the Wilco unit.\n___Stay and guard the area.}
 							67
 							-1
 							40

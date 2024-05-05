@@ -605,7 +605,7 @@
 								(if
 									((ScriptID 754) ; CPCheck
 										doit:
-											{Graham's aim is not very good.  Use Crispin's wand to help him throw the rope accurately.}
+											{Graham's aim is not very good.__Use Crispin's wand to help him throw the rope accurately.}
 									)
 									(gEgo put: 20 30) ; Rope
 									(HandsOff)

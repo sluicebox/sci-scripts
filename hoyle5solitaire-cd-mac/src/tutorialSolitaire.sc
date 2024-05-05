@@ -39,7 +39,7 @@
 								mode: 0
 								addBitmap: 917 4 0
 								font: gUserFont
-								addTextF: {\n  This Foundation is full.}
+								addTextF: {\n__This Foundation is full.}
 								init:
 							)
 						else
@@ -51,7 +51,7 @@
 									addBitmap: 917 4 0
 									font: gUserFont
 									addTextF:
-										{\n  You can't play cards from the\n  Foundations. The next playable card\n  here should be an Ace.}
+										{\n__You can't play cards from the\n__Foundations. The next playable card\n__here should be an Ace.}
 									init:
 								)
 							)
@@ -63,7 +63,7 @@
 									addBitmap: 917 4 0
 									font: gUserFont
 									addTextF:
-										{\n  You can't play cards from the\n  Foundations. The next playable card\n  here should be an 8.}
+										{\n__You can't play cards from the\n__Foundations. The next playable card\n__here should be an 8.}
 									init:
 								)
 							)
@@ -75,7 +75,7 @@
 									addBitmap: 917 4 0
 									font: gUserFont
 									addTextF:
-										{\n  You can't play cards from the\n  Foundations. The next playable card\n  here should be a Jack.}
+										{\n__You can't play cards from the\n__Foundations. The next playable card\n__here should be a Jack.}
 									init:
 								)
 							)
@@ -87,7 +87,7 @@
 									addBitmap: 917 4 0
 									font: gUserFont
 									addTextF:
-										{\n  You can't play cards from the\n  Foundations. The next playable card\n  here should be a Queen.}
+										{\n__You can't play cards from the\n__Foundations. The next playable card\n__here should be a Queen.}
 									init:
 								)
 							)
@@ -99,7 +99,7 @@
 									addBitmap: 917 4 0
 									font: gUserFont
 									addTextF:
-										{\n  You can't play cards from the\n  Foundations. The next playable card\n  here should be a King.}
+										{\n__You can't play cards from the\n__Foundations. The next playable card\n__here should be a King.}
 									init:
 								)
 							)
@@ -111,7 +111,7 @@
 									addBitmap: 917 4 0
 									font: gUserFont
 									addTextF:
-										{\n  You can't play cards from the\n  foundations. The next playable card\n  here should be a %d.}
+										{\n__You can't play cards from the\n__foundations. The next playable card\n__here should be a %d.}
 										param2
 									init:
 								)

@@ -96,7 +96,7 @@
 					(= local0
 						(Str
 							format:
-								{ Man has taken it upon himself to penalize his fellow man for every conceivable offense, many trivial. Historically, singing insulting songs in Rome, injuring a cat in Egypt, and even selling bad beer in Babylon could             bring the death penalty. }
+								{ Man has taken it upon himself to penalize his fellow man for every conceivable offense, many trivial. Historically, singing insulting songs in Rome, injuring a cat in Egypt, and even selling bad beer in Babylon could_____________bring the death penalty. }
 						)
 					)
 					(gCurRoom drawText: local0 0 0)

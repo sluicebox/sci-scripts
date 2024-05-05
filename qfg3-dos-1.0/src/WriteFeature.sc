@@ -18,8 +18,8 @@
 	[local80 100]
 	[local180 100]
 	[local280 100]
-	local380 = { WALK            }
-	[local381 6] = [{ LOOK            } { DO              } { TALK            } { ASK             } { HELP            } {}]
+	local380 = { WALK____________}
+	[local381 6] = [{ LOOK____________} { DO______________} { TALK____________} { ASK_____________} { HELP____________} {}]
 	local387
 	local388 = 1
 	local389
@@ -287,7 +287,7 @@
 		(if (param1 isMemberOf: Feature)
 			(Format
 				@temp400
-				{ \t\tnsLeft\t\t\t%d\r\n\t\tnsTop\t\t\t\t%d\r\n\t\tnsBottom\t\t\t%d\r\n\t\tnsRight\t\t\t%d\r\n}
+				{ \t\tnsLeft\t\t\t%d\0d\n\t\tnsTop\t\t\t\t%d\0d\n\t\tnsBottom\t\t\t%d\0d\n\t\tnsRight\t\t\t%d\0d\n}
 				(param1 nsLeft:)
 				(param1 nsTop:)
 				(param1 nsBottom:)
@@ -296,7 +296,7 @@
 		else
 			(Format
 				@temp400
-				{ \t\tview\t\t\t%d\r\n\t\tloop\t\t\t%d\r\n\t\tcel\t\t\t%d\r\n}
+				{ \t\tview\t\t\t%d\0d\n\t\tloop\t\t\t%d\0d\n\t\tcel\t\t\t%d\0d\n}
 				(param1 view:)
 				(param1 loop:)
 				(param1 cel:)
@@ -304,7 +304,7 @@
 		)
 		(Format
 			@temp440
-			{ \t\tapproachX\t\t%d\r\n\t\tapproachY\t\t%d\r\n\t\tapproachDist\t%d\r\n\t\t_approachVerbs\t$%x\r\n}
+			{ \t\tapproachX\t\t%d\0d\n\t\tapproachY\t\t%d\0d\n\t\tapproachDist\t%d\0d\n\t\t\_approachVerbs\t$%x\0d\n}
 			(param1 approachX:)
 			(param1 approachY:)
 			(param1 approachDist:)
@@ -312,7 +312,7 @@
 		)
 		(Format
 			@temp0
-			{ \r\n(instance %s of %s\r\n\t(properties\r\n\t\tx\t\t\t\t\t%d\r\n\t\ty\t\t\t\t\t%d\r\n\t\tz\t\t\t\t\t%d\r\n\t\theading\t\t\t%d\r\n%s \t\tsightAngle\t\t%d\r\n%s \t\tnoun\t\t\t\t%s\r\n\t)\r\n}
+			{ \0d\n(instance %s of %s\0d\n\t(properties\0d\n\t\tx\t\t\t\t\t%d\0d\n\t\ty\t\t\t\t\t%d\0d\n\t\tz\t\t\t\t\t%d\0d\n\t\theading\t\t\t%d\0d\n%s \t\tsightAngle\t\t%d\0d\n%s \t\tnoun\t\t\t\t%s\0d\n\t)\0d\n}
 			@local0
 			((param1 -super-:) name:)
 			(param1 x:)
@@ -336,28 +336,28 @@
 		(if local391
 			(Format
 				@temp0
-				{ \t(method (doVerb theVerb)\r\n\t\t(switch theVerb\r\n}
+				{ \t(method (doVerb theVerb)\0d\n\t\t(switch theVerb\0d\n}
 			)
 			(Logit @temp0)
 			(if [local180 0]
-				(Format @temp0 { \t\t\t(LOOK\r\n\t\t\t)\r\n} @local180)
+				(Format @temp0 { \t\t\t(LOOK\0d\n\t\t\t)\0d\n} @local180)
 				(Logit @temp0)
 			)
 			(if [local80 0]
-				(Format @temp0 { \t\t\t(DO\r\n\t\t\t)\r\n} @local80)
+				(Format @temp0 { \t\t\t(DO\0d\n\t\t\t)\0d\n} @local80)
 				(Logit @temp0)
 			)
 			(if [local280 0]
-				(Format @temp0 { \t\t\t(TALK\r\n\t\t\t)\r\n} @local280)
+				(Format @temp0 { \t\t\t(TALK\0d\n\t\t\t)\0d\n} @local280)
 				(Logit @temp0)
 			)
 			(Format
 				@temp0
-				{ \t\t\t(else\r\n\t\t\t\t(super doVerb: theVerb)\r\n\t\t\t)\r\n\t\t)\r\n\t)\r\n}
+				{ \t\t\t(else\0d\n\t\t\t\t(super doVerb: theVerb)\0d\n\t\t\t)\0d\n\t\t)\0d\n\t)\0d\n}
 			)
 			(Logit @temp0)
 		)
-		(StrCpy @temp0 {)\r\n})
+		(StrCpy @temp0 {)\0d\n})
 		(Logit @temp0)
 		(if (param1 isMemberOf: Feature)
 			(param1 dispose:)
@@ -420,7 +420,7 @@
 	(properties
 		state 1
 		value 2
-		text {  All  }
+		text {__All__}
 		font 0
 	)
 

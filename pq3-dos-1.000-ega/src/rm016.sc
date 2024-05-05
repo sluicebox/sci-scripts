@@ -858,7 +858,7 @@
 		x 165
 		y 166
 		description {nightstick}
-		lookStr {This is your PR\24 (nightstick).}
+		lookStr {This is your PR\\24 (nightstick).}
 		view 156
 		cel 3
 		priority 15

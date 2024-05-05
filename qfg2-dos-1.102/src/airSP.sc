@@ -610,7 +610,7 @@
 					setScript:
 						delayPrintS
 						0
-						{You really shouldn't get him angry.  You wouldn't like him when he's angry.}
+						{You really shouldn't get him angry.__You wouldn't like him when he's angry.}
 				)
 			)
 			(else

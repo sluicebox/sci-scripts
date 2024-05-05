@@ -209,10 +209,10 @@
 							#time
 							15
 							#button
-							{   No   }
+							{___No___}
 							0
 							#button
-							{   Yes   }
+							{___Yes___}
 							1
 						)
 					)
@@ -358,10 +358,10 @@
 							#time
 							15
 							#button
-							{   No   }
+							{___No___}
 							0
 							#button
-							{   Yes   }
+							{___Yes___}
 							1
 						)
 					)

@@ -17,9 +17,9 @@
 
 (local
 	local0
-	[local1 7] = [{                } {1               } {2               } {3               } {4               } {5               } {6               }]
-	[local8 7] = [{a               } {b               } {c               } {d               } {e               } {f               } {g               }]
-	local15 = {h               }
+	[local1 7] = [{________________} {1_______________} {2_______________} {3_______________} {4_______________} {5_______________} {6_______________}]
+	[local8 7] = [{a_______________} {b_______________} {c_______________} {d_______________} {e_______________} {f_______________} {g_______________}]
+	local15 = {h_______________}
 	[local16 10] = [27 30 25 23 19 19 30 16 23 16]
 	[local26 10] = [27 30 25 23 19 19 30 16 23 16]
 	local36
@@ -34,7 +34,7 @@
 	local45
 	local46 = 1
 	local47
-	local48 = {CONGRATULATIONS! YOU HAVE SOLVED THE    CODEROOM. GOOD LUCK!}
+	local48 = {CONGRATULATIONS! YOU HAVE SOLVED THE____CODEROOM. GOOD LUCK!}
 	local49 = {GRATULATION! DU HAST DEN CODERAUM AUFGELOEST. VIEL GLUECK! }
 	[local50 3] = [{YOUR MIND IS THE KEY TO EVERY DOOR. SET YOUR MIND FREE, AND NO LOCK CAN HOLD YOU, NO BARS RESTRAIN YOU. } {FREE FROM EVERY EARTHEN TIDE, PAST STARS AND PLANETS YOU MUST RIDE, UNTIL YOU REACH THE FARTHER SIDE. } {THE ELEVATORS OF THE MIND ONLY OPERATE FOR THOSE WHO KEEP THEIR MINDS OPEN TO NEW POSSIBILITIES .}]
 	[local53 29] = [{DEIN GEIST IST DER SCHLUESSEL ZU JEDER TUERE. LASS IHM FREIEN LAUF UND KEIN SCHLOSS KANN DICH AUFHALTEN.} {FREI VON DEN GEZEITEN DER ERDE MUSST DU ZU DEN PLANETEN UND STERNEN REISEN, BIS ZUM ANDEREN ENDE.} {DIE GEDANKEN\nDES GEISTES FUNKTIONIEREN BEI DEN LEUTEN, DIE IHREN GEIST FUER NEUE IDEEN OFFENHALTEN.} {A} {B} {C} {D} {E} {F} {G} {H} {I} {J} {K} {L} {M} {N} {O} {P} {Q} {R} {S} {T} {U} {V} {W} {X} {Y} {Z}]

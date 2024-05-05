@@ -146,7 +146,7 @@
 			)
 			(11
 				(EgoDead
-					{The witch has turned you into a gingerbread man.  Or is that a Graham cracker?}
+					{The witch has turned you into a gingerbread man.__Or is that a Graham cracker?}
 				)
 				(self dispose:)
 			)

@@ -18,7 +18,7 @@
 	numGames
 	selected
 	theStatus
-	[okIText 4] = [{Restore} {  Save  } {Replace} {Replace}]
+	[okIText 4] = [{Restore} {__Save__} {Replace} {Replace}]
 	[textIText 4] = [{Select the game that you would like to restore.} {Type the description of this saved game.} {This directory/disk can hold no more saved games. You must replace one of your saved games or use Change Directory to save on a different directory/disk.} {This directory/disk can hold no more saved games. You must replace one of your saved games or use Change Directory to save on a different directory/disk.}]
 )
 
@@ -243,7 +243,7 @@
 						(if
 							(not
 								(proc940_0
-									{Are you sure you want to\r\ndelete this saved game?}
+									{Are you sure you want to\0d\ndelete this saved game?}
 									105
 									81
 									{ No }
@@ -374,7 +374,7 @@
 
 (instance changeDirI of DButton
 	(properties
-		text {Change\r\nDirectory}
+		text {Change\0d\nDirectory}
 	)
 )
 

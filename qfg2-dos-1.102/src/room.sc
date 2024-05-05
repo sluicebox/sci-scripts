@@ -96,7 +96,7 @@
 		y 79
 		noun '/sign,barricade'
 		description {barricade}
-		lookStr {This street has been barricaded off.  The sign reads 'Road closed by order of Khaveen'.}
+		lookStr {This street has been barricaded off.__The sign reads 'Road closed by order of Khaveen'.}
 		view 700
 		loop 6
 		cel 3

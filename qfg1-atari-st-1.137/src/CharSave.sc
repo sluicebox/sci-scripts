@@ -187,7 +187,7 @@
 					(GetInput
 						@local47
 						2
-						{If you wish to try saving your character again, type "y", then ENTER.  Otherwise type "n", then ENTER.}
+						{If you wish to try saving your character again, type "y", then ENTER.__Otherwise type "n", then ENTER.}
 					)
 					(if (StrCmp @local47 {y})
 						(self changeState: 8)

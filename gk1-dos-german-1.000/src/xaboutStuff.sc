@@ -34,8 +34,8 @@
 			addButton:
 				1
 				(switch (gGame printLang:)
-					(49 {     Kredit     })
-					(else {   Credits   })
+					(49 {_____Kredit_____})
+					(else {___Credits___})
 				)
 				0
 				20
@@ -50,8 +50,8 @@
 			addButton:
 				3
 				(switch (gGame printLang:)
-					(49 {    L\94sungen    })
-					(else {    Hints    })
+					(49 {____L\94sungen____})
+					(else {____Hints____})
 				)
 				50
 				40

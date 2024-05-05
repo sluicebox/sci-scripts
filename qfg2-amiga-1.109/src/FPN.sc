@@ -67,7 +67,7 @@
 		y 117
 		noun '/door[<magic]'
 		description {the door to the Magic Shop}
-		lookStr {The sign above the door is keeping an eye out for you.  Perhaps the door leads to the optometrist's office.}
+		lookStr {The sign above the door is keeping an eye out for you.__Perhaps the door leads to the optometrist's office.}
 		view 301
 		loop 3
 		priority 6
@@ -486,7 +486,7 @@
 		y 54
 		noun '/eye,sign'
 		description {the EYE}
-		lookStr {The sign above the door is keeping an eye out for you.  Perhaps the door leads to the optometrist's office.}
+		lookStr {The sign above the door is keeping an eye out for you.__Perhaps the door leads to the optometrist's office.}
 		view 301
 		cel 2
 		priority 0

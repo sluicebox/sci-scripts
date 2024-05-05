@@ -1831,7 +1831,7 @@
 						(localproc_0)
 						(local44
 							format:
-								{I DEDICATE THIS GAME TO MY LOVING WIFE, MICHELE, AND OUR WONDERFUL SON, SEAN.  I LOVE THEM BOTH VERY MUCH!\n\n                                LOVE,\n                                STEVE}
+								{I DEDICATE THIS GAME TO MY LOVING WIFE, MICHELE, AND OUR WONDERFUL SON, SEAN.__I LOVE THEM BOTH VERY MUCH!\n\n________________________________LOVE,\n________________________________STEVE}
 						)
 						(localproc_7 2 -1)
 						(= local78 1)

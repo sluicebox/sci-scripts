@@ -414,7 +414,7 @@
 		(if (= temp0 (OnMeAndLowY theObj:))
 			(Format
 				@temp1
-				{%d, %d      %s}
+				{%d, %d______%s}
 				((User curEvent:) x:)
 				((User curEvent:) y:)
 				(temp0 name:)

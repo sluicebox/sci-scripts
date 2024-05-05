@@ -52,7 +52,7 @@
 			)
 			(1
 				(FindTime @str)
-				(StrCat @str {  How long do you wish to sleep? })
+				(StrCat @str {__How long do you wish to sleep? })
 				(sleepText text: @str)
 				(gCustomWindow color: 14 back: 5)
 				(HandsOn)

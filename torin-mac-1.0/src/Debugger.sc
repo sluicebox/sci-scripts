@@ -111,7 +111,7 @@
 		(if (aView scaler:)
 			(scalerStr
 				format:
-					{Scaler %d  %d  %d  %d}
+					{Scaler %d__%d__%d__%d}
 					((aView scaler:) frontSize:)
 					((aView scaler:) backSize:)
 					((aView scaler:) frontY:)
@@ -281,7 +281,7 @@
 					(KEY_QUESTION
 						(event claimed: 1)
 						(Prints
-							{ ALT-Drag - drag&scale cast member around screen\nCTRL-LShft-Click - make nearest cast member current\nCTRL-Click - mouse coordinates\nCTRL-Arrow - move current view 1 pixel\n ALT-A     - add animation/view\n ALT-B     - caputure BMP\n ALT-C     - show Cast info\n ALT-D     - show current view info\n ALT-E     - show Ego\n ALT-F     - edit Features\n ALT-G     - show/set/clear Flag\n ALT-H     - show features and obstacles\n ALT-I     - get Inventory Item\n ALT-J     - load a pic\n ALT-K     - blinK current view\n ALT-L     - error logging\n ALT-P     - edit Polygons\n ALT-R     - show Room info\n ALT-S     - scaler tool on current actor\n ALT-T     - teleport\n ALT-U     - handsOn\n ALT-X     - exit the Game\n ALT-Y     - show room polygons\nDELETE     - delete current object\n8          - Rotate current (actor) right\n2          - Rotate current (actor) left\n4          - Decrease current (prop) cel\n6          - Increase current (prop) cel\n1          - Decrease current (prop) loop\n3          - Increase current (prop) loop\nCTRL-G     - Give ego necessary items for room\nCTRL-R     - Play a robot\nCTRL-D     - test a sounD\n}
+							{ ALT-Drag - drag&scale cast member around screen\nCTRL-LShft-Click - make nearest cast member current\nCTRL-Click - mouse coordinates\nCTRL-Arrow - move current view 1 pixel\n_ALT-A_____- add animation/view\n_ALT-B_____- caputure BMP\n_ALT-C_____- show Cast info\n_ALT-D_____- show current view info\n_ALT-E_____- show Ego\n_ALT-F_____- edit Features\n_ALT-G_____- show/set/clear Flag\n_ALT-H_____- show features and obstacles\n_ALT-I_____- get Inventory Item\n_ALT-J_____- load a pic\n_ALT-K_____- blinK current view\n_ALT-L_____- error logging\n_ALT-P_____- edit Polygons\n_ALT-R_____- show Room info\n_ALT-S_____- scaler tool on current actor\n_ALT-T_____- teleport\n_ALT-U_____- handsOn\n_ALT-X_____- exit the Game\n_ALT-Y_____- show room polygons\nDELETE_____- delete current object\n8__________- Rotate current (actor) right\n2__________- Rotate current (actor) left\n4__________- Decrease current (prop) cel\n6__________- Increase current (prop) cel\n1__________- Decrease current (prop) loop\n3__________- Increase current (prop) loop\nCTRL-G_____- Give ego necessary items for room\nCTRL-R_____- Play a robot\nCTRL-D_____- test a sounD\n}
 						)
 					)
 					(KEY_DELETE
@@ -568,7 +568,7 @@
 						)
 						(if (< dumpFileNum 999)
 							(SaveScreen (t data:))
-							(Printf {Screen saved as\n   %s} (t data:))
+							(Printf {Screen saved as\n___%s} (t data:))
 						else
 							(Prints
 								{Sorry, no can do. How did you get so many files?}
@@ -669,7 +669,7 @@
 						(FrameOut)
 						(poly_pol name: (obj data:) open: 0)
 						(poly_pol
-							writeString: {;***************************\r\n}
+							writeString: {;***************************\0d\n}
 						)
 						(= str 0)
 						(if (PEditor size:)
@@ -681,11 +681,11 @@
 								
 								(= nextNode (KList 6 node)) ; NextNode
 								(= curObj (KList 8 node)) ; NodeValue
-								(poly_pol writeString: {\r\n})
+								(poly_pol writeString: {\0d\n})
 								(poly_pol writeString: {(instance })
 								(poly_pol writeString: (curObj name:))
-								(poly_pol writeString: { of Feature\r\n})
-								(poly_pol writeString: {\t(properties\r\n})
+								(poly_pol writeString: { of Feature\0d\n})
+								(poly_pol writeString: {\t(properties\0d\n})
 								(poly_pol writeString: {\t\tx})
 								(= smallX (= smallY 32767))
 								(= largeX (= largeY 0))
@@ -713,25 +713,25 @@
 								(poly_pol writeString: {\t\t\t\t})
 								(str format: {%d} tmpX)
 								(poly_pol writeString: (str data:))
-								(poly_pol writeString: {\r\n})
+								(poly_pol writeString: {\0d\n})
 								(poly_pol writeString: {\t\ty})
 								(poly_pol writeString: {\t\t\t\t})
 								(str format: {%d} tmpY)
 								(poly_pol writeString: (str data:))
-								(poly_pol writeString: {\t)\r\n})
-								(poly_pol writeString: {\t(method (init)\r\n})
+								(poly_pol writeString: {\t)\0d\n})
+								(poly_pol writeString: {\t(method (init)\0d\n})
 								(poly_pol
-									writeString: {\t\t(self setPolygon:\r\n}
+									writeString: {\t\t(self setPolygon:\0d\n}
 								)
 								(curObj writeToFile: poly_pol)
-								(poly_pol writeString: {\t\t)\r\n})
+								(poly_pol writeString: {\t\t)\0d\n})
 								(poly_pol
-									writeString: {\t\t(super init: &rest)\r\n}
+									writeString: {\t\t(super init: &rest)\0d\n}
 								)
-								(poly_pol writeString: {\t)\r\n})
+								(poly_pol writeString: {\t)\0d\n})
 								(poly_pol writeString: {);})
 								(poly_pol writeString: (curObj name:))
-								(poly_pol writeString: {\r\n})
+								(poly_pol writeString: {\0d\n})
 							)
 						)
 						(poly_pol close:)
@@ -947,8 +947,8 @@
 						)
 						(FrameOut)
 						(poly_pol name: (obj data:) open: 0)
-						(poly_pol writeString: {\t\t;********************\r\n})
-						(poly_pol writeString: {\t\t(curRoom addObstacle:\r\n})
+						(poly_pol writeString: {\t\t;********************\0d\n})
+						(poly_pol writeString: {\t\t(curRoom addObstacle:\0d\n})
 						(if (PEditor size:)
 							(PEditor eachElementDo: #writeToFile poly_pol)
 							(if (gCurRoom obstacles:)
@@ -977,7 +977,7 @@
 								)
 							)
 						)
-						(poly_pol writeString: {\t\t)\r\n})
+						(poly_pol writeString: {\t\t)\0d\n})
 						(poly_pol close:)
 						(obj dispose:)
 						(PEditor dispose:)

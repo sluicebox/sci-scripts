@@ -171,7 +171,7 @@
 		nsTop 63
 		nsLeft 84
 		key 2
-		text {Business Suit  |}
+		text {Business Suit__|}
 		shadowColor 89
 		flashColor 255
 		indexNum 34
@@ -197,7 +197,7 @@
 		nsTop 78
 		nsLeft 84
 		key 3
-		text {Dress Clothes  |}
+		text {Dress Clothes__|}
 		shadowColor 89
 		flashColor 255
 		indexNum 35

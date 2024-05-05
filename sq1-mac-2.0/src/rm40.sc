@@ -922,7 +922,7 @@
 								tinyBust
 								tinyEye
 								tinyMouth
-								{"Sorry, you can only fly it when you buy it.  Oh, by the way, there are no refunds either.  Company Policy."}
+								{"Sorry, you can only fly it when you buy it.__Oh, by the way, there are no refunds either.__Company Policy."}
 								0
 								0
 								1

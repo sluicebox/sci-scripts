@@ -1288,7 +1288,7 @@
 		y 133
 		noun '/bottle'
 		description {the bottle}
-		lookStr {It's a bottle.  You can barely make out the label:\n"Servings per container....8\nCalories...."\nYou can't make out the rest.}
+		lookStr {It's a bottle.__You can barely make out the label:\n"Servings per container....8\nCalories...."\nYou can't make out the rest.}
 		view 130
 		cel 4
 		priority 11
@@ -1302,7 +1302,7 @@
 		y 134
 		noun '/bottle'
 		description {the bottle}
-		lookStr {It's a bottle.  You can barely make out the label:\n"Servings per container....8\nCalories...."\nYou can't make out the rest.}
+		lookStr {It's a bottle.__You can barely make out the label:\n"Servings per container....8\nCalories...."\nYou can't make out the rest.}
 		view 130
 		cel 6
 		priority 11
@@ -1344,7 +1344,7 @@
 		y 132
 		noun '/urn'
 		description {the urn}
-		lookStr {It's a funerary urn.  At the top is the hole for the ashes.}
+		lookStr {It's a funerary urn.__At the top is the hole for the ashes.}
 		view 130
 		cel 1
 		priority 11

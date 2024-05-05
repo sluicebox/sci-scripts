@@ -700,7 +700,7 @@
 		x 69
 		y 150
 		description {the Enchantress Aziza}
-		lookStr {Aziza's beauty in no way masks her intensity, purposefulness, and the aura of power around her.  It is good when in her presence to be on your best behavior.}
+		lookStr {Aziza's beauty in no way masks her intensity, purposefulness, and the aura of power around her.__It is good when in her presence to be on your best behavior.}
 		view 182
 		loop 2
 		illegalBits 0
@@ -898,7 +898,7 @@
 		y 97
 		noun '/door'
 		description {the front door}
-		lookStr {It's the front door.  It's how you got in here.}
+		lookStr {It's the front door.__It's how you got in here.}
 		view 180
 		loop 3
 		priority 7
@@ -1158,7 +1158,7 @@
 		y 106
 		noun '/tapestry,hang,painting'
 		description {Aziza's tapestry}
-		lookStr {The tapestry is very old and very green.  The pattern appears to be abstract, but it resembles the waves in the ocean.}
+		lookStr {The tapestry is very old and very green.__The pattern appears to be abstract, but it resembles the waves in the ocean.}
 		view 184
 		loop 2
 		priority 6

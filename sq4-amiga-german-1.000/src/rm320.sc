@@ -1107,7 +1107,7 @@
 		nsBottom 200
 		nsRight 320
 		description {buttes}
-		lookStr {Here at the base of the buttes lies the legendary Sea of Estros.  The shimmering crystal-clear water is calm and inviting, giving no hint of the currents that could suck you under fast enough to pull your skin off and leave your insides standing on the shore.  We could show you that, but it would be in bad taste.}
+		lookStr {Here at the base of the buttes lies the legendary Sea of Estros.__The shimmering crystal-clear water is calm and inviting, giving no hint of the currents that could suck you under fast enough to pull your skin off and leave your insides standing on the shore.__We could show you that, but it would be in bad taste.}
 	)
 
 	(method (doVerb theVerb)

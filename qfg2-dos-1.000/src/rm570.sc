@@ -505,7 +505,7 @@
 					(if (== (Random 0 1) 0)
 						(EgoDead
 							0
-							{No, dude!  It's down.  Far down.  WIPE OUT!}
+							{No, dude!__It's down.__Far down.__WIPE OUT!}
 							#title
 							{Surf's up?}
 							#icon
@@ -1450,7 +1450,7 @@
 		y 19
 		noun '/log,forest,board,debris'
 		description {the log}
-		lookStr {The old logs and other debris come from above.  The rushing water carries them deep into the caverns far below.}
+		lookStr {The old logs and other debris come from above.__The rushing water carries them deep into the caverns far below.}
 		view 570
 		signal 16384
 		illegalBits 0

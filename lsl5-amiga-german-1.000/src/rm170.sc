@@ -865,42 +865,42 @@
 							{Play which 8-track cartridge?}
 							106
 							81
-							{  The Larry Song  }
+							{__The Larry Song__}
 							100
 							81
 							{ Record des Rever }
 							640
 							106
 							81
-							{  Desmond's Theme  }
+							{__Desmond's Theme__}
 							410
 							81
-							{  Silas Scruemall  }
+							{__Silas Scruemall__}
 							150
 							106
 							81
-							{   Closing Theme   }
+							{___Closing Theme___}
 							462
 							81
-							{   Hard Rock Me   }
+							{___Hard Rock Me___}
 							500
 							106
 							81
-							{   Hard Rock You  }
+							{___Hard Rock You__}
 							501
 							81
-							{    Hard Rock It    }
+							{____Hard Rock It____}
 							502
 							106
 							81
-							{  Michelle's Song  }
+							{__Michelle's Song__}
 							535
 							81
-							{      Shill This      }
+							{______Shill This______}
 							620
 							106
 							81
-							{      Saxy Sex      }
+							{______Saxy Sex______}
 							345
 							81
 							{On The Boardwalk}
@@ -930,42 +930,42 @@
 							{ A Studio Session }
 							660
 							81
-							{  Gettin' Some Air  }
+							{__Gettin' Some Air__}
 							663
 							106
 							81
-							{    Nasty Girlz     }
+							{____Nasty Girlz_____}
 							738
 							81
-							{    Whoz On Top?    }
+							{____Whoz On Top?____}
 							740
 							106
 							81
-							{  Tramp's Casino  }
+							{__Tramp's Casino__}
 							710
 							81
-							{    Ivana Skate    }
+							{____Ivana Skate____}
 							790
 							106
 							81
-							{      K-RAP Rap      }
+							{______K-RAP Rap______}
 							800
 							81
-							{     K-RAP Talk     }
+							{_____K-RAP Talk_____}
 							801
 							106
 							81
-							{    K-RAP Rock     }
+							{____K-RAP Rock_____}
 							802
 							81
-							{   Doc'll Pulliam    }
+							{___Doc'll Pulliam____}
 							905
 							106
 							81
-							{  Chi Chi a Me Me  }
+							{__Chi Chi a Me Me__}
 							910
 							81
-							{    Salsa This     }
+							{____Salsa This_____}
 							920
 							106
 							81

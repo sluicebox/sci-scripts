@@ -931,7 +931,7 @@
 				)
 				(= temp1 (if (== global417 1) {} else {s}))
 				(Printf
-					{"Well, you seem to have beginner's luck.  It only took you %d game%s to win.  Hmph.  It usually takes at least %d tries for anyone less than a full Wizard to defeat me."}
+					{"Well, you seem to have beginner's luck.__It only took you %d game%s to win.__Hmph.__It usually takes at least %d tries for anyone less than a full Wizard to defeat me."}
 					global417
 					temp1
 					temp0

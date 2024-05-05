@@ -585,7 +585,7 @@
 				{Restart}
 				2
 				#button
-				{   Quit   }
+				{___Quit___}
 				3
 				#icon
 				deathIcon

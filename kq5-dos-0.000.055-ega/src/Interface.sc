@@ -263,9 +263,9 @@
 	(if (and (>= temp0 65) (<= temp0 90))
 		(StrAt @temp4 0 32)
 		(if (== temp1 32)
-			(Format @temp204 {   })
+			(Format @temp204 {___})
 		else
-			(Format @temp204 {  })
+			(Format @temp204 {__})
 		)
 		(StrCat @temp204 @temp4)
 		(= temp2 (+ 0 (/ (- temp0 65) 13)))

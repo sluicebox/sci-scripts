@@ -289,12 +289,12 @@
 	(method (writeToFile param1 param2 &tmp temp0 temp1 temp2)
 		(if (and (> argc 1) param2)
 			(param1
-				writeString: {\r\n}
+				writeString: {\0d\n}
 				writeString: (self name:)
-				writeString: {\r\n}
+				writeString: {\0d\n}
 			)
 		)
-		(param1 writeString: {\t\t\t((Polygon new:)\r\n\t\t\t\ttype: })
+		(param1 writeString: {\t\t\t((Polygon new:)\0d\n\t\t\t\ttype: })
 		(= temp0
 			(Str
 				with:
@@ -306,7 +306,7 @@
 					)
 			)
 		)
-		(temp0 cat: {Access,\r\n\t\t\t\tinit: })
+		(temp0 cat: {Access,\0d\n\t\t\t\tinit: })
 		(param1 writeString: temp0)
 		(temp0 with: {})
 		(= temp2 0)
@@ -317,11 +317,11 @@
 			(param1 writeString: temp0)
 			(if (> temp2 48)
 				(= temp2 0)
-				(param1 writeString: {\r\n\t\t\t\t\t})
+				(param1 writeString: {\0d\n\t\t\t\t\t})
 			)
 		)
-		(param1 writeString: {,\r\n\t\t\t\tyourself:})
-		(param1 writeString: {\r\n\t\t\t)\r\n})
+		(param1 writeString: {,\0d\n\t\t\t\tyourself:})
+		(param1 writeString: {\0d\n\t\t\t)\0d\n})
 		(temp0 dispose:)
 	)
 

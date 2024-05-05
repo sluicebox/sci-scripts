@@ -133,7 +133,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {You can see neither the top nor the bottom of the gigantic beanstalk you're clinging to.  The ropey green vines easily hold your weight, and the massive main stem winds gently upward.}
+		lookStr {You can see neither the top nor the bottom of the gigantic beanstalk you're clinging to.__The ropey green vines easily hold your weight, and the massive main stem winds gently upward.}
 	)
 )
 
@@ -152,7 +152,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {You can see neither the top nor the bottom of the gigantic beanstalk you're clinging to.  The ropey green vines easily hold your weight, and the massive main stem winds gently upward.}
+		lookStr {You can see neither the top nor the bottom of the gigantic beanstalk you're clinging to.__The ropey green vines easily hold your weight, and the massive main stem winds gently upward.}
 	)
 )
 
@@ -170,7 +170,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {You can see neither the top nor the bottom of the gigantic beanstalk you're clinging to.  The ropey green vines easily hold your weight, and the massive main stem winds gently upward.}
+		lookStr {You can see neither the top nor the bottom of the gigantic beanstalk you're clinging to.__The ropey green vines easily hold your weight, and the massive main stem winds gently upward.}
 	)
 )
 
@@ -188,7 +188,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {There are clouds all around you.  You can see neither the land below you nor the top of the beanstalk above you.  In fact, there's little to see up here but clouds and the occasional bird.}
+		lookStr {There are clouds all around you.__You can see neither the land below you nor the top of the beanstalk above you.__In fact, there's little to see up here but clouds and the occasional bird.}
 	)
 )
 
@@ -207,7 +207,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {There are clouds all around you.  You can see neither the land below you nor the top of the beanstalk above you.  In fact, there's little to see up here but clouds and the occasional bird.}
+		lookStr {There are clouds all around you.__You can see neither the land below you nor the top of the beanstalk above you.__In fact, there's little to see up here but clouds and the occasional bird.}
 	)
 )
 
@@ -225,7 +225,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {There are clouds all around you.  You can see neither the land below you nor the top of the beanstalk above you.  In fact, there's little to see up here but clouds and the occasional bird.}
+		lookStr {There are clouds all around you.__You can see neither the land below you nor the top of the beanstalk above you.__In fact, there's little to see up here but clouds and the occasional bird.}
 	)
 )
 
@@ -242,7 +242,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {There are clouds all around you.  You can see neither the land below you nor the top of the beanstalk above you.  In fact, there's little to see up here but clouds and the occasional bird.}
+		lookStr {There are clouds all around you.__You can see neither the land below you nor the top of the beanstalk above you.__In fact, there's little to see up here but clouds and the occasional bird.}
 	)
 )
 

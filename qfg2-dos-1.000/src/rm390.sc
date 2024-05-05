@@ -370,7 +370,7 @@
 	(method (doit)
 		(cond
 			((< (gEgo x:) 10)
-				(EgoDead 1 {        You WERE warned!!!})
+				(EgoDead 1 {________You WERE warned!!!})
 			)
 			((and (not warned) (< (gEgo x:) 20))
 				(gEgo setCycle: 0 setMotion: 0)
@@ -630,7 +630,7 @@
 				(if crashJump
 					(EgoDead
 						1
-						{After all the trouble you took to get your hands on that Raven, it's really a shame you couldn't take any more damage.  You should've tended to your healing, but now it's too late. }
+						{After all the trouble you took to get your hands on that Raven, it's really a shame you couldn't take any more damage.__You should've tended to your healing, but now it's too late. }
 						#title
 						{You Fell for It}
 					)
@@ -741,7 +741,7 @@
 				(if (== client rGuard6)
 					(EgoDead
 						1
-						{All things come to those who wait.  Looks like you waited too long, and look what came to you! }
+						{All things come to those who wait.__Looks like you waited too long, and look what came to you! }
 						#title
 						{Don't just stand there....}
 					)
@@ -806,7 +806,7 @@
 			(1
 				(EgoDead
 					1
-					{Looks like they were waiting for you.  Maybe you should have made them wait a bit longer before you returned. }
+					{Looks like they were waiting for you.__Maybe you should have made them wait a bit longer before you returned. }
 					#title
 					{Many unhappy returns}
 				)
@@ -966,7 +966,7 @@
 		nsBottom 156
 		nsRight 13
 		description {the alley leading west}
-		lookStr {You see a dark foreboding passage leading West.  The street sign reads "Everything not mandatory is forbidden!"}
+		lookStr {You see a dark foreboding passage leading West.__The street sign reads "Everything not mandatory is forbidden!"}
 	)
 )
 
@@ -980,7 +980,7 @@
 		nsBottom 91
 		nsRight 185
 		description {the alley leading North}
-		lookStr {You see a dark foreboding passage leading North.  The street sign reads "You must carry your Visa at all times!"}
+		lookStr {You see a dark foreboding passage leading North.__The street sign reads "You must carry your Visa at all times!"}
 	)
 )
 

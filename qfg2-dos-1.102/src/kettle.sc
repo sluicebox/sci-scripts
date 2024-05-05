@@ -47,7 +47,7 @@
 		nsBottom 120
 		nsRight 93
 		description {the wood-burning oven}
-		lookStr {Under the cauldron is a wood-burning oven.  No fire is presently lit.}
+		lookStr {Under the cauldron is a wood-burning oven.__No fire is presently lit.}
 	)
 )
 
@@ -74,7 +74,7 @@
 		nsBottom 42
 		nsRight 318
 		description {the strangely patterned ceiling}
-		lookStr {The ceiling reminds you of a night you spent in the land of Haight-Ashbury many years ago.  As a matter of fact, the whole place is like that.}
+		lookStr {The ceiling reminds you of a night you spent in the land of Haight-Ashbury many years ago.__As a matter of fact, the whole place is like that.}
 	)
 )
 
@@ -158,7 +158,7 @@
 		nsBottom 93
 		nsRight 196
 		description {the alcove for burning incense}
-		lookStr {The alcove contains censers and burning incense.  The next game will be uncensered.}
+		lookStr {The alcove contains censers and burning incense.__The next game will be uncensered.}
 	)
 )
 
@@ -214,7 +214,7 @@
 		nsBottom 67
 		nsRight 80
 		description {the cauldron hook}
-		lookStr {The hook holds the black cauldron off the fire.  It was a donation from Peter Pan's personal mementos.}
+		lookStr {The hook holds the black cauldron off the fire.__It was a donation from Peter Pan's personal mementos.}
 	)
 )
 
@@ -228,7 +228,7 @@
 		nsBottom 84
 		nsRight 249
 		description {the skull}
-		lookStr {Part of Harik's father-in-law.  Just wouldn't fit in an urn.}
+		lookStr {Part of Harik's father-in-law.__Just wouldn't fit in an urn.}
 	)
 )
 

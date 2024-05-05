@@ -27,8 +27,8 @@
 	local9
 	local10
 	local11
-	[local12 15] = [{Parkway} {1st    } {2nd    } {3rd    } {4th    } {5th    } {6th    } {7th    } {8th    } {9th    } {10th   } {Walls  } {11th   } {12th   } {13th   }]
-	[local27 9] = [{Aspen} {Palm } {Oak  } {Fig  } {Peach} {Rose } {Lilly} {Poppy} {River}]
+	[local12 15] = [{Parkway} {1st____} {2nd____} {3rd____} {4th____} {5th____} {6th____} {7th____} {8th____} {9th____} {10th___} {Walls__} {11th___} {12th___} {13th___}]
+	[local27 9] = [{Aspen} {Palm } {Oak__} {Fig__} {Peach} {Rose } {Lilly} {Poppy} {River}]
 	[local36 20]
 	local56
 	local57

@@ -32,9 +32,9 @@
 	[sconcePositions 39] = [95 224 85 102 216 79 110 209 73 115 204 69 120 199 64 124 194 60 127 192 56 128 190 54 129 190 52 130 188 51 131 187 49 134 184 47 136 183 45]
 	[featureLoops 24] = [701 0 700 4 700 2 700 0 700 0 701 2 701 4 708 0 700 0 701 8 700 1 700 6]
 	[featureNames 12] = [{ AFDoor} { AFCorner} { AFEnd} { AFEndDoorway} { AFEndDoor} { AFPassage} { AFSconce} { AFPlaza} { AFHorzCrack} { AFFrontCorner} { AFEndSideDoor} { AFBarricade}]
-	[doorDscs 6] = [{Someone probably lives behind this door.} {It's a door.  No doubt about it.} {Through this door lies the other side.} {I'll take what's behind door number 3.} {Huh?  It's only PAINTED on.} {If you lived here, you'd be home now.}]
+	[doorDscs 6] = [{Someone probably lives behind this door.} {It's a door.__No doubt about it.} {Through this door lies the other side.} {I'll take what's behind door number 3.} {Huh?__It's only PAINTED on.} {If you lived here, you'd be home now.}]
 	[sconceDscs 6] = [{The flame in the sconce gives a steady light.} {The wall is carrying a torch for you.} {Meager light, but ample.} {The light helps to relieve the gloom of this street.} {Just another sconce.} {Just another flame.}]
-	[doorListenDscs 6] = [{You can hear termites chewing.} {You hear door-like sounds.} {Behind the locked door, you hear a family quarrel.  Better not get involved. } {Someone is whistling a familiar tune in an odd key behind this door.} {Someone behind this door is repeatedly saying 'Ma fhimt.'  You don't understand.} {Sounds like work going on behind this door.}]
+	[doorListenDscs 6] = [{You can hear termites chewing.} {You hear door-like sounds.} {Behind the locked door, you hear a family quarrel.__Better not get involved. } {Someone is whistling a familiar tune in an odd key behind this door.} {Someone behind this door is repeatedly saying 'Ma fhimt.'__You don't understand.} {Sounds like work going on behind this door.}]
 	[str 300]
 	[str2 100]
 )
@@ -149,7 +149,7 @@
 				(= description {the barricade})
 				(= noun '/board,barricade,sign')
 				(= lookStr
-					{This street has been barricaded off.  The sign reads 'Road closed by order of Khaveen'.}
+					{This street has been barricaded off.__The sign reads 'Road closed by order of Khaveen'.}
 				)
 			)
 		)

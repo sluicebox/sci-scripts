@@ -101,7 +101,7 @@
 				(Print
 					(Format @temp2 997 0 gVersion) ; "DESIGNED BY: Christy Marx ILLUSTRATED BY: Peter Ledger & Douglas Herring with Kenn Nishiuye, Jennifer Shontz, Andy Hoyos, and Julian Ledger PROGRAMMED BY: David Slayback, Bob Fischbach, Eric Hart with Jerry Shaw and Doug Oldfield MUSIC BY: Mark Seibert Version %s"
 					#title
-					{  Conquests of Camelot Credits  }
+					{__Conquests of Camelot Credits__}
 					#mode
 					1
 					#width
@@ -115,7 +115,7 @@
 				(Print
 					(Format @temp2 997 1) ; "PRODUCER Guruka Singh Khalsa DEVELOPMENT SYSTEM BY: Jeff Stephenson, Robert E. Heitman, Pablo Ghenis QUALITY ASSURANCE BY: Mindy Wynn: QA Team Leader Robin Bradley, Oliver Brelsford, Steve Collier, Tate Deloach, Mike Harian, Dennis Jonathan, Dean Larocca, Sharon Simmons"
 					#title
-					{  Conquests of Camelot Credits  }
+					{__Conquests of Camelot Credits__}
 					#mode
 					1
 					#width

@@ -154,13 +154,13 @@
 							init:
 						)
 						(poly_pol name: (temp2 data:) open: 0)
-						(poly_pol writeString: {\t\t(curRoom addObstacle:\r\n})
+						(poly_pol writeString: {\t\t(curRoom addObstacle:\0d\n})
 						(if (Unknown_Class_138 size:)
 							(Unknown_Class_138
 								eachElementDo: #writeToFile poly_pol
 							)
 						)
-						(poly_pol writeString: {\t\t)\r\n})
+						(poly_pol writeString: {\t\t)\0d\n})
 						(poly_pol close:)
 						(temp2 dispose:)
 						(Unknown_Class_138 dispose:)

@@ -23,11 +23,11 @@
 	(method (init)
 		(AddMenu
 			{ File }
-			{New          ~~F9 :Open         F7 :Save         F3 :Save As...   ~~F5 :-! :Quit    ~~~~~Ctrl-Q }
+			{New__________~~F9 :Open_________F7 :Save_________F3 :Save As...___~~F5 :-! :Quit____~~~~~Ctrl-Q }
 		)
 		(AddMenu
 			{ Game }
-			{Controls     ~~Ctrl-C :Music off/on     F2 :-! :Save-O-Matic\05 :Auto-Save\05 :Text On/Off }
+			{Controls_____~~Ctrl-C :Music off/on_____F2 :-! :Save-O-Matic\05 :Auto-Save\05 :Text On/Off }
 		)
 		(AddMenu
 			{ Help }
@@ -37,7 +37,7 @@
 
 	(method (draw)
 		(= state 1)
-		(DrawStatus {                  Leisure Suit Larry 6} 75 56)
+		(DrawStatus {__________________Leisure Suit Larry 6} 75 56)
 	)
 
 	(method (handleEvent event &tmp temp0 temp1)

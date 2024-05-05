@@ -88,19 +88,19 @@
 				(localproc_0 {ACCESS DENIED} 1 25 4)
 				(localproc_0 {-----------} 1 31 2)
 				(localproc_0
-					{>> POWER CRITICALLY LOW <<\n\n AUX. REACTOR NOT ON-LINE}
+					{>> POWER CRITICALLY LOW <<\n\n_AUX. REACTOR NOT ON-LINE}
 					1
 					55
 					12
 				)
 				(localproc_0
-					{INSUFFICIENT POWER TO COMMENCE\n    WITH SYSTEMS CHECK}
+					{INSUFFICIENT POWER TO COMMENCE\n____WITH SYSTEMS CHECK}
 					1
 					85
 					12
 				)
 				(localproc_0
-					{USING STORED POWER\n   BELOW 10}
+					{USING STORED POWER\n___BELOW 10}
 					1
 					155
 					14
@@ -126,7 +126,7 @@
 				(localproc_0 {SYSTEMS CHECK} 1 25 15)
 				(localproc_0 {IN PROGRESS} 1 35 15)
 				(localproc_0
-					{>> POWER LEVEL NOMINAL <<\n\n   AUX. REACTOR ON-LINE}
+					{>> POWER LEVEL NOMINAL <<\n\n___AUX. REACTOR ON-LINE}
 					1
 					55
 					10

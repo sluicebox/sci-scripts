@@ -372,7 +372,7 @@
 		getableDist 320
 		seeableDist 320
 		shiftClick 369
-		lookStr {These rocks must lead to some sort of underground spring.  You remind yourself to explore their nooks and crannies sometime...when you don't have so much work to do!}
+		lookStr {These rocks must lead to some sort of underground spring.__You remind yourself to explore their nooks and crannies sometime...when you don't have so much work to do!}
 	)
 )
 
@@ -390,7 +390,7 @@
 		getableDist 320
 		seeableDist 320
 		shiftClick 369
-		lookStr {These rocks must lead to some sort of underground spring.  You remind yourself to explore their nooks and crannies sometime...when you don't have so much work to do!}
+		lookStr {These rocks must lead to some sort of underground spring.__You remind yourself to explore their nooks and crannies sometime...when you don't have so much work to do!}
 	)
 )
 
@@ -408,7 +408,7 @@
 		getableDist 320
 		seeableDist 320
 		shiftClick 369
-		lookStr {These rocks must lead to some sort of underground spring.  You remind yourself to explore their nooks and crannies sometime...when you don't have so much work to do!}
+		lookStr {These rocks must lead to some sort of underground spring.__You remind yourself to explore their nooks and crannies sometime...when you don't have so much work to do!}
 	)
 )
 
@@ -426,7 +426,7 @@
 		getableDist 320
 		seeableDist 320
 		shiftClick 369
-		lookStr {These rocks must lead to some sort of underground spring.  You remind yourself to explore their nooks and crannies sometime...when you don't have so much work to do!}
+		lookStr {These rocks must lead to some sort of underground spring.__You remind yourself to explore their nooks and crannies sometime...when you don't have so much work to do!}
 	)
 )
 
@@ -444,7 +444,7 @@
 		getableDist 320
 		seeableDist 320
 		shiftClick 369
-		lookStr {These rocks must lead to some sort of underground spring.  You remind yourself to explore their nooks and crannies sometime...when you don't have so much work to do!}
+		lookStr {These rocks must lead to some sort of underground spring.__You remind yourself to explore their nooks and crannies sometime...when you don't have so much work to do!}
 	)
 )
 

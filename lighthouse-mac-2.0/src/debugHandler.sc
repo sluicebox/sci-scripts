@@ -460,7 +460,7 @@
 						)
 						(FrameOut)
 						(poly_pol name: (temp10 data:) open: 2)
-						(poly_pol writeString: {\t\t(curRoom addObstacle:\r\n})
+						(poly_pol writeString: {\t\t(curRoom addObstacle:\0d\n})
 						(if (PEditor size:)
 							(PEditor eachElementDo: #writeToFile poly_pol 1)
 							(if (gCurRoom obstacles:)
@@ -489,7 +489,7 @@
 								)
 							)
 						)
-						(poly_pol writeString: {\t\t)\r\n})
+						(poly_pol writeString: {\t\t)\0d\n})
 						(poly_pol close:)
 						(temp10 dispose:)
 						(PEditor dispose:)
@@ -877,7 +877,7 @@
 						(FrameOut)
 						(poly_pol name: (temp10 data:) open: 0)
 						(poly_pol
-							writeString: {;***************************\r\n}
+							writeString: {;***************************\0d\n}
 						)
 						(= temp0 0)
 						(if (PEditor size:)
@@ -889,11 +889,11 @@
 								
 								(= temp31 (KList 6 temp12)) ; NextNode
 								(= temp26 (KList 8 temp12)) ; NodeValue
-								(poly_pol writeString: {\r\n})
+								(poly_pol writeString: {\0d\n})
 								(poly_pol writeString: {(instance })
 								(poly_pol writeString: (temp26 name:))
-								(poly_pol writeString: { of Feature\r\n})
-								(poly_pol writeString: {\t(properties\r\n})
+								(poly_pol writeString: { of Feature\0d\n})
+								(poly_pol writeString: {\t(properties\0d\n})
 								(poly_pol writeString: {\t\tx})
 								(= temp38 (= temp40 1000))
 								(= temp39 (= temp41 0))
@@ -921,26 +921,26 @@
 								(poly_pol writeString: {\t\t\t\t})
 								(temp0 format: {%d} temp29)
 								(poly_pol writeString: (temp0 data:))
-								(poly_pol writeString: {\r\n})
+								(poly_pol writeString: {\0d\n})
 								(poly_pol writeString: {\t\ty})
 								(poly_pol writeString: {\t\t\t\t})
 								(temp0 format: {%d} temp30)
 								(poly_pol writeString: (temp0 data:))
-								(poly_pol writeString: {\r\n})
-								(poly_pol writeString: {\t)\r\n})
-								(poly_pol writeString: {\t(method (init)\r\n})
+								(poly_pol writeString: {\0d\n})
+								(poly_pol writeString: {\t)\0d\n})
+								(poly_pol writeString: {\t(method (init)\0d\n})
 								(poly_pol
-									writeString: {\t\t(self setPolygon:\r\n}
+									writeString: {\t\t(self setPolygon:\0d\n}
 								)
 								(temp26 writeToFile: poly_pol 0)
-								(poly_pol writeString: {\t\t)\r\n})
+								(poly_pol writeString: {\t\t)\0d\n})
 								(poly_pol
-									writeString: {\t\t(super init: &rest)\r\n}
+									writeString: {\t\t(super init: &rest)\0d\n}
 								)
-								(poly_pol writeString: {\t)\r\n})
+								(poly_pol writeString: {\t)\0d\n})
 								(poly_pol writeString: {);})
 								(poly_pol writeString: (temp26 name:))
-								(poly_pol writeString: {\r\n})
+								(poly_pol writeString: {\0d\n})
 							)
 						)
 						(poly_pol close:)

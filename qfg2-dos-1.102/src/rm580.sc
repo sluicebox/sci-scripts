@@ -41,11 +41,11 @@
 	(BlackPrint 580 0) ; "Uh-oh, you don't seem to have a lamp."
 	(if
 		(Print
-			{Might as well die now.  Just to save yourself a little frustration.}
+			{Might as well die now.__Just to save yourself a little frustration.}
 			#title
 			{Your Choice of Poison}
 			#button
-			{OK.  Kill me now}
+			{OK.__Kill me now}
 			1
 			#button
 			{Later (but not much)}
@@ -1118,7 +1118,7 @@
 				(BlackPrint 580 33) ; "As you step forward, you find nothing to step onto. Your hands grab for a stalagmite (or is it a stalactite?), but slip off the slick surface. You find yourself falling ..."
 				(EgoDead
 					1
-					{Afraid of the dark?  You should have been.  Perhaps you would have lasted longer if you hadn't taken the darkness so lightly.}
+					{Afraid of the dark?__You should have been.__Perhaps you would have lasted longer if you hadn't taken the darkness so lightly.}
 					#title
 					{Can't you see?}
 				)

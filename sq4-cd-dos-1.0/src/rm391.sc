@@ -142,7 +142,7 @@
 				(= gSystemWindow BlueWindow)
 				(= gUserFont 0)
 				(BlueWindow color: global141 back: global149)
-				(DrawStatus {   } global129 0)
+				(DrawStatus {___} global129 0)
 				(gCast eachElementDo: #hide)
 				(if (== (gCurRoom style:) 13)
 					(gCurRoom style: 14)
@@ -157,19 +157,19 @@
 					(not
 						(= register
 							(proc816_3
-								{  }
+								{__}
 								78
 								{Instructions}
 								doInstructions
-								{  }
+								{__}
 								78
 								{Specials}
 								doSpecials
-								{  }
+								{__}
 								78
 								{Catalog}
 								doCatalog
-								{  }
+								{__}
 								78
 								{Exit}
 								backToRob
@@ -210,15 +210,15 @@
 				)
 				(if
 					(proc816_3
-						{  }
+						{__}
 						78
 						{Continue}
 						0
-						{  }
+						{__}
 						78
 						{Return to Top Menu}
 						1
-						{  }
+						{__}
 						64
 						56
 						153
@@ -242,7 +242,7 @@
 						78
 						{Return to Top Menu}
 						0
-						{  }
+						{__}
 						78
 						{Limited Time Specials}
 						1
@@ -335,7 +335,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(proc816_3
-							{Sorry - dealers only!  }
+							{Sorry - dealers only!__}
 							78
 							{Continue}
 							1
@@ -371,7 +371,7 @@
 				(Message msgGET gCurRoomNum 2 0 3 1 @local3)
 				(localproc_0
 					{- Automated Catalog -}
-					{\n\n\nWelcome to our Automated Catalog!  Please select from the following departments: }
+					{\n\n\nWelcome to our Automated Catalog!__Please select from the following departments: }
 					@local3
 					102
 					(proc0_18 global138 global137)
@@ -387,7 +387,7 @@
 							78
 							{Electronic Gadgets}
 							2
-							{  }
+							{__}
 							78
 							{The Electronic Mommy}
 							13
@@ -399,7 +399,7 @@
 							78
 							{TechnoTots Toy Dept.}
 							21
-							{  }
+							{__}
 							78
 							{Return to Top Menu}
 							29
@@ -508,7 +508,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(proc816_3
-							{Sorry - Discontinued.  }
+							{Sorry - Discontinued.__}
 							78
 							{Continue}
 							1
@@ -772,7 +772,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(proc816_3
-							{Sorry - Recalled by manufacturer.  }
+							{Sorry - Recalled by manufacturer.__}
 							78
 							{Continue}
 							1
@@ -831,7 +831,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(proc816_3
-							{Sorry - Not available in the Spiral Arm.  }
+							{Sorry - Not available in the Spiral Arm.__}
 							109
 							78
 							{Continue}
@@ -1009,7 +1009,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(proc816_3
-							{Sorry - Sold out.  }
+							{Sorry - Sold out.__}
 							78
 							{Continue}
 							1
@@ -1068,7 +1068,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(proc816_3
-							{Sorry - Discontinued.  }
+							{Sorry - Discontinued.__}
 							78
 							{Continue}
 							1
@@ -1180,7 +1180,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(proc816_3
-							{Sorry - Sold out.  }
+							{Sorry - Sold out.__}
 							78
 							{Continue}
 							1
@@ -1264,7 +1264,7 @@
 					(register addToFront: temp1)
 				)
 				(Display
-					{Select the plug you\n wish to purchase.}
+					{Select the plug you\n_wish to purchase.}
 					@local3
 					100
 					97

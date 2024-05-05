@@ -106,7 +106,7 @@
 				addText: @temp8 temp6 temp5
 				addButton: 1 {Restore} 0 temp7
 				addButton: 2 {Restart} 70 temp7
-				addButton: 3 {    Quit    } 140 temp7
+				addButton: 3 {____Quit____} 140 temp7
 				init:
 			)
 			(1

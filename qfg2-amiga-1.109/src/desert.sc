@@ -61,7 +61,7 @@
 	[nightMonsters 6] = [685 685 695 695 670 675]
 	[bodySaids 10] = [680 '/bandit,man' 671 '/scorpion' 675 '/dinosaur,(saurii<terror)' 685 '/ghoul,skeleton' 695 '/jackal,(man<jackal),jackal']
 	[golfPhrases 10] = [{Damn} {Rats} {Shoot} {Blast} {Argh} {Ack} {Camel Dung} {#@!%$} {Snarl} {Glastnost}]
-	[signLooks 6] = [{Albuquerque   152,700 cubits} {Hours: Mon - Fri  8:00 - 5:00} {Keep off the grass} {Desertside litter removal crews next 3 dunes} {Maximum Speed 1.5} {Downtown Shapeir next exit}]
+	[signLooks 6] = [{Albuquerque___152,700 cubits} {Hours: Mon - Fri__8:00 - 5:00} {Keep off the grass} {Desertside litter removal crews next 3 dunes} {Maximum Speed 1.5} {Downtown Shapeir next exit}]
 	[rockLooks 4] = [{Aye, 'tis a rock.} {The rock reflects the desert heat.} {The rock is made of red sandstone.} {This rock looks, predictably, much like any other desert rock.}]
 	[bushLooks 4] = [{One of few living things in the desert.} {The plant seems to have adapted to the desert heat.} {The dry heat of the desert has stunted the plant's growth.} {If it were larger, you could sit in the shade.}]
 	[heatMsg 6] = [{The blazing desert sun beats down fiercely on your head.} {It is amazing that anything can survive in the furnace-like desert.} {The hot desert air scorches your throat as you breathe.} {The searing desert heat seems to draw the water right out of you.} {The sound of your footsteps seem to echo "water" in your ears.} {Without water, you would not survive even an hour in the desert.}]
@@ -594,7 +594,7 @@
 							cel: 2
 							init:
 							noun: '/ghoul,skeleton,body,monster,creature'
-							lookStr: {You have killed the Ghoul.  Again.}
+							lookStr: {You have killed the Ghoul.__Again.}
 							description: {the re-dead Ghoul}
 						)
 						(= searchX 25)

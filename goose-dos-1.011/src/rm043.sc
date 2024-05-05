@@ -271,7 +271,7 @@
 			(20
 				(rhymeSound prevSignal: 0)
 				(Display
-					{     Sat in the corner,}
+					{_____Sat in the corner,}
 					dsWIDTH
 					300
 					dsCOORD
@@ -310,7 +310,7 @@
 			(50
 				(rhymeSound prevSignal: 0)
 				(Display
-					{     And pulled out a plum,}
+					{_____And pulled out a plum,}
 					dsWIDTH
 					300
 					dsCOORD

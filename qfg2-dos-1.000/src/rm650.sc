@@ -34,7 +34,7 @@
 	birdEnd
 	birdSquawk
 	[birdTalk 10] = [0 {I have a red pencil box} {Can you direct me to the public bath} {I will not buy your rotten pears} {May a sleepy hippopotamus lie down on your house keys} {I can give you 5 dinars for the gourd} {My sister has a saurus for sale} {Excuse me, your camel has fallen on my mother} {Your horse is foundered and I do not need that} {May I apply spices to your beard?}]
-	[intros 6] = [0 {Well, you think that might have been} {Hmm.  That rather sounded like} {You believe that was} {If your translation is correct, that was} {You think that roughly translates to}]
+	[intros 6] = [0 {Well, you think that might have been} {Hmm.__That rather sounded like} {You believe that was} {If your translation is correct, that was} {You think that roughly translates to}]
 	[endings 5] = [0 {Perhaps you should have paid more attention in "Griffin 101"} {You should have kept your Griffin-English phrase book from Adventurer's School} {Of course, you can never be sure when talking with a Griffin} {Unfortunately, your fluency in Griffin-speak is too low}]
 	[squawks 8] = [0 {Screech chirpy caw peep, squawka squawka!"} {Chirp caw peepa-peepa, screechy screechy!} {Freep squeaky pip-pip, awoooooo!} {Screechy squawk, titwillow, titwillow!} {Cheep, cheep, tite, penurious!} {Scratch squawk screech do-be-do-be-doooo!} {(Mumble, mumble...tourists...mumble mumble!)}]
 )
@@ -807,7 +807,7 @@
 		y 77
 		noun '/griffin,creature,griffin'
 		description {Merv, the Griffin}
-		lookStr {The Griffin looks like a cross between a lion and an eagle.  It seems to be sleeping.}
+		lookStr {The Griffin looks like a cross between a lion and an eagle.__It seems to be sleeping.}
 		view 657
 		illegalBits 0
 	)
@@ -823,7 +823,7 @@
 	(properties
 		noun '/griffin,creature,griffin'
 		description {Merv, the Griffin}
-		lookStr {The Griffin looks like a cross between a lion and an eagle.  It seems to be sleeping.}
+		lookStr {The Griffin looks like a cross between a lion and an eagle.__It seems to be sleeping.}
 		view 657
 		loop 6
 		signal 16384

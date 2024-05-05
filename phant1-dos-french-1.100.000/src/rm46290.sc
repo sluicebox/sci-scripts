@@ -71,7 +71,7 @@
 				((ScriptID 45951 2) close:) ; chase_dat
 			)
 			((not (IsFlag 135))
-				(= temp0 (Str newWith: 3 {99\r\n}))
+				(= temp0 (Str newWith: 3 {99\0d\n}))
 				((ScriptID 45951 2) writeString: temp0 close:) ; chase_dat
 				(temp0 dispose:)
 			)

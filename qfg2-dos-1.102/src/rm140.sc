@@ -1221,7 +1221,7 @@
 		y 52
 		noun '/bellows'
 		description {Saul's bellows}
-		lookStr {It looks very much like Saul's Bellows.  It is the emblem of the iron worker's trade.}
+		lookStr {It looks very much like Saul's Bellows.__It is the emblem of the iron worker's trade.}
 		view 140
 		loop 2
 		cel 3

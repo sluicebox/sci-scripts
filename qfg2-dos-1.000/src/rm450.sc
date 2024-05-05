@@ -551,7 +551,7 @@
 		y 155
 		noun '/door,sign,barricade,board,alley[<alley,bearing,street]'
 		description {the barricade}
-		lookStr {The alley is securely blocked by a barricade of boards.  You can barely discern a sign reading:\n"This street closed by order of Khaveen!"}
+		lookStr {The alley is securely blocked by a barricade of boards.__You can barely discern a sign reading:\n"This street closed by order of Khaveen!"}
 		view 384
 		loop 4
 		priority 7
@@ -592,7 +592,7 @@
 		y 91
 		noun '/door,sign,barricade,board,alley[<alley,bearing,street]'
 		description {the barricade}
-		lookStr {The alley is securely blocked by a barricade of boards.  You can barely discern a sign reading:\n"The smuggling of water is a capital crime!"}
+		lookStr {The alley is securely blocked by a barricade of boards.__You can barely discern a sign reading:\n"The smuggling of water is a capital crime!"}
 		view 384
 		loop 2
 		priority 6

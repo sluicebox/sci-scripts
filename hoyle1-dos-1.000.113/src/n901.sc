@@ -17,7 +17,7 @@
 	(Load rsVIEW 991)
 	(if (== (= temp40 (FOpen {HOYLE.SET} 2)) -1)
 		(Print
-			{Can't save setup file to disk\n  - Write-protected or\n  - Bad disk.}
+			{Can't save setup file to disk\n__- Write-protected or\n__- Bad disk.}
 		)
 	else
 		(Format ; "%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%3d"

@@ -37,7 +37,7 @@
 		(= global592 1)
 		(gGame setCursor: gNormalCursor (HaveMouse))
 		(Display
-			{1. MINI MONOLITH~~~~~~ ...........................1.00\n2. MONOLITH ..................................2.00\n3.   W/POLYCHEEZE~ ..........................3.00\n4. FILET-O-ORAT~~ ............................2.00\n5. JUMBO MONOLITH W/POLYCHEEZE~~ ...5.00\n6. BIG BELCHER COMBO~~ .....................9.00\n    INCLUDES: JUMBO MONO W/POLYCHEEZE,\n    SPACE SPUDS W/EXTRA GREASE\n    AND SLOPPY SLURPER\n7. MONOLITH FUN MEAL ....................7.00\n8. SPACE SPUDS~ ..............................1.00\n\nTANG\02\n9.    SMALL~~ .......................1.00\nA.    MED~~~ ..........................2.00\nB.   ~~~~LARGE~~~~~~~ ......................3.00\nC. SLOPPY SLURPER~~~~~~~ .........4.00}
+			{1. MINI MONOLITH~~~~~~ ...........................1.00\n2. MONOLITH ..................................2.00\n3.___W/POLYCHEEZE~ ..........................3.00\n4. FILET-O-ORAT~~ ............................2.00\n5. JUMBO MONOLITH W/POLYCHEEZE~~ ...5.00\n6. BIG BELCHER COMBO~~ .....................9.00\n____INCLUDES: JUMBO MONO W/POLYCHEEZE,\n____SPACE SPUDS W/EXTRA GREASE\n____AND SLOPPY SLURPER\n7. MONOLITH FUN MEAL ....................7.00\n8. SPACE SPUDS~ ..............................1.00\n\nTANG\02\n9.____SMALL~~ .......................1.00\nA.____MED~~~ ..........................2.00\nB.___~~~~LARGE~~~~~~~ ......................3.00\nC. SLOPPY SLURPER~~~~~~~ .........4.00}
 			dsCOORD
 			10
 			27
@@ -49,7 +49,7 @@
 			681
 		)
 		(Display
-			{1. MINI MONOLITH~~~~~~ ...........................1.00\n2. MONOLITH ..................................2.00\n3.   W/POLYCHEEZE~ ..........................3.00\n4. FILET-O-ORAT~~ ............................2.00\n5. JUMBO MONOLITH W/POLYCHEEZE~~ ...5.00\n6. BIG BELCHER COMBO~~ .....................9.00\n    INCLUDES: JUMBO MONO W/POLYCHEEZE,\n    SPACE SPUDS W/EXTRA GREASE\n    AND SLOPPY SLURPER\n7. MONOLITH FUN MEAL ....................7.00\n8. SPACE SPUDS~ ..............................1.00\n\nTANG\02\n9.    SMALL~~ .......................1.00\nA.    MED~~~ ..........................2.00\nB.   ~~~~LARGE~~~~~~~ ......................3.00\nC. SLOPPY SLURPER~~~~~~~ .........4.00}
+			{1. MINI MONOLITH~~~~~~ ...........................1.00\n2. MONOLITH ..................................2.00\n3.___W/POLYCHEEZE~ ..........................3.00\n4. FILET-O-ORAT~~ ............................2.00\n5. JUMBO MONOLITH W/POLYCHEEZE~~ ...5.00\n6. BIG BELCHER COMBO~~ .....................9.00\n____INCLUDES: JUMBO MONO W/POLYCHEEZE,\n____SPACE SPUDS W/EXTRA GREASE\n____AND SLOPPY SLURPER\n7. MONOLITH FUN MEAL ....................7.00\n8. SPACE SPUDS~ ..............................1.00\n\nTANG\02\n9.____SMALL~~ .......................1.00\nA.____MED~~~ ..........................2.00\nB.___~~~~LARGE~~~~~~~ ......................3.00\nC. SLOPPY SLURPER~~~~~~~ .........4.00}
 			dsCOORD
 			10
 			27

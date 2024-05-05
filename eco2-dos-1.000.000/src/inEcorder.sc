@@ -850,9 +850,9 @@
 						(prn
 							writeString: {\n\n}
 							writeString: @global137
-							writeString: {\n\r\n}
+							writeString: {\n\0d\n}
 							writeString: temp2
-							writeString: {\n\r\n}
+							writeString: {\n\0d\n}
 							close:
 						)
 					)
@@ -910,11 +910,11 @@
 							(prn
 								writeString: {\n\n}
 								writeString: temp3
-								writeString: {\r\n}
+								writeString: {\0d\n}
 								writeString: temp2
-								writeString: {\r\n}
+								writeString: {\0d\n}
 								writeString: temp3
-								writeString: {\n\n\r\n}
+								writeString: {\n\n\0d\n}
 								close:
 							)
 						)
@@ -939,7 +939,7 @@
 								(Memory memFREE temp2)
 								(break)
 							)
-							(prn writeString: {\r\n} close:)
+							(prn writeString: {\0d\n} close:)
 						)
 						(Memory memFREE temp2)
 					else
@@ -958,17 +958,17 @@
 								(+= temp5 1)
 								(prn
 									writeString: temp2
-									writeString: {\r\n}
+									writeString: {\0d\n}
 									writeString: (+ temp2 temp5)
-									writeString: {\r\n}
-									writeString: {\r\n}
+									writeString: {\0d\n}
+									writeString: {\0d\n}
 									close:
 								)
 							else
 								(prn
 									writeString: temp2
-									writeString: {\r\n}
-									writeString: {\r\n}
+									writeString: {\0d\n}
+									writeString: {\0d\n}
 									close:
 								)
 							)

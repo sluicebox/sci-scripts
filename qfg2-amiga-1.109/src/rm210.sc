@@ -466,7 +466,7 @@
 				(Print 210 66) ; "You never did return to Shapeir again, because, for some reason the WIT Wizards were unable to explain, the door to that land became permanently closed. They believe it had something to do with the land being destroyed."
 				(EgoDead
 					1
-					{You are now a very knowledgeable Wizard. However, on occasion, you find yourself wondering what ever happened to Abdulla Doo, the Kattas, and to all your other friends in Shapeir.  And you wonder: wouldn't it have been better to have endured your "Trial by Fire"?}
+					{You are now a very knowledgeable Wizard. However, on occasion, you find yourself wondering what ever happened to Abdulla Doo, the Kattas, and to all your other friends in Shapeir.__And you wonder: wouldn't it have been better to have endured your "Trial by Fire"?}
 					#title
 					{That was the Wiz that was}
 				)
@@ -762,7 +762,7 @@
 		y 130
 		noun '/ad,wizard,enchant,portrait,painting[<ad,wizard,enchant][/ad,wizard,enchant]'
 		description {the portrait of Ad Avis, the Enchanter.}
-		lookStr {The portrait shows a Wizard with a severe nature.  He appears totally humorless.}
+		lookStr {The portrait shows a Wizard with a severe nature.__He appears totally humorless.}
 		view 215
 		cel 2
 	)
@@ -786,7 +786,7 @@
 		y 113
 		noun '/zara,wizard,emissary,portrait,painting[<zara,emissary,wizard][/zara,emissary,wizard]'
 		description {the portrait of Zara, the Wizard}
-		lookStr {Like most of the Wizards, Zara's expression is serious and intent.  She shows little propensity towards humor.}
+		lookStr {Like most of the Wizards, Zara's expression is serious and intent.__She shows little propensity towards humor.}
 		view 215
 		cel 4
 		priority 1
@@ -800,7 +800,7 @@
 		y 130
 		noun '/erasmus,wizard,portrait,painting[<erasmus,wizard][/erasmus,wizard]'
 		description {the portrait of Erasmus, the jocular Wizard}
-		lookStr {The portrait of Erasmus appears to be a duplicate of the one you remember hanging in his house on Zauberberg.  You think that perhaps he has a few more crinkles around his eyes.}
+		lookStr {The portrait of Erasmus appears to be a duplicate of the one you remember hanging in his house on Zauberberg.__You think that perhaps he has a few more crinkles around his eyes.}
 		view 215
 		loop 1
 		cycleSpeed 1
@@ -813,7 +813,7 @@
 		y 155
 		noun '/erana,wizard,portrait,painting[<erana,wizard][/erana,wizard]'
 		description {the portrait of Erana, the lost Wizard of Spielburg}
-		lookStr {You always wondered what Erana looked like.  She reminds you of Genesta, a Faery you once knew.}
+		lookStr {You always wondered what Erana looked like.__She reminds you of Genesta, a Faery you once knew.}
 		view 215
 		cel 6
 	)
@@ -825,7 +825,7 @@
 		y 155
 		noun '/merlin,mage,portrait,painting[<merlin,mage][/merlin,mage]'
 		description {the portrait of Merlyn, the legendary magician of King Arthur's Court}
-		lookStr {That's funny!  He doesn't look anything like the way Peter Ledger drew him in Conquests of Camelot.}
+		lookStr {That's funny!__He doesn't look anything like the way Peter Ledger drew him in Conquests of Camelot.}
 		view 215
 		cel 7
 	)

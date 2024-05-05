@@ -628,7 +628,7 @@
 					(StrAt @temp0 9 65)
 				)
 				(Print
-					(Format @global300 {Your Secret Code is:\n\n   %s} @temp0)
+					(Format @global300 {Your Secret Code is:\n\n___%s} @temp0)
 				)
 			)
 		)

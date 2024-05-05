@@ -94,7 +94,7 @@
 					else
 						(= global196 1)
 						(Print 801 4) ; "Starting logfile entries."
-						(FPuts global195 {New entries start here.\r\n})
+						(FPuts global195 {New entries start here.\0d\n})
 					)
 				else
 					(Print 801 5) ; "Logfile IS on."

@@ -223,7 +223,7 @@
 								(if (== (gEgo view:) 373)
 									{*** No can do, what with you bein female and all.}
 								else
-									{*** So you want a job.  Well, okay.}
+									{*** So you want a job.__Well, okay.}
 								)
 								67
 								205

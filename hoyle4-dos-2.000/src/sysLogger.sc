@@ -74,7 +74,7 @@
 			)
 		)
 	)
-	(StrCat @temp0 {\r\n})
+	(StrCat @temp0 {\0d\n})
 	(FileIO fiWRITE_STRING logHandle @temp0)
 	(return temp41)
 )
@@ -334,7 +334,7 @@
 			(localproc_1 3 {TOTAL-HUNK} (>> (MemoryInfo 4) $0006)) ; TotalHunk
 			(localproc_1 3 {LARGEST-HUNK} (MemoryInfo miLARGESTHUNK))
 			(localproc_1 3 {FREE-HUNK} (>> (MemoryInfo miFREEHUNK) $0006))
-			(FileIO fiWRITE_STRING logHandle {**********************************\r\n})
+			(FileIO fiWRITE_STRING logHandle {**********************************\0d\n})
 			(FileIO fiCLOSE logHandle)
 		)
 		(Format @thePath 952 6 @gSysLogPath)

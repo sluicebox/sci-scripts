@@ -93,12 +93,12 @@
 			(copyres_bat open: 2)
 			(= local2 (Str new:))
 			(local2 name: {output String})
-			(copyres_bat writeString: {echo y|del sound\*.*\n\r\n})
-			(copyres_bat writeString: {echo y|del vmd\*.*\n\r\n})
-			(copyres_bat writeString: {echo y|del pic\*.*\n\r\n})
-			(copyres_bat writeString: {echo y|del view\*.*\n\r\n})
+			(copyres_bat writeString: {echo y|del sound\\*.*\n\0d\n})
+			(copyres_bat writeString: {echo y|del vmd\\*.*\n\0d\n})
+			(copyres_bat writeString: {echo y|del pic\\*.*\n\0d\n})
+			(copyres_bat writeString: {echo y|del view\\*.*\n\0d\n})
 			(copyres_bat
-				writeString: {echo y|copy m:\prog\vmd\4100?.vmd vmd\n\r\n}
+				writeString: {echo y|copy m:\\prog\\vmd\\4100?.vmd vmd\n\0d\n}
 			)
 		else
 			(= local8 (Platform 1))
@@ -111,28 +111,28 @@
 					(0
 						(local2
 							format:
-								{echo y|copy m:\prog\vmd\%s.vmd vmd\n\r\n}
+								{echo y|copy m:\\prog\\vmd\\%s.vmd vmd\n\0d\n}
 								local4
 						)
 					)
 					(1
 						(local2
 							format:
-								{echo y|copy m:\prog\pic\%s.p56 pic\n\r\n}
+								{echo y|copy m:\\prog\\pic\\%s.p56 pic\n\0d\n}
 								local4
 						)
 					)
 					(2
 						(local2
 							format:
-								{echo y|copy m:\prog\sound\%s.wav sound\n\r\n}
+								{echo y|copy m:\\prog\\sound\\%s.wav sound\n\0d\n}
 								local4
 						)
 					)
 					(3
 						(local2
 							format:
-								{echo y|copy m:\prog\view\%s.v56 view\n\r\n}
+								{echo y|copy m:\\prog\\view\\%s.v56 view\n\0d\n}
 								local4
 						)
 					)

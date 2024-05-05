@@ -174,7 +174,7 @@
 		nsTop 35
 		nsLeft 97
 		key 1
-		text {Deposit  }
+		text {Deposit__}
 		price 100
 		typeOfGoods 4
 		fixedPrice 1
@@ -224,7 +224,7 @@
 		nsTop 50
 		nsLeft 92
 		key 2
-		text {Withdraw  }
+		text {Withdraw__}
 		price 100
 		typeOfGoods 4
 		theSign 1

@@ -1051,7 +1051,7 @@
 					(1
 						(= global320 {Deceleration Trauma})
 						(= global259
-							{It wouldn't be so bad, except for the sudden stop at the end.  Next time, don't get so close to the edge.}
+							{It wouldn't be so bad, except for the sudden stop at the end.__Next time, don't get so close to the edge.}
 						)
 					)
 					(2
@@ -1059,7 +1059,7 @@
 							{New, Improved Quick Tanning Method}
 						)
 						(= global259
-							{You never did care for fondue.  Next time, don't get so close to the edge.}
+							{You never did care for fondue.__Next time, don't get so close to the edge.}
 						)
 					)
 					(3
@@ -1115,7 +1115,7 @@
 							{You have blown your `cover'.}
 						)
 						(= global259
-							{You have demonstrated a surprising lack of janitorial skill.  Perhaps this would be an opportune time to `brush up' on your technique with Space Quest I and II.}
+							{You have demonstrated a surprising lack of janitorial skill.__Perhaps this would be an opportune time to `brush up' on your technique with Space Quest I and II.}
 						)
 					)
 					(10
@@ -1139,7 +1139,7 @@
 							{Don't Trust Guys in Black Spacesuits}
 						)
 						(= global259
-							{A pulselaser blast to the forehead is not your idea of fun.  Fortunately, it didn't hit anything important.}
+							{A pulselaser blast to the forehead is not your idea of fun.__Fortunately, it didn't hit anything important.}
 						)
 					)
 					(13
@@ -1703,7 +1703,7 @@
 	(properties
 		name {ThermoWeave Underwear}
 		said '/panties'
-		description {ThermoWeave Shorts.  They keep you cool, and they're oh, so stylish.}
+		description {ThermoWeave Shorts.__They keep you cool, and they're oh, so stylish.}
 		owner 470
 		view 242
 		cel 9
@@ -1714,7 +1714,7 @@
 	(properties
 		name {Astro Chicken Flight Hat}
 		said '/cap'
-		description {Wow! Your Official Astro Chicken Flight Hat!  Man, the babes'll really dig you in this!}
+		description {Wow! Your Official Astro Chicken Flight Hat!__Man, the babes'll really dig you in this!}
 		owner 470
 		view 242
 		cel 6
@@ -1725,7 +1725,7 @@
 	(properties
 		name {Monolith Decoder Ring}
 		said '/decoder,prize'
-		description {With this ring, you can decode any secret message!  Well, almost any secret message.}
+		description {With this ring, you can decode any secret message!__Well, almost any secret message.}
 		owner 29
 		view 242
 		cel 5
@@ -1763,7 +1763,7 @@
 	(properties
 		name {Thermal Detonator}
 		said '/detonator'
-		description {Used for blowing stuff to little bits.   It has an impact switch, so in other words...DON'T DROP IT!}
+		description {Used for blowing stuff to little bits.___It has an impact switch, so in other words...DON'T DROP IT!}
 		owner 69
 		view 242
 		cel 12

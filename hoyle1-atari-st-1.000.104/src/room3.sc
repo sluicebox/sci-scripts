@@ -1594,25 +1594,25 @@
 	(method (display &tmp [temp0 200] temp200 temp201 temp202 temp203)
 		(= global199 (Format @temp0 3 1)) ; "Position Name  Points  ------------------------"
 		(if (not (gPlayer1 sittingOut:))
-			(StrCat global199 { Left      })
+			(StrCat global199 { Left______})
 			(StrCat global199 ((gPlayer1 altrEgo:) name:))
 			(StrCat global199 (Format @global520 3 2 (gPlayer1 gamePoints:))) ; "%3d"
 			(StrCat global199 {\n})
 		)
 		(if (not (gPlayer2 sittingOut:))
-			(StrCat global199 { Top       })
+			(StrCat global199 { Top_______})
 			(StrCat global199 ((gPlayer2 altrEgo:) name:))
 			(StrCat global199 (Format @global520 3 2 (gPlayer2 gamePoints:))) ; "%3d"
 			(StrCat global199 {\n})
 		)
 		(if (not (gPlayer3 sittingOut:))
-			(StrCat global199 { Right     })
+			(StrCat global199 { Right_____})
 			(StrCat global199 ((gPlayer3 altrEgo:) name:))
 			(StrCat global199 (Format @global520 3 2 (gPlayer3 gamePoints:))) ; "%3d"
 			(StrCat global199 {\n})
 		)
 		(if (not (gPlayer0 sittingOut:))
-			(StrCat global199 { Bottom    })
+			(StrCat global199 { Bottom____})
 			(StrCat global199 @global138)
 			(StrCat global199 (Format @global520 3 2 (gPlayer0 gamePoints:))) ; "%3d"
 			(StrCat global199 {\n})

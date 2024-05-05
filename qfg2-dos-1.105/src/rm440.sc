@@ -1162,7 +1162,7 @@
 		y 136
 		noun '/door,gate[<cell,iron]'
 		description {the gate to the cell}
-		lookStr {The gate is made of the same iron bars as the rest of the cell.  The lock is a simple key mounting.}
+		lookStr {The gate is made of the same iron bars as the rest of the cell.__The lock is a simple key mounting.}
 		view 445
 		cel 2
 		signal 16384
@@ -1280,19 +1280,19 @@
 					(1
 						(super
 							messages:
-								{I would tell you all you wish to know.   But now it is time to depart... in great haste!}
+								{I would tell you all you wish to know.___But now it is time to depart... in great haste!}
 						)
 					)
 					(2
 						(super
 							messages:
-								{Truly, you have many questions I might answer, but the guards will soon return.  We must leave this most dangerous place.}
+								{Truly, you have many questions I might answer, but the guards will soon return.__We must leave this most dangerous place.}
 						)
 					)
 					(else
 						(super
 							messages:
-								{I will answer all later.  But now that you have so skillfully opened the door, we should leave.}
+								{I will answer all later.__But now that you have so skillfully opened the door, we should leave.}
 						)
 					)
 				)
@@ -1320,7 +1320,7 @@
 		y 102
 		noun '/door<wooden'
 		description {the heavy wooden door}
-		lookStr {The heavy wooden door leads to the hallway.  You can hear the sound of many boots marching and several guards talking.}
+		lookStr {The heavy wooden door leads to the hallway.__You can hear the sound of many boots marching and several guards talking.}
 		view 445
 		loop 10
 		priority 2

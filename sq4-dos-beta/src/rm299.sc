@@ -336,7 +336,7 @@
 		nsBottom 200
 		nsRight 320
 		description {buttes}
-		lookStr {All around you stretch the dunes and stony outcroppings of the Estros buttes.  Nearby, a slender, rigid rod of angry red rock arches its way upward, poking searchingly into the sky and plunging down into the beautiful butte of Estros.   What lovely scenery!}
+		lookStr {All around you stretch the dunes and stony outcroppings of the Estros buttes.__Nearby, a slender, rigid rod of angry red rock arches its way upward, poking searchingly into the sky and plunging down into the beautiful butte of Estros.___What lovely scenery!}
 	)
 )
 

@@ -2098,7 +2098,7 @@
 				)
 			)
 		)
-		(= temp4 (Str format: {\r\n%d} (gEgo view:)))
+		(= temp4 (Str format: {\0d\n%d} (gEgo view:)))
 		(= temp3 (File new:))
 		(temp3 name: (temp2 data:))
 		(temp3

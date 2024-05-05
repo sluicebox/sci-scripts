@@ -113,10 +113,10 @@
 			)
 		)
 		(= temp2
-			(localproc_1 -1 (Str with: {back Y, click when done.   }) temp6)
+			(localproc_1 -1 (Str with: {back Y, click when done.___}) temp6)
 		)
 		(= temp4
-			(localproc_0 temp2 (Str with: {Size object, click when done.   }))
+			(localproc_0 temp2 (Str with: {Size object, click when done.___}))
 		)
 		(= temp7
 			(AddLine
@@ -133,10 +133,10 @@
 			)
 		)
 		(= temp3
-			(localproc_1 temp2 (Str with: {front Y, click when done.   }) temp7)
+			(localproc_1 temp2 (Str with: {front Y, click when done.___}) temp7)
 		)
 		(= temp5
-			(localproc_0 temp3 (Str with: {Size object, click when done.   }))
+			(localproc_0 temp3 (Str with: {Size object, click when done.___}))
 		)
 		(gEgo posn: temp0 temp1)
 		(Printf {Scaler %d %d %d %d} temp5 temp4 temp3 temp2)

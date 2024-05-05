@@ -501,7 +501,7 @@
 	(Print
 		(Format @str 1 5) ; "Written and Directed by: LORI ANN COLE and COREY COLE Lead Artist: KENN NISHIUYE Lead Programmer: BOB FISCHBACH Original Music and Sound Effects by: MARK SEIBERT and CHRIS BRAYMEN"
 		#title
-		{ Quest for Glory 2:  Trial By Fire }
+		{ Quest for Glory 2:__Trial By Fire }
 		#width
 		240
 		#mode
@@ -517,7 +517,7 @@
 	(Print
 		(Format @str 1 6 gVersion) ; "Programmed by: COREY COLE MARK WILDEN BRIAN K. HUGHES JERRY SHAW and ROBERT MALLORY with RANDY MACNEILL and GARY KAMIGAWACHI Implementation Specialist: J. MARK HOOD Version %s Copyright 1990 Sierra On-Line, Inc."
 		#title
-		{ Quest for Glory 2:  Trial By Fire }
+		{ Quest for Glory 2:__Trial By Fire }
 		#width
 		240
 		#mode
@@ -533,7 +533,7 @@
 	(Print
 		(Format @str 1 7) ; "Backgrounds and Animation by: JERRY MOORE CHERI LOYD DOUG HERRING NATE LARSEN ERIC KASNER DESIE HARTMAN DEAN LAROCCA TAMRA DAYTON and HARRY MCLAUGHLIN Quality Assurance by: MIKE PICKHINKE and MIKE HARIAN with Gordon, Dan S., Dan W., Joe, John, and more"
 		#title
-		{ Quest for Glory 2:  Trial By Fire }
+		{ Quest for Glory 2:__Trial By Fire }
 		#width
 		240
 		#mode

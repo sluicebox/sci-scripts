@@ -76,7 +76,7 @@
 		(FPuts temp201 @temp0)
 		(FPuts temp201 { })
 	)
-	(FPuts temp201 {\r\n\r\n})
+	(FPuts temp201 {\0d\n\0d\n})
 	(FClose temp200)
 	(FClose temp201)
 )
@@ -151,18 +151,18 @@
 			(if (IsObject param2)
 				(param2 doit: (StrEnd @temp1))
 			)
-			(StrCat @temp1 {\r\n~})
+			(StrCat @temp1 {\0d\n~})
 			(FPuts temp0 @temp1)
 			(repeat
 				(= temp1 0)
 				(GetInput @temp1 50 {Log Entry...})
 				(if (== (StrLen @temp1) 0)
-					(FPuts temp0 {~\r\n\r\n})
+					(FPuts temp0 {~\0d\n\0d\n})
 					(FClose temp0)
 					(break)
 				)
 				(FPuts temp0 @temp1)
-				(FPuts temp0 {\r\n})
+				(FPuts temp0 {\0d\n})
 			)
 		)
 		(DisposeScript 952)
@@ -201,7 +201,7 @@
 				)
 				(2
 					(= temp2 0)
-					(StrCat @temp2 {C:\CAMLOGS\5c})
+					(StrCat @temp2 {C:\\CAMLOGS\5c})
 					(Print
 						{Please enter your log name...}
 						#edit

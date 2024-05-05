@@ -635,7 +635,7 @@
 		nsBottom 66
 		nsRight 147
 		description {the shade of the awning}
-		lookStr {Only really tall people appreciate the awning's shade.  One can only speculate that it is purely decorative.}
+		lookStr {Only really tall people appreciate the awning's shade.__One can only speculate that it is purely decorative.}
 	)
 )
 

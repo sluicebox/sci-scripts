@@ -1627,25 +1627,25 @@
 		(gGame setCursor: 999)
 		(= global199 (Format @temp0 1 4)) ; "Position Name  Points  ------------------------"
 		(if (not (gPlayer1 sittingOut:))
-			(StrCat global199 { West      })
+			(StrCat global199 { West______})
 			(StrCat global199 ((gPlayer1 altrEgo:) name:))
 			(StrCat global199 (Format @global520 1 5 (gPlayer1 gamePoints:))) ; "%3d"
 			(StrCat global199 {\n})
 		)
 		(if (not (gPlayer2 sittingOut:))
-			(StrCat global199 { North     })
+			(StrCat global199 { North_____})
 			(StrCat global199 ((gPlayer2 altrEgo:) name:))
 			(StrCat global199 (Format @global520 1 5 (gPlayer2 gamePoints:))) ; "%3d"
 			(StrCat global199 {\n})
 		)
 		(if (not (gPlayer3 sittingOut:))
-			(StrCat global199 { East      })
+			(StrCat global199 { East______})
 			(StrCat global199 ((gPlayer3 altrEgo:) name:))
 			(StrCat global199 (Format @global520 1 5 (gPlayer3 gamePoints:))) ; "%3d"
 			(StrCat global199 {\n})
 		)
 		(if (not (gPlayer0 sittingOut:))
-			(StrCat global199 { South     })
+			(StrCat global199 { South_____})
 			(StrCat global199 @global138)
 			(StrCat global199 (Format @global520 1 5 (gPlayer0 gamePoints:))) ; "%3d"
 			(StrCat global199 {\n})

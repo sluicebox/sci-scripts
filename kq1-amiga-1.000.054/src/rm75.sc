@@ -1011,7 +1011,7 @@
 			)
 			(6
 				(EgoDead
-					{Rats!  This was one shady character you shouldn't have tangled with.}
+					{Rats!__This was one shady character you shouldn't have tangled with.}
 				)
 				(HandsOn)
 			)

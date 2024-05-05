@@ -97,7 +97,7 @@
 			text:
 				(switch local4
 					(0 {Restore})
-					(1 {  Save  })
+					(1 {__Save__})
 					(else {Replace})
 				)
 			setSize:
@@ -277,7 +277,7 @@
 
 (instance changeDirI of DButton
 	(properties
-		text {Change\r\nDirectory}
+		text {Change\0d\nDirectory}
 	)
 )
 

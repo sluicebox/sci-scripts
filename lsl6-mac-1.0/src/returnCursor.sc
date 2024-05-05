@@ -32,7 +32,7 @@
 
 	(method (draw)
 		(= state 1)
-		(DrawStatus {                  Shape Up or Slip Out} 75 56)
+		(DrawStatus {__________________Shape Up or Slip Out} 75 56)
 	)
 )
 

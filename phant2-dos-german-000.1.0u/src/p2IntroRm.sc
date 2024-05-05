@@ -220,7 +220,7 @@
 
 	(method (doit)
 		(localproc_0 0 0 0 23 1 0)
-		(if (WinExec {..\SIGSPAT.EXE})
+		(if (WinExec {..\\SIGSPAT.EXE})
 			(quitCode doit:)
 		else
 			(localproc_0 0 0 0 23 2 1)

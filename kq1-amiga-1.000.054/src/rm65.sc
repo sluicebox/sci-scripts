@@ -1496,7 +1496,7 @@
 		sightAngle 360
 		seeableDist 520
 		shiftClick 367
-		lookStr {The pot is hot enough to burn your hand.  The fire must have been burning for a long time.}
+		lookStr {The pot is hot enough to burn your hand.__The fire must have been burning for a long time.}
 	)
 
 	(method (handleEvent event)

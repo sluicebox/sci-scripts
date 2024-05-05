@@ -1768,7 +1768,7 @@
 									26
 									{ }
 									81
-									{John: 10 men feint outside, then          full scale attack.}
+									{John: 10 men feint outside, then__________full scale attack.}
 									11
 									106
 									26

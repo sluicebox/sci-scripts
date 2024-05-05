@@ -10,7 +10,7 @@
 
 (instance Graham____ of Person
 	(properties
-		name {Graham    }
+		name {Graham____}
 		view 15
 		song 8
 		heartsSkill 1

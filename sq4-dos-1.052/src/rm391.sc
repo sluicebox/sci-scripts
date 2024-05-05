@@ -139,7 +139,7 @@
 				(= gSystemWindow BlueWindow)
 				(= gUserFont 0)
 				(BlueWindow color: global141 back: global149)
-				(DrawStatus {   } global129 0)
+				(DrawStatus {___} global129 0)
 				(gCast eachElementDo: #hide)
 				(if (== (gCurRoom style:) 42)
 					(gCurRoom style: 43)
@@ -150,19 +150,19 @@
 			(1
 				(= register
 					(PrintD
-						{  }
+						{__}
 						81
 						{Instructions}
 						doInstructions
-						{  }
+						{__}
 						81
 						{Specials}
 						doSpecials
-						{  }
+						{__}
 						81
 						{Catalog}
 						doCatalog
-						{  }
+						{__}
 						81
 						{Exit}
 						backToRob
@@ -192,21 +192,21 @@
 				(BlueWindow color: global141)
 				(localproc_0
 					{INSTRUCTIONS}
-					{Welcome to the Radio Shock Automated Catalog! Let us be your gateway to what's new and exciting in the world of 24th Century Electronics. \n\nThrough the pages of our Automated Catalog, you will find gifts for the whole family.  For Dad, look in Electronic Gadgets for our selection of Realrustic Stereo Components.  For Mom, peek into The Electronic Mommy for a variety of labor-\nsaving devices and marital aids!  For Sis and Little Brother, browse our TechnoTots(R) Toy department for the latest in electronic playborgs! }
+					{Welcome to the Radio Shock Automated Catalog! Let us be your gateway to what's new and exciting in the world of 24th Century Electronics. \n\nThrough the pages of our Automated Catalog, you will find gifts for the whole family.__For Dad, look in Electronic Gadgets for our selection of Realrustic Stereo Components.__For Mom, peek into The Electronic Mommy for a variety of labor-\nsaving devices and marital aids!__For Sis and Little Brother, browse our TechnoTots(R) Toy department for the latest in electronic playborgs! }
 					102
 					global135
 				)
 				(if
 					(PrintD
-						{  }
+						{__}
 						81
 						{Continue}
 						0
-						{  }
+						{__}
 						81
 						{Return to Top Menu}
 						1
-						{  }
+						{__}
 						67
 						56
 						153
@@ -217,7 +217,7 @@
 					(gLongSong number: (Random 392 395) play:)
 					(localproc_0
 						{INSTRUCTIONS}
-						{Shopping our Automated Catalog is as easy as snapping your digital appendages. Using your mouse or Tab key, simply point to the menu item of your choice and press <Enter> or click the left mouse button.  Should you get confused, simply return to the Top Menu and begin anew. \n\nThank you for choosing Radio Shock for all your electronic needs! We know you'll find just what you're looking for, and if you don't, we're wrong and you should look somewhere else. \n\n  --Your Radio Shock Manager }
+						{Shopping our Automated Catalog is as easy as snapping your digital appendages. Using your mouse or Tab key, simply point to the menu item of your choice and press <Enter> or click the left mouse button.__Should you get confused, simply return to the Top Menu and begin anew. \n\nThank you for choosing Radio Shock for all your electronic needs! We know you'll find just what you're looking for, and if you don't, we're wrong and you should look somewhere else. \n\n__--Your Radio Shock Manager }
 						102
 						global135
 					)
@@ -227,7 +227,7 @@
 							81
 							{Return to Top Menu}
 							0
-							{  }
+							{__}
 							81
 							{Limited Time Specials}
 							1
@@ -308,7 +308,7 @@
 						(0
 							(gLongSong number: (Random 392 395) play:)
 							(PrintD
-								{Sorry - dealers only!  }
+								{Sorry - dealers only!__}
 								81
 								{Continue}
 								1
@@ -359,7 +359,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - sold out.  }
+							{Sorry - sold out.__}
 							81
 							{Continue}
 							1
@@ -407,7 +407,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Not available as such.  }
+							{Sorry - Not available as such.__}
 							101
 							81
 							{Return to Top Menu}
@@ -443,7 +443,7 @@
 				(BlueWindow color: (proc0_18 global138 global137))
 				(localproc_0
 					{- Automated Catalog -}
-					{\n\n\nWelcome to our Automated Catalog!  Please select from the following departments: }
+					{\n\n\nWelcome to our Automated Catalog!__Please select from the following departments: }
 					102
 					(proc0_18 global138 global137)
 				)
@@ -454,7 +454,7 @@
 							81
 							{Electronic Gadgets}
 							1
-							{  }
+							{__}
 							81
 							{The Electronic Mommy}
 							7
@@ -466,7 +466,7 @@
 							81
 							{TechnoTots Toy Dept.}
 							11
-							{  }
+							{__}
 							81
 							{Return to Top Menu}
 							15
@@ -559,7 +559,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Discontinued.  }
+							{Sorry - Discontinued.__}
 							81
 							{Continue}
 							1
@@ -637,7 +637,7 @@
 					{- Electronic Gadgets -}
 					(Format
 						@temp0
-						{PocketPal Portable Terminal \n\n"Say, is that a complete workstation in your pocket, or are you just glad to see me?" Now you can carry the power of a dumb terminal around with you without even creasing your jumpsuit. Includes RIGA-compatible monitor (Really Incredible Graphics Adapter), chiclet-style keyboard and Dentyne-style mouse.  %u Buckazoids. }
+						{PocketPal Portable Terminal \n\n"Say, is that a complete workstation in your pocket, or are you just glad to see me?" Now you can carry the power of a dumb terminal around with you without even creasing your jumpsuit. Includes RIGA-compatible monitor (Really Incredible Graphics Adapter), chiclet-style keyboard and Dentyne-style mouse.__%u Buckazoids. }
 						(Max (+ gBuckazoidCount 1) 2001)
 					)
 					102
@@ -681,7 +681,7 @@
 				5
 				(localproc_0
 					{- Electronic Gadgets -}
-					{PocketPal Connector \n\nIf you are a proud owner of our ever-popular PocketPal Portable Terminal, you have no doubt noticed that, without the proper connector, it is virtually useless.   Fortunately, at this moment, our exclusive PocketPal Connector is on sale for just 1999 Buckazoids!  Get yours now, before the price goes up even further. }
+					{PocketPal Connector \n\nIf you are a proud owner of our ever-popular PocketPal Portable Terminal, you have no doubt noticed that, without the proper connector, it is virtually useless.___Fortunately, at this moment, our exclusive PocketPal Connector is on sale for just 1999 Buckazoids!__Get yours now, before the price goes up even further. }
 					102
 					(proc0_18 global138 global137)
 				)
@@ -826,7 +826,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Recalled by manufacturer.  }
+							{Sorry - Recalled by manufacturer.__}
 							81
 							{Continue}
 							1
@@ -877,7 +877,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Not available in the Spiral Arm.  }
+							{Sorry - Not available in the Spiral Arm.__}
 							101
 							81
 							{Continue}
@@ -1031,7 +1031,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Sold out.  }
+							{Sorry - Sold out.__}
 							81
 							{Continue}
 							1
@@ -1082,7 +1082,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Discontinued.  }
+							{Sorry - Discontinued.__}
 							81
 							{Continue}
 							1
@@ -1181,7 +1181,7 @@
 					(0
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Sold out.  }
+							{Sorry - Sold out.__}
 							81
 							{Continue}
 							1
@@ -1263,7 +1263,7 @@
 					(register addToFront: temp1)
 				)
 				(Display
-					{Select the plug you\n wish to purchase.}
+					{Select the plug you\n_wish to purchase.}
 					dsCOORD
 					97
 					163

@@ -554,7 +554,7 @@
 							610
 							25
 							#title
-							{C'mon.  Just One More Little Wish...}
+							{C'mon.__Just One More Little Wish...}
 						)
 					)
 				)
@@ -595,7 +595,7 @@
 							610
 							25
 							#title
-							{C'mon.  Just One More Little Wish...}
+							{C'mon.__Just One More Little Wish...}
 						)
 					)
 				)
@@ -708,7 +708,7 @@
 		y 105
 		noun '/door'
 		description {the door}
-		lookStr {The door is very old.  And ancient, very ancient.}
+		lookStr {The door is very old.__And ancient, very ancient.}
 		view 610
 		cel 1
 		priority 2

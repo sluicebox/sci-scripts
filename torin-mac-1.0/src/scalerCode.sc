@@ -153,10 +153,10 @@
 			)
 		)
 		(= backY
-			(TrackCursor 0 (Str with: {back Y, click when done.   }) backLine)
+			(TrackCursor 0 (Str with: {back Y, click when done.___}) backLine)
 		)
 		(= backSize
-			(SizeObject backY (Str with: {Size object, click when done.   }))
+			(SizeObject backY (Str with: {Size object, click when done.___}))
 		)
 		(= frontLine
 			(AddLine
@@ -173,10 +173,10 @@
 			)
 		)
 		(= frontY
-			(TrackCursor backY (Str with: {front Y, click when done.   }) frontLine)
+			(TrackCursor backY (Str with: {front Y, click when done.___}) frontLine)
 		)
 		(= frontSize
-			(SizeObject frontY (Str with: {Size object, click when done.   }))
+			(SizeObject frontY (Str with: {Size object, click when done.___}))
 		)
 		(scaleObj posn: oldObjX oldObjY)
 		(Printf {Scaler %d %d %d %d} frontSize backSize frontY backY)

@@ -401,7 +401,7 @@
 				else
 					(vohaulMouth setCycle: Fwd)
 					(vohaulEyes setCycle: RandCycle)
-					(localproc_0 0 {       Take a good look, Roger:} 851 self)
+					(localproc_0 0 {_______Take a good look, Roger:} 851 self)
 				)
 			)
 			(2
@@ -428,7 +428,7 @@
 			(4
 				(if (== gMessageMode 1)
 					(proc0_12 local0)
-					(localproc_0 0 {         ...for he is your SON!} 853 self)
+					(localproc_0 0 {_________...for he is your SON!} 853 self)
 				else
 					(= cycles 1)
 				)

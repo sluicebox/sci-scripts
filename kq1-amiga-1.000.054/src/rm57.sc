@@ -149,7 +149,7 @@
 		seeableDist 320
 		shiftClick 367
 		contClick 369
-		lookStr {Clouds rim the land here.  Wispy towards the edges, they appear to grow thicker in the distance.}
+		lookStr {Clouds rim the land here.__Wispy towards the edges, they appear to grow thicker in the distance.}
 	)
 )
 

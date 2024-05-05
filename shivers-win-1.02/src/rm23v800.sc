@@ -106,7 +106,7 @@
 					(= local0
 						(Str
 							format:
-								{ No tribute pleases an angry god better than the blood sacrifice. Fortunately        for man, there are benevolent as well as vengeful gods. }
+								{ No tribute pleases an angry god better than the blood sacrifice. Fortunately________for man, there are benevolent as well as vengeful gods. }
 						)
 					)
 					(gCurRoom drawText: local0 0 9)

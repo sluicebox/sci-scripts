@@ -400,7 +400,7 @@
 	(properties
 		x 54
 		y 183
-		description {next page button\8e\9f\82\cc\83y\81[\83W\97p\83\{\83^\83\93}
+		description {next page button\8e\9f\82\cc\83y\81[\83W\97p\83{\83^\83\93}
 		sightAngle 180
 		lookStr {Press this button to turn to the next page.}
 	)

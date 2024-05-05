@@ -337,7 +337,7 @@
 					setCel: 0
 					setCycle: End self
 					lookStr:
-						{Whoo!  You haven't seen a figure like that since you visited your accountant!}
+						{Whoo!__You haven't seen a figure like that since you visited your accountant!}
 				)
 			)
 			(6
@@ -680,7 +680,7 @@
 		y 114
 		noun '/vase,bouquet,pan,plant'
 		description {the vase}
-		lookStr {A very ornate vase with beautiful flowers.  Certainly an un-Raseirish sight.}
+		lookStr {A very ornate vase with beautiful flowers.__Certainly an un-Raseirish sight.}
 		view 430
 		loop 1
 	)

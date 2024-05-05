@@ -29,9 +29,9 @@
 		(if (<= 65 temp1 90)
 			(StrAt @temp5 0 32)
 			(if (== temp2 32)
-				(Format @temp405 {   })
+				(Format @temp405 {___})
 			else
-				(Format @temp405 {  })
+				(Format @temp405 {__})
 			)
 			(StrCat @temp405 @temp5)
 			(= temp3 (+ 0 (/ (- temp1 65) 13)))

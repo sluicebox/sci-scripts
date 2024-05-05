@@ -10,7 +10,7 @@
 
 (instance Warren____ of Person
 	(properties
-		name {Warren    }
+		name {Warren____}
 		view 4
 		song 26
 		crazy8sSkill 2

@@ -125,7 +125,7 @@
 		nsTop 30
 		nsLeft 25
 		key 1
-		text {Janitor            |||}
+		text {Janitor____________|||}
 		shadowColor 107
 		indexNum 43
 		basePrice 7
@@ -140,7 +140,7 @@
 		nsTop 38
 		nsLeft 25
 		key 2
-		text {Assembly Worker    ||||}
+		text {Assembly Worker____||||}
 		shadowColor 107
 		indexNum 50
 		basePrice 8
@@ -156,7 +156,7 @@
 		nsTop 46
 		nsLeft 25
 		key 3
-		text {Secretary          ||}
+		text {Secretary__________||}
 		shadowColor 107
 		indexNum 51
 		basePrice 9
@@ -173,7 +173,7 @@
 		nsTop 54
 		nsLeft 25
 		key 4
-		text {Machinist's Helper   |}
+		text {Machinist's Helper___|}
 		shadowColor 107
 		indexNum 52
 		basePrice 10
@@ -206,7 +206,7 @@
 		nsTop 70
 		nsLeft 25
 		key 6
-		text {Machinist           }
+		text {Machinist___________}
 		shadowColor 107
 		indexNum 54
 		basePrice 19
@@ -240,7 +240,7 @@
 		nsTop 86
 		nsLeft 25
 		key 8
-		text {Engineer            }
+		text {Engineer____________}
 		shadowColor 107
 		indexNum 55
 		basePrice 23
@@ -258,7 +258,7 @@
 		nsTop 94
 		nsLeft 25
 		key 10
-		text {General Manager    ||}
+		text {General Manager____||}
 		shadowColor 107
 		indexNum 57
 		basePrice 25

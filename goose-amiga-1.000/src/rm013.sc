@@ -528,7 +528,7 @@
 			(5
 				(= local3
 					(Display
-						{     its fleece as white as snow.}
+						{_____its fleece as white as snow.}
 						dsWIDTH
 						250
 						dsCOORD
@@ -572,7 +572,7 @@
 			(10
 				(= local5
 					(Display
-						{     the lamb was sure to go.}
+						{_____the lamb was sure to go.}
 						dsWIDTH
 						250
 						dsCOORD
@@ -616,7 +616,7 @@
 			(14)
 			(15
 				(Display
-					{     Which was against the rule.}
+					{_____Which was against the rule.}
 					dsWIDTH
 					250
 					dsCOORD
@@ -655,7 +655,7 @@
 			(19)
 			(20
 				(Display
-					{     To see a lamb at school.}
+					{_____To see a lamb at school.}
 					dsWIDTH
 					250
 					dsCOORD

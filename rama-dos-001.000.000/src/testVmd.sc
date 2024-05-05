@@ -29,7 +29,7 @@
 				(= temp0 (temp2 open: 1))
 			)
 			((not (= temp0 (vmd_dir open: 1)))
-				(= temp1 (Str newWith: 128 {..\src\5c}))
+				(= temp1 (Str newWith: 128 {..\\src\5c}))
 				(temp1 cat: (vmd_dir name:))
 				((= temp2 (File new:)) name: (KArray 8 (temp1 data:))) ; ArrayDup
 				(= temp0 (temp2 open: 1))
@@ -72,7 +72,7 @@
 
 (instance c__results_txt of File
 	(properties
-		name {c:\results.txt}
+		name {c:\\results.txt}
 	)
 )
 
@@ -185,7 +185,7 @@
 				(= temp4
 					(Str
 						format:
-							{VMD Name %d,\t VIDEO %s,\t AUDIO %s\r\n}
+							{VMD Name %d,\t VIDEO %s,\t AUDIO %s\0d\n}
 							(temp5 asInteger:)
 							(temp3 data:)
 							(temp2 data:)

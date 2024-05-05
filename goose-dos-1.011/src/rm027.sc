@@ -413,7 +413,7 @@
 					0
 				)
 				(Display
-					{     little dog gone?}
+					{_____little dog gone?}
 					dsWIDTH
 					250
 					dsCOORD
@@ -461,7 +461,7 @@
 			)
 			(4
 				(Display
-					{     And his tail cut long,}
+					{_____And his tail cut long,}
 					dsWIDTH
 					250
 					dsCOORD

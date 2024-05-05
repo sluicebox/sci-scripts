@@ -1029,7 +1029,7 @@
 			(6
 				(localproc_1
 					4
-					{He's no fun!  He fell right over!}
+					{He's no fun!__He fell right over!}
 				)
 				(= seconds 4)
 			)

@@ -49,7 +49,7 @@
 			addButton: -1000 {Altotting} 160 105
 			addButton: 64436 {Residence Theatre} 160 125
 			addButton: -5 {Movie Player} 160 145
-			addButton: -1 {Begin\n         Chapter        } 160 2
+			addButton: -1 {Begin\n_________Chapter________} 160 2
 			addButton: -999 {Restore Game} 160 175
 			addButton: 64538 {Exit} 0 175
 			init:

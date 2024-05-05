@@ -229,7 +229,7 @@
 						((MacGauge new:)
 							description:
 								{Use the mouse\nto set the\nwait speed.}
-							text: {  Wait Speed  }
+							text: {__Wait Speed__}
 							topX: 10
 							bottomY: 6
 							range: 8

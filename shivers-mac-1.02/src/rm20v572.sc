@@ -81,7 +81,7 @@
 					(= local0
 						(Str
 							format:
-								{ The heretics that lay beyond hath driven out all other gods save Aten... so begins Egypt's decline. If thou art wise thou shalt know that the names of this     pharaoh and his queen be placed forever in shame on the columns of Ra. }
+								{ The heretics that lay beyond hath driven out all other gods save Aten... so begins Egypt's decline. If thou art wise thou shalt know that the names of this_____pharaoh and his queen be placed forever in shame on the columns of Ra. }
 						)
 					)
 					(gCurRoom drawText: local0 0 0)

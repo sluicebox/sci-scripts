@@ -348,7 +348,7 @@
 		y 156
 		noun '/door,sign,barricade,board,alley[<alley,bearing,street]'
 		description {the barricade}
-		lookStr {The alley is securely blocked by a barricade of boards.  You can barely discern a sign reading:\n"All Fed-Ex packages must be out by 2:30!"}
+		lookStr {The alley is securely blocked by a barricade of boards.__You can barely discern a sign reading:\n"All Fed-Ex packages must be out by 2:30!"}
 		view 384
 		loop 3
 		priority 11
@@ -372,7 +372,7 @@
 		nsBottom 156
 		nsRight 13
 		description {the alley leading North}
-		lookStr {You see a dark foreboding passage leading North.  The street sign reads:\n"Any order from a guard is a rule!"}
+		lookStr {You see a dark foreboding passage leading North.__The street sign reads:\n"Any order from a guard is a rule!"}
 	)
 )
 
@@ -386,7 +386,7 @@
 		nsBottom 91
 		nsRight 185
 		description {the alley leading East}
-		lookStr {You see a dark foreboding passage leading East.  The street sign reads:\n"Everything not mandatory is forbidden!"}
+		lookStr {You see a dark foreboding passage leading East.__The street sign reads:\n"Everything not mandatory is forbidden!"}
 	)
 )
 

@@ -84,7 +84,7 @@
 
 (instance rm360 of Rm
 	(properties
-		lookStr {You are in a room formed out of a giant jigsaw puzzle.  It looks incomplete.}
+		lookStr {You are in a room formed out of a giant jigsaw puzzle.__It looks incomplete.}
 		picture 361
 		style 7
 		south 320

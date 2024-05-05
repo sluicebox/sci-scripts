@@ -655,7 +655,7 @@
 					(= temp0 (event x:))
 					(= temp1 (event y:))
 					(proc64986_0
-						{global: %d/%d\n local: %d/%d}
+						{global: %d/%d\n_local: %d/%d}
 						temp0
 						temp1
 						(event x:)

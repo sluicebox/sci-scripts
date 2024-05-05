@@ -14,8 +14,8 @@
 	[local0 200]
 	[local200 100]
 	[local300 100]
-	local400 = { verbWalk   }
-	[local401 7] = [{ verbLook   } { verbDo     } { verbUse    } { verbTalk   } { verbHelp   } { gameVerbs  } {}]
+	local400 = { verbWalk___}
+	[local401 7] = [{ verbLook___} { verbDo_____} { verbUse____} { verbTalk___} { verbHelp___} { gameVerbs__} {}]
 	local408 = 1
 	local409 = 1
 	local410

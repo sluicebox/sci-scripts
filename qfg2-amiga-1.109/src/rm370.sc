@@ -492,7 +492,7 @@
 		x 184
 		y 79
 		description {Ferrari}
-		lookStr {This is Signor Ferrari.  He is swatting flies with an animal-tail whip.}
+		lookStr {This is Signor Ferrari.__He is swatting flies with an animal-tail whip.}
 		view 375
 		talkSpeed 1
 		myName '//ferrari,man,senor'
@@ -520,7 +520,7 @@
 		y 118
 		noun '/ferrari,(man<fat)'
 		description {Ferrari}
-		lookStr {This is Signor Ferrari.  He is swatting flies with an animal-tail whip.}
+		lookStr {This is Signor Ferrari.__He is swatting flies with an animal-tail whip.}
 		view 375
 		loop 11
 	)
@@ -532,7 +532,7 @@
 		y 111
 		noun '/ferrari,(man<fat)'
 		description {Ferrari}
-		lookStr {This is Signor Ferrari.  He is swatting flies with an animal-tail whip.}
+		lookStr {This is Signor Ferrari.__He is swatting flies with an animal-tail whip.}
 		view 375
 		loop 4
 		priority 9
@@ -550,7 +550,7 @@
 		y 98
 		noun '/ferrari,(man<fat)'
 		description {Ferrari}
-		lookStr {This is Signor Ferrari.  He is swatting flies with an animal-tail whip.}
+		lookStr {This is Signor Ferrari.__He is swatting flies with an animal-tail whip.}
 		view 375
 		loop 3
 	)

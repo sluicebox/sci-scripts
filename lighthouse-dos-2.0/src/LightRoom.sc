@@ -56,7 +56,7 @@
 			((gGame compassFace:) setLoop: param2 setCel: 0)
 		)
 		(PrintDebug {})
-		(PrintDebug {SCENE:      %d} scene)
+		(PrintDebug {SCENE:______%d} scene)
 		(if global105
 			(global105 release:)
 		)
@@ -148,7 +148,7 @@
 		(= nsTop 90)
 		(= nsRight 60)
 		(= nsBottom 210)
-		(PrintDebug {   LEFT     %d} (self curPic:))
+		(PrintDebug {___LEFT_____%d} (self curPic:))
 	)
 )
 
@@ -175,7 +175,7 @@
 		(= nsTop 90)
 		(= nsRight 500)
 		(= nsBottom 210)
-		(PrintDebug {   RIGHT:   %d} (self curPic:))
+		(PrintDebug {___RIGHT:___%d} (self curPic:))
 	)
 )
 
@@ -202,7 +202,7 @@
 		(= nsTop 100)
 		(= nsRight 330)
 		(= nsBottom 175)
-		(PrintDebug {   FORWARD: %d} (self curPic:))
+		(PrintDebug {___FORWARD: %d} (self curPic:))
 	)
 )
 
@@ -229,7 +229,7 @@
 		(= nsTop 250)
 		(= nsRight 330)
 		(= nsBottom 300)
-		(PrintDebug {   BACK:    %d} (self curPic:))
+		(PrintDebug {___BACK:____%d} (self curPic:))
 	)
 )
 
@@ -256,7 +256,7 @@
 		(= nsTop 175)
 		(= nsRight 330)
 		(= nsBottom 250)
-		(PrintDebug {   DOWN:    %d} (self curPic:))
+		(PrintDebug {___DOWN:____%d} (self curPic:))
 	)
 )
 
@@ -283,7 +283,7 @@
 		(= nsTop 0)
 		(= nsRight 330)
 		(= nsBottom 100)
-		(PrintDebug {   UP:      %d} (self curPic:))
+		(PrintDebug {___UP:______%d} (self curPic:))
 	)
 )
 
@@ -310,7 +310,7 @@
 		(= nsTop 250)
 		(= nsRight 330)
 		(= nsBottom 300)
-		(PrintDebug { BACK UP:   %d} (self curPic:))
+		(PrintDebug { BACK UP:___%d} (self curPic:))
 	)
 )
 

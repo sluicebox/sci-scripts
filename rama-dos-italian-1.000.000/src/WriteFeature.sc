@@ -59,7 +59,7 @@
 )
 
 (procedure (localproc_2 &tmp temp0 temp1 temp2 temp3)
-	(= local5 (Str format: {,\r\n\t\t\tsetPolygon:\r\n}))
+	(= local5 (Str format: {,\0d\n\t\t\tsetPolygon:\0d\n}))
 	(repeat
 		(FrameOut)
 		(while (!= ((= temp0 (Event new:)) type:) evMOUSEBUTTON)
@@ -99,7 +99,7 @@
 				(= temp3
 					(Str
 						format:
-							{\t\t\t\t((Polygon new:)\r\n\t\t\t\t\ttype:PTotalAccess,\r\n\t\t\t\t\tinit:\r\n\t\t\t\t\t%s,\r\n\t\t\t\t\tyourself?\r\n\t\t\t\t)\r\n}
+							{\t\t\t\t((Polygon new:)\0d\n\t\t\t\t\ttype:PTotalAccess,\0d\n\t\t\t\t\tinit:\0d\n\t\t\t\t\t%s,\0d\n\t\t\t\t\tyourself?\0d\n\t\t\t\t)\0d\n}
 							temp1
 					)
 				)
@@ -143,7 +143,7 @@
 				)
 			)
 			(localproc_0 temp1)
-			(= local5 (Str format: {\r\n}))
+			(= local5 (Str format: {\0d\n}))
 		else
 			(localproc_2)
 		)
@@ -191,7 +191,7 @@
 			(if local2
 				(temp1
 					format:
-						{ \t\tnsLeft\t\t\t%d\r\n\t\tnsTop\t\t\t\t%d\r\n\t\tnsRight\t\t\t%d\r\n\t\tnsBottom\t\t\t%d\r\n}
+						{ \t\tnsLeft\t\t\t%d\0d\n\t\tnsTop\t\t\t\t%d\0d\n\t\tnsRight\t\t\t%d\0d\n\t\tnsBottom\t\t\t%d\0d\n}
 						(param1 nsLeft:)
 						(param1 nsTop:)
 						(param1 nsRight:)
@@ -222,17 +222,17 @@
 					(Str with: {})
 				)
 				(90
-					(Str with: {_up})
+					(Str with: {\_up})
 				)
 				(-90
-					(Str with: {_down})
+					(Str with: {\_down})
 				)
 			)
 		)
 		(= temp13 (param1 getSuper:))
 		(temp0
 			format:
-				{ \r\n(instance %s_%d%s of %s\r\n\t(properties\r\n\t\tx\t\t\t\t\t%d\r\n\t\ty\t\t\t\t\t%d\r\n\t\tz\t\t\t\t\t%d\r\n%s \t\tnoun\t\t\t\t%s\r\n\t)\r\n\r\n\t(method (init)\r\n\t\t(super init:&rest)\r\n\t\t(self\r\n\t\t\tsetHotspot:COMPUTE_V%s \t\t)\r\n\t)\r\n)\r\n}
+				{ \0d\n(instance %s\_%d%s of %s\0d\n\t(properties\0d\n\t\tx\t\t\t\t\t%d\0d\n\t\ty\t\t\t\t\t%d\0d\n\t\tz\t\t\t\t\t%d\0d\n%s \t\tnoun\t\t\t\t%s\0d\n\t)\0d\n\0d\n\t(method (init)\0d\n\t\t(super init:&rest)\0d\n\t\t(self\0d\n\t\t\tsetHotspot:COMPUTE\_V%s \t\t)\0d\n\t)\0d\n)\0d\n}
 				local0
 				(gCurRoom heading:)
 				temp2

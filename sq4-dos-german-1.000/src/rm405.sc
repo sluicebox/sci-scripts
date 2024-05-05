@@ -737,7 +737,7 @@
 					81
 					{D>}
 					3
-					{\{Remove your hindquarters from here!!!}
+					{{Remove your hindquarters from here!!!}
 				)
 				(EgoDead 8 18)
 			)

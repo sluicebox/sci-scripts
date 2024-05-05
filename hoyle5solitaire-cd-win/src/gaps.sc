@@ -1242,7 +1242,7 @@
 												addBitmap: 917 4 0
 												font: gUserFont
 												addTextF:
-													{\n  You can only play a 2 here now.}
+													{\n__You can only play a 2 here now.}
 												init:
 											)
 											(return 1)
@@ -1290,7 +1290,7 @@
 														addBitmap: 917 4 0
 														font: gUserFont
 														addTextF:
-															{\n  You can only play a 2 or the %d of %s\n  here now.}
+															{\n__You can only play a 2 or the %d of %s\n__here now.}
 															(-
 																((param2
 																		at:
@@ -1317,7 +1317,7 @@
 													addBitmap: 917 4 0
 													font: gUserFont
 													addTextF:
-														{\n  You can only play a 2 or the %s of\n  %s here now.}
+														{\n__You can only play a 2 or the %s of\n__%s here now.}
 														temp11
 														temp10
 													init:
@@ -1347,7 +1347,7 @@
 												addBitmap: 917 4 0
 												font: gUserFont
 												addTextF:
-													{\n  You can't play a card here now.}
+													{\n__You can't play a card here now.}
 												init:
 											)
 											(return 1)
@@ -1398,7 +1398,7 @@
 														addBitmap: 917 4 0
 														font: gUserFont
 														addTextF:
-															{\n  You can only play the %d of %s\n  here now.}
+															{\n__You can only play the %d of %s\n__here now.}
 															(+
 																((param2
 																		at:
@@ -1425,7 +1425,7 @@
 													addBitmap: 917 4 0
 													font: gUserFont
 													addTextF:
-														{\n  You can only play the %s of %s\n  here now.}
+														{\n__You can only play the %s of %s\n__here now.}
 														temp11
 														temp10
 													init:
@@ -1535,7 +1535,7 @@
 												addBitmap: 917 4 0
 												font: gUserFont
 												addTextF:
-													{\n  You can't play a card here now.}
+													{\n__You can't play a card here now.}
 												init:
 											)
 											(return 1)
@@ -1559,7 +1559,7 @@
 															addBitmap: 917 4 0
 															font: gUserFont
 															addTextF:
-																{\n  You can only play the %d of %s\n  here now.}
+																{\n__You can only play the %d of %s\n__here now.}
 																(+
 																	((param2
 																			at:
@@ -1586,7 +1586,7 @@
 														addBitmap: 917 4 0
 														font: gUserFont
 														addTextF:
-															{\n  You can only play the %s of %s\n  here now.}
+															{\n__You can only play the %s of %s\n__here now.}
 															temp11
 															temp10
 														init:
@@ -1614,7 +1614,7 @@
 															addBitmap: 917 4 0
 															font: gUserFont
 															addTextF:
-																{\n  You can only play the %d of %s\n  here now.}
+																{\n__You can only play the %d of %s\n__here now.}
 																(-
 																	((param2
 																			at:
@@ -1641,7 +1641,7 @@
 														addBitmap: 917 4 0
 														font: gUserFont
 														addTextF:
-															{\n  You can only play the %s of %s\n  here now.}
+															{\n__You can only play the %s of %s\n__here now.}
 															temp13
 															temp12
 														init:
@@ -1736,7 +1736,7 @@
 																	0
 																font: gUserFont
 																addTextF:
-																	{\n  You can only play the %d of %s\n  here now.}
+																	{\n__You can only play the %d of %s\n__here now.}
 																	(+
 																		((param2
 																				at:
@@ -1776,7 +1776,7 @@
 																	0
 																font: gUserFont
 																addTextF:
-																	{\n  You can only play the %d of %s\n  or the %d of %s here now.}
+																	{\n__You can only play the %d of %s\n__or the %d of %s here now.}
 																	(+
 																		((param2
 																				at:
@@ -1817,7 +1817,7 @@
 																	0
 																font: gUserFont
 																addTextF:
-																	{\n  You can only play the %d of %s\n  here now.}
+																	{\n__You can only play the %d of %s\n__here now.}
 																	(+
 																		((param2
 																				at:
@@ -1935,7 +1935,7 @@
 																	font:
 																		gUserFont
 																	addTextF:
-																		{\n  You can only play the %d of %s\n  here now.}
+																		{\n__You can only play the %d of %s\n__here now.}
 																		(+
 																			((param2
 																					at:
@@ -1963,7 +1963,7 @@
 																	font:
 																		gUserFont
 																	addTextF:
-																		{\n  You can only play the %s of %s\n  here now.}
+																		{\n__You can only play the %s of %s\n__here now.}
 																		temp11
 																		temp10
 																	init:
@@ -2007,7 +2007,7 @@
 																	font:
 																		gUserFont
 																	addTextF:
-																		{\n  You can only play the %s of %s\n  or the %d of %s here now.}
+																		{\n__You can only play the %s of %s\n__or the %d of %s here now.}
 																		temp11
 																		temp10
 																		(-
@@ -2037,7 +2037,7 @@
 																	font:
 																		gUserFont
 																	addTextF:
-																		{\n  You can only play the %s of %s\n  here now.}
+																		{\n__You can only play the %s of %s\n__here now.}
 																		temp11
 																		temp10
 																	init:
@@ -2056,7 +2056,7 @@
 																	0
 																font: gUserFont
 																addTextF:
-																	{\n  You can only play the %d of %s\n  here now.}
+																	{\n__You can only play the %d of %s\n__here now.}
 																	(-
 																		((param2
 																				at:
@@ -2110,7 +2110,7 @@
 														addBitmap: 917 4 0
 														font: gUserFont
 														addTextF:
-															{\n  You can only play the %d of %s\n  or the %s of %s here now.}
+															{\n__You can only play the %d of %s\n__or the %s of %s here now.}
 															(+
 																((param2
 																		at:
@@ -2188,7 +2188,7 @@
 																	0
 																font: gUserFont
 																addTextF:
-																	{\n  You can only play the %s of %s\n  here now.}
+																	{\n__You can only play the %s of %s\n__here now.}
 																	temp13
 																	temp12
 																init:
@@ -2217,7 +2217,7 @@
 																	0
 																font: gUserFont
 																addTextF:
-																	{\n  You can only play the %s of %s\n  or the %s of %s here now.}
+																	{\n__You can only play the %s of %s\n__or the %s of %s here now.}
 																	temp11
 																	temp10
 																	temp13
@@ -2236,7 +2236,7 @@
 																	0
 																font: gUserFont
 																addTextF:
-																	{\n  You can only play the %s of %s\n  here now.}
+																	{\n__You can only play the %s of %s\n__here now.}
 																	temp13
 																	temp12
 																init:
@@ -2260,7 +2260,7 @@
 									addBitmap: 917 4 0
 									font: gUserFont
 									addTextF:
-										{\n  You can only play a 2 here now.}
+										{\n__You can only play a 2 here now.}
 									init:
 								)
 							else
@@ -2298,7 +2298,7 @@
 											addBitmap: 917 4 0
 											font: gUserFont
 											addTextF:
-												{\n  You can't play a card here now.}
+												{\n__You can't play a card here now.}
 											init:
 										)
 									)
@@ -2315,7 +2315,7 @@
 												addBitmap: 917 4 0
 												font: gUserFont
 												addTextF:
-													{\n  You can only play the %s of %s\n   here now.}
+													{\n__You can only play the %s of %s\n___here now.}
 													temp11
 													temp10
 												init:
@@ -2328,7 +2328,7 @@
 												addBitmap: 917 4 0
 												font: gUserFont
 												addTextF:
-													{\n  You can't play a card here now.}
+													{\n__You can't play a card here now.}
 												init:
 											)
 										)
@@ -2341,7 +2341,7 @@
 											addBitmap: 917 4 0
 											font: gUserFont
 											addTextF:
-												{\n  You can only play the %d of %s\n   here now.}
+												{\n__You can only play the %d of %s\n___here now.}
 												(+
 													((param2 at: (- temp1 1))
 														rank:

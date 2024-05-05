@@ -538,7 +538,7 @@
 	)
 	(Format @temp40 0 1 gCurRoomNum) ; "%d.nor"
 	(Format @temp0 0 2 (param1 name:) @temp50 gMouseX gMouseY) ; ";%s (%s) [%d,%d]:"
-	(File name: @temp40 writeString: @temp0 {\r\n} close:)
+	(File name: @temp40 writeString: @temp0 {\0d\n} close:)
 )
 
 (class TwistySound of Sound

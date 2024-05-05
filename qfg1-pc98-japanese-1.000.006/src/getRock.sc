@@ -20,7 +20,7 @@
 (procedure (localproc_0 param1 &tmp [temp0 4] [temp4 400]) ; UNUSED
 	(clr)
 	(Format @temp4 103 1 &rest) ; "%s"
-	(TextSize @[temp0 0] @temp4 gUserFont 0 {\r\n----------\r\n})
+	(TextSize @[temp0 0] @temp4 gUserFont 0 {\0d\n----------\0d\n})
 	(Print
 		&rest
 		#at

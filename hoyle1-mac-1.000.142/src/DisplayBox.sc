@@ -153,7 +153,7 @@
 		x -1
 		y 85
 		sFont 4
-		title {                        }
+		title {________________________}
 	)
 
 	(method (display))

@@ -151,7 +151,7 @@
 		seeableDist 320
 		shiftClick 367
 		contClick 369
-		lookStr {The beanstalk must be ten feet around!  It's incredibly tall...so tall that it vanishes in the clouds far, far above you.  There are plenty of footholds among the vines and offshoots of the beanstalk's stem.}
+		lookStr {The beanstalk must be ten feet around!__It's incredibly tall...so tall that it vanishes in the clouds far, far above you.__There are plenty of footholds among the vines and offshoots of the beanstalk's stem.}
 	)
 )
 
@@ -170,7 +170,7 @@
 		seeableDist 320
 		shiftClick 367
 		contClick 369
-		lookStr {The beanstalk must be ten feet around!  It's incredibly tall...so tall that it vanishes in the clouds far, far above you.  There are plenty of footholds among the vines and offshoots of the beanstalk's stem.}
+		lookStr {The beanstalk must be ten feet around!__It's incredibly tall...so tall that it vanishes in the clouds far, far above you.__There are plenty of footholds among the vines and offshoots of the beanstalk's stem.}
 	)
 )
 
@@ -188,7 +188,7 @@
 		seeableDist 320
 		shiftClick 367
 		contClick 369
-		lookStr {In the distance, and far above you, you can see heavy, dense clouds in streaks across the sky.  You think they're cumulus clouds, but it's been a long time since you went to Daventry High School.}
+		lookStr {In the distance, and far above you, you can see heavy, dense clouds in streaks across the sky.__You think they're cumulus clouds, but it's been a long time since you went to Daventry High School.}
 	)
 )
 
@@ -206,7 +206,7 @@
 		seeableDist 320
 		shiftClick 367
 		contClick 369
-		lookStr {In the distance, and far above you, you can see heavy, dense clouds in streaks across the sky.  You think they're cumulus clouds, but it's been a long time since you went to Daventry High School.}
+		lookStr {In the distance, and far above you, you can see heavy, dense clouds in streaks across the sky.__You think they're cumulus clouds, but it's been a long time since you went to Daventry High School.}
 	)
 )
 
@@ -225,7 +225,7 @@
 		seeableDist 320
 		shiftClick 367
 		contClick 369
-		lookStr {In the distance, and far above you, you can see heavy, dense clouds in streaks across the sky.  You think they're cumulus clouds, but it's been a long time since you went to Daventry High School.}
+		lookStr {In the distance, and far above you, you can see heavy, dense clouds in streaks across the sky.__You think they're cumulus clouds, but it's been a long time since you went to Daventry High School.}
 	)
 )
 
@@ -243,7 +243,7 @@
 		getableDist 320
 		seeableDist 320
 		shiftClick 367
-		lookStr {In the distance, and far above you, you can see heavy, dense clouds in streaks across the sky.  You think they're cumulus clouds, but it's been a long time since you went to Daventry High School.}
+		lookStr {In the distance, and far above you, you can see heavy, dense clouds in streaks across the sky.__You think they're cumulus clouds, but it's been a long time since you went to Daventry High School.}
 	)
 )
 
@@ -262,7 +262,7 @@
 		seeableDist 320
 		shiftClick 367
 		contClick 369
-		lookStr {In the distance, and far above you, you can see heavy, dense clouds in streaks across the sky.  You think they're cumulus clouds, but it's been a long time since you went to Daventry High School.}
+		lookStr {In the distance, and far above you, you can see heavy, dense clouds in streaks across the sky.__You think they're cumulus clouds, but it's been a long time since you went to Daventry High School.}
 	)
 )
 

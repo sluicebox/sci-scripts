@@ -367,7 +367,7 @@
 			(return)
 		)
 	)
-	(= temp2 (Str format: {%sdrivers\%s} gCurSaveDir (temp0 data:)))
+	(= temp2 (Str format: {%sdrivers\\%s} gCurSaveDir (temp0 data:)))
 	(if (FileIO fiEXISTS (KArray 9 temp2)) ; ArrayGetData
 		(= temp3 (Str format: {%s%s} gCurSaveDir {wallpapr.bmp}))
 		(FileIO 12 (temp2 data:) (temp3 data:)) ; Copy

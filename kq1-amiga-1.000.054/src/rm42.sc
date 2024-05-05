@@ -386,7 +386,7 @@
 		seeableDist 320
 		shiftClick 367
 		contClick 369
-		lookStr {These rocky banks are damp and slippery.  Be careful not to come too close!}
+		lookStr {These rocky banks are damp and slippery.__Be careful not to come too close!}
 	)
 )
 

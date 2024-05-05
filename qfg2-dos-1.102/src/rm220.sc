@@ -566,7 +566,7 @@
 		y 172
 		noun '/path,path'
 		description {a pathway}
-		lookStr {The pathway appears suspended in this timeless, dimensionless void.  It leads off into infinity.}
+		lookStr {The pathway appears suspended in this timeless, dimensionless void.__It leads off into infinity.}
 		view 220
 		loop 7
 		priority 6
@@ -580,7 +580,7 @@
 		y 147
 		noun '/path,path'
 		description {a pathway}
-		lookStr {The pathway appears suspended in this timeless, dimensionless void.  It leads off into infinity.}
+		lookStr {The pathway appears suspended in this timeless, dimensionless void.__It leads off into infinity.}
 		view 220
 		loop 6
 		priority 6
@@ -594,7 +594,7 @@
 		y 122
 		noun '/path,path'
 		description {a pathway}
-		lookStr {The pathway appears suspended in this timeless, dimensionless void.  It leads off into infinity.}
+		lookStr {The pathway appears suspended in this timeless, dimensionless void.__It leads off into infinity.}
 		view 220
 		loop 8
 		priority 6

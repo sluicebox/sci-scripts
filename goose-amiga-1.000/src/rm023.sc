@@ -531,7 +531,7 @@
 					dsCOLOR
 					0
 				)
-				(Display {     come home,} dsWIDTH 300 dsCOORD 5 41 dsALIGN alLEFT dsFONT 0 dsCOLOR 0)
+				(Display {_____come home,} dsWIDTH 300 dsCOORD 5 41 dsALIGN alLEFT dsFONT 0 dsCOLOR 0)
 			)
 			(4
 				(Display

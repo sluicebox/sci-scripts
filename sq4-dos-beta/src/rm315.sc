@@ -318,7 +318,7 @@
 		nsBottom 200
 		nsRight 320
 		description {buttes}
-		lookStr {The hot Estros sun and the seductive curves of the butte are strangely exciting.  You've descended to the "plateau phase" of your journey.  The plateau continues to the west, while the rocky layers climax in a makeshift staircase leading up to the next plateau.  In the distance, you can see the beautiful, tranquil Sea of Estros.}
+		lookStr {The hot Estros sun and the seductive curves of the butte are strangely exciting.__You've descended to the "plateau phase" of your journey.__The plateau continues to the west, while the rocky layers climax in a makeshift staircase leading up to the next plateau.__In the distance, you can see the beautiful, tranquil Sea of Estros.}
 	)
 )
 

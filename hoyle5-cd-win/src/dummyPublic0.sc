@@ -77,7 +77,7 @@
 (procedure (proc1303_1)
 	(switch
 		(Print
-			addText: {                    Backgammon}
+			addText: {____________________Backgammon}
 			addButton: { Play Game } 1
 			addButton: { Setup Board } 2
 			init:

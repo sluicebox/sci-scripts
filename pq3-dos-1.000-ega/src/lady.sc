@@ -434,7 +434,7 @@
 		x 209
 		y 161
 		description {car}
-		lookStr {There's one woman in the car.  She looks upset, but not dangerous.}
+		lookStr {There's one woman in the car.__She looks upset, but not dangerous.}
 		view 318
 		signal 16384
 	)

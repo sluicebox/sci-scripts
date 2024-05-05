@@ -1305,14 +1305,14 @@
 
 (instance bow_Icon of Cursor
 	(properties
-		sel_20 {bow_Icon}
+		sel_20 {bow\_Icon}
 		sel_2 4
 	)
 )
 
 (instance use_Icon of Cursor
 	(properties
-		sel_20 {use_Icon}
+		sel_20 {use\_Icon}
 		sel_2 781
 		sel_3 6
 	)

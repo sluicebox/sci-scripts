@@ -148,19 +148,19 @@
 				(cond
 					((IsFlag 90) ; fLevitating
 						(= theMsg
-							{Do you not know that practicing Magic is best done outside of the city?  Do not let me see you using magic around here again unless it is needed!}
+							{Do you not know that practicing Magic is best done outside of the city?__Do not let me see you using magic around here again unless it is needed!}
 						)
 						(= theScript (ScriptID 62 1)) ; fallDown
 					)
 					((IsFlag 88) ; fClimbingRope
 						(= theMsg
-							{The punishment for thievery in this city is to lose a hand.  Do not let me catch you trying to steal again!}
+							{The punishment for thievery in this city is to lose a hand.__Do not let me catch you trying to steal again!}
 						)
 						(= theScript (ScriptID 61 3)) ; ropeFall
 					)
 					(else
 						(= theMsg
-							{Do you not know that practicing Magic is best done outside of the city?  Do not let me see you using magic around here again unless it is needed!}
+							{Do you not know that practicing Magic is best done outside of the city?__Do not let me see you using magic around here again unless it is needed!}
 						)
 						(= theScript 0)
 					)

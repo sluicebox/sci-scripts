@@ -215,7 +215,7 @@
 						(if (> global105 16)
 							(= local1
 								(Display
-									{" What's dis? 256 colors all for one\n little bitmapped WIMP?! Whatta\nwaste of VGA. Har, har!"}
+									{" What's dis? 256 colors all for one\n_little bitmapped WIMP?! Whatta\nwaste of VGA. Har, har!"}
 									dsWIDTH
 									160
 									dsALIGN
@@ -232,7 +232,7 @@
 							)
 							(= local2
 								(Display
-									{" What's dis? 256 colors all for one\n little bitmapped WIMP?! Whatta\nwaste of VGA. Har, har!"}
+									{" What's dis? 256 colors all for one\n_little bitmapped WIMP?! Whatta\nwaste of VGA. Har, har!"}
 									dsWIDTH
 									160
 									dsALIGN
@@ -250,7 +250,7 @@
 						else
 							(= local1
 								(Display
-									{" What's dis? 16 colors all for one\n little bitmapped WIMP?! Whatta\nwaste of EGA. Har, har!"}
+									{" What's dis? 16 colors all for one\n_little bitmapped WIMP?! Whatta\nwaste of EGA. Har, har!"}
 									dsWIDTH
 									160
 									dsALIGN
@@ -267,7 +267,7 @@
 							)
 							(= local2
 								(Display
-									{" What's dis? 16 colors all for one\n little bitmapped WIMP?! Whatta\nwaste of EGA. Har, har!"}
+									{" What's dis? 16 colors all for one\n_little bitmapped WIMP?! Whatta\nwaste of EGA. Har, har!"}
 									dsWIDTH
 									160
 									dsALIGN
@@ -287,7 +287,7 @@
 					(4
 						(= local1
 							(Display
-								{"Hey, fellas! I bet I can toss\nhim all the way out from the\nbottom of the stairs. Bet ya\nan ale."                        }
+								{"Hey, fellas! I bet I can toss\nhim all the way out from the\nbottom of the stairs. Bet ya\nan ale."________________________}
 								dsWIDTH
 								160
 								dsALIGN
@@ -304,7 +304,7 @@
 						)
 						(= local2
 							(Display
-								{"Hey, fellas! I bet I can toss\nhim all the way out from the\nbottom of the stairs. Bet ya\nan ale."                        }
+								{"Hey, fellas! I bet I can toss\nhim all the way out from the\nbottom of the stairs. Bet ya\nan ale."________________________}
 								dsWIDTH
 								160
 								dsALIGN

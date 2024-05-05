@@ -183,7 +183,7 @@
 		y 155
 		noun '/ad,man,wizard'
 		description {Ad Avis}
-		lookStr {He seems like such a nice man.  You would really like to be able to help him.}
+		lookStr {He seems like such a nice man.__You would really like to be able to help him.}
 		view 555
 		signal 16384
 		illegalBits 0

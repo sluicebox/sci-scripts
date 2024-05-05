@@ -164,7 +164,7 @@
 					(= local0
 						(Str
 							format:
-								{ The world's greatest mysteries are merely puzzles waiting to be solved. The puzzle room is Professor Windlenot's favorite exhibit. If you can solve the last       puzzle here, you will have discovered the museum's most precious secrets. }
+								{ The world's greatest mysteries are merely puzzles waiting to be solved. The puzzle room is Professor Windlenot's favorite exhibit. If you can solve the last_______puzzle here, you will have discovered the museum's most precious secrets. }
 						)
 					)
 					(gCurRoom drawText: local0 0 0)

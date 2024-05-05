@@ -479,7 +479,7 @@
 		)
 		(1
 			(proc921_0
-				{You find a single silver coin, carefully polish it, and place it in your pouch.  What a way to make a living!}
+				{You find a single silver coin, carefully polish it, and place it in your pouch.__What a way to make a living!}
 			)
 			(gEgo get: 0 1) ; silver
 		)
@@ -1144,7 +1144,7 @@
 					)
 					(local69
 						(proc921_0
-							{The monster doesn't seem very calm.  Maybe it didn't like you hurting it.}
+							{The monster doesn't seem very calm.__Maybe it didn't like you hurting it.}
 						)
 						(= ticks 1)
 					)

@@ -776,7 +776,7 @@
 				{Restart}
 				2
 				#button
-				{    Quit    }
+				{____Quit____}
 				3
 			)
 			(1

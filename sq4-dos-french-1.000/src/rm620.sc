@@ -239,7 +239,7 @@
 						(if (> global105 16)
 							(= local1
 								(Display
-									{"What's dis? 256 colors all for one  little bitmapped WIMP?! Whatta waste of VGA. Har, har!"}
+									{"What's dis? 256 colors all for one__little bitmapped WIMP?! Whatta waste of VGA. Har, har!"}
 									dsWIDTH
 									160
 									dsALIGN
@@ -260,7 +260,7 @@
 							)
 							(= local2
 								(Display
-									{"What's dis? 256 colors all for one  little bitmapped WIMP?! Whatta waste of VGA. Har, har!"}
+									{"What's dis? 256 colors all for one__little bitmapped WIMP?! Whatta waste of VGA. Har, har!"}
 									dsWIDTH
 									160
 									dsALIGN

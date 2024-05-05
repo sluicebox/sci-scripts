@@ -999,7 +999,7 @@
 				(bell4 setCycle: Fwd)
 				(bell5 setCycle: Fwd)
 				(Display
-					{     With silver bells,}
+					{_____With silver bells,}
 					dsWIDTH
 					320
 					dsCOORD
@@ -1015,7 +1015,7 @@
 			)
 			(4
 				(Display
-					{     And cockleshells,}
+					{_____And cockleshells,}
 					dsWIDTH
 					320
 					dsCOORD

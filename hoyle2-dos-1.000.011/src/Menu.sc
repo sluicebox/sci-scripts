@@ -14,14 +14,14 @@
 	(properties)
 
 	(method (init)
-		(AddMenu {  \01 } {About Hoyle Solitaire`^a:Help`#1})
-		(AddMenu {   Game  } {Quick Replay`#3:Start A New Game`#9:Quit`^q})
-		(AddMenu {  Sound  } {Sound Toggle `#2:Volume `^v})
+		(AddMenu {__\01 } {About Hoyle Solitaire`^a:Help`#1})
+		(AddMenu {___Game__} {Quick Replay`#3:Start A New Game`#9:Quit`^q})
+		(AddMenu {__Sound__} {Sound Toggle `#2:Volume `^v})
 		(AddMenu
-			{  Options  }
+			{__Options__}
 			{Animation Speed`^s:Cursor Speed`^z:Select Colors/Deck`^c:Auto Play`^p}
 		)
-		(AddMenu {  Rules  } {Read`^r:Differences`^d})
+		(AddMenu {__Rules__} {Read`^r:Differences`^d})
 		(self draw:)
 	)
 

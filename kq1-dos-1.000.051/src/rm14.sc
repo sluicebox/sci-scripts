@@ -288,7 +288,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {This is the largest oak tree you've ever seen.  Its trunk seems to be about ten feet around, and the thick, sturdy branches look like they could hold many times your weight.}
+		lookStr {This is the largest oak tree you've ever seen.__Its trunk seems to be about ten feet around, and the thick, sturdy branches look like they could hold many times your weight.}
 	)
 )
 
@@ -307,7 +307,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {This is the largest oak tree you've ever seen.  Its trunk seems to be about ten feet around, and the thick, sturdy branches look like they could hold many times your weight.}
+		lookStr {This is the largest oak tree you've ever seen.__Its trunk seems to be about ten feet around, and the thick, sturdy branches look like they could hold many times your weight.}
 	)
 )
 
@@ -326,7 +326,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {This is the largest oak tree you've ever seen.  Its trunk seems to be about ten feet around, and the thick, sturdy branches look like they could hold many times your weight.}
+		lookStr {This is the largest oak tree you've ever seen.__Its trunk seems to be about ten feet around, and the thick, sturdy branches look like they could hold many times your weight.}
 	)
 )
 
@@ -345,7 +345,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {This is the largest oak tree you've ever seen.  Its trunk seems to be about ten feet around, and the thick, sturdy branches look like they could hold many times your weight.}
+		lookStr {This is the largest oak tree you've ever seen.__Its trunk seems to be about ten feet around, and the thick, sturdy branches look like they could hold many times your weight.}
 	)
 )
 
@@ -364,7 +364,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {This is the largest oak tree you've ever seen.  Its trunk seems to be about ten feet around, and the thick, sturdy branches look like they could hold many times your weight.}
+		lookStr {This is the largest oak tree you've ever seen.__Its trunk seems to be about ten feet around, and the thick, sturdy branches look like they could hold many times your weight.}
 	)
 )
 
@@ -383,7 +383,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {This is the largest oak tree you've ever seen.  Its trunk seems to be about ten feet around, and the thick, sturdy branches look like they could hold many times your weight.}
+		lookStr {This is the largest oak tree you've ever seen.__Its trunk seems to be about ten feet around, and the thick, sturdy branches look like they could hold many times your weight.}
 	)
 )
 

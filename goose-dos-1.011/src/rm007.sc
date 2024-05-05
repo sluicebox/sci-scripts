@@ -398,7 +398,7 @@
 				(cow setScript: cowScript)
 				(= local2
 					(Display
-						{     The cat and the fiddle,}
+						{_____The cat and the fiddle,}
 						dsWIDTH
 						250
 						dsCOORD
@@ -454,7 +454,7 @@
 					0
 				)
 				(Display
-					{     to see such sport,}
+					{_____to see such sport,}
 					dsWIDTH
 					250
 					dsCOORD

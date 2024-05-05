@@ -532,7 +532,7 @@
 	)
 	(Format @temp40 0 0 gCurRoomNum) ; "%d.nor"
 	(Format @temp0 0 1 (param1 name:) @temp50 gMouseX gMouseY) ; ";%s (%s) [%d,%d]:"
-	(File name: @temp40 writeString: @temp0 {\r\n} close:)
+	(File name: @temp40 writeString: @temp0 {\0d\n} close:)
 )
 
 (instance longSong of Sound

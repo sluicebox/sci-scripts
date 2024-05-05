@@ -502,7 +502,7 @@
 			sel_23
 			sel_30
 			(if argc param1 else 0)
-			{\r\n----------\r\n}
+			{\0d\n----------\0d\n}
 		)
 		(= sel_8 (+ sel_6 [temp0 2]))
 		(= sel_9 (+ sel_7 [temp0 3]))

@@ -275,10 +275,10 @@
 						#mode
 						1
 						#button
-						{   Start    }
+						{___Start____}
 						1
 						#button
-						{  Restore   }
+						{__Restore___}
 						2
 						#button
 						{Introduction}

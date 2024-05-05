@@ -181,7 +181,7 @@
 		nsRight 303
 		description {keyboard}
 		sightAngle 90
-		lookStr {Hmm.  Keys just painted on.}
+		lookStr {Hmm.__Keys just painted on.}
 	)
 
 	(method (doVerb theVerb)

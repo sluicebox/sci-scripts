@@ -116,7 +116,7 @@
 					(= local0
 						(Str
 							format:
-								{ You are about to enter the bowels of Mother Earth. Are there great civilizations that exist here, or just molten lava and rivers of fire? Are you          adventurous enough to solve the mystery of the maze and venture into the subterranean world? }
+								{ You are about to enter the bowels of Mother Earth. Are there great civilizations that exist here, or just molten lava and rivers of fire? Are you__________adventurous enough to solve the mystery of the maze and venture into the subterranean world? }
 						)
 					)
 					(gCurRoom drawText: local0 0 0)

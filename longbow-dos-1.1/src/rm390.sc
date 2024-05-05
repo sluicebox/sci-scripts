@@ -162,7 +162,7 @@
 
 (instance rm390 of Rm
 	(properties
-		lookStr {I see no guards upon the battlements.  The Sheriff is lax.}
+		lookStr {I see no guards upon the battlements.__The Sheriff is lax.}
 		picture 390
 		style 100
 		horizon 175
@@ -383,7 +383,7 @@
 		description {*** Hubert}
 		approachX 184
 		approachY 185
-		lookStr {This Sheriff's man has the look of an experienced fighter.  I must be cautious.}
+		lookStr {This Sheriff's man has the look of an experienced fighter.__I must be cautious.}
 		view 392
 	)
 

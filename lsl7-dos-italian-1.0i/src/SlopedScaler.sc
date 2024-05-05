@@ -28,7 +28,7 @@
 		)
 		(if (or (== param3 param6) (== param4 param7) (== param2 param5))
 			(Printf
-				{SlopedScaler, bad args %d %d %d   %d %d %d}
+				{SlopedScaler, bad args %d %d %d___%d %d %d}
 				param2
 				param3
 				param4

@@ -146,7 +146,7 @@
 					(3
 						(= local0
 							(Display
-								{"Hey, fellas! I bet I can toss\nhim all the way out from the\nbottom o' the stairs. Bet ya\nan ale."                       }
+								{"Hey, fellas! I bet I can toss\nhim all the way out from the\nbottom o' the stairs. Bet ya\nan ale."_______________________}
 								dsWIDTH
 								155
 								dsALIGN
@@ -163,7 +163,7 @@
 						)
 						(= local1
 							(Display
-								{"Hey, fellas! I bet I can toss\nhim all the way out from the\nbottom o' the stairs. Bet ya\nan ale."                       }
+								{"Hey, fellas! I bet I can toss\nhim all the way out from the\nbottom o' the stairs. Bet ya\nan ale."_______________________}
 								dsWIDTH
 								155
 								dsALIGN

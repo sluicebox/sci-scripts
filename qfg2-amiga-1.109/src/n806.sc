@@ -230,7 +230,7 @@
 
 (instance changeDirItem of DButton
 	(properties
-		text {Change\r\nDirectory}
+		text {Change\0d\nDirectory}
 	)
 )
 

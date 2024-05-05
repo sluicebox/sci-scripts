@@ -206,22 +206,22 @@
 										addEdit: @temp1 5 80
 										addButton:
 											1
-											{1.       Continue       }
+											{1._______Continue_______}
 											0
 											20
 										addButton:
 											2
-											{2.     OtherIcons       }
+											{2._____OtherIcons_______}
 											0
 											34
 										addButton:
 											3
-											{3.    InventoryScript   }
+											{3.____InventoryScript___}
 											0
 											48
 										addButton:
 											4
-											{4.  ControlPanelScript  }
+											{4.__ControlPanelScript__}
 											0
 											62
 										init:

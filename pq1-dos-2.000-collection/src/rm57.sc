@@ -120,7 +120,7 @@
 	)
 
 	(method (init)
-		(= global224 {Last update:\nMon 5-4-92  849})
+		(= global224 {Last update:\nMon 5-4-92__849})
 		(= local2 (gEgo moveSpeed:))
 		(= local3 (gEgo cycleSpeed:))
 		(self

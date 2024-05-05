@@ -33,7 +33,7 @@
 	[local415 132]
 	[local547 13]
 	local560 = {ANDY}
-	[local561 59] = [{     CHRIS} {    DAISUKE} {  DAVID} {    FUMIYA} {   GARY} {     HIROKI} {   JOHN} {     KAZUKI} {   KEN} {      KOUHEI} {   KOUJI} {    MASASHI} {  MICHAEL} {  OSAMU} {    ROBERT} {   RYOU} {     RYOUTA} {   SATOSHI} {  SHOU} {     SHUNPEI} {  STEVEN} {   TAKASHI} {  TATSUYA} {  THOMAS} {   TOMOYA} {   WATARU} {   YUICHI} {   YUSUKE} {   YUUTA} {    ANN} {      AZUSA} {    AYA} {      CHIHORI} {  DEBBIE} {   ELIZABETH} {ERI} {      KAREN} {    KEIKO} {    KIM} {      LISA} {     MAIKO} {    MARY} {     MEGUMI} {   MIHO} {     MINAMI} {   NANCY} {    NOZOMI} {   PATRICIA} { RIE} {      ROBIN} {    RYOKO} {    SAYAKA} {   SHIHO} {    SHOKO} {    SUSAN} {    TOMOMI} {   YOKO} {     YUI} {      YUMI}]
+	[local561 59] = [{_____CHRIS} {____DAISUKE} {__DAVID} {____FUMIYA} {___GARY} {_____HIROKI} {___JOHN} {_____KAZUKI} {___KEN} {______KOUHEI} {___KOUJI} {____MASASHI} {__MICHAEL} {__OSAMU} {____ROBERT} {___RYOU} {_____RYOUTA} {___SATOSHI} {__SHOU} {_____SHUNPEI} {__STEVEN} {___TAKASHI} {__TATSUYA} {__THOMAS} {___TOMOYA} {___WATARU} {___YUICHI} {___YUSUKE} {___YUUTA} {____ANN} {______AZUSA} {____AYA} {______CHIHORI} {__DEBBIE} {___ELIZABETH} {ERI} {______KAREN} {____KEIKO} {____KIM} {______LISA} {_____MAIKO} {____MARY} {_____MEGUMI} {___MIHO} {_____MINAMI} {___NANCY} {____NOZOMI} {___PATRICIA} { RIE} {______ROBIN} {____RYOKO} {____SAYAKA} {___SHIHO} {____SHOKO} {____SUSAN} {____TOMOMI} {___YOKO} {_____YUI} {______YUMI}]
 )
 
 (procedure (localproc_0 param1 param2)

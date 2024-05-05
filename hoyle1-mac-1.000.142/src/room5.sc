@@ -807,7 +807,7 @@
 							((MacGauge new:)
 								description:
 									{Use the mouse\nto set the\ncounting speed.}
-								text: {  Count Speed  }
+								text: {__Count Speed__}
 								topX: 10
 								bottomY: 6
 								range: 8

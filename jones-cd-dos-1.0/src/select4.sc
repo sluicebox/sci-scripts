@@ -225,7 +225,7 @@
 	(properties
 		nsTop 28
 		nsLeft 55
-		text {    Would you\n\n   like Jones to:}
+		text {____Would you\n\n___like Jones to:}
 	)
 
 	(method (draw &tmp [temp0 30])

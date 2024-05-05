@@ -1222,7 +1222,7 @@
 		y 180
 		noun '/table'
 		description {a table}
-		lookStr {It is a low, round table  There is a green pillow on the floor near it.}
+		lookStr {It is a low, round table__There is a green pillow on the floor near it.}
 		view 100
 		priority 13
 		signal 16400
@@ -1304,7 +1304,7 @@
 		y 183
 		noun '/bottle[<brass,gold]'
 		description {a brass bottle}
-		lookStr {It is a large brass bottle.  What a genie it could hold!}
+		lookStr {It is a large brass bottle.__What a genie it could hold!}
 		view 100
 		loop 2
 		cel 1

@@ -150,7 +150,7 @@
 					(= local2
 						(Str
 							format:
-								{ 30th September, 1980. Returning from Africa. I discovered something profoundly disturbing. Someone has been here. Furniture has been tipped          over. }
+								{ 30th September, 1980. Returning from Africa. I discovered something profoundly disturbing. Someone has been here. Furniture has been tipped__________over. }
 						)
 					)
 					(gCurRoom drawText: local2 0 0)
@@ -165,7 +165,7 @@
 				(= local2
 					(Str
 						format:
-							{ And the book Egyptian Hieroglyphics Explained is not in its place in the library, but face down here on the office floor. And oddly, one of the pages is  torn out. }
+							{ And the book Egyptian Hieroglyphics Explained is not in its place in the library, but face down here on the office floor. And oddly, one of the pages is__torn out. }
 					)
 				)
 				(gCurRoom drawText: local2)
@@ -176,7 +176,7 @@
 				(= local2
 					(Str
 						format:
-							{ And I feel the presence of...I'm not sure. I must investigate the second floor. The puzzles...when I created them, I never stopped to think they'd become an    obstacle in the event of some terrible occurrance. }
+							{ And I feel the presence of...I'm not sure. I must investigate the second floor. The puzzles...when I created them, I never stopped to think they'd become an____obstacle in the event of some terrible occurrance. }
 					)
 				)
 				(gCurRoom drawText: local2)
@@ -213,7 +213,7 @@
 				(= local2
 					(Str
 						format:
-							{ Evil entities attacking from everywhere, robbing me of my life essence! I          can't seem to find the right vessel for each Ixupi! Without it they can't be captured! Without it, I am doomed! }
+							{ Evil entities attacking from everywhere, robbing me of my life essence! I__________can't seem to find the right vessel for each Ixupi! Without it they can't be captured! Without it, I am doomed! }
 					)
 				)
 				(gCurRoom drawText: local2)

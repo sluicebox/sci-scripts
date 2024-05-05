@@ -70,7 +70,7 @@
 							)
 							(File
 								name: @temp4
-								write: @temp94 @temp184 {\r\n}
+								write: @temp94 @temp184 {\0d\n}
 								close:
 							)
 							(= temp184 0)

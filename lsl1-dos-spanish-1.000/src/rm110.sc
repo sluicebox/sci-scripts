@@ -892,17 +892,17 @@
 						320
 						103
 						81
-						{   Air For A "G"   \nString}
+						{___Air For A "G"___\nString}
 						410
 						81
-						{   Mantovani's   \nRevenge}
+						{___Mantovani's___\nRevenge}
 						310
 						103
 						81
 						{ "Wedding March" \nby Bloughengrin}
 						411
 						81
-						{   Theme from   \n"Bo-Larry"}
+						{___Theme from___\n"Bo-Larry"}
 						351
 						103
 						81
@@ -913,7 +913,7 @@
 						390
 						103
 						81
-						{  Her Albert Has  \nSome Iguana Gas}
+						{__Her Albert Has__\nSome Iguana Gas}
 						510
 					)
 				)

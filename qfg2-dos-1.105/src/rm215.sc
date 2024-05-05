@@ -363,7 +363,7 @@
 					self
 					(Format
 						@str
-						{Very good, %s.  You have shown yourself very capable in figuring out the spells needed for the pretest.}
+						{Very good, %s.__You have shown yourself very capable in figuring out the spells needed for the pretest.}
 						@gUserName
 					)
 				)

@@ -37,17 +37,17 @@
 			addButton:
 				1
 				(switch (gGame printLang:)
-					(34 {   Cr\82ditos   })
-					(49 {     Kredit     })
-					(33 {  Remerciements  })
-					(else {   Credits   })
+					(34 {___Cr\82ditos___})
+					(49 {_____Kredit_____})
+					(33 {__Remerciements__})
+					(else {___Credits___})
 				)
 				0
 				20
 			addButton:
 				2
 				(switch (gGame printLang:)
-					(34 {  C\a2mo Jugar  })
+					(34 {__C\a2mo Jugar__})
 					(49 { Wie man spielt })
 					(33 { Comment Jouer })
 					(else { How To Play })
@@ -57,10 +57,10 @@
 			addButton:
 				3
 				(switch (gGame printLang:)
-					(34 {    Pistas    })
-					(49 {    L\94sungen    })
-					(33 {    Aides    })
-					(else {    Hints    })
+					(34 {____Pistas____})
+					(49 {____L\94sungen____})
+					(33 {____Aides____})
+					(else {____Hints____})
 				)
 				(proc13_6 50 50 65 50 50)
 				40

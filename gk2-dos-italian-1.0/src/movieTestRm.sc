@@ -90,7 +90,7 @@
 							70
 						addButton:
 							3
-							(if local6 {Loop Movie  YES} else {Loop Movie  NO })
+							(if local6 {Loop Movie__YES} else {Loop Movie__NO })
 							35
 							90
 						addButton: 4 {Exit} 73 115

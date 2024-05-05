@@ -207,7 +207,7 @@
 		x 179
 		y 85
 		description {the Money Changer}
-		lookStr {The woman is very attractive with her dark, curly hair and lovely figure.  She smiles invitingly at you.}
+		lookStr {The woman is very attractive with her dark, curly hair and lovely figure.__She smiles invitingly at you.}
 		view 125
 		signal 26624
 		illegalBits 0
@@ -593,7 +593,7 @@
 		y 88
 		noun '/window,shutter'
 		description {a shutter}
-		lookStr {The shutter covers the window.  It looks like the business is not in business at the moment.}
+		lookStr {The shutter covers the window.__It looks like the business is not in business at the moment.}
 		view 120
 		loop 3
 	)

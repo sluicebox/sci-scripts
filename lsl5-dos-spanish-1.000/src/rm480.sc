@@ -453,7 +453,7 @@
 							50
 							106
 							81
-							{    Ah    }
+							{____Ah____}
 							1
 							81
 							{Airport PA #1}
@@ -463,7 +463,7 @@
 							3
 							106
 							81
-							{    Oh    }
+							{____Oh____}
 							4
 							81
 							{Airport PA #3}
@@ -473,57 +473,57 @@
 							6
 							106
 							81
-							{   AH!   }
+							{___AH!___}
 							7
 							81
-							{   Knocking   }
+							{___Knocking___}
 							8
 							81
-							{   Glass #1   }
+							{___Glass #1___}
 							9
 							106
 							81
-							{    OH!   }
+							{____OH!___}
 							10
 							81
 							{Folding Chair}
 							11
 							81
-							{   Glass #2   }
+							{___Glass #2___}
 							12
 							106
 							81
-							{   Yeow   }
+							{___Yeow___}
 							13
 							81
 							{ Wolf Whistle }
 							14
 							81
-							{    Screams    }
+							{____Screams____}
 							15
 							106
 							81
-							{  Coffee  }
+							{__Coffee__}
 							16
 							81
-							{     Flush     }
+							{_____Flush_____}
 							17
 							81
-							{  Atmosphere  }
+							{__Atmosphere__}
 							18
 							106
 							81
-							{  Oooh!  }
+							{__Oooh!__}
 							19
 							81
 							{ Crowd Gasp }
 							20
 							81
-							{     Belch     }
+							{_____Belch_____}
 							21
 							106
 							81
-							{   Barf  }
+							{___Barf__}
 							22
 							81
 							{ Slob Eating }
@@ -532,7 +532,7 @@
 							{Do Not Touch}
 							24
 							106
-							{  }
+							{__}
 							106
 							81
 							{< Done >}

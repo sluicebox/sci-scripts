@@ -27,7 +27,7 @@
 	)
 	(if (== (= temp0 (FOpen {NAME.SET} 1)) -1)
 		(if (GameIsRestarting)
-			(StrCpy @global138 {You       })
+			(StrCpy @global138 {You_______})
 		)
 	else
 		(FGets @global138 11 temp0)

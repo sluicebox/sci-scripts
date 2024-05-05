@@ -83,7 +83,7 @@
 				(PrintSplit
 					(Format @temp4 997 0 gVersion gVersion) ; "Written and Directed by: LORI ANN COLE Illustrated by: KENN NISHIUYE, JERRY MOORE, JEFF CROWE and CINDY WALKER Programmed by: BOB FISCHBACH, COREY COLE, LARRY SCOTT and JERRY SHAW Original Music by: MARK SEIBERT Version %s Copyright 1989 Sierra On-Line, Inc.%"
 					80
-					{  Quest for Glory I Credits  }
+					{__Quest for Glory I Credits__}
 					30
 					1
 					70
@@ -115,7 +115,7 @@
 				(PrintSplit
 					(Format @temp4 997 2 gVersion gVersion) ; "Japanese Executive Producer: EIJI NAGANO Japanese System Development by: PABLO GHENIS Japanese Conversion by: PABLO GHENIS, YOKO HAYASHI GARY KAMIGAWACHI, MICKIE LEE Japanese Translation by: AKIKO MAEDA SKJELLERUP Quality Assurance by: YOKO HAYASHI,GARY KAMIGAWACHI MIKE PICKHINKE Version %s Copyright 1989,1990 Sierra On-Line, Inc.%"
 					80
-					{  Japanese Version Credits  }
+					{__Japanese Version Credits__}
 					30
 					1
 					70
@@ -152,7 +152,7 @@
 								(if (== temp455 1)
 									{\89p\8c\ea}
 								else
-									{\93\fa\96\{\8c\ea}
+									{\93\fa\96{\8c\ea}
 								)
 								(if temp456
 									{\8e\9a\96\8b\95t\82\ab}
@@ -162,7 +162,7 @@
 								(if (== (gGame parseLang:) 1)
 									{\89p\8c\ea}
 								else
-									{\93\fa\96\{\8c\ea}
+									{\93\fa\96{\8c\ea}
 								)
 							)
 							#icon

@@ -368,7 +368,7 @@
 		x 251
 		y 90
 		description {glove compartment}
-		lookStr {Wow!  A glove box.  How unusual.}
+		lookStr {Wow!__A glove box.__How unusual.}
 		view 261
 		loop 4
 		priority 7
@@ -423,7 +423,7 @@
 		x 226
 		y 87
 		description {speedometer calibration chart}
-		lookStr {It's a speedometer calibration chart - a service record for this car's speedometer.  Departmental policy requires that all speedometers be calibrated every 90 days.}
+		lookStr {It's a speedometer calibration chart - a service record for this car's speedometer.__Departmental policy requires that all speedometers be calibrated every 90 days.}
 		view 261
 		loop 4
 		cel 2
@@ -896,7 +896,7 @@
 		nsBottom 138
 		nsRight 190
 		description {computer}
-		lookStr {It's a computer.  Lytton sure is going high-tech.}
+		lookStr {It's a computer.__Lytton sure is going high-tech.}
 	)
 
 	(method (doVerb theVerb invItem)
@@ -1150,7 +1150,7 @@
 	(properties
 		description {tracking screen}
 		onMeCheck 32
-		lookStr {It's a tracking screen.  This device allows you to track a person, vehicle, or any other moving object that a tracking device has been attached to.}
+		lookStr {It's a tracking screen.__This device allows you to track a person, vehicle, or any other moving object that a tracking device has been attached to.}
 	)
 )
 

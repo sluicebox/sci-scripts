@@ -154,7 +154,7 @@
 (instance ugarte of Talker
 	(properties
 		description {Ugarte}
-		lookStr {He smiles at you and you are reminded of a weasel.  He speaks, and you think of snakes.}
+		lookStr {He smiles at you and you are reminded of a weasel.__He speaks, and you think of snakes.}
 		view 362
 		tLoop -1
 		talkSpeed 1

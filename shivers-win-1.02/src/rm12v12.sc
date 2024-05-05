@@ -94,7 +94,7 @@
 					(= local0
 						(Str
 							format:
-								{ You are now entering the unfathomable depths of the sea, where countless ships have sunk, taking with them untold riches. The wisdom known only to       the ancients may also reside here in the lost city of Atlantis. }
+								{ You are now entering the unfathomable depths of the sea, where countless ships have sunk, taking with them untold riches. The wisdom known only to_______the ancients may also reside here in the lost city of Atlantis. }
 						)
 					)
 					(gCurRoom drawText: local0 0 0)

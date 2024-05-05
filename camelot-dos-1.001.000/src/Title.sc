@@ -28,13 +28,13 @@
 			(Print
 				{\nCamelot Game Options: }
 				150
-				{See the Intro   }
+				{See the Intro___}
 				2
 				150
 				{Start New Game}
 				1
 				150
-				{ Restore Game   }
+				{ Restore Game___}
 				3
 				67
 				-1

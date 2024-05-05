@@ -196,7 +196,7 @@
 		nsTop 60
 		nsLeft 20
 		key 1
-		text {Pay rent for 1 month.  }
+		text {Pay rent for 1 month.__}
 		price 325
 		indexNum 40
 		typeOfGoods 1
@@ -229,7 +229,7 @@
 		nsTop 70
 		nsLeft 20
 		key 2
-		text {Ask For More Time.       }
+		text {Ask For More Time._______}
 	)
 
 	(method (doit &tmp temp0 temp1)
@@ -316,7 +316,7 @@
 		nsTop 80
 		nsLeft 20
 		key 3
-		text {Rent Low-Cost Apartment  }
+		text {Rent Low-Cost Apartment__}
 		indexNum 40
 		typeOfGoods 1
 		units 4
@@ -383,7 +383,7 @@
 		nsTop 90
 		nsLeft 20
 		key 4
-		text {Rent Security Apartment  }
+		text {Rent Security Apartment__}
 		indexNum 41
 		typeOfGoods 1
 		units 4
@@ -451,7 +451,7 @@
 		nsTop 100
 		nsLeft 20
 		key 5
-		text {Pay Garnishment Balance  }
+		text {Pay Garnishment Balance__}
 		typeOfGoods 4
 		fixedPrice 1
 	)

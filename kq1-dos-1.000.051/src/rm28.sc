@@ -1070,7 +1070,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {There's a small window at the back of the cupcake...er, the house.  But you can't see through the sugar-pane glass.}
+		lookStr {There's a small window at the back of the cupcake...er, the house.__But you can't see through the sugar-pane glass.}
 	)
 )
 

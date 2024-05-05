@@ -60,7 +60,7 @@
 				{Restart}
 				2
 				#button
-				{  Quit  }
+				{__Quit__}
 				3
 				#icon
 				26

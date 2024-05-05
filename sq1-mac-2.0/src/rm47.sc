@@ -261,7 +261,7 @@
 	(properties
 		description {Droids-B-Us store}
 		onMeCheck 16
-		lookStr {This is the Droids-B-Us storefront.  They sell droids for all purposes.}
+		lookStr {This is the Droids-B-Us storefront.__They sell droids for all purposes.}
 	)
 
 	(method (doVerb)
@@ -303,7 +303,7 @@
 	(properties
 		description {window}
 		onMeCheck 64
-		lookStr {You can see only bits and pieces of droids through the small window.  But it looks safe enough in there.}
+		lookStr {You can see only bits and pieces of droids through the small window.__But it looks safe enough in there.}
 	)
 
 	(method (doVerb)

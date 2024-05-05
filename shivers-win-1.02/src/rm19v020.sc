@@ -161,7 +161,7 @@
 					(= local0
 						(Str
 							format:
-								{ You have stepped into the world of amazing plants. For centuries, plants have         been used to beautify man's surroundings, for food, shelter, and to heal the sick. And like Socrates, who was executed by drinking poison hemlock, man has discovered, plants have a lethal side too. }
+								{ You have stepped into the world of amazing plants. For centuries, plants have_________been used to beautify man's surroundings, for food, shelter, and to heal the sick. And like Socrates, who was executed by drinking poison hemlock, man has discovered, plants have a lethal side too. }
 						)
 					)
 					(gCurRoom drawText: local0 0 0)

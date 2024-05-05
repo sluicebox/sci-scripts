@@ -127,7 +127,7 @@
 	)
 
 	(method (init)
-		(= global224 {Last update:\nMon 5-4-92  830})
+		(= global224 {Last update:\nMon 5-4-92__830})
 		(self
 			addObstacle:
 				((Polygon new:)

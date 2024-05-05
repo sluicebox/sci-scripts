@@ -314,7 +314,7 @@
 		seeableDist 320
 		shiftClick 367
 		contClick 369
-		lookStr {Even the rocks in this part of the forest seem more jagged and unfriendly.  Watch your step, they're everywhere!}
+		lookStr {Even the rocks in this part of the forest seem more jagged and unfriendly.__Watch your step, they're everywhere!}
 	)
 )
 
@@ -333,7 +333,7 @@
 		seeableDist 320
 		shiftClick 367
 		contClick 369
-		lookStr {Even the rocks in this part of the forest seem more jagged and unfriendly.  Watch your step, they're everywhere!}
+		lookStr {Even the rocks in this part of the forest seem more jagged and unfriendly.__Watch your step, they're everywhere!}
 	)
 )
 
@@ -352,7 +352,7 @@
 		seeableDist 320
 		shiftClick 367
 		contClick 369
-		lookStr {Even the rocks in this part of the forest seem more jagged and unfriendly.  Watch your step, they're everywhere!}
+		lookStr {Even the rocks in this part of the forest seem more jagged and unfriendly.__Watch your step, they're everywhere!}
 	)
 )
 
@@ -371,7 +371,7 @@
 		seeableDist 320
 		shiftClick 367
 		contClick 369
-		lookStr {Even the rocks in this part of the forest seem more jagged and unfriendly.  Watch your step, they're everywhere!}
+		lookStr {Even the rocks in this part of the forest seem more jagged and unfriendly.__Watch your step, they're everywhere!}
 	)
 )
 
@@ -390,7 +390,7 @@
 		seeableDist 320
 		shiftClick 367
 		contClick 369
-		lookStr {Even the rocks in this part of the forest seem more jagged and unfriendly.  Watch your step, they're everywhere!}
+		lookStr {Even the rocks in this part of the forest seem more jagged and unfriendly.__Watch your step, they're everywhere!}
 	)
 )
 

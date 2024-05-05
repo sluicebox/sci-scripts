@@ -22,7 +22,7 @@
 	theDiag
 	index
 	kattaInnSign
-	[owTable 9] = [0 {Ow!  Hey!} {Man, that's hot!} {Wowf!} {Yowp!} {Watch out!} {Ouch!} {Yikes!} {Geez!}]
+	[owTable 9] = [0 {Ow!__Hey!} {Man, that's hot!} {Wowf!} {Yowp!} {Watch out!} {Ouch!} {Yikes!} {Geez!}]
 	[diagLoops 8] = [2 3 0 2 0 1 2 3]
 	[deltaPosn 8] = [-15 -15 15 -15 -15 15 15 15]
 	[moveList 18] = [0 0 40 180 50 130 110 100 290 180 265 130 205 100 140 155 180 155]

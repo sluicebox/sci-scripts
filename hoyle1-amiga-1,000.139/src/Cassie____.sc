@@ -10,7 +10,7 @@
 
 (instance Cassie____ of Person
 	(properties
-		name {Cassie    }
+		name {Cassie____}
 		view 18
 		song 2
 		crazy8sSkill 1

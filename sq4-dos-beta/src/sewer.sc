@@ -418,7 +418,7 @@
 (instance theSlime of Actor
 	(properties
 		description {slime}
-		lookStr {A blob of slime has gained an attraction for you. The green, viscuous, congealed, wad of bile helper seems to leave the pipe cleaner than when it first flowed over.  Is it bent on your destruction? Or is it just a friendly scum-puddle of some exciting new tasty treat? Dare you find out?}
+		lookStr {A blob of slime has gained an attraction for you. The green, viscuous, congealed, wad of bile helper seems to leave the pipe cleaner than when it first flowed over.__Is it bent on your destruction? Or is it just a friendly scum-puddle of some exciting new tasty treat? Dare you find out?}
 		view 75
 		signal 26624
 		illegalBits 0

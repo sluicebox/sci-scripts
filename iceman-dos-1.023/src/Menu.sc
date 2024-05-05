@@ -34,7 +34,7 @@
 				(Print
 					(Format @temp1 997 0 gVersion) ; "VERSION: %s"
 					#title
-					{  Iceman Credits  }
+					{__Iceman Credits__}
 					#mode
 					1
 					#width
@@ -45,7 +45,7 @@
 				(Print
 					(Format @temp1 997 1) ; "DESIGNED BY: Jim Walls"
 					#title
-					{  Iceman Credits  }
+					{__Iceman Credits__}
 					#mode
 					1
 					#width
@@ -56,7 +56,7 @@
 				(Print
 					(Format @temp1 997 2) ; "ILLUSTRATED BY: Cheryl Loyd Jim Larsen Jerry Moore Cindy Walker Jeff Crowe Kenn Nishiuye"
 					#title
-					{  Iceman Credits  }
+					{__Iceman Credits__}
 					#mode
 					1
 					#width
@@ -67,7 +67,7 @@
 				(Print
 					(Format @temp1 997 3) ; "PROGRAMMED BY: J.Mark Hood Doug Oldfield Larry Scott Pablo Ghenis Carlos Escobar Robert Lindsley David Skinner"
 					#title
-					{  Iceman Credits  }
+					{__Iceman Credits__}
 					#mode
 					1
 					#width
@@ -78,7 +78,7 @@
 				(Print
 					(Format @temp1 997 4) ; "QUALITY ASSURANCE BY: Mike Harian Jennifer Cobb"
 					#title
-					{  Iceman Credits  }
+					{__Iceman Credits__}
 					#mode
 					1
 					#width

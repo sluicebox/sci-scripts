@@ -684,7 +684,7 @@
 	(properties)
 
 	(method (doit param1)
-		(Format param1 0 1 gScore gPossibleScore { KQ\n  The Perils of Rosella}) ; "Score: %d of %d %s"
+		(Format param1 0 1 gScore gPossibleScore { KQ\n__The Perils of Rosella}) ; "Score: %d of %d %s"
 	)
 )
 
@@ -871,13 +871,13 @@
 							#title
 							{Roberta says:}
 							#button
-							{  Restore  }
+							{__Restore__}
 							1
 							#button
-							{  Restart  }
+							{__Restart__}
 							2
 							#button
-							{   Quit   }
+							{___Quit___}
 							3
 						)
 						(1

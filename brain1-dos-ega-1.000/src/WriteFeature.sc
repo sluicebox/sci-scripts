@@ -13,8 +13,8 @@
 (local
 	[local0 200]
 	[local200 100]
-	local300 = { verbWalk   }
-	[local301 7] = [{ verbLook   } { verbDo     } { verbUse    } { verbTalk   } { verbHelp   } { gameVerbs  } {}]
+	local300 = { verbWalk___}
+	[local301 7] = [{ verbLook___} { verbDo_____} { verbUse____} { verbTalk___} { verbHelp___} { gameVerbs__} {}]
 	local308 = 1
 	local309 = 1
 	local310

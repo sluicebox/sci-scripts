@@ -206,7 +206,7 @@
 							@temp0
 							6
 							106
-							{Silver:  }
+							{Silver:__}
 							41
 							@temp150
 							6
@@ -243,12 +243,12 @@
 							)
 							(File
 								name: @temp150
-								writeString: @temp75 @temp0 {\r\n}
+								writeString: @temp75 @temp0 {\0d\n}
 								close:
 							)
 							(= temp0 0)
 						)
-						(File name: @temp150 writeString: {\r\n} close:)
+						(File name: @temp150 writeString: {\0d\n} close:)
 					)
 					(KEY_ALT_p
 						(CheckScroll)

@@ -112,7 +112,7 @@
 				(self dispose:)
 				(return 0)
 			)
-			(StrCpy items {  Nothing})
+			(StrCpy items {__Nothing})
 			(= cp (+ items 37))
 		else
 			(if (not (= items (Memory memALLOC_NONCRIT (+ (* nItems 37) 1))))
@@ -327,7 +327,7 @@
 			)
 			(Print 11 itemNum #title @str #window printWindow)
 		else
-			(Print {                          } #title {Nothing} #window printWindow)
+			(Print {__________________________} #title {Nothing} #window printWindow)
 		)
 	)
 )

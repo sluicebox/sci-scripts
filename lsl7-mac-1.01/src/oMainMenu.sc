@@ -36,7 +36,7 @@
 
 (procedure (proc64000_4 &tmp temp0 temp1 temp2 temp3 temp4)
 	(= temp0 (Str with: global115))
-	(temp0 cat: {get_hard})
+	(temp0 cat: {get\_hard})
 	(if (not (FileIO fiEXISTS (temp0 data:)))
 		((ScriptID 64017 0) set: 285) ; oFlags
 	else

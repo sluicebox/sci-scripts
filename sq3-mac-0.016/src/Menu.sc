@@ -24,7 +24,7 @@
 			{ Action }
 			{Pause Game`^p :Inventory`^I :Retype`#3 :--! :Boss Key`^b }
 		)
-		(AddMenu { Speed } {Change...`#0 :--! :Faster`[ :Normal`] :Slower`\ })
+		(AddMenu { Speed } {Change...`#0 :--! :Faster`[ :Normal`] :Slower`\\ })
 		(AddMenu { Sound } {Volume...`#0 :Sound Off`#2=1 })
 	)
 
@@ -45,7 +45,7 @@
 			)
 			(258
 				(Print
-					{      DURING THE GAME:\nClick at the top of the screen to use the menus. Additional shortcuts are shown there.\n\n     IN DIALOG WINDOWS:\nEnter selects the outlined item, or click on items with the mouse. ESC always cancels. }
+					{______DURING THE GAME:\nClick at the top of the screen to use the menus. Additional shortcuts are shown there.\n\n_____IN DIALOG WINDOWS:\nEnter selects the outlined item, or click on items with the mouse. ESC always cancels. }
 					#font
 					4
 				)

@@ -235,7 +235,7 @@
 					140
 					1
 					80
-					{Hello!   My name is Larry; Larry Laffer!}
+					{Hello!___My name is Larry; Larry Laffer!}
 					67
 					10
 					-1

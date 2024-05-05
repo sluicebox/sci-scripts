@@ -6064,7 +6064,7 @@
 			setPolygon: 0
 			createPoly: 346 62 315 108 314 162 350 204 417 183 439 120 414 60 360 47
 		)
-		(PrintDebug {  MYFORWARD: %d} (self curPic:))
+		(PrintDebug {__MYFORWARD: %d} (self curPic:))
 	)
 )
 
@@ -6088,7 +6088,7 @@
 			setPolygon: 0
 			createPoly: 11 199 45 77 132 71 154 203 149 295 54 296
 		)
-		(PrintDebug {  RIGHTDOOR: %d} (self curPic:))
+		(PrintDebug {__RIGHTDOOR: %d} (self curPic:))
 	)
 )
 
@@ -6112,7 +6112,7 @@
 			setPolygon: 0
 			createPoly: 366 70 421 66 480 162 435 296 338 298 333 256 339 81
 		)
-		(PrintDebug {  LEFTDOOR: %d} (self curPic:))
+		(PrintDebug {__LEFTDOOR: %d} (self curPic:))
 	)
 )
 

@@ -420,7 +420,7 @@
 		x 45
 		y 109
 		description {the fighter button}
-		lookStr {Fighters tend to be rough, tough, and rowdy.  Choose the Fighter if you want to take the direct approach to your problems.}
+		lookStr {Fighters tend to be rough, tough, and rowdy.__Choose the Fighter if you want to take the direct approach to your problems.}
 		view 800
 		loop 2
 		priority 15
@@ -445,7 +445,7 @@
 		x 277
 		y 109
 		description {the thief button}
-		lookStr {Thieves have a variety of special skills, such as picking locks, hiding, and climbing walls.  The thief tends to work around problems rather than attacking them directly.}
+		lookStr {Thieves have a variety of special skills, such as picking locks, hiding, and climbing walls.__The thief tends to work around problems rather than attacking them directly.}
 		view 800
 		loop 4
 		signal 16384
@@ -457,7 +457,7 @@
 		x 159
 		y 124
 		description {the hole}
-		lookStr {Gee, that wall wasn't so tough, was it?  At least, not so tough that a Fighter couldn't handle it!}
+		lookStr {Gee, that wall wasn't so tough, was it?__At least, not so tough that a Fighter couldn't handle it!}
 		view 800
 		signal 16384
 	)

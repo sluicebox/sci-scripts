@@ -119,7 +119,7 @@
 		nsTop 50
 		nsLeft 25
 		key 1
-		text {Clerk              |||}
+		text {Clerk______________|||}
 		shadowColor 107
 		indexNum 42
 		basePrice 4
@@ -132,7 +132,7 @@
 		nsTop 60
 		nsLeft 25
 		key 2
-		text {Assistant Manager  }
+		text {Assistant Manager__}
 		shadowColor 107
 		indexNum 45
 		basePrice 6
@@ -148,7 +148,7 @@
 		nsTop 70
 		nsLeft 25
 		key 3
-		text {Manager           |}
+		text {Manager___________|}
 		shadowColor 107
 		indexNum 46
 		basePrice 7

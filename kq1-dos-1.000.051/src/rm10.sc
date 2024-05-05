@@ -630,7 +630,7 @@
 		seeableDist 320
 		shiftClick 369
 		contClick 371
-		lookStr {This is the goat's trough, currently empty.  Goats are always hungry!}
+		lookStr {This is the goat's trough, currently empty.__Goats are always hungry!}
 	)
 )
 

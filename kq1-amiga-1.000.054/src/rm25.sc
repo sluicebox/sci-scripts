@@ -780,7 +780,7 @@
 		seeableDist 320
 		shiftClick 367
 		contClick 369
-		lookStr {The river bank drops off sharply here.  Best to watch your step.}
+		lookStr {The river bank drops off sharply here.__Best to watch your step.}
 	)
 )
 

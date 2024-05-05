@@ -418,7 +418,7 @@
 			)
 			(3
 				(EgoDead
-					{The moving rock rolls downhill...and right into you.   A crushing defeat.}
+					{The moving rock rolls downhill...and right into you.___A crushing defeat.}
 				)
 			)
 		)

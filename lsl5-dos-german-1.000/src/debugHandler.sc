@@ -205,7 +205,7 @@
 							@temp0
 							6
 							106
-							{Silver:  }
+							{Silver:__}
 							41
 							@temp150
 							6

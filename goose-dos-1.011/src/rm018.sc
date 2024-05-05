@@ -327,7 +327,7 @@
 					(rhymeScript cue:)
 				)
 				(Display
-					{      and bells on her toes,}
+					{______and bells on her toes,}
 					dsWIDTH
 					320
 					dsCOORD

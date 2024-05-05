@@ -39,7 +39,7 @@
 					1
 					(and
 						gEgoIsPatti
-						{rip your nylons else \{get those white socks dirty}
+						{rip your nylons else {get those white socks dirty}
 					)
 					(if gEgoIsPatti
 						{Deine Str\81mpfe zerrei\e1en}

@@ -277,7 +277,7 @@
 	(method (writeFile file &tmp lineLen len pt node [str 10] frst)
 		(file
 			writeString:
-				{\t\t\t((Polygon new:)\r\n}
+				{\t\t\t((Polygon new:)\0d\n}
 				{\t\t\t\ttype: }
 				(switch type
 					(0 {PTotalAccess})
@@ -285,7 +285,7 @@
 					(2 {PBarredAccess})
 					(3 {PContainedAccess})
 				)
-				{,\r\n}
+				{,\0d\n}
 		)
 		(file writeString: {\t\t\t\tinit:\t})
 		(= frst 1)
@@ -294,7 +294,7 @@
 			(= pt (NodeValue node))
 			(Format @str 943 0 (pt x:) (pt y:)) ; "%d %d"
 			(if (>= (+= lineLen (= len (+ (StrLen @str) 1))) 80)
-				(file writeString: {\r\n\t\t\t\t\t\t})
+				(file writeString: {\0d\n\t\t\t\t\t\t})
 				(= frst 1)
 				(= lineLen (+ 17 len))
 			)
@@ -304,8 +304,8 @@
 			(file writeString: @str)
 			(= frst 0)
 		)
-		(file writeString: {,\r\n})
-		(file writeString: {\t\t\t\tyourself\r\n} {\t\t\t)\r\n})
+		(file writeString: {,\0d\n})
+		(file writeString: {\t\t\t\tyourself\0d\n} {\t\t\t)\0d\n})
 	)
 
 	(method (check &tmp node nextNode point nextPoint angle delta firstNode totAngle firstTime lastAngle backNode backPoint savX savY lastNode cmpNode cmpPoint)
@@ -1145,9 +1145,9 @@
 			writeString:
 				(Format @str 943 11 {Dynamic Obstacles} (gCurRoom curPic:)) ; "; %s : Picture %d"
 		)
-		(file writeString: {\t\t(curRoom addObstacle:\r\n})
+		(file writeString: {\t\t(curRoom addObstacle:\0d\n})
 		(self eachElementDo: #writeFile file)
-		(file writeString: {\t\t)\r\n})
+		(file writeString: {\t\t)\0d\n})
 		(file dispose:)
 		(return 1)
 	)

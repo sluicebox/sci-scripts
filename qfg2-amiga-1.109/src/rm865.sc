@@ -97,7 +97,7 @@
 		x 122
 		y 145
 		description {fresh popcorn}
-		lookStr {Fresh popped Wilber Bluendecker\n  Gourmet Popping Corn.}
+		lookStr {Fresh popped Wilber Bluendecker\n__Gourmet Popping Corn.}
 		view 865
 		loop 1
 		priority 8
@@ -110,7 +110,7 @@
 		x 50
 		y 168
 		description {fresh popcorn}
-		lookStr {Fresh popped Wilber Bluendecker\n  Gourmet Popping Corn.}
+		lookStr {Fresh popped Wilber Bluendecker\n__Gourmet Popping Corn.}
 		view 865
 		loop 4
 		cel 1
@@ -124,7 +124,7 @@
 		x 276
 		y 151
 		description {fresh popcorn}
-		lookStr {Fresh popped Wilber Bluendecker\n  Gourmet Popping Corn.}
+		lookStr {Fresh popped Wilber Bluendecker\n__Gourmet Popping Corn.}
 		view 865
 		loop 4
 		priority 15

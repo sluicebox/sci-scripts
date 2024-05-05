@@ -36,10 +36,10 @@
 				#font
 				0
 				#button
-				{      Yes      }
+				{______Yes______}
 				0
 				#button
-				{       No       }
+				{_______No_______}
 				1
 			)
 			(gConMusic fade:)

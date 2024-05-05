@@ -164,7 +164,7 @@
 						robBust
 						topGear
 						robMouth
-						{"Here's your incredibly complex robot, sir.  I sprained my thermodiodinal-tricycler carrying it out here for you.  I hope you're satisfied."}
+						{"Here's your incredibly complex robot, sir.__I sprained my thermodiodinal-tricycler carrying it out here for you.__I hope you're satisfied."}
 						0
 						0
 						0
@@ -174,7 +174,7 @@
 			(6
 				(robbieT
 					say:
-						{"And I hope you're smarter than you look, or you'll never be able to put it together.  How depressing."}
+						{"And I hope you're smarter than you look, or you'll never be able to put it together.__How depressing."}
 						0
 						0
 						1
@@ -357,7 +357,7 @@
 						robBust
 						topGear
 						robMouth
-						{"Hello, sir.  Your new robot will be here in a moment."}
+						{"Hello, sir.__Your new robot will be here in a moment."}
 						0
 						0
 						1

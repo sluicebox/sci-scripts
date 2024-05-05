@@ -31,9 +31,9 @@
 					font: gUserFont
 					addText: {Your destination: }
 					addEdit: temp2 5 115 0
-					addButton: 100 {    Opening     } 19 20
+					addButton: 100 {____Opening_____} 19 20
 					addButton: 800 { Hotel Exterior } 19 38
-					addButton: 200 {     Lobby      } 19 56
+					addButton: 200 {_____Lobby______} 19 56
 					init:
 				)
 			)
@@ -236,11 +236,11 @@
 							init:
 						)
 						(poly_pol name: (temp5 data:) open: 0)
-						(poly_pol writeString: {\t\t(curRoom addObstacle:\r\n})
+						(poly_pol writeString: {\t\t(curRoom addObstacle:\0d\n})
 						(if (PEditor size:)
 							(PEditor eachElementDo: #writeToFile poly_pol)
 						)
-						(poly_pol writeString: {\t\t)\r\n})
+						(poly_pol writeString: {\t\t)\0d\n})
 						(poly_pol close:)
 						(temp5 dispose:)
 						(PEditor dispose:)

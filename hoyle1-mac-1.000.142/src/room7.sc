@@ -1670,15 +1670,15 @@
 		(= global199 (Format @temp0 { ---------------------------- \n}))
 		(StrCat global199 (Format @global520 7 15 temp200)) ; "Previous Points    %s"
 		(StrCat global199 (Format @global520 7 16 temp201)) ; "Points This Hand   %s"
-		(StrCat global199 { Deduct For Each Hand  -  50\n})
-		(StrCat global199 {                      -------\n})
+		(StrCat global199 { Deduct For Each Hand__-__50\n})
+		(StrCat global199 {______________________-------\n})
 		(StrCat global199 (Format @global520 7 17 temp202)) ; "Net Points  %s"
 		(StrCat global199 { ---------------------------- \n})
 		(StrCat global199 {\n})
 		(if (!= global239 1)
 			(StrCat global199 (Format @global520 7 18 global239)) ; "%d Hands Played"
 		else
-			(StrCat global199 {        1 Hand Played})
+			(StrCat global199 {________1 Hand Played})
 		)
 		(= global305 (Print global199 #font sFont #title title #at x y #dispose))
 		(proc0_1 12200)

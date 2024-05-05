@@ -300,7 +300,7 @@
 		x 297
 		y 58
 		description {the caravan}
-		lookStr {The plain, Boss, the plain!  The caravan's on the plain.}
+		lookStr {The plain, Boss, the plain!__The caravan's on the plain.}
 		view 861
 		loop 7
 	)
@@ -365,7 +365,7 @@
 (instance aBee1 of Prop
 	(properties
 		description {the brigand}
-		lookStr {The brigands, the brigands!  Run for your lives!}
+		lookStr {The brigands, the brigands!__Run for your lives!}
 		view 861
 		loop 6
 	)
@@ -374,7 +374,7 @@
 (instance aBee2 of PicView
 	(properties
 		description {the brigand}
-		lookStr {The brigands, the brigands!  Run for your lives!}
+		lookStr {The brigands, the brigands!__Run for your lives!}
 		view 861
 		loop 5
 		cel 1
@@ -384,7 +384,7 @@
 (instance aBee3 of PicView
 	(properties
 		description {the brigand}
-		lookStr {The brigands, the brigands!  Run for your lives!}
+		lookStr {The brigands, the brigands!__Run for your lives!}
 		view 861
 		loop 5
 		cel 2

@@ -142,7 +142,7 @@
 				(= gSystemWindow BlueWindow)
 				(= gUserFont 0)
 				(BlueWindow color: global141 back: global149)
-				(DrawStatus {   } global129 0)
+				(DrawStatus {___} global129 0)
 				(gCast eachElementDo: #hide)
 				(if (== (gCurRoom style:) 13)
 					(gCurRoom style: 14)
@@ -155,19 +155,19 @@
 					(not
 						(= register
 							(PrintD
-								(LangSwitch {  } {})
+								(LangSwitch {__} {})
 								81
 								{Instructions}
 								doInstructions
-								(LangSwitch {  } {})
+								(LangSwitch {__} {})
 								81
 								{Specials}
 								doSpecials
-								(LangSwitch {  } {})
+								(LangSwitch {__} {})
 								81
 								{Catalog}
 								doCatalog
-								(LangSwitch {  } {})
+								(LangSwitch {__} {})
 								81
 								{Exit}
 								backToRob
@@ -206,15 +206,15 @@
 				)
 				(if
 					(PrintD
-						(LangSwitch {  } {})
+						(LangSwitch {__} {})
 						81
 						{Continue}
 						1
-						(LangSwitch {  } {})
+						(LangSwitch {__} {})
 						81
 						{Return to Top Menu}
 						0
-						(LangSwitch {  } {})
+						(LangSwitch {__} {})
 						67
 						(LangSwitch 56 25)
 						(LangSwitch 153 163)
@@ -232,7 +232,7 @@
 							81
 							{Return to Top Menu}
 							0
-							(LangSwitch {  } {})
+							(LangSwitch {__} {})
 							81
 							{Limited Time Specials}
 							1
@@ -315,7 +315,7 @@
 						(2
 							(gLongSong number: (Random 392 395) play:)
 							(PrintD
-								{Sorry - dealers only!  }
+								{Sorry - dealers only!__}
 								81
 								{Continue}
 								1
@@ -370,7 +370,7 @@
 					(2
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - sold out.  }
+							{Sorry - sold out.__}
 							81
 							{Continue}
 							1
@@ -419,7 +419,7 @@
 					(1
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Not available as such.  }
+							{Sorry - Not available as such.__}
 							106
 							81
 							{Return to Top Menu}
@@ -466,7 +466,7 @@
 						81
 						{Electronic Gadgets}
 						3
-						(LangSwitch {  } {})
+						(LangSwitch {__} {})
 						81
 						{The Electronic Mommy}
 						1
@@ -481,7 +481,7 @@
 						81
 						{TechnoTots Toy Dept.}
 						2
-						(LangSwitch {  } {})
+						(LangSwitch {__} {})
 						81
 						{Return to Top Menu}
 						0
@@ -591,7 +591,7 @@
 					(2
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Discontinued.  }
+							{Sorry - Discontinued.__}
 							81
 							{Continue}
 							1
@@ -884,7 +884,7 @@
 					(2
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Recalled by manufacturer.  }
+							{Sorry - Recalled by manufacturer.__}
 							81
 							{Continue}
 							1
@@ -936,7 +936,7 @@
 					(2
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Not available in the Spiral Arm.  }
+							{Sorry - Not available in the Spiral Arm.__}
 							106
 							81
 							{Continue}
@@ -1092,7 +1092,7 @@
 					(2
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Sold out.  }
+							{Sorry - Sold out.__}
 							81
 							{Continue}
 							1
@@ -1144,7 +1144,7 @@
 					(2
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Discontinued.  }
+							{Sorry - Discontinued.__}
 							81
 							{Continue}
 							1
@@ -1249,7 +1249,7 @@
 					(1
 						(gLongSong number: (Random 392 395) play:)
 						(PrintD
-							{Sorry - Sold out.  }
+							{Sorry - Sold out.__}
 							81
 							{Continue}
 							1

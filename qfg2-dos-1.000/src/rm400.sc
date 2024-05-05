@@ -55,9 +55,9 @@
 	endX = 122
 	[guardX 12] = [311 317 322 330 338 342 348 353 356 361 365 373]
 	[guardY 12] = [51 52 50 49 51 52 50 49 51 52 50 49]
-	[gateMsg 6] = [{Guards to the gate!!} {The gate is being attacked!} {Somebody HELP!!!!} {Defend the gate!!} {All guards, to the gate!!!} {Guards!  Guards!  Guards!  Guards!}]
+	[gateMsg 6] = [{Guards to the gate!!} {The gate is being attacked!} {Somebody HELP!!!!} {Defend the gate!!} {All guards, to the gate!!!} {Guards!__Guards!__Guards!__Guards!}]
 	gateCount
-	[guardReply 3] = [{Interference with a guard in his duties is a punishable offense.} {Loitering is forbidden.  Move on.} {Questioning a guard constitutes interference.  Leave before it becomes an offense. }]
+	[guardReply 3] = [{Interference with a guard in his duties is a punishable offense.} {Loitering is forbidden.__Move on.} {Questioning a guard constitutes interference.__Leave before it becomes an offense. }]
 	[pts1 8] = [67 137 76 119 124 119 119 139]
 	[pts2 8] = [198 140 196 117 246 118 257 137]
 	[pts3 8] = [61 136 18 135 35 117 67 119]
@@ -148,7 +148,7 @@
 	(if (== replyCount 3)
 		(EgoDead
 			1
-			{The guards, tiring of your chatter, grab you and call other guards to their assistance.  You are dragged into prison and remain there for a long, long, long time. }
+			{The guards, tiring of your chatter, grab you and call other guards to their assistance.__You are dragged into prison and remain there for a long, long, long time. }
 			#title
 			{Curiosity Killed the Hero}
 		)
@@ -1278,7 +1278,7 @@
 				(if (IsFlag 138) ; fVisitedHaremGirl
 					(EgoDead
 						1
-						{By golly, you discovered the tower guard house.  Guess you should have tried the side with the scarf. }
+						{By golly, you discovered the tower guard house.__Guess you should have tried the side with the scarf. }
 						#title
 						{Yikes!!!}
 					)

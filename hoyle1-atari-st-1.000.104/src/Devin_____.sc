@@ -10,7 +10,7 @@
 
 (instance Devin_____ of Person
 	(properties
-		name {Devin     }
+		name {Devin_____}
 		view 17
 		song 24
 		crazy8sSkill 1

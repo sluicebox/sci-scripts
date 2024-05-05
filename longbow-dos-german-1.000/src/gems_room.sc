@@ -557,7 +557,7 @@
 			(0
 				(= gDeathNum 21)
 				(= local17
-					{                                                                                                     }
+					{_____________________________________________________________________________________________________}
 				)
 				(Display 621 0 dsRESTOREPIXELS local16)
 				(SetFlag 149)
@@ -618,7 +618,7 @@
 			(0
 				(= local14 0)
 				(= local17
-					{                                                                                                     }
+					{_____________________________________________________________________________________________________}
 				)
 				(Display 621 0 dsRESTOREPIXELS local16)
 				(Converse 1 @local545 11 2) ; "Good. Here is the second riddle."
@@ -646,7 +646,7 @@
 			(0
 				(= local14 0)
 				(= local17
-					{                                                                                                     }
+					{_____________________________________________________________________________________________________}
 				)
 				(Display 621 0 dsRESTOREPIXELS local16)
 				(Converse 1 @local549 11 2) ; "Well done, Brother. Here is the final riddle."
@@ -673,7 +673,7 @@
 		(switch (= state newState)
 			(0
 				(= local17
-					{                                                                                                     }
+					{_____________________________________________________________________________________________________}
 				)
 				(Display 621 0 dsRESTOREPIXELS local16)
 				(Monastery backFromJewels: 1)

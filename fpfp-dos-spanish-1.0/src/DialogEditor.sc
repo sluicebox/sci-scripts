@@ -60,7 +60,7 @@
 			addEdit: @temp25 4 45 39 @temp25
 			addEdit: @temp35 4 125 39 @temp35
 			addEdit: @temp45 5 101 53 @temp45
-			addButton: 1 {   OK   } 18 67
+			addButton: 1 {___OK___} 18 67
 			addButton: 0 {Cancel} 91 67
 			init:
 		)
@@ -102,7 +102,7 @@
 		addText: {What kind of text?}
 		addButton: 1 { Literal } 60 0
 		addButton: 2 {MSG file} 60 14
-		addButton: 0 {  Cancel  } 60 28
+		addButton: 0 {__Cancel__} 60 28
 		first: (if (param1 seq:) 2 else 1)
 		init:
 	)
@@ -411,9 +411,9 @@
 				addText: {Enter new font number:}
 				addEdit: @str 6 0 24
 				addButton: 0 { System } 100 0
-				addButton: gUserFont {  User  } 100 14
-				addButton: gSmallFont {  Small  } 100 28
-				addButton: gBigFont {   Big   } 100 42
+				addButton: gUserFont {__User__} 100 14
+				addButton: gSmallFont {__Small__} 100 28
+				addButton: gBigFont {___Big___} 100 42
 				addButton: -1 { Cancel } 100 56
 				init:
 			)
@@ -434,9 +434,9 @@
 				font: 0
 				width: 100
 				addText: {Enter justification mode:}
-				addButton: 1 {   Left   } 100 0
+				addButton: 1 {___Left___} 100 0
 				addButton: 2 { Center } 100 14
-				addButton: 3 {  Right  } 100 28
+				addButton: 3 {__Right__} 100 28
 				addButton: 0 { Cancel } 100 42
 				init:
 			)
@@ -518,7 +518,7 @@
 			font: gUserFont
 			width: 250
 			addText:
-				{Text Menu:\n\n  Text - Change the text\n  Font - Change the font of the text\n  Just - Change justification mode\n  Position - Change the position of the text\n  Menu - Return to the Main Menu\n}
+				{Text Menu:\n\n__Text - Change the text\n__Font - Change the font of the text\n__Just - Change justification mode\n__Position - Change the position of the text\n__Menu - Return to the Main Menu\n}
 			init:
 		)
 	)
@@ -605,7 +605,7 @@
 			font: gUserFont
 			width: 250
 			addText:
-				{Icon Menu:\n\n  View - Change the view of the icon\n  Loop - Change the loop of the icon\n  Cel - Change the cel of the icon\n  Position - Change the position of the icon\n  Menu - Return to the Main Menu\n}
+				{Icon Menu:\n\n__View - Change the view of the icon\n__Loop - Change the loop of the icon\n__Cel - Change the cel of the icon\n__Position - Change the position of the icon\n__Menu - Return to the Main Menu\n}
 			init:
 		)
 	)
@@ -642,9 +642,9 @@
 				addText: {Enter new font number:}
 				addEdit: @str 6 0 24
 				addButton: 0 { System } 100 0
-				addButton: gUserFont {  User  } 100 14
-				addButton: gSmallFont {  Small  } 100 28
-				addButton: gBigFont {   Big   } 100 42
+				addButton: gUserFont {__User__} 100 14
+				addButton: gSmallFont {__Small__} 100 28
+				addButton: gBigFont {___Big___} 100 42
 				addButton: -1 { Cancel } 100 56
 				init:
 			)
@@ -716,7 +716,7 @@
 			font: gUserFont
 			width: 250
 			addText:
-				{Button Menu:\n\n  Text - Change the button text\n  Font - Change the font of the button text\n  Value - Change the return value of the button\n  Position - Change the position of the button\n  Menu - Return to the Main Menu\n}
+				{Button Menu:\n\n__Text - Change the button text\n__Font - Change the font of the button text\n__Value - Change the return value of the button\n__Position - Change the position of the button\n__Menu - Return to the Main Menu\n}
 			init:
 		)
 	)
@@ -748,9 +748,9 @@
 				addText: {Enter new font number:}
 				addEdit: @str 6 0 24
 				addButton: 0 { System } 100 0
-				addButton: gUserFont {  User  } 100 14
-				addButton: gSmallFont {  Small  } 100 28
-				addButton: gBigFont {   Big   } 100 42
+				addButton: gUserFont {__User__} 100 14
+				addButton: gSmallFont {__Small__} 100 28
+				addButton: gBigFont {___Big___} 100 42
 				addButton: -1 { Cancel } 100 56
 				init:
 			)
@@ -798,7 +798,7 @@
 			font: gUserFont
 			width: 250
 			addText:
-				{Edit Menu:\n\n  Font - Change the font of the edit text\n  Length - Change the maximum length of input\n  Position - Change the position of the edit\n  Text - Change the default edit text\n  Menu - Return to the Main Menu\n}
+				{Edit Menu:\n\n__Font - Change the font of the edit text\n__Length - Change the maximum length of input\n__Position - Change the position of the edit\n__Text - Change the default edit text\n__Menu - Return to the Main Menu\n}
 			init:
 		)
 	)
@@ -863,7 +863,7 @@
 			font: gUserFont
 			width: 250
 			addText:
-				{Selector Menu:\n\n  Width - Change the selector width (in chars)\n  Length - Change number of selector lines\n  Position - Change the position of the selector\n  Menu - Return to the Main Menu\n}
+				{Selector Menu:\n\n__Width - Change the selector width (in chars)\n__Length - Change number of selector lines\n__Position - Change the position of the selector\n__Menu - Return to the Main Menu\n}
 			init:
 		)
 	)
@@ -878,7 +878,7 @@
 
 	(method (init)
 		(= saveWin gSystemWindow)
-		(StrCpy @winTitle {DialogEditor  v1.1})
+		(StrCpy @winTitle {DialogEditor__v1.1})
 		((= gSystemWindow SysWindow) color: 0 back: 255)
 		(gGame setCursor: 999)
 		(self changeState: 0)
@@ -954,7 +954,7 @@
 						addText: {Save to: }
 						addEdit: @fileName 25 60 0 @fileName
 						font: 0
-						addButton: 1 {  Save  } 10 12
+						addButton: 1 {__Save__} 10 12
 						addButton: 2 { Abandon } 80 12
 						addButton: 0 { Cancel } 151 12
 						init:
@@ -967,7 +967,7 @@
 			(return 1)
 		)
 		(if (FileIO fiEXISTS @fileName)
-			(Format @str {The file '%s' already exists.  Now what?} @fileName)
+			(Format @str {The file '%s' already exists.__Now what?} @fileName)
 			(if
 				(not
 					(= rc
@@ -992,14 +992,14 @@
 			(return 0)
 		)
 		(file
-			writeString: {\t\t; DialogEditor v1.0\r\n}
-			writeString: {\t\t; by Brian K. Hughes\r\n}
-			writeString: {\t\t(Print\r\n}
+			writeString: {\t\t; DialogEditor v1.0\0d\n}
+			writeString: {\t\t; by Brian K. Hughes\0d\n}
+			writeString: {\t\t(Print\0d\n}
 		)
 		(if windowUp
 			(Format
 				@str
-				{\t\t\tposn:\t\t\t%d %d,\r\n}
+				{\t\t\tposn:\t\t\t%d %d,\0d\n}
 				(DlgWindow left:)
 				(DlgWindow top:)
 			)
@@ -1008,7 +1008,7 @@
 				(if (DlgWindow seq:)
 					(Format
 						@str
-						{\t\t\taddTitle:\t%d %d %d %d %d,\r\n}
+						{\t\t\taddTitle:\t%d %d %d %d %d,\0d\n}
 						(DlgWindow noun:)
 						(DlgWindow verb:)
 						(DlgWindow case:)
@@ -1018,7 +1018,7 @@
 				else
 					(Format
 						@str
-						{\t\t\taddTitle:\t\{%s\},\r\n}
+						{\t\t\taddTitle:\t{%s\},\0d\n}
 						(DlgWindow title:)
 					)
 				)
@@ -1031,13 +1031,13 @@
 				addTitle: @winTitle
 				addText: {This dialog should be...}
 				font: 0
-				addButton: 0 {   Modal   } 0 24
+				addButton: 0 {___Modal___} 0 24
 				addButton: 1 { Modeless } 0 38
 				init:
 			)
-			(file writeString: {\t\t\tmodeless:\tTRUE,\r\n})
+			(file writeString: {\t\t\tmodeless:\tTRUE,\0d\n})
 		)
-		(file writeString: {\t\t\tinit:\r\n} writeString: {\t\t)\r\n})
+		(file writeString: {\t\t\tinit:\0d\n} writeString: {\t\t)\0d\n})
 		(file dispose:)
 		(return 1)
 	)
@@ -1173,7 +1173,7 @@
 									font: gUserFont
 									width: 250
 									addText:
-										{Main Menu:\n\n  About - About the DialogEditor\n  Item - Create a new item\n  Edit - Edit properties of the current item\n  Look - View properties of the current item\n  Del - Delete the current item\n  Win - Create a window background\n  Help - You're here!\n  eXit - Exit the DialogEditor (& maybe save)\n}
+										{Main Menu:\n\n__About - About the DialogEditor\n__Item - Create a new item\n__Edit - Edit properties of the current item\n__Look - View properties of the current item\n__Del - Delete the current item\n__Win - Create a window background\n__Help - You're here!\n__eXit - Exit the DialogEditor (& maybe save)\n}
 									init:
 								)
 							)
@@ -1182,7 +1182,7 @@
 									font: gUserFont
 									width: 250
 									addText:
-										{Window Menu:\n\n  Create - Draw the window to the correct size\n  Position - Move the window and all items\n  Delete - Remove the window\n  Menu - Return to the Main Menu}
+										{Window Menu:\n\n__Create - Draw the window to the correct size\n__Position - Move the window and all items\n__Delete - Remove the window\n__Menu - Return to the Main Menu}
 									init:
 								)
 							)
@@ -1200,12 +1200,12 @@
 								addText:
 									{Select the kind of item you want to add to the dialog:}
 								font: 0
-								addButton: 1 {  Button  } 80 0
-								addButton: 2 {   Text   } 80 14
-								addButton: 3 {   Edit   } 80 28
-								addButton: 4 {   Icon   } 80 42
+								addButton: 1 {__Button__} 80 0
+								addButton: 2 {___Text___} 80 14
+								addButton: 3 {___Edit___} 80 28
+								addButton: 4 {___Icon___} 80 42
 								addButton: 6 { Selector } 80 56
-								addButton: 0 {  Cancel  } 80 70
+								addButton: 0 {__Cancel__} 80 70
 								init:
 							)
 							(1
@@ -1270,12 +1270,12 @@
 								(if curItem
 									(Format
 										@temp508
-										{  x:       %d}
+										{__x:_______%d}
 										(curItem nsLeft:)
 									)
 									(Format
 										@temp538
-										{  y:       %d}
+										{__y:_______%d}
 										(curItem nsTop:)
 									)
 									(switch (curItem -super-:)
@@ -1284,42 +1284,42 @@
 											(StrCpy @temp2 (curItem text:))
 											(Format
 												@temp568
-												{  text:   %s}
+												{__text:___%s}
 												(localproc_0 @temp2 15)
 											)
 											(Format
 												@temp598
-												{  font:   %d}
+												{__font:___%d}
 												(curItem font:)
 											)
 											(Format
 												@temp628
-												{  width:  %d}
+												{__width:__%d}
 												(curItem width:)
 											)
 											(Format
 												@temp658
-												{  noun:   %d}
+												{__noun:___%d}
 												(curItem noun:)
 											)
 											(Format
 												@temp678
-												{  verb:   %d}
+												{__verb:___%d}
 												(curItem verb:)
 											)
 											(Format
 												@temp708
-												{  case:   %d}
+												{__case:___%d}
 												(curItem case:)
 											)
 											(Format
 												@temp738
-												{  seq:    %d}
+												{__seq:____%d}
 												(curItem seq:)
 											)
 											(Format
 												@temp758
-												{  modNum: %d}
+												{__modNum: %d}
 												(curItem modNum:)
 											)
 										)
@@ -1328,42 +1328,42 @@
 											(StrCpy @temp2 (curItem text:))
 											(Format
 												@temp568
-												{  text:   %s}
+												{__text:___%s}
 												(localproc_0 @temp2 15)
 											)
 											(Format
 												@temp598
-												{  font:   %d}
+												{__font:___%d}
 												(curItem font:)
 											)
 											(Format
 												@temp628
-												{  value:  %d}
+												{__value:__%d}
 												(curItem value:)
 											)
 											(Format
 												@temp658
-												{  noun:   %d}
+												{__noun:___%d}
 												(curItem noun:)
 											)
 											(Format
 												@temp678
-												{  verb:   %d}
+												{__verb:___%d}
 												(curItem verb:)
 											)
 											(Format
 												@temp708
-												{  case:   %d}
+												{__case:___%d}
 												(curItem case:)
 											)
 											(Format
 												@temp738
-												{  seq:    %d}
+												{__seq:____%d}
 												(curItem seq:)
 											)
 											(Format
 												@temp758
-												{  modNum: %d}
+												{__modNum: %d}
 												(curItem modNum:)
 											)
 										)
@@ -1371,17 +1371,17 @@
 											(StrCpy @temp788 {Icon Item})
 											(Format
 												@temp568
-												{  view:   %d}
+												{__view:___%d}
 												(curItem view:)
 											)
 											(Format
 												@temp598
-												{  loop:   %d}
+												{__loop:___%d}
 												(curItem loop:)
 											)
 											(Format
 												@temp628
-												{  cel:    %d}
+												{__cel:____%d}
 												(curItem cel:)
 											)
 											(= temp658
@@ -1399,17 +1399,17 @@
 											(StrCpy @temp2 (curItem text:))
 											(Format
 												@temp568
-												{  text:   %s}
+												{__text:___%s}
 												(localproc_0 @temp2 15)
 											)
 											(Format
 												@temp598
-												{  font:   %d}
+												{__font:___%d}
 												(curItem font:)
 											)
 											(Format
 												@temp628
-												{  max:    %d}
+												{__max:____%d}
 												(curItem max:)
 											)
 											(= temp658
@@ -1426,12 +1426,12 @@
 											(StrCpy @temp788 {Selector Item})
 											(Format
 												@temp568
-												{  width:  %d}
+												{__width:__%d}
 												(curItem x:)
 											)
 											(Format
 												@temp598
-												{  length: %d}
+												{__length: %d}
 												(curItem y:)
 											)
 											(= temp628
@@ -1545,13 +1545,13 @@
 				(_DButton
 					(if (!= (theItem font:) lastFont)
 						(= lastFont (theItem font:))
-						(Format @str {\t\t\tfont:\t\t\t%d,\r\n} lastFont)
+						(Format @str {\t\t\tfont:\t\t\t%d,\0d\n} lastFont)
 						(file writeString: @str)
 					)
 					(if (theItem seq:)
 						(Format
 							@str
-							{\t\t\taddButton:\t%d %d %d %d %d %d %d %d, \r\n}
+							{\t\t\taddButton:\t%d %d %d %d %d %d %d %d, \0d\n}
 							(theItem value:)
 							(theItem noun:)
 							(theItem verb:)
@@ -1564,7 +1564,7 @@
 					else
 						(Format
 							@str
-							{\t\t\taddButton:\t%d \{%s\} %d %d,\r\n}
+							{\t\t\taddButton:\t%d {%s\} %d %d,\0d\n}
 							(theItem value:)
 							(theItem text:)
 							(- (- (theItem nsLeft:) (DlgWindow left:)) 4)
@@ -1576,14 +1576,14 @@
 				(_DText
 					(if (!= (theItem font:) lastFont)
 						(= lastFont (theItem font:))
-						(Format @str {\t\t\tfont:\t\t\t%d,\r\n} lastFont)
+						(Format @str {\t\t\tfont:\t\t\t%d,\0d\n} lastFont)
 						(file writeString: @str)
 					)
 					(if (!= (theItem mode:) lastMode)
 						(= lastMode (theItem mode:))
 						(Format
 							@str
-							{\t\t\tmode:\t\t\t%s,\r\n}
+							{\t\t\tmode:\t\t\t%s,\0d\n}
 							(switch (theItem mode:)
 								(0 {teJustLeft})
 								(-1 {teJustRight})
@@ -1594,13 +1594,13 @@
 					)
 					(if (!= (theItem width:) lastWidth)
 						(= lastWidth (theItem width:))
-						(Format @str {\t\t\twidth:\t\t%d, \r\n} lastWidth)
+						(Format @str {\t\t\twidth:\t\t%d, \0d\n} lastWidth)
 						(file writeString: @str)
 					)
 					(if (theItem seq:)
 						(Format
 							@str
-							{\t\t\taddText:\t\t%d %d %d %d %d %d %d, \r\n}
+							{\t\t\taddText:\t\t%d %d %d %d %d %d %d, \0d\n}
 							(theItem noun:)
 							(theItem verb:)
 							(theItem case:)
@@ -1612,7 +1612,7 @@
 					else
 						(Format
 							@str
-							{\t\t\taddText:\t\t\{%s\} %d %d,\r\n}
+							{\t\t\taddText:\t\t{%s\} %d %d,\0d\n}
 							(theItem text:)
 							(- (- (theItem nsLeft:) (DlgWindow left:)) 4)
 							(- (- (theItem nsTop:) (DlgWindow top:)) 4)
@@ -1623,12 +1623,12 @@
 				(_DEdit
 					(if (!= (theItem font:) lastFont)
 						(= lastFont (theItem font:))
-						(Format @str {\t\t\tfont:\t\t\t%d,\r\n} lastFont)
+						(Format @str {\t\t\tfont:\t\t\t%d,\0d\n} lastFont)
 						(file writeString: @str)
 					)
 					(Format
 						@str
-						{\t\t\taddEdit:\t\t@str %d %d %d \{%s\},\r\n}
+						{\t\t\taddEdit:\t\t@str %d %d %d {%s\},\0d\n}
 						(theItem max:)
 						(- (- (theItem nsLeft:) (DlgWindow left:)) 4)
 						(- (- (theItem nsTop:) (DlgWindow top:)) 4)
@@ -1639,7 +1639,7 @@
 				(_DIcon
 					(Format
 						@str
-						{\t\t\taddIcon:\t\t%d %d %d %d %d,\r\n}
+						{\t\t\taddIcon:\t\t%d %d %d %d %d,\0d\n}
 						(theItem view:)
 						(theItem loop:)
 						(theItem cel:)

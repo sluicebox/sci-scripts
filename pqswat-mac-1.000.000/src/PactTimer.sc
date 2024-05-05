@@ -233,7 +233,7 @@
 					(= temp3
 						(Str
 							format:
-								{#%01d    ECART: %02d.%d}
+								{#%01d____ECART: %02d.%d}
 								temp0
 								temp2
 								(- temp1 (* temp2 10))
@@ -244,7 +244,7 @@
 					(= temp3
 						(Str
 							format:
-								{#%01d    SPLIT TIME: %02d.%d}
+								{#%01d____SPLIT TIME: %02d.%d}
 								temp0
 								temp2
 								(- temp1 (* temp2 10))
@@ -310,7 +310,7 @@
 				(= temp1
 					(Str
 						format:
-							{1ER COUP:   %02d.%d}
+							{1ER COUP:___%02d.%d}
 							temp0
 							(- (shotTimes at: 0) (* temp0 10))
 					)
@@ -320,7 +320,7 @@
 				(= temp1
 					(Str
 						format:
-							{FIRST SHOT:   %02d.%d}
+							{FIRST SHOT:___%02d.%d}
 							temp0
 							(- (shotTimes at: 0) (* temp0 10))
 					)
@@ -382,7 +382,7 @@
 				(= temp4
 					(Str
 						format:
-							{#%01d     OVER: %02d.%d}
+							{#%01d_____OVER: %02d.%d}
 							temp0
 							temp3
 							(- temp1 (* temp3 10))

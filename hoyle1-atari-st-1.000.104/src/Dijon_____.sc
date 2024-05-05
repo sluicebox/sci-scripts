@@ -10,7 +10,7 @@
 
 (instance Dijon_____ of Person
 	(properties
-		name {Dijon     }
+		name {Dijon_____}
 		view 2
 		song 28
 		crazy8sSkill 1

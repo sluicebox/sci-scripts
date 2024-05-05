@@ -38,18 +38,18 @@
 						font: gSmallFont
 						addText: {Where to, STUD?}
 						addEdit: @temp2 5 80
-						addButton: 100 {      Opening        } 0 20
+						addButton: 100 {______Opening________} 0 20
 						addButton: 200 { Isle of the Crown } 101 20
-						addButton: 300 {  Isle Sacred Mtn  } 0 34
-						addButton: 405 {     Labyrinth     } 101 34
-						addButton: 450 {  Isle of Wonder   } 0 48
-						addButton: 500 {   Isle of Beast   } 101 48
+						addButton: 300 {__Isle Sacred Mtn__} 0 34
+						addButton: 405 {_____Labyrinth_____} 101 34
+						addButton: 450 {__Isle of Wonder___} 0 48
+						addButton: 500 {___Isle of Beast___} 101 48
 						addButton: 550 { Isle of the Mists } 0 62
 						addButton: 600 { Realm of the Dead } 101 62
-						addButton: 730 {  Castle - Beauty  } 0 76
+						addButton: 730 {__Castle - Beauty__} 0 76
 						addButton: 710 {Castle - Magic Door} 101 76
-						addButton: -100 {     < Restore >     } 0 90
-						addButton: 205 {     Tutorial      } 101 90
+						addButton: -100 {_____< Restore >_____} 0 90
+						addButton: 205 {_____Tutorial______} 101 90
 						init:
 					)
 				)

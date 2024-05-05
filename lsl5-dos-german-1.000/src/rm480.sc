@@ -466,17 +466,17 @@
 							{Airport PA #4}
 							4
 							81
-							{  Atmosphere  }
+							{__Atmosphere__}
 							5
 							81
-							{    Screams    }
+							{____Screams____}
 							6
 							106
 							81
-							{      Yeow      }
+							{______Yeow______}
 							7
 							81
-							{     Coffee     }
+							{_____Coffee_____}
 							8
 							81
 							{Folding Chair}
@@ -486,30 +486,30 @@
 							{ Wolf Whistle }
 							10
 							81
-							{   Knocking   }
+							{___Knocking___}
 							11
 							81
-							{   Glass #1   }
+							{___Glass #1___}
 							12
 							106
 							81
-							{   Glass #2   }
+							{___Glass #2___}
 							13
 							81
-							{       Ah       }
+							{_______Ah_______}
 							14
 							81
-							{       Oh       }
+							{_______Oh_______}
 							15
 							106
 							81
-							{       AH!       }
+							{_______AH!_______}
 							16
 							81
-							{      OH!      }
+							{______OH!______}
 							17
 							81
-							{     Oooh!     }
+							{_____Oooh!_____}
 							18
 							106
 							81
@@ -519,14 +519,14 @@
 							{ Slob Eating }
 							20
 							81
-							{     Flush     }
+							{_____Flush_____}
 							21
 							106
 							81
-							{     Belch     }
+							{_____Belch_____}
 							22
 							81
-							{     Barf     }
+							{_____Barf_____}
 							23
 							81
 							{Do Not Touch}

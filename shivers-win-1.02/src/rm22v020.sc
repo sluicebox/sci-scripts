@@ -110,7 +110,7 @@
 					(= local0
 						(Str
 							format:
-								{ You are now in the world of the shaman or witch doctor, whose purpose is to           act as intermediary for gods and men. The shaman acts as doctor, frightening evil spirits away from the sick or officiating in the practice of human sacrifice to pacify angry gods. }
+								{ You are now in the world of the shaman or witch doctor, whose purpose is to___________act as intermediary for gods and men. The shaman acts as doctor, frightening evil spirits away from the sick or officiating in the practice of human sacrifice to pacify angry gods. }
 						)
 					)
 					(gCurRoom drawText: local0 0 0)

@@ -869,7 +869,7 @@
 				{Restart}
 				2
 				#button
-				{    Quit    }
+				{____Quit____}
 				3
 			)
 			(1
@@ -1533,7 +1533,7 @@
 												#font
 												0
 												#button
-												{  Restart  }
+												{__Restart__}
 												1
 												#button
 												{ Continue }
@@ -1554,7 +1554,7 @@
 												#font
 												0
 												#button
-												{    Quit    }
+												{____Quit____}
 												1
 												#button
 												{ Continue }

@@ -39,13 +39,13 @@
 				#mode
 				1
 				#button
-				{  RESTORE  }
+				{__RESTORE__}
 				1
 				#button
-				{  RESTART  }
+				{__RESTART__}
 				2
 				#button
-				{    QUIT    }
+				{____QUIT____}
 				3
 				#icon
 				deadIcon

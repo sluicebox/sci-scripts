@@ -2392,12 +2392,12 @@
 				0
 				174
 				gScoreDisplayed
-				(if gEgoIsPatti {  Passionate Patti} else {Leisure Suit Larry 3})
+				(if gEgoIsPatti {__Passionate Patti} else {Leisure Suit Larry 3})
 				gScoreDisplayed
 				(if gEgoIsPatti
-					{     Passionate Patti}
+					{_____Passionate Patti}
 				else
-					{   Leisure Suit Larry 3}
+					{___Leisure Suit Larry 3}
 				)
 			)
 		)

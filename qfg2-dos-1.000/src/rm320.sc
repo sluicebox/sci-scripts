@@ -405,7 +405,7 @@
 		nsBottom 156
 		nsRight 13
 		description {the alley door}
-		lookStr {You see a dark passage leading South.  The street sign reads "Khanjar Tarik," which means "Dagger Street."}
+		lookStr {You see a dark passage leading South.__The street sign reads "Khanjar Tarik," which means "Dagger Street."}
 	)
 )
 
@@ -419,7 +419,7 @@
 		nsBottom 159
 		nsRight 320
 		description {the alley door}
-		lookStr {You see a dark passage leading North.  The street sign reads "Saif Darb," which means "Sword Avenue."}
+		lookStr {You see a dark passage leading North.__The street sign reads "Saif Darb," which means "Sword Avenue."}
 	)
 )
 

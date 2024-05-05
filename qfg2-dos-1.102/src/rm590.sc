@@ -363,7 +363,7 @@
 				else
 					(EgoDead
 						1
-						{With all the damage you took to get here, it's really a shame you couldn't take any more.  You should've tended to your healing, but now it's too late.}
+						{With all the damage you took to get here, it's really a shame you couldn't take any more.__You should've tended to your healing, but now it's too late.}
 						#title
 						{You Fell for It}
 					)

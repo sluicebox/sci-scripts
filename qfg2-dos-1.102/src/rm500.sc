@@ -1528,7 +1528,7 @@
 		x -10
 		y 176
 		description {Khaveen}
-		lookStr {The Calm spell must have worn off of Khaveen.  He seems confused, but very angry.}
+		lookStr {The Calm spell must have worn off of Khaveen.__He seems confused, but very angry.}
 		view 465
 		signal 16384
 		illegalBits 0

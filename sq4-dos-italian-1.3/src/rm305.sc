@@ -532,7 +532,7 @@
 		nsBottom 200
 		nsRight 320
 		description {buttes}
-		lookStr {You've seen a lot of plateaus and sloping hills before, but this one's a butte.  Everywhere you look, the horizon undulates in the enticing peaks, curves and crevices for which Estros is famous.}
+		lookStr {You've seen a lot of plateaus and sloping hills before, but this one's a butte.__Everywhere you look, the horizon undulates in the enticing peaks, curves and crevices for which Estros is famous.}
 	)
 
 	(method (doVerb theVerb)

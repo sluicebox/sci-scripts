@@ -55,7 +55,7 @@
 		y 8
 		noun '/bird,buzzard'
 		description {a vulture}
-		lookStr {Look down there, gang.  They must've just opened a new carrion out place.}
+		lookStr {Look down there, gang.__They must've just opened a new carrion out place.}
 		view 871
 		loop 4
 		signal 18432
@@ -83,7 +83,7 @@
 		y 15
 		noun '/bird,buzzard'
 		description {a vulture}
-		lookStr {Look, Dolores.  Bedouin on rye!}
+		lookStr {Look, Dolores.__Bedouin on rye!}
 		view 871
 		loop 3
 		signal 18432

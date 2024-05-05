@@ -145,7 +145,7 @@
 							)
 							(gamefile_sh
 								name: {ego.log}
-								write: @string1 @string {] } @string2 {\r\n}
+								write: @string1 @string {] } @string2 {\0d\n}
 								close:
 							)
 						)

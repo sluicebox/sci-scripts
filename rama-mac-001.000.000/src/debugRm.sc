@@ -624,7 +624,7 @@
 						)
 						(FrameOut)
 						(poly_pol name: (temp12 data:) open: 2)
-						(poly_pol writeString: {\t\t(curRoom addObstacle:\r\n})
+						(poly_pol writeString: {\t\t(curRoom addObstacle:\0d\n})
 						(if (PEditor size:)
 							(PEditor eachElementDo: #writeToFile poly_pol)
 							(if (gCurRoom obstacles:)
@@ -653,7 +653,7 @@
 								)
 							)
 						)
-						(poly_pol writeString: {\t\t)\r\n})
+						(poly_pol writeString: {\t\t)\0d\n})
 						(poly_pol close:)
 						(temp12 dispose:)
 						(PEditor dispose:)
@@ -686,7 +686,7 @@
 								)
 								(= temp15 (Str newWith: 75 {}))
 								(temp15
-									format: {%d.rbt Bad Audio\r\n} global107
+									format: {%d.rbt Bad Audio\0d\n} global107
 								)
 								(temp25 writeString: temp15)
 							)
@@ -699,7 +699,7 @@
 								)
 								(= temp15 (Str newWith: 75 {}))
 								(temp15
-									format: {%d.rbt Needs Audio\r\n} global107
+									format: {%d.rbt Needs Audio\0d\n} global107
 								)
 								(temp25 writeString: temp15)
 							)
@@ -713,7 +713,7 @@
 								(= temp15 (Str newWith: 75 {}))
 								(temp15
 									format:
-										{%d.rbt Doesn't Need Audio\r\n}
+										{%d.rbt Doesn't Need Audio\0d\n}
 										global107
 								)
 								(temp25 writeString: temp15)
@@ -728,7 +728,7 @@
 								(= temp15 (Str newWith: 75 {}))
 								(temp15
 									format:
-										{%d.rbt Audio Doesn't Sync\r\n}
+										{%d.rbt Audio Doesn't Sync\0d\n}
 										global107
 								)
 								(temp25 writeString: temp15)
@@ -875,7 +875,7 @@
 						(= temp8 (event y:))
 						(event localize: (global117 plane:))
 						(Printf
-							{global: %d/%d\n local: %d/%d}
+							{global: %d/%d\n_local: %d/%d}
 							temp7
 							temp8
 							(event x:)

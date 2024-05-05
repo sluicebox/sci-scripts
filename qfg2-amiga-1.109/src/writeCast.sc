@@ -48,12 +48,13 @@
 			(return)
 		)
 		(gGame setCursor: gWaitCursor)
-		(file writeString: {; Tester 2.33} {\r\n\r\n})
+		(file writeString: {; Tester 2.33} {\0d\n\0d\n})
 		(file
-			writeString: (Format @str {; picture %d\r\n\r\n} (gCurRoom curPic:))
+			writeString:
+				(Format @str {; picture %d\0d\n\0d\n} (gCurRoom curPic:))
 		)
 		(if global61
-			(file writeString: (Format @str {; palette %d\r\n\r\n} global61))
+			(file writeString: (Format @str {; palette %d\0d\n\0d\n} global61))
 		)
 		(gCast eachElementDo: #perform self)
 		(gAddToPics eachElementDo: #perform self)
@@ -67,7 +68,7 @@
 			writeString:
 				(Format
 					@str
-					{(instance %s of %s\r\n\t(properties\r\n\t\tview\t\t\t%d\r\n\t\tloop\t\t\t%d\r\n\t\tcel\t\t\t%d\r\n}
+					{(instance %s of %s\0d\n\t(properties\0d\n\t\tview\t\t\t%d\0d\n\t\tloop\t\t\t%d\0d\n\t\tcel\t\t\t%d\0d\n}
 					(obj name:)
 					{Actor}
 					(obj view:)
@@ -78,31 +79,37 @@
 		(if (obj palette:)
 			(file
 				writeString:
-					(Format @str {\t\tpalette\t\t%d\r\n} (obj palette:))
+					(Format @str {\t\tpalette\t\t%d\0d\n} (obj palette:))
 			)
 		)
 		(file
 			writeString:
 				(Format
 					@str
-					{\t\tx\t\t\t\t%d\r\n\t\ty\t\t\t\t%d\r\n}
+					{\t\tx\t\t\t\t%d\0d\n\t\ty\t\t\t\t%d\0d\n}
 					(obj x:)
 					(obj y:)
 				)
 		)
 		(if (obj z:)
-			(file writeString: (Format @str {\t\tz\t\t\t\t%d\r\n} (obj z:)))
+			(file
+				writeString: (Format @str {\t\tz\t\t\t\t%d\0d\n} (obj z:))
+			)
 		)
 		(if (and isActor (obj cycleSpeed:))
 			(file
 				writeString:
-					(Format @str {\t\tcycleSpeed\t%d\r\n} (obj cycleSpeed:))
+					(Format
+						@str
+						{\t\tcycleSpeed\t%d\0d\n}
+						(obj cycleSpeed:)
+					)
 			)
 		)
 		(if (and (obj isKindOf: Actor) (obj moveSpeed:))
 			(file
 				writeString:
-					(Format @str {\t\tmoveSpeed\t%d\r\n} (obj moveSpeed:))
+					(Format @str {\t\tmoveSpeed\t%d\0d\n} (obj moveSpeed:))
 			)
 		)
 		(= signalStr 0)
@@ -110,13 +117,13 @@
 		(if (& (obj signal:) $0010)
 			(file
 				writeString:
-					(Format @str {\t\tpriority\t\t%d\r\n} (obj priority:))
+					(Format @str {\t\tpriority\t\t%d\0d\n} (obj priority:))
 			)
 			(StrCat @signalStr {fixPriOn})
 			(++ nSignalBits)
 		)
 		(if (and (obj isKindOf: Actor) (not (obj illegalBits:)))
-			(file writeString: {\t\tillegalBits\t$0000\r\n})
+			(file writeString: {\t\tillegalBits\t$0000\0d\n})
 		)
 		(if (& (obj signal:) $4000)
 			(if nSignalBits
@@ -141,9 +148,9 @@
 			(if (> nSignalBits 1)
 				(file writeString: {)})
 			)
-			(file writeString: {\r\n})
+			(file writeString: {\0d\n})
 		)
-		(file writeString: {\t)\r\n)\r\n\r\n})
+		(file writeString: {\t)\0d\n)\0d\n\0d\n})
 	)
 )
 

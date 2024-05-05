@@ -14,7 +14,7 @@
 	(method (readActor param1 &tmp temp0 temp1 temp2 temp3)
 		(= temp2 (Str new: 20))
 		(= temp1 (Str new: 140))
-		(= temp3 (Str with: { \t\r\n}))
+		(= temp3 (Str with: { \t\0d\n}))
 		(if
 			(while (self readString: temp1 139)
 				(temp1 getToken: temp3 temp2)

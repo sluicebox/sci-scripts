@@ -27,9 +27,9 @@
 		(Print addText: 29 0 8 1 0 0 0 init:) ; "GABRIEL KNIGHT: SINS OF THE FATHERS This entire work Copyright (c) 1994 Sierra On-Line, Inc. Contains technologies described in U.S. patent applications including 598,172 and 658,297."
 		((= local0 (Print new:))
 			addText: {About:} 66 0
-			addButton: 1 {   Credits   } 0 20
+			addButton: 1 {___Credits___} 0 20
 			addButton: 2 { How To Play } 100 20
-			addButton: 3 {    Hints    } 50 40
+			addButton: 3 {____Hints____} 50 40
 			modeless: 0
 		)
 		((local0 dialog:) mouseHiliting: 1)

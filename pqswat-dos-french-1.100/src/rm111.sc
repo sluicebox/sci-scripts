@@ -485,7 +485,7 @@
 			)
 			(temp0
 				format:
-					{%s\n%s\nThe quick brown fox, jumped over the lazy dog!?\n'Oh look -- a chasm.' said the author.\n; ABCDEFGHIJKLMNOPQRSTUVWXYZ\nabcdefghijklmnopqrstuvwxyz\n'1234567890 -=\~@#$%^&*() +\n}
+					{%s\n%s\nThe quick brown fox, jumped over the lazy dog!?\n'Oh look -- a chasm.' said the author.\n; ABCDEFGHIJKLMNOPQRSTUVWXYZ\nabcdefghijklmnopqrstuvwxyz\n'1234567890 -=\\~@#$%^&*() +\n}
 					(temp1 data:)
 					(temp2 data:)
 			)

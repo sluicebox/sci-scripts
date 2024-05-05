@@ -39,21 +39,21 @@
 			(gGame setCursor: 999)
 			(switch
 				(PrintD
-					{ Would you like to skip\n  the introduction or\n watch the whole thing?}
+					{ Would you like to skip\n__the introduction or\n_watch the whole thing?}
 					67
 					100
 					60
 					106
 					81
-					{         Skip it         }
+					{_________Skip it_________}
 					0
 					106
 					81
-					{        Watch it        }
+					{________Watch it________}
 					1
 					106
 					81
-					{    Restore a Game    }
+					{____Restore a Game____}
 					2
 				)
 				(0

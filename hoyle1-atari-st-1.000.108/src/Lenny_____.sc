@@ -10,7 +10,7 @@
 
 (instance Lenny_____ of Person
 	(properties
-		name {Lenny     }
+		name {Lenny_____}
 		view 13
 		song 15
 		crazy8sSkill 2

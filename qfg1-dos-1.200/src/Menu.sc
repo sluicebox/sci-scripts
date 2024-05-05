@@ -74,7 +74,7 @@
 				(Print
 					(Format @temp4 997 0 gVersion) ; "Written and Directed by: LORI ANN COLE Illustrated by: KENN NISHIUYE, JERRY MOORE, JEFF CROWE and CINDY WALKER Programmed by: BOB FISCHBACH, COREY COLE, LARRY SCOTT and JERRY SHAW Original Music by: MARK SEIBERT Version %s Copyright 1989 Sierra On-Line, Inc."
 					#title
-					{  Quest for Glory I Credits  }
+					{__Quest for Glory I Credits__}
 					#mode
 					1
 					#width

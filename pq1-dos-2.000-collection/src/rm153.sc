@@ -116,7 +116,7 @@
 	)
 
 	(method (init)
-		(= global224 {Last update:\nThurs 4-23-92  0834})
+		(= global224 {Last update:\nThurs 4-23-92__0834})
 		(if (not global205)
 			(= global205 2)
 		)

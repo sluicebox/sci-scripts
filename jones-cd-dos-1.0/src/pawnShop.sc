@@ -808,7 +808,7 @@
 (instance aRedeemableItem of CostDItem
 	(properties
 		state 289
-		text {                             }
+		text {_____________________________}
 		textColor 26
 		shadowColor 65
 	)

@@ -250,7 +250,7 @@
 					(self
 						save1:
 							(proc0_12
-								{** It's you AGAIN!!  Stop wasting my time.}
+								{** It's you AGAIN!!__Stop wasting my time.}
 								67
 								0
 								20
@@ -944,7 +944,7 @@
 		nsRight 320
 		description {Big and Tall Alien store}
 		sightAngle 500
-		lookStr {Your first thought upon looking around here is, "Hey, this clothing store isn't so big and tall!"  Then your brain kicks in.  The store is crammed with racks of apparel for the discriminating gigantic obese alien.  You silently remind yourself to start working out to get rid of those pesky fatty deposits.}
+		lookStr {Your first thought upon looking around here is, "Hey, this clothing store isn't so big and tall!"__Then your brain kicks in.__The store is crammed with racks of apparel for the discriminating gigantic obese alien.__You silently remind yourself to start working out to get rid of those pesky fatty deposits.}
 	)
 
 	(method (doVerb theVerb)

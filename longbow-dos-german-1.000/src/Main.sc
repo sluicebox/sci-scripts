@@ -833,8 +833,8 @@
 
 	(method (doit &tmp [temp0 35] [temp35 45] [temp80 8] [temp88 12] [temp100 10] [temp110 6] [temp116 4] [temp120 4] [temp124 4] [temp128 4] [temp132 4] temp136)
 		(StrCpy @temp80 (LangSwitch {Ransom: } {Loesegeld: }))
-		(StrCpy @temp88 (LangSwitch {     Outlaws: } {     Ge\84chtete: }))
-		(StrCpy @temp100 (LangSwitch {     Score:  } {     Punkte: }))
+		(StrCpy @temp88 (LangSwitch {_____Outlaws: } {_____Ge\84chtete: }))
+		(StrCpy @temp100 (LangSwitch {_____Score:__} {_____Punkte: }))
 		(Format @temp110 0 0 gRansom) ; "%u"
 		(Format @temp116 0 1 gOutlaws) ; "%d"
 		(Format @temp120 0 1 gScore) ; "%d"

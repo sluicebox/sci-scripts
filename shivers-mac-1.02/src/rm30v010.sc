@@ -121,7 +121,7 @@
 					(= local0
 						(Str
 							format:
-								{ Man creates in order to improve his existence. However, many of man's early    inventions became lost. During the dark ages, an inventor whose creation seemed a little too ingenious, could be accused of collaborating with Satan and consequently burned at the stake--or worse. }
+								{ Man creates in order to improve his existence. However, many of man's early____inventions became lost. During the dark ages, an inventor whose creation seemed a little too ingenious, could be accused of collaborating with Satan and consequently burned at the stake--or worse. }
 						)
 					)
 					(gCurRoom drawText: local0 0 0)

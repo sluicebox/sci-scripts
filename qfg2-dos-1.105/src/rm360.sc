@@ -808,7 +808,7 @@
 		x 98
 		y 139
 		description {the bartender}
-		lookStr {The man glares back at you.  This is not the face you associate with bartenders.  It reminds you more of Bruno from Spielburg.  Definitely not a man to mess with.}
+		lookStr {The man glares back at you.__This is not the face you associate with bartenders.__It reminds you more of Bruno from Spielburg.__Definitely not a man to mess with.}
 		view 363
 		loop 8
 		priority 12
@@ -1109,7 +1109,7 @@
 		y 123
 		noun '/bird,parrot'
 		description {the parrot}
-		lookStr {It is an ex-parrot.  It had one too many (that is to say one) Djinn Sling.  Actually, it's just pining for the fjords.}
+		lookStr {It is an ex-parrot.__It had one too many (that is to say one) Djinn Sling.__Actually, it's just pining for the fjords.}
 		view 360
 		loop 2
 		signal 16384

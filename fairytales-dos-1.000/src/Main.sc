@@ -663,7 +663,7 @@
 		(= gGlobalMusic2 globalMusic2)
 		(= gGlobalSoundEffect globalSoundEffect)
 		(= gWalkMusic walkMusic)
-		(= gVersion {x.yyy    })
+		(= gVersion {x.yyy____})
 		(= global229 (DoSound sndGET_POLYPHONY))
 		(= global103 (Graph grGET_COLOURS))
 		(= temp0 (FileIO fiOPEN {version} 1))

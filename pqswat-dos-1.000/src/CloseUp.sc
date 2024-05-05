@@ -76,7 +76,7 @@
 					(= temp3
 						(Print
 							font: 20071
-							addText: {     Unable to load file.    }
+							addText: {_____Unable to load file.____}
 							addButton: 0 { Retry } 15 20
 							addButton: 1 { Continue } 60 20
 							init:

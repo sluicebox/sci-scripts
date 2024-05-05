@@ -1156,7 +1156,7 @@
 		y 135
 		description {drawer}
 		onMeCheck 256
-		lookStr {That is Mike's In\Out basket.}
+		lookStr {That is Mike's In\\Out basket.}
 	)
 
 	(method (doVerb theVerb)

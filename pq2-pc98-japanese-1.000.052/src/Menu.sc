@@ -52,7 +52,7 @@
 				(Print
 					(Format @temp5 997 0 gVersion) ; "DESIGNED BY: Jim Walls ILLUSTRATED BY: Vu Nguyen, Cheryl Cornelius PROGRAMMED BY: David Slayback, Mickie Lee, Jerry Shaw, Bob Fischbach, Bob Heitman, Chris Hoyt ORIGINAL MUSIC BY: Mark Seibert Version J%s"
 					#title
-					{  Police Quest II Credits  }
+					{__Police Quest II Credits__}
 					#mode
 					1
 					#font

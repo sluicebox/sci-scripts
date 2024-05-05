@@ -370,7 +370,7 @@
 		x 110
 		y 27
 		description {security door}
-		lookStr {This store seems to be closed.  A security door blocks its entrance.}
+		lookStr {This store seems to be closed.__A security door blocks its entrance.}
 		view 380
 		loop 3
 		priority 1

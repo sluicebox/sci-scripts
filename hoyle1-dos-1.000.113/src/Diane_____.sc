@@ -10,7 +10,7 @@
 
 (instance Diane_____ of Person
 	(properties
-		name {Diane     }
+		name {Diane_____}
 		view 16
 		song 6
 		crazy8sSkill 1

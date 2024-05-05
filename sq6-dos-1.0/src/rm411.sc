@@ -1099,13 +1099,13 @@
 		(switch (= state newState)
 			(0
 				(Prints
-					{ Alt-B           Retreat robot frame\nAlt-F           Advance robot frame\nAlt-I           Show robot info\nAlt-K           Kill robot\nAlt-O           Open robot\nAlt-P           Play robot\nAlt-T           Tag robot frame for cue\nAlt-S           Single robot frame.\nSPACEBAR        Pause robot\n}
+					{ Alt-B___________Retreat robot frame\nAlt-F___________Advance robot frame\nAlt-I___________Show robot info\nAlt-K___________Kill robot\nAlt-O___________Open robot\nAlt-P___________Play robot\nAlt-T___________Tag robot frame for cue\nAlt-S___________Single robot frame.\nSPACEBAR________Pause robot\n}
 				)
 				(= cycles 2)
 			)
 			(1
 				(Prints
-					{ F:              Forward\nB:              BegLoop\nE:              EndLoop\n\n+:              Next cel\n-:              Previous Cel\n\nV:              View\nL:              Loop\nH:              Hide-show actor\nI:              Actor Information\nK:              Normalize Actor\n\nP:              Picture\n\nF9:             Set priority\n0-9:            Choose actor\n}
+					{ F:______________Forward\nB:______________BegLoop\nE:______________EndLoop\n\n+:______________Next cel\n-:______________Previous Cel\n\nV:______________View\nL:______________Loop\nH:______________Hide-show actor\nI:______________Actor Information\nK:______________Normalize Actor\n\nP:______________Picture\n\nF9:_____________Set priority\n0-9:____________Choose actor\n}
 				)
 				(self dispose:)
 			)

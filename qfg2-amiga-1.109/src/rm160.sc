@@ -988,7 +988,7 @@
 		y 90
 		noun '/moose'
 		description {the moose}
-		lookStr {It's the head of the rare Southern Moose.  You can tell by the hat.}
+		lookStr {It's the head of the rare Southern Moose.__You can tell by the hat.}
 		view 160
 		priority 9
 		signal 16

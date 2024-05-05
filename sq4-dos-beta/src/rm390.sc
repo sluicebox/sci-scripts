@@ -482,7 +482,7 @@
 				(self
 					save1:
 						(proc0_12
-							{** Good.  I will search in \nthe opposite direction.}
+							{** Good.__I will search in \nthe opposite direction.}
 							67
 							30
 							130

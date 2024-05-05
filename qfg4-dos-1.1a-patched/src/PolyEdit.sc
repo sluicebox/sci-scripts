@@ -278,7 +278,7 @@
 			(= nameStr2 (Str newWith: 40 {}))
 		)
 		(if (== whichList srcList)
-			(file writeString: {\t\t\t((Polygon new:)\r\n})
+			(file writeString: {\t\t\t((Polygon new:)\0d\n})
 			(file writeString: {\t\t\t\ttype:\t\t})
 			(file
 				writeString:
@@ -289,13 +289,13 @@
 						(3 {PContainedAccess})
 					)
 			)
-			(file writeString: {,\r\n})
+			(file writeString: {,\0d\n})
 			(if name
-				(nameStr format: {\t\t\t\tname:\t\t\{P})
+				(nameStr format: {\t\t\t\tname:\t\t{P})
 				(nameStr2 format: {%s\},} name)
 				(nameStr cat: nameStr2)
 				(file writeString: nameStr)
-				(file writeString: {\r\n})
+				(file writeString: {\0d\n})
 				(nameStr dispose:)
 				(nameStr2 dispose:)
 			)
@@ -310,7 +310,7 @@
 				(= pt (NodeValue node))
 				(str format: {%d %d} (pt x:) (pt y:))
 				(if (>= (+= lineLen (= len (+ (str size:) 1))) 80)
-					(file writeString: {\r\n\t\t\t\t\t\t})
+					(file writeString: {\0d\n\t\t\t\t\t\t})
 					(= frst 1)
 					(= lineLen (+ 17 len))
 				)
@@ -320,9 +320,9 @@
 				(file writeString: str)
 				(= frst 0)
 			)
-			(file writeString: {,\r\n})
-			(file writeString: {\t\t\t\tyourself:\r\n})
-			(file writeString: {\t\t\t)\r\n})
+			(file writeString: {,\0d\n})
+			(file writeString: {\t\t\t\tyourself:\0d\n})
+			(file writeString: {\t\t\t)\0d\n})
 			(str dispose:)
 		)
 	)
@@ -831,13 +831,13 @@
 						(switch state
 							(0
 								(DoPrint
-									{           CREATING POLYGON\r\n\r\nClick to create each corner of the polygon, then choose Done from the menu to finish.  You can also press Esc or Ctrl-click to finish.\r\n\r\nTo UNDO a corner, choose Undo.\r\n\r\nTo change MAP displayed (visual or control), choose Map.\r\n\r\nTo EXIT the Polygon Editor, choose eXit or press Ctrl-S.}
+									{___________CREATING POLYGON\0d\n\0d\nClick to create each corner of the polygon, then choose Done from the menu to finish.__You can also press Esc or Ctrl-click to finish.\0d\n\0d\nTo UNDO a corner, choose Undo.\0d\n\0d\nTo change MAP displayed (visual or control), choose Map.\0d\n\0d\nTo EXIT the Polygon Editor, choose eXit or press Ctrl-S.}
 									0
 								)
 							)
 							(1
 								(DoPrint
-									{             EDITING POLYGON\r\n\r\nTo MOVE a corner, click on it and drag it to the new position.\r\nTo INSERT a new corner, Ctrl-click to create it, then drag it to the correct position.\r\nTo DELETE a corner, Shift-click on it.\r\nTo UNDO an action, choose Undo from the menu.\r\nTo CREATE a new polygon, choose Create.\r\nTo change a polygon's TYPE (Total, Near or Barred), choose Type.\r\nTo change MAP displayed (visual or control), choose Map.\r\nTo EXIT the Polygon Editor, choose eXit or press Ctrl-S.\r\n\r\nIn addition to using the mouse, you can use Space and BackSpace to select corners and Tab and BackTab to select polygons. }
+									{_____________EDITING POLYGON\0d\n\0d\nTo MOVE a corner, click on it and drag it to the new position.\0d\nTo INSERT a new corner, Ctrl-click to create it, then drag it to the correct position.\0d\nTo DELETE a corner, Shift-click on it.\0d\nTo UNDO an action, choose Undo from the menu.\0d\nTo CREATE a new polygon, choose Create.\0d\nTo change a polygon's TYPE (Total, Near or Barred), choose Type.\0d\nTo change MAP displayed (visual or control), choose Map.\0d\nTo EXIT the Polygon Editor, choose eXit or press Ctrl-S.\0d\n\0d\nIn addition to using the mouse, you can use Space and BackSpace to select corners and Tab and BackTab to select polygons. }
 									0
 								)
 							)
@@ -857,7 +857,7 @@
 					)
 					(KEY_a
 						(DoPrint
-							{ by\r\n\r\nMark Wilden\r\n\r\nOriginal program by Chad Bye\r\n\r\nUpdated by Robert W. Lindsley\r\n\r\n}
+							{ by\0d\n\0d\nMark Wilden\0d\n\0d\nOriginal program by Chad Bye\0d\n\0d\nUpdated by Robert W. Lindsley\0d\n\0d\n}
 							1
 						)
 					)
@@ -1245,22 +1245,24 @@
 			(file dispose:)
 			(return 0)
 		)
-		(file writeString: (str format: {\t\t; %s\r\n} {Polygon Editor 2.0}))
+		(file
+			writeString: (str format: {\t\t; %s\0d\n} {Polygon Editor 2.0})
+		)
 		(file
 			writeString:
 				(str
 					format:
-						{\t\t; %s : Picture %d\r\n}
+						{\t\t; %s : Picture %d\0d\n}
 						{Dynamic Obstacles}
 						(gCurRoom curPic:)
 				)
 		)
-		(file writeString: {\t\t(curRoom addObstacle:\r\n})
+		(file writeString: {\t\t(curRoom addObstacle:\0d\n})
 		(self eachElementDo: #writeFile file 0)
-		(file writeString: {\t\t)\r\n\r\n})
-		(file writeString: {\t\t(altPolyList add:\r\n})
+		(file writeString: {\t\t)\0d\n\0d\n})
+		(file writeString: {\t\t(altPolyList add:\0d\n})
 		(self eachElementDo: #writeFile file 1)
-		(file writeString: {\t\t)\r\n})
+		(file writeString: {\t\t)\0d\n})
 		(file dispose:)
 		(str dispose:)
 		(return 1)

@@ -94,7 +94,7 @@
 						)
 						(if (< local1 999)
 							(SaveScreen (temp5 data:))
-							(Printf {Screen saved as\n   %s} (temp5 data:))
+							(Printf {Screen saved as\n___%s} (temp5 data:))
 						else
 							(Prints
 								{Sorry, no can do. How did you get so many files?}
@@ -232,7 +232,7 @@
 					)
 					(FrameOut)
 					(poly_pol name: (temp3 data:) open: 0)
-					(poly_pol writeString: {;***************************\r\n})
+					(poly_pol writeString: {;***************************\0d\n})
 					(= temp6 0)
 					(if (PEditor size:)
 						(= temp6 (Str newWith: 5 {}))
@@ -243,11 +243,11 @@
 							
 							(= temp10 (KList 6 temp9)) ; NextNode
 							(= temp12 (KList 8 temp9)) ; NodeValue
-							(poly_pol writeString: {\r\n})
+							(poly_pol writeString: {\0d\n})
 							(poly_pol writeString: {(instance })
 							(poly_pol writeString: (temp12 name:))
-							(poly_pol writeString: { of Feature\r\n})
-							(poly_pol writeString: {\t(properties\r\n})
+							(poly_pol writeString: { of Feature\0d\n})
+							(poly_pol writeString: {\t(properties\0d\n})
 							(poly_pol writeString: {\t\tx})
 							(= temp13 (= temp15 1000))
 							(= temp14 (= temp16 0))
@@ -275,26 +275,26 @@
 							(poly_pol writeString: {\t\t\t\t})
 							(temp6 format: {%d} temp0)
 							(poly_pol writeString: (temp6 data:))
-							(poly_pol writeString: {\r\n})
+							(poly_pol writeString: {\0d\n})
 							(poly_pol writeString: {\t\ty})
 							(poly_pol writeString: {\t\t\t\t})
 							(temp6 format: {%d} temp1)
 							(poly_pol writeString: (temp6 data:))
-							(poly_pol writeString: {\r\n})
-							(poly_pol writeString: {\t\tsightAngle\t40\r\n})
-							(poly_pol writeString: {\t\tnoun\r\n})
-							(poly_pol writeString: {\t)\r\n})
-							(poly_pol writeString: {\t(method (init)\r\n})
-							(poly_pol writeString: {\t\t(self setPolygon:\r\n})
+							(poly_pol writeString: {\0d\n})
+							(poly_pol writeString: {\t\tsightAngle\t40\0d\n})
+							(poly_pol writeString: {\t\tnoun\0d\n})
+							(poly_pol writeString: {\t)\0d\n})
+							(poly_pol writeString: {\t(method (init)\0d\n})
+							(poly_pol writeString: {\t\t(self setPolygon:\0d\n})
 							(temp12 sel_770: poly_pol)
-							(poly_pol writeString: {\t\t)\r\n})
+							(poly_pol writeString: {\t\t)\0d\n})
 							(poly_pol
-								writeString: {\t\t(super init: &rest)\r\n}
+								writeString: {\t\t(super init: &rest)\0d\n}
 							)
-							(poly_pol writeString: {\t)\r\n})
+							(poly_pol writeString: {\t)\0d\n})
 							(poly_pol writeString: {);})
 							(poly_pol writeString: (temp12 name:))
-							(poly_pol writeString: {\r\n})
+							(poly_pol writeString: {\0d\n})
 						)
 					)
 					(poly_pol close:)
@@ -410,8 +410,8 @@
 					)
 					(FrameOut)
 					(poly_pol name: (temp3 data:) open: 0)
-					(poly_pol writeString: {\t\t;********************\r\n})
-					(poly_pol writeString: {\t\t(curRoom addObstacle:\r\n})
+					(poly_pol writeString: {\t\t;********************\0d\n})
+					(poly_pol writeString: {\t\t(curRoom addObstacle:\0d\n})
 					(if (PEditor size:)
 						(PEditor eachElementDo: #sel_770 poly_pol)
 						(if (gCurRoom obstacles:)
@@ -440,7 +440,7 @@
 							)
 						)
 					)
-					(poly_pol writeString: {\t\t)\r\n})
+					(poly_pol writeString: {\t\t)\0d\n})
 					(poly_pol close:)
 					(temp3 dispose:)
 					(PEditor dispose:)
@@ -504,7 +504,7 @@
 					(= temp1 (event y:))
 					(event localize: (gCast plane:))
 					(Printf
-						{global: %d/%d\n local: %d/%d}
+						{global: %d/%d\n_local: %d/%d}
 						temp0
 						temp1
 						(event x:)

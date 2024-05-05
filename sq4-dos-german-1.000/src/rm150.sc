@@ -80,7 +80,7 @@
 
 (instance rm150 of SQRoom
 	(properties
-		lookStr {This is Vohaul's chamber, where his dirtiest of deeds are set into motion.  The lit pedestal in the center towers jillions of feet above the floor.  Though relatively dark you can sense that this place is alive with raw energy.}
+		lookStr {This is Vohaul's chamber, where his dirtiest of deeds are set into motion.__The lit pedestal in the center towers jillions of feet above the floor.__Though relatively dark you can sense that this place is alive with raw energy.}
 		picture 150
 		south 505
 	)
@@ -782,7 +782,7 @@
 (instance overhang of Feature
 	(properties
 		description {overhang}
-		lookStr {This is the top half of an odd I/O unit.  It also provides lighting for the area.}
+		lookStr {This is the top half of an odd I/O unit.__It also provides lighting for the area.}
 	)
 
 	(method (onMe param1)

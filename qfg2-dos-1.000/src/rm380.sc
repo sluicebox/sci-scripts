@@ -22,7 +22,7 @@
 (local
 	theQuestion
 	guardsUp
-	[gateMsg 5] = [{By order of Khaveen, you are not allowed to leave the city without showing your visa, yellow-haired dog. } {By order of Khaveen, foreign dog, you are not allowed to leave.  Let me see your visa. } {By order of Khaveen, Infidel of Shapeir, you may not pass through these gates unless I see your visa. } {By order of Khaveen, you who come to this city unbidden may not leave as easily as you arrived.  Show me your visa. } {By order of Khaveen, you dog, you may not pass without showing your visa. }]
+	[gateMsg 5] = [{By order of Khaveen, you are not allowed to leave the city without showing your visa, yellow-haired dog. } {By order of Khaveen, foreign dog, you are not allowed to leave.__Let me see your visa. } {By order of Khaveen, Infidel of Shapeir, you may not pass through these gates unless I see your visa. } {By order of Khaveen, you who come to this city unbidden may not leave as easily as you arrived.__Show me your visa. } {By order of Khaveen, you dog, you may not pass without showing your visa. }]
 	gateCount
 	nightTimer
 	triedOnce
@@ -1095,7 +1095,7 @@
 		nsBottom 91
 		nsRight 185
 		description {an alley leading south}
-		lookStr {You see a dark, foreboding passage leading South.  The street sign reads "You must carry your Visa at all times!"}
+		lookStr {You see a dark, foreboding passage leading South.__The street sign reads "You must carry your Visa at all times!"}
 	)
 )
 

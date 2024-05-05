@@ -297,7 +297,7 @@
 		x -100
 		y -100
 		description {Zero-G skater}
-		lookStr {The Zero-G skaters look to be having fun.  But I wouldn't get in their way if I were you.  They enjoy playing "Spin the Dweeb" with any non-skaters who happen to wander into their air space.}
+		lookStr {The Zero-G skaters look to be having fun.__But I wouldn't get in their way if I were you.__They enjoy playing "Spin the Dweeb" with any non-skaters who happen to wander into their air space.}
 		view 400
 		priority 2
 		signal 24592
@@ -321,7 +321,7 @@
 		x -100
 		y -100
 		description {Zero-G skater}
-		lookStr {The Zero-G skaters look to be having fun.  But I wouldn't get in their way if I were you.  They enjoy playing "Spin the Dweeb" with any non-skaters who happen to wander into their air space.}
+		lookStr {The Zero-G skaters look to be having fun.__But I wouldn't get in their way if I were you.__They enjoy playing "Spin the Dweeb" with any non-skaters who happen to wander into their air space.}
 		view 400
 		loop 3
 		priority 2
@@ -1201,7 +1201,7 @@
 		y 100
 		description {Skate-O-Rama}
 		sightAngle 180
-		lookStr {It's a Zero-G Skate-O-Rama.  In here, the mall's gravity generators have no effect, providing an ideal and unique entertainment opportunity for the entire family.}
+		lookStr {It's a Zero-G Skate-O-Rama.__In here, the mall's gravity generators have no effect, providing an ideal and unique entertainment opportunity for the entire family.}
 	)
 
 	(method (onMe param1)
@@ -1214,7 +1214,7 @@
 		x 1
 		y 189
 		description {center light}
-		lookStr {The Skate-O-Rama is illuminated by a nearby sun whose glow is reflected through a mirror set into the floor.  With this latest innovation, you can now enjoy zero-G while tuning up your tan.}
+		lookStr {The Skate-O-Rama is illuminated by a nearby sun whose glow is reflected through a mirror set into the floor.__With this latest innovation, you can now enjoy zero-G while tuning up your tan.}
 	)
 
 	(method (onMe param1)

@@ -145,7 +145,7 @@
 				)
 				(gamefile_sh
 					name: {note.log}
-					write: @gString @string2 {\r\n}
+					write: @gString @string2 {\0d\n}
 					close:
 				)
 			)

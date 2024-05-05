@@ -267,7 +267,7 @@
 						(self
 							save1:
 								(proc0_12
-									{It's you AGAIN!!  Stop wasting my time.}
+									{It's you AGAIN!!__Stop wasting my time.}
 									67
 									0
 									20

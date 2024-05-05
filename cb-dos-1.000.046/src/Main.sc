@@ -677,13 +677,13 @@
 				#width
 				240
 				#button
-				{  Restore  }
+				{__Restore__}
 				1
 				#button
-				{  Restart  }
+				{__Restart__}
 				2
 				#button
-				{   Quit   }
+				{___Quit___}
 				3
 			)
 			(1
@@ -1268,7 +1268,7 @@
 
 (instance _7_crackers________ of newInvItem
 	(properties
-		name {7 crackers        }
+		name {7 crackers________}
 		said '/cracker,box'
 		owner 53
 		view 603
@@ -1320,7 +1320,7 @@
 
 (instance derringer__ of newInvItem
 	(properties
-		name {derringer  }
+		name {derringer__}
 		said '/derringer'
 		owner 31
 		view 617

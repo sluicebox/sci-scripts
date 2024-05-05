@@ -255,7 +255,7 @@
 (instance beast of Prop
 	(properties
 		description {Beast}
-		lookStr {Uh oh,  that looks like a beast!}
+		lookStr {Uh oh,__that looks like a beast!}
 		view 340
 		loop 2
 	)

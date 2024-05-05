@@ -89,7 +89,7 @@
 					(= local0
 						(Str
 							format:
-								{ Death comes uneasily to the mind of man. Burial customs throughout the world arise from the belief that the survivors can secure life after death for      the deceased. You will find here, that man has conceived of many ways to honor the dead. }
+								{ Death comes uneasily to the mind of man. Burial customs throughout the world arise from the belief that the survivors can secure life after death for______the deceased. You will find here, that man has conceived of many ways to honor the dead. }
 						)
 					)
 					(gCurRoom drawText: local0 0 0)

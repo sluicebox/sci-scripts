@@ -178,7 +178,7 @@
 					(if
 						((ScriptID 754) ; CPCheck
 							doit:
-								{The door to the witch's house has an enchantment on it and can't be opened.  Use Crispin's wand to break the spell.}
+								{The door to the witch's house has an enchantment on it and can't be opened.__Use Crispin's wand to break the spell.}
 						)
 						(SetFlag 94)
 						(SetFlag 101)

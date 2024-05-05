@@ -10,7 +10,7 @@
 
 (instance Thelma____ of Person
 	(properties
-		name {Thelma    }
+		name {Thelma____}
 		view 9
 		song 25
 		crazy8sSkill 2

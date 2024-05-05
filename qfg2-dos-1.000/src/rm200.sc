@@ -545,7 +545,7 @@
 		y 150
 		noun '/model,orrery,(system<planetary)'
 		description {a model of an unknown planetary system}
-		lookStr {It's only a model of a planetary system.  It isn't the real thing.}
+		lookStr {It's only a model of a planetary system.__It isn't the real thing.}
 		view 200
 		loop 3
 		cycleSpeed 1
@@ -633,7 +633,7 @@
 		nsBottom 122
 		nsRight 124
 		description {a Map of the Heavens}
-		lookStr {The stars are all out of place compared to Spielburg.  Where the heck IS this place?}
+		lookStr {The stars are all out of place compared to Spielburg.__Where the heck IS this place?}
 	)
 )
 
@@ -675,7 +675,7 @@
 		nsBottom 33
 		nsRight 202
 		description {the star symbol on the ceiling}
-		lookStr {A star with a hole like a doughnut.  How interesting.}
+		lookStr {A star with a hole like a doughnut.__How interesting.}
 	)
 )
 
@@ -689,7 +689,7 @@
 		nsBottom 25
 		nsRight 169
 		description {the hole in the roof}
-		lookStr {Lookit the hole in the ceiling!\nGee!  What happens if it rains?}
+		lookStr {Lookit the hole in the ceiling!\nGee!__What happens if it rains?}
 	)
 )
 

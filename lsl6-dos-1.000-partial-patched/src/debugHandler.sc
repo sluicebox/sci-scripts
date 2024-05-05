@@ -37,10 +37,10 @@
 					font: gUserFont
 					addText: {Your destination: }
 					addEdit: @temp2 5 115 0
-					addButton: 100 {    Opening     } 19 20
+					addButton: 100 {____Opening_____} 19 20
 					addButton: 800 { Hotel Exterior } 19 34
-					addButton: 200 {     Lobby      } 25 48
-					addButton: -100 {    Restore     } 19 62
+					addButton: 200 {_____Lobby______} 25 48
+					addButton: -100 {____Restore_____} 19 62
 					init:
 				)
 			)

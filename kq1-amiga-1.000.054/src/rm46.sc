@@ -172,7 +172,7 @@
 		seeableDist 320
 		shiftClick 367
 		contClick 369
-		lookStr {The trees here are stunted and twisted.  They give you the heebie-jeebies.}
+		lookStr {The trees here are stunted and twisted.__They give you the heebie-jeebies.}
 	)
 )
 
@@ -191,7 +191,7 @@
 		seeableDist 320
 		shiftClick 367
 		contClick 369
-		lookStr {The trees here are stunted and twisted.  They give you the heebie-jeebies.}
+		lookStr {The trees here are stunted and twisted.__They give you the heebie-jeebies.}
 	)
 )
 
@@ -210,7 +210,7 @@
 		seeableDist 320
 		shiftClick 367
 		contClick 369
-		lookStr {The trees here are stunted and twisted.  They give you the heebie-jeebies.}
+		lookStr {The trees here are stunted and twisted.__They give you the heebie-jeebies.}
 	)
 )
 

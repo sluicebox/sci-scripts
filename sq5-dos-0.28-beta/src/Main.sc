@@ -408,21 +408,21 @@
 	)
 	(Format @temp100 0 0 gCurRoomNum) ; "%d.nor"
 	(Format @temp0 0 1 (param1 name:)) ; ";OBJECT NAME: %s"
-	(File name: @temp100 writeString: @temp0 {\r\n})
+	(File name: @temp100 writeString: @temp0 {\0d\n})
 	(if (param1 respondsTo: #noun)
 		(Format @temp0 0 2 (param1 noun:)) ; "; OBJECT NOUN: %d"
 	else
 		(Format @temp0 0 3) ; "; OBJECT NOUN: The game's default."
 	)
-	(File name: @temp100 writeString: @temp0 {\r\n})
+	(File name: @temp100 writeString: @temp0 {\0d\n})
 	(Format @temp0 0 4 @temp110) ; "; THE VERB: %s"
-	(File name: @temp100 writeString: @temp0 {\r\n})
+	(File name: @temp100 writeString: @temp0 {\0d\n})
 	(Format @temp0 0 5 gMouseX gMouseY) ; "; MOUSE [X,Y]: [%d,%d]"
-	(File name: @temp100 writeString: @temp0 {\r\n})
+	(File name: @temp100 writeString: @temp0 {\0d\n})
 	(Format @temp0 0 6 gCurRoomNum) ; "; MESSAGE FILE: %d"
-	(File name: @temp100 writeString: @temp0 {\r\n})
+	(File name: @temp100 writeString: @temp0 {\0d\n})
 	(Format @temp0 0 7) ; "****************"
-	(File name: @temp100 writeString: @temp0 {\r\n} close:)
+	(File name: @temp100 writeString: @temp0 {\0d\n} close:)
 )
 
 (procedure (Face param1 param2 param3 param4 &tmp temp0 temp1 temp2 temp3 temp4)

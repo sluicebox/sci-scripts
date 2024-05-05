@@ -150,7 +150,7 @@
 		y 159
 		noun '/man,spectator'
 		description {the spectator}
-		lookStr {Hassan used to be a Brigand.  Some still wonder.}
+		lookStr {Hassan used to be a Brigand.__Some still wonder.}
 		view 358
 		priority 11
 		signal 16400
