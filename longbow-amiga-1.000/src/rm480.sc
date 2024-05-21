@@ -179,15 +179,9 @@
 				else
 					(= register
 						(switch (Random 1 3)
-							(1
-								@local2
-							)
-							(2
-								@local11
-							)
-							(3
-								@local28
-							)
+							(1 @local2)
+							(2 @local11)
+							(3 @local28)
 						)
 					)
 					(local0

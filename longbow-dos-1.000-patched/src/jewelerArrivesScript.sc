@@ -693,12 +693,8 @@
 						((not local7)
 							(if (== register 1) @local87 else @local93)
 						)
-						((== register 1)
-							@local98
-						)
-						(else
-							@local104
-						)
+						((== register 1) @local98)
+						(else @local104)
 					)
 					self
 				)

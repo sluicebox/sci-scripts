@@ -321,12 +321,8 @@
 						((IsFlag 140)
 							(if (< register 40) @local103 else @local108)
 						)
-						((< register 40)
-							@local114
-						)
-						(else
-							@local119
-						)
+						((< register 40) @local114)
+						(else @local119)
 					)
 					@local0
 					2

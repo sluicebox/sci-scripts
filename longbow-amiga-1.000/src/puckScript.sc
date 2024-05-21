@@ -123,18 +123,10 @@
 				(++ register)
 				(localproc_0
 					(switch register
-						(1
-							@local52
-						)
-						(2
-							@local58
-						)
-						(3
-							@local66
-						)
-						(else
-							@local74
-						)
+						(1 @local52)
+						(2 @local58)
+						(3 @local66)
+						(else @local74)
 					)
 					self
 				)
@@ -162,21 +154,11 @@
 				(++ register)
 				(localproc_0
 					(switch register
-						(1
-							@local82
-						)
-						(2
-							@local87
-						)
-						(3
-							@local93
-						)
-						(4
-							@local100
-						)
-						(else
-							@local105
-						)
+						(1 @local82)
+						(2 @local87)
+						(3 @local93)
+						(4 @local100)
+						(else @local105)
 					)
 					self
 				)

@@ -2064,15 +2064,9 @@
 							(= state 4)
 							(= register
 								(cond
-									((>= local1 5)
-										@local441
-									)
-									((== global124 55)
-										@local433
-									)
-									(1
-										@local437
-									)
+									((>= local1 5) @local441)
+									((== global124 55) @local433)
+									(1 @local437)
 								)
 							)
 						else
@@ -2098,15 +2092,9 @@
 							(7
 								(= register
 									(cond
-										((IsFlag 120)
-											@local467
-										)
-										((IsFlag 143)
-											@local461
-										)
-										(1
-											@local452
-										)
+										((IsFlag 120) @local467)
+										((IsFlag 143) @local461)
+										(1 @local452)
 									)
 								)
 							)

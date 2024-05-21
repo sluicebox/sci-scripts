@@ -159,18 +159,10 @@
 		(okI
 			text:
 				(switch local470
-					(0
-						@local90
-					)
-					(1
-						@local100
-					)
-					(2
-						@local375
-					)
-					(3
-						@local375
-					)
+					(0 @local90)
+					(1 @local100)
+					(2 @local375)
+					(3 @local375)
 				)
 			setSize:
 			moveTo: local467 (selectorI nsTop:)
@@ -203,18 +195,10 @@
 		(textI
 			text:
 				(switch local470
-					(0
-						@local110
-					)
-					(1
-						@local150
-					)
-					(2
-						@local0
-					)
-					(3
-						@local0
-					)
+					(0 @local110)
+					(1 @local150)
+					(2 @local0)
+					(3 @local0)
 				)
 			setSize: (- (- nsRight nsLeft) 8)
 			moveTo: 4 4

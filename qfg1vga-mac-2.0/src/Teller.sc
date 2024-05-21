@@ -119,59 +119,27 @@
 					)
 					1
 					(switch temp9
-						(0
-							@temp10
-						)
-						(1
-							@temp20
-						)
-						(2
-							@temp30
-						)
-						(3
-							@temp40
-						)
-						(4
-							@temp50
-						)
-						(5
-							@temp60
-						)
-						(6
-							@temp70
-						)
-						(7
-							@temp80
-						)
+						(0 @temp10)
+						(1 @temp20)
+						(2 @temp30)
+						(3 @temp40)
+						(4 @temp50)
+						(5 @temp60)
+						(6 @temp70)
+						(7 @temp80)
 					)
 				)
 				((= temp5 (DButton new:))
 					text:
 						(switch temp9
-							(0
-								@temp10
-							)
-							(1
-								@temp20
-							)
-							(2
-								@temp30
-							)
-							(3
-								@temp40
-							)
-							(4
-								@temp50
-							)
-							(5
-								@temp60
-							)
-							(6
-								@temp70
-							)
-							(7
-								@temp80
-							)
+							(0 @temp10)
+							(1 @temp20)
+							(2 @temp30)
+							(3 @temp40)
+							(4 @temp50)
+							(5 @temp60)
+							(6 @temp70)
+							(7 @temp80)
 						)
 					value: temp8
 					font: gUserFont

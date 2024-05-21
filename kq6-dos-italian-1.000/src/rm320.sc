@@ -62,12 +62,8 @@
 (procedure (localproc_0)
 	(return
 		(switch (gGame printLang:)
-			(39
-				@local740
-			)
-			(else
-				@local714
-			)
+			(39 @local740)
+			(else @local714)
 		)
 	)
 )
@@ -75,12 +71,8 @@
 (procedure (localproc_1)
 	(return
 		(switch (gGame printLang:)
-			(39
-				@local284
-			)
-			(else
-				@local1
-			)
+			(39 @local284)
+			(else @local1)
 		)
 	)
 )
@@ -88,12 +80,8 @@
 (procedure (localproc_2)
 	(return
 		(switch (gGame printLang:)
-			(39
-				@local377
-			)
-			(else
-				@local29
-			)
+			(39 @local377)
+			(else @local29)
 		)
 	)
 )
@@ -101,12 +89,8 @@
 (procedure (localproc_3)
 	(return
 		(switch (gGame printLang:)
-			(39
-				@local408
-			)
-			(else
-				@local85
-			)
+			(39 @local408)
+			(else @local85)
 		)
 	)
 )
@@ -114,12 +98,8 @@
 (procedure (localproc_4)
 	(return
 		(switch (gGame printLang:)
-			(39
-				@local315
-			)
-			(else
-				@local57
-			)
+			(39 @local315)
+			(else @local57)
 		)
 	)
 )
@@ -127,12 +107,8 @@
 (procedure (localproc_5)
 	(return
 		(switch (gGame printLang:)
-			(39
-				@local439
-			)
-			(else
-				@local169
-			)
+			(39 @local439)
+			(else @local169)
 		)
 	)
 )
@@ -140,12 +116,8 @@
 (procedure (localproc_6)
 	(return
 		(switch (gGame printLang:)
-			(39
-				@local470
-			)
-			(else
-				@local197
-			)
+			(39 @local470)
+			(else @local197)
 		)
 	)
 )
@@ -153,12 +125,8 @@
 (procedure (localproc_7)
 	(return
 		(switch (gGame printLang:)
-			(39
-				@local346
-			)
-			(else
-				@local113
-			)
+			(39 @local346)
+			(else @local113)
 		)
 	)
 )
@@ -166,12 +134,8 @@
 (procedure (localproc_8)
 	(return
 		(switch (gGame printLang:)
-			(39
-				@local253
-			)
-			(else
-				@local141
-			)
+			(39 @local253)
+			(else @local141)
 		)
 	)
 )
@@ -179,12 +143,8 @@
 (procedure (localproc_9)
 	(return
 		(switch (gGame printLang:)
-			(39
-				@local501
-			)
-			(else
-				@local225
-			)
+			(39 @local501)
+			(else @local225)
 		)
 	)
 )

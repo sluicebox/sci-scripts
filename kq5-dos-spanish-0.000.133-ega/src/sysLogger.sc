@@ -121,21 +121,11 @@
 				(if
 					(= theDrv
 						(cond
-							((== 0 (StrCmp @theToken {kbdDrv}))
-								@kbdDrvEntry
-							)
-							((== 0 (StrCmp @theToken {joyDrv}))
-								@joyDrvEntry
-							)
-							((== 0 (StrCmp @theToken {videoDrv}))
-								@videoDrvEntry
-							)
-							((== 0 (StrCmp @theToken {soundDrv}))
-								@soundDrvEntry
-							)
-							((== 0 (StrCmp @theToken {mouseDrv}))
-								@mouseDrvEntry
-							)
+							((== 0 (StrCmp @theToken {kbdDrv})) @kbdDrvEntry)
+							((== 0 (StrCmp @theToken {joyDrv})) @joyDrvEntry)
+							((== 0 (StrCmp @theToken {videoDrv})) @videoDrvEntry)
+							((== 0 (StrCmp @theToken {soundDrv})) @soundDrvEntry)
+							((== 0 (StrCmp @theToken {mouseDrv})) @mouseDrvEntry)
 						)
 					)
 					(while

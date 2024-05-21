@@ -222,18 +222,10 @@
 				(= local133 -1)
 				(= local134
 					(switch (Random 0 3)
-						(0
-							@local0
-						)
-						(1
-							@local32
-						)
-						(2
-							@local45
-						)
-						(3
-							@local60
-						)
+						(0 @local0)
+						(1 @local32)
+						(2 @local45)
+						(3 @local60)
 					)
 				)
 				(spider

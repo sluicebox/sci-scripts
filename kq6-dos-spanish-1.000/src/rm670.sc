@@ -34,15 +34,9 @@
 (procedure (localproc_0)
 	(return
 		(switch (gGame printLang:)
-			(34
-				@local53
-			)
-			(39
-				@local27
-			)
-			(else
-				@local1
-			)
+			(34 @local53)
+			(39 @local27)
+			(else @local1)
 		)
 	)
 )

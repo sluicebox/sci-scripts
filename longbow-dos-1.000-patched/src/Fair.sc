@@ -103,24 +103,12 @@
 (procedure (localproc_1 param1)
 	(return
 		(switch param1
-			(1
-				@local11
-			)
-			(2
-				@local34
-			)
-			(3
-				@local53
-			)
-			(4
-				@local70
-			)
-			(5
-				@local93
-			)
-			(6
-				@local116
-			)
+			(1 @local11)
+			(2 @local34)
+			(3 @local53)
+			(4 @local70)
+			(5 @local93)
+			(6 @local116)
 		)
 	)
 )

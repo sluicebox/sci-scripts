@@ -158,24 +158,12 @@
 				(if
 					(= temp5
 						(cond
-							((== 0 (StrCmp @temp138 {kbdDrv}))
-								@temp188
-							)
-							((== 0 (StrCmp @temp138 {joyDrv}))
-								@temp228
-							)
-							((== 0 (StrCmp @temp138 {videoDrv}))
-								@temp268
-							)
-							((== 0 (StrCmp @temp138 {soundDrv}))
-								@temp308
-							)
-							((== 0 (StrCmp @temp138 {mouseDrv}))
-								@temp348
-							)
-							((== 0 (StrCmp @temp138 {audioDrv}))
-								@temp388
-							)
+							((== 0 (StrCmp @temp138 {kbdDrv})) @temp188)
+							((== 0 (StrCmp @temp138 {joyDrv})) @temp228)
+							((== 0 (StrCmp @temp138 {videoDrv})) @temp268)
+							((== 0 (StrCmp @temp138 {soundDrv})) @temp308)
+							((== 0 (StrCmp @temp138 {mouseDrv})) @temp348)
+							((== 0 (StrCmp @temp138 {audioDrv})) @temp388)
 						)
 					)
 					(while

@@ -60,15 +60,9 @@
 (procedure (localproc_0)
 	(return
 		(switch (gGame printLang:)
-			(34
-				@local449
-			)
-			(39
-				@local730
-			)
-			(else
-				@local177
-			)
+			(34 @local449)
+			(39 @local730)
+			(else @local177)
 		)
 	)
 )
@@ -76,15 +70,9 @@
 (procedure (localproc_1)
 	(return
 		(switch (gGame printLang:)
-			(34
-				@local385
-			)
-			(39
-				@local637
-			)
-			(else
-				@local205
-			)
+			(34 @local385)
+			(39 @local637)
+			(else @local205)
 		)
 	)
 )
@@ -92,15 +80,9 @@
 (procedure (localproc_2)
 	(return
 		(switch (gGame printLang:)
-			(34
-				@local417
-			)
-			(39
-				@local668
-			)
-			(else
-				@local233
-			)
+			(34 @local417)
+			(39 @local668)
+			(else @local233)
 		)
 	)
 )
@@ -108,15 +90,9 @@
 (procedure (localproc_3)
 	(return
 		(switch (gGame printLang:)
-			(34
-				@local481
-			)
-			(39
-				@local761
-			)
-			(else
-				@local261
-			)
+			(34 @local481)
+			(39 @local761)
+			(else @local261)
 		)
 	)
 )
@@ -124,15 +100,9 @@
 (procedure (localproc_4)
 	(return
 		(switch (gGame printLang:)
-			(34
-				@local289
-			)
-			(39
-				@local513
-			)
-			(else
-				@local37
-			)
+			(34 @local289)
+			(39 @local513)
+			(else @local37)
 		)
 	)
 )
@@ -140,15 +110,9 @@
 (procedure (localproc_5)
 	(return
 		(switch (gGame printLang:)
-			(34
-				@local321
-			)
-			(39
-				@local544
-			)
-			(else
-				@local65
-			)
+			(34 @local321)
+			(39 @local544)
+			(else @local65)
 		)
 	)
 )
@@ -156,15 +120,9 @@
 (procedure (localproc_6)
 	(return
 		(switch (gGame printLang:)
-			(34
-				@local385
-			)
-			(39
-				@local606
-			)
-			(else
-				@local121
-			)
+			(34 @local385)
+			(39 @local606)
+			(else @local121)
 		)
 	)
 )
@@ -172,15 +130,9 @@
 (procedure (localproc_7)
 	(return
 		(switch (gGame printLang:)
-			(34
-				@local449
-			)
-			(39
-				@local699
-			)
-			(else
-				@local149
-			)
+			(34 @local449)
+			(39 @local699)
+			(else @local149)
 		)
 	)
 )
@@ -188,15 +140,9 @@
 (procedure (localproc_8)
 	(return
 		(switch (gGame printLang:)
-			(34
-				@local353
-			)
-			(39
-				@local575
-			)
-			(else
-				@local93
-			)
+			(34 @local353)
+			(39 @local575)
+			(else @local93)
 		)
 	)
 )

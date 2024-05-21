@@ -70,15 +70,9 @@
 (procedure (localproc_0)
 	(return
 		(switch (gGame printLang:)
-			(34
-				@local964
-			)
-			(39
-				@local990
-			)
-			(else
-				@local938
-			)
+			(34 @local964)
+			(39 @local990)
+			(else @local938)
 		)
 	)
 )
@@ -86,15 +80,9 @@
 (procedure (localproc_1)
 	(return
 		(switch (gGame printLang:)
-			(34
-				@local253
-			)
-			(39
-				@local508
-			)
-			(else
-				@local1
-			)
+			(34 @local253)
+			(39 @local508)
+			(else @local1)
 		)
 	)
 )
@@ -102,15 +90,9 @@
 (procedure (localproc_2)
 	(return
 		(switch (gGame printLang:)
-			(34
-				@local317
-			)
-			(39
-				@local601
-			)
-			(else
-				@local29
-			)
+			(34 @local317)
+			(39 @local601)
+			(else @local29)
 		)
 	)
 )
@@ -118,15 +100,9 @@
 (procedure (localproc_3)
 	(return
 		(switch (gGame printLang:)
-			(34
-				@local349
-			)
-			(39
-				@local632
-			)
-			(else
-				@local85
-			)
+			(34 @local349)
+			(39 @local632)
+			(else @local85)
 		)
 	)
 )
@@ -134,15 +110,9 @@
 (procedure (localproc_4)
 	(return
 		(switch (gGame printLang:)
-			(34
-				@local285
-			)
-			(39
-				@local539
-			)
-			(else
-				@local57
-			)
+			(34 @local285)
+			(39 @local539)
+			(else @local57)
 		)
 	)
 )
@@ -150,15 +120,9 @@
 (procedure (localproc_5)
 	(return
 		(switch (gGame printLang:)
-			(34
-				@local381
-			)
-			(39
-				@local663
-			)
-			(else
-				@local169
-			)
+			(34 @local381)
+			(39 @local663)
+			(else @local169)
 		)
 	)
 )
@@ -166,15 +130,9 @@
 (procedure (localproc_6)
 	(return
 		(switch (gGame printLang:)
-			(34
-				@local413
-			)
-			(39
-				@local694
-			)
-			(else
-				@local197
-			)
+			(34 @local413)
+			(39 @local694)
+			(else @local197)
 		)
 	)
 )
@@ -182,15 +140,9 @@
 (procedure (localproc_7)
 	(return
 		(switch (gGame printLang:)
-			(34
-				@local317
-			)
-			(39
-				@local570
-			)
-			(else
-				@local113
-			)
+			(34 @local317)
+			(39 @local570)
+			(else @local113)
 		)
 	)
 )
@@ -198,15 +150,9 @@
 (procedure (localproc_8)
 	(return
 		(switch (gGame printLang:)
-			(34
-				@local253
-			)
-			(39
-				@local477
-			)
-			(else
-				@local141
-			)
+			(34 @local253)
+			(39 @local477)
+			(else @local141)
 		)
 	)
 )
@@ -214,15 +160,9 @@
 (procedure (localproc_9)
 	(return
 		(switch (gGame printLang:)
-			(34
-				@local445
-			)
-			(39
-				@local725
-			)
-			(else
-				@local225
-			)
+			(34 @local445)
+			(39 @local725)
+			(else @local225)
 		)
 	)
 )

@@ -151,12 +151,8 @@
 					(proc802_2
 						event
 						(switch (gGame parseLang:)
-							(1
-								@global401
-							)
-							(else
-								@global594
-							)
+							(1 @global401)
+							(else @global594)
 						)
 					)
 				)

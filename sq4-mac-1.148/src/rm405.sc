@@ -354,12 +354,8 @@
 					setCycle:
 						MCyc
 						(switch client
-							(skater0
-								@local0
-							)
-							(skater3
-								@local101
-							)
+							(skater0 @local0)
+							(skater3 @local101)
 						)
 						self
 				)

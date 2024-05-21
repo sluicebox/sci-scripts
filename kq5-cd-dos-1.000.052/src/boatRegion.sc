@@ -42,15 +42,9 @@
 				(poly5
 					points:
 						(switch gCurRoomNum
-							(45
-								@local8
-							)
-							(46
-								@local16
-							)
-							(44
-								@local0
-							)
+							(45 @local8)
+							(46 @local16)
+							(44 @local0)
 						)
 					size: 4
 				)
