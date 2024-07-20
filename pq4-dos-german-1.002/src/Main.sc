@@ -665,7 +665,7 @@
 					addBitmap: 64994 1 0
 					font: (proc0_5 999 4 999 4 4)
 					addText: 14 0 0 1 (proc0_5 0 5 20 5 5) 2 0 ; "Request Code Seven"
-					addButtonBM:
+					addButtonBM: ; "Continue Patrol"
 						64994
 						0
 						0
@@ -677,7 +677,7 @@
 						(proc0_5 7 12 7 12 12)
 						33
 						0
-					addButtonBM:
+					addButtonBM: ; "OK for Seven"
 						64994
 						0
 						0
@@ -729,7 +729,7 @@
 						addBitmap: 64994 1 0
 						font: (proc0_5 4 999 4 4)
 						addText: 17 0 0 1 5 2 0 ; "Do you really want to restart?"
-						addButtonBM:
+						addButtonBM: ; "No"
 							64994
 							0
 							0
@@ -741,7 +741,7 @@
 							(proc0_5 7 12 7 12 12)
 							33
 							0
-						addButtonBM:
+						addButtonBM: ; "Yes"
 							64994
 							0
 							0

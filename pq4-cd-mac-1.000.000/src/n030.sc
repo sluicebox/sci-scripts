@@ -102,9 +102,9 @@
 							width: 192
 							mode: 1
 							addText: local0 local1 local2 local3 0 10 local4
-							addButtonBM: 64994 2 0 1 1 0 2 1 6 59 30
-							addButtonBM: 64994 2 0 2 1 0 3 1 69 59 30
-							addButtonBM: 64994 2 0 3 1 0 4 1 129 59 30
+							addButtonBM: 64994 2 0 1 1 0 2 1 6 59 30 ; "Restore"
+							addButtonBM: 64994 2 0 2 1 0 3 1 69 59 30 ; "Restart"
+							addButtonBM: 64994 2 0 3 1 0 4 1 129 59 30 ; "Quit"
 							init:
 						)
 						(1

@@ -93,8 +93,8 @@
 						addBitmap: 64994 1 0
 						width: 80
 						addText: 0 0 3 1 5 2 41 ; "Are you sure you want to quit?"
-						addButtonBM: 64994 0 0 0 0 0 3 3 12 33 41
-						addButtonBM: 64994 0 0 1 0 0 3 2 12 57 41
+						addButtonBM: 64994 0 0 0 0 0 3 3 12 33 41 ; "No"
+						addButtonBM: 64994 0 0 1 0 0 3 2 12 57 41 ; "Yes"
 						init:
 					)
 					(0

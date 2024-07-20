@@ -174,19 +174,19 @@
 	(Display
 		param1
 		param2
-		105
+		dsFONT
 		(if local135 99 else 104)
-		100
+		dsCOORD
 		param3
 		param4
-		102
+		dsCOLOR
 		local135
-		106
+		dsWIDTH
 		param5
-		121
+		121 ; p_noshow
 	)
 	(if (not local135)
-		(Display param1 param2 105 103 100 param3 param4 102 15 106 param5 121)
+		(Display param1 param2 dsFONT 103 dsCOORD param3 param4 dsCOLOR 15 dsWIDTH param5 121) ; p_noshow
 	)
 	(RedrawCast)
 	(if local50

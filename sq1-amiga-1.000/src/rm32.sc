@@ -974,7 +974,6 @@
 (instance drop1 of AcidDrop
 	(properties
 		x 115
-		description {a small drop of green liquid}
 		tarY 72
 	)
 )
@@ -982,7 +981,6 @@
 (instance drop2 of AcidDrop
 	(properties
 		x 124
-		description {a small drop of green liquid}
 		tarY 69
 	)
 )
@@ -990,7 +988,6 @@
 (instance drop3 of AcidDrop
 	(properties
 		x 132
-		description {a small drop of green liquid}
 		tarY 70
 	)
 )
@@ -998,7 +995,6 @@
 (instance drop4 of AcidDrop
 	(properties
 		x 141
-		description {a small drop of green liquid}
 		tarY 70
 	)
 )
@@ -1006,7 +1002,6 @@
 (instance drop5 of AcidDrop
 	(properties
 		x 157
-		description {a small drop of green liquid}
 		tarY 76
 	)
 )
@@ -1014,7 +1009,6 @@
 (instance drop6 of AcidDrop
 	(properties
 		x 163
-		description {a small drop of green liquid}
 		tarY 70
 	)
 )
@@ -1022,7 +1016,6 @@
 (instance drop7 of AcidDrop
 	(properties
 		x 175
-		description {a small drop of green liquid}
 		tarY 78
 	)
 )
@@ -1030,7 +1023,6 @@
 (instance drop8 of AcidDrop
 	(properties
 		x 189
-		description {a small drop of green liquid}
 		tarY 77
 	)
 )
@@ -1038,7 +1030,6 @@
 (instance drop9 of AcidDrop
 	(properties
 		x 196
-		description {a small drop of green liquid}
 		tarY 69
 	)
 )

@@ -878,8 +878,6 @@
 	(properties
 		x 238
 		y 139
-		description {button}
-		lookStr {These buttons allow you to enter a code into the computer.}
 		view 502
 		loop 1
 		signal 16384
@@ -892,8 +890,6 @@
 	(properties
 		x 248
 		y 139
-		description {button}
-		lookStr {These buttons allow you to enter a code into the computer.}
 		view 502
 		loop 1
 		cel 1
@@ -907,8 +903,6 @@
 	(properties
 		x 258
 		y 139
-		description {button}
-		lookStr {These buttons allow you to enter a code into the computer.}
 		view 502
 		loop 1
 		cel 2
@@ -922,8 +916,6 @@
 	(properties
 		x 238
 		y 149
-		description {button}
-		lookStr {These buttons allow you to enter a code into the computer.}
 		view 502
 		loop 1
 		cel 3
@@ -937,8 +929,6 @@
 	(properties
 		x 248
 		y 149
-		description {button}
-		lookStr {These buttons allow you to enter a code into the computer.}
 		view 502
 		loop 1
 		cel 4
@@ -952,8 +942,6 @@
 	(properties
 		x 258
 		y 149
-		description {button}
-		lookStr {These buttons allow you to enter a code into the computer.}
 		view 502
 		loop 1
 		cel 5
@@ -967,8 +955,6 @@
 	(properties
 		x 238
 		y 159
-		description {button}
-		lookStr {These buttons allow you to enter a code into the computer.}
 		view 502
 		loop 1
 		cel 6
@@ -982,8 +968,6 @@
 	(properties
 		x 248
 		y 159
-		description {button}
-		lookStr {These buttons allow you to enter a code into the computer.}
 		view 502
 		loop 1
 		cel 7
@@ -997,8 +981,6 @@
 	(properties
 		x 258
 		y 159
-		description {button}
-		lookStr {These buttons allow you to enter a code into the computer.}
 		view 502
 		loop 1
 		cel 8
@@ -1012,8 +994,6 @@
 	(properties
 		x 238
 		y 169
-		description {button}
-		lookStr {These buttons allow you to enter a code into the computer.}
 		view 502
 		loop 1
 		cel 9

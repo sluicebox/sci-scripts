@@ -1065,8 +1065,6 @@
 (instance sarien1 of Sarien
 	(properties
 		x 337
-		description {sarien}
-		lookStr {These guys look scary. But then, don't most other beings packing weapons?}
 		view 410
 	)
 )
@@ -1074,8 +1072,6 @@
 (instance sarien2 of Sarien
 	(properties
 		x 337
-		description {sarien}
-		lookStr {These guys look scary. But then, don't most other beings packing weapons?}
 		view 410
 	)
 )

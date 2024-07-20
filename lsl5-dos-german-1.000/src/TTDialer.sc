@@ -472,7 +472,6 @@
 		loop 1
 		keyValue 48
 		scanValue 20992
-		keyStr {x}
 		tone 30
 	)
 )
@@ -483,7 +482,6 @@
 		loop 2
 		keyValue 49
 		scanValue 20224
-		keyStr {x}
 		tone 21
 	)
 
@@ -500,7 +498,6 @@
 		loop 3
 		keyValue 50
 		scanValue 20480
-		keyStr {x}
 		tone 22
 	)
 
@@ -517,7 +514,6 @@
 		loop 4
 		keyValue 51
 		scanValue 20736
-		keyStr {x}
 		tone 23
 	)
 
@@ -534,7 +530,6 @@
 		loop 5
 		keyValue 52
 		scanValue 19200
-		keyStr {x}
 		tone 24
 	)
 )
@@ -545,7 +540,6 @@
 		loop 6
 		keyValue 53
 		scanValue 19456
-		keyStr {x}
 		tone 25
 	)
 )
@@ -556,7 +550,6 @@
 		loop 7
 		keyValue 54
 		scanValue 19712
-		keyStr {x}
 		tone 26
 	)
 )
@@ -567,7 +560,6 @@
 		loop 8
 		keyValue 55
 		scanValue 18176
-		keyStr {x}
 		tone 27
 	)
 
@@ -584,7 +576,6 @@
 		loop 9
 		keyValue 56
 		scanValue 18432
-		keyStr {x}
 		tone 28
 	)
 
@@ -601,7 +592,6 @@
 		loop 10
 		keyValue 57
 		scanValue 18688
-		keyStr {x}
 		tone 29
 	)
 
@@ -617,7 +607,6 @@
 		z 1000
 		loop 11
 		keyValue 35
-		keyStr {x}
 		tone 31
 	)
 )
@@ -627,7 +616,6 @@
 		z 1000
 		loop 12
 		keyValue 42
-		keyStr {x}
 		tone 32
 	)
 )
@@ -637,7 +625,6 @@
 		z 1000
 		loop 13
 		keyValue 32
-		keyStr {x}
 	)
 )
 

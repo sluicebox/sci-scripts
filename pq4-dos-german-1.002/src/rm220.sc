@@ -235,7 +235,7 @@
 									addBitmap: 64994 1 0
 									font: (proc0_5 4 4 999 4 4)
 									addText: 1 0 6 1 5 2 220 ; "Which form?"
-									addButtonBM:
+									addButtonBM: ; "Form 13.5.0"
 										64994
 										0
 										0
@@ -247,7 +247,7 @@
 										(proc0_5 7 12 7 12 12)
 										33
 										220
-									addButtonBM:
+									addButtonBM: ; "Form 13.5.1"
 										64994
 										0
 										0

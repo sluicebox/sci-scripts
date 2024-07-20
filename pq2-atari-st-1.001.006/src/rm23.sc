@@ -77,12 +77,12 @@
 				(removeableMugShot posn: 0 0)
 			)
 			(Animate (gCast elements:) 0)
-			(Display 23 4 100 20 7 106 300 117) ; "SUMMARY:   After a lengthy investigation, Officer Sonny Bonds successfully infiltrated the illegal gambling operation at the Hotel Delphoria. A confrontation with Bains ended in a shoot-out and his subsequent arrest. Suspect was convicted of first degree murder. Further: testimony provided by Woody Roberts, Marie Wilkans, and Don Colby was instrumental in convicting subject Bains on additional counts of narcotics trafficking and illegal gambling activities.   CONVICTED: 10/25/1983.  INCARCERATED: State Pen.  LOCATION: Foolsum.  SENTENCE: 97 years.  PAROLE DATE: None.  CASE STATUS: Closed END FILE:              (2)"
+			(Display 23 4 dsCOORD 20 7 dsWIDTH 300 117) ; "SUMMARY:   After a lengthy investigation, Officer Sonny Bonds successfully infiltrated the illegal gambling operation at the Hotel Delphoria. A confrontation with Bains ended in a shoot-out and his subsequent arrest. Suspect was convicted of first degree murder. Further: testimony provided by Woody Roberts, Marie Wilkans, and Don Colby was instrumental in convicting subject Bains on additional counts of narcotics trafficking and illegal gambling activities.   CONVICTED: 10/25/1983.  INCARCERATED: State Pen.  LOCATION: Foolsum.  SENTENCE: 97 years.  PAROLE DATE: None.  CASE STATUS: Closed END FILE:              (2)", p_draw
 		)
 		(1
 			(mugShot2 posn: 0 0)
 			(Animate (gCast elements:) 0)
-			(Display 23 5 100 20 10 106 300 117) ; "EQUIPMENT ISSUED: #1. Mace. #2. PR/24. #3. Handcuffs. REGISTERED WEAPONS Hand gun:# S/W 5557763      4" Smith & Wesson .38 cal K-38. END FILE:                         (2)"
+			(Display 23 5 dsCOORD 20 10 dsWIDTH 300 117) ; "EQUIPMENT ISSUED: #1. Mace. #2. PR/24. #3. Handcuffs. REGISTERED WEAPONS Hand gun:# S/W 5557763      4" Smith & Wesson .38 cal K-38. END FILE:                         (2)", p_draw
 		)
 	)
 )

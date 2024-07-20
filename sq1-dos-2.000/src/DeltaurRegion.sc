@@ -826,31 +826,19 @@
 )
 
 (instance sarienOfficer1 of sarienGuard
-	(properties
-		description {sarien officer}
-		lookStr {It's one of the Sarien gaurds.}
-	)
+	(properties)
 )
 
 (instance sarienOfficer2 of sarienGuard
-	(properties
-		description {sarien officer}
-		lookStr {It's one of the Sarien gaurds.}
-	)
+	(properties)
 )
 
 (instance sarienOfficer3 of sarienGuard
-	(properties
-		description {sarien officer}
-		lookStr {It's one of the Sarien gaurds.}
-	)
+	(properties)
 )
 
 (instance sarienOfficer4 of sarienGuard
-	(properties
-		description {sarien officer}
-		lookStr {It's one of the Sarien gaurds.}
-	)
+	(properties)
 )
 
 (instance sarienOfficer1Head of Head

@@ -475,8 +475,6 @@
 (instance droid1 of SecurityDroid
 	(properties
 		z 44
-		description {security droid}
-		lookStr {It's a security droid!}
 		view 506
 		cycleSpeed 1
 	)
@@ -507,8 +505,6 @@
 (instance droid2 of SecurityDroid
 	(properties
 		z 44
-		description {security droid}
-		lookStr {It's a security droid!}
 		view 506
 		cycleSpeed 1
 	)

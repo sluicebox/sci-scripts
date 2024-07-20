@@ -209,9 +209,9 @@
 							width: 180
 							mode: 1
 							addText: 14 0 1 1 15 10 725 ; "Think tactics, Detective! Think survival!"
-							addButtonBM: 64994 2 0 1 1 0 2 1 6 59 30
-							addButtonBM: 64994 2 0 2 1 0 3 1 69 59 30
-							addButtonBM: 64994 2 0 3 1 0 4 1 129 59 30
+							addButtonBM: 64994 2 0 1 1 0 2 1 6 59 30 ; "Restore"
+							addButtonBM: 64994 2 0 2 1 0 3 1 69 59 30 ; "Restart"
+							addButtonBM: 64994 2 0 3 1 0 4 1 129 59 30 ; "Quit"
 							init:
 						)
 						(1

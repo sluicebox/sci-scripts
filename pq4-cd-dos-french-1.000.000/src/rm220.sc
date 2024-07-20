@@ -220,8 +220,8 @@
 									addBitmap: 64994 1 0
 									font: (if (IsHiRes) 999 else 1999)
 									addText: 1 0 6 1 5 2 220 ; "Which form?"
-									addButtonBM: 64994 0 0 1 1 0 6 2 12 33 220
-									addButtonBM: 64994 0 0 2 1 0 6 3 12 57 220
+									addButtonBM: 64994 0 0 1 1 0 6 2 12 33 220 ; "Form 13.5.0"
+									addButtonBM: 64994 0 0 2 1 0 6 3 12 57 220 ; "Form 13.5.1"
 									init:
 								)
 								(1

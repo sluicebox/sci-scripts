@@ -695,7 +695,6 @@
 	(properties
 		x 289
 		y 86
-		description {person's head}
 		loop 2
 	)
 )
@@ -704,7 +703,6 @@
 	(properties
 		x 305
 		y 93
-		description {person's head}
 		loop 3
 	)
 )
@@ -724,7 +722,6 @@
 	(properties
 		x 210
 		y 93
-		description {person's head}
 		loop 5
 	)
 )
@@ -733,7 +730,6 @@
 	(properties
 		x 272
 		y 99
-		description {person's head}
 		loop 8
 	)
 )
@@ -742,7 +738,6 @@
 	(properties
 		x 250
 		y 92
-		description {person's head}
 		loop 7
 	)
 )
@@ -751,7 +746,6 @@
 	(properties
 		x 233
 		y 98
-		description {person's head}
 		loop 6
 	)
 )
@@ -779,7 +773,6 @@
 	(properties
 		x 244
 		y 147
-		description {person's head}
 		loop 11
 		priority 15
 		signal 16404
@@ -790,7 +783,6 @@
 	(properties
 		x 263
 		y 144
-		description {person's head}
 		loop 12
 		priority 14
 		signal 16404
@@ -801,7 +793,6 @@
 	(properties
 		x 303
 		y 138
-		description {person's head}
 		loop 13
 		priority 13
 		signal 16404
@@ -823,7 +814,6 @@
 	(properties
 		x 266
 		y 83
-		description {person's head}
 		loop 10
 	)
 )

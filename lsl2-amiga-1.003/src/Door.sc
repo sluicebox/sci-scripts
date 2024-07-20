@@ -147,14 +147,7 @@
 )
 
 (class AutoDoor of Door
-	(properties
-		msgLook {Yep; it's a door.}
-		msgLookLock {And... it's locked.}
-		msgLocked {This door is locked.}
-		msgExcept {...except it's locked!}
-		msgFunny {Funny. No response.}
-		msgCloser {Just walk near it.}
-	)
+	(properties)
 
 	(method (init)
 		(super init:)

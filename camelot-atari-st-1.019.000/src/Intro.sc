@@ -39,8 +39,8 @@
 	(+= [local3 2] (+ param4 2))
 	(+= [local3 3] param3)
 	(= local1 (Graph grSAVE_BOX [local3 0] [local3 1] [local3 2] [local3 3] 1))
-	(Display param1 param2 105 104 100 param3 param4 102 0 106 param5 121)
-	(Display param1 param2 105 103 100 param3 param4 102 15 106 param5 121)
+	(Display param1 param2 dsFONT 104 dsCOORD param3 param4 dsCOLOR 0 dsWIDTH param5 121) ; p_noshow
+	(Display param1 param2 dsFONT 103 dsCOORD param3 param4 dsCOLOR 15 dsWIDTH param5 121) ; p_noshow
 	(RedrawCast)
 	(Graph grUPDATE_BOX [local3 0] [local3 1] (+ [local3 2] 2) [local3 3] 1)
 )

@@ -206,54 +206,46 @@
 	)
 
 	(method (doit &tmp temp0 temp1 temp2 temp3 temp4)
-		(while (& state $0020)
+		(while (and (& state $0020) (= temp0 ((gUser curEvent:) new:)))
+			(if
+				(or
+					(not (local0 at: 0))
+					(== local1 7)
+					(and (== (local0 at: 0) 8) (== local1 5))
+				)
+				(&= state $ffdf)
+				(break)
+			)
+			(= temp1 (temp0 type:))
+			(= temp2 (temp0 message:))
+			(= temp3 (temp0 modifiers:))
+			(= gGameTime (+ gTickOffset (GetTime)))
+			(if gCuees
+				(gCuees eachElementDo: #doit)
+			)
+			(if (and (= temp4 (gGame script:)) (temp4 isKindOf: Tutorial))
+				(temp4 doit:)
+			)
+			(if (== temp1 32)
+				(= temp1 4)
+				(= temp2 (if (& temp3 $0003) 27 else 13))
+				(= temp3 0)
+				(temp0 type: temp1 message: temp2 modifiers: 0)
+			)
+			(temp0 localize: plane)
+			(if
+				(and
+					(or (== temp1 1) (and (== temp1 4) (== temp2 13)))
+					helpIconItem
+					(& (helpIconItem signal:) $0010)
+				)
+				(temp0 type: 24576 message: (helpIconItem message:))
+			)
+			(MapKeyToDir temp0)
 			(breakif
-				(if (= temp0 ((gUser curEvent:) new:))
-					(if
-						(or
-							(not (local0 at: 0))
-							(== local1 7)
-							(and (== (local0 at: 0) 8) (== local1 5))
-						)
-						(&= state $ffdf)
-						(break)
-					)
-					(= temp1 (temp0 type:))
-					(= temp2 (temp0 message:))
-					(= temp3 (temp0 modifiers:))
-					(= gGameTime (+ gTickOffset (GetTime)))
-					(if gCuees
-						(gCuees eachElementDo: #doit)
-					)
-					(if
-						(and
-							(= temp4 (gGame script:))
-							(temp4 isKindOf: Tutorial)
-						)
-						(temp4 doit:)
-					)
-					(if (== temp1 32)
-						(= temp1 4)
-						(= temp2 (if (& temp3 $0003) 27 else 13))
-						(= temp3 0)
-						(temp0 type: temp1 message: temp2 modifiers: 0)
-					)
-					(temp0 localize: plane)
-					(if
-						(and
-							(or (== temp1 1) (and (== temp1 4) (== temp2 13)))
-							helpIconItem
-							(& (helpIconItem signal:) $0010)
-						)
-						(temp0 type: 24576 message: (helpIconItem message:))
-					)
-					(MapKeyToDir temp0)
-					(breakif (self dispatchEvent: temp0))
-					(if (temp0 type:)
-						(not (plane onMe: temp0))
-					)
-				else
-					(break)
+				(or
+					(self dispatchEvent: temp0)
+					(and (temp0 type:) (not (plane onMe: temp0)))
 				)
 			)
 		)

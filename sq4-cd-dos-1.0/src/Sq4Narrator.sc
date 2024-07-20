@@ -93,7 +93,7 @@
 	(method (display &tmp [temp0 100])
 		(switch tpType
 			(1
-				(= returnVal (Display &rest 107 114))
+				(= returnVal (Display &rest dsSAVEPIXELS 114)) ; p_dispose
 			)
 			(2
 				(= returnVal (proc0_12 &rest 111))

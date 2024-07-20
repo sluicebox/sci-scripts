@@ -647,9 +647,7 @@
 )
 
 (instance aNumber of ElevatorNumbers
-	(properties
-		description {a button}
-	)
+	(properties)
 )
 
 (instance disposeNumbers of Code
