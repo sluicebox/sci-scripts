@@ -513,7 +513,7 @@
 				(= ticks 30)
 			)
 			(1
-				(TPrint 310 0 108 self) ; "There's the runway, Larry! Steady now. Bring 'er in carefully! You're "coming in" too fast!"
+				(TPrint 310 0 #dispose self) ; "There's the runway, Larry! Steady now. Bring 'er in carefully! You're "coming in" too fast!"
 			)
 			(2
 				(= ticks 30)
@@ -535,7 +535,7 @@
 			)
 			(4
 				(gTheMusic number: 313 loop: 1 play:)
-				(TPrint 310 1 67 -1 28 80 {You} 108) ; ""YEOW!" you scream!"
+				(TPrint 310 1 #at -1 28 #title {You} #dispose) ; ""YEOW!" you scream!"
 				(= cycles 2)
 			)
 			(5
@@ -553,7 +553,7 @@
 				(if gModelessDialog
 					(gModelessDialog dispose:)
 				)
-				(TPrint 310 2 108 self) ; "Whew! That was close. You just barely "pulled out" in time!"
+				(TPrint 310 2 #dispose self) ; "Whew! That was close. You just barely "pulled out" in time!"
 			)
 			(9
 				(= seconds 2)
@@ -569,7 +569,7 @@
 				)
 			)
 			(11
-				(TPrint 310 3 67 -1 185 80 {You} 108) ; ""OH, NO!!" you scream!"
+				(TPrint 310 3 #at -1 185 #title {You} #dispose) ; ""OH, NO!!" you scream!"
 				(gTheMusic number: 313 loop: 1 play:)
 				(plane setCycle: CT 2 1 self)
 			)
@@ -588,13 +588,13 @@
 				(if gModelessDialog
 					(gModelessDialog dispose:)
 				)
-				(TPrint 310 4 108 self) ; "Larry! You've got to "keep it up" longer!"
+				(TPrint 310 4 #dispose self) ; "Larry! You've got to "keep it up" longer!"
 			)
 			(16
 				(= seconds 3)
 			)
 			(17
-				(TPrint 310 5 108 self) ; "You circle around 180 degrees to try again."
+				(TPrint 310 5 #dispose self) ; "You circle around 180 degrees to try again."
 			)
 			(18
 				(= seconds 3)
@@ -629,7 +629,7 @@
 				(= seconds 5)
 			)
 			(25
-				(TPrint 310 7 67 -1 28 80 {You} 108) ; "This is it," you think, "I've got to make it this time!"
+				(TPrint 310 7 #at -1 28 #title {You} #dispose) ; "This is it," you think, "I've got to make it this time!"
 				(= seconds 2)
 			)
 			(26
@@ -656,7 +656,7 @@
 			)
 			(28
 				(gTheMusic number: 391 loop: 1 play:)
-				(TPrint 310 8 67 -1 15 70 280 108 self) ; "You did it, Larry! You saved an entire airliner filled with innocent people. Surely, you'll finally gain the respect you deserve."
+				(TPrint 310 8 #at -1 15 #width 280 #dispose self) ; "You did it, Larry! You saved an entire airliner filled with innocent people. Surely, you'll finally gain the respect you deserve."
 			)
 			(29
 				(= seconds 2)
@@ -737,7 +737,7 @@
 				)
 				(gCast eachElementDo: #dispose)
 				(gCurRoom drawPic: 315 10)
-				(TPrint 310 11 67 -1 28 108 self) ; "Your visit to the East Coast finished, your airplane heads back to Los Angeles."
+				(TPrint 310 11 #at -1 28 #dispose self) ; "Your visit to the East Coast finished, your airplane heads back to Los Angeles."
 				(arrow init: setLoop: 1 setPri: 15 posn: 190 122)
 				(dash
 					init:

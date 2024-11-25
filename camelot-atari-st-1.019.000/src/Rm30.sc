@@ -778,7 +778,7 @@
 					cel: 1
 					cycleSpeed: 0
 					ignoreActors: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Walk
 				)
 				(SetFlag 66)

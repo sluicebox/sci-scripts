@@ -435,7 +435,7 @@
 				(RedrawCast)
 				(gEgo
 					ignoreActors: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					posn: 270 135
 					view: 4
 					loop: 2

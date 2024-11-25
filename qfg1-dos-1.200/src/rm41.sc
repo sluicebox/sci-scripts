@@ -875,7 +875,7 @@
 				(= gCurRoomNum 41)
 			)
 			(1
-				(gEgo ignoreActors: 0 illegalBits: -32768)
+				(gEgo ignoreActors: 0 illegalBits: $8000)
 				(TimePrint 10 41 57) ; "After a wonderful meal with the Baron and his son, a peaceful night's sleep in a featherdown bed, and a filling breakfast in bed, you are ready to go adventuring once more."
 				(HandsOn)
 				(SetFlag 215)

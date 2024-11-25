@@ -1902,7 +1902,7 @@
 				)
 			)
 			(84 ; Trivia
-				(= global215 71)
+				(= gDictionaryWord 71)
 				(super doVerb: theVerb)
 			)
 			(else
@@ -2012,7 +2012,7 @@
 				(gCurRoom setScript: sGetPencil)
 			)
 			(84 ; Trivia
-				(= global215 45)
+				(= gDictionaryWord 45)
 				(super doVerb: theVerb &rest)
 			)
 			(else
@@ -2491,7 +2491,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(84 ; Trivia
-				(= global215 68)
+				(= gDictionaryWord 68)
 				(super doVerb: theVerb &rest)
 			)
 			(86 ; Nose

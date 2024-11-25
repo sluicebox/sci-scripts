@@ -573,7 +573,7 @@
 				(gPMouse handleEvent: param1)
 				(param1 dispose:)
 			else
-				(= temp0 (Event new: -1))
+				(= temp0 (Event new: $ffff)) ; evPEEK | evALL_EVENTS
 				(= temp1 (temp0 x:))
 				(= temp2 (- (= temp2 (temp0 y:)) 10))
 				(temp0 localize:)

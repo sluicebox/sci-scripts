@@ -144,7 +144,7 @@
 		(NormalEgo)
 		(gEgo
 			posn: 163 188
-			illegalBits: -30720
+			illegalBits: $8800
 			init:
 			setMotion: MoveTo 163 169
 		)
@@ -1220,7 +1220,7 @@
 			)
 			(1
 				(HandsOn)
-				(gEgo illegalBits: -30720)
+				(gEgo illegalBits: $8800)
 				(gEgo setScript: 0)
 			)
 		)
@@ -1242,7 +1242,7 @@
 			)
 			(1
 				(HandsOn)
-				(gEgo illegalBits: -30720)
+				(gEgo illegalBits: $8800)
 				(gEgo setScript: 0)
 			)
 		)

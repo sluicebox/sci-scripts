@@ -61,7 +61,7 @@
 				xStep: 4
 				yStep: 2
 				ignoreActors: 0
-				illegalBits: -32768
+				illegalBits: $8000
 				init:
 			)
 		else
@@ -71,7 +71,7 @@
 				xStep: 4
 				yStep: 2
 				ignoreActors: 0
-				illegalBits: -32768
+				illegalBits: $8000
 				init:
 			)
 		)
@@ -146,7 +146,7 @@
 			(Load rsVIEW 289)
 			(Load rsVIEW 286)
 			(Load rsVIEW 287)
-			(gEgo illegalBits: -32764)
+			(gEgo illegalBits: $8004)
 			((View new:) view: 287 loop: 2 cel: 0 posn: 213 129 addToPic:)
 			((View new:) view: 286 loop: 5 cel: 0 posn: 233 129 addToPic:)
 			((= local6 (Act new:))
@@ -225,10 +225,10 @@
 			(gEgo setPri: 12)
 			(if (or (>= (gEgo heading:) 180) (== (gEgo heading:) 0))
 				(= local0 0)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 			else
 				(= local0 1)
-				(gEgo illegalBits: -28672)
+				(gEgo illegalBits: $9000)
 			)
 			(if (> (gEgo x:) 121)
 				(gEgo setPri: -1)
@@ -301,7 +301,7 @@
 				(gEgo setMotion: MoveTo 74 81 self)
 			)
 			(3
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(= global205 1)
 				(= global204 0)
 				(gCurRoom newRoom: 28)
@@ -351,7 +351,7 @@
 					setCycle: Walk
 					setLoop: -1
 					setPri: -1
-					illegalBits: -28672
+					illegalBits: $9000
 					ignoreActors: 0
 				)
 				(= state 0)

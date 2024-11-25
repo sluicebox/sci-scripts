@@ -53,7 +53,7 @@
 			(6
 				(NormalEgo)
 				(if ((ScriptID 95 0) notify: 3) ; rm95
-					(gEgo illegalBits: -28672)
+					(gEgo illegalBits: $9000)
 				)
 				((ScriptID 95 0) notify: 5) ; rm95
 				((ScriptID 95 0) notify: 7) ; rm95
@@ -123,7 +123,7 @@
 				((ScriptID 95 5) setCel: 4) ; candelabra
 				(NormalEgo)
 				(if ((ScriptID 95 0) notify: 3) ; rm95
-					(gEgo illegalBits: -28672)
+					(gEgo illegalBits: $9000)
 				)
 				(= cycles 1)
 			)

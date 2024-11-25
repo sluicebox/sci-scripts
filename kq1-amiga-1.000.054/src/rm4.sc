@@ -99,16 +99,16 @@
 			(
 				(and
 					(OneOf (gEgo onControl: 1) 2 4 8 16)
-					(!= (gEgo illegalBits:) -24576)
+					(!= (gEgo illegalBits:) $a000)
 				)
-				(gEgo illegalBits: -24576)
+				(gEgo illegalBits: $a000)
 			)
 			(
 				(and
 					(not (OneOf (gEgo onControl: 1) 2 4 8 16))
-					(== (gEgo illegalBits:) -24576)
+					(== (gEgo illegalBits:) $a000)
 				)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 			)
 		)
 		(cond
@@ -131,7 +131,7 @@
 					)
 				)
 				(ClearFlag 44)
-				(gEgo illegalBits: -32768 priority: -1)
+				(gEgo illegalBits: $8000 priority: -1)
 				(self newRoom: temp0)
 			)
 			(
@@ -336,7 +336,7 @@
 			)
 			(2
 				(HandsOn)
-				(gEgo setLoop: -1 illegalBits: -32768)
+				(gEgo setLoop: -1 illegalBits: $8000)
 				(self dispose:)
 			)
 		)

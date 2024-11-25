@@ -77,7 +77,7 @@
 			(= adjusting 1)
 			(= temp2 (- bottomY topY))
 			(while 1
-				(GetEvent 3 temp1)
+				(GetEvent evMOUSE temp1)
 				(= y (Min bottomY (Max topY (temp1 y:))))
 				(= temp0 (/ (* (- y topY) 100) temp2))
 				(self updateData: temp0)

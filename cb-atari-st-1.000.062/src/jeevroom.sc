@@ -289,7 +289,7 @@
 					view: 456
 					loop: 0
 					cycleSpeed: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Walk
 					setMotion: MoveTo 38 156 self
 				)

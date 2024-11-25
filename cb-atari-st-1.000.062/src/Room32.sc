@@ -75,9 +75,9 @@
 				else
 					(gEgo posn: 55 120)
 				)
-				(gEgo view: 0 illegalBits: -32768 setPri: -1)
+				(gEgo view: 0 illegalBits: $8000 setPri: -1)
 			else
-				(gEgo view: 0 illegalBits: -32768 setPri: -1 posn: 252 167)
+				(gEgo view: 0 illegalBits: $8000 setPri: -1 posn: 252 167)
 				(= local6 1)
 			)
 		)

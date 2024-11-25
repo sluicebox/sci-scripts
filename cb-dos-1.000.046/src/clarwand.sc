@@ -44,7 +44,7 @@
 			(= [gCycleTimers 3] 700)
 			(= gJeevesChoresState 0)
 		)
-		(Clarence illegalBits: -32768 ignoreHorizon: 1)
+		(Clarence illegalBits: $8000 ignoreHorizon: 1)
 		(if
 			(and
 				(== [local42 (- 7 gJeevesChoresState)] gCurRoomNum)

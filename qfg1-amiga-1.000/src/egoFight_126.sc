@@ -15,7 +15,7 @@
 
 	(method (dispose)
 		(gDirHandler release:)
-		(gEgo illegalBits: -32768)
+		(gEgo illegalBits: $8000)
 		(super dispose:)
 		(DisposeScript 126)
 	)
@@ -213,7 +213,7 @@
 				(if (<= global343 0)
 					(SetFlag 283)
 					(SetFlag 311)
-					(gEgo illegalBits: -32768)
+					(gEgo illegalBits: $8000)
 					(self dispose:)
 				else
 					(= cycles 5)

@@ -336,7 +336,7 @@
 					setStep: 3 2
 					setMotion: 0
 					setLoop: -1
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 					setPri: -1
 					posn: local2 130

@@ -115,7 +115,7 @@
 				(gEgo illegalBits: 0 setMotion: MoveTo 138 154 self)
 			)
 			(2
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(if (IsFlag 23)
 					(proc762_1 @local15 1023)
 					(wHands cycleSpeed: 3 setCycle: Fwd init:)
@@ -489,7 +489,7 @@
 		priority 10
 		signal 16
 		cycleSpeed 2
-		illegalBits 2048
+		illegalBits $0800
 	)
 
 	(method (handleEvent event)

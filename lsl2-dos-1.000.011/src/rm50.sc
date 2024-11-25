@@ -90,7 +90,7 @@
 				view: 501
 				loop: 2
 				posn: 22 165
-				illegalBits: -32768
+				illegalBits: $8000
 				setStep: 4 3
 				init:
 				setAvoider: (Avoid new:)
@@ -99,7 +99,7 @@
 				view: 502
 				loop: 2
 				posn: 298 165
-				illegalBits: -32768
+				illegalBits: $8000
 				setStep: 4 3
 				stopUpd:
 				init:
@@ -120,7 +120,7 @@
 					view: 503
 					setLoop: 2
 					posn: 141 126
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Fwd
 					init:
 					setAvoider: (Avoid new:)
@@ -129,7 +129,7 @@
 					view: 504
 					setLoop: 2
 					posn: 181 126
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Fwd
 					init:
 					setAvoider: (Avoid new:)

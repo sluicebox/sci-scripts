@@ -63,7 +63,7 @@
 					view: (if temp0 9 else 8)
 					cel: 0
 					setCel: -1
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 					looper: gHorseTurnLooper
 					setCycle: gHorseStopWalk (if temp0 65 else 64)

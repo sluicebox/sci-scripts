@@ -85,7 +85,7 @@
 				(stopPath)
 				(gCurRoom notify: 6 7)
 				(NormalEgo)
-				(gEgo illegalBits: -16384)
+				(gEgo illegalBits: $c000)
 				(HandsOn 1)
 			)
 		)

@@ -130,12 +130,12 @@
 		(Load rsVIEW 21)
 		(Load rsVIEW 10)
 		(if (== gPrevRoomNum 24) ; Room_24
-			(gEgo setScript: Ego_swims_in illegalBits: -32768)
+			(gEgo setScript: Ego_swims_in illegalBits: $8000)
 		else
 			(gEgo
 				view: 2
 				setStep: 2 1
-				illegalBits: -32768
+				illegalBits: $8000
 				posn: 225 114
 				init:
 			)

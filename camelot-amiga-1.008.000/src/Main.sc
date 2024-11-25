@@ -187,9 +187,9 @@
 	global118
 	global119
 	; 120
-	global120
-	global121
-	global122
+	gCopper
+	gSilver
+	gGold
 	global123
 	global124
 	; 125
@@ -548,9 +548,9 @@
 )
 
 (procedure (proc0_18)
-	(+= global122 global129)
-	(+= global121 global130)
-	(+= global120 global131)
+	(+= gGold global129)
+	(+= gSilver global130)
+	(+= gCopper global131)
 	(= global129 (= global130 (= global131 0)))
 	(= global132 0)
 )
@@ -868,7 +868,7 @@
 				setPri: -1
 				setMotion: 0
 				setCycle: Walk
-				illegalBits: -32768
+				illegalBits: $8000
 				cycleSpeed: 0
 				moveSpeed: 0
 				setStep: 3 2
@@ -1022,7 +1022,7 @@
 									((not (gEgo has: 3)) ; purse
 										(Print 0 6) ; "You cannot give away what you do not possess."
 									)
-									((== global122 global121 global120 0)
+									((== gGold gSilver gCopper 0)
 										(Print 0 7) ; "It may be empty now, but a man's fortune can change. Best to hold onto it."
 									)
 									(else

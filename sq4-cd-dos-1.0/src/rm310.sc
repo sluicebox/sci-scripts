@@ -114,7 +114,7 @@
 			)
 			(theStairs init:)
 			(theRoom init:)
-			(gEgo illegalBits: -32768)
+			(gEgo illegalBits: $8000)
 		)
 		(cond
 			((== (butte curPolice1Room:) 310)

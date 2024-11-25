@@ -114,7 +114,7 @@
 			posn: temp0 temp1
 			setStep: 2 1
 			setLoop: -1
-			illegalBits: -16384
+			illegalBits: $c000
 			init:
 		)
 		(door
@@ -234,7 +234,7 @@
 				(gEgo setPri: (+ (rail1 priority:) 1) illegalBits: 0)
 			)
 			((not (& (gEgo onControl: 1) $1000))
-				(gEgo illegalBits: -16384)
+				(gEgo illegalBits: $c000)
 			)
 		)
 	)
@@ -247,7 +247,7 @@
 	)
 
 	(method (dispose)
-		(gEgo illegalBits: -32768)
+		(gEgo illegalBits: $8000)
 		(DisposeScript 991)
 		(super dispose:)
 	)
@@ -358,7 +358,7 @@
 					setCycle: KQ5SyncWalk
 					setLoop: -1
 					setPri: 12
-					illegalBits: -16384
+					illegalBits: $c000
 					signal: (& (gEgo signal:) $f7ff)
 				)
 				((gEgo head:) show:)

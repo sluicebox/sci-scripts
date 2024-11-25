@@ -301,7 +301,7 @@
 						(if (== global107 9)
 							(gEgo
 								view: 2
-								illegalBits: -32768
+								illegalBits: $8000
 								observeControl: 128 1024
 								posn: 1 143
 							)
@@ -390,7 +390,7 @@
 		)
 		(if (and (& (gEgo onControl: 1) $0020) (!= global107 9))
 			(gEgo setPri: 13)
-			(gEgo illegalBits: -32768 observeControl: 1024)
+			(gEgo illegalBits: $8000 observeControl: 1024)
 			(gEgo observeControl: 128)
 			(= global107 9)
 		)
@@ -475,7 +475,7 @@
 
 	(method (newRoom newRoomNumber)
 		(HandsOn)
-		(gEgo setPri: -1 illegalBits: -32768)
+		(gEgo setPri: -1 illegalBits: $8000)
 		(if (== global116 2)
 			(= global116 3)
 		)
@@ -716,7 +716,7 @@
 			)
 			(2
 				(HandsOn)
-				(gEgo viewer: water illegalBits: -32768 observeControl: 1024)
+				(gEgo viewer: water illegalBits: $8000 observeControl: 1024)
 				(gCurRoom setScript: 0)
 			)
 		)
@@ -749,7 +749,7 @@
 					setPri: -1
 					loop: 3
 					view: 7
-					illegalBits: -32768
+					illegalBits: $8000
 					observeControl: 1024
 					viewer: water
 				)
@@ -788,7 +788,7 @@
 			)
 			(2
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					observeControl: 1024
 					setCycle: Walk
 					loop: 1

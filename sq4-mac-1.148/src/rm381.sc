@@ -83,7 +83,7 @@
 					yourself:
 				)
 		)
-		(gEgo posn: 192 222 loop: 3 illegalBits: -32768 init:)
+		(gEgo posn: 192 222 loop: 3 illegalBits: $8000 init:)
 		(super init:)
 		(gFeatures
 			add:
@@ -529,7 +529,7 @@
 			(6
 				((gCurRoom obstacles:) delete: roboPoly)
 				(robo setMotion: MoveTo 163 90 self)
-				(gEgo ignoreActors: 0 illegalBits: -32768 setHeading: 180)
+				(gEgo ignoreActors: 0 illegalBits: $8000 setHeading: 180)
 			)
 			(7
 				(if (not (TestMallFlag (ScriptID 700 0) #rFlag2 1)) ; mall
@@ -631,7 +631,7 @@
 				)
 			)
 			(23
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(= local2 1)
 				(self
 					save1:

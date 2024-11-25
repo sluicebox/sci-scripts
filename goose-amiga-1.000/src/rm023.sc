@@ -596,7 +596,7 @@
 			posn: (local1 x:) (local1 y:)
 			setCycle: Walk
 			cycleSpeed: 0
-			illegalBits: -32768
+			illegalBits: $8000
 			setAvoider: Avoid
 			ignoreActors: 0
 			setStep: (if global131 2 else 3) (if global131 3 else 4)

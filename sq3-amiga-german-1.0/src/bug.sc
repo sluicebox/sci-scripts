@@ -121,7 +121,7 @@
 				(bug
 					view: 71
 					posn: (Random 1 300) (Random 160 180)
-					illegalBits: -2
+					illegalBits: $fffe
 					ignoreControl: 4
 					setStep: 3 2
 					setLoop: -1

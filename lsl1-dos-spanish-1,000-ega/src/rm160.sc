@@ -71,7 +71,7 @@
 			)
 			(150
 				(NormalEgo 2)
-				(gEgo x: 162 y: 62 illegalBits: -32768)
+				(gEgo x: 162 y: 62 illegalBits: $8000)
 			)
 			(else
 				(gEgo x: 160 y: 160)

@@ -1042,7 +1042,7 @@
 						x: (+ (gEgo x:) 19)
 						y: (+ (gEgo y:) 18)
 						setPri: 13
-						illegalBits: -32768
+						illegalBits: $8000
 						setCycle: 0
 					)
 					(switch local99

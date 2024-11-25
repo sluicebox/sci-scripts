@@ -606,7 +606,7 @@
 					posn: 173 93
 					setStep: 3 2
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 					setPri: -1
 					init:
 				)
@@ -693,7 +693,7 @@
 					view: 0
 					loop: 1
 					setLoop: -1
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Walk
 				)
 				(= seconds 2)

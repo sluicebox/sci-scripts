@@ -55,7 +55,7 @@
 				view: 2
 				setStep: 3 2
 				posn: 156 139
-				illegalBits: -32768
+				illegalBits: $8000
 				init:
 			)
 			((= local0 (Prop new:))

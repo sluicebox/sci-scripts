@@ -369,7 +369,7 @@
 					setPri: 13
 					posn: 105 180
 					ignoreActors: 0
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(= cycles 5)
 			)

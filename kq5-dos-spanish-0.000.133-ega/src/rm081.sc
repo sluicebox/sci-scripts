@@ -58,7 +58,7 @@
 
 	(method (newRoom newRoomNumber)
 		(super newRoom: newRoomNumber)
-		(gEgo view: 0 illegalBits: -32768 setLoop: -1 setStep: 3 2)
+		(gEgo view: 0 illegalBits: $8000 setLoop: -1 setStep: 3 2)
 	)
 
 	(method (doit &tmp temp0)
@@ -151,7 +151,7 @@
 					setCycle: SyncWalk
 					moveSpeed: (gGame egoMoveSpeed:)
 					setStep: 3 2
-					illegalBits: -32768
+					illegalBits: $8000
 					normal: 1
 					ignoreActors: 0
 				)

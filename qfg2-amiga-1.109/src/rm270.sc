@@ -837,7 +837,7 @@
 				(= cycles 5)
 			)
 			(2
-				(gEgo illegalBits: -32768 cycleSpeed: 1 setCycle: End self)
+				(gEgo illegalBits: $8000 cycleSpeed: 1 setCycle: End self)
 			)
 			(3
 				(gEgo view: 271 setLoop: 5 cel: 0 cycleSpeed: 0)
@@ -885,7 +885,7 @@
 				(= cycles 5)
 			)
 			(3
-				(gEgo illegalBits: -32768 cycleSpeed: 1 setCycle: End self)
+				(gEgo illegalBits: $8000 cycleSpeed: 1 setCycle: End self)
 			)
 			(4
 				(fighter setScript: bopEm)

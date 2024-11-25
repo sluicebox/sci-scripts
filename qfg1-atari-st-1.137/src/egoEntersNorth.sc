@@ -25,7 +25,7 @@
 			)
 			(1
 				((ScriptID 93 0) notify: 0) ; rm93
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(if (not (or (IsFlag 83) (IsFlag 237)))
 					(HighPrint 272 0) ; "Grumble Grumble Grumble. Stupid guard duty, third time this week. Why always me? Grumble Grumble Grumble."
 				)

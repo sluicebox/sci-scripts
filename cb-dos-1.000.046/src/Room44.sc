@@ -140,7 +140,7 @@
 				(= local7 1)
 			)
 		)
-		(gEgo view: 0 ignoreActors: 0 illegalBits: -32768 init:)
+		(gEgo view: 0 ignoreActors: 0 illegalBits: $8000 init:)
 	)
 
 	(method (doit)
@@ -361,7 +361,7 @@
 				(gEgo setCycle: Beg self)
 			)
 			(5
-				(gEgo view: 0 loop: 1 setCycle: Walk illegalBits: -32768)
+				(gEgo view: 0 loop: 1 setCycle: Walk illegalBits: $8000)
 				(User canControl: 1)
 			)
 			(6

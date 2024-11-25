@@ -44,7 +44,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 16)
+		(= gDictionaryWord 16)
 		(if (== theVerb 999) ; ???
 			(= theVerb 88) ; ???
 		)
@@ -500,25 +500,25 @@
 			(1
 				(cond
 					((and global115 (== global116 28))
-						(= global215 70)
+						(= gDictionaryWord 70)
 						(= state 9)
 						(gMessager say: global115 85 28 1 self global196)
 					)
 					((and global115 (== global116 26))
-						(= global215 26)
+						(= gDictionaryWord 26)
 						(= state 19)
 						(gMessager say: global115 85 26 1 4 self global196)
 					)
 					((and global115 global116)
 						(switch global116
 							(4
-								(= global215 57)
+								(= gDictionaryWord 57)
 							)
 							(14
-								(= global215 57)
+								(= gDictionaryWord 57)
 							)
 							(51
-								(= global215 57)
+								(= gDictionaryWord 57)
 							)
 						)
 						(= state 99)
@@ -1063,11 +1063,11 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= global215 81)
+				(= gDictionaryWord 81)
 				(gMessager say: 17 7 0 1 self) ; "Here now, you little |r||c0|ragamuffin|c||r|, take your paws off me!"
 			)
 			(1
-				(= global215 107)
+				(= gDictionaryWord 107)
 				(gMessager say: 17 7 0 2 self) ; "Go on, you little |r||c0|wastrel|c||r|, get lost! We're guarding an important prisoner here, we are!"
 			)
 			(2
@@ -1100,7 +1100,7 @@
 				(gMessager say: 14 6 temp0)
 			)
 			(84 ; Trivia
-				(= global215 49)
+				(= gDictionaryWord 49)
 				(gMessager say: 14 84 temp0)
 			)
 			(85 ; Talk
@@ -1152,7 +1152,7 @@
 				(gMessager say: 13 6 temp0)
 			)
 			(84 ; Trivia
-				(= global215 49)
+				(= gDictionaryWord 49)
 				(gMessager say: 13 84 temp0)
 			)
 			(85 ; Talk
@@ -1255,7 +1255,7 @@
 				(if (IsFlag 218)
 					(gCurRoom setScript: enterAfterLetter)
 				else
-					(= global215 99)
+					(= gDictionaryWord 99)
 					(super doVerb: theVerb &rest)
 				)
 			)
@@ -1462,7 +1462,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 48)
+		(= gDictionaryWord 48)
 		(super doVerb: theVerb)
 	)
 )
@@ -1575,7 +1575,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 8)
+		(= gDictionaryWord 8)
 		(super doVerb: theVerb)
 	)
 )

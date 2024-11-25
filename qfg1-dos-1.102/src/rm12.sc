@@ -37,7 +37,7 @@
 		(SL enable:)
 		(self setLocales: 804)
 		(NormalEgo)
-		(gEgo illegalBits: -28672)
+		(gEgo illegalBits: $9000)
 		(if (not global332)
 			(gEgo init:)
 		)

@@ -29,7 +29,7 @@
 			(15872
 				(Show 4)
 				(Animate (gCast elements:))
-				(while (== 0 ((= param1 (Event new: 32765)) type:))
+				(while (== 0 ((= param1 (Event new: $7ffd)) type:)) ; evVERB | evHELP | evMOVE | evJOYUP | evJOYDOWN | evSAID | direction | evMENUHIT | evMENUSTART | evKEYUP | evMOUSEKEYBOARD | $0c00
 					(param1 dispose:)
 				)
 				(param1 dispose:)

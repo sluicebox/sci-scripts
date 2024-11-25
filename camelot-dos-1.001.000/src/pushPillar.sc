@@ -226,7 +226,7 @@
 				(SetFlag 197)
 				(= global193 505)
 				((ScriptID 75 2) setScript: (ScriptID 75 3)) ; thief, thiefKeepsGoing
-				(gEgo illegalBits: -32768 ignoreActors: 0)
+				(gEgo illegalBits: $8000 ignoreActors: 0)
 				(self dispose:)
 			)
 			(26

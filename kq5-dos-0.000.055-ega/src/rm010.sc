@@ -80,7 +80,7 @@
 				(gEgo posn: 5 110)
 			)
 		)
-		(gEgo view: 0 illegalBits: -32768 ignoreHorizon: 1 offset: 3 init:)
+		(gEgo view: 0 illegalBits: $8000 ignoreHorizon: 1 offset: 3 init:)
 		(if (!= ((gInventory at: 9) owner:) 9) ; Heart
 			(= local90 1)
 			(gAddToPics add: wTree)

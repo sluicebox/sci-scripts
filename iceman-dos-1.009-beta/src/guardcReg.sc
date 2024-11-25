@@ -45,7 +45,7 @@
 		(Load rsVIEW 472)
 		(Load rsVIEW 471)
 		(Load rsVIEW 572)
-		(guard illegalBits: -32704 setAvoider: Avoid setCycle: Walk init: hide:)
+		(guard illegalBits: $8040 setAvoider: Avoid setCycle: Walk init: hide:)
 		(cond
 			((and (not local3) (OneOf gCurRoomNum 71 72)) ; tunaBeachRm1, tunaBeachRm2
 				(guard setScript: wrongBeachScript)
@@ -150,7 +150,7 @@
 				(self setScript: disMountScript self)
 			)
 			(3
-				(guard illegalBits: -32704 setMotion: Chase gEgo 40 self)
+				(guard illegalBits: $8040 setMotion: Chase gEgo 40 self)
 			)
 			(4
 				(self setScript: arabicScript self)
@@ -174,7 +174,7 @@
 				(guard
 					view: 472
 					show:
-					illegalBits: -32704
+					illegalBits: $8040
 					posn: local0 local1
 					setLoop: Grooper
 					loop: local2

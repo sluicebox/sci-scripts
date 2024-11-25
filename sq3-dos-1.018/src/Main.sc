@@ -776,7 +776,7 @@
 		setCycle: Walk
 		setStep: 3 2
 		looper: 0
-		illegalBits: -32768
+		illegalBits: $8000
 		cycleSpeed: 0
 		moveSpeed: 0
 		ignoreActors: 0
@@ -1503,7 +1503,7 @@
 					(KEY_ALT_c
 						(Show 4)
 						(Animate (gCast elements:))
-						(while (== evNULL ((= temp2 (Event new: 32765)) type:))
+						(while (== evNULL ((= temp2 (Event new: $7ffd)) type:)) ; evVERB | evHELP | evMOVE | evJOYUP | evJOYDOWN | evSAID | direction | evMENUHIT | evMENUSTART | evKEYUP | evMOUSEKEYBOARD | $0c00
 							(temp2 dispose:)
 						)
 						(temp2 dispose:)

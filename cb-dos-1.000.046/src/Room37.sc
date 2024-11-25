@@ -151,16 +151,16 @@
 		)
 		(switch gPrevRoomNum
 			(36
-				(gEgo illegalBits: 16384 setPri: -1 posn: 92 88)
+				(gEgo illegalBits: $4000 setPri: -1 posn: 92 88)
 			)
 			(38
-				(gEgo illegalBits: 16384 setPri: -1 posn: 229 88)
+				(gEgo illegalBits: $4000 setPri: -1 posn: 229 88)
 			)
 			(47
 				(HandsOff)
 				(= local54 1)
 				(gEgo
-					illegalBits: 8192
+					illegalBits: $2000
 					setPri: 14
 					setMotion: MoveTo (if (< (gEgo x:) 160) 30 else 290) 150
 				)
@@ -174,7 +174,7 @@
 				)
 			)
 			(else
-				(gEgo illegalBits: 16384 setPri: -1)
+				(gEgo illegalBits: $4000 setPri: -1)
 			)
 		)
 		(gEgo view: 0 init:)
@@ -217,7 +217,7 @@
 					(= local56 1)
 					(HandsOn)
 					(= global101 0)
-					(gEgo illegalBits: 16384 setPri: -1)
+					(gEgo illegalBits: $4000 setPri: -1)
 					(= horizon 80)
 					(= north 33)
 					(= local54 0)
@@ -235,7 +235,7 @@
 					(= global101 0)
 					(= local55 1)
 					(HandsOn)
-					(gEgo ignoreActors: 0 illegalBits: 8192)
+					(gEgo ignoreActors: 0 illegalBits: $2000)
 				)
 			)
 			(64
@@ -244,7 +244,7 @@
 					(= local58 0)
 					(= global101 0)
 					(HandsOn)
-					(gEgo ignoreActors: 0 illegalBits: 8192)
+					(gEgo ignoreActors: 0 illegalBits: $2000)
 				)
 			)
 			(128

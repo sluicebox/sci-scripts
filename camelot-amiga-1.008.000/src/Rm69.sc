@@ -466,7 +466,7 @@
 		(switch (= state newState)
 			(1
 				(HandsOff)
-				(gEgo illegalBits: -2)
+				(gEgo illegalBits: $fffe)
 				(leftDoor
 					setLoop: 1
 					setPri: 0
@@ -523,7 +523,7 @@
 			(3
 				(entranceDoor dispose:)
 				(entranceDoorPassage dispose:)
-				(gEgo loop: 1 illegalBits: -16384 ignoreActors: 0 setPri: -1)
+				(gEgo loop: 1 illegalBits: $c000 ignoreActors: 0 setPri: -1)
 				(HandsOn)
 				(client setScript: 0)
 			)
@@ -547,7 +547,7 @@
 			)
 			(1
 				(Print 69 22) ; "As before, the hidden door shuts as though it had never been there."
-				(gEgo observeBlocks: bottomBlock illegalBits: -32768)
+				(gEgo observeBlocks: bottomBlock illegalBits: $8000)
 				(HandsOn)
 				(client setScript: 0)
 			)

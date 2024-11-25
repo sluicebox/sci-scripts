@@ -18,7 +18,7 @@
 
 (procedure (localproc_0 &tmp temp0)
 	(repeat
-		(= temp0 (Event new: 5))
+		(= temp0 (Event new: evMOUSEKEYBOARD))
 		(breakif (temp0 type:))
 		(temp0 dispose:)
 	)

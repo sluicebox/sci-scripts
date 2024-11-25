@@ -392,7 +392,7 @@
 					view: 330
 					ignoreActors: 0
 					setLoop: 4
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Walk
 					setAvoider: ((Avoid new:) offScreenOK: 1)
 					setMotion: MoveTo -45 143 self

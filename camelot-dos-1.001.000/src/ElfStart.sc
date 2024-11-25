@@ -80,10 +80,10 @@
 			)
 			(3
 				((ScriptID 10 2) dispose:) ; elf
-				(if (or global122 global121)
-					(= global191 global122)
-					(= global192 global121)
-					(= global122 (= global121 0))
+				(if (or gGold gSilver)
+					(= global191 gGold)
+					(= global192 gSilver)
+					(= gGold (= gSilver 0))
 					(Print 204 2) ; "The trick has been played and I fear the sprite's bolt of mischief was aimed squarely at your purse."
 					(HandsOn)
 					(SetFlag 45)

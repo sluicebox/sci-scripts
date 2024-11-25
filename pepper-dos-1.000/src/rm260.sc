@@ -475,55 +475,55 @@
 			(2
 				(cond
 					((and global115 (== global116 32))
-						(= global215 19)
+						(= gDictionaryWord 19)
 						(= state 79)
 						(gMessager say: global115 85 32 1 2 self global196)
 					)
 					((and global115 (== global116 26))
-						(= global215 29)
+						(= gDictionaryWord 29)
 						(= state 69)
 						(gMessager say: global115 85 26 1 2 self global196)
 					)
 					((and global115 (== global116 5))
-						(= global215 49)
+						(= gDictionaryWord 49)
 						(= state 59)
 						(gMessager say: global115 85 5 1 self global196)
 					)
 					((and global115 (== global116 26))
-						(= global215 22)
+						(= gDictionaryWord 22)
 						(= state 9)
 						(gMessager say: global115 85 26 1 3 self global196)
 					)
 					((and global115 (== global116 118))
-						(= global215 46)
+						(= gDictionaryWord 46)
 						(= state 49)
 						(gMessager say: global115 85 118 1 4 self global196)
 					)
 					((and global115 (== global116 102))
-						(= global215 22)
+						(= gDictionaryWord 22)
 						(= state 39)
 						(gMessager say: global115 85 102 1 3 self global196)
 					)
 					((and global115 (== global116 66))
-						(= global215 84)
+						(= gDictionaryWord 84)
 						(= state 19)
 						(gMessager say: global115 85 66 1 self global196)
 					)
 					((and global115 (== global116 65))
-						(= global215 57)
+						(= gDictionaryWord 57)
 						(= state 29)
 						(gMessager say: global115 85 65 1 4 self global196)
 					)
 					((and global115 global116)
 						(switch global116
 							(119
-								(= global215 57)
+								(= gDictionaryWord 57)
 							)
 							(113
-								(= global215 108)
+								(= gDictionaryWord 108)
 							)
 							(124
-								(= global215 57)
+								(= gDictionaryWord 57)
 							)
 						)
 						(= state 99)
@@ -540,7 +540,7 @@
 				(gMessager say: global115 85 26 4 8 self global196)
 			)
 			(20
-				(= global215 98)
+				(= gDictionaryWord 98)
 				(gMessager say: global115 85 66 2 3 self global196)
 			)
 			(21
@@ -1067,11 +1067,11 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= global215 84)
+				(= gDictionaryWord 84)
 				(gMessager say: 19 0 28 1 self) ; "|r||c0|Salutations|c||r| and greetings! <BURP!> Who's there? Oh, it's you, lad. Hello there! Come in and eat something!"
 			)
 			(1
-				(= global215 98)
+				(= gDictionaryWord 98)
 				(gMessager say: 19 0 28 2 3 self) ; "Thanks, General, but I'm still not hungry. My poor dog is still missing!"
 			)
 			(2
@@ -1675,7 +1675,7 @@
 				(gCurRoom setScript: sGiveSpEditionPenny)
 			)
 			(84 ; Trivia
-				(= global215 49)
+				(= gDictionaryWord 49)
 				(gMessager say: 9 84 temp0)
 			)
 			(88 ; ???
@@ -1726,14 +1726,14 @@
 			)
 			(switch theVerb
 				(7 ; Do
-					(= global215 43)
+					(= gDictionaryWord 43)
 					(gMessager say: 7 7 temp0)
 				)
 				(6 ; Look
 					(gMessager say: 7 6 temp0 0 gambler)
 				)
 				(85 ; Talk
-					(= global215 57)
+					(= gDictionaryWord 57)
 					(gCurRoom setScript: sTalkGlutton 0 0)
 				)
 				((OneOf theVerb 141 143 135 140 138 139 136) ; ???, ???, ???, ???, ???, ???, ???
@@ -1902,7 +1902,7 @@
 				(gMessager say: 21 88) ; "The goat might like to eat that, but Pepper should probably hang onto it, just in case."
 			)
 			(84 ; Trivia
-				(= global215 16)
+				(= gDictionaryWord 16)
 				(gMessager say: 21 84) ; "TRUE. People often kept animals such as goats and pigs in the cities in colonial times. Sometimes they would let the animals graze in the Town |r||c0|Commons|c||r|, but this usually got their neighbors mad at them!"
 			)
 			(else
@@ -2006,7 +2006,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 111)
+		(= gDictionaryWord 111)
 		(super doVerb: theVerb &rest)
 	)
 )
@@ -2218,7 +2218,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 80)
+		(= gDictionaryWord 80)
 		(super doVerb: theVerb &rest)
 	)
 )

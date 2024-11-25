@@ -138,7 +138,7 @@
 		(super doit: &rest)
 		(if (and (gEgo mover:) (gCast contains: numberPad))
 			(numberPad dispose:)
-			(gEgo illegalBits: -32768)
+			(gEgo illegalBits: $8000)
 			(gCast eachElementDo: #perform disposeNumbers)
 			(if (== (gCurRoom script:) sElevatorScript)
 				(gCurRoom setScript: 0)
@@ -319,7 +319,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(gEgo illegalBits: -32768 setMotion: MoveTo 267 149 self)
+				(gEgo illegalBits: $8000 setMotion: MoveTo 267 149 self)
 			)
 			(1
 				(gEgo setHeading: 270 self)
@@ -333,7 +333,7 @@
 				(if gModelessDialog
 					(gModelessDialog dispose:)
 				)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(Print 350 10) ; "Oh, oh. Where are we goin' now, Larry?"
 				(Points 50 5)
 				(gCurRoom newRoom: 360)

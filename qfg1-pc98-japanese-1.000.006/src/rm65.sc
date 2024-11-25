@@ -73,7 +73,7 @@
 		(NormalEgo)
 		(gEgo init:)
 		(if gNight
-			(gEgo illegalBits: -32640)
+			(gEgo illegalBits: $8080)
 		)
 		(switch gPrevRoomNum
 			(74

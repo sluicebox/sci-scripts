@@ -214,7 +214,7 @@
 							posn: (+ (gEgo x:) 42) (gEgo y:)
 							setAvoider: (Avoid new:)
 							setCycle: Walk
-							illegalBits: -28672
+							illegalBits: $9000
 							init:
 							setMotion: Follow gEgo 40
 						)
@@ -246,7 +246,7 @@
 			(2
 				(gEgo
 					ignoreActors: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setPri: -1
 					setMotion: MoveTo 700 134
 				)
@@ -274,7 +274,7 @@
 						setCel: -1
 						setCycle: Walk
 						setPri: -1
-						illegalBits: -32768
+						illegalBits: $8000
 						setMotion: Follow gEgo 30
 					)
 				else
@@ -287,7 +287,7 @@
 				)
 			)
 			(4
-				(global112 illegalBits: -28672 setMotion: Follow gEgo 40)
+				(global112 illegalBits: $9000 setMotion: Follow gEgo 40)
 			)
 			(5
 				(HandsOff)

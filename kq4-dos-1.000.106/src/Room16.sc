@@ -129,7 +129,7 @@
 	)
 
 	(method (newRoom newRoomNumber)
-		(gEgo illegalBits: -32768)
+		(gEgo illegalBits: $8000)
 		(= global189 0)
 		(if (== (gEgo view:) 2)
 			(super newRoom: newRoomNumber)

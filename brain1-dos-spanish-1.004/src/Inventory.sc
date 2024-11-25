@@ -443,7 +443,7 @@
 				claimed: 0
 				port: 0
 			)
-			(GetEvent 32767 invEvent)
+			(GetEvent evALL_EVENTS invEvent)
 			(= gMouseX (invEvent x:))
 			(= gMouseY (invEvent y:))
 			(= temp8 0)

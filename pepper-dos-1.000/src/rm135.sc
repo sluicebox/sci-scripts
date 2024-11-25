@@ -370,7 +370,7 @@
 				(= cycles 20)
 			)
 			(2
-				(= global215 72)
+				(= gDictionaryWord 72)
 				(fredTalker x: 37 y: 85 tailPosn: 1)
 				(gMessager say: 12 0 3 1 4 self 140) ; "You're crazy, Fred. You're sick, Fred. You should be locked up, Fred. That's what they said about me in the institution. Ha ha ha!"
 			)

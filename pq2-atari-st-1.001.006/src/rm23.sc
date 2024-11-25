@@ -1173,7 +1173,7 @@
 			)
 			(15
 				(HandsOn)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(gCurRoom newRoom: 22)
 			)
 		)

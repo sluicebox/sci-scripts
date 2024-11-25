@@ -78,7 +78,7 @@
 		(Leg setPri: 9 init: stopUpd:)
 		(Tail setPri: 9 init: stopUpd:)
 		(Head setPri: 9 init: stopUpd:)
-		(gEgo view: 0 posn: 211 170 illegalBits: -32752 init:)
+		(gEgo view: 0 posn: 211 170 illegalBits: $8010 init:)
 		(if (== gAct 1)
 			(Load rsVIEW 440)
 			(Load rsVIEW 445)

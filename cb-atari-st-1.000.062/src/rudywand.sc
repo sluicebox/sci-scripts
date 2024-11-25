@@ -58,7 +58,7 @@
 		(Load rsVIEW 908)
 		(LoadMany rsMESSAGE 243 296)
 		(= [global377 8] 296)
-		(Rudy view: 380 loop: 1 illegalBits: -32768 ignoreHorizon: 1)
+		(Rudy view: 380 loop: 1 illegalBits: $8000 ignoreHorizon: 1)
 		(if
 			(and
 				(== [local54 (- 8 global114)] gCurRoomNum)

@@ -465,7 +465,7 @@
 				)
 			)
 			(2
-				(gEgo ignoreActors: 0 illegalBits: -32768)
+				(gEgo ignoreActors: 0 illegalBits: $8000)
 				(HandsOn)
 				(self dispose:)
 			)
@@ -790,7 +790,7 @@
 					setPri: -1
 					cel: 0
 					posn: (+ (gEgo x:) 9) (+ (gEgo y:) 36)
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: End self
 				)
 			)

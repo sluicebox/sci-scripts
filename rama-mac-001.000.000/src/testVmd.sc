@@ -108,7 +108,7 @@
 						play:
 					)
 				)
-				(while ((= temp7 (Event new: 12)) type:)
+				(while ((= temp7 (Event new: $000c)) type:) ; evKEYUP | evKEYBOARD
 					(temp7 dispose:)
 				)
 				(temp7 dispose:)

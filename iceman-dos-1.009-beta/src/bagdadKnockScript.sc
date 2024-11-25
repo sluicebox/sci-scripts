@@ -200,7 +200,7 @@
 			(3
 				(gEgo
 					view: 584
-					illegalBits: -32768
+					illegalBits: $8000
 					cel: 0
 					loop: 2
 					setCycle: End

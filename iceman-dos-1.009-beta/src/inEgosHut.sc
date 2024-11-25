@@ -1136,7 +1136,7 @@
 				)
 			)
 			(6
-				(gEgo setLoop: -1 illegalBits: -32768 setScript: 0)
+				(gEgo setLoop: -1 illegalBits: $8000 setScript: 0)
 				(HandsOn)
 			)
 		)

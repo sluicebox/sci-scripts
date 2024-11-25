@@ -40,7 +40,7 @@
 		)
 		(super init:)
 		(oasis init:)
-		(gEgo setPri: -1 illegalBits: -32768 init:)
+		(gEgo setPri: -1 illegalBits: $8000 init:)
 	)
 
 	(method (doit &tmp temp0)

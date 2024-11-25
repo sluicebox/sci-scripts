@@ -55,7 +55,7 @@
 			view: 4
 			loop: 0
 			setStep: 4 2
-			illegalBits: -32768
+			illegalBits: $8000
 			setPri: -1
 			posn: 63 125
 			init:

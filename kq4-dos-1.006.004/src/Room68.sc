@@ -63,7 +63,7 @@
 			view: 4
 			setLoop: -1
 			setCycle: Walk
-			illegalBits: -32768
+			illegalBits: $8000
 			setStep: 4 2
 		)
 		(switch gPrevRoomNum

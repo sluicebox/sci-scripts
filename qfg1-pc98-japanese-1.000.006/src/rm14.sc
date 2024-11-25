@@ -120,7 +120,7 @@
 		(NormalEgo)
 		(gEgo init:)
 		(if (not (IsFlag 161))
-			(gEgo illegalBits: -16384)
+			(gEgo illegalBits: $c000)
 		)
 		(switch gPrevRoomNum
 			(15
@@ -621,7 +621,7 @@
 			)
 			(3
 				(NormalEgo)
-				(gEgo illegalBits: -16384)
+				(gEgo illegalBits: $c000)
 				(LookAt gEgo bear)
 				(HandsOn)
 				(self dispose:)

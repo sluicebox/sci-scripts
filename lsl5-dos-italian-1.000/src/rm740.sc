@@ -107,7 +107,7 @@
 			)
 			(3
 				(TPrint 740 4) ; "She must be waiting for you to take the offensive. You decide to grab whatever parts of her body you can!"
-				(TPrint 740 5 67 -1 185) ; "(Heh, heh, heh!)"
+				(TPrint 740 5 #at -1 185) ; "(Heh, heh, heh!)"
 				(larry setMotion: 0)
 				(gTheIconBar curIcon: (gTheIconBar at: 2))
 				(gGame setCursor: ((gTheIconBar curIcon:) cursor:))
@@ -206,98 +206,98 @@
 						(TPrint ; "Oh!"
 							740
 							12
-							67
+							#at
 							-1
 							185
-							80
+							#title
 							{The Audience}
-							30
+							#mode
 							1
-							108
+							#dispose
 						)
 					)
 					(0
 						(TPrint ; "Wow!"
 							740
 							13
-							67
+							#at
 							-1
 							185
-							80
+							#title
 							{The Audience}
-							30
+							#mode
 							1
-							108
+							#dispose
 						)
 					)
 					(3
 						(TPrint ; "Ooh!"
 							740
 							14
-							67
+							#at
 							-1
 							185
-							80
+							#title
 							{The Audience}
-							30
+							#mode
 							1
-							108
+							#dispose
 						)
 					)
 					(2
 						(TPrint ; "Woah!"
 							740
 							15
-							67
+							#at
 							-1
 							185
-							80
+							#title
 							{The Audience}
-							30
+							#mode
 							1
-							108
+							#dispose
 						)
 					)
 					(4
 						(TPrint ; "Eeee!"
 							740
 							16
-							67
+							#at
 							-1
 							185
-							80
+							#title
 							{The Audience}
-							30
+							#mode
 							1
-							108
+							#dispose
 						)
 					)
 					(5
 						(TPrint ; "Ahhhhh!"
 							740
 							17
-							67
+							#at
 							-1
 							185
-							80
+							#title
 							{The Audience}
-							30
+							#mode
 							1
-							108
+							#dispose
 						)
 					)
 					(6
 						(TPrint ; "Gasp!"
 							740
 							18
-							67
+							#at
 							-1
 							185
-							80
+							#title
 							{The Audience}
-							30
+							#mode
 							1
-							108
+							#dispose
 						)
 					)
 				)

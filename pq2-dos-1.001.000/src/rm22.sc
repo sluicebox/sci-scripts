@@ -273,7 +273,7 @@
 							)
 						setCycle: Walk
 						init:
-						illegalBits: -16384
+						illegalBits: $c000
 					)
 				)
 				(if (!= gPrevRoomNum local11)
@@ -946,7 +946,7 @@
 					setLoop: -1
 					setPri: -1
 					ignoreActors: 0
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(HandsOn)
 				(if (== global131 13)
@@ -972,7 +972,7 @@
 				(global112 setMotion: MoveTo 130 136 self)
 			)
 			(4
-				(global112 illegalBits: -16384 setMotion: MoveTo 133 106)
+				(global112 illegalBits: $c000 setMotion: MoveTo 133 106)
 				(localproc_0 22 99) ; "You go ahead, Sonny. I'll stay out here and have a smoke."
 				(self cue:)
 			)

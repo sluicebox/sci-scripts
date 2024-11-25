@@ -361,7 +361,7 @@
 		)
 		(HandsOff)
 		(NormalEgo)
-		(gEgo loop: 3 setMotion: 0 illegalBits: -384 x: 160 y: 147)
+		(gEgo loop: 3 setMotion: 0 illegalBits: $fe80 x: 160 y: 147)
 		(= alley theAlley)
 		(= isScrolling 1)
 		(= exitingAlley 0)

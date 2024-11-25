@@ -34,7 +34,7 @@
 				(gEgo setMotion: MoveTo 43 179 self)
 			)
 			(3
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HighPrint 230 1) ; "You behold a most fascinating place."
 				(HighPrint 230 2) ; "The person labeled "ME" speaks:"
 				(HighPrint 230 3) ; "Abandon mope, all ye who enter here!"

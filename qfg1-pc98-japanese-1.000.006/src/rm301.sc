@@ -1625,7 +1625,7 @@
 				(= global340 0)
 				(= global341 0)
 				(HandsOn)
-				(gEgo illegalBits: -32768 ignoreActors: 0 setScript: 0)
+				(gEgo illegalBits: $8000 ignoreActors: 0 setScript: 0)
 			)
 		)
 	)

@@ -177,16 +177,16 @@
 			((and (== global105 12) (== global132 0))
 				(switch local1
 					(1
-						(gEgo illegalBits: -32768 view: 2)
+						(gEgo illegalBits: $8000 view: 2)
 					)
 					(2048
-						(gEgo illegalBits: -31744 view: 5)
+						(gEgo illegalBits: $8400 view: 5)
 					)
 					(512
-						(gEgo illegalBits: -31744 view: 6)
+						(gEgo illegalBits: $8400 view: 6)
 					)
 					(8
-						(gEgo illegalBits: -31744 view: 7)
+						(gEgo illegalBits: $8400 view: 7)
 					)
 					(2
 						(self changeState: 1)
@@ -199,25 +199,25 @@
 				)
 				(switch local1
 					(1
-						(gEgo illegalBits: -16384 view: 372)
+						(gEgo illegalBits: $c000 view: 372)
 					)
 					(2048
-						(gEgo illegalBits: -32768 view: 377)
+						(gEgo illegalBits: $8000 view: 377)
 					)
 					(512
-						(gEgo illegalBits: -32768 view: 377)
+						(gEgo illegalBits: $8000 view: 377)
 					)
 					(8
-						(gEgo view: 377 illegalBits: -32768)
+						(gEgo view: 377 illegalBits: $8000)
 					)
 					(2
 						(self changeState: 10)
 					)
 					(1024
-						(gEgo illegalBits: -32768 view: 372)
+						(gEgo illegalBits: $8000 view: 372)
 					)
 					(else
-						(gEgo illegalBits: -15360 view: 377)
+						(gEgo illegalBits: $c400 view: 377)
 					)
 				)
 			)
@@ -230,7 +230,7 @@
 				(HandsOff)
 				(= global105 0)
 				(gEgo
-					illegalBits: 1
+					illegalBits: $0001
 					view: 73
 					cel: 0
 					loop: (& (gEgo loop:) $0001)

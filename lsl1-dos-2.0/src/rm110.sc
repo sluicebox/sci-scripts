@@ -255,7 +255,7 @@
 					show:
 					z: 0
 					normal: 1
-					illegalBits: -32768
+					illegalBits: $8000
 					x: 319
 					y: 145
 					setMotion: MoveTo 290 151 self

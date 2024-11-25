@@ -38,7 +38,7 @@
 		(super init:)
 		(= global320 181)
 		(= global321 35)
-		(gEgo normal: 1 setStep: 3 2 view: 0 illegalBits: -32768)
+		(gEgo normal: 1 setStep: 3 2 view: 0 illegalBits: $8000)
 		(= global325
 			{"You can see there's nothing here, Graham!"}
 		)

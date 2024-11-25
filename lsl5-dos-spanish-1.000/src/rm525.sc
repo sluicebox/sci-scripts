@@ -581,7 +581,7 @@
 					)
 					(else
 						(TPrint 525 16) ; "You no longer have to sit at this table, Larry. You are now a "SuperUser!""
-						(TPrint 525 17 67 -1 185) ; "(Whatever that means!)"
+						(TPrint 525 17 #at -1 185) ; "(Whatever that means!)"
 					)
 				)
 			)

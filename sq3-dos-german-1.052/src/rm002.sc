@@ -97,7 +97,7 @@
 					loop: 2
 					cel: 0
 					ignoreActors: 1
-					illegalBits: -32768
+					illegalBits: $8000
 					setStep: 3 2
 					posn: 142 141
 					get: 0 ; Glowing_Gem
@@ -400,7 +400,7 @@
 					view: 0
 					loop: 2
 					cel: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setStep: -1 2
 					setCycle: Walk
 					setPri: -1

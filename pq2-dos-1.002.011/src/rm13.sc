@@ -262,7 +262,7 @@
 			posn: 0 0
 			setMotion: 0
 			ignoreActors: 0
-			illegalBits: -32768
+			illegalBits: $8000
 			init:
 		)
 		(hand view: 71 posn: 129 149 loop: 0 cel: 3 setPri: 13 init: stopUpd:)

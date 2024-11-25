@@ -266,7 +266,7 @@
 					setCycle: End self
 				)
 				(oldBen hide:)
-				(= global215 44)
+				(= gDictionaryWord 44)
 			)
 			(4
 				(gMessager say: 1 72 0 1 self) ; "Here they are, Mr. Franklin."
@@ -364,7 +364,7 @@
 				(= cycles 1)
 			)
 			(4
-				(= global215 44)
+				(= gDictionaryWord 44)
 				(gMessager say: 1 117 3 1 self) ; "Here you are, Ben. |r||c0|Gout|c||r|, huh? Now that's a disease you don't hear much about anymore."
 			)
 			(5
@@ -724,7 +724,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 21)
+		(= gDictionaryWord 21)
 		(super doVerb: theVerb)
 	)
 )
@@ -735,7 +735,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 68)
+		(= gDictionaryWord 68)
 		(super doVerb: theVerb)
 	)
 )

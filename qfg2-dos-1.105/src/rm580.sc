@@ -129,7 +129,7 @@
 				(= gEgoY (gEgo y:))
 				(gCurRoom newRoom: 570)
 			)
-			((and (& thisControl $0004) (== (gEgo illegalBits:) -32768))
+			((and (& thisControl $0004) (== (gEgo illegalBits:) $8000))
 				(self setScript: toFireRm)
 			)
 			((and (& thisControl $0008) (not falling))
@@ -447,7 +447,7 @@
 			)
 			(5
 				(BlackPrint 580 18) ; "The past few hours are hazy in your memory. You remember only one thing clearly: you are here to find the Statue of Iblis."
-				(gEgo ignoreActors: illegalBits: -32768)
+				(gEgo ignoreActors: illegalBits: $8000)
 				(HandsOn)
 			)
 		)

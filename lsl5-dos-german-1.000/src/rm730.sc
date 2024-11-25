@@ -478,22 +478,22 @@
 			(2
 				(switch (Random 0 5)
 					(0
-						(Say Lana 730 2 108) ; "C'mon, Larry! Let's see what you've got!"
+						(Say Lana 730 2 #dispose) ; "C'mon, Larry! Let's see what you've got!"
 					)
 					(1
-						(Say Lana 730 3 108) ; "What'sa matter, Larry? Are you a wimp or a mouse?"
+						(Say Lana 730 3 #dispose) ; "What'sa matter, Larry? Are you a wimp or a mouse?"
 					)
 					(2
-						(Say Lana 730 4 108) ; "What a wussy! Get up here!"
+						(Say Lana 730 4 #dispose) ; "What a wussy! Get up here!"
 					)
 					(3
-						(Say Lana 730 5 108) ; "A REAL man would be up here already!"
+						(Say Lana 730 5 #dispose) ; "A REAL man would be up here already!"
 					)
 					(4
-						(Say Lana 730 6 108) ; "What's wrong, Big Boy? Afraid I might win?"
+						(Say Lana 730 6 #dispose) ; "What's wrong, Big Boy? Afraid I might win?"
 					)
 					(5
-						(Say Lana 730 7 108) ; "Geez, Larry! What a chicken!"
+						(Say Lana 730 7 #dispose) ; "Geez, Larry! What a chicken!"
 					)
 				)
 				(Delay (Random 10 20) 1 self)
@@ -659,7 +659,7 @@
 					(TPrint 730 14) ; "The gentleman blocking your path will be glad to allow you to pass--for a price."
 				else
 					(TPrint 730 15) ; "Since you've paid, he now treats you with all due respect."
-					(TPrint 730 16 67 -1 185) ; "(Evidently you have none due!)"
+					(TPrint 730 16 #at -1 185) ; "(Evidently you have none due!)"
 				)
 			)
 			(10 ; Zipper
@@ -668,26 +668,26 @@
 			(5 ; Talk
 				(switch mainEvent
 					(0
-						(Say The_Bouncer 730 18 108) ; "Da ballroom's closed, Mac! Beat it, before I lose my delly-cate sense of humor."
+						(Say The_Bouncer 730 18 #dispose) ; "Da ballroom's closed, Mac! Beat it, before I lose my delly-cate sense of humor."
 					)
 					(2
 						(cond
 							((< (gEgo y:) y)
-								(Say The_Bouncer 730 19 108) ; "There's one good seat down front, right at ringside!"
+								(Say The_Bouncer 730 19 #dispose) ; "There's one good seat down front, right at ringside!"
 							)
 							((Random 0 1)
-								(Say The_Bouncer 730 20 108) ; "$25.00, that's the cover charge and ya ain' gettin' in fer less!"
+								(Say The_Bouncer 730 20 #dispose) ; "$25.00, that's the cover charge and ya ain' gettin' in fer less!"
 							)
 							(else
-								(Say The_Bouncer 730 21 108) ; "Plenty o' good seats lef, Bud! Butcha ain' gettin' past me 'lessin' ya pays ma price!"
+								(Say The_Bouncer 730 21 #dispose) ; "Plenty o' good seats lef, Bud! Butcha ain' gettin' past me 'lessin' ya pays ma price!"
 							)
 						)
 					)
 					(1
 						(if (< (gEgo y:) y)
-							(Say The_Bouncer 730 22 108) ; "You wanna chance to play wit' da goils? It'll cost ja $500.00, please! Up front. No refunds when ya get beat!"
+							(Say The_Bouncer 730 22 #dispose) ; "You wanna chance to play wit' da goils? It'll cost ja $500.00, please! Up front. No refunds when ya get beat!"
 						else
-							(Say The_Bouncer 730 23 108) ; "If ya wanna watch, I kin letcha in for a measly $25.00. If ya wanna participate, it'll cost ya 5 big ones! (Need I mention, it's worth it, too!)"
+							(Say The_Bouncer 730 23 #dispose) ; "If ya wanna watch, I kin letcha in for a measly $25.00. If ya wanna participate, it'll cost ya 5 big ones! (Need I mention, it's worth it, too!)"
 						)
 					)
 				)
@@ -725,9 +725,9 @@
 								))
 							(paid
 								(if justWatching
-									(Say The_Bouncer 730 24 108) ; "Ya paid yer money. Now sit down!"
+									(Say The_Bouncer 730 24 #dispose) ; "Ya paid yer money. Now sit down!"
 								else
-									(Say The_Bouncer 730 25 108) ; "Ya paid yer money. Now get in there!"
+									(Say The_Bouncer 730 25 #dispose) ; "Ya paid yer money. Now get in there!"
 								)
 							)
 							((gEgo sitting:)
@@ -737,20 +737,20 @@
 								(Format @str 730 26 gSilvDollars gSilvDollars) ; "Excuse me, sir," you say to the hopefully friendly bouncer. "Would it be okay if I only paid you $%d.00? I seem to be a little short!"
 								(Say gEgo @str)
 								(TPrint 730 27) ; "The bouncer scowls at you."
-								(Say The_Bouncer 730 28 108) ; "Yeah, and not just in that wimpy little fake eelskin wallet, Donkey-doo! Get out of here!"
+								(Say The_Bouncer 730 28 #dispose) ; "Yeah, and not just in that wimpy little fake eelskin wallet, Donkey-doo! Get out of here!"
 							)
 							(else
 								(if (== payoff 25)
 									(Say gEgo 730 29) ; "Hello, Mister," you say to the bouncer. "I'd like to purchase one of your better seats. Here's my $25.00."
-									(Say The_Bouncer 730 30 108) ; "Thanks for nuttin'. Ya gets da best seat in da house--which is also da only seat in da house!"
+									(Say The_Bouncer 730 30 #dispose) ; "Thanks for nuttin'. Ya gets da best seat in da house--which is also da only seat in da house!"
 									(= justWatching 1)
 								else
 									(Points 12 134)
 									(Say gEgo 730 31) ; "Hello, Mister," you say to the bouncer. "I'd like to participate in the evening's next event. Here's my $500.00."
 									(if (gCast contains: lana)
-										(Say The_Bouncer 730 32 108) ; "Thanks, suck... uh, er, Sir! Now if you'll kindly step into the ring, the beatin... ah, uh, the show will begin."
+										(Say The_Bouncer 730 32 #dispose) ; "Thanks, suck... uh, er, Sir! Now if you'll kindly step into the ring, the beatin... ah, uh, the show will begin."
 									else
-										(Say The_Bouncer 730 33 108) ; "Thanks, suck... uh, er, Sir! Now if you'll kindly sit down, the beatin... ah, uh, the show will begin."
+										(Say The_Bouncer 730 33 #dispose) ; "Thanks, suck... uh, er, Sir! Now if you'll kindly sit down, the beatin... ah, uh, the show will begin."
 									)
 									(= justWatching 0)
 								)

@@ -939,7 +939,7 @@
 )
 
 (procedure (proc0_7 &tmp temp0)
-	(while ((= temp0 (Event new: 3)) type:)
+	(while ((= temp0 (Event new: evMOUSE)) type:)
 		(temp0 dispose:)
 	)
 	(temp0 dispose:)

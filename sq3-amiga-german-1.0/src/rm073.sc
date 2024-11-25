@@ -24,7 +24,7 @@
 		(self setRegions: 600) ; ortega
 		(Load rsVIEW 68)
 		(super init:)
-		(gEgo view: 68 setStep: 2 2 illegalBits: -32768 setLoop: -1 init:)
+		(gEgo view: 68 setStep: 2 2 illegalBits: $8000 setLoop: -1 init:)
 		(if global255
 			(self setScript: WalkIn)
 		else

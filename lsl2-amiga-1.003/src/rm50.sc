@@ -76,7 +76,7 @@
 				view: 501
 				loop: 2
 				posn: 22 164
-				illegalBits: -32768
+				illegalBits: $8000
 				setStep: 4 3
 				init:
 			)
@@ -84,7 +84,7 @@
 				view: 502
 				loop: 2
 				posn: 298 164
-				illegalBits: -32768
+				illegalBits: $8000
 				setStep: 4 3
 				stopUpd:
 				init:
@@ -103,7 +103,7 @@
 					view: 503
 					setLoop: 2
 					posn: 141 125
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Fwd
 					init:
 				)
@@ -111,7 +111,7 @@
 					view: 504
 					setLoop: 2
 					posn: 181 125
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Fwd
 					init:
 				)

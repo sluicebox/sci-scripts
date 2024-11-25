@@ -55,7 +55,7 @@
 			cycleSpeed: 3
 			setCycle: Fwd
 			setStep: 1 1
-			illegalBits: -513
+			illegalBits: $fdff
 			posn: 200 20
 			init:
 			setMotion: Wander
@@ -94,7 +94,7 @@
 			view: 136
 			setLoop: 0
 			cel: 0
-			illegalBits: -32768
+			illegalBits: $8000
 			observeControl: 512
 			posn: 88 6
 			setPri: 11

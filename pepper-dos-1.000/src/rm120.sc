@@ -745,7 +745,7 @@
 	)
 
 	(method (doVerb theVerb &tmp temp0)
-		(= global215 50)
+		(= gDictionaryWord 50)
 		(switch theVerb
 			(7 ; Do
 				(if (== local34 1)
@@ -869,7 +869,7 @@
 	)
 
 	(method (doVerb theVerb &tmp [temp0 50])
-		(= global215 9)
+		(= gDictionaryWord 9)
 		(switch theVerb
 			(7 ; Do
 				(gMessager say: 4 7) ; "Pepper doesn't want to get a splinter."
@@ -978,7 +978,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 102)
+		(= gDictionaryWord 102)
 		(switch theVerb
 			(1 ; ???
 				(gCurRoom setScript: sDoor 0 theVerb)

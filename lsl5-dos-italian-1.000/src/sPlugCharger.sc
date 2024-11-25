@@ -213,9 +213,9 @@
 					(Format @str 22 4 (/ gCamcorderCharge 20) 37 (/ gCamcorderCharge 20) 37) ; "Battery Strength: %d%c"
 					(TPrint
 						@str
-						30
+						#mode
 						1
-						80
+						#title
 						{Camcorder Battery Strength}
 					)
 				else

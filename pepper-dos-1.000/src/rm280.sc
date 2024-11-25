@@ -438,10 +438,10 @@
 			(2
 				(switch global116
 					(39
-						(= global215 52)
+						(= gDictionaryWord 52)
 					)
 					(16
-						(= global215 57)
+						(= gDictionaryWord 57)
 					)
 				)
 				(if (and global115 global116)
@@ -480,11 +480,11 @@
 				(if (and (not (gEgo has: 22)) (not (gEgo has: 43))) ; Wood_Cutting_a, Wood_Cutting_b
 					(SetFlag 87)
 				)
-				(= global215 106)
+				(= gDictionaryWord 106)
 				(gMessager say: 16 143 0 1 5 self) ; "Hey, Billy, I've got something for you."
 			)
 			(2
-				(= global215 57)
+				(= gDictionaryWord 57)
 				(gMessager say: 16 143 0 6 8 self) ; "Now what does that mean? I'm not slothful, am I? I'm... Yikes. Oh, man, I really have been a sluggard. I'm so ashamed of myself!"
 			)
 			(3
@@ -610,7 +610,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= global215 52)
+				(= gDictionaryWord 52)
 				(gMessager say: 17 85 39 1 self) ; "It's Hidel, my favorite |r||c0|inanimate|c||r| object! Just kidding, bud."
 			)
 			(1
@@ -700,7 +700,7 @@
 								(= temp0 38)
 							)
 							(3
-								(= global215 52)
+								(= gDictionaryWord 52)
 								(self setScript: sayT1 self)
 							)
 							(4
@@ -992,7 +992,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 36)
+		(= gDictionaryWord 36)
 		(super doVerb: theVerb)
 	)
 )
@@ -1029,7 +1029,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 20)
+		(= gDictionaryWord 20)
 		(super doVerb: theVerb)
 	)
 )

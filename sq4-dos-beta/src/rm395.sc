@@ -91,7 +91,7 @@
 					x: temp0
 					y: temp1
 					setLoop: gStopGroop
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(self setScript: (ScriptID 700 1) 0 egoBwGreen) ; enS
 			)
@@ -107,7 +107,7 @@
 					x: temp0
 					y: temp1
 					setLoop: gStopGroop
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(self setScript: (ScriptID 700 1) 0 egoBwBlue) ; enS
 			)
@@ -127,7 +127,7 @@
 					x: temp0
 					y: temp1
 					setLoop: gStopGroop
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(self setScript: (ScriptID 700 1) 0 egoBwBlue) ; enS
 			)
@@ -192,8 +192,8 @@
 			)
 			((StepOn gEgo 8)
 				(if (gCast contains: freak1)
-					(if (!= (gEgo illegalBits:) -32768)
-						(gEgo illegalBits: -32768)
+					(if (!= (gEgo illegalBits:) $8000)
+						(gEgo illegalBits: $8000)
 					)
 				else
 					(gCurRoom newRoom: 397)

@@ -58,7 +58,7 @@
 			)
 			(1
 				(Points 40 136)
-				(TPrint 750 0 67 -1 15 70 280) ; "As you become more and more aggressive, Lana becomes more and more passionate, until the two of you, oblivious to the hundreds of men staring at you, roll off the ring onto the floor and begin shedding clothes!"
+				(TPrint 750 0 #at -1 15 #width 280) ; "As you become more and more aggressive, Lana becomes more and more passionate, until the two of you, oblivious to the hundreds of men staring at you, roll off the ring onto the floor and begin shedding clothes!"
 				(= ticks 123)
 			)
 			(2
@@ -149,7 +149,7 @@
 				(= seconds 5)
 			)
 			(23
-				(TPrint 750 1 67 -1 20) ; "How embarrassing!"
+				(TPrint 750 1 #at -1 20) ; "How embarrassing!"
 				(gEgo setCycle: End self)
 			)
 			(24
@@ -160,16 +160,16 @@
 				(= ticks 123)
 			)
 			(26
-				(TPrint 750 2 80 {You} 67 -1 15 70 280) ; "Oh Lana, I just don't understand! I suppose it's because Bucephalus has never performed in front of 900 people before!"
+				(TPrint 750 2 #title {You} #at -1 15 #width 280) ; "Oh Lana, I just don't understand! I suppose it's because Bucephalus has never performed in front of 900 people before!"
 				(= ticks 123)
 			)
 			(27
 				(if (>= ((Inv at: 0) state:) 100) ; Camcorder
 					(RecordTape 3)
 					(Points 20 137)
-					(TPrint 750 3 67 -1 15 70 280) ; "Now you're sorry you even started that camcorder. What will the boys back in Hollywood think of your less-than-stellar performance?"
+					(TPrint 750 3 #at -1 15 #width 280) ; "Now you're sorry you even started that camcorder. What will the boys back in Hollywood think of your less-than-stellar performance?"
 				else
-					(TPrint 750 4 67 -1 15 70 280) ; "You're so glad you didn't get this on videotape! That's all you need--more humiliation back at the office!"
+					(TPrint 750 4 #at -1 15 #width 280) ; "You're so glad you didn't get this on videotape! That's all you need--more humiliation back at the office!"
 				)
 				(gEgo setLoop: 3 setCel: 0 setCycle: End)
 				(= seconds 5)

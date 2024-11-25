@@ -155,7 +155,7 @@
 			(2
 				(global198 loop: 2)
 				(HandsOn)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(global112 setMotion: MoveTo 233 60 self)
 			)
 			(3

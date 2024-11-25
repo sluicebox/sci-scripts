@@ -495,7 +495,7 @@
 			)
 			(1
 				(Print 72 23) ; "The tunnel has brought you to this room. In the wall behind you, the hidden door seals. You cannot even see where it was."
-				(gEgo observeBlocks: bottomBlock illegalBits: -16384)
+				(gEgo observeBlocks: bottomBlock illegalBits: $c000)
 				(HandsOn)
 				(client setScript: 0)
 			)
@@ -517,7 +517,7 @@
 		(switch (= state newState)
 			(1
 				(HandsOff)
-				(gEgo illegalBits: -2)
+				(gEgo illegalBits: $fffe)
 				(frontDoor
 					init:
 					setLoop: 1
@@ -608,7 +608,7 @@
 				(SetScore 0 0 5)
 				(skeleton stopUpd: ignoreActors:)
 				(skull setLoop: 1 setCel: 2 posn: 152 158 stopUpd:)
-				(gEgo observeBlocks: leftDoorBlock illegalBits: -32684)
+				(gEgo observeBlocks: leftDoorBlock illegalBits: $8054)
 				(ClearFlag 172)
 				(SetFlag 174)
 				(PutItem 7) ; crystal_heart | charcoal | helm

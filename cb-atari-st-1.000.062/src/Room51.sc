@@ -93,7 +93,7 @@
 			(gEgo illegalBits: 0 setMotion: MoveTo 244 80)
 		)
 		(if (& (gEgo onControl: 1) $0002)
-			(gEgo illegalBits: -32768)
+			(gEgo illegalBits: $8000)
 			(gCurRoom newRoom: 65)
 		)
 		(super doit:)
@@ -148,7 +148,7 @@
 
 	(method (cue)
 		(HandsOn)
-		(gEgo illegalBits: -32768)
+		(gEgo illegalBits: $8000)
 	)
 )
 

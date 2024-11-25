@@ -958,7 +958,7 @@
 					view: 0
 					loop: 1
 					cel: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					posn: (- (gEgo x:) 17) (+ (gEgo y:) 3)
 				)
 				(= cycles 1)
@@ -1257,7 +1257,7 @@
 			)
 			(7
 				(DontMove 0)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(= rockCount 0)
 				(self dispose:)
 			)

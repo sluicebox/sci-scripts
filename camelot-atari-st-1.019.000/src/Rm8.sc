@@ -214,7 +214,7 @@
 					view: 401
 					loop: 1
 					cel: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 					posn: 133 174
 				)
@@ -983,7 +983,7 @@
 					moveSpeed: 0
 					setPri: -1
 					setLoop: -1
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(= local25 local26)
 				(HandsOn)
@@ -1007,7 +1007,7 @@
 				)
 			)
 			(1
-				(gEgo illegalBits: -32768 ignoreActors: 0)
+				(gEgo illegalBits: $8000 ignoreActors: 0)
 				(HandsOn)
 				(gRmMusic stop:)
 				(= global116 4)

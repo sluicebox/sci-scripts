@@ -131,9 +131,9 @@
 			else
 				(gEgo posn: 265 120)
 			)
-			(gEgo illegalBits: -32768 view: 0 init:)
+			(gEgo illegalBits: $8000 view: 0 init:)
 		else
-			(gEgo view: 0 illegalBits: -32768 setPri: -1 posn: 68 167 init:)
+			(gEgo view: 0 illegalBits: $8000 setPri: -1 posn: 68 167 init:)
 			(= local3 1)
 		)
 	)
@@ -362,7 +362,7 @@
 				(gEgo setCycle: Beg self)
 			)
 			(5
-				(gEgo view: 0 loop: 1 setCycle: Walk illegalBits: -32768)
+				(gEgo view: 0 loop: 1 setCycle: Walk illegalBits: $8000)
 				(User canControl: 1)
 			)
 			(6

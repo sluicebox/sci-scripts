@@ -230,7 +230,7 @@
 	(method (doVerb theVerb &tmp temp0)
 		(switch theVerb
 			(86 ; Nose
-				(= global215 76)
+				(= gDictionaryWord 76)
 				(super doVerb: theVerb &rest)
 			)
 			(3 ; Walk
@@ -2044,7 +2044,7 @@
 						(gMessager say: 2 86 0 0 self) ; "Lockjaw can't get that close to the doll, but he can smell it from here. He thinks it probably fell into a vat of cheap lilac cologne at some point in its miserable existence. YECH!"
 					)
 					(4
-						(= global215 76)
+						(= gDictionaryWord 76)
 						(gMessager say: 3 86 0 0 self) ; "The pillow is stuffed with vanilla and cinnamon |r||c0|potpourri|c||r|. The scent could knock a buzzard off a garbage truck!"
 					)
 					(5
@@ -2256,7 +2256,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(86 ; Nose
-				(= global215 76)
+				(= gDictionaryWord 76)
 				(super doVerb: theVerb &rest)
 			)
 			(else
@@ -2395,7 +2395,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 76)
+		(= gDictionaryWord 76)
 		(switch theVerb
 			(3 ; Walk
 				(cond
@@ -2464,11 +2464,11 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(6 ; Look
-				(= global215 73)
+				(= gDictionaryWord 73)
 				(super doVerb: theVerb &rest)
 			)
 			(86 ; Nose
-				(= global215 73)
+				(= gDictionaryWord 73)
 				(super doVerb: theVerb &rest)
 			)
 			(30 ; Paw
@@ -2680,7 +2680,7 @@
 		(switch theVerb
 			(89 ; Teeth
 				(if (== gAct 4)
-					(= global215 76)
+					(= gDictionaryWord 76)
 					(gMessager say: 3 89 33) ; "Lockjaw doesn't want to bite the pillow anymore. He's still nauseated from the first time. A dog can only hold so much |r||c0|potpourri|c||r|."
 				else
 					(gMessager say: 3 89) ; "The pillow smells too bad for Lockjaw to even TRY to bite it."
@@ -2794,7 +2794,7 @@
 				(gCurRoom setScript: sLJSmells 0 6)
 			)
 			(6 ; Look
-				(= global215 75)
+				(= gDictionaryWord 75)
 				(super doVerb: theVerb &rest)
 			)
 			(else
@@ -2952,7 +2952,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(6 ; Look
-				(= global215 75)
+				(= gDictionaryWord 75)
 				(super doVerb: theVerb &rest)
 			)
 			(86 ; Nose
@@ -3179,7 +3179,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(86 ; Nose
-				(= global215 73)
+				(= gDictionaryWord 73)
 				(super doVerb: theVerb &rest)
 			)
 			(else

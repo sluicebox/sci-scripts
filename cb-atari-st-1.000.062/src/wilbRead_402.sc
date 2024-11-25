@@ -355,7 +355,7 @@
 				(Wilbur
 					posn: 196 141
 					view: 420
-					illegalBits: -32768
+					illegalBits: $8000
 					loop: 2
 					cel: 0
 					cycleSpeed: 0

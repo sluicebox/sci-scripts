@@ -57,7 +57,7 @@
 			setLoop: 1
 			setPri: 14
 			setStep: 4 4
-			illegalBits: 16
+			illegalBits: $0010
 			posn: 175 1041
 			ignoreActors:
 			init:

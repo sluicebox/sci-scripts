@@ -49,7 +49,7 @@
 		(gEgo
 			view: 0
 			offset: 3
-			illegalBits: -32768
+			illegalBits: $8000
 			setStep: 3 2
 			posn: 174 173
 			init:

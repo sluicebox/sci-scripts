@@ -156,7 +156,7 @@
 				(gEgo
 					normalize: 790
 					x: (- (gEgo x:) 6)
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(darcy stopUpd:)
 				(gGame handsOn:)
@@ -287,7 +287,7 @@
 			)
 			(5
 				(gGame handsOn:)
-				(gEgo normalize: illegalBits: -32768 setSpeed: local4)
+				(gEgo normalize: illegalBits: $8000 setSpeed: local4)
 				(self dispose:)
 			)
 		)
@@ -383,7 +383,7 @@
 				)
 			)
 			(13
-				(gEgo normalize: illegalBits: -32768 setSpeed: local4)
+				(gEgo normalize: illegalBits: $8000 setSpeed: local4)
 				(= cycles 1)
 			)
 			(14
@@ -703,11 +703,11 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(7 ; Do
-				(= global215 90)
+				(= gDictionaryWord 90)
 				(gMessager say: 6 7) ; "I don't THINK so! |r||c0|Stagnant|c||r| water doesn't do much for my complexion."
 			)
 			(85 ; Talk
-				(= global215 15)
+				(= gDictionaryWord 15)
 				(gMessager say: 6 85) ; "Wow, it's not even |r||c0|chlorinated|c||r|! Cool!"
 			)
 			(84 ; Trivia

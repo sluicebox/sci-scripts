@@ -70,7 +70,7 @@
 			)
 		)
 		(self setFeatures: pond forest setRegions: 202) ; owl
-		(gEgo illegalBits: -32768 offset: 3 init:)
+		(gEgo illegalBits: $8000 offset: 3 init:)
 		(switch gPrevRoomNum
 			(west
 				(gEgo posn: 6 110)

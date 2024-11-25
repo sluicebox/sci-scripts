@@ -42,7 +42,7 @@
 			)
 			(4
 				(HandsOn)
-				(gEgo ignoreActors: 0 illegalBits: -32768)
+				(gEgo ignoreActors: 0 illegalBits: $8000)
 				(self dispose:)
 			)
 		)
@@ -79,7 +79,7 @@
 			(4
 				(HandsOn)
 				(ClearFlag 82)
-				(gEgo ignoreActors: 0 illegalBits: -30720)
+				(gEgo ignoreActors: 0 illegalBits: $8800)
 				(self dispose:)
 			)
 		)
@@ -106,7 +106,7 @@
 			)
 			(1
 				(HandsOn)
-				(gEgo ignoreActors: 0 illegalBits: -32768)
+				(gEgo ignoreActors: 0 illegalBits: $8000)
 				(self dispose:)
 			)
 		)
@@ -134,7 +134,7 @@
 			(1
 				(HandsOn)
 				(ClearFlag 82)
-				(gEgo ignoreActors: 0 illegalBits: -30720)
+				(gEgo ignoreActors: 0 illegalBits: $8800)
 				(self dispose:)
 			)
 		)

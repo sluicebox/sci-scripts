@@ -765,7 +765,7 @@
 		((= gGlobalSound2 globalSound2) number: 0 owner: self flags: 5 init:)
 		(Narrator fore: 13)
 		(= temp0 (Event new:))
-		(GetEvent 32767 temp0)
+		(GetEvent evALL_EVENTS temp0)
 		(temp0 dispose:)
 		(gGame masterVolume: 6)
 		(self newRoom: 6) ; speedRoom

@@ -23,7 +23,7 @@
 	(properties
 		view 44
 		signal 16384
-		illegalBits -32764
+		illegalBits $8004
 	)
 
 	(method (onMe)

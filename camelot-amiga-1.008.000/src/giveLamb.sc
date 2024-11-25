@@ -157,7 +157,7 @@
 				(proc151_0 2 self self)
 			)
 			(3
-				(+= global120 3)
+				(+= gCopper 3)
 				(PutItem 10) ; lamb | dove
 				(HandsOn)
 				(client setScript: 0)

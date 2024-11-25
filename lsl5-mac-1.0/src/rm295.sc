@@ -105,12 +105,12 @@
 				(gEgo cycleSpeed: 9 setCycle: End self)
 			)
 			(2
-				(TPrint 295 0 67 -1 28 108) ; "HIP, HIP,"
+				(TPrint 295 0 #at -1 28 #dispose) ; "HIP, HIP,"
 				(gEgo normalize: posn: 151 121 setHeading: 180)
 				(= ticks 60)
 			)
 			(3
-				(TPrint 295 1 67 -1 185 108) ; "HURRAY!!"
+				(TPrint 295 1 #at -1 185 #dispose) ; "HURRAY!!"
 				(lightLeft setCycle: End)
 				(lightRight setCycle: End)
 				(kid cue:)
@@ -125,13 +125,13 @@
 				(= ticks 70)
 			)
 			(5
-				(TPrint 295 2 67 -1 185 70 280 108 self) ; "What's this? The now all-too-expected Chartreuse Carpet Lounge is filled with people, all here to celebrate the country's newest hero--Larry; Larry Laffer!"
+				(TPrint 295 2 #at -1 185 #width 280 #dispose self) ; "What's this? The now all-too-expected Chartreuse Carpet Lounge is filled with people, all here to celebrate the country's newest hero--Larry; Larry Laffer!"
 			)
 			(6
 				(= ticks 60)
 			)
 			(7
-				(TPrint 295 3 67 -1 28 108) ; "It's him!"
+				(TPrint 295 3 #at -1 28 #dispose) ; "It's him!"
 				(gEgo
 					normalize:
 					posn: 152 123
@@ -142,38 +142,38 @@
 				)
 			)
 			(8
-				(TPrint 295 4 67 -1 185 108) ; "It's Larry!"
+				(TPrint 295 4 #at -1 185 #dispose) ; "It's Larry!"
 				(gEgo setMotion: MoveTo 152 140 self)
 			)
 			(9
 				(= ticks 90)
 			)
 			(10
-				(TPrint 295 5 67 -1 28 108 self) ; "It's Larry Laffer!"
+				(TPrint 295 5 #at -1 28 #dispose self) ; "It's Larry Laffer!"
 			)
 			(11
 				(= ticks 60)
 			)
 			(12
-				(TPrint 295 6 67 -1 28 108 self) ; "HUZZAH!!"
+				(TPrint 295 6 #at -1 28 #dispose self) ; "HUZZAH!!"
 			)
 			(13
 				(= ticks 30)
 			)
 			(14
-				(TPrint 295 6 67 -1 28 108 self) ; "HUZZAH!!"
+				(TPrint 295 6 #at -1 28 #dispose self) ; "HUZZAH!!"
 			)
 			(15
 				(= ticks 30)
 			)
 			(16
-				(TPrint 295 0 67 -1 185 108 self) ; "HIP, HIP,"
+				(TPrint 295 0 #at -1 185 #dispose self) ; "HIP, HIP,"
 			)
 			(17
 				(= ticks 30)
 			)
 			(18
-				(TPrint 295 1 67 -1 185 108 self) ; "HURRAY!!"
+				(TPrint 295 1 #at -1 185 #dispose self) ; "HURRAY!!"
 			)
 			(19
 				(girlReporter setCycle: End self)
@@ -182,49 +182,49 @@
 				(= ticks 90)
 			)
 			(21
-				(TPrint 295 7 67 -1 28 108 self) ; "So tell us, Mr. Laffer," asks a reporter, "how does it feel to save the lives of hundreds of people?"
+				(TPrint 295 7 #at -1 28 #dispose self) ; "So tell us, Mr. Laffer," asks a reporter, "how does it feel to save the lives of hundreds of people?"
 			)
 			(22
 				(= ticks 30)
 			)
 			(23
-				(TPrint 295 8 67 -1 185 108 self) ; "Another reporter chimes in, "Where did you learn to fly a commercial airliner?""
+				(TPrint 295 8 #at -1 185 #dispose self) ; "Another reporter chimes in, "Where did you learn to fly a commercial airliner?""
 			)
 			(24
 				(= ticks 30)
 			)
 			(25
-				(TPrint 295 9 67 -1 28 108 self) ; ""What is the secret of your amazing rescue technique?" asks a third."
+				(TPrint 295 9 #at -1 28 #dispose self) ; ""What is the secret of your amazing rescue technique?" asks a third."
 			)
 			(26
 				(= ticks 30)
 			)
 			(27
-				(TPrint 295 10 67 -1 185 108 self) ; "And will you earn extra Frequent Flyer credits?"
+				(TPrint 295 10 #at -1 185 #dispose self) ; "And will you earn extra Frequent Flyer credits?"
 			)
 			(28
 				(= ticks 30)
 			)
 			(29
-				(TPrint 295 11 67 -1 28 108 self) ; "Before you can answer any questions, you hear a telephone ring."
+				(TPrint 295 11 #at -1 28 #dispose self) ; "Before you can answer any questions, you hear a telephone ring."
 			)
 			(30
 				(= seconds 3)
 			)
 			(31
-				(TPrint 295 12 67 -1 185 108 self) ; "Mr. Laffer! There's a telephone call for you!"
+				(TPrint 295 12 #at -1 185 #dispose self) ; "Mr. Laffer! There's a telephone call for you!"
 			)
 			(32
 				(= ticks 30)
 			)
 			(33
-				(TPrint 295 13 67 -1 185 108 self) ; "For me?" you wonder. "No one knows I'm here."
+				(TPrint 295 13 #at -1 185 #dispose self) ; "For me?" you wonder. "No one knows I'm here."
 			)
 			(34
 				(gEgo setMotion: MoveTo 160 170 self)
 			)
 			(35
-				(TPrint 295 14 67 -1 185 108 self) ; "Here, take the phone," says the reporter. "It's the President of the United States!"
+				(TPrint 295 14 #at -1 185 #dispose self) ; "Here, take the phone," says the reporter. "It's the President of the United States!"
 			)
 			(36
 				(= ticks 30)
@@ -250,13 +250,13 @@
 				(self setScript: sTalk)
 			)
 			(41
-				(TPrint 295 15 67 -1 15 70 280 108 self) ; "Well, Larry, things DID work out for you! Who would have thought that you would get a personal invitation from the President of the United States to attend a big State Dinner--especially one in your honor!"
+				(TPrint 295 15 #at -1 15 #width 280 #dispose self) ; "Well, Larry, things DID work out for you! Who would have thought that you would get a personal invitation from the President of the United States to attend a big State Dinner--especially one in your honor!"
 			)
 			(42
 				(= ticks 30)
 			)
 			(43
-				(TPrint 295 16 67 -1 185) ; "(You wonder if they'll have live music.)"
+				(TPrint 295 16 #at -1 185) ; "(You wonder if they'll have live music.)"
 				(gCast eachElementDo: #dispose)
 				(gCurRoom drawPic: 1 6)
 				(gTheMusic fade: 0 15 12 1)
@@ -278,117 +278,117 @@
 		(switch (= state newState)
 			(0
 				(gEgo setCycle: ForwardCounter 2)
-				(Say gEgo 295 19 67 -1 185 108 self) ; "Er, hello?"
+				(Say gEgo 295 19 #at -1 185 #dispose self) ; "Er, hello?"
 			)
 			(1
 				(= ticks 30)
 			)
 			(2
 				(gEgo setCycle: 0)
-				(Say Mr__President 295 20 108 139 self) ; ""Hello, who is this?" asks the voice on the phone."
+				(Say Mr__President 295 20 #dispose #caller self) ; ""Hello, who is this?" asks the voice on the phone."
 			)
 			(3
 				(= ticks 30)
 			)
 			(4
 				(gEgo setCycle: ForwardCounter 5)
-				(Say gEgo 295 21 67 -1 185 108 self) ; ""My name is Larry; Larry Laffer," you reply."
+				(Say gEgo 295 21 #at -1 185 #dispose self) ; ""My name is Larry; Larry Laffer," you reply."
 			)
 			(5
 				(= ticks 30)
 			)
 			(6
 				(gEgo setCycle: 0)
-				(Say Mr__President 295 22 108 139 self) ; "Well, Mr. Lafner, this is the President of the United States!"
+				(Say Mr__President 295 22 #dispose #caller self) ; "Well, Mr. Lafner, this is the President of the United States!"
 			)
 			(7
 				(= ticks 30)
 			)
 			(8
-				(Say Mr__President 295 23 108 139 self) ; "I just wanted to telephone to express the appreciation of this great nation to you, Larry Lasner, for the heroic deed you just accomplished!"
+				(Say Mr__President 295 23 #dispose #caller self) ; "I just wanted to telephone to express the appreciation of this great nation to you, Larry Lasner, for the heroic deed you just accomplished!"
 			)
 			(9
 				(= ticks 30)
 			)
 			(10
-				(Say Mr__President 295 24 108 139 self) ; "(And, of course, take this opportunity to up my approval rating another few points. You know, it never hurts to be seen worldwide on CNN under these circumstances!)"
+				(Say Mr__President 295 24 #dispose #caller self) ; "(And, of course, take this opportunity to up my approval rating another few points. You know, it never hurts to be seen worldwide on CNN under these circumstances!)"
 			)
 			(11
 				(= ticks 30)
 			)
 			(12
-				(Say Mr__President 295 25 108 139 self) ; "Eh, um, anyway, what I mean is," he says, getting back on track, "You probably didn't know, but the Vice-President's Mommy was on that airplane you just saved."
+				(Say Mr__President 295 25 #dispose #caller self) ; "Eh, um, anyway, what I mean is," he says, getting back on track, "You probably didn't know, but the Vice-President's Mommy was on that airplane you just saved."
 			)
 			(13
 				(= ticks 30)
 			)
 			(14
-				(Say Mr__President 295 26 108 139 self) ; "(By the way, he's still gaining the approval of the great American people; yes, gaining every month, little by little, getting better and better...)"
+				(Say Mr__President 295 26 #dispose #caller self) ; "(By the way, he's still gaining the approval of the great American people; yes, gaining every month, little by little, getting better and better...)"
 			)
 			(15
 				(= ticks 30)
 			)
 			(16
-				(Say Mr__President 295 27 108 139 self) ; "Ah, in any case, he's so grateful that he wants me to host a big dinner in your honor here at the White House. He would have called you himself, but it's long distance."
+				(Say Mr__President 295 27 #dispose #caller self) ; "Ah, in any case, he's so grateful that he wants me to host a big dinner in your honor here at the White House. He would have called you himself, but it's long distance."
 			)
 			(17
 				(= ticks 30)
 			)
 			(18
-				(Say Mr__President 295 28 108 139 self) ; "So, Lafter, do you think you could drop by the White House, oh, say, Tuesday next week for one of those typical Big National Hero Of The Week Dinners?"
+				(Say Mr__President 295 28 #dispose #caller self) ; "So, Lafter, do you think you could drop by the White House, oh, say, Tuesday next week for one of those typical Big National Hero Of The Week Dinners?"
 			)
 			(19
 				(= ticks 30)
 			)
 			(20
 				(gEgo setCycle: ForwardCounter 6)
-				(Say gEgo 295 29 67 -1 185 108 self) ; "You are astonished. "But of course, sir," you reply, "I'll be there!""
+				(Say gEgo 295 29 #at -1 185 #dispose self) ; "You are astonished. "But of course, sir," you reply, "I'll be there!""
 			)
 			(21
 				(= ticks 30)
 			)
 			(22
 				(gEgo setCycle: 0)
-				(TPrint 295 30 67 -1 185 108 self) ; ""Do I have to bring a date?" you wonder."
+				(TPrint 295 30 #at -1 185 #dispose self) ; ""Do I have to bring a date?" you wonder."
 			)
 			(23
 				(= ticks 30)
 			)
 			(24
 				(gEgo setCycle: ForwardCounter 6)
-				(Say gEgo 295 31 67 -1 185 108 self) ; "But to the President you say, "I really look forward to meeting you and the First Lady!""
+				(Say gEgo 295 31 #at -1 185 #dispose self) ; "But to the President you say, "I really look forward to meeting you and the First Lady!""
 			)
 			(25
 				(= ticks 30)
 			)
 			(26
 				(gEgo setCycle: 0)
-				(Say Mr__President 295 32 108 139 self) ; "Oh, sorry, Lasser," he says, "I'll be too busy fish, er, uh, MEETing with some important ambassadors or something, to attend. But I promise to send the Vice-President instead."
+				(Say Mr__President 295 32 #dispose #caller self) ; "Oh, sorry, Lasser," he says, "I'll be too busy fish, er, uh, MEETing with some important ambassadors or something, to attend. But I promise to send the Vice-President instead."
 			)
 			(27
 				(= ticks 30)
 			)
 			(28
-				(Say Mr__President 295 33 108 139 self) ; "Nice talking to you, Licker," he concludes. "Good job!"
+				(Say Mr__President 295 33 #dispose #caller self) ; "Nice talking to you, Licker," he concludes. "Good job!"
 			)
 			(29
 				(= ticks 30)
 			)
 			(30
-				(Say Mr__President 295 34 108 139 self) ; "And, good bye."
+				(Say Mr__President 295 34 #dispose #caller self) ; "And, good bye."
 			)
 			(31
 				(= ticks 30)
 			)
 			(32
-				(TPrint 295 35 67 -1 185 108 self) ; "(Click.)"
+				(TPrint 295 35 #at -1 185 #dispose self) ; "(Click.)"
 			)
 			(33
 				(= ticks 30)
 			)
 			(34
 				(gEgo setCycle: ForwardCounter 5)
-				(Say gEgo 295 36 67 -1 185 108 self) ; "Good bye to you, Mr. Pres... oh, I guess you've hung up."
+				(Say gEgo 295 36 #at -1 185 #dispose self) ; "Good bye to you, Mr. Pres... oh, I guess you've hung up."
 			)
 			(35
 				(= ticks 30)

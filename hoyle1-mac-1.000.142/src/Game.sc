@@ -72,7 +72,7 @@
 		(FlushResources newRoomNumber)
 		(= temp4 (self setCursor: gWaitCursor 1))
 		(self startRoom: gCurRoomNum setCursor: temp4 (HaveMouse))
-		(while ((= temp5 (Event new: 3)) type:)
+		(while ((= temp5 (Event new: evMOUSE)) type:)
 			(temp5 dispose:)
 		)
 		(temp5 dispose:)

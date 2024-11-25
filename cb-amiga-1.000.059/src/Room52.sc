@@ -94,7 +94,7 @@
 			(door cel: (- (NumCels door) 1))
 		else
 			(door cel: 0)
-			(gEgo illegalBits: -32764)
+			(gEgo illegalBits: $8004)
 		)
 		(if (== global189 51)
 			(gEgo setPri: 3 posn: 195 63)
@@ -194,7 +194,7 @@
 		)
 		(switch (gEgo onControl: 1)
 			(2
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(= global189 51)
 				(gCurRoom newRoom: 55)
 			)
@@ -528,7 +528,7 @@
 					posn: 57 126
 					ignoreBlocks: crankCage
 					observeBlocks: cBlock
-					illegalBits: -32768
+					illegalBits: $8000
 					show:
 					setCycle: Walk
 				)

@@ -292,7 +292,7 @@
 		setPri: -1
 		setMotion: 0
 		setAvoider: 0
-		illegalBits: -32768
+		illegalBits: $8000
 		baseSetter: gEgoBaseSetter
 		ignoreHorizon:
 		ignoreActors: 0

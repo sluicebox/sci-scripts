@@ -64,7 +64,7 @@
 	(= global157 (DoAudio audLANGUAGE))
 	(gLongSong loop: -1 vol: 127 priority: 0)
 	(if (GameIsRestarting)
-		(MemorySegment 1 @global190)
+		(MemorySegment 1 @global190) ; MS_RESTORE_TO
 		(= global170 (StrAt @global190 0))
 		(= gHowFast (- (StrAt @global190 1) 32))
 		(StrAt gCurSaveDir 0 (- (StrAt @global190 2) 1))

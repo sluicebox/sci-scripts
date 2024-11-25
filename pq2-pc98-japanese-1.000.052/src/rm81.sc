@@ -105,7 +105,7 @@
 			)
 			(if global196
 				(= local9 1)
-				(gEgo illegalBits: -28672)
+				(gEgo illegalBits: $9000)
 			)
 		)
 	)
@@ -487,7 +487,7 @@
 				(self cue:)
 			)
 			(4
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(gCurRoom newRoom: 120)
 			)
 		)
@@ -529,7 +529,7 @@
 				)
 			)
 			(3
-				(gEgo setMotion: MoveTo 93 179 illegalBits: -28672)
+				(gEgo setMotion: MoveTo 93 179 illegalBits: $9000)
 				(= local17 0)
 				(HandsOn)
 			)
@@ -576,7 +576,7 @@
 			)
 			(3
 				(= global196 1)
-				(gEgo illegalBits: -28672)
+				(gEgo illegalBits: $9000)
 			)
 		)
 	)

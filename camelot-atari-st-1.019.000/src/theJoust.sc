@@ -201,7 +201,7 @@
 			setPri: 13
 			setStep: 4 4
 			ignoreActors: 1
-			illegalBits: 2
+			illegalBits: $0002
 			init:
 		)
 		(blackLance init:)

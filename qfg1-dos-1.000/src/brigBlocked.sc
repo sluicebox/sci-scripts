@@ -357,7 +357,7 @@
 			(21
 				(NormalEgo)
 				(if ((ScriptID 95 0) notify: 3) ; rm95
-					(gEgo illegalBits: -28672)
+					(gEgo illegalBits: $9000)
 				)
 				(gEgo loop: 2 posn: 63 93)
 				(self dispose:)

@@ -294,49 +294,49 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(Say Biffie 140 0 108 139 self) ; "And so," a corporate yes man continues, "I'm pleased to say our contest to find `The Sexiest Woman in America'...."
+				(Say Biffie 140 0 #dispose #caller self) ; "And so," a corporate yes man continues, "I'm pleased to say our contest to find `The Sexiest Woman in America'...."
 			)
 			(1
 				(= ticks 60)
 			)
 			(2
-				(Say Biffie 140 1 108 139 self) ; ".... to serve as the hostess on `America's Sexiest Home Videos' has been a resounding success!""
+				(Say Biffie 140 1 #dispose #caller self) ; ".... to serve as the hostess on `America's Sexiest Home Videos' has been a resounding success!""
 			)
 			(3
 				(= ticks 60)
 			)
 			(4
-				(Say Biffie 140 2 108 139 self) ; "The character portrayed by our hostess, whom we've decided to name `Vanna Black,' will be one exceptional woman!"
+				(Say Biffie 140 2 #dispose #caller self) ; "The character portrayed by our hostess, whom we've decided to name `Vanna Black,' will be one exceptional woman!"
 			)
 			(5
 				(= ticks 60)
 			)
 			(6
-				(Say Biffie 140 3 108 139 self) ; "We've searched for a woman, beautiful, yet with those All-American, girl-next-door looks; a woman virginal and untouchable; and yet, a woman who is sexy and slutty."
+				(Say Biffie 140 3 #dispose #caller self) ; "We've searched for a woman, beautiful, yet with those All-American, girl-next-door looks; a woman virginal and untouchable; and yet, a woman who is sexy and slutty."
 			)
 			(7
 				(= ticks 60)
 			)
 			(8
-				(Say Biffie 140 4 108 139 self) ; "We've received thousands of submissions, and (thanks to hard work by me and my colleagues) narrowed the field down to three finalists."
+				(Say Biffie 140 4 #dispose #caller self) ; "We've received thousands of submissions, and (thanks to hard work by me and my colleagues) narrowed the field down to three finalists."
 			)
 			(9
 				(= ticks 60)
 			)
 			(10
-				(Say Biffie 140 5 108 139 self) ; "I intend to have these women flown here, first class, wined and dined in regal style, then outfitted with the finest fashions Rodeo Drive has to offer."
+				(Say Biffie 140 5 #dispose #caller self) ; "I intend to have these women flown here, first class, wined and dined in regal style, then outfitted with the finest fashions Rodeo Drive has to offer."
 			)
 			(11
 				(= ticks 60)
 			)
 			(12
-				(Say Biffie 140 6 108 139 self) ; "They'll want for nothing! And, on the morning of the auditions, champagne baths for all! I've arranged national press coverage, of course."
+				(Say Biffie 140 6 #dispose #caller self) ; "They'll want for nothing! And, on the morning of the auditions, champagne baths for all! I've arranged national press coverage, of course."
 			)
 			(13
 				(= ticks 60)
 			)
 			(14
-				(Say Biffie 140 7 108 139 self) ; "In short, everything is proceeding according to schedule."
+				(Say Biffie 140 7 #dispose #caller self) ; "In short, everything is proceeding according to schedule."
 			)
 			(15
 				(= ticks 60)
@@ -354,65 +354,65 @@
 				(= ticks 100)
 			)
 			(19
-				(Say Silas_Scruemall 140 9 108 139 self) ; "But wait, Biffie. We all know that if we bring these women to Hollywood to audition under those circumstances, they'll all be sexy."
+				(Say Silas_Scruemall 140 9 #dispose #caller self) ; "But wait, Biffie. We all know that if we bring these women to Hollywood to audition under those circumstances, they'll all be sexy."
 			)
 			(20
 				(= ticks 60)
 			)
 			(21
 				(fScruemall setCel: 1)
-				(TPrint 140 10 67 68 91 80 {A Yes Man}) ; "Yes sir, Mr. Scruemall!"
-				(TPrint 140 11 67 105 137 80 {A Yes Man}) ; "Isn't that what we wanted, Mr. Scruemall?"
-				(TPrint 140 12 67 180 113 80 {A Yes Man}) ; "Bravo, Mr. Scruemall!"
+				(TPrint 140 10 #at 68 91 #title {A Yes Man}) ; "Yes sir, Mr. Scruemall!"
+				(TPrint 140 11 #at 105 137 #title {A Yes Man}) ; "Isn't that what we wanted, Mr. Scruemall?"
+				(TPrint 140 12 #at 180 113 #title {A Yes Man}) ; "Bravo, Mr. Scruemall!"
 				(= seconds 3)
 			)
 			(22
-				(Say Silas_Scruemall 140 13 108 139 self) ; "But, we're looking for a woman so over-sexed she'd drop (what's she's doing) for any man, any time, any place, and for any loser, any dork, no matter how lame!"
+				(Say Silas_Scruemall 140 13 #dispose #caller self) ; "But, we're looking for a woman so over-sexed she'd drop (what's she's doing) for any man, any time, any place, and for any loser, any dork, no matter how lame!"
 			)
 			(23
 				(= ticks 60)
 			)
 			(24
-				(TPrint 140 14 67 180 147 80 {A Yes Man}) ; "Yes sir, Mr. Scruemall!"
-				(TPrint 140 15 67 0 147 80 {A Yes Man}) ; "Isn't that what we wanted, Mr. Scruemall?"
-				(TPrint 140 16 67 68 91 80 {A Yes Man}) ; "Bravo, Mr. Scruemall!"
+				(TPrint 140 14 #at 180 147 #title {A Yes Man}) ; "Yes sir, Mr. Scruemall!"
+				(TPrint 140 15 #at 0 147 #title {A Yes Man}) ; "Isn't that what we wanted, Mr. Scruemall?"
+				(TPrint 140 16 #at 68 91 #title {A Yes Man}) ; "Bravo, Mr. Scruemall!"
 				(= seconds 3)
 			)
 			(25
-				(Say Silas_Scruemall 140 17 108 139 self) ; "I've changed my mind! Now I think we should hold a blind audition, where the women don't know they're being auditioned!"
+				(Say Silas_Scruemall 140 17 #dispose #caller self) ; "I've changed my mind! Now I think we should hold a blind audition, where the women don't know they're being auditioned!"
 			)
 			(26
 				(= ticks 60)
 			)
 			(27
 				(fScruemall setCel: 0)
-				(TPrint 140 18 67 105 137 80 {A Yes Man}) ; "Yes sir, Mr. Scruemall!"
-				(TPrint 140 15 67 180 113 80 {A Yes Man}) ; "Isn't that what we wanted, Mr. Scruemall?"
-				(TPrint 140 12 67 180 147 80 {A Yes Man}) ; "Bravo, Mr. Scruemall!"
+				(TPrint 140 18 #at 105 137 #title {A Yes Man}) ; "Yes sir, Mr. Scruemall!"
+				(TPrint 140 15 #at 180 113 #title {A Yes Man}) ; "Isn't that what we wanted, Mr. Scruemall?"
+				(TPrint 140 12 #at 180 147 #title {A Yes Man}) ; "Bravo, Mr. Scruemall!"
 				(= seconds 3)
 			)
 			(28
-				(Say Scooter 140 19 108 139 self) ; "But (with all due respects, Mr. Scruemall) that's impossible. We need videotapes of their auditions for our own, uh, personal review purposes. There's no way we could follow the guy around without her seeing us!"
+				(Say Scooter 140 19 #dispose #caller self) ; "But (with all due respects, Mr. Scruemall) that's impossible. We need videotapes of their auditions for our own, uh, personal review purposes. There's no way we could follow the guy around without her seeing us!"
 			)
 			(29
 				(fScruemall setCel: 1)
 				(= seconds 3)
 			)
 			(30
-				(Say Silas_Scruemall 140 20 108 139 self) ; "Well, yes, we do need those tapes to review. But what if we could find an auditioner so inept, so sexless, so lame, so unappealing, that it would take the sexiest woman in America to find him attractive?"
+				(Say Silas_Scruemall 140 20 #dispose #caller self) ; "Well, yes, we do need those tapes to review. But what if we could find an auditioner so inept, so sexless, so lame, so unappealing, that it would take the sexiest woman in America to find him attractive?"
 			)
 			(31
 				(= ticks 60)
 			)
 			(32
-				(TPrint 140 21 67 0 147 80 {A Yes Man}) ; "Great idea, Mr. Scruemall!"
-				(TPrint 140 22 67 68 91 80 {A Yes Man}) ; "Of course, Mr. Scruemall!"
-				(TPrint 140 23 67 105 137 80 {A Yes Man}) ; "Masterful stroke, Mr. Scruemall!"
+				(TPrint 140 21 #at 0 147 #title {A Yes Man}) ; "Great idea, Mr. Scruemall!"
+				(TPrint 140 22 #at 68 91 #title {A Yes Man}) ; "Of course, Mr. Scruemall!"
+				(TPrint 140 23 #at 105 137 #title {A Yes Man}) ; "Masterful stroke, Mr. Scruemall!"
 				(fScruemall setCel: 0)
 				(= seconds 4)
 			)
 			(33
-				(Say Scooter 140 24 108 139 self) ; "But, Sil--, er, Mr. Scruemall! How will we ever find somebody so lame?"
+				(Say Scooter 140 24 #dispose #caller self) ; "But, Sil--, er, Mr. Scruemall! How will we ever find somebody so lame?"
 			)
 			(34
 				(fScruemall setCel: 0)
@@ -454,10 +454,10 @@
 				(= cycles 10)
 			)
 			(2
-				(Say Silas_Scruemall 140 26 108 139 self) ; "You may begin with me, boy."
+				(Say Silas_Scruemall 140 26 #dispose #caller self) ; "You may begin with me, boy."
 			)
 			(3
-				(TPrint 140 27 67 -1 185) ; "(So you decide to do exactly that!"
+				(TPrint 140 27 #at -1 185) ; "(So you decide to do exactly that!"
 				(gEgo setMotion: MoveTo 190 53 self)
 			)
 			(4

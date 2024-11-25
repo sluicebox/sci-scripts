@@ -144,7 +144,7 @@
 			setCycle: Walk
 			moveSpeed: 2
 			setMotion: Wander
-			illegalBits: -32767
+			illegalBits: $8001
 			xStep: 1
 			yStep: 1
 			init:

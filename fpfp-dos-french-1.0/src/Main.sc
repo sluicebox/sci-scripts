@@ -574,7 +574,7 @@
 		)
 		(cond
 			((GameIsRestarting)
-				(MemorySegment 1 @global107)
+				(MemorySegment 1 @global107) ; MS_RESTORE_TO
 			)
 			((FileIO fiEXISTS {29.scr})
 				(= global107 29)
@@ -667,7 +667,7 @@
 			(gCurRoom style: 6 drawPic: 780)
 			(gCast eachElementDo: #hide)
 			(Animate (gCast elements:) 0)
-			(MemorySegment 0 @global107 2)
+			(MemorySegment 0 @global107 2) ; MS_SAVE_FROM
 			(super restart:)
 		else
 			(= gNormalCursor ((gTheIconBar curIcon:) cursor:))
@@ -687,7 +687,7 @@
 				(gCurRoom style: 6 drawPic: 780)
 				(gCast eachElementDo: #hide)
 				(Animate (gCast elements:) 0)
-				(MemorySegment 0 @global107 2)
+				(MemorySegment 0 @global107 2) ; MS_SAVE_FROM
 				(SetVideoMode 0)
 				(super restart:)
 			else

@@ -35,7 +35,7 @@
 		(if (& $0001 (param1 type:))
 			(= temp1 0)
 			(repeat
-				(= param1 (Event new: 32768))
+				(= param1 (Event new: evPEEK))
 				(param1 localize: plane)
 				(if (!= (= temp0 (self onMe: param1)) temp1)
 					(if temp0

@@ -157,39 +157,39 @@
 				(= ticks 60)
 			)
 			(4
-				(Say Inspector_Desmond 430 0 108 139 self) ; "Welcome to our Technical Laboratory. This is the head of our Office of Agent Field Equipment, Commander Twit. Commander Twit, meet Passionate Patti."
+				(Say Inspector_Desmond 430 0 #dispose #caller self) ; "Welcome to our Technical Laboratory. This is the head of our Office of Agent Field Equipment, Commander Twit. Commander Twit, meet Passionate Patti."
 			)
 			(5
 				(= seconds 3)
 			)
 			(6
-				(Say Commander_Twit 430 1 108 139 self) ; "Good morning, Patti," says Commander Twit. "It's so very nice to meet you."
+				(Say Commander_Twit 430 1 #dispose #caller self) ; "Good morning, Patti," says Commander Twit. "It's so very nice to meet you."
 			)
 			(7
 				(= seconds 3)
 			)
 			(8
-				(Say gEgo 430 2 67 -1 185) ; "Likewise, Commander," you reply, thinking that is the first time you've ever said THAT phrase! "What is all this wonderful equipment you have here? I've always been very interested in research--and researchers!"
+				(Say gEgo 430 2 #at -1 185) ; "Likewise, Commander," you reply, thinking that is the first time you've ever said THAT phrase! "What is all this wonderful equipment you have here? I've always been very interested in research--and researchers!"
 				(= ticks 60)
 			)
 			(9
-				(Say Commander_Twit 430 3 108 139 self) ; "You have?" Twit asks suspiciously. "Well, allow me to show you about for a moment before we begin your indoctrination."
+				(Say Commander_Twit 430 3 #dispose #caller self) ; "You have?" Twit asks suspiciously. "Well, allow me to show you about for a moment before we begin your indoctrination."
 			)
 			(10
 				(= ticks 60)
 			)
 			(11
-				(Say gEgo 430 4 67 -1 185) ; ""Oh, I'd just love a tour," you say, flashing your best smile."
+				(Say gEgo 430 4 #at -1 185) ; ""Oh, I'd just love a tour," you say, flashing your best smile."
 				(= ticks 60)
 			)
 			(12
-				(Say Commander_Twit 430 5 108 139 self) ; "Fine," Twit says, obviously charmed. "Feel free to explore the lab a bit, Patti; when you're ready, I'll give you some information you'll need."
+				(Say Commander_Twit 430 5 #dispose #caller self) ; "Fine," Twit says, obviously charmed. "Feel free to explore the lab a bit, Patti; when you're ready, I'll give you some information you'll need."
 			)
 			(13
 				(= ticks 60)
 			)
 			(14
-				(Say Inspector_Desmond 430 6 108 139 self) ; "Enjoy your indoctrination, Patti," says Desmond, turning to leave, "and especially your physical!"
+				(Say Inspector_Desmond 430 6 #dispose #caller self) ; "Enjoy your indoctrination, Patti," says Desmond, turning to leave, "and especially your physical!"
 			)
 			(15
 				(desmond
@@ -232,7 +232,7 @@
 			)
 			(2
 				(SetFlag 41) ; fVibratorMan
-				(Say Commander_Twit 430 8 108 139 self) ; "I suspected you might be intrigued. Dr. Rolfing is working on refining our new `infrared, heat-seeking, surface-to-air vibrator.' We feel it will be of considerable value as a protective device against certain types of enemy agents."
+				(Say Commander_Twit 430 8 #dispose #caller self) ; "I suspected you might be intrigued. Dr. Rolfing is working on refining our new `infrared, heat-seeking, surface-to-air vibrator.' We feel it will be of considerable value as a protective device against certain types of enemy agents."
 			)
 			(3
 				(soundFX number: 431 setLoop: -1 play:)
@@ -275,7 +275,7 @@
 				(= ticks 180)
 			)
 			(10
-				(Say Commander_Twit 430 9 108) ; "Of course, it works much better when you remember to turn it on and then RELEASE it!"
+				(Say Commander_Twit 430 9 #dispose) ; "Of course, it works much better when you remember to turn it on and then RELEASE it!"
 				(HandsOn)
 				(self dispose:)
 			)
@@ -299,7 +299,7 @@
 				(= ticks 60)
 			)
 			(2
-				(Say Commander_Twit 430 11 108 139 self) ; "Ah, now this is an experiment that I think should be of great interest to you, Patti. These two technicians are working on one of our latest Title 9-funded developments: the hair-trigger, double-barreled, armor-piercing brassiere cannon."
+				(Say Commander_Twit 430 11 #dispose #caller self) ; "Ah, now this is an experiment that I think should be of great interest to you, Patti. These two technicians are working on one of our latest Title 9-funded developments: the hair-trigger, double-barreled, armor-piercing brassiere cannon."
 			)
 			(3
 				(techMan setScript: 0 setCycle: End self)
@@ -315,14 +315,14 @@
 				(= ticks 120)
 			)
 			(6
-				(Say gEgo 430 12 67 -1 185) ; "How interesting, Commander!" you say. "But how could you ever fire such a device?"
+				(Say gEgo 430 12 #at -1 185) ; "How interesting, Commander!" you say. "But how could you ever fire such a device?"
 				(= ticks 60)
 			)
 			(7
 				(Face twit gEgo self)
 			)
 			(8
-				(Say Commander_Twit 430 13 108 139 self) ; "Heh, heh, that's the beauty of this baby," he exclaims, his voice rising with pride. "Just touch your elbows together behind your back!"
+				(Say Commander_Twit 430 13 #dispose #caller self) ; "Heh, heh, that's the beauty of this baby," he exclaims, his voice rising with pride. "Just touch your elbows together behind your back!"
 			)
 			(9
 				(braMan setLoop: 2 setCel: 0 cycleSpeed: 24 setCycle: End self)
@@ -361,7 +361,7 @@
 				(= ticks 66)
 			)
 			(15
-				(Say Commander_Twit 430 15 108 139 self) ; "You idiot!" Twit shouts at the bra-slinging technician, "I was talking to Patti!"
+				(Say Commander_Twit 430 15 #dispose #caller self) ; "You idiot!" Twit shouts at the bra-slinging technician, "I was talking to Patti!"
 			)
 			(16
 				(braMan setCycle: End self)
@@ -380,7 +380,7 @@
 				(= seconds 3)
 			)
 			(21
-				(Say Commander_Twit 430 16 108) ; "Obviously, our turnover rate is rather high here!"
+				(Say Commander_Twit 430 16 #dispose) ; "Obviously, our turnover rate is rather high here!"
 				(braMan setCycle: Beg self)
 				((gCurRoom obstacles:) delete: braPolygon)
 				(gCurRoom addObstacle: braPolygon2)
@@ -430,7 +430,7 @@
 						(gCurRoom setScript: sBra)
 					)
 					(else
-						(Say Commander_Twit 430 18 108) ; "Whenever you're through exploring this area, we'll set you up with the mission-required information you're going to need."
+						(Say Commander_Twit 430 18 #dispose) ; "Whenever you're through exploring this area, we'll set you up with the mission-required information you're going to need."
 					)
 				)
 			)
@@ -477,7 +477,7 @@
 			)
 			(5 ; Talk
 				(Say gEgo 430 21) ; "Hey, Desmond!" you cry. "Are you in there?"
-				(TPrint 430 22 67 -1 185) ; "(There is no response.)"
+				(TPrint 430 22 #at -1 185) ; "(There is no response.)"
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)
@@ -498,7 +498,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(3 ; Do
-				(Say Commander_Twit 430 23 108) ; "Whenever you are finished with your indoctrination," says Twit, "I'll have a limousine waiting for you outside that door."
+				(Say Commander_Twit 430 23 #dispose) ; "Whenever you are finished with your indoctrination," says Twit, "I'll have a limousine waiting for you outside that door."
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)
@@ -620,7 +620,7 @@
 			)
 			(3 ; Do
 				(TPrint 430 26) ; "This dart board is here only for the amusement of the full-time, salaried employees."
-				(TPrint 430 27 67 -1 185 70 280) ; "(Besides, you've never played darts in your life, and you don't intend to begin now!)"
+				(TPrint 430 27 #at -1 185 #width 280) ; "(Besides, you've never played darts in your life, and you don't intend to begin now!)"
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)

@@ -109,7 +109,7 @@
 		(if (== 1 (event type:))
 			(= lastIn 0)
 			(repeat
-				(= event (Event new: -32768))
+				(= event (Event new: evPEEK))
 				(event localize:)
 				(if (!= (= in (self check: event)) lastIn)
 					(HiliteControl self)

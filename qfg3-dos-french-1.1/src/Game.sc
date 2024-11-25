@@ -366,7 +366,7 @@
 		(= gNewRoomNum newRoomNumber)
 		(FlushResources newRoomNumber)
 		(self startRoom: gCurRoomNum checkAni:)
-		(while ((= temp5 (Event new: 3)) type:)
+		(while ((= temp5 (Event new: evMOUSE)) type:)
 			(temp5 dispose:)
 		)
 		(temp5 dispose:)

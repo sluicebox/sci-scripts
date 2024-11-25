@@ -206,7 +206,7 @@
 			(1
 				(gEgo
 					view: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					posn: 169 105
 					setStep: 3 2
 					setLoop: -1
@@ -236,7 +236,7 @@
 			(1
 				(gEgo
 					view: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					posn: 169 105
 					setStep: 3 2
 					setLoop: -1

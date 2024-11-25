@@ -57,7 +57,7 @@
 		(if
 			(and
 				(!= global105 16)
-				global169
+				gLolotteAlive
 				(== (gEgo script:) 0)
 				(gCast contains: local2)
 				(== (local2 script:) 0)
@@ -106,7 +106,7 @@
 						(Print 604 1) ; "There is nothing of interest on the walls."
 					)
 					((and (gCast contains: local2) (Said 'talk[/goon,man]'))
-						(if (and global169 (not global175))
+						(if (and gLolotteAlive (not global175))
 							(if (< (gEgo distanceTo: local2) 40)
 								(local2 setScript: henchChaseReg)
 							else
@@ -123,14 +123,14 @@
 								(event claimed: 1)
 							)
 							((Said 'look')
-								(if (and global169 (not global175))
+								(if (and gLolotteAlive (not global175))
 									(Print 604 5) ; "The henchman is asleep."
 								else
 									(Print 604 6 #at -1 20) ; "Lolotte's goons are not appealing at all! Besides having an unnatural pallor to their skin, they are creepy little creatures who fly upon wings that resemble those of bats."
 								)
 							)
 							((Said 'awaken')
-								(if (and global169 (not global175))
+								(if (and gLolotteAlive (not global175))
 									(if (< (gEgo distanceTo: local2) 40)
 										(local2 setScript: henchChaseReg)
 									else
@@ -210,7 +210,7 @@
 				(if
 					(and
 						(> gAct 3)
-						global169
+						gLolotteAlive
 						(or
 							(== gCurRoomNum 90)
 							(== gCurRoomNum 91)

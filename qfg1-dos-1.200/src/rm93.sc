@@ -117,10 +117,10 @@
 		(bush init: stopUpd:)
 		(if (IsFlag 238)
 			(gate setCel: 3 setPri: 6 ignoreActors: init: stopUpd:)
-			(gEgo illegalBits: -32768)
+			(gEgo illegalBits: $8000)
 		else
 			(gate setCel: 0 setPri: 6 init: stopUpd:)
-			(gEgo illegalBits: -28672)
+			(gEgo illegalBits: $9000)
 		)
 		(if (not (IsFlag 237))
 			(= global332 425)
@@ -929,7 +929,7 @@
 			)
 			(1
 				(SetFlag 238)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HandsOn)
 				(self dispose:)
 			)
@@ -953,7 +953,7 @@
 			)
 			(1
 				(ClearFlag 238)
-				(gEgo illegalBits: -28672)
+				(gEgo illegalBits: $9000)
 				(HandsOn)
 				(self dispose:)
 			)

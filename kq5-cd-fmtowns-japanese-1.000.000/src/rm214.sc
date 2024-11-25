@@ -59,7 +59,7 @@
 						view: 2
 						posn: 158 186
 						setStep: 2 1
-						illegalBits: -32768
+						illegalBits: $8000
 						observeControl: 16384
 						init:
 					)
@@ -85,7 +85,7 @@
 					view: 2
 					posn: 158 162
 					setStep: 2 1
-					illegalBits: -32768
+					illegalBits: $8000
 					observeControl: 16384
 					init:
 				)

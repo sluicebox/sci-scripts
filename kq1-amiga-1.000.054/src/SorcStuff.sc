@@ -51,7 +51,7 @@
 					setAvoider: Avoid
 					setCycle: Walk
 					setCel: -1
-					illegalBits: -28672
+					illegalBits: $9000
 					setStep: 4 3
 					init:
 				)

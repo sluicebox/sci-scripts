@@ -292,7 +292,7 @@
 			)
 			(2
 				(User canControl: 1)
-				(muffet setPri: -1 setLoop: -1 illegalBits: -32768)
+				(muffet setPri: -1 setLoop: -1 illegalBits: $8000)
 				(= global113 1)
 				(if (== gCurRoomNum 9)
 					(gCurRoom setScript: mconverse)
@@ -467,7 +467,7 @@
 				(proc411_1)
 				(muffet
 					setLoop: -1
-					illegalBits: -32768
+					illegalBits: $8000
 					setMotion: MoveTo 150 120 self
 				)
 			)

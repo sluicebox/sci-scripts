@@ -402,7 +402,7 @@
 						setLoop: 0
 						cel: 0
 						cycleSpeed: 1
-						illegalBits: -32768
+						illegalBits: $8000
 						setCycle: End self
 					)
 				)

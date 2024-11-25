@@ -167,7 +167,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 16)
+		(= gDictionaryWord 16)
 		(super doVerb: theVerb)
 	)
 
@@ -1234,7 +1234,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 67)
+		(= gDictionaryWord 67)
 		(super doVerb: theVerb)
 	)
 )
@@ -1266,7 +1266,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 93)
+		(= gDictionaryWord 93)
 		(super doVerb: theVerb)
 	)
 )
@@ -1434,7 +1434,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(6 ; Look
-				(= global215 16)
+				(= gDictionaryWord 16)
 				(super doVerb: theVerb)
 			)
 			(7 ; Do

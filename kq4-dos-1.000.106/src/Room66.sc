@@ -58,7 +58,7 @@
 		)
 		(if (or (== gPrevRoomNum 67) (== gPrevRoomNum 0))
 			(gEgo
-				illegalBits: -16384
+				illegalBits: $c000
 				posn: 240 128
 				view: 4
 				xStep: 4
@@ -71,7 +71,7 @@
 		)
 		(if (== gPrevRoomNum 61) ; HauntedTowerMiddle
 			(gEgo
-				illegalBits: -32768
+				illegalBits: $8000
 				view: 4
 				xStep: 4
 				setPri: 7
@@ -108,7 +108,7 @@
 					(gEgo ignoreBlocks: stair1)
 				)
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					baseSetter: (ScriptID 0 1) ; smallBase
 					setPri: 12
 				)
@@ -116,7 +116,7 @@
 				(= local1 1)
 				(gEgo
 					observeBlocks: stair1
-					illegalBits: -16384
+					illegalBits: $c000
 					baseSetter: 0
 					setPri: -1
 				)
@@ -297,7 +297,7 @@
 						setCycle: Walk
 						setLoop: -1
 						setPri: -1
-						illegalBits: -16384
+						illegalBits: $c000
 						baseSetter: 0
 						ignoreActors: 0
 					)

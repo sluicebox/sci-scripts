@@ -770,7 +770,7 @@
 		y 155
 		view 890
 		loop 4
-		illegalBits 2
+		illegalBits $0002
 		moveSpeed 8
 	)
 

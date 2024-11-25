@@ -225,7 +225,7 @@
 						(gEgo posn: 8 94 setMotion: MoveTo 37 94 self)
 					)
 					((butte onLedgeFlag:)
-						(gEgo illegalBits: -32704 setPri: 15)
+						(gEgo illegalBits: $8040 setPri: 15)
 						(self cue:)
 					)
 					(else

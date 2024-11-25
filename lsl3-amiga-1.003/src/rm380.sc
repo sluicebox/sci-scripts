@@ -630,7 +630,7 @@
 			)
 			(41
 				(gEgo
-					illegalBits: 64
+					illegalBits: $0040
 					ignoreActors:
 					view: 385
 					setLoop: loopNum

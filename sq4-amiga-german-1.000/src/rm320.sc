@@ -138,7 +138,7 @@
 			(self setScript: swimScript)
 		else
 			(HandsOff)
-			(gEgo illegalBits: -32752)
+			(gEgo illegalBits: $8010)
 			(self style: 13 setScript: enterScript)
 		)
 		(gEgo setPri: 8 init:)
@@ -161,7 +161,7 @@
 			((and (== script fallScript) (== (gEgo edgeHit:) EDGE_BOTTOM)) 0)
 			((and (not script) (== (gEgo edgeHit:) EDGE_TOP))
 				(HandsOff)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(self setScript: exitScript)
 			)
 		)
@@ -323,7 +323,7 @@
 				)
 			)
 			(5
-				(gEgo illegalBits: -32752)
+				(gEgo illegalBits: $8010)
 				(cond
 					((!= gPrevRoomNum 297)
 						(HandsOn)

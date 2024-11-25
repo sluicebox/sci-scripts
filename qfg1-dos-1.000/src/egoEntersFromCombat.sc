@@ -49,9 +49,9 @@
 				(HandsOn)
 				(gEgo loop: 2 posn: (+ (gEgo x:) 3) (- (gEgo y:) 8))
 				(if (IsFlag 238)
-					(gEgo illegalBits: -16384)
+					(gEgo illegalBits: $c000)
 				else
-					(gEgo illegalBits: -8192)
+					(gEgo illegalBits: $e000)
 				)
 				(HandsOn)
 				(self dispose:)

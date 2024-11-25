@@ -293,7 +293,7 @@
 			(2 ; Look
 				(TPrint 290 9) ; "Near the far door is one of AeroDork Airline's exclusive "ABMs.""
 				(TPrint 290 10) ; "ABM is an acronym for "Automatic Boarding Pass Machine." So far, AeroDork is the only airline to have them."
-				(TPrint 290 11 67 -1 185) ; "(You expect it to remain that way!)"
+				(TPrint 290 11 #at -1 185) ; "(You expect it to remain that way!)"
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)

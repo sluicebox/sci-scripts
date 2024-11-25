@@ -174,7 +174,7 @@
 	(method (doit)
 		(if (& (gEgo onControl: 0) $0040)
 			(cond
-				((and (== gAct 99) (== global169 0))
+				((and (== gAct 99) (== gLolotteAlive 0))
 					(gCurRoom newRoom: 80)
 				)
 				((not local10)
@@ -253,7 +253,7 @@
 						(Print 92 10) ; "You don't have time for that."
 					)
 					((Said 'open/door')
-						(if (and (== gAct 99) (== global169 0))
+						(if (and (== gAct 99) (== gLolotteAlive 0))
 							(Print 92 11) ; "Just go there."
 						else
 							(Print 92 12) ; "OH, NO!! The door is locked!"
@@ -261,7 +261,7 @@
 						)
 					)
 					((Said 'unlatch/door')
-						(if (and (== gAct 99) (== global169 0))
+						(if (and (== gAct 99) (== gLolotteAlive 0))
 							(Print 92 14) ; "It already is."
 						else
 							(Print 92 15) ; "You don't have the key to unlock this door."
@@ -285,7 +285,7 @@
 				(gEgo cel: 1)
 				(switch gAct
 					(0
-						(= global169 1)
+						(= gLolotteAlive 1)
 						(gCurRoom setScript: lotTalk1)
 					)
 					(1
@@ -737,7 +737,7 @@
 			(17
 				(cls)
 				(= gAct 99)
-				(gEgo hide: illegalBits: -32768)
+				(gEgo hide: illegalBits: $8000)
 				(gCurRoom newRoom: 81)
 			)
 		)

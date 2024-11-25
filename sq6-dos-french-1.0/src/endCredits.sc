@@ -119,7 +119,7 @@
 				(= cycles 3)
 			)
 			(4
-				(while ((= temp2 (Event new: 3)) type:)
+				(while ((= temp2 (Event new: evMOUSE)) type:)
 					(temp2 dispose:)
 				)
 				(temp2 dispose:)

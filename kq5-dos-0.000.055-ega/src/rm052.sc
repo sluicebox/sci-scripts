@@ -46,7 +46,7 @@
 			normal: 1
 			offset: 2
 			setStep: 2 2
-			illegalBits: -32256
+			illegalBits: $8200
 			init:
 		)
 		(switch gPrevRoomNum

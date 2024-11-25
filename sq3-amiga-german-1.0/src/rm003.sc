@@ -75,7 +75,7 @@
 				posn: 37 162
 				setLoop: -1
 				setPri: -1
-				illegalBits: -32768
+				illegalBits: $8000
 			)
 		)
 		(= global100 0)

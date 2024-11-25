@@ -147,7 +147,7 @@
 				(guard
 					view: 593
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 					setAvoider: Avoid
 					posn: local0 local1
 					setMotion: Chase gEgo 250 self

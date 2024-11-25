@@ -191,7 +191,7 @@
 										@global300
 										45
 										11
-										(if (== global169 1)
+										(if (== gLolotteAlive 1)
 											{This will be a loss for Tamir, as the evil Lolotte will come to power!}
 										else
 											{ }
@@ -382,7 +382,7 @@
 				(client illegalBits: 0 setMotion: MoveTo 103 60 self)
 			)
 			(1
-				(client illegalBits: 8192 setMotion: Wander 5)
+				(client illegalBits: $2000 setMotion: Wander 5)
 			)
 		)
 	)
@@ -397,7 +397,7 @@
 				(client illegalBits: 0 setMotion: MoveTo 220 60 self)
 			)
 			(1
-				(client illegalBits: 8192 setMotion: Wander 5)
+				(client illegalBits: $2000 setMotion: Wander 5)
 			)
 		)
 	)

@@ -249,7 +249,7 @@
 					(gCurRoom setScript: sStealChange)
 				else
 					(TPrint 270 1) ; "You already took the quarter you need; leave the small change for those poor little kids!"
-					(TPrint 270 2 67 -1 185) ; "(You big bully!)"
+					(TPrint 270 2 #at -1 185) ; "(You big bully!)"
 				)
 			)
 			(2 ; Look
@@ -264,7 +264,7 @@
 					(++ lookCounter)
 					(TPrint 270 5) ; "You are much too frugal to ever part with a hard-found quarter!"
 					(if (and (> lookCounter 3) (not (Random 0 10)))
-						(TPrint 270 6 67 -1 185) ; "(TIGHT-ASS!)"
+						(TPrint 270 6 #at -1 185) ; "(TIGHT-ASS!)"
 						(= lookCounter 0)
 					)
 				else
@@ -399,7 +399,7 @@
 		(switch theVerb
 			(2 ; Look
 				(TPrint 270 14) ; "This counter was once staffed by highly trained, courteous young men and women."
-				(TPrint 270 15 67 -1 185) ; "(Of course, that was when this area was part of the frozen yogurt concession!)"
+				(TPrint 270 15 #at -1 185) ; "(Of course, that was when this area was part of the frozen yogurt concession!)"
 			)
 			(3 ; Do
 				(Format ; "A few days ago, you could have bought a ticket here. But now %s and %s, AeroDork's last remaining employees, have nothing to do but stand around and gossip."
@@ -410,7 +410,7 @@
 					(redHead description:)
 				)
 				(TPrint @string)
-				(TPrint 270 17 67 -1 185) ; "(So, in essence, not that much has changed!)"
+				(TPrint 270 17 #at -1 185) ; "(So, in essence, not that much has changed!)"
 			)
 			(5 ; Talk
 				(TPrint 270 18) ; "You must have just missed them. Perhaps you should talk to one of the girls, instead of to the ticket counter!"
@@ -678,7 +678,7 @@
 			)
 			(5 ; Talk
 				(TPrint 270 32) ; "Hello!" you shout. "Is there anyone inside?"
-				(TPrint 270 33 67 -1 185) ; "(You hear no response.)"
+				(TPrint 270 33 #at -1 185) ; "(You hear no response.)"
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)

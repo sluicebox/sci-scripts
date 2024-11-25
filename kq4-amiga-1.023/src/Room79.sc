@@ -69,7 +69,7 @@
 				(gEgo view: 2 posn: 232 91 loop: 1 init:)
 			)
 			(south
-				(if global169
+				(if gLolotteAlive
 					(= local0 (Act new:))
 					(= local1 (Act new:))
 					(local0 setScript: h1Actions)
@@ -98,7 +98,7 @@
 		(cls)
 		(if (!= global105 10)
 			(= global189 0)
-			(gEgo illegalBits: -32768 setPri: -1)
+			(gEgo illegalBits: $8000 setPri: -1)
 			(super newRoom: newRoomNumber)
 		)
 	)

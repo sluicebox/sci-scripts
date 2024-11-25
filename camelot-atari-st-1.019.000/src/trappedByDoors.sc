@@ -58,7 +58,7 @@
 				(HandsOff)
 			)
 			(1
-				(gEgo illegalBits: -16272)
+				(gEgo illegalBits: $c070)
 				(Print 173 0) ; "Your fate is sealed, as is this room. I cannot bear to remain and watch the slow, lingering death that awaits you within this dusty tomb. Farewell, Arthur."
 				(gCurRoom style: 8 drawPic: 112)
 				(gCast eachElementDo: #hide)

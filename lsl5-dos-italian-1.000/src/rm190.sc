@@ -317,7 +317,7 @@
 		(switch theVerb
 			(2 ; Look
 				(TPrint 190 7) ; "For just a moment, you have the feeling that tree is the only thing in Hollywood that's straight!"
-				(TPrint 190 8 67 -1 185) ; "(Then you notice it's leaning!"
+				(TPrint 190 8 #at -1 185) ; "(Then you notice it's leaning!"
 			)
 			(3 ; Do
 				(TPrint 190 9) ; "You love the feel of palms, don't you, Larry?"
@@ -391,7 +391,7 @@
 			)
 			(5 ; Talk
 				(TPrint 190 12) ; ""Hello! Is anybody in there?" you shout through the glass."
-				(TPrint 190 13 67 -1 185) ; "(There is no response.)"
+				(TPrint 190 13 #at -1 185) ; "(There is no response.)"
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)

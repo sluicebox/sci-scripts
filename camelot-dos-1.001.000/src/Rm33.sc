@@ -141,7 +141,7 @@
 		x 275
 		view 341
 		loop 2
-		illegalBits -32510
+		illegalBits $8102
 	)
 
 	(method (handleEvent event)
@@ -535,9 +535,9 @@
 					(Talk 33 69) ; "But m'lud has paid nothing that I might refund."
 				else
 					(Talk 33 70) ; "As you command, m'lud. I shall return what you have given me."
-					(+= global122 local5)
-					(+= global121 local6)
-					(+= global120 global133)
+					(+= gGold local5)
+					(+= gSilver local6)
+					(+= gCopper global133)
 					(= global133 (= local5 (= local6 (= local7 0))))
 				)
 			)
@@ -1092,7 +1092,7 @@
 				(gEgo setMotion: MoveTo 194 160 self)
 			)
 			(3
-				(gEgo setAvoider: 0 setCycle: Walk illegalBits: -32768)
+				(gEgo setAvoider: 0 setCycle: Walk illegalBits: $8000)
 				(DisposeScript 985)
 				(HandsOn)
 				(= global116 5)

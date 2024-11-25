@@ -45,7 +45,7 @@
 		(= global321 137)
 		(= global325 {"Let's move on, Graham!"})
 		(= local54 (gEgo illegalBits:))
-		(gEgo illegalBits: -32768 ignoreHorizon: 1)
+		(gEgo illegalBits: $8000 ignoreHorizon: 1)
 		(if (!= (gGlobalSound number:) 24)
 			(gGlobalSound number: 24 loop: -1 play:)
 		)

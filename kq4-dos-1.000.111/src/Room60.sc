@@ -350,7 +350,7 @@
 				(gEgo
 					view: 4
 					loop: 3
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Walk
 					setPri: -1
 					setStep: 4 1

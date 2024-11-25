@@ -147,7 +147,7 @@
 			(if (and (not (IsFlag 115)) (< global189 9))
 				(gMuleObj illegalBits: 0)
 			else
-				(gMuleObj illegalBits: -16385)
+				(gMuleObj illegalBits: $bfff)
 			)
 		)
 	)
@@ -224,7 +224,7 @@
 				)
 				((> (gEgo x:) 310)
 					(if (IsFlag 20)
-						(gMuleObj illegalBits: -32768)
+						(gMuleObj illegalBits: $8000)
 					)
 					(if global169
 						(= global189 9)
@@ -234,7 +234,7 @@
 				)
 				((< (gEgo x:) 10)
 					(if (IsFlag 20)
-						(gMuleObj illegalBits: -32768)
+						(gMuleObj illegalBits: $8000)
 					)
 					(if global169
 						(= global189 9)
@@ -244,7 +244,7 @@
 				)
 				((and (< (gEgo y:) 20) (== (gEgo loop:) 3))
 					(if (IsFlag 20)
-						(gMuleObj illegalBits: -32768)
+						(gMuleObj illegalBits: $8000)
 					)
 					(if global169
 						(= global189 9)

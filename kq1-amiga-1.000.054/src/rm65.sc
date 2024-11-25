@@ -872,7 +872,7 @@
 				(witch
 					view: 115
 					init:
-					illegalBits: -32768
+					illegalBits: $8000
 					setPri: -1
 					setCycle: Walk
 					posn: 36 126

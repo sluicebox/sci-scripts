@@ -217,7 +217,7 @@
 			)
 			(4
 				(HandsOn)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(client setScript: 0)
 			)
 		)
@@ -250,7 +250,7 @@
 				(gEgo yStep: 20 setMotion: MoveTo (gEgo x:) 240 self)
 			)
 			(4
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(gLongSong fade:)
 				(gCurRoom newRoom: 320)
 			)

@@ -285,7 +285,7 @@
 				(gEgo setPri: 7)
 				(aLarry
 					setPri: 7
-					illegalBits: -32768
+					illegalBits: $8000
 					setMotion: Follow gEgo 28
 				)
 				(Print 610 19) ; ""But what is this place, Larry?" you ask."

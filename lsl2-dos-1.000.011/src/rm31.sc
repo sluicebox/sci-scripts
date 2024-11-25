@@ -182,7 +182,7 @@
 			setPri: 14
 			setCycle: Walk
 			setStep: 1 1
-			illegalBits: -32768
+			illegalBits: $8000
 		)
 		(cond
 			((== gPrevRoomNum 38)

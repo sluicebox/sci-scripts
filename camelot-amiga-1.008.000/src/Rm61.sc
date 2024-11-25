@@ -192,7 +192,7 @@
 		(super init:)
 		(Load rsVIEW 161)
 		(Load rsVIEW 62)
-		(gEgo illegalBits: -16384)
+		(gEgo illegalBits: $c000)
 		(self setRegions: 152) ; Bazaar
 		(switch gPrevRoomNum
 			(62
@@ -963,7 +963,7 @@
 		(switch (= state newState)
 			(0
 				(HandsOff)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(if (not local10)
 					(localproc_0 61 65) ; "Welcome, habibi, welcome! Come in!"
 				else
@@ -1092,7 +1092,7 @@
 				(= cycles 8)
 			)
 			(15
-				(gEgo ignoreActors: 0 illegalBits: -16384)
+				(gEgo ignoreActors: 0 illegalBits: $c000)
 				(HandsOn)
 				(client setScript: 0)
 			)
@@ -1121,7 +1121,7 @@
 				)
 			)
 			(2
-				(gEgo illegalBits: -16384)
+				(gEgo illegalBits: $c000)
 				(= global124 0)
 				(Print 61 71) ; "Do you think you could possibly stop blundering around terrifying the natives long enough to do what you are supposed to be doing?"
 				(HandsOn)
@@ -1175,7 +1175,7 @@
 					(= cycles 8)
 				else
 					(ach setPri: 8)
-					(++ global121)
+					(++ gSilver)
 					(self changeState: 8)
 				)
 			)

@@ -397,7 +397,7 @@
 (class Actor of Prop
 	(properties
 		heading 0
-		illegalBits -32768
+		illegalBits $8000
 		xLast 0
 		yLast 0
 		xStep 3

@@ -329,7 +329,7 @@
 			)
 			(7
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					setLoop: -1
 					cycleSpeed: 0
 					setCycle: Walk

@@ -41,7 +41,7 @@
 		)
 		(gEgo init:)
 		(proc0_1)
-		(gEgo illegalBits: -32766)
+		(gEgo illegalBits: $8002)
 		(light init:)
 	)
 

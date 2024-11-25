@@ -288,14 +288,14 @@
 				(Format @str 720 0 gPokerJackpot gPokerJackpot) ; "Video Poker Odds  Progressive Royal Flush  $%d  Straight Flush      50 to 1  4 of a Kind        20 to 1  Full House        10 to 1  Flush           5 to 1  Straight          4 to 1  3 of a Kind        3 to 1  2 Pair           2 to 1  Pair, Jacks or Better   1 to 1"
 				(TPrint
 					@str
-					80
+					#title
 					{Welcome to Tramp's Casino}
-					33
+					#font
 					gMonoFont
-					67
+					#at
 					-1
 					15
-					70
+					#width
 					260
 				)
 			)
@@ -996,13 +996,13 @@
 					(Format @str 720 13 gPokerJackpot) ; "P R O G R E S S I V E J A C K P O T  ! !  You win %d dollars!"
 					(TPrint
 						@str
-						70
+						#width
 						200
-						80
+						#title
 						{Another Lucky Winner}
-						33
+						#font
 						gBigFont
-						30
+						#mode
 						1
 					)
 					(= gSilvDollars gPokerJackpot)

@@ -1108,7 +1108,7 @@
 				(gEgo
 					view: 0
 					ignoreActors: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Walk
 				)
 				(= local6 0)

@@ -99,7 +99,7 @@
 					(gEgo setScript: TakeAShowerScript)
 				else
 					(TPrint 850 0) ; "You don't need a shower right now, Patti. You're not dirty."
-					(TPrint 850 1 67 -1 185) ; "(That is, you're not soiled!)"
+					(TPrint 850 1 #at -1 185) ; "(That is, you're not soiled!)"
 				)
 			)
 			(else

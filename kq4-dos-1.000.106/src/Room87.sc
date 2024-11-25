@@ -65,7 +65,7 @@
 			init:
 			setCycle: Fwd
 		)
-		(if global169
+		(if gLolotteAlive
 			((= local0 (Act new:))
 				view: 145
 				loop: 4

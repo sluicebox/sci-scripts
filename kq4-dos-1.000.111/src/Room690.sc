@@ -243,7 +243,7 @@
 					moveSpeed: 3
 					setCycle: Walk
 					setMotion: Wander
-					illegalBits: -2
+					illegalBits: $fffe
 					init:
 				)
 				(= seconds 4)

@@ -358,7 +358,7 @@
 		loop 4
 		signal 24833
 		cycleSpeed 2
-		illegalBits 2
+		illegalBits $0002
 	)
 
 	(method (handleEvent event)

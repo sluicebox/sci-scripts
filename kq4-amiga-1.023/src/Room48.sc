@@ -340,7 +340,7 @@
 			(3
 				(Print 48 27) ; "The ogress sees you! You'd better run as she'd like to have YOU for dinner!"
 				(client
-					illegalBits: -32768
+					illegalBits: $8000
 					setPri: -1
 					setAvoider: Avoid
 					setMotion: Chase gEgo 15 self

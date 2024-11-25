@@ -274,7 +274,7 @@
 			setPri: 9
 			setMotion: Follow gEgo 15
 			init:
-			illegalBits: -16384
+			illegalBits: $c000
 		)
 		((= local0 (Act new:)) view: 45 posn: 245 141 setCycle: Walk init:)
 		(gEgo
@@ -283,7 +283,7 @@
 			loop: 0
 			setPri: 9
 			init:
-			illegalBits: -16384
+			illegalBits: $c000
 		)
 		(self setScript: rm101Script)
 	)
@@ -313,8 +313,8 @@
 		(cond
 			((and (< (gEgo x:) 20) local5 (not local6))
 				(= local6 1)
-				(gEgo illegalBits: -32768)
-				(global112 illegalBits: -32768)
+				(gEgo illegalBits: $8000)
+				(global112 illegalBits: $8000)
 				(self setScript: toTheParkScript)
 			)
 			((and (< (gEgo x:) 20) (not local5) (not local15))
@@ -645,8 +645,8 @@
 			(7
 				(= local14 0)
 				(local0 setLoop: -1 setCel: -1)
-				(gEgo setPri: -1 setLoop: -1 setCel: -1 illegalBits: -8192)
-				(global112 setPri: -1 setLoop: 2 setCel: -1 illegalBits: -16384)
+				(gEgo setPri: -1 setLoop: -1 setCel: -1 illegalBits: $e000)
+				(global112 setPri: -1 setLoop: 2 setCel: -1 illegalBits: $c000)
 				(HandsOn)
 				(local0 setMotion: MoveTo 265 146)
 			)
@@ -683,7 +683,7 @@
 				else
 					(localproc_0 101 59 83) ; "Wild Willy says, "Oh, yeah, Bonds! Forgot the radios, didn't you? Go ahead and grab 'em. I've got some map work to do.""
 				)
-				(gEgo illegalBits: -16384 setLoop: -1 setCel: -1 setPri: -1)
+				(gEgo illegalBits: $c000 setLoop: -1 setCel: -1 setPri: -1)
 				(HandsOn)
 				(= local11 0)
 				(= local14 0)
@@ -723,12 +723,12 @@
 				)
 			)
 			(2
-				(gEgo setPri: -1 setLoop: -1 setCel: -1 illegalBits: -16384)
+				(gEgo setPri: -1 setLoop: -1 setCel: -1 illegalBits: $c000)
 				(= local14 0)
 				(HandsOn)
 				(if (not local12)
 					(global112
-						illegalBits: -16384
+						illegalBits: $c000
 						setMotion: Follow gEgo 20
 						ignoreActors: 0
 					)
@@ -753,7 +753,7 @@
 			(1
 				(Display 101 60 dsFONT 0 dsWIDTH 290 dsCOORD 15 43 dsCOLOR 15) ; "You and Keith are driven to 'Burt Park' by Ernie Pitman, a twenty-year veteran who looks ten years younger than his real age. He regales you with stories of his escapades as a young patrolman. By the time you reach the park, you are beginning to wish he had retired last year. Sure enough, Officer Pitman climbs out of the patrol car and heads into the park with you, talking all the way."
 				(repeat
-					(= temp0 (Event new: 5))
+					(= temp0 (Event new: evMOUSEKEYBOARD))
 					(breakif (& (temp0 type:) $0005))
 					(temp0 dispose:)
 				)

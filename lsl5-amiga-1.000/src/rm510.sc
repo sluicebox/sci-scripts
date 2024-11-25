@@ -257,15 +257,15 @@
 			(1
 				(cond
 					((== ((Inv at: 14) state:) 0) ; Membership_Tape
-						(Say the_maitre_d_ 510 6 108 139 self) ; "But, of course, My Sewer," says the maitre d' snootily. "It worked in Larry 3, didn't it?"
+						(Say the_maitre_d_ 510 6 #dispose #caller self) ; "But, of course, My Sewer," says the maitre d' snootily. "It worked in Larry 3, didn't it?"
 					)
 					((== ((Inv at: 14) state:) 4) ; Membership_Tape
-						(Say the_maitre_d_ 510 7 108) ; ""I suggest you find transportation to another location, Mr. (heh, heh) Laffer!" he smirks."
+						(Say the_maitre_d_ 510 7 #dispose) ; ""I suggest you find transportation to another location, Mr. (heh, heh) Laffer!" he smirks."
 						(HandsOn)
 						(self dispose:)
 					)
 					(else
-						(Say the_maitre_d_ 510 8 108) ; "You have your tape, Mr. Laffer. Stop bothering me!"
+						(Say the_maitre_d_ 510 8 #dispose) ; "You have your tape, Mr. Laffer. Stop bothering me!"
 						(HandsOn)
 						(self dispose:)
 					)
@@ -289,12 +289,12 @@
 					(HandsOff)
 					(Points 3 106)
 					(gEgo put: 12) ; Money
-					(Say the_maitre_d_ 510 9 108) ; "Please, follow me, sir," says the maitre d', walking to the punch tape reader. "Allow me to prepare you for membership in our exclusive club."
+					(Say the_maitre_d_ 510 9 #dispose) ; "Please, follow me, sir," says the maitre d', walking to the punch tape reader. "Allow me to prepare you for membership in our exclusive club."
 					(= okToMakeTape 1)
 					((Inv at: 14) state: 1) ; Membership_Tape
 					(gCurRoom setScript: sMD)
 				else
-					(Say the_maitre_d_ 510 10 108) ; "Thank you very much, sir," says the maitre d' greedily. "Have a nice day!"
+					(Say the_maitre_d_ 510 10 #dispose) ; "Thank you very much, sir," says the maitre d' greedily. "Have a nice day!"
 					(HandsOn)
 					(self dispose:)
 				)
@@ -336,7 +336,7 @@
 			)
 			(1
 				(Points 12 107)
-				(TPrint 510 11 67 100 10) ; "Larry! How brilliant you are! Carefully wrapping your membership tape around the music box's cylinder, you punch a new set of holes in your membership tape, altering it forever. But now, will you be able to enter the cafe?"
+				(TPrint 510 11 #at 100 10) ; "Larry! How brilliant you are! Carefully wrapping your membership tape around the music box's cylinder, you punch a new set of holes in your membership tape, altering it forever. But now, will you be able to enter the cafe?"
 				(= seconds 3)
 			)
 			(2
@@ -481,50 +481,50 @@
 					((== ((Inv at: 14) state:) 0) ; Membership_Tape
 						(switch talkCounter
 							(1
-								(Say the_maitre_d_ 510 26 108) ; "No."
+								(Say the_maitre_d_ 510 26 #dispose) ; "No."
 							)
 							(2
-								(Say the_maitre_d_ 510 26 108) ; "No."
+								(Say the_maitre_d_ 510 26 #dispose) ; "No."
 							)
 							(3
-								(Say the_maitre_d_ 510 26 108) ; "No."
+								(Say the_maitre_d_ 510 26 #dispose) ; "No."
 							)
 							(4
-								(Say the_maitre_d_ 510 26 108) ; "No."
+								(Say the_maitre_d_ 510 26 #dispose) ; "No."
 							)
 							(5
-								(Say the_maitre_d_ 510 27 108) ; "No?"
+								(Say the_maitre_d_ 510 27 #dispose) ; "No?"
 							)
 							(6
-								(Say the_maitre_d_ 510 28 108) ; "Know."
+								(Say the_maitre_d_ 510 28 #dispose) ; "Know."
 							)
 							(7
-								(Say the_maitre_d_ 510 29 108) ; "Ho."
+								(Say the_maitre_d_ 510 29 #dispose) ; "Ho."
 							)
 							(8
-								(Say the_maitre_d_ 510 30 108) ; "Who?"
+								(Say the_maitre_d_ 510 30 #dispose) ; "Who?"
 							)
 							(9
-								(Say the_maitre_d_ 510 31 108 139 self) ; ""OK! STOP!! I'll get you a damned ticket!" he shouts."
+								(Say the_maitre_d_ 510 31 #dispose #caller self) ; ""OK! STOP!! I'll get you a damned ticket!" he shouts."
 								(= okToMakeTape 1)
 								((Inv at: 14) state: 1) ; Membership_Tape
 							)
 							(else
-								(Say the_maitre_d_ 510 32 108) ; "I'm sorry, sir, but my limit is one bore per customer!"
+								(Say the_maitre_d_ 510 32 #dispose) ; "I'm sorry, sir, but my limit is one bore per customer!"
 							)
 						)
 					)
 					((== ((Inv at: 14) owner:) 510) ; Membership_Tape
-						(Say the_maitre_d_ 510 33 108) ; "You fool! Eeet's hanging there in plain sight!"
+						(Say the_maitre_d_ 510 33 #dispose) ; "You fool! Eeet's hanging there in plain sight!"
 					)
 					((== ((Inv at: 14) state:) 4) ; Membership_Tape
-						(Say the_maitre_d_ 510 7 108) ; ""I suggest you find transportation to another location, Mr. (heh, heh) Laffer!" he smirks."
+						(Say the_maitre_d_ 510 7 #dispose) ; ""I suggest you find transportation to another location, Mr. (heh, heh) Laffer!" he smirks."
 					)
 					((IsFlag 2) ; fSeenMM
 						(gCurRoom setScript: sDoubleTalk)
 					)
 					((== ((Inv at: 14) state:) 1) ; Membership_Tape
-						(Say the_maitre_d_ 510 34 108) ; "Just find a place to sit down. You have an assigned table. Find it!"
+						(Say the_maitre_d_ 510 34 #dispose) ; "Just find a place to sit down. You have an assigned table. Find it!"
 					)
 				)
 				(if (not okToMakeTape)
@@ -536,7 +536,7 @@
 				(= state 19)
 				(= cycles 2)
 				(Points 3 106)
-				(TPrint 510 35 67 -1 185) ; "(Nice going, Larry!)"
+				(TPrint 510 35 #at -1 185) ; "(Nice going, Larry!)"
 			)
 			(20
 				(maitreD
@@ -577,7 +577,7 @@
 				(screen dispose:)
 			)
 			(25
-				(Say the_maitre_d_ 510 36 108 139 self) ; "There you are, Sir!" barks the maitre d'. "Enjoy your visit here at the lovely Hard Disk Cafe!"
+				(Say the_maitre_d_ 510 36 #dispose #caller self) ; "There you are, Sir!" barks the maitre d'. "Enjoy your visit here at the lovely Hard Disk Cafe!"
 			)
 			(26
 				(maitreD
@@ -603,10 +603,10 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(Say the_maitre_d_ 510 37 108 139 self) ; "I'm sorry, sir," he replies, "but admittance to the exclusive `Herman Hollerith Room' is limited to only our very finest customers."
+				(Say the_maitre_d_ 510 37 #dispose #caller self) ; "I'm sorry, sir," he replies, "but admittance to the exclusive `Herman Hollerith Room' is limited to only our very finest customers."
 			)
 			(1
-				(Say the_maitre_d_ 510 38 108) ; ""(...which you are not!)" he concludes under his breath."
+				(Say the_maitre_d_ 510 38 #dispose) ; ""(...which you are not!)" he concludes under his breath."
 				(HandsOn)
 				(self dispose:)
 			)
@@ -779,7 +779,7 @@
 			(2 ; Look
 				(TPrint 510 47) ; "Music boxes show an early use of the principle that made the punchcard possible. It gave precisely aligned pins meaning as musical pitches."
 				(if (gEgo has: 14) ; Membership_Tape
-					(TPrint 510 48 67 -1 185) ; "(How interesting: the music box's cylinder appears to be the same width as your membership tape.)"
+					(TPrint 510 48 #at -1 185) ; "(How interesting: the music box's cylinder appears to be the same width as your membership tape.)"
 				else
 					(TPrint 510 49) ; "Its cylinder is exactly 35 millimeters wide."
 				)
@@ -787,7 +787,7 @@
 			(3 ; Do
 				(musicBoxFX play: self)
 				(gTheMusic fade: 80 10 10 0)
-				(TPrint 510 50 67 100 10) ; "The music box is either very old and very tired, or some practical joker has altered the pin placement on its cylinder. It sounds terrible!"
+				(TPrint 510 50 #at 100 10) ; "The music box is either very old and very tired, or some practical joker has altered the pin placement on its cylinder. It sounds terrible!"
 			)
 			(5 ; Talk
 				(TPrint 510 51) ; "It's a music box, not an Edison cylinder recorder."
@@ -882,7 +882,7 @@
 
 	(method (cue)
 		(super cue:)
-		(TPrint 510 54 67 -1 185) ; "(You wonder if his French accent could be fake?)"
+		(TPrint 510 54 #at -1 185) ; "(You wonder if his French accent could be fake?)"
 	)
 
 	(method (doVerb theVerb invItem)
@@ -890,9 +890,9 @@
 			(3 ; Do
 				(Say gEgo 510 55) ; "Hello," you say to the maitre d', "do you have a table for a guy like me?"
 				(if (gEgo has: 14) ; Membership_Tape
-					(Say the_maitre_d_ 510 56 108) ; ""Just use the membership tape I created for you," he replies."
+					(Say the_maitre_d_ 510 56 #dispose) ; ""Just use the membership tape I created for you," he replies."
 				else
-					(Say the_maitre_d_ 510 57 108) ; "Please keep your hands off me," says the maitre d'. "I'm for the use of members only!"
+					(Say the_maitre_d_ 510 57 #dispose) ; "Please keep your hands off me," says the maitre d'. "I'm for the use of members only!"
 				)
 			)
 			(5 ; Talk
@@ -900,7 +900,7 @@
 			)
 			(4 ; Inventory
 				(if (== ((Inv at: 14) owner:) 510) ; Membership_Tape
-					(Say the_maitre_d_ 510 58 108) ; "Why don't you get your tape out of the machine?"
+					(Say the_maitre_d_ 510 58 #dispose) ; "Why don't you get your tape out of the machine?"
 				else
 					(switch invItem
 						(12 ; Money
@@ -910,26 +910,26 @@
 						(13 ; Credit_Cards
 							(if (== ((Inv at: 14) state:) 1) ; Membership_Tape
 								(Say gEgo 510 59) ; "You know, I'd really love to be rid of all these troublesome credit cards," you tell the maitre d'. "Would you be willing to trade them for a table inside?"
-								(Say the_maitre_d_ 510 60 108) ; "But, of course, Sir!" he replies, snapping to attention. "I always have a soft spot for a fine fellow like you!"
+								(Say the_maitre_d_ 510 60 #dispose) ; "But, of course, Sir!" he replies, snapping to attention. "I always have a soft spot for a fine fellow like you!"
 								(Points 5 108)
 								((Inv at: 14) state: 2) ; Membership_Tape
 								(gEgo put: 13) ; Credit_Cards
 								(= okToMakeTape 1)
 								(gCurRoom setScript: sMD)
 							else
-								(Say the_maitre_d_ 510 61 108) ; ""You might want to save these, Sir," he replies. "You may need them later."
+								(Say the_maitre_d_ 510 61 #dispose) ; ""You might want to save these, Sir," he replies. "You may need them later."
 							)
 						)
 						(6 ; Hard_Disk_Cafe_Napkin
 							(Say gEgo 510 62) ; "Would you mind throwing this away for me," you say, "Now that I know how to get here I don't need it any more."
-							(Say the_maitre_d_ 510 63 108 139 self) ; ""Wee, wee, moisture!" he replies."
+							(Say the_maitre_d_ 510 63 #dispose #caller self) ; ""Wee, wee, moisture!" he replies."
 							(gEgo put: 6 gCurRoomNum) ; Hard_Disk_Cafe_Napkin
 							(gTheIconBar disable: 6 curIcon: (gTheIconBar at: 0))
 							(gGame setCursor: ((gTheIconBar curIcon:) cursor:))
 						)
 						(11 ; DayTrotter
 							(Say gEgo 510 64) ; ""Would you like to see my appointment calendar for the next year?" you ask the maitre d'."
-							(Say the_maitre_d_ 510 65 108) ; ""Hardly," he sniffs."
+							(Say the_maitre_d_ 510 65 #dispose) ; ""Hardly," he sniffs."
 						)
 						(else
 							(super doVerb: theVerb invItem &rest)

@@ -839,7 +839,7 @@
 					loop: (+ (if local45 3 else 0) (- local28 1))
 					cel: 0
 					cycleSpeed: 3
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: End
 					setMotion: 0
 				)
@@ -1154,7 +1154,7 @@
 						loop: (+ (if local45 0 else 3) (- local28 1))
 						cel: 0
 						cycleSpeed: 3
-						illegalBits: -32768
+						illegalBits: $8000
 						setCycle: End
 						setMotion: 0
 					)
@@ -1574,7 +1574,7 @@
 					loop: (if local45 1 else 4)
 					setCel: 0
 					cycleSpeed: 3
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: End self
 					setMotion: 0
 				)

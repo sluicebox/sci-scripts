@@ -1147,7 +1147,7 @@
 				(gEgo setMotion: MoveTo temp0 temp1 self)
 			)
 			(2
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HandsOn)
 				(self dispose:)
 			)

@@ -160,7 +160,7 @@
 			setCel: -1
 			posn: 0 0
 			ignoreActors: 0
-			illegalBits: -32768
+			illegalBits: $8000
 			init:
 		)
 		(= global131 33)

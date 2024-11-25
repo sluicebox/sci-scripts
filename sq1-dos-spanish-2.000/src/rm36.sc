@@ -222,7 +222,7 @@
 			y: 225
 			xStep: 3
 			yStep: 3
-			illegalBits: 16384
+			illegalBits: $4000
 			ignoreActors: 0
 			setPri: 10
 			normal: 0

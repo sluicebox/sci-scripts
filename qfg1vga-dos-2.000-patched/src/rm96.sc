@@ -962,7 +962,7 @@
 			(9
 				(gEgo x: (- (gEgo x:) 4))
 				(HandsOn)
-				(gEgo setLoop: 1 illegalBits: -32768)
+				(gEgo setLoop: 1 illegalBits: $8000)
 				(NormalEgo)
 				(ClearFlag 260)
 				(gGame setSpeed: local79)
@@ -1054,7 +1054,7 @@
 			)
 			(3
 				(HandsOn)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(ClearFlag 263)
 				(client setScript: 0)
 			)
@@ -1514,7 +1514,7 @@
 			)
 			(5
 				(LoadMany 0 128 296)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(gMessager say: 7 0 8 0 self) ; "You behold a most fascinating place."
 			)
 			(6
@@ -1753,7 +1753,7 @@
 					((ScriptID 98 19) setPri: -1) ; bhindDoor7
 					(SetFlag 264)
 				)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HandsOn)
 				(client setScript: 0)
 			)

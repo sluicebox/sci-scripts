@@ -343,7 +343,7 @@
 		(= gCurRoomNum newRoomNumber)
 		(= gNewRoomNum newRoomNumber)
 		(self startRoom: gCurRoomNum)
-		(while ((= temp5 (Event new: 3)) type:)
+		(while ((= temp5 (Event new: evMOUSE)) type:)
 			(temp5 dispose:)
 		)
 		(temp5 dispose:)

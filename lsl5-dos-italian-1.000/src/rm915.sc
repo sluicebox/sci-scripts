@@ -79,10 +79,10 @@
 			(10 ; Zipper
 				(switch (Random 1 2)
 					(1
-						(Say Chi_Chi_Lambada 915 3 108) ; "Don't rush me, Big Guy!" says Chi Chi. "You've still got a little plaque on those bicuspids."
+						(Say Chi_Chi_Lambada 915 3 #dispose) ; "Don't rush me, Big Guy!" says Chi Chi. "You've still got a little plaque on those bicuspids."
 					)
 					(2
-						(Say Chi_Chi_Lambada 915 4 108) ; "Perhaps... if you'll just hold still a little while."
+						(Say Chi_Chi_Lambada 915 4 #dispose) ; "Perhaps... if you'll just hold still a little while."
 					)
 				)
 			)
@@ -127,19 +127,19 @@
 			(1
 				(switch (++ talkCounter)
 					(1
-						(Say gEgo 915 7 108 self) ; "Oh, Chi Chi," you say, "has anyone ever told you you're beautiful?"
+						(Say gEgo 915 7 #dispose self) ; "Oh, Chi Chi," you say, "has anyone ever told you you're beautiful?"
 					)
 					(2
-						(Say gEgo 915 8 108 self) ; ""Does the name `Bucky Beaver' mean anything to you?" you ask Chi Chi."
+						(Say gEgo 915 8 #dispose self) ; ""Does the name `Bucky Beaver' mean anything to you?" you ask Chi Chi."
 					)
 					(3
-						(Say Chi_Chi_Lambada 915 9 108 139 self) ; ""Oh, I do hope illegal actions don't bother you, Larry!" says Chi Chi."
+						(Say Chi_Chi_Lambada 915 9 #dispose #caller self) ; ""Oh, I do hope illegal actions don't bother you, Larry!" says Chi Chi."
 					)
 					(4
-						(TPrint 915 10 67 -1 185 108 self) ; "Waiting until your mouth is full of equipment, Chi Chi asks you a question."
+						(TPrint 915 10 #at -1 185 #dispose self) ; "Waiting until your mouth is full of equipment, Chi Chi asks you a question."
 					)
 					(5
-						(Say Chi_Chi_Lambada 915 11 108 139 self) ; "I hope it doesn't bother you if I occasionally rub up against your elbow... like this. Sometimes when I hear that salsa music, I get so excited I just can't control myself!"
+						(Say Chi_Chi_Lambada 915 11 #dispose #caller self) ; "I hope it doesn't bother you if I occasionally rub up against your elbow... like this. Sometimes when I hear that salsa music, I get so excited I just can't control myself!"
 					)
 				)
 			)
@@ -149,29 +149,29 @@
 			(3
 				(switch talkCounter
 					(1
-						(Say Chi_Chi_Lambada 915 12 108) ; "Yes."
+						(Say Chi_Chi_Lambada 915 12 #dispose) ; "Yes."
 						(= ticks 123)
 					)
 					(2
-						(Say Chi_Chi_Lambada 915 13 108) ; ""Well, I suppose I've heard worse!" she responds."
+						(Say Chi_Chi_Lambada 915 13 #dispose) ; ""Well, I suppose I've heard worse!" she responds."
 						(= ticks 123)
 					)
 					(3
-						(Say gEgo 915 14 108 self) ; ""Well, I dunno," you respond."
+						(Say gEgo 915 14 #dispose self) ; ""Well, I dunno," you respond."
 					)
 					(4
-						(Say Chi_Chi_Lambada 915 15 108) ; "Have you ever considered dental floss an aphrodisiac?"
+						(Say Chi_Chi_Lambada 915 15 #dispose) ; "Have you ever considered dental floss an aphrodisiac?"
 						(= ticks 123)
 					)
 					(5
-						(Say gEgo 915 16 108 self) ; ""I know what you mean," you say."
+						(Say gEgo 915 16 #dispose self) ; ""I know what you mean," you say."
 					)
 				)
 			)
 			(4
 				(switch talkCounter
 					(1
-						(TPrint 915 17 67 -1 185 108 self) ; "(You're going to have to do better than that line, Larry!)"
+						(TPrint 915 17 #at -1 185 #dispose self) ; "(You're going to have to do better than that line, Larry!)"
 					)
 					(2
 						(HandsOn)
@@ -179,11 +179,11 @@
 						(= closeUpSecs 30)
 					)
 					(3
-						(Say Chi_Chi_Lambada 915 18 108) ; "Oh, nothing much, I suppose. I really meant to jump in on that amnesty deal a few years ago, but I just forgot, I guess."
+						(Say Chi_Chi_Lambada 915 18 #dispose) ; "Oh, nothing much, I suppose. I really meant to jump in on that amnesty deal a few years ago, but I just forgot, I guess."
 						(= ticks 123)
 					)
 					(4
-						(Say gEgo 915 19 108 self) ; ""Owefggh wfqqafd," you reply."
+						(Say gEgo 915 19 #dispose self) ; ""Owefggh wfqqafd," you reply."
 					)
 					(5
 						(SetFlag 51) ; fScoredCC
@@ -200,7 +200,7 @@
 						(= closeUpSecs 30)
 					)
 					(3
-						(Say gEgo 915 20 108 self) ; "Amnesty? Chi Chi?" you interject. "Are you an `undocumented worker?'"
+						(Say gEgo 915 20 #dispose self) ; "Amnesty? Chi Chi?" you interject. "Are you an `undocumented worker?'"
 					)
 					(4
 						(HandsOn)
@@ -210,19 +210,19 @@
 				)
 			)
 			(6
-				(Say Chi_Chi_Lambada 915 21 108 139 self) ; "Yes, I guess I am," she replies. "Although I'd do anything for the man who could help me become a citizen."
+				(Say Chi_Chi_Lambada 915 21 #dispose #caller self) ; "Yes, I guess I am," she replies. "Although I'd do anything for the man who could help me become a citizen."
 			)
 			(7
 				(= ticks 60)
 			)
 			(8
-				(Say Chi_Chi_Lambada 915 22 108 139 self) ; "Say," she pauses and looks deep into your eyes, "you wouldn't have any ideas about this, would you?"
+				(Say Chi_Chi_Lambada 915 22 #dispose #caller self) ; "Say," she pauses and looks deep into your eyes, "you wouldn't have any ideas about this, would you?"
 			)
 			(9
 				(= ticks 60)
 			)
 			(10
-				(Say gEgo 915 23 108 self) ; "Uh, no, I can't think of anything right now," you say with a grin. "But if something pops up, I feel certain I'll think of you!"
+				(Say gEgo 915 23 #dispose self) ; "Uh, no, I can't think of anything right now," you say with a grin. "But if something pops up, I feel certain I'll think of you!"
 			)
 			(11
 				(HandsOn)
@@ -377,7 +377,7 @@
 				(= cycles 2)
 			)
 			(1
-				(Say Chi_Chi_Lambada 915 26 108 139 self) ; "If you've stared at me long enough, Mr. Laffer, it's time for me to get back into your mouth!"
+				(Say Chi_Chi_Lambada 915 26 #dispose #caller self) ; "If you've stared at me long enough, Mr. Laffer, it's time for me to get back into your mouth!"
 			)
 			(2
 				(= ticks 30)
@@ -414,7 +414,7 @@
 				(= cycles 2)
 			)
 			(1
-				(Say Chi_Chi_Lambada 915 27 108 139 self) ; "Hey! Just a minute here! If anybody's going to undo my button, it's me!"
+				(Say Chi_Chi_Lambada 915 27 #dispose #caller self) ; "Hey! Just a minute here! If anybody's going to undo my button, it's me!"
 			)
 			(2
 				(boobs hide:)
@@ -456,7 +456,7 @@
 				(= cycles 2)
 			)
 			(1
-				(Say Chi_Chi_Lambada 915 28 108 139 self) ; "Hey! What do you think you're doing?!"
+				(Say Chi_Chi_Lambada 915 28 #dispose #caller self) ; "Hey! What do you think you're doing?!"
 			)
 			(2
 				(= ticks 20)
@@ -491,13 +491,13 @@
 				(= cycles 2)
 			)
 			(1
-				(Say gEgo 915 29 108 self) ; ""You know, Chi Chi, I bet a girl like you could use something like this," you say, offering her the green card you "found" at the airport."
+				(Say gEgo 915 29 #dispose self) ; ""You know, Chi Chi, I bet a girl like you could use something like this," you say, offering her the green card you "found" at the airport."
 			)
 			(2
 				(= ticks 60)
 			)
 			(3
-				(Say Chi_Chi_Lambada 915 30 108 139 self) ; "Could I?" says Chi Chi. "Oh, Larry! You've made me the happiest woman in Miami. Now I'll be able to move to Central California!"
+				(Say Chi_Chi_Lambada 915 30 #dispose #caller self) ; "Could I?" says Chi Chi. "Oh, Larry! You've made me the happiest woman in Miami. Now I'll be able to move to Central California!"
 			)
 			(4
 				(herMouth dispose:)

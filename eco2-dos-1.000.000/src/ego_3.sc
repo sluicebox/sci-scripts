@@ -53,7 +53,7 @@
 			setCycle: StopWalk -1
 			setStep: 3 2
 			z: 0
-			illegalBits: -32768
+			illegalBits: $8000
 			ignoreActors: 0
 			setSpeed: global136
 		)

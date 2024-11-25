@@ -914,7 +914,7 @@
 	)
 
 	(method (replay &tmp temp0)
-		(MemorySegment 1 @global190)
+		(MemorySegment 1 @global190) ; MS_RESTORE_TO
 		(= global170 (StrAt @global190 0))
 		(= gHowFast (- (StrAt @global190 1) 32))
 		(StrAt gCurSaveDir 0 (- (StrAt @global190 2) 1))
@@ -974,7 +974,7 @@
 	(method (doit &tmp temp0 temp1 temp2 temp3 temp4 temp5)
 		(= global248 (+ (GetTime) gSpeed -1))
 		(= temp0 1)
-		(= temp3 (Event new: -1))
+		(= temp3 (Event new: $ffff)) ; evPEEK | evALL_EVENTS
 		(temp3 localize:)
 		(if (not global107)
 			(cond
@@ -1117,7 +1117,7 @@
 		(FlushResources newRoomNumber)
 		(self startRoom: gCurRoomNum checkAni:)
 		(Empty gRegions)
-		(while ((= temp5 (Event new: 3)) type:)
+		(while ((= temp5 (Event new: evMOUSE)) type:)
 			(temp5 dispose:)
 		)
 		(temp5 dispose:)
@@ -2000,7 +2000,7 @@
 						(= global166 2)
 					else
 						(global129
-							illegalBits: -32768
+							illegalBits: $8000
 							setMotion: MoveTo (gEgo x:) (gEgo y:) self
 						)
 					)
@@ -2074,7 +2074,7 @@
 			)
 			(2
 				(global129
-					illegalBits: -32764
+					illegalBits: $8004
 					setMotion: NewFollow gEgo 30
 					setScript: (if (IsObject gWave) gWave else 0)
 				)

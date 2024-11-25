@@ -435,7 +435,7 @@
 				sel_73: 0
 				sel_147: 0
 			)
-			(GetEvent 32767 invEvent)
+			(GetEvent evALL_EVENTS invEvent)
 			(= gMouseX (invEvent sel_1:))
 			(= gMouseY (invEvent sel_0:))
 			(= temp8 0)

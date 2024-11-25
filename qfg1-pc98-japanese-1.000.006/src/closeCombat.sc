@@ -47,7 +47,7 @@
 	(method (handleEvent event &tmp temp0 temp1 temp2 temp3)
 		(if (or (not (client canFight:)) (not global266))
 			(event claimed: 1)
-			(while ((= temp3 (Event new: 71)) type:)
+			(while ((= temp3 (Event new: $0047)) type:) ; direction | evMOUSEKEYBOARD | evMOUSERELEASE
 				(temp3 dispose:)
 			)
 			(temp3 dispose:)

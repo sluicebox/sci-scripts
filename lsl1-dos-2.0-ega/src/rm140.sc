@@ -88,7 +88,7 @@
 				(gEgo posn: 40 160)
 			)
 		)
-		(gEgo init: illegalBits: -32768)
+		(gEgo init: illegalBits: $8000)
 		(super init:)
 		(if (IsFlag 42) ; fTVOn
 			(gTheMusic

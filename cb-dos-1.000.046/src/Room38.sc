@@ -156,11 +156,11 @@
 					(soundFX number: 44 play:)
 				)
 			)
-			(gEgo view: 0 illegalBits: -32732 setPri: -1 init:)
+			(gEgo view: 0 illegalBits: $8024 setPri: -1 init:)
 		else
 			(gEgo
 				view: 0
-				illegalBits: -32768
+				illegalBits: $8000
 				setPri: 2
 				posn: 188 80
 				loop: 2
@@ -316,11 +316,11 @@
 				(if (gEgo inRect: 179 87 181 89)
 					(= cycles 1)
 				else
-					(gEgo illegalBits: -32768 setMotion: MoveTo 180 88 self)
+					(gEgo illegalBits: $8000 setMotion: MoveTo 180 88 self)
 				)
 			)
 			(2
-				(gEgo illegalBits: -32768 setMotion: MoveTo 180 82 self)
+				(gEgo illegalBits: $8000 setMotion: MoveTo 180 82 self)
 			)
 			(3
 				(gEgo setPri: 2)
@@ -351,7 +351,7 @@
 				(gEgo setMotion: MoveTo 179 90 self)
 			)
 			(2
-				(gEgo setPri: -1 illegalBits: -32732)
+				(gEgo setPri: -1 illegalBits: $8024)
 				(Door setMotion: MoveTo 180 84 self)
 				(soundFX number: 75 play:)
 			)
@@ -426,7 +426,7 @@
 				(gEgo
 					view: 11
 					loop: 0
-					illegalBits: -32732
+					illegalBits: $8024
 					cycleSpeed: 0
 					setCycle: Walk
 				)

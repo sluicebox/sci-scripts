@@ -58,7 +58,7 @@
 				baseSetter: 0
 				view: 4
 				setStep: 4 1
-				illegalBits: -16384
+				illegalBits: $c000
 				init:
 			)
 			(= local0 0)
@@ -73,7 +73,7 @@
 				baseSetter: (ScriptID 0 1) ; smallBase
 				view: 4
 				setStep: 4 1
-				illegalBits: -32768
+				illegalBits: $8000
 				setPri: 12
 				init:
 			)
@@ -83,11 +83,11 @@
 
 	(method (doit)
 		(if (& (gEgo onControl: 0) $0040)
-			(gEgo setPri: -1 illegalBits: -32768 baseSetter: 0)
+			(gEgo setPri: -1 illegalBits: $8000 baseSetter: 0)
 			(gCurRoom newRoom: 91)
 		)
 		(if (& (gEgo onControl: 0) $0020)
-			(gEgo setPri: -1 illegalBits: -32768 baseSetter: 0)
+			(gEgo setPri: -1 illegalBits: $8000 baseSetter: 0)
 			(gCurRoom newRoom: 85)
 		)
 		(if
@@ -110,11 +110,11 @@
 					(gEgo
 						baseSetter: (ScriptID 0 1) ; smallBase
 						setPri: -1
-						illegalBits: -16384
+						illegalBits: $c000
 					)
 					(= local0 0)
 				else
-					(gEgo baseSetter: 0 illegalBits: -32768 setPri: 12)
+					(gEgo baseSetter: 0 illegalBits: $8000 setPri: 12)
 					(= local0 1)
 				)
 			)
@@ -198,7 +198,7 @@
 				(gEgo
 					view: 4
 					baseSetter: 0
-					illegalBits: -16384
+					illegalBits: $c000
 					setPri: -1
 					setCycle: Walk
 				)

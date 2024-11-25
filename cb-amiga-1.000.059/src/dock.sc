@@ -297,7 +297,7 @@
 				(= seconds (Random 3 8))
 			)
 			(2
-				(Frog loop: 6 posn: 112 106 illegalBits: 1 setCycle: Beg self)
+				(Frog loop: 6 posn: 112 106 illegalBits: $0001 setCycle: Beg self)
 			)
 			(3
 				(Frog loop: 5 setCycle: Fwd)

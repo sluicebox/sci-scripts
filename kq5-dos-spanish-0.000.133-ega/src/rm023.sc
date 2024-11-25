@@ -47,7 +47,7 @@
 		)
 		(gEgo
 			view: 0
-			illegalBits: -32768
+			illegalBits: $8000
 			normal: 1
 			setCycle: SyncWalk
 			setLoop: -1

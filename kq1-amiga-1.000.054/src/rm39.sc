@@ -471,7 +471,7 @@
 				(gGoat setStep: 3 2 setMotion: MoveTo 340 110 self)
 			)
 			(13
-				(gEgo illegalBits: -32768 setLoop: -1)
+				(gEgo illegalBits: $8000 setLoop: -1)
 				(HandsOn)
 				(ClearFlag 2)
 				(SetFlag 5)

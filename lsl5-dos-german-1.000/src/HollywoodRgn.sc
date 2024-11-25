@@ -41,7 +41,7 @@
 			(2
 				(TPrint 40 2) ; "I remember a woman named Patti; something about an island; and, and... a gig as a computer game programmer?" you think. "What's going on?"
 				(TPrint 40 3) ; "How did I end up in Hollywood--and what am I supposed to be doing here?" you sigh. "I'm so confused!"
-				(TPrint 40 4 67 -1 185) ; "(Of course, you're quite accustomed to being confused!)"
+				(TPrint 40 4 #at -1 185) ; "(Of course, you're quite accustomed to being confused!)"
 				(= seconds 120)
 			)
 			(3

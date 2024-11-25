@@ -121,7 +121,7 @@
 	(method (handleEvent event)
 		(cond
 			((super handleEvent: event))
-			((== (event type:) $0400) ; evNULL | $0400
+			((== (event type:) $0400)
 				(if (and local47 (!= (event message:) JOY_UP))
 					(proc396_0 5 339 1) ; "SIR, ENEMY DESTROYER NOT SHOWING ON SONAR"
 				else

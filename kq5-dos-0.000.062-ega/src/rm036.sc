@@ -42,7 +42,7 @@
 				(gEgo posn: 15 169)
 			)
 		)
-		(gEgo view: 10 setStep: 3 2 illegalBits: -32768 heading: 90 init:)
+		(gEgo view: 10 setStep: 3 2 illegalBits: $8000 heading: 90 init:)
 		(if (!= ((gInventory at: 2) owner:) 36) ; Pie
 			(yeti
 				moveSpeed: 1

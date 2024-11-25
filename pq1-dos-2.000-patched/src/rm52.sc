@@ -172,7 +172,7 @@
 				)
 				(HandsOn)
 				(NormalEgo)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 			)
 			(51
 				(self setScript: sEnterFromLobby)
@@ -777,7 +777,7 @@
 					(alex setCel: 0 setLoop: 0 setCycle: 0)
 				)
 				(NormalEgo)
-				(gEgo loop: 7 illegalBits: -32768)
+				(gEgo loop: 7 illegalBits: $8000)
 				(= cycles 2)
 			)
 			(6
@@ -850,7 +850,7 @@
 				(if (!= (alex status:) 8)
 					(HandsOn)
 					(NormalEgo)
-					(gEgo illegalBits: -32768)
+					(gEgo illegalBits: $8000)
 					((ScriptID 151 4) status: 1) ; marie
 					(self dispose:)
 				else
@@ -881,7 +881,7 @@
 					(alex status: 5 setScript: sBarTender)
 					((ScriptID 151 4) setCycle: Beg) ; marie
 					(NormalEgo)
-					(gEgo illegalBits: -32768)
+					(gEgo illegalBits: $8000)
 					(HandsOn)
 					(self dispose:)
 				)
@@ -1000,7 +1000,7 @@
 			(2
 				(HandsOn)
 				(NormalEgo)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(self dispose:)
 			)
 		)
@@ -1025,7 +1025,7 @@
 			)
 			(1
 				(NormalEgo)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HandsOn)
 				(self dispose:)
 			)
@@ -1213,7 +1213,7 @@
 				(alex status: 5 setScript: sBarTender)
 				(HandsOn)
 				(NormalEgo)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(= local5 0)
 				(self dispose:)
 			)
@@ -1381,7 +1381,7 @@
 			(2
 				(HandsOn)
 				(NormalEgo)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(= local5 0)
 				(if (not register)
 					(alex status: 5 setScript: sBarTender)
@@ -1401,7 +1401,7 @@
 		(switch (= state newState)
 			(0
 				(NormalEgo)
-				(gEgo illegalBits: -32768 setMotion: PolyPath 189 92 self)
+				(gEgo illegalBits: $8000 setMotion: PolyPath 189 92 self)
 			)
 			(1
 				(gEgo setLoop: 8 setCel: 3)

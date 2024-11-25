@@ -43,7 +43,7 @@
 	(method (init)
 		(super init:)
 		(LoadMany rsVIEW 172 772 472 471 572)
-		(guard illegalBits: -32704 setAvoider: Avoid setCycle: Walk init: hide:)
+		(guard illegalBits: $8040 setAvoider: Avoid setCycle: Walk init: hide:)
 		(if (not local3)
 			(= local3 20)
 		)
@@ -151,7 +151,7 @@
 				(self setScript: disMountScript self)
 			)
 			(3
-				(guard illegalBits: -32704 setMotion: Chase gEgo 40 self)
+				(guard illegalBits: $8040 setMotion: Chase gEgo 40 self)
 			)
 			(4
 				(self setScript: arabicScript self)
@@ -175,7 +175,7 @@
 				(guard
 					view: 472
 					show:
-					illegalBits: -32704
+					illegalBits: $8040
 					posn: local0 local1
 					setLoop: Grooper
 					loop: local2

@@ -67,13 +67,13 @@
 		(gAddToPics add: trunk eachElementDo: #init doit:)
 		(switch gPrevRoomNum
 			(west
-				(gEgo posn: 14 58 illegalBits: -32512 loop: 0)
+				(gEgo posn: 14 58 illegalBits: $8100 loop: 0)
 				(proc0_1)
 			)
 			(else
 				(gEgo
 					ignoreActors:
-					illegalBits: -32768
+					illegalBits: $8000
 					posn: 204 20
 					setMotion: MoveTo 204 130
 					setCycle: Fwd
@@ -99,7 +99,7 @@
 					(> (gEgo y:) 158)
 					(< (gEgo x:) 140)
 				)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 			else
 				(gEgo illegalBits: 0)
 			)
@@ -214,7 +214,7 @@
 						(gEgo
 							show:
 							view: 13
-							illegalBits: -24576
+							illegalBits: $a000
 							setStep: 1 1
 							setCycle: Fwd
 							setLoop: -1
@@ -529,7 +529,7 @@
 				(gEgo
 					show:
 					posn: 73 57
-					illegalBits: -24576
+					illegalBits: $a000
 					setStep: 1 1
 					view: 13
 					setCycle: Fwd
@@ -567,7 +567,7 @@
 				(proc0_1)
 				(gEgo
 					loop: 1
-					illegalBits: -32512
+					illegalBits: $8100
 					setMotion: MoveTo 32 54 self
 				)
 			)
@@ -646,7 +646,7 @@
 					view: 13
 					setLoop: -1
 					setCycle: Fwd
-					illegalBits: -24576
+					illegalBits: $a000
 					posn: 72 59
 					setMotion: MoveTo 73 57 self
 				)
@@ -709,7 +709,7 @@
 				(HandsOn)
 				((ScriptID 0 23) stop:) ; backSound
 				(gEgo
-					illegalBits: -24576
+					illegalBits: $a000
 					view: 13
 					setLoop: -1
 					cycleSpeed: 0
@@ -746,7 +746,7 @@
 				(gEgo
 					show:
 					view: 13
-					illegalBits: -24576
+					illegalBits: $a000
 					setStep: 1 1
 					setCycle: Fwd
 					setLoop: -1

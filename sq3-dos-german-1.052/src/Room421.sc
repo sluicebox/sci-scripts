@@ -622,7 +622,7 @@
 					view: 0
 					setLoop: -1
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 					observeControl: 16384
 					posn: 56 129
 					setPri: -1

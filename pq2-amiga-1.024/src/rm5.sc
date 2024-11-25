@@ -109,7 +109,7 @@
 					init:
 					setMotion: MoveTo 141 140
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				((= local0 (Prop new:))
 					view: 67
@@ -236,7 +236,7 @@
 			)
 			(12
 				(HandsOn)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(local4 setCycle: Beg self)
 			)
 			(13

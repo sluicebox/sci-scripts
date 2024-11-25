@@ -193,7 +193,7 @@
 				(gEgo inRect: 152 77 176 109)
 				(gEgo inRect: 159 109 184 140)
 			)
-			(gEgo setPri: 10 illegalBits: 8192)
+			(gEgo setPri: 10 illegalBits: $2000)
 			(if (== global131 13)
 				(global112 stopUpd:)
 			)
@@ -209,7 +209,7 @@
 					(global112 startUpd:)
 				)
 			)
-			(gEgo xStep: 3 yStep: 2 illegalBits: -32768)
+			(gEgo xStep: 3 yStep: 2 illegalBits: $8000)
 		)
 		(if
 			(and
@@ -390,7 +390,7 @@
 						posn: 190 195
 						setCycle: Walk
 						setAvoider: (Avoid new:)
-						illegalBits: -32768
+						illegalBits: $8000
 					)
 				)
 				(cond
@@ -926,7 +926,7 @@
 						setLoop: -1
 						setPri: -1
 						ignoreActors: 0
-						illegalBits: -32768
+						illegalBits: $8000
 						setMotion: MoveTo 180 197 self
 					)
 				)
@@ -943,21 +943,21 @@
 						((> (global112 y:) 189)
 							(global112
 								ignoreActors:
-								illegalBits: -32768
+								illegalBits: $8000
 								setMotion: MoveTo 185 (global112 y:) self
 							)
 						)
 						((< (global112 x:) 110)
 							(global112
 								ignoreActors:
-								illegalBits: -32768
+								illegalBits: $8000
 								setMotion: MoveTo 110 (global112 y:) self
 							)
 						)
 						(else
 							(global112
 								ignoreActors:
-								illegalBits: -32768
+								illegalBits: $8000
 								setMotion: MoveTo 105 (global112 y:) self
 							)
 						)
@@ -971,14 +971,14 @@
 					((== (global112 x:) 110)
 						(global112
 							ignoreActors:
-							illegalBits: -32768
+							illegalBits: $8000
 							setMotion: MoveTo 110 195 self
 						)
 					)
 					((== (global112 x:) 105)
 						(global112
 							ignoreActors:
-							illegalBits: -32768
+							illegalBits: $8000
 							setMotion: MoveTo 105 195 self
 						)
 					)

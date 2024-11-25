@@ -877,7 +877,7 @@
 					setCel: -1
 					loop: 0
 					cel: 1
-					illegalBits: -32768
+					illegalBits: $8000
 					setScript: 0
 				)
 				(HandsOn)
@@ -922,7 +922,7 @@
 					loop: 0
 					cel: 1
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 					setScript: 0
 				)
 			)

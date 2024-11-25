@@ -43,7 +43,7 @@
 			(Load rsVIEW 316)
 			(aHench
 				view: gCurrentHenchView
-				illegalBits: -32768
+				illegalBits: $8000
 				setCycle: Walk
 				init:
 				setScript: henchScript

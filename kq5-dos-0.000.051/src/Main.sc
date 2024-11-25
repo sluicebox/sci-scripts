@@ -555,7 +555,7 @@
 		setStep: 3 2
 		offset: 3
 		normal: 1
-		illegalBits: -32768
+		illegalBits: $8000
 		ignoreActors: 0
 	)
 )
@@ -1429,7 +1429,7 @@
 										(while
 											(==
 												evNULL
-												((= event (Event new: 32765))
+												((= event (Event new: $7ffd)) ; evVERB | evHELP | evMOVE | evJOYUP | evJOYDOWN | evSAID | direction | evMENUHIT | evMENUSTART | evKEYUP | evMOUSEKEYBOARD | $0c00
 													type:
 												)
 											)

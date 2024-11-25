@@ -54,7 +54,7 @@
 		(aHandle init:)
 		(aHeads init: hide:)
 		(aChair stopUpd: init:)
-		(aBarber setCycle: Walk illegalBits: -32768 init:)
+		(aBarber setCycle: Walk illegalBits: $8000 init:)
 		(NormalEgo 3)
 		(gEgo posn: 160 159 init:)
 		(self setRegions: 7 200 setScript: rm125Script) ; rm7, rm200
@@ -383,7 +383,7 @@
 					posn: 182 114
 					loop: 2
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(gEgo
 					view: 232

@@ -141,7 +141,7 @@
 				(gEgo setCycle: End self)
 			)
 			(3
-				(gEgo illegalBits: -32768 setCel: 0)
+				(gEgo illegalBits: $8000 setCel: 0)
 				(HandsOn)
 				(self dispose:)
 			)

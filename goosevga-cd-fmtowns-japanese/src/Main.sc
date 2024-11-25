@@ -480,7 +480,7 @@
 		setMotion: 0
 		setCycle: Walk
 		setStep: 3 2
-		illegalBits: -32768
+		illegalBits: $8000
 		ignoreActors: 0
 	)
 )
@@ -769,7 +769,7 @@
 	)
 
 	(method (replay)
-		(MemorySegment 1 @global190)
+		(MemorySegment 1 @global190) ; MS_RESTORE_TO
 		(= global170 (StrAt @global190 0))
 		(= global157 (- (StrAt @global190 1) 32))
 		(StrAt gCurSaveDir 0 (- (StrAt @global190 2) 1))
@@ -780,7 +780,7 @@
 
 	(method (doit &tmp temp0 temp1 temp2 temp3)
 		(= temp0 (HaveMouse))
-		(= temp3 (Event new: -1))
+		(= temp3 (Event new: $ffff)) ; evPEEK | evALL_EVENTS
 		(if (not global107)
 			(cond
 				(global104
@@ -1005,7 +1005,7 @@
 	(method (track param1 &tmp temp0 temp1 temp2 temp3)
 		(if (== 1 (param1 type:))
 			(repeat
-				(= param1 (Event new: -32768))
+				(= param1 (Event new: evPEEK))
 				(param1 localize:)
 				(= temp0 (* (/ (= temp0 (param1 y:)) 3) 3))
 				(= temp2
@@ -1068,7 +1068,7 @@
 	(method (track param1 &tmp temp0 temp1 temp2 temp3)
 		(if (== 1 (param1 type:))
 			(repeat
-				(= param1 (Event new: -32768))
+				(= param1 (Event new: evPEEK))
 				(param1 localize:)
 				(= temp0 (* (/ (= temp0 (param1 y:)) 3) 3))
 				(= temp2
@@ -1119,7 +1119,7 @@
 
 	(method (track param1 &tmp temp0)
 		(repeat
-			(= param1 (Event new: -32768))
+			(= param1 (Event new: evPEEK))
 			(param1 localize:)
 			(if (and (= temp0 (self check: param1)) (< cel 2))
 				(++ value)
@@ -1181,7 +1181,7 @@
 
 	(method (track param1 &tmp temp0)
 		(repeat
-			(= param1 (Event new: -32768))
+			(= param1 (Event new: evPEEK))
 			(param1 localize:)
 			(if (and (= temp0 (self check: param1)) (< cel 2))
 				(++ value)
@@ -1487,7 +1487,7 @@
 					signal: (& (global129 signal:) register)
 					setPri: -1
 					setLoop: -1
-					illegalBits: -32768
+					illegalBits: $8000
 					setMotion: NewFollow gEgo 30 species 0
 				)
 				(= global166 0)

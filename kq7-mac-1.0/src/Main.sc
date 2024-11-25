@@ -691,7 +691,7 @@
 		(= global322 (MemoryInfo 0))
 		(ClearFlag 551)
 		(= temp12 (Event new:))
-		(GetEvent 32767 temp12)
+		(GetEvent evALL_EVENTS temp12)
 		(temp12 dispose:)
 		(= speedRating (localproc_0))
 		(if (> speedRating 165)

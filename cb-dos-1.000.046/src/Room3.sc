@@ -90,7 +90,7 @@
 				(gEgo posn: 1 176)
 			)
 		)
-		(gEgo view: 0 illegalBits: -32768 init:)
+		(gEgo view: 0 illegalBits: $8000 init:)
 	)
 
 	(method (doit)
@@ -360,7 +360,7 @@
 					setPri: -1
 					setCycle: Walk
 					setLoop: 2
-					illegalBits: -32768
+					illegalBits: $8000
 					cycleSpeed: 0
 					setMotion: MoveTo 32 164 self
 				)
@@ -505,7 +505,7 @@
 					view: 0
 					loop: (if global184 1 else 2)
 					cycleSpeed: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Walk
 				)
 				(ring stopUpd:)
@@ -523,7 +523,7 @@
 					setLoop: -1
 					setCycle: Walk
 					setAvoider: (Avoid new:)
-					illegalBits: -32768
+					illegalBits: $8000
 					setMotion: MoveTo 179 167 self
 				)
 			)
@@ -580,7 +580,7 @@
 					view: 0
 					loop: 1
 					cycleSpeed: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Walk
 				)
 				(HandsOn)

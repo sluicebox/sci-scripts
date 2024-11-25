@@ -397,7 +397,7 @@
 			(2 ; Look
 				(TPrint 180 16) ; "One of your favorite pastimes here at PornProdCorp is to stand here holding the magnifier up to various parts of your anatomy."
 				(TPrint 180 17) ; "Like your fingerprints, Larry!"
-				(TPrint 180 18 67 -1 185) ; "(Shame on you for thinking thoughts like that!"
+				(TPrint 180 18 #at -1 185) ; "(Shame on you for thinking thoughts like that!"
 			)
 			(3 ; Do
 				(TPrint 180 19) ; "You move the magnifier slightly, then restore it to exactly the same spot again, all in the twinkling of a video scan!"
@@ -517,7 +517,7 @@
 		(switch theVerb
 			(3 ; Do
 				(TPrint 180 21) ; "You are afraid to turn on that fan without protective garments."
-				(TPrint 180 22 67 -1 185) ; "(And it, you!"
+				(TPrint 180 22 #at -1 185) ; "(And it, you!"
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)

@@ -917,7 +917,7 @@
 			)
 			(5
 				(HandsOn)
-				(gEgo observeControl: 16 2 -32768 illegalBits: -32768)
+				(gEgo observeControl: 16 2 -32768 illegalBits: $8000)
 				(= seconds 3)
 			)
 			(6
@@ -1417,7 +1417,7 @@
 			(3
 				(rm82Sound number: 2084 loop: 1 play:)
 				(SetFlag 272)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(= ticks 3)
 			)
 			(4

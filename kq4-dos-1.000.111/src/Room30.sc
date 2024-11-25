@@ -192,7 +192,7 @@
 				(gEgo view: 21 loop: 2 cel: 4 setCycle: Beg self)
 			)
 			(3
-				(gEgo setCycle: Walk view: 2 illegalBits: -32768)
+				(gEgo setCycle: Walk view: 2 illegalBits: $8000)
 				(HandsOn)
 				(gCurRoom setScript: 0)
 			)
@@ -329,7 +329,7 @@
 					ignoreActors: 0
 					setLoop: -1
 					loop: 1
-					illegalBits: -32768
+					illegalBits: $8000
 					setPri: -1
 					cycleSpeed: 0
 					setCycle: Walk

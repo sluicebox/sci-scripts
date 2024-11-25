@@ -28,7 +28,7 @@
 			(2
 				(Print 336 1 #at -1 1 #time 7 #dispose) ; "If you have a seat, I'll direct you to the next radio contact."
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					setMotion: Approach (ScriptID 25 4) 20 self ; controlPanelChair
 					setAvoider: Avoid
 				)

@@ -42,7 +42,7 @@
 
 	(method (doit)
 		(curEvent type: 0 message: 0 modifiers: 0 y: 0 x: 0 claimed: 0)
-		(GetEvent 32767 curEvent)
+		(GetEvent evALL_EVENTS curEvent)
 		(self handleEvent: curEvent)
 	)
 

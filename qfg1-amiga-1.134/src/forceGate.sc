@@ -123,9 +123,9 @@
 				(NormalEgo)
 				(gEgo posn: (- (gEgo x:) 9) (+ (gEgo y:) 2))
 				(if (IsFlag 238)
-					(gEgo illegalBits: -32768)
+					(gEgo illegalBits: $8000)
 				else
-					(gEgo illegalBits: -28672)
+					(gEgo illegalBits: $9000)
 				)
 				((ScriptID 93 0) notify: 3) ; rm93
 				(HandsOn)

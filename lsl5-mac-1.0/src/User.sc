@@ -66,7 +66,7 @@
 		else
 			(= temp0 1)
 		)
-		(GetEvent 32767 curEvent temp0)
+		(GetEvent evALL_EVENTS curEvent temp0)
 		(self handleEvent: curEvent)
 	)
 

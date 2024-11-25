@@ -85,7 +85,7 @@
 	)
 
 	(method (dispose)
-		(gEgo illegalBits: -32768)
+		(gEgo illegalBits: $8000)
 		(super dispose:)
 	)
 )

@@ -110,7 +110,7 @@
 			(= temp1 0)
 			(= temp2 64)
 			(repeat
-				(= event (Event new: -32768))
+				(= event (Event new: evPEEK))
 				(event localize:)
 				(if (= temp0 (self check: event))
 					(|= state temp2)

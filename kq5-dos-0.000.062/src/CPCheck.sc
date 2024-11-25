@@ -314,7 +314,7 @@
 		else
 			(while (!= (= temp7 ((= temp6 (Event new:)) type:)) evMOUSEBUTTON)
 				(temp6 dispose:)
-				(= temp6 (Event new: -1))
+				(= temp6 (Event new: $ffff)) ; evPEEK | evALL_EVENTS
 				(temp6 localize:)
 				(localproc_2 temp6)
 				(temp6 dispose:)

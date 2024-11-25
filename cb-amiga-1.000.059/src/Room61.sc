@@ -60,7 +60,7 @@
 				)
 			)
 		)
-		(gEgo view: 0 illegalBits: -32768 posn: 102 173 init:)
+		(gEgo view: 0 illegalBits: $8000 posn: 102 173 init:)
 	)
 
 	(method (doit)
@@ -156,7 +156,7 @@
 			)
 			(2
 				(= global182 1)
-				(gEgo view: 0 loop: 0 setCycle: Walk illegalBits: -32768)
+				(gEgo view: 0 loop: 0 setCycle: Walk illegalBits: $8000)
 				(HandsOn)
 			)
 		)

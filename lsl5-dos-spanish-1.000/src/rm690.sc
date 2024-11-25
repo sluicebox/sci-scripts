@@ -54,7 +54,7 @@
 			)
 			(2
 				(gTheIconBar enable:)
-				(TPrint 690 1 67 -1 28 80 {Inspector Desmond} 108 self) ; "What's she doing now, Agent Smith?"
+				(TPrint 690 1 #at -1 28 #title {Inspector Desmond} #dispose self) ; "What's she doing now, Agent Smith?"
 			)
 			(3
 				(= seconds 3)
@@ -64,24 +64,24 @@
 					(TPrint ; "Well, I dunno, Inspector Desmond, it's kinda hard to figure out. Either I'm picking up a lot of RF interference, or she's consuming way too much fluid!"
 						690
 						2
-						67
+						#at
 						-1
 						28
-						80
+						#title
 						{Agent Smith}
-						108
+						#dispose
 						self
 					)
 				else
 					(TPrint ; "Well, I dunno, Inspector Desmond, it's kinda hard to figure out. Either she's in a tunnel somewhere near Baltimore, or she's dilated 3 cm!"
 						690
 						3
-						67
+						#at
 						-1
 						28
-						80
+						#title
 						{Agent Smith}
-						108
+						#dispose
 						self
 					)
 				)

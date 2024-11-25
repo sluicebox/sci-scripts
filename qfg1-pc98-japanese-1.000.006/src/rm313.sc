@@ -808,7 +808,7 @@
 					(== (cat x:) 260)
 					(== (cat y:) 142)
 				)
-				(cat illegalBits: -32768 setScript: 0)
+				(cat illegalBits: $8000 setScript: 0)
 				(gEgo setScript: catAttack)
 			)
 			(
@@ -988,7 +988,7 @@
 			)
 			(1
 				(HandsOn)
-				(gEgo setLoop: -1 illegalBits: -32768)
+				(gEgo setLoop: -1 illegalBits: $8000)
 				(Print 313 55 #at 78 101) ; "SQUEEEEAK!"
 				(gEgo setScript: 0)
 			)
@@ -1011,7 +1011,7 @@
 			)
 			(1
 				(HandsOn)
-				(gEgo setLoop: -1 illegalBits: -32768)
+				(gEgo setLoop: -1 illegalBits: $8000)
 				(Print 313 56 #at 62 92) ; "CREEEEAAK!"
 				(gEgo setScript: 0)
 			)
@@ -1034,7 +1034,7 @@
 			)
 			(1
 				(HandsOn)
-				(gEgo setLoop: -1 illegalBits: -32768)
+				(gEgo setLoop: -1 illegalBits: $8000)
 				(Print 313 57 #at 41 88) ; "SCRAAAAWK!"
 				(HighPrint 313 58) ; "The owner of the house awakens..."
 				(Print ; "Help! Burglars! Sheriff! Help! Kitty! Kitty! \8f\95\82\af\82\c4\81I\81@\93D\96_\81I\81@\95\db\88\c0\8a\af\81I\81@\8f\95\82\af\82\c4\81I\81@\94L\82\bf\82\e1\82\f1\81I\81@\94L\82\bf\82\e1\82\f1\82\e2\81I"
@@ -1084,7 +1084,7 @@
 					(cat setScript: 0)
 				else
 					(HandsOn)
-					(gEgo setLoop: -1 illegalBits: -32768)
+					(gEgo setLoop: -1 illegalBits: $8000)
 					(gEgo setScript: 0)
 					(cat setScript: catWalk)
 				)

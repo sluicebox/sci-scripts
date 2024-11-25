@@ -684,7 +684,7 @@
 		(self show: x: temp1 y: temp2) ; UNINIT, UNINIT
 		(repeat
 			(temp0 type: evNULL message: JOY_NULL modifiers: $0000 y: 0 x: 0 claimed: 0 port: 0)
-			(GetEvent 32767 temp0)
+			(GetEvent evALL_EVENTS temp0)
 			(temp0 localize:)
 			(= temp1 (temp0 x:))
 			(= temp2 (temp0 y:))

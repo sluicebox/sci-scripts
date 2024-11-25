@@ -477,7 +477,7 @@
 			)
 			(3
 				(brazier cycleSpeed: 2)
-				(gEgo ignoreActors: 0 illegalBits: -32768)
+				(gEgo ignoreActors: 0 illegalBits: $8000)
 				(HandsOn)
 				(client setScript: 0)
 			)

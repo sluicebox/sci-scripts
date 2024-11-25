@@ -372,19 +372,19 @@
 				)
 			)
 			(1
-				(TPrint 800 0 67 -1 185 70 280 108 self) ; "Although you can't see it, the K-RAP building is quite impressive when viewed from the opposite side."
+				(TPrint 800 0 #at -1 185 #width 280 #dispose self) ; "Although you can't see it, the K-RAP building is quite impressive when viewed from the opposite side."
 			)
 			(2
 				(= ticks 180)
 			)
 			(3
-				(TPrint 800 1 67 -1 185 70 280 108 self) ; "From the tiny top floor you just entered, it stretches hundreds of feet down the hillside, in a series of cascading terraces, gardens, and patios."
+				(TPrint 800 1 #at -1 185 #width 280 #dispose self) ; "From the tiny top floor you just entered, it stretches hundreds of feet down the hillside, in a series of cascading terraces, gardens, and patios."
 			)
 			(4
 				(= ticks 180)
 			)
 			(5
-				(TPrint 800 2 67 -1 185 70 280 108 self) ; "Obviously, there's more to this place than meets the eye!"
+				(TPrint 800 2 #at -1 185 #width 280 #dispose self) ; "Obviously, there's more to this place than meets the eye!"
 			)
 			(6
 				(= ticks 180)

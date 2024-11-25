@@ -471,7 +471,7 @@
 
 	(method (dispose)
 		(super dispose:)
-		(gEgo illegalBits: -16384)
+		(gEgo illegalBits: $c000)
 	)
 
 	(method (changeState newState)
@@ -638,7 +638,7 @@
 
 	(method (dispose)
 		(super dispose:)
-		(gEgo illegalBits: -16384)
+		(gEgo illegalBits: $c000)
 	)
 
 	(method (changeState newState &tmp [str 120])

@@ -1163,14 +1163,14 @@
 )
 
 (procedure (proc0_7 &tmp temp0)
-	(while ((= temp0 (Event new: 3)) type:)
+	(while ((= temp0 (Event new: evMOUSE)) type:)
 		(temp0 dispose:)
 	)
 	(temp0 dispose:)
 )
 
 (procedure (proc0_15 &tmp temp0)
-	(while ((= temp0 (Event new: 12)) type:)
+	(while ((= temp0 (Event new: $000c)) type:) ; evKEYUP | evKEYBOARD
 		(temp0 dispose:)
 	)
 	(temp0 dispose:)

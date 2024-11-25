@@ -106,7 +106,7 @@
 				(gEgo setCycle: ForwardCounter 2 self)
 			)
 			(1
-				(TPrint 600 0 108 67 -1 20) ; "Get your hands off me!" you shout. "That's not what's meant by `personal driver!'"
+				(TPrint 600 0 #dispose #at -1 20) ; "Get your hands off me!" you shout. "That's not what's meant by `personal driver!'"
 				(gEgo setCycle: Fwd)
 				(= seconds 5)
 			)
@@ -121,7 +121,7 @@
 				(gEgo setCycle: End self)
 			)
 			(4
-				(TPrint 600 1 67 -1 20) ; "Squirming across the leather seat, you grab the door handle, fling open the door, and escape the limousine (and that chauffeur)!"
+				(TPrint 600 1 #at -1 20) ; "Squirming across the leather seat, you grab the door handle, fling open the door, and escape the limousine (and that chauffeur)!"
 				(gTheMusic fade: 0 15 12 1)
 				(gEgo dispose:)
 				(self setScript: sExitLimo)

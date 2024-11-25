@@ -82,25 +82,25 @@
 			)
 			(1
 				(gEgo stopUpd:)
-				(TPrint 460 0 108 self 67 -1 28) ; "What an honor for you, Patti! Just look at all the dignitaries here to hear you perform."
+				(TPrint 460 0 #dispose self #at -1 28) ; "What an honor for you, Patti! Just look at all the dignitaries here to hear you perform."
 			)
 			(2
 				(= ticks 30)
 			)
 			(3
-				(TPrint 460 1 108 self 67 -1 185) ; "(Well, you presume that's why they're here.)"
+				(TPrint 460 1 #dispose self #at -1 185) ; "(Well, you presume that's why they're here.)"
 			)
 			(4
 				(= ticks 30)
 			)
 			(5
-				(TPrint 460 2 108 self 67 -1 15 70 280) ; "You are seated at the table closest to the door, near the piano you are to perform upon after dinner. Inspector Desmond sits across from you, chatting with the woman beside him."
+				(TPrint 460 2 #dispose self #at -1 15 #width 280) ; "You are seated at the table closest to the door, near the piano you are to perform upon after dinner. Inspector Desmond sits across from you, chatting with the woman beside him."
 			)
 			(6
 				(= ticks 30)
 			)
 			(7
-				(TPrint 460 3 108 self 67 -1 15 70 280) ; "You carry on a meaningless dialogue with the two men beside you. What a shame the President was too busy to be here, though. You feel sure he would have loved to meet you!"
+				(TPrint 460 3 #dispose self #at -1 15 #width 280) ; "You carry on a meaningless dialogue with the two men beside you. What a shame the President was too busy to be here, though. You feel sure he would have loved to meet you!"
 			)
 			(8
 				(= ticks 30)
@@ -109,16 +109,16 @@
 				(larry setMotion: MoveTo 300 157 self)
 			)
 			(10
-				(TPrint 460 4 67 -1 15 70 280) ; "A voice rings out from just outside the doorway, "Ladies and Gentlemen, our Guest of Honor this evening, fresh from his heroic rescue of an airplane filled with U. S. citizens, including our Vice President's Mommy, Mr. Larry, Larry Laffer!""
-				(TPrint 460 5 67 -1 185) ; "What!" you think. "Larry? MY Larry Laffer?"
+				(TPrint 460 4 #at -1 15 #width 280) ; "A voice rings out from just outside the doorway, "Ladies and Gentlemen, our Guest of Honor this evening, fresh from his heroic rescue of an airplane filled with U. S. citizens, including our Vice President's Mommy, Mr. Larry, Larry Laffer!""
+				(TPrint 460 5 #at -1 185) ; "What!" you think. "Larry? MY Larry Laffer?"
 				(larry setMotion: MoveTo 247 157 self)
 			)
 			(11
 				(dinnerFX stop:)
 				(gTheMusic pause: 1)
 				(gTheMusic2 number: 470 flags: 1 setLoop: -1 play:)
-				(Say gEgo 460 6 67 -1 28) ; "Larry!" you shout. "It's you!!"
-				(TPrint 460 7 80 {Larry} 67 -1 185) ; "Patti!" Larry shouts. "It's you!!"
+				(Say gEgo 460 6 #at -1 28) ; "Larry!" you shout. "It's you!!"
+				(TPrint 460 7 #title {Larry} #at -1 185) ; "Patti!" Larry shouts. "It's you!!"
 				(= cycles 1)
 			)
 			(12
@@ -176,7 +176,7 @@
 			(17
 				(pattiLeg setCel: (pattiLeg lastCel:) stopUpd:)
 				(pattiHead setCycle: ForwardCounter 4)
-				(Say gEgo 460 8 108 self 67 -1 185) ; ""Oh, Larry! I've missed you so!!" You whisper in his ear."
+				(Say gEgo 460 8 #dispose self #at -1 185) ; ""Oh, Larry! I've missed you so!!" You whisper in his ear."
 			)
 			(18
 				(= ticks 30)
@@ -184,7 +184,7 @@
 			(19
 				(pattiHead setCycle: 0)
 				(larryHead setCycle: ForwardCounter 5)
-				(TPrint 460 9 80 {Larry} 108 self 67 -1 185) ; "What happened to you, Patti?" Larry sighs. "The last I remember, we were together on a deck overlooking a lake! Where did you go? Hell, where did I go?!"
+				(TPrint 460 9 #title {Larry} #dispose self #at -1 185) ; "What happened to you, Patti?" Larry sighs. "The last I remember, we were together on a deck overlooking a lake! Where did you go? Hell, where did I go?!"
 			)
 			(20
 				(= ticks 30)
@@ -192,7 +192,7 @@
 			(21
 				(larryHead setCycle: 0)
 				(pattiHead setCycle: ForwardCounter 5)
-				(Say gEgo 460 10 108 self 67 -1 185) ; "Oh, you sweet dear. You really don't remember a thing, do you? It's a long story that perhaps I'll tell you some day, but right now, all that matters is that we're together again!"
+				(Say gEgo 460 10 #dispose self #at -1 185) ; "Oh, you sweet dear. You really don't remember a thing, do you? It's a long story that perhaps I'll tell you some day, but right now, all that matters is that we're together again!"
 			)
 			(22
 				(= ticks 30)
@@ -200,7 +200,7 @@
 			(23
 				(pattiHead setCycle: 0)
 				(larryHead setCycle: ForwardCounter 5)
-				(TPrint 460 11 80 {Larry} 108 self 67 -1 185) ; "Uh, say Patti," Larry says, "Since I had a little trouble finding a date for tonight, why don't you join me on the dais? We can talk about old times."
+				(TPrint 460 11 #title {Larry} #dispose self #at -1 185) ; "Uh, say Patti," Larry says, "Since I had a little trouble finding a date for tonight, why don't you join me on the dais? We can talk about old times."
 			)
 			(24
 				(= ticks 30)
@@ -208,7 +208,7 @@
 			(25
 				(larryHead setCycle: 0)
 				(pattiHead setCycle: ForwardCounter 3)
-				(Say gEgo 460 12 108 self 67 -1 185) ; "Why, Larry! That would be wonderful."
+				(Say gEgo 460 12 #dispose self #at -1 185) ; "Why, Larry! That would be wonderful."
 			)
 			(26
 				(= ticks 30)
@@ -252,7 +252,7 @@
 				(= seconds 3)
 			)
 			(30
-				(Say gEgo 460 13 67 -1 28) ; "Come on, Inspector Desmond," you say, "we're gonna sit at the head table!"
+				(Say gEgo 460 13 #at -1 28) ; "Come on, Inspector Desmond," you say, "we're gonna sit at the head table!"
 				(larry setHeading: 90 self)
 			)
 			(31
@@ -264,14 +264,14 @@
 				)
 			)
 			(32
-				(TPrint 460 14 80 {Larry} 67 -1 28) ; "Uh, Patti, er, well, I meant..." Larry stutters, then finally gives up. "Hi, Inspector. My name is Larry; Larry Laffer."
+				(TPrint 460 14 #title {Larry} #at -1 28) ; "Uh, Patti, er, well, I meant..." Larry stutters, then finally gives up. "Hi, Inspector. My name is Larry; Larry Laffer."
 				(TPrint ; ""Charmed," grunts Desmond."
 					460
 					15
-					67
+					#at
 					-1
 					185
-					80
+					#title
 					{Inspector Desmond}
 				)
 				(desmond setMotion: MoveTo 165 147 self)
@@ -363,7 +363,7 @@
 				(= cycles 1)
 			)
 			(49
-				(TPrint 460 16 67 15 -1 70 280 80 {Larry}) ; "Uh, excuse me, Patti. Would you two scoot over a little so your guest of honor can sit down, too?"
+				(TPrint 460 16 #at 15 -1 #width 280 #title {Larry}) ; "Uh, excuse me, Patti. Would you two scoot over a little so your guest of honor can sit down, too?"
 				(= seconds 2)
 			)
 			(50
@@ -458,12 +458,12 @@
 				(larry setCycle: End self)
 			)
 			(66
-				(TPrint 460 18 67 15 -1 70 280 80 {Larry}) ; "You know, Mr. Vice President," Larry says, "you've always been a secret hero of mine! In fact, the Vice Presidency is one office to which I have always aspired to!"
+				(TPrint 460 18 #at 15 -1 #width 280 #title {Larry}) ; "You know, Mr. Vice President," Larry says, "you've always been a secret hero of mine! In fact, the Vice Presidency is one office to which I have always aspired to!"
 				(= seconds 3)
 			)
 			(67
-				(TPrint 460 19 80 {Mr. Vice President}) ; "Mr. Laffer," responds the Vice President, "has anyone ever mentioned to you that we look alike?"
-				(TPrint 460 20 80 {Larry}) ; "Oh, of course. And am I proud!"
+				(TPrint 460 19 #title {Mr. Vice President}) ; "Mr. Laffer," responds the Vice President, "has anyone ever mentioned to you that we look alike?"
+				(TPrint 460 20 #title {Larry}) ; "Oh, of course. And am I proud!"
 				(larry setCycle: Beg self)
 			)
 			(68
@@ -489,7 +489,7 @@
 				(gEgo setLoop: 0 setCycle: End self)
 			)
 			(75
-				(TPrint 460 21 67 -1 185) ; "Before you can talk to Larry or Desmond, you realize the large burly gentleman to your left is already speaking to you."
+				(TPrint 460 21 #at -1 185) ; "Before you can talk to Larry or Desmond, you realize the large burly gentleman to your left is already speaking to you."
 				(= cycles 1)
 			)
 			(76
@@ -513,73 +513,73 @@
 				(= seconds 3)
 			)
 			(77
-				(Say Mr__Bigg 460 22 108 139 self) ; "...and it's fortunate that you're here this evening as I'm only in town for a short time. Yes, I'm testifying tomorrow on Capitol Hill at the Senate hearings on pornography in the entertainment industry."
+				(Say Mr__Bigg 460 22 #dispose #caller self) ; "...and it's fortunate that you're here this evening as I'm only in town for a short time. Yes, I'm testifying tomorrow on Capitol Hill at the Senate hearings on pornography in the entertainment industry."
 			)
 			(78
-				(Say You 460 23 108 139 self) ; ""Oh, really?" you say, feigning interest."
+				(Say You 460 23 #dispose #caller self) ; ""Oh, really?" you say, feigning interest."
 			)
 			(79
-				(Say Mr__Bigg 460 24 139 self) ; ""You've heard of me, then?" he swells up noticeably."
+				(Say Mr__Bigg 460 24 #caller self) ; ""You've heard of me, then?" he swells up noticeably."
 			)
 			(80
-				(Say Mr__Bigg 460 25 108 139 self) ; "Yes, my job is simple: tomorrow I intend to convince Congress to create tough, anti-pornography legislation tough enough to make the airwaves "Beaver" clean again, just like they were back in the Fifties!"
+				(Say Mr__Bigg 460 25 #dispose #caller self) ; "Yes, my job is simple: tomorrow I intend to convince Congress to create tough, anti-pornography legislation tough enough to make the airwaves "Beaver" clean again, just like they were back in the Fifties!"
 			)
 			(81
 				(= seconds 3)
 			)
 			(82
-				(TPrint 460 26 67 -1 15 70 280) ; "You love these dinners and being seated next to people who feel their sole mission is to impress you with themselves!"
-				(TPrint 460 27 67 -1 185) ; "(Especially a man who's breath is enough to curdle hairspray!)"
+				(TPrint 460 26 #at -1 15 #width 280) ; "You love these dinners and being seated next to people who feel their sole mission is to impress you with themselves!"
+				(TPrint 460 27 #at -1 185) ; "(Especially a man who's breath is enough to curdle hairspray!)"
 				(= seconds 3)
 			)
 			(83
-				(Say Mr__Bigg 460 28 67 -1 185 108 139 self) ; "Allow me to introduce myself," he says, "I'm Mr. Bigg, a major West Coast corporate leader."
+				(Say Mr__Bigg 460 28 #at -1 185 #dispose #caller self) ; "Allow me to introduce myself," he says, "I'm Mr. Bigg, a major West Coast corporate leader."
 			)
 			(84
-				(Say You 460 29 108 139 self) ; ""My name is Passionate Patti," you reply."
+				(Say You 460 29 #dispose #caller self) ; ""My name is Passionate Patti," you reply."
 			)
 			(85
-				(Say Mr__Bigg 460 30 67 -1 185 108 139 self) ; ""And I bet I can guess how you earned that name," he grins."
+				(Say Mr__Bigg 460 30 #at -1 185 #dispose #caller self) ; ""And I bet I can guess how you earned that name," he grins."
 			)
 			(86
 				(= seconds 3)
 			)
 			(87
-				(TPrint 460 31 67 -1 15 70 280) ; "What an obnoxious creep! Now he's humming at you. Some familiar song. A love song? Who does he think he's impressing?"
-				(TPrint 460 32 67 -1 28) ; "What is that song," you think. "It sounds so familiar."
+				(TPrint 460 31 #at -1 15 #width 280) ; "What an obnoxious creep! Now he's humming at you. Some familiar song. A love song? Who does he think he's impressing?"
+				(TPrint 460 32 #at -1 28) ; "What is that song," you think. "It sounds so familiar."
 				(= seconds 3)
 			)
 			(88
-				(TPrint 460 33 67 -1 185) ; "Realizing you are still unimpressed, Bigg digs in deeper."
-				(Say Mr__Bigg 460 34 108 139 self) ; "You know, Patti (may I call you Patti?), I find you a very sexy woman. In fact, I've been looking for just such a woman for a new position I recently created."
+				(TPrint 460 33 #at -1 185) ; "Realizing you are still unimpressed, Bigg digs in deeper."
+				(Say Mr__Bigg 460 34 #dispose #caller self) ; "You know, Patti (may I call you Patti?), I find you a very sexy woman. In fact, I've been looking for just such a woman for a new position I recently created."
 			)
 			(89
-				(TPrint 460 35 67 -1 185) ; "Between phrases, he continues to hum that melody."
+				(TPrint 460 35 #at -1 185) ; "Between phrases, he continues to hum that melody."
 				(= seconds 3)
 			)
 			(90
-				(Say Mr__Bigg 460 36 139 self) ; "Patti, you seem like a woman interested in quick success. Why don't you be the hostess of my new TV show?"
+				(Say Mr__Bigg 460 36 #caller self) ; "Patti, you seem like a woman interested in quick success. Why don't you be the hostess of my new TV show?"
 			)
 			(91
-				(Say Mr__Bigg 460 37 108 139 self) ; "For months I've had minions out hunting for the sexiest woman in America. But tonight, I've discovered her myself! Just say the word, Babe, and the gig is yours!"
+				(Say Mr__Bigg 460 37 #dispose #caller self) ; "For months I've had minions out hunting for the sexiest woman in America. But tonight, I've discovered her myself! Just say the word, Babe, and the gig is yours!"
 			)
 			(92
-				(TPrint 460 38 67 -1 15 70 280 108 self) ; "At the mention of "sexiest woman in America," Larry's head jerks toward Bigg, his attention riveted on your conversation."
+				(TPrint 460 38 #at -1 15 #width 280 #dispose self) ; "At the mention of "sexiest woman in America," Larry's head jerks toward Bigg, his attention riveted on your conversation."
 			)
 			(93
 				(= ticks 30)
 			)
 			(94
-				(Say You 460 39 108 139 self) ; "Really, Mr. Bigg, your offer is not interest..."
+				(Say You 460 39 #dispose #caller self) ; "Really, Mr. Bigg, your offer is not interest..."
 			)
 			(95
-				(Say Mr__Bigg 460 40 67 -1 185 108 139 self) ; "Bigg interrupts you. "Oh, Patti! Stop being so formal. Please. Call me `Julius.'""
+				(Say Mr__Bigg 460 40 #at -1 185 #dispose #caller self) ; "Bigg interrupts you. "Oh, Patti! Stop being so formal. Please. Call me `Julius.'""
 			)
 			(96
 				(= seconds 3)
 			)
 			(97
-				(TPrint 460 41 67 -1 28) ; ""JULIUS!" you think, your mind racing!"
+				(TPrint 460 41 #at -1 28) ; ""JULIUS!" you think, your mind racing!"
 				(= seconds 3)
 			)
 			(98
@@ -612,19 +612,19 @@
 				(= seconds 2)
 			)
 			(102
-				(TPrint 460 42 80 {Larry} 67 -1 185 70 280) ; "Patti, something's wrong," says Larry. "He's offering you the job as hostess of `America's Sexiest Home Videos!' But he has nothing to do with that show! I should know, I do! I was sent by the producer to find... Say, wait a minute. Could he be the money behind the show...?"
+				(TPrint 460 42 #title {Larry} #at -1 185 #width 280) ; "Patti, something's wrong," says Larry. "He's offering you the job as hostess of `America's Sexiest Home Videos!' But he has nothing to do with that show! I should know, I do! I was sent by the producer to find... Say, wait a minute. Could he be the money behind the show...?"
 				(Say gEgo 460 43) ; "JULIUS!" you cry, suddenly putting everything together! "Desmond! Arrest this man!!"
-				(TPrint 460 44 80 {Mr. Bigg}) ; ""WHAT?!" shouts Bigg."
-				(Say gEgo 460 45 67 -1 185 70 280) ; "You scoundrel! You've been humming the love theme that I wrote for the soundtrack of `Larry 4!' That song was never published and the recording was never released! There's no way you could know it unless you played Larry 4!"
-				(Say gEgo 460 46 67 -1 185 70 280) ; "Of course, I see it all now. Bigg, you're the man who hired me to create the music, then erased the floppies to keep from paying me! You're the reason my poor Larry has amnesia! You're the man behind K-RAP and des Rever Records! Julius Bigg--you're the man I've been following this entire game!""
-				(TPrint 460 47 80 {Mr. Bigg}) ; "You're so smart, Patti!" screams Bigg, "let's see you deduce your way out of this!"
+				(TPrint 460 44 #title {Mr. Bigg}) ; ""WHAT?!" shouts Bigg."
+				(Say gEgo 460 45 #at -1 185 #width 280) ; "You scoundrel! You've been humming the love theme that I wrote for the soundtrack of `Larry 4!' That song was never published and the recording was never released! There's no way you could know it unless you played Larry 4!"
+				(Say gEgo 460 46 #at -1 185 #width 280) ; "Of course, I see it all now. Bigg, you're the man who hired me to create the music, then erased the floppies to keep from paying me! You're the reason my poor Larry has amnesia! You're the man behind K-RAP and des Rever Records! Julius Bigg--you're the man I've been following this entire game!""
+				(TPrint 460 47 #title {Mr. Bigg}) ; "You're so smart, Patti!" screams Bigg, "let's see you deduce your way out of this!"
 				(TPrint 460 48) ; "And leaping to his feet, he pulls a revolver and aims it directly at you!"
 				(bigg setLoop: 1 setPri: 3 setCycle: End self)
 			)
 			(103
 				(gTheMusic number: 466 play:)
-				(TPrint 460 49 80 {Mr. Bigg}) ; ""Everybody stay away or I'll shoot!" shouts Bigg."
-				(TPrint 460 50 80 {Larry}) ; "Larry cries out, "I'll save you, Sir!""
+				(TPrint 460 49 #title {Mr. Bigg}) ; ""Everybody stay away or I'll shoot!" shouts Bigg."
+				(TPrint 460 50 #title {Larry}) ; "Larry cries out, "I'll save you, Sir!""
 				(= cycles 1)
 			)
 			(104
@@ -735,8 +735,8 @@
 				(desmond cycleSpeed: 6 setMotion: MoveTo (gEgo x:) 74 self)
 			)
 			(11
-				(TPrint 460 53 80 {Inspector Desmond}) ; "Congratulations, Patti!" says Desmond. "You've saved the Vice President's life! We'll haul this guy down to headquarters right now!"
-				(TPrint 460 54 80 {Inspector Desmond}) ; "He whispers to you under his breath, "There goes our weekend together, Patti! I'll be stuck at the office filing paperwork on this low-life for days!""
+				(TPrint 460 53 #title {Inspector Desmond}) ; "Congratulations, Patti!" says Desmond. "You've saved the Vice President's life! We'll haul this guy down to headquarters right now!"
+				(TPrint 460 54 #title {Inspector Desmond}) ; "He whispers to you under his breath, "There goes our weekend together, Patti! I'll be stuck at the office filing paperwork on this low-life for days!""
 				(desmond cycleSpeed: 5 setMotion: MoveTo -50 74)
 				(gEgo setMotion: MoveTo (gEgo x:) (+ (gEgo y:) 4) self)
 			)
@@ -765,7 +765,7 @@
 				)
 			)
 			(16
-				(TPrint 460 55 80 {Larry}) ; ""I'm sorry I shoved your face in that custard pie, Mr. Vice President!" Larry says."
+				(TPrint 460 55 #title {Larry}) ; ""I'm sorry I shoved your face in that custard pie, Mr. Vice President!" Larry says."
 				(quayle setLoop: 2 setCel: 0 posn: 38 71 setCycle: End self)
 			)
 			(17
@@ -806,12 +806,12 @@
 				(TPrint ; "Assuming you are talking to him, the Vice President whispers carefully, so as not to let his wife overhear, "Er, uh, well, yes. Perhaps I could set up a little excursion to Camp David...""
 					460
 					57
-					67
+					#at
 					15
 					-1
-					70
+					#width
 					280
-					80
+					#title
 					{Mr. Vice President}
 				)
 				(= cycles 1)
@@ -823,7 +823,7 @@
 				(larry setLoop: 0 setCycle: End self)
 			)
 			(27
-				(TPrint 460 58 80 {Larry}) ; "Larry presumes the Vice President is being magnanimous. "Gee, thanks!" he says in a loud voice, "and I hope you and the missus get a chance to come along too."
+				(TPrint 460 58 #title {Larry}) ; "Larry presumes the Vice President is being magnanimous. "Gee, thanks!" he says in a loud voice, "and I hope you and the missus get a chance to come along too."
 				(= seconds 2)
 			)
 			(28

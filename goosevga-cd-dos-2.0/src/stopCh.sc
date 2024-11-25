@@ -41,7 +41,7 @@
 
 	(method (track param1 &tmp temp0)
 		(repeat
-			(= param1 (Event new: -32768))
+			(= param1 (Event new: evPEEK))
 			(param1 localize:)
 			(if (and (= temp0 (self check: param1)) (not cel))
 				(++ cel)

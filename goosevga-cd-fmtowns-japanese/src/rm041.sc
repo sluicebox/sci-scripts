@@ -78,7 +78,7 @@
 				(self setScript: gStdWalkOut 0 2)
 			)
 			((== (gEgo illegalBits:) 0)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 			)
 		)
 	)

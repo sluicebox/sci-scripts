@@ -215,7 +215,7 @@
 			(2
 				(proc700_5 1)
 				(HandsOn)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(self dispose:)
 			)
 		)

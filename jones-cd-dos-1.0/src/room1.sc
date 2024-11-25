@@ -1014,7 +1014,7 @@
 		(proc0_18 600)
 		(if (Print 1 0 70 150 81 {Restart} 1 81 {Quit} 0 319) ; "Thank You for playing `Jones In The Fast Lane'. Would you like to play another game?"
 			(Format @temp4 1 1 global534 global427) ; "%d%d"
-			(MemorySegment 0 @temp4 0)
+			(MemorySegment 0 @temp4 0) ; MS_SAVE_FROM
 			(gASoundEffect play: 23)
 			(= global528 1)
 		else

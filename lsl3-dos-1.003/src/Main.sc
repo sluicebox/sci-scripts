@@ -358,7 +358,7 @@
 		setPri: -1
 		setStep: 3 2
 		setCycle: Walk
-		illegalBits: -32768
+		illegalBits: $8000
 		cycleSpeed: 0
 		moveSpeed: 0
 		ignoreActors: 0

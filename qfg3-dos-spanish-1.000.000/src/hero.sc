@@ -995,7 +995,7 @@
 			setCycle: StopWalk 5
 			setMotion: 0
 			changeGait: -1 0
-			illegalBits: -32768
+			illegalBits: $8000
 			ignoreHorizon:
 			setSpeed: gSpeed
 		)

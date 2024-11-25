@@ -340,7 +340,7 @@
 				)
 			)
 			(2
-				(client setPri: -1 illegalBits: -32768 ignoreActors: 0)
+				(client setPri: -1 illegalBits: $8000 ignoreActors: 0)
 				(HandsOn)
 				(self dispose:)
 			)

@@ -37,7 +37,7 @@
 			(bRecord setPri: 1 ignoreActors: 1 init:)
 			(footprint setPri: 1 ignoreActors: 1 init:)
 		)
-		(Jeeves illegalBits: -32752 x: 340 y: 100)
+		(Jeeves illegalBits: $8010 x: 340 y: 100)
 		(self setScript: rm36Actions)
 	)
 

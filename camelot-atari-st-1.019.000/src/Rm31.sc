@@ -635,7 +635,7 @@
 				(gEgo setMotion: MoveTo 190 165 self)
 			)
 			(6
-				(gEgo illegalBits: -32768 loop: 3)
+				(gEgo illegalBits: $8000 loop: 3)
 				(= seconds 3)
 			)
 			(7

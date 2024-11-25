@@ -86,7 +86,7 @@
 				)
 			)
 		)
-		(gEgo view: 0 illegalBits: -32766 init:)
+		(gEgo view: 0 illegalBits: $8002 init:)
 	)
 
 	(method (doit)

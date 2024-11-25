@@ -191,7 +191,7 @@
 				(= cycles 1)
 			)
 			(1
-				(= global215 96)
+				(= gDictionaryWord 96)
 				(cond
 					((and global115 (== global116 60))
 						(= state 19)
@@ -219,7 +219,7 @@
 				(self dispose:)
 			)
 			(20
-				(= global215 27)
+				(= gDictionaryWord 27)
 				(gMessager say: global115 85 60 5 self global196)
 			)
 			(21
@@ -955,7 +955,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(85 ; Talk
-				(= global215 96)
+				(= gDictionaryWord 96)
 				(gCurRoom setScript: sTalkGoody)
 			)
 			(48 ; Recipe_Card
@@ -1092,7 +1092,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 17)
+		(= gDictionaryWord 17)
 		(super doVerb: theVerb)
 	)
 )
@@ -1110,7 +1110,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 96)
+		(= gDictionaryWord 96)
 		(super doVerb: theVerb)
 	)
 )

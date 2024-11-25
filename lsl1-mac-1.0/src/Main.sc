@@ -436,7 +436,7 @@
 		setMotion: 0
 		setCycle: StopWalk stopView
 		setStep: 3 2
-		illegalBits: -32768
+		illegalBits: $8000
 		ignoreActors: 0
 		userSpeed:
 	)

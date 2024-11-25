@@ -348,7 +348,7 @@
 			(3
 				(HandsOn)
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Walk
 					view: 2
 					viewer: local6
@@ -391,7 +391,7 @@
 			(3
 				(HandsOn)
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Walk
 					view: 2
 					viewer: local6
@@ -432,7 +432,7 @@
 			)
 			(3
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Walk
 					view: 2
 					viewer: local6

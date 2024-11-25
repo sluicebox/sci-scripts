@@ -361,7 +361,7 @@
 				(= gEgoState 1003)
 				(gEgo
 					view: (if gEgoIsPatti 812 else 712)
-					illegalBits: -513
+					illegalBits: $fdff
 					cycleSpeed: 1
 					moveSpeed: 1
 					setStep: 2 2

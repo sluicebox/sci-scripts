@@ -193,7 +193,7 @@
 	(method (doit)
 		(super doit: &rest)
 		(if (gEgo mover:)
-			(gEgo illegalBits: -32768)
+			(gEgo illegalBits: $8000)
 			(if (gCast contains: numberPad)
 				(numberPad dispose:)
 				(gCast eachElementDo: #perform disposeNumbers)

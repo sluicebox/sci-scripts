@@ -353,7 +353,7 @@
 					posn: 162 173
 					loop: 2
 					cel: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					cycleSpeed: 0
 					setCycle: SyncWalk
 				)
@@ -395,7 +395,7 @@
 			posn: 162 173
 			loop: 2
 			cel: 0
-			illegalBits: -32768
+			illegalBits: $8000
 			cycleSpeed: 0
 			setCycle: SyncWalk
 		)

@@ -68,9 +68,9 @@
 		)
 		(if global131
 			(local1 setCel: 255 stopUpd:)
-			(gEgo illegalBits: -32768)
+			(gEgo illegalBits: $8000)
 		else
-			(gEgo illegalBits: -32764)
+			(gEgo illegalBits: $8004)
 		)
 		(if (and (< 0 global134 255) (== global133 gCurRoomNum))
 			(Notify 603 -1)
@@ -80,11 +80,11 @@
 	(method (doit)
 		(super doit:)
 		(if (& (gEgo onControl: 0) $0040)
-			(gEgo illegalBits: -32768)
+			(gEgo illegalBits: $8000)
 			(gCurRoom newRoom: 68)
 		)
 		(if (and (& (gEgo onControl: 1) $0004) global131)
-			(gEgo illegalBits: -32768)
+			(gEgo illegalBits: $8000)
 			(gCurRoom newRoom: 66)
 		)
 		(if (and (& (gEgo onControl:) $0020) global131)
@@ -286,7 +286,7 @@
 									(local1 setCycle: End)
 									(= global131 1)
 									(gGame changeScore: 4)
-									(gEgo illegalBits: -32768)
+									(gEgo illegalBits: $8000)
 								)
 								(else
 									(Print 800 1) ; "You're not close enough."

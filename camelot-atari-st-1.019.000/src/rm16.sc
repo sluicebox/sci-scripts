@@ -472,10 +472,10 @@
 						)
 					)
 					((Said '/moneybag')
-						(if (or global120 global121 global122)
+						(if (or gCopper gSilver gGold)
 							(Talk 16 55) ; "For this, I shall let ye pass."
 							(PutItem 3) ; purse
-							(= global122 (= global121 (= global120 0)))
+							(= gGold (= gSilver (= gCopper 0)))
 							(SetMenu 1281 112 0)
 							(gEgo setScript: GiveToWitch)
 						else
@@ -896,7 +896,7 @@
 			(5
 				(HandsOn)
 				(= local1 0)
-				(gEgo illegalBits: -32768 ignoreActors: 0 setScript: 0)
+				(gEgo illegalBits: $8000 ignoreActors: 0 setScript: 0)
 			)
 		)
 	)

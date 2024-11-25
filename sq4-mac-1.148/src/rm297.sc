@@ -234,7 +234,7 @@
 			)
 			(4
 				(HandsOn)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(client setScript: 0)
 			)
 		)
@@ -273,7 +273,7 @@
 				(gLongSong2 number: 143 loop: 0 play: self)
 			)
 			(6
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(gLongSong fade:)
 				(gCurRoom newRoom: 320)
 			)

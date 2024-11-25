@@ -361,7 +361,7 @@
 				(gEgo
 					looper: (ScriptID 501 1) ; DUNELOOPER
 					setStep: 2 1
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreControl: 8192
 					setMotion: MoveTo local2 local1
 					setPri: 1

@@ -953,7 +953,7 @@
 				)
 			)
 			(5
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(if (not (IsFlag 210))
 					(gEgo get: 19) ; healer's ring
 					(SetFlag 210)
@@ -1119,7 +1119,7 @@
 						x: (+ (gEgo x:) 11)
 						y: (+ (gEgo y:) 18)
 						setPri: 13
-						illegalBits: -32768
+						illegalBits: $8000
 					)
 					(switch (= local6 (Random 1 5))
 						(0

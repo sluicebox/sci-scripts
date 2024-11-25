@@ -61,7 +61,7 @@
 		(self setRegions: 107) ; Gaza
 		(if (IsFlag 20)
 			(= local1 1)
-			(gMuleObj illegalBits: -28672)
+			(gMuleObj illegalBits: $9000)
 		)
 		(if (IsFlag 106)
 			(= local5 1)
@@ -143,9 +143,9 @@
 			(and
 				(not local0)
 				(not (gEgo script:))
-				(== (gEgo illegalBits:) -32768)
+				(== (gEgo illegalBits:) $8000)
 			)
-			(gEgo illegalBits: -30720)
+			(gEgo illegalBits: $8800)
 		)
 		(if (and (not (self goingOut:)) (not (self comingIn:)))
 			(cond
@@ -291,7 +291,7 @@
 					(if (not local0)
 						(= local0 1)
 						(SetFlag 82)
-						(gEgo illegalBits: -32768)
+						(gEgo illegalBits: $8000)
 					)
 					(if (and (gEgo inRect: 182 48 310 135) (not local6))
 						(gEgo setMotion: 0)
@@ -339,7 +339,7 @@
 				(1
 					(if (and local0 (not (gEgo script:)))
 						(= local0 0)
-						(gEgo illegalBits: -30720)
+						(gEgo illegalBits: $8800)
 						(ClearFlag 82)
 					)
 				)

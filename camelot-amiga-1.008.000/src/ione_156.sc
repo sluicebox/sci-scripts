@@ -375,7 +375,7 @@
 				(gEgo setMotion: MoveTo 55 145 self)
 			)
 			(6
-				(gEgo loop: 0 ignoreActors: 0 illegalBits: -32768)
+				(gEgo loop: 0 ignoreActors: 0 illegalBits: $8000)
 				(doves
 					view: 256
 					setLoop: 6

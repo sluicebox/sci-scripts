@@ -133,7 +133,7 @@
 		(while 1
 			(= gGameTime (+ gTickOffset (GetTime)))
 			(param1 type: 0 message: 0 modifiers: 0 y: 0 x: 0 plane: 0)
-			(GetEvent 3 param1)
+			(GetEvent evMOUSE param1)
 			(param1 localize: plane)
 			(cond
 				((& (param1 type:) $0002)

@@ -54,7 +54,7 @@
 		(if (not (gEgo has: 11)) ; crackers
 			(crackerBox setPri: 10 init: stopUpd:)
 		)
-		(gEgo view: 0 illegalBits: -32768 posn: 155 64 init:)
+		(gEgo view: 0 illegalBits: $8000 posn: 155 64 init:)
 		(self setScript: stairWell)
 	)
 

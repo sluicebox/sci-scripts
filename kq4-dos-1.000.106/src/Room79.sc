@@ -56,7 +56,7 @@
 				(gEgo view: 2 posn: 232 92 loop: 1 init:)
 			)
 			(west
-				(if global169
+				(if gLolotteAlive
 					(= local0 (Act new:))
 					(= local1 (Act new:))
 					(local0 setScript: h1Actions)
@@ -88,7 +88,7 @@
 		(if (!= global105 10)
 			(= global189 0)
 			(gSounds eachElementDo: #dispose 192)
-			(gEgo illegalBits: -32768 setPri: -1)
+			(gEgo illegalBits: $8000 setPri: -1)
 			(super newRoom: newRoomNumber)
 		)
 	)

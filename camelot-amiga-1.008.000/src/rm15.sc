@@ -1028,7 +1028,7 @@
 				(gEgo
 					loop: 1
 					cycleSpeed: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 					setAvoider: 0
 					setPri: -1
@@ -1120,7 +1120,7 @@
 					loop: 3
 					cel: 0
 					ignoreActors: 1
-					illegalBits: -32768
+					illegalBits: $8000
 					posn: (+ (gEgo x:) 1) (gEgo y:)
 				)
 			)

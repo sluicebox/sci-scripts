@@ -31,7 +31,7 @@
 
 	(method (init)
 		(self setRegions: 40) ; HollywoodRgn
-		(gEgo init: normalize: illegalBits: 8)
+		(gEgo init: normalize: illegalBits: $0008)
 		(switch gPrevRoomNum
 			(east 0)
 			(else
@@ -98,18 +98,18 @@
 			(2
 				(switch register
 					(3
-						(TPrint 170 0 67 -1 150) ; "Nope, nothing of interest in this drawer!"
+						(TPrint 170 0 #at -1 150) ; "Nope, nothing of interest in this drawer!"
 					)
 					(2
-						(TPrint 170 1 67 -1 150) ; "This drawer only contains a few old donut crumbs."
+						(TPrint 170 1 #at -1 150) ; "This drawer only contains a few old donut crumbs."
 					)
 					(1
 						(if (IsFlag 85)
-							(TPrint 170 2 67 -1 150) ; "Without the battery recharger, this drawer seems so empty!"
+							(TPrint 170 2 #at -1 150) ; "Without the battery recharger, this drawer seems so empty!"
 						else
-							(TPrint 170 3 67 -1 150) ; "Well, well! What's this? So that's where you left your battery recharger!"
+							(TPrint 170 3 #at -1 150) ; "Well, well! What's this? So that's where you left your battery recharger!"
 							(Points 8 85)
-							(TPrint 170 4 67 -1 150) ; "You take it from the drawer and pop it into your pocket."
+							(TPrint 170 4 #at -1 150) ; "You take it from the drawer and pop it into your pocket."
 							(gEgo get: 1) ; Battery_Charger
 						)
 					)
@@ -121,7 +121,7 @@
 				(gEgo setCycle: Beg self)
 			)
 			(4
-				(gEgo loop: 3 normalize: illegalBits: 8)
+				(gEgo loop: 3 normalize: illegalBits: $0008)
 				(HandsOn)
 				(self dispose:)
 			)
@@ -160,9 +160,9 @@
 			(4
 				(gEgo setLoop: 2 posn: 236 184)
 				(TPrint 170 5) ; "You always wondered what these tiny little tapes were. These miniature videotapes are a perfect fit for your new camcorder."
-				(TPrint 170 6 67 -1 185) ; "(And you thought they were DAT tapes!)"
+				(TPrint 170 6 #at -1 185) ; "(And you thought they were DAT tapes!)"
 				(egoBody dispose:)
-				(gEgo normalize: illegalBits: 8)
+				(gEgo normalize: illegalBits: $0008)
 				(HandsOn)
 				(self dispose:)
 			)
@@ -188,7 +188,7 @@
 					(Points 2)
 					(if (not gTapesDegaussed)
 						(TPrint 170 8) ; "Sliding the switch to send rapidly alternating, pulsating currents through your degausser, you sensually slide the girl's dedicated magnetic particles in slow concentric circles over the degausser, gradually increasing in speed and intensity, until they (and you) are randomly aligned. A shudder passes through your body!!"
-						(TPrint 170 9 67 -1 185) ; "(By gawd, that's degaussing!)"
+						(TPrint 170 9 #at -1 185) ; "(By gawd, that's degaussing!)"
 						(= cycles 1)
 					else
 						(= ticks 120)
@@ -213,7 +213,7 @@
 				)
 			)
 			(4
-				(gEgo setLoop: 2 normalize: illegalBits: 8)
+				(gEgo setLoop: 2 normalize: illegalBits: $0008)
 				(HandsOn)
 				(self dispose:)
 			)
@@ -322,7 +322,7 @@
 		(switch theVerb
 			(3 ; Do
 				(TPrint 170 11) ; "Degaussers work on tapes, not hands. They return the magnetic particles to a random distribution."
-				(TPrint 170 12 67 -1 185) ; "(They erase tapes!)"
+				(TPrint 170 12 #at -1 185) ; "(They erase tapes!)"
 			)
 			(4 ; Inventory
 				(if (OneOf invItem 2 3 4) ; A_Blank_Videotape_a, A_Blank_Videotape_b, A_Blank_Videotape_c
@@ -547,13 +547,13 @@
 		(switch theVerb
 			(3 ; Do
 				(TPrint 170 19) ; "Cleverly surmising the humble floor drain is really a secret passage to another part of the building, you yank and tug on the grate, only to find it is firmly screwed."
-				(TPrint 170 20 67 -1 185) ; "(You can relate to that!)"
+				(TPrint 170 20 #at -1 185) ; "(You can relate to that!)"
 			)
 			(5 ; Talk
 				(TPrint 170 21) ; ""Hello!" you shout down the drain."
-				(TPrint 170 22 67 -1 28) ; "Heeeellllooooo."
+				(TPrint 170 22 #at -1 28) ; "Heeeellllooooo."
 				(TPrint 170 22) ; "Heeeellllooooo."
-				(TPrint 170 22 67 -1 185) ; "Heeeellllooooo."
+				(TPrint 170 22 #at -1 185) ; "Heeeellllooooo."
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)
@@ -605,7 +605,7 @@
 			)
 			(2 ; Look
 				(TPrint 170 25) ; "These are the tapes of the women who didn't make the cut. They won't fit in your camcorder."
-				(TPrint 170 26 67 -1 185) ; "(And neither do their tapes!)"
+				(TPrint 170 26 #at -1 185) ; "(And neither do their tapes!)"
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)

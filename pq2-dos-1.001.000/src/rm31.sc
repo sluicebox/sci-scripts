@@ -842,7 +842,7 @@
 						setLoop: -1
 						setPri: 8
 						ignoreActors: 0
-						illegalBits: -32768
+						illegalBits: $8000
 						setMotion: MoveTo 48 156 self
 					)
 				)

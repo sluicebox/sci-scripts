@@ -116,7 +116,7 @@
 			)
 			(4
 				(HandsOn)
-				(gEgo setLoop: -1 cycleSpeed: -1 illegalBits: -32768)
+				(gEgo setLoop: -1 cycleSpeed: -1 illegalBits: $8000)
 				(client setScript: 0)
 				(gCurRoom newRoom: 57)
 			)
@@ -140,7 +140,7 @@
 			)
 			(1
 				(HandsOn)
-				(gEgo setLoop: -1 illegalBits: -32768)
+				(gEgo setLoop: -1 illegalBits: $8000)
 				(client setScript: 0)
 			)
 		)

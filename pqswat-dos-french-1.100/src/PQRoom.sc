@@ -204,7 +204,7 @@
 		(temp14 dispose:)
 		(= local1 0)
 		(while (not local0)
-			(if ((= temp14 (Event new: 3)) type:)
+			(if ((= temp14 (Event new: evMOUSE)) type:)
 				(gCast eachElementDo: #handleEvent temp14)
 			)
 			(temp14 dispose:)

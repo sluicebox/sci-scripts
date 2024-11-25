@@ -516,7 +516,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(84 ; Trivia
-				(= global215 8)
+				(= gDictionaryWord 8)
 				(super doVerb: theVerb &rest)
 			)
 			(6 ; Look
@@ -2557,7 +2557,7 @@
 				(gMessager say: 9 6 0 0 0 380) ; "It's the kitchen doorway."
 			)
 			(84 ; Trivia
-				(= global215 8)
+				(= gDictionaryWord 8)
 				(super doVerb: theVerb &rest)
 			)
 			(else
@@ -2661,7 +2661,7 @@
 				)
 			)
 			(84 ; Trivia
-				(= global215 8)
+				(= gDictionaryWord 8)
 				(super doVerb: theVerb &rest)
 			)
 			(else
@@ -2793,7 +2793,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(6 ; Look
-				(= global215 61)
+				(= gDictionaryWord 61)
 				(super doVerb: theVerb &rest)
 			)
 			(else
@@ -2835,7 +2835,7 @@
 				(gMessager say: 9 6 0 0 0 380) ; "It's the kitchen doorway."
 			)
 			(84 ; Trivia
-				(= global215 8)
+				(= gDictionaryWord 8)
 				(super doVerb: theVerb &rest)
 			)
 			(else

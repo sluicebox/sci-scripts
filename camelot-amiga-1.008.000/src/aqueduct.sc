@@ -198,7 +198,7 @@
 					z: 0
 					setLoop: -1
 					cel: 2
-					illegalBits: -32768
+					illegalBits: $8000
 					cycleSpeed: 0
 					setCycle: Walk
 				)

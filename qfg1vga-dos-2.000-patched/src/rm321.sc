@@ -100,7 +100,7 @@
 		(NormalEgo)
 		(gEgo
 			posn: 163 188
-			illegalBits: -30720
+			illegalBits: $8800
 			init:
 			setScript: comeOnInScript
 		)

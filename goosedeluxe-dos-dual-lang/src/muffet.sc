@@ -418,7 +418,7 @@
 			(4
 				(muffet
 					setLoop: -1
-					illegalBits: 32768
+					illegalBits: $8000
 					setCycle: Walk
 					setMotion: PolyPath 150 120 self
 				)

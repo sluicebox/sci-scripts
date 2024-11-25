@@ -157,7 +157,7 @@
 			(FrameOut)
 			(= temp1 0)
 			(repeat
-				(= param1 (Event new: 32768))
+				(= param1 (Event new: evPEEK))
 				(param1 localize: plane)
 				(= temp0 (self onMe: param1))
 				(if (!= temp1 temp0)

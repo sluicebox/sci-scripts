@@ -280,7 +280,7 @@
 			)
 			(5
 				(= local1 0)
-				(gEgo illegalBits: -32768 ignoreActors: 0)
+				(gEgo illegalBits: $8000 ignoreActors: 0)
 				(HandsOn)
 				(cond
 					((and (< global204 1000) (== (Random 1 2) 1))

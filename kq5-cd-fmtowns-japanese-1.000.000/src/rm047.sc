@@ -1080,7 +1080,7 @@
 		loop 5
 		signal 10240
 		cycleSpeed 2
-		illegalBits 2
+		illegalBits $0002
 		xStep 1
 		moveSpeed 1
 	)
@@ -1111,7 +1111,7 @@
 		loop 5
 		signal 10240
 		cycleSpeed 2
-		illegalBits 2
+		illegalBits $0002
 		xStep 1
 		moveSpeed 1
 	)

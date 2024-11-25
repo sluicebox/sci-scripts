@@ -50,7 +50,7 @@
 		(Load rsVIEW 654)
 		(super init:)
 		(self setFeatures: arch beach)
-		(gEgo init: view: 6 illegalBits: -32768)
+		(gEgo init: view: 6 illegalBits: $8000)
 		(switch gPrevRoomNum
 			(east
 				(LoadMany rsVIEW 667 22 23 21)

@@ -214,11 +214,11 @@
 
 	(method (doit)
 		(if (< (gEgo distanceTo: (ScriptID 15 8)) 20) ; chest
-			(if (and (== (gEgo illegalBits:) -32768) (<= global322 2))
-				(gEgo illegalBits: -24576)
+			(if (and (== (gEgo illegalBits:) $8000) (<= global322 2))
+				(gEgo illegalBits: $a000)
 			)
-			(if (and (== (gEgo illegalBits:) -16384) (<= global322 2))
-				(gEgo illegalBits: -8192)
+			(if (and (== (gEgo illegalBits:) $c000) (<= global322 2))
+				(gEgo illegalBits: $e000)
 			)
 			(if (not (IsFlag 166))
 				(SetFlag 166)
@@ -639,21 +639,21 @@
 				(and
 					(< global315 4)
 					(or
-						(== (gEgo illegalBits:) -32768)
-						(== (gEgo illegalBits:) -24576)
+						(== (gEgo illegalBits:) $8000)
+						(== (gEgo illegalBits:) $a000)
 					)
 				)
-				(gEgo illegalBits: -16384)
+				(gEgo illegalBits: $c000)
 			)
 			(
 				(and
 					(== global315 4)
 					(or
-						(== (gEgo illegalBits:) -16384)
-						(== (gEgo illegalBits:) -8192)
+						(== (gEgo illegalBits:) $c000)
+						(== (gEgo illegalBits:) $e000)
 					)
 				)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 			)
 		)
 		(cond

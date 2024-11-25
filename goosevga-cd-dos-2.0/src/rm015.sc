@@ -121,7 +121,7 @@
 				(door setCycle: End)
 			)
 			(2
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(gCurRoom newRoom: 40)
 			)
 		)
@@ -148,7 +148,7 @@
 				(gEgo illegalBits: 0 setMotion: MoveTo 156 125 self)
 			)
 			(4
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HandsOn)
 				(gCurRoom setScript: 0)
 			)

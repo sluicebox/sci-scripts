@@ -196,7 +196,7 @@
 		(= temp3 (self setCursor: gWaitCursor 1))
 		(self startRoom: gCurRoomNum checkAni: setCursor: temp3 (HaveMouse))
 		(SetSynonyms gRegions)
-		(while ((= temp4 (Event new: 3)) type:)
+		(while ((= temp4 (Event new: evMOUSE)) type:)
 			(temp4 dispose:)
 		)
 		(temp4 dispose:)

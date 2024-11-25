@@ -69,7 +69,7 @@
 	(DoSound sndMASTER_VOLUME (= global125 12))
 	(gLongSong loop: -1 vol: 127 priority: 0)
 	(if (GameIsRestarting)
-		(MemorySegment 1 @global190)
+		(MemorySegment 1 @global190) ; MS_RESTORE_TO
 		(= global170 (StrAt @global190 0))
 		(= global157 (- (StrAt @global190 1) 32))
 		(StrAt gCurSaveDir 0 (- (StrAt @global190 2) 1))

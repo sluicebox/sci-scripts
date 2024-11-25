@@ -346,9 +346,9 @@
 				(gEgo get: 3) ; purse
 				(SetFlag 133)
 				(SetMenu 1281 112 1)
-				(= global122 2)
-				(= global121 4)
-				(= global120 18)
+				(= gGold 2)
+				(= gSilver 4)
+				(= gCopper 18)
 				(gEgo
 					view: 70
 					setLoop: 0

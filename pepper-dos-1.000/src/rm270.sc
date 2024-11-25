@@ -40,7 +40,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 11)
+		(= gDictionaryWord 11)
 		(super doVerb: theVerb)
 	)
 
@@ -221,19 +221,19 @@
 			(1
 				(cond
 					((and global115 (== global116 30))
-						(= global215 12)
+						(= gDictionaryWord 12)
 						(gMessager say: global115 85 30 1 self global196)
 					)
 					((and global115 global116)
 						(switch global116
 							(14
-								(= global215 86)
+								(= gDictionaryWord 86)
 							)
 							(126
-								(= global215 57)
+								(= gDictionaryWord 57)
 							)
 							(130
-								(= global215 62)
+								(= gDictionaryWord 62)
 							)
 						)
 						(+= state 2)
@@ -249,7 +249,7 @@
 				(gMessager say: global115 85 30 2 self global196)
 			)
 			(3
-				(= global215 14)
+				(= gDictionaryWord 14)
 				(gMessager say: global115 85 30 3 self global196)
 			)
 			(4
@@ -282,14 +282,14 @@
 				(= ticks 20)
 			)
 			(3
-				(= global215 99)
+				(= gDictionaryWord 99)
 				(gMessager say: 21 0 39 1 self) ; "Who's out there? I hear someone walking out there! Oh, no! An |r||c0|urchin|c||r|!"
 			)
 			(4
 				(gMessager say: 21 0 39 2 self) ; "I beg your pardon, ma'am, but I am NOT a sea creature!"
 			)
 			(5
-				(= global215 86)
+				(= gDictionaryWord 86)
 				(gMessager say: 21 0 39 3 self) ; "Don't give me any lip, you young |r||c0|scoundrel|c||r|! I know an urchin when I see one! Get off the street, you hear? Go home!"
 			)
 			(6
@@ -315,7 +315,7 @@
 			(0
 				(gGame handsOff:)
 				(tattle init:)
-				(= global215 62)
+				(= gDictionaryWord 62)
 				(gMessager say: 6 7 1 0 self) ; "Pepper knocks on the |r||c0|millinery shop|c||r| door."
 			)
 			(1
@@ -432,7 +432,7 @@
 				(= ticks 60)
 			)
 			(7
-				(= global215 78)
+				(= gDictionaryWord 78)
 				(gMessager say: 11 7 0 0 self) ; "Pepper knocks, but there is no answer. Maybe the |r||c0|proprietor|c||r| is upstairs."
 			)
 			(8
@@ -995,7 +995,7 @@
 				(gCurRoom setScript: sGiveSpEditionTattle)
 			)
 			(84 ; Trivia
-				(= global215 11)
+				(= gDictionaryWord 11)
 				(super doVerb: theVerb)
 			)
 			(else
@@ -1058,11 +1058,11 @@
 				)
 			)
 			(7 ; Do
-				(= global215 62)
+				(= gDictionaryWord 62)
 				(gMessager say: 3 7) ; "The building feels just like a |r||c0|millinery|c||r| |r||c0|shop|c||r|."
 			)
 			(6 ; Look
-				(= global215 11)
+				(= gDictionaryWord 11)
 				(gMessager say: 3 6) ; "This is a small, fancy |r||c0|boutique|c||r|."
 			)
 			(84 ; Trivia
@@ -1100,11 +1100,11 @@
 				)
 			)
 			(84 ; Trivia
-				(= global215 11)
+				(= gDictionaryWord 11)
 				(super doVerb: theVerb)
 			)
 			(6 ; Look
-				(= global215 62)
+				(= gDictionaryWord 62)
 				(super doVerb: theVerb)
 			)
 			(else
@@ -1127,7 +1127,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 62)
+		(= gDictionaryWord 62)
 		(if (== theVerb 84) ; Trivia
 			(gLongSong2 number: 927 setLoop: 1 play:)
 			(super doVerb: theVerb)
@@ -1203,7 +1203,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 11)
+		(= gDictionaryWord 11)
 		(super doVerb: theVerb)
 	)
 )
@@ -1224,7 +1224,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 11)
+		(= gDictionaryWord 11)
 		(switch theVerb
 			(96 ; Pebbles
 				(gGame points: 271 2)
@@ -1283,7 +1283,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 11)
+		(= gDictionaryWord 11)
 		(super doVerb: theVerb)
 	)
 )
@@ -1303,7 +1303,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 11)
+		(= gDictionaryWord 11)
 		(switch theVerb
 			(7 ; Do
 				(gMessager say: 15 7 10) ; "Pepper knocks on the door frame."

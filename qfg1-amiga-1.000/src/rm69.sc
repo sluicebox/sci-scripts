@@ -41,7 +41,7 @@
 		(SL enable:)
 		(NormalEgo)
 		(if (not global332)
-			(gEgo illegalBits: -24576 init:)
+			(gEgo illegalBits: $a000 init:)
 		)
 		(switch gPrevRoomNum
 			(70

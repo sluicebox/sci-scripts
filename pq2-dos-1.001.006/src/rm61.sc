@@ -378,7 +378,7 @@
 			(0
 				(gEgo
 					posn: 28 (gEgo y:)
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 					setPri: -1
 					setLoop: -1
@@ -988,7 +988,7 @@
 					setLoop: -1
 					setPri: -1
 					ignoreActors: 0
-					illegalBits: -16384
+					illegalBits: $c000
 				)
 				(if (>= local4 3)
 					(gEgo observeBlocks: ourCarBlock bwCarBlock)

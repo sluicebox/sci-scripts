@@ -84,7 +84,7 @@
 			(shaft setPri: 8 ignoreActors: 1 init: stopUpd:)
 		)
 		(statue setPri: 7 ignoreActors: 1 init: stopUpd:)
-		(gEgo view: 0 illegalBits: -32768 init:)
+		(gEgo view: 0 illegalBits: $8000 init:)
 		(if (== gPrevRoomNum 51)
 			(gEgo posn: 273 138)
 		else
@@ -457,7 +457,7 @@
 			)
 			(3
 				(shaft show:)
-				(gEgo view: 0 illegalBits: -32768 loop: 1 setCycle: Walk)
+				(gEgo view: 0 illegalBits: $8000 loop: 1 setCycle: Walk)
 				(HandsOn)
 				(client setScript: 0)
 			)
@@ -508,7 +508,7 @@
 					view: 165
 					loop: 5
 					cel: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: End self
 				)
 			)

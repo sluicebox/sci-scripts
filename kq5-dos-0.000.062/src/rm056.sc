@@ -34,7 +34,7 @@
 		(gGlobalSound number: 836 loop: -1 playBed:)
 		(HandsOff)
 		(= global103 0)
-		(gEgo offset: 3 illegalBits: 2048 init:)
+		(gEgo offset: 3 illegalBits: $0800 init:)
 		(switch gPrevRoomNum
 			(north
 				(gCurRoom setScript: enterNorth)
@@ -83,7 +83,7 @@
 	)
 
 	(method (dispose)
-		(gEgo illegalBits: -32768)
+		(gEgo illegalBits: $8000)
 		(super dispose:)
 	)
 )

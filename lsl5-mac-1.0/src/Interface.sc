@@ -448,7 +448,7 @@
 			(= lastIn 0)
 			(&= state $ffbf)
 			(repeat
-				(= event (Event new: -32768))
+				(= event (Event new: evPEEK))
 				(event localize:)
 				(if (!= (= in (self check: event)) lastIn)
 					(^= state $0040)

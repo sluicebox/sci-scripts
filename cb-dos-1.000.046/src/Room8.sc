@@ -227,7 +227,7 @@
 			(3
 				(= local1 0)
 				(Gator
-					illegalBits: -32671
+					illegalBits: $8061
 					posn:
 						(switch local3
 							(1 105)

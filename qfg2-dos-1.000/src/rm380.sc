@@ -690,14 +690,14 @@
 			(1
 				(DontTalk 1)
 				(guard1
-					illegalBits: -32768
+					illegalBits: $8000
 					view: 383
 					loop: 2
 					cel: 0
 					setCycle: End
 				)
 				(guard2
-					illegalBits: -32768
+					illegalBits: $8000
 					view: 383
 					loop: 3
 					cel: 0
@@ -749,7 +749,7 @@
 						(= triedOnce 1)
 					)
 				)
-				(gEgo ignoreActors: 0 illegalBits: -32768)
+				(gEgo ignoreActors: 0 illegalBits: $8000)
 				(= cycles 2)
 			)
 			(6
@@ -968,14 +968,14 @@
 			)
 			(2
 				(guard1
-					illegalBits: -32768
+					illegalBits: $8000
 					view: 383
 					loop: 2
 					cel: 0
 					setCycle: End
 				)
 				(guard2
-					illegalBits: -32768
+					illegalBits: $8000
 					view: 383
 					loop: 3
 					cel: 0

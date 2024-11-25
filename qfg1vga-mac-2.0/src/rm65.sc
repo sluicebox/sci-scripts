@@ -142,7 +142,7 @@
 		(NormalEgo)
 		(gEgo init:)
 		(if (not (IsFlag 293))
-			(gEgo illegalBits: -32640)
+			(gEgo illegalBits: $8080)
 		)
 		(switch gPrevRoomNum
 			(74

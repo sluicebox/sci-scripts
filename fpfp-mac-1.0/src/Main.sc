@@ -552,7 +552,7 @@
 		(proc0_9 0)
 		(= global110 0)
 		(if (GameIsRestarting)
-			(MemorySegment 1 @global107)
+			(MemorySegment 1 @global107) ; MS_RESTORE_TO
 		else
 			(= global107 28)
 		)
@@ -659,7 +659,7 @@
 			(gCurRoom style: 6 drawPic: 780)
 			(gCast eachElementDo: #hide)
 			(Animate (gCast elements:) 0)
-			(MemorySegment 0 @global107 2)
+			(MemorySegment 0 @global107 2) ; MS_SAVE_FROM
 			(super restart:)
 		else
 			(gTheIconBar disable:)
@@ -681,7 +681,7 @@
 				(gCurRoom style: 6 drawPic: 780)
 				(gCast eachElementDo: #hide)
 				(Animate (gCast elements:) 0)
-				(MemorySegment 0 @global107 2)
+				(MemorySegment 0 @global107 2) ; MS_SAVE_FROM
 				(Platform 0 4 4 -1)
 				(super restart:)
 			else

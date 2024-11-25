@@ -18,7 +18,7 @@
 	(method (newRoom newRoomNumber)
 		(= keep (OneOf newRoomNumber 17 18 19 20 21)) ; dullesAirport, pentagonFront, pentagonLobby, pentagonHall, briefingRoom
 		(= initialized 0)
-		(gEgo illegalBits: -32768)
+		(gEgo illegalBits: $8000)
 		(super newRoom: &rest)
 	)
 

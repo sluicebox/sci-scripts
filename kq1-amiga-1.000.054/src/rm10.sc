@@ -600,7 +600,7 @@
 			(0
 				(gGoat
 					setAvoider: 0
-					illegalBits: -16322
+					illegalBits: $c03e
 					setMotion:
 						MoveTo
 						(Random 10 310)

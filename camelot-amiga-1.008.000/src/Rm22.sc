@@ -606,15 +606,15 @@
 			(4
 				(if local2
 					(= local2 0)
-					(+= global121 global178)
+					(+= gSilver global178)
 					(= global178 0)
-					(gEgo illegalBits: -32768)
+					(gEgo illegalBits: $8000)
 					(HandsOn)
 					(client setScript: 0)
 				else
 					(User canControl: 1)
 					(gEgo
-						illegalBits: -32768
+						illegalBits: $8000
 						loop: (if (> (gEgo y:) 115) 3 else 2)
 					)
 					(gRmMusic number: 101 loop: -1 play:)
@@ -709,7 +709,7 @@
 					view: 0
 					cycleSpeed: 0
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 					loop: (if (> (gEgo y:) 115) 3 else 2)
 				)
 				(gEgo get: 6) ; iron_key | broom | grail

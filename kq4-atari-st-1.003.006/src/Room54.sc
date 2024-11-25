@@ -283,7 +283,7 @@
 					(useSteps changeState: 4)
 				)
 				((& (gEgo onControl:) $0040)
-					(gEgo illegalBits: -32768 ignoreActors: 0 loop: 2)
+					(gEgo illegalBits: $8000 ignoreActors: 0 loop: 2)
 					(gCurRoom newRoom: 22)
 				)
 			)
@@ -702,7 +702,7 @@
 				(gEgo
 					view: 4
 					setLoop: -1
-					illegalBits: -32768
+					illegalBits: $8000
 					setMotion: MoveTo 140 155 self
 				)
 			)

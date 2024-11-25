@@ -35,7 +35,7 @@
 (procedure (TalkFromBooth)
 	(= askedInToStudio 1)
 	(TPrint 640 48) ; "A speaker crackles in the background..."
-	(Say Reverse_Biaz 640 49 108) ; "Hello, out there! You must be Passionate Patti! Everything's all ready for your cut-in session. Just come on into the studio, I'm waiting for you."
+	(Say Reverse_Biaz 640 49 #dispose) ; "Hello, out there! You must be Passionate Patti! Everything's all ready for your cut-in session. Just come on into the studio, I'm waiting for you."
 )
 
 (instance rm640 of LLRoom
@@ -221,7 +221,7 @@
 					(= getRecordFirstTime 0)
 					(TPrint 640 1) ; "Wriggling the gold record on its plaque, you discover it is loose enough to be removed. So you do."
 					(TPrint 640 2) ; "You've wanted to have a gold record ever since you began playing professionally at age thirteen."
-					(TPrint 640 3 67 -1 185) ; "(But you never dreamed you would get it like this!)"
+					(TPrint 640 3 #at -1 185) ; "(But you never dreamed you would get it like this!)"
 				)
 				(gEgo normalize: 570 loop: 3)
 				(User canInput: 1)
@@ -271,7 +271,7 @@
 			(1
 				(HandsOff)
 				(if (not (DoSound sndGET_AUDIO_CAPABILITY))
-					(TPrint 640 4 67 -1 28 108 self) ; "Amidst the hiss and crackle of this old LP, you can just barely make out a husky female voice saying, "Porn is best at a quarter a whack!""
+					(TPrint 640 4 #at -1 28 #dispose self) ; "Amidst the hiss and crackle of this old LP, you can just barely make out a husky female voice saying, "Porn is best at a quarter a whack!""
 				else
 					(gTheMusic2 setVol: 80)
 					(message1 play: self)
@@ -283,13 +283,13 @@
 			(3
 				(gTheMusic2 setVol: 127)
 				(Points 3 125)
-				(TPrint 640 5 67 -1 28 108 self) ; "Of all the nerve! des Rever Records imprints subliminal messages encouraging young Americans to frequent adult bookstores!"
+				(TPrint 640 5 #at -1 28 #dispose self) ; "Of all the nerve! des Rever Records imprints subliminal messages encouraging young Americans to frequent adult bookstores!"
 			)
 			(4
 				(= ticks 30)
 			)
 			(5
-				(TPrint 640 6 67 -1 185 108 self) ; "At last! You've found some good solid evidence for Inspector Desmond."
+				(TPrint 640 6 #at -1 185 #dispose self) ; "At last! You've found some good solid evidence for Inspector Desmond."
 			)
 			(6
 				(HandsOn)
@@ -315,7 +315,7 @@
 			(1
 				(HandsOff)
 				(if (not (DoSound sndGET_AUDIO_CAPABILITY))
-					(TPrint 640 7 67 -1 28 108 self) ; "Although the music sounds quite garbled backwards, you feel certain you can understand the words, "Just Say Yes!""
+					(TPrint 640 7 #at -1 28 #dispose self) ; "Although the music sounds quite garbled backwards, you feel certain you can understand the words, "Just Say Yes!""
 				else
 					(gTheMusic2 setVol: 80)
 					(message2 play: self)
@@ -327,19 +327,19 @@
 			(3
 				(gTheMusic2 setVol: 127)
 				(Points 3 123)
-				(TPrint 640 8 67 -1 28 108 self) ; ""Just Say Yes!" Why, that's just the opposite of what Nancy Reagan said! You now have the incontrovertible evidence Desmond sent you to find! And you finally understand what evil this place does!"
+				(TPrint 640 8 #at -1 28 #dispose self) ; ""Just Say Yes!" Why, that's just the opposite of what Nancy Reagan said! You now have the incontrovertible evidence Desmond sent you to find! And you finally understand what evil this place does!"
 			)
 			(4
 				(= ticks 30)
 			)
 			(5
-				(TPrint 640 9 67 -1 28 108 self) ; "How vile! How corrupt! des Rever Records records backwards music urging innocent teenagers to violate the law! You never really believed this before--but you believe it now!"
+				(TPrint 640 9 #at -1 28 #dispose self) ; "How vile! How corrupt! des Rever Records records backwards music urging innocent teenagers to violate the law! You never really believed this before--but you believe it now!"
 			)
 			(6
 				(= ticks 30)
 			)
 			(7
-				(TPrint 640 10 67 -1 28 108 self) ; "If you could only obtain more evidence to prove your case."
+				(TPrint 640 10 #at -1 28 #dispose self) ; "If you could only obtain more evidence to prove your case."
 			)
 			(8
 				(HandsOn)
@@ -365,7 +365,7 @@
 			(1
 				(HandsOff)
 				(if (not (DoSound sndGET_AUDIO_CAPABILITY))
-					(TPrint 640 11 67 -1 28 108 self) ; "Although it seems improbable, you feel sure you can understand a message among the sped-up music: "Digital Audio Tape causes impotence." How odd."
+					(TPrint 640 11 #at -1 28 #dispose self) ; "Although it seems improbable, you feel sure you can understand a message among the sped-up music: "Digital Audio Tape causes impotence." How odd."
 				else
 					(gTheMusic2 setVol: 80)
 					(message3 play: self)
@@ -377,7 +377,7 @@
 			(3
 				(gTheMusic2 setVol: 127)
 				(Points 3 124)
-				(TPrint 640 12 67 -1 185 108 self) ; "(Hmm. This must be a "pre-Sony" Columbia recording!)"
+				(TPrint 640 12 #at -1 185 #dispose self) ; "(Hmm. This must be a "pre-Sony" Columbia recording!)"
 			)
 			(4
 				(HandsOn)
@@ -403,7 +403,7 @@
 			(1
 				(HandsOff)
 				(Points 3 122)
-				(TPrint 640 13 67 -1 28 108 self) ; "Well, that's interesting. You've always wondered if there was really a record underneath all that "gold.""
+				(TPrint 640 13 #at -1 28 #dispose self) ; "Well, that's interesting. You've always wondered if there was really a record underneath all that "gold.""
 			)
 			(2
 				(HandsOn)
@@ -562,10 +562,10 @@
 			(2
 				(cond
 					((not (turnTableWRecord cycler:))
-						(TPrint 640 14 67 -1 185) ; "The record player is STILL stopped!"
+						(TPrint 640 14 #at -1 185) ; "The record player is STILL stopped!"
 					)
 					((not (IsFlag 22)) ; fRecordOnTurntable
-						(TPrint 640 15 67 -1 185) ; "You should see how well it stops when there's a record on it!"
+						(TPrint 640 15 #at -1 185) ; "You should see how well it stops when there's a record on it!"
 					)
 					((needle cel:)
 						(needle doVerb: 3)
@@ -708,7 +708,7 @@
 				else
 					(turnTableWRecord cycleSpeed: 18)
 					(TPrint 640 17) ; "The turntable is now prepared to revolve thirty-three and one-third times per minute."
-					(TPrint 640 18 67 -1 185) ; "(But only when it's ON!)"
+					(TPrint 640 18 #at -1 185) ; "(But only when it's ON!)"
 				)
 				(button33 setPri: -1 stopUpd:)
 				(self dispose:)
@@ -747,7 +747,7 @@
 				else
 					(turnTableWRecord cycleSpeed: 6)
 					(TPrint 640 19) ; "The turntable is now prepared to revolve seventy-eight times per minute."
-					(TPrint 640 18 67 -1 185) ; "(But only when it's ON!)"
+					(TPrint 640 18 #at -1 185) ; "(But only when it's ON!)"
 				)
 				(button78 setPri: -1 stopUpd:)
 				(self dispose:)
@@ -779,7 +779,7 @@
 				(gEgo setHeading: 90 self)
 			)
 			(4
-				(Say Reverse_Biaz 640 20 108 139 self) ; "Patti, I promise you: you'll never work in this town again!"
+				(Say Reverse_Biaz 640 20 #dispose #caller self) ; "Patti, I promise you: you'll never work in this town again!"
 			)
 			(5
 				(elevatorDoor play:)
@@ -1012,7 +1012,7 @@
 					)
 					(askedInToStudio
 						(SetFlag 21) ; fWarned
-						(Say Reverse_Biaz 640 24 108) ; "Where are you going, Patti? There are a lot of people in this town who would love a chance to blow synth on a session here. I was happy to give you the gig. But, if you leave me now, I promise you I'll be on the phone to the Union before you're downstairs!"
+						(Say Reverse_Biaz 640 24 #dispose) ; "Where are you going, Patti? There are a lot of people in this town who would love a chance to blow synth on a session here. I was happy to give you the gig. But, if you leave me now, I promise you I'll be on the phone to the Union before you're downstairs!"
 					)
 					(else
 						(TalkFromBooth)

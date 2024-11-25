@@ -243,7 +243,7 @@
 		(if (== 1 (event type:))
 			(= lastIn 0)
 			(repeat
-				(= event (Event new: -32768))
+				(= event (Event new: evPEEK))
 				(GlobalToLocal event)
 				(if (!= (= in (self check: event)) lastIn)
 					(HiliteControl self)
@@ -463,7 +463,7 @@
 		(= eatMice 0)
 		(= ret 0)
 		(while (not ret)
-			(GlobalToLocal (= event (Event new: 32767 1)))
+			(GlobalToLocal (= event (Event new: evALL_EVENTS 1)))
 			(= ret (self handleEvent: event))
 			(event dispose:)
 			(if (== ret -1)

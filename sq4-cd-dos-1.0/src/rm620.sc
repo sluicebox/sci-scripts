@@ -34,7 +34,7 @@
 			posn: 100 55
 			setScript: flyScript
 			setPri: 5
-			illegalBits: -32768
+			illegalBits: $8000
 			ignoreActors: 1
 			setStep: 6 6
 		)

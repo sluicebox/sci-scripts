@@ -481,7 +481,7 @@
 					cel: 1
 					show:
 					setMotion: MoveTo 289 188 self
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors:
 				)
 			)
@@ -570,7 +570,7 @@
 			(= global189 0)
 		)
 		(NormalEgo)
-		(gEgo illegalBits: -16384 init:)
+		(gEgo illegalBits: $c000 init:)
 		((= global112 (Act new:)) view: 20 posn: 1000 1000 init: stopUpd:)
 		(if (> global189 2)
 			(= global187 0)

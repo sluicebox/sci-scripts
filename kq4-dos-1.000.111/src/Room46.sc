@@ -57,14 +57,14 @@
 				posn: 184 24
 				setStep: 4 1
 				setPri: 6
-				illegalBits: 16384
+				illegalBits: $4000
 				init:
 			)
 		)
 		((= local0 (Act new:))
 			view: 111
 			posn: 231 66
-			illegalBits: 8192
+			illegalBits: $2000
 			setPri: 14
 			xStep: 1
 			yStep: 3
@@ -75,7 +75,7 @@
 		((= local1 (Act new:))
 			view: 113
 			posn: 132 145
-			illegalBits: 8192
+			illegalBits: $2000
 			setPri: 14
 			xStep: 1
 			yStep: 3
@@ -95,14 +95,14 @@
 		)
 		(if (& (gEgo onControl: 0) $0020)
 			(HandsOn)
-			(gEgo setPri: -1 illegalBits: -32768 baseSetter: 0)
+			(gEgo setPri: -1 illegalBits: $8000 baseSetter: 0)
 			(gCurRoom newRoom: 45)
 		)
 		(if (& (gEgo onControl: 0) $0010)
 			(if (> (gEgo heading:) 180)
-				(gEgo illegalBits: -32768 setPri: 4)
+				(gEgo illegalBits: $8000 setPri: 4)
 			else
-				(gEgo illegalBits: 16384 setPri: 6)
+				(gEgo illegalBits: $4000 setPri: 6)
 			)
 		)
 		(if (& (gEgo onControl: 0) $0008)
@@ -263,7 +263,7 @@
 			)
 			(2
 				(if (& (gEgo onControl:) $0040)
-					(gEgo setPri: -1 illegalBits: -32768 baseSetter: 0)
+					(gEgo setPri: -1 illegalBits: $8000 baseSetter: 0)
 					(HandsOn)
 					(gCurRoom newRoom: 47)
 				else
@@ -274,7 +274,7 @@
 							stairBlock3
 							stairBlock4
 					)
-					(gEgo illegalBits: -32768)
+					(gEgo illegalBits: $8000)
 					(HandsOn)
 					(= local2 0)
 				)
@@ -304,12 +304,12 @@
 						stairBlock4
 				)
 				(if (& (gEgo onControl:) $0020)
-					(gEgo setPri: -1 illegalBits: -32768 baseSetter: 0)
+					(gEgo setPri: -1 illegalBits: $8000 baseSetter: 0)
 					(HandsOn)
 					(gCurRoom newRoom: 45)
 				else
 					(HandsOn)
-					(gEgo illegalBits: -32768)
+					(gEgo illegalBits: $8000)
 					(= local2 0)
 				)
 			)

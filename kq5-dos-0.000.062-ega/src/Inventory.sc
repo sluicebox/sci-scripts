@@ -604,7 +604,7 @@
 			(if (& (&= global71 $fffe) $0002)
 				(while (!= (= temp2 ((= temp0 (Event new:)) type:)) evMOUSEBUTTON)
 					(temp0 dispose:)
-					(= temp0 (Event new: -1))
+					(= temp0 (Event new: $ffff)) ; evPEEK | evALL_EVENTS
 					(temp0 localize:)
 					(= global122 (temp0 x:))
 					(if (< (= global123 (temp0 y:)) 0)

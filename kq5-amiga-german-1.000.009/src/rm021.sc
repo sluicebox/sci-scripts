@@ -300,7 +300,7 @@
 					setCycle: KQ5SyncWalk
 					yStep: 2
 					cycleSpeed: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setMotion: MoveTo (gEgo x:) (+ (gEgo y:) 5) self
 				)
 			)

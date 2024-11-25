@@ -222,7 +222,7 @@
 				(= cycles 2)
 			)
 			(1
-				(Say Mr__Bigg 130 0 108 139 self) ; "I understand the problem, but I want a solution!"
+				(Say Mr__Bigg 130 0 #dispose #caller self) ; "I understand the problem, but I want a solution!"
 			)
 			(2
 				(= seconds 3)

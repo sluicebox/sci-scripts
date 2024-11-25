@@ -236,7 +236,7 @@
 		view 80
 		loop 9
 		signal 26624
-		illegalBits 16386
+		illegalBits $4002
 	)
 )
 
@@ -248,7 +248,7 @@
 		loop 9
 		cel 1
 		signal 26624
-		illegalBits 16386
+		illegalBits $4002
 	)
 )
 
@@ -260,7 +260,7 @@
 		loop 9
 		cel 2
 		signal 26624
-		illegalBits 16386
+		illegalBits $4002
 	)
 )
 
@@ -271,7 +271,7 @@
 		view 80
 		loop 9
 		signal 26624
-		illegalBits 16386
+		illegalBits $4002
 	)
 )
 

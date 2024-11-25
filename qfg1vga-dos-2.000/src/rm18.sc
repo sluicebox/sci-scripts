@@ -33,7 +33,7 @@
 		(Load rsVIEW 700)
 		(SL enable:)
 		(NormalEgo)
-		(gEgo illegalBits: -28672)
+		(gEgo illegalBits: $9000)
 		(northBush addToPic:)
 		(southBush addToPic:)
 		(if

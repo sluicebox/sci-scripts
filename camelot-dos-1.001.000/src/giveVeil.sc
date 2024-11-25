@@ -29,7 +29,7 @@
 				else
 					(gTObj talkCue: self)
 					(proc57_1 162 2) ; "So, you are a scoundrel and a friend of Mari, no doubt. Expect no gratitude from me. Here is 1 dirham and be gone, or I will call the city guard to deal with you."
-					(++ global121)
+					(++ gSilver)
 				)
 			)
 			(2

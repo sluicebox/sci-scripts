@@ -58,7 +58,7 @@
 		(LoadMany rsVIEW 0 22 700 183 703)
 		(Load rsSOUND 16)
 		(NormalEgo)
-		(gEgo init: illegalBits: -384)
+		(gEgo init: illegalBits: $fe80)
 		(super init: &rest)
 		(InitAddToPics wallLeft wallRight)
 		(= saveIllegal -384)
@@ -243,7 +243,7 @@
 			)
 			(5
 				(NormalEgo)
-				(gEgo loop: 3 illegalBits: -384)
+				(gEgo loop: 3 illegalBits: $fe80)
 				(= cycles 2)
 			)
 			(6

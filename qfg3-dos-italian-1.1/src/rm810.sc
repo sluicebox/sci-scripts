@@ -229,7 +229,7 @@
 				(= cycles 11)
 			)
 			(4
-				(gEgo loop: 5 cel: 0 illegalBits: -32768 setCycle: End self)
+				(gEgo loop: 5 cel: 0 illegalBits: $8000 setCycle: End self)
 			)
 			(5
 				(if (or (gCast contains: apeMan) (gCast contains: apeMan1))

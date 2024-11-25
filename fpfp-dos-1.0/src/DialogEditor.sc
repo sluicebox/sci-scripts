@@ -351,7 +351,7 @@
 		(if (== (event type:) 1)
 			(self hide:)
 			(repeat
-				(= event (Event new: -32768))
+				(= event (Event new: evPEEK))
 				(event localize:)
 				(= eX (event x:))
 				(= eY (event y:))

@@ -41,7 +41,7 @@
 			doit:
 		)
 		(self setFeatures: BigDoll chair2 chair1 table)
-		(gEgo view: 0 loop: 1 posn: 200 153 illegalBits: -32768 init:)
+		(gEgo view: 0 loop: 1 posn: 200 153 illegalBits: $8000 init:)
 		(switch gAct
 			(2
 				(self setRegions: 257) ; lillRead

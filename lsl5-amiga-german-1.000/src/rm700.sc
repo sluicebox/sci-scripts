@@ -360,13 +360,13 @@
 			(4
 				(switch gSilvDollars
 					(0
-						(Say Doorman 700 5 108 139 self) ; "Yeah, that's what Mr. Lowe says, too."
+						(Say Doorman 700 5 #dispose #caller self) ; "Yeah, that's what Mr. Lowe says, too."
 					)
 					(1
-						(Say Doorman 700 6 108 139 self) ; "Right."
+						(Say Doorman 700 6 #dispose #caller self) ; "Right."
 					)
 					(else
-						(Say Doorman 700 7 108 139 self) ; "WOW! Come back again, Sir, and soon!"
+						(Say Doorman 700 7 #dispose #caller self) ; "WOW! Come back again, Sir, and soon!"
 					)
 				)
 				(gEgo put: 17 0) ; Silver_Dollar
@@ -442,7 +442,7 @@
 					(gGame setCursor: gTheCursor 1 saveX saveY)
 				)
 				(if (not (gEgo has: 17)) ; Silver_Dollar
-					(Say Cheri 700 8 108 139 self) ; "Amazing! What a genius! What a coincidence! Congratulations, Sir! You have correctly guessed the number of which I have been thinking of. Here's your ten `Tramp Casino' lucky souvenir silver dollars."
+					(Say Cheri 700 8 #dispose #caller self) ; "Amazing! What a genius! What a coincidence! Congratulations, Sir! You have correctly guessed the number of which I have been thinking of. Here's your ten `Tramp Casino' lucky souvenir silver dollars."
 				else
 					(for
 						((= num guess))
@@ -450,14 +450,14 @@
 						((= num (Random 1 6900)))
 					)
 					(Format @str 700 9 num num) ; "Aw, too bad! I was thinking of %d."
-					(Say Cheri @str 108 139 self)
+					(Say Cheri @str #dispose #caller self)
 				)
 			)
 			(1
 				(if (gEgo has: 17) ; Silver_Dollar
-					(Say Cheri 700 10 108 139 self) ; "But feel free to try again any time!"
+					(Say Cheri 700 10 #dispose #caller self) ; "But feel free to try again any time!"
 				else
-					(Say Cheri 700 11 108) ; "Please don't confuse them with REAL money!"
+					(Say Cheri 700 11 #dispose) ; "Please don't confuse them with REAL money!"
 					(changeGirl setLoop: 1 setCel: 0 setCycle: Osc 1 self)
 					(gEgo get: 17) ; Silver_Dollar
 					(= gSilvDollars 10)
@@ -582,13 +582,13 @@
 				(self doVerb: 5)
 			)
 			(5 ; Talk
-				(Say Doorman 700 16 108 139 self) ; "May I summon a limousine for you, Sir?"
+				(Say Doorman 700 16 #dispose #caller self) ; "May I summon a limousine for you, Sir?"
 			)
 			(10 ; Zipper
-				(Say Doorman 700 17 108) ; "Well, you're a little ugly, but I suppose.... Oh, okay. I get off at midnight!"
+				(Say Doorman 700 17 #dispose) ; "Well, you're a little ugly, but I suppose.... Oh, okay. I get off at midnight!"
 			)
 			(4 ; Inventory
-				(Say Doorman 700 18 108) ; "Thanks for the offer, but we employees of Tramp's NEVER accept gratuities!"
+				(Say Doorman 700 18 #dispose) ; "Thanks for the offer, but we employees of Tramp's NEVER accept gratuities!"
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)
@@ -613,7 +613,7 @@
 			(HandsOff)
 			(Say gEgo 700 20) ; "Yes, please... but could you make it back in?"
 			(Points 2 132)
-			(Say Doorman 700 21 108) ; "No problem," says Brewster. "Just watch this!"
+			(Say Doorman 700 21 #dispose) ; "No problem," says Brewster. "Just watch this!"
 			(gCurRoom setScript: sLimo)
 		else
 			(Say gEgo 700 22) ; "No, thank you. But I may well come back this way later."
@@ -644,11 +644,11 @@
 				(TPrint 700 23) ; "Tramp's Casino employs a beautiful young woman to greet all its distinguished visitors."
 			)
 			(3 ; Do
-				(Say Cheri 700 24 108) ; "Welcome to Tramp's Casino, young man! I'm here to welcome you because I'm the welcomer, so `Welcome!'"
+				(Say Cheri 700 24 #dispose) ; "Welcome to Tramp's Casino, young man! I'm here to welcome you because I'm the welcomer, so `Welcome!'"
 			)
 			(5 ; Talk
 				(if (not seenMsg)
-					(Say Cheri 700 25 108) ; "Hey fella! Wanna get lucky? Guess the number of which I'm thinking of. You might just win 10 `silver dollars!'"
+					(Say Cheri 700 25 #dispose) ; "Hey fella! Wanna get lucky? Guess the number of which I'm thinking of. You might just win 10 `silver dollars!'"
 					(= seenMsg 1)
 					(self approachVerbs: 5) ; Talk
 				else
@@ -657,7 +657,7 @@
 				)
 			)
 			(10 ; Zipper
-				(Say Cheri 700 26 108) ; "Hey! I may be standing here on this street corner, but I'm not that kind of working girl! Ya want I havta call my boyfriend the bouncer?"
+				(Say Cheri 700 26 #dispose) ; "Hey! I may be standing here on this street corner, but I'm not that kind of working girl! Ya want I havta call my boyfriend the bouncer?"
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)

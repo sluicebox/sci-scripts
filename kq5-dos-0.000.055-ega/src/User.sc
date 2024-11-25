@@ -36,7 +36,7 @@
 	)
 
 	(method (doit &tmp temp0 temp1 temp2 temp3 temp4 temp5 temp6 temp7)
-		(= temp0 (Event new: -1))
+		(= temp0 (Event new: $ffff)) ; evPEEK | evALL_EVENTS
 		(temp0 localize:)
 		(= global122 (temp0 x:))
 		(= global123 (temp0 y:))

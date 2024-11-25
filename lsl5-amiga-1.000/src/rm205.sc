@@ -129,38 +129,38 @@
 				(cigar setCycle: RandCycle)
 				(leftEyebrow setCycle: RandCycle)
 				(rightEyebrow setCycle: RandCycle)
-				(TPrint 205 2 80 {Mr. Bigg} 108 self 67 -1 185) ; "So, tell me, boys," says Mr. Bigg, "is everything proceeding according to our plan?"
+				(TPrint 205 2 #title {Mr. Bigg} #dispose self #at -1 185) ; "So, tell me, boys," says Mr. Bigg, "is everything proceeding according to our plan?"
 			)
 			(3
 				(cigar setCycle: 0)
 				(hand setCycle: Fwd)
 				(leftEyebrow setCycle: Beg)
 				(rightEyebrow setCycle: Beg)
-				(Say Vinnie 205 3 108 139 self) ; "Yes sir, Mr. Bigg! Our friends in Hollywood have the industry in an uproar. Their `America's Sexiest Home Videos' show is the talk of show biz!"
+				(Say Vinnie 205 3 #dispose #caller self) ; "Yes sir, Mr. Bigg! Our friends in Hollywood have the industry in an uproar. Their `America's Sexiest Home Videos' show is the talk of show biz!"
 			)
 			(4
 				(= ticks 45)
 			)
 			(5
-				(Say Vinnie 205 4 108 139 self) ; "There's every indication it will be the smash hit of the fall season."
+				(Say Vinnie 205 4 #dispose #caller self) ; "There's every indication it will be the smash hit of the fall season."
 			)
 			(6
 				(= ticks 45)
 			)
 			(7
-				(Say Bruno 205 5 108 139 self) ; "And we've found the perfect way to attack our little straw dog: I've discovered a new, hyper-active, political action committee called `Conservatives Against Nearly Everything.'"
+				(Say Bruno 205 5 #dispose #caller self) ; "And we've found the perfect way to attack our little straw dog: I've discovered a new, hyper-active, political action committee called `Conservatives Against Nearly Everything.'"
 			)
 			(8
 				(= ticks 45)
 			)
 			(9
-				(Say Bruno 205 6 108 139 self) ; "I'm sure they would be willing to become the focus of a national campaign to clean up the airwaves."
+				(Say Bruno 205 6 #dispose #caller self) ; "I'm sure they would be willing to become the focus of a national campaign to clean up the airwaves."
 			)
 			(10
 				(= ticks 45)
 			)
 			(11
-				(Say Bruno 205 7 108 139 self) ; "I'd like to propose to you, Boss, that we make a `little investment' in the health and well-being of C.A.N.E. You know, a `little something' to show how much we support their cause.'"
+				(Say Bruno 205 7 #dispose #caller self) ; "I'd like to propose to you, Boss, that we make a `little investment' in the health and well-being of C.A.N.E. You know, a `little something' to show how much we support their cause.'"
 			)
 			(12
 				(TPrint 205 8) ; "The room is filled with suppressed laughter."
@@ -171,7 +171,7 @@
 				(rightEyebrow setCycle: RandCycle)
 				(hand setCycle: End)
 				(cigar setCycle: RandCycle)
-				(TPrint 205 9 80 {Mr. Bigg} 108 self 67 -1 185) ; "Well, boys, I think you know I'm always interested in `raising C.A.N.E.!'"
+				(TPrint 205 9 #title {Mr. Bigg} #dispose self #at -1 185) ; "Well, boys, I think you know I'm always interested in `raising C.A.N.E.!'"
 			)
 			(14
 				(leftEyebrow setCycle: Beg)
@@ -182,7 +182,7 @@
 			)
 			(15
 				(cigar setCycle: Fwd)
-				(TPrint 205 11 80 {Mr. Bigg} 108 self 67 -1 185) ; "This bunch sounds like the perfect group to be the vanguard of our little protest against the filth of the airwaves! Why don't you make an anonymous contribution to our simple little friends at C.A.N.E., eh, boys?"
+				(TPrint 205 11 #title {Mr. Bigg} #dispose self #at -1 185) ; "This bunch sounds like the perfect group to be the vanguard of our little protest against the filth of the airwaves! Why don't you make an anonymous contribution to our simple little friends at C.A.N.E., eh, boys?"
 			)
 			(16
 				(self dispose:)
@@ -207,17 +207,17 @@
 				(= cycles 2)
 			)
 			(2
-				(TPrint 205 13 67 -1 185 70 280) ; "Silas Scruemall listens intently and deferentially to the powerful voice on the other end of the line."
+				(TPrint 205 13 #at -1 185 #width 280) ; "Silas Scruemall listens intently and deferentially to the powerful voice on the other end of the line."
 				(= ticks 45)
 			)
 			(3
-				(Say Silas_Scruemall 205 14 108 139 self) ; "Let me assure you, Julius: everything IS proceeding nicely. No, sir. I will NOT let you down."
+				(Say Silas_Scruemall 205 14 #dispose #caller self) ; "Let me assure you, Julius: everything IS proceeding nicely. No, sir. I will NOT let you down."
 			)
 			(4
 				(= ticks 45)
 			)
 			(5
-				(Say Silas_Scruemall 205 15 108 139 self) ; "Yes, sir. That's also being taken care of. No, it's handled. I have a man on it right now. All right; whatever you say, Julius!"
+				(Say Silas_Scruemall 205 15 #dispose #caller self) ; "Yes, sir. That's also being taken care of. No, it's handled. I have a man on it right now. All right; whatever you say, Julius!"
 			)
 			(6
 				(= ticks 30)
@@ -245,37 +245,37 @@
 				(= cycles 2)
 			)
 			(2
-				(Say President_of_C_A_N_E_ 205 17 108 139 self) ; "Well, thank you, gentlemen. I promise your CONSIDERABLE contribution will not be wasted!"
+				(Say President_of_C_A_N_E_ 205 17 #dispose #caller self) ; "Well, thank you, gentlemen. I promise your CONSIDERABLE contribution will not be wasted!"
 			)
 			(3
 				(= ticks 45)
 			)
 			(4
-				(Say President_of_C_A_N_E_ 205 18 108 139 self) ; "I daresay this one donation will enable us to now succeed where we've been unable to before. You just don't know how grateful we are!"
+				(Say President_of_C_A_N_E_ 205 18 #dispose #caller self) ; "I daresay this one donation will enable us to now succeed where we've been unable to before. You just don't know how grateful we are!"
 			)
 			(5
 				(= ticks 45)
 			)
 			(6
-				(Say Luigi 205 19 108 139 self) ; "You're welcome. But, just remember: our `benefactor' insists that his contribution remain completely anonymous."
+				(Say Luigi 205 19 #dispose #caller self) ; "You're welcome. But, just remember: our `benefactor' insists that his contribution remain completely anonymous."
 			)
 			(7
 				(= ticks 45)
 			)
 			(8
-				(Say Luigi 205 20 108 139 self) ; "There are no strings attached; do with it as you will. But--he expects to see positive benefits immediately. Is that acceptable to you?"
+				(Say Luigi 205 20 #dispose #caller self) ; "There are no strings attached; do with it as you will. But--he expects to see positive benefits immediately. Is that acceptable to you?"
 			)
 			(9
 				(= ticks 45)
 			)
 			(10
-				(Say President_of_C_A_N_E_ 205 21 108 139 self) ; "Why, sure. In fact, I know just where this money would do the most good. Tell your boss he's made the right decision going with us! C.A.N.E. will not let him down!"
+				(Say President_of_C_A_N_E_ 205 21 #dispose #caller self) ; "Why, sure. In fact, I know just where this money would do the most good. Tell your boss he's made the right decision going with us! C.A.N.E. will not let him down!"
 			)
 			(11
 				(= ticks 45)
 			)
 			(12
-				(Say Luigi 205 22 108 139 self) ; "Oh, let's just say he fully intends to see that you live up to your end of this bargain (if you get my drift)."
+				(Say Luigi 205 22 #dispose #caller self) ; "Oh, let's just say he fully intends to see that you live up to your end of this bargain (if you get my drift)."
 			)
 			(13
 				(= ticks 30)
@@ -307,31 +307,31 @@
 				(arm init: setCycle: End self)
 			)
 			(3
-				(TPrint 205 24 80 {Your Elected Official} 67 100 185 70 220) ; "And as you know (blah blah blah) interested in traditional American values, (blah blah blah) my campaign promises (blah blah blah) good and virtue (blah blah blah)"
+				(TPrint 205 24 #title {Your Elected Official} #at 100 185 #width 220) ; "And as you know (blah blah blah) interested in traditional American values, (blah blah blah) my campaign promises (blah blah blah) good and virtue (blah blah blah)"
 				(= ticks 45)
 			)
 			(4
-				(TPrint 205 25 80 {Your Elected Official} 67 100 185 70 220) ; "And furthermore (blah blah blah) if re-elected, I will (blah blah blah) pornography, blatant exploitation (blah blah blah) minors, miners (blah blah blah)"
+				(TPrint 205 25 #title {Your Elected Official} #at 100 185 #width 220) ; "And furthermore (blah blah blah) if re-elected, I will (blah blah blah) pornography, blatant exploitation (blah blah blah) minors, miners (blah blah blah)"
 				(= ticks 45)
 			)
 			(5
-				(TPrint 205 26 80 {Your Elected Official} 67 100 185 70 220) ; "And in conclusion, (blah blah blah) (blah blah blah)"
+				(TPrint 205 26 #title {Your Elected Official} #at 100 185 #width 220) ; "And in conclusion, (blah blah blah) (blah blah blah)"
 				(= ticks 45)
 			)
 			(6
-				(Say A_C_A_N_E__er 205 27 108 139 self) ; "Yeah, okay, Senator, we've got it. Here's the deal: there's plenty more where this comes from, as long as we see some progress on that bill to tighten regulation of the airwaves."
+				(Say A_C_A_N_E__er 205 27 #dispose #caller self) ; "Yeah, okay, Senator, we've got it. Here's the deal: there's plenty more where this comes from, as long as we see some progress on that bill to tighten regulation of the airwaves."
 			)
 			(7
 				(= ticks 45)
 			)
 			(8
-				(Say A_C_A_N_E__er 205 28 108 139 self) ; "We want that smut off the air--and we're willing to back up our beliefs in the `traditional' American way. So? Do you want it or don't you?"
+				(Say A_C_A_N_E__er 205 28 #dispose #caller self) ; "We want that smut off the air--and we're willing to back up our beliefs in the `traditional' American way. So? Do you want it or don't you?"
 			)
 			(9
 				(= ticks 45)
 			)
 			(10
-				(TPrint 205 29 80 {Your Elected Official} 67 100 185 70 220) ; ""Gimme that suitcase, boy. I got legislation to write!" he grins."
+				(TPrint 205 29 #title {Your Elected Official} #at 100 185 #width 220) ; ""Gimme that suitcase, boy. I got legislation to write!" he grins."
 				(= ticks 30)
 			)
 			(11

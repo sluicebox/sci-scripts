@@ -115,7 +115,7 @@
 			(if (!= (gLongSong number:) 22)
 				(gLongSong number: 22 priority: 1 loop: -1 play:)
 			)
-			(gEgo view: 0 setStep: 3 2 illegalBits: -32768 init:)
+			(gEgo view: 0 setStep: 3 2 illegalBits: $8000 init:)
 			(switch gPrevRoomNum
 				(42
 					(gEgo posn: 2 (gEgo y:))
@@ -185,7 +185,7 @@
 
 	(method (newRoom newRoomNumber)
 		(if (or (not script) (== script tActions))
-			(gEgo illegalBits: -32768)
+			(gEgo illegalBits: $8000)
 			(cond
 				((!= newRoomNumber 470)
 					(gLongSong owner: -1 number: 22 priority: 0 loop: -1 play:)
@@ -1073,7 +1073,7 @@
 			(14
 				(gEgo
 					view: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					observeControl: 16384
 					cycleSpeed: 0
 					setCycle: Walk
@@ -1132,7 +1132,7 @@
 					view: 106
 					setLoop: -1
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 					observeControl: 16384
 					show:
 					setMotion: Chase gEgo 10 self

@@ -706,7 +706,7 @@
 		(switch (= state newState)
 			(0
 				(HandsOff)
-				(gEgo illegalBits: -32768 setMotion: MoveTo 302 170 self)
+				(gEgo illegalBits: $8000 setMotion: MoveTo 302 170 self)
 			)
 			(1
 				(= local0 1)
@@ -780,7 +780,7 @@
 			)
 			(3
 				(NormalEgo)
-				(gEgo illegalBits: -28672)
+				(gEgo illegalBits: $9000)
 				(= local3 1)
 				(HandsOn)
 				(self dispose:)
@@ -809,7 +809,7 @@
 			)
 			(2
 				(NormalEgo)
-				(gEgo illegalBits: -28672)
+				(gEgo illegalBits: $9000)
 				(HandsOn)
 				(self dispose:)
 			)
@@ -1494,7 +1494,7 @@
 			(21
 				(NormalEgo)
 				(if local3
-					(gEgo illegalBits: -28672)
+					(gEgo illegalBits: $9000)
 				)
 				(gEgo loop: 2 posn: 63 93)
 				(self dispose:)
@@ -1543,7 +1543,7 @@
 			(6
 				(NormalEgo)
 				(if local3
-					(gEgo illegalBits: -28672)
+					(gEgo illegalBits: $9000)
 				)
 				(= local2 1)
 				(= local5 0)
@@ -1612,7 +1612,7 @@
 				(candelabra setCel: 4)
 				(NormalEgo)
 				(if local3
-					(gEgo illegalBits: -28672)
+					(gEgo illegalBits: $9000)
 				)
 				(= cycles 1)
 			)

@@ -52,7 +52,7 @@
 					view: 31
 					setStep: 2 1
 					cycleSpeed: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Walk
 				)
 				(if (== gCurRoomNum 78)
@@ -78,14 +78,14 @@
 						cycleSpeed: 1
 						cel: 6
 						setMotion: 0
-						illegalBits: -32766
+						illegalBits: $8002
 						setCycle: Beg self
 					)
 				)
 			)
 			(5
 				(proc0_1)
-				(gEgo loop: 2 illegalBits: -32766)
+				(gEgo loop: 2 illegalBits: $8002)
 				(HandsOn)
 				(self dispose:)
 			)

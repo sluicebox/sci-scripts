@@ -121,14 +121,14 @@
 		else
 			(= global107 0)
 		)
-		(gEgo illegalBits: -16384)
+		(gEgo illegalBits: $c000)
 		(switch global105
 			(0
 				(switch gPrevRoomNum
 					(25
 						(if (> (gEgo x:) 210)
 							(gEgo x: 293 y: 188)
-							(gEgo illegalBits: -32768 setPri: 14)
+							(gEgo illegalBits: $8000 setPri: 14)
 							(= global107 11)
 						else
 							(gEgo x: 212 y: 188)
@@ -141,12 +141,12 @@
 							(gEgo x: 215 y: (+ horizon (gEgo yStep:) 1))
 						else
 							(gEgo x: 286 y: (+ horizon (gEgo yStep:) 1))
-							(gEgo setPri: 14 illegalBits: -32768)
+							(gEgo setPri: 14 illegalBits: $8000)
 							(= global107 11)
 						)
 					)
 					(20
-						(gEgo setPri: 14 illegalBits: -32768)
+						(gEgo setPri: 14 illegalBits: $8000)
 						(= global107 11)
 						(= global105 0)
 						(if (< (gEgo y:) horizon)
@@ -158,7 +158,7 @@
 					(else
 						(= global107 11)
 						(gEgo x: 318 y: 160)
-						(gEgo illegalBits: -32768)
+						(gEgo illegalBits: $8000)
 						(gEgo setPri: 14)
 					)
 				)
@@ -233,7 +233,7 @@
 			(= global214 global159)
 		)
 		(if (!= global105 10)
-			(gEgo setPri: -1 illegalBits: -32768)
+			(gEgo setPri: -1 illegalBits: $8000)
 			(super newRoom: newRoomNumber)
 		)
 	)

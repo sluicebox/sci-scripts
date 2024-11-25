@@ -219,7 +219,7 @@
 			loop: 0
 			posn: 36 110
 			init:
-			illegalBits: -32768
+			illegalBits: $8000
 			setMotion: MoveTo 70 110 doorActions
 		)
 		(if (not (IsFlag 3))
@@ -574,7 +574,7 @@
 				(HandsOn)
 				(Face gEgo pouch)
 				(gEgo get: 3) ; purse
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(pouch posn: 0 0 hide:)
 				(SetMenu 1281 112 1)
 				(client setScript: 0)
@@ -720,7 +720,7 @@
 				(gEgo
 					setLoop: -1
 					ignoreActors: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Walk
 					setMotion: MoveTo 180 110 self
 				)
@@ -811,7 +811,7 @@
 				(gEgo
 					view: 2
 					ignoreActors: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setLoop: -1
 					loop: 3
 					setMotion: MoveTo 83 130 self

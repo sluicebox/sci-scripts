@@ -60,7 +60,7 @@
 			{"Come on, Graham! Let's explore someplace else!"}
 		)
 		(self setFeatures: house beach bell setRegions: 220) ; boatRegion
-		(gEgo posn: 0 500 illegalBits: -16384 init:)
+		(gEgo posn: 0 500 illegalBits: $c000 init:)
 		(switch gPrevRoomNum
 			(112 ; hermit3
 				(self setScript: cartoon2)
@@ -104,7 +104,7 @@
 			(hermit_a view: 626 posn: 131 148 setPri: 10 cel: 2 init:)
 		)
 		(if (== gPrevRoomNum east)
-			(gEgo illegalBits: -16384)
+			(gEgo illegalBits: $c000)
 		else
 			(gEgo init: view: 0 normal: 1)
 		)

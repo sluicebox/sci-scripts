@@ -368,7 +368,7 @@
 					posn: 153 126
 					ignoreActors: 0
 					setCycle: Walk
-					illegalBits: -32764
+					illegalBits: $8004
 					setMotion: MoveTo 119 93 self
 				)
 				(if (not local7)

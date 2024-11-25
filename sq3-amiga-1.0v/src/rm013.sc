@@ -749,7 +749,7 @@
 					loop: 0
 					setStep: 2 1
 					posn: 132 76
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(= seconds 2)
 			)
@@ -789,7 +789,7 @@
 					loop: 0
 					setPri: 9
 					setStep: 3 1
-					illegalBits: -32768
+					illegalBits: $8000
 					posn: -8 104
 					setMotion: MoveTo 322 104
 				)

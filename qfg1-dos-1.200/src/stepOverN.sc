@@ -36,7 +36,7 @@
 				(if (< (gEgo y:) 77)
 					(gEgo setMotion: MoveTo 214 67 self)
 				else
-					(gEgo illegalBits: -32768)
+					(gEgo illegalBits: $8000)
 					(self changeState: 3)
 				)
 			)
@@ -75,7 +75,7 @@
 			)
 			(1
 				((ScriptID 94 0) notify: 7) ; rm94
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HandsOn)
 				(self dispose:)
 			)

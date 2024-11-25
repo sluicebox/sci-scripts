@@ -172,7 +172,7 @@
 				(thug1
 					view: 806
 					setScript: 0
-					illegalBits: 2048
+					illegalBits: $0800
 					setCycle: Walk
 					ignoreActors: 1
 					moveSpeed: 1

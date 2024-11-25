@@ -125,7 +125,7 @@
 			(= temp1 0)
 			(= temp2 moveDelay)
 			(repeat
-				(= param1 (Event new: 32768))
+				(= param1 (Event new: evPEEK))
 				(param1 localize: plane)
 				(if (and (= temp0 (self onMe: param1)) (not (-- temp2)))
 					(= temp2 moveDelay)

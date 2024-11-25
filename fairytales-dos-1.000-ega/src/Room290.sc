@@ -88,7 +88,7 @@
 	)
 
 	(method (dispose)
-		(gEgo illegalBits: -32768)
+		(gEgo illegalBits: $8000)
 		(if (and (== global144 gBeautyStory) (gGlobalMusic handle:))
 			(gGlobalMusic fade: 0 15 12 1)
 			(= global225 6)

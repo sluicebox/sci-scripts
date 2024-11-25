@@ -112,28 +112,28 @@
 			(0
 				(switch register
 					(0
-						(Say Michelle_Milken 530 0 108 139 self) ; ""Nearly as many times as I'm here," she responds."
+						(Say Michelle_Milken 530 0 #dispose #caller self) ; ""Nearly as many times as I'm here," she responds."
 					)
 					(1
-						(Say Michelle_Milken 530 1 108 139 self) ; "That may be, but I look even better out of it!"
+						(Say Michelle_Milken 530 1 #dispose #caller self) ; "That may be, but I look even better out of it!"
 					)
 					(2
-						(Say Michelle_Milken 530 2 108 139 self) ; "Well, you may sit down, but it may be for dessert!"
+						(Say Michelle_Milken 530 2 #dispose #caller self) ; "Well, you may sit down, but it may be for dessert!"
 					)
 				)
 			)
 			(1
 				(switch register
 					(0
-						(TPrint 530 3 67 -1 185) ; "(Now what did THAT mean?)"
+						(TPrint 530 3 #at -1 185) ; "(Now what did THAT mean?)"
 						(self dispose:)
 					)
 					(1
-						(TPrint 530 4 67 -1 185) ; "(Say, this may turn out all right yet!)"
+						(TPrint 530 4 #at -1 185) ; "(Say, this may turn out all right yet!)"
 						(self dispose:)
 					)
 					(2
-						(TPrint 530 5 67 -1 185) ; "(A better offer you've never had, Larry! Go for it!!)"
+						(TPrint 530 5 #at -1 185) ; "(A better offer you've never had, Larry! Go for it!!)"
 						(gCurRoom setScript: sDoMichelle)
 					)
 				)
@@ -306,7 +306,7 @@
 				(= cycles 2)
 			)
 			(1
-				(Say Michelle_Milken 530 6 108) ; ""Allow me to make our booth just a little more private," says Michelle, standing up."
+				(Say Michelle_Milken 530 6 #dispose) ; ""Allow me to make our booth just a little more private," says Michelle, standing up."
 				(drape4 setCycle: Beg self)
 			)
 			(2
@@ -410,7 +410,7 @@
 		(super cue:)
 		(switch (++ cueCounter)
 			(1
-				(TPrint 530 12 108 self) ; "DEAR!" interrupts his wife, "that's not necessary! This is a family restaurant!"
+				(TPrint 530 12 #dispose self) ; "DEAR!" interrupts his wife, "that's not necessary! This is a family restaurant!"
 			)
 			(2
 				(self setCycle: End self)
@@ -674,8 +674,8 @@
 			(5 ; Talk
 				(if (not talkedToTable1)
 					(HandsOff)
-					(Say gEgo 530 18 67 -1 185) ; ""Excuse me, may I join you?" you ask the couple at the left table."
-					(TPrint 530 19 108 drape1) ; "No. I'm sorry, but we're eating." replies the wit at the table. "And I don't want to lose my appetite."
+					(Say gEgo 530 18 #at -1 185) ; ""Excuse me, may I join you?" you ask the couple at the left table."
+					(TPrint 530 19 #dispose drape1) ; "No. I'm sorry, but we're eating." replies the wit at the table. "And I don't want to lose my appetite."
 				else
 					(super doVerb: theVerb invItem)
 				)
@@ -708,8 +708,8 @@
 			(5 ; Talk
 				(if (not talkedToTable2)
 					(HandsOff)
-					(Say gEgo 530 20 67 -1 185) ; "Excuse me," you shout to that far table, "but can you explain why I don't talk to that lovely woman sitting all alone at that table in the corner?"
-					(TPrint 530 21 108 drape2) ; "Could your head be up your..."
+					(Say gEgo 530 20 #at -1 185) ; "Excuse me," you shout to that far table, "but can you explain why I don't talk to that lovely woman sitting all alone at that table in the corner?"
+					(TPrint 530 21 #dispose drape2) ; "Could your head be up your..."
 				else
 					(super doVerb: theVerb invItem)
 				)
@@ -742,7 +742,7 @@
 			(5 ; Talk
 				(if (not talkedToTable3)
 					(HandsOff)
-					(Say gEgo 530 22 67 -1 185 108 drape3) ; ""Hi, folks; I'm from out of town!" you yell to the diners at the table across the room."
+					(Say gEgo 530 22 #at -1 185 #dispose drape3) ; ""Hi, folks; I'm from out of town!" you yell to the diners at the table across the room."
 				else
 					(super doVerb: theVerb invItem)
 				)
@@ -781,25 +781,25 @@
 			(5 ; Talk
 				(switch (++ michelleCount)
 					(1
-						(Say gEgo 530 26 67 -1 185) ; "Hello, Lovely Lonely Lady," you say to the gorgeous babe sitting all alone in the booth near you. "Allow me to introduce myself. My name is Larry; Larry Laffer."
+						(Say gEgo 530 26 #at -1 185) ; "Hello, Lovely Lonely Lady," you say to the gorgeous babe sitting all alone in the booth near you. "Allow me to introduce myself. My name is Larry; Larry Laffer."
 						(TPrint 530 27) ; "You hope she doesn't just ignore you."
-						(Say Michelle_Milken 530 28 108) ; "Hi, Larry," she says with a friendly smile, "new in town?"
+						(Say Michelle_Milken 530 28 #dispose) ; "Hi, Larry," she says with a friendly smile, "new in town?"
 					)
 					(2
-						(Say gEgo 530 29 67 -1 185) ; "Remembering your boss' warning not to reveal your identity, you decide to begin with a casual opener, "Do you come here often?" you ask."
+						(Say gEgo 530 29 #at -1 185) ; "Remembering your boss' warning not to reveal your identity, you decide to begin with a casual opener, "Do you come here often?" you ask."
 						(gCurRoom setScript: sTalk 0 0)
 					)
 					(3
-						(Say gEgo 530 30 67 -1 185) ; "Perhaps I could mention her "power clothes," you think to yourself. A compliment on her apparel might be appropriate..."
-						(Say gEgo 530 31 67 -1 185) ; ""What a lovely dress you're almost wearing," you tell her. "And you certainly look good in it!"
+						(Say gEgo 530 30 #at -1 185) ; "Perhaps I could mention her "power clothes," you think to yourself. A compliment on her apparel might be appropriate..."
+						(Say gEgo 530 31 #at -1 185) ; ""What a lovely dress you're almost wearing," you tell her. "And you certainly look good in it!"
 						(gCurRoom setScript: sTalk 0 1)
 					)
 					(4
-						(Say gEgo 530 32 67 -1 185) ; ""I notice you're dining alone," you try again."
-						(Say Michelle_Milken 530 33 108) ; ""Yes, and dining isn't the only thing I don't enjoy doing alone!" she responds with a smile."
+						(Say gEgo 530 32 #at -1 185) ; ""I notice you're dining alone," you try again."
+						(Say Michelle_Milken 530 33 #dispose) ; ""Yes, and dining isn't the only thing I don't enjoy doing alone!" she responds with a smile."
 					)
 					(else
-						(Say gEgo 530 34 67 -1 185) ; ""I was wondering: may I join you for dinner?" you ask."
+						(Say gEgo 530 34 #at -1 185) ; ""I was wondering: may I join you for dinner?" you ask."
 						(gCurRoom setScript: sTalk 0 2)
 					)
 				)

@@ -185,7 +185,7 @@
 			)
 			(5
 				(User canControl: 1 canInput: 1)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 			)
 			(6
 				(HandsOff)
@@ -209,7 +209,7 @@
 			)
 			(8
 				(User canControl: 1 canInput: 1)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 			)
 			(9
 				(HandsOff)
@@ -232,7 +232,7 @@
 			)
 			(11
 				(User canControl: 1 canInput: 1)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 			)
 			(12
 				(HandsOff)

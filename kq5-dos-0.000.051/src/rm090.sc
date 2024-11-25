@@ -661,7 +661,7 @@
 				(gEgo
 					normal: 1
 					view: 2
-					illegalBits: -32768
+					illegalBits: $8000
 					loop: 4
 					setLoop: -1
 					put: 10 ; Harp

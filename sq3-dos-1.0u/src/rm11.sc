@@ -262,7 +262,7 @@
 					loop: 1
 					setStep: 2 1
 					posn: 103 88
-					illegalBits: -32768
+					illegalBits: $8000
 					setMotion: MoveTo -50 88
 				)
 				(HandsOn)
@@ -297,7 +297,7 @@
 					setStep: 3 1
 					posn: 248 116
 					setMotion: MoveTo -1 116
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(HandsOn)
 				(User prevDir: 7)

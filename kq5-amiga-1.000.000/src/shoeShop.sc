@@ -106,7 +106,7 @@
 				(gEgo illegalBits: 0 setMotion: MoveTo 138 154 self)
 			)
 			(2
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(if (IsFlag 23)
 					(proc0_28 177 205 0 67 10 10 25 7) ; "It's you again, is it? We still don't have any shoes for sale."
 					(wHands cycleSpeed: 3 setCycle: Fwd init:)
@@ -513,7 +513,7 @@
 		priority 10
 		signal 16
 		cycleSpeed 2
-		illegalBits 2048
+		illegalBits $0800
 	)
 
 	(method (handleEvent event)

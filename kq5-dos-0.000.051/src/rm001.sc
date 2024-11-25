@@ -109,7 +109,7 @@
 			posn: temp0 temp1
 			setStep: 2 1
 			setLoop: -1
-			illegalBits: -16384
+			illegalBits: $c000
 			init:
 		)
 		(door
@@ -237,7 +237,7 @@
 	)
 
 	(method (dispose)
-		(gEgo illegalBits: -32768)
+		(gEgo illegalBits: $8000)
 		(DisposeScript 991)
 		(super dispose:)
 	)
@@ -382,7 +382,7 @@
 					setLoop: -1
 					setStep: 3 2
 					setPri: 12
-					illegalBits: -16384
+					illegalBits: $c000
 					offset: 3
 					signal: (& (gEgo signal:) $f7ff)
 				)

@@ -202,7 +202,7 @@
 					init:
 					setCycle: Fwd
 				)
-				(if global169
+				(if gLolotteAlive
 					((View new:)
 						view: 145
 						ignoreActors: 1

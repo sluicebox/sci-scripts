@@ -430,7 +430,7 @@
 				(= cycles 8)
 			)
 			(10
-				(gEgo illegalBits: -32768 setScript: 0)
+				(gEgo illegalBits: $8000 setScript: 0)
 				(HandsOn)
 			)
 		)
@@ -732,7 +732,7 @@
 			)
 			(8
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					moveSpeed: 1
 					setCycle: 0
 					setLoop: 1

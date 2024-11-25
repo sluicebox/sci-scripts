@@ -278,7 +278,7 @@
 					claimed: 0
 					port: 0
 				)
-				(GetEvent 32767 talkerEvent)
+				(GetEvent evALL_EVENTS talkerEvent)
 				(if
 					(and
 						(talkerEvent type:)
@@ -333,7 +333,7 @@
 		(FlushResources newRoomNumber)
 		(self startRoom: gCurRoomNum checkAni:)
 		(SetSynonyms gRegions)
-		(while ((= temp5 (Event new: 3)) type:)
+		(while ((= temp5 (Event new: evMOUSE)) type:)
 			(temp5 dispose:)
 		)
 		(temp5 dispose:)

@@ -32,7 +32,7 @@
 		(SL enable:)
 		(self setLocales: 804)
 		(NormalEgo)
-		(gEgo illegalBits: -28672 init:)
+		(gEgo illegalBits: $9000 init:)
 		(switch gPrevRoomNum
 			(10
 				(gEgo posn: 140 91 setMotion: MoveTo 140 190)

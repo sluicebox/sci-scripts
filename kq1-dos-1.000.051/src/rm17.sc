@@ -56,7 +56,7 @@
 				else
 					(= global136 1000)
 					(gEgo
-						illegalBits: 128
+						illegalBits: $0080
 						view: 13
 						setStep: 3 1
 						posn: 3 (proc0_17 186 (gEgo y:) 104)

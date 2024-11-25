@@ -35,25 +35,25 @@
 				(= ticks 123)
 			)
 			(1
-				(Say Inspector_Desmond 420 0 108 139 self) ; "All right, Patti, here's the deal: we're convinced of organized crime's considerable influence in the entertainment industry. I want you to use your musical talent to help us obtain sufficient evidence to convict the guilty parties."
+				(Say Inspector_Desmond 420 0 #dispose #caller self) ; "All right, Patti, here's the deal: we're convinced of organized crime's considerable influence in the entertainment industry. I want you to use your musical talent to help us obtain sufficient evidence to convict the guilty parties."
 			)
 			(2
 				(= ticks 60)
 			)
 			(3
-				(Say You 420 1 108 139 self) ; "But, Inspector," you say worriedly, "I know nothing of spying."
+				(Say You 420 1 #dispose #caller self) ; "But, Inspector," you say worriedly, "I know nothing of spying."
 			)
 			(4
 				(= ticks 60)
 			)
 			(5
-				(Say Inspector_Desmond 420 2 108 139 self) ; "Don't worry, Patti, most of the spies we use are amateurs! You won't be `licensed to kill!' Just keep your eyes and ears open, learn what you can, take advantage of any opportunities, and try to bring back some hard evidence!"
+				(Say Inspector_Desmond 420 2 #dispose #caller self) ; "Don't worry, Patti, most of the spies we use are amateurs! You won't be `licensed to kill!' Just keep your eyes and ears open, learn what you can, take advantage of any opportunities, and try to bring back some hard evidence!"
 			)
 			(6
 				(= ticks 60)
 			)
 			(7
-				(Say Inspector_Desmond 420 3 108 139 self) ; "We'll make sure you're in the right place at the right time. And you'll be doing good for your country."
+				(Say Inspector_Desmond 420 3 #dispose #caller self) ; "We'll make sure you're in the right place at the right time. And you'll be doing good for your country."
 			)
 			(8
 				(= ticks 60)
@@ -63,31 +63,31 @@
 				(= ticks 60)
 			)
 			(10
-				(Say You 420 5 108 139 self) ; "All right, Inspector Desmond," you say. "But what places and what times?"
+				(Say You 420 5 #dispose #caller self) ; "All right, Inspector Desmond," you say. "But what places and what times?"
 			)
 			(11
 				(= ticks 60)
 			)
 			(12
-				(Say Inspector_Desmond 420 6 108 139 self) ; "There are two specific areas of concern: one is subliminal messages in popular music. Our studies link the recent nationwide rise in crime to increased popularity of hard rock music."
+				(Say Inspector_Desmond 420 6 #dispose #caller self) ; "There are two specific areas of concern: one is subliminal messages in popular music. Our studies link the recent nationwide rise in crime to increased popularity of hard rock music."
 			)
 			(13
 				(= ticks 60)
 			)
 			(14
-				(Say Inspector_Desmond 420 7 108 139 self) ; "`des Rever Records' in Baltimore is heavily involved in such subliminal recordings. Much of the overdubbing at that studio is handled by a young recording engineer named Reverse Biaz."
+				(Say Inspector_Desmond 420 7 #dispose #caller self) ; "`des Rever Records' in Baltimore is heavily involved in such subliminal recordings. Much of the overdubbing at that studio is handled by a young recording engineer named Reverse Biaz."
 			)
 			(15
 				(= ticks 60)
 			)
 			(16
-				(Say Inspector_Desmond 420 8 108 139 self) ; "The second area is the recent flood of obscene rap recordings. I personally believe records like these are being used by the Mob to undermine the moral fiber of our nation's youth."
+				(Say Inspector_Desmond 420 8 #dispose #caller self) ; "The second area is the recent flood of obscene rap recordings. I personally believe records like these are being used by the Mob to undermine the moral fiber of our nation's youth."
 			)
 			(17
 				(= ticks 60)
 			)
 			(18
-				(Say Inspector_Desmond 420 9 108 139 self) ; "`K-RAP Radio' in Philadelphia is the headquarters of the rap group `2 Live 2 Screw,' who have had an unjustified string of hits recently. I'm sure that place is a center of Mob involvement."
+				(Say Inspector_Desmond 420 9 #dispose #caller self) ; "`K-RAP Radio' in Philadelphia is the headquarters of the rap group `2 Live 2 Screw,' who have had an unjustified string of hits recently. I'm sure that place is a center of Mob involvement."
 			)
 			(19
 				(= ticks 60)
@@ -97,67 +97,67 @@
 				(= ticks 60)
 			)
 			(21
-				(Say You 420 11 108 139 self) ; "But to Desmond you say, "Well, all right, Inspector, but I'm hardly an expert in subliminal recordings or rap music!""
+				(Say You 420 11 #dispose #caller self) ; "But to Desmond you say, "Well, all right, Inspector, but I'm hardly an expert in subliminal recordings or rap music!""
 			)
 			(22
 				(= ticks 60)
 			)
 			(23
-				(Say Inspector_Desmond 420 12 108 139 self) ; "Oh, don't worry, Patti. With your `talents,' you can easily fake your way through the simplistic noise these guys pass off as music. After all, they're hardly the M.J.Q.!"
+				(Say Inspector_Desmond 420 12 #dispose #caller self) ; "Oh, don't worry, Patti. With your `talents,' you can easily fake your way through the simplistic noise these guys pass off as music. After all, they're hardly the M.J.Q.!"
 			)
 			(24
 				(= ticks 60)
 			)
 			(25
-				(Say Inspector_Desmond 420 13 108 139 self) ; "One more thing: a man we know only as `Julius' has been connected to both these businesses. I think this `Julius' character may be the key to the entire problem."
+				(Say Inspector_Desmond 420 13 #dispose #caller self) ; "One more thing: a man we know only as `Julius' has been connected to both these businesses. I think this `Julius' character may be the key to the entire problem."
 			)
 			(26
 				(= ticks 60)
 			)
 			(27
-				(Say Inspector_Desmond 420 14 108 139 self) ; "Anything you can discover about `Julius' or K-RAP or des Rever Records would be helpful. We'll provide you with background information on all the pertinent people, places and groups, but it will be up to you to get in and get out with whatever hard facts you can."
+				(Say Inspector_Desmond 420 14 #dispose #caller self) ; "Anything you can discover about `Julius' or K-RAP or des Rever Records would be helpful. We'll provide you with background information on all the pertinent people, places and groups, but it will be up to you to get in and get out with whatever hard facts you can."
 			)
 			(28
 				(= ticks 60)
 			)
 			(29
-				(Say You 420 15 108 139 self) ; "Okay, boss, I'm on! Now, how do I begin?"
+				(Say You 420 15 #dispose #caller self) ; "Okay, boss, I'm on! Now, how do I begin?"
 			)
 			(30
 				(= ticks 60)
 			)
 			(31
-				(Say Inspector_Desmond 420 16 108 139 self) ; "Earlier this morning I set you up with a gig at des Rever Records as a keyboard sub on a recording session."
+				(Say Inspector_Desmond 420 16 #dispose #caller self) ; "Earlier this morning I set you up with a gig at des Rever Records as a keyboard sub on a recording session."
 			)
 			(32
 				(= ticks 60)
 			)
 			(33
-				(Say Inspector_Desmond 420 17 108 139 self) ; "We've also arranged a short East Coast tour as your cover story. The government will handle all your travel arrangements."
+				(Say Inspector_Desmond 420 17 #dispose #caller self) ; "We've also arranged a short East Coast tour as your cover story. The government will handle all your travel arrangements."
 			)
 			(34
 				(= ticks 60)
 			)
 			(35
-				(Say You 420 18 108 139 self) ; "First class, of course?"
+				(Say You 420 18 #dispose #caller self) ; "First class, of course?"
 			)
 			(36
 				(= ticks 60)
 			)
 			(37
-				(Say Inspector_Desmond 420 19 108 139 self) ; "Yes," he laughs, "first class, of course! I'll get you a private limousine and your own personal driver! And, Patti, if things go well, I'll even set you up with a gig at the White House! Would you like that?"
+				(Say Inspector_Desmond 420 19 #dispose #caller self) ; "Yes," he laughs, "first class, of course! I'll get you a private limousine and your own personal driver! And, Patti, if things go well, I'll even set you up with a gig at the White House! Would you like that?"
 			)
 			(38
 				(= ticks 60)
 			)
 			(39
-				(Say You 420 20 108 139 self) ; ""Yes, of course!" you agree, afraid now that you're in way over your head."
+				(Say You 420 20 #dispose #caller self) ; ""Yes, of course!" you agree, afraid now that you're in way over your head."
 			)
 			(40
 				(= ticks 60)
 			)
 			(41
-				(Say Inspector_Desmond 420 21 108 139 self) ; "Come with me, Patti," Desmond says, rising to his feet, "we'll get started right now!"
+				(Say Inspector_Desmond 420 21 #dispose #caller self) ; "Come with me, Patti," Desmond says, rising to his feet, "we'll get started right now!"
 			)
 			(42
 				(if gModelessDialog

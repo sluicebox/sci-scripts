@@ -122,12 +122,12 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(Say Michelle_Milken 535 2 108 139 self) ; "You know, Larry, it's nice just sitting here with you, but I'm going to have to run. I've got a big, uh, er, `bored' meeting I'm late for. Maybe I'll see you around, eh?"
+				(Say Michelle_Milken 535 2 #dispose #caller self) ; "You know, Larry, it's nice just sitting here with you, but I'm going to have to run. I've got a big, uh, er, `bored' meeting I'm late for. Maybe I'll see you around, eh?"
 			)
 			(1
 				(DrawPic 1 6)
 				(michelle hide:)
-				(Say gEgo 535 3 67 -1 185) ; "Wait, Michelle!" you cry as she leaves, "I've still got a few things left to say..."
+				(Say gEgo 535 3 #at -1 185) ; "Wait, Michelle!" you cry as she leaves, "I've still got a few things left to say..."
 				(= seconds 3)
 			)
 			(2
@@ -316,7 +316,7 @@
 				(= seconds 2)
 			)
 			(5
-				(Say Michelle_Milken 535 13 108 139 self) ; "Oh, Larry. Don't you just love stiff cream?"
+				(Say Michelle_Milken 535 13 #dispose #caller self) ; "Oh, Larry. Don't you just love stiff cream?"
 				(mEyes show:)
 				(HandsOn)
 				(gTheIconBar disable: 0)
@@ -351,7 +351,7 @@
 			)
 			(4
 				(SetFlag 40) ; fCherryGone
-				(Say gEgo 535 14 67 -1 185) ; ""Well, there goes her cherry," you think."
+				(Say gEgo 535 14 #at -1 185) ; ""Well, there goes her cherry," you think."
 				(mEyes show:)
 				(HandsOn)
 				(gTheIconBar disable: 0)
@@ -368,23 +368,23 @@
 		(switch (= state newState)
 			(0
 				(SetFFRoom 510)
-				(Say Michelle_Milken 535 15 108 139 self) ; "Oooooh, Larry!" says Michelle. "I know a way we can `increase your interest!'"
+				(Say Michelle_Milken 535 15 #dispose #caller self) ; "Oooooh, Larry!" says Michelle. "I know a way we can `increase your interest!'"
 			)
 			(1
 				(= seconds 2)
 			)
 			(2
-				(TPrint 535 16 67 -1 185) ; "(What does she mean by that, Larry?"
+				(TPrint 535 16 #at -1 185) ; "(What does she mean by that, Larry?"
 				(= seconds 2)
 			)
 			(3
-				(Say Michelle_Milken 535 17 108 139 self) ; "You're a `software' kind of guy and I'm a `hardware' kind of girl," she says. "How about if I `download onto your hard disk?'"
+				(Say Michelle_Milken 535 17 #dispose #caller self) ; "You're a `software' kind of guy and I'm a `hardware' kind of girl," she says. "How about if I `download onto your hard disk?'"
 			)
 			(4
 				(= seconds 2)
 			)
 			(5
-				(Say Michelle_Milken 535 18 108 139 self) ; "Allow me to make our booth more private."
+				(Say Michelle_Milken 535 18 #dispose #caller self) ; "Allow me to make our booth more private."
 			)
 			(6
 				(gCurRoom newRoom: 530)
@@ -400,12 +400,12 @@
 		(switch (= state newState)
 			(0
 				(Say gEgo 535 19) ; "Would you be interested in this?" you ask. "It's `my' personal organizer and contains a list of all `my' Swiss bank accounts, off-shore deposits, and international funds."
-				(Say Michelle_Milken 535 20 108 139 self) ; ""Well, I don't know," she pretends to hesitate."
+				(Say Michelle_Milken 535 20 #dispose #caller self) ; ""Well, I don't know," she pretends to hesitate."
 			)
 			(1
 				(gEgo put: 11) ; DayTrotter
 				(Points 5 112)
-				(Say Michelle_Milken 535 21 108 139 self) ; "Why, yes," she says with a big smile, "I'm sure I could `invest' these for you tomorrow! Trust me!"
+				(Say Michelle_Milken 535 21 #dispose #caller self) ; "Why, yes," she says with a big smile, "I'm sure I could `invest' these for you tomorrow! Trust me!"
 			)
 			(2
 				(BranchIt)
@@ -423,7 +423,7 @@
 				(Say gEgo 535 22) ; "Would you be interested in this?" you ask. "These credit cards would surely be useful to you if you ever need to withdraw funds. You know, cash advances, things like that?"
 				(gEgo put: 13) ; Credit_Cards
 				(Points 5 113)
-				(Say Michelle_Milken 535 23 108 139 self) ; "Oohh," she squeals, "perhaps I haven't mentioned how much stock I put in these things! And what a smart rubber band you have around them!"
+				(Say Michelle_Milken 535 23 #dispose #caller self) ; "Oohh," she squeals, "perhaps I haven't mentioned how much stock I put in these things! And what a smart rubber band you have around them!"
 			)
 			(1
 				(BranchIt)
@@ -441,7 +441,7 @@
 				(Say gEgo 535 24) ; "I also have this little bit of cash on me," you say, offering it to her. "Could you make some investments for me with this?"
 				(gEgo put: 12) ; Money
 				(Points 5 114)
-				(Say Michelle_Milken 535 25 108 139 self) ; "Oh, could I?!" she cries. "As my friend, Donald Tramp says, `cash is king!'"
+				(Say Michelle_Milken 535 25 #dispose #caller self) ; "Oh, could I?!" she cries. "As my friend, Donald Tramp says, `cash is king!'"
 			)
 			(1
 				(BranchIt)
@@ -457,42 +457,42 @@
 		(switch (= state newState)
 			(0 0)
 			(1
-				(Say gEgo 535 26 67 -1 185) ; "Did I mention my name?" you ask. "I didn't think so. My name is Larry; Larry Laffer."
-				(Say Michelle_Milken 535 27 108) ; "Good evening, Lawrence," she says, "I'm Michelle Milken, program-trading specialist and sometime computer hobbyist."
+				(Say gEgo 535 26 #at -1 185) ; "Did I mention my name?" you ask. "I didn't think so. My name is Larry; Larry Laffer."
+				(Say Michelle_Milken 535 27 #dispose) ; "Good evening, Lawrence," she says, "I'm Michelle Milken, program-trading specialist and sometime computer hobbyist."
 			)
 			(2
-				(Say gEgo 535 28 67 -1 185) ; "I'm really into computers," you say, exposing wisdom beyond your years. "In fact, I've written a couple of very successful computer games. At least, I think I have."
-				(Say Michelle_Milken 535 29 108 139 self) ; "Oh, really?" asks Michelle. "Does that mean you have lots of money?"
+				(Say gEgo 535 28 #at -1 185) ; "I'm really into computers," you say, exposing wisdom beyond your years. "In fact, I've written a couple of very successful computer games. At least, I think I have."
+				(Say Michelle_Milken 535 29 #dispose #caller self) ; "Oh, really?" asks Michelle. "Does that mean you have lots of money?"
 			)
 			(3
-				(Say gEgo 535 30 67 -1 185) ; "I make a nice living, er, well, that is, I think I did!" you say. "But now I'm not so sure. You see, I've been having a little trouble lately with amnesia. So what is it that you do?"
-				(Say Michelle_Milken 535 31 108) ; "I laugh all the way to and from the bank!" she says with a grin. "I'm a junk bond dealer."
+				(Say gEgo 535 30 #at -1 185) ; "I make a nice living, er, well, that is, I think I did!" you say. "But now I'm not so sure. You see, I've been having a little trouble lately with amnesia. So what is it that you do?"
+				(Say Michelle_Milken 535 31 #dispose) ; "I laugh all the way to and from the bank!" she says with a grin. "I'm a junk bond dealer."
 			)
 			(4
-				(Say gEgo 535 32 67 -1 185) ; ""So, what does a junk bond dealer do?" you ask."
-				(Say Michelle_Milken 535 33 108 139 self) ; ""Whatever she can," Michelle replies cryptically."
+				(Say gEgo 535 32 #at -1 185) ; ""So, what does a junk bond dealer do?" you ask."
+				(Say Michelle_Milken 535 33 #dispose #caller self) ; ""Whatever she can," Michelle replies cryptically."
 			)
 			(5
-				(Say gEgo 535 34 67 -1 185) ; "I've been hearing lots of good things recently about junk bonds," you say. "Would you recommend them as an integral part of my portfolio?"
-				(Say Michelle_Milken 535 35 108) ; "Junk bonds, eh?" she warms perceptibly. "Why I was just telling a friend about them today. Yes, I think they would be perfect for someone like you!"
+				(Say gEgo 535 34 #at -1 185) ; "I've been hearing lots of good things recently about junk bonds," you say. "Would you recommend them as an integral part of my portfolio?"
+				(Say Michelle_Milken 535 35 #dispose) ; "Junk bonds, eh?" she warms perceptibly. "Why I was just telling a friend about them today. Yes, I think they would be perfect for someone like you!"
 			)
 			(6
-				(Say gEgo 535 36 67 -1 185) ; "Really? I always thought investments like that were too risky for an ordinary guy like me!"
-				(Say Michelle_Milken 535 37 108 139 self) ; "Larry, no one I know would ever admit to thinking that you are in any way, shape, or form, `ordinary!'"
+				(Say gEgo 535 36 #at -1 185) ; "Really? I always thought investments like that were too risky for an ordinary guy like me!"
+				(Say Michelle_Milken 535 37 #dispose #caller self) ; "Larry, no one I know would ever admit to thinking that you are in any way, shape, or form, `ordinary!'"
 			)
 			(7
-				(Say Michelle_Milken 535 38 108 139 self) ; "So, do you have any cash-equivalent funds lying about, just gathering whatever conservative interest rate you're presently earning?"
+				(Say Michelle_Milken 535 38 #dispose #caller self) ; "So, do you have any cash-equivalent funds lying about, just gathering whatever conservative interest rate you're presently earning?"
 			)
 			(8
-				(Say gEgo 535 39 67 -1 185) ; ""Well, no, Michelle, I don't," you say."
+				(Say gEgo 535 39 #at -1 185) ; ""Well, no, Michelle, I don't," you say."
 			)
 			(9
-				(Say gEgo 535 40 67 -1 185) ; "Michelle, I just thought of something!" you say. "I might just have lots of royalties waiting for me from my last job. Of course, I can't quite remember if I do or not, but it is something to consider."
-				(Say Michelle_Milken 535 41 108 139 self) ; "And consider it I do, Larry," Michelle replies. "In fact, perhaps I could open your account right now."
+				(Say gEgo 535 40 #at -1 185) ; "Michelle, I just thought of something!" you say. "I might just have lots of royalties waiting for me from my last job. Of course, I can't quite remember if I do or not, but it is something to consider."
+				(Say Michelle_Milken 535 41 #dispose #caller self) ; "And consider it I do, Larry," Michelle replies. "In fact, perhaps I could open your account right now."
 			)
 			(10
 				(Points 5 115)
-				(Say gEgo 535 42 67 -1 185) ; "Huh? Well, oh, I don't... Ohhh!" you say as a big smile crosses your lips. "Well, okay, Michelle, have it your way!"
+				(Say gEgo 535 42 #at -1 185) ; "Huh? Well, oh, I don't... Ohhh!" you say as a big smile crosses your lips. "Well, okay, Michelle, have it your way!"
 				(HandsOff)
 				(gCurRoom setScript: sStartGoDown)
 			)
@@ -517,13 +517,13 @@
 		(switch theVerb
 			(2 ; Look
 				(TPrint 535 43) ; "You can see why this woman made the finals back at good ol' PornProdCorp! She has to be one of the sexiest babes YOU'VE ever seen!"
-				(TPrint 535 44 67 -1 185) ; "(But she sure has a funny way of eating ice cream!"
+				(TPrint 535 44 #at -1 185) ; "(But she sure has a funny way of eating ice cream!"
 			)
 			(3 ; Do
 				(TPrint 535 45) ; "While you may wish to reach across the table and grab her, your professional attitude and loyalty to your employer prevent such blatant, crass behavior."
 			)
 			(10 ; Zipper
-				(Say Michelle_Milken 535 46 108) ; "Hmmm," says Michelle, with a coy smile, "that's an idea!"
+				(Say Michelle_Milken 535 46 #dispose) ; "Hmmm," says Michelle, with a coy smile, "that's an idea!"
 			)
 			(4 ; Inventory
 				(switch invItem
@@ -546,7 +546,7 @@
 						(TPrint 535 47) ; "Yeah, that ought to impress her, Larry. Give her a napkin that she could pick up off any table in the building!"
 					)
 					(else
-						(Say Michelle_Milken 535 48 108) ; "Oh, no thanks, Larry," responds Michelle. "I have no idea what I'd do with that."
+						(Say Michelle_Milken 535 48 #dispose) ; "Oh, no thanks, Larry," responds Michelle. "I have no idea what I'd do with that."
 					)
 				)
 			)
@@ -650,7 +650,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(Say Michelle_Milken 535 49 108) ; "You really enjoy staring at me there, don't you, Larry?"
+				(Say Michelle_Milken 535 49 #dispose) ; "You really enjoy staring at me there, don't you, Larry?"
 			)
 			(3 ; Do
 				(TPrint 535 50) ; "There's plenty of time for that later, Larry!"
@@ -680,7 +680,7 @@
 				(TPrint 535 51) ; "This is a face you could dream about, Larry!"
 			)
 			(3 ; Do
-				(Say Michelle_Milken 535 52 108) ; "I like it when you stroke my face, Larry!"
+				(Say Michelle_Milken 535 52 #dispose) ; "I like it when you stroke my face, Larry!"
 			)
 			(else
 				(michelle doVerb: theVerb invItem)

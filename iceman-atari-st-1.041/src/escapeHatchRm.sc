@@ -447,7 +447,7 @@
 				)
 			)
 			(12
-				(gEgo setPri: -1 illegalBits: -32768 setStep: 3 4 put: 0 1) ; Envelope
+				(gEgo setPri: -1 illegalBits: $8000 setStep: 3 4 put: 0 1) ; Envelope
 				(HandsOn)
 				(gCurRoom newRoom: 50) ; launchDiver
 			)
@@ -571,7 +571,7 @@
 				(gEgo
 					view: 232
 					setPri: 8
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 				)
 				(= cycles 1)

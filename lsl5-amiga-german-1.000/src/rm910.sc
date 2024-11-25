@@ -106,7 +106,7 @@
 			)
 			(10 ; Zipper
 				(TPrint 910 3) ; "Is that the only thing on your mind?"
-				(TPrint 910 4 67 -1 185) ; "(Don't answer that!)"
+				(TPrint 910 4 #at -1 185) ; "(Don't answer that!)"
 			)
 			(1 ; Walk
 				(HandsOff)
@@ -330,7 +330,7 @@
 				(= ticks 60)
 			)
 			(1
-				(Say gEgo 910 8 108 self) ; "You think to yourself, "Where else do you pay someone lots of money to insert metal objects into your mouth in order to inflict lots of pain?""
+				(Say gEgo 910 8 #dispose self) ; "You think to yourself, "Where else do you pay someone lots of money to insert metal objects into your mouth in order to inflict lots of pain?""
 			)
 			(2
 				(= ticks 60)
@@ -340,7 +340,7 @@
 				(= ticks 30)
 			)
 			(4
-				(TPrint 910 9 108 self) ; "You hear someone coming."
+				(TPrint 910 9 #dispose self) ; "You hear someone coming."
 			)
 			(5
 				(= seconds 3)
@@ -364,18 +364,18 @@
 				(= ticks 30)
 			)
 			(8
-				(Say Chi_Chi_Lambada 910 10 108 139 self) ; "Well, Mr. Laffer, shall we get started?"
+				(Say Chi_Chi_Lambada 910 10 #dispose #caller self) ; "Well, Mr. Laffer, shall we get started?"
 			)
 			(9
 				(gEgo setCel: 0 stopUpd:)
 				(= ticks 30)
 			)
 			(10
-				(Say gEgo 910 11 67 -1 185) ; "Oh, I don't know," you protest. "I hate dental work so much, I think I'd rather have a baby!"
+				(Say gEgo 910 11 #at -1 185) ; "Oh, I don't know," you protest. "I hate dental work so much, I think I'd rather have a baby!"
 				(= ticks 60)
 			)
 			(11
-				(Say Chi_Chi_Lambada 910 12 108 139 self) ; "Well, make up your mind," says Chi Chi. "I've gotta adjust the chair!"
+				(Say Chi_Chi_Lambada 910 12 #dispose #caller self) ; "Well, make up your mind," says Chi Chi. "I've gotta adjust the chair!"
 				(gEgo setCel: 2 stopUpd:)
 			)
 			(12
@@ -402,7 +402,7 @@
 				(= seconds 4)
 			)
 			(16
-				(Say Chi_Chi_Lambada 910 13 108 139 self) ; "Say, Larry. Have you ever considered dental floss as an aphrodisiac?"
+				(Say Chi_Chi_Lambada 910 13 #dispose #caller self) ; "Say, Larry. Have you ever considered dental floss as an aphrodisiac?"
 			)
 			(17
 				(gCurRoom setScript: sWorkOnTeeth)
@@ -426,7 +426,7 @@
 			)
 			(1
 				(if (and (> local2 30) (not local6))
-					(Say Chi_Chi_Lambada 910 14 108 139 self) ; "Just a few more seconds and I'll have that nasty old tooth of yours pu..., er, uh, cleaned!"
+					(Say Chi_Chi_Lambada 910 14 #dispose #caller self) ; "Just a few more seconds and I'll have that nasty old tooth of yours pu..., er, uh, cleaned!"
 					(= local6 1)
 				else
 					(= ticks 60)
@@ -444,7 +444,7 @@
 			(5
 				(if (> local2 35)
 					(HandsOff)
-					(Say Chi_Chi_Lambada 910 15 108 139 self) ; "I'm all done, Mr. Laffer!"
+					(Say Chi_Chi_Lambada 910 15 #dispose #caller self) ; "I'm all done, Mr. Laffer!"
 					(chiChi
 						setLoop: 5
 						setCel: 255
@@ -524,7 +524,7 @@
 				(TPrint 910 1) ; "Try establishing eye contact first."
 			)
 			(10 ; Zipper
-				(Say Chi_Chi_Lambada 910 17 108) ; "Well, I might be interested, Larry," says Chi Chi. "But what about a little conversation first?"
+				(Say Chi_Chi_Lambada 910 17 #dispose) ; "Well, I might be interested, Larry," says Chi Chi. "But what about a little conversation first?"
 			)
 			(1 ; Walk
 				(gCurRoom doVerb: 1)
@@ -552,13 +552,13 @@
 			(2
 				(chiChi setCycle: 0 stopUpd:)
 				(Points 40 165)
-				(Say Chi_Chi_Lambada 910 18 108 139 self) ; "Why don't we go downstairs to my apartment behind the gymnastics studio where I'll be able to express my appreciation in a more acceptable manner?"
+				(Say Chi_Chi_Lambada 910 18 #dispose #caller self) ; "Why don't we go downstairs to my apartment behind the gymnastics studio where I'll be able to express my appreciation in a more acceptable manner?"
 			)
 			(3
 				(= ticks 90)
 			)
 			(4
-				(TPrint 910 19 67 -1 185 70 280) ; "(All right, Larry! It sounds like you're going to get a home-cooked meal for a change!)"
+				(TPrint 910 19 #at -1 185 #width 280) ; "(All right, Larry! It sounds like you're going to get a home-cooked meal for a change!)"
 				(= ticks 123)
 			)
 			(5

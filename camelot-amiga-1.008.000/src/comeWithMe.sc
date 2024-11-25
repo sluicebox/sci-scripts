@@ -108,7 +108,7 @@
 					setPri: -1
 					xStep: 3
 					ignoreActors: 0
-					illegalBits: -28672
+					illegalBits: $9000
 					setMotion: MoveTo 65 150 self
 				)
 			)

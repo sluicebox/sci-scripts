@@ -138,14 +138,14 @@
 				(gTheMusic number: 410 flags: 1 setLoop: -1 play:)
 			)
 			(1
-				(TPrint 410 0 67 -1 15 70 280) ; "Entering the brisk night air, you notice a dark figure leaning against the far wall."
+				(TPrint 410 0 #at -1 15 #width 280) ; "Entering the brisk night air, you notice a dark figure leaning against the far wall."
 				(gEgo setLoop: 0 setMotion: MoveTo 157 125 self)
 				(desmond setScript: sDesmondCartoon)
 				(= cycles 20)
 			)
 			(2
-				(TPrint 410 1 67 -1 28) ; "Evidently, he has noticed you, too."
-				(TPrint 410 2 67 -1 15 70 280) ; "You aren't afraid. You've handled rough situations before. After all, think of all you went through back in "Leisure Suit Larry 3!""
+				(TPrint 410 1 #at -1 28) ; "Evidently, he has noticed you, too."
+				(TPrint 410 2 #at -1 15 #width 280) ; "You aren't afraid. You've handled rough situations before. After all, think of all you went through back in "Leisure Suit Larry 3!""
 			)
 			(3
 				(gEgo setLoop: 3 setCel: 0 setCycle: 0)

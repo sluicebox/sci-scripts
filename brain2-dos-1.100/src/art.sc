@@ -152,7 +152,7 @@
 			((not (event type:)))
 			((not global128))
 			((or (& (event type:) $0040) (& (event type:) evKEYUP)) ; direction
-				(event type: (& (event type:) $fff7)) ; evPEEK | evVERB | evHELP | evMOVE | evJOYUP | evJOYDOWN | evSAID | direction | evMENUHIT | evMENUSTART | evMOUSEKEYBOARD | evMOUSERELEASE | evNULL | $0c00
+				(event type: (& (event type:) $fff7)) ; evPEEK | evVERB | evHELP | evMOVE | evJOYUP | evJOYDOWN | evSAID | direction | evMENUHIT | evMENUSTART | evMOUSEKEYBOARD | evMOUSERELEASE | $0c00
 			)
 			((not (= temp0 (self firstTrue: #onMe event)))
 				(= global128 0)

@@ -79,7 +79,7 @@
 				yStep: 1
 				setLoop: 0
 				ignoreActors: 0
-				illegalBits: -32768
+				illegalBits: $8000
 				observeControl: 4 1
 				setCycle: Fwd
 				setMotion: Wander 4
@@ -288,7 +288,7 @@
 				(fallSound dispose:)
 				(gEgo viewer: inWhale)
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					setLoop: -1
 					xStep: 2
 					yStep: 1

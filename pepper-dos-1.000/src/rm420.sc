@@ -211,7 +211,7 @@
 				(percy view: 423 cel: 1)
 				(UnLoad 128 819)
 				((ScriptID 2006 0) talkWidth: 140) ; pughHeadTalk
-				(= global215 95)
+				(= gDictionaryWord 95)
 				(gMessager say: 6 0 1 1 7 self) ; "Percy! How is the 'tax' operation going? Are you keeping those stupid sentries in line? They don't know the Stamp Tax is a fake, do they?"
 			)
 			(9

@@ -908,7 +908,7 @@
 			(0
 				(HandsOff)
 				(Face gEgo hazm)
-				(hazm illegalBits: -32768)
+				(hazm illegalBits: $8000)
 				(= local1 1)
 				(= local3 1)
 				(gTObj talkCue: self)
@@ -982,7 +982,7 @@
 				(HandsOff)
 				(= local1 1)
 				(gTObj talkCue: self)
-				(jabir illegalBits: -32768)
+				(jabir illegalBits: $8000)
 				(if local4
 					(localproc_2 35 80) ; "You need not pay now, but I could not insult your generosity by refusing. Let us set out at once!"
 				else
@@ -1006,7 +1006,7 @@
 					setCel: -1
 					loop: 2
 					cel: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					cycleSpeed: 0
 					moveSpeed: 0
 					ignoreActors: 0

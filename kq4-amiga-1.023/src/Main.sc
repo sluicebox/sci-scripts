@@ -242,7 +242,7 @@
 	global166
 	global167
 	global168
-	global169
+	gLolotteAlive
 	; 170
 	global170
 	global171
@@ -304,7 +304,7 @@
 	global218
 	global219
 	; 220
-	global220
+	gLolotteDoorUnlocked
 	global221
 	global222
 	global223
@@ -312,7 +312,7 @@
 	; 225
 	global225
 	gIntroSc
-	global227
+	gLolotteDoorOpen
 	global228
 	global229
 	; 230
@@ -602,7 +602,7 @@
 		setPri: -1
 		setMotion: 0
 		setCycle: Walk
-		illegalBits: -32768
+		illegalBits: $8000
 		cycleSpeed: 0
 		moveSpeed: 0
 		ignoreActors: 0
@@ -786,7 +786,7 @@
 		)
 		(= gShowStyle 0)
 		(= gUserFont (= gBigFont 1))
-		(= global169 1)
+		(= gLolotteAlive 1)
 		(= gVersion {0.001})
 		(if (!= (= temp0 (FOpen {version} 1)) -1)
 			(FGets gVersion 10 temp0)
@@ -1067,7 +1067,7 @@
 						(gEgo get: 14) ; Cupid_s_Bow
 						(= gNight 1)
 						((Inv at: 14) loop: 1 cel: 0) ; Cupid_s_Bow
-						(= global169 1)
+						(= gLolotteAlive 1)
 						(= global160 21)
 						(= global159 1)
 						(= global110 5)

@@ -70,7 +70,7 @@
 				(TPrint 390 0) ; "No matter where you look, nothing looks familiar! Whatever made you think those hours you killed playing "Red Baron" when you should have been working could possibly prepare you to handle a modern passenger jet?"
 			)
 			(5 ; Talk
-				(TPrint 390 1 33 gGiantFont 80 {You}) ; ""AAAAEEEEEEEE!" you scream."
+				(TPrint 390 1 #font gGiantFont #title {You}) ; ""AAAAEEEEEEEE!" you scream."
 			)
 			(4 ; Inventory
 				(TPrint 390 2) ; "Oh, right! Like that's gonna help you land this thing!"
@@ -82,7 +82,7 @@
 				(switch (++ clickCounter)
 					(1
 						(TPrint 390 4) ; "You turn on the radio."
-						(TPrint 390 5 67 -1 185) ; "(It's tuned to a nice, soft-rock, easy-listening, MOR, album station.)"
+						(TPrint 390 5 #at -1 185) ; "(It's tuned to a nice, soft-rock, easy-listening, MOR, album station.)"
 					)
 					(2
 						(TPrint 390 6) ; "The wing surface deicers go to work, quickly removing any trace of ice from the hot summer sun-baked flight surfaces."
@@ -329,7 +329,7 @@
 			)
 			(3 ; Do
 				(TPrint 390 12) ; "As much as you'd like to grab onto the clouds, you just can't do it from inside the cockpit."
-				(TPrint 390 13 67 -1 185) ; "(However, you soon may be sitting on one, strumming your harp!)"
+				(TPrint 390 13 #at -1 185) ; "(However, you soon may be sitting on one, strumming your harp!)"
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)
@@ -571,7 +571,7 @@
 			)
 			(2
 				(HandsOff)
-				(TPrint 390 14 108 self) ; "Oh, Larry! Here's another fine mess you've gotten yourself into!"
+				(TPrint 390 14 #dispose self) ; "Oh, Larry! Here's another fine mess you've gotten yourself into!"
 			)
 			(3
 				(RestoreIB)
@@ -579,7 +579,7 @@
 			)
 			(4
 				(HandsOff)
-				(TPrint 390 15 108 self) ; "Whatever possessed you to volunteer to land a major aircraft? This is far different from your futile attempt a few years ago when you tried to sell flight simulator software for a major computer game company!"
+				(TPrint 390 15 #dispose self) ; "Whatever possessed you to volunteer to land a major aircraft? This is far different from your futile attempt a few years ago when you tried to sell flight simulator software for a major computer game company!"
 			)
 			(5
 				(RestoreIB)
@@ -587,13 +587,13 @@
 			)
 			(6
 				(HandsOff)
-				(TPrint 390 16 108 self) ; "As the ground rushes headlong toward you, you decide to make a run for it! Maybe there are some parachutes tucked away under the stewardesses' seats. Maybe the other passengers won't notice you heading for the exit with a parachute tucked under your leisure suit. Maybe you'll be able to open the door. Maybe you'll be able to fly!"
+				(TPrint 390 16 #dispose self) ; "As the ground rushes headlong toward you, you decide to make a run for it! Maybe there are some parachutes tucked away under the stewardesses' seats. Maybe the other passengers won't notice you heading for the exit with a parachute tucked under your leisure suit. Maybe you'll be able to open the door. Maybe you'll be able to fly!"
 			)
 			(7
 				(= ticks 30)
 			)
 			(8
-				(TPrint 390 17 108 self) ; "As you rise to leave, you struggle against the severe G-forces pummelling your body, inadvertently catching the cuff of your leisure suit on an inconspicuous switch labeled "Auto Pilot.""
+				(TPrint 390 17 #dispose self) ; "As you rise to leave, you struggle against the severe G-forces pummelling your body, inadvertently catching the cuff of your leisure suit on an inconspicuous switch labeled "Auto Pilot.""
 			)
 			(9
 				(= ticks 60)
@@ -616,7 +616,7 @@
 					(self cue:)
 				else
 					(HandsOff)
-					(TPrint 390 18 108 self) ; "Grasping at anything and everything on the dashboard, you brilliantly (and totally accidentally) hit something called an "Auto Pilot.""
+					(TPrint 390 18 #dispose self) ; "Grasping at anything and everything on the dashboard, you brilliantly (and totally accidentally) hit something called an "Auto Pilot.""
 				)
 			)
 			(1
@@ -640,7 +640,7 @@
 				(frontCloud2 show: setCel: 2 posn: 249 44)
 				(= larryStop 1)
 				(larryHead setCycle: Beg)
-				(TPrint 390 19 108 self) ; "The airplane's computer takes over, stopping its spin, leveling out the plane, and preventing certain disaster!"
+				(TPrint 390 19 #dispose self) ; "The airplane's computer takes over, stopping its spin, leveling out the plane, and preventing certain disaster!"
 			)
 			(4
 				(cloud
@@ -665,13 +665,13 @@
 				(= seconds 4)
 			)
 			(6
-				(TPrint 390 20 33 gNiceFont 70 200 30 1 108 self) ; "YOU DID IT, LARRY!"
+				(TPrint 390 20 #font gNiceFont #width 200 #mode 1 #dispose self) ; "YOU DID IT, LARRY!"
 			)
 			(7
 				(= ticks 120)
 			)
 			(8
-				(TPrint 390 21 108 self) ; "But there's a slight problem... now you've got to land this sucker!"
+				(TPrint 390 21 #dispose self) ; "But there's a slight problem... now you've got to land this sucker!"
 			)
 			(9
 				(gCurRoom newRoom: 310)

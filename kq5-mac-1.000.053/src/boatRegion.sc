@@ -343,7 +343,7 @@
 					setCycle: KQ5SyncWalk
 					setLoop: -1
 					setPri: -1
-					illegalBits: -32768
+					illegalBits: $8000
 					moveSpeed: (gGame egoMoveSpeed:)
 					setMotion: MoveTo 68 55 self
 				)
@@ -752,7 +752,7 @@
 					setPri: -1
 					ignoreActors: 0
 					setLoop: -1
-					illegalBits: -32768
+					illegalBits: $8000
 					cycleSpeed: 0
 					setStep: 3 2
 				)

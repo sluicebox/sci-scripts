@@ -57,9 +57,9 @@
 			)
 			(comingIn
 				(= comingIn 0)
-				(gEgo illegalBits: -32768 ignoreActors: 0)
+				(gEgo illegalBits: $8000 ignoreActors: 0)
 				(if (IsFlag 20)
-					(gMuleObj illegalBits: -32768 ignoreActors: 0)
+					(gMuleObj illegalBits: $8000 ignoreActors: 0)
 				)
 				(HandsOn)
 				(if global124

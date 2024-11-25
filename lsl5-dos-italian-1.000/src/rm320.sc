@@ -349,14 +349,14 @@
 		(switch theVerb
 			(2 ; Look
 				(TPrint 320 4) ; "You've hated airplane travel ever since "Leisure Suit Larry 2: Looking for Love (in Several Wrong Places).""
-				(TPrint 320 5 67 -1 185) ; "(Another fine Al Lowe game.)"
+				(TPrint 320 5 #at -1 185) ; "(Another fine Al Lowe game.)"
 			)
 			(5 ; Talk
 				(TPrint 320 6) ; "You briefly consider talking to yourself but then realize you already know what you were going to say!"
 			)
 			(3 ; Do
 				(TPrint 320 7) ; "You tighten your seat belt and wish this flight were over."
-				(TPrint 320 8 67 -1 185) ; "(Perhaps on this trip, you'll be able to get a little shut-eye.)"
+				(TPrint 320 8 #at -1 185) ; "(Perhaps on this trip, you'll be able to get a little shut-eye.)"
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)
@@ -440,7 +440,7 @@
 		(switch theVerb
 			(2 ; Look
 				(TPrint 320 12) ; "What a body!"
-				(TPrint 320 13 67 -1 185) ; "(You need!)"
+				(TPrint 320 13 #at -1 185) ; "(You need!)"
 			)
 			(5 ; Talk
 				(larry doVerb: theVerb invItem)
@@ -865,7 +865,7 @@
 				(= ticks 60)
 			)
 			(1
-				(TPrint 320 18 67 -1 185 70 280) ; "During our absence, your dream of Passionate Patti's Parthenon performance progressed. The concert, a huge success, is now over; the critics have acclaimed her technique, interpretation, and mature musicianship; her promoter is arranging a one year tour; and the two of you take this opportunity to celebrate...."
+				(TPrint 320 18 #at -1 185 #width 280) ; "During our absence, your dream of Passionate Patti's Parthenon performance progressed. The concert, a huge success, is now over; the critics have acclaimed her technique, interpretation, and mature musicianship; her promoter is arranging a one year tour; and the two of you take this opportunity to celebrate...."
 				(dreamProp4 setLoop: 1 cycleSpeed: 10 setCycle: Fwd)
 				(= seconds 2)
 			)
@@ -954,17 +954,17 @@
 				(= seconds 3)
 			)
 			(7
-				(TPrint 320 19 67 -1 17 70 (proc0_28 280 280 280 290 280)) ; "You awaken with a start to hear the stewardess say..."
+				(TPrint 320 19 #at -1 17 #width (proc0_28 280 280 280 290 280)) ; "You awaken with a start to hear the stewardess say..."
 				(larry view: 325 setLoop: 1)
 				(TPrint ; "Why, Mr. Laffer! Is there a problem with your nuts?"
 					320
 					20
-					67
+					#at
 					-1
 					185
-					80
+					#title
 					{The Stewardess}
-					108
+					#dispose
 					self
 				)
 				(arm setScript: 0)
@@ -982,7 +982,7 @@
 				(= seconds 2)
 			)
 			(11
-				(TPrint 320 21 67 -1 185 70 280) ; "A voice crackles through the intercom speaker above your head, "Please tighten your seatbelts and return your tray tables to their fully upright and locked position. We'll be landing momentarily.""
+				(TPrint 320 21 #at -1 185 #width 280) ; "A voice crackles through the intercom speaker above your head, "Please tighten your seatbelts and return your tray tables to their fully upright and locked position. We'll be landing momentarily.""
 				(gTheMusic fade: 0 15 10 1)
 				(gTheMusic2 fade: 0 15 10 1)
 				(gCurRoom newRoom: 310)
@@ -1023,12 +1023,12 @@
 				(TPrint ; "During our absence, your dream of you and Passionate Patti has progressed. You snuggle up together, drifting dreamily through the moonlit canals of Venice, the songs of other gondoliers wafting softly across the waters. Suddenly your gondola springs a most inopportune leak...."
 					320
 					22
-					67
+					#at
 					-1
 					17
-					70
+					#width
 					(proc0_28 280 280 280 290 280)
-					108
+					#dispose
 					self
 				)
 			)
@@ -1117,12 +1117,12 @@
 				(TPrint ; "Awakening from your dream, you realize you just filled your lap with complimentary beverage!"
 					320
 					23
-					67
+					#at
 					-1
 					17
-					70
+					#width
 					(proc0_28 280 280 280 290 280)
-					108
+					#dispose
 					self
 				)
 			)
@@ -1130,7 +1130,7 @@
 				(= ticks 30)
 			)
 			(13
-				(TPrint 320 24 67 -1 185 70 280) ; "A voice crackles through the intercom speaker above your head, "Please tighten your seatbelts and return your tray tables to their fully upright and locked position. We'll be landing momentarily.""
+				(TPrint 320 24 #at -1 185 #width 280) ; "A voice crackles through the intercom speaker above your head, "Please tighten your seatbelts and return your tray tables to their fully upright and locked position. We'll be landing momentarily.""
 				(gTheMusic fade: 0 15 10 1)
 				(gTheMusic2 fade: 0 15 10 1)
 				(= seconds 2)
@@ -1214,12 +1214,12 @@
 				(TPrint ; "In your dream, you are watching Passionate Patti perform a rock concert before the reflecting pool of the Taj Mahal! What a great musician! What a romantic setting! What a gorgeous babe!!"
 					320
 					25
-					108
+					#dispose
 					self
-					67
+					#at
 					-1
 					17
-					70
+					#width
 					(proc0_28 280 280 280 290 280)
 				)
 			)
@@ -1285,7 +1285,7 @@
 			)
 			(1
 				(HandsOff)
-				(TPrint 320 26 67 -1 17 70 (proc0_28 280 280 280 290 280)) ; "During our absence, your dream of Passionate Patti's Taj Mahal concert has progressed. Late at night, the gig over, the amps and drums packed in the road cases, it's now time for just the two of you, relaxing together on a couple of overstuffed cushions, emotionally drained. To calm herself, and prepare you for the evening ahead, Patti plays a little selection on her oboe...."
+				(TPrint 320 26 #at -1 17 #width (proc0_28 280 280 280 290 280)) ; "During our absence, your dream of Passionate Patti's Taj Mahal concert has progressed. Late at night, the gig over, the amps and drums packed in the road cases, it's now time for just the two of you, relaxing together on a couple of overstuffed cushions, emotionally drained. To calm herself, and prepare you for the evening ahead, Patti plays a little selection on her oboe...."
 				(gTheMusic2 number: 375 loop: -1 play:)
 				(patti cycleSpeed: 10 setCycle: Fwd)
 				(dreamProp2 cycleSpeed: 10 setCel: 0 setCycle: End self)
@@ -1302,7 +1302,7 @@
 				(= seconds 3)
 			)
 			(5
-				(TPrint 320 27 67 -1 17 70 (proc0_28 280 280 280 290 280) 108) ; "You soon realize the snake is not the only thing Patti has charmed!"
+				(TPrint 320 27 #at -1 17 #width (proc0_28 280 280 280 290 280) #dispose) ; "You soon realize the snake is not the only thing Patti has charmed!"
 				(gTheMusic2 fade: 0 15 12 1)
 				(= seconds 4)
 			)
@@ -1361,8 +1361,8 @@
 				(= seconds 3)
 			)
 			(10
-				(TPrint 320 28 67 -1 185 70 280) ; "A voice crackles through the intercom speaker above your head, "Please tighten your seatbelts and return your tray tables to their fully upright and locked position. We'll be landing momentarily.""
-				(TPrint 320 29 67 -1 185 70 280) ; "You hope none of the other passengers notices that your tray table is already up!"
+				(TPrint 320 28 #at -1 185 #width 280) ; "A voice crackles through the intercom speaker above your head, "Please tighten your seatbelts and return your tray tables to their fully upright and locked position. We'll be landing momentarily.""
+				(TPrint 320 29 #at -1 185 #width 280) ; "You hope none of the other passengers notices that your tray table is already up!"
 				(gTheMusic fade: 0 15 10 1)
 				(gTheMusic2 fade: 0 15 10 1)
 				(= seconds 3)
@@ -1422,7 +1422,7 @@
 				(= ticks 30)
 			)
 			(1
-				(TPrint 320 30 67 -1 185 70 280) ; "Ah, this is the life! In your dream, you are the handsome gondolier, poling through the canals of Venice with your lone, lovely female customer: Passionate Patti! Everything is going well until..."
+				(TPrint 320 30 #at -1 185 #width 280) ; "Ah, this is the life! In your dream, you are the handsome gondolier, poling through the canals of Venice with your lone, lovely female customer: Passionate Patti! Everything is going well until..."
 				(larry
 					cycleSpeed: 8
 					moveSpeed: 12
@@ -1441,8 +1441,8 @@
 				(= cycles 2)
 			)
 			(5
-				(TPrint 320 31 67 -1 28) ; "...you stick it in too deeply."
-				(TPrint 320 32 67 -1 185) ; "(An experience wholly unfamiliar to you!)"
+				(TPrint 320 31 #at -1 28) ; "...you stick it in too deeply."
+				(TPrint 320 32 #at -1 185) ; "(An experience wholly unfamiliar to you!)"
 				(larry setLoop: 1 setCel: 0)
 				(= ticks 30)
 			)
@@ -1491,7 +1491,7 @@
 				)
 			)
 			(9
-				(TPrint 320 33 67 -1 17 70 (proc0_28 280 280 280 290 280)) ; "Deciding to seize the moment, you wriggle down beside your Patti, relying on the subtle canal currents to propel you through your night of love..."
+				(TPrint 320 33 #at -1 17 #width (proc0_28 280 280 280 290 280)) ; "Deciding to seize the moment, you wriggle down beside your Patti, relying on the subtle canal currents to propel you through your night of love..."
 				(= ticks 30)
 			)
 			(10
@@ -1564,25 +1564,25 @@
 				(= seconds 4)
 			)
 			(1
-				(Say Leisure_Suit_Bogie 320 34 108 139 self) ; "It's not hard to see, Patti, the problems of two little people don't amount to a hill of beans in this crazy mixed-up world..."
+				(Say Leisure_Suit_Bogie 320 34 #dispose #caller self) ; "It's not hard to see, Patti, the problems of two little people don't amount to a hill of beans in this crazy mixed-up world..."
 			)
 			(2
 				(= seconds 3)
 			)
 			(3
-				(Say Ingrid_Patti 320 35 108 139 self) ; "Larry, in all the scenes, in all the games, in all the world... you had to walk into mine!"
+				(Say Ingrid_Patti 320 35 #dispose #caller self) ; "Larry, in all the scenes, in all the games, in all the world... you had to walk into mine!"
 			)
 			(4
 				(= seconds 3)
 			)
 			(5
-				(Say Ingrid_Patti 320 36 108 139 self) ; "Remember Larry: we'll always have Nontoonyt!"
+				(Say Ingrid_Patti 320 36 #dispose #caller self) ; "Remember Larry: we'll always have Nontoonyt!"
 			)
 			(6
 				(= seconds 3)
 			)
 			(7
-				(Say Leisure_Suit_Bogie 320 37 108 139 self) ; "Here's looking at you, kid!"
+				(Say Leisure_Suit_Bogie 320 37 #dispose #caller self) ; "Here's looking at you, kid!"
 			)
 			(8
 				(gTheMusic fade: 0 15 10 1)
@@ -1705,7 +1705,7 @@
 		(switch theVerb
 			(2 ; Look
 				(TPrint 320 4) ; "You've hated airplane travel ever since "Leisure Suit Larry 2: Looking for Love (in Several Wrong Places).""
-				(TPrint 320 5 67 -1 185) ; "(Another fine Al Lowe game.)"
+				(TPrint 320 5 #at -1 185) ; "(Another fine Al Lowe game.)"
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)
@@ -1732,7 +1732,7 @@
 		(switch theVerb
 			(2 ; Look
 				(TPrint 320 4) ; "You've hated airplane travel ever since "Leisure Suit Larry 2: Looking for Love (in Several Wrong Places).""
-				(TPrint 320 5 67 -1 185) ; "(Another fine Al Lowe game.)"
+				(TPrint 320 5 #at -1 185) ; "(Another fine Al Lowe game.)"
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)

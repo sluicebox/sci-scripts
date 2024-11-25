@@ -791,7 +791,7 @@
 			(5
 				(gNarrator say: 1) ; "These guys mean business, alright. But they sure aren't Harvard graduates."
 				(HandsOn)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(self dispose:)
 			)
 		)

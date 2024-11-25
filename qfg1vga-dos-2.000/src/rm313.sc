@@ -1191,7 +1191,7 @@
 				(self cue:)
 			)
 			(1
-				(gEgo setLoop: -1 illegalBits: -32768)
+				(gEgo setLoop: -1 illegalBits: $8000)
 				(gMessager say: 14 0 18 1 self) ; "SQUEEEEAK!"
 			)
 			(2
@@ -1215,7 +1215,7 @@
 				(self cue:)
 			)
 			(1
-				(gEgo setLoop: -1 illegalBits: -32768)
+				(gEgo setLoop: -1 illegalBits: $8000)
 				(gMessager say: 15 0 19 1 self) ; "CREEEEAAK!"
 			)
 			(2
@@ -1239,7 +1239,7 @@
 			)
 			(1
 				(HandsOn)
-				(gEgo setLoop: -1 ignoreControl: -32768 illegalBits: -32768)
+				(gEgo setLoop: -1 ignoreControl: -32768 illegalBits: $8000)
 				(gMessager say: 16 0 23 1 self) ; "SCRAAAAWK!"
 			)
 			(2
@@ -1279,7 +1279,7 @@
 					(gEgo
 						setLoop: -1
 						ignoreControl: -32768
-						illegalBits: -32768
+						illegalBits: $8000
 					)
 					(gEgo setScript: 0)
 					(cat setScript: catWalk)

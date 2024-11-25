@@ -29,7 +29,7 @@
 	)
 
 	(method (init)
-		(gEgo init: illegalBits: -32768 normalize:)
+		(gEgo init: illegalBits: $8000 normalize:)
 		(switch gPrevRoomNum
 			(east
 				(= style 11)
@@ -866,7 +866,7 @@
 			(4
 				(cond
 					((or (!= whichSlot 2) (IsFlag 36)) ; fPulledSlots
-						(TPrint 260 36 67 -1 185 108 self) ; "You try to pull the handle of the slot machine but since there's no quarter in it, nothing happens."
+						(TPrint 260 36 #at -1 185 #dispose self) ; "You try to pull the handle of the slot machine but since there's no quarter in it, nothing happens."
 					)
 					((not (IsFlag 36)) ; fPulledSlots
 						(gTheMusic number: 263 loop: 1 play: self)

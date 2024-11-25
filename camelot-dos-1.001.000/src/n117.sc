@@ -36,7 +36,7 @@
 		(= local0 temp0)
 		(localproc_2)
 	)
-	(if (or global122 global121 global120)
+	(if (or gGold gSilver gCopper)
 		(purseSound number: (proc0_20 21) play:)
 	)
 	(= local0 2)
@@ -94,22 +94,22 @@
 			(proc0_18)
 		)
 		(3
-			(if global122
-				(-- global122)
+			(if gGold
+				(-- gGold)
 				(++ global129)
 				(+= global132 (* global145 global145))
 			)
 		)
 		(4
-			(if global121
-				(-- global121)
+			(if gSilver
+				(-- gSilver)
 				(++ global130)
 				(+= global132 global145)
 			)
 		)
 		(5
-			(if global120
-				(-- global120)
+			(if gCopper
+				(-- gCopper)
 				(++ global131)
 				(++ global132)
 			)
@@ -143,9 +143,9 @@
 					117
 					0
 					(switch local0
-						(3 global122)
-						(4 global121)
-						(5 global120)
+						(3 gGold)
+						(4 gSilver)
+						(5 gCopper)
 					)
 				)
 				dsCOORD

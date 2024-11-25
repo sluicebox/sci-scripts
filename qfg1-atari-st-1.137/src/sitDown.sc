@@ -83,7 +83,7 @@
 				(gEgo
 					loop: 2
 					cel: 5
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Walk
 					posn: 162 114
 				)

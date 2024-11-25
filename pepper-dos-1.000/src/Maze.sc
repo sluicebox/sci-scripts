@@ -1997,7 +1997,7 @@
 				(gMessager say: (self noun:) 30 temp1)
 			)
 			(86 ; Nose
-				(= global215 65)
+				(= gDictionaryWord 65)
 				(gMessager say: (self noun:) 86)
 			)
 			(89 ; Teeth
@@ -2212,7 +2212,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 65)
+		(= gDictionaryWord 65)
 		(super doVerb: theVerb)
 	)
 )
@@ -2398,11 +2398,11 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(6 ; Look
-				(= global215 51)
+				(= gDictionaryWord 51)
 				(super doVerb: theVerb &rest)
 			)
 			(84 ; Trivia
-				(= global215 51)
+				(= gDictionaryWord 51)
 				(super doVerb: theVerb &rest)
 			)
 			(else

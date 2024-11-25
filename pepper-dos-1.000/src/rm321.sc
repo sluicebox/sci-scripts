@@ -906,11 +906,11 @@
 				)
 			)
 			(6 ; Look
-				(= global215 83)
+				(= gDictionaryWord 83)
 				(super doVerb: theVerb &rest)
 			)
 			(84 ; Trivia
-				(= global215 71)
+				(= gDictionaryWord 71)
 				(super doVerb: theVerb &rest)
 			)
 			(else

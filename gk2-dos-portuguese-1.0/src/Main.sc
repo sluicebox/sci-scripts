@@ -885,7 +885,7 @@
 			(= BAD_SELECTOR 1)
 			((gUser sel_715:) update:)
 		)
-		(while ((= temp0 (Event new: 3)) type:)
+		(while ((= temp0 (Event new: evMOUSE)) type:)
 			(temp0 dispose:)
 		)
 		(temp0 dispose:)

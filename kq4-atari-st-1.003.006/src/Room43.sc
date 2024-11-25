@@ -831,7 +831,7 @@
 			(10
 				(HandsOff)
 				(gEgo
-					illegalBits: -2
+					illegalBits: $fffe
 					setAvoider: Avoid
 					setMotion: MoveTo 184 130 self
 				)

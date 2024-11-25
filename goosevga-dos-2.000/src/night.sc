@@ -399,7 +399,7 @@
 		loop 4
 		signal 24833
 		cycleSpeed 6
-		illegalBits 2
+		illegalBits $0002
 		moveSpeed 8
 	)
 

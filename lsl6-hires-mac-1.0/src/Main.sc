@@ -660,7 +660,7 @@
 			(self newRoom: (proc911_1 1))
 		else
 			(= temp3 (Event new:))
-			(GetEvent 32767 temp3)
+			(GetEvent evALL_EVENTS temp3)
 			(temp3 dispose:)
 			(self newRoom: 100)
 		)

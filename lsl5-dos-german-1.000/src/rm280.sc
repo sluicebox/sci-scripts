@@ -569,7 +569,7 @@
 					(Memory memFREE global204)
 				)
 				(TPrint @temp0)
-				(TPrint 280 15 67 -1 185) ; "(So really, not that much has changed!)"
+				(TPrint 280 15 #at -1 185) ; "(So really, not that much has changed!)"
 			)
 			(5 ; Talk
 				(TPrint 280 16) ; "You must have just missed them. Perhaps you should click on one of the girls, instead of on the ticket counter!"
@@ -1136,7 +1136,7 @@
 						(TPrint 280 40) ; "Suffering from copy machine breakdown? Tired of messy toner bottles? Sick of paper cartridges and service calls? Ready to rip the guts out of your piece-of-crap, document-mangling Shmearox copier? Call us. We're ACME Carbon Paper."
 					)
 					(1
-						(TPrint 280 41 30 1) ; "We want your old jewelry. Rings, chains, earrings, brooches. No Money Paid. "Stick 'em Up Pawn Shop" 1525 Park Avenue West"
+						(TPrint 280 41 #mode 1) ; "We want your old jewelry. Rings, chains, earrings, brooches. No Money Paid. "Stick 'em Up Pawn Shop" 1525 Park Avenue West"
 					)
 					(2
 						(TPrint 280 42) ; "Calling all married men! Entertain women discreetly and privately in our new "Stayfree Bachelor Pads." Exclusive panel slides into place whenever your wife knocks on the front door. Vibrating beds, imitation leopard-skin rugs, fake fireplaces. Contact Escobar Enterprises Estates today!"
@@ -1361,7 +1361,7 @@
 			(10
 				(Points 3 1)
 				(SetFlag 38) ; fLimoParked
-				(TPrint 280 55 67 -1 28) ; "Hello, Checker Limo. Wearya? Weardjawannago?"
+				(TPrint 280 55 #at -1 28) ; "Hello, Checker Limo. Wearya? Weardjawannago?"
 				(= ticks 30)
 			)
 			(11
@@ -1369,7 +1369,7 @@
 				(= ticks 30)
 			)
 			(12
-				(TPrint 280 57 67 -1 28) ; "Waddaya deff? Wearya? Weardjawannago?"
+				(TPrint 280 57 #at -1 28) ; "Waddaya deff? Wearya? Weardjawannago?"
 				(= ticks 30)
 			)
 			(13
@@ -1377,7 +1377,7 @@
 				(= ticks 30)
 			)
 			(14
-				(TPrint 280 59 67 -1 28) ; "Weardjawannago?"
+				(TPrint 280 59 #at -1 28) ; "Weardjawannago?"
 				(= ticks 30)
 			)
 			(15
@@ -1385,17 +1385,17 @@
 				(= ticks 30)
 			)
 			(16
-				(TPrint 280 61 67 -1 28) ; "Gotcha. Mee'cha ou'side."
+				(TPrint 280 61 #at -1 28) ; "Gotcha. Mee'cha ou'side."
 				(= ticks 30)
 			)
 			(17
-				(TPrint 280 62 67 -1 185) ; "(And he hangs up the phone.)"
+				(TPrint 280 62 #at -1 185) ; "(And he hangs up the phone.)"
 				(self changeState: 60)
 			)
 			(20
 				(Points 3 1)
 				(SetFlag 38) ; fLimoParked
-				(TPrint 280 63 67 -1 28) ; "Good afternoon, and welcome to lovely Miami," a pleasant voice answers the telephone. "How may North Beach Limousine Service assist you today?"
+				(TPrint 280 63 #at -1 28) ; "Good afternoon, and welcome to lovely Miami," a pleasant voice answers the telephone. "How may North Beach Limousine Service assist you today?"
 				(= ticks 30)
 			)
 			(21
@@ -1403,7 +1403,7 @@
 				(= ticks 30)
 			)
 			(22
-				(TPrint 280 65 67 -1 28) ; "Very well, Sir. And how will you be paying today?"
+				(TPrint 280 65 #at -1 28) ; "Very well, Sir. And how will you be paying today?"
 				(= ticks 30)
 			)
 			(23
@@ -1411,18 +1411,18 @@
 				(= ticks 30)
 			)
 			(24
-				(TPrint 280 67 67 -1 28) ; "Ahhh, but of course, sir! Your limousine will be outside in a few seconds!"
-				(TPrint 280 68 67 -1 28) ; "He concludes, "And thank you for thinking of us!""
+				(TPrint 280 67 #at -1 28) ; "Ahhh, but of course, sir! Your limousine will be outside in a few seconds!"
+				(TPrint 280 68 #at -1 28) ; "He concludes, "And thank you for thinking of us!""
 				(= ticks 30)
 			)
 			(25
-				(TPrint 280 62 67 -1 185) ; "(And he hangs up the phone.)"
+				(TPrint 280 62 #at -1 185) ; "(And he hangs up the phone.)"
 				(self changeState: 60)
 			)
 			(30
 				(Points 3 1)
 				(SetFlag 38) ; fLimoParked
-				(TPrint 280 69 67 -1 28) ; "Good day. Tramp Limousine at your service."
+				(TPrint 280 69 #at -1 28) ; "Good day. Tramp Limousine at your service."
 				(= ticks 30)
 			)
 			(31
@@ -1430,11 +1430,11 @@
 				(= ticks 30)
 			)
 			(32
-				(TPrint 280 71 67 -1 28) ; "Yes sir!" he replies, "I'll send one of my best girls right over!"
+				(TPrint 280 71 #at -1 28) ; "Yes sir!" he replies, "I'll send one of my best girls right over!"
 				(= ticks 30)
 			)
 			(33
-				(TPrint 280 62 67 -1 185) ; "(And he hangs up the phone.)"
+				(TPrint 280 62 #at -1 185) ; "(And he hangs up the phone.)"
 				(self changeState: 60)
 			)
 			(40
@@ -1451,7 +1451,7 @@
 				(= ticks 30)
 			)
 			(43
-				(TPrint 280 62 67 -1 185) ; "(And he hangs up the phone.)"
+				(TPrint 280 62 #at -1 185) ; "(And he hangs up the phone.)"
 				(self changeState: 60)
 			)
 			(50
@@ -1478,7 +1478,7 @@
 						(1272 {Miami})
 					)
 				)
-				(TPrint @temp2 67 -1 185)
+				(TPrint @temp2 #at -1 185)
 				(= ticks 30)
 			)
 			(52

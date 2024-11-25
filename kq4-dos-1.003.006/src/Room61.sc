@@ -47,7 +47,7 @@
 				xStep: 2
 				yStep: 1
 				setPri: 12
-				illegalBits: -32768
+				illegalBits: $8000
 				init:
 			)
 		)
@@ -59,7 +59,7 @@
 				looper: myLooper
 				xStep: 4
 				yStep: 2
-				illegalBits: -32768
+				illegalBits: $8000
 				init:
 			)
 		)

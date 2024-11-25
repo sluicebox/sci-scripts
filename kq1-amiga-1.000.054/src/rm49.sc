@@ -70,7 +70,7 @@
 				((ScriptID 0 21) number: 51 loop: -1 init: play:) ; gameSound
 				(gEgo
 					view: 13
-					illegalBits: -24576
+					illegalBits: $a000
 					setStep: 1 1
 					setCycle: Fwd
 					setPri: -1
@@ -215,7 +215,7 @@
 						(gEgo
 							show:
 							view: 13
-							illegalBits: -24576
+							illegalBits: $a000
 							setStep: 1 1
 							setCycle: Fwd
 							setLoop: -1
@@ -894,7 +894,7 @@
 				(gEgo
 					show:
 					view: 13
-					illegalBits: -24576
+					illegalBits: $a000
 					setStep: 1 1
 					setCycle: Fwd
 					setLoop: -1
@@ -990,7 +990,7 @@
 				(gEgo
 					show:
 					view: 13
-					illegalBits: -24576
+					illegalBits: $a000
 					setStep: 1 1
 					setCycle: Fwd
 					setLoop: -1
@@ -1046,7 +1046,7 @@
 				(Print 49 62) ; "Unfortunately, the walls of the well are too slick and slimy to be climbed."
 				((ScriptID 0 21) number: 51 loop: -1 init: play:) ; gameSound
 				(gEgo
-					illegalBits: -24576
+					illegalBits: $a000
 					view: 13
 					setStep: 1 1
 					setCel: -1

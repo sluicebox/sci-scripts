@@ -29,7 +29,7 @@
 	(= temp2 param2)
 	(= temp4 (+ (CelWide (param6 view:) (param6 loop:) 0) param2))
 	(while (!= (temp0 type:) evMOUSERELEASE)
-		(GetEvent 32767 temp0)
+		(GetEvent evALL_EVENTS temp0)
 		(GlobalToLocal temp0)
 		(if (< (= temp1 (- (temp0 y:) 3)) param3)
 			(= temp1 param3)

@@ -53,7 +53,7 @@
 					view: 464
 					setAvoider: (Avoid new:)
 					init:
-					illegalBits: -32764
+					illegalBits: $8004
 					setScript: fifiActions
 				)
 			)
@@ -184,7 +184,7 @@
 					view: 470
 					loop: 1
 					cycleSpeed: 0
-					illegalBits: -32764
+					illegalBits: $8004
 					setScript: fifiActions
 				)
 				(client setScript: 0)

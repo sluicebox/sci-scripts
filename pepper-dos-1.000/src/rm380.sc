@@ -189,7 +189,7 @@
 				)
 			)
 			(84 ; Trivia
-				(= global215 8)
+				(= gDictionaryWord 8)
 				(super doVerb: theVerb &rest)
 			)
 			(else
@@ -658,7 +658,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(84 ; Trivia
-				(= global215 8)
+				(= gDictionaryWord 8)
 				(super doVerb: theVerb &rest)
 			)
 			(else
@@ -714,7 +714,7 @@
 				(gMessager say: 3 7 17) ; "The door is locked and bolted."
 			)
 			(84 ; Trivia
-				(= global215 8)
+				(= gDictionaryWord 8)
 				(super doVerb: theVerb &rest)
 			)
 			(else
@@ -832,7 +832,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(6 ; Look
-				(= global215 61)
+				(= gDictionaryWord 61)
 				(super doVerb: theVerb &rest)
 			)
 			(else

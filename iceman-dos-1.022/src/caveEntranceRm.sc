@@ -195,7 +195,7 @@
 			(3
 				(bottle dispose:)
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					setMotion: MoveTo 155 (gEgo y:) self
 				)
 			)

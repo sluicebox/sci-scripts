@@ -316,7 +316,7 @@
 						posn: 115 117
 						setCycle: Walk
 						init:
-						illegalBits: -32768
+						illegalBits: $8000
 						setMotion: MoveTo 115 122
 					)
 				)
@@ -969,7 +969,7 @@
 					setCycle: Walk
 					setAvoider: (Avoid new:)
 					setMotion: Chase gEgo 25
-					illegalBits: -31744
+					illegalBits: $8400
 					startUpd:
 				)
 				(flowerSounds play:)

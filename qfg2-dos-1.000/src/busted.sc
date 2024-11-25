@@ -288,7 +288,7 @@
 
 	(method (dispose)
 		(super dispose:)
-		(gEgo illegalBits: -32764)
+		(gEgo illegalBits: $8004)
 	)
 
 	(method (changeState newState)
@@ -359,7 +359,7 @@
 			(1
 				(gEgo
 					view: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setLoop: (gEgo loop:)
 					moveSpeed: 1
 					cycleSpeed: 1
@@ -431,7 +431,7 @@
 
 	(method (dispose)
 		(super dispose:)
-		(gEgo illegalBits: -32764)
+		(gEgo illegalBits: $8004)
 	)
 
 	(method (changeState newState &tmp theMessage)

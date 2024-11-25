@@ -275,7 +275,7 @@
 			(1
 				(if (and (== local3 (muffet x:)) (== local4 (muffet y:)))
 					(User canControl: 0)
-					(muffet setPri: -1 setLoop: -1 illegalBits: -32768)
+					(muffet setPri: -1 setLoop: -1 illegalBits: $8000)
 					(= global113 1)
 					(self dispose:)
 				else
@@ -471,7 +471,7 @@
 				(proc411_1)
 				(muffet
 					setLoop: -1
-					illegalBits: -32768
+					illegalBits: $8000
 					setMotion: MoveTo 150 120 self
 				)
 			)

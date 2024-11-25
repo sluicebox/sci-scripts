@@ -68,7 +68,7 @@
 				posn: 73 137
 				view: 4
 				setStep: 4 2
-				illegalBits: -16384
+				illegalBits: $c000
 				baseSetter: 0
 				init:
 				observeBlocks: stair1 stair2
@@ -99,7 +99,7 @@
 				setStep: 4 2
 				setPri: 12
 				baseSetter: (ScriptID 0 1) ; smallBase
-				illegalBits: -32768
+				illegalBits: $8000
 				init:
 				observeBlocks: stair1 stair2
 			)
@@ -109,11 +109,11 @@
 
 	(method (doit)
 		(if (& (gEgo onControl: 0) $0040)
-			(gEgo illegalBits: -32768)
+			(gEgo illegalBits: $8000)
 			(gCurRoom newRoom: 92)
 		)
 		(if (& (gEgo onControl: 0) $0020)
-			(gEgo setPri: -1 illegalBits: -32768)
+			(gEgo setPri: -1 illegalBits: $8000)
 			(gCurRoom newRoom: 88)
 		)
 		(if
@@ -132,12 +132,12 @@
 			(if (and (< (gEgo heading:) 180) (> (gEgo heading:) 0))
 				(gEgo
 					setPri: 12
-					illegalBits: -32768
+					illegalBits: $8000
 					baseSetter: (ScriptID 0 1) ; smallBase
 				)
 				(= local0 1)
 			else
-				(gEgo setPri: -1 illegalBits: -16384 baseSetter: 0)
+				(gEgo setPri: -1 illegalBits: $c000 baseSetter: 0)
 				(= local0 0)
 			)
 		)
@@ -229,7 +229,7 @@
 					view: 4
 					setStep: 4 2
 					setLoop: -1
-					illegalBits: -16384
+					illegalBits: $c000
 					setPri: -1
 					setCycle: Walk
 				)

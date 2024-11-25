@@ -97,7 +97,7 @@
 	(properties
 		yStep 4
 		signal 16384
-		illegalBits -8190
+		illegalBits $e002
 		xStep 6
 	)
 
@@ -124,7 +124,7 @@
 	(properties
 		yStep 4
 		signal 16384
-		illegalBits -8190
+		illegalBits $e002
 		xStep 6
 	)
 
@@ -151,7 +151,7 @@
 	(properties
 		yStep 4
 		signal 16384
-		illegalBits -8190
+		illegalBits $e002
 		xStep 6
 	)
 
@@ -344,7 +344,7 @@
 						(DisposeScript 985)
 						(gEgo
 							setScript: 0
-							illegalBits: -32768
+							illegalBits: $8000
 							setCycle: Walk
 						)
 						(self setScript: (ScriptID 134 1)) ; monkDead

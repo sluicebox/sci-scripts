@@ -112,7 +112,7 @@
 			)
 			(rock x: 1 y: 134 init:)
 			(gAddToPics doit:)
-			(gEgo illegalBits: -16384)
+			(gEgo illegalBits: $c000)
 		)
 	)
 
@@ -309,9 +309,9 @@
 								)
 								(ClearFlag 17)
 								(ClearFlag 1)
-								(if (== (gEgo illegalBits:) -16384)
+								(if (== (gEgo illegalBits:) $c000)
 									(proc0_1)
-									(gEgo illegalBits: -16384)
+									(gEgo illegalBits: $c000)
 								else
 									(proc0_1)
 								)
@@ -330,9 +330,9 @@
 							((IsFlag 17)
 								(Print 51 30) ; "As you rub the shimmering ring, you turn invisible!"
 								(SetFlag 1)
-								(if (== (gEgo illegalBits:) -16384)
+								(if (== (gEgo illegalBits:) $c000)
 									(proc0_1)
-									(gEgo illegalBits: -16384)
+									(gEgo illegalBits: $c000)
 								else
 									(proc0_1)
 								)
@@ -918,7 +918,7 @@
 					(= local1 1)
 					(smoke hide:)
 					(proc0_1)
-					(gEgo illegalBits: -16384)
+					(gEgo illegalBits: $c000)
 					(HandsOn)
 					(self dispose:)
 				)
@@ -957,7 +957,7 @@
 				(HandsOn)
 				(Print 51 62) ; "With unerring aim, the dagger streaks through the air and pierces the soft, unprotected skin under the dragon's throat. The dragon convulses for a moment, and then crashes, lifeless, to the hard cavern floor."
 				(proc0_1)
-				(gEgo illegalBits: -16384)
+				(gEgo illegalBits: $c000)
 				(self dispose:)
 			)
 		)

@@ -24,7 +24,7 @@
 	else
 		(Printf {*** %d.vmd Not Found! ***} param1)
 	)
-	(while ((= temp0 (Event new: 3)) type:)
+	(while ((= temp0 (Event new: evMOUSE)) type:)
 		(temp0 dispose:)
 	)
 	(temp0 dispose:)

@@ -109,7 +109,7 @@
 				posn: 68 164
 				view: 4
 				setStep: 4 1
-				illegalBits: -16384
+				illegalBits: $c000
 				init:
 			)
 		)
@@ -152,7 +152,7 @@
 			(gEgo
 				posn: 83 166
 				view: 4
-				illegalBits: -16384
+				illegalBits: $c000
 				setStep: 4 1
 				setPri: -1
 				init:
@@ -365,7 +365,7 @@
 										(User canControl: 0 canInput: 0)
 										(gEgo
 											posn: (gEgo x:) 146
-											illegalBits: -32768
+											illegalBits: $8000
 										)
 										((Sound new:) number: 300 loop: 1 play:)
 									)
@@ -426,7 +426,7 @@
 							((== (local3 cel:) 0)
 								(local3 startUpd: setCycle: End doDoor)
 								(User canControl: 0 canInput: 0)
-								(gEgo illegalBits: -32768 setMotion: 0)
+								(gEgo illegalBits: $8000 setMotion: 0)
 								((Sound new:) number: 300 loop: 1 play:)
 							)
 							(else
@@ -482,7 +482,7 @@
 				(local3 setCycle: Beg)
 			)
 			(3
-				(gEgo illegalBits: -16384)
+				(gEgo illegalBits: $c000)
 				(local2 illegalBits: 0 setMotion: MoveTo 145 235 self)
 				(local1 illegalBits: 0 setMotion: MoveTo 145 239)
 			)

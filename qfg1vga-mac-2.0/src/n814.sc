@@ -230,7 +230,7 @@
 		setLoop: -1
 		setLoop: (ScriptID 0 1) ; stopGroop
 		setCycle: StopWalk temp1
-		illegalBits: -32768
+		illegalBits: $8000
 		ignoreHorizon:
 		ignoreActors: 0
 		state: 2

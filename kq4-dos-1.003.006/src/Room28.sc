@@ -40,7 +40,7 @@
 		(= west 27)
 		(= horizon 126)
 		(= gIndoors 0)
-		(gEgo edgeHit: EDGE_NONE illegalBits: -32768)
+		(gEgo edgeHit: EDGE_NONE illegalBits: $8000)
 		(super init:)
 		(if gNight
 			(gCurRoom overlay: 128)
@@ -244,7 +244,7 @@
 			)
 			(3
 				(gCurRoom setScript: 0)
-				(gEgo illegalBits: -32768 setCycle: Walk view: 2)
+				(gEgo illegalBits: $8000 setCycle: Walk view: 2)
 				(HandsOn)
 			)
 		)

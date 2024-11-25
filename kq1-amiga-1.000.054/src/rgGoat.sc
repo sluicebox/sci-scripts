@@ -40,7 +40,7 @@
 		(gGoat
 			view: 165
 			ignoreHorizon: 1
-			illegalBits: -7618
+			illegalBits: $e23e
 			setLoop: -1
 			setPri: -1
 			looper: goatLooper
@@ -402,7 +402,7 @@
 			(0
 				(gGoat
 					setAvoider: 0
-					illegalBits: -16322
+					illegalBits: $c03e
 					setMotion:
 						MoveTo
 						(Random 10 310)

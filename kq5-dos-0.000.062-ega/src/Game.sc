@@ -261,7 +261,7 @@
 		(self setCursor: gWaitCursor 1)
 		(self startRoom: gCurRoomNum checkAni:)
 		(SetSynonyms gRegions)
-		(while ((= temp0 (Event new: 3)) type:)
+		(while ((= temp0 (Event new: evMOUSE)) type:)
 			(temp0 dispose:)
 		)
 		(temp0 dispose:)
@@ -281,7 +281,7 @@
 			(= temp1 (User canInput:))
 			(= temp2 (User controls:))
 			(User canInput: 1 controls: 1)
-			(= temp0 (Event new: -1))
+			(= temp0 (Event new: $ffff)) ; evPEEK | evALL_EVENTS
 			(temp0 type: 1 modifiers: 4)
 			(proc0_26 0)
 			(proc997_0 temp0)

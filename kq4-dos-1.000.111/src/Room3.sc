@@ -341,11 +341,11 @@
 			(3
 				(= local3 0)
 				(gEgo view: 7)
-				(gEgo illegalBits: -1 ignoreControl: 8 4096 setCycle: Walk)
+				(gEgo illegalBits: $ffff ignoreControl: 8 4096 setCycle: Walk)
 				(= seconds 2)
 			)
 			(4
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HandsOn)
 				(self changeState: 0)
 			)

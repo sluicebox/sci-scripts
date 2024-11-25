@@ -115,7 +115,7 @@
 						(CheckScroll)
 						(Show 4)
 						(Animate (gCast elements:))
-						(while (== evNULL ((= event (Event new: 32765)) type:))
+						(while (== evNULL ((= event (Event new: $7ffd)) type:)) ; evVERB | evHELP | evMOVE | evJOYUP | evJOYDOWN | evSAID | direction | evMENUHIT | evMENUSTART | evKEYUP | evMOUSEKEYBOARD | $0c00
 							(event dispose:)
 						)
 						(event dispose:)

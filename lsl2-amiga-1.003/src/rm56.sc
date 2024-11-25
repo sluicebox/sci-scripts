@@ -52,7 +52,7 @@
 			((Act new:) setScript: (eastLineScript new:))
 			((Act new:) setScript: (westLineScript new:))
 		)
-		(aMind setLoop: 1 setPri: 14 setStep: 4 4 illegalBits: 16 init:)
+		(aMind setLoop: 1 setPri: 14 setStep: 4 4 illegalBits: $0010 init:)
 		(HandsOff)
 		(= gCurrentStatus 8)
 		(self setRegions: 500 setScript: rm56Script) ; rm500

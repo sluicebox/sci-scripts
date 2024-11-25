@@ -56,7 +56,7 @@
 			init:
 		)
 		(if (== gCurRoomNum 74)
-			(gEgo illegalBits: -16384)
+			(gEgo illegalBits: $c000)
 		)
 		(if (IsFlag 324)
 			(SetFlag 181)

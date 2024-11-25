@@ -121,7 +121,7 @@
 			posn: 220 170
 			setPri: 0
 			startUpd:
-			illegalBits: -32768
+			illegalBits: $8000
 			init:
 		)
 		(if (== global131 13)
@@ -134,7 +134,7 @@
 				setCycle: Walk
 				setAvoider: (Avoid new:)
 				setMotion: Follow gEgo 500
-				illegalBits: -32768
+				illegalBits: $8000
 				init:
 			)
 		else

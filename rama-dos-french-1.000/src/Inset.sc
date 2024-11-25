@@ -156,7 +156,7 @@
 	)
 
 	(method (dispose refreshOrNot &tmp temp0 temp1 temp2)
-		(while ((= temp2 (Event new: 3)) type:)
+		(while ((= temp2 (Event new: evMOUSE)) type:)
 			(temp2 dispose:)
 		)
 		(temp2 dispose:)

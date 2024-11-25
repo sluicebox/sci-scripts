@@ -293,7 +293,7 @@
 					view: 92
 					setLoop: 4
 					cel: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: End self
 				)
 			)

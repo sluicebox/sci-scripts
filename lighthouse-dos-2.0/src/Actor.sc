@@ -457,7 +457,7 @@
 	(properties
 		xLast 0
 		yLast 0
-		illegalBits 32768
+		illegalBits $8000
 		xStep 3
 		robot 0
 		avoider 0

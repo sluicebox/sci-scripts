@@ -85,7 +85,7 @@
 				(and local0 (not (IsFlag 11)) (not (IsFlag 65)))
 				(and (not (IsFlag 11)) (not (IsFlag 65)) (Random 0 1))
 			)
-			(elf init: illegalBits: -32750 setCycle: Walk setMotion: Wander)
+			(elf init: illegalBits: $8012 setCycle: Walk setMotion: Wander)
 			(elfCage init:)
 			(elf observeBlocks: elfCage)
 			(Print 18 0) ; "Wandering along the banks of a beautiful lake, you see a cute little elf."

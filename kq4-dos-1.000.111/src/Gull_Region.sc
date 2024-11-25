@@ -53,7 +53,7 @@
 									(Random 325 326)
 								)
 							ignoreHorizon: 1
-							illegalBits: 16384
+							illegalBits: $4000
 							init:
 							yourself:
 						)

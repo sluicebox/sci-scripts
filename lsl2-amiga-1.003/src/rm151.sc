@@ -30,7 +30,7 @@
 		(Load rsVIEW 232)
 		(super init:)
 		(aChair posn: 167 116 setPri: 8 init:)
-		(aBarber setCycle: Walk illegalBits: -32768 init:)
+		(aBarber setCycle: Walk illegalBits: $8000 init:)
 		(aBigFace view: 507 setLoop: 9 posn: 36 1117 setPri: 15 init:)
 		(NormalEgo 3)
 		(gEgo posn: 160 159 init:)

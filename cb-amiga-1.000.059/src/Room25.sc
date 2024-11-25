@@ -120,7 +120,7 @@
 				(gEgo posn: 171 119)
 			)
 		)
-		(gEgo view: 0 illegalBits: -32768 init:)
+		(gEgo view: 0 illegalBits: $8000 init:)
 		(HandsOn)
 	)
 

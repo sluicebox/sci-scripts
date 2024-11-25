@@ -1546,7 +1546,7 @@
 			(gCast eachElementDo: #motionCue)
 		)
 		(if (& (= temp0 (event type:)) $0040) ; direction
-			(&= temp0 $ffbf) ; evPEEK | evVERB | evHELP | evMOVE | evJOYUP | evJOYDOWN | evSAID | evMENUHIT | evMENUSTART | evKEYUP | evMOUSEKEYBOARD | evMOUSERELEASE | evNULL | $0c00
+			(&= temp0 $ffbf) ; evPEEK | evVERB | evHELP | evMOVE | evJOYUP | evJOYDOWN | evSAID | evMENUHIT | evMENUSTART | evKEYUP | evMOUSEKEYBOARD | evMOUSERELEASE | $0c00
 			(switch (event message:)
 				(JOY_UP
 					(return 0)

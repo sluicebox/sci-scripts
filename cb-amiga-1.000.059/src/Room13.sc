@@ -52,7 +52,7 @@
 			(Splash2 ignoreActors: 1 init: hide:)
 		)
 		(self setFeatures: Window1 Window2 Window3 Hay1 Hay2)
-		(gEgo illegalBits: -32766)
+		(gEgo illegalBits: $8002)
 		(if (and (>= gAct 2) (< gAct 4))
 			(self setRegions: 202) ; EthelDrunk
 		)

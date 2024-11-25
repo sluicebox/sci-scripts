@@ -56,7 +56,7 @@
 			(3
 				(HandsOn)
 				(= local0 0)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(client setScript: 0)
 			)
 		)
@@ -105,7 +105,7 @@
 					(SetMenu 1281 112 1)
 				)
 				(= local0 0)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(client setScript: 0)
 			)
 		)

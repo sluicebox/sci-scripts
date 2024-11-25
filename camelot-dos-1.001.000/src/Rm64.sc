@@ -265,7 +265,7 @@
 		(= global219 0)
 		(= global220 0)
 		(SetFlag 137)
-		(gEgo view: 0 posn: 70 75 loop: 2 init: illegalBits: -32764)
+		(gEgo view: 0 posn: 70 75 loop: 2 init: illegalBits: $8004)
 		(entryDoor init: setCel: (if (== gPrevRoomNum 83) 0 else 255))
 		(sideDoor init: stopUpd:)
 		(reflection init: setCycle: Fwd)

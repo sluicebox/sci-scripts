@@ -214,7 +214,7 @@
 				(gEgo
 					normal: 1
 					view: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					loop: 0
 					x: (- (gEgo x:) 5)
 					cycleSpeed: 0
@@ -555,7 +555,7 @@
 				(elf dispose:)
 				(gEgo
 					moveSpeed: (gGame egoMoveSpeed:)
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: KQ5SyncWalk
 					setLoop: -1
 				)

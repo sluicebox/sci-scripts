@@ -478,7 +478,7 @@
 		(switch (= state newState)
 			(1
 				(HandsOff)
-				(gEgo illegalBits: -2)
+				(gEgo illegalBits: $fffe)
 				(frontDoor
 					setLoop: 1
 					init:
@@ -565,7 +565,7 @@
 					setLoop: -1
 					loop: 1
 					ignoreActors: 0
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(HandsOn)
 				(client setScript: 0)

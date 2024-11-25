@@ -1053,7 +1053,7 @@
 				)
 			)
 			(1
-				(gEgo illegalBits: -32768 setPri: -1)
+				(gEgo illegalBits: $8000 setPri: -1)
 				(HandsOn)
 				(self dispose:)
 			)

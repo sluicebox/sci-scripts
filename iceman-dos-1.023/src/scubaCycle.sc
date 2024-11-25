@@ -313,7 +313,7 @@
 				(gEgo x: 315)
 			)
 		)
-		(gEgo illegalBits: -32768)
+		(gEgo illegalBits: $8000)
 		(if (and (== local10 local14) (<= (- local13 3) local9 (+ local13 9)))
 			(gGame changeScore: 2)
 			(switch (- local9 local13)
@@ -950,7 +950,7 @@
 					cel: 5
 					setCycle: Walk
 					cycleSpeed: 2
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(soundBubbles dispose:)
 				(client setScript: blowUp)

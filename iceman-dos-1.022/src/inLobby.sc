@@ -272,7 +272,7 @@
 				)
 			)
 			(2
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(client setCycle: Beg self)
 				(theSound number: (proc0_5 42) loop: 1 play:)
 			)

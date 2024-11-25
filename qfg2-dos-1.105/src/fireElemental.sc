@@ -66,7 +66,7 @@
 
 	(method (init)
 		(super init: &rest)
-		(gEgo illegalBits: -32512)
+		(gEgo illegalBits: $8100)
 	)
 
 	(method (changeState newState &tmp theX theY dmgAmount theLoop)
@@ -211,7 +211,7 @@
 				(fireElemental
 					loop: 4
 					cel: 6
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Beg self
 				)
 				(NormalEgo)

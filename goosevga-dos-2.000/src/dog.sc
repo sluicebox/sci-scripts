@@ -24,7 +24,7 @@
 		view 46
 		signal 16384
 		cycleSpeed 6
-		illegalBits -32764
+		illegalBits $8004
 	)
 
 	(method (onMe)

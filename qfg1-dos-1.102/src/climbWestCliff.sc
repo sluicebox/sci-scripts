@@ -65,9 +65,9 @@
 				(NormalEgo)
 				(gEgo loop: 2)
 				(if (IsFlag 238)
-					(gEgo illegalBits: -32768)
+					(gEgo illegalBits: $8000)
 				else
-					(gEgo illegalBits: -28672)
+					(gEgo illegalBits: $9000)
 				)
 				(HandsOn)
 				((ScriptID 93 0) notify: 3) ; rm93

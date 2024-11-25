@@ -29,7 +29,7 @@
 		([param2 temp2] init:)
 		(extraList add: [param2 temp2])
 	)
-	(while (== ((= temp3 (Event new: 5)) type:) 0)
+	(while (== ((= temp3 (Event new: evMOUSEKEYBOARD)) type:) 0)
 		(temp3 dispose:)
 		(Wait gSpeed)
 		(Animate (extraList elements:) 1)

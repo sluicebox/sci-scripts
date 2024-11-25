@@ -118,7 +118,7 @@
 			((gEgo head:) hide:)
 			(self setScript: flyIn)
 		else
-			(gEgo init: illegalBits: -32768)
+			(gEgo init: illegalBits: $8000)
 			(if (!= (gGlobalSound number:) 7)
 				(gGlobalSound number: 7 loop: -1 vol: 127 play:)
 			)
@@ -239,7 +239,7 @@
 					setCycle: Walk
 					setLoop: -1
 					setPri: 1
-					illegalBits: -32768
+					illegalBits: $8000
 					moveSpeed: global289
 					setMotion: MoveTo 123 43 self
 				)
@@ -278,7 +278,7 @@
 					setCycle: Walk
 					setLoop: -1
 					setPri: -1
-					illegalBits: -32768
+					illegalBits: $8000
 					moveSpeed: global289
 					setMotion: MoveTo 68 55 self
 				)
@@ -453,7 +453,7 @@
 					view: 0
 					setLoop: -1
 					setPri: -1
-					illegalBits: -32768
+					illegalBits: $8000
 					loop: 3
 					setCycle: Walk
 					setStep: 3 2
@@ -565,7 +565,7 @@
 			)
 			(11
 				(HandsOn)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(cls)
 				(self dispose:)
 			)

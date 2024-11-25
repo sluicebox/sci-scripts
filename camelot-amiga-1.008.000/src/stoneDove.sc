@@ -404,7 +404,7 @@
 				(RedrawCast)
 				(Print 177 5) ; "The stone dove feels oddly warm. 'Tis changing! By the power of Aphrodite, it turns to a living dove within your very hands!"
 				(SetScore 0 0 5)
-				(gEgo illegalBits: -32768 setCycle: Beg self)
+				(gEgo illegalBits: $8000 setCycle: Beg self)
 				(theDove view: 175 setLoop: 5)
 				(= global198 65)
 				(theDove
@@ -710,7 +710,7 @@
 			(25
 				(theDove posn: 100 87 32 setMotion: MoveTo 86 74)
 				(if local1
-					(gEgo illegalBits: -32768 setMotion: 0)
+					(gEgo illegalBits: $8000 setMotion: 0)
 					(= local1 0)
 				)
 				(SetFlag 205)

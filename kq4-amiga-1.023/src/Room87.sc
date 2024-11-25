@@ -80,7 +80,7 @@
 			init:
 			setCycle: Fwd
 		)
-		(if global169
+		(if gLolotteAlive
 			((= local0 (Act new:))
 				view: 145
 				loop: 4
@@ -164,7 +164,7 @@
 						)
 					)
 					((Said '/man,goon')
-						(if global169
+						(if gLolotteAlive
 							(Print 87 7) ; "Just get out of there!"
 						else
 							(Print 87 8) ; "Lolotte's goons won't bother you any more."

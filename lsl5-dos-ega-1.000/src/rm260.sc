@@ -29,7 +29,7 @@
 	)
 
 	(method (init)
-		(gEgo init: illegalBits: -32768 normalize:)
+		(gEgo init: illegalBits: $8000 normalize:)
 		(switch gPrevRoomNum
 			(east
 				(= style 11)
@@ -386,7 +386,7 @@
 				(= cycles 2)
 			)
 			(6
-				(TPrint 260 10 67 -1 28) ; "You feel around in the cigarette vending machine's change slot and find..."
+				(TPrint 260 10 #at -1 28) ; "You feel around in the cigarette vending machine's change slot and find..."
 				(if
 					(and
 						(not (IsFlag 34)) ; fTookQuarters260
@@ -395,10 +395,10 @@
 					)
 					(gEgo get: 10) ; Some_Change
 					(Points 5 34)
-					(TPrint 260 11 67 -1 28) ; "...a pair of quarters!"
+					(TPrint 260 11 #at -1 28) ; "...a pair of quarters!"
 					(= gQuarters 2)
 				else
-					(TPrint 260 12 67 -1 28) ; "...nothing. Someone must have taken whatever change was left here!"
+					(TPrint 260 12 #at -1 28) ; "...nothing. Someone must have taken whatever change was left here!"
 				)
 				(= cycles 2)
 			)
@@ -874,7 +874,7 @@
 			(4
 				(cond
 					((or (!= whichSlot 2) (IsFlag 36)) ; fPulledSlots
-						(TPrint 260 36 67 -1 185 108 self) ; "You try to pull the handle of the slot machine but since there's no quarter in it, nothing happens."
+						(TPrint 260 36 #at -1 185 #dispose self) ; "You try to pull the handle of the slot machine but since there's no quarter in it, nothing happens."
 					)
 					((not (IsFlag 36)) ; fPulledSlots
 						(gTheMusic number: 263 loop: 1 play: self)

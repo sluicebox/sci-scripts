@@ -215,7 +215,7 @@
 			)
 			((Said 'give/moneybag')
 				(if (< (gEgo distanceTo: mercenary) 40)
-					(if (or global122 global121 global120)
+					(if (or gGold gSilver gCopper)
 						(gTObj noWidth: 1)
 						(Talk 51 3) ; "A rich man!!"
 						(if (IsFlag 96)
@@ -559,7 +559,7 @@
 					((or (Said '/coin,fee,coin') (Said '//coin,fee,coin'))
 						(cond
 							((== gPrevRoomNum 52)
-								(if (or global122 global121 global120)
+								(if (or gGold gSilver gCopper)
 									(Print 51 48) ; "You may have to pay them again.  Let us hope not."
 								else
 									(Print 51 49) ; "Let us hope that they will not wish payment to let you leave Jerusalem."
@@ -568,7 +568,7 @@
 							((IsFlag 79)
 								(Print 51 50) ; "You were very wise to avoid a fight with four heavily armed and dangerous men."
 							)
-							((or global122 global121 global120)
+							((or gGold gSilver gCopper)
 								(Print 51 51) ; "You are a lone foreigner against four dangerous mercenaries. Your life is worth far more than a few coins."
 							)
 							(else
@@ -798,7 +798,7 @@
 				(gMuleObj setMotion: MoveTo 48 138 self)
 			)
 			(4
-				(gMuleObj illegalBits: -32768 setCycle: 0 stopUpd:)
+				(gMuleObj illegalBits: $8000 setCycle: 0 stopUpd:)
 			)
 			(5
 				(gCurRoom leaveRoom: 52 -10 (gEgo y:))

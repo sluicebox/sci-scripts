@@ -30,9 +30,9 @@
 )
 
 (procedure (localproc_0)
-	(= global122 0)
-	(= global121 0)
-	(= global120 0)
+	(= gGold 0)
+	(= gSilver 0)
+	(= gCopper 0)
 	(= global123 0)
 )
 
@@ -452,7 +452,7 @@
 					'[get]/dinar,(coin<dinar),dirham,(coin<dirham),copper,(coin<copper)>'
 				)
 				(cond
-					((and (gEgo has: 3) (or global120 global121 global122)) ; purse
+					((and (gEgo has: 3) (or gCopper gSilver gGold)) ; purse
 						(event claimed: 1)
 						(Talk 5 34) ; "You have coins already, my king, but if you wish to change them, please give me the purse."
 					)
@@ -484,7 +484,7 @@
 			((Said 'get/moneybag')
 				(cond
 					((gEgo has: 3) ; purse
-						(if (== global122 global121 global120 0)
+						(if (== gGold gSilver gCopper 0)
 							(Talk 5 37) ; "I have no purse to give you. If you have brought your own, I can fill it for you."
 						else
 							(Talk 5 38) ; "But you have it, sire."
@@ -496,7 +496,7 @@
 					((not (gEgo inRect: 100 70 180 106))
 						(Talk 5 40) ; "You must come closer, m'lord."
 					)
-					((and (== global122 0) (== global121 0) (== global120 0))
+					((and (== gGold 0) (== gSilver 0) (== gCopper 0))
 						(Talk 5 41) ; "Here you are, m'lord, but the purse is empty. I beg you to let me fill it for you ere you go."
 						(gEgo get: 3) ; purse
 						(SetMenu 1281 112 1)
@@ -521,7 +521,7 @@
 			((or (Said 'get/coin') (Said 'fill/moneybag'))
 				(cond
 					((gEgo has: 3) ; purse
-						(if (== global122 global121 global120 0)
+						(if (== gGold gSilver gCopper 0)
 							(Talk 5 35) ; "Aye, gladly, if you will but provide me with the purse to fill."
 						else
 							(Talk 5 45) ; "But, m'lord, you have coins in your purse. Still, if you wish to change what you have, you have but to give me the purse again."
@@ -561,7 +561,7 @@
 						(Talk 5 40) ; "You must come closer, m'lord."
 					)
 					(else
-						(if (== global122 global121 global120 0)
+						(if (== gGold gSilver gCopper 0)
 							(Talk 5 52) ; "Thank you, m'lord. I shall fill it according to your wishes."
 						else
 							(Talk 5 53) ; "I have emptied the purse, so we may begin again. What is your command?"
@@ -589,7 +589,7 @@
 					((not (IsItemAt 3)) ; purse
 						(Print 5 56) ; "If you had a purse, you would be able to acquire money to give away."
 					)
-					((== global122 global121 global120)
+					((== gGold gSilver gCopper)
 						(Talk 5 57) ; "I am the one who should be giving you money, m'lord. What are your commands?"
 					)
 					(else
@@ -611,7 +611,7 @@
 					((not (IsItemAt 3)) ; purse
 						(Print 5 60) ; "You do not even have the purse."
 					)
-					((== global122 global121 global120 0)
+					((== gGold gSilver gCopper 0)
 						(Talk 5 61) ; "The purse is empty, m'lord. I await your commands."
 					)
 					(else
@@ -648,7 +648,7 @@
 					(RedrawCast)
 					(= local2 0)
 					(Talk 5 62) ; "There are silver coins in your purse."
-					(+= global121 10)
+					(+= gSilver 10)
 					(++ global123)
 					(HandsOn)
 				)
@@ -673,7 +673,7 @@
 				(RedrawCast)
 				(= local2 0)
 				(Talk 5 63) ; "You now have gold coins, my King."
-				(+= global122 5)
+				(+= gGold 5)
 				(++ global123)
 				(HandsOn)
 			)
@@ -701,7 +701,7 @@
 					(RedrawCast)
 					(= local2 0)
 					(Talk 5 64) ; "I have given you copper coins, m'lord."
-					(+= global120 15)
+					(+= gCopper 15)
 					(++ global123)
 					(HandsOn)
 				)
@@ -739,7 +739,7 @@
 				)
 			)
 			(2
-				(gEgo illegalBits: -32768 ignoreActors: 0 setPri: -1)
+				(gEgo illegalBits: $8000 ignoreActors: 0 setPri: -1)
 				(client setScript: 0)
 				(HandsOn)
 			)
@@ -807,7 +807,7 @@
 					(Said 'talk[/treasurer]')
 				)
 				(cond
-					((== global122 global121 global120 0)
+					((== gGold gSilver gCopper 0)
 						(if (not local4)
 							(Talk 5 70) ; "My king, if you seek my advice, I say this -- take with you coins of all three value: copper, silver and gold. Each has its use."
 							(= local4 1)
@@ -867,7 +867,7 @@
 						(Talk 5 84) ; "The bags contain gold and silver cups and platters and other booty from the battles you have won."
 					)
 					((Said '//coin,dinar,copper,dirham')
-						(if (== global122 global121 global120 0)
+						(if (== gGold gSilver gCopper 0)
 							(Talk 5 85) ; "Each jar before me is filled with coins: one with gold coins, one with silver coins and one with copper coins."
 						else
 							(event claimed: 0)

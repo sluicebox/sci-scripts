@@ -37,7 +37,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 92)
+		(= gDictionaryWord 92)
 		(super doVerb: theVerb)
 	)
 
@@ -874,7 +874,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 87)
+		(= gDictionaryWord 87)
 		(switch theVerb
 			(85 ; Talk
 				(cond
@@ -882,12 +882,12 @@
 						(gCurRoom setScript: talkSentry)
 					)
 					(local0
-						(= global215 87)
+						(= gDictionaryWord 87)
 						(gCurRoom setScript: saySDSA)
 					)
 					(else
 						(++ local0)
-						(= global215 87)
+						(= gDictionaryWord 87)
 						(gCurRoom setScript: saySDFA)
 					)
 				)
@@ -937,7 +937,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 92)
+		(= gDictionaryWord 92)
 		(switch theVerb
 			(6 ; Look
 				(switch (stuff cel:)
@@ -1005,7 +1005,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(7 ; Do
-				(= global215 87)
+				(= gDictionaryWord 87)
 				(if (gCast contains: sentry1)
 					(if (not (IsFlag 295))
 						(gCurRoom setScript: attemptStile)
@@ -1015,7 +1015,7 @@
 				)
 			)
 			(6 ; Look
-				(= global215 92)
+				(= gDictionaryWord 92)
 				(if (gCast contains: sentry1)
 					(super doVerb: theVerb)
 				else
@@ -1023,7 +1023,7 @@
 				)
 			)
 			(84 ; Trivia
-				(= global215 92)
+				(= gDictionaryWord 92)
 				(super doVerb: theVerb)
 			)
 			(else
@@ -1048,7 +1048,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 59)
+		(= gDictionaryWord 59)
 		(super doVerb: theVerb)
 	)
 )
@@ -1060,7 +1060,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 8)
+		(= gDictionaryWord 8)
 		(if (== theVerb 84) ; Trivia
 			(= local1 (gNarrator talkWidth:))
 			(gNarrator talkWidth: 250)

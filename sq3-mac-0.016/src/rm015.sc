@@ -384,7 +384,7 @@
 				(HandsOn)
 				(gEgo
 					view: (if (IsItemAt 3) 32 else 6) ; Reactor
-					illegalBits: -32768
+					illegalBits: $8000
 					posn: 80 132
 					setLoop: -1
 					setPri: -1
@@ -512,7 +512,7 @@
 						setLoop: -1
 						view: (if (not (IsItemAt 3)) 6 else 0) ; Reactor
 						setCycle: Walk
-						illegalBits: -32768
+						illegalBits: $8000
 						ignoreActors: 0
 					)
 					(User canControl: 1 canInput: 1)

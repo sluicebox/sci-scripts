@@ -156,7 +156,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 4)
+		(= gDictionaryWord 4)
 		(super doVerb: theVerb)
 	)
 )
@@ -284,7 +284,7 @@
 				else
 					(switch local2
 						(1
-							(= global215 85)
+							(= gDictionaryWord 85)
 							(gMessager say: 12 0 1 1 2 self) ; "Hey! Where do you think you're going? Halt!"
 						)
 						(2
@@ -314,7 +314,7 @@
 				else
 					(switch local2
 						(1
-							(= global215 85)
+							(= gDictionaryWord 85)
 							(++ local2)
 							(gMessager say: 12 0 1 3 6 self) ; "Well, I was just going to--"
 						)
@@ -723,7 +723,7 @@
 			)
 			(1
 				(SetFlag 95)
-				(= global215 17)
+				(= gDictionaryWord 17)
 				(switch register
 					(1
 						(gMessager say: 13 74 0 1 self) ; "I have some nice, delicious chocolate for you!"
@@ -750,7 +750,7 @@
 				)
 			)
 			(3
-				(= global215 17)
+				(= gDictionaryWord 17)
 				(switch register
 					(1
 						(gMessager say: 14 74 0 8 self) ; "We'll eat 'em for you, right! Ha ha!"
@@ -1191,7 +1191,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 59)
+		(= gDictionaryWord 59)
 		(super doVerb: theVerb)
 	)
 )

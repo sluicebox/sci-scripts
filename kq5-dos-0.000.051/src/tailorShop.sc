@@ -44,7 +44,7 @@
 			offset: 3
 			posn: 152 166
 			ignoreActors: 0
-			illegalBits: -32768
+			illegalBits: $8000
 		)
 		(employee moveSpeed: 1 ignoreActors: 0 setScript: helpCounter init:)
 		(empHand init:)
@@ -233,7 +233,7 @@
 					setLoop: -1
 					setCycle: Walk
 					setPri: -1
-					illegalBits: 2048
+					illegalBits: $0800
 					setAvoider: (Avoid new:)
 					setMotion: MoveTo 202 116 self
 				)
@@ -433,7 +433,7 @@
 					cycleSpeed: 0
 					setLoop: -1
 					setCycle: Walk
-					illegalBits: 2048
+					illegalBits: $0800
 					setAvoider: (Avoid new:)
 					setMotion: MoveTo 202 116 self
 				)
@@ -467,7 +467,7 @@
 					cycleSpeed: 0
 					setLoop: -1
 					setCycle: Walk
-					illegalBits: 2048
+					illegalBits: $0800
 					setMotion: MoveTo 195 116 self
 				)
 			)
@@ -497,7 +497,7 @@
 		view 162
 		loop 2
 		signal 16384
-		illegalBits 2048
+		illegalBits $0800
 	)
 
 	(method (doit &tmp temp0)
@@ -803,7 +803,7 @@
 		x 218
 		view 176
 		loop 1
-		illegalBits 2048
+		illegalBits $0800
 	)
 
 	(method (handleEvent event)

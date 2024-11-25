@@ -127,7 +127,7 @@
 			(wave1 addToPic:)
 			(wave2 addToPic:)
 		)
-		(gEgo view: 0 posn: 131 88 illegalBits: -32768 init:)
+		(gEgo view: 0 posn: 131 88 illegalBits: $8000 init:)
 	)
 
 	(method (newRoom newRoomNumber)
@@ -379,7 +379,7 @@
 				(= cycles 19)
 			)
 			(3
-				(Frog loop: 6 illegalBits: 1 setCycle: Beg self show:)
+				(Frog loop: 6 illegalBits: $0001 setCycle: Beg self show:)
 			)
 			(4
 				(Frog loop: 5 setCycle: Fwd)

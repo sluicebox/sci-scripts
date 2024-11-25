@@ -1025,7 +1025,7 @@
 					setLoop: -1
 					setPri: -1
 					ignoreActors: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					observeBlocks: ourCarBlock
 				)
 				(self cue:)

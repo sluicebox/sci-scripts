@@ -112,7 +112,7 @@
 			(7
 				(if (== global107 9)
 					(gEgo x: 318 y: 144)
-					(gEgo illegalBits: -16384)
+					(gEgo illegalBits: $c000)
 					(gEgo setPri: 13)
 				else
 					(gEgo view: 8 setCycle: Fwd)
@@ -449,13 +449,13 @@
 				(gEgo
 					view: 19
 					loop: (& (gEgo loop:) $0001)
-					illegalBits: -32768
+					illegalBits: $8000
 					cel: 0
 					setCycle: End self
 				)
 			)
 			(2
-				(gEgo view: 8 setCycle: Fwd illegalBits: -32768 setPri: -1)
+				(gEgo view: 8 setCycle: Fwd illegalBits: $8000 setPri: -1)
 				(HandsOn)
 				(= global107 0)
 				(gEgo setScript: 0)
@@ -490,7 +490,7 @@
 					setCycle: Fwd
 					setStep: 2 1
 					setPri: -1
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(HandsOn)
 				(gEgo setScript: 0)
@@ -522,7 +522,7 @@
 				(gEgo
 					view: 19
 					loop: (& (gEgo loop:) $0001)
-					illegalBits: -32768
+					illegalBits: $8000
 					cel: 0
 					setPri: -1
 					setCycle: End self

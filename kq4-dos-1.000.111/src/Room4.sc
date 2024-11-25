@@ -189,7 +189,7 @@
 	(method (newRoom newRoomNumber)
 		(HandsOn)
 		(if (gCast contains: gEgo)
-			(gEgo illegalBits: -32768)
+			(gEgo illegalBits: $8000)
 			(gEgo setPri: -1)
 		)
 		(if (!= newRoomNumber 49)
@@ -358,7 +358,7 @@
 								(HandsOff)
 								(door setPri: 9 setCycle: End)
 								((Sound new:) number: 300 loop: 1 play: door)
-								(gEgo illegalBits: -32768)
+								(gEgo illegalBits: $8000)
 							)
 						)
 					else

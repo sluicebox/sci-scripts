@@ -260,7 +260,7 @@
 				(ClearFlag 244)
 				(gEgo
 					posn: 143 108
-					illegalBits: -32256
+					illegalBits: $8200
 					setPri: 6
 					init:
 					setMotion: MoveTo 143 114 egoEnters
@@ -269,7 +269,7 @@
 			(465 ; brigandArena
 				(gEgo
 					posn: 143 115
-					illegalBits: -32256
+					illegalBits: $8200
 					setPri: 6
 					init:
 					setMotion: MoveTo 143 102 egoEnters
@@ -283,7 +283,7 @@
 				(spearman3 setPri: 3 init: stopUpd:)
 				(gEgo
 					posn: 309 158
-					illegalBits: -32704
+					illegalBits: $8040
 					setPri: 11
 					init:
 					setMotion: MoveTo 286 158 egoEnters
@@ -1049,9 +1049,9 @@
 			(8
 				(NormalEgo)
 				(if local149
-					(gEgo loop: 3 setPri: 6 illegalBits: -32256)
+					(gEgo loop: 3 setPri: 6 illegalBits: $8200)
 				else
-					(gEgo loop: 2 setPri: 7 illegalBits: -32704)
+					(gEgo loop: 2 setPri: 7 illegalBits: $8040)
 				)
 				(if (and local149 local0)
 					(= global265 3)

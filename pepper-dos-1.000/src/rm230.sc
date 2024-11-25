@@ -52,7 +52,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 16)
+		(= gDictionaryWord 16)
 		(super doVerb: theVerb)
 	)
 
@@ -630,41 +630,41 @@
 			(1
 				(switch global116
 					(2
-						(= global215 85)
+						(= gDictionaryWord 85)
 					)
 					(161
-						(= global215 108)
+						(= gDictionaryWord 108)
 					)
 					(201
-						(= global215 57)
+						(= gDictionaryWord 57)
 					)
 					(203
-						(= global215 57)
+						(= gDictionaryWord 57)
 					)
 					(77
-						(= global215 32)
+						(= gDictionaryWord 32)
 					)
 					(81
-						(= global215 103)
+						(= gDictionaryWord 103)
 					)
 					(78
-						(= global215 32)
+						(= gDictionaryWord 32)
 					)
 					(188
-						(= global215 108)
+						(= gDictionaryWord 108)
 					)
 					(190
-						(= global215 57)
+						(= gDictionaryWord 57)
 					)
 				)
 				(cond
 					((and global115 (== global116 160))
-						(= global215 57)
+						(= gDictionaryWord 57)
 						(= state 29)
 						(gMessager say: global115 85 160 1 2 self global196)
 					)
 					((and global115 (== global116 100))
-						(= global215 28)
+						(= gDictionaryWord 28)
 						(= state 19)
 						(gMessager say: global115 85 100 1 self global196)
 					)
@@ -1173,7 +1173,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= global215 79)
+				(= gDictionaryWord 79)
 				(gMessager say: 2 7 22 1 2 self 2012) ; "Uh, Mr. Richard? Is there any way you could let me have that key? I need it for something really, really important!"
 			)
 			(1
@@ -1237,7 +1237,7 @@
 								(= temp0 80)
 							)
 						)
-						(= global215 32)
+						(= gDictionaryWord 32)
 						(gMessager say: 14 85 temp0 0 self)
 					)
 					(else
@@ -1266,7 +1266,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(= global215 28)
+				(= gDictionaryWord 28)
 				(if
 					(or
 						(not (gLongSong handle:))
@@ -1654,7 +1654,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(84 ; Trivia
-				(= global215 16)
+				(= gDictionaryWord 16)
 				(super doVerb: theVerb)
 			)
 			(else
@@ -1823,11 +1823,11 @@
 				(gCurRoom setScript: sGiveRevelerProverb)
 			)
 			(7 ; Do
-				(= global215 108)
+				(= gDictionaryWord 108)
 				(super doVerb: theVerb)
 			)
 			(84 ; Trivia
-				(= global215 49)
+				(= gDictionaryWord 49)
 				(super doVerb: theVerb)
 			)
 			(else
@@ -1996,7 +1996,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 41)
+		(= gDictionaryWord 41)
 		(super doVerb: theVerb)
 	)
 )
@@ -2162,7 +2162,7 @@
 				(gMessager say: 29 70) ; "Vicar Bicker, I'd like to give you something that could change your WHOLE LIFE!"
 			)
 			(84 ; Trivia
-				(= global215 100)
+				(= gDictionaryWord 100)
 				(super doVerb: theVerb)
 			)
 			(else
@@ -2193,7 +2193,7 @@
 				(gMessager say: 24 7) ; "Pepper doesn't want to get arrested for tearing the Stamp Act sign down."
 			)
 			(6 ; Look
-				(= global215 16)
+				(= gDictionaryWord 16)
 				(gMessager say: 24 6) ; "This appears to be a taxation notice. It says: "Let it be Known that the Crown has passed the Stamp Act, and the Citizens of Philadelphia will be Taxed accordingly.""
 			)
 			(84 ; Trivia

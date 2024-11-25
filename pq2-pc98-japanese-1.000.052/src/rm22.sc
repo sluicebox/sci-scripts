@@ -264,7 +264,7 @@
 				(if (== global131 13)
 					((= global112 (Act new:))
 						view: 20
-						illegalBits: -16384
+						illegalBits: $c000
 						posn:
 							(if (!= gPrevRoomNum local11)
 								(- (gEgo x:) 4)
@@ -970,7 +970,7 @@
 					setLoop: -1
 					setPri: -1
 					ignoreActors: 0
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(HandsOn)
 				(if (== global131 13)
@@ -993,7 +993,7 @@
 				)
 			)
 			(3
-				(global112 illegalBits: -16384 setMotion: MoveTo 260 145 self)
+				(global112 illegalBits: $c000 setMotion: MoveTo 260 145 self)
 				(localproc_0 22 101) ; "You go ahead, Sonny. I'll stay out here and have a smoke."
 			)
 			(4

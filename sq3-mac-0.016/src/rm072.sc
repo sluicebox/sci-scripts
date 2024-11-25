@@ -119,7 +119,7 @@
 				(gEgo setLoop: 2 setMotion: MoveTo 241 144 self)
 			)
 			(2
-				(gEgo setLoop: -1 illegalBits: -32768 setPri: -1)
+				(gEgo setLoop: -1 illegalBits: $8000 setPri: -1)
 				(HandsOn)
 				(gCurRoom setScript: 0)
 			)

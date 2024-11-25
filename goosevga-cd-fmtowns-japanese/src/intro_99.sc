@@ -61,7 +61,7 @@
 			)
 			(StrAt @global190 0 global170)
 			(StrAt @global190 1 (+ global157 32))
-			(MemorySegment 0 @global190 0)
+			(MemorySegment 0 @global190 0) ; MS_SAVE_FROM
 			(HandsOn)
 			(gGame setSpeed: 3)
 			(gCurRoom newRoom: 90) ; intro

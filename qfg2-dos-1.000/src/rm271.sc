@@ -79,7 +79,7 @@
 		else
 			(gEgo
 				loop: 3
-				illegalBits: -384
+				illegalBits: $fe80
 				posn: 160 181
 				init:
 				setMotion: MoveTo 160 147
@@ -383,7 +383,7 @@
 					posn: (- (gEgo x:) 3) (+ (gEgo y:) 8)
 				)
 				(NormalEgo)
-				(gEgo illegalBits: -384)
+				(gEgo illegalBits: $fe80)
 				(self dispose:)
 			)
 		)

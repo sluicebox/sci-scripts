@@ -1217,7 +1217,7 @@
 			(UnLoad 132 6)
 			(UnLoad 132 23)
 			(gASong loop: -1 playBed: 10 -1)
-			(MemorySegment 1 @temp35)
+			(MemorySegment 1 @temp35) ; MS_RESTORE_TO
 			(= global534 (- (StrAt @temp35 0) 48))
 			(= global427 (- (StrAt @temp35 1) 48))
 			(self newRoom: 1)

@@ -518,15 +518,15 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(= global215 104)
+				(= gDictionaryWord 104)
 				(gMessager say: 31 40 7 1 self) ; "Mr. Franklin, look what I have! It's a |r||c0|schematic|c||r| for your famous Kite/Key experiment! I found it in your work room."
 			)
 			(1
-				(= global215 18)
+				(= gDictionaryWord 18)
 				(gMessager say: 31 40 7 2 self) ; "That's nice, child. You keep it. I'm totally beyond science now. I'm into cosmic |r||c0|consciousness|c||r|, you dig? Go meditate in the cabbage patch, okay?"
 			)
 			(2
-				(= global215 22)
+				(= gDictionaryWord 22)
 				(gMessager say: 31 40 7 3 self) ; "|r||c0|Cosmic|c||r| consciousness, my foot! He looks like a cosmic couch potato to me!"
 			)
 			(3
@@ -585,7 +585,7 @@
 				(= cycles 1)
 			)
 			(4
-				(= global215 108)
+				(= gDictionaryWord 108)
 				(gMessager say: 29 0 13 1 self) ; "<Sigh!> Ah, that feels wonderful. I can feel my |r||c0|aura|c||r| turning purple."
 			)
 			(5
@@ -643,7 +643,7 @@
 				(gCurRoom setScript: getIronRodScr)
 			)
 			(84 ; Trivia
-				(= global215 8)
+				(= gDictionaryWord 8)
 				(super doVerb: theVerb &rest)
 			)
 			(else
@@ -685,7 +685,7 @@
 
 	(method (doVerb theVerb)
 		(if (OneOf theVerb 7 6 84) ; Do, Look, Trivia
-			(= global215 104)
+			(= gDictionaryWord 104)
 			(super doVerb: theVerb &rest)
 		else
 			(super doVerb: theVerb &rest)
@@ -994,7 +994,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(84 ; Trivia
-				(= global215 55)
+				(= gDictionaryWord 55)
 				(super doVerb: theVerb &rest)
 			)
 			(else
@@ -1789,7 +1789,7 @@
 								(SetFlag 35)
 								(localproc_0 leydenJar 1)
 								(++ global217)
-								(= global215 58)
+								(= gDictionaryWord 58)
 								(gMessager say: 31 97 15 0 self) ; "Here, Ben, we'll need this for the experiment."
 							)
 							(else
@@ -1984,7 +1984,7 @@
 					)
 					((and (IsFlag 147) (not (IsFlag 17)))
 						(ben setCycle: End)
-						(= global215 32)
+						(= gDictionaryWord 32)
 						(gMessager say: 31 85 8 0 self) ; "Go find me some hot water, okay, child? My karma is chilled, and my |r||c0|dogma|c||r| is freezing its tail off!"
 					)
 					((< global218 3)

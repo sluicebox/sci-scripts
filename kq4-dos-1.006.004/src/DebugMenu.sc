@@ -109,7 +109,7 @@
 			(1551
 				(Show 4)
 				(Animate (gCast elements:))
-				(while (== 0 ((= temp0 (Event new: 32765)) type:))
+				(while (== 0 ((= temp0 (Event new: $7ffd)) type:)) ; evVERB | evHELP | evMOVE | evJOYUP | evJOYDOWN | evSAID | direction | evMENUHIT | evMENUSTART | evKEYUP | evMOUSEKEYBOARD | $0c00
 					(temp0 dispose:)
 				)
 				(temp0 dispose:)

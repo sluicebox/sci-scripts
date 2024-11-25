@@ -478,7 +478,7 @@
 				)
 			)
 			(84 ; Trivia
-				(= global215 109)
+				(= gDictionaryWord 109)
 				(super doVerb: theVerb &rest)
 			)
 			(else
@@ -781,7 +781,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 104)
+		(= gDictionaryWord 104)
 		(switch theVerb
 			(7 ; Do
 				(gGame points: 305 1)
@@ -1226,7 +1226,7 @@
 				(ben setScript: benReadingScr self)
 			)
 			(7
-				(= global215 13)
+				(= gDictionaryWord 13)
 				(gMessager say: 8 64 1 3 self) ; "That...that |r||c0|CAD|c||r|! He's been robbing the colony blind! This is just the thing we need to get the colonists on the march to Penn mansion!"
 			)
 			(8
@@ -1262,7 +1262,7 @@
 			)
 			(13
 				(benTalker x: 129 y: 81 talkWidth: 180 tailPosn: 0)
-				(= global215 6)
+				(= gDictionaryWord 6)
 				(gMessager say: 8 64 1 6 10 self) ; "Oh, dear!"
 			)
 			(14
@@ -1722,7 +1722,7 @@
 			)
 			(1
 				(if (and (not (IsFlag 166)) (SetFlag 166))
-					(= global215 30)
+					(= gDictionaryWord 30)
 					(gMessager say: 55 0 13 1 self) ; "Come in, lad. I've been trying to write a new pamphlet. I must help the people get back to the good old colonial ethics of hard work and |r||c0|diligence|c||r|!"
 				else
 					(++ state)
@@ -2065,7 +2065,7 @@
 				(= cycles 2)
 			)
 			(8
-				(= global215 104)
+				(= gDictionaryWord 104)
 				(gMessager say: 47 7 0 0 self) ; "Pepper picks up the |r||c0|schematic|c||r| for the kite/key experiment."
 			)
 			(9

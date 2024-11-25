@@ -496,7 +496,7 @@
 				(proc129_8)
 			)
 			(5
-				(gEgo illegalBits: -32768 ignoreActors: 0)
+				(gEgo illegalBits: $8000 ignoreActors: 0)
 				(= local1 0)
 				(= local4 0)
 				(HandsOn)

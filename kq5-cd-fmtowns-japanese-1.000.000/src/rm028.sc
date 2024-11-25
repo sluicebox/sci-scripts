@@ -202,7 +202,7 @@
 					setCycle: SyncWalk
 					cycleSpeed: 0
 					posn: 185 130
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				((gEgo head:) show:)
 				(cupboard stopUpd:)
@@ -256,7 +256,7 @@
 					setCycle: SyncWalk
 					cycleSpeed: 0
 					posn: 185 130
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				((gEgo head:) show:)
 				(cupboard stopUpd:)

@@ -780,7 +780,7 @@
 				(Clarence ignoreActors: 0)
 				(Gloria
 					loop: -1
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 					setAvoider: (Avoid new:)
 					setCycle: Walk
@@ -788,7 +788,7 @@
 				)
 			)
 			(6
-				(Gloria illegalBits: -32764)
+				(Gloria illegalBits: $8004)
 				(= global202 2)
 			)
 			(7

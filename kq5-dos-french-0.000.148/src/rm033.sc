@@ -260,7 +260,7 @@
 					setCycle: KQ5SyncWalk
 					loop: 11
 					cel: 4
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				((gEgo head:) show:)
 				(client setScript: 0)

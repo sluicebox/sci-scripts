@@ -544,7 +544,7 @@
 				(if (& (gEgo onControl: 1) $0008)
 					(gEgo
 						loop: 2
-						illegalBits: -32768
+						illegalBits: $8000
 						ignoreActors: 0
 						setMotion:
 							MoveTo

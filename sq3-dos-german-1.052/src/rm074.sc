@@ -33,7 +33,7 @@
 		(super init:)
 		(switch gPrevRoomNum
 			(72
-				(gEgo init: illegalBits: 16384 setPri: 14 posn: 225 187)
+				(gEgo init: illegalBits: $4000 setPri: 14 posn: 225 187)
 			)
 			(73
 				(if global255
@@ -207,7 +207,7 @@
 				(gEgo setMotion: MoveTo 138 175 self)
 			)
 			(2
-				(gEgo setLoop: -1 illegalBits: 16384)
+				(gEgo setLoop: -1 illegalBits: $4000)
 				(HandsOn)
 				(gCurRoom setScript: 0)
 			)
@@ -275,7 +275,7 @@
 				(gEgo posn: 154 65 setMotion: MoveTo 154 109 self)
 			)
 			(4
-				(gEgo view: 68 setLoop: -1 setStep: 2 2 illegalBits: -32768)
+				(gEgo view: 68 setLoop: -1 setStep: 2 2 illegalBits: $8000)
 				(= cycles 2)
 			)
 			(5

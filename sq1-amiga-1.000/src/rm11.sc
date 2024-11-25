@@ -236,7 +236,7 @@
 			)
 			(6 0)
 			(7
-				(gEgo illegalBits: -32768 ignoreActors: 0)
+				(gEgo illegalBits: $8000 ignoreActors: 0)
 				(gCurRoom newRoom: 12)
 			)
 		)

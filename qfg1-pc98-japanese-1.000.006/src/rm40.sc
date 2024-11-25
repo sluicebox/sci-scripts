@@ -68,7 +68,7 @@
 
 (procedure (localproc_2 &tmp temp0) ; UNUSED
 	(repeat
-		(= temp0 (Event new: 5))
+		(= temp0 (Event new: evMOUSEKEYBOARD))
 		(breakif (temp0 type:))
 		(temp0 dispose:)
 	)
@@ -795,7 +795,7 @@
 					(stableMan setCycle: Beg)
 				)
 				(HandsOn)
-				(client illegalBits: -32768 setScript: 0)
+				(client illegalBits: $8000 setScript: 0)
 			)
 		)
 	)

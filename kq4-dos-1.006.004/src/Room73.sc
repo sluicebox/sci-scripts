@@ -153,7 +153,7 @@
 					xStep: 4
 					cycleSpeed: 0
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(HandsOn)
 				(client setScript: 0)
@@ -185,7 +185,7 @@
 				(gEgo setMotion: MoveTo 296 164 self)
 			)
 			(23
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(= global205 1)
 				(= global204 0)
 				(gCurRoom newRoom: 77)

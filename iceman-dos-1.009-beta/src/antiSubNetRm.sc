@@ -146,7 +146,7 @@
 				(gEgo setMotion: MoveTo 100 33 self)
 			)
 			(1
-				(gEgo illegalBits: -32768 setMotion: MoveTo 280 -5 self)
+				(gEgo illegalBits: $8000 setMotion: MoveTo 280 -5 self)
 			)
 			(2
 				(HandsOn)

@@ -110,7 +110,7 @@
 				(Ivana_a setHeading: 180 self)
 			)
 			(4
-				(Say Ivana_b 790 0 108) ; "Hiya, Cutie!" says the older woman behind the counter. "Welcome to `Skates, Etc.' I'm your hostess for your visit, Ivana Tramp."
+				(Say Ivana_b 790 0 #dispose) ; "Hiya, Cutie!" says the older woman behind the counter. "Welcome to `Skates, Etc.' I'm your hostess for your visit, Ivana Tramp."
 				(Ivana_a stopUpd:)
 				(HandsOn)
 				(self dispose:)
@@ -142,16 +142,16 @@
 		(switch (= state newState)
 			(0
 				(= talked 1)
-				(Say gEgo 790 1 67 -1 185) ; "Hello," you say. "I'd like to rent some skates."
-				(Say Ivana_b 790 2 108 139 self) ; "Good idea; you've come to the right place. My rental fee is quite reasonable, but there's no use quibbling over such details now. When you return the skates, we'll settle up based upon the number of minutes you actually skate."
+				(Say gEgo 790 1 #at -1 185) ; "Hello," you say. "I'd like to rent some skates."
+				(Say Ivana_b 790 2 #dispose #caller self) ; "Good idea; you've come to the right place. My rental fee is quite reasonable, but there's no use quibbling over such details now. When you return the skates, we'll settle up based upon the number of minutes you actually skate."
 			)
 			(1
 				(Format @str 790 3 250) ; "But, first, I'll need a small deposit for such valuable equipment," she says, sizing you up. "Let's say oh, $%d, okay?"
-				(Say Ivana_b @str 108 139 self)
+				(Say Ivana_b @str #dispose #caller self)
 			)
 			(2
-				(Say gEgo 790 4 67 -1 185) ; ""I don't have any money," you say."
-				(Say Ivana_b 790 5 108 139 self) ; "Oh? Well, I suppose I'll accept some more of those damned `silver dollars' from the casino."
+				(Say gEgo 790 4 #at -1 185) ; ""I don't have any money," you say."
+				(Say Ivana_b 790 5 #dispose #caller self) ; "Oh? Well, I suppose I'll accept some more of those damned `silver dollars' from the casino."
 			)
 			(3
 				(HandsOn)
@@ -167,10 +167,10 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(Say gEgo 790 6 67 -1 185) ; "You have an inspiration. "Instead of money," you offer, "would you accept this `auto-focus, auto-level, auto-color balance, auto-zoom, auto-pan, .5-lux, Complete-Video-Studio-in-a- Pocket-Protector?' It's a `Rob Lowe Model,' you know!""
-				(Say gEgo 790 7 67 -1 185) ; "It's the very latest model and was very expensive," you continue. "But you've got to promise to give it back when I return your skates."
+				(Say gEgo 790 6 #at -1 185) ; "You have an inspiration. "Instead of money," you offer, "would you accept this `auto-focus, auto-level, auto-color balance, auto-zoom, auto-pan, .5-lux, Complete-Video-Studio-in-a- Pocket-Protector?' It's a `Rob Lowe Model,' you know!""
+				(Say gEgo 790 7 #at -1 185) ; "It's the very latest model and was very expensive," you continue. "But you've got to promise to give it back when I return your skates."
 				(Points 8 141)
-				(Say Ivana_b 790 8 108 139 self) ; "Hmmmm," she muses, "`The Rob Lowe?' Yeah, I suppose that'll do for a deposit."
+				(Say Ivana_b 790 8 #dispose #caller self) ; "Hmmmm," she muses, "`The Rob Lowe?' Yeah, I suppose that'll do for a deposit."
 			)
 			(1
 				(TPrint 790 9) ; "And she takes it from you."
@@ -190,19 +190,19 @@
 	(method (changeState newState &tmp num [str 80])
 		(switch (= state newState)
 			(0
-				(Say gEgo 790 10 67 -1 185) ; "Here's my skates, ma'am," you say, handing them across the counter. "May I have my deposit back now?"
-				(Say Ivana_b 790 11 108 139 self) ; ""Well, I dunno," she hesitates. "First, lemme inspect 'em for damages." And she diligently inspects every inch of your skates."
+				(Say gEgo 790 10 #at -1 185) ; "Here's my skates, ma'am," you say, handing them across the counter. "May I have my deposit back now?"
+				(Say Ivana_b 790 11 #dispose #caller self) ; ""Well, I dunno," she hesitates. "First, lemme inspect 'em for damages." And she diligently inspects every inch of your skates."
 			)
 			(1
 				(Points 3 142)
 				(if (IsFlag 143)
 					(= num (Random 100 240))
 					(Format @str 790 12 num) ; "Hey, looky here! Ya scuffed this wheel!" she shrieks. "I'm gonna haf'ta dock yer refund %d bucks!"
-					(Say Ivana_b @str 108)
+					(Say Ivana_b @str #dispose)
 					(gEgo put: 18 0 get: 17) ; Roller-skates, Silver_Dollar
 					(+= gSilvDollars (- 250 num))
 				else
-					(Say Ivana_b 790 13 108) ; "Hmmm. Well there's a small nick in this one wheel, but I guess you can have your camcorder back anyway, although I was kinda hopin' you'd jes' keep the skates."
+					(Say Ivana_b 790 13 #dispose) ; "Hmmm. Well there's a small nick in this one wheel, but I guess you can have your camcorder back anyway, although I was kinda hopin' you'd jes' keep the skates."
 					(gEgo put: 18 0 get: 0) ; Roller-skates, Camcorder
 				)
 				(HandsOn)
@@ -241,20 +241,20 @@
 				(cond
 					((gEgo has: 18) ; Roller-skates
 						(if (IsFlag 6) ; fSkated
-							(Say Ivana_b 790 16 108) ; ""So, didja have a good time on them blades, my little `Chicken Fat?'" says Ivana."
+							(Say Ivana_b 790 16 #dispose) ; ""So, didja have a good time on them blades, my little `Chicken Fat?'" says Ivana."
 						else
-							(Say Ivana_b 790 17 108) ; "Happy rolling!" says Ivana. "Remember: `keep your tips up!'"
+							(Say Ivana_b 790 17 #dispose) ; "Happy rolling!" says Ivana. "Remember: `keep your tips up!'"
 						)
 					)
 					((IsFlag 6) ; fSkated
-						(Say Ivana_b 790 18 108) ; ""Come back any time!" says Ivana."
+						(Say Ivana_b 790 18 #dispose) ; ""Come back any time!" says Ivana."
 					)
 					((not talked)
 						(HandsOff)
 						(gCurRoom setScript: sTalk)
 					)
 					(else
-						(Say Ivana_b 790 19 108) ; "I've already quoted you a price, young man! Take it or leave it!"
+						(Say Ivana_b 790 19 #dispose) ; "I've already quoted you a price, young man! Take it or leave it!"
 					)
 				)
 			)
@@ -263,10 +263,10 @@
 					(17 ; Silver_Dollar
 						(cond
 							((and (gEgo has: 18) (not (IsFlag 6))) ; Roller-skates, fSkated
-								(Say Ivana_b 790 20 108) ; "Oh, no money is necessary yet. We'll settle up when you return the skates!"
+								(Say Ivana_b 790 20 #dispose) ; "Oh, no money is necessary yet. We'll settle up when you return the skates!"
 							)
 							((IsFlag 6) ; fSkated
-								(Say Ivana_b 790 21 108) ; "Thanks for the offer, Cutie-pie, but I never accept tips!"
+								(Say Ivana_b 790 21 #dispose) ; "Thanks for the offer, Cutie-pie, but I never accept tips!"
 							)
 							((not talked)
 								(HandsOff)
@@ -274,14 +274,14 @@
 							)
 							((< gSilvDollars 250)
 								(Format @str 790 22 gSilvDollars) ; "Would you be willing to settle for $%d.00?" you ask. "That's all the money I have!"
-								(Say gEgo @str 67 -1 185)
-								(Say Ivana_b 790 23 108) ; "Hardly," she sniffs. "But, do you have anything else of value?"
+								(Say gEgo @str #at -1 185)
+								(Say Ivana_b 790 23 #dispose) ; "Hardly," she sniffs. "But, do you have anything else of value?"
 							)
 							(else
 								(Format @str 790 24 250) ; "Here you are," you say, "here's %d of those heavy silver dollars."
-								(Say gEgo @str 67 -1 185)
+								(Say gEgo @str #at -1 185)
 								(Points 4 143)
-								(Say Ivana_b 790 25 108) ; "Thank you, sir!" she replies, accepting your money. "And remember: keep your skates as long as you wish; enjoy them as you would any other fine mechanical object. Just don't wear them off the boardwalk, for any reason."
+								(Say Ivana_b 790 25 #dispose) ; "Thank you, sir!" she replies, accepting your money. "And remember: keep your skates as long as you wish; enjoy them as you would any other fine mechanical object. Just don't wear them off the boardwalk, for any reason."
 								(if (not (-= gSilvDollars 250))
 									(gEgo put: 17 0) ; Silver_Dollar
 								)
@@ -296,10 +296,10 @@
 					(0 ; Camcorder
 						(cond
 							((IsFlag 6) ; fSkated
-								(Say Ivana_b 790 26 108) ; "Oh, no," says Ivana Tramp. "that's yours! But, thanks anyway."
+								(Say Ivana_b 790 26 #dispose) ; "Oh, no," says Ivana Tramp. "that's yours! But, thanks anyway."
 							)
 							((gEgo has: 18) ; Roller-skates
-								(Say Ivana_b 790 27 108) ; "Yes? Isn't that cute?" says Ivana. "You've got your skates. Why are you showing that to me?"
+								(Say Ivana_b 790 27 #dispose) ; "Yes? Isn't that cute?" says Ivana. "You've got your skates. Why are you showing that to me?"
 							)
 							(else
 								(HandsOff)
@@ -312,7 +312,7 @@
 							(HandsOff)
 							(gCurRoom setScript: sRollerblades)
 						else
-							(Say Ivana_b 790 28 108) ; "What's the matter, little buddy?" asks Ivana. "Are you afraid you'll go outside on the boardwalk and get `stuck in a crack?'"
+							(Say Ivana_b 790 28 #dispose) ; "What's the matter, little buddy?" asks Ivana. "Are you afraid you'll go outside on the boardwalk and get `stuck in a crack?'"
 						)
 					)
 					(else

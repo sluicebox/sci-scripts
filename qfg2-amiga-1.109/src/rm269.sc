@@ -64,7 +64,7 @@
 
 	(method (cue)
 		(super cue: &rest)
-		(gEgo illegalBits: -384)
+		(gEgo illegalBits: $fe80)
 	)
 
 	(method (doit)
@@ -137,7 +137,7 @@
 
 	(method (dispose)
 		(super dispose:)
-		(gEgo illegalBits: -384)
+		(gEgo illegalBits: $fe80)
 	)
 
 	(method (changeState newState)
@@ -149,7 +149,7 @@
 			(1
 				(door stopUpd:)
 				(NormalEgo)
-				(gEgo illegalBits: -384)
+				(gEgo illegalBits: $fe80)
 				(HandsOn)
 				(self dispose:)
 			)

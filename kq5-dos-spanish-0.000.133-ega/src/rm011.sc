@@ -262,7 +262,7 @@
 					y: (+ (gEgo y:) 22)
 					setCycle: Fwd
 					setStep: 3 1
-					illegalBits: -32768
+					illegalBits: $8000
 					setMotion: PolyPath (gEgo x:) 225 self
 				)
 			)
@@ -566,7 +566,7 @@
 				)
 			)
 			(5
-				(gEgo setPri: -1 illegalBits: -32768)
+				(gEgo setPri: -1 illegalBits: $8000)
 				(HandsOn)
 				(client setScript: 0)
 			)

@@ -63,7 +63,7 @@
 			((= aHench (Act new:))
 				view: gCurrentHenchView
 				posn: 155 233
-				illegalBits: -32768
+				illegalBits: $8000
 				setCycle: Walk
 				init:
 				setScript: henchScript

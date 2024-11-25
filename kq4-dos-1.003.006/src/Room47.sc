@@ -79,7 +79,7 @@
 		((= local2 (Act new:))
 			view: 111
 			posn: 250 79
-			illegalBits: 8192
+			illegalBits: $2000
 			setPri: 14
 			xStep: 1
 			yStep: 3
@@ -90,7 +90,7 @@
 		((= local3 (Act new:))
 			view: 113
 			posn: 65 74
-			illegalBits: 8192
+			illegalBits: $2000
 			setPri: 14
 			xStep: 1
 			yStep: 3

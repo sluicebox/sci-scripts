@@ -290,7 +290,7 @@
 			(3
 				(HandsOn)
 				(gCurRoom west: 28)
-				(gEgo illegalBits: -32768 setCycle: Walk view: 2)
+				(gEgo illegalBits: $8000 setCycle: Walk view: 2)
 				(gEgo setScript: 0)
 			)
 		)

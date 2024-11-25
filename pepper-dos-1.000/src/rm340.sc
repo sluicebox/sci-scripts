@@ -1007,7 +1007,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 110)
+		(= gDictionaryWord 110)
 		(super doVerb: theVerb &rest)
 	)
 )

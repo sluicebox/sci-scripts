@@ -90,7 +90,7 @@
 				)
 			)
 			(3
-				(Say Commander_Twit 440 0 108) ; "Patti, please step over here to the computer for a moment," says Twit. "I need to take care of your indoctrination paperwork."
+				(Say Commander_Twit 440 0 #dispose) ; "Patti, please step over here to the computer for a moment," says Twit. "I need to take care of your indoctrination paperwork."
 				(= seconds 3)
 			)
 			(4
@@ -110,46 +110,46 @@
 				(= seconds 4)
 			)
 			(8
-				(Say Commander_Twit 440 1 108 139 self) ; "First, let's get you a contact telephone number."
+				(Say Commander_Twit 440 1 #dispose #caller self) ; "First, let's get you a contact telephone number."
 			)
 			(9
 				(= seconds 4)
 			)
 			(10
 				(Points 1)
-				(Say Commander_Twit 440 2 108) ; "Ah, here's one: 556-2779."
+				(Say Commander_Twit 440 2 #dispose) ; "Ah, here's one: 556-2779."
 				(= seconds 3)
 			)
 			(11
-				(Say Commander_Twit 440 3 108) ; "Now let's issue you a computer account number."
+				(Say Commander_Twit 440 3 #dispose) ; "Now let's issue you a computer account number."
 				(= seconds 2)
 			)
 			(12
-				(Say Commander_Twit 440 4 108) ; "Here we go. How about BB-30,7. Now for your E-mail ID number."
+				(Say Commander_Twit 440 4 #dispose) ; "Here we go. How about BB-30,7. Now for your E-mail ID number."
 				(= seconds 3)
 			)
 			(13
-				(Say Commander_Twit 440 5 108) ; "65493756. And your official password is..."
+				(Say Commander_Twit 440 5 #dispose) ; "65493756. And your official password is..."
 				(= seconds 2)
 			)
 			(14
-				(Say Commander_Twit 440 6 108) ; "...MAKING WOOPY. How appropriate. Now I'll apply for security clearance for you...."
+				(Say Commander_Twit 440 6 #dispose) ; "...MAKING WOOPY. How appropriate. Now I'll apply for security clearance for you...."
 				(= seconds 2)
 			)
 			(15
-				(Say Commander_Twit 440 7 108) ; "Granted. And you need some sort of codename; everybody who's anybody around here has a codename."
+				(Say Commander_Twit 440 7 #dispose) ; "Granted. And you need some sort of codename; everybody who's anybody around here has a codename."
 				(= seconds 2)
 			)
 			(16
-				(Say gEgo 440 8 67 -1 185) ; ""How about `Agent 88'?" you suggest."
+				(Say gEgo 440 8 #at -1 185) ; ""How about `Agent 88'?" you suggest."
 				(= ticks 90)
 			)
 			(17
-				(Say Commander_Twit 440 9 108) ; "Okay, let's see if that's taken."
+				(Say Commander_Twit 440 9 #dispose) ; "Okay, let's see if that's taken."
 				(= seconds 3)
 			)
 			(18
-				(Say Commander_Twit 440 10 108 139 self) ; "Well, it appears it was used once, but that was years ago!"
+				(Say Commander_Twit 440 10 #dispose #caller self) ; "Well, it appears it was used once, but that was years ago!"
 			)
 			(19
 				(soundFX loop: 1 flags: 1 stop:)
@@ -157,7 +157,7 @@
 				(twit view: 432 setCycle: StopWalk -1 setHeading: 180 self)
 			)
 			(20
-				(Say Commander_Twit 440 11 108) ; "And now all you have left is your Official Departmental Medical Checkup and then we'll be ready to fit you with your `Safety First Field Locator Device.'"
+				(Say Commander_Twit 440 11 #dispose) ; "And now all you have left is your Official Departmental Medical Checkup and then we'll be ready to fit you with your `Safety First Field Locator Device.'"
 				(SetFFRoom 0)
 				(gEgo
 					moveSpeed: (gGame egoMoveSpeed:)
@@ -190,7 +190,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(Say Commander_Twit 440 12 108 139 self) ; "That's the door to Dr. Phil Hopian's office. Let's go in there now. He'll fit you with your `Field Locator Device.'"
+				(Say Commander_Twit 440 12 #dispose #caller self) ; "That's the door to Dr. Phil Hopian's office. Let's go in there now. He'll fit you with your `Field Locator Device.'"
 			)
 			(1
 				(twit
@@ -205,29 +205,29 @@
 			)
 			(3
 				(twit setCycle: 0)
-				(Say Commander_Twit 440 13 108 139 self) ; "Agent, uh, 88, I'd like you to meet our staff physician, Dr. Phil Hopian. Dr. Hopian, this is Agent 88! Don't worry about a thing, Patti: you're in good hands with Dr. Hopian!"
+				(Say Commander_Twit 440 13 #dispose #caller self) ; "Agent, uh, 88, I'd like you to meet our staff physician, Dr. Phil Hopian. Dr. Hopian, this is Agent 88! Don't worry about a thing, Patti: you're in good hands with Dr. Hopian!"
 			)
 			(4
-				(Say Dr__Phil_Hopian 440 14 108 139 self) ; "Nice to meet you, Patti. Come inside and take off all your clothes!"
+				(Say Dr__Phil_Hopian 440 14 #dispose #caller self) ; "Nice to meet you, Patti. Come inside and take off all your clothes!"
 			)
 			(5
 				(gEgo setMotion: MoveTo 286 106 self)
 			)
 			(6
-				(Say gEgo 440 15 67 -1 185) ; ""Wow. Fast worker!" you think."
+				(Say gEgo 440 15 #at -1 185) ; ""Wow. Fast worker!" you think."
 				(= cycles 10)
 			)
 			(7
 				(gEgo setMotion: MoveTo 330 (gEgo y:) self)
 			)
 			(8
-				(Say Dr__Phil_Hopian 440 16 108 139 self) ; ""Assume the position!" he barks."
+				(Say Dr__Phil_Hopian 440 16 #dispose #caller self) ; ""Assume the position!" he barks."
 			)
 			(9
 				(= seconds 3)
 			)
 			(10
-				(Say Dr__Phil_Hopian 440 17 108 139 self) ; "Oops. Sorry. I used to be a field agent! Old habits, you know."
+				(Say Dr__Phil_Hopian 440 17 #dispose #caller self) ; "Oops. Sorry. I used to be a field agent! Old habits, you know."
 			)
 			(11
 				(door setCycle: Beg self)
@@ -251,14 +251,14 @@
 			(0
 				(gGame setCursor: gTheCursor 1 500 500)
 				(SetFlag 43) ; fFartMan
-				(Say Commander_Twit 440 20 108 139 self) ; "Ah, yes, Patti. I see you're interested in one of my pet projects, which I find fascinating. This man has developed a high-yield, space-age polymer, macrobiotic, flatulence-inducing powder."
+				(Say Commander_Twit 440 20 #dispose #caller self) ; "Ah, yes, Patti. I see you're interested in one of my pet projects, which I find fascinating. This man has developed a high-yield, space-age polymer, macrobiotic, flatulence-inducing powder."
 			)
 			(1
 				(Face gEgo fartman)
 				(= seconds 2)
 			)
 			(2
-				(Say Commander_Twit 440 21 108 139 self) ; "We feel it will be excellent for those times we find it necessary to destabilize a public leader by humiliating him during a major public appearance or state function!"
+				(Say Commander_Twit 440 21 #dispose #caller self) ; "We feel it will be excellent for those times we find it necessary to destabilize a public leader by humiliating him during a major public appearance or state function!"
 			)
 			(3
 				(= seconds 3)
@@ -345,7 +345,7 @@
 				(= seconds 3)
 			)
 			(24
-				(Say Commander_Twit 440 22 108 139 self) ; "Well, well. That seems to be progressing nicely! However, a lighter dosage may well be preferable!"
+				(Say Commander_Twit 440 22 #dispose #caller self) ; "Well, well. That seems to be progressing nicely! However, a lighter dosage may well be preferable!"
 				(HandsOn)
 				(self dispose:)
 			)
@@ -387,7 +387,7 @@
 					(HandsOff)
 					(gCurRoom setScript: sFart)
 				else
-					(Say Commander_Twit 440 24 108) ; "Whenever you're through exploring this area, Patti, please feel free to enter Dr. Hopian's office."
+					(Say Commander_Twit 440 24 #dispose) ; "Whenever you're through exploring this area, Patti, please feel free to enter Dr. Hopian's office."
 				)
 			)
 			(10 ; Zipper

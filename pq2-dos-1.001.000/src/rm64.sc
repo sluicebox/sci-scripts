@@ -683,7 +683,7 @@
 					posn: 290 (gEgo y:)
 					setCycle: Walk
 					setMotion: MoveTo -10 (gEgo y:)
-					illegalBits: -32768
+					illegalBits: $8000
 					init:
 				)
 				(bubble

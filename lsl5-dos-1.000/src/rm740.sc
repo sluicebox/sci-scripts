@@ -107,7 +107,7 @@
 			)
 			(3
 				(TPrint 740 4) ; "She must be waiting for you to take the offensive. You decide to grab whatever parts of her body you can!"
-				(TPrint 740 5 67 -1 185) ; "(Heh, heh, heh!)"
+				(TPrint 740 5 #at -1 185) ; "(Heh, heh, heh!)"
 				(larry setMotion: 0)
 				(gTheIconBar curIcon: (gTheIconBar at: 2))
 				(gGame setCursor: ((gTheIconBar curIcon:) cursor:))
@@ -203,25 +203,25 @@
 				(self perform: findWhere)
 				(switch cel
 					(1
-						(TPrint 740 11 67 -1 185 80 {The Audience} 30 1 108) ; "Oh!"
+						(TPrint 740 11 #at -1 185 #title {The Audience} #mode 1 #dispose) ; "Oh!"
 					)
 					(0
-						(TPrint 740 12 67 -1 185 80 {The Audience} 30 1 108) ; "Wow!"
+						(TPrint 740 12 #at -1 185 #title {The Audience} #mode 1 #dispose) ; "Wow!"
 					)
 					(3
-						(TPrint 740 13 67 -1 185 80 {The Audience} 30 1 108) ; "Ooh!"
+						(TPrint 740 13 #at -1 185 #title {The Audience} #mode 1 #dispose) ; "Ooh!"
 					)
 					(2
-						(TPrint 740 14 67 -1 185 80 {The Audience} 30 1 108) ; "Woah!"
+						(TPrint 740 14 #at -1 185 #title {The Audience} #mode 1 #dispose) ; "Woah!"
 					)
 					(4
-						(TPrint 740 15 67 -1 185 80 {The Audience} 30 1 108) ; "Eeee!"
+						(TPrint 740 15 #at -1 185 #title {The Audience} #mode 1 #dispose) ; "Eeee!"
 					)
 					(5
-						(TPrint 740 16 67 -1 185 80 {The Audience} 30 1 108) ; "Ahhhhh!"
+						(TPrint 740 16 #at -1 185 #title {The Audience} #mode 1 #dispose) ; "Ahhhhh!"
 					)
 					(6
-						(TPrint 740 17 67 -1 185 80 {The Audience} 30 1 108) ; "Gasp!"
+						(TPrint 740 17 #at -1 185 #title {The Audience} #mode 1 #dispose) ; "Gasp!"
 					)
 				)
 			)

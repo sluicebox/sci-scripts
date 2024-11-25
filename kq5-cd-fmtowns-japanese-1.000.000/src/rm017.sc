@@ -47,7 +47,7 @@
 			(bandit cycleSpeed: 5 setCycle: Fwd init:)
 			(self addObstacle: poly3)
 		)
-		(gEgo view: 0 illegalBits: -32768 setStep: 3 2 posn: 174 173 init:)
+		(gEgo view: 0 illegalBits: $8000 setStep: 3 2 posn: 174 173 init:)
 		(poly1 points: @local3 size: 4)
 		(poly2 points: @local11 size: 18)
 		(poly3 points: @local47 size: 4)

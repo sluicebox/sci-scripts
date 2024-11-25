@@ -1606,7 +1606,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 44)
+		(= gDictionaryWord 44)
 		(switch theVerb
 			(84 ; Trivia
 				(if
@@ -1695,7 +1695,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 44)
+		(= gDictionaryWord 44)
 		(switch theVerb
 			(7 ; Do
 				(gCurRoom setScript: sGetHerbs)
@@ -1757,7 +1757,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 44)
+		(= gDictionaryWord 44)
 		(super doVerb: theVerb)
 	)
 )
@@ -1922,7 +1922,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 64)
+		(= gDictionaryWord 64)
 		(switch theVerb
 			(7 ; Do
 				(if (and (gEgo has: 47) (gEgo has: 45))
@@ -1995,7 +1995,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 44)
+		(= gDictionaryWord 44)
 		(super doVerb: theVerb)
 	)
 )
@@ -2010,7 +2010,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 44)
+		(= gDictionaryWord 44)
 		(super doVerb: theVerb)
 	)
 )

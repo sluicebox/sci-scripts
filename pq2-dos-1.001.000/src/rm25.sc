@@ -145,7 +145,7 @@
 					(gEgo inRect: 152 77 176 109)
 					(gEgo inRect: 159 109 184 142)
 				)
-				(gEgo setPri: 10 illegalBits: 8192)
+				(gEgo setPri: 10 illegalBits: $2000)
 				(if (== global131 13)
 					(global112 stopUpd:)
 				)
@@ -165,7 +165,7 @@
 						(gEgo setPri: -1)
 					)
 				)
-				(gEgo xStep: 3 yStep: 2 illegalBits: -32768)
+				(gEgo xStep: 3 yStep: 2 illegalBits: $8000)
 			)
 			(if (== global100 12)
 				(gEgo ignoreControl: 2)
@@ -876,7 +876,7 @@
 		(if (== global131 13)
 			((= global112 keithAct)
 				view: 20
-				illegalBits: -32768
+				illegalBits: $8000
 				setCycle: Walk
 				setAvoider: (Avoid new:)
 				setMotion: Follow gEgo 500
@@ -980,7 +980,7 @@
 					(global112
 						posn: 193 197
 						ignoreActors: 0
-						illegalBits: -32768
+						illegalBits: $8000
 						setMotion: MoveTo 190 200 self
 					)
 				)
@@ -996,21 +996,21 @@
 						((> (global112 y:) 189)
 							(global112
 								ignoreActors:
-								illegalBits: -32768
+								illegalBits: $8000
 								setMotion: MoveTo 185 (global112 y:) self
 							)
 						)
 						((< (global112 x:) 110)
 							(global112
 								ignoreActors:
-								illegalBits: -32768
+								illegalBits: $8000
 								setMotion: MoveTo 110 (global112 y:) self
 							)
 						)
 						(else
 							(global112
 								ignoreActors:
-								illegalBits: -32768
+								illegalBits: $8000
 								setMotion: MoveTo 105 (global112 y:) self
 							)
 						)
@@ -1024,14 +1024,14 @@
 					((== (global112 x:) 110)
 						(global112
 							ignoreActors:
-							illegalBits: -32768
+							illegalBits: $8000
 							setMotion: MoveTo 110 195 self
 						)
 					)
 					((== (global112 x:) 105)
 						(global112
 							ignoreActors:
-							illegalBits: -32768
+							illegalBits: $8000
 							setMotion: MoveTo 105 195 self
 						)
 					)
@@ -1282,7 +1282,7 @@
 			(1
 				(= local10 0)
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					posn: local14 175
 					loop: 0
 					cel: 0
@@ -1294,7 +1294,7 @@
 					(local5 dispose:)
 					(global112
 						ignoreActors: 0
-						illegalBits: -32768
+						illegalBits: $8000
 						posn: 193 197
 						setCycle: Walk
 						setStep: 3 2

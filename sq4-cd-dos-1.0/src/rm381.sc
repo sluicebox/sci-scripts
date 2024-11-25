@@ -65,7 +65,7 @@
 		(LoadMany rsVIEW 0 4 402 383 381 920)
 		(LoadMany rsFONT 68 69)
 		(LoadMany rsSOUND 832 833)
-		(gEgo posn: 192 222 loop: 3 illegalBits: -32768 init:)
+		(gEgo posn: 192 222 loop: 3 illegalBits: $8000 init:)
 		(if
 			(and
 				(>= gBuckazoidCount 1000)
@@ -493,7 +493,7 @@
 				)
 			)
 			(6
-				(gEgo illegalBits: -32768 ignoreActors: 0)
+				(gEgo illegalBits: $8000 ignoreActors: 0)
 				(robo
 					view: 381
 					setLoop: Grooper
@@ -559,7 +559,7 @@
 				)
 			)
 			(22
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(= local2 1)
 				(tClerk modNum: 383 say: 5 self) ; "That will be 20 buckazoids, please."
 			)

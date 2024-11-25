@@ -370,7 +370,7 @@
 				(mary
 					setLoop: 3
 					setCel: 4
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 					stopUpd:
 				)

@@ -699,7 +699,7 @@
 					posn: 1 (gEgo y:)
 					setCycle: Walk
 					setMotion: MoveTo 350 (gEgo y:)
-					illegalBits: -32768
+					illegalBits: $8000
 					init:
 				)
 				((= local100 (Act new:))

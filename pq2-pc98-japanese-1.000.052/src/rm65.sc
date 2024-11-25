@@ -37,7 +37,7 @@
 
 (procedure (localproc_0 &tmp temp0)
 	(repeat
-		(= temp0 (Event new: 5))
+		(= temp0 (Event new: evMOUSEKEYBOARD))
 		(breakif (temp0 type:))
 		(temp0 dispose:)
 	)
@@ -704,7 +704,7 @@
 					posn: 1 (gEgo y:)
 					setCycle: Walk
 					setMotion: MoveTo 350 (gEgo y:)
-					illegalBits: -32768
+					illegalBits: $8000
 					init:
 				)
 				((= local100 (Act new:))

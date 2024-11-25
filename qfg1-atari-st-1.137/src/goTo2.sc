@@ -70,7 +70,7 @@
 			)
 			(3
 				(HandsOn)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(ClearFlag 263)
 				(client setScript: 0)
 			)

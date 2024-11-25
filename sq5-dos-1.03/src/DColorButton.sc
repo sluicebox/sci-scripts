@@ -56,7 +56,7 @@
 		(if (== 1 (param1 type:))
 			(= temp1 0)
 			(repeat
-				(= param1 (Event new: -32768))
+				(= param1 (Event new: evPEEK))
 				(param1 localize:)
 				(if (!= (= temp0 (self check: param1)) temp1)
 					(if (& state $0008)

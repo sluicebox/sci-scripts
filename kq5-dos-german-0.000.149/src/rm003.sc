@@ -87,7 +87,7 @@
 			)
 		)
 		(self setFeatures: townPath town1 town2 river mountains)
-		(gEgo normal: 1 setStep: 1 1 illegalBits: -32768 init:)
+		(gEgo normal: 1 setStep: 1 1 illegalBits: $8000 init:)
 		((gEgo head:) hide:)
 		(poly1 points: @local8 size: 19)
 		(poly2 points: @local46 size: 19)

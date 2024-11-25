@@ -1489,7 +1489,7 @@
 			(= gGameTime (+ gTickOffset (GetTime)))
 		)
 		(if (& (= temp1 (event type:)) $0040) ; direction
-			(&= temp1 $ffbf) ; evPEEK | evVERB | evHELP | evMOVE | evJOYUP | evJOYDOWN | evSAID | evMENUHIT | evMENUSTART | evKEYUP | evMOUSEKEYBOARD | evMOUSERELEASE | evNULL | $0c00
+			(&= temp1 $ffbf) ; evPEEK | evVERB | evHELP | evMOVE | evJOYUP | evJOYDOWN | evSAID | evMENUHIT | evMENUSTART | evKEYUP | evMOUSEKEYBOARD | evMOUSERELEASE | $0c00
 			(switch (event message:)
 				(JOY_UP
 					(return 0)

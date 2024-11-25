@@ -87,7 +87,7 @@
 			(gEgo
 				posn: 156 160
 				view: 4
-				illegalBits: -32768
+				illegalBits: $8000
 				loop: 3
 				xStep: 4
 				yStep: 1

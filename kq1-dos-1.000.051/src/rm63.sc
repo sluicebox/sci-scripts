@@ -101,7 +101,7 @@
 			((and (== (gEgo onControl: 1) 512) (IsFlag 1) (not local0))
 				(= local0 1)
 				(Print 63 0) ; "You can't climb down the tree when you're invisible."
-				(gEgo setMotion: 0 illegalBits: -32256)
+				(gEgo setMotion: 0 illegalBits: $8200)
 			)
 			(
 				(= temp0

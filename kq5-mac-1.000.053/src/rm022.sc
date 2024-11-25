@@ -135,7 +135,7 @@
 	)
 
 	(method (newRoom newRoomNumber)
-		(gEgo illegalBits: -32768)
+		(gEgo illegalBits: $8000)
 		(super newRoom: newRoomNumber)
 		(gGlobalSound fade:)
 	)

@@ -67,7 +67,7 @@
 			(= gCurrentStatus 8)
 			(HandsOff)
 			(gEgo
-				illegalBits: -32768
+				illegalBits: $8000
 				setPri: -1
 				setLoop: 2
 				setCycle: 0

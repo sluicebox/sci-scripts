@@ -60,7 +60,7 @@
 			(door2 cel: 0 ignoreActors: 0)
 		)
 		(door2 init:)
-		(gEgo view: 0 illegalBits: -32704 init:)
+		(gEgo view: 0 illegalBits: $8040 init:)
 		(= local1 1)
 	)
 
@@ -120,7 +120,7 @@
 										(= local0 0)
 										(HandsOff)
 										(gEgo
-											illegalBits: -32768
+											illegalBits: $8000
 											setMotion: MoveTo 43 118 self
 										)
 									)

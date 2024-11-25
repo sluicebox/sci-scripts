@@ -204,7 +204,7 @@
 	(method (dispose)
 		(LoadMany 0 395 391 393 390 394)
 		(proc0_3)
-		(gEgo illegalBits: -32768)
+		(gEgo illegalBits: $8000)
 		(super dispose:)
 	)
 )

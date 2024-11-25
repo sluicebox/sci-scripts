@@ -301,7 +301,7 @@
 					loop: 0
 					setLoop: -1
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 					setAvoider: 0
 					ignoreActors: 0
 				)
@@ -324,7 +324,7 @@
 			(4
 				(foodLidView init:)
 				(HandsOn)
-				(gEgo illegalBits: -32768 ignoreActors: 0)
+				(gEgo illegalBits: $8000 ignoreActors: 0)
 				(User canControl: 0)
 				(westGuard setScript: walkToEgoScript)
 			)

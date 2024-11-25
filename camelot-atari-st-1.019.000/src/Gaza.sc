@@ -170,14 +170,14 @@
 					view: 6
 					setCycle: Walk
 					ignoreActors: 0
-					illegalBits: 8000
+					illegalBits: $1f40
 					setScript: 0
 				)
 				(HandsOn)
 				(User canControl: 1)
 				(User canInput: 0)
 				(= global125 0)
-				(gEgo illegalBits: -32768 setScript: 0)
+				(gEgo illegalBits: $8000 setScript: 0)
 				(Print 107 4) ; "Do not swing your sword so close to your mule, Arthur. You might hurt the poor beast."
 			)
 		)

@@ -101,7 +101,7 @@
 				)
 			)
 			(4
-				(TPrint 520 3 67 -1 185) ; "Since you have no membership tape, you decide there's no use wasting your time here."
+				(TPrint 520 3 #at -1 185) ; "Since you have no membership tape, you decide there's no use wasting your time here."
 				(gCurRoom newRoom: 510)
 			)
 			(5

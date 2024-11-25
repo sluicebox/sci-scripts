@@ -182,7 +182,7 @@
 			((= local3 (Act new:))
 				view: 185
 				posn: 83 126
-				illegalBits: -32768
+				illegalBits: $8000
 				setLoop: 0
 				init:
 			)
@@ -651,7 +651,7 @@
 			(4
 				(local3
 					setLoop: -1
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 					setAvoider: Avoid
 					view: 180

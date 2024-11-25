@@ -228,7 +228,7 @@
 				(= seconds 2)
 			)
 			(4
-				(Say Reverse_Biaz 660 6 108 139 self) ; "Why, hello there! Patti, I'm Reverse Biaz, Chief Engineer here at des Rever Records. I'm not sure exactly what happened to my regular synthist, but I sure appreciate you jumping in here to help us out like this. I'm sure you'll have no trouble with these tunes."
+				(Say Reverse_Biaz 660 6 #dispose #caller self) ; "Why, hello there! Patti, I'm Reverse Biaz, Chief Engineer here at des Rever Records. I'm not sure exactly what happened to my regular synthist, but I sure appreciate you jumping in here to help us out like this. I'm sure you'll have no trouble with these tunes."
 			)
 			(5
 				(HandsOn)
@@ -236,7 +236,7 @@
 			)
 			(6
 				(HandsOff)
-				(Say Reverse_Biaz 660 7 108 139 self) ; "The synth is programmed, the charts are on the music stand, the levels are checked and I'm ready when you are, baby!"
+				(Say Reverse_Biaz 660 7 #dispose #caller self) ; "The synth is programmed, the charts are on the music stand, the levels are checked and I'm ready when you are, baby!"
 			)
 			(7
 				(HandsOn)
@@ -283,7 +283,7 @@
 			)
 			(1
 				(-= state 2)
-				(Say Reverse_Biaz 660 8 108 139 self) ; "Go ahead, Patti. The synthesizer is on that stand. It's all yours."
+				(Say Reverse_Biaz 660 8 #dispose #caller self) ; "Go ahead, Patti. The synthesizer is on that stand. It's all yours."
 			)
 			(2
 				(self dispose:)
@@ -381,25 +381,25 @@
 			(1
 				(switch takes
 					(0
-						(Say Reverse_Biaz 660 9 108 139 self) ; "Okay, Patti. Just read the chart there on the stand. We'll take it from a few bars before your entrance. Listen for the clicks, then cut in your solo."
+						(Say Reverse_Biaz 660 9 #dispose #caller self) ; "Okay, Patti. Just read the chart there on the stand. We'll take it from a few bars before your entrance. Listen for the clicks, then cut in your solo."
 					)
 					(1
 						(if noteCount
 							(= noteCount 0)
-							(Say Reverse_Biaz 660 10 108 139 self) ; "That's not quite what the boss is looking for, Patti, baby. I'm gonna roll again from the top. Let's have a little more feeling, okay?"
+							(Say Reverse_Biaz 660 10 #dispose #caller self) ; "That's not quite what the boss is looking for, Patti, baby. I'm gonna roll again from the top. Let's have a little more feeling, okay?"
 						else
 							(-- takes)
 							(= noteCount 0)
-							(Say Reverse_Biaz 660 11 108 139 self) ; "Well, Patti, I suppose you just wanted to hear it that time, eh? Well, now you've heard it, so this time really let me have your best shot!"
+							(Say Reverse_Biaz 660 11 #dispose #caller self) ; "Well, Patti, I suppose you just wanted to hear it that time, eh? Well, now you've heard it, so this time really let me have your best shot!"
 						)
 					)
 					(else
 						(if (< noteCount 10)
 							(-- takes)
 							(= noteCount 0)
-							(Say Reverse_Biaz 660 12 108 139 self) ; "That's a little TOO sparse, Patti-cakes, babydoll. Let's take it at the upper-left corner, okay? And this time, how about a little more intensity, okay, kid?"
+							(Say Reverse_Biaz 660 12 #dispose #caller self) ; "That's a little TOO sparse, Patti-cakes, babydoll. Let's take it at the upper-left corner, okay? And this time, how about a little more intensity, okay, kid?"
 						else
-							(Say Reverse_Biaz 660 13 108 139 self) ; "Well, that was fairly outside! Let's give it one more shot, babe. Here we go!"
+							(Say Reverse_Biaz 660 13 #dispose #caller self) ; "Well, that was fairly outside! Let's give it one more shot, babe. Here we go!"
 						)
 					)
 				)
@@ -409,12 +409,12 @@
 					(TPrint ; "Play the white synthesizer keys by typing the keys on the A S D F row. Play the black synthesizer keys by typing the corresponding keys on the W E T Y U row. Holding down the Shift key plays higher."
 						660
 						14
-						67
+						#at
 						-1
 						15
-						70
+						#width
 						280
-						80
+						#title
 						{A Tip from AL}
 					)
 				)
@@ -452,7 +452,7 @@
 			)
 			(5
 				(Format @str 660 15 realTakes realTakes) ; "Take %d!"
-				(Say Reverse_Biaz @str 108 139 self)
+				(Say Reverse_Biaz @str #dispose #caller self)
 			)
 			(6
 				(reverseBiaz setLoop: 2 setCel: 0 setCycle: End self)
@@ -644,11 +644,11 @@
 			(1
 				(= didSession 1)
 				(if didFF
-					(Say Reverse_Biaz 660 16 108 139 self) ; "Why don't you come into the control room now and listen to the playback with me?"
+					(Say Reverse_Biaz 660 16 #dispose #caller self) ; "Why don't you come into the control room now and listen to the playback with me?"
 				else
 					(zing dispose:)
 					(Points 8 126)
-					(Say Reverse_Biaz 660 17 108 139 self) ; "Great take, Patti! Why don't you come into the control room now and listen to the playback with me?"
+					(Say Reverse_Biaz 660 17 #dispose #caller self) ; "Great take, Patti! Why don't you come into the control room now and listen to the playback with me?"
 				)
 			)
 			(2
@@ -695,7 +695,7 @@
 				(= seconds 3)
 			)
 			(4
-				(Say Reverse_Biaz 660 18 108 139 self) ; "Here you go, babe. Check this out!"
+				(Say Reverse_Biaz 660 18 #dispose #caller self) ; "Here you go, babe. Check this out!"
 			)
 			(5
 				(reverseBiaz setCycle: End self)
@@ -740,7 +740,7 @@
 			)
 			(14
 				(gTheMusic fade: 80 15 12 0)
-				(Say Reverse_Biaz 660 19 108) ; "Nice playing, Patti," he smiles, "I bet you have wonderful technique!"
+				(Say Reverse_Biaz 660 19 #dispose) ; "Nice playing, Patti," he smiles, "I bet you have wonderful technique!"
 				(HandsOn)
 				(User canControl: 0)
 				(User canInput: 1)
@@ -749,7 +749,7 @@
 			)
 			(15
 				(HandsOff)
-				(Say Reverse_Biaz 660 20 108 139 self) ; "Well, Patti," Reverse says, "I've got another session starting soon. You're going to have to go now; I've got to get to work!"
+				(Say Reverse_Biaz 660 20 #dispose #caller self) ; "Well, Patti," Reverse says, "I've got another session starting soon. You're going to have to go now; I've got to get to work!"
 			)
 			(16
 				(if gModelessDialog
@@ -810,13 +810,13 @@
 				(= ticks 60)
 			)
 			(2
-				(Say Reverse_Biaz 660 23 108 139 self) ; "Why, Patti!" he replies with a grin, "I'm always interested in sharing a glass of champagne with a beautiful woman!"
+				(Say Reverse_Biaz 660 23 #dispose #caller self) ; "Why, Patti!" he replies with a grin, "I'm always interested in sharing a glass of champagne with a beautiful woman!"
 			)
 			(3
 				(= ticks 60)
 			)
 			(4
-				(Say Reverse_Biaz 660 24 108 139 self) ; "To you, Patti!" he proposes a toast. "And to many more successful sessions together!"
+				(Say Reverse_Biaz 660 24 #dispose #caller self) ; "To you, Patti!" he proposes a toast. "And to many more successful sessions together!"
 			)
 			(5
 				(= ticks 60)
@@ -856,7 +856,7 @@
 				(= ticks 123)
 			)
 			(14
-				(Say Reverse_Biaz 660 25 108 139 self) ; "Ahh! A pleasant vintage," he sighs, "but it's a little warm, isn't it?""
+				(Say Reverse_Biaz 660 25 #dispose #caller self) ; "Ahh! A pleasant vintage," he sighs, "but it's a little warm, isn't it?""
 			)
 			(15
 				(= ticks 60)
@@ -910,16 +910,16 @@
 			(26
 				(switch champagneTalkCounter
 					(0
-						(Say Reverse_Biaz 660 32 108 139 self) ; "Please, call me Reverse!" slurs Reverse, "So, Patticakes, have I ever told you what an important guy I am?"
+						(Say Reverse_Biaz 660 32 #dispose #caller self) ; "Please, call me Reverse!" slurs Reverse, "So, Patticakes, have I ever told you what an important guy I am?"
 					)
 					(1
-						(Say Reverse_Biaz 660 33 108 139 self) ; "Sshaay, thissh issh tasshty!"
+						(Say Reverse_Biaz 660 33 #dispose #caller self) ; "Sshaay, thissh issh tasshty!"
 					)
 					(2
-						(Say Reverse_Biaz 660 34 108 139 self) ; "Why, ssshweetie, my ssshtuff's on more recordsssh than anybody'ssh!"
+						(Say Reverse_Biaz 660 34 #dispose #caller self) ; "Why, ssshweetie, my ssshtuff's on more recordsssh than anybody'ssh!"
 					)
 					(3
-						(Say Reverse_Biaz 660 35 108 139 self) ; "Eassshy, ssshugar!" slurs Reverse. "Lemme find you a sshample!"
+						(Say Reverse_Biaz 660 35 #dispose #caller self) ; "Eassshy, ssshugar!" slurs Reverse. "Lemme find you a sshample!"
 					)
 				)
 			)
@@ -954,7 +954,7 @@
 			)
 			(31
 				(Points 18 127)
-				(Say Reverse_Biaz 660 36 108 139 self) ; "Wait'll ya hear thissh," slobbers Reverse. "Every ssshong hasssh ssshomething ssshublimal!"
+				(Say Reverse_Biaz 660 36 #dispose #caller self) ; "Wait'll ya hear thissh," slobbers Reverse. "Every ssshong hasssh ssshomething ssshublimal!"
 			)
 			(32
 				(= seconds 3)
@@ -1008,25 +1008,25 @@
 			(1
 				(switch talkCounter
 					(0
-						(Say Reverse_Biaz 660 45 108 139 self) ; "Yeah, I can't complain," he replies. "I have several `clients' who keep me quite busy."
+						(Say Reverse_Biaz 660 45 #dispose #caller self) ; "Yeah, I can't complain," he replies. "I have several `clients' who keep me quite busy."
 					)
 					(1
-						(Say Reverse_Biaz 660 46 108 139 self) ; "Oh?" answers Reverse. "Well, you did do a nice job on this cut."
+						(Say Reverse_Biaz 660 46 #dispose #caller self) ; "Oh?" answers Reverse. "Well, you did do a nice job on this cut."
 					)
 					(2
-						(Say Reverse_Biaz 660 47 108 139 self) ; "Warming noticeably, he continues, "Well, Patti, I do know a lot of very important people in the recording business. I suppose I could drop your name in a few right places.""
+						(Say Reverse_Biaz 660 47 #dispose #caller self) ; "Warming noticeably, he continues, "Well, Patti, I do know a lot of very important people in the recording business. I suppose I could drop your name in a few right places.""
 					)
 					(3
-						(Say Reverse_Biaz 660 48 108 139 self) ; "Please... call me Reverse!"
+						(Say Reverse_Biaz 660 48 #dispose #caller self) ; "Please... call me Reverse!"
 					)
 					(4
 						(= cycles 2)
 					)
 					(5
-						(Say Reverse_Biaz 660 49 108 139 self) ; "Why, I think that could be arranged," he says. "What is it you're thinking of?"
+						(Say Reverse_Biaz 660 49 #dispose #caller self) ; "Why, I think that could be arranged," he says. "What is it you're thinking of?"
 					)
 					(6
-						(Say Reverse_Biaz 660 50 108 139 self) ; "I'd be glad to give you some samples of my work, Patti," he says with a wink, "if I can have a sample of YOURS!"
+						(Say Reverse_Biaz 660 50 #dispose #caller self) ; "I'd be glad to give you some samples of my work, Patti," he says with a wink, "if I can have a sample of YOURS!"
 					)
 				)
 			)
@@ -1269,7 +1269,7 @@
 			)
 			(3 ; Do
 				(if didSession
-					(Say Reverse_Biaz 660 59 108) ; "Oooh! Now that feels nice, Patti."
+					(Say Reverse_Biaz 660 59 #dispose) ; "Oooh! Now that feels nice, Patti."
 				else
 					(TPrint 660 60) ; "You are unable to touch Reverse Biaz through that double-paned soundproof glass."
 				)
@@ -1278,7 +1278,7 @@
 				(if didSession
 					(gCurRoom setScript: sTalkScript)
 				else
-					(Say Reverse_Biaz 660 61 108) ; "Patti, I can see your lips moving, but I don't have an open mike out there. Just go ahead and play, and we can talk later, okay?"
+					(Say Reverse_Biaz 660 61 #dispose) ; "Patti, I can see your lips moving, but I don't have an open mike out there. Just go ahead and play, and we can talk later, okay?"
 				)
 			)
 			(4 ; Inventory
@@ -1292,7 +1292,7 @@
 						)
 					)
 					(else
-						(Say Reverse_Biaz 660 63 108) ; "I don't know why you're offering me that, Patti. Did you come to play or come to bargain?"
+						(Say Reverse_Biaz 660 63 #dispose) ; "I don't know why you're offering me that, Patti. Did you come to play or come to bargain?"
 					)
 				)
 			)

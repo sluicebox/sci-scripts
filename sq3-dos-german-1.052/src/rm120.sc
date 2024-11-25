@@ -131,7 +131,7 @@
 			setLoop: -1
 			posn: 62 85
 			setStep: 3 1
-			illegalBits: -32768
+			illegalBits: $8000
 			baseSetter: newBase
 			ignoreActors: 0
 			init:
@@ -968,7 +968,7 @@
 			posn: 272 86
 			setCycle: Walk
 			setStep: 3 1
-			illegalBits: -32768
+			illegalBits: $8000
 			setScript: BadGuy
 			ignoreActors: 0
 			baseSetter: newBase
@@ -987,7 +987,7 @@
 			posn: 159 79
 			setCycle: Walk
 			setStep: 6 3
-			illegalBits: -32768
+			illegalBits: $8000
 			ignoreActors: 1
 			setScript: ScottScript
 		)
@@ -1005,7 +1005,7 @@
 			posn: 162 82
 			setCycle: Walk
 			setStep: 6 3
-			illegalBits: -32768
+			illegalBits: $8000
 			ignoreActors: 1
 		)
 	)

@@ -579,7 +579,7 @@
 			(Palette 2 3 31 100) ; PalIntensity
 			(askNice setPri: 30000 init: param1 update:)
 			(FrameOut)
-			(while ((= temp4 (Event new: 7)) type:)
+			(while ((= temp4 (Event new: $0007)) type:) ; evMOUSEKEYBOARD | evMOUSERELEASE
 				(temp4 dispose:)
 			)
 			(temp4 dispose:)

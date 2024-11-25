@@ -238,7 +238,7 @@
 			(3
 				(door setCycle: Beg)
 				(gTheMusic3 number: 802 play:)
-				(gEgo illegalBits: -32768 setMotion: PolyPath 211 106 self)
+				(gEgo illegalBits: $8000 setMotion: PolyPath 211 106 self)
 			)
 			(4
 				(= cycles 10)

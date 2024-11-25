@@ -95,7 +95,7 @@
 					posn: 204 111
 					setLoop: -1
 					loop: 1
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(gEgo setScript: (ScriptID 25 3)) ; egosControlScript
 			)

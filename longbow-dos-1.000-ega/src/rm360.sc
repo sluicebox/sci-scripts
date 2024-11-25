@@ -867,7 +867,7 @@
 						(Converse @local19 @local188 0) ; "Good day, sir. How may I serve you?"
 					)
 				)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(= ticks 12)
 			)
 			(3

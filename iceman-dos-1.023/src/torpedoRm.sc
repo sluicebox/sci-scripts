@@ -1296,7 +1296,7 @@
 			)
 			(2
 				(entryDoor setMotion: MoveTo 0 58 entryDoor)
-				(gEgo illegalBits: -32768 ignoreActors: 0 setPri: -1)
+				(gEgo illegalBits: $8000 ignoreActors: 0 setPri: -1)
 				(if (not register)
 					(gCurRoom newRoom: 42) ; bHatchTubeRm
 				)

@@ -102,7 +102,7 @@
 				(gEgo
 					view: 667
 					loop: 1
-					illegalBits: -32768
+					illegalBits: $8000
 					posn: 253 139
 					cycleSpeed: 1
 				)

@@ -111,7 +111,7 @@
 		)
 		(gEgo
 			view: 5
-			illegalBits: -32768
+			illegalBits: $8000
 			ignoreActors: 0
 			normal: 1
 			setStep: 2 1
@@ -524,7 +524,7 @@
 				)
 			)
 			(3
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(gCurRoom newRoom: 5)
 			)
 		)
@@ -1197,7 +1197,7 @@
 	(properties
 		y 112
 		view 156
-		illegalBits 2048
+		illegalBits $0800
 		moveSpeed 1
 	)
 
@@ -1269,7 +1269,7 @@
 		x 300
 		y 101
 		view 159
-		illegalBits 2048
+		illegalBits $0800
 		moveSpeed 1
 	)
 
@@ -1306,7 +1306,7 @@
 		x 73
 		y 132
 		view 153
-		illegalBits 2048
+		illegalBits $0800
 		moveSpeed 1
 	)
 

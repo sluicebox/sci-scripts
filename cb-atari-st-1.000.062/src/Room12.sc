@@ -111,7 +111,7 @@
 				(gEgo posn: 295 180)
 			)
 		)
-		(gEgo view: 0 illegalBits: -32750 init:)
+		(gEgo view: 0 illegalBits: $8012 init:)
 		(= global131 myMusic)
 	)
 
@@ -378,7 +378,7 @@
 				(gEgo setLoop: 1 setMotion: MoveTo 165 122 self)
 			)
 			(3
-				(gEgo setMotion: 0 illegalBits: -32768)
+				(gEgo setMotion: 0 illegalBits: $8000)
 				(Door cycleSpeed: 1 ignoreActors: 1 setCycle: End self)
 				(myMusic number: 43 loop: 1 priority: 5 play:)
 			)
@@ -411,7 +411,7 @@
 			)
 			(4
 				(HandsOn)
-				(gEgo view: 0 loop: 1 illegalBits: -32752 setCycle: Walk)
+				(gEgo view: 0 loop: 1 illegalBits: $8010 setCycle: Walk)
 				(if
 					(or
 						(and (== gAct 1) (< global155 17))

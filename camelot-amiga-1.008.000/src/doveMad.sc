@@ -121,7 +121,7 @@
 				)
 			)
 			(2
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				((ScriptID 177 3) ; doveShadow
 					signal: 16384
 					setPri: ((ScriptID 177 3) priority:) ; doveShadow

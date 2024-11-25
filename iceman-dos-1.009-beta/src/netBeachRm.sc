@@ -37,7 +37,7 @@
 		(switch gPrevRoomNum
 			(53 ; antiSubNetRm
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					posn: 10 135
 					loop: 0
 					setMotion: MoveTo 320 140
@@ -45,7 +45,7 @@
 			)
 			(46 ; netToPierRm
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					posn: 285 (gEgo y:)
 					loop: 1
 					setMotion: MoveTo -5 (gEgo y:)
@@ -53,7 +53,7 @@
 			)
 			(else
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					posn: 285 100
 					loop: 1
 					setMotion: MoveTo -5 (gEgo y:)
@@ -275,7 +275,7 @@
 						setCycle: Walk
 						cycleSpeed: 2
 						ignoreActors: 0
-						illegalBits: -32768
+						illegalBits: $8000
 						setScript: 0
 					)
 				else
@@ -287,7 +287,7 @@
 						setCycle: Walk
 						cycleSpeed: 2
 						ignoreActors: 0
-						illegalBits: -32768
+						illegalBits: $8000
 						setScript: 0
 					)
 				)

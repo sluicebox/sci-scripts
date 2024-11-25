@@ -688,7 +688,7 @@
 					loop: 2
 					cel: 6
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(|= global169 (| (<< local1 $0008) local1))
 				(cls)
@@ -778,7 +778,7 @@
 					)
 					(gEgo setMotion: MoveTo local6 local7 self)
 				else
-					(gEgo illegalBits: -32768)
+					(gEgo illegalBits: $8000)
 					(AlreadyClosed) ; "It is already closed."
 					(client setScript: 0)
 				)
@@ -798,7 +798,7 @@
 					cel: 6
 					posn: (+ (gEgo x:) local11) (+ (gEgo y:) 3)
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(HandsOn)
 				(client setScript: 0)
@@ -879,7 +879,7 @@
 				(gEgo
 					setPri: -1
 					cycleSpeed: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Walk
 				)
 				(HandsOn)
@@ -930,7 +930,7 @@
 				)
 			)
 			(4
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HandsOn)
 				(if local14
 					(localproc_0)

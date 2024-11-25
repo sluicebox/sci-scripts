@@ -146,7 +146,7 @@
 					view: 472
 					setPri: -1
 					posn: (jeep x:) (- (jeep y:) 10)
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 					loop: 2
 					setLoop: -1
@@ -224,7 +224,7 @@
 				(guard
 					view: 472
 					posn: (+ (jeep x:) 6) (- (jeep y:) 2)
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 					setPri: -1
 					loop: 2
@@ -298,7 +298,7 @@
 				(guard
 					view: 472
 					posn: (- (jeep x:) 6) (- (jeep y:) 2)
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 					setPri: -1
 					loop: 2

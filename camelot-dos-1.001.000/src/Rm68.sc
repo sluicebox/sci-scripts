@@ -345,7 +345,7 @@
 		(switch (= state newState)
 			(1
 				(HandsOff)
-				(gEgo illegalBits: -2)
+				(gEgo illegalBits: $fffe)
 				(leftDoor setLoop: 0 init: setMotion: MoveTo (leftDoor x:) 67)
 				(frontDoor
 					setLoop: 1

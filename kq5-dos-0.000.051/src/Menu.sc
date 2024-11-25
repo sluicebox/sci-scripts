@@ -231,7 +231,7 @@
 (procedure (proc997_1 param1 param2 &tmp temp0 temp1 temp2)
 	(param1 state: (& (param1 state:) $fffd))
 	(if (== param2 13)
-		(= temp0 (Event new: -1))
+		(= temp0 (Event new: $ffff)) ; evPEEK | evALL_EVENTS
 		(temp0 localize:)
 		(= temp1 (temp0 x:))
 		(if (< (= temp2 (temp0 y:)) 0)

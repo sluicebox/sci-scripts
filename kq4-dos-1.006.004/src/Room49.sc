@@ -121,7 +121,7 @@
 				view: 2
 				loop: 0
 				setStep: 3 2
-				illegalBits: -32768
+				illegalBits: $8000
 				init:
 			)
 			(if (or (> gAct 2) (gEgo has: 33)) ; Magic_Hen
@@ -142,7 +142,7 @@
 				view: 2
 				loop: 1
 				setStep: 3 2
-				illegalBits: -32768
+				illegalBits: $8000
 				init:
 			)
 		)
@@ -151,7 +151,7 @@
 				posn: 267 131
 				view: 2
 				setStep: 3 2
-				illegalBits: -32768
+				illegalBits: $8000
 				init:
 			)
 			(if global167
@@ -159,7 +159,7 @@
 				(Load rsVIEW 48)
 				((= local2 (Act new:))
 					view: 245
-					illegalBits: -32768
+					illegalBits: $8000
 					posn: 301 131
 					setStep: 4 2
 					init:
@@ -175,7 +175,7 @@
 				view: 2
 				setStep: 3 2
 				loop: 2
-				illegalBits: -32768
+				illegalBits: $8000
 				posn: 225 128
 				init:
 				setCycle: Walk
@@ -186,7 +186,7 @@
 				(Load rsVIEW 48)
 				((= local2 (Act new:))
 					view: 245
-					illegalBits: -32768
+					illegalBits: $8000
 					posn: 301 131 4 2
 					init:
 					setScript: ogressChase
@@ -849,7 +849,7 @@
 				(local0
 					view: 79
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 					setPri: -1
 					setAvoider: Avoid
 					setMotion: MoveTo 246 132 self
@@ -871,7 +871,7 @@
 				(= local9 1)
 				(theMusic number: 10 loop: -1 play:)
 				(local2
-					illegalBits: -32768
+					illegalBits: $8000
 					setAvoider: Avoid
 					ignoreActors: 1
 					setCycle: Walk
@@ -1133,7 +1133,7 @@
 			)
 			(2
 				(HandsOn)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(if (== global210 0)
 					(gEgo observeControl: 16384)
 				)

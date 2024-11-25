@@ -186,7 +186,7 @@
 			)
 			(1)
 			(2
-				(gEgo illegalBits: -32768 ignoreActors: 0)
+				(gEgo illegalBits: $8000 ignoreActors: 0)
 				(gCurRoom newRoom: (gCurRoom west:))
 			)
 		)
@@ -209,7 +209,7 @@
 			)
 			(1)
 			(2
-				(gEgo illegalBits: -32768 ignoreActors: 0)
+				(gEgo illegalBits: $8000 ignoreActors: 0)
 				(gCurRoom newRoom: (gCurRoom east:))
 			)
 		)

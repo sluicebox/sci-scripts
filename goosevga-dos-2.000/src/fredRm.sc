@@ -53,7 +53,7 @@
 			(= gHowFast (if (<= global170 100) 0 else 1))
 			(StrAt @global190 0 global170)
 			(StrAt @global190 1 (+ gHowFast 32))
-			(MemorySegment 0 @global190 0)
+			(MemorySegment 0 @global190 0) ; MS_SAVE_FROM
 			(gCurRoom newRoom: 108)
 		)
 	)

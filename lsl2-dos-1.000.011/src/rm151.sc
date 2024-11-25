@@ -44,7 +44,7 @@
 			loop: 2
 			posn: 144 153
 			setCycle: Walk
-			illegalBits: -32768
+			illegalBits: $8000
 			init:
 		)
 		(aBigFace view: 507 setLoop: 9 posn: 36 1118 setPri: 15 init:)

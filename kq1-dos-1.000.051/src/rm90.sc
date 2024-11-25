@@ -176,7 +176,7 @@
 				(gEgo loop: 2)
 				(witch
 					init:
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Walk
 					posn: 36 126
 					loop: 0

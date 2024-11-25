@@ -291,7 +291,7 @@
 				)
 			)
 			(2
-				(gEgo view: 4 setCycle: Walk illegalBits: -32768)
+				(gEgo view: 4 setCycle: Walk illegalBits: $8000)
 				(client setScript: 0)
 				(HandsOn)
 			)

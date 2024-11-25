@@ -65,7 +65,7 @@
 	(sharaf hide:)
 	(straw hide:)
 	(= global61 1)
-	(gEgo illegalBits: -32768 ignoreActors: 0)
+	(gEgo illegalBits: $8000 ignoreActors: 0)
 	(gCurRoom style: 15 drawPic: 2)
 	(gCurRoom drawPic: 440 overlay: 442 7)
 	(if (and (IsFlag 94) (gCast contains: shar)) ; fSharafFriend
@@ -78,7 +78,7 @@
 	(sharaf show:)
 	(straw show:)
 	(= global61 0)
-	(gEgo illegalBits: -32768 ignoreActors: 0)
+	(gEgo illegalBits: $8000 ignoreActors: 0)
 	(gCurRoom style: 15 drawPic: 2)
 	(gCurRoom drawPic: 440 overlay: 441 7)
 )

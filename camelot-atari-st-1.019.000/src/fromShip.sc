@@ -68,7 +68,7 @@
 		(gEgo
 			setCycle: Walk
 			setLoop: -1
-			illegalBits: -32768
+			illegalBits: $8000
 			moveSpeed: 0
 			cycleSpeed: 0
 		)
@@ -241,7 +241,7 @@
 				(gEgo setCycle: 0)
 				((ScriptID 35 1) setCycle: 0) ; jabir
 				(head setCycle: 0 hide:)
-				(gEgo loop: 2 cel: 0 ignoreActors: 0 illegalBits: -32768)
+				(gEgo loop: 2 cel: 0 ignoreActors: 0 illegalBits: $8000)
 				((ScriptID 35 4) setLoop: 6 cel: 0) ; hazm
 				(HandsOn)
 				(self dispose:)

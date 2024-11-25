@@ -259,7 +259,7 @@
 					setLoop: -1
 					setCycle: SyncWalk
 					cycleSpeed: 0
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				((gEgo head:) show:)
 				(= local0 8)
@@ -406,7 +406,7 @@
 					loop: (if (mod (gEgo loop:) 2) 1 else 0)
 					setCycle: SyncWalk
 					cycleSpeed: 0
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(if (== local0 7)
 					(gEgo setPri: 7)

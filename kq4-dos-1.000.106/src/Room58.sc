@@ -79,7 +79,7 @@
 			view: 4
 			setStep: 4 1
 			setPri: 11
-			illegalBits: 16384
+			illegalBits: $4000
 			posn: 121 155
 			baseSetter: (ScriptID 0 1) ; smallBase
 			init:
@@ -90,10 +90,10 @@
 		(if
 			(and
 				(& (gEgo onControl:) $0002)
-				(== (gEgo illegalBits:) -32768)
+				(== (gEgo illegalBits:) $8000)
 				(not (gEgo script:))
 			)
-			(gEgo setPri: 11 illegalBits: 16384 baseSetter: (ScriptID 0 1)) ; smallBase
+			(gEgo setPri: 11 illegalBits: $4000 baseSetter: (ScriptID 0 1)) ; smallBase
 		)
 		(if
 			(and
@@ -101,7 +101,7 @@
 				(not (& (gEgo onControl: 1) $0002))
 				(not (gEgo script:))
 			)
-			(gEgo setPri: -1 illegalBits: -32768 baseSetter: 0)
+			(gEgo setPri: -1 illegalBits: $8000 baseSetter: 0)
 		)
 		(if
 			(and
@@ -113,7 +113,7 @@
 		(if
 			(and
 				(& (gEgo onControl:) $0004)
-				(!= (gEgo illegalBits:) 16384)
+				(!= (gEgo illegalBits:) $4000)
 				(!= (gEgo script:) fallHole)
 			)
 			(HandsOff)

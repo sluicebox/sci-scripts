@@ -339,7 +339,7 @@
 					loop: 0
 					setLoop: -1
 					setCycle: Walk
-					illegalBits: -26624
+					illegalBits: $9800
 				)
 				(local0 view: 212 loop: 1 z: 0)
 				(hutDoor2 setCycle: End self)

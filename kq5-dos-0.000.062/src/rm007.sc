@@ -37,7 +37,7 @@
 		(super init:)
 		(= global320 181)
 		(= global321 35)
-		(gEgo normal: 1 setStep: 3 2 view: 0 illegalBits: -32768 offset: 3)
+		(gEgo normal: 1 setStep: 3 2 view: 0 illegalBits: $8000 offset: 3)
 		(= global325 {"You can see there's nothing here, Graham!"})
 		(gGlobalSound number: 24 loop: -1 play:)
 		(if (and (not (IsFlag 27)) (!= ((gInventory at: 9) owner:) 9)) ; Heart

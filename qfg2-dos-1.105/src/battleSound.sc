@@ -221,7 +221,7 @@
 			(1
 				(client
 					show:
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 					setCycle: Walk
 				)

@@ -247,7 +247,7 @@
 				(gEgo
 					view: 586
 					loop: 2
-					illegalBits: -32768
+					illegalBits: $8000
 					cycleSpeed: 0
 					setCycle: KQ5SyncWalk
 				)
@@ -278,7 +278,7 @@
 				(gEgo
 					view: 586
 					loop: 1
-					illegalBits: -32768
+					illegalBits: $8000
 					cycleSpeed: 0
 					setCycle: KQ5SyncWalk
 				)

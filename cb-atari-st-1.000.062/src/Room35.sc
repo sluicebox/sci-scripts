@@ -124,7 +124,7 @@
 				(self setScript: closeDoor)
 			)
 		)
-		(gEgo view: 0 illegalBits: -32732 init:)
+		(gEgo view: 0 illegalBits: $8024 init:)
 	)
 
 	(method (doit)

@@ -27,7 +27,7 @@
 		(switch gPrevRoomNum
 			(45 ; netBeachRm
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					loop: 0
 					posn: 10 (gEgo y:)
 					setMotion: MoveTo 325 (gEgo y:)
@@ -35,7 +35,7 @@
 			)
 			(else
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					loop: 1
 					posn: 285 100
 					setMotion: MoveTo 150 100

@@ -108,7 +108,7 @@
 				)
 			)
 		)
-		(gEgo view: 0 illegalBits: -32768 setPri: -1 setStep: 3 2 init:)
+		(gEgo view: 0 illegalBits: $8000 setPri: -1 setStep: 3 2 init:)
 		(if (not (IsFlag 49))
 			(SetFlag 49)
 			(SetScore 3)

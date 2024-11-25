@@ -202,7 +202,7 @@
 							(gASoundEffect play: 23)
 							(= global528 1)
 							(Format @temp6 997 9 global534 global427) ; "%d%d"
-							(MemorySegment 0 @temp6 0)
+							(MemorySegment 0 @temp6 0) ; MS_SAVE_FROM
 						else
 							(gASoundEffect play: 23)
 						)

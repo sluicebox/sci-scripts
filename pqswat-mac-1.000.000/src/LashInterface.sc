@@ -76,7 +76,7 @@
 		)
 		(while elements
 			(= gGameTime (+ gTickOffset (GetTime)))
-			(if ((= temp0 (Event new: 3)) type:)
+			(if ((= temp0 (Event new: evMOUSE)) type:)
 				(gCast eachElementDo: #handleEvent temp0)
 			)
 			(self buttonDoits:)

@@ -74,28 +74,28 @@
 		)
 		(switch gPrevRoomNum
 			(49
-				(gEgo illegalBits: -32768 posn: 62 164)
+				(gEgo illegalBits: $8000 posn: 62 164)
 				(wardL setScript: closing)
 			)
 			(50
-				(gEgo illegalBits: -32768 posn: 259 161)
+				(gEgo illegalBits: $8000 posn: 259 161)
 				(wardR setScript: closing)
 			)
 			(42
-				(gEgo illegalBits: -32692 posn: 73 132)
+				(gEgo illegalBits: $804c posn: 73 132)
 			)
 			(44
-				(gEgo illegalBits: -32692 posn: 251 132)
+				(gEgo illegalBits: $804c posn: 251 132)
 			)
 			(73
-				(gEgo illegalBits: -32692 posn: 159 107)
+				(gEgo illegalBits: $804c posn: 159 107)
 				(HandsOn)
 				(if (not global153)
 					(= local2 1)
 				)
 			)
 			(47
-				(gEgo illegalBits: -32692)
+				(gEgo illegalBits: $804c)
 			)
 		)
 		(if (== global153 0)
@@ -286,7 +286,7 @@
 			)
 			(2
 				(client stopUpd:)
-				(gEgo illegalBits: -32692)
+				(gEgo illegalBits: $804c)
 				(HandsOn)
 				(doorR show:)
 				(doorL show:)
@@ -378,7 +378,7 @@
 		(switch (= state newState)
 			(0
 				(User canControl: 0 canInput: 0)
-				(gEgo setMotion: 0 illegalBits: -32768)
+				(gEgo setMotion: 0 illegalBits: $8000)
 				(myMusic number: 43 loop: 1 play:)
 				(Door cycleSpeed: 1 ignoreActors: 1 setCycle: End self)
 			)

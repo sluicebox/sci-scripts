@@ -167,11 +167,11 @@
 					(= global202 2)
 				)
 			)
-			(gEgo view: 0 illegalBits: -32764 setPri: -1 init:)
+			(gEgo view: 0 illegalBits: $8004 setPri: -1 init:)
 		else
 			(gEgo
 				view: 0
-				illegalBits: -32764
+				illegalBits: $8004
 				setPri: 2
 				loop: 2
 				posn: 126 79
@@ -222,7 +222,7 @@
 			)
 		)
 		(if (& (gEgo onControl: 1) $0004)
-			(gEgo illegalBits: -32768 ignoreActors: 0)
+			(gEgo illegalBits: $8000 ignoreActors: 0)
 			(gCurRoom newRoom: 15)
 		)
 		(if
@@ -405,14 +405,14 @@
 				(= local5 1)
 				(= global204 1)
 				(panel setMotion: MoveTo 170 83 self)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(soundFX number: 74 loop: 1 play:)
 			)
 			(1
 				(if (gEgo inRect: 137 87 139 89)
 					(= cycles 1)
 				else
-					(gEgo illegalBits: -32768 setMotion: MoveTo 138 88 self)
+					(gEgo illegalBits: $8000 setMotion: MoveTo 138 88 self)
 				)
 			)
 			(2
@@ -505,7 +505,7 @@
 				)
 			)
 			(2
-				(gEgo setPri: -1 illegalBits: -32768)
+				(gEgo setPri: -1 illegalBits: $8000)
 				(panel setMotion: MoveTo 141 83 self)
 				(soundFX number: 75 loop: 1 play:)
 			)

@@ -1950,7 +1950,7 @@
 					(User canControl: 1)
 					(User canInput: 1)
 				)
-				(gEgo illegalBits: -32768 ignoreActors: 0 setScript: 0)
+				(gEgo illegalBits: $8000 ignoreActors: 0 setScript: 0)
 				(if (== (shameen script:) rentARoom)
 					(rentARoom cue:)
 				)

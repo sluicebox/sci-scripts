@@ -29,7 +29,7 @@
 )
 
 (procedure (localproc_0)
-	(= global220 1)
+	(= gLolotteDoorUnlocked 1)
 	(Print 82 0) ; "Using the little gold key you quickly unlock the door."
 	(gGame changeScore: 2)
 )
@@ -111,11 +111,11 @@
 			setStep: 4 2
 			baseSetter: 0
 			ignoreActors: 0
-			illegalBits: -16384
+			illegalBits: $c000
 			setPri: -1
 			init:
 		)
-		(if global169
+		(if gLolotteAlive
 			((= local0 (Act new:))
 				view: 122
 				illegalBits: 0
@@ -163,7 +163,7 @@
 					init:
 				)
 			)
-			(gEgo illegalBits: -32768)
+			(gEgo illegalBits: $8000)
 			(local3 setCel: 255)
 		)
 	)
@@ -204,7 +204,7 @@
 								)
 							)
 							((Said 'bang')
-								(if global169
+								(if gLolotteAlive
 									(Print 82 2) ; "That wouldn't be a good idea at all!"
 								else
 									(Print 82 3) ; "That wouldn't accomplish anything."
@@ -254,7 +254,7 @@
 										(Print 82 12) ; "It's just a wooden door."
 									)
 									((Said '/lolotte,fairies')
-										(if global169
+										(if gLolotteAlive
 											(Print 82 13) ; "The evil fairy sleeps soundly in her bed. She wears Genesta's magic talisman around her neck, and you see it gleaming upon her chest. As she sleeps, she makes very strange clicking sounds."
 										else
 											(Print
@@ -286,7 +286,7 @@
 								(Print 82 15) ; "Why would you want to?"
 							)
 							((Said 'kiss[/lolotte,fairies]')
-								(if global169
+								(if gLolotteAlive
 									(Print 82 16) ; "That would be a bad idea!"
 								else
 									(Print 82 17) ; "She's dead now. Are you sure this is a good idea?"
@@ -297,28 +297,28 @@
 								(event claimed: 1)
 							)
 							((Said 'awaken/lolotte,fairies')
-								(if global169
+								(if gLolotteAlive
 									(gCurRoom setScript: egoZapped)
 								else
 									(Print 82 19 #font gSmallFont #at 15 20 #time 4) ; "Waking the dead is a little more than even a princess can do!"
 								)
 							)
 							((Said 'get,capture/lolotte,fairies')
-								(if global169
+								(if gLolotteAlive
 									(Print 82 20) ; "You wouldn't want her."
 								else
 									(Print 82 17) ; "She's dead now. Are you sure this is a good idea?"
 								)
 							)
 							((Said 'talk[<lolotte,fairies]')
-								(if global169
+								(if gLolotteAlive
 									(gCurRoom setScript: egoZapped)
 								else
 									(Print 82 21 #time 5) ; "Lolotte is unable to talk, as she is now dead."
 								)
 							)
 							((Said 'blow/whistle')
-								(if global169
+								(if gLolotteAlive
 									(gCurRoom setScript: egoZapped)
 								else
 									(event claimed: 0)
@@ -335,7 +335,7 @@
 									((not (gEgo inRect: 120 120 215 135))
 										(Print 82 24 #time 3) ; "You'll have to get a little closer."
 									)
-									(global169
+									(gLolotteAlive
 										(gCurRoom setScript: egoZapped)
 									)
 									(else
@@ -365,7 +365,7 @@
 							)
 							((Said 'kill/lolotte,fairies')
 								(cond
-									((== global169 0)
+									((== gLolotteAlive 0)
 										(Print 82 29) ; "She is already dead."
 									)
 									((gEgo has: 14) ; Cupid_s_Bow
@@ -385,7 +385,7 @@
 										((>= ((gInventory at: 14) loop:) 2) ; Cupid_s_Bow
 											(Print 82 33) ; "Sorry, girl, you have no more arrows!"
 										)
-										((not global169)
+										((not gLolotteAlive)
 											(Print 82 34) ; "She already is dead."
 										)
 										((== (gCurRoom script:) lolotteDead)
@@ -421,7 +421,7 @@
 					)
 					((Said 'unlatch/door>')
 						(cond
-							(global220
+							(gLolotteDoorUnlocked
 								(event claimed: 1)
 								(Print 82 26) ; "It already is."
 							)
@@ -466,7 +466,7 @@
 								(event claimed: 1)
 								(NotClose) ; "You're not close enough."
 							)
-							(global220
+							(gLolotteDoorUnlocked
 								(Print 82 46) ; "The door is already unlocked."
 							)
 							((or local4 (not (gEgo has: 20))) ; Skeleton_Key
@@ -478,7 +478,7 @@
 						)
 					)
 					((or (Said '[use]/key<skeleton') (Said '/skeleton'))
-						(if (and (gEgo has: 20) local4 (not global220)) ; Skeleton_Key
+						(if (and (gEgo has: 20) local4 (not gLolotteDoorUnlocked)) ; Skeleton_Key
 							(Print 82 42) ; "The skeleton key does not fit the lock."
 						else
 							(Print 82 48) ; "What do you want to do with the skeleton key?"
@@ -487,7 +487,7 @@
 					((Said 'open/door')
 						(if (gEgo inRect: 233 155 251 162)
 							(cond
-								((and global220 (== (local3 cel:) 0))
+								((and gLolotteDoorUnlocked (== (local3 cel:) 0))
 									(User canControl: 0 canInput: 0)
 									(local3
 										startUpd:
@@ -497,7 +497,7 @@
 									(gEgo stopUpd:)
 									(doorSound play:)
 								)
-								((not global220)
+								((not gLolotteDoorUnlocked)
 									(Print 82 49) ; "Unlock it first."
 								)
 								(else
@@ -529,7 +529,7 @@
 			(0
 				(local3 stopUpd:)
 				(User canControl: 1 canInput: 1)
-				(gEgo illegalBits: -32768 startUpd:)
+				(gEgo illegalBits: $8000 startUpd:)
 			)
 		)
 	)
@@ -582,7 +582,7 @@
 				(Print 82 55 #at -1 20 #font gSmallFont #width 250) ; "As she breathes her last, Lolotte manages to gasp, "I don't know how...but I'll get you for this...""
 				(gGame changeScore: 8)
 				(local0 stopUpd:)
-				(= global169 0)
+				(= gLolotteAlive 0)
 				(if (< global160 30)
 					(= global160 30)
 					(= global159 0)

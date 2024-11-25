@@ -334,7 +334,7 @@
 				(gEgo
 					view: 177
 					setPri: -1
-					illegalBits: -32768
+					illegalBits: $8000
 					observeControl: 16 2 16384
 				)
 				(User canInput: 0)

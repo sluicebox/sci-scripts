@@ -665,7 +665,7 @@
 		(switch theVerb
 			(3 ; Do
 				(TPrint 710 9) ; "If you want to play blackjack, buy "Leisure Suit Larry 1!""
-				(TPrint 710 10 67 -1 185) ; "(Another fine Al Lowe game!)"
+				(TPrint 710 10 #at -1 185) ; "(Another fine Al Lowe game!)"
 			)
 			(5 ; Talk
 				(TPrint 710 11) ; "The blackjack players are too busy to talk to you."

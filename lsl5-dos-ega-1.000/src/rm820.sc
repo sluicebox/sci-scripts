@@ -106,7 +106,7 @@
 			)
 			(2 ; Look
 				(TPrint 820 3) ; "The door's tasteful brass plate reads..."
-				(TPrint 820 4 30 1) ; "Mr. John Krapper Founder Owner President C. E. O."
+				(TPrint 820 4 #mode 1) ; "Mr. John Krapper Founder Owner President C. E. O."
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)

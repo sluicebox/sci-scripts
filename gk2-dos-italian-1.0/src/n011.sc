@@ -259,7 +259,7 @@
 		(gSounds pause: 0)
 		(gSounds eachElementDo: #check)
 	)
-	(while ((= temp0 (Event new: 3)) type:)
+	(while ((= temp0 (Event new: evMOUSE)) type:)
 		(temp0 dispose:)
 	)
 	(temp0 dispose:)

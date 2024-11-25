@@ -82,7 +82,7 @@
 					posn: 134 104
 					illegalBits: 0
 					setPri: 6
-					illegalBits: 8000
+					illegalBits: $1f40
 					setCycle: Walk
 					setMotion: MoveTo 202 91
 				)

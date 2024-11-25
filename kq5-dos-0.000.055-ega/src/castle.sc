@@ -122,7 +122,7 @@
 		setStep: 3 2
 		offset: 3
 		normal: 1
-		illegalBits: -32768
+		illegalBits: $8000
 		ignoreActors: 0
 	)
 )

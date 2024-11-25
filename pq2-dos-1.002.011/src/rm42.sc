@@ -101,7 +101,7 @@
 	(if (== 0 (gEgo x:) (gEgo y:))
 		(gEgo posn: 230 61)
 	)
-	(gEgo illegalBits: -32768 init:)
+	(gEgo illegalBits: $8000 init:)
 	(proc154_2)
 )
 
@@ -644,7 +644,7 @@
 					setLoop: -1
 					setCycle: Walk
 					cycleSpeed: 0
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(client setScript: 0)
 			)
@@ -695,7 +695,7 @@
 			(12
 				(HandsOn)
 				(local107 stopUpd:)
-				(gEgo setPri: 13 ignoreActors: 0 illegalBits: -32768)
+				(gEgo setPri: 13 ignoreActors: 0 illegalBits: $8000)
 				(= local101 1)
 				(gCurRoom setScript: 0)
 			)

@@ -700,7 +700,7 @@
 				)
 			)
 			(1
-				(challenger ignoreActors: 0 illegalBits: -32768)
+				(challenger ignoreActors: 0 illegalBits: $8000)
 				(NormalEgo)
 				(gEgo
 					setAvoider: Avoid
@@ -740,12 +740,12 @@
 	(method (changeState newState &tmp onLeft)
 		(switch (= state newState)
 			(0
-				(challenger ignoreActors: 0 illegalBits: -32768 stopUpd:)
+				(challenger ignoreActors: 0 illegalBits: $8000 stopUpd:)
 				(= cycles 2)
 			)
 			(1
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					setAvoider: Avoid
 					setMotion:
 						MoveTo
@@ -1077,7 +1077,7 @@
 		(switch (= state newState)
 			(0
 				(challenger
-					illegalBits: -32768
+					illegalBits: $8000
 					setLoop: 7
 					cel: 0
 					setCycle: Rev
@@ -1380,7 +1380,7 @@
 				)
 			)
 			(7
-				(gEgo view: 0 setLoop: -1 illegalBits: -32768)
+				(gEgo view: 0 setLoop: -1 illegalBits: $8000)
 				(NormalEgo)
 				(= cycles 10)
 			)
@@ -1388,7 +1388,7 @@
 				(challenger setCycle: End self)
 			)
 			(9
-				(challenger illegalBits: -32768 setLoop: 0 cel: 0)
+				(challenger illegalBits: $8000 setLoop: 0 cel: 0)
 				(self dispose:)
 			)
 		)

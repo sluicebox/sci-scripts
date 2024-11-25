@@ -109,7 +109,7 @@
 				(= seconds 3)
 			)
 			(4
-				(TPrint 435 1 67 -1 185) ; "(You hope they lowered the size of the charge!)"
+				(TPrint 435 1 #at -1 185) ; "(You hope they lowered the size of the charge!)"
 				(HandsOn)
 				(self dispose:)
 			)
@@ -182,7 +182,7 @@
 			)
 			(5 ; Talk
 				(TPrint 435 3) ; "Hey, Desmond!" you cry. "Are you in there?"
-				(TPrint 435 4 67 -1 185) ; "(Evidently not!)"
+				(TPrint 435 4 #at -1 185) ; "(Evidently not!)"
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)
@@ -211,7 +211,7 @@
 			)
 			(3 ; Do
 				(TPrint 435 6) ; "This dart board is here only for the amusement of the full-time, salaried employees."
-				(TPrint 435 7 67 -1 185 70 280) ; "(Besides, you've never played darts in your life, and you don't intend to begin now!)"
+				(TPrint 435 7 #at -1 185 #width 280) ; "(Besides, you've never played darts in your life, and you don't intend to begin now!)"
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)

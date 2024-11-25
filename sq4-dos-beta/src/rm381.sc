@@ -445,7 +445,7 @@
 			(3
 				((gCurRoom obstacles:) delete: roboPoly)
 				(robo setMotion: MoveTo 163 90 self)
-				(gEgo illegalBits: -32768 setHeading: 180)
+				(gEgo illegalBits: $8000 setHeading: 180)
 			)
 			(4
 				(if (not (TestMallFlag (ScriptID 700 0) #rFlag2 1)) ; mall
@@ -541,7 +541,7 @@
 				)
 			)
 			(20
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(= local2 1)
 				(self
 					save1:

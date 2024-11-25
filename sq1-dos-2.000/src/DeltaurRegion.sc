@@ -123,7 +123,7 @@
 			(NormalEgo temp0 2 62) ; UNINIT
 		)
 	)
-	(gEgo illegalBits: -32768)
+	(gEgo illegalBits: $8000)
 )
 
 (class RegionFeature of Feature

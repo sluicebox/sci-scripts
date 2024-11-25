@@ -511,7 +511,7 @@
 	(= disposeOrNot (= who2Cue 0))
 	(if (== who gEgo)
 		(if (> i 1)
-			(TPrint @buffer 80 {You} &rest)
+			(TPrint @buffer #title {You} &rest)
 		else
 			(TPrint @buffer 80 {You} arg2 &rest)
 		)
@@ -783,7 +783,7 @@
 		(= temp6 23)
 		(SetFFRoom 0)
 		(if (GameIsRestarting)
-			(MemorySegment 1 @gRestartRoom)
+			(MemorySegment 1 @gRestartRoom) ; MS_RESTORE_TO
 		)
 		(= gEgo Larry)
 		(= gEgoIsLarry 1)
@@ -849,7 +849,7 @@
 							(switch theItem
 								(0
 									(TPrint 0 7) ; "Good thinking! Shoot a little tape of that!"
-									(TPrint 0 8 67 -1 185) ; "(But is your pocket camcorder working?)"
+									(TPrint 0 8 #at -1 185) ; "(But is your pocket camcorder working?)"
 								)
 								(6
 									(TPrint 0 9) ; "You wave your napkin in the air. How fun!"
@@ -883,7 +883,7 @@
 							(switch theItem
 								(3
 									(TPrint 0 16) ; "You wave the fax in the air. You have fun."
-									(TPrint 0 17 67 -1 185) ; "(But not much!)"
+									(TPrint 0 17 #at -1 185) ; "(But not much!)"
 								)
 								(4
 									(TPrint 0 18) ; "That's not a good place to pour out your champagne."
@@ -893,7 +893,7 @@
 								)
 								(7
 									(TPrint 0 16) ; "You wave the fax in the air. You have fun."
-									(TPrint 0 17 67 -1 185) ; "(But not much!)"
+									(TPrint 0 17 #at -1 185) ; "(But not much!)"
 								)
 								(13
 									(TPrint 0 20) ; "You briefly contemplate firing your bra at that, but decide to hold your "fire.""
@@ -918,7 +918,7 @@
 	(method (restart)
 		(gCurRoom style: 6 drawPic: 1)
 		(gCast eachElementDo: #hide)
-		(MemorySegment 0 @gRestartRoom 2)
+		(MemorySegment 0 @gRestartRoom 2) ; MS_SAVE_FROM
 		(super restart:)
 	)
 

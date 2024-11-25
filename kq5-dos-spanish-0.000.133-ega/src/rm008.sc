@@ -59,7 +59,7 @@
 			)
 			(east
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					posn:
 						(if (< (gEgo y:) 165) 284 else 316)
 						(if (< (gEgo y:) 165) 144 else 180)
@@ -358,7 +358,7 @@
 				(= cycles 1)
 			)
 			(7
-				(gEgo setMotion: 0 illegalBits: -32768)
+				(gEgo setMotion: 0 illegalBits: $8000)
 				(HandsOn)
 				(client setScript: 0)
 			)

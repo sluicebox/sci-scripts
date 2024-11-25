@@ -1207,7 +1207,7 @@
 			(7
 				(HandsOn)
 				(NormalEgo)
-				(gEgo loop: 4 illegalBits: -32768)
+				(gEgo loop: 4 illegalBits: $8000)
 				(self dispose:)
 			)
 		)

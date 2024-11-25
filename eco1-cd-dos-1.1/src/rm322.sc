@@ -40,7 +40,7 @@
 		(gEgo
 			x: 150
 			init:
-			illegalBits: -32768
+			illegalBits: $8000
 			ignoreHorizon: 1
 			ignoreActors: 0
 		)
@@ -313,7 +313,7 @@
 				(gEgo
 					x: 280
 					edgeHit: EDGE_NONE
-					illegalBits: -32768
+					illegalBits: $8000
 					setMotion: MoveTo 160 130 self
 				)
 			)

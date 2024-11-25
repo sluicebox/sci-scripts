@@ -110,10 +110,10 @@
 		(bush init: stopUpd:)
 		(if (IsFlag 238)
 			(gate setCel: 3 setPri: 6 ignoreActors: init: stopUpd:)
-			(gEgo illegalBits: -32768)
+			(gEgo illegalBits: $8000)
 		else
 			(gate setCel: 0 setPri: 6 init: stopUpd:)
-			(gEgo illegalBits: -28672)
+			(gEgo illegalBits: $9000)
 		)
 		(if (not (IsFlag 237))
 			(= global332 425)
@@ -914,7 +914,7 @@
 			)
 			(1
 				(SetFlag 238)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HandsOn)
 				(self dispose:)
 			)
@@ -938,7 +938,7 @@
 			)
 			(1
 				(ClearFlag 238)
-				(gEgo illegalBits: -28672)
+				(gEgo illegalBits: $9000)
 				(HandsOn)
 				(self dispose:)
 			)
@@ -1293,9 +1293,9 @@
 				else
 					(= local1 1)
 					(if (IsFlag 238)
-						(gEgo illegalBits: -32768)
+						(gEgo illegalBits: $8000)
 					else
-						(gEgo illegalBits: -28672)
+						(gEgo illegalBits: $9000)
 					)
 					(if (not (or (IsFlag 83) (IsFlag 237)))
 						(HighPrint 93 62) ; "Grumble Grumble Grumble. Stupid guard duty, third time this week. Why always me? Grumble Grumble Grumble."
@@ -1322,7 +1322,7 @@
 			)
 			(1
 				(= local1 1)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(if (not (or (IsFlag 83) (IsFlag 237)))
 					(HighPrint 93 63) ; "Grumble Grumble Grumble. Stupid guard duty, third time this week. Why always me? Grumble Grumble Grumble."
 				)
@@ -1360,9 +1360,9 @@
 				else
 					(= local1 1)
 					(if (IsFlag 238)
-						(gEgo illegalBits: -32768)
+						(gEgo illegalBits: $8000)
 					else
-						(gEgo illegalBits: -28672)
+						(gEgo illegalBits: $9000)
 					)
 					(if (not (or (IsFlag 83) (IsFlag 237)))
 						(HighPrint 93 62) ; "Grumble Grumble Grumble. Stupid guard duty, third time this week. Why always me? Grumble Grumble Grumble."
@@ -1408,9 +1408,9 @@
 				(HandsOn)
 				(gEgo loop: 2 posn: (+ (gEgo x:) 3) (- (gEgo y:) 8))
 				(if (IsFlag 238)
-					(gEgo illegalBits: -16384)
+					(gEgo illegalBits: $c000)
 				else
-					(gEgo illegalBits: -8192)
+					(gEgo illegalBits: $e000)
 				)
 				(HandsOn)
 				(self dispose:)
@@ -1468,7 +1468,7 @@
 			(6
 				(= local1 1)
 				(NormalEgo)
-				(gEgo illegalBits: -28672)
+				(gEgo illegalBits: $9000)
 				(HandsOn)
 			)
 		)
@@ -1614,9 +1614,9 @@
 				(NormalEgo)
 				(gEgo loop: 2)
 				(if (IsFlag 238)
-					(gEgo illegalBits: -32768)
+					(gEgo illegalBits: $8000)
 				else
-					(gEgo illegalBits: -28672)
+					(gEgo illegalBits: $9000)
 				)
 				(HandsOn)
 				(= local9 0)
@@ -1738,9 +1738,9 @@
 				(NormalEgo)
 				(gEgo posn: (- (gEgo x:) 9) (+ (gEgo y:) 2))
 				(if (IsFlag 238)
-					(gEgo illegalBits: -32768)
+					(gEgo illegalBits: $8000)
 				else
-					(gEgo illegalBits: -28672)
+					(gEgo illegalBits: $9000)
 				)
 				(= local9 0)
 				(HandsOn)

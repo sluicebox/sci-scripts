@@ -31,7 +31,7 @@
 			)
 			(3 ; Do
 				(TPrint 23 3) ; "You carefully smooth the wrinkles from your clothes."
-				(TPrint 23 4 67 -1 185) ; "(And spend quite a bit longer in some locations than others!)"
+				(TPrint 23 4 #at -1 185) ; "(And spend quite a bit longer in some locations than others!)"
 			)
 			(10 ; Zipper
 				(TPrint 23 5) ; "After a careful check to be sure no one is watching, you slyly "adjust your clothing.""
@@ -49,7 +49,7 @@
 					)
 					(16 ; Tramp_Casino_Matchbook
 						(TPrint 23 9) ; "You attempt to set yourself on fire."
-						(TPrint 23 10 67 -1 185) ; "(You fail."
+						(TPrint 23 10 #at -1 185) ; "(You fail."
 					)
 					(18 ; Roller-skates
 						((Inv at: 18) doVerb: 3) ; Roller-skates
@@ -103,7 +103,7 @@
 			setCycle: StopWalk -1
 			setStep: 3 2
 			z: 0
-			illegalBits: -32768
+			illegalBits: $8000
 			ignoreActors: 0
 			moveSpeed: (gGame egoMoveSpeed:)
 			cycleSpeed: (gGame egoMoveSpeed:)

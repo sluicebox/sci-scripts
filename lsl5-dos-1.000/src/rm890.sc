@@ -1067,7 +1067,7 @@
 					(4
 						(TPrint 890 48) ; "You pull up the slider labeled "Control Room B" and hear what sounds like a female breathing."
 						(Wait 60)
-						(TPrint 890 49 67 -1 185) ; "(Oh, wait! That's you! You're in Control Room B!)"
+						(TPrint 890 49 #at -1 185) ; "(Oh, wait! That's you! You're in Control Room B!)"
 					)
 					(5
 						(TPrint 890 50) ; "You raise the volume on "Studio B,""

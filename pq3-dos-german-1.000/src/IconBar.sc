@@ -486,7 +486,7 @@
 				claimed: 0
 				port: 0
 			)
-			(GetEvent 32767 ibEvent)
+			(GetEvent evALL_EVENTS ibEvent)
 			(Wait 1)
 			(if (== (ibEvent type:) 256)
 				(ibEvent

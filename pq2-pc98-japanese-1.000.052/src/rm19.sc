@@ -66,7 +66,7 @@
 			view: (if global204 7 else 1)
 			setStep: 3 2
 			init:
-			illegalBits: -24576
+			illegalBits: $a000
 			setMotion: MoveTo 0 140
 		)
 		(self setScript: rm19Script)
@@ -203,7 +203,7 @@
 				)
 			)
 			(3
-				(gEgo ignoreActors: 0 illegalBits: -24576)
+				(gEgo ignoreActors: 0 illegalBits: $a000)
 				(HandsOn)
 				(local2 ignoreActors: setCycle: Beg self)
 			)
@@ -226,7 +226,7 @@
 				)
 			)
 			(7
-				(gEgo ignoreActors: 0 illegalBits: -24576)
+				(gEgo ignoreActors: 0 illegalBits: $a000)
 				(local3 ignoreActors: setCycle: Beg self)
 			)
 			(8
@@ -249,7 +249,7 @@
 				)
 			)
 			(11
-				(gEgo ignoreActors: 0 illegalBits: -24576)
+				(gEgo ignoreActors: 0 illegalBits: $a000)
 				(local4 ignoreActors: setCycle: Beg self)
 			)
 			(12

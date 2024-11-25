@@ -409,7 +409,7 @@
 			)
 			(11
 				(gLongSong2 stop:)
-				((ScriptID 702 1) illegalBits: 64 setMotion: PFollow gEgo 45) ; robot
+				((ScriptID 702 1) illegalBits: $0040 setMotion: PFollow gEgo 45) ; robot
 				(SetFlag 33)
 				(HandsOn)
 				(self dispose:)

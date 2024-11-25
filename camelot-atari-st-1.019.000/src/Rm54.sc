@@ -259,7 +259,7 @@
 					(self leaveRoom: 55 (gEgo x:) 235)
 				)
 				((== (gMuleObj illegalBits:) 0)
-					(gMuleObj illegalBits: -32762 ignoreActors: 0)
+					(gMuleObj illegalBits: $8006 ignoreActors: 0)
 				)
 			)
 		)
@@ -643,7 +643,7 @@
 				(conMan loop: 6 cel: 0 setStep: 3 2 ignoreActors: 0)
 				(conMouth show:)
 				(= local6 1)
-				(gEgo illegalBits: -8192)
+				(gEgo illegalBits: $e000)
 			)
 		)
 	)
@@ -719,10 +719,10 @@
 				)
 			)
 			(7
-				(gMuleObj illegalBits: -32762 setScript: (ScriptID 123 1)) ; muleFollow
+				(gMuleObj illegalBits: $8006 setScript: (ScriptID 123 1)) ; muleFollow
 				(= local6 0)
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 					setCycle: Walk
 					setLoop: -1

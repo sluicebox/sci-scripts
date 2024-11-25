@@ -57,12 +57,12 @@
 				(TPrint ; "What's she doing now, Agent Smith?"
 					690
 					1
-					67
+					#at
 					-1
 					28
-					80
+					#title
 					{Inspector Desmond}
-					108
+					#dispose
 					self
 				)
 			)
@@ -71,9 +71,9 @@
 			)
 			(4
 				(if (IsFlag 20) ; fChampagneSolution
-					(TPrint 690 2 67 -1 28 80 {Agent Smith} 108 self) ; "Well, I dunno, Inspector Desmond, it's kinda hard to figure out. Either I'm picking up a lot of RF interference, or she's consuming way too much fluid!"
+					(TPrint 690 2 #at -1 28 #title {Agent Smith} #dispose self) ; "Well, I dunno, Inspector Desmond, it's kinda hard to figure out. Either I'm picking up a lot of RF interference, or she's consuming way too much fluid!"
 				else
-					(TPrint 690 3 67 -1 28 80 {Agent Smith} 108 self) ; "Well, I dunno, Inspector Desmond, it's kinda hard to figure out. Either she's in a tunnel somewhere near Baltimore, or she's dilated 3 cm!"
+					(TPrint 690 3 #at -1 28 #title {Agent Smith} #dispose self) ; "Well, I dunno, Inspector Desmond, it's kinda hard to figure out. Either she's in a tunnel somewhere near Baltimore, or she's dilated 3 cm!"
 				)
 			)
 			(5

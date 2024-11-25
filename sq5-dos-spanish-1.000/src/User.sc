@@ -10,7 +10,7 @@
 
 	(method (new)
 		(= type (= message (= modifiers (= y (= x (= claimed (= port 0)))))))
-		(GetEvent 32767 self)
+		(GetEvent evALL_EVENTS self)
 		(return self)
 	)
 )

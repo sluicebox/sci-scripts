@@ -61,7 +61,7 @@
 			(= gEgoGait 0) ; walking
 		)
 		(NormalEgo)
-		(gEgo illegalBits: -32766 init:)
+		(gEgo illegalBits: $8002 init:)
 		(if (IsFlag 149) ; fReturningSaurus
 			(= inOut 3)
 		)
@@ -143,7 +143,7 @@
 		(if (IsFlag 149) ; fReturningSaurus
 			(gEgo view: 4 loop: 1 cel: 0 posn: 143 140)
 			(NormalEgo)
-			(gEgo illegalBits: -32766)
+			(gEgo illegalBits: $8002)
 			((ScriptID 660 1) ; saurus
 				loop: 1
 				cel: 0

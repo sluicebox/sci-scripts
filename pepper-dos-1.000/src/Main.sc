@@ -295,7 +295,7 @@
 	global213 = 12
 	global214
 	; 215
-	global215
+	gDictionaryWord
 	global216
 	global217
 	global218 = 1
@@ -1441,7 +1441,7 @@
 		(SetCursor 996 0 0)
 		(if
 			(OneOf
-				global215
+				gDictionaryWord
 				8
 				9
 				12
@@ -1478,10 +1478,10 @@
 		)
 		(Message msgPUSH)
 		(= temp1502 (TwistyWindow new:))
-		(if (not (Message msgGET 801 1 0 global215 1 @temp1))
+		(if (not (Message msgGET 801 1 0 gDictionaryWord 1 @temp1))
 			(Format @temp1 {ERROR: Vocab word not defined!})
 		)
-		(if (== global215 58)
+		(if (== gDictionaryWord 58)
 			(gLongSong2 number: 927 setLoop: 1 play:)
 		)
 		((Print new:)

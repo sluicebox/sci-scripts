@@ -603,7 +603,7 @@
 					offControlsY: 152
 					optCel: 3
 				)
-				(gEgo illegalBits: -16384)
+				(gEgo illegalBits: $c000)
 				((ScriptID 172 0) posn: 9 96 init:) ; bitingRat
 			)
 			(2
@@ -659,7 +659,7 @@
 				(if (not local0)
 					(client setScript: 0)
 				else
-					(gEgo illegalBits: -16272)
+					(gEgo illegalBits: $c070)
 				)
 			)
 			(3

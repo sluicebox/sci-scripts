@@ -319,7 +319,7 @@
 			(0
 				(if (& (gEgo onControl: 1) $4000)
 					(gEgo
-						illegalBits: -20480
+						illegalBits: $b000
 						setAvoider: Avoid
 						setMotion: MoveTo 178 174 self
 					)

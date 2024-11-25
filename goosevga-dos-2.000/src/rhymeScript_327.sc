@@ -24,7 +24,7 @@
 				(HandsOff)
 				(gLongSong stop:)
 				(rhymeSync init: 11)
-				(global129 illegalBits: -32756)
+				(global129 illegalBits: $800c)
 				(gEgo setScript: watchRhyme)
 				(self setScript: goHome)
 				(= cycles 1)

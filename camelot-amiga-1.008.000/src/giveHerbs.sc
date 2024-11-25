@@ -41,7 +41,7 @@
 				else
 					(gTObj talkCue: self)
 					(proc58_1 206 1 206 2) ; "What, are you a merchant, too? What do I want with herbs? Ah, but they do smell good. In fact, they are so strongly aromatic, they might help disguise the smell of my fish."
-					(+= global120 2)
+					(+= gCopper 2)
 				)
 			)
 			(3

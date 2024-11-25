@@ -342,7 +342,7 @@
 
 	(method (init &tmp theScript)
 		(if (== (= theScript (gCurRoom script:)) dirtScript)
-			(gEgo illegalBits: -32768)
+			(gEgo illegalBits: $8000)
 			(theScript dispose:)
 		)
 		(gEgo hurtScript: 0)

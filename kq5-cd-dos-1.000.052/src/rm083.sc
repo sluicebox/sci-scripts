@@ -315,7 +315,7 @@
 				(if (!= ((gInventory at: 33) owner:) 83) ; Elf_Shoes
 					(HandsOn)
 					(gEgo
-						illegalBits: -32768
+						illegalBits: $8000
 						setMotion: MoveTo (- (gEgo x:) 5) (gEgo y:) self
 					)
 				else

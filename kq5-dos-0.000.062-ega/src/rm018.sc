@@ -35,7 +35,7 @@
 		(gEgo
 			offset: 3
 			view: 0
-			illegalBits: -32768
+			illegalBits: $8000
 			posn: 76 71
 			cycleSpeed: 0
 			setStep: 3 2

@@ -191,7 +191,7 @@
 			)
 			(RedrawMaze)
 			(Animate (gCast elements:) 0)
-			(gEgo illegalBits: -32768)
+			(gEgo illegalBits: $8000)
 			(HandsOn)
 			(gGame setCursor: gNormalCursor (HaveMouse))
 			(return)

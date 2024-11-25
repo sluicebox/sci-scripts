@@ -298,7 +298,7 @@
 					cel: 0
 					posn: 112 133
 					ignoreActors: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: End self
 				)
 				(chair
@@ -379,7 +379,7 @@
 					setPri: 9
 					setScale: Scaler 100 100 190 35
 					ignoreActors: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: End self
 				)
 			)

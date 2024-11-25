@@ -261,7 +261,7 @@
 			)
 			(3
 				(yeow play:)
-				(TPrint 150 0 67 -1 185) ; "Yooooooowwwwwww!!!!!!!!"
+				(TPrint 150 0 #at -1 185) ; "Yooooooowwwwwww!!!!!!!!"
 				(= seconds 3)
 			)
 			(4
@@ -270,13 +270,13 @@
 				(= ticks 10)
 			)
 			(5
-				(Say Silas_Scruemall_c 150 1 108 139 self) ; "You clumsy idiot! What a dolt!"
+				(Say Silas_Scruemall_c 150 1 #dispose #caller self) ; "You clumsy idiot! What a dolt!"
 			)
 			(6
 				(= ticks 123)
 			)
 			(7
-				(Say Silas_Scruemall_c 150 2 108 139 self) ; "Who hired this fool? Sexy women? Why even the sexiest woman in America wouldn't..."
+				(Say Silas_Scruemall_c 150 2 #dispose #caller self) ; "Who hired this fool? Sexy women? Why even the sexiest woman in America wouldn't..."
 			)
 			(8
 				(= ticks 123)
@@ -290,7 +290,7 @@
 				(= ticks 60)
 			)
 			(11
-				(TPrint 150 3 80 {Silas Scruemall} 67 -1 185 108) ; "Hey, wait a minute! Wait just a minute...."
+				(TPrint 150 3 #title {Silas Scruemall} #at -1 185 #dispose) ; "Hey, wait a minute! Wait just a minute...."
 				(= seconds 5)
 			)
 			(12
@@ -301,69 +301,69 @@
 				(light dispose:)
 				(gCurRoom style: 7 drawPic: 150 picture: 150 curPic: 150)
 				(gTheMusic number: 150 flags: 1 setLoop: -1 play:)
-				(Say Silas_Scruemall_a 150 4 108 139 self) ; "Mmmm," says Silas, thinking fast and furiously. "Uh, say buddy, er, nice leisure suit."
+				(Say Silas_Scruemall_a 150 4 #dispose #caller self) ; "Mmmm," says Silas, thinking fast and furiously. "Uh, say buddy, er, nice leisure suit."
 			)
 			(13
 				(= ticks 30)
 			)
 			(14
-				(Say Silas_Scruemall_a 150 5 108 139 self) ; "I'm sure I know you, uh, but what exactly is your name?"
+				(Say Silas_Scruemall_a 150 5 #dispose #caller self) ; "I'm sure I know you, uh, but what exactly is your name?"
 			)
 			(15
 				(= ticks 123)
 			)
 			(16
-				(Say You_a 150 6 108 139 self) ; ""Why, my name is Larry; Larry Laffer," you reply."
+				(Say You_a 150 6 #dispose #caller self) ; ""Why, my name is Larry; Larry Laffer," you reply."
 			)
 			(17
 				(= ticks 123)
 			)
 			(18
-				(Say Silas_Scruemall_a 150 7 108 139 self) ; "How quaint," he grumbles, "your first and middle names are exactly the same. Well, never mind about that. I have a proposal I'd like to make to you, Daffer. Now, here's the deal."
+				(Say Silas_Scruemall_a 150 7 #dispose #caller self) ; "How quaint," he grumbles, "your first and middle names are exactly the same. Well, never mind about that. I have a proposal I'd like to make to you, Daffer. Now, here's the deal."
 			)
 			(19
 				(= ticks 30)
 			)
 			(20
-				(Say Silas_Scruemall_a 150 8 108 139 self) ; "You see, Luffner, I've got to find a hostess for our new television show."
+				(Say Silas_Scruemall_a 150 8 #dispose #caller self) ; "You see, Luffner, I've got to find a hostess for our new television show."
 			)
 			(21
 				(= ticks 123)
 			)
 			(22
-				(Say You_a 150 9 108 139 self) ; "Yes, I know," you offer proudly, "I'm the Chief Tape Rewinder and Sterilizer on this project!"
+				(Say You_a 150 9 #dispose #caller self) ; "Yes, I know," you offer proudly, "I'm the Chief Tape Rewinder and Sterilizer on this project!"
 			)
 			(23
 				(= ticks 30)
 			)
 			(24
-				(TPrint 150 10 67 -1 185) ; "(You conveniently neglect to mention the "Betamax Division" portion of your job description!)"
+				(TPrint 150 10 #at -1 185) ; "(You conveniently neglect to mention the "Betamax Division" portion of your job description!)"
 				(= seconds 3)
 			)
 			(25
-				(Say Silas_Scruemall_a 150 11 108 139 self) ; "And a fine job you're doing (I suppose). Well, Larcher, we've used those audition tapes to narrow the field down to three finalists, but we're, uh, um," he stumbles, "too ah, busy to hold their auditions here!"
+				(Say Silas_Scruemall_a 150 11 #dispose #caller self) ; "And a fine job you're doing (I suppose). Well, Larcher, we've used those audition tapes to narrow the field down to three finalists, but we're, uh, um," he stumbles, "too ah, busy to hold their auditions here!"
 			)
 			(26
 				(= ticks 30)
 			)
 			(27
-				(Say Silas_Scruemall_a 150 12 108 139 self) ; "So I want you to visit them in their, ah, `home environments;' see them in their `natural habitat,' so to speak; catch them `au naturale' if you can."
+				(Say Silas_Scruemall_a 150 12 #dispose #caller self) ; "So I want you to visit them in their, ah, `home environments;' see them in their `natural habitat,' so to speak; catch them `au naturale' if you can."
 			)
 			(28
 				(= ticks 30)
 			)
 			(29
-				(TPrint 150 13 67 -1 185) ; "(You understand many of the words in that last sentence.)"
+				(TPrint 150 13 #at -1 185) ; "(You understand many of the words in that last sentence.)"
 				(= seconds 3)
 			)
 			(30
-				(Say Silas_Scruemall_a 150 14 108 139 self) ; "You do know how to audition girls, don't you, Loafer?"
+				(Say Silas_Scruemall_a 150 14 #dispose #caller self) ; "You do know how to audition girls, don't you, Loafer?"
 			)
 			(31
 				(= ticks 123)
 			)
 			(32
-				(Say You_a 150 15 108 139 self) ; "What? Audition three women? No problem, boss, I'm your guy!"
+				(Say You_a 150 15 #dispose #caller self) ; "What? Audition three women? No problem, boss, I'm your guy!"
 			)
 			(33
 				(= ticks 30)
@@ -373,13 +373,13 @@
 				(= seconds 3)
 			)
 			(35
-				(Say Silas_Scruemall_a 150 17 108 139 self) ; "But, Loaner, if you tell them who you are, or of your powerful position here at PPC, it could easily invalidate the data. We want to see their reactions to a nice, normal guy like you, Lenny."
+				(Say Silas_Scruemall_a 150 17 #dispose #caller self) ; "But, Loaner, if you tell them who you are, or of your powerful position here at PPC, it could easily invalidate the data. We want to see their reactions to a nice, normal guy like you, Lenny."
 			)
 			(36
 				(= ticks 30)
 			)
 			(37
-				(Say Silas_Scruemall_a 150 18 108 139 self) ; "I must be certain you don't `take advantage' of the situation. So, take this."
+				(Say Silas_Scruemall_a 150 18 #dispose #caller self) ; "I must be certain you don't `take advantage' of the situation. So, take this."
 			)
 			(38
 				(larryCam init:)
@@ -387,26 +387,26 @@
 				(= ticks 123)
 			)
 			(39
-				(Say You_a 150 19 108 139 self) ; "Wow, Mr. Scruemall," you say, unable to contain your excitement, "I can always use another pocket protector. Mine's getting really vintage!"
+				(Say You_a 150 19 #dispose #caller self) ; "Wow, Mr. Scruemall," you say, unable to contain your excitement, "I can always use another pocket protector. Mine's getting really vintage!"
 			)
 			(40
 				(= seconds 3)
 			)
 			(41
-				(Say Silas_Scruemall_a 150 20 108 139 self) ; "Lipper, you fool! This is no ordinary pocket protector! It's a brand new, imported, miniaturized, .5 lux, Rob Lowe Model 'Complete Video Studio' merely disguised as some dork's Pocket Protector!"
+				(Say Silas_Scruemall_a 150 20 #dispose #caller self) ; "Lipper, you fool! This is no ordinary pocket protector! It's a brand new, imported, miniaturized, .5 lux, Rob Lowe Model 'Complete Video Studio' merely disguised as some dork's Pocket Protector!"
 			)
 			(42
 				(= ticks 123)
 			)
 			(43
 				(You_a talkWidth: 160)
-				(Say You_a 150 21 108 139 self) ; ""I knew that," you pretend."
+				(Say You_a 150 21 #dispose #caller self) ; ""I knew that," you pretend."
 			)
 			(44
 				(= seconds 3)
 			)
 			(45
-				(Say Silas_Scruemall_a 150 22 108 139 self) ; "You must never let a `client' suspect you are filming them or that you represent the show! They must each think of you only as plain Larry, Larry Limper!"
+				(Say Silas_Scruemall_a 150 22 #dispose #caller self) ; "You must never let a `client' suspect you are filming them or that you represent the show! They must each think of you only as plain Larry, Larry Limper!"
 			)
 			(46
 				(= ticks 123)
@@ -414,40 +414,40 @@
 			(47
 				(larryCam dispose:)
 				(You_a talkWidth: 240)
-				(Say You_a 150 23 108 139 self) ; ""I can handle it, Sir," you say excitedly."
+				(Say You_a 150 23 #dispose #caller self) ; ""I can handle it, Sir," you say excitedly."
 			)
 			(48
 				(= seconds 3)
 			)
 			(49
-				(Say Silas_Scruemall_a 150 24 108 139 self) ; ""I hope so. If you can pull this off, Lipper, I promise you a really big promotion: perhaps even to Assistant Associate Director! What do you think of that?"
+				(Say Silas_Scruemall_a 150 24 #dispose #caller self) ; ""I hope so. If you can pull this off, Lipper, I promise you a really big promotion: perhaps even to Assistant Associate Director! What do you think of that?"
 			)
 			(50
 				(= ticks 30)
 			)
 			(51
-				(TPrint 150 25 67 -1 20) ; "You think, "Wow! This could be the big break I've been hoping for!""
+				(TPrint 150 25 #at -1 20) ; "You think, "Wow! This could be the big break I've been hoping for!""
 				(You_a talkWidth: 240)
-				(Say You_a 150 26 108 139 self) ; "I promise to give it everything I've got!"
+				(Say You_a 150 26 #dispose #caller self) ; "I promise to give it everything I've got!"
 			)
 			(52
 				(= ticks 123)
 			)
 			(53
-				(Say Silas_Scruemall_a 150 27 108 139 self) ; "Good. I really want you to take charge, Larry. Take whatever you need from here in the office; you're really on your own. I'll look forward to personally viewing those audition tapes when you return."
+				(Say Silas_Scruemall_a 150 27 #dispose #caller self) ; "Good. I really want you to take charge, Larry. Take whatever you need from here in the office; you're really on your own. I'll look forward to personally viewing those audition tapes when you return."
 			)
 			(54
 				(= ticks 30)
 			)
 			(55
-				(Say Silas_Scruemall_a 150 28 108 139 self) ; "But remember: because this little guy is such a new model and because it's so tiny, its recording time and battery life are severely limited! Be sure you recharge after every girl!"
+				(Say Silas_Scruemall_a 150 28 #dispose #caller self) ; "But remember: because this little guy is such a new model and because it's so tiny, its recording time and battery life are severely limited! Be sure you recharge after every girl!"
 			)
 			(56
 				(= ticks 123)
 			)
 			(57
-				(TPrint 150 29 67 -1 20) ; "Heh, heh. Always a good idea," you think."
-				(Say Silas_Scruemall_a 150 30 108 139 self) ; "Okay, Wopner, you've got one, maybe two days max! You'd better grab the girls' bios and get going!"
+				(TPrint 150 29 #at -1 20) ; "Heh, heh. Always a good idea," you think."
+				(Say Silas_Scruemall_a 150 30 #dispose #caller self) ; "Okay, Wopner, you've got one, maybe two days max! You'd better grab the girls' bios and get going!"
 				(SetFlag 7) ; fBeenIn150
 			)
 			(58
@@ -462,7 +462,7 @@
 				(= seconds 3)
 			)
 			(61
-				(TPrint 150 32 67 -1 185) ; "(Of course, something makes you think you've had that thought before!)"
+				(TPrint 150 32 #at -1 185) ; "(Of course, something makes you think you've had that thought before!)"
 				(gCurRoom newRoom: 155) ; passwordTest
 			)
 		)

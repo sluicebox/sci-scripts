@@ -334,7 +334,7 @@
 					setCycle: Walk
 					cycleSpeed: 0
 					setPri: -1
-					illegalBits: -32768
+					illegalBits: $8000
 					setAvoider: ((Avoid new:) offScreenOK: 1)
 					ignoreActors: 0
 					setMotion: MoveTo 69 109 self

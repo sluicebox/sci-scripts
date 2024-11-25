@@ -168,7 +168,7 @@
 				(= cycles 2)
 			)
 			(1
-				(Say Vinnie_b 120 0 108 139 self) ; "As you know, ever since LPs came out back in the 50s, our recording industry subliminal message campaign, `Just Do Drugs,' has been a resounding success."
+				(Say Vinnie_b 120 0 #dispose #caller self) ; "As you know, ever since LPs came out back in the 50s, our recording industry subliminal message campaign, `Just Do Drugs,' has been a resounding success."
 			)
 			(2
 				(= ticks 123)
@@ -178,20 +178,20 @@
 				(= cycles 2)
 			)
 			(4
-				(Say Vinnie_b 120 1 108 139 self) ; "Drug sales have never been better, and prices remain firm as this slide shows."
+				(Say Vinnie_b 120 1 #dispose #caller self) ; "Drug sales have never been better, and prices remain firm as this slide shows."
 			)
 			(5
 				(= ticks 60)
 			)
 			(6
-				(Say Vinnie_b 120 2 108 139 self) ; "Discounting our disastrous push to quadraphonic, results have been most gratifying."
+				(Say Vinnie_b 120 2 #dispose #caller self) ; "Discounting our disastrous push to quadraphonic, results have been most gratifying."
 			)
 			(7
 				(= ticks 60)
 			)
 			(8
 				(Vinnie_b talkWidth: 120)
-				(Say Vinnie_b 120 3 108 139 self) ; "Now to you, Bruno."
+				(Say Vinnie_b 120 3 #dispose #caller self) ; "Now to you, Bruno."
 			)
 			(9
 				(bossHand
@@ -211,7 +211,7 @@
 				(= cycles 5)
 			)
 			(11
-				(Say Bruno_b 120 4 108 139 self) ; "Thanks, Vinnie. Boss, as you know, our pornography division also enjoyed a period of explosive growth as this slide shows."
+				(Say Bruno_b 120 4 #dispose #caller self) ; "Thanks, Vinnie. Boss, as you know, our pornography division also enjoyed a period of explosive growth as this slide shows."
 			)
 			(12
 				(= ticks 60)
@@ -221,19 +221,19 @@
 				(= cycles 2)
 			)
 			(14
-				(Say Bruno_b 120 5 108 139 self) ; "Unfortunately, after a quarter century of positive ROI, recent results have been flaccid."
+				(Say Bruno_b 120 5 #dispose #caller self) ; "Unfortunately, after a quarter century of positive ROI, recent results have been flaccid."
 			)
 			(15
 				(= ticks 60)
 			)
 			(16
-				(Say Bruno_b 120 6 108 139 self) ; "We attempted to counter this trend with a heavy investment in rap music, thinking teenagers' continuous exposure to pornographic lyrics would help sales of our wider product line."
+				(Say Bruno_b 120 6 #dispose #caller self) ; "We attempted to counter this trend with a heavy investment in rap music, thinking teenagers' continuous exposure to pornographic lyrics would help sales of our wider product line."
 			)
 			(17
 				(= ticks 60)
 			)
 			(18
-				(Say Bruno_b 120 7 108 139 self) ; "But the result is obvious: painfully declining penetration!"
+				(Say Bruno_b 120 7 #dispose #caller self) ; "But the result is obvious: painfully declining penetration!"
 			)
 			(19
 				(= ticks 60)
@@ -252,25 +252,25 @@
 				(= cycles 5)
 			)
 			(22
-				(Say Bruno_b 120 8 108 139 self) ; "Our market research failed to foresee the widespread growth of cable!"
+				(Say Bruno_b 120 8 #dispose #caller self) ; "Our market research failed to foresee the widespread growth of cable!"
 			)
 			(23
 				(= ticks 60)
 			)
 			(24
-				(Say Bruno_b 120 9 108 139 self) ; "Even when we forced through rapidly reduced VCR prices in the early 80s it just didn't help our X-rated movie sales--no one buys them!"
+				(Say Bruno_b 120 9 #dispose #caller self) ; "Even when we forced through rapidly reduced VCR prices in the early 80s it just didn't help our X-rated movie sales--no one buys them!"
 			)
 			(25
 				(= ticks 60)
 			)
 			(26
-				(Say Bruno_b 120 10 108 139 self) ; "Why should they, when they can use their remote controls to flip through channel after channel of almost the same stuff in the comfort of their own homes?"
+				(Say Bruno_b 120 10 #dispose #caller self) ; "Why should they, when they can use their remote controls to flip through channel after channel of almost the same stuff in the comfort of their own homes?"
 			)
 			(27
 				(= ticks 60)
 			)
 			(28
-				(Say Bruno_b 120 11 108 139 self) ; "Now even the networks are getting into the act!"
+				(Say Bruno_b 120 11 #dispose #caller self) ; "Now even the networks are getting into the act!"
 			)
 			(29
 				(= ticks 60)

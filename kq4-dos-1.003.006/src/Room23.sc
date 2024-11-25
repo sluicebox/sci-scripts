@@ -340,7 +340,7 @@
 			)
 			(3
 				(HandsOn)
-				(gEgo illegalBits: -32768 setCycle: Walk view: 2)
+				(gEgo illegalBits: $8000 setCycle: Walk view: 2)
 				(gEgo setScript: 0)
 			)
 		)
@@ -376,7 +376,7 @@
 				(gEgo view: 21 loop: 2 cel: 4 setCycle: Beg self)
 			)
 			(3
-				(gEgo illegalBits: -32768 setCycle: Walk view: 2)
+				(gEgo illegalBits: $8000 setCycle: Walk view: 2)
 				(HandsOn)
 				(gEgo setScript: 0)
 			)

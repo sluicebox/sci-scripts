@@ -359,7 +359,7 @@
 				(gTObj actor: hunter)
 				(Talk 11 34) ; "'Tis done. But be warned, m'lord, the spear draws its power from the Forest itself and cannot be taken away from it."
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 					get: 8 ; boar_spear | grain | medallion
 					setScript: 0
@@ -816,7 +816,7 @@
 			)
 			(4
 				(HandsOn)
-				(gEgo illegalBits: -32768 ignoreActors: 0)
+				(gEgo illegalBits: $8000 ignoreActors: 0)
 				(self dispose:)
 			)
 		)

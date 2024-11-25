@@ -466,7 +466,7 @@
 		)
 		(repeat
 			(temp0 type: evNULL message: JOY_NULL modifiers: $0000 y: 0 x: 0 claimed: 0 port: 0)
-			(GetEvent 32767 temp0)
+			(GetEvent evALL_EVENTS temp0)
 			(temp0 localize:)
 			(if (& (temp0 type:) evMOUSEKEYBOARD)
 				(if

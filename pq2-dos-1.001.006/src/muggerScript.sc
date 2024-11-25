@@ -592,7 +592,7 @@
 			)
 			(19
 				(= local0 0)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(global112 dispose:)
 				(local2 dispose:)
 				(= global212 1)

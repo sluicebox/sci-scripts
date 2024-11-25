@@ -72,7 +72,7 @@
 				(= ticks 30)
 			)
 			(2
-				(TPrint 920 1 80 {Chi Chi}) ; "Come on, my little Tito Puente," she cries, "I am ready and waiting!"
+				(TPrint 920 1 #title {Chi Chi}) ; "Come on, my little Tito Puente," she cries, "I am ready and waiting!"
 				(= ticks 90)
 			)
 			(3
@@ -98,7 +98,7 @@
 				(gTheMusic2 number: 913 loop: 1 play:)
 				(gEgo cycleSpeed: register setLoop: 1 setCel: 0 posn: 85 82)
 				(rope show: setCycle: End)
-				(Say gEgo 920 2 67 -1 28 108) ; "UGH!"
+				(Say gEgo 920 2 #at -1 28 #dispose) ; "UGH!"
 				(ShakeScreen 5 ssUPDOWN)
 				(= ticks 90)
 			)
@@ -161,7 +161,7 @@
 				(= seconds 4)
 			)
 			(16
-				(TPrint 920 3 67 -1 15 70 280 80 {Chi Chi}) ; "Oh, Larry!" cries Chi Chi, "I bet you've never done it THIS way!"
+				(TPrint 920 3 #at -1 15 #width 280 #title {Chi Chi}) ; "Oh, Larry!" cries Chi Chi, "I bet you've never done it THIS way!"
 				(chiChi setLoop: 1 setCel: 0 cycleSpeed: 18 setCycle: End self)
 			)
 			(17
@@ -174,7 +174,7 @@
 				(gEgo show: setCycle: CT 4 1 self)
 			)
 			(20
-				(TPrint 920 4 67 -1 28 80 {Chi Chi}) ; "Larry! Watch out for my trampoline!"
+				(TPrint 920 4 #at -1 28 #title {Chi Chi}) ; "Larry! Watch out for my trampoline!"
 				(gEgo setCycle: CT 10 1 self)
 			)
 			(21
@@ -183,7 +183,7 @@
 			)
 			(22
 				(gTheMusic2 number: 913 loop: 1 play:)
-				(Say gEgo 920 5 80 {You} 67 -1 28 108) ; "ARGGHH!"
+				(Say gEgo 920 5 #title {You} #at -1 28 #dispose) ; "ARGGHH!"
 				(gEgo hide:)
 				(crack
 					show:
@@ -256,7 +256,7 @@
 				(= ticks 90)
 			)
 			(33
-				(TPrint 920 6 80 {Chi Chi} 67 -1 15 70 280) ; "Now it's your turn, Larry!" says Chi Chi, the blood rushing to her brain. "Come and get it, Big Fella!"
+				(TPrint 920 6 #title {Chi Chi} #at -1 15 #width 280) ; "Now it's your turn, Larry!" says Chi Chi, the blood rushing to her brain. "Come and get it, Big Fella!"
 				(= ticks 90)
 			)
 			(34
@@ -278,7 +278,7 @@
 			)
 			(38
 				(gTheMusic2 number: 914 loop: 1 play:)
-				(Say gEgo 920 7 80 {You} 67 -1 28 108) ; "AAWWWH!"
+				(Say gEgo 920 7 #title {You} #at -1 28 #dispose) ; "AAWWWH!"
 				(ShakeScreen 5 ssLEFTRIGHT)
 				(= ticks 90)
 			)
@@ -321,7 +321,7 @@
 					(RecordTape 4)
 					(Points 20 167)
 					(TPrint 920 9) ; "Well, at least you recorded Chi Chi on your videotape. The boys in the office will be proud of you!"
-					(TPrint 920 10 67 -1 185) ; "(But so much for those fantasies you've had about you and gymnasts!)"
+					(TPrint 920 10 #at -1 185) ; "(But so much for those fantasies you've had about you and gymnasts!)"
 				else
 					(TPrint 920 11) ; "What a shame you didn't get that scene on tape!"
 				)

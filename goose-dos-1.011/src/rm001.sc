@@ -311,9 +311,9 @@
 				(= cycles 2)
 			)
 			(11
-				(jack illegalBits: -32768 ignoreActors: 0)
-				(jill illegalBits: -32768 ignoreActors: 0)
-				(gEgo illegalBits: -32768 ignoreActors: 0)
+				(jack illegalBits: $8000 ignoreActors: 0)
+				(jill illegalBits: $8000 ignoreActors: 0)
+				(gEgo illegalBits: $8000 ignoreActors: 0)
 			)
 			(12
 				(gGlobalMGSound number: 1 loop: -1)

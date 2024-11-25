@@ -213,13 +213,13 @@
 						(gEgo inRect: 152 77 176 109)
 						(gEgo inRect: 159 109 184 142)
 					)
-					(gEgo setPri: 10 illegalBits: 8192)
+					(gEgo setPri: 10 illegalBits: $2000)
 					(if (== global131 13)
 						(global112 stopUpd:)
 					)
 				)
 				((< (gEgo y:) 83)
-					(gEgo setPri: 7 illegalBits: -32768)
+					(gEgo setPri: 7 illegalBits: $8000)
 					(if (== global131 13)
 						(global112 stopUpd:)
 					)
@@ -233,7 +233,7 @@
 					else
 						(gEgo setPri: -1)
 					)
-					(gEgo illegalBits: -32768)
+					(gEgo illegalBits: $8000)
 				)
 			)
 			(if (== global100 12)
@@ -936,7 +936,7 @@
 		(if (== global131 13)
 			((= global112 keithAct)
 				view: 20
-				illegalBits: -32768
+				illegalBits: $8000
 				setCycle: Walk
 				setAvoider: (Avoid new:)
 				setMotion: Follow gEgo 500

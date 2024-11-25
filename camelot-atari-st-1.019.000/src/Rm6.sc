@@ -767,7 +767,7 @@
 					setLoop: -1
 					setCel: -1
 					loop: 1
-					illegalBits: -4096
+					illegalBits: $f000
 					ignoreActors: 0
 				)
 				(gwen setLoop: 1 setCel: 0)
@@ -807,7 +807,7 @@
 					setLoop: -1
 					setCel: -1
 					loop: 1
-					illegalBits: -4096
+					illegalBits: $f000
 					ignoreActors: 0
 				)
 				(gwen setLoop: 1 setCel: 0)
@@ -858,7 +858,7 @@
 				(if local3
 					(localproc_0 6 22) ; "Wear it next to your heart. In time of need, it will guide you through danger if you recite the Message of the Rose."
 				)
-				(gEgo get: 4 illegalBits: -32768) ; rose | apple | green_apple
+				(gEgo get: 4 illegalBits: $8000) ; rose | apple | green_apple
 				(SetFlag 12)
 				(HandsOn)
 				(client setScript: 0)

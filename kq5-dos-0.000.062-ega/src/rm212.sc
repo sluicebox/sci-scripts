@@ -80,7 +80,7 @@
 			view: 0
 			setPri: -1
 			offset: 3
-			illegalBits: -32768
+			illegalBits: $8000
 			setStep: 3 2
 			init:
 		)

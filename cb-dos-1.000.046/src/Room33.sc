@@ -90,7 +90,7 @@
 		(rDoor cel: (if (== gPrevRoomNum 4) 2 else 0) init: stopUpd:)
 		(lDoor cel: (if (== gPrevRoomNum 4) 2 else 0) stopUpd: init:)
 		(self setFeatures: phone lamp Case2 Case1)
-		(gEgo view: 0 illegalBits: -32762 init:)
+		(gEgo view: 0 illegalBits: $8006 init:)
 		(switch gPrevRoomNum
 			(4
 				(rDoor setCycle: Beg)
@@ -297,7 +297,7 @@
 			)
 			(2
 				(Clock stopUpd:)
-				(gEgo illegalBits: -32762)
+				(gEgo illegalBits: $8006)
 				(HandsOn)
 				(client setScript: 0)
 			)
@@ -381,7 +381,7 @@
 				(mySound number: 72 loop: 1 play:)
 			)
 			(2
-				(gEgo illegalBits: -32762)
+				(gEgo illegalBits: $8006)
 				(Mirror stopUpd:)
 				(HandsOn)
 				(client setScript: 0)

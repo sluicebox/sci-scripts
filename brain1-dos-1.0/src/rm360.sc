@@ -753,7 +753,7 @@
 	(method (doit &tmp temp0 temp1 temp2 temp3 temp4 temp5 temp6 temp7 temp8 [temp9 2])
 		(super doit: &rest)
 		(if (= temp4 (client curPiece:))
-			(= temp1 (Event new: -1))
+			(= temp1 (Event new: $ffff)) ; evPEEK | evALL_EVENTS
 			(temp1 localize:)
 			(= temp2 (temp1 x:))
 			(= temp3 (temp1 y:))

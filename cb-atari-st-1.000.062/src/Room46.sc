@@ -104,11 +104,11 @@
 			)
 		)
 		(if (!= gPrevRoomNum 49)
-			(gEgo view: 0 illegalBits: -32764 posn: 304 101 init:)
+			(gEgo view: 0 illegalBits: $8004 posn: 304 101 init:)
 		else
 			(gEgo
 				view: 0
-				illegalBits: -32768
+				illegalBits: $8000
 				setPri: 2
 				loop: 2
 				posn: 152 79
@@ -224,7 +224,7 @@
 				)
 			)
 			(2
-				(gEgo setPri: -1 illegalBits: -32764)
+				(gEgo setPri: -1 illegalBits: $8004)
 				(panel setMotion: MoveTo 155 84 self)
 				(myMusic number: 75 loop: 1 play:)
 			)
@@ -252,11 +252,11 @@
 				(if (gEgo inRect: 150 87 154 90)
 					(= cycles 1)
 				else
-					(gEgo illegalBits: -32768 setMotion: MoveTo 152 85 self)
+					(gEgo illegalBits: $8000 setMotion: MoveTo 152 85 self)
 				)
 			)
 			(2
-				(gEgo illegalBits: -32768 setMotion: MoveTo 154 79 self)
+				(gEgo illegalBits: $8000 setMotion: MoveTo 154 79 self)
 			)
 			(3
 				(gEgo setPri: 2)

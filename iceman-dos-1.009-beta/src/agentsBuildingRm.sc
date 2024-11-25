@@ -88,7 +88,7 @@
 		(gEgo init:)
 		(switch gPrevRoomNum
 			(east
-				(gEgo posn: 310 (gEgo y:) loop: 1 illegalBits: -32768)
+				(gEgo posn: 310 (gEgo y:) loop: 1 illegalBits: $8000)
 				(door stopUpd:)
 			)
 			(else
@@ -101,7 +101,7 @@
 			)
 		)
 		(if (not (gEgo has: 6)) ; Tahiti: Earring | Sub: Diver | Tunisia: Key
-			(gEgo illegalBits: -32766)
+			(gEgo illegalBits: $8002)
 		)
 	)
 
@@ -115,7 +115,7 @@
 	)
 
 	(method (dispose)
-		(gEgo illegalBits: -32768)
+		(gEgo illegalBits: $8000)
 		(super dispose:)
 	)
 )

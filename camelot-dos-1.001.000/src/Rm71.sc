@@ -64,7 +64,7 @@
 	)
 	(gEgo put: local4 gCurRoomNum)
 	(= local4 0)
-	(gEgo illegalBits: -16128 setLoop: -1 setPri: -1)
+	(gEgo illegalBits: $c100 setLoop: -1 setPri: -1)
 	(HandsOn)
 )
 
@@ -663,7 +663,7 @@
 				)
 			)
 			(2
-				(gEgo illegalBits: -16128 setLoop: 2)
+				(gEgo illegalBits: $c100 setLoop: 2)
 				(cond
 					((and (not local2) (gEgo has: 8)) ; boar_spear | grain | medallion
 						(self setScript: getScared self)
@@ -722,7 +722,7 @@
 						(gEgo get: 2) ; lodestone
 						(HandsOn)
 					)
-					(gEgo illegalBits: -16128 setLoop: -1 setPri: -1)
+					(gEgo illegalBits: $c100 setLoop: -1 setPri: -1)
 					(= local3 0)
 					(= global109 0)
 					(self dispose:)
@@ -946,7 +946,7 @@
 		(switch (= state newState)
 			(1
 				(HandsOff)
-				(gEgo illegalBits: -2)
+				(gEgo illegalBits: $fffe)
 				(leftDoor
 					setLoop: 0
 					setPri: 0

@@ -148,7 +148,7 @@
 				(gEgo setMotion: MoveTo 151 162 self)
 			)
 			(2
-				(gEgo setLoop: -1 setPri: -1 illegalBits: -32768)
+				(gEgo setLoop: -1 setPri: -1 illegalBits: $8000)
 				(HandsOn)
 				(if global182
 					(Print 62 1) ; "My, my, this is one hot planet! But you don't care, you're beating the heat with ThermoWeave underwear."

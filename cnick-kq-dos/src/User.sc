@@ -57,7 +57,7 @@
 			sel_73: 0
 			sel_146: 0
 		)
-		(GetEvent 32767 sel_317)
+		(GetEvent evALL_EVENTS sel_317)
 		(self sel_132: sel_317)
 	)
 

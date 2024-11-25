@@ -42,7 +42,7 @@
 		(= horizon 126)
 		(= gIndoors 0)
 		(HandsOn)
-		(gEgo edgeHit: EDGE_NONE illegalBits: -32768)
+		(gEgo edgeHit: EDGE_NONE illegalBits: $8000)
 		(if (== (gGSound state:) 3)
 			(gGSound play: -15536)
 		)
@@ -256,7 +256,7 @@
 			)
 			(3
 				(gCurRoom setScript: 0)
-				(gEgo illegalBits: -32768 setCycle: Walk view: 2)
+				(gEgo illegalBits: $8000 setCycle: Walk view: 2)
 				(if gNight
 					(gEgo observeControl: 16384)
 				)

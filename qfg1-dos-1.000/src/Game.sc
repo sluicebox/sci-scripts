@@ -209,7 +209,7 @@
 		(self startRoom: gCurRoomNum checkAni:)
 		(self setCursor: (if global104 gWaitCursor else gNormalCursor) (HaveMouse))
 		(SetSynonyms gRegions)
-		(while ((= temp4 (Event new: 3)) type:)
+		(while ((= temp4 (Event new: evMOUSE)) type:)
 			(temp4 dispose:)
 		)
 		(temp4 dispose:)

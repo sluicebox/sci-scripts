@@ -428,7 +428,7 @@
 					(= seenMsg 1)
 					(Print 540 34 #at 10 5 #width 290) ; "Patty, look out!! It's one of Nontoonyt Island's rare feral pigs, exercising his territorial rights -- right at you!"
 				)
-				(aPig illegalBits: -3 setMotion: Wander setPri: -1 setStep: 2 2)
+				(aPig illegalBits: $fffd setMotion: Wander setPri: -1 setStep: 2 2)
 			)
 			(3
 				(gMusic fade:)

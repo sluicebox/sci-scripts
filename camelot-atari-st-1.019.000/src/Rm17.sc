@@ -857,7 +857,7 @@
 
 	(method (init)
 		(super init:)
-		(gMuleObj illegalBits: -32768)
+		(gMuleObj illegalBits: $8000)
 	)
 
 	(method (doit &tmp [temp0 2])
@@ -904,7 +904,7 @@
 				)
 			)
 			(1
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(gCurRoom newRoom: (if local40 103 else 16))
 			)
 		)

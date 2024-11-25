@@ -71,7 +71,7 @@
 					(gEgo cel: 0 posn: 18 169 view: 11 normal: 0)
 					(self setScript: explode)
 				else
-					(gEgo illegalBits: -32768 posn: 16 157)
+					(gEgo illegalBits: $8000 posn: 16 157)
 					(HandsOn)
 				)
 			)
@@ -216,7 +216,7 @@
 				(gEgo setMotion: MoveTo 166 124 self)
 			)
 			(5
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HandsOn)
 				(self dispose:)
 			)

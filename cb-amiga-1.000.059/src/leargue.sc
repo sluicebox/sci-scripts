@@ -189,7 +189,7 @@
 					(Ethel
 						view: 325
 						setLoop: 0
-						illegalBits: -32768
+						illegalBits: $8000
 						posn: 295 121
 						setCycle: Walk
 						setAvoider: (Avoid new:)

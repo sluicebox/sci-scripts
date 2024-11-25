@@ -219,7 +219,7 @@
 					view: 10
 					setLoop: -1
 					cycleSpeed: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setStep: 3 2
 					setCycle: Walk
 					setPri: -1
@@ -255,7 +255,7 @@
 				(gEgo
 					view: 10
 					setLoop: -1
-					illegalBits: -32768
+					illegalBits: $8000
 					posn: (- (gEgo x:) 9) (- (gEgo y:) 13)
 					setCycle: Walk
 					cycleSpeed: 0

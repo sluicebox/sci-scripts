@@ -42,7 +42,7 @@
 				(gEgo setMotion: MoveTo 81 140 self)
 			)
 			(6
-				(gEgo setLoop: -1 setMotion: 0 illegalBits: -32768)
+				(gEgo setLoop: -1 setMotion: 0 illegalBits: $8000)
 				(= global151 2)
 				(HandsOn)
 				(client setScript: 0)

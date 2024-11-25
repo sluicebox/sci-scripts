@@ -46,7 +46,7 @@
 			(light1 init: setScript: showers)
 		)
 		(Door ignoreActors: 1 stopUpd: init:)
-		(gEgo view: 0 illegalBits: -32766)
+		(gEgo view: 0 illegalBits: $8002)
 		(self setFeatures: Window1 Window2)
 		(if (and (>= gAct 2) (< gAct 4))
 			(self setRegions: 202) ; EthelDrunk
@@ -76,7 +76,7 @@
 				else
 					(Door cel: (- (NumCels Door) 1))
 					(HandsOff)
-					(gEgo loop: 2 illegalBits: -32768 posn: 237 132)
+					(gEgo loop: 2 illegalBits: $8000 posn: 237 132)
 					(self setScript: exitDoor)
 				)
 			)
@@ -116,7 +116,7 @@
 				(if (== local2 1)
 					(= local2 0)
 					(User canControl: 1)
-					(gEgo illegalBits: -32768 setLoop: -1)
+					(gEgo illegalBits: $8000 setLoop: -1)
 				)
 			)
 			(8

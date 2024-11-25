@@ -661,7 +661,7 @@
 		(switch (= state newState)
 			(0
 				(HandsOff)
-				(gEgo illegalBits: -32768 setMotion: MoveTo 302 170 self)
+				(gEgo illegalBits: $8000 setMotion: MoveTo 302 170 self)
 			)
 			(1
 				((ScriptID 95 0) notify: 0) ; rm95
@@ -735,7 +735,7 @@
 			)
 			(3
 				(NormalEgo)
-				(gEgo illegalBits: -28672)
+				(gEgo illegalBits: $9000)
 				(= local3 1)
 				(HandsOn)
 				(self dispose:)
@@ -764,7 +764,7 @@
 			)
 			(2
 				(NormalEgo)
-				(gEgo illegalBits: -28672)
+				(gEgo illegalBits: $9000)
 				(HandsOn)
 				(self dispose:)
 			)

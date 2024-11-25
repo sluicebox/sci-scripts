@@ -178,7 +178,7 @@
 			)
 			(1
 				(= guardStatus 1)
-				(Say The_Guard 620 2 108) ; "Yes?" mumbles the sleepy guard, "You need somethin'?"
+				(Say The_Guard 620 2 #dispose) ; "Yes?" mumbles the sleepy guard, "You need somethin'?"
 				(HandsOn)
 				(Delay 6 2 self)
 			)
@@ -209,7 +209,7 @@
 				(self cue:)
 			)
 			(1
-				(Say The_Guard 620 5 108) ; "Honey, if you don't know where you're going, how am I supposed to know?"
+				(Say The_Guard 620 5 #dispose) ; "Honey, if you don't know where you're going, how am I supposed to know?"
 				(guard setLoop: 0 setCel: 0 setCycle: End self)
 			)
 			(2
@@ -251,37 +251,37 @@
 			(1
 				(cond
 					((IsFlag 45) ; fGuardKnows
-						(Say The_Guard 620 11 108) ; "Lady, I already told you: Reverse Biaz says, `you blew the gig when you split'--whatever that means!"
+						(Say The_Guard 620 11 #dispose) ; "Lady, I already told you: Reverse Biaz says, `you blew the gig when you split'--whatever that means!"
 						(HandsOn)
 						(guard setScript: sBackToSleep)
 						(self dispose:)
 					)
 					(datamanSolution
-						(Say The_Guard 620 12 108) ; "Hey, pretty cool! I was thinkin' about gettin' one of these for the little missus! Now, let's see... `Biaz?' `Suite 900?' Sure, no problem. I'll summon the elevator for you right now!"
+						(Say The_Guard 620 12 #dispose) ; "Hey, pretty cool! I was thinkin' about gettin' one of these for the little missus! Now, let's see... `Biaz?' `Suite 900?' Sure, no problem. I'll summon the elevator for you right now!"
 						(= datamanSolution 0)
 						(Points 6 118)
 					)
 					(wrongDataman
-						(Say The_Guard 620 13 108) ; "Hey, pretty cool! I was thinkin' about gettin' one of these for the little missus! Now, let's see... `P. C. Hammer?' I'm sorry, but there's nobody by that name in this building."
+						(Say The_Guard 620 13 #dispose) ; "Hey, pretty cool! I was thinkin' about gettin' one of these for the little missus! Now, let's see... `P. C. Hammer?' I'm sorry, but there's nobody by that name in this building."
 						(= wrongDataman 0)
 						(HandsOn)
 						(guard setScript: sBackToSleep)
 						(self dispose:)
 					)
 					(faxSolution
-						(Say The_Guard 620 14 108) ; "Kinda flimsy paper, ain't it? Well, let's see here... You know, it's hard to read this stuff; the text is all fuzzy-looking. Oh, here it is... `Biaz?' Why, he's in Suite 900. Sure, no problem. I'll summon the elevator for you right now!"
+						(Say The_Guard 620 14 #dispose) ; "Kinda flimsy paper, ain't it? Well, let's see here... You know, it's hard to read this stuff; the text is all fuzzy-looking. Oh, here it is... `Biaz?' Why, he's in Suite 900. Sure, no problem. I'll summon the elevator for you right now!"
 						(= faxSolution 0)
 						(Points 6 119)
 					)
 					(wrongFax
-						(Say The_Guard 620 15 108) ; "Kinda flimsy paper, ain't it? Well, let's see here... You know, it's hard to read this stuff; the text is all fuzzy-looking. Hmm... `P. C. Hammer?' Nah, they only let us use screwdrivers and pliers on the computers here!"
+						(Say The_Guard 620 15 #dispose) ; "Kinda flimsy paper, ain't it? Well, let's see here... You know, it's hard to read this stuff; the text is all fuzzy-looking. Hmm... `P. C. Hammer?' Nah, they only let us use screwdrivers and pliers on the computers here!"
 						(= wrongFax 0)
 						(HandsOn)
 						(guard setScript: sBackToSleep)
 						(self dispose:)
 					)
 					(else
-						(Say The_Guard 620 16 108) ; ""Huh? Oh, right. Give me just a second while I make sure he's in," sighs the overworked guard."
+						(Say The_Guard 620 16 #dispose) ; ""Huh? Oh, right. Give me just a second while I make sure he's in," sighs the overworked guard."
 						(SetFlag 48) ; fDirectorySol
 					)
 				)
@@ -307,13 +307,13 @@
 			)
 			(8
 				(if (IsFlag 21) ; fWarned
-					(Say The_Guard 620 17 108) ; "I'm sorry, but he says he's found someone else. Take a hike!"
+					(Say The_Guard 620 17 #dispose) ; "I'm sorry, but he says he's found someone else. Take a hike!"
 					(SetFlag 45) ; fGuardKnows
 					(HandsOn)
 					(guard setScript: sBackToSleep)
 					(self dispose:)
 				else
-					(Say The_Guard 620 18 108) ; "Okay, honey. He's waiting for you upstairs. I'm calling for the elevator for you right now."
+					(Say The_Guard 620 18 #dispose) ; "Okay, honey. He's waiting for you upstairs. I'm calling for the elevator for you right now."
 					(guard
 						cycleSpeed: 18
 						setLoop: 0
@@ -525,7 +525,7 @@
 									(gCurRoom setScript: sGuardApproves)
 								)
 								(else
-									(Say The_Guard 620 27 108) ; "I'm sorry, lady, but that don't mean nothing to me."
+									(Say The_Guard 620 27 #dispose) ; "I'm sorry, lady, but that don't mean nothing to me."
 									(guard setScript: sBackToSleep)
 								)
 							)
@@ -556,7 +556,7 @@
 			)
 			(3 ; Do
 				(if (== guardStatus 1)
-					(Say The_Guard 620 31 108) ; "Oh, Ma'am," sighs the guard, "that feels good!"
+					(Say The_Guard 620 31 #dispose) ; "Oh, Ma'am," sighs the guard, "that feels good!"
 				else
 					(TPrint 620 32) ; "The guard grumbles under his breath and goes back to sleep."
 				)
@@ -677,7 +677,7 @@
 		(return
 			(switch theVerb
 				(2 ; Look
-					(TPrint 620 36 67 -1 28) ; "Halloween Supplies is Baltimore's largest local supplier of Halloween goods and party supplies."
+					(TPrint 620 36 #at -1 28) ; "Halloween Supplies is Baltimore's largest local supplier of Halloween goods and party supplies."
 				)
 				(1 ; Walk
 					(gCurRoom setScript: sReturnsFromBoard)
@@ -706,7 +706,7 @@
 		(return
 			(switch theVerb
 				(2 ; Look
-					(TPrint 620 37 67 -1 28) ; "Hello Industries is one of the world's leading producers of greeting cards."
+					(TPrint 620 37 #at -1 28) ; "Hello Industries is one of the world's leading producers of greeting cards."
 				)
 				(1 ; Walk
 					(gCurRoom setScript: sReturnsFromBoard)
@@ -735,7 +735,7 @@
 		(return
 			(switch theVerb
 				(2 ; Look
-					(TPrint 620 38 67 -1 28) ; "Duck Youth is a wonderful public service organization that specializes in familiarizing inner-city youngsters with all varieties of barnyard and aquatic fowl."
+					(TPrint 620 38 #at -1 28) ; "Duck Youth is a wonderful public service organization that specializes in familiarizing inner-city youngsters with all varieties of barnyard and aquatic fowl."
 				)
 				(1 ; Walk
 					(gCurRoom setScript: sReturnsFromBoard)
@@ -766,12 +766,12 @@
 				(2 ; Look
 					(SetFlag 17) ; fSeenRBOffice
 					(Points 3 120)
-					(TPrint 620 39 67 -1 28) ; "That's it, Patti! "des Rever Records" is located in Room 900."
+					(TPrint 620 39 #at -1 28) ; "That's it, Patti! "des Rever Records" is located in Room 900."
 				)
 				(3 ; Do
 					(SetFlag 17) ; fSeenRBOffice
 					(Points 3 120)
-					(TPrint 620 39 67 -1 28) ; "That's it, Patti! "des Rever Records" is located in Room 900."
+					(TPrint 620 39 #at -1 28) ; "That's it, Patti! "des Rever Records" is located in Room 900."
 				)
 				(1 ; Walk
 					(gCurRoom setScript: sReturnsFromBoard)
@@ -800,7 +800,7 @@
 		(return
 			(switch theVerb
 				(2 ; Look
-					(TPrint 620 40 67 -1 28) ; "Ship Heads, Inc. provides the finest commodes available for ocean-going vessels."
+					(TPrint 620 40 #at -1 28) ; "Ship Heads, Inc. provides the finest commodes available for ocean-going vessels."
 				)
 				(1 ; Walk
 					(gCurRoom setScript: sReturnsFromBoard)
@@ -829,7 +829,7 @@
 		(return
 			(switch theVerb
 				(2 ; Look
-					(TPrint 620 41 67 -1 28) ; "AeroDork is a very high-class airline. So high-class their offices are forbidden to the public."
+					(TPrint 620 41 #at -1 28) ; "AeroDork is a very high-class airline. So high-class their offices are forbidden to the public."
 				)
 				(1 ; Walk
 					(gCurRoom setScript: sReturnsFromBoard)
@@ -887,7 +887,7 @@
 		(return
 			(switch theVerb
 				(2 ; Look
-					(TPrint 620 43 67 -1 28) ; "Hard Disk Services can handle all of your computer hardware needs--from correcting corrupted database files to undeleting sensitive information, to recovering formatted hard drives."
+					(TPrint 620 43 #at -1 28) ; "Hard Disk Services can handle all of your computer hardware needs--from correcting corrupted database files to undeleting sensitive information, to recovering formatted hard drives."
 				)
 				(1 ; Walk
 					(gCurRoom setScript: sReturnsFromBoard)

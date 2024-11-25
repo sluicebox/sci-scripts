@@ -41,7 +41,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 16)
+		(= gDictionaryWord 16)
 		(if (== theVerb 999) ; ???
 			(= theVerb 88) ; ???
 		)
@@ -266,14 +266,14 @@
 			(1
 				(cond
 					((and (> local1 1) (IsFlag 213))
-						(= global215 10)
+						(= gDictionaryWord 10)
 						(gMessager say: 14 85 9 0 self) ; "Please, lass, we may not have much time. Set me free, I |r||c0|beseech|c||r| thee."
 					)
 					(local2
 						(gMessager say: 14 85 10 0 self) ; "Prithee, lass--my, but thy clothing is odd! Oh, I am rude. I do not mean to offend, stranger. Prithee, have mercy!"
 					)
 					(local3
-						(= global215 39)
+						(= gDictionaryWord 39)
 						(gMessager say: 14 85 12 1 3 self) ; "If you haven't committed a crime, what are you doing with your head stuck in that thing?"
 					)
 					(local4
@@ -287,7 +287,7 @@
 			)
 			(2
 				(if (and (not local2) local3)
-					(= global215 38)
+					(= gDictionaryWord 38)
 					(gMessager say: 14 85 12 4 5 self) ; "Now he gives them ridiculous, silly advice, and they follow like a flock of sheep!"
 				else
 					(self cue:)
@@ -675,7 +675,7 @@
 				(= ticks 30)
 			)
 			(11
-				(= global215 53)
+				(= gDictionaryWord 53)
 				(gMessager say: 20 0 27 0 self) ; "Here now! I saw what you did! You let that criminal go!"
 			)
 			(12
@@ -1217,7 +1217,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 48)
+		(= gDictionaryWord 48)
 		(super doVerb: theVerb)
 	)
 )
@@ -1337,7 +1337,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 8)
+		(= gDictionaryWord 8)
 		(super doVerb: theVerb)
 	)
 )

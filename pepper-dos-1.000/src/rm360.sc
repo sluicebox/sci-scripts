@@ -40,7 +40,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(84 ; Trivia
-				(= global215 4)
+				(= gDictionaryWord 4)
 				(super doVerb: theVerb)
 			)
 			(else
@@ -773,7 +773,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(84 ; Trivia
-				(= global215 4)
+				(= gDictionaryWord 4)
 				(super doVerb: theVerb &rest)
 			)
 			(else
@@ -795,7 +795,7 @@
 				(gCurRoom setScript: sTalkHedges)
 			)
 			(84 ; Trivia
-				(= global215 97)
+				(= gDictionaryWord 97)
 				(gMessager say: 4 84) ; "TRUE. Ornamental hedges and |r||c0|topiary|c||r| were very popular in 18th century Europe. The idea was later exported to America. The palace at Versailles, France was particularly famous for its beautiful gardens."
 			)
 			(else
@@ -818,7 +818,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 4)
+		(= gDictionaryWord 4)
 		(super doVerb: theVerb)
 	)
 )
@@ -836,7 +836,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 4)
+		(= gDictionaryWord 4)
 		(super doVerb: theVerb)
 	)
 )
@@ -862,7 +862,7 @@
 				(gCurRoom setScript: sSneekTree3)
 			)
 			(84 ; Trivia
-				(= global215 4)
+				(= gDictionaryWord 4)
 				(super doVerb: theVerb)
 			)
 			(else
@@ -893,7 +893,7 @@
 				(gCurRoom setScript: sSneekTree4)
 			)
 			(84 ; Trivia
-				(= global215 4)
+				(= gDictionaryWord 4)
 				(super doVerb: theVerb)
 			)
 			(else

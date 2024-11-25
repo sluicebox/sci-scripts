@@ -78,7 +78,7 @@
 			(lamp1 init: stopUpd:)
 			(lamp2 init: stopUpd:)
 		)
-		(gEgo view: 0 posn: 304 122 illegalBits: -32760 init:)
+		(gEgo view: 0 posn: 304 122 illegalBits: $8008 init:)
 	)
 
 	(method (doit)

@@ -204,7 +204,7 @@
 				(= cycles 1)
 			)
 			(5
-				(= global215 74)
+				(= gDictionaryWord 74)
 				(fredTalker x: 42 y: 94 talkWidth: 170 tailPosn: 1)
 				(gMessager say: 12 0 7 1 self) ; ""Your confidence is inspiring, lad!" GAG ME!"
 			)
@@ -631,7 +631,7 @@
 				(= cycles 2)
 			)
 			(6
-				(= global215 74)
+				(= gDictionaryWord 74)
 				(gMessager say: 12 0 6 1 self) ; "Okay! This baby has enough power to zap that rotten girl into the |r||c0|Pleistocene|c||r| age! I'm gonna send her somewhere that she'll NEVER come back from! Ha ha ha! Here...it...comes!"
 			)
 			(7
@@ -687,7 +687,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 99)
+		(= gDictionaryWord 99)
 		(super doVerb: theVerb)
 	)
 )
@@ -710,7 +710,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 56)
+		(= gDictionaryWord 56)
 		(super doVerb: theVerb)
 	)
 )

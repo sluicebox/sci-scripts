@@ -426,7 +426,7 @@
 				(Jeeves
 					view: 440
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 					setMotion: PathOut self
 				)
 				(if (gEgo inRect: 106 77 137 113)
@@ -473,7 +473,7 @@
 				)
 			)
 			(2
-				(gEgo illegalBits: -32768 loop: 3)
+				(gEgo illegalBits: $8000 loop: 3)
 				(Door startUpd: cycleSpeed: 3 setCycle: End self)
 				(mySound number: 43 priority: 5 loop: 1 play:)
 			)

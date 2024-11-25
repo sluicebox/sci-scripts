@@ -264,7 +264,7 @@
 				(if (!= register 1)
 					(TPrint 20 0) ; "We're sorry, your call cannot be completed as dialed. Please hang up and try your call again. If you are having trouble, please hang up and dial your operator."
 					(TPrint 20 1) ; "This is a recording."
-					(TPrint 20 2 67 -1 185) ; "(As if you didn't know!)"
+					(TPrint 20 2 #at -1 185) ; "(As if you didn't know!)"
 					(= theLine 0)
 				else
 					(TPrint 20 3) ; "Thank you for using U. S. Sprint!"

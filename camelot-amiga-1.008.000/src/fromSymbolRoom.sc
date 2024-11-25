@@ -69,7 +69,7 @@
 				(gEgo
 					view: 62
 					loop: 1
-					illegalBits: -32764
+					illegalBits: $8004
 					cycler: 0
 					setCycle: Fwd
 				)

@@ -187,7 +187,7 @@
 					cel: 6
 					posn: 145 159
 					show:
-					illegalBits: -32768
+					illegalBits: $8000
 					cycleSpeed: 2
 					setCycle: Beg
 				)
@@ -512,7 +512,7 @@
 				(self dispose:)
 			)
 			(7
-				(gEgo illegalBits: -32768 view: 0 loop: 3)
+				(gEgo illegalBits: $8000 view: 0 loop: 3)
 				(NormalEgo)
 				(self dispose:)
 			)

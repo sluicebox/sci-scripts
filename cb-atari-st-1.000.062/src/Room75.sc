@@ -59,7 +59,7 @@
 				)
 				(gEgo posn: 80 188)
 			)
-			(gEgo view: 0 illegalBits: -32768)
+			(gEgo view: 0 illegalBits: $8000)
 		)
 		(paper init: stopUpd:)
 		((= gGate gate)
@@ -245,7 +245,7 @@
 					view: 0
 					loop: 1
 					cycleSpeed: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: Walk
 				)
 				(head dispose:)

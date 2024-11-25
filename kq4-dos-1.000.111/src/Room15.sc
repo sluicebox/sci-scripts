@@ -692,7 +692,7 @@
 					view: 225
 					cel: 0
 					setLoop: 2
-					illegalBits: -32256
+					illegalBits: $8200
 					init:
 				)
 				(gEgo view: 2)
@@ -791,7 +791,7 @@
 				(local3
 					view: 370
 					loop: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					cycleSpeed: 2
 					setCycle: Fwd
 				)

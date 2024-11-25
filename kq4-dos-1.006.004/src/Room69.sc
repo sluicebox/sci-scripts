@@ -135,7 +135,7 @@
 			loop: 0
 			ignoreActors: 1
 			setStep: 4 1
-			illegalBits: -32768
+			illegalBits: $8000
 			setPri: 11
 			init:
 		)
@@ -544,7 +544,7 @@
 					loop: 1
 					setPri: -1
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 				)
 				(self cue:)
@@ -607,7 +607,7 @@
 					posn: 80 87
 					setLoop: -1
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(User canControl: 1 canInput: 1)
 				(= state -1)
@@ -729,7 +729,7 @@
 					(= global182 1)
 					(gGame changeScore: 4)
 				)
-				(if (== global169 0)
+				(if (== gLolotteAlive 0)
 					(gGame changeScore: -2)
 				)
 				(gEgo setCycle: Beg self)
@@ -759,7 +759,7 @@
 			)
 			(1
 				(gEgo put: 4 69) ; Pandora_s_Box
-				(if (== global169 0)
+				(if (== gLolotteAlive 0)
 					(gSounds eachElementDo: #stop 0)
 					((Sound new:) number: 50 play:)
 					(gGame changeScore: 2)

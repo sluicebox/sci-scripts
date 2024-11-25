@@ -799,10 +799,10 @@
 					setCel: -1
 					setCycle: Walk
 					ignoreActors: 0
-					illegalBits: -24576
+					illegalBits: $a000
 					setMotion: MoveTo 204 164 self
 				)
-				(gEgo illegalBits: -32768 setLoop: -1)
+				(gEgo illegalBits: $8000 setLoop: -1)
 			)
 			(2
 				(HandsOn)
@@ -917,7 +917,7 @@
 				(gEgo illegalBits: 0 setMotion: MoveTo 162 134 self)
 			)
 			(12
-				(gEgo illegalBits: -32768 loop: 1 cel: 7)
+				(gEgo illegalBits: $8000 loop: 1 cel: 7)
 				(guard loop: 6 cel: 0 setCycle: End self)
 			)
 			(13
@@ -968,7 +968,7 @@
 				(= local13 0)
 				(local12 dispose:)
 				(guard ignoreActors: 0 show:)
-				(gEgo illegalBits: -32768 posn: 162 134 show:)
+				(gEgo illegalBits: $8000 posn: 162 134 show:)
 				(self cue:)
 			)
 			(19

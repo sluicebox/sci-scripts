@@ -44,7 +44,7 @@
 		)
 		(if (or (== gCurRoomNum global206) (IsFlag 20))
 			(gCurRoom setRegions: 116) ; muleReg
-			(gMuleObj illegalBits: -32762 setScript: muleFollow)
+			(gMuleObj illegalBits: $8006 setScript: muleFollow)
 		)
 	)
 
@@ -162,7 +162,7 @@
 					(= global124 0)
 				)
 				(if (IsFlag 20)
-					(gMuleObj illegalBits: -32762)
+					(gMuleObj illegalBits: $8006)
 				)
 				(gTObj endTalk:)
 				(if
@@ -265,7 +265,7 @@
 						setPri: -1
 						setMotion: 0
 						setCycle: Walk
-						illegalBits: -32768
+						illegalBits: $8000
 						cycleSpeed: 0
 						moveSpeed: 0
 						setStep: 3 2

@@ -72,7 +72,7 @@
 				(gEgo posn: 214 186)
 			)
 		)
-		(gEgo illegalBits: -32768 init:)
+		(gEgo illegalBits: $8000 init:)
 		(if (not (IsFlag 48))
 			(snake cycleSpeed: 4 cel: 0 init:)
 			(if (not (IsFlag 88))

@@ -102,7 +102,7 @@
 	)
 
 	(method (check &tmp temp0 temp1)
-		(= temp0 (Event new: 1024))
+		(= temp0 (Event new: $0400))
 		(= temp1
 			(if (temp0 type:)
 				(temp0 message:)

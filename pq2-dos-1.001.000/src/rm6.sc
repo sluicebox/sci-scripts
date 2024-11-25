@@ -376,7 +376,7 @@
 			(User prevDir: 1)
 			(gEgo posn: 87 158 setMotion: MoveTo 87 10)
 		)
-		(gEgo view: 1 setCycle: Walk illegalBits: -32768 init:)
+		(gEgo view: 1 setCycle: Walk illegalBits: $8000 init:)
 		(if (<= local1 2)
 			((View new:) view: 68 posn: 185 125 loop: 0 cel: 0 init: addToPic:)
 		)

@@ -459,7 +459,7 @@
 					loop: 0
 					setCycle: Walk
 					posn: (- (gEgo x:) 2) (gEgo y:)
-					illegalBits: -32768
+					illegalBits: $8000
 					setScript: 0
 				)
 				(HandsOn)
@@ -553,7 +553,7 @@
 				(towel show:)
 				(gEgo
 					view: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					observeControl: 16384
 					setAvoider: 0
 					setCycle: Walk

@@ -82,7 +82,7 @@
 				(if (and local0 (not (IsFlag 20)))
 					(HandsOn)
 				)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(client setScript: 0)
 			)
 		)
@@ -146,7 +146,7 @@
 				(gMuleObj
 					setMotion: 0
 					setCycle: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 				)
 				(client setScript: 0)

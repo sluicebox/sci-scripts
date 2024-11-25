@@ -152,7 +152,7 @@
 				(Fdoor setScript: closeDoor)
 			)
 		)
-		(gEgo view: 0 illegalBits: -32764 init:)
+		(gEgo view: 0 illegalBits: $8004 init:)
 	)
 
 	(method (doit)

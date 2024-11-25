@@ -25,7 +25,7 @@
 	(method (handleEvent event)
 		(cond
 			((super handleEvent: event))
-			((and (== (event type:) $0400) (< 0 state)) ; evNULL | $0400
+			((and (== (event type:) $0400) (< 0 state))
 				(switch (event message:)
 					(JOY_NULL
 						(proc396_0 5 342 0) ; "HARPOON MISSLE LAUNCHED, SIR."

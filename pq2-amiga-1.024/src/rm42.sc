@@ -81,7 +81,7 @@
 	(if (== 0 (gEgo x:) (gEgo y:))
 		(gEgo posn: 230 61)
 	)
-	(gEgo illegalBits: -32768 setCycle: egoWalk init:)
+	(gEgo illegalBits: $8000 setCycle: egoWalk init:)
 )
 
 (procedure (localproc_1 &tmp temp0 temp1 temp2 temp3)
@@ -663,7 +663,7 @@
 					setLoop: -1
 					setCycle: Walk
 					cycleSpeed: 0
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(client setScript: 0)
 			)
@@ -714,7 +714,7 @@
 			(12
 				(HandsOn)
 				(bathroomDoor stopUpd:)
-				(gEgo setPri: 13 ignoreActors: 0 illegalBits: -32768)
+				(gEgo setPri: 13 ignoreActors: 0 illegalBits: $8000)
 				(= local101 1)
 				(gCurRoom setScript: 0)
 			)

@@ -56,7 +56,7 @@
 			(Load rsVIEW 234)
 			(Load rsSOUND 106)
 			(theSound init:)
-			(aHench illegalBits: -32768 setCycle: Walk init: hide:)
+			(aHench illegalBits: $8000 setCycle: Walk init: hide:)
 			(aStars setCycle: Fwd setPri: 13 init: hide:)
 		)
 		(cond

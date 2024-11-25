@@ -180,7 +180,7 @@
 			((= aHench (Act new:))
 				view: gCurrentHenchView
 				posn: 155 234
-				illegalBits: -32768
+				illegalBits: $8000
 				observeControl: 256
 				setCycle: Walk
 				init:
@@ -190,7 +190,7 @@
 		((= aMan (Act new:))
 			view: 310
 			setLoop: 4
-			illegalBits: -513
+			illegalBits: $fdff
 			posn: 194 86
 			init:
 			setMotion: Wander
@@ -207,7 +207,7 @@
 				setPri: -1
 				setMotion: 0
 				setStep: 3 2
-				illegalBits: -1
+				illegalBits: $ffff
 				ignoreControl: 512 256
 				posn: 157 84
 				cycleSpeed: 1
@@ -432,7 +432,7 @@
 				)
 				(gEgo
 					view: work
-					illegalBits: -1
+					illegalBits: $ffff
 					ignoreControl: 256 512
 					cycleSpeed: 1
 					moveSpeed: 1
@@ -503,7 +503,7 @@
 					cycleSpeed: 0
 					moveSpeed: 0
 					ignoreActors: 0
-					illegalBits: 256
+					illegalBits: $0100
 					observeControl: 512
 					baseSetter: 0
 				)

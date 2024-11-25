@@ -250,7 +250,7 @@
 		(gEgo
 			posn: 318 176
 			init:
-			illegalBits: -32640
+			illegalBits: $8080
 			observeBlocks: bossBlock
 			setMotion: MoveTo 306 176
 		)
@@ -736,7 +736,7 @@
 			(6
 				(= local32 -1)
 				(EgoGait 0 0) ; walking
-				(gEgo ignoreActors: 0 illegalBits: -32640 loop: 2)
+				(gEgo ignoreActors: 0 illegalBits: $8080 loop: 2)
 				(= seconds 2)
 			)
 			(7
@@ -1266,7 +1266,7 @@
 			)
 			(4
 				(NormalEgo)
-				(gEgo illegalBits: -32640)
+				(gEgo illegalBits: $8080)
 				(LookAt gEgo [local2 3])
 				(switch register
 					(2

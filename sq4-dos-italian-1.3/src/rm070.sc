@@ -68,7 +68,7 @@
 			view: 70
 			loop: 0
 			cel: 0
-			illegalBits: -32766
+			illegalBits: $8002
 			x: 223
 			y: -2
 			xStep: 3
@@ -140,7 +140,7 @@
 			)
 			(3
 				(NormalEgo 0 0)
-				(gEgo illegalBits: -32766 setHeading: 180)
+				(gEgo illegalBits: $8002 setHeading: 180)
 				(= seconds 2)
 			)
 			(4
@@ -203,7 +203,7 @@
 			(8
 				(HandsOn)
 				(NormalEgo 1)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(gFeatures addToFront: doorOpening eachElementDo: #init doit:)
 				(self dispose:)
 			)
@@ -267,9 +267,9 @@
 				(SetScore 54 10)
 				(gEgo view: 70 setLoop: 7 setCycle: End self)
 				(if (not local28)
-					(gEgo illegalBits: -32766)
+					(gEgo illegalBits: $8002)
 				else
-					(gEgo illegalBits: -32768)
+					(gEgo illegalBits: $8000)
 				)
 			)
 			(4
@@ -286,9 +286,9 @@
 				(NormalEgo 3 0)
 				(gEgo y: (+ (gEgo y:) 2) setHeading: 0 self)
 				(if (not local28)
-					(gEgo illegalBits: -32766)
+					(gEgo illegalBits: $8002)
 				else
-					(gEgo illegalBits: -32768)
+					(gEgo illegalBits: $8000)
 				)
 			)
 			(8
@@ -423,9 +423,9 @@
 			)
 			(1
 				(if (not local28)
-					(gEgo illegalBits: -32766)
+					(gEgo illegalBits: $8002)
 				else
-					(gEgo illegalBits: -32768)
+					(gEgo illegalBits: $8000)
 				)
 				(Face gEgo theJar self)
 			)

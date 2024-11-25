@@ -529,7 +529,7 @@
 			setCel: (local1 cel:)
 			setCycle: Walk
 			cycleSpeed: 0
-			illegalBits: -32768
+			illegalBits: $8000
 			ignoreActors: 0
 			setAvoider: Avoid
 		)

@@ -211,7 +211,7 @@
 			(2 ; Look
 				(if (== ((Inv at: 0) owner:) (Inv at: 1)) ; Camcorder, Battery_Charger
 					(Format @str 22 4 (/ gCamcorderCharge 20) 37) ; "Battery Strength: %d%c"
-					(TPrint @str 30 1 80 {Camcorder Battery Strength})
+					(TPrint @str #mode 1 #title {Camcorder Battery Strength})
 				else
 					(TPrint 22 5) ; "Your lonely battery charger sits all by itself, with plenty of power to suck from the wall, but with no place to push it!"
 				)

@@ -77,7 +77,7 @@
 		(gate init:)
 		(if (IsFlag 23)
 			(gate ignoreActors: cel: 3)
-			(gEgo illegalBits: -16384)
+			(gEgo illegalBits: $c000)
 			(cond
 				((and (!= gPrevRoomNum 10) (not global119) (not (IsFlag 80)))
 					(SetFlag 80)
@@ -167,8 +167,8 @@
 			((and (IsFlag 36) (& (gGoat onControl: 1) $1000))
 				(ClearFlag 36)
 			)
-			((and (not (gGoat script:)) (!= (gGoat illegalBits:) -8132))
-				(gGoat illegalBits: -8132)
+			((and (not (gGoat script:)) (!= (gGoat illegalBits:) $e03c))
+				(gGoat illegalBits: $e03c)
 			)
 		)
 	)
@@ -665,8 +665,8 @@
 			(4
 				(gate ignoreActors: 1 stopUpd:)
 				(SetFlag 23)
-				(gEgo illegalBits: -16384)
-				(gGoat illegalBits: -16384)
+				(gEgo illegalBits: $c000)
+				(gGoat illegalBits: $c000)
 				(HandsOn)
 				(self dispose:)
 			)
@@ -731,8 +731,8 @@
 			(3
 				(gate ignoreActors: 0 stopUpd:)
 				(ClearFlag 23)
-				(gEgo illegalBits: -32768)
-				(gGoat illegalBits: -32768)
+				(gEgo illegalBits: $8000)
+				(gGoat illegalBits: $8000)
 				(HandsOn)
 				(self dispose:)
 			)
@@ -767,7 +767,7 @@
 				(proc0_1)
 				(HandsOn)
 				(if (IsFlag 23)
-					(gEgo illegalBits: -16384)
+					(gEgo illegalBits: $c000)
 				)
 				(if (not (IsFlag 4))
 					(gGoat setAvoider: Avoid setMotion: Follow gEgo 50)
@@ -813,7 +813,7 @@
 				(proc0_15 gGoat gEgo)
 				(gGoat
 					setPri: -1
-					illegalBits: -16384
+					illegalBits: $c000
 					ignoreActors: 0
 					setMotion: Follow gEgo 50
 				)
@@ -901,7 +901,7 @@
 			(0
 				(gGoat
 					setAvoider: 0
-					illegalBits: -16322
+					illegalBits: $c03e
 					setMotion:
 						MoveTo
 						(Random 10 310)

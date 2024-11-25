@@ -529,7 +529,7 @@
 						(StrAt @global190 3 (+ (localproc_5) 32))
 						(StrAt @global190 4 37)
 						(StrAt @global190 5 32)
-						(MemorySegment 0 @global190 0)
+						(MemorySegment 0 @global190 0) ; MS_SAVE_FROM
 						(proc98_1)
 						(DisposeScript 98)
 					)
@@ -566,7 +566,7 @@
 				(StrAt @global190 2 (+ 1 local412))
 				(StrAt @global190 3 (+ (localproc_5) 32))
 				(StrAt @global190 5 (+ global114 32))
-				(MemorySegment 0 @global190 0)
+				(MemorySegment 0 @global190 0) ; MS_SAVE_FROM
 				(gCast eachElementDo: #dispose)
 				(gLongSong fade:)
 				(localproc_2 8)
@@ -628,7 +628,7 @@
 					(StrAt @global190 3 (+ gSaveSlot 32))
 					(StrAt @global190 4 (StrAt @local150 (* global114 36)))
 					(StrAt @global190 5 (StrAt @local150 (+ (* global114 36) 1)))
-					(MemorySegment 0 @global190 0)
+					(MemorySegment 0 @global190 0) ; MS_SAVE_FROM
 					(SetPort 0 0 200 320 0 0)
 					(Palette palSET_INTENSITY 0 255 0)
 					(Graph grRESTORE_BOX global109)
@@ -676,7 +676,7 @@
 
 	(method (track param1 &tmp temp0)
 		(repeat
-			(= param1 (Event new: -32768))
+			(= param1 (Event new: evPEEK))
 			(param1 localize:)
 			(if (and (= temp0 (self check: param1)) (not cel))
 				(++ cel)

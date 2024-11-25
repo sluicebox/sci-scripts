@@ -276,7 +276,7 @@
 					init:
 					setMotion: MoveTo 80 120 self
 				)
-				(gEgo illegalBits: -32768 observeControl: 16384 8192 loop: 1)
+				(gEgo illegalBits: $8000 observeControl: 16384 8192 loop: 1)
 			)
 			(14
 				(aProducer

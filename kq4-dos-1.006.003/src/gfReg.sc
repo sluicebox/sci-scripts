@@ -78,7 +78,7 @@
 				cycleSpeed: 1
 				setCycle: Walk
 				setMotion: Wander 30000
-				illegalBits: -2
+				illegalBits: $fffe
 				posn: local1 (- local0 4)
 				init:
 				setScript: peacockActions

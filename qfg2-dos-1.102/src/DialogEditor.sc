@@ -24,7 +24,7 @@
 					claimed: (param2 claimed:)
 				)
 			else
-				(GetEvent 32767 temp0)
+				(GetEvent evALL_EVENTS temp0)
 			)
 		)
 		(return temp0)

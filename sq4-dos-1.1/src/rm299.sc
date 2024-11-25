@@ -228,7 +228,7 @@
 					)
 					(else
 						(HandsOn)
-						(gEgo illegalBits: -32768)
+						(gEgo illegalBits: $8000)
 						(client setScript: 0)
 					)
 				)
@@ -253,7 +253,7 @@
 				(gEgo setMotion: MoveTo 97 180 self)
 			)
 			(5
-				(gEgo illegalBits: -32768 setLoop: -1)
+				(gEgo illegalBits: $8000 setLoop: -1)
 				(HandsOn)
 				(self dispose:)
 			)

@@ -33,7 +33,7 @@
 		(Fifi
 			view: 464
 			setAvoider: (Avoid new:)
-			illegalBits: -16378
+			illegalBits: $c006
 			init:
 			setScript: fifiActions
 		)
@@ -66,7 +66,7 @@
 					view: 464
 					setPri: -1
 					setCycle: Walk
-					illegalBits: -16378
+					illegalBits: $c006
 					ignoreActors: 0
 				)
 				(Fifi

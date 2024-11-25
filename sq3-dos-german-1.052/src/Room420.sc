@@ -347,7 +347,7 @@
 					setLoop: -1
 					setCel: -1
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 					posn: 164 153
 				)
 				(HandsOn)

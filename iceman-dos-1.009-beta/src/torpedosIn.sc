@@ -117,7 +117,7 @@
 	(method (handleEvent event)
 		(cond
 			((super handleEvent: event))
-			((== (event type:) $0400) ; evNULL | $0400
+			((== (event type:) $0400)
 				(switch (event message:)
 					(JOY_NULL
 						(proc396_0 5 399 0) ; "YOUR HARPOON MISSLE IS USELESS AGAINEST SUBS."

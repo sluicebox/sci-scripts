@@ -240,7 +240,7 @@
 			(curtain cel: 0)
 		else
 			(curtain cel: 255)
-			(gEgo illegalBits: -16384)
+			(gEgo illegalBits: $c000)
 		)
 		(if (not (IsFlag 137))
 			(lamb init: startUpd:)

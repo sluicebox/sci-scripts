@@ -1063,7 +1063,7 @@
 			(2
 				(if global112
 					(global112
-						illegalBits: -32768
+						illegalBits: $8000
 						ignoreActors: 0
 						setMotion: Follow gEgo 50
 					)
@@ -1260,7 +1260,7 @@
 				(if global112
 					(Print 67 79 #at -1 40) ; "Sonny, I'm going to take a look around," Keith says. "You go ahead and check out the car."
 					(global112
-						illegalBits: -32768
+						illegalBits: $8000
 						setMotion: MoveTo 155 125 self
 					)
 				else

@@ -267,7 +267,7 @@
 			(UpdateScreenItem exitButton)
 			(self sel_866:)
 			(= global135 0)
-			(while ((= temp1 (Event new: 3)) type:)
+			(while ((= temp1 (Event new: evMOUSE)) type:)
 				(temp1 dispose:)
 			)
 			(gUser sel_712: 62)

@@ -724,7 +724,7 @@
 						(self setScript: sPhone)
 					)
 					((not satDown)
-						(TPrint 905 13 67 -1 28 108) ; "Ah! Good idea. This chair looks just right!"
+						(TPrint 905 13 #at -1 28 #dispose) ; "Ah! Good idea. This chair looks just right!"
 					)
 				)
 				(= satDown 1)
@@ -785,7 +785,7 @@
 						(if (not (SetFlag 18)) ; fCalledDoc
 							(SetFlag 18) ; fCalledDoc
 							(if (IsFlag 4) ; fSeenCC
-								(Say Alberta 905 19 108) ; "Good afternoon. You've reached Dr. Pulliam's exchange. I'm sorry, but everyone in their office has gone home for the evening. But please feel free to call back tomorrow. This has been a recording."
+								(Say Alberta 905 19 #dispose) ; "Good afternoon. You've reached Dr. Pulliam's exchange. I'm sorry, but everyone in their office has gone home for the evening. But please feel free to call back tomorrow. This has been a recording."
 							else
 								(TPrint 905 20) ; "Good afternoon. Dr. Pulliam's office."
 								(Say gEgo 905 21) ; "Hello? This is, uh, umm, ah, Dr. `Payne.' I'm going to have to send over one of my emergency patients over for Doc Pulliam. Something's come up and I won't be able to see him this afternoon. Could you please see him right away? Thanks ever so much. Gotta go; it's tee time!"
@@ -939,7 +939,7 @@
 			)
 			(2
 				(NormalEgo 3)
-				(TPrint 905 31 108) ; "You rap your knuckles gently on the textured sliding glass window."
+				(TPrint 905 31 #dispose) ; "You rap your knuckles gently on the textured sliding glass window."
 				(= ticks 90)
 			)
 			(3
@@ -954,10 +954,10 @@
 			(5
 				(switch (++ windowTalkCount)
 					(1
-						(Say Alberta 905 32 108 139 self) ; "Oh," she growls, "and just what do we think we're doing here, eh, little man?"
+						(Say Alberta 905 32 #dispose #caller self) ; "Oh," she growls, "and just what do we think we're doing here, eh, little man?"
 					)
 					(else
-						(Say Alberta 905 33 108 139 self) ; "Yeah, what is it?"
+						(Say Alberta 905 33 #dispose #caller self) ; "Yeah, what is it?"
 					)
 				)
 				(if (or (IsFlag 18) (== (gEgo view:) 908)) ; fCalledDoc
@@ -978,12 +978,12 @@
 			(7
 				(switch windowTalkCount
 					(1
-						(Say Alberta 905 36 108 139 self) ; ""No!" she says, closing the window."
+						(Say Alberta 905 36 #dispose #caller self) ; ""No!" she says, closing the window."
 					)
 					(else
 						(= state 9)
 						(= talkCounter 0)
-						(Say Alberta 905 37 108 139 self) ; "Yeah, maybe," she replies, "but first, let's do your paperwork."
+						(Say Alberta 905 37 #dispose #caller self) ; "Yeah, maybe," she replies, "but first, let's do your paperwork."
 					)
 				)
 			)
@@ -1007,7 +1007,7 @@
 				(= ticks 123)
 			)
 			(11
-				(Say Alberta 905 40 108 139 self) ; "Okay, sweetie, let's fill out this lil' ol' admission form together, now shall we?"
+				(Say Alberta 905 40 #dispose #caller self) ; "Okay, sweetie, let's fill out this lil' ol' admission form together, now shall we?"
 			)
 			(12
 				(girl setCel: 0)
@@ -1083,7 +1083,7 @@
 						(Points 13 164)
 						(= state 17)
 						(= talkedToGirl 1)
-						(Say Alberta 905 55 108 139 self) ; "Since this is not an emergency, I'll go ahead and set you up with an appointment for, uh, let's see... how about nine months from today? Ten o'clock is good for me!"
+						(Say Alberta 905 55 #dispose #caller self) ; "Since this is not an emergency, I'll go ahead and set you up with an appointment for, uh, let's see... how about nine months from today? Ten o'clock is good for me!"
 					)
 				)
 				(cond
@@ -1097,7 +1097,7 @@
 				(= ticks 123)
 			)
 			(13
-				(Say Alberta 905 56 108 139 self) ; "Oops! Well, gosh, I'm sorry, but I just realized we'll be unable to accept you as a client. I just remembered... we have no more openings this century!"
+				(Say Alberta 905 56 #dispose #caller self) ; "Oops! Well, gosh, I'm sorry, but I just realized we'll be unable to accept you as a client. I just remembered... we have no more openings this century!"
 			)
 			(14
 				(glass cycleSpeed: 4 setCycle: Beg self)
@@ -1118,12 +1118,12 @@
 						(Say gEgo 905 57) ; "Hepowafww, mmapwffoj," you mumble with your jaw tied shut, while you pretend to be unable to speak, "maywppf asqd waf ffvppf?"
 						(Points 17 162)
 						(SetFlag 33) ; fUsedDoily
-						(Say Alberta 905 58 108 139 self) ; "Oh, you poor dear! You look like you're in terrible pain! Why, just go right on in. I'll have one of our technicians attend to you right away!"
+						(Say Alberta 905 58 #dispose #caller self) ; "Oh, you poor dear! You look like you're in terrible pain! Why, just go right on in. I'll have one of our technicians attend to you right away!"
 					)
 					((IsFlag 18) ; fCalledDoc
 						(Say gEgo 905 59) ; "Excuse me, ma'am," you say, hoping she doesn't recognize your voice. "My name is Larry; Larry Laffer."
 						(Points 13 163)
-						(Say Alberta 905 60 108 139 self) ; "Well, Larry, that was a quick trip! Please, just walk through the door to the right! I'll have one of our technicians attend to you right away!"
+						(Say Alberta 905 60 #dispose #caller self) ; "Well, Larry, that was a quick trip! Please, just walk through the door to the right! I'll have one of our technicians attend to you right away!"
 					)
 				)
 			)
@@ -1267,7 +1267,7 @@
 				(= ticks 10)
 			)
 			(4
-				(TPrint 905 62 108 self) ; "You take the lace doily from the waiting room table, but you really don't know why."
+				(TPrint 905 62 #dispose self) ; "You take the lace doily from the waiting room table, but you really don't know why."
 			)
 			(5
 				(HandsOn)

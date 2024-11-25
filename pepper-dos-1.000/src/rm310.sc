@@ -334,7 +334,7 @@
 				(if (and (IsFlag 17) (not (IsFlag 69)))
 					(SetFlag 69)
 					(SetFlag 91)
-					(= global215 40)
+					(= gDictionaryWord 40)
 					(gMessager say: 33 0 17 0 self) ; "Ah, there you are, lad! I was worried about you! Are you feeling better?"
 				else
 					(= cycles 2)
@@ -930,7 +930,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 88)
+		(= gDictionaryWord 88)
 		(switch theVerb
 			(7 ; Do
 				(gGame points: 302 1)
@@ -954,7 +954,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 88)
+		(= gDictionaryWord 88)
 		(switch theVerb
 			(7 ; Do
 				(gGame points: 302 1)
@@ -1076,7 +1076,7 @@
 				(return 1)
 			)
 			((OneOf theVerb 85 7 6 86 30 89 84) ; Talk, Do, Look, Nose, Paw, Teeth, Trivia
-				(= global215 8)
+				(= gDictionaryWord 8)
 				(super doVerb: theVerb &rest)
 			)
 			(else
@@ -1127,7 +1127,7 @@
 	(method (doVerb theVerb &tmp temp0)
 		(switch theVerb
 			(6 ; Look
-				(= global215 7)
+				(= gDictionaryWord 7)
 				(super doVerb: theVerb &rest)
 			)
 			(85 ; Talk
@@ -1409,7 +1409,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(84 ; Trivia
-				(= global215 66)
+				(= gDictionaryWord 66)
 				(super doVerb: theVerb &rest)
 			)
 			(else
@@ -1434,7 +1434,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 87)
+		(= gDictionaryWord 87)
 		(super doVerb: theVerb &rest)
 	)
 )
@@ -1485,7 +1485,7 @@
 
 	(method (doVerb theVerb)
 		(if (OneOf theVerb 6 84) ; Look, Trivia
-			(= global215 47)
+			(= gDictionaryWord 47)
 			(super doVerb: theVerb &rest)
 		else
 			(super doVerb: theVerb &rest)
@@ -1508,7 +1508,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 88)
+		(= gDictionaryWord 88)
 		(switch theVerb
 			(84 ; Trivia
 				(super doVerb: theVerb &rest)

@@ -562,7 +562,7 @@
 					view: (if (== global116 1) 9 else 3)
 					loop: 2
 					ignoreActors: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: local1
 				)
 				(= local1 0)
@@ -594,7 +594,7 @@
 				)
 			)
 			(1
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(= seconds 2)
 			)
 			(2
@@ -608,8 +608,8 @@
 							(= global131 0)
 							(Print 10 46) ; "By my beard! You no sooner put the copper in the shrine than the sprite made off with it."
 							(if (or global191 global192)
-								(= global122 global191)
-								(= global121 global192)
+								(= gGold global191)
+								(= gSilver global192)
 								(= global191 (= global192 0))
 								(Print 10 47 #at -1 130) ; "Ah, did you feel a tingling? The trick has been undone, but check your purse, if you wish to make sure."
 							)
@@ -632,11 +632,11 @@
 							(gTObj talkCue: self)
 							(Talk 10 49) ; "Copper is mine! Copper divine! Go your way, No trick I will play."
 							(if global191
-								(= global122 global191)
+								(= gGold global191)
 								(= local0 1)
 							)
 							(if global192
-								(= global121 global192)
+								(= gSilver global192)
 								(= local0 1)
 							)
 							(= global191 (= global192 0))

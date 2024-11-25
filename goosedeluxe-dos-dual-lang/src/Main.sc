@@ -2315,7 +2315,7 @@
 						(= global166 2)
 					else
 						(global129
-							illegalBits: 32768
+							illegalBits: $8000
 							setMotion: MoveTo (gEgo x:) (gEgo y:) self
 						)
 					)

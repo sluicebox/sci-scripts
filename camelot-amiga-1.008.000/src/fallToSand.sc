@@ -79,7 +79,7 @@
 				(gEgo cycleSpeed: 1 setCycle: End self)
 			)
 			(7
-				(gEgo setLoop: -1 view: 0 illegalBits: -30720 cycleSpeed: 0)
+				(gEgo setLoop: -1 view: 0 illegalBits: $8800 cycleSpeed: 0)
 				(if (IsFlag 92)
 					(gEgo loop: 1)
 				else

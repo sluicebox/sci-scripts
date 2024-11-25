@@ -658,7 +658,7 @@
 				(gCurRoom drawPic: (gCurRoom picture:) 100)
 				(Display 258 8 dsCOORD 144 75 dsCOLOR gColWhite dsWIDTH 110 dsFONT gSmallFont) ; "Please enter the five-character Destination Code from your AeroDork Airline Travel Brochure."
 				(if (not (HaveMouse))
-					(TPrint 258 9 80 {A hint from AL}) ; "You can use your number pad to enter your code. The keys match in position (i.e. the 7 key will press the top left button, etc.). Be sure to use only the numeric key pad, not the cursor keys."
+					(TPrint 258 9 #title {A hint from AL}) ; "You can use your number pad to enter your code. The keys match in position (i.e. the 7 key will press the top left button, etc.). Be sure to use only the numeric key pad, not the cursor keys."
 				)
 				((ScriptID 20 0) init: 0) ; TTDialer
 				(bar1 dispose:)
@@ -705,7 +705,7 @@
 				(gCurRoom drawPic: (gCurRoom picture:) 100)
 				(Display 258 8 dsCOORD 144 75 dsCOLOR gColWhite dsWIDTH 110 dsFONT gSmallFont) ; "Please enter the five-character Destination Code from your AeroDork Airline Travel Brochure."
 				(if (not (HaveMouse))
-					(TPrint 258 9 80 {A hint from AL}) ; "You can use your number pad to enter your code. The keys match in position (i.e. the 7 key will press the top left button, etc.). Be sure to use only the numeric key pad, not the cursor keys."
+					(TPrint 258 9 #title {A hint from AL}) ; "You can use your number pad to enter your code. The keys match in position (i.e. the 7 key will press the top left button, etc.). Be sure to use only the numeric key pad, not the cursor keys."
 				)
 				((ScriptID 20 0) init: 0) ; TTDialer
 				(bar1 dispose:)
@@ -752,7 +752,7 @@
 				(gCurRoom drawPic: (gCurRoom picture:) 100)
 				(Display 258 10 dsCOORD 144 75 dsCOLOR gColWhite dsWIDTH 110 dsFONT gSmallFont) ; "Please enter the five character Destination Code from your AeroDork Airline Travel Brochure."
 				(if (not (HaveMouse))
-					(TPrint 258 9 80 {A hint from AL}) ; "You can use your number pad to enter your code. The keys match in position (i.e. the 7 key will press the top left button, etc.). Be sure to use only the numeric key pad, not the cursor keys."
+					(TPrint 258 9 #title {A hint from AL}) ; "You can use your number pad to enter your code. The keys match in position (i.e. the 7 key will press the top left button, etc.). Be sure to use only the numeric key pad, not the cursor keys."
 				)
 				((ScriptID 20 0) init: 0) ; TTDialer
 				(bar1 dispose:)

@@ -134,7 +134,7 @@
 				setLoop: 0
 				cel: 5
 				normal: 0
-				illegalBits: -32768
+				illegalBits: $8000
 			)
 			(cond
 				((IsFlag 63)
@@ -258,7 +258,7 @@
 				)
 			)
 			(2
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HandsOn)
 				(self dispose:)
 			)
@@ -1049,11 +1049,11 @@
 				(fenrisBody approachVerbs: 5 3 12) ; Talk, Do, Smell
 				(if (not (> 6 global169 4))
 					(NormalEgo 0 1 61)
-					(gEgo illegalBits: -32768 loop: 4)
+					(gEgo illegalBits: $8000 loop: 4)
 				else
 					(Print 43 21) ; "You are supposed to walk out of the bar drunk, and pass out behind it. Waking up with an enormous headache and no earthly possessions. But for now you're normal."
 					(NormalEgo 0 1 61)
-					(gEgo illegalBits: -32768)
+					(gEgo illegalBits: $8000)
 				)
 				(HandsOn)
 				(self dispose:)
@@ -1287,7 +1287,7 @@
 				else
 					(NormalEgo 0 1 61)
 					(= register 0)
-					(gEgo illegalBits: -32768)
+					(gEgo illegalBits: $8000)
 					(HandsOn)
 					(self dispose:)
 				)

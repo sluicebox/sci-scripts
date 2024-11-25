@@ -164,11 +164,11 @@
 				(= cycles 1)
 			)
 			(4
-				(= global215 63)
+				(= gDictionaryWord 63)
 				(gMessager say: 24 0 1 4 5 self) ; "Thanks again for dinner, Ben. That was really...good."
 			)
 			(5
-				(= global215 63)
+				(= gDictionaryWord 63)
 				(gMessager say: 24 0 1 6 self) ; "Hey, |r||c0|mush|c||r| is my favorite. Don't sweat it."
 			)
 			(6
@@ -449,7 +449,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 94)
+		(= gDictionaryWord 94)
 		(super doVerb: theVerb)
 	)
 )
@@ -477,7 +477,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 60)
+		(= gDictionaryWord 60)
 		(super doVerb: theVerb)
 	)
 )
@@ -656,7 +656,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 24)
+		(= gDictionaryWord 24)
 		(super doVerb: theVerb)
 	)
 )
@@ -738,7 +738,7 @@
 	)
 
 	(method (doVerb theVerb)
-		(= global215 105)
+		(= gDictionaryWord 105)
 		(super doVerb: theVerb)
 	)
 )

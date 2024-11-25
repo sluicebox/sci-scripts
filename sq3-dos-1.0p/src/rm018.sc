@@ -112,7 +112,7 @@
 			setPri: 10
 			ignoreActors: 1
 			posn: 160 88
-			illegalBits: 16384
+			illegalBits: $4000
 			init:
 			setCycle: 0
 		)
@@ -385,7 +385,7 @@
 			(1
 				(targShip
 					view: 47
-					illegalBits: 16384
+					illegalBits: $4000
 					setPri: 8
 					setStep: 4 4
 					cel: 5
@@ -427,7 +427,7 @@
 				(bottomArrow init: stopUpd:)
 				(leftArrow init: stopUpd:)
 				(rightArrow init: stopUpd:)
-				(targShip setStep: 2 2 setMotion: Wander 10 illegalBits: -33)
+				(targShip setStep: 2 2 setMotion: Wander 10 illegalBits: $ffdf)
 				(HandsOn)
 				(gCurRoom setScript: 0)
 			)
@@ -645,7 +645,7 @@
 		(super init:)
 		(self
 			view: 47
-			illegalBits: 16384
+			illegalBits: $4000
 			setPri: 8
 			setStep: 4 4
 			cel: 5

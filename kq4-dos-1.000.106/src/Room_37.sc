@@ -77,7 +77,7 @@
 			posn: 186 36
 			view: 110
 			setMotion: Wander 10
-			illegalBits: -32768
+			illegalBits: $8000
 			setCycle: Fwd
 			setPri: 15
 			xStep: 1
@@ -90,7 +90,7 @@
 			posn: 107 37
 			view: 114
 			setMotion: Wander 10
-			illegalBits: -32768
+			illegalBits: $8000
 			setCycle: Fwd
 			setPri: 15
 			xStep: 1

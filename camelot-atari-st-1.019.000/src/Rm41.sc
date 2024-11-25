@@ -403,7 +403,7 @@
 			(3
 				(HandsOn)
 				(= local2 0)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(self dispose:)
 			)
 		)
@@ -440,7 +440,7 @@
 			(2
 				(HandsOn)
 				(= local2 0)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(self dispose:)
 			)
 		)
@@ -477,7 +477,7 @@
 				(SetMenu 1283 112 1)
 				(SetMenu 1281 112 1)
 				(= local2 0)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(self dispose:)
 			)
 		)
@@ -514,7 +514,7 @@
 				(SetMenu 1283 112 1)
 				(SetMenu 1281 112 1)
 				(= local2 0)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(self dispose:)
 			)
 		)
@@ -590,7 +590,7 @@
 				)
 			)
 			(1
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(gCurRoom comingIn: 0)
 				(HandsOn)
 				(client setScript: 0)
@@ -650,7 +650,7 @@
 			)
 			(5
 				(Face gEgo gMuleObj)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(gMuleObj view: 404 loop: 1 cel: 0 setCycle: End self)
 			)
 			(6

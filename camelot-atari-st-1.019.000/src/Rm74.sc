@@ -155,7 +155,7 @@
 			(leftDoor setCel: 255 setPri: 10 ignoreActors:)
 			(frontDoor posn: 83 77 setPri: 0)
 			(rightDoor setCel: 255 setPri: 11 ignoreActors:)
-			(gEgo illegalBits: -32768)
+			(gEgo illegalBits: $8000)
 		)
 		(if (IsItemAt 11) ; mirror | golden_apple
 			(leftArm setCel: 4)
@@ -184,7 +184,7 @@
 				(or
 					(not (gEgo has: 10)) ; lamb | dove
 					(IsFlag 172)
-					(== (gEgo illegalBits:) -16384)
+					(== (gEgo illegalBits:) $c000)
 				)
 				0
 			)
@@ -441,7 +441,7 @@
 					view: local35
 					loop: 3
 					setCycle: Walk
-					illegalBits: -16384
+					illegalBits: $c000
 				)
 				(HandsOn)
 				(client setScript: 0)
@@ -716,7 +716,7 @@
 			)
 			(7
 				(frontDoor stopUpd:)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(leftDoor setPri: 10 stopUpd: ignoreActors:)
 				(rightDoor setPri: 11 stopUpd: ignoreActors:)
 				(= cycles 2)

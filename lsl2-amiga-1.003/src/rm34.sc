@@ -95,7 +95,7 @@
 			(Load rsVIEW 311)
 			(aHench
 				view: gCurrentHenchView
-				illegalBits: -32768
+				illegalBits: $8000
 				observeControl: 256
 				setCycle: Walk
 				init:
@@ -104,7 +104,7 @@
 		)
 		(aMan
 			setLoop: 4
-			illegalBits: -513
+			illegalBits: $fdff
 			init:
 			setMotion: Wander
 			moveSpeed: 5
@@ -120,7 +120,7 @@
 				setPri: -1
 				setMotion: 0
 				setStep: 3 2
-				illegalBits: -1
+				illegalBits: $ffff
 				ignoreControl: 512 256
 				posn: 157 83
 				cycleSpeed: 1
@@ -351,7 +351,7 @@
 				)
 				(gEgo
 					view: work
-					illegalBits: -1
+					illegalBits: $ffff
 					ignoreControl: 256 512
 					cycleSpeed: 1
 					moveSpeed: 1
@@ -422,7 +422,7 @@
 					cycleSpeed: 0
 					moveSpeed: 0
 					ignoreActors: 0
-					illegalBits: 256
+					illegalBits: $0100
 					observeControl: 512
 					baseSetter: 0
 				)

@@ -1416,7 +1416,7 @@
 			)
 			(3
 				(HandsOn)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(ClearFlag 263)
 				(client setScript: 0)
 			)
@@ -1859,7 +1859,7 @@
 				(gEgo setMotion: MoveTo 43 179 self)
 			)
 			(3
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HighPrint 96 99) ; "You behold a most fascinating place."
 				(HighPrint 96 100) ; "The person labeled "ME" speaks:"
 				(HighPrint 96 101) ; "Abandon mope, all ye who enter here!"

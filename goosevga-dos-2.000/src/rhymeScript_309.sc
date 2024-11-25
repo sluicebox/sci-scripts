@@ -30,7 +30,7 @@
 				(rhymeSync init: 15)
 				(global129
 					moveSpeed: 2
-					illegalBits: -32768
+					illegalBits: $8000
 					setMotion: MoveTo 153 110 self
 				)
 			)

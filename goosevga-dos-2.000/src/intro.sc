@@ -335,7 +335,7 @@
 						(StrAt @global190 3 (+ (localproc_3) 32))
 						(StrAt @global190 4 37)
 						(StrAt @global190 5 32)
-						(MemorySegment 0 @global190 0)
+						(MemorySegment 0 @global190 0) ; MS_SAVE_FROM
 						(gGame restart:)
 					)
 				)
@@ -410,7 +410,7 @@
 				(StrAt @global190 2 (+ 1 local316))
 				(StrAt @global190 3 (+ (localproc_3) 32))
 				(StrAt @global190 5 (+ global114 32))
-				(MemorySegment 0 @global190 0)
+				(MemorySegment 0 @global190 0) ; MS_SAVE_FROM
 				(gLongSong fade: 0 4 4 0)
 				(gGame setCursor: gWaitCursor)
 				(gGame restart:)
@@ -442,7 +442,7 @@
 					(StrAt @global190 3 (+ gSaveSlot 32))
 					(StrAt @global190 4 (StrAt @local54 (* global114 36)))
 					(StrAt @global190 5 (StrAt @local54 (+ (* global114 36) 1)))
-					(MemorySegment 0 @global190 0)
+					(MemorySegment 0 @global190 0) ; MS_SAVE_FROM
 					(SetPort 0 0 200 320 0 0)
 					(Palette palSET_INTENSITY 0 255 0)
 					(Graph grRESTORE_BOX global109)
@@ -697,7 +697,7 @@
 	(method (track param1 &tmp temp0)
 		(if (== (param1 type:) 1)
 			(repeat
-				(= param1 (Event new: -32768))
+				(= param1 (Event new: evPEEK))
 				(param1 localize:)
 				(if (and (= temp0 (self check: param1)) (not cel))
 					(++ cel)

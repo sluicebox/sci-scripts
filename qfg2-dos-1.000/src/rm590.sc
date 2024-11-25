@@ -94,14 +94,14 @@
 			(
 				(and
 					(& (gEgo onControl: 1) $0002)
-					(== (gEgo illegalBits:) -32768)
+					(== (gEgo illegalBits:) $8000)
 				)
 				(gEgo setScript: fallDnCliff)
 			)
 			(
 				(and
 					(& (gEgo onControl: 1) $0004)
-					(== (gEgo illegalBits:) -32768)
+					(== (gEgo illegalBits:) $8000)
 				)
 				(gEgo setScript: toTreasRoom)
 			)
@@ -216,7 +216,7 @@
 		(switch (= state newState)
 			(0
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					posn: 319 101
 					init:
 					setMotion: MoveTo 299 96 self

@@ -540,7 +540,7 @@
 
 	(method (dispose)
 		(super dispose: &rest)
-		(gEgo illegalBits: -16384)
+		(gEgo illegalBits: $c000)
 	)
 
 	(method (changeState newState)
@@ -648,7 +648,7 @@
 		(switch (= state newState)
 			(0
 				(HandsOff)
-				(gEgo illegalBits: -16384)
+				(gEgo illegalBits: $c000)
 				(trans setMotion: MoveTo (+ (khav x:) 7) (- (khav y:) 30) self)
 				(khav setMotion: 0)
 			)
@@ -858,7 +858,7 @@
 
 	(method (dispose)
 		(super dispose: &rest)
-		(gEgo illegalBits: -16384)
+		(gEgo illegalBits: $c000)
 	)
 
 	(method (changeState newState)
@@ -963,7 +963,7 @@
 
 	(method (dispose)
 		(super dispose: &rest)
-		(gEgo illegalBits: -16384)
+		(gEgo illegalBits: $c000)
 	)
 
 	(method (changeState newState)

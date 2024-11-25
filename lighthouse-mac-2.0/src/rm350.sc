@@ -720,7 +720,7 @@
 		(spinSound stop:)
 		(Lock rsAUDIO (spinSound number:) 0)
 		(gIRandomMusic pause: 0)
-		(while ((= temp1 (Event new: 3)) type:)
+		(while ((= temp1 (Event new: evMOUSE)) type:)
 			(temp1 dispose:)
 		)
 		(temp1 dispose:)

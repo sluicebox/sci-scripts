@@ -236,7 +236,7 @@
 						normal: 1
 						setLoop: -1
 						cycleSpeed: 0
-						illegalBits: -32768
+						illegalBits: $8000
 						setCycle: KQ5SyncWalk
 					)
 					((gEgo head:) show:)
@@ -294,7 +294,7 @@
 					normal: 1
 					setLoop: -1
 					cycleSpeed: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: KQ5SyncWalk
 				)
 				((gEgo head:) show:)

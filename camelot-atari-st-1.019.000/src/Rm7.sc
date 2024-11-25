@@ -884,7 +884,7 @@
 									(else
 										(++ local15)
 										(-- local6)
-										(++ global122)
+										(++ gGold)
 										(ClearFlag 7)
 										(SetFlag 9)
 									)
@@ -903,7 +903,7 @@
 									(else
 										(++ local16)
 										(-- local7)
-										(++ global121)
+										(++ gSilver)
 										(ClearFlag 7)
 									)
 								)
@@ -912,7 +912,7 @@
 							((Said '/copper,(coin<copper)>')
 								(if local8
 									(-- local8)
-									(++ global120)
+									(++ gCopper)
 									(Print 7 72) ; "The gods may not notice the loss of a bit of copper."
 								else
 									(Print 7 73) ; "There are no copper coins upon the altar."
@@ -952,7 +952,7 @@
 									(else
 										(++ local13)
 										(-- local3)
-										(++ global122)
+										(++ gGold)
 										(ClearFlag 8)
 										(SetFlag 10)
 									)
@@ -971,7 +971,7 @@
 									(else
 										(++ local14)
 										(-- local4)
-										(++ global121)
+										(++ gSilver)
 										(ClearFlag 8)
 									)
 								)
@@ -980,7 +980,7 @@
 							((Said '/copper,(coin<copper)>')
 								(if local5
 									(-- local5)
-									(++ global120)
+									(++ gCopper)
 									(Print 7 72) ; "The gods may not notice the loss of a bit of copper."
 								else
 									(Print 7 73) ; "There are no copper coins upon the altar."
@@ -1169,7 +1169,7 @@
 					setCel: -1
 					setCycle: Walk
 				)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(= local0 0)
 				(kneelingTime changeState: 0)
 				(client setScript: 0)
@@ -1303,7 +1303,7 @@
 				else
 					(SetFlag 4)
 				)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(gGame setCursor: gNormalCursor (HaveMouse))
 				(User canInput: 1)
 				(kneelingTime changeState: 0)

@@ -1072,7 +1072,7 @@
 				(torpedoMan setMotion: Approach gEgo 25 self)
 			)
 			(12
-				(torpedoMan ignoreActors: 0 illegalBits: -32768)
+				(torpedoMan ignoreActors: 0 illegalBits: $8000)
 				(Print 33 58) ; "Handing you the sheared pin he says..."Here ya are sir. We most definitely will need a new part before we're capable of loading me weapons.""
 				(gEgo get: 12) ; Sub: Metal_Cylinder | Tunisia: Business_Card
 				(subMarine invStatus1: 0)
@@ -1133,7 +1133,7 @@
 			)
 			(2
 				(entryDoor stopUpd:)
-				(gEgo illegalBits: -32768 ignoreActors: 0)
+				(gEgo illegalBits: $8000 ignoreActors: 0)
 				(HandsOn)
 				(= cycles 1)
 			)
@@ -1346,7 +1346,7 @@
 				(gEgo setMotion: MoveTo 10 52 self)
 			)
 			(2
-				(gEgo illegalBits: -32768 ignoreActors: 0 setPri: -1)
+				(gEgo illegalBits: $8000 ignoreActors: 0 setPri: -1)
 				(gCurRoom newRoom: 42) ; bHatchTubeRm
 			)
 		)
@@ -1360,7 +1360,7 @@
 		(switch (= state newState)
 			(0
 				(torpedoMan
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 					setMotion: MoveTo [local24 register] [local29 register]
 				)

@@ -88,7 +88,7 @@
 			)
 			(1
 				(HandsOn)
-				(gEgo illegalBits: -30720)
+				(gEgo illegalBits: $8800)
 				(gEgo setScript: 0)
 			)
 		)
@@ -111,7 +111,7 @@
 			)
 			(1
 				(HandsOn)
-				(gEgo illegalBits: -30720)
+				(gEgo illegalBits: $8800)
 				(gEgo setScript: 0)
 			)
 		)

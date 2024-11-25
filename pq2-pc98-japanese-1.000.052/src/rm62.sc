@@ -190,7 +190,7 @@
 			setStep: 3 2
 			posn: 300 (gEgo y:)
 			setCycle: Walk
-			illegalBits: -32768
+			illegalBits: $8000
 			ignoreActors: 0
 			setPri: -1
 			setLoop: -1
@@ -266,7 +266,7 @@
 						view: 17
 						setCycle: Walk
 						setStep: 3 2
-						illegalBits: -32768
+						illegalBits: $8000
 						ignoreActors: 0
 						posn: 164 81
 					)
@@ -287,7 +287,7 @@
 						view: 17
 						setCycle: Walk
 						setStep: 3 2
-						illegalBits: -32768
+						illegalBits: $8000
 						ignoreActors: 0
 						posn: 200 90
 						setMotion: MoveTo 340 90

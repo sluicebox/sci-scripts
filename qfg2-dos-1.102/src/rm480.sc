@@ -430,7 +430,7 @@
 			)
 			(10
 				(abu dispose:)
-				(gEgo illegalBits: -32768 setHeading: 180)
+				(gEgo illegalBits: $8000 setHeading: 180)
 				(self dispose:)
 			)
 		)
@@ -526,7 +526,7 @@
 					(WhoPrint 2 self 480 47) ; "And lips made for kissing."
 				)
 				(abu dispose:)
-				(gEgo illegalBits: -32768 setHeading: 180)
+				(gEgo illegalBits: $8000 setHeading: 180)
 				(self dispose:)
 			)
 		)

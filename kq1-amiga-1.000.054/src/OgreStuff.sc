@@ -91,7 +91,7 @@
 				(gMenace
 					view: 130
 					setAvoider: Avoid
-					illegalBits: -28672
+					illegalBits: $9000
 					setCycle: Walk
 					cycleSpeed: 0
 					init:

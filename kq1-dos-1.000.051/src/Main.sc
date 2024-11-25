@@ -321,7 +321,7 @@
 		setMotion: 0
 		setStep: (if temp1 2 else 3) 2
 		looper: Grooper
-		illegalBits: -32768
+		illegalBits: $8000
 		cycleSpeed: 0
 		moveSpeed: 0
 		ignoreActors: 0

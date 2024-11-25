@@ -216,7 +216,7 @@
 					(if (OneOf gPrevRoomNum 190 250)
 						(Delay 2 1 self)
 					else
-						(Say gEgo 200 0 108 self) ; "Geez," you think, "no matter where I go, no matter which limousine rental company I use, no matter which driver I get... all these limos look alike!"
+						(Say gEgo 200 0 #dispose self) ; "Geez," you think, "no matter where I go, no matter which limousine rental company I use, no matter which driver I get... all these limos look alike!"
 					)
 				)
 				(2
@@ -524,7 +524,7 @@
 					(TPrint 200 8) ; "This is a good show, but one you've seen before!"
 				else
 					(TPrint 200 9) ; "This show is SO boring."
-					(TPrint 200 10 67 -1 185) ; "(Oh, wait. The television isn't on!)"
+					(TPrint 200 10 #at -1 185) ; "(Oh, wait. The television isn't on!)"
 				)
 			)
 			(3 ; Do
@@ -994,7 +994,7 @@
 		(switch theVerb
 			(2 ; Look
 				(TPrint 200 26) ; "How wonderful. Your own personal fax machine."
-				(TPrint 200 27 67 -1 185) ; "(Doesn't everybody travel like this?)"
+				(TPrint 200 27 #at -1 185) ; "(Doesn't everybody travel like this?)"
 			)
 			(3 ; Do
 				(if (and whichFax (not phonedDesmond))
@@ -1179,7 +1179,7 @@
 				)
 				(gTheMusic fade: 0 15 10 0)
 				(if gEgoIsLarry
-					(TPrint 200 29 80 {Bobbi} 108) ; "Sir, we have arrived at your destination!" says your driver. "I hope your journey was a pleasant one."
+					(TPrint 200 29 #title {Bobbi} #dispose) ; "Sir, we have arrived at your destination!" says your driver. "I hope your journey was a pleasant one."
 					(driver setCycle: End)
 					(driverEyes setCycle: End)
 					(= ticks 90)
@@ -1259,30 +1259,30 @@
 			(2
 				(switch gDestination
 					(250
-						(TPrint 200 34 80 {Bobbi}) ; "Airport, eh?" says Bobbi. "It's a great place--if you like flying!"
+						(TPrint 200 34 #title {Bobbi}) ; "Airport, eh?" says Bobbi. "It's a great place--if you like flying!"
 						(Delay 2 1 self)
 					)
 					(500
-						(TPrint 200 35 80 {Bobbi}) ; "Hard Disk Cafe, eh?" says Bobbi. "It's a great place--if you like computers!"
+						(TPrint 200 35 #title {Bobbi}) ; "Hard Disk Cafe, eh?" says Bobbi. "It's a great place--if you like computers!"
 						(Delay 2 1 self)
 					)
 					(700
-						(TPrint 200 36 80 {Bobbi}) ; "Tramp's Casino, eh?" says Bobbi. "It's a great place--if you like gambling!"
+						(TPrint 200 36 #title {Bobbi}) ; "Tramp's Casino, eh?" says Bobbi. "It's a great place--if you like gambling!"
 						(Delay 2 1 self)
 					)
 					(900
-						(TPrint 200 37 80 {Bobbi}) ; "Doc Pulliam's, eh?" says Bobbi. "It's a great place--if you like pain!"
+						(TPrint 200 37 #title {Bobbi}) ; "Doc Pulliam's, eh?" says Bobbi. "It's a great place--if you like pain!"
 						(Delay 2 1 self)
 					)
 					(600
-						(TPrint 200 38 80 {Bobby}) ; "The Shill Building, eh?" says Bobby. "It's a great place--if you like music!"
+						(TPrint 200 38 #title {Bobby}) ; "The Shill Building, eh?" says Bobby. "It's a great place--if you like music!"
 						(if (== gPrevRoomNum 800)
 							(SetFlag 28) ; fBeenInPhilly
 						)
 						(Delay 2 1 self)
 					)
 					(800
-						(TPrint 200 39 80 {Bobby}) ; "K-RAP Radio, eh?" says Bobby. "It's a great place--if you like rap!"
+						(TPrint 200 39 #title {Bobby}) ; "K-RAP Radio, eh?" says Bobby. "It's a great place--if you like rap!"
 						(if (== gPrevRoomNum 600)
 							(SetFlag 29) ; fBeenInBaltimore
 						)
@@ -1373,7 +1373,7 @@
 						(TPrint 200 50) ; "Perhaps you could show her where you want to go."
 					)
 					(windowOpen
-						(TPrint 200 51 80 {Bobby}) ; "Hello, Miss. Thanks for lowering that window. I'm sorry, but I can't hear you anyway--I'm deaf! Just show me where you want to go."
+						(TPrint 200 51 #title {Bobby}) ; "Hello, Miss. Thanks for lowering that window. I'm sorry, but I can't hear you anyway--I'm deaf! Just show me where you want to go."
 					)
 					(else
 						(TPrint 200 52) ; "The intercom from the driver's compartment crackles to life, "I'm sorry, but I can't hear you through the soundproof glass!""
@@ -1385,31 +1385,31 @@
 					(gEgoIsLarry
 						(Say gEgo 200 53) ; "Hey, Baby! How about you crawling back here and letting me drive for a change?!"
 						(TPrint 200 54) ; "She ignores you completely."
-						(TPrint 200 55 67 -1 185) ; "(An experience not wholly unfamiliar to you!)"
+						(TPrint 200 55 #at -1 185) ; "(An experience not wholly unfamiliar to you!)"
 					)
 					((== gPattiLoc 1)
-						(TPrint 200 56 80 {Bobby}) ; "I thought I already tried that!"
+						(TPrint 200 56 #title {Bobby}) ; "I thought I already tried that!"
 					)
 					((IsFlag 29) ; fBeenInBaltimore
-						(TPrint 200 57 80 {Bobby}) ; "I thought I tried that when we were in Baltimore?!"
+						(TPrint 200 57 #title {Bobby}) ; "I thought I tried that when we were in Baltimore?!"
 					)
 					(driving
-						(TPrint 200 58 80 {Bobby}) ; "Hey, baby," says Bobby Bang, "if you're serious about that, maybe I should stop the car?!"
+						(TPrint 200 58 #title {Bobby}) ; "Hey, baby," says Bobby Bang, "if you're serious about that, maybe I should stop the car?!"
 					)
 					(else
-						(TPrint 200 59 80 {Bobby}) ; "Hey, baby," says Bobby Bang, "that's okay with me! Let's wait until we get to Baltimore!"
+						(TPrint 200 59 #title {Bobby}) ; "Hey, baby," says Bobby Bang, "that's okay with me! Let's wait until we get to Baltimore!"
 					)
 				)
 			)
 			(4 ; Inventory
 				(if gEgoIsLarry
 					(if gDestination
-						(TPrint 200 60 80 {Bobbi}) ; "Please!" she shouts through the intercom, "It's not safe to bother me while I'm driving!"
+						(TPrint 200 60 #title {Bobbi}) ; "Please!" she shouts through the intercom, "It's not safe to bother me while I'm driving!"
 					else
 						(switch invItem
 							(7 ; AeroDork_Gold_Card
 								(if (== gPrevRoomNum 250)
-									(TPrint 200 61 80 {Bobbi}) ; "You're at the airport now!"
+									(TPrint 200 61 #title {Bobbi}) ; "You're at the airport now!"
 								else
 									(gEgo stopUpd:)
 									(arm
@@ -1427,13 +1427,13 @@
 							(6 ; Hard_Disk_Cafe_Napkin
 								(cond
 									((!= gLarryLoc 1)
-										(TPrint 200 62 80 {Bobbi}) ; "Waddayou, crazy?" shouts Bobbi, "I ain't gonna haul you all the way to New York City!"
+										(TPrint 200 62 #title {Bobbi}) ; "Waddayou, crazy?" shouts Bobbi, "I ain't gonna haul you all the way to New York City!"
 									)
 									((not (OneOf gPrevRoomNum 205 250))
-										(TPrint 200 63 80 {Bobbi}) ; "Waddayou, crazy?" shouts Bobbi, "you're already there!"
+										(TPrint 200 63 #title {Bobbi}) ; "Waddayou, crazy?" shouts Bobbi, "you're already there!"
 									)
 									((IsFlag 9) ; fBeenInNewYork
-										(TPrint 200 64 80 {Bobbi}) ; "You have no need to return to New York City."
+										(TPrint 200 64 #title {Bobbi}) ; "You have no need to return to New York City."
 									)
 									(else
 										(gEgo stopUpd:)
@@ -1452,10 +1452,10 @@
 							(16 ; Tramp_Casino_Matchbook
 								(cond
 									((!= gLarryLoc 2)
-										(TPrint 200 65 80 {Bobbi}) ; "Waddayou, crazy?" shouts Bobbi, "I ain't gonna haul you all the way to Atlantic City!"
+										(TPrint 200 65 #title {Bobbi}) ; "Waddayou, crazy?" shouts Bobbi, "I ain't gonna haul you all the way to Atlantic City!"
 									)
 									((not (OneOf gPrevRoomNum 205 250))
-										(TPrint 200 63 80 {Bobbi}) ; "Waddayou, crazy?" shouts Bobbi, "you're already there!"
+										(TPrint 200 63 #title {Bobbi}) ; "Waddayou, crazy?" shouts Bobbi, "you're already there!"
 									)
 									((IsFlag 10) ; fBeenInAtlanticCity
 										(TPrint 200 66) ; "You have no need to return to Atlantic City."
@@ -1477,10 +1477,10 @@
 							(20 ; Doc_Pulliam_s_Card
 								(cond
 									((!= gLarryLoc 3)
-										(TPrint 200 67 80 {Bobbi}) ; "Waddayou, crazy?" shouts Bobbi, "I ain't gonna haul you all the way to Miami."
+										(TPrint 200 67 #title {Bobbi}) ; "Waddayou, crazy?" shouts Bobbi, "I ain't gonna haul you all the way to Miami."
 									)
 									((not (OneOf gPrevRoomNum 205 250))
-										(TPrint 200 63 80 {Bobbi}) ; "Waddayou, crazy?" shouts Bobbi, "you're already there!"
+										(TPrint 200 63 #title {Bobbi}) ; "Waddayou, crazy?" shouts Bobbi, "you're already there!"
 									)
 									((IsFlag 11) ; fBeenInMiami
 										(TPrint 200 68) ; "You have no need to return to Miami."
@@ -1509,13 +1509,13 @@
 						(3 ; A_Blank_Videotape_b
 							(cond
 								((== gPattiLoc 1)
-									(TPrint 200 69 80 {Bobby}) ; "Oh, come on, lady!" says Bobby, "that's where you are now!"
+									(TPrint 200 69 #title {Bobby}) ; "Oh, come on, lady!" says Bobby, "that's where you are now!"
 								)
 								((IsFlag 29) ; fBeenInBaltimore
-									(TPrint 200 70 80 {Bobby}) ; "Oh, come on, lady!" says Bobby, "I'm not taking you back there!"
+									(TPrint 200 70 #title {Bobby}) ; "Oh, come on, lady!" says Bobby, "I'm not taking you back there!"
 								)
 								(gDestination
-									(TPrint 200 71 80 {Bobby}) ; "I'm sorry, lady," says Bobby, "But I can only handle one destination at a time!"
+									(TPrint 200 71 #title {Bobby}) ; "I'm sorry, lady," says Bobby, "But I can only handle one destination at a time!"
 								)
 								(else
 									(Points 8 95)
@@ -1537,13 +1537,13 @@
 						(7 ; AeroDork_Gold_Card
 							(cond
 								((== gPattiLoc 2)
-									(TPrint 200 69 80 {Bobby}) ; "Oh, come on, lady!" says Bobby, "that's where you are now!"
+									(TPrint 200 69 #title {Bobby}) ; "Oh, come on, lady!" says Bobby, "that's where you are now!"
 								)
 								((IsFlag 28) ; fBeenInPhilly
-									(TPrint 200 70 80 {Bobby}) ; "Oh, come on, lady!" says Bobby, "I'm not taking you back there!"
+									(TPrint 200 70 #title {Bobby}) ; "Oh, come on, lady!" says Bobby, "I'm not taking you back there!"
 								)
 								(gDestination
-									(TPrint 200 71 80 {Bobby}) ; "I'm sorry, lady," says Bobby, "But I can only handle one destination at a time!"
+									(TPrint 200 71 #title {Bobby}) ; "I'm sorry, lady," says Bobby, "But I can only handle one destination at a time!"
 								)
 								(else
 									(Points 8 95)
@@ -1570,13 +1570,13 @@
 								(1
 									(cond
 										((== gPattiLoc 1)
-											(TPrint 200 69 80 {Bobby}) ; "Oh, come on, lady!" says Bobby, "that's where you are now!"
+											(TPrint 200 69 #title {Bobby}) ; "Oh, come on, lady!" says Bobby, "that's where you are now!"
 										)
 										((IsFlag 29) ; fBeenInBaltimore
-											(TPrint 200 70 80 {Bobby}) ; "Oh, come on, lady!" says Bobby, "I'm not taking you back there!"
+											(TPrint 200 70 #title {Bobby}) ; "Oh, come on, lady!" says Bobby, "I'm not taking you back there!"
 										)
 										(gDestination
-											(TPrint 200 71 80 {Bobby}) ; "I'm sorry, lady," says Bobby, "But I can only handle one destination at a time!"
+											(TPrint 200 71 #title {Bobby}) ; "I'm sorry, lady," says Bobby, "But I can only handle one destination at a time!"
 										)
 										(else
 											(Points 8 95)
@@ -1598,13 +1598,13 @@
 								(2
 									(cond
 										((== gPattiLoc 2)
-											(TPrint 200 69 80 {Bobby}) ; "Oh, come on, lady!" says Bobby, "that's where you are now!"
+											(TPrint 200 69 #title {Bobby}) ; "Oh, come on, lady!" says Bobby, "that's where you are now!"
 										)
 										((IsFlag 28) ; fBeenInPhilly
-											(TPrint 200 70 80 {Bobby}) ; "Oh, come on, lady!" says Bobby, "I'm not taking you back there!"
+											(TPrint 200 70 #title {Bobby}) ; "Oh, come on, lady!" says Bobby, "I'm not taking you back there!"
 										)
 										(gDestination
-											(TPrint 200 71 80 {Bobby}) ; "I'm sorry, lady," says Bobby, "But I can only handle one destination at a time!"
+											(TPrint 200 71 #title {Bobby}) ; "I'm sorry, lady," says Bobby, "But I can only handle one destination at a time!"
 										)
 										(else
 											(Points 8 95)
@@ -1657,7 +1657,7 @@
 			)
 			(2
 				(gTheMusic2 number: 320 loop: -1 play: 0 fade: 127 15 10 0)
-				(TPrint 200 73 67 -1 185 108) ; "As you drift off to sleep, you begin to dream."
+				(TPrint 200 73 #at -1 185 #dispose) ; "As you drift off to sleep, you begin to dream."
 				(tv dispose:)
 				(fish setScript: 0 stopUpd:)
 				(dreamBubble init: setLoop: 0 setCel: 1 posn: 117 120)
@@ -1751,17 +1751,17 @@
 				(switch gPattiDream
 					(1
 						(Say gEgo 200 74) ; ""Oh, Donald!" you moan in your dream."
-						(TPrint 200 75 80 {Donald}) ; ""The Donald," he corrects you."
+						(TPrint 200 75 #title {Donald}) ; ""The Donald," he corrects you."
 						(Say gEgo 200 76) ; "MY Donald," you correct him! "I so love this little boat you bought me..."
-						(TPrint 200 77 80 {The Donald}) ; "...I'm going to name it `The Tramp Pianist!'"
+						(TPrint 200 77 #title {The Donald}) ; "...I'm going to name it `The Tramp Pianist!'"
 					)
 					(2
 						(Say gEgo 200 78) ; "Oh, Willi," you moan in your dream. "Put down that keyboard and practice a little touch typing on me!"
-						(TPrint 200 79 80 {Willie}) ; "Not now, Patti!" he replies, "I'm about to finish cutting a deal with IBM!"
+						(TPrint 200 79 #title {Willie}) ; "Not now, Patti!" he replies, "I'm about to finish cutting a deal with IBM!"
 					)
 					(3
 						(Say gEgo 200 80) ; "Oh, OH, OOOOOHHHHHH!" you shout in your dream! "I just love it when you do that!"
-						(TPrint 200 81 80 {Sir Francis}) ; ""I just hope my three nephews don't come in about now!" he replies."
+						(TPrint 200 81 #title {Sir Francis}) ; ""I just hope my three nephews don't come in about now!" he replies."
 					)
 				)
 				(= dreamDone 1)
@@ -1816,8 +1816,8 @@
 			(3
 				(cond
 					(gEgoIsLarry
-						(TPrint 200 82 80 {Bobbi}) ; "I'm sorry, Sir," crackles the driver's voice through the intercom, "but my cellular telephone won't work in this area. Too much interference or something."
-						(TPrint 200 83 80 {Bobbi}) ; "Besides, I'm sure you were not given authorization for cellular calls."
+						(TPrint 200 82 #title {Bobbi}) ; "I'm sorry, Sir," crackles the driver's voice through the intercom, "but my cellular telephone won't work in this area. Too much interference or something."
+						(TPrint 200 83 #title {Bobbi}) ; "Besides, I'm sure you were not given authorization for cellular calls."
 						(Say gEgo 200 84) ; "DAMN! And all your life you've wanted to try a cell phone!"
 						(++ state)
 						(= cycles 2)
@@ -1848,16 +1848,16 @@
 				(gGame setCursor: ((gTheIconBar curIcon:) cursor:))
 				(if phonedDesmond
 					(TPrint 200 87) ; "You dial Inspector Desmond's office telephone. Soon a familiar voice answers."
-					(TPrint 200 88 80 {Desmond}) ; "Hello, this is Desmond."
+					(TPrint 200 88 #title {Desmond}) ; "Hello, this is Desmond."
 					(cond
 						((and (IsFlag 103) (IsFlag 104))
 							(Say gEgo 200 89) ; "Hi ya, Boss!" you say cheerfully. "I just wanted to tell you, I've found the information I need on Reverse Biaz and P. C. Hammer and I'm on my way."
-							(TPrint 200 90 80 {Desmond}) ; "Good job, Patti!" exclaims Desmond, "I knew you wouldn't let us down!"
+							(TPrint 200 90 #title {Desmond}) ; "Good job, Patti!" exclaims Desmond, "I knew you wouldn't let us down!"
 							(Say gEgo 200 91) ; "Thanks, Inspector!" you say cheerfully. "I hope I'll be talking to you soon!"
 						)
 						((and (not (IsFlag 103)) (not (IsFlag 104)))
 							(Say gEgo 200 92) ; "Hi ya, Boss!" you say cheerfully. "I was wondering if I might get some information from you."
-							(TPrint 200 93 80 {Desmond}) ; "Sure, Patti!" replies Desmond. "What is it you're looking for?"
+							(TPrint 200 93 #title {Desmond}) ; "Sure, Patti!" replies Desmond. "What is it you're looking for?"
 							(= whichFax
 								(switch
 									(Print ; "Inspector, please fax me some information about..."
@@ -1877,12 +1877,12 @@
 						)
 						((IsFlag 103)
 							(Say gEgo 200 95) ; "Inspector," you ask, "could you please fax me some information about P. C. Hammer?"
-							(TPrint 200 96 80 {Desmond}) ; "Sure, Patti!" replies Desmond. "I'll get someone right on it. Bye."
+							(TPrint 200 96 #title {Desmond}) ; "Sure, Patti!" replies Desmond. "I'll get someone right on it. Bye."
 							(= whichFax 2)
 						)
 						((IsFlag 104)
 							(Say gEgo 200 97) ; "Inspector," you ask, "could you please fax me some information about Reverse Biaz?"
-							(TPrint 200 96 80 {Desmond}) ; "Sure, Patti!" replies Desmond. "I'll get someone right on it. Bye."
+							(TPrint 200 96 #title {Desmond}) ; "Sure, Patti!" replies Desmond. "I'll get someone right on it. Bye."
 							(= whichFax 1)
 						)
 					)

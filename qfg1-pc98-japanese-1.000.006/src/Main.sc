@@ -984,7 +984,7 @@
 	(gEgo
 		setPri: -1
 		setMotion: 0
-		illegalBits: -32768
+		illegalBits: $8000
 		ignoreHorizon:
 		ignoreActors: 0
 	)

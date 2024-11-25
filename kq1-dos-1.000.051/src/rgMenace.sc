@@ -98,7 +98,7 @@
 			)
 		)
 		(gMenace
-			illegalBits: -16384
+			illegalBits: $c000
 			setLoop: -1
 			setCel: -1
 			setPri: -1

@@ -105,7 +105,7 @@
 					setLoop: -1
 					setPri: -1
 					cycleSpeed: 0
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(= global109 0)
 				(self dispose:)

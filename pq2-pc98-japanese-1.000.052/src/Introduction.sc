@@ -29,7 +29,7 @@
 (procedure (localproc_0 &tmp temp0 temp1)
 	(= temp1 (Display &rest dsALIGN alCENTER dsCOORD 10 10 dsWIDTH 300 dsCOLOR 15 dsSAVEPIXELS))
 	(repeat
-		(= temp0 (Event new: 5))
+		(= temp0 (Event new: evMOUSEKEYBOARD))
 		(breakif (& (temp0 type:) $0005))
 		(temp0 dispose:)
 	)

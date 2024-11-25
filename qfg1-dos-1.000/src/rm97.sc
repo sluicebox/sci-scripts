@@ -520,7 +520,7 @@
 			)
 			(1
 				(NormalEgo)
-				(gEgo loop: 1 illegalBits: -32764)
+				(gEgo loop: 1 illegalBits: $8004)
 				(self dispose:)
 			)
 		)
@@ -592,7 +592,7 @@
 				(= cycles 2)
 			)
 			(8
-				(leader setCel: 8 illegalBits: -32768 posn: 128 138)
+				(leader setCel: 8 illegalBits: $8000 posn: 128 138)
 				(= cycles 2)
 			)
 			(9

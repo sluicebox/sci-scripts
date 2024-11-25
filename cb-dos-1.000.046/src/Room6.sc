@@ -40,7 +40,7 @@
 		)
 		(if gDetailLevel
 			(chick1
-				illegalBits: 4
+				illegalBits: $0004
 				ignoreActors: 1
 				moveSpeed: 2
 				setMotion: Wander 1
@@ -48,7 +48,7 @@
 				init:
 			)
 			(chick2
-				illegalBits: 4
+				illegalBits: $0004
 				ignoreActors: 1
 				moveSpeed: 2
 				setMotion: Wander 1
@@ -56,8 +56,8 @@
 				init:
 			)
 		else
-			(chick1 illegalBits: 4 ignoreActors: 1 setPri: 7 init: stopUpd:)
-			(chick2 illegalBits: 4 ignoreActors: 1 setPri: 7 init: stopUpd:)
+			(chick1 illegalBits: $0004 ignoreActors: 1 setPri: 7 init: stopUpd:)
+			(chick2 illegalBits: $0004 ignoreActors: 1 setPri: 7 init: stopUpd:)
 		)
 		(gAddToPics add: coop eachElementDo: #init doit:)
 		(Door cel: (if (== gPrevRoomNum 59) 3 else 0) init: stopUpd:)
@@ -93,7 +93,7 @@
 				(gEgo posn: 148 185)
 			)
 		)
-		(gEgo illegalBits: -32768 view: 0 init:)
+		(gEgo illegalBits: $8000 view: 0 init:)
 	)
 
 	(method (doit)
@@ -360,7 +360,7 @@
 			)
 			(3
 				(HandsOn)
-				(gEgo view: 0 setCycle: Walk illegalBits: -32768 loop: 3)
+				(gEgo view: 0 setCycle: Walk illegalBits: $8000 loop: 3)
 				(cond
 					((and (>= gAct 2) (!= gAct 3) (< gAct 6))
 						(cond

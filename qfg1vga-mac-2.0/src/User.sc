@@ -10,7 +10,7 @@
 
 	(method (new)
 		(= type (= message (= modifiers (= y (= x (= claimed (= port 0)))))))
-		(GetEvent 32767 self)
+		(GetEvent evALL_EVENTS self)
 		(return self)
 	)
 )
@@ -55,7 +55,7 @@
 		else
 			(= temp0 1)
 		)
-		(GetEvent 32767 curEvent temp0)
+		(GetEvent evALL_EVENTS curEvent temp0)
 		(self handleEvent: curEvent)
 	)
 

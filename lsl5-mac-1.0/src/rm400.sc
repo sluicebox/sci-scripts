@@ -129,23 +129,23 @@
 				(= seconds 4)
 			)
 			(3
-				(Say gEgo 400 0 67 -1 15 70 280) ; "Oh, great," you think, "another lousy crowd. And on a Saturday night, too."
+				(Say gEgo 400 0 #at -1 15 #width 280) ; "Oh, great," you think, "another lousy crowd. And on a Saturday night, too."
 				(= ticks 30)
 			)
 			(4
-				(Say gEgo 400 1 67 -1 15 70 280) ; "Too many drinkers and talkers; too few listeners," you think. "Are there no good places left to play?"
+				(Say gEgo 400 1 #at -1 15 #width 280) ; "Too many drinkers and talkers; too few listeners," you think. "Are there no good places left to play?"
 				(= ticks 30)
 			)
 			(5
-				(Say gEgo 400 2 67 -1 15 70 280) ; "Another grimy week on a grimy stage before another grimy scene in a grimy office with another grimy little night club manager!"
+				(Say gEgo 400 2 #at -1 15 #width 280) ; "Another grimy week on a grimy stage before another grimy scene in a grimy office with another grimy little night club manager!"
 				(= seconds 3)
 			)
 			(6
-				(TPrint 400 3 67 -1 185) ; "(Just what did you expect from a club called "The Piano Pit," Patti?)"
+				(TPrint 400 3 #at -1 185) ; "(Just what did you expect from a club called "The Piano Pit," Patti?)"
 				(= seconds 3)
 			)
 			(7
-				(Say gEgo 400 4 67 -1 15 70 280) ; "Finishing your bows, you head for the manager's office. "Now I suppose I'll have to endure another scene with that cheap club manager. The perfect way to top off a perfect week," you think sarcastically."
+				(Say gEgo 400 4 #at -1 15 #width 280) ; "Finishing your bows, you head for the manager's office. "Now I suppose I'll have to endure another scene with that cheap club manager. The perfect way to top off a perfect week," you think sarcastically."
 				(gEgo
 					normalize:
 					cycleSpeed: 6
@@ -155,7 +155,7 @@
 			)
 			(8
 				(Say gEgo 400 5) ; "Oh, well," you sigh, "Chin up! Positive attitude!"
-				(TPrint 400 6 67 -1 185) ; "(Right. You feel positive he'll be a jerk!)"
+				(TPrint 400 6 #at -1 185) ; "(Right. You feel positive he'll be a jerk!)"
 				(gCurRoom newRoom: (gCurRoom east:))
 			)
 		)

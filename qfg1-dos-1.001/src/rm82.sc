@@ -900,7 +900,7 @@
 				(gEgo illegalBits: 0 setMotion: MoveTo 150 150 self)
 			)
 			(6
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HandsOn)
 				(client setScript: 0)
 			)

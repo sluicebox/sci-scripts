@@ -249,7 +249,7 @@
 	(properties
 		yStep 3
 		cycleSpeed 2
-		illegalBits -32672
+		illegalBits $8060
 		xStep 4
 		moveSpeed 2
 	)

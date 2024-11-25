@@ -30,7 +30,7 @@
 		(switch gPrevRoomNum
 			(46 ; netToPierRm
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					observeControl: 4096
 					loop: 0
 					posn: 10 145
@@ -39,7 +39,7 @@
 			)
 			(else
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					observeControl: 4096
 					loop: 0
 					posn: 315 100

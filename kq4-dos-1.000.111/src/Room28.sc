@@ -37,7 +37,7 @@
 		(if gNight
 			(= picture 128)
 		)
-		(gEgo edgeHit: EDGE_NONE illegalBits: -32768)
+		(gEgo edgeHit: EDGE_NONE illegalBits: $8000)
 		(super init:)
 		(self setRegions: 508) ; Forest_Region
 		(Load rsVIEW 17)
@@ -238,7 +238,7 @@
 			)
 			(3
 				(gCurRoom setScript: 0)
-				(gEgo illegalBits: -32768 setCycle: Walk view: 2)
+				(gEgo illegalBits: $8000 setCycle: Walk view: 2)
 				(HandsOn)
 			)
 		)

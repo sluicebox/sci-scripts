@@ -156,7 +156,7 @@
 		(NormalEgo)
 		(gEgo init:)
 		(if (not (IsFlag 161))
-			(gEgo illegalBits: -16384)
+			(gEgo illegalBits: $c000)
 		)
 		(switch gPrevRoomNum
 			(15
@@ -659,7 +659,7 @@
 			)
 			(5
 				(NormalEgo)
-				(gEgo illegalBits: -16384)
+				(gEgo illegalBits: $c000)
 				(LookAt gEgo bear)
 				(HandsOn)
 				(if (or (== local0 0) (== local0 2))

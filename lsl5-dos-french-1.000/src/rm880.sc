@@ -32,7 +32,7 @@
 	(method (init)
 		(LoadMany rsVIEW 872 880 882 883)
 		(LoadMany rsSOUND 800 801 802)
-		(gEgo init: normalize: 872 actions: ActionsKRAP illegalBits: 2)
+		(gEgo init: normalize: 872 actions: ActionsKRAP illegalBits: $0002)
 		(switch gPrevRoomNum
 			(west
 				(HandsOn)
@@ -492,7 +492,7 @@
 			)
 			(10 ; Zipper
 				(TPrint 880 22) ; "Patti! Is that all you have on your mind?"
-				(TPrint 880 23 67 -1 185) ; "(Although he IS kind of cute!)"
+				(TPrint 880 23 #at -1 185) ; "(Although he IS kind of cute!)"
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)
@@ -517,11 +517,11 @@
 			)
 			(3 ; Do
 				(TPrint 880 25) ; "You really have no use for a microphone stand."
-				(TPrint 880 26 67 -1 185) ; "(Especially one that must weigh a ton!)"
+				(TPrint 880 26 #at -1 185) ; "(Especially one that must weigh a ton!)"
 			)
 			(10 ; Zipper
 				(TPrint 880 27) ; "Patti!"
-				(TPrint 880 28 67 -1 185) ; "(Besides, wouldn't that steel be cold!?)"
+				(TPrint 880 28 #at -1 185) ; "(Besides, wouldn't that steel be cold!?)"
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)

@@ -145,7 +145,7 @@
 				(gEgo setStep: 2 2 setMotion: MoveTo 30 78 self)
 			)
 			(2
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HandsOn)
 				(self dispose:)
 			)
@@ -168,7 +168,7 @@
 				(gEgo setStep: 2 2 setMotion: MoveTo 31 56 self)
 			)
 			(2
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HandsOn)
 				(self dispose:)
 			)

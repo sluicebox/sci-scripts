@@ -44,7 +44,7 @@
 			(self setRegions: 202) ; owl
 		)
 		(self setFeatures: statue path52 theCastle)
-		(gEgo view: 2 normal: 1 setStep: 2 2 illegalBits: -32256 init:)
+		(gEgo view: 2 normal: 1 setStep: 2 2 illegalBits: $8200 init:)
 		(switch gPrevRoomNum
 			(north
 				(gEgo posn: 159 138)

@@ -169,7 +169,7 @@
 			)
 			(4
 				(proc0_1)
-				(gEgo illegalBits: -31744)
+				(gEgo illegalBits: $8400)
 				(HandsOn)
 				(self dispose:)
 			)

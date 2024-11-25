@@ -856,7 +856,7 @@
 			)
 			(2
 				(Points 10 148)
-				(TPrint 840 36 67 -1 28) ; "Bending over at the base of the tree, you dig into the humus and find the metallic object that you saw earlier. It looks like a desk key."
+				(TPrint 840 36 #at -1 28) ; "Bending over at the base of the tree, you dig into the humus and find the metallic object that you saw earlier. It looks like a desk key."
 				(HandsOn)
 				(gEgo setScript: 0)
 			)
@@ -924,7 +924,7 @@
 				(= ticks 30)
 			)
 			(2
-				(TPrint 840 38 67 -1 28) ; "You carefully return the key to its hiding place in the humus."
+				(TPrint 840 38 #at -1 28) ; "You carefully return the key to its hiding place in the humus."
 				(HandsOn)
 				(gEgo setScript: 0)
 			)
@@ -1406,7 +1406,7 @@
 				(= ticks 123)
 			)
 			(13
-				(TPrint 840 53 67 -1 185) ; "(An experience not wholly unfamiliar to you!)"
+				(TPrint 840 53 #at -1 185) ; "(An experience not wholly unfamiliar to you!)"
 				(= ticks 60)
 			)
 			(14

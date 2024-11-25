@@ -93,7 +93,7 @@
 			loop: 2
 			posn: 113 153
 			setCycle: Walk
-			illegalBits: -32768
+			illegalBits: $8000
 			init:
 		)
 		(NormalEgo 3)
@@ -407,7 +407,7 @@
 					posn: 182 114
 					loop: 2
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(gEgo
 					view: 232

@@ -62,7 +62,7 @@
 								)
 						)
 				)
-				(GetEvent 4 temp0)
+				(GetEvent evKEYBOARD temp0)
 				(if (and (& (temp0 type:) evKEYBOARD) (== (temp0 message:) KEY_SPACE))
 					(= temp2 1)
 					(= local1 1)

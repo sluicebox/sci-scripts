@@ -912,7 +912,7 @@
 				)
 			)
 			(2
-				(gEgo illegalBits: -32766)
+				(gEgo illegalBits: $8002)
 				(client setCycle: Beg self)
 			)
 			(3

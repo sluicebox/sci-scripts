@@ -33,7 +33,7 @@
 	(method (doit)
 		(switch (elevator y:)
 			(32
-				(TPrint 860 0 67 -1 15 70 280) ; "Your "elevator" descends through the K-RAP atrium, past floor after floor of offices. At least there are no workers here to see you! This is just like a recurring nightmare of yours...."
+				(TPrint 860 0 #at -1 15 #width 280) ; "Your "elevator" descends through the K-RAP atrium, past floor after floor of offices. At least there are no workers here to see you! This is just like a recurring nightmare of yours...."
 				(zwooshSound play:)
 				(heads2 init: setScript: sPeeping)
 			)

@@ -109,7 +109,7 @@
 		)
 		(gEgo
 			view: 0
-			illegalBits: -32768
+			illegalBits: $8000
 			offset: 3
 			setPri: -1
 			setStep: 3 2

@@ -84,7 +84,7 @@
 					yourself:
 				)
 		)
-		(gEgo posn: 192 222 loop: 3 illegalBits: -32768 init:)
+		(gEgo posn: 192 222 loop: 3 illegalBits: $8000 init:)
 		(super init:)
 		(gFeatures
 			add:
@@ -551,7 +551,7 @@
 				(gEgo
 					setAvoider: 0
 					ignoreActors: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setHeading: 180
 				)
 			)
@@ -657,7 +657,7 @@
 				)
 			)
 			(23
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(= local2 1)
 				(self
 					save1:

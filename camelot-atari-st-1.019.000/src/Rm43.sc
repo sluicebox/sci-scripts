@@ -343,7 +343,7 @@
 			)
 			(5
 				(= local1 0)
-				(gEgo illegalBits: -32768 ignoreActors: 0)
+				(gEgo illegalBits: $8000 ignoreActors: 0)
 				(HandsOn)
 				(if (not (and (== global162 15) (not local2) (not local3)))
 					(cond

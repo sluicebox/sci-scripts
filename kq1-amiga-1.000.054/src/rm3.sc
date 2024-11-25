@@ -444,7 +444,7 @@
 				(= cycles 6)
 			)
 			(3
-				(gEgo illegalBits: -32768 setCycle: Beg self)
+				(gEgo illegalBits: $8000 setCycle: Beg self)
 			)
 			(4
 				(proc0_1)

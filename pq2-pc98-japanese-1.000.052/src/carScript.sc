@@ -44,7 +44,7 @@
 				((ScriptID 25) notify: 0) ; rm25
 				(= local1 (if (== global131 13) 165 else 175))
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					posn: local1 175
 					loop: 0
 					cel: 0
@@ -56,7 +56,7 @@
 					(local0 dispose:)
 					(global112
 						ignoreActors: 0
-						illegalBits: -32768
+						illegalBits: $8000
 						posn: 193 197
 						setCycle: Walk
 						setStep: 3 2
@@ -90,21 +90,21 @@
 						((> (global112 y:) 189)
 							(global112
 								ignoreActors:
-								illegalBits: -32768
+								illegalBits: $8000
 								setMotion: MoveTo 185 (global112 y:) self
 							)
 						)
 						((< (global112 x:) 110)
 							(global112
 								ignoreActors:
-								illegalBits: -32768
+								illegalBits: $8000
 								setMotion: MoveTo 110 (global112 y:) self
 							)
 						)
 						(else
 							(global112
 								ignoreActors:
-								illegalBits: -32768
+								illegalBits: $8000
 								setMotion: MoveTo 105 (global112 y:) self
 							)
 						)
@@ -118,14 +118,14 @@
 					((== (global112 x:) 110)
 						(global112
 							ignoreActors:
-							illegalBits: -32768
+							illegalBits: $8000
 							setMotion: MoveTo 110 195 self
 						)
 					)
 					((== (global112 x:) 105)
 						(global112
 							ignoreActors:
-							illegalBits: -32768
+							illegalBits: $8000
 							setMotion: MoveTo 105 195 self
 						)
 					)

@@ -105,7 +105,7 @@
 
 	(method (newRoom newRoomNumber)
 		(HandsOn)
-		(gEgo illegalBits: -32768)
+		(gEgo illegalBits: $8000)
 		(super newRoom: newRoomNumber)
 	)
 

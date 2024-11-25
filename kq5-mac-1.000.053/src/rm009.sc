@@ -53,7 +53,7 @@
 		(= global325 {"Come on, Graham. Let's go someplace else!"})
 		(gGlobalSound number: 24 loop: -1 play:)
 		(= local0 (gEgo illegalBits:))
-		(gEgo illegalBits: -32768 init:)
+		(gEgo illegalBits: $8000 init:)
 		(cond
 			((and (!= ((gInventory at: 9) owner:) 9) local114) ; Heart
 				(self addObstacle: poly1)

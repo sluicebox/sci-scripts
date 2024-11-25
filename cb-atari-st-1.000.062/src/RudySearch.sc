@@ -111,7 +111,7 @@
 		(self setScript: searching)
 		(Rudy
 			setAvoider: ((Avoid new:) offScreenOK: 1)
-			illegalBits: -32768
+			illegalBits: $8000
 			init:
 		)
 	)

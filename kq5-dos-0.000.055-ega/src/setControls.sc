@@ -146,7 +146,7 @@
 				(= local1 -1)
 				(while (!= (= temp3 ((= temp2 (Event new:)) type:)) evMOUSEBUTTON)
 					(temp2 dispose:)
-					(= temp2 (Event new: -1))
+					(= temp2 (Event new: $ffff)) ; evPEEK | evALL_EVENTS
 					(temp2 localize:)
 					(= temp5 (temp2 x:))
 					(= temp6 (temp2 y:))
@@ -215,7 +215,7 @@
 				(if (proc0_15 (= temp7 (localproc_3 temp5 temp6)) 0 4 8)
 					(while (!= (= temp3 ((= temp2 (Event new:)) type:)) evMOUSERELEASE)
 						(temp2 dispose:)
-						(= temp2 (Event new: -1))
+						(= temp2 (Event new: $ffff)) ; evPEEK | evALL_EVENTS
 						(temp2 localize:)
 						(= temp5 (temp2 x:))
 						(= temp6 (temp2 y:))

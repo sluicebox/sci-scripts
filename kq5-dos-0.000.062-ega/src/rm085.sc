@@ -186,7 +186,7 @@
 				(thug1
 					view: 806
 					setScript: 0
-					illegalBits: 2048
+					illegalBits: $0800
 					setAvoider: (Avoid new:)
 					setCycle: Walk
 					ignoreActors: 1

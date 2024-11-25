@@ -248,7 +248,7 @@
 					setStep: 3 2
 					cycleSpeed: 0
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 					setHeading: 0 self
 				)
 			)

@@ -94,7 +94,7 @@
 		)
 		(if (or (not (client canFight:)) (not global245) (IsFlag 102))
 			(event claimed: 1)
-			(while ((= temp3 (Event new: 71)) type:)
+			(while ((= temp3 (Event new: $0047)) type:) ; direction | evMOUSEKEYBOARD | evMOUSERELEASE
 				(temp3 dispose:)
 			)
 			(temp3 dispose:)

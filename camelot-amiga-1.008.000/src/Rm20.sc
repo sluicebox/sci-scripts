@@ -499,7 +499,7 @@
 				(= seconds 2)
 			)
 			(3
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(Print 20 46) ; "The key turned easily and the lock is now open."
 				(SetFlag 64)
 				(HandsOn)
@@ -526,7 +526,7 @@
 			)
 			(8
 				(wellCap stopUpd:)
-				(gEgo setLoop: -1 loop: 3 illegalBits: -32768)
+				(gEgo setLoop: -1 loop: 3 illegalBits: $8000)
 				(HandsOn)
 			)
 			(9
@@ -538,7 +538,7 @@
 			)
 			(11
 				(wellCap stopUpd:)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HandsOn)
 				(= global134 0)
 			)

@@ -65,7 +65,7 @@
 				view: 4
 				looper: 0
 				setStep: 4 1
-				illegalBits: -32760
+				illegalBits: $8008
 				init:
 			)
 		)
@@ -75,7 +75,7 @@
 				view: 4
 				looper: 0
 				setStep: 4 1
-				illegalBits: -32760
+				illegalBits: $8008
 				init:
 			)
 			(if global175
@@ -99,7 +99,7 @@
 				view: 4
 				looper: myLooper
 				setStep: 4 1
-				illegalBits: -16384
+				illegalBits: $c000
 				init:
 			)
 		)
@@ -146,11 +146,11 @@
 			(self setScript: fallStairs)
 		)
 		(if (and (not local1) (& (gEgo onControl: 1) $0400))
-			(gEgo illegalBits: -16384 looper: myLooper)
+			(gEgo illegalBits: $c000 looper: myLooper)
 			(= local1 1)
 		)
 		(if (and local1 (& (gEgo onControl: 1) $0100))
-			(gEgo illegalBits: -32760 looper: 0)
+			(gEgo illegalBits: $8008 looper: 0)
 			(= local1 0)
 		)
 	)
@@ -303,7 +303,7 @@
 					init:
 					setCycle: Fwd
 				)
-				(if global169
+				(if gLolotteAlive
 					((View new:)
 						view: 145
 						ignoreActors: 1

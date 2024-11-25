@@ -380,7 +380,7 @@
 				(gEgo
 					xStep: 2
 					yStep: 1
-					illegalBits: -32768
+					illegalBits: $8000
 					setLoop: -1
 					setScript: 0
 				)

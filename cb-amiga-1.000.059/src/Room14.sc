@@ -79,7 +79,7 @@
 				(gEgo posn: 310 138)
 			)
 		)
-		(gEgo view: 0 illegalBits: -32768 init:)
+		(gEgo view: 0 illegalBits: $8000 init:)
 	)
 
 	(method (doit)
@@ -182,7 +182,7 @@
 	(method (newRoom newRoomNumber)
 		(if (== newRoomNumber 63)
 			(gConMusic stop:)
-			(gEgo illegalBits: -32768 setPri: -1 setLoop: -1)
+			(gEgo illegalBits: $8000 setPri: -1 setLoop: -1)
 		)
 		(super newRoom: newRoomNumber)
 	)

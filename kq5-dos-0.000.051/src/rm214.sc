@@ -60,7 +60,7 @@
 						posn: 158 186
 						offset: 2
 						setStep: 2 1
-						illegalBits: -32768
+						illegalBits: $8000
 						observeControl: 16384
 						offset: 3
 						init:
@@ -90,7 +90,7 @@
 					posn: 158 162
 					offset: 2
 					setStep: 2 1
-					illegalBits: -32768
+					illegalBits: $8000
 					observeControl: 16384
 					offset: 3
 					init:

@@ -76,7 +76,7 @@
 				(= local1 global322)
 			)
 		)
-		(gEgo view: 0 setPri: -1 illegalBits: -32768 setStep: 3 2 init:)
+		(gEgo view: 0 setPri: -1 illegalBits: $8000 setStep: 3 2 init:)
 		(poly1 points: @local3 size: 12)
 		(self addObstacle: poly1)
 		(gGlobalSound2 number: 3 loop: -1 play: 112)

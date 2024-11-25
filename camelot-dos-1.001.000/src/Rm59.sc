@@ -641,7 +641,7 @@
 					((Said '/relic')
 						(localproc_3 59 55) ; "A genuine relic! It is not as pleasurable as receiving it from my cousin, Achmed, but....I will give you 1 dirham."
 						(PutItem global140)
-						(++ global121)
+						(++ gSilver)
 						(SetFlag 136)
 					)
 					(global140
@@ -1062,7 +1062,7 @@
 				(gEgo illegalBits: 0 setMotion: MoveTo 220 152 self)
 			)
 			(1
-				(gEgo loop: 3 illegalBits: -32768)
+				(gEgo loop: 3 illegalBits: $8000)
 				(RedrawCast)
 				(tamra setLoop: 0 cel: 0 cycleSpeed: 2 setCycle: End self)
 			)
@@ -1164,7 +1164,7 @@
 				(gEgo illegalBits: 0 setMotion: MoveTo 216 152 self)
 			)
 			(4
-				(gEgo loop: 3 illegalBits: -32768)
+				(gEgo loop: 3 illegalBits: $8000)
 				(= cycles 4)
 			)
 			(5

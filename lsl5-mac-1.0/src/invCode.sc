@@ -225,7 +225,7 @@
 		(= temp50 (mod state 100))
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 0 70 250 80 name) ; "Auto-focus, auto-level, auto-color balance, auto-zoom, auto-pan, .5-lux, Complete-Video- Studio-in-a-Pocket-Protector. 'The Rob Lowe Model'"
+				(TPrint 19 0 #width 250 #title name) ; "Auto-focus, auto-level, auto-color balance, auto-zoom, auto-pan, .5-lux, Complete-Video- Studio-in-a-Pocket-Protector. 'The Rob Lowe Model'"
 				(Format ; "Power: %s Charge: %d min %d sec"
 					@temp0
 					19
@@ -234,7 +234,7 @@
 					(/ (gChargeTimer seconds:) 60)
 					(mod (gChargeTimer seconds:) 60)
 				)
-				(TPrint @temp0 70 123 30 1 80 name)
+				(TPrint @temp0 #width 123 #mode 1 #title name)
 			)
 			(3 ; Do
 				(cond
@@ -279,7 +279,7 @@
 					)
 					(if (!= ((Inv at: invItem) state:) 1)
 						(TPrint 19 8) ; "Because of its tiny size, your camcorder has no erase heads. It requires tapes that have been previously degaussed."
-						(TPrint 19 9 67 -1 185) ; "(You DID degauss them, didn't you, Larry?)"
+						(TPrint 19 9 #at -1 185) ; "(You DID degauss them, didn't you, Larry?)"
 						(= state 0)
 					else
 						(Points 4 73)
@@ -313,7 +313,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 11 80 name) ; "Insert into any 110-volt, 20-amp GFI-protected circuit. Recharges most batteries in one minute!"
+				(TPrint 19 11 #title name) ; "Insert into any 110-volt, 20-amp GFI-protected circuit. Recharges most batteries in one minute!"
 			)
 			(3 ; Do
 				(TPrint 19 12) ; "You open the battery charger and discover there's no battery inside!"
@@ -349,19 +349,19 @@
 			(2 ; Look
 				(switch state
 					(0
-						(TPrint 19 14 80 name 30 1) ; "Genuine pretty-good quality Highly biased Degauss before using Floss before brushing T-10"
+						(TPrint 19 14 #title name #mode 1) ; "Genuine pretty-good quality Highly biased Degauss before using Floss before brushing T-10"
 					)
 					(1
-						(TPrint 19 15 80 name) ; "The videotape is already degaussed."
+						(TPrint 19 15 #title name) ; "The videotape is already degaussed."
 					)
 					(2
-						(TPrint 19 16 80 name) ; "You had no idea financial concepts could be so "physically" rewarding!"
+						(TPrint 19 16 #title name) ; "You had no idea financial concepts could be so "physically" rewarding!"
 					)
 					(3
-						(TPrint 19 17 80 name) ; "You had no idea mud wrestling could be so spiritually rewarding!"
+						(TPrint 19 17 #title name) ; "You had no idea mud wrestling could be so spiritually rewarding!"
 					)
 					(4
-						(TPrint 19 18 80 name) ; "You had no idea dental pain could be so rewarding!"
+						(TPrint 19 18 #title name) ; "You had no idea dental pain could be so rewarding!"
 					)
 				)
 			)
@@ -392,19 +392,19 @@
 			(2 ; Look
 				(switch state
 					(0
-						(TPrint 19 14 80 name 30 1) ; "Genuine pretty-good quality Highly biased Degauss before using Floss before brushing T-10"
+						(TPrint 19 14 #title name #mode 1) ; "Genuine pretty-good quality Highly biased Degauss before using Floss before brushing T-10"
 					)
 					(1
-						(TPrint 19 15 80 name) ; "The videotape is already degaussed."
+						(TPrint 19 15 #title name) ; "The videotape is already degaussed."
 					)
 					(2
-						(TPrint 19 16 80 name) ; "You had no idea financial concepts could be so "physically" rewarding!"
+						(TPrint 19 16 #title name) ; "You had no idea financial concepts could be so "physically" rewarding!"
 					)
 					(3
-						(TPrint 19 17 80 name) ; "You had no idea mud wrestling could be so spiritually rewarding!"
+						(TPrint 19 17 #title name) ; "You had no idea mud wrestling could be so spiritually rewarding!"
 					)
 					(4
-						(TPrint 19 18 80 name) ; "You had no idea dental pain could be so rewarding!"
+						(TPrint 19 18 #title name) ; "You had no idea dental pain could be so rewarding!"
 					)
 				)
 			)
@@ -435,19 +435,19 @@
 			(2 ; Look
 				(switch state
 					(0
-						(TPrint 19 14 80 name 30 1) ; "Genuine pretty-good quality Highly biased Degauss before using Floss before brushing T-10"
+						(TPrint 19 14 #title name #mode 1) ; "Genuine pretty-good quality Highly biased Degauss before using Floss before brushing T-10"
 					)
 					(1
-						(TPrint 19 15 80 name) ; "The videotape is already degaussed."
+						(TPrint 19 15 #title name) ; "The videotape is already degaussed."
 					)
 					(2
-						(TPrint 19 16 80 name) ; "You had no idea financial concepts could be so "physically" rewarding!"
+						(TPrint 19 16 #title name) ; "You had no idea financial concepts could be so "physically" rewarding!"
 					)
 					(3
-						(TPrint 19 17 80 name) ; "You had no idea mud wrestling could be so spiritually rewarding!"
+						(TPrint 19 17 #title name) ; "You had no idea mud wrestling could be so spiritually rewarding!"
 					)
 					(4
-						(TPrint 19 18 80 name) ; "You had no idea dental pain could be so rewarding!"
+						(TPrint 19 18 #title name) ; "You had no idea dental pain could be so rewarding!"
 					)
 				)
 			)
@@ -476,8 +476,8 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 22 33 gMonoFont 82 937 2 1 80 name) ; "NAME    Michelle Milken AGE     28 HAIR    Black EYES    Brown HEIGHT   6' 1" WEIGHT   131"
-				(TPrint 19 23 33 gMonoFont 70 222 80 name) ; "OCCUPATION junk bond sales HANGOUTS  Wall Street,       computer stores TURNONS   anything covered       with whipped cream TURNOFFS  strong moral fiber"
+				(TPrint 19 22 #font gMonoFont #icon 937 2 1 #title name) ; "NAME    Michelle Milken AGE     28 HAIR    Black EYES    Brown HEIGHT   6' 1" WEIGHT   131"
+				(TPrint 19 23 #font gMonoFont #width 222 #title name) ; "OCCUPATION junk bond sales HANGOUTS  Wall Street,       computer stores TURNONS   anything covered       with whipped cream TURNOFFS  strong moral fiber"
 				(if (not (OneOf (Hard_Disk_Cafe_Napkin owner:) 23 510))
 					(Points 1 69)
 					(TPrint 19 24) ; "Inside her folder, you find a napkin."
@@ -513,7 +513,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 26 80 name 70 222 30 1) ; "If computers are your life, grab a quick byte in our cafe! In the Heart of the Fabulous Times Square Wine Country 920 W. 42nd Street New York City"
+				(TPrint 19 26 #title name #width 222 #mode 1) ; "If computers are your life, grab a quick byte in our cafe! In the Heart of the Fabulous Times Square Wine Country 920 W. 42nd Street New York City"
 			)
 			(3 ; Do
 				(TPrint 19 27) ; "Exploring for a secret message from someone in New York City, you unfold the Hard Disk Cafe napkin. Alas, you find nothing written on the napkin."
@@ -540,7 +540,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 28 80 name) ; "Whether in the U.S.A. or the South Pacific, it's Nontoonyt for you on AeroDork!"
+				(TPrint 19 28 #title name) ; "Whether in the U.S.A. or the South Pacific, it's Nontoonyt for you on AeroDork!"
 			)
 			(3 ; Do
 				(TPrint 19 29) ; "You scratch the AeroDork Gold Card and find it isn't made of solid gold."
@@ -592,7 +592,7 @@
 					temp202
 					temp203
 				)
-				(TPrint @temp0 80 name)
+				(TPrint @temp0 #title name)
 			)
 			(3 ; Do
 				(TPrint 19 31) ; "You open the boarding pass and discover it looks like it would just fit inside the AeroDork Boarding Pass Folder that came in the box with your copy of this game!"
@@ -619,7 +619,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 32 80 name) ; "Good idea; save this in case the restroom runs out of paper!"
+				(TPrint 19 32 #title name) ; "Good idea; save this in case the restroom runs out of paper!"
 			)
 			(3 ; Do
 				(TPrint 19 33) ; "Opening the magazine, you discover an interesting article. It says computer punch cards are descendants of a long line of mechanical products dating all the way back to the music box."
@@ -649,7 +649,7 @@
 		(switch theVerb
 			(2 ; Look
 				(Format @temp0 19 35 (* gQuarters 2)) ; "You always were a %d-bit game player!"
-				(TPrint @temp0 80 name)
+				(TPrint @temp0 #title name)
 			)
 			(3 ; Do
 				(Format @temp0 19 36 (if (Random 0 1) {heads} else {tails})) ; "You flip the quarter in the air. It comes up %s."
@@ -678,10 +678,10 @@
 		(switch theVerb
 			(2 ; Look
 				(if state
-					(TPrint 19 37 80 name) ; "You always wanted to have one of these, but you never had anything to schedule!"
+					(TPrint 19 37 #title name) ; "You always wanted to have one of these, but you never had anything to schedule!"
 				else
 					(Points 11 74)
-					(TPrint 19 38 80 name) ; "Inside you find: some folding money with more than two digits in the corners, many credit cards, some mutual fund account access codes, and a Swiss bank account number."
+					(TPrint 19 38 #title name) ; "Inside you find: some folding money with more than two digits in the corners, many credit cards, some mutual fund account access codes, and a Swiss bank account number."
 					(gTheIconBar curInvIcon: 0)
 					(Inv curIcon: 0 hide:)
 					(= state 1)
@@ -690,7 +690,7 @@
 			)
 			(3 ; Do
 				(if state
-					(TPrint 19 39 80 name) ; "You thumb through the pages looking for anything that might help you, but find nothing except some alphabetical page dividers, which you rip out of the binder in disgust and throw away!"
+					(TPrint 19 39 #title name) ; "You thumb through the pages looking for anything that might help you, but find nothing except some alphabetical page dividers, which you rip out of the binder in disgust and throw away!"
 				else
 					(self doVerb: 2)
 				)
@@ -716,7 +716,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 40 80 name) ; "This is even better than having your own savings and loan (as you think you may have had in "LSL4: The Missing Floppies!")"
+				(TPrint 19 40 #title name) ; "This is even better than having your own savings and loan (as you think you may have had in "LSL4: The Missing Floppies!")"
 			)
 			(3 ; Do
 				(TPrint 19 41) ; "You really enjoy running your money through your fingers. However, counting that high is beyond your limited mathematical skills."
@@ -743,7 +743,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 42 80 name) ; "Whoever this Pat Patterson guy was, he was sure loaded!"
+				(TPrint 19 42 #title name) ; "Whoever this Pat Patterson guy was, he was sure loaded!"
 			)
 			(3 ; Do
 				(TPrint 19 43) ; "You carefully count the credit cards. There are more than you ever imagined having."
@@ -772,13 +772,13 @@
 			(2 ; Look
 				(switch state
 					(1
-						(TPrint 19 44 80 name) ; "What an interesting way to make a club membership card! No one uses this antique, 9-track, paper tape any more!"
+						(TPrint 19 44 #title name) ; "What an interesting way to make a club membership card! No one uses this antique, 9-track, paper tape any more!"
 					)
 					(2
-						(TPrint 19 45 80 name) ; "Whoever said you're not a man of credit?"
+						(TPrint 19 45 #title name) ; "Whoever said you're not a man of credit?"
 					)
 					(3
-						(TPrint 19 46 80 name) ; "How clever you are! A few extra holes and you're a new man!"
+						(TPrint 19 46 #title name) ; "How clever you are! A few extra holes and you're a new man!"
 					)
 				)
 			)
@@ -809,15 +809,15 @@
 			(2 ; Look
 				(switch state
 					(0
-						(TPrint 19 48 80 name) ; "You are amazed the Japanese didn't come up with this product first!"
+						(TPrint 19 48 #title name) ; "You are amazed the Japanese didn't come up with this product first!"
 					)
 					(1
-						(TPrint 19 49 80 name 30 1) ; "Reverse Biaz des Rever Records Suite 900 Shill Building 1000 Upson Downs Lane Baltimore, MD"
+						(TPrint 19 49 #title name #mode 1) ; "Reverse Biaz des Rever Records Suite 900 Shill Building 1000 Upson Downs Lane Baltimore, MD"
 						(SetFlag 17) ; fSeenRBOffice
 					)
 					(2
 						(Points 1 78)
-						(TPrint 19 50 80 name 30 1) ; "P. C. Hammer K-RAP Radio 1709 Hillview Vista Philadelphia, PA Access code: 45954 often in Control Room B Access code: n/a"
+						(TPrint 19 50 #title name #mode 1) ; "P. C. Hammer K-RAP Radio 1709 Hillview Vista Philadelphia, PA Access code: 45954 often in Control Room B Access code: n/a"
 					)
 				)
 			)
@@ -897,7 +897,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 57 80 name 30 1) ; "Reverse Biaz Insert one end first"
+				(TPrint 19 57 #title name #mode 1) ; "Reverse Biaz Insert one end first"
 			)
 			(3 ; Do
 				(TPrint 19 58) ; "You check the DataPak carefully for any signs of damage. You find none."
@@ -925,7 +925,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 59 80 name 30 1) ; "P. C. Hammer Insert one end first"
+				(TPrint 19 59 #title name #mode 1) ; "P. C. Hammer Insert one end first"
 			)
 			(3 ; Do
 				(TPrint 19 58) ; "You check the DataPak carefully for any signs of damage. You find none."
@@ -952,8 +952,8 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 60 33 gMonoFont 82 937 2 2 80 name) ; "NAME    Lana Luscious AGE     21 HAIR    Blond EYES    Blue HEIGHT   5' 10" WEIGHT   123"
-				(TPrint 19 61 33 gMonoFont 70 277 80 name) ; "OCCUPATION professional mud wrestler,       former "Miss Wet T-Shirt       of Atlantic City" HANGOUTS  Tramp's Boardwalk TURNONS   polyurethane, mud TURNOFFS  high IQ's"
+				(TPrint 19 60 #font gMonoFont #icon 937 2 2 #title name) ; "NAME    Lana Luscious AGE     21 HAIR    Blond EYES    Blue HEIGHT   5' 10" WEIGHT   123"
+				(TPrint 19 61 #font gMonoFont #width 277 #title name) ; "OCCUPATION professional mud wrestler,       former "Miss Wet T-Shirt       of Atlantic City" HANGOUTS  Tramp's Boardwalk TURNONS   polyurethane, mud TURNOFFS  high IQ's"
 				(if (not (gEgo has: 16)) ; Tramp_Casino_Matchbook
 					(Points 1 70)
 					(TPrint 19 62) ; "Inside her folder, you find a matchbook."
@@ -989,11 +989,11 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 64 80 name 30 1) ; "Visit beautiful Tramp Casino on the beautiful Tramp Boardwalk outside the luxurious Tramp Hotel near the palatial Tramp Overscale Miniature Golf Course right off filthy Tramp Beach! 777 High Roller Drive Atlantic City"
+				(TPrint 19 64 #title name #mode 1) ; "Visit beautiful Tramp Casino on the beautiful Tramp Boardwalk outside the luxurious Tramp Hotel near the palatial Tramp Overscale Miniature Golf Course right off filthy Tramp Beach! 777 High Roller Drive Atlantic City"
 			)
 			(3 ; Do
 				(TPrint 19 65) ; "Just for fun, you strike a match and hold it between your fingers as long as possible, until it burns down so far that you think you're about to burn yourself. Then you drop it and rub it out with your toe."
-				(TPrint 19 66 67 -1 185) ; "(Thus, you amuse yourself greatly!)"
+				(TPrint 19 66 #at -1 185) ; "(Thus, you amuse yourself greatly!)"
 			)
 			(4 ; Inventory
 				(localproc_0 (Inv indexOf: self) invItem)
@@ -1018,7 +1018,7 @@
 		(switch theVerb
 			(2 ; Look
 				(Format @temp0 19 67 gSilvDollars (if (> gSilvDollars 1) {s} else {})) ; "You have %d silver dollar%s, but you desire much, much more."
-				(TPrint @temp0 80 name)
+				(TPrint @temp0 #title name)
 				(TPrint 19 68) ; "Hey, wait a minute! These aren't real silver dollars. Every single one of them has Donald Tramp's picture on it!"
 			)
 			(3 ; Do
@@ -1046,7 +1046,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 70 80 name) ; "With these on your feet you feel as though you could fly... right off the boardwalk."
+				(TPrint 19 70 #title name) ; "With these on your feet you feel as though you could fly... right off the boardwalk."
 			)
 			(3 ; Do
 				(if (== gCurRoomNum 760)
@@ -1078,7 +1078,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 49 80 name 30 1) ; "Reverse Biaz des Rever Records Suite 900 Shill Building 1000 Upson Downs Lane Baltimore, MD"
+				(TPrint 19 49 #title name #mode 1) ; "Reverse Biaz des Rever Records Suite 900 Shill Building 1000 Upson Downs Lane Baltimore, MD"
 				(SetFlag 17) ; fSeenRBOffice
 			)
 			(3 ; Do
@@ -1105,7 +1105,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 73 80 name) ; "You do so love a nice wet Brute!"
+				(TPrint 19 73 #title name) ; "You do so love a nice wet Brute!"
 			)
 			(3 ; Do
 				(TPrint 19 74) ; "You begin to pop the cork, but decide to wait for a more opportune moment."
@@ -1133,9 +1133,9 @@
 		(switch theVerb
 			(2 ; Look
 				(if state
-					(TPrint 19 75 80 name) ; "Excellent detective work, Patti!"
+					(TPrint 19 75 #title name) ; "Excellent detective work, Patti!"
 				else
-					(TPrint 19 76 80 name) ; "For years you've wondered what happened to "The Four Shabangs!""
+					(TPrint 19 76 #title name) ; "For years you've wondered what happened to "The Four Shabangs!""
 				)
 			)
 			(3 ; Do
@@ -1163,7 +1163,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 78 80 name) ; "A smoking gun of the subtle degradation of our nation's youth by those filth-mongering blasphemers, wouldn't you say, Patti?"
+				(TPrint 19 78 #title name) ; "A smoking gun of the subtle degradation of our nation's youth by those filth-mongering blasphemers, wouldn't you say, Patti?"
 			)
 			(3 ; Do
 				(TPrint 19 79) ; "You hold the cassette tape up to your ear and listen carefully. You do not hear the ocean roar!"
@@ -1190,8 +1190,8 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 80 33 gMonoFont 82 937 2 0 80 name) ; "NAME    Chi Chi Lambada AGE     24 HAIR    Raven EYES    Chestnut HEIGHT   5' 8" WEIGHT   101"
-				(TPrint 19 81 33 gMonoFont 70 240 80 name) ; "OCCUPATION dental hygienist and       former gymnast HANGOUTS  the gym; the office TURNONS   locker room odor,       dental irrigators TURNOFFS  burning rubber"
+				(TPrint 19 80 #font gMonoFont #icon 937 2 0 #title name) ; "NAME    Chi Chi Lambada AGE     24 HAIR    Raven EYES    Chestnut HEIGHT   5' 8" WEIGHT   101"
+				(TPrint 19 81 #font gMonoFont #width 240 #title name) ; "OCCUPATION dental hygienist and       former gymnast HANGOUTS  the gym; the office TURNONS   locker room odor,       dental irrigators TURNOFFS  burning rubber"
 				(if (not (gEgo has: 20)) ; Doc_Pulliam_s_Card
 					(Points 1 71)
 					(TPrint 19 82) ; "Inside her folder, you find a business card."
@@ -1228,7 +1228,7 @@
 		(switch theVerb
 			(2 ; Look
 				(Points 1 77)
-				(TPrint 19 84 80 name 70 222 30 1) ; "Can Doc Fixem? Nope, but can 'Doc Pulliam!!'" Doc Pulliam's Dental Hygiene Heaven, 169 Lower Wacker Drive Miami, FL Dial 554-3627 Our Motto: "Beats a doorknob and string!"
+				(TPrint 19 84 #title name #width 222 #mode 1) ; "Can Doc Fixem? Nope, but can 'Doc Pulliam!!'" Doc Pulliam's Dental Hygiene Heaven, 169 Lower Wacker Drive Miami, FL Dial 554-3627 Our Motto: "Beats a doorknob and string!"
 			)
 			(3 ; Do
 				(TPrint 19 85) ; "You turn the business card over expecting to find a secret clue on the back."
@@ -1256,7 +1256,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 87 80 name) ; "Official U. S. Government Alien Resident Permit"
+				(TPrint 19 87 #title name) ; "Official U. S. Government Alien Resident Permit"
 			)
 			(3 ; Do
 				(TPrint 19 88) ; "Whatever possessed you to "purchase" one of these?"
@@ -1282,9 +1282,9 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 89 80 name) ; "Isn't this sweet! It would look great back home in your apartment."
-				(TPrint 19 90 67 -1 185 80 name) ; "(If you HAD an apartment!)"
-				(TPrint 19 91 67 -1 185 80 name) ; "(If you had a HOME!)"
+				(TPrint 19 89 #title name) ; "Isn't this sweet! It would look great back home in your apartment."
+				(TPrint 19 90 #at -1 185 #title name) ; "(If you HAD an apartment!)"
+				(TPrint 19 91 #at -1 185 #title name) ; "(If you had a HOME!)"
 			)
 			(3 ; Do
 				(cond
@@ -1341,7 +1341,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 96 80 name 70 200 30 1) ; "P. C. Hammer K-RAP Radio 1709 Hillview Vista Philadelphia, PA Access code: 45954 often in Control Room B Access code: n/a"
+				(TPrint 19 96 #title name #width 200 #mode 1) ; "P. C. Hammer K-RAP Radio 1709 Hillview Vista Philadelphia, PA Access code: 45954 often in Control Room B Access code: n/a"
 			)
 			(3 ; Do
 				(TPrint 19 72) ; "This fax paper sure is flimsy!"
@@ -1368,7 +1368,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 97 80 name) ; "This is merely a razor-sharp letter opener; don't try anything funny with it like picking locks!"
+				(TPrint 19 97 #title name) ; "This is merely a razor-sharp letter opener; don't try anything funny with it like picking locks!"
 			)
 			(3 ; Do
 				(TPrint 19 98) ; "You nearly cut your hand on the needle-like letter opener."
@@ -1395,13 +1395,13 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 99 80 name) ; "Did you know that one key will fit the lock of every piece of pressed-cardboard furniture in the world!?"
+				(TPrint 19 99 #title name) ; "Did you know that one key will fit the lock of every piece of pressed-cardboard furniture in the world!?"
 			)
 			(4 ; Inventory
 				(localproc_0 (Inv indexOf: self) invItem)
 			)
 			(3 ; Do
-				(TPrint 19 99 80 name) ; "Did you know that one key will fit the lock of every piece of pressed-cardboard furniture in the world!?"
+				(TPrint 19 99 #title name) ; "Did you know that one key will fit the lock of every piece of pressed-cardboard furniture in the world!?"
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)
@@ -1423,8 +1423,8 @@
 		(switch theVerb
 			(2 ; Look
 				(Points 4 146)
-				(TPrint 19 100 80 name) ; "Examining the papers inside the folder carefully, you find one with some references to gangster activities. It is signed only with a scrawled name you make out to be "Julius.""
-				(TPrint 19 101 80 name) ; "These papers provide proof positive of Mob payola at K-RAP Radio! But how will you get them out of here without Krapper finding out?"
+				(TPrint 19 100 #title name) ; "Examining the papers inside the folder carefully, you find one with some references to gangster activities. It is signed only with a scrawled name you make out to be "Julius.""
+				(TPrint 19 101 #title name) ; "These papers provide proof positive of Mob payola at K-RAP Radio! But how will you get them out of here without Krapper finding out?"
 			)
 			(3 ; Do
 				(if (gEgo has: 11) ; DayTrotter
@@ -1455,7 +1455,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 19 104 80 name) ; "These copies provide proof positive of Mob payola at K-RAP Radio!"
+				(TPrint 19 104 #title name) ; "These copies provide proof positive of Mob payola at K-RAP Radio!"
 			)
 			(3 ; Do
 				(TPrint 19 105) ; "Good job sneaking these photocopies out of K-RAP, Patti!"
@@ -1483,10 +1483,10 @@
 		(switch theVerb
 			(2 ; Look
 				(if state
-					(TPrint 19 106 80 name) ; ""D D D" This tape is filled with digitally-recorded incriminating evidence!"
+					(TPrint 19 106 #title name) ; ""D D D" This tape is filled with digitally-recorded incriminating evidence!"
 				else
-					(TPrint 19 107 80 name) ; "If you could look closely enough, you could see billions of magnetic particles pointing in random directions."
-					(TPrint 19 108 67 -1 185) ; "(In other words, this tape is still blank!)"
+					(TPrint 19 107 #title name) ; "If you could look closely enough, you could see billions of magnetic particles pointing in random directions."
+					(TPrint 19 108 #at -1 185) ; "(In other words, this tape is still blank!)"
 				)
 			)
 			(3 ; Do
@@ -1515,7 +1515,7 @@
 		(switch theVerb
 			(2 ; Look
 				(Points 2 76)
-				(TPrint 19 110 80 name) ; "Commander Twit's boys may be into explosives, but they know nothing about comfort or adequate support."
+				(TPrint 19 110 #title name) ; "Commander Twit's boys may be into explosives, but they know nothing about comfort or adequate support."
 			)
 			(3 ; Do
 				(self doVerb: 2)

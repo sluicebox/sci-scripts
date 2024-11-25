@@ -435,7 +435,7 @@
 						setPri: -1
 						setMotion: 0
 						setCycle: Walk
-						illegalBits: -32768
+						illegalBits: $8000
 						cycleSpeed: 0
 						moveSpeed: 0
 						ignoreActors: 0
@@ -445,7 +445,7 @@
 			)
 			(3
 				(HandsOn)
-				(gEgo illegalBits: -32768 ignoreActors: 0 setLoop: -1)
+				(gEgo illegalBits: $8000 ignoreActors: 0 setLoop: -1)
 				(client goingOut: 0 setScript: 0)
 			)
 		)
@@ -474,7 +474,7 @@
 					setPri: -1
 					setMotion: 0
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 					cycleSpeed: 0
 					moveSpeed: 0
 					ignoreActors: 0
@@ -492,7 +492,7 @@
 			(4
 				(gMuleObj
 					setLoop: -1
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 					setMotion: MoveTo 150 161 self
 				)

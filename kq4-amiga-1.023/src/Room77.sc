@@ -243,7 +243,7 @@
 			(4
 				(HandsOn)
 				(gEgo
-					illegalBits: -32768
+					illegalBits: $8000
 					setAvoider: 0
 					xStep: 3
 					yStep: 2

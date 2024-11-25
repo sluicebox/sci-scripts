@@ -144,12 +144,12 @@
 		(Load rsVIEW 21)
 		(Load rsVIEW 10)
 		(if (== gPrevRoomNum 24)
-			(gEgo setScript: swimIn illegalBits: -32768)
+			(gEgo setScript: swimIn illegalBits: $8000)
 		else
 			(gEgo
 				view: 2
 				setStep: 3 2
-				illegalBits: -32768
+				illegalBits: $8000
 				posn: 224 114
 				init:
 			)

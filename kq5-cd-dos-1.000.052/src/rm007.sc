@@ -42,7 +42,7 @@
 		(super init:)
 		(= global320 181)
 		(= global321 35)
-		(gEgo normal: 1 setStep: 3 2 view: 0 illegalBits: -32768)
+		(gEgo normal: 1 setStep: 3 2 view: 0 illegalBits: $8000)
 		(= global325 3033)
 		(gGlobalSound number: 24 loop: -1 play:)
 		(if (and (not (IsFlag 26)) (!= ((gInventory at: 9) owner:) 9)) ; Heart

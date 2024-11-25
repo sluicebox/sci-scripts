@@ -83,7 +83,7 @@
 					claimed: (optEvnt claimed:)
 				)
 			else
-				(GetEvent 32767 event)
+				(GetEvent evALL_EVENTS event)
 			)
 		)
 		(return event)

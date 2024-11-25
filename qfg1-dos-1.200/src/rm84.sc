@@ -71,7 +71,7 @@
 		(NormalEgo)
 		(gEgo init:)
 		(if (not (IsFlag 253))
-			(gEgo illegalBits: -32704)
+			(gEgo illegalBits: $8040)
 			(rock init: stopUpd:)
 		)
 		(if (= local0 (not (or (IsFlag 206) (IsFlag 204))))
@@ -743,7 +743,7 @@
 				else
 					(NormalEgo)
 					(if (not (IsFlag 253))
-						(gEgo illegalBits: -32704)
+						(gEgo illegalBits: $8040)
 					)
 					(= local4 45)
 					(if (< (gEgo x:) (antwerp x:))
@@ -1023,7 +1023,7 @@
 			(23
 				(NormalEgo)
 				(if (not (IsFlag 253))
-					(gEgo illegalBits: -32704)
+					(gEgo illegalBits: $8040)
 				)
 				(SetFlag 204)
 				(HandsOn)
@@ -1083,7 +1083,7 @@
 			)
 			(2
 				(EgoGait 0 0) ; walking
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HandsOn)
 				(SolvePuzzle 701 10)
 				(SetFlag 253)
@@ -1115,7 +1115,7 @@
 					(HighPrint 84 44) ; "Your spell has unlocked the lock on the rock, but it is not yet powerful enough to open the rock door."
 					(HandsOn)
 					(NormalEgo)
-					(gEgo illegalBits: -32704)
+					(gEgo illegalBits: $8040)
 					(client setScript: 0)
 				else
 					(rock

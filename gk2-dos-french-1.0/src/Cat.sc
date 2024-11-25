@@ -70,7 +70,7 @@
 				)
 				(self posn: (+ (event x:) dx) (+ (event y:) dy) z)
 				(FrameOut)
-				(GetEvent 32767 event)
+				(GetEvent evALL_EVENTS event)
 			)
 			(castOfOne release: dispose:)
 			(if caller

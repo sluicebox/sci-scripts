@@ -556,7 +556,7 @@
 				(= seconds (Random 2 4))
 			)
 			(5
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HandsOn)
 				(client setScript: 0)
 				(cond

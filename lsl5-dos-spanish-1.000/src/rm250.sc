@@ -42,7 +42,7 @@
 				(Delay 5 1 gCurRoom)
 			)
 			(258
-				(gEgo posn: 191 105 illegalBits: -32768)
+				(gEgo posn: 191 105 illegalBits: $8000)
 				(Delay 5 1 gCurRoom)
 			)
 			(else

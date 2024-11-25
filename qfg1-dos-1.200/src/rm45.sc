@@ -1197,7 +1197,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(client illegalBits: -32768)
+				(client illegalBits: $8000)
 				(= seconds (Random 2 5))
 			)
 			(1

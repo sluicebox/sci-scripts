@@ -297,7 +297,7 @@
 					cel: 0
 					posn: 112 133
 					ignoreActors: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: End self
 				)
 				(chair
@@ -376,7 +376,7 @@
 					posn: 107 124
 					setPri: 9
 					ignoreActors: 0
-					illegalBits: -32768
+					illegalBits: $8000
 					setCycle: End self
 				)
 			)

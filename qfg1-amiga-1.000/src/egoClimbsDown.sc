@@ -60,7 +60,7 @@
 			(6
 				((ScriptID 93 0) notify: 0) ; rm93
 				(NormalEgo)
-				(gEgo illegalBits: -28672)
+				(gEgo illegalBits: $9000)
 				(HandsOn)
 			)
 		)

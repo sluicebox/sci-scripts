@@ -101,7 +101,7 @@
 					setCycle: Walk
 					ignoreActors:
 					ignoreHorizon:
-					illegalBits: -32768
+					illegalBits: $8000
 					init:
 					setStep: 4 3
 					cycleSpeed: 0

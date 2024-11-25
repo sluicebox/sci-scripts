@@ -96,7 +96,7 @@
 				(Print 153 16) ; "You are fit only to be a warrior in this land and Jerusalem has all the warriors it needs."
 			)
 			((Said 'get/coin')
-				(if (== global122 global121 global120 0)
+				(if (== gGold gSilver gCopper 0)
 					(Print 153 17) ; "You must use your wits if you hope to obtain money."
 				else
 					(Print 153 18) ; "Use carefully what you have. That is more important than how much you can accumulate."
@@ -150,7 +150,7 @@
 				(Print 153 28) ; "Eat raw meat? In THIS climate? I think not."
 			)
 			((Said 'get,buy/food,drink,pack')
-				(if (== global122 global121 global120 0)
+				(if (== gGold gSilver gCopper 0)
 					(Print 153 29) ; "First, you must have money."
 				else
 					(Print 153 30) ; "You should be able to find what you need within this bazaar."

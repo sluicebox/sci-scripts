@@ -669,7 +669,7 @@
 					setPri: -1
 					ignoreActors: 0
 					setLoop: -1
-					illegalBits: -32768
+					illegalBits: $8000
 					cycleSpeed: 0
 					setStep: 3 2
 				)

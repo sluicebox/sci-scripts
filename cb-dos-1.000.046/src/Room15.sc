@@ -99,7 +99,7 @@
 				)
 			)
 		)
-		(gEgo view: 0 illegalBits: -32766 init:)
+		(gEgo view: 0 illegalBits: $8002 init:)
 	)
 
 	(method (doit)
@@ -113,7 +113,7 @@
 		)
 		(if (and local4 (& (gEgo onControl: 1) $0001))
 			(User canControl: 1)
-			(gEgo illegalBits: -32768)
+			(gEgo illegalBits: $8000)
 			(= local4 0)
 		)
 		(if
@@ -281,7 +281,7 @@
 				(gEgo setMotion: MoveTo 130 117 self)
 			)
 			(2
-				(gEgo setMotion: 0 illegalBits: -32768)
+				(gEgo setMotion: 0 illegalBits: $8000)
 				(Door cycleSpeed: 1 ignoreActors: 1 setCycle: End self)
 				(myMusic number: 43 loop: 1 priority: 5 play:)
 			)

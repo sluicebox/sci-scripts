@@ -439,7 +439,7 @@
 					setStep: 3 2
 					setLoop: -1
 					setPri: -1
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 				)
 				(if (== gPrevRoomNum 60)

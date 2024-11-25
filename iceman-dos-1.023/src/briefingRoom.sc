@@ -823,7 +823,7 @@
 				(gEgo setMotion: MoveTo 215 160 self)
 			)
 			(2
-				(gEgo illegalBits: -32768 loop: 3)
+				(gEgo illegalBits: $8000 loop: 3)
 				(briefingRoom south: 20)
 			)
 		)

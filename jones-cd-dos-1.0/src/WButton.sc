@@ -82,7 +82,7 @@
 		(if (& (param1 type:) $0001)
 			(self setPort:)
 			(repeat
-				(= param1 (Event new: -32768))
+				(= param1 (Event new: evPEEK))
 				(param1 localize: ((client window:) window:))
 				(if (!= (= temp0 (self check: param1)) temp1)
 					(self

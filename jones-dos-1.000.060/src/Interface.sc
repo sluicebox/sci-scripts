@@ -435,7 +435,7 @@
 			(self setPort:)
 			(= lastIn 0)
 			(repeat
-				(= event (Event new: -32768))
+				(= event (Event new: evPEEK))
 				(if client
 					(event localize: ((client window:) window:))
 				)

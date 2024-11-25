@@ -92,7 +92,7 @@
 				(gEgo setMotion: MoveTo 309 109 self)
 			)
 			(3
-				(gEgo ignoreActors: 0 illegalBits: -12288)
+				(gEgo ignoreActors: 0 illegalBits: $d000)
 				(HandsOn)
 				(self dispose:)
 			)
@@ -150,7 +150,7 @@
 				(client setCycle: End self)
 			)
 			(2
-				(gEgo illegalBits: -32768 setAvoider: Avoid)
+				(gEgo illegalBits: $8000 setAvoider: Avoid)
 				(if register
 					(gEgo setMotion: MoveTo 3 105 self)
 				else

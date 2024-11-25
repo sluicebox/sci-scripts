@@ -11,7 +11,7 @@
 
 	(method (new)
 		(= type (= message (= modifiers (= y (= x (= claimed (= port 0)))))))
-		(GetEvent 32767 self)
+		(GetEvent evALL_EVENTS self)
 		(return self)
 	)
 )
@@ -41,7 +41,7 @@
 
 	(method (doit &tmp [temp0 100])
 		(curEvent type: 0 message: 0 modifiers: 0 y: 0 x: 0 claimed: 0 port: 0)
-		(GetEvent 32767 curEvent)
+		(GetEvent evALL_EVENTS curEvent)
 		(if (and (== (curEvent type:) 1) (& (curEvent modifiers:) $0003))
 			(curEvent type: 4 message: 13)
 		)

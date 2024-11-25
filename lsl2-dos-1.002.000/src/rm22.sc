@@ -121,7 +121,7 @@
 			((= aHench (Act new:))
 				view: 234
 				posn: -11 174
-				illegalBits: -32768
+				illegalBits: $8000
 				setCycle: Walk
 				init:
 				hide:

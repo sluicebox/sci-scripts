@@ -928,7 +928,7 @@
 		setCycle: Walk
 		setStep: 3 2
 		looper: 0
-		illegalBits: -32768
+		illegalBits: $8000
 		cycleSpeed: 0
 		moveSpeed: 0
 		setAvoider: 0
@@ -1572,7 +1572,7 @@
 				(HandsOff)
 				(proc0_13)
 				(egoItem
-					illegalBits: -32768
+					illegalBits: $8000
 					ignoreActors: 0
 					setMotion: MoveTo global115 global116
 				)
@@ -2002,7 +2002,7 @@
 			(self
 				name: {followItem}
 				view: global600
-				illegalBits: -32768
+				illegalBits: $8000
 				posn: global109 global110
 				setLoop: -1
 				setCycle: Walk

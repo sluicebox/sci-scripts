@@ -179,7 +179,7 @@
 				(SDoor cel: 3 z: 0 setCycle: Beg self)
 			)
 			(2
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HandsOn)
 				(client setScript: 0)
 			)
@@ -266,7 +266,7 @@
 			)
 			(4
 				(gGlobalSound3 number: 124 loop: 1 vol: 80 play:)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(gCurRoom newRoom: 85)
 			)
 		)
@@ -311,7 +311,7 @@
 				(gEgo illegalBits: 0 setMotion: MoveTo 139 124 self)
 			)
 			(4
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(gCurRoom newRoom: 28)
 			)
 		)
@@ -549,7 +549,7 @@
 			)
 			(2
 				(FDoor setCycle: Beg self)
-				(gEgo setPri: -1 illegalBits: -32768)
+				(gEgo setPri: -1 illegalBits: $8000)
 			)
 			(3
 				(gGlobalSound3 number: 124 vol: 80 loop: 1 play:)

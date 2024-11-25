@@ -213,7 +213,7 @@
 				init:
 			)
 		else
-			(gEgo view: 0 setPri: 6 illegalBits: -32768 init:)
+			(gEgo view: 0 setPri: 6 illegalBits: $8000 init:)
 		)
 	)
 
@@ -439,7 +439,7 @@
 
 	(method (cue)
 		(HandsOn)
-		(gEgo illegalBits: -32768 setLoop: -1)
+		(gEgo illegalBits: $8000 setLoop: -1)
 		(= local13 0)
 	)
 )
@@ -515,7 +515,7 @@
 			)
 			(5
 				(HandsOn)
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(fpanel stopUpd:)
 				(client setScript: 0)
 			)
@@ -584,7 +584,7 @@
 			(3
 				(bpanel stopUpd:)
 				(HandsOn)
-				(gEgo setLoop: -1 illegalBits: -32768)
+				(gEgo setLoop: -1 illegalBits: $8000)
 				(client setScript: 0)
 			)
 			(4
@@ -610,7 +610,7 @@
 				(mySound number: 75 loop: 1 play:)
 			)
 			(8
-				(gEgo setLoop: -1 illegalBits: -32768)
+				(gEgo setLoop: -1 illegalBits: $8000)
 				(gCurRoom newRoom: (gCurRoom north:))
 			)
 		)
@@ -636,7 +636,7 @@
 			)
 			(3
 				(HandsOn)
-				(gEgo illegalBits: -32768 setScript: 0)
+				(gEgo illegalBits: $8000 setScript: 0)
 			)
 		)
 	)

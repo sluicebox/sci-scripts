@@ -66,7 +66,7 @@
 				posn: 72 132
 				view: 4
 				setStep: 4 1
-				illegalBits: -32768
+				illegalBits: $8000
 				init:
 			)
 		)

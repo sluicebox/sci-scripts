@@ -43,7 +43,7 @@
 				loop: 2
 				cel: 0
 				posn: 130 113
-				illegalBits: -32768
+				illegalBits: $8000
 				init:
 			)
 		else
@@ -65,7 +65,7 @@
 						)
 						(else 120)
 					)
-				illegalBits: -32768
+				illegalBits: $8000
 				init:
 			)
 		)
@@ -272,7 +272,7 @@
 					cel: 0
 					setCycle: Walk
 					ignoreActors: 0
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(HandsOn)
 				(= local0 0)

@@ -608,7 +608,7 @@
 					setScript: rmScript
 				)
 				(if (!= local1 1)
-					(gEgo posn: 250 54 setPri: -1 illegalBits: -16384)
+					(gEgo posn: 250 54 setPri: -1 illegalBits: $c000)
 				else
 					(= local0 1)
 					(gEgo posn: 207 86 illegalBits: 0)
@@ -707,7 +707,7 @@
 					setCycle: Walk
 					cycleSpeed: 0
 					ignoreActors: 0
-					illegalBits: -16384
+					illegalBits: $c000
 				)
 				(= global100 0)
 				(if (not global194)
@@ -942,7 +942,7 @@
 					(RedrawCast)
 					(Print 8 63) ; "You notice it to be slick up here. Be careful."
 				else
-					(gEgo setPri: -1 illegalBits: -16384 posn: 220 120)
+					(gEgo setPri: -1 illegalBits: $c000 posn: 220 120)
 					(= local2 0)
 					(= local0 0)
 				)

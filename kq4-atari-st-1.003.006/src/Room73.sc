@@ -153,7 +153,7 @@
 					xStep: 4
 					cycleSpeed: 0
 					setCycle: Walk
-					illegalBits: -32768
+					illegalBits: $8000
 				)
 				(HandsOn)
 				(client setScript: 0)
@@ -182,7 +182,7 @@
 				)
 			)
 			(22
-				(gEgo illegalBits: -32768)
+				(gEgo illegalBits: $8000)
 				(HandsOn)
 				(gCurRoom newRoom: 77)
 			)

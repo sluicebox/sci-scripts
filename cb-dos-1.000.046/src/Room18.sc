@@ -62,7 +62,7 @@
 				(gEgo posn: 158 168)
 			)
 		)
-		(gEgo view: 0 illegalBits: -32768 init:)
+		(gEgo view: 0 illegalBits: $8000 init:)
 	)
 
 	(method (doit)

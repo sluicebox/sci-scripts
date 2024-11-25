@@ -38,7 +38,7 @@
 
 	(method (init)
 		(self setRegions: 40) ; HollywoodRgn
-		(gEgo init: normalize: illegalBits: -32760)
+		(gEgo init: normalize: illegalBits: $8008)
 		(switch gPrevRoomNum
 			(140
 				(HandsOn)
@@ -270,8 +270,8 @@
 				)
 			)
 			(2
-				(Say gEgo 160 1 67 -1 185) ; ""Excuse me!" you say, assuming responsibility!"
-				(gEgo setLoop: 3 normalize: illegalBits: -32760)
+				(Say gEgo 160 1 #at -1 185) ; ""Excuse me!" you say, assuming responsibility!"
+				(gEgo setLoop: 3 normalize: illegalBits: $8008)
 				(HandsOn)
 				(= belched 1)
 				(self dispose:)
@@ -357,7 +357,7 @@
 	)
 
 	(method (close)
-		(gEgo illegalBits: -32760)
+		(gEgo illegalBits: $8008)
 		(super close:)
 	)
 )
@@ -396,7 +396,7 @@
 			)
 			(5 ; Talk
 				(Say gEgo 160 7) ; "Hey, Scruemall!" you whisper softly, "I'm not afraid of you!"
-				(TPrint 160 8 67 -1 185) ; "("Only your power," you think.)"
+				(TPrint 160 8 #at -1 185) ; "("Only your power," you think.)"
 			)
 			(else
 				(super doVerb: theVerb invItem &rest)
@@ -639,7 +639,7 @@
 			(3 ; Do
 				(TPrint 160 26) ; "Thinking yourself incredibly smart, you attempt to remove the painting from the wall in order to crack the safe which you feel certain lies behind it."
 				(TPrint 160 27) ; "You fail."
-				(TPrint 160 28 67 -1 185) ; "(But not because you can't crack a good one!)"
+				(TPrint 160 28 #at -1 185) ; "(But not because you can't crack a good one!)"
 				(= usedHand 1)
 			)
 			(5 ; Talk
@@ -669,7 +669,7 @@
 		(switch theVerb
 			(3 ; Do
 				(TPrint 160 30) ; "Take your hand off her!"
-				(TPrint 160 31 67 -1 185) ; "(You're smudging that fine cardboard surface!)"
+				(TPrint 160 31 #at -1 185) ; "(You're smudging that fine cardboard surface!)"
 				(= usedHand 1)
 			)
 			(5 ; Talk
@@ -758,7 +758,7 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 160 36 30 1) ; ""Class B Establishment" granted by the Board of Health. (Contested by the Board of Good Taste!)"
+				(TPrint 160 36 #mode 1) ; ""Class B Establishment" granted by the Board of Health. (Contested by the Board of Good Taste!)"
 			)
 			(3 ; Do
 				(TPrint 160 37) ; "This is in keeping with your opinion of this place."
@@ -880,9 +880,9 @@
 	(method (doVerb theVerb invItem)
 		(switch theVerb
 			(2 ; Look
-				(TPrint 160 42 30 1 80 {Genuine Engraved Plastic}) ; "Presented to PornProdCorp for their humanitarian efforts in the field of free speech and the commercial development of the steel-reinforced videotape.  March 10, 1976"
+				(TPrint 160 42 #mode 1 #title {Genuine Engraved Plastic}) ; "Presented to PornProdCorp for their humanitarian efforts in the field of free speech and the commercial development of the steel-reinforced videotape.  March 10, 1976"
 				(Points 1 81)
-				(TPrint 160 43 67 -1 185) ; "(Wow! It's a genuine "Titty!")"
+				(TPrint 160 43 #at -1 185) ; "(Wow! It's a genuine "Titty!")"
 				(= usedEyeball 1)
 			)
 			(3 ; Do
