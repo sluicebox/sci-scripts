@@ -1,4 +1,4 @@
-# Sierra Creative Interpeter - Scripts
+# Sierra Creative Interpreter - Scripts
 
 This repository contains decompiled scripts for Sierra's SCI games.
 
@@ -7,7 +7,7 @@ This repository contains decompiled scripts for Sierra's SCI games.
 - All scripts: 100% decompiled
 - Allotta versions: 300+
 
-Scripts are the code that make up each game. The originals were written in Sierra's proprietary programming language and compiled to bytecode. The scripts in this repository are generated from that bytecode by my decompiler and heavily auto-annotated for readability. If you're familiar with a game, you should recognize a lot. If you want to learn how a game's puzzle works (or *doesn't*) then try searching for nearby game text.
+Scripts are the code that make up each game. The originals were written in Sierra's proprietary programming language and compiled to bytecode. The scripts in this repository are generated from that bytecode by [my decompiler](https://github.com/sluicebox/sci-tools) and heavily auto-annotated for readability. If you're familiar with a game, you should recognize a lot. If you want to learn how a game's puzzle works (or *doesn't*) then try searching for nearby game text.
 
 ## How Do I Use These?
 
@@ -15,7 +15,7 @@ The code is in the `.sc` text files. If you just want to casually browse, you ca
 
 The best way to view scripts is with SCI Companion, a Windows program that lets you view resources and create games. You will also need the game. Find your version in this repository and copy the files to your game directory. Open the game with SCI Companion and it will recognize the scripts as if it had generated them. SCI Companion doesn't support every game and version, but it works with most.
 
-- SCI Companion site: http://scicompanion.com/
+- SCI Companion site: https://scicompanion.com/
 - SCI Companion repo, has newer code than the site: https://github.com/icefallgames/SCICompanion/
 - SCI Companion fork, has nightly builds: https://github.com/Kawa-oneechan/SCICompanion/
 
