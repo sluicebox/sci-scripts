@@ -89,11 +89,11 @@
 					(or
 						(and
 							(== [temp15 temp1] 6)
-							(>= (param1 calcHonors: temp1 4) 3)
+							(>= (param1 calcHonors: temp1 4) 3) ; UNINIT
 						)
 						(and
 							(>= [temp15 temp1] 7)
-							(>= (param1 calcHonors: temp1 3) 2)
+							(>= (param1 calcHonors: temp1 3) 2) ; UNINIT
 						)
 					)
 					(= temp0 722)

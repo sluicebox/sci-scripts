@@ -763,7 +763,7 @@
 			(else
 				(switch what
 					(78
-						(Say self msgFile 78 msgFile 35)
+						(Say self msgFile 78 msgFile 35) ; "My name is Rasha Rakeesh SahTarna. I am called Rakeesh. I am of the Liontaur people."
 					)
 					(0
 						(self showMany: what 1)

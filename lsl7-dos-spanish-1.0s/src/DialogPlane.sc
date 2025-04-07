@@ -43,7 +43,7 @@
 	(if (== temp0 1)
 		(TextDialog
 			(MakeMessageText param1 param2 param3 temp1 param4 1)
-			(MakeMessageText 0 0 3 1 14)
+			(MakeMessageText 0 0 3 1 14) ; "Continue"
 		)
 		(return)
 	)
@@ -53,8 +53,8 @@
 				(if
 					(YesNoDialog
 						temp3
-						(MakeMessageText 0 0 47 1 14)
-						(MakeMessageText 0 0 21 1 14)
+						(MakeMessageText 0 0 47 1 14) ; "Next"
+						(MakeMessageText 0 0 21 1 14) ; "Quit"
 					)
 					(++ temp1)
 					(continue)
@@ -65,8 +65,8 @@
 				(if
 					(YesNoDialog
 						temp3
-						(MakeMessageText 0 0 42 1 14)
-						(MakeMessageText 0 0 21 1 14)
+						(MakeMessageText 0 0 42 1 14) ; "Previous"
+						(MakeMessageText 0 0 21 1 14) ; "Quit"
 					)
 					(-- temp1)
 					(continue)
@@ -77,9 +77,9 @@
 				(= temp2
 					(proc64033_8
 						temp3
-						(MakeMessageText 0 0 42 1 14)
-						(MakeMessageText 0 0 47 1 14)
-						(MakeMessageText 0 0 21 1 14)
+						(MakeMessageText 0 0 42 1 14) ; "Previous"
+						(MakeMessageText 0 0 47 1 14) ; "Next"
+						(MakeMessageText 0 0 21 1 14) ; "Quit"
 					)
 				)
 				(1

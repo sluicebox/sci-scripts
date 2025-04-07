@@ -623,7 +623,7 @@
 				(and (gEgo has: 24) (IsFlag 242)) ; theToolkit
 				12 ; Force Drawer Open
 				(>= [gEgoStats 0] 300) ; strength
-				11
+				11 ; Pick Desk Lock
 				(gEgo has: 24) ; theToolkit
 		)
 	)

@@ -214,7 +214,7 @@
 	(method (doit &tmp temp0 temp1)
 		(super doit: &rest)
 		(if (and (gUser canControl:) global235 global236)
-			(= temp0 (MakeMessageText 0 0 71 1 14))
+			(= temp0 (MakeMessageText 0 0 71 1 14)) ; "The wallpaper file "%s" has changed. Assuming you have your wallpaper set to that file, the wallpaper will change next time you restart your machine. The new BMP has also been saved as "%s," in the game directory."
 			(= temp1 (Str format: temp0 {wallpapr.bmp} (global236 data:)))
 			(TextDialog temp1 (Str with: global288))
 			(temp0 dispose:)

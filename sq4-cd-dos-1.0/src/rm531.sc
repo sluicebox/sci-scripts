@@ -767,7 +767,7 @@
 					)
 				)
 			)
-			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) 0) ; buckazoid, rope, bomb, rabbit, battery, jar, paper_with_gum, oxygen_tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop_computer
+			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) 0) ; buckazoid, rope, bomb, rabbit, battery, jar, gum, tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop
 			(else
 				(super doVerb: theVerb)
 			)
@@ -851,7 +851,7 @@
 			(4 ; Do
 				(gNarrator say: 16) ; "The small access panel is inaccessible."
 			)
-			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) 0) ; buckazoid, rope, bomb, rabbit, battery, jar, paper_with_gum, oxygen_tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop_computer
+			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) 0) ; buckazoid, rope, bomb, rabbit, battery, jar, gum, tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop
 			(else
 				(super doVerb: theVerb &rest)
 			)
@@ -874,7 +874,7 @@
 			(4 ; Do
 				(gNarrator say: 18) ; "The large compartment doesn't actually open."
 			)
-			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) 0) ; buckazoid, rope, bomb, rabbit, battery, jar, paper_with_gum, oxygen_tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop_computer
+			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) 0) ; buckazoid, rope, bomb, rabbit, battery, jar, gum, tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop
 			(else
 				(super doVerb: theVerb)
 			)
@@ -897,7 +897,7 @@
 			(4 ; Do
 				(gNarrator say: 20) ; "The time pod's headrest is non-adjustable. Evidently, Sequel Police are all the same height."
 			)
-			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) 0) ; buckazoid, rope, bomb, rabbit, battery, jar, paper_with_gum, oxygen_tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop_computer
+			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) 0) ; buckazoid, rope, bomb, rabbit, battery, jar, gum, tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop
 			(else
 				(super doVerb: theVerb)
 			)
@@ -920,7 +920,7 @@
 			(4 ; Do
 				(gNarrator say: 22) ; "You don't want to touch those. You might mutate your fingers."
 			)
-			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) 0) ; buckazoid, rope, bomb, rabbit, battery, jar, paper_with_gum, oxygen_tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop_computer
+			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) 0) ; buckazoid, rope, bomb, rabbit, battery, jar, gum, tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop
 			(else
 				(super doVerb: theVerb)
 			)

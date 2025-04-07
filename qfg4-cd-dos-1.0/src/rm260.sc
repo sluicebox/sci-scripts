@@ -1241,7 +1241,7 @@
 			showCases:
 				82 ; Adventurers' Guild
 				(and (OneOf local2 1 2 3) (not (IsFlag 183)))
-				89
+				89 ; Old Man
 				(not (IsFlag 49))
 		)
 	)
@@ -1287,7 +1287,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 12 (or (gEgo has: 13) (gEgo has: 24))) ; theLockpick, theToolkit
+		(super showCases: 12 (or (gEgo has: 13) (gEgo has: 24))) ; Pick Lock, theLockpick, theToolkit
 	)
 
 	(method (sayMessage)

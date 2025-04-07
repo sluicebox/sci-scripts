@@ -132,7 +132,7 @@
 	)
 
 	(method (init)
-		(= text (MakeMessageText 0 0 3 1 311))
+		(= text (MakeMessageText 0 0 3 1 311)) ; "Late that evening..."
 		(if (not text)
 			(return)
 		)
@@ -151,7 +151,7 @@
 	)
 
 	(method (init)
-		(= text (MakeMessageText 0 0 3 1 311))
+		(= text (MakeMessageText 0 0 3 1 311)) ; "Late that evening..."
 		(if (not text)
 			(return)
 		)

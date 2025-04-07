@@ -296,8 +296,8 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(3 ; Do
-				(if (== ((gInventory at: 6) owner:) 297) ; gum
-					(gEgo get: 6) ; gum
+				(if (== ((gInventory at: 6) owner:) 297) ; paper_with_gum
+					(gEgo get: 6) ; paper_with_gum
 					(HandsOff)
 					(gCurRoom setScript: searchBody)
 				else

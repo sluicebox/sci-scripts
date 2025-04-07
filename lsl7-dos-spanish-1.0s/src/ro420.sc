@@ -387,7 +387,7 @@
 				(poConveyorBelt setCycle: 0 setScript: 0)
 				(voScoreBoard
 					x: 183
-					text: (MakeMessageText 0 0 1 1 420)
+					text: (MakeMessageText 0 0 1 1 420) ; "CAPTAIN'S COOK-OFF COMPETITION"
 					draw:
 					show:
 				)
@@ -643,7 +643,7 @@
 				(poConveyorBelt setCycle: 0 setScript: 0)
 				(voScoreBoard
 					x: 183
-					text: (MakeMessageText 0 0 1 1 420)
+					text: (MakeMessageText 0 0 1 1 420) ; "CAPTAIN'S COOK-OFF COMPETITION"
 					draw:
 					show:
 				)
@@ -743,7 +743,7 @@
 				)
 			)
 			(2
-				(voScoreBoard x: 550 text: (MakeMessageText 0 0 1 2 420) draw:)
+				(voScoreBoard x: 550 text: (MakeMessageText 0 0 1 2 420) draw:) ; "JUDGE JULIA'S SCORE: 0; JUDGE GRAHAM'S SCORE: 0; JUDGE PAUL'S SCORE: 0"
 				(= cycles 1)
 			)
 			(3
@@ -776,7 +776,7 @@
 			(2
 				(voScoreBoard
 					x: 550
-					text: (MakeMessageText 0 0 1 3 420)
+					text: (MakeMessageText 0 0 1 3 420) ; "JUDGE JULIA'S SCORE: 100; JUDGE GRAHAM'S SCORE: 100; JUDGE PAUL'S SCORE: 100"
 					draw:
 					show:
 				)
@@ -1512,7 +1512,7 @@
 
 	(method (init &tmp temp0 temp1 [temp2 2])
 		(= back skip)
-		(= text (MakeMessageText 0 0 1 1 420))
+		(= text (MakeMessageText 0 0 1 1 420)) ; "CAPTAIN'S COOK-OFF COMPETITION"
 		(super init: &rest)
 		(= temp1 50)
 		(= temp0 600)

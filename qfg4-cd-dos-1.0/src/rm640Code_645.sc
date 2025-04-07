@@ -632,7 +632,7 @@
 			showCases:
 				13 ; Look for Traps
 				(and (== gHeroType 2) (IsFlag 242)) ; Thief
-				7
+				7 ; Pick the Lock
 				(and [gEgoStats 9] (gEgo has: 24)) ; pick locks, theToolkit
 		)
 	)
@@ -672,7 +672,7 @@
 			showCases:
 				13 ; Look for Traps
 				(and (== gHeroType 2) (IsFlag 242)) ; Thief
-				7
+				7 ; Pick the Lock
 				(and [gEgoStats 9] (gEgo has: 24)) ; pick locks, theToolkit
 		)
 	)

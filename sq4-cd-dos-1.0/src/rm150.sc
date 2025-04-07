@@ -599,7 +599,7 @@
 			(1 ; Look
 				(gNarrator say: 6) ; "It's a disk drive unit."
 			)
-			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 23) 0) ; buckazoid, rope, bomb, rabbit, battery, jar, paper_with_gum, oxygen_tank, hintbook, pen, atmCard, plug, cigar, matches, laptop_computer
+			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 23) 0) ; buckazoid, rope, bomb, rabbit, battery, jar, gum, tank, hintbook, pen, atmCard, plug, cigar, matches, laptop
 			(else
 				(super doVerb: theVerb invItem &rest)
 			)

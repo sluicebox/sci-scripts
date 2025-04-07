@@ -851,7 +851,7 @@
 			(9 ; rope
 				(gNarrator say: 6) ; "Even if you were to lasso a Sequel Policeman, what would you do with him?"
 			)
-			(14 ; paper_with_gum
+			(14 ; gum
 				(gNarrator say: 7) ; "Try as you might, the gum just gets stuck to your fingers."
 			)
 			(17 ; pen
@@ -860,10 +860,10 @@
 			(12 ; battery
 				(gNarrator say: 8) ; "He's going to SHOOT you, not write you a ticket!"
 			)
-			((OneOf theVerb 8 10 13 15 16 19 18) ; buckazoid, bomb, jar, oxygen_tank, hintbook, plug, atmCard
+			((OneOf theVerb 8 10 13 15 16 19 18) ; buckazoid, bomb, jar, tank, hintbook, plug, atmCard
 				(gNarrator say: 5) ; "The Sequel Police are closely monitored by Vohaul. Bribing them would be out of the question."
 			)
-			((OneOf theVerb 20 21 22 23) ; cigar, matches, diskette, laptop_computer
+			((OneOf theVerb 20 21 22 23) ; cigar, matches, diskette, laptop
 				(gNarrator say: 4) ; "You'd better not. You might need that later."
 			)
 			(else
@@ -1007,7 +1007,7 @@
 			(7 ; Taste
 				(gNarrator say: 10) ; "Auugghh! You had to taste it! Well, it tastes more like dead gerbils than like cotton candy!"
 			)
-			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) ; buckazoid, rope, bomb, rabbit, battery, jar, paper_with_gum, oxygen_tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop_computer
+			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) ; buckazoid, rope, bomb, rabbit, battery, jar, gum, tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop
 				(gNarrator say: 11) ; "Back off. It's not your turn."
 			)
 			(else
@@ -1043,7 +1043,7 @@
 			(7 ; Taste
 				(gNarrator say: 10) ; "Auugghh! You had to taste it! Well, it tastes more like dead gerbils than like cotton candy!"
 			)
-			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) ; buckazoid, rope, bomb, rabbit, battery, jar, paper_with_gum, oxygen_tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop_computer
+			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) ; buckazoid, rope, bomb, rabbit, battery, jar, gum, tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop
 				(gNarrator say: 11) ; "Back off. It's not your turn."
 			)
 			(else
@@ -1076,7 +1076,7 @@
 			(7 ; Taste
 				(gNarrator say: 10) ; "Auugghh! You had to taste it! Well, it tastes more like dead gerbils than like cotton candy!"
 			)
-			((OneOf theVerb 4 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) ; Do, buckazoid, rope, bomb, rabbit, battery, jar, paper_with_gum, oxygen_tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop_computer
+			((OneOf theVerb 4 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) ; Do, buckazoid, rope, bomb, rabbit, battery, jar, gum, tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop
 				(gNarrator say: 11) ; "Back off. It's not your turn."
 			)
 			(else
@@ -1108,7 +1108,7 @@
 			(7 ; Taste
 				(gNarrator say: 10) ; "Auugghh! You had to taste it! Well, it tastes more like dead gerbils than like cotton candy!"
 			)
-			((OneOf theVerb 4 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) ; Do, buckazoid, rope, bomb, rabbit, battery, jar, paper_with_gum, oxygen_tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop_computer
+			((OneOf theVerb 4 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) ; Do, buckazoid, rope, bomb, rabbit, battery, jar, gum, tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop
 				(gNarrator say: 11) ; "Back off. It's not your turn."
 			)
 			(else
@@ -1202,7 +1202,7 @@
 			(7 ; Taste
 				(gNarrator say: 10) ; "Auugghh! You had to taste it! Well, it tastes more like dead gerbils than like cotton candy!"
 			)
-			((OneOf theVerb 4 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) ; Do, buckazoid, rope, bomb, rabbit, battery, jar, paper_with_gum, oxygen_tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop_computer
+			((OneOf theVerb 4 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) ; Do, buckazoid, rope, bomb, rabbit, battery, jar, gum, tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop
 				(gNarrator say: 11) ; "Back off. It's not your turn."
 			)
 			(else
@@ -1235,7 +1235,7 @@
 			(6 ; Smell
 				(gNarrator say: 34) ; "Give your nose a break! It's a garbage can!"
 			)
-			((OneOf theVerb 4 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) ; Do, buckazoid, rope, bomb, rabbit, battery, jar, paper_with_gum, oxygen_tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop_computer
+			((OneOf theVerb 4 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) ; Do, buckazoid, rope, bomb, rabbit, battery, jar, gum, tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop
 				(gNarrator say: 35) ; "You'd better not throw that away. It'll probably come in handy later. I know it doesn't seem likely, but trust me on this one."
 			)
 			(else

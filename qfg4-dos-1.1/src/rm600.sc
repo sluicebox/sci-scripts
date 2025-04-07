@@ -1901,7 +1901,7 @@
 				(and (== global418 7) (not local10))
 				52 ; Wife
 				(or (== global418 8) (and local10 (== global418 9)))
-				53
+				53 ; Wife
 				(and (== global418 9) (not local10))
 		)
 	)
@@ -2046,7 +2046,7 @@
 				(and (== gHeroType 2) [gEgoStats 9] (gEgo has: 24)) ; Thief, pick locks, theToolkit
 				17 ; Force Gate Open
 				(or (== gHeroType 3) (== gHeroType 0)) ; Paladin, Fighter
-				20
+				20 ; Force Gate Open
 				(or (== gHeroType 3) (== gHeroType 0)) ; Paladin, Fighter
 		)
 	)

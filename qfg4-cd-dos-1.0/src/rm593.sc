@@ -133,7 +133,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 5 (IsFlag 186))
+		(super showCases: 5 (IsFlag 186)) ; Say Magic Phrase
 	)
 
 	(method (sayMessage)

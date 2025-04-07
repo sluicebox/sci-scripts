@@ -1106,7 +1106,7 @@
 			showCases:
 				13 ; Look for Traps
 				(and (== gHeroType 2) (IsFlag 242)) ; Thief
-				7
+				7 ; Pick the Lock
 				(and [gEgoStats 9] (gEgo has: 24)) ; pick locks, theToolkit
 		)
 	)
@@ -1142,7 +1142,7 @@
 			showCases:
 				13 ; Look for Traps
 				(and (== gHeroType 2) (IsFlag 242)) ; Thief
-				7
+				7 ; Pick the Lock
 				(and [gEgoStats 9] (gEgo has: 24)) ; pick locks, theToolkit
 		)
 	)
@@ -1186,7 +1186,7 @@
 				(not local4)
 				26 ; Pick Lock
 				(and (gEgo has: 24) [gEgoStats 9] (not local4)) ; theToolkit, pick locks
-				25
+				25 ; Bash Chest Open
 				(not local4)
 		)
 	)

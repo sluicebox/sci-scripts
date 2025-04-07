@@ -1006,7 +1006,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 4 (and (gEgo has: 50) (gEgo has: 49))) ; theStake, theHammer
+		(super showCases: 4 (and (gEgo has: 50) (gEgo has: 49))) ; Kill Katrina, theStake, theHammer
 	)
 
 	(method (sayMessage)

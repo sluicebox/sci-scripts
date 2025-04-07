@@ -1889,7 +1889,7 @@
 				(== global418 7)
 				52 ; Wife
 				(== global418 8)
-				53
+				53 ; Wife
 				(== global418 9)
 		)
 	)
@@ -2030,7 +2030,7 @@
 				(and (== gHeroType 2) [gEgoStats 9] (gEgo has: 24)) ; Thief, pick locks, theToolkit
 				17 ; Force Gate Open
 				(or (== gHeroType 3) (== gHeroType 0)) ; Paladin, Fighter
-				20
+				20 ; Force Gate Open
 				(or (== gHeroType 3) (== gHeroType 0)) ; Paladin, Fighter
 		)
 	)

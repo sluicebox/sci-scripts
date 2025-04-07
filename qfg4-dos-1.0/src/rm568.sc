@@ -430,7 +430,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 37 (not (IsFlag 425)))
+		(super showCases: 37 (not (IsFlag 425))) ; Hat
 	)
 
 	(method (sayMessage)

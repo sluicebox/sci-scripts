@@ -14,7 +14,7 @@
 (use System)
 
 (public
-	proc64040_0 0
+	InitializeTopics 0
 	proc64040_1 1
 	L7TalkWindow 2
 	UnmarkTopic 3
@@ -59,7 +59,7 @@
 	(return (!= (param1 indexOf: (- 0 param2)) -1))
 )
 
-(procedure (proc64040_0 &tmp temp0 temp1 temp2)
+(procedure (InitializeTopics &tmp temp0 temp1 temp2)
 	(= global246 (Set new:))
 	(= global247 (Set new:))
 	(= global248 (Set new:))
@@ -178,7 +178,7 @@
 		(= temp2 (oClient getName:))
 		(= temp5 (+ (GetTextWidth temp2 nHeaderFont 0) 3))
 		(= temp4 (+ (= temp4 (GetTextHeight temp2 nHeaderFont 0)) 6))
-		(= temp3 (MakeMessageText 0 12 0 1 13))
+		(= temp3 (MakeMessageText 0 12 0 1 13)) ; "Other..."
 		(= temp12 (GetTextWidth temp3 nButtonFont 0))
 		(if (< temp5 temp12)
 			(= temp5 temp12)
@@ -235,7 +235,7 @@
 		)
 		(if temp22
 			(= temp19 (!= (oTopics indexOf: -86) -1))
-			(= temp14 (MakeMessageText 0 86 0 1 12))
+			(= temp14 (MakeMessageText 0 86 0 1 12)) ; "Goodbye"
 			(= temp10 (TextButton new:))
 			(if temp19
 				(= temp20 85)
@@ -331,7 +331,7 @@
 
 	(method (doSelect param1 &tmp temp0 temp1 temp2 temp3 temp4 temp5 temp6 temp7)
 		(while (== param1 112)
-			(= temp0 (MakeMessageText 0 0 53 1 14))
+			(= temp0 (MakeMessageText 0 0 53 1 14)) ; "What do you want to discuss with %s? Type a topic:"
 			(= temp1 (oClient getName:))
 			(= temp2 (Str format: temp0 temp1))
 			(proc64896_7 temp0)
@@ -341,8 +341,8 @@
 					(= temp3
 						(proc64033_6
 							temp2
-							(MakeMessageText 0 0 17 1 14)
-							(MakeMessageText 0 0 18 1 14)
+							(MakeMessageText 0 0 17 1 14) ; "OK"
+							(MakeMessageText 0 0 18 1 14) ; "Oops"
 							20
 						)
 					)

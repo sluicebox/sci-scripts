@@ -700,7 +700,7 @@
 			(1 ; Look
 				(gNarrator say: 13) ; "You stand centrally located in perhaps the only debris-clear area on the surface of this city. This was a busy intersection of commerce when times were happier and life... well... just existed. An odd structure looms in the distance."
 			)
-			(24 ; invLook
+			(24 ; Inventory
 				((ScriptID 705 4) doVerb: theVerb invItem) ; theRoom
 			)
 			(else
@@ -840,7 +840,7 @@
 			(7 ; Taste
 				(gNarrator say: 23) ; "It's not as big a taste sensation as other parts of the city."
 			)
-			(24 ; invLook
+			(24 ; Inventory
 				((ScriptID 705 4) doVerb: theVerb invItem) ; theRoom
 			)
 			(else

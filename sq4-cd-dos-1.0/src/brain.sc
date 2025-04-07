@@ -762,7 +762,7 @@
 				(1 ; Look
 					(gCurRoom setScript: pocketPalScript self 0)
 				)
-				(23 ; laptop_computer
+				(23 ; laptop
 					(gCurRoom setScript: pocketPalScript 0 self)
 				)
 				(else
@@ -786,7 +786,7 @@
 				(1 ; Look
 					(gCurRoom setScript: pocketPalScript self 0)
 				)
-				(23 ; laptop_computer
+				(23 ; laptop
 					(gCurRoom setScript: pocketPalScript 0 self)
 				)
 				(else
@@ -810,7 +810,7 @@
 				(1 ; Look
 					(gCurRoom setScript: pocketPalScript self 0)
 				)
-				(23 ; laptop_computer
+				(23 ; laptop
 					(gCurRoom setScript: pocketPalScript 0 self)
 				)
 				(else

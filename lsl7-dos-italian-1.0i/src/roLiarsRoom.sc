@@ -2101,9 +2101,9 @@
 					(switch
 						(= scratch
 							(localproc_0
-								(MakeMessageText 1 0 2 1 2)
-								(MakeMessageText 1 0 25 1 2)
-								(MakeMessageText 1 0 35 1 2)
+								(MakeMessageText 1 0 2 1 2) ; "What would you like to do?"
+								(MakeMessageText 1 0 25 1 2) ; "Buy a Die"
+								(MakeMessageText 1 0 35 1 2) ; "Continue"
 							)
 						)
 						(1

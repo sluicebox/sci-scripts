@@ -607,7 +607,7 @@
 	(method (showCases)
 		(super
 			showCases:
-				34
+				34 ; Tell About Sword
 				(and
 					(not (IsFlag 43))
 					(gEgo has: 19) ; theSword
@@ -697,7 +697,7 @@
 			showCases:
 				55 ; Adventurers' Guild
 				(and (OneOf local0 2 3) (not (IsFlag 183)))
-				56
+				56 ; Adventurers' Guild
 				(and (OneOf local0 2 3) (IsFlag 183))
 		)
 	)

@@ -671,7 +671,7 @@
 					(not (IsFlag 196))
 					(not (IsFlag 195))
 				)
-				54
+				54 ; Rehydration Solution
 				(and (IsFlag 195) (not (IsFlag 198)))
 		)
 	)

@@ -717,7 +717,7 @@
 			(6 ; Smell
 				(gNarrator modNum: 702 say: 21) ; "What were you expecting, Lime Slime? You notice a burning sensation when you get a strong whiff."
 			)
-			((OneOf theVerb 8 9 10 11 12 14 15 16 17 18 19 20 21 22 23) ; buckazoid, rope, bomb, rabbit, battery, paper_with_gum, oxygen_tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop_computer
+			((OneOf theVerb 8 9 10 11 12 14 15 16 17 18 19 20 21 22 23) ; buckazoid, rope, bomb, rabbit, battery, gum, tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop
 				(gNarrator modNum: 702 say: 7) ; "That has no effect on the green slime!"
 			)
 			(else
@@ -935,7 +935,7 @@
 			(6 ; Smell
 				(gNarrator modNum: 702 say: 39) ; "It smells just like you thought it would."
 			)
-			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) ; buckazoid, rope, bomb, rabbit, battery, jar, paper_with_gum, oxygen_tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop_computer
+			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) ; buckazoid, rope, bomb, rabbit, battery, jar, gum, tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop
 				(gNarrator modNum: 702 say: 37) ; "You don't need to do that."
 			)
 			(else
@@ -969,7 +969,7 @@
 			(6 ; Smell
 				(gNarrator modNum: 702 say: 39) ; "It smells just like you thought it would."
 			)
-			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) ; buckazoid, rope, bomb, rabbit, battery, jar, paper_with_gum, oxygen_tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop_computer
+			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) ; buckazoid, rope, bomb, rabbit, battery, jar, gum, tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop
 				(gNarrator modNum: 702 say: 37) ; "You don't need to do that."
 			)
 			(else

@@ -182,7 +182,7 @@
 					(and (== gCurRoomNum 540) (== nIdentity 7)) ; ro540
 					(and (OneOf gCurRoomNum 550 551) (== nIdentity 24)) ; ro550, ro551
 				)
-				(= temp0 (MakeMessageText 0 0 6 1 90))
+				(= temp0 (MakeMessageText 0 0 6 1 90)) ; "You Are Here!"
 			else
 				(= temp0 (MakeMessageText noun 0 0 1 90))
 			)

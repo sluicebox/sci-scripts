@@ -246,7 +246,7 @@
 
 	(method (init)
 		(self back: skip)
-		(= text (MakeMessageText 0 0 13 1 11))
+		(= text (MakeMessageText 0 0 13 1 11)) ; "THYGH'S MAN TROPHY CONTEST"
 		(super init: &rest)
 		(self setScale:)
 		(= scaleY (= scaleX 128))
@@ -269,7 +269,7 @@
 	(method (init)
 		(self back: skip)
 		(&= signal $efff)
-		(= text (MakeMessageText 0 0 6 1 11))
+		(= text (MakeMessageText 0 0 6 1 11)) ; "Poop Deck Horseshoes"
 		(super init: &rest)
 		(self setScale:)
 		(= scaleY (= scaleX 128))
@@ -292,7 +292,7 @@
 	(method (init)
 		(self back: skip)
 		(&= signal $efff)
-		(= text (MakeMessageText 0 0 7 1 11))
+		(= text (MakeMessageText 0 0 7 1 11)) ; "Craps Tournament"
 		(super init: &rest)
 		(self setScale:)
 		(= scaleY (= scaleX 128))
@@ -315,7 +315,7 @@
 	(method (init)
 		(self back: skip)
 		(&= signal $efff)
-		(= text (MakeMessageText 0 0 8 1 11))
+		(= text (MakeMessageText 0 0 8 1 11)) ; "Tail Deck Bowling"
 		(super init: &rest)
 		(self setScale:)
 		(= scaleY (= scaleX 128))
@@ -338,7 +338,7 @@
 	(method (init)
 		(self back: skip)
 		(&= signal $efff)
-		(= text (MakeMessageText 0 0 9 1 11))
+		(= text (MakeMessageText 0 0 9 1 11)) ; "LoveMaster 2000\05"
 		(super init: &rest)
 		(self setScale:)
 		(= scaleY (= scaleX 128))
@@ -361,7 +361,7 @@
 	(method (init)
 		(self back: skip)
 		(&= signal $efff)
-		(= text (MakeMessageText 0 0 10 1 11))
+		(= text (MakeMessageText 0 0 10 1 11)) ; "Captain's Cook-Off"
 		(super init: &rest)
 		(self setScale:)
 		(= scaleY (= scaleX 128))
@@ -384,7 +384,7 @@
 	(method (init)
 		(self back: skip)
 		(&= signal $efff)
-		(= text (MakeMessageText 0 0 11 1 11))
+		(= text (MakeMessageText 0 0 11 1 11)) ; "Best-Dressed Man"
 		(super init: &rest)
 		(self setScale:)
 		(= scaleY (= scaleX 128))
@@ -405,7 +405,7 @@
 
 	(method (init)
 		(self back: skip)
-		(= text (MakeMessageText 0 0 12 1 11))
+		(= text (MakeMessageText 0 0 12 1 11)) ; "Chastity"
 		(super init: &rest)
 		(self setScale:)
 		(= scaleY (= scaleX 128))

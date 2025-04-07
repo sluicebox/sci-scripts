@@ -19,7 +19,7 @@
 
 (public
 	proc64928_0 0
-	proc64928_1 1
+	MakeMessageSubTitle 1
 	proc64928_2 2
 )
 
@@ -78,7 +78,7 @@
 	(temp0 dialog:)
 )
 
-(procedure (proc64928_1 param1 param2 param3 param4 param5 &tmp temp0 temp1) ; UNUSED
+(procedure (MakeMessageSubTitle param1 param2 param3 param4 param5 &tmp temp0 temp1) ; UNUSED
 	(if (< argc 5)
 		(return 0)
 	)

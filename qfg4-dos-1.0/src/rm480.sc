@@ -337,7 +337,7 @@
 					(OneOf global348 0 1 2)
 					(IsFlag 159)
 				)
-				83
+				83 ; Tell About Gnome
 				(and
 					(not (IsFlag 336))
 					(OneOf global348 0 1 2)

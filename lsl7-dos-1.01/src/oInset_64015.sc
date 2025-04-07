@@ -75,7 +75,7 @@
 			border: 5
 			bTileBorder: 1
 			vTile: 60020
-			text: (MakeMessageText 0 0 8 1 14)
+			text: (MakeMessageText 0 0 8 1 14) ; "Walking Speed"
 			setPri: 50
 			init: self
 		)
@@ -133,7 +133,7 @@
 		(gEgo setSpeed: temp0)
 		(= global302 (plane left:))
 		(= global303 (plane top:))
-		(proc64000_3)
+		(WritePrefsFile)
 		(oInset dispose:)
 		(DisposeScript 64015)
 	)

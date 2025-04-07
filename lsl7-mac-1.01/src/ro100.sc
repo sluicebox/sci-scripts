@@ -35,7 +35,7 @@
 	(if (voLoadMsg plane:)
 		(voLoadMsg dispose:)
 	)
-	(if (= temp0 (MakeMessageText 0 0 79 1 14))
+	(if (= temp0 (MakeMessageText 0 0 79 1 14)) ; "Now reading "%s.""
 		(voLoadMsg text: (Str format: temp0 param1) init:)
 		(temp0 dispose:)
 	)
@@ -129,11 +129,11 @@
 					(return)
 				)
 				(gCurRoom addRoomPlane: oBlackPlane)
-				(TextDialog (MakeMessageText 0 0 75 1 14) (Str with: global288))
+				(TextDialog (MakeMessageText 0 0 75 1 14) (Str with: global288)) ; "We're about to read your custom image and/or sounds into memory. If any errors occur, please re-read the "Be a Star!" file and make sure your files are in the proper format."
 				(if local4
 					(localproc_0 {Custom Image File})
 					(if (not (= temp0 (proc64896_20 325 325)))
-						(= temp3 (MakeMessageText 0 0 78 1 14))
+						(= temp3 (MakeMessageText 0 0 78 1 14)) ; "An error occurred reading "%s". Please make sure it is a Macintosh PICT file or Windows RGB bitmap, uncompressed, 8-bit (256 color), about 325x325 pixels."
 						(= temp2 (Str format: temp3 {1.bmp}))
 						(TextDialog temp2 (Str with: global288))
 						(temp3 dispose:)
@@ -150,7 +150,7 @@
 							(oSimpleSound playSound: temp4)
 							(oSimpleSound stop:)
 						else
-							(= temp3 (MakeMessageText 0 0 77 1 14))
+							(= temp3 (MakeMessageText 0 0 77 1 14)) ; "The sound file "%s" is missing. This will not cause a problem, but you won't hear your voice reading this line."
 							(= temp2 (Str format: temp3 (temp1 data:)))
 							(TextDialog temp2 (Str with: global288))
 							(temp3 dispose:)
@@ -161,12 +161,12 @@
 				(localproc_1)
 				(if global267
 					(TextDialog
-						(MakeMessageText 0 0 81 1 14)
+						(MakeMessageText 0 0 81 1 14) ; "There were errors found with the user-supplied files. The game will not be able to use them until the errors are corrected."
 						(Str with: global288)
 					)
 				else
 					(TextDialog
-						(MakeMessageText 0 0 80 1 14)
+						(MakeMessageText 0 0 80 1 14) ; "There were no errors found. Thank you for using CyberTest 2000. Enjoy the game!"
 						(Str with: global288)
 					)
 				)
@@ -307,21 +307,21 @@
 									4
 									375
 									215
-									(MakeMessageText 2 0 4)
-									(MakeMessageText 2 0 1)
-									(MakeMessageText 2 0 2)
-									(MakeMessageText 2 0 3)
+									(MakeMessageText 2 0 4) ; "Resume My Previous Game"
+									(MakeMessageText 2 0 1) ; "Open an Existing Game"
+									(MakeMessageText 2 0 2) ; "Start a Brand New Game"
+									(MakeMessageText 2 0 3) ; "Lemme Outta Here! (Exit)"
 								)
 							else
 								(StackedButtonDialog
 									5
 									375
 									215
-									(MakeMessageText 2 0 4)
-									(MakeMessageText 2 0 1)
-									(MakeMessageText 2 0 2)
-									(MakeMessageText 2 0 5)
-									(MakeMessageText 2 0 3)
+									(MakeMessageText 2 0 4) ; "Resume My Previous Game"
+									(MakeMessageText 2 0 1) ; "Open an Existing Game"
+									(MakeMessageText 2 0 2) ; "Start a Brand New Game"
+									(MakeMessageText 2 0 5) ; "Visit the Larry Web Site"
+									(MakeMessageText 2 0 3) ; "Lemme Outta Here! (Exit)"
 								)
 							)
 						)

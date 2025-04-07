@@ -772,7 +772,7 @@
 					(gCurRoom setScript: pocketPalScript self 0)
 				)
 				(4 ; Inventory
-					(if (== invItem 15) ; laptop
+					(if (== invItem 15) ; laptop_computer
 						(gCurRoom setScript: pocketPalScript 0 self)
 					)
 				)
@@ -799,7 +799,7 @@
 					(gCurRoom setScript: pocketPalScript self 0)
 				)
 				(4 ; Inventory
-					(if (== invItem 15) ; laptop
+					(if (== invItem 15) ; laptop_computer
 						(gCurRoom setScript: pocketPalScript 0 self)
 					)
 				)
@@ -826,7 +826,7 @@
 					(gCurRoom setScript: pocketPalScript self 0)
 				)
 				(4 ; Inventory
-					(if (== invItem 15) ; laptop
+					(if (== invItem 15) ; laptop_computer
 						(gCurRoom setScript: pocketPalScript 0 self)
 					)
 				)

@@ -679,16 +679,16 @@
 							10
 							0
 							0
-							(MakeMessageText 12 1 3 16 245)
-							(MakeMessageText 12 1 3 1 245)
-							(MakeMessageText 12 1 3 2 245)
-							(MakeMessageText 12 1 3 3 245)
-							(MakeMessageText 12 1 3 4 245)
-							(MakeMessageText 12 1 3 5 245)
-							(MakeMessageText 12 1 3 6 245)
-							(MakeMessageText 12 1 3 14 245)
-							(MakeMessageText 12 1 3 8 245)
-							(MakeMessageText 12 1 3 9 245)
+							(MakeMessageText 12 1 3 16 245) ; "He's Got His Daddy's Eyes (And His Other Daddy's Smile)"
+							(MakeMessageText 12 1 3 1 245) ; "Big Hair An' Tangled Limbs"
+							(MakeMessageText 12 1 3 2 245) ; "Just A Cheap Pickup In A Cheap Pickup"
+							(MakeMessageText 12 1 3 3 245) ; "Thinking With My Panties Again"
+							(MakeMessageText 12 1 3 4 245) ; "You Got Into My Bra (But Not Into My Heart)"
+							(MakeMessageText 12 1 3 5 245) ; "Get Along, Long John"
+							(MakeMessageText 12 1 3 6 245) ; "White Trash Or No Trash"
+							(MakeMessageText 12 1 3 14 245) ; "It Takes More Than Cognitive Reasoning"
+							(MakeMessageText 12 1 3 8 245) ; "Felt Up And Feelin' Blue"
+							(MakeMessageText 12 1 3 9 245) ; "Hair Spray Cain't Hold My Love For You"
 						)
 					)
 					(0

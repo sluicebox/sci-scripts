@@ -547,7 +547,7 @@
 			(12 ; battery
 				(gNarrator modNum: 700 say: 12) ; "No way! That would be assualt with intent to emit battery!"
 			)
-			(14 ; paper_with_gum
+			(14 ; gum
 				(gNarrator modNum: 376 say: 7) ; "Try as you might, the gum just gets stuck to your fingers."
 			)
 			(17 ; pen
@@ -556,7 +556,7 @@
 			(18 ; atmCard
 				(gNarrator modNum: 376 say: 5) ; "The Sequel Police are closely monitored by Vohaul. Bribing them would be out of the question."
 			)
-			((OneOf theVerb 20 21 22 23) ; cigar, matches, diskette, laptop_computer
+			((OneOf theVerb 20 21 22 23) ; cigar, matches, diskette, laptop
 				(gNarrator modNum: 376 say: 4) ; "You'd better not. You might need that later."
 			)
 			(else

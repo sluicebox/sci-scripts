@@ -183,7 +183,7 @@
 		(= temp4 0)
 		(while (== temp4 0)
 			(if (and (!= local4 0) (== temp0 3))
-				(= temp13 temp1)
+				(= temp13 temp1) ; UNINIT
 				(for ((= temp14 0)) (< temp14 4) ((++ temp14))
 					(if (== [temp5 temp14] -1)
 						(= temp1 temp14)

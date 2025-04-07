@@ -1453,7 +1453,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 11 (> [gEgoStats 11] 5) 12 (> [gEgoStats 29] 5)) ; Climb Over Gate, climbing, levitateSpell
+		(super showCases: 11 (> [gEgoStats 11] 5) 12 (> [gEgoStats 29] 5)) ; Climb Over Gate, climbing, Levitate Over Gate, levitateSpell
 	)
 
 	(method (respond)

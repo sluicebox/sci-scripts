@@ -840,7 +840,7 @@
 					(super doVerb: theVerb)
 				)
 			)
-			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) ; buckazoid, rope, bomb, rabbit, battery, jar, paper_with_gum, oxygen_tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop_computer
+			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) ; buckazoid, rope, bomb, rabbit, battery, jar, gum, tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop
 				(if (not (rmnProp script:))
 					(rmnProp setScript: roboVerbUseStuff theVerb theVerb)
 				else
@@ -1187,7 +1187,7 @@
 			(7 ; Taste
 				(gNarrator modNum: 381 say: 27) ; "The dull taste of cold metal leaves you wanting for more."
 			)
-			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) ; buckazoid, rope, bomb, rabbit, battery, jar, paper_with_gum, oxygen_tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop_computer
+			((OneOf theVerb 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23) ; buckazoid, rope, bomb, rabbit, battery, jar, gum, tank, hintbook, pen, atmCard, plug, cigar, matches, diskette, laptop
 				(if (not (rmnProp script:))
 					(rmnProp setScript: roboVerbUseStuff theVerb)
 				)

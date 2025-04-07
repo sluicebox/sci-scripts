@@ -1863,7 +1863,7 @@
 				(or (== gHeroType 1) (== gHeroType 2)) ; Magic User, Thief
 				34 ; Climb Over Cage
 				[gEgoStats 11] ; climbing
-				35
+				35 ; Jump Out of Cage
 				(== gHeroType 2) ; Thief
 		)
 	)

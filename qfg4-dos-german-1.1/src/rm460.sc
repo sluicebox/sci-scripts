@@ -1233,7 +1233,7 @@
 				(== local0 1)
 				8 ; Gypsy Dance
 				(== local0 5)
-				9
+				9 ; Gypsy Davy
 				(== local0 5)
 		)
 	)
@@ -1257,7 +1257,7 @@
 				(== local0 2)
 				27 ; Gypsy Davy
 				(== local0 6)
-				28
+				28 ; Wolves
 				(== local0 6)
 		)
 	)
@@ -1269,7 +1269,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 7 (== local0 1) 10 (== local0 5) 29 (== local0 6)) ; Introduce Yourself
+		(super showCases: 7 (== local0 1) 10 (== local0 5) 29 (== local0 6)) ; Introduce Yourself, Talk About Your Adventures
 	)
 
 	(method (sayMessage)

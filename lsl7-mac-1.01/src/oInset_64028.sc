@@ -69,7 +69,7 @@
 			border: 5
 			bTileBorder: 1
 			vTile: 60020
-			text: (MakeMessageText 0 0 6 1 14)
+			text: (MakeMessageText 0 0 6 1 14) ; "Audio Mixer"
 			setPri: 50
 			init: self
 		)
@@ -105,7 +105,7 @@
 			fore: global274
 			back: 255
 			skip: 255
-			text: (MakeMessageText 0 0 6 3 14)
+			text: (MakeMessageText 0 0 6 3 14) ; "Music"
 			border: 0
 			bTileBorder: 0
 			setPri: 50
@@ -127,7 +127,7 @@
 			fore: global274
 			back: 255
 			skip: 255
-			text: (MakeMessageText 0 0 6 4 14)
+			text: (MakeMessageText 0 0 6 4 14) ; "Sound Effects"
 			border: 0
 			bTileBorder: 0
 			setPri: 50
@@ -149,7 +149,7 @@
 			fore: global274
 			back: 255
 			skip: 255
-			text: (MakeMessageText 0 0 6 2 14)
+			text: (MakeMessageText 0 0 6 2 14) ; "Dialogue"
 			border: 0
 			bTileBorder: 0
 			setPri: 50
@@ -191,7 +191,7 @@
 		(oMessageSound dispose:)
 		(= global304 left)
 		(= global305 top)
-		(proc64000_3)
+		(WritePrefsFile)
 		(super dispose: &rest)
 		(DisposeScript 64028)
 	)
@@ -208,7 +208,7 @@
 	(method (init)
 		(= fore global272)
 		(= back global273)
-		(= text (MakeMessageText 0 0 5 1 14))
+		(= text (MakeMessageText 0 0 5 1 14)) ; "Default"
 		(super init: &rest)
 	)
 
@@ -231,7 +231,7 @@
 	(method (init)
 		(= fore global272)
 		(= back global273)
-		(= text (MakeMessageText 0 0 17 1 14))
+		(= text (MakeMessageText 0 0 17 1 14)) ; "OK"
 		(super init: &rest)
 	)
 )
@@ -247,7 +247,7 @@
 	(method (init)
 		(= fore global272)
 		(= back global273)
-		(= text (MakeMessageText 0 0 51 1 14))
+		(= text (MakeMessageText 0 0 51 1 14)) ; "Cancel"
 		(super init: &rest)
 	)
 

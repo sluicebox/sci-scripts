@@ -691,7 +691,7 @@
 					(== local2 2)
 					(and (== local2 3) (IsFlag 110))
 				)
-				74
+				74 ; Ask for Dark One Ritual
 				(or
 					(== local2 1)
 					(== local2 2)

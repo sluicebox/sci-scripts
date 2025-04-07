@@ -193,7 +193,7 @@
 		(gCurSaveDir copy: global115)
 		(if (not (Save 3 {Autosv} temp0 (KArray 9 gVersion))) ; CheckSaveGame, ArrayGetData
 			(if temp0
-				(TextDialog (MakeMessageText 0 0 2 1 14) (Str with: global288))
+				(TextDialog (MakeMessageText 0 0 2 1 14) (Str with: global288)) ; "An error occurred while trying to restore a game. The game may have been saved with a different version of the interpreter or the game file may be corrupted on your disk. Please quit the game and try a different save game or start a new game."
 				(= gQuit 1)
 			)
 			(gCurSaveDir copy: temp12)
@@ -262,7 +262,7 @@
 		)
 		(self setCursor: gWaitCursor 1)
 		(Save 1 {Autosv} temp0 (KArray 9 gVersion)) ; RestoreGame, ArrayGetData
-		(TextDialog (MakeMessageText 0 0 2 1 14) (Str with: global288))
+		(TextDialog (MakeMessageText 0 0 2 1 14) (Str with: global288)) ; "An error occurred while trying to restore a game. The game may have been saved with a different version of the interpreter or the game file may be corrupted on your disk. Please quit the game and try a different save game or start a new game."
 		(= gQuit 1)
 		(self setCursor: temp11 (HaveMouse)) ; UNINIT
 		(Sound pause: 0)
@@ -284,7 +284,7 @@
 		(= temp0 (self setCursor: gWaitCursor 1))
 		(global114 copy: param2)
 		(if (not (Save 0 name param1 (param2 data:) (KArray 9 gVersion))) ; SaveGame, ArrayGetData
-			(TextDialog (MakeMessageText 10 0 0 1 64994) (Str with: global288))
+			(TextDialog (MakeMessageText 10 0 0 1 64994) (Str with: global288)) ; "An error occurred while attempting to save your game. Try saving to another directory or saving over an existing saved game."
 		else
 			(= global113 param1)
 			(self autosave: param2)
@@ -299,7 +299,7 @@
 
 	(method (restoreThis param1 &tmp [temp0 4] temp4 temp5 temp6 temp7 temp8 temp9 temp10)
 		(if (not (Save 3 name param1 (KArray 9 gVersion))) ; CheckSaveGame, ArrayGetData
-			(TextDialog (MakeMessageText 3 0 0 1 64994) (Str with: global288))
+			(TextDialog (MakeMessageText 3 0 0 1 64994) (Str with: global288)) ; "That game was saved under a different game or interpreter version. It cannot be restored."
 			(return)
 		)
 		(for
@@ -457,7 +457,7 @@
 		(DoSound sndRESTORE)
 		(Sound pause: 0)
 		(= gTickOffset (- gGameTime (GetTime)))
-		(proc64000_4)
+		(ReadPrefsFile)
 		(while (not gQuit)
 			(self doit:)
 		)

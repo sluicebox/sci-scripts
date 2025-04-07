@@ -438,7 +438,7 @@
 				(and (IsFlag 48) (not (IsFlag 97)))
 				20 ; Gypsy Prisoner
 				(and (IsFlag 37) (not (IsFlag 39)) (not (IsFlag 48)))
-				21
+				21 ; Gypsies
 				(and (IsFlag 39) (not (IsFlag 98)))
 		)
 	)
@@ -516,7 +516,7 @@
 				(== global418 3)
 				52 ; Talk About Boris
 				(== global418 5)
-				54
+				54 ; Talk About Boris
 				(== global418 7)
 		)
 	)

@@ -1781,7 +1781,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 21 (IsFlag 234) 22 (not (IsFlag 234))) ; Tell Katrina You Love Her
+		(super showCases: 21 (IsFlag 234) 22 (not (IsFlag 234))) ; Tell Katrina You Love Her, Tell Katrina You Love Her
 	)
 
 	(method (sayMessage)
@@ -1830,7 +1830,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 23 (IsFlag 234) 24 (not (IsFlag 234))) ; Tell Her You Love Her
+		(super showCases: 23 (IsFlag 234) 24 (not (IsFlag 234))) ; Tell Her You Love Her, Tell Her You Love Her
 	)
 
 	(method (sayMessage)

@@ -376,7 +376,7 @@
 		(FileIO 12 (temp2 data:) (temp3 data:)) ; Copy
 		(temp3 dispose:)
 		(if (not global235)
-			(= temp4 (MakeMessageText 0 0 71 1 14))
+			(= temp4 (MakeMessageText 0 0 71 1 14)) ; "The wallpaper file "%s" has changed. Assuming you have your wallpaper set to that file, the wallpaper will change next time you restart your machine. The new BMP has also been saved as "%s," in the game directory."
 			(= temp5 (Str format: temp4 {wallpapr.bmp} (temp1 data:)))
 			(TextDialog temp5 (Str with: global288))
 			(temp4 dispose:)

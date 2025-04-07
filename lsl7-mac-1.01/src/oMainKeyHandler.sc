@@ -62,13 +62,13 @@
 			(KEY_SHIFT
 				(if (= local0 (not local0))
 					(TextDialog
-						(MakeMessageText 0 0 28 1 14)
+						(MakeMessageText 0 0 28 1 14) ; "You've found psychedelic mode."
 						(Str with: global288)
 					)
 					(PalCycle 0 65 165 1 10) ; Start
 				else
 					(TextDialog
-						(MakeMessageText 0 0 27 1 14)
+						(MakeMessageText 0 0 27 1 14) ; "Now leaving the Sixties..."
 						(Str with: global288)
 					)
 					(PalCycle 4) ; Off

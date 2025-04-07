@@ -115,7 +115,7 @@
 			(0
 				(HandsOff)
 				(mouth setCel: 3)
-				(if (== ((gInventory at: 7) owner:) gEgo) ; tank
+				(if (== ((gInventory at: 7) owner:) gEgo) ; oxygen_tank
 					(self setScript: feedSlugScript)
 				else
 					(HandsOff)
@@ -225,7 +225,7 @@
 					y: 132
 					setCycle: End self
 				)
-				(gEgo put: 7) ; tank
+				(gEgo put: 7) ; oxygen_tank
 			)
 			(1
 				(SetScore 48 5)
@@ -286,8 +286,8 @@
 		(switch theVerb
 			(3 ; Inventory
 				(switch invItem
-					(7 ; tank
-						(if (== ((gInventory at: 7) owner:) gEgo) ; tank
+					(7 ; oxygen_tank
+						(if (== ((gInventory at: 7) owner:) gEgo) ; oxygen_tank
 							(gCurRoom setScript: throwTankScript)
 						else
 							(super doVerb: theVerb)

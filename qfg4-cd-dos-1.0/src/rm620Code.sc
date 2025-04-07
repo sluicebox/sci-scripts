@@ -1386,7 +1386,7 @@
 				(and (gEgo has: 24) (> [gEgoStats 9] 0) local0) ; theToolkit, pick locks
 				1 ; Open Door
 				(or (== local0 0) (== local1 1))
-				26
+				26 ; Open Door
 				(and (== local0 1) (== local1 0))
 		)
 	)
@@ -1433,7 +1433,7 @@
 				(and (gEgo has: 24) (> [gEgoStats 9] 0) local0) ; theToolkit, pick locks
 				1 ; Open Door
 				(or (== local0 0) (== local1 0))
-				26
+				26 ; Open Door
 				(and (== local0 1) (== local1 1))
 		)
 	)

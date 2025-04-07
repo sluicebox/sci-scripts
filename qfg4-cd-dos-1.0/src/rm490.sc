@@ -708,7 +708,7 @@
 						(and (== local2 3) (not (IsFlag 110)))
 					)
 				)
-				57
+				57 ; Ask for "Something Different"
 				(and (not (gEgo has: 54)) (not (IsFlag 396))) ; theBreathRit
 		)
 	)

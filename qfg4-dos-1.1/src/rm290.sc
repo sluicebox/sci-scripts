@@ -2009,7 +2009,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 10 (> [gEgoStats 11] 0)) ; climbing
+		(super showCases: 10 (> [gEgoStats 11] 0)) ; Climb Over Gate, climbing
 	)
 
 	(method (sayMessage)
@@ -2047,7 +2047,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 28 (> [gEgoStats 12] 0)) ; magic
+		(super showCases: 28 (> [gEgoStats 12] 0)) ; Magic, magic
 	)
 
 	(method (sayMessage)

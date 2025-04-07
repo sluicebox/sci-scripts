@@ -177,21 +177,21 @@
 			(if (< (= temp2 (Eval self temp4)) 0)
 				(for ((= temp1 0)) (< temp1 (temp3 size:)) ((++ temp1))
 					(= temp8 (temp3 at: temp1))
-					(if (and (== (temp8 suit:) temp0) (< (temp8 rank:) temp5))
+					(if (and (== (temp8 suit:) temp0) (< (temp8 rank:) temp5)) ; UNINIT
 						(= temp5 (temp8 rank:))
 					)
 				)
 				(if (< temp5 (Abs temp2))
 					(= [temp9 temp0] (Abs temp2))
-					(++ temp6)
+					(++ temp6) ; UNINIT
 				else
 					(= [temp13 temp0] (Abs temp2))
-					(++ temp7)
+					(++ temp7) ; UNINIT
 				)
 			)
 		)
 		(= temp18 (= temp17 0))
-		(if temp6
+		(if temp6 ; UNINIT
 			(= temp5 15)
 			(for ((= temp0 1)) (<= temp0 4) ((++ temp0))
 				(if (= temp2 [temp9 temp0])
@@ -222,7 +222,7 @@
 				)
 			)
 		)
-		(if temp7
+		(if temp7 ; UNINIT
 			(= temp5 0)
 			(for ((= temp0 1)) (<= temp0 4) ((++ temp0))
 				(if (= temp2 [temp13 temp0])

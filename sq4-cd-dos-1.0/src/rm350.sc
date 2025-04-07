@@ -284,7 +284,7 @@
 
 	(method (doVerb theVerb)
 		(switch theVerb
-			(15 ; oxygen_tank
+			(15 ; tank
 				(gCurRoom setScript: throwTankScript)
 			)
 			(else

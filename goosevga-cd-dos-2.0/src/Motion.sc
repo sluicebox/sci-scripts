@@ -400,8 +400,8 @@
 										(GetDistance
 											temp8
 											(& temp9 $00ff)
-											temp4
-											temp5
+											temp4 ; UNINIT
+											temp5 ; UNINIT
 										)
 									)
 								)

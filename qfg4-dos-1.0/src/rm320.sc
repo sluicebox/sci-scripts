@@ -1370,7 +1370,7 @@
 				(or (gEgo has: 13) (gEgo has: 24)) ; theLockpick, theToolkit
 				10 ; Listen at Door
 				(or (<= local2 13) (>= local2 15))
-				17
+				17 ; Listen at Door
 				(and (== local2 14) (not (IsFlag 137)))
 		)
 	)

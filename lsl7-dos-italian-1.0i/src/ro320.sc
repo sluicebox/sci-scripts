@@ -533,7 +533,7 @@
 	)
 
 	(method (init &tmp temp0 temp1 [temp2 2])
-		(= text (MakeMessageText 0 0 4 1 320))
+		(= text (MakeMessageText 0 0 4 1 320)) ; "Blind Dessert Taste Test"
 		(super init: &rest)
 		(= temp1 100)
 		(= temp0 500)

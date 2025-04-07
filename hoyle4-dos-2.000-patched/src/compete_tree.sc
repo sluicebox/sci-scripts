@@ -1232,9 +1232,9 @@
 			)
 			((and (== temp81 1) (OneOf temp82 3 17) (== temp41 2))
 				(cond
-					((>= temp3 (+ 6 temp49))
+					((>= temp3 (+ 6 temp49)) ; UNINIT
 						(= temp0 (proc709_0 temp21 (param1 minLevel: temp21)))
-						(param1 minPoints: (+ 6 temp49))
+						(param1 minPoints: (+ 6 temp49)) ; UNINIT
 						(param1 bidBranch: 1 forcing: 2)
 						(= global439 1)
 					)
@@ -1252,7 +1252,7 @@
 								(= temp0 temp37)
 								(proc709_5 param1 temp7 5 11)
 							)
-							((>= temp3 (+ 3 temp49))
+							((>= temp3 (+ 3 temp49)) ; UNINIT
 								(= temp0
 									(proc709_0 temp8 (param1 minLevel: temp8))
 								)

@@ -987,7 +987,7 @@
 				(== local7 4)
 				34 ; Read Note
 				(== local7 5)
-				40
+				40 ; Take Guild Card
 				(not (IsFlag 509))
 		)
 	)
@@ -1020,7 +1020,7 @@
 			showCases:
 				75 ; Search for Traps
 				(and (not (IsFlag 247)) (not (IsFlag 241)) (IsFlag 242))
-				76
+				76 ; Pick Lock
 				(and (not (IsFlag 241)) (gEgo has: 13)) ; theLockpick
 		)
 	)
@@ -1083,7 +1083,7 @@
 						)
 					)
 				)
-				49
+				49 ; Crack Safe
 				(and
 					(gEgo has: 24) ; theToolkit
 					(or
@@ -1146,7 +1146,7 @@
 	(properties)
 
 	(method (showCases)
-		(super showCases: 100 (IsFlag 389) 101 (IsFlag 71)) ; Old Man's House
+		(super showCases: 100 (IsFlag 389) 101 (IsFlag 71)) ; Old Man's House, Burgomeister's Office
 	)
 )
 

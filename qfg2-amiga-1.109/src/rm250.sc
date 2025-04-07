@@ -862,7 +862,7 @@
 		(cond
 			((== what 72)
 				(if gClumpsLeft
-					(Say self msgFile 72 250 48)
+					(Say self msgFile 72 250 48) ; "It's used to make dark stains on light clothes. If you need it to ground old Blowhard, it's yours for a song. Dust in the Wind. All you need is dust in the wind."
 				else
 					(gEgo get: 32) ; PotOfDirt
 					(+= gClumpsLeft 6)

@@ -875,7 +875,7 @@
 							)
 						)
 						(4 3) ; battery
-						(6 ; gum
+						(6 ; paper_with_gum
 							(Print
 								{Try as you might, the gum just gets stuck to your fingers.}
 							)

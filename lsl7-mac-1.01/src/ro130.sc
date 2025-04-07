@@ -29,7 +29,7 @@
 )
 
 (procedure (localproc_0 &tmp temp0 temp1 temp2)
-	(if (not (= temp2 (MakeMessageText 0 0 2 1 15 1)))
+	(if (not (= temp2 (MakeMessageText 0 0 2 1 15 1))) ; "Leisure Suit Larry in Love For Sail!"
 		(= temp2 (Str with: {Leisure Suit Larry\nin\nLove For Sail!}))
 	)
 	(oCredits hide: setString: temp2)

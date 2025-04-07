@@ -380,7 +380,7 @@
 				local8
 				76 ; Ask About Fry Guys
 				local8
-				77
+				77 ; Ask About "Big B"
 				local8
 		)
 	)
@@ -409,7 +409,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 94 (not (IsFlag 179)))
+		(super showCases: 94 (not (IsFlag 179))) ; Elderbury Pie
 	)
 )
 

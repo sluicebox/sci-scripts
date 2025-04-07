@@ -20,8 +20,8 @@
 	oMainMenu 0
 	oMenuPopupPlane 1
 	moHelp 2
-	proc64000_3 3
-	proc64000_4 4
+	WritePrefsFile 3
+	ReadPrefsFile 4
 	moGetHelp 5
 	moScore 6
 	moMap 7
@@ -34,7 +34,7 @@
 	local0
 )
 
-(procedure (proc64000_4 &tmp temp0 temp1 temp2 temp3 temp4)
+(procedure (ReadPrefsFile &tmp temp0 temp1 temp2 temp3 temp4)
 	(= temp0 (Str with: global115))
 	(temp0 cat: {get\_hard})
 	(if (not (FileIO fiEXISTS (temp0 data:)))
@@ -72,7 +72,7 @@
 		(= gMsgType 2)
 		(= global328 0)
 		(= global212 1)
-		(proc64000_3)
+		(WritePrefsFile)
 	else
 		(= global296 (oFile readWord:))
 		(= global314 (oFile readWord:))
@@ -92,7 +92,7 @@
 	)
 )
 
-(procedure (proc64000_3 &tmp temp0)
+(procedure (WritePrefsFile &tmp temp0)
 	(= temp0 (Str with: global115))
 	(temp0 cat: {larry7.prf})
 	(if (!= (temp0 weigh: (oFile name:)) 0)
@@ -272,9 +272,9 @@
 	(method (doSelect)
 		(if
 			(YesNoDialog
-				(MakeMessageText 0 0 23 1 14)
-				(MakeMessageText 0 0 24 1 14)
-				(MakeMessageText 0 0 18 1 14)
+				(MakeMessageText 0 0 23 1 14) ; "Do you really want to start all over again from the very beginning?"
+				(MakeMessageText 0 0 24 1 14) ; "Yes"
+				(MakeMessageText 0 0 18 1 14) ; "Oops"
 			)
 			(gGame autorestore: 1)
 			(= gQuit 1)
@@ -327,9 +327,9 @@
 			(if
 				(not
 					(YesNoDialog
-						(MakeMessageText 0 0 22 1 14)
-						(MakeMessageText 0 0 21 1 14)
-						(MakeMessageText 0 0 18 1 14)
+						(MakeMessageText 0 0 22 1 14) ; "Do you really want to quit?"
+						(MakeMessageText 0 0 21 1 14) ; "Quit"
+						(MakeMessageText 0 0 18 1 14) ; "Oops"
 					)
 				)
 				(return)
@@ -350,7 +350,7 @@
 	(method (doSelect)
 		(cond
 			((< gCurRoomNum 200) ; ro200
-				(TextDialog (MakeMessageText 0 0 60 1 14) (Str with: global288))
+				(TextDialog (MakeMessageText 0 0 60 1 14) (Str with: global288)) ; "Do this to view a map of the ship... if you ever get to the ship!"
 			)
 			(((ScriptID 64017 0) test: 158) ; oFlags
 				((ScriptID 90 0) dispose:) ; oTravelScreen
@@ -394,12 +394,12 @@
 	(method (doSelect)
 		(if (not (& gMsgType $0001))
 			(= gMsgType 3)
-			(TextDialog (MakeMessageText 0 0 30 1 14) (Str with: global288))
+			(TextDialog (MakeMessageText 0 0 30 1 14) (Str with: global288)) ; "Closed captioning is now ON."
 		else
 			(= gMsgType 2)
-			(TextDialog (MakeMessageText 0 0 29 1 14) (Str with: global288))
+			(TextDialog (MakeMessageText 0 0 29 1 14) (Str with: global288)) ; "Closed captioning is now OFF."
 		)
-		(proc64000_3)
+		(WritePrefsFile)
 	)
 )
 
@@ -429,8 +429,8 @@
 	)
 
 	(method (doSelect &tmp temp0 temp1 temp2 temp3 temp4)
-		(= temp0 (MakeMessageText 0 0 39 1 14))
-		(= temp1 (MakeMessageText 0 0 39 2 14))
+		(= temp0 (MakeMessageText 0 0 39 1 14)) ; "Current filth setting:"
+		(= temp1 (MakeMessageText 0 0 39 2 14)) ; "Filthy."
 		(= temp2 (GetNumMessages 14 0 0 48))
 		(= temp3 (GetRandomNumber 1 temp2))
 		(= temp4 (MakeMessageText 0 0 48 temp3 14))
@@ -453,7 +453,7 @@
 	)
 
 	(method (doSelect)
-		(TextDialog (MakeMessageText 0 0 55 1 14) (Str with: global288))
+		(TextDialog (MakeMessageText 0 0 55 1 14) (Str with: global288)) ; "(Not yet implemented.)"
 	)
 )
 
@@ -483,7 +483,7 @@
 	)
 
 	(method (doSelect &tmp temp0 temp1)
-		(= temp0 (MakeMessageText 0 0 58 1 14))
+		(= temp0 (MakeMessageText 0 0 58 1 14)) ; "Your score is only %d out of the 1,000 points available."
 		(= temp1 (Str format: (temp0 data:) global201))
 		(temp0 dispose:)
 		(TextDialog temp1 (Str with: global288))
@@ -512,12 +512,12 @@
 	(method (doSelect)
 		(if global212
 			(= global212 0)
-			(TextDialog (MakeMessageText 0 0 56 1 14) (Str with: global288))
+			(TextDialog (MakeMessageText 0 0 56 1 14) (Str with: global288)) ; "The ship's stabilizers are now ON."
 		else
 			(= global212 1)
-			(TextDialog (MakeMessageText 0 0 57 1 14) (Str with: global288))
+			(TextDialog (MakeMessageText 0 0 57 1 14) (Str with: global288)) ; "The ship's stabilizers are now OFF."
 		)
-		(proc64000_3)
+		(WritePrefsFile)
 	)
 )
 
@@ -574,7 +574,7 @@
 	)
 
 	(method (doSelect &tmp [temp0 4])
-		(TextDialog (MakeMessageText 0 0 4 1 14) (Str with: global288))
+		(TextDialog (MakeMessageText 0 0 4 1 14) (Str with: global288)) ; "Call Sierra's friendly customer service department. USA Voice: 206 644-4343 Fax:  206 644-7697  UK Voice: 0118 920-9111 Fax:  0118 987-5603  France Voice: 01 46-01-4650 Fax:  01 46-30-0065  Germany Voice: +49 0-6103-99-4040 Fax:  +49 0-6103-99-4035"
 	)
 )
 

@@ -259,7 +259,7 @@
 	)
 
 	(method (getName)
-		(MakeMessageText 0 68 0 1 221)
+		(MakeMessageText 0 68 0 1 221) ; "Captain Thygh's Leader Board"
 	)
 
 	(method (doVerb theVerb)

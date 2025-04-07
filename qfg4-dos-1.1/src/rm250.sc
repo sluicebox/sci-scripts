@@ -704,7 +704,7 @@
 	(properties)
 
 	(method (showCases)
-		(super showCases: 49 (not (IsFlag 267)))
+		(super showCases: 49 (not (IsFlag 267))) ; Introduce Yourself
 	)
 
 	(method (respond)
@@ -750,7 +750,7 @@
 				global431
 				5 ; Crypt Key
 				(and (OneOf local2 2 3) (IsFlag 205))
-				3
+				3 ; Crypt Key
 				(and (>= local2 5) (not (IsFlag 268)))
 		)
 	)
@@ -797,7 +797,7 @@
 				(and (not (IsFlag 108)) (gEgo has: 24)) ; theToolkit
 				28 ; Unlock Door
 				(and (not (IsFlag 108)) (gEgo has: 14) (gEgo has: 61)) ; theKeyRing, guild-key
-				27
+				27 ; Break Door Open
 				(not (IsFlag 108))
 		)
 	)

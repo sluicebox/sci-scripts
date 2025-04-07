@@ -1531,7 +1531,7 @@
 				)
 				6 ; Fly Across
 				(or (OneOf gHeroType 1 3) (>= [gEgoStats 19] 310)) ; Magic User, Paladin, mana
-				5
+				5 ; Walk the Tightrope
 				(or (== gHeroType 2) (>= [gEgoStats 15] 110)) ; Thief, acrobatics
 		)
 	)

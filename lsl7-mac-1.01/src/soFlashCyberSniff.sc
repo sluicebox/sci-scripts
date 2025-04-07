@@ -342,7 +342,7 @@
 		(FileIO 12 (temp2 data:) (temp3 data:)) ; Copy
 		(temp3 dispose:)
 		(if (not global235)
-			(= temp4 (MakeMessageText 0 0 71 1 14))
+			(= temp4 (MakeMessageText 0 0 71 1 14)) ; "The 'PICT' file "%s" has been saved in the game folder. You can view this picture using the SimpleText application."
 			(= temp5 (Str format: temp4 (temp1 data:)))
 			(TextDialog temp5 (Str with: global288))
 			(temp4 dispose:)

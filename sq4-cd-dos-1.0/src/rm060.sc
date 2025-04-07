@@ -497,7 +497,7 @@
 			(1 ; Look
 				(theArea doVerb: 1)
 			)
-			(24 ; invLook
+			(24 ; Inventory
 				((ScriptID 705 4) doVerb: 24 invItem) ; theRoom
 			)
 			(7 ; Taste
@@ -552,7 +552,7 @@
 			(1 ; Look
 				(gNarrator say: 18) ; "You are in the southern area of a rare clearing in this destroyed cityscape. Your home as you remembered it does not exist in this period of time. A huge boil of a structure clogs the horizon."
 			)
-			(24 ; invLook
+			(24 ; Inventory
 				((ScriptID 705 4) doVerb: 24 invItem) ; theRoom
 			)
 			(else

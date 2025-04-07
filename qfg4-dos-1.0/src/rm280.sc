@@ -540,7 +540,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 17 (IsFlag 339))
+		(super showCases: 17 (IsFlag 339)) ; Tell About Ghost Wife
 	)
 
 	(method (sayMessage)
@@ -585,7 +585,7 @@
 					(or (gEgo has: 24) (gEgo has: 13)) ; theToolkit, theLockpick
 					(or (gCast contains: (ScriptID 84 0)) (<= gTime 3)) ; oldMan
 				)
-				36
+				36 ; Pick Lock
 				(and
 					(or (gEgo has: 24) (gEgo has: 13)) ; theToolkit, theLockpick
 					(not (gCast contains: (ScriptID 84 0))) ; oldMan

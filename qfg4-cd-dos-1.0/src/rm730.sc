@@ -1486,7 +1486,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 20 (not local4))
+		(super showCases: 20 (not local4)) ; Tell Ultimate Joke
 	)
 
 	(method (respond)

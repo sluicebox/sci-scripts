@@ -1031,7 +1031,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 2 (gEgo has: 24) 34 (gEgo has: 60)) ; Pick Lock, theToolkit, crypt-key
+		(super showCases: 2 (gEgo has: 24) 34 (gEgo has: 60)) ; Pick Lock, theToolkit, Unlock Door, crypt-key
 	)
 
 	(method (sayMessage)

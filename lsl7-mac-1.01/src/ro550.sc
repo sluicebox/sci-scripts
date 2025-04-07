@@ -214,7 +214,7 @@
 	(method (doit &tmp temp0 temp1)
 		(super doit: &rest)
 		(if (and (gUser canControl:) global235 global236)
-			(= temp0 (MakeMessageText 0 0 71 1 14))
+			(= temp0 (MakeMessageText 0 0 71 1 14)) ; "The 'PICT' file "%s" has been saved in the game folder. You can view this picture using the SimpleText application."
 			(= temp1 (Str format: temp0 (global236 data:)))
 			(TextDialog temp1 (Str with: global288))
 			(temp0 dispose:)

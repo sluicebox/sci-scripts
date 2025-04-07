@@ -390,7 +390,7 @@
 			showCases:
 				10 ; Guess "Leshy"
 				(or (IsFlag 176) (IsFlag 135))
-				11
+				11 ; Guess "Rusalka"
 				(or (IsFlag 177) (IsFlag 135))
 		)
 	)
@@ -425,7 +425,7 @@
 	(properties)
 
 	(method (showCases)
-		(super showCases: 21 (IsFlag 166) 20 (IsFlag 335)) ; Guess "Elderbury Bush"
+		(super showCases: 21 (IsFlag 166) 20 (IsFlag 335)) ; Guess "Elderbury Bush", Tell About Bush in Goo
 	)
 
 	(method (sayMessage)
@@ -448,7 +448,7 @@
 	(properties)
 
 	(method (showCases)
-		(super showCases: 22 (IsFlag 199) 41 (not (IsFlag 176))) ; Answer "Plant Bush"
+		(super showCases: 22 (IsFlag 199) 41 (not (IsFlag 176))) ; Answer "Plant Bush", Make Wild Guess
 	)
 
 	(method (sayMessage)
@@ -479,7 +479,7 @@
 	(properties)
 
 	(method (showCases)
-		(super showCases: 37 (or (IsFlag 177) (IsFlag 135)))
+		(super showCases: 37 (or (IsFlag 177) (IsFlag 135))) ; Guess "Rusalka"
 	)
 
 	(method (sayMessage)
@@ -500,7 +500,7 @@
 	(properties)
 
 	(method (showCases)
-		(super showCases: 50 (IsFlag 150))
+		(super showCases: 50 (IsFlag 150)) ; Guess "Baba Yaga"
 	)
 
 	(method (sayMessage)
@@ -532,7 +532,7 @@
 	(properties)
 
 	(method (showCases)
-		(super showCases: 51 (IsFlag 166))
+		(super showCases: 51 (IsFlag 166)) ; Guess "Elderbury Bush"
 	)
 
 	(method (sayMessage)
@@ -556,7 +556,7 @@
 			showCases:
 				53 ; Guess "Wraith"
 				(!= gHeroType 1) ; Magic User
-				52
+				52 ; Guess "Staff"
 				(and (== gHeroType 1) [gEgoStats 35]) ; Magic User, ritualOfReleaseSpell
 		)
 	)

@@ -882,7 +882,7 @@
 					(== ((gInventory at: 19) state:) 2) ; theSword
 					(not (IsFlag 168))
 				)
-				47
+				47 ; Open Case
 				(and
 					(gEgo has: 19) ; theSword
 					(== ((gInventory at: 19) state:) 3) ; theSword
@@ -922,7 +922,7 @@
 			showCases:
 				24 ; Search Under Desk
 				(and (IsFlag 170) (not (IsFlag 181)))
-				25
+				25 ; Sign Logbook
 				(not (IsFlag 171))
 		)
 	)
@@ -965,7 +965,7 @@
 				(and (not (IsFlag 173)) (OneOf gHeroType 0 3)) ; Fighter, Paladin
 				2 ; Read "Climbing Skills"
 				(and (OneOf gHeroType 0 3) (== [gEgoStats 11] 0)) ; Fighter, Paladin, climbing
-				33
+				33 ; Read "Creative Casting"
 				(and [gEgoStats 12] (not (IsFlag 175))) ; magic
 		)
 	)

@@ -28,9 +28,9 @@
 
 (procedure (localproc_0 &tmp temp0 temp1 temp2 temp3 temp4)
 	(= temp3 (Str with: {}))
-	(= temp0 (MakeMessageText 17 0 7 1 380))
-	(= temp1 (MakeMessageText 17 0 7 2 380))
-	(= temp2 (MakeMessageText 17 0 7 3 380))
+	(= temp0 (MakeMessageText 17 0 7 1 380)) ; "Enter combination (like this: 69-69-69):"
+	(= temp1 (MakeMessageText 17 0 7 2 380)) ; "OK"
+	(= temp2 (MakeMessageText 17 0 7 3 380)) ; "Cancel"
 	(if (== (= temp3 (proc64033_6 temp0 temp1 temp2 20)) 0)
 		(proc64896_7 temp3)
 		(return 0)
@@ -40,7 +40,7 @@
 		(proc64896_7 temp3)
 		(return 0)
 	)
-	(= temp4 (MakeMessageText 17 0 7 4 380))
+	(= temp4 (MakeMessageText 17 0 7 4 380)) ; "38-24-36"
 	(if (== (temp4 weigh: temp3) 0)
 		(proc64896_7 temp4)
 		(proc64896_7 temp3)

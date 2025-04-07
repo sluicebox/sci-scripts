@@ -103,7 +103,7 @@
 				setScalePercent: 100
 			)
 		)
-		(= temp0 (MakeMessageText 0 0 1 1 14))
+		(= temp0 (MakeMessageText 0 0 1 1 14)) ; "Leisure Suit Larry in "Love For Sail!" is an "Up and Coming" Production.  Version"
 		(if gVersion
 			(temp0 cat: { })
 			(temp0 cat: gVersion)

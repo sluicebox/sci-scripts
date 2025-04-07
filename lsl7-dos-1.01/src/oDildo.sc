@@ -25,7 +25,7 @@
 )
 
 (procedure (proc50_3 &tmp temp0 temp1 temp2 temp3 temp4 temp5 temp6)
-	(= temp6 (MakeMessageText 0 0 62 1 14))
+	(= temp6 (MakeMessageText 0 0 62 1 14)) ; "Congratulations! You've found %d of %d possible. Keep poking around!"
 	(= temp5 (Str format: (temp6 data:) global264 32))
 	(temp6 dispose:)
 	(= temp0 global289)
@@ -38,7 +38,7 @@
 	(= global276 60613)
 	(= temp3 global277)
 	(= global277 60614)
-	(TextDialog temp5 (MakeMessageText 0 0 70 1 14) (MakeMessageText 0 0 61 1 14))
+	(TextDialog temp5 (MakeMessageText 0 0 70 1 14) (MakeMessageText 0 0 61 1 14)) ; "Yeah, Baby!", "Where's Dildo\05?"
 	(= global289 temp0)
 	(= global291 temp1)
 	(= global290 temp4)

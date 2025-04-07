@@ -867,7 +867,7 @@
 					(4 ; battery
 						(Print 376 12) ; "No way! That would be assault with intent to emit battery!"
 					)
-					(6 ; gum
+					(6 ; paper_with_gum
 						(Print 376 13) ; "Try as you might, the gum just gets stuck to your fingers."
 					)
 					(9 ; pen

@@ -69,7 +69,7 @@
 	(temp5 bitmap: (Bitmap 0 temp1 15 255 82 640 480 0)) ; Create
 	(Bitmap 5 (temp5 bitmap:) 0 0 (- temp1 1) 14 82) ; AddRect
 	(temp5 setPri: 10 init: oInvPlane)
-	(= temp4 (MakeMessageText 0 0 50 1 14))
+	(= temp4 (MakeMessageText 0 0 50 1 14)) ; "Inventory"
 	(= temp6 (TextItem new:))
 	(temp6
 		text: temp4

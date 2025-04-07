@@ -109,7 +109,7 @@
 				init: temp2
 				hide:
 			)
-			(if (not (= temp6 (MakeMessageText 0 0 50 6 14)))
+			(if (not (= temp6 (MakeMessageText 0 0 50 6 14))) ; "Shortcuts"
 				(= temp6 (Str with: {(Shortcuts)}))
 			)
 			(temp4 addChild: ((MenuHeader new:) oText: temp6 yourself:))
@@ -117,7 +117,7 @@
 				(temp4
 					addChild:
 						((MenuItem new:)
-							oText: (MakeMessageText 0 0 50 2 14)
+							oText: (MakeMessageText 0 0 50 2 14) ; "Map"
 							userData: 1
 							yourself:
 						)
@@ -126,7 +126,7 @@
 			(temp4
 				addChild:
 					((MenuItem new:)
-						oText: (MakeMessageText 0 0 50 1 14)
+						oText: (MakeMessageText 0 0 50 1 14) ; "Inventory"
 						userData: 0
 						yourself:
 					)
@@ -134,7 +134,7 @@
 			(temp4
 				addChild:
 					((MenuItem new:)
-						oText: (MakeMessageText 0 0 50 5 14)
+						oText: (MakeMessageText 0 0 50 5 14) ; "Score"
 						userData: 4
 						yourself:
 					)
@@ -142,7 +142,7 @@
 			(temp4
 				addChild:
 					((MenuItem new:)
-						oText: (MakeMessageText 0 0 50 3 14)
+						oText: (MakeMessageText 0 0 50 3 14) ; "Save"
 						userData: 3
 						yourself:
 					)
@@ -150,7 +150,7 @@
 			(temp4
 				addChild:
 					((MenuItem new:)
-						oText: (MakeMessageText 0 0 50 4 14)
+						oText: (MakeMessageText 0 0 50 4 14) ; "The Boss!"
 						userData: 2
 						yourself:
 					)
@@ -324,7 +324,7 @@
 		(if temp11
 			(temp4 addChild: temp11)
 			(if (and local3 (local3 size:))
-				(if (not (= temp8 (MakeMessageText 0 12 0 1 13)))
+				(if (not (= temp8 (MakeMessageText 0 12 0 1 13))) ; "Other..."
 					(= temp8 (Str with: {Missing MSG}))
 				)
 				(temp11
@@ -356,7 +356,7 @@
 		(= temp9 (temp4 showPopup:))
 		(= local6 0)
 		(while (== temp9 12)
-			(= temp20 (MakeMessageText 0 0 52 1 14))
+			(= temp20 (MakeMessageText 0 0 52 1 14)) ; "What do you want to do to "%s?" Type a verb:"
 			(= temp17 (param1 getName:))
 			(= temp21 (Str format: temp20 temp17))
 			(proc64896_7 temp20)
@@ -366,8 +366,8 @@
 					(= temp19
 						(proc64033_6
 							temp21
-							(MakeMessageText 0 0 17 1 14)
-							(MakeMessageText 0 0 18 1 14)
+							(MakeMessageText 0 0 17 1 14) ; "OK"
+							(MakeMessageText 0 0 18 1 14) ; "Oops"
 							20
 						)
 					)
@@ -404,9 +404,9 @@
 				(if
 					(not
 						(YesNoDialog
-							(MakeMessageText 0 0 54 1 14)
-							(MakeMessageText 0 0 17 1 14)
-							(MakeMessageText 0 0 18 1 14)
+							(MakeMessageText 0 0 54 1 14) ; "The game doesn't understand that verb."
+							(MakeMessageText 0 0 17 1 14) ; "OK"
+							(MakeMessageText 0 0 18 1 14) ; "Oops"
 						)
 					)
 					(return -1)

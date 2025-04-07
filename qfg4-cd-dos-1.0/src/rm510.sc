@@ -164,7 +164,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 8 (and (== gHeroType 2) (IsFlag 242))) ; Thief
+		(super showCases: 8 (and (== gHeroType 2) (IsFlag 242))) ; Examine Relief Closely, Thief
 	)
 
 	(method (sayMessage)
@@ -187,7 +187,7 @@
 		(gCurRoom setScript: 0)
 		(super
 			showCases:
-				12
+				12 ; Examine Relief Closely
 				(or (and (== gHeroType 2) (IsFlag 242)) (== gHeroType 3)) ; Thief, Paladin
 		)
 	)
@@ -216,7 +216,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 16 (and (== gHeroType 2) (IsFlag 242))) ; Thief
+		(super showCases: 16 (and (== gHeroType 2) (IsFlag 242))) ; Examine Relief Closely, Thief
 	)
 
 	(method (sayMessage)
@@ -236,7 +236,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 20 (and (== gHeroType 2) (IsFlag 242))) ; Thief
+		(super showCases: 20 (and (== gHeroType 2) (IsFlag 242))) ; Examine Relief Closely, Thief
 	)
 
 	(method (sayMessage)
@@ -262,7 +262,7 @@
 				(and (== gHeroType 2) (IsFlag 242)) ; Thief
 				24 ; Pick Lock
 				(gEgo has: 24) ; theToolkit
-				26
+				26 ; Unlock Relief
 				(gEgo has: 62) ; relief-key
 		)
 	)

@@ -317,7 +317,7 @@
 			(3 ; Do
 				(switch cel
 					(0
-						(if (== ((gInventory at: 15) owner:) 55) ; laptop
+						(if (== ((gInventory at: 15) owner:) 55) ; laptop_computer
 							(= cel 2)
 						else
 							(= cel 1)
@@ -329,7 +329,7 @@
 						(latchClick play:)
 					)
 					(2
-						(gEgo get: 15) ; laptop
+						(gEgo get: 15) ; laptop_computer
 						(= cel 1)
 						(SetScore 40 5)
 						(Print 55 0) ; "After taking a quick look around to reassure yourself that the place is as dead as it looks, you achieve personal acquisition of the PocketPal(tm) laptop."

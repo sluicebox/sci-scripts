@@ -1706,7 +1706,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 10 (gEgo has: 13)) ; theLockpick
+		(super showCases: 10 (gEgo has: 13)) ; Unlock, theLockpick
 	)
 
 	(method (sayMessage)
@@ -1724,7 +1724,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 10 (gEgo has: 13)) ; theLockpick
+		(super showCases: 10 (gEgo has: 13)) ; Pick Lock, theLockpick
 	)
 
 	(method (sayMessage)
@@ -1742,7 +1742,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 7 0 10 (gEgo has: 13)) ; Open, theLockpick
+		(super showCases: 7 0 10 (gEgo has: 13)) ; Open, Pick Lock, theLockpick
 	)
 
 	(method (sayMessage)

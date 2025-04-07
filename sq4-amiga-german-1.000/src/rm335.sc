@@ -329,13 +329,13 @@
 				(= cycles 3)
 			)
 			(1
-				(gEgo get: 7) ; tank
+				(gEgo get: 7) ; oxygen_tank
 				(oxyTank dispose:)
 				(SetScore 47 5)
 				(= cycles 2)
 			)
 			(2
-				(Inv curIcon: (gInventory at: 7) hide:) ; tank
+				(Inv curIcon: (gInventory at: 7) hide:) ; oxygen_tank
 				(gGame setCursor: ((gInventory curIcon:) cursor:) 1)
 				(= cycles 1)
 			)
@@ -677,7 +677,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(3 ; Do
-				(if (== ((gInventory at: 7) owner:) 335) ; tank
+				(if (== ((gInventory at: 7) owner:) 335) ; oxygen_tank
 					(gCurRoom setScript: oxyTankScript)
 				else
 					(super doVerb: theVerb)
@@ -764,7 +764,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(3 ; Do
-				(if (== ((gInventory at: 7) owner:) 335) ; tank
+				(if (== ((gInventory at: 7) owner:) 335) ; oxygen_tank
 					(gCurRoom setScript: oxyTankScript)
 				else
 					(super doVerb: theVerb)

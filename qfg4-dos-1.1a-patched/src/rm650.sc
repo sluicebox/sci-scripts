@@ -1172,7 +1172,7 @@
 	)
 
 	(method (showCases)
-		(super showCases: 41 local1)
+		(super showCases: 41 local1) ; Tell About Erana's Staff
 	)
 
 	(method (sayMessage)

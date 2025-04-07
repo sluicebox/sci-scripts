@@ -1127,7 +1127,7 @@
 				)
 				13 ; Tell About the Erana Dream
 				(and (IsFlag 153) (not (IsFlag 295)))
-				14
+				14 ; Tell About Baba's Pie
 				(and (IsFlag 166) (not (IsFlag 179)) (not (IsFlag 296)))
 		)
 	)

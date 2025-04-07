@@ -548,11 +548,11 @@
 	)
 
 	(method (sayBargainSuccess)
-		(Say self self msgFile 34)
+		(Say self self msgFile 34) ; "You are most skilled at bargaining. They shall be but half the price!"
 	)
 
 	(method (sayBargainFailure)
-		(Say self self msgFile 35)
+		(Say self self msgFile 35) ; "It is most unfortunate that I cannot reduce my price."
 	)
 
 	(method (sayNotCloseEnough)

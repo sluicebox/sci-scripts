@@ -507,7 +507,7 @@
 				(= global294 0)
 			)
 		)
-		(proc64000_3)
+		(WritePrefsFile)
 	)
 )
 
@@ -587,7 +587,7 @@
 		(= global114 (Str new:))
 		(= global115 (Str new:))
 		(global115 copy: gCurSaveDir)
-		(if (not (= global288 (MakeMessageText 0 0 3 1 14)))
+		(if (not (= global288 (MakeMessageText 0 0 3 1 14))) ; "Continue"
 			(= global288 (Str with: {Continue}))
 		)
 		(= gApproachCode oApproachCode)
@@ -598,7 +598,7 @@
 			registerKeyHandler: (ScriptID 64010 0) ; oMainKeyHandler
 			registerGlobalHandler: (ScriptID 64010 1) ; oRightClickHandler
 		)
-		(proc64040_0)
+		(InitializeTopics)
 		(proc64032_2)
 		((= gMessager (ScriptID 64032 1)) init:) ; oMessager
 		(= gMsgType 3)
@@ -651,7 +651,7 @@
 		((ScriptID 64000 0) init:) ; oMainMenu
 		((ScriptID 60 0) setReal: (ScriptID 60 0) 60) ; oFidgetTimer, oFidgetTimer
 		(gOEventHandler registerGlobalHandler: (ScriptID 60 2)) ; oFidgetClickHandler
-		(proc64000_4)
+		(ReadPrefsFile)
 		(localproc_1)
 		(= temp0 (Str new: 100))
 		(GetConfig {language} temp0)
@@ -789,7 +789,7 @@
 	)
 
 	(method (init &tmp temp0)
-		(= temp0 (MakeMessageText 0 0 59 1 14))
+		(= temp0 (MakeMessageText 0 0 59 1 14)) ; "Score"
 		(= text (Str format: {%s: %d} (temp0 data:) (soShowScore nOldScore:)))
 		(temp0 dispose:)
 		(oScorePlane init:)

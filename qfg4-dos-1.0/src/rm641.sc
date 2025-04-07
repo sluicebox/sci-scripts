@@ -844,7 +844,7 @@
 				(not local1)
 				26 ; Pick Lock
 				(not local1)
-				25
+				25 ; Bash Chest Open
 				(not local1)
 		)
 	)
@@ -910,7 +910,7 @@
 			showCases:
 				13 ; Look for Traps
 				(and (== gHeroType 2) (IsFlag 242)) ; Thief
-				7
+				7 ; Pick the Lock
 				(and [gEgoStats 9] (gEgo has: 24)) ; pick locks, theToolkit
 		)
 	)

@@ -36,12 +36,12 @@
 	)
 	(= temp17 (* (GetTextWidth {M} global268 0) 36))
 	(if (== local3 0)
-		(= temp19 (MakeMessageText 26 0 0 1 64990))
+		(= temp19 (MakeMessageText 26 0 0 1 64990)) ; "Restore"
 	else
-		(= temp19 (MakeMessageText 28 0 0 1 64990))
+		(= temp19 (MakeMessageText 28 0 0 1 64990)) ; "Save"
 	)
-	(= temp20 (MakeMessageText 22 0 0 1 64990))
-	(= temp21 (MakeMessageText 24 0 0 1 64990))
+	(= temp20 (MakeMessageText 22 0 0 1 64990)) ; "Cancel"
+	(= temp21 (MakeMessageText 24 0 0 1 64990)) ; "Delete"
 	(= temp24
 		(+
 			(= temp24
@@ -73,7 +73,7 @@
 		nLeading: global271
 		fore: global272
 		back: global273
-		text: (MakeMessageText 39 0 0 1 64990)
+		text: (MakeMessageText 39 0 0 1 64990) ; "\1d"
 		bTileBorder: 1
 		vTileOff: global276
 		vTileOn: global277
@@ -84,7 +84,7 @@
 		nLeading: global271
 		fore: global272
 		back: global273
-		text: (MakeMessageText 40 0 0 1 64990)
+		text: (MakeMessageText 40 0 0 1 64990) ; "\1e"
 		bTileBorder: 1
 		vTileOff: global276
 		vTileOn: global277
@@ -176,9 +176,9 @@
 	(= temp5 (temp7 nWidth:))
 	(= temp6 (temp7 nHeight:))
 	(if (== local3 0)
-		(= temp22 (MakeMessageText 20 0 0 1 64990))
+		(= temp22 (MakeMessageText 20 0 0 1 64990)) ; "Restore a Game"
 	else
-		(= temp22 (MakeMessageText 21 0 0 1 64990))
+		(= temp22 (MakeMessageText 21 0 0 1 64990)) ; "Save a Game"
 	)
 	(= temp10 (TextItem new:))
 	(temp10
@@ -244,7 +244,7 @@
 	)
 	(localproc_0)
 	(if (and (>= (oSelector nItems:) 20) (== local3 1))
-		(TextDialog (MakeMessageText 0 0 35 1 14) (Str with: global288))
+		(TextDialog (MakeMessageText 0 0 35 1 14) (Str with: global288)) ; "That's as many games as you can save in one directory. Delete a game before saving another. Besides, you can't "die" in this game, and we automatically save your position when you quit, so you don't need so many games after all."
 		(oBtnYes disable:)
 	)
 	(if (and (<= (oSelector nItems:) 0) (== local3 0))
@@ -376,7 +376,7 @@
 			(= local1 (local0 getText:))
 		)
 		(if (or (not local1) (<= (local1 size:) 0) (local1 compare: { }))
-			(TextDialog (MakeMessageText 3 0 0 1 64990) (Str with: global288))
+			(TextDialog (MakeMessageText 3 0 0 1 64990) (Str with: global288)) ; "You must type a description for the game."
 			(return)
 		)
 		(if (== local3 1)
@@ -395,7 +395,7 @@
 			(= local2 (oSelector getData: temp0))
 		)
 		(if (and (== local3 1) (not (FileIO 17 2 (KArray 9 gCurSaveDir)))) ; CheckFreeSpace, ArrayGetData
-			(TextDialog (MakeMessageText 30 0 0 1 64990) (Str with: global288))
+			(TextDialog (MakeMessageText 30 0 0 1 64990) (Str with: global288)) ; "This directory/disk can hold no more saved games. You must replace one of your saved games or use Change Directory to save on a different directory/disk."
 			(oBtnCancel doSelect:)
 			(return)
 		)
@@ -432,9 +432,9 @@
 		(if
 			(not
 				(YesNoDialog
-					(MakeMessageText 12 0 0 1 64990)
-					(MakeMessageText 32 0 0 1 64990)
-					(MakeMessageText 31 0 0 1 64990)
+					(MakeMessageText 12 0 0 1 64990) ; "Are you sure you want to delete this saved game?"
+					(MakeMessageText 32 0 0 1 64990) ; "Yes"
+					(MakeMessageText 31 0 0 1 64990) ; "No"
 				)
 			)
 			(return)
