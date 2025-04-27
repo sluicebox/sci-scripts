@@ -58,7 +58,7 @@
 			(cond
 				((not (TimeCheck $b102)) ; has 11:15 pm occurred?
 					(Load rsPIC 645)
-					(gGameMusic2 number: 551 flags: 1 loop: -1 play:)
+					(gGameMusic2 number: 551 flags: 1 loop: -1 play:) ; mYvettesHot
 					(ernie_Yvette init: cycleSpeed: 42 setCycle: Fwd)
 					(SetFlag 18)
 					(toolBoxClosed init:)
@@ -85,7 +85,7 @@
 					(snakeLasso ignoreActors: 1 approachVerbs: 4 1 8 init:) ; Do, Look, magnifier
 				)
 				((not (TimeCheck $1310)) ; has 1:45 am occurred?
-					(gGameMusic2 number: 642 flags: 1 loop: -1 play:)
+					(gGameMusic2 number: 642 flags: 1 loop: -1 play:) ; mErniesOffice
 					(if (or (IsFlag 15) (Random 0 1))
 						(LoadMany rsVIEW 642 643)
 						(toolBoxClosed init: approachVerbs: 4) ; Do
@@ -140,14 +140,14 @@
 				)
 				(else
 					(Load rsPIC 645)
-					(gGameMusic2 number: 551 flags: 1 loop: -1 play:)
+					(gGameMusic2 number: 551 flags: 1 loop: -1 play:) ; mYvettesHot
 					(ernie_Yvette init: setLoop: 1 cycleSpeed: 42 setCycle: Fwd)
 					(SetFlag 18)
 				)
 			)
 		else
 			(LoadMany rsVIEW 642 643)
-			(gGameMusic2 number: 642 flags: 1 loop: -1 play:)
+			(gGameMusic2 number: 642 flags: 1 loop: -1 play:) ; mErniesOffice
 			(toolBoxClosed init: approachVerbs: 4) ; Do
 			(toolBoxOpen init: approachVerbs: 4 1) ; Do, Look
 			(if (not (IsFlag 19))
@@ -697,10 +697,10 @@
 			(2
 				(gEgo setCycle: Beg)
 				(blotchOnWall setCycle: End self)
-				(sFX number: 558 loop: 1 flags: 1 play:)
+				(sFX number: 558 loop: 1 flags: 1 play:) ; sSwitch
 			)
 			(3
-				(sFX number: 721 loop: -1 flags: 1 play:)
+				(sFX number: 721 loop: -1 flags: 1 play:) ; sHeavyStoneMoved
 				(SetFlag 119)
 				(= ticks 180)
 			)
@@ -903,7 +903,7 @@
 			(4 ; Do
 				(self hide:)
 				(ClearFlag 19)
-				(sFX number: 641 loop: 1 flags: 1 play:)
+				(sFX number: 641 loop: 1 flags: 1 play:) ; sToolBoxClose
 			)
 			(else
 				(super doVerb: theVerb)
@@ -1092,11 +1092,11 @@
 				(if (IsFlag 19)
 					(toolBoxOpen hide:)
 					(ClearFlag 19)
-					(sFX number: 641 loop: 1 flags: 1 play:)
+					(sFX number: 641 loop: 1 flags: 1 play:) ; sToolBoxClose
 				else
 					(toolBoxOpen show: stopUpd:)
 					(SetFlag 19)
-					(sFX number: 640 loop: 1 flags: 1 play:)
+					(sFX number: 640 loop: 1 flags: 1 play:) ; sToolBoxOpen
 				)
 			)
 			(else
@@ -1212,7 +1212,7 @@
 	(method (doVerb theVerb)
 		(switch theVerb
 			(4 ; Do
-				(sFX number: 643 loop: 1 flags: 1 play:)
+				(sFX number: 643 loop: 1 flags: 1 play:) ; sTalkingBear
 				(gMessager say: 6 4) ; "Grrrr."
 			)
 			(else

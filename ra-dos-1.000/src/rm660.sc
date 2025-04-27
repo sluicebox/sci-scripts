@@ -88,7 +88,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(gGameMusic1 number: 3 flags: 1 loop: 1 play:)
+				(gGameMusic1 number: 3 flags: 1 loop: 1 play:) ; mDeadBody3
 				(gEgo setMotion: MoveTo 160 120 self)
 			)
 			(1
@@ -168,10 +168,10 @@
 			(2
 				(gEgo setCycle: End self)
 				(crank setCycle: End self)
-				(gGameMusic2 number: 661 flags: 1 loop: 1 play:)
+				(gGameMusic2 number: 661 flags: 1 loop: 1 play:) ; sHeavyMetalLever
 			)
 			(3
-				(gGameMusic1 number: 660 flags: 1 loop: 1 play:)
+				(gGameMusic1 number: 660 flags: 1 loop: 1 play:) ; mEscape
 			)
 			(4
 				(crank stopUpd:)
@@ -181,7 +181,7 @@
 					scaleSignal: 1
 					maxScale: 256
 				)
-				(gGameMusic2 number: 662 flags: 1 loop: -1 play:)
+				(gGameMusic2 number: 662 flags: 1 loop: -1 play:) ; sSqueakyElevatorMoving
 				(wall1 setCycle: Fwd)
 				(wall2 setCycle: Fwd)
 				(= cycles 1)
@@ -353,7 +353,7 @@
 (instance thudSound of Sound
 	(properties
 		flags 5
-		number 80
+		number 80 ; sThud
 	)
 )
 

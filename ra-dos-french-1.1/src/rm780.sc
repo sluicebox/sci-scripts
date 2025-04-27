@@ -52,7 +52,7 @@
 		(LoadMany rsVIEW 792 791)
 		(LoadMany rsSOUND 795)
 		(super init:)
-		(wrapMusic init: 1 795 1312 (if (== global106 32) 310 else 314) 311)
+		(wrapMusic init: 1 795 1312 (if (== global106 32) 310 else 314) 311) ; mClosingMedley, mBar3, mBar1, mBar1notMT32, mBar2
 		(gGame handsOff:)
 		(gTheIconBar disable:)
 		(gGame setCursor: 996 1)

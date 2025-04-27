@@ -68,7 +68,7 @@
 		(mummy init:)
 		(gWalkHandler addToFront: mummyDoorCase)
 		(northDoor setCycle: End self)
-		(sFXDoor number: 46 play:)
+		(sFXDoor number: 46 play:) ; sHeavyWoodDoorOpen
 		(gAltPolys delete: (northDoor doorPoly:))
 	)
 
@@ -149,7 +149,7 @@
 				)
 			)
 			(2
-				(sFX number: 700 flags: 1 loop: 1 play:)
+				(sFX number: 700 flags: 1 loop: 1 play:) ; sPushMummyAgainstDoor
 				(= cycles 1)
 			)
 			(3
@@ -215,7 +215,7 @@
 				)
 			)
 			(3
-				(sFX number: 49 loop: 1 flags: 1 play:)
+				(sFX number: 49 loop: 1 flags: 1 play:) ; sDoorUnlatch
 				(= cycles 1)
 			)
 			(4
@@ -267,10 +267,10 @@
 					setMotion: MoveTo (riley x:) 97
 				)
 				(backg setLoop: 5 setMotion: MoveTo (backg x:) 97 self)
-				(sFX number: 662 flags: 1 loop: -1 play:)
+				(sFX number: 662 flags: 1 loop: -1 play:) ; sSqueakyElevatorMoving
 			)
 			(1
-				(sFX2 number: 500 flags: 1 loop: 1 play:)
+				(sFX2 number: 500 flags: 1 loop: 1 play:) ; sBreakPlaster
 				(gEgo
 					view: 701
 					setLoop: 1
@@ -285,7 +285,7 @@
 				(gGameMusic1 stop:)
 				(sFX stop:)
 				(sFX2 stop:)
-				(sFX number: 490 loop: 1 flags: 1 play:)
+				(sFX number: 490 loop: 1 flags: 1 play:) ; sHeadHitsFloor
 				(backg addToPic:)
 				(= ticks 30)
 			)
@@ -316,7 +316,7 @@
 			(0
 				(gGame handsOff:)
 				(if (northDoor cel:)
-					(gGameMusic1 number: 3 loop: 1 flags: 1 play:)
+					(gGameMusic1 number: 3 loop: 1 flags: 1 play:) ; mDeadBody3
 				)
 				(northDoor ignoreActors: 1)
 				(mummyDoor addToPic:)
@@ -338,7 +338,7 @@
 					setMotion: MoveTo (riley x:) 125
 				)
 				(backg setLoop: 5 setMotion: MoveTo (backg x:) 125 self)
-				(sFX number: 662 flags: 1 loop: -1 play:)
+				(sFX number: 662 flags: 1 loop: -1 play:) ; sSqueakyElevatorMoving
 			)
 			(1
 				(= register 0)
@@ -348,14 +348,14 @@
 					(= cycles 1)
 				else
 					(northDoor setCycle: End self)
-					(sFXDoor number: 46 play:)
+					(sFXDoor number: 46 play:) ; sHeavyWoodDoorOpen
 					(= register 1)
 					(gAltPolys delete: (northDoor doorPoly:))
 				)
 			)
 			(2
 				(if register
-					(gGameMusic1 number: 3 loop: 1 flags: 1 play:)
+					(gGameMusic1 number: 3 loop: 1 flags: 1 play:) ; mDeadBody3
 				)
 				(northDoor addToPic:)
 				(riley setPri: -1)
@@ -386,7 +386,7 @@
 				(riley view: 424 setLoop: 1 setCel: 0 setCycle: CT 6 1 self)
 			)
 			(7
-				(sFX number: 80 flags: 1 loop: 1 play:)
+				(sFX number: 80 flags: 1 loop: 1 play:) ; sThud
 				(riley setCycle: End self)
 			)
 			(8
@@ -417,7 +417,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(gGameMusic2 number: 701 loop: -1 flags: 1 setVol: 63 play:)
+				(gGameMusic2 number: 701 loop: -1 flags: 1 setVol: 63 play:) ; sEgyptianChantSoft
 				(= cycles 1)
 			)
 			(1
@@ -447,8 +447,8 @@
 	(method (cue)
 		(if (== y 125)
 			(self setLoop: 5 setMotion: MoveTo (self x:) 79 self)
-			(gGameMusic1 number: 16 flags: 1 loop: -1 play:)
-			(sFX number: 662 flags: 1 loop: -1 play:)
+			(gGameMusic1 number: 16 flags: 1 loop: -1 play:) ; mChase1
+			(sFX number: 662 flags: 1 loop: -1 play:) ; sSqueakyElevatorMoving
 		else
 			(sFX stop:)
 			(rileyTimer setReal: gCurRoom 0 1)
@@ -545,12 +545,12 @@
 			(4 ; Do
 				(cond
 					((self cel:)
-						(sFX number: 453 loop: 1 flags: 1 play:)
+						(sFX number: 453 loop: 1 flags: 1 play:) ; sCreakingMummyClose
 						(self setCycle: Beg self)
 						(snake init:)
 					)
 					(local0
-						(sFX number: 452 loop: 1 flags: 1 play:)
+						(sFX number: 452 loop: 1 flags: 1 play:) ; sCreakingMummyOpen
 						(self setCycle: End self)
 						(snake dispose:)
 					)
@@ -575,7 +575,7 @@
 			(self setPri: 7 stopUpd:)
 			(sFX stop:)
 		else
-			(sFX number: 455 loop: 1 flags: 1 play:)
+			(sFX number: 455 loop: 1 flags: 1 play:) ; sMummyShut
 			(self setPri: 10 stopUpd:)
 		)
 	)
@@ -597,12 +597,12 @@
 		(switch theVerb
 			(4 ; Do
 				(if (self cel:)
-					(sFX number: 453 loop: 1 flags: 1 play:)
+					(sFX number: 453 loop: 1 flags: 1 play:) ; sCreakingMummyClose
 					(self setCycle: Beg self)
 					(-= y 100)
 					(-= z 100)
 				else
-					(sFX number: 452 loop: 1 flags: 1 play:)
+					(sFX number: 452 loop: 1 flags: 1 play:) ; sCreakingMummyOpen
 					(self setCycle: End self)
 					(+= y 100)
 					(+= z 100)
@@ -619,7 +619,7 @@
 		(if cel
 			(sFX stop:)
 		else
-			(sFX number: 455 loop: 1 flags: 1 play:)
+			(sFX number: 455 loop: 1 flags: 1 play:) ; sMummyShut
 		)
 	)
 )

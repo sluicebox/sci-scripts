@@ -104,7 +104,7 @@
 				(ferretTimer setReal: ferret (Random 5 30))
 			)
 		else
-			(gGameMusic2 number: 520 loop: -1 flags: 1 play:)
+			(gGameMusic2 number: 520 loop: -1 flags: 1 play:) ; mOlympiasOffice
 			(crate1 init:)
 			(olympia init:)
 			(= local2 1)
@@ -198,7 +198,7 @@
 			(1
 				(gEgo setCycle: End)
 				(fridgeDoor setCycle: End self)
-				(sFX number: 631 flags: 5 play:)
+				(sFX number: 631 flags: 5 play:) ; sRefridgerator
 			)
 			(2
 				(fridgeDoor stopUpd:)
@@ -234,7 +234,7 @@
 				(fridgeDoor setCycle: Beg self)
 			)
 			(2
-				(sFX number: 632 flags: 5 play:)
+				(sFX number: 632 flags: 5 play:) ; sRefridgerator
 				(fridgeDoor stopUpd:)
 				(ClearFlag 14)
 				(gEgo loop: 1 normalize: 827 xStep: 4)
@@ -291,7 +291,7 @@
 				)
 			)
 			(6
-				(sFX number: 637 flags: 1 play:)
+				(sFX number: 637 flags: 1 play:) ; sFerretChuckles
 				(= ticks 30)
 			)
 			(7
@@ -380,7 +380,7 @@
 					cycleSpeed: 12
 					setCycle: End
 				)
-				(sFX number: 633 flags: 5 play:)
+				(sFX number: 633 flags: 5 play:) ; sTrunkOpen
 				(gEgo setCycle: End self)
 			)
 			(6
@@ -393,7 +393,7 @@
 			)
 			(7
 				(gGame handsOff:)
-				(sFX number: 635 flags: 1 play:)
+				(sFX number: 635 flags: 1 play:) ; need
 				(gEgo view: 634 setLoop: 0 setCel: 0 setCycle: End self)
 			)
 			(8
@@ -431,7 +431,7 @@
 			(2
 				(gEgo normalize: 827 loop: 0 put: 9 xStep: 4) ; meat
 				((ScriptID 21 1) doit: 778) ; dropCluesCode, Meat
-				(sFX2 number: 636 flags: 1 play:)
+				(sFX2 number: 636 flags: 1 play:) ; sBeetlesMeat
 				(= ticks 120)
 			)
 			(3
@@ -484,7 +484,7 @@
 			(1
 				(gEgo setCycle: End self)
 				(trunkLid setCycle: End)
-				(sFX number: 633 flags: 5 play:)
+				(sFX number: 633 flags: 5 play:) ; sTrunkOpen
 			)
 			(2
 				(gEgo setCel: 5 setCycle: Beg self)
@@ -522,7 +522,7 @@
 			(2
 				(gEgo setCycle: CT 6 -1 self)
 				(trunkLid setCycle: Beg)
-				(sFX number: 634 flags: 5 play:)
+				(sFX number: 634 flags: 5 play:) ; sTrunkClose
 			)
 			(3
 				(gEgo setCycle: Beg self)
@@ -547,13 +547,13 @@
 				(if (IsFlag 87)
 					(= cycles 1)
 				else
-					(gGameMusic2 number: 4 loop: 1 flags: 1 play: self)
-					(sFX number: 85 loop: 1 flags: 5 play:)
+					(gGameMusic2 number: 4 loop: 1 flags: 1 play: self) ; mDeadBody4
+					(sFX number: 85 loop: 1 flags: 5 play:) ; Oh
 					(SetFlag 87)
 				)
 			)
 			(1
-				(gGameMusic2 number: 6 loop: -1 flags: 1 play:)
+				(gGameMusic2 number: 6 loop: -1 flags: 1 play:) ; mExamine
 			)
 		)
 	)

@@ -43,7 +43,7 @@
 				)
 			)
 			(2
-				(noise number: 440 play:)
+				(noise number: 440 play:) ; sHelmetOpen
 				(gEgo setCycle: End self)
 			)
 			(3

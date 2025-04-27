@@ -51,10 +51,10 @@
 				(cond
 					((!= gAct 2))
 					((IsFlag 25)
-						(gGameMusic1 number: 335 flags: 1 setLoop: -1 play: 50)
+						(gGameMusic1 number: 335 flags: 1 setLoop: -1 play: 50) ; mPartyWaltz
 					)
 					(else
-						(gGameMusic1 number: 19 flags: 1 setLoop: -1 play:)
+						(gGameMusic1 number: 19 flags: 1 setLoop: -1 play:) ; mHimlerShoos
 					)
 				)
 			)

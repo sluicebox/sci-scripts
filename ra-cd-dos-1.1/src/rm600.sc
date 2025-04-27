@@ -209,7 +209,7 @@
 				)
 			)
 			(3
-				(sFX number: 600 flags: 1 loop: 1 play:)
+				(sFX number: 600 flags: 1 loop: 1 play:) ; sBreakGlass
 				(glass setCycle: CT 3 1 self)
 			)
 			(4
@@ -274,7 +274,7 @@
 						setMotion: PolyPath 79 186 self
 					)
 					(WrapMusic pause: 1)
-					(gGameMusic2 number: 19 flags: 1 loop: -1 play:)
+					(gGameMusic2 number: 19 flags: 1 loop: -1 play:) ; mHimlerShoos
 				)
 			)
 			(1
@@ -319,9 +319,9 @@
 					posn: (northDoor moveToX:) (northDoor moveToY:)
 				)
 				(WrapMusic pause: 1)
-				(gGameMusic2 number: 19 flags: 1 loop: -1 play:)
+				(gGameMusic2 number: 19 flags: 1 loop: -1 play:) ; mHimlerShoos
 				(northDoor setCycle: End self)
-				(sFX number: 46 flags: 1 loop: 1 play:)
+				(sFX number: 46 flags: 1 loop: 1 play:) ; sHeavyWoodDoorOpen
 				(gAltPolys delete: (northDoor doorPoly:))
 			)
 			(2
@@ -336,7 +336,7 @@
 			)
 			(3
 				(northDoor setCycle: Beg self)
-				(sFX number: 47 flags: 1 loop: 1 play:)
+				(sFX number: 47 flags: 1 loop: 1 play:) ; sHeavyWoodDoorClose
 				(gAltPolys add: (northDoor doorPoly:))
 			)
 			(4
@@ -430,7 +430,7 @@
 				(sFXBeetles play: 0 fade: 127 25 10 0 self)
 			)
 			(1
-				(sFX number: 46 flags: 1 play:)
+				(sFX number: 46 flags: 1 play:) ; sHeavyWoodDoorOpen
 				(eastDoor setCycle: End self)
 				(gAltPolys delete: (eastDoor doorPoly:))
 			)
@@ -448,7 +448,7 @@
 				)
 			)
 			(3
-				(sFX number: 47 flags: 1 play:)
+				(sFX number: 47 flags: 1 play:) ; sHeavyWoodDoorClose
 				(eastDoor setCycle: Beg self)
 				(gAltPolys add: (eastDoor doorPoly:))
 			)
@@ -1131,7 +1131,7 @@
 (instance sFXBeetles of Sound
 	(properties
 		flags 1
-		number 636
+		number 636 ; sBeetlesMeat
 		loop -1
 	)
 )
@@ -1139,7 +1139,7 @@
 (instance sFXFerret of Sound
 	(properties
 		flags 1
-		number 637
+		number 637 ; sFerretChuckles
 	)
 )
 

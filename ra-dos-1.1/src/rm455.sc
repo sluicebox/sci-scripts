@@ -59,8 +59,8 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(gGameMusic2 number: 82 flags: 5 loop: 1 play:)
-				(wrapMusic init: -1 1 6)
+				(gGameMusic2 number: 82 flags: 5 loop: 1 play:) ; scream
+				(wrapMusic init: -1 1 6) ; mDeadBody1, mExamine
 				(= seconds 3)
 			)
 			(1

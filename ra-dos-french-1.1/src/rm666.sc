@@ -55,7 +55,7 @@
 				(self setScript: sEnterSouthLight)
 			)
 		else
-			(gGameMusic2 number: 56 flags: 1 loop: -1 play:)
+			(gGameMusic2 number: 56 flags: 1 loop: -1 play:) ; music
 			(gEgo hide:)
 			(LoadMany rsSOUND 82 53)
 			(self setScript: sEnterDark)
@@ -245,11 +245,11 @@
 				)
 			)
 			(1
-				(sFX2 number: 53 loop: -1 flags: 1 play:)
+				(sFX2 number: 53 loop: -1 flags: 1 play:) ; sBats
 				(= ticks 120)
 			)
 			(2
-				(sFX number: 82 loop: 1 flags: 5 play: self)
+				(sFX number: 82 loop: 1 flags: 5 play: self) ; scream
 			)
 			(3
 				(sFX2 fade: self)

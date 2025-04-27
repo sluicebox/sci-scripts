@@ -110,7 +110,7 @@
 				(client setCycle: End self)
 			)
 			(1
-				(gGameMusic2 number: 55 flags: 1 loop: 1 play:)
+				(gGameMusic2 number: 55 flags: 1 loop: 1 play:) ; sPanelFlip
 				(client loop: 0 cel: local0 addToPic:)
 				(if (== register 11)
 					(gGame handsOn: 1)

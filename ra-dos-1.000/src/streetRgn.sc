@@ -149,11 +149,11 @@
 	(method (doit)
 		(cond
 			((and (< (car distanceTo: gEgo) 160) (not local2))
-				(mRunOver number: 96 loop: -1 play:)
+				(mRunOver number: 96 loop: -1 play:) ; sLauraRunOverByCar
 				(= local2 1)
 			)
 			((and (< (car distanceTo: gEgo) 100) (not local3))
-				(mRunOver number: 81 loop: 1 play:)
+				(mRunOver number: 81 loop: 1 play:) ; sRunOver2
 				(= local3 1)
 			)
 		)
@@ -254,7 +254,7 @@
 (instance streetSounds of Sound
 	(properties
 		flags 1
-		number 94
+		number 94 ; sStreetAmbience
 		loop -1
 	)
 )

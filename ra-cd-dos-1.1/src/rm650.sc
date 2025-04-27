@@ -51,7 +51,7 @@
 		)
 		(super init:)
 		(LoadMany rsSOUND 651 652 655 49 721)
-		(gGameMusic2 number: 650 flags: 1 loop: -1 play:)
+		(gGameMusic2 number: 650 flags: 1 loop: -1 play:) ; mHimlersOffice
 		(chair init:)
 		(shelf init:)
 		(mace init:)
@@ -216,7 +216,7 @@
 			)
 			(2
 				(gGameMusic2 stop:)
-				(sFX number: 654 flags: 1 loop: 1 play:)
+				(sFX number: 654 flags: 1 loop: 1 play:) ; sRatTrapSprung
 				(string1 setCycle: End self)
 			)
 			(3
@@ -234,7 +234,7 @@
 			)
 			(6
 				(gun setCycle: Fwd)
-				(sFX number: 653 flags: 1 loop: -1 play:)
+				(sFX number: 653 flags: 1 loop: -1 play:) ; sMachineGunned
 				(gunFire init: cycleSpeed: 10 setCycle: End)
 				(gEgo
 					setLoop: 3
@@ -291,7 +291,7 @@
 				)
 			)
 			(3
-				(sFX number: 654 flags: 1 loop: 1 play:)
+				(sFX number: 654 flags: 1 loop: 1 play:) ; sRatTrapSprung
 				(gEgo normalize: 831 loop: 1 setScale: Scaler 140 0 190 -30)
 				(string1 setCycle: End self)
 			)
@@ -310,7 +310,7 @@
 			)
 			(7
 				(gun setCycle: Fwd)
-				(sFX number: 653 flags: 1 loop: -1 play:)
+				(sFX number: 653 flags: 1 loop: -1 play:) ; sMachineGunned
 				(gunFire init: cycleSpeed: 10 setCycle: End)
 				(= ticks 180)
 			)
@@ -405,12 +405,12 @@
 			)
 			(2
 				(gGameMusic2 stop:)
-				(sFX number: 655 flags: 1 loop: 1 play:)
+				(sFX number: 655 flags: 1 loop: 1 play:) ; sSwordSlide
 				(gEgo setLoop: 5 setCel: 0 setCycle: CT 5 1 self)
 				(sword dispose:)
 			)
 			(3
-				(sFX number: 652 flags: 1 loop: 1 play:)
+				(sFX number: 652 flags: 1 loop: 1 play:) ; sImpaleLaura
 				(gEgo setCycle: End self)
 			)
 			(4
@@ -470,7 +470,7 @@
 				(= cycles 2)
 			)
 			(3
-				(sFX number: 651 flags: 1 play:)
+				(sFX number: 651 flags: 1 play:) ; sLauraElectrocuted
 				(gEgo setCycle: Osc 1 self)
 			)
 			(4
@@ -518,7 +518,7 @@
 					cycleSpeed: 4
 					setCycle: End self
 				)
-				(sFX number: 651 flags: 1 loop: -1 play:)
+				(sFX number: 651 flags: 1 loop: -1 play:) ; sLauraElectrocuted
 			)
 			(2
 				(gEgo setCycle: CT 4 -1 self)
@@ -562,7 +562,7 @@
 					cycleSpeed: 4
 					setCycle: Osc 1 self
 				)
-				(sFX number: 651 flags: 1 loop: -1 play:)
+				(sFX number: 651 flags: 1 loop: -1 play:) ; sLauraElectrocuted
 			)
 			(1
 				(sFX stop:)
@@ -595,7 +595,7 @@
 				(gEgo view: 652 setLoop: 4 setCel: 0 setCycle: CT 3 1 self)
 			)
 			(1
-				(sFX number: 49 flags: 1 loop: 1 play: self)
+				(sFX number: 49 flags: 1 loop: 1 play: self) ; sDoorUnlatch
 			)
 			(2
 				(gEgo normalize: 831 loop: 0 setScale: Scaler 140 0 190 -30)
@@ -603,7 +603,7 @@
 					setLoop: 6
 					setMotion: MoveTo 161 (secretShelf y:) self
 				)
-				(sFX number: 721 flags: 1 loop: -1 play:)
+				(sFX number: 721 flags: 1 loop: -1 play:) ; sHeavyStoneMoved
 			)
 			(3
 				(sFX stop:)
@@ -670,7 +670,7 @@
 			)
 			(4 ; Do
 				(if (MuseumRgn nobodyAround:)
-					(sFX number: 49 flags: 1 loop: 1 play:)
+					(sFX number: 49 flags: 1 loop: 1 play:) ; sDoorUnlatch
 					(if cel
 						(secretButton dispose:)
 						(self setCycle: Beg self)

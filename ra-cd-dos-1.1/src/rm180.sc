@@ -48,7 +48,7 @@
 		)
 		(nyCar3 addToPic:)
 		(nyCar4 addToPic:)
-		(WrapMusic init: 0 180 94)
+		(WrapMusic init: 0 180 94) ; mNewYork, sStreetAmbience
 		(nyCar1 init: setScript: sCarGo1)
 		(p1 init: setScript: sP1Walk)
 		(p2 init: setLoop: 1 setCycle: Walk setMotion: PolyPath 31 220)

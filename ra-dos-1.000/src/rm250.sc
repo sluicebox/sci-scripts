@@ -34,7 +34,7 @@
 	(method (init &tmp [temp0 50])
 		(LoadMany rsVIEW 250 251 252 253 254)
 		(LoadMany rsSOUND 300 41 250 252)
-		(noise number: 41 flags: 5 play:)
+		(noise number: 41 flags: 5 play:) ; sCarDoorClose
 		(super init:)
 		(proc0_8 1)
 		(gWalkHandler addToFront: gCurRoom)
@@ -60,7 +60,7 @@
 		else
 			(CDriver addToPic:)
 		)
-		(gGameMusic1 number: 250)
+		(gGameMusic1 number: 250) ; mTaxiClean
 		(win1 init: stopUpd:)
 		(win2 init: stopUpd:)
 		(win3 init: stopUpd:)
@@ -139,7 +139,7 @@
 			)
 			(4
 				(gGameMusic2 send: 2 224 4000)
-				(gGameMusic1 number: 300 loop: 1 flags: 1 play: self)
+				(gGameMusic1 number: 300 loop: 1 flags: 1 play: self) ; mAct1End
 			)
 			(5
 				(gGameMusic2 send: 2 224 3000)
@@ -434,7 +434,7 @@
 				(= cycles 1)
 			)
 			(2
-				(gGameMusic1 number: 250 loop: 1 flags: 1 play:)
+				(gGameMusic1 number: 250 loop: 1 flags: 1 play:) ; mTaxiClean
 				(gGame handsOn:)
 				(gTheIconBar disable: 5 6 0)
 				(= cycles 1)
@@ -530,7 +530,7 @@
 				(= cycles 1)
 			)
 			(1
-				(gGameMusic1 number: 250 loop: 1 flags: 1 play:)
+				(gGameMusic1 number: 250 loop: 1 flags: 1 play:) ; mTaxiClean
 				(gGame handsOn:)
 				(gTheIconBar disable: 5 6 0)
 				(= cycles 1)
@@ -957,7 +957,7 @@
 				)
 				(if (!= local1 self)
 					(= local1 self)
-					(noise number: 54 loop: 1 flags: 5 play:)
+					(noise number: 54 loop: 1 flags: 5 play:) ; sDiggingInGarbage
 				else
 					(= local1 0)
 				)
@@ -969,7 +969,7 @@
 					(== (gTheIconBar curIcon:) (gTheIconBar at: 2))
 					(self onMe: event)
 				)
-				(noise number: 54 loop: 1 flags: 5 play:)
+				(noise number: 54 loop: 1 flags: 5 play:) ; sDiggingInGarbage
 				(= local1 self)
 				(event claimed: 1)
 			)

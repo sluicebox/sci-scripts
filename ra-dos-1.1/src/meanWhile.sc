@@ -82,7 +82,7 @@
 				(gCurRoom picture: 520)
 				(DrawPic 520 9)
 				(WrapMusic pause: 1)
-				(gGameMusic2 number: 520 flags: 1 loop: -1 play:)
+				(gGameMusic2 number: 520 flags: 1 loop: -1 play:) ; mOlympiasOffice
 				(if (not (IsFlag 49))
 					(rosettaCloth init: approachVerbs: 4 1 8) ; Do, Look, magnifier
 				)

@@ -152,9 +152,9 @@
 			(WrapMusic pause: 1)
 		)
 		(if local4
-			(gGameMusic2 number: 551 setLoop: -1 flags: 1 play:)
+			(gGameMusic2 number: 551 setLoop: -1 flags: 1 play:) ; mYvettesHot
 		else
-			(gGameMusic2 number: 550 setLoop: -1 flags: 1 play:)
+			(gGameMusic2 number: 550 setLoop: -1 flags: 1 play:) ; mYvettesOffice
 		)
 		(southExitFeature init:)
 		(rug init: setOnMeCheck: 1 512)
@@ -1080,7 +1080,7 @@
 				)
 			)
 			(1
-				(sFX number: 558 play:)
+				(sFX number: 558 play:) ; sSwitch
 				(if (IsFlag 40)
 					(inDeskLamp cel: 0 drawInset:)
 				else

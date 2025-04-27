@@ -90,7 +90,7 @@
 			)
 		)
 		(actView init: cel: gAct)
-		(gGameMusic1 number: 30 flags: 1 loop: -1 play:)
+		(gGameMusic1 number: 30 flags: 1 loop: -1 play:) ; mBetweenActs
 		(self setScript: sBreakIt)
 	)
 )

@@ -169,7 +169,7 @@
 				(gEgo setMotion: PolyPath 219 179 self)
 			)
 			(3
-				(gGameMusic1 number: 3 loop: 1 flags: 1 play:)
+				(gGameMusic1 number: 3 loop: 1 flags: 1 play:) ; mDeadBody3
 				(oriley setMotion: MoveTo 169 124 self)
 			)
 			(4
@@ -183,7 +183,7 @@
 				(oriley view: 424 cel: 0 setCycle: End self)
 			)
 			(7
-				(noise number: 80 flags: 5 loop: 1 play:)
+				(noise number: 80 flags: 5 loop: 1 play:) ; sThud
 				(gEgo view: 858 setCycle: End self)
 			)
 			(8
@@ -203,13 +203,13 @@
 				(LoadMany rsVIEW 482)
 				(Load rsSOUND 480)
 				(gGameMusic2 stop:)
-				(gGameMusic1 number: 482 loop: -1 flags: 1 play:)
+				(gGameMusic1 number: 482 loop: -1 flags: 1 play:) ; mBuildToEnding
 				(gGame handsOff:)
 				(= cycles 1)
 			)
 			(1
 				(rexMouth setCycle: End self)
-				(noise number: 480 flags: 5 play:)
+				(noise number: 480 flags: 5 play:) ; sTalkingDinosaur
 			)
 			(2
 				(if (IsFlag 46)
@@ -306,7 +306,7 @@
 			)
 			(2
 				(rexMouth setCycle: End self)
-				(noise number: 480 flags: 5 play:)
+				(noise number: 480 flags: 5 play:) ; sTalkingDinosaur
 			)
 			(3
 				(oriley show:)
@@ -320,7 +320,7 @@
 			(5
 				(= local1 1)
 				(WrapMusic pause: 1)
-				(sWrapMusic init: 0 1481 483)
+				(sWrapMusic init: 0 1481 483) ; sCaughtInMouth, mEndAct5
 				0
 			)
 			(6
@@ -384,7 +384,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(gGameMusic1 number: 3 loop: 1 flags: 1 play:)
+				(gGameMusic1 number: 3 loop: 1 flags: 1 play:) ; mDeadBody3
 				(= cycles 1)
 			)
 			(1
@@ -398,7 +398,7 @@
 				(oriley setCycle: End self)
 			)
 			(4
-				(noise number: 52 flags: 5 loop: 1 play:)
+				(noise number: 52 flags: 5 loop: 1 play:) ; sGunShot
 				(oriley setLoop: 5 posn: 177 143 setCycle: End self)
 			)
 			(5
@@ -434,7 +434,7 @@
 					)
 				)
 				(oriley setCycle: End self)
-				(noise number: 52 flags: 5 loop: 1 play:)
+				(noise number: 52 flags: 5 loop: 1 play:) ; sGunShot
 			)
 			(7
 				(= global145 10) ; "You'll get nowhere with that holier-than-thou attitude."
@@ -512,7 +512,7 @@
 				(rexMouth setCycle: RandCycle)
 				(gNarrator modeless: 1)
 				(gMessager say: 5 4 2 0 self) ; "Welcome to the Leyendecker Museum dinosaur display. My name is Rex, and I'd like to tell you about myself. I'm a type of dinosaur known as Tyrannosaurus Rex, which means, "King of the Tyrant Lizards.""
-				(noise number: 480 flags: 5 play:)
+				(noise number: 480 flags: 5 play:) ; sTalkingDinosaur
 				(gEgo setMotion: PolyPath 255 184 self)
 			)
 			(2 0)

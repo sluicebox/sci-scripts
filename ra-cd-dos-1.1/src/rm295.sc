@@ -24,7 +24,7 @@
 		(LoadMany rsVIEW 295 1295)
 		(LoadMany rsSOUND 295)
 		(super init:)
-		(gGameMusic1 number: 295 flags: 1 loop: -1 play:)
+		(gGameMusic1 number: 295 flags: 1 loop: -1 play:) ; mRiley1
 		(gCurRoom setScript: sInsideRoom)
 	)
 

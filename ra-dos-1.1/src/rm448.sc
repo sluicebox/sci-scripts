@@ -242,7 +242,7 @@
 				(gEgo setMotion: PolyPath 149 128 self)
 			)
 			(4
-				(gGameMusic1 number: 3 loop: 1 flags: 1 play:)
+				(gGameMusic1 number: 3 loop: 1 flags: 1 play:) ; mDeadBody3
 				(oriley init: setScale: Scaler 138 0 190 35)
 				(= cycles 1)
 			)
@@ -257,7 +257,7 @@
 				(oriley view: 424 cel: 0 setCycle: End self)
 			)
 			(8
-				(noise number: 80 flags: 5 play:)
+				(noise number: 80 flags: 5 play:) ; sThud
 				(gEgo view: 858 setCycle: End self)
 			)
 			(9
@@ -306,7 +306,7 @@
 					moveSpeed: (+ (gEgo moveSpeed:) 4)
 					setMotion: MoveTo 104 123 self
 				)
-				(noise number: 443 flags: 5 play:)
+				(noise number: 443 flags: 5 play:) ; sScootChair
 			)
 			(4 0)
 			(5
@@ -471,7 +471,7 @@
 			(2
 				(gEgo setCycle: End self)
 				(transomWin setCycle: End)
-				(noise number: 445 flags: 5 play:)
+				(noise number: 445 flags: 5 play:) ; sGlassOverDoor
 			)
 			(3
 				(gEgo cel: 0)
@@ -513,7 +513,7 @@
 			(2
 				(gEgo setCycle: Beg self)
 				(transomWin setCycle: Beg)
-				(noise number: 445 flags: 5 play:)
+				(noise number: 445 flags: 5 play:) ; sGlassOverDoor
 			)
 			(3
 				(ClearFlag 39)
@@ -611,7 +611,7 @@
 			(4 ; Do
 				(if (not local0)
 					(gMessager say: 5 4) ; "The door is locked. When you touch the doorknob, you get a heavy coating of dust all over the palm of your hand."
-					(noise number: 48 loop: 1 flags: 5 play:)
+					(noise number: 48 loop: 1 flags: 5 play:) ; sTryingALockedDoor
 				else
 					(gCurRoom setScript: sOffChair)
 				)

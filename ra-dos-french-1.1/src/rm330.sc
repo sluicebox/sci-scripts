@@ -65,7 +65,7 @@
 					(not
 						(and (== gAct 2) (TimeCheck $0008) (not (IsFlag 133)))
 					)
-					(gGameMusic1 number: 330 flags: 1 loop: 1 play:)
+					(gGameMusic1 number: 330 flags: 1 loop: 1 play:) ; mMuseumEstablishment
 				)
 				(if (and (== gAct 2) (TimeCheck $0008) (not (IsFlag 133)))
 					(steve init: loop: 1 setCycle: Walk)
@@ -77,7 +77,7 @@
 				)
 			)
 			(else
-				(gGameMusic1 number: 330 flags: 1 loop: 1 play:)
+				(gGameMusic1 number: 330 flags: 1 loop: 1 play:) ; mMuseumEstablishment
 				(gEgo posn: 178 136)
 				(gEgo setScale: 179)
 				(if (gEgo wearingGown:)
@@ -93,7 +93,7 @@
 			(Palette palSET_INTENSITY 0 255 60)
 		)
 		(super init:)
-		(gGameMusic2 number: 333 flags: 1 loop: -1 play:)
+		(gGameMusic2 number: 333 flags: 1 loop: -1 play:) ; sFountain
 		(self
 			addObstacle:
 				((Polygon new:)
@@ -260,13 +260,13 @@
 				(= cycles 2)
 			)
 			(1
-				(gGameMusic1 number: 332 flags: 1 loop: -1 play:)
+				(gGameMusic1 number: 332 flags: 1 loop: -1 play:) ; mSteve&Laura
 				(gMessager say: 6 0 0 0 self 330) ; "I just...wanted to explain to you...who I really am."
 				(gGameMusic2 fade: 0 12 30 0)
 			)
 			(2
 				(DrawPic 415 -32758)
-				(gGameMusic1 number: 334 flags: 1 loop: 1 play:)
+				(gGameMusic1 number: 334 flags: 1 loop: 1 play:) ; mSteveKissLaura
 				(= seconds 4)
 			)
 			(3
@@ -598,7 +598,7 @@
 (instance carSound of Sound
 	(properties
 		flags 5
-		number 40
+		number 40 ; sCarDoorOpen
 	)
 )
 

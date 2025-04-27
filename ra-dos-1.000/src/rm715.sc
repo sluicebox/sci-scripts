@@ -30,7 +30,7 @@
 		(LoadMany rsSOUND 710 712 713)
 		(LoadMany rsVIEW 711 712 713 715 710 714 716)
 		(super init:)
-		(WrapMusic init: 1 1710 1712 1713)
+		(WrapMusic init: 1 1710 1712 1713) ; sEgyptianChanting, sChant2, sChant3
 		(gTheIconBar disable: 7)
 		(tut addToPic:)
 		(rameses init:)

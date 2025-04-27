@@ -43,8 +43,8 @@
 		(Load rsMESSAGE 710)
 		(Load rsFONT 69)
 		(super init:)
-		(WrapMusic init: 1 1710 1712 1713)
-		(wrapMusic2 init: 1 714 715 716)
+		(WrapMusic init: 1 1710 1712 1713) ; sEgyptianChanting, sChant2, sChant3
+		(wrapMusic2 init: 1 714 715 716) ; mChant1, mChant2, mChant3
 		(sunnie1 init: setCycle: Fwd)
 		(sunnie2 init: setCycle: Fwd)
 		(tut init: setCycle: Walk setLoop: 0)
@@ -135,7 +135,7 @@
 				(= ticks 30)
 			)
 			(14
-				(gGameMusic2 number: 711 flags: 1 loop: -1 play:)
+				(gGameMusic2 number: 711 flags: 1 loop: -1 play:) ; mEgyptianTheme2
 				(gTheIconBar disable: 7)
 				(gCast eachElementDo: #hide)
 				(gCurRoom drawPic: 716 9 picture: 716)
@@ -334,7 +334,7 @@
 (instance sFXBeetles of Sound
 	(properties
 		flags 1
-		number 636
+		number 636 ; sBeetlesMeat
 		loop -1
 	)
 )
@@ -342,7 +342,7 @@
 (instance sFXFerret of Sound
 	(properties
 		flags 1
-		number 637
+		number 637 ; sFerretChuckles
 	)
 )
 

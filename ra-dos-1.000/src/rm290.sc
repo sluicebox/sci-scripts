@@ -607,14 +607,14 @@
 (instance shuffleSound of Sound
 	(properties
 		flags 5
-		number 292
+		number 292 ; sPaperShuffle
 	)
 )
 
 (instance knockSound of Sound
 	(properties
 		flags 1
-		number 297
+		number 297 ; sDoorKnock
 	)
 )
 

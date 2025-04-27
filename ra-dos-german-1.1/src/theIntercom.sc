@@ -95,7 +95,7 @@
 				else
 					(self setCel: 1)
 				)
-				(sFX number: 558 flags: 1 setLoop: 1 play:)
+				(sFX number: 558 flags: 1 setLoop: 1 play:) ; sSwitch
 			)
 			(8 ; magnifier
 				(if (== cel 2)
@@ -132,7 +132,7 @@
 				else
 					(self setCel: 1)
 				)
-				(sFX number: 558 flags: 1 setLoop: 1 play:)
+				(sFX number: 558 flags: 1 setLoop: 1 play:) ; sSwitch
 			)
 			(8 ; magnifier
 				(if (== cel 2)
@@ -169,7 +169,7 @@
 				else
 					(self setCel: 1)
 				)
-				(sFX number: 558 flags: 1 setLoop: 1 play:)
+				(sFX number: 558 flags: 1 setLoop: 1 play:) ; sSwitch
 			)
 			(8 ; magnifier
 				(if (== cel 2)
@@ -186,7 +186,7 @@
 
 	(method (cue)
 		(if (and (== (onOff cel:) 2) (== (sendReceive cel:) 1))
-			(sFX number: 567 flags: 1 setLoop: 1 play:)
+			(sFX number: 567 flags: 1 setLoop: 1 play:) ; static
 			(gMessager say: 54 4 5 0 0 562) ; "When you press the button, all you hear is static."
 		)
 	)
@@ -205,7 +205,7 @@
 
 	(method (cue)
 		(if (and (== (onOff cel:) 2) (== (sendReceive cel:) 1))
-			(sFX number: 567 flags: 1 setLoop: 1 play:)
+			(sFX number: 567 flags: 1 setLoop: 1 play:) ; static
 			(if (IsFlag 51)
 				(gMessager say: 54 4 2 0 0 562) ; "You hear only static this time."
 			else
@@ -224,7 +224,7 @@
 
 	(method (cue)
 		(if (and (== (onOff cel:) 2) (== (sendReceive cel:) 1))
-			(sFX number: 567 flags: 1 setLoop: 1 play:)
+			(sFX number: 567 flags: 1 setLoop: 1 play:) ; static
 			(if (not (IsFlag 52))
 				(SetFlag 52)
 				(if (not (IsFlag 5))
@@ -247,7 +247,7 @@
 
 	(method (cue)
 		(if (and (== (onOff cel:) 2) (== (sendReceive cel:) 1))
-			(sFX number: 567 flags: 1 setLoop: 1 play:)
+			(sFX number: 567 flags: 1 setLoop: 1 play:) ; static
 			(if (not (IsFlag 53))
 				(SetFlag 53)
 				(if (and (not (IsFlag 2)) (not (IsFlag 4)))

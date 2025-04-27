@@ -43,7 +43,7 @@
 		(switch gPrevRoomNum
 			(666
 				(gGame handsOff:)
-				(gGameMusic2 number: 450 flags: 1 loop: -1 play:)
+				(gGameMusic2 number: 450 flags: 1 loop: -1 play:) ; mEgyptionTheme
 				(Palette palSET_INTENSITY 0 255 100)
 				(= style 100)
 				(gEgo
@@ -230,7 +230,7 @@
 					setCycle: Walk
 					setMotion: PChase gEgo 22 self
 				)
-				(gGameMusic1 number: 3 flags: 1 loop: 1 play:)
+				(gGameMusic1 number: 3 flags: 1 loop: 1 play:) ; mDeadBody3
 			)
 			(2
 				(oriley view: 424)
@@ -272,17 +272,17 @@
 					cycleSpeed: 6
 					setCycle: End self
 				)
-				(nCreak number: 452 play:)
+				(nCreak number: 452 play:) ; sCreakingMummyOpen
 			)
 			(1
 				(gMessager say: 6 4 (if (== gAct 5) 1 else 2) 0 self)
 			)
 			(2
 				(gEgo setCycle: Beg self)
-				(nCreak number: 453 play:)
+				(nCreak number: 453 play:) ; sCreakingMummyClose
 			)
 			(3
-				(nCreak number: 455 play:)
+				(nCreak number: 455 play:) ; sMummyShut
 				(lid1 show:)
 				(gEgo normalize: 831 setScale: Scaler 131 30 190 21)
 				(gGame handsOn:)
@@ -320,11 +320,11 @@
 					setScale: Scaler 100 100 190 21
 					setCycle: (if register End else Beg) self
 				)
-				(nCreak number: (if register 452 else 453) play:)
+				(nCreak number: (if register 452 else 453) play:) ; sCreakingMummyOpen, sCreakingMummyClose
 			)
 			(1
 				(if (not register)
-					(nCreak number: 455 play:)
+					(nCreak number: 455 play:) ; sMummyShut
 				)
 				(lid2 cel: (if register 3 else 2) stopUpd: show:)
 				(gEgo normalize: 831 setScale: Scaler 131 30 190 21)
@@ -376,7 +376,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(gGameMusic1 number: 17 flags: 1 loop: -1 play:)
+				(gGameMusic1 number: 17 flags: 1 loop: -1 play:) ; mChase2
 				(gGame handsOff:)
 				(SetFlag 90)
 				(if (IsFlag 39)
@@ -406,10 +406,10 @@
 					setScale: Scaler 100 100 190 21
 					setCycle: End self
 				)
-				(nCreak number: 453 play:)
+				(nCreak number: 453 play:) ; sCreakingMummyClose
 			)
 			(4
-				(nCreak number: 455 play:)
+				(nCreak number: 455 play:) ; sMummyShut
 				(if (IsFlag 39)
 					(self setScript: sORileyComes self)
 				else
@@ -418,7 +418,7 @@
 			)
 			(5
 				(gEgo setCycle: Beg self)
-				(nCreak number: 452 play:)
+				(nCreak number: 452 play:) ; sCreakingMummyOpen
 			)
 			(6
 				(lid2 show:)
@@ -428,7 +428,7 @@
 			(7
 				(if (IsFlag 39)
 					(gMessager say: 16 0 0 0 self) ; "You hear the sound of someone breaking down a door in the next room!"
-					(gGameMusic2 number: 444 flags: 1 loop: 1 play:)
+					(gGameMusic2 number: 444 flags: 1 loop: 1 play:) ; sBreakDownDoor
 				else
 					(= cycles 1)
 				)
@@ -495,7 +495,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(gGameMusic1 number: 450 flags: 1 loop: -1 play:)
+				(gGameMusic1 number: 450 flags: 1 loop: -1 play:) ; mEgyptionTheme
 				(= cycles 2)
 			)
 			(1
@@ -528,7 +528,7 @@
 			(7
 				(= local1 1)
 				(gTheIconBar disable: 7)
-				(gGameMusic1 number: 454 flags: 1 loop: 1 play: self)
+				(gGameMusic1 number: 454 flags: 1 loop: 1 play: self) ; mAct2End
 			)
 			(8 0)
 			(9
@@ -558,11 +558,11 @@
 				(= cycles 1)
 			)
 			(1
-				(gGameMusic2 number: 451 flags: 1 loop: 1 play: self)
+				(gGameMusic2 number: 451 flags: 1 loop: 1 play: self) ; mOpenCoffin
 			)
 			(2
 				(gEgo setCycle: End self)
-				(nCreak number: 452 play: self)
+				(nCreak number: 452 play: self) ; sCreakingMummyOpen
 			)
 			(3 0)
 			(4
@@ -983,7 +983,7 @@
 (instance thudSound of Sound
 	(properties
 		flags 1
-		number 80
+		number 80 ; sThud
 	)
 )
 

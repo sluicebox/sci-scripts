@@ -42,7 +42,7 @@
 		(return
 			(if locked
 				(if (!= gMsgType 2)
-					(doorSound number: 48 play:)
+					(doorSound number: 48 play:) ; sTryingALockedDoor
 				)
 				(gMessager say: 1 0 3 0 0 16) ; "This door is locked."
 				1

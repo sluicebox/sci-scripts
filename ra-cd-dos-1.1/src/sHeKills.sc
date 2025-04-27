@@ -55,7 +55,7 @@
 						(self setScript: sKillFromSouth self)
 					)
 					((== (gEgo view:) 443)
-						(gGameMusic1 number: 3 loop: 1 flags: 1 play:)
+						(gGameMusic1 number: 3 loop: 1 flags: 1 play:) ; mDeadBody3
 						(oriley setPri: -1 setMotion: PolyPath 20 150 self)
 					)
 					(else
@@ -95,7 +95,7 @@
 				(gEgo setMotion: PolyPath 198 166 self)
 			)
 			(2
-				(gGameMusic1 number: 3 loop: 1 flags: 1 play:)
+				(gGameMusic1 number: 3 loop: 1 flags: 1 play:) ; mDeadBody3
 				(oriley setMotion: MoveTo 174 174 self)
 			)
 			(3
@@ -118,7 +118,7 @@
 				(gEgo setMotion: PolyPath 93 155 self)
 			)
 			(2
-				(gGameMusic1 number: 3 loop: 1 flags: 1 play:)
+				(gGameMusic1 number: 3 loop: 1 flags: 1 play:) ; mDeadBody3
 				(oriley setMotion: MoveTo 119 153 self)
 			)
 			(3

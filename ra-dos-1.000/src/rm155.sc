@@ -26,7 +26,7 @@
 		(LoadMany rsVIEW 1155 156 157 155)
 		(self setRegions: 92) ; intro
 		(super init:)
-		(gGameMusic2 number: 151 flags: 1 loop: -1 play:)
+		(gGameMusic2 number: 151 flags: 1 loop: -1 play:) ; sTrainInterior
 		(grass init: addToPic:)
 		(moon init: addToPic:)
 		(cloud1 init: addToPic:)

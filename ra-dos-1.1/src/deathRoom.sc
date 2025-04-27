@@ -19,7 +19,7 @@
 
 	(method (init &tmp temp0 temp1)
 		(super init:)
-		(gGameMusic1 number: 99 flags: 1 loop: 1 play:)
+		(gGameMusic1 number: 99 flags: 1 loop: 1 play:) ; mDeathMusic
 		(if (== global145 15)
 			(= temp1 86)
 		else

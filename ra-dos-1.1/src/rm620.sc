@@ -364,7 +364,7 @@
 			)
 			(1
 				(gEgo setLoop: (- 3 local2) setCel: 0 setCycle: End self)
-				(sFX number: 611 loop: -1 flags: 1 play:)
+				(sFX number: 611 loop: -1 flags: 1 play:) ; mSwishingAroundInVat
 			)
 			(2
 				(gEgo setLoop: (- 5 local2) setCel: 0 setCycle: End self)
@@ -492,7 +492,7 @@
 		(switch (= state newState)
 			(0
 				(gGameMusic2 stop:)
-				(sFX number: 616 loop: -1 flags: 1 play:)
+				(sFX number: 616 loop: -1 flags: 1 play:) ; mFindDagger0
 				(LoadMany rsVIEW 1898 108)
 				(gMessager say: 1 0 1 1 self) ; "Could it be?"
 			)
@@ -515,7 +515,7 @@
 				(gMessager say: 1 0 1 7 self) ; "It's..."
 			)
 			(7
-				(sFX number: 615 loop: 1 flags: 1 play: self)
+				(sFX number: 615 loop: 1 flags: 1 play: self) ; mFindDagger
 				(gCurRoom style: 9 drawPic: 785)
 				(gCurRoom setInset: inDagger)
 				(= cycles 10)
@@ -570,7 +570,7 @@
 				(gEgo setLoop: (- 9 local2) setCel: 0 setCycle: End self)
 			)
 			(3
-				(sFX number: 612 flags: 5 play:)
+				(sFX number: 612 flags: 5 play:) ; sSplash
 				(gEgo
 					setPri: 10
 					setCycle: 0

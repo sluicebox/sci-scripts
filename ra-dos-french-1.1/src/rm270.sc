@@ -85,7 +85,7 @@
 		)
 		(super init:)
 		((ScriptID 1881 2) x: 215 y: 95 textX: -170 textY: 5) ; Laura
-		(gGameMusic1 number: 270 flags: 1 loop: -1 play:)
+		(gGameMusic1 number: 270 flags: 1 loop: -1 play:) ; mLoFat2
 		(self
 			addObstacle:
 				((Polygon new:)

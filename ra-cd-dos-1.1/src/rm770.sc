@@ -33,7 +33,7 @@
 		(LoadMany rsVIEW 770 771)
 		(LoadMany rsSOUND 770)
 		(super init:)
-		(gGameMusic1 number: 771 loop: -1 flags: 1 play:)
+		(gGameMusic1 number: 771 loop: -1 flags: 1 play:) ; sSeaGulls
 		(gTheIconBar disable:)
 		(gGame setCursor: 996)
 		(bird init: setScript: sFly)
@@ -121,7 +121,7 @@
 	(method (doit)
 		(super doit:)
 		(if (and (not local1) (== (murderer cel:) 4) (== (murderer loop:) 0))
-			(gGameMusic2 number: 770 flags: 1 loop: 1 play: murderer)
+			(gGameMusic2 number: 770 flags: 1 loop: 1 play: murderer) ; sBreakingRocks
 			(= local1 1)
 		)
 	)
@@ -149,7 +149,7 @@
 				(murderer setCycle: CT 4 1 self)
 			)
 			(5
-				(gGameMusic2 number: 770 flags: 1 loop: 1 play:)
+				(gGameMusic2 number: 770 flags: 1 loop: 1 play:) ; sBreakingRocks
 				(murderer loop: 1 cel: 0 setCycle: End self)
 			)
 			(6
@@ -159,7 +159,7 @@
 				(gMessager say: 1 0 0 6 self) ; "...if it's the last thing I ever do!"
 			)
 			(8
-				(gGameMusic1 number: 772 flags: 1 loop: 1 play: self)
+				(gGameMusic1 number: 772 flags: 1 loop: 1 play: self) ; mJailEnd
 			)
 			(9
 				(gCurRoom newRoom: (if (== global126 1) 775 else 785))
@@ -180,7 +180,7 @@
 				(== (client cel:) 4)
 				(!= (client loop:) 5)
 			)
-			(gGameMusic2 number: 770 flags: 1 loop: 1 play: badguy1)
+			(gGameMusic2 number: 770 flags: 1 loop: 1 play: badguy1) ; sBreakingRocks
 			(= local2 1)
 		)
 	)
@@ -206,7 +206,7 @@
 	(method (doit)
 		(super doit:)
 		(if (and (not local3) (!= gMsgType 2) (== (client cel:) 4))
-			(gGameMusic2 number: 770 flags: 1 loop: 1 play: badguy2)
+			(gGameMusic2 number: 770 flags: 1 loop: 1 play: badguy2) ; sBreakingRocks
 			(= local3 1)
 		)
 	)

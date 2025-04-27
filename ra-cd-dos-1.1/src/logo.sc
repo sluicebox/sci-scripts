@@ -28,7 +28,7 @@
 		(super init:)
 		(sparkle init:)
 		(gUser canControl: 0 canInput: 0)
-		(gGameMusic1 number: 105 flags: 1 loop: 1 play:)
+		(gGameMusic1 number: 105 flags: 1 loop: 1 play:) ; mSierraLogo
 		(self setScript: sRunIt)
 	)
 )

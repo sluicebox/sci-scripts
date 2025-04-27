@@ -83,7 +83,7 @@
 			else
 				(WrapMusic pause:)
 			)
-			(gGameMusic2 number: 450 flags: 1 loop: -1 play:)
+			(gGameMusic2 number: 450 flags: 1 loop: -1 play:) ; mEgyptionTheme
 		)
 		(if (IsFlag 38)
 			(shatteredGlass init: stopUpd: approachVerbs: 1 4 8) ; Look, Do, magnifier
@@ -275,7 +275,7 @@
 					setCycle: Walk
 					setMotion: PolyPath 190 170 self
 				)
-				(gGameMusic1 number: 3 flags: 1 loop: 1 play:)
+				(gGameMusic1 number: 3 flags: 1 loop: 1 play:) ; mDeadBody3
 			)
 			(2
 				(oriley view: 424)
@@ -594,14 +594,14 @@
 (instance nGlass of Sound
 	(properties
 		flags 5
-		number 600
+		number 600 ; sBreakGlass
 	)
 )
 
 (instance thudSound of Sound
 	(properties
 		flags 5
-		number 80
+		number 80 ; sThud
 	)
 )
 

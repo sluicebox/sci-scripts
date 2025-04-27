@@ -284,7 +284,7 @@
 			(1
 				(gGame setCursor: 996)
 				(gUser canInput: 1 canControl: 1)
-				(gGameMusic1 number: 20 flags: 1 play:)
+				(gGameMusic1 number: 20 flags: 1 play:) ; sClock1/4Hr
 				(localproc_0 fIntro 0)
 				(= ticks 40)
 			)
@@ -301,7 +301,7 @@
 				(= ticks 120)
 			)
 			(5
-				(gGameMusic1 number: 23 flags: 1 play:)
+				(gGameMusic1 number: 23 flags: 1 play:) ; sClockChime
 				(localproc_0 fPlay 1)
 				(= local0 fPlay)
 				(gGame setCursor: 999)
@@ -333,7 +333,7 @@
 					(sparkle init:)
 					(wake init: setCycle: RTRandCycle)
 					(smoke init: setCycle: RTRandCycle)
-					(gGameMusic1 number: 100 loop: 1 flags: 1 play: self)
+					(gGameMusic1 number: 100 loop: 1 flags: 1 play: self) ; mOcean
 					(gGame handsOff: setCursor: 996 1 304 172)
 					(= seconds 3)
 				)

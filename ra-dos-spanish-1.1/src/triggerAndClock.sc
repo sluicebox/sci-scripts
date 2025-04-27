@@ -93,10 +93,10 @@
 				(clockSound
 					number:
 						(switch local1
-							(0 23)
-							(1 20)
-							(2 21)
-							(3 22)
+							(0 23) ; sClockChime
+							(1 20) ; sClock1/4Hr
+							(2 21) ; sClock1/2Hr
+							(3 22) ; sClock3/4Hr
 						)
 					play: self
 				)

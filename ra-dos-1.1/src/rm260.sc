@@ -57,7 +57,7 @@
 			)
 		)
 		(super init:)
-		(gGameMusic1 number: 260 flags: 1 loop: 1 play:)
+		(gGameMusic1 number: 260 flags: 1 loop: 1 play:) ; mLoFat1
 		(gCurRoom
 			addObstacle:
 				((Polygon new:)
@@ -262,7 +262,7 @@
 				(gEgo put: 4 get: 22 setCycle: Beg self) ; baseball, magnifier
 			)
 			(8
-				(gGameMusic2 number: 261 flags: 1 loop: 1 play:)
+				(gGameMusic2 number: 261 flags: 1 loop: 1 play:) ; mBaseBall
 				(gEgo view: 830 setCycle: StopWalk -1)
 				(= cycles 2)
 			)
@@ -290,14 +290,14 @@
 				)
 			)
 			(1
-				(gGameMusic2 number: 252 flags: 1 loop: -1 play: 20)
+				(gGameMusic2 number: 252 flags: 1 loop: -1 play: 20) ; sTaxiCabSFX
 				(gEgo
 					view: 852
 					loop: 0
 					posn: (- (gEgo x:) 2) (gEgo y:)
 					setCycle: End self
 				)
-				(gGameMusic1 number: 97 flags: 1 loop: 1 play:)
+				(gGameMusic1 number: 97 flags: 1 loop: 1 play:) ; yoTaxi
 			)
 			(2
 				(gGameMusic2 send: 2 224 2000 fade: 127 5 5 0)
@@ -801,7 +801,7 @@
 (instance carSound of Sound
 	(properties
 		flags 5
-		number 40
+		number 40 ; sCarDoorOpen
 	)
 )
 

@@ -160,7 +160,7 @@
 			)
 			(1
 				(oriley init: setScale: 165 setMotion: PolyPath 100 140 self)
-				(gGameMusic1 number: 3 flags: 1 loop: 1 play:)
+				(gGameMusic1 number: 3 flags: 1 loop: 1 play:) ; mDeadBody3
 			)
 			(2
 				(if (IsFlag 102)
@@ -173,7 +173,7 @@
 				(oriley view: 424 setCycle: Fwd)
 				(moverCrate setCycle: End self)
 				(splinters init: setCycle: End)
-				(gGameMusic2 number: 444 flags: 5 loop: 1 play:)
+				(gGameMusic2 number: 444 flags: 5 loop: 1 play:) ; sBreakDownDoor
 			)
 			(4
 				(oriley
@@ -234,7 +234,7 @@
 				)
 			)
 			(2
-				(gGameMusic2 number: 721 flags: 5 loop: 1 play:)
+				(gGameMusic2 number: 721 flags: 5 loop: 1 play:) ; sHeavyStoneMoved
 				(= local1 1)
 				(gEgo setCycle: End self)
 				(shoveCrate setMotion: MoveTo 281 140 self)
@@ -285,12 +285,12 @@
 				)
 			)
 			(1
-				(gGameMusic2 number: 460 flags: 1 play:)
+				(gGameMusic2 number: 460 flags: 1 play:) ; sCutRope
 				(moverCrate setLoop: 3 posn: 108 32 cel: 0 setCycle: End self)
 				(cable setCycle: End self)
 			)
 			(2
-				(gGameMusic2 number: 462 flags: 1 play:)
+				(gGameMusic2 number: 462 flags: 1 play:) ; sCrateHit
 			)
 			(3
 				(moverCrate
@@ -705,7 +705,7 @@
 (instance thudSound of Sound
 	(properties
 		flags 5
-		number 80
+		number 80 ; sThud
 	)
 )
 

@@ -43,7 +43,7 @@
 					yourself:
 				)
 		)
-		(gGameMusic1 number: 332 flags: 1 loop: -1 play:)
+		(gGameMusic1 number: 332 flags: 1 loop: -1 play:) ; mSteve&Laura
 		(steve init: setScale: 158)
 		(gCurRoom setScript: sTalkSteve)
 	)
@@ -92,7 +92,7 @@
 			)
 			(7
 				(gMessager say: 1 0 2 0 self) ; "Oh, Steve..."
-				(gGameMusic1 number: 334 flags: 1 loop: 1 play: self)
+				(gGameMusic1 number: 334 flags: 1 loop: 1 play: self) ; mSteveKissLaura
 			)
 			(8
 				(= local0 1)

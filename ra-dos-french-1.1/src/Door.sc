@@ -111,7 +111,7 @@
 
 	(method (open)
 		(if locked
-			(doorSound number: 48 play:)
+			(doorSound number: 48 play:) ; sTryingALockedDoor
 			(gMessager say: 1 0 3 0 0 16) ; "This door is locked."
 		else
 			(if (gUser controls:)

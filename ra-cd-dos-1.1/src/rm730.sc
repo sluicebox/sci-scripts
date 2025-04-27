@@ -56,7 +56,7 @@
 		(gGame handsOff:)
 		(super init:)
 		(if (!= (gGameMusic2 number:) 17)
-			(gGameMusic2 number: 17 loop: -1 flags: 1 play:)
+			(gGameMusic2 number: 17 loop: -1 flags: 1 play:) ; mChase2
 		)
 		(gTheIconBar disable: 7)
 		(steve init:)
@@ -87,7 +87,7 @@
 			(self picture: 730 drawPic: 730)
 			(gGame handsOff:)
 			(gTheIconBar disable: 7)
-			(sFX number: 732 flags: 1 loop: -1 play:)
+			(sFX number: 732 flags: 1 loop: -1 play:) ; sGroupCobrasHissing
 			(gEgo
 				view: 732
 				setLoop: 0
@@ -357,7 +357,7 @@
 			)
 			(4
 				(gGameMusic2 stop:)
-				(gGameMusic1 number: 3 flags: 1 loop: 1 play:)
+				(gGameMusic1 number: 3 flags: 1 loop: 1 play:) ; mDeadBody3
 				(steve
 					setLoop: 6
 					setCel: 0
@@ -733,7 +733,7 @@
 				)
 				(gGame handsOff:)
 				(gGameMusic2 stop:)
-				(gGameMusic1 number: 3 flags: 1 loop: 1 play:)
+				(gGameMusic1 number: 3 flags: 1 loop: 1 play:) ; mDeadBody3
 				(gEgo
 					view: 734
 					setLoop: 0

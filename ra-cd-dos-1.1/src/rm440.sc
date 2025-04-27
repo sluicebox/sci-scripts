@@ -377,7 +377,7 @@
 				(gGame handsOff:)
 				(if (not (== gAct 5))
 					(WrapMusic pause: 1)
-					(gGameMusic2 number: 5 flags: 1 loop: -1 play:)
+					(gGameMusic2 number: 5 flags: 1 loop: -1 play:) ; mHide&Listen
 				)
 				(= cycles 1)
 			)
@@ -394,7 +394,7 @@
 				)
 			)
 			(2
-				(noise number: 442 flags: 1 play:)
+				(noise number: 442 flags: 1 play:) ; sMoveTapestry
 				(gEgo setCycle: End self)
 			)
 			(3
@@ -440,7 +440,7 @@
 					(gCurRoom script: 0)
 				)
 				(gEgo setCycle: End self)
-				(noise number: 442 flags: 1 play:)
+				(noise number: 442 flags: 1 play:) ; sMoveTapestry
 			)
 			(2
 				(gEgo
@@ -504,7 +504,7 @@
 				(bolt setCycle: End)
 			)
 			(3
-				(noise number: 446 flags: 1 loop: 1 play:)
+				(noise number: 446 flags: 1 loop: 1 play:) ; sBoltLock
 				(gEgo
 					view: 831
 					loop: 8
@@ -564,7 +564,7 @@
 					setCycle: End self
 				)
 				(bolt setCycle: Beg)
-				(noise number: 446 flags: 1 loop: 1 play:)
+				(noise number: 446 flags: 1 loop: 1 play:) ; sBoltLock
 			)
 			(3
 				(gEgo view: 831 loop: 8 setPri: -1 cel: 6 posn: 213 146)

@@ -204,7 +204,7 @@
 			)
 			(2
 				(WrapMusic pause: 1)
-				(sWrapMusic init: -1 1 6)
+				(sWrapMusic init: -1 1 6) ; mDeadBody1, mExamine
 				(= cycles 3)
 			)
 			(3
@@ -213,7 +213,7 @@
 			)
 			(4
 				(inHead setInset: inReaction)
-				(noise number: 82 flags: 5 loop: 1 play: self)
+				(noise number: 82 flags: 5 loop: 1 play: self) ; scream
 				(= local1 1)
 			)
 			(5
@@ -238,7 +238,7 @@
 				(gEgo setMotion: PolyPath 186 150 self)
 			)
 			(2
-				(gGameMusic1 number: 3 loop: 1 flags: 1 play:)
+				(gGameMusic1 number: 3 loop: 1 flags: 1 play:) ; mDeadBody3
 				(oriley
 					moveSpeed: 4
 					cycleSpeed: 4
@@ -250,7 +250,7 @@
 				(oriley view: 424 cel: 0 setCycle: End self)
 			)
 			(4
-				(noise number: 80 flags: 5 loop: 1 play:)
+				(noise number: 80 flags: 5 loop: 1 play:) ; sThud
 				(gEgo view: 858 setCycle: End self)
 			)
 			(5
@@ -286,7 +286,7 @@
 			)
 			(2
 				(zHead setLoop: 2 cel: 2 posn: 211 131 setCycle: End self)
-				(noise number: 490 flags: 5 play:)
+				(noise number: 490 flags: 5 play:) ; sHeadHitsFloor
 			)
 			(3
 				(zHead setCycle: End self setMotion: MoveTo 231 133)
@@ -333,7 +333,7 @@
 					y: 240
 					setMotion: MoveTo 290 141 self
 				)
-				(gGameMusic2 number: 350 flags: 1 loop: -1 play:)
+				(gGameMusic2 number: 350 flags: 1 loop: -1 play:) ; mExitMuseum
 			)
 			(2 0)
 			(3
@@ -654,7 +654,7 @@
 (instance mExamineMusic of Sound
 	(properties
 		flags 1
-		number 6
+		number 6 ; mExamine
 		loop -1
 	)
 )

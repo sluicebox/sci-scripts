@@ -35,7 +35,7 @@
 		(self setRegions: 92) ; intro
 		(super init:)
 		(WrapMusic dispose:)
-		(gGameMusic1 number: 220 loop: -1 flags: 1 play:)
+		(gGameMusic1 number: 220 loop: -1 flags: 1 play:) ; mNews
 		(fan init: setCycle: Fwd)
 		(shadowL init: setScript: sLeftShadow)
 		(shadowR init: setScript: sRightShadow)

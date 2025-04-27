@@ -52,7 +52,7 @@
 			)
 		)
 		(super init:)
-		(gGameMusic1 number: 280 flags: 1 loop: 1 play:)
+		(gGameMusic1 number: 280 flags: 1 loop: 1 play:) ; mPolice
 		(gCurRoom
 			addObstacle:
 				((Polygon new:)
@@ -232,7 +232,7 @@
 			)
 			(1
 				(drunk setCycle: CT 2 1)
-				(carSound number: 281 flags: 5 loop: 1 play: self)
+				(carSound number: 281 flags: 5 loop: 1 play: self) ; sSnoringDrunk
 			)
 			(2
 				(= ticks 30)
@@ -254,7 +254,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(gGameMusic2 number: 252 flags: 1 loop: -1 play: 20)
+				(gGameMusic2 number: 252 flags: 1 loop: -1 play: 20) ; sTaxiCabSFX
 				(gEgo
 					setMotion:
 						PolyPath
@@ -270,7 +270,7 @@
 					posn: (- (gEgo x:) 2) (gEgo y:)
 					setCycle: End self
 				)
-				(gGameMusic1 number: 97 flags: 1 loop: 1 play:)
+				(gGameMusic1 number: 97 flags: 1 loop: 1 play:) ; yoTaxi
 			)
 			(2
 				(gGameMusic2 send: 2 224 2000 fade: 127 5 5 0)
@@ -294,7 +294,7 @@
 			)
 			(7
 				(gGameMusic2 send: 2 224 0)
-				(carSound number: 40 loop: 1 flags: 5 play:)
+				(carSound number: 40 loop: 1 flags: 5 play:) ; sCarDoorOpen
 				(gEgo hide:)
 				(= ticks 30)
 			)
@@ -615,7 +615,7 @@
 (instance carSound of Sound
 	(properties
 		flags 5
-		number 40
+		number 40 ; sCarDoorOpen
 	)
 )
 

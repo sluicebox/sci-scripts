@@ -92,7 +92,7 @@
 	)
 
 	(method (cue)
-		(gGameMusic2 number: 16 loop: -1 flags: 1 play:)
+		(gGameMusic2 number: 16 loop: -1 flags: 1 play:) ; mChase1
 	)
 
 	(method (handleEvent event)
@@ -138,7 +138,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(sFX number: 52 flags: 5 play: self)
+				(sFX number: 52 flags: 5 play: self) ; sGunShot
 			)
 			(1
 				(= ticks 30)
@@ -237,14 +237,14 @@
 				(= ticks 120)
 			)
 			(6
-				(gGameMusic1 number: 736 flags: 1 loop: 1 play:)
+				(gGameMusic1 number: 736 flags: 1 loop: 1 play:) ; sBurn
 				(furnaceExit setCycle: Osc 1 self)
 			)
 			(7
 				(= ticks 120)
 			)
 			(8
-				(gGameMusic1 number: 736 flags: 1 loop: 1 play:)
+				(gGameMusic1 number: 736 flags: 1 loop: 1 play:) ; sBurn
 				(furnaceExit setCycle: CT 4 1 self)
 			)
 			(9
@@ -419,7 +419,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(gGameMusic2 number: 3 loop: 1 flags: 1 play:)
+				(gGameMusic2 number: 3 loop: 1 flags: 1 play:) ; mDeadBody3
 				(= local5 1)
 				(rat1 setLoop: 3 setCycle: Fwd setMotion: 0)
 				(rat2 setLoop: 3 setCycle: Fwd setMotion: 0)
@@ -1183,7 +1183,7 @@
 (instance sFXRats of Sound
 	(properties
 		flags 1
-		number 733
+		number 733 ; sMadRats
 		loop -1
 	)
 )
@@ -1191,7 +1191,7 @@
 (instance sFXFall of Sound
 	(properties
 		flags 1
-		number 542
+		number 542 ; need
 	)
 )
 

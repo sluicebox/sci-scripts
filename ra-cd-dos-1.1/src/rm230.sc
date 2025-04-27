@@ -91,7 +91,7 @@
 					yourself:
 				)
 		)
-		(gGameMusic1 number: 210 loop: -1 flags: 1 play:)
+		(gGameMusic1 number: 210 loop: -1 flags: 1 play:) ; sNewsFX
 		(personS init: cycleSpeed: 10 setCycle: RandCycle)
 		(personT init: cycleSpeed: 10 setCycle: RandCycle)
 		(person1 init: setScript: sMoveIt)

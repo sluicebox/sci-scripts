@@ -96,7 +96,7 @@
 			)
 			(3
 				(gGameMusic1 pause: 1)
-				(gGameMusic2 number: 19 flags: 1 setLoop: 1 play:)
+				(gGameMusic2 number: 19 flags: 1 setLoop: 1 play:) ; mHimlerShoos
 				((ScriptID 93 3) ; Heimlich
 					init:
 					setCycle: StopWalk -1
@@ -139,7 +139,7 @@
 			(0
 				(gGame handsOff:)
 				(gGameMusic1 pause: 1)
-				(gGameMusic2 number: 19 flags: 1 setLoop: 1 play:)
+				(gGameMusic2 number: 19 flags: 1 setLoop: 1 play:) ; mHimlerShoos
 				(= cycles 2)
 			)
 			(1

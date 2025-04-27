@@ -64,7 +64,7 @@
 				(gEgo edgeHit: EDGE_NONE setHeading: 180)
 				(if (and (== gAct 4) (== global111 11))
 					(WrapMusic pause: 1)
-					(gGameMusic2 number: 332 loop: -1 flags: 1 play:)
+					(gGameMusic2 number: 332 loop: -1 flags: 1 play:) ; mSteve&Laura
 					(olympia
 						init:
 						setCycle: StopWalk -1
@@ -84,7 +84,7 @@
 				(self setScript: sEnterWest)
 			)
 			(26 ; actBreak
-				(WrapMusic init: 1 90 91 92 93)
+				(WrapMusic init: 1 90 91 92 93) ; mMuseum1, mMuseum2, mMuseum3, mMuseum4
 				(= global111 11)
 				(self setScript: sEnterWest)
 			)
@@ -610,7 +610,7 @@
 				)
 			)
 			(3
-				(sFX number: 531 flags: 1 play:)
+				(sFX number: 531 flags: 1 play:) ; sHingeSqueak
 				(if (IsFlag 31)
 					(rodinDudeHead setCycle: End self)
 				else
@@ -625,7 +625,7 @@
 			)
 			(4
 				(rodinDudeHead stopUpd:)
-				(sFX number: 721 flags: 1 setLoop: 1 play:)
+				(sFX number: 721 flags: 1 setLoop: 1 play:) ; sHeavyStoneMoved
 				(gGame handsOn:)
 				(self dispose:)
 			)
@@ -700,7 +700,7 @@
 			)
 			(16
 				(eastDoor setCycle: End self)
-				(doorSound number: 46 play:)
+				(doorSound number: 46 play:) ; sHeavyWoodDoorOpen
 				(gAltPolys delete: (eastDoor doorPoly:))
 			)
 			(17
@@ -785,7 +785,7 @@
 			)
 			(38
 				(eastDoor setCycle: Beg self)
-				(doorSound number: 47 play:)
+				(doorSound number: 47 play:) ; sHeavyWoodDoorClose
 				(gAltPolys add: (eastDoor doorPoly:))
 				(= ticks 60)
 			)
@@ -892,7 +892,7 @@
 				(gEgo init: setMotion: PolyPath 86 175 self)
 			)
 			(3
-				(sFX number: 721 flags: 1 setLoop: 1 play:)
+				(sFX number: 721 flags: 1 setLoop: 1 play:) ; sHeavyStoneMoved
 				(gGame handsOn:)
 				(self dispose:)
 			)

@@ -49,7 +49,7 @@
 		((= temp0 (Inv at: 15)) cel: 0) ; lantern
 		(temp0 cursor: 84)
 		(super init:)
-		(gGameMusic1 number: 720 flags: 1 loop: -1 play:)
+		(gGameMusic1 number: 720 flags: 1 loop: -1 play:) ; sFurnaceRm
 		(steve init:)
 		(stone init:)
 		(maintDoor init: approachVerbs: 4) ; Do
@@ -84,7 +84,7 @@
 				(self timer: rileyTimer)
 			)
 			(local0
-				(gGameMusic2 number: 3 loop: 1 flags: 1 play:)
+				(gGameMusic2 number: 3 loop: 1 flags: 1 play:) ; mDeadBody3
 				(self setScript: sO_RileyEnters)
 			)
 			(else
@@ -114,7 +114,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(sFX number: 52 loop: 1 flags: 1 play: self)
+				(sFX number: 52 loop: 1 flags: 1 play: self) ; sGunShot
 			)
 			(1
 				(= ticks 30)
@@ -126,7 +126,7 @@
 				(gMessager say: 22) ; "Several gunshots ring out close by. You can barely hear anguished cries and shouts over the roar of the furnace. You'd better get moving."
 				(rileyTimer setReal: gCurRoom 30)
 				(gCurRoom timer: rileyTimer)
-				(gGameMusic2 number: 17 loop: -1 flags: 1 play:)
+				(gGameMusic2 number: 17 loop: -1 flags: 1 play:) ; mChase2
 				(Load rsSOUND 3)
 				(= local0 1)
 				(self dispose:)
@@ -201,7 +201,7 @@
 				(o_Riley setLoop: 6 setCel: 0 setCycle: CT 1 1 self)
 			)
 			(5
-				(sFX number: 52 loop: 1 flags: 1 play:)
+				(sFX number: 52 loop: 1 flags: 1 play:) ; sGunShot
 				(o_Riley setCycle: CT 1 1 self)
 			)
 			(6
@@ -260,7 +260,7 @@
 				(o_Riley setLoop: 6 setCel: 0 setCycle: CT 1 1 self)
 			)
 			(1
-				(sFX number: 52 loop: 1 flags: 1 play:)
+				(sFX number: 52 loop: 1 flags: 1 play:) ; sGunShot
 				(o_Riley setCycle: CT 1 1 self)
 			)
 			(2
@@ -302,7 +302,7 @@
 				(o_Riley setLoop: 6 setCel: 0 setCycle: CT 1 1 self)
 			)
 			(3
-				(sFX number: 52 loop: 1 flags: 1 play:)
+				(sFX number: 52 loop: 1 flags: 1 play:) ; sGunShot
 				(o_Riley setCycle: CT 1 1 self)
 			)
 			(4
@@ -338,7 +338,7 @@
 				(o_Riley setLoop: 6 setCel: 0 setCycle: CT 1 1 self)
 			)
 			(3
-				(sFX number: 52 loop: 1 flags: 1 play:)
+				(sFX number: 52 loop: 1 flags: 1 play:) ; sGunShot
 				(o_Riley setCycle: CT 1 1 self)
 			)
 			(4
@@ -381,7 +381,7 @@
 				(furnaceDoor cycleSpeed: 12 setCycle: End)
 			)
 			(2
-				(sFX number: 736 loop: 1 flags: 1 play:)
+				(sFX number: 736 loop: 1 flags: 1 play:) ; sBurn
 				(flames setCycle: End self)
 			)
 			(3
@@ -509,7 +509,7 @@
 					setCycle: End self
 					setMotion: MoveTo 258 182 self
 				)
-				(sFX number: 722 flags: 1 play:)
+				(sFX number: 722 flags: 1 play:) ; sNailSteve
 			)
 			(3)
 			(4
@@ -547,7 +547,7 @@
 				)
 			)
 			(3
-				(sFX number: 723 flags: 1 play:)
+				(sFX number: 723 flags: 1 play:) ; sRustlingOfCoal
 				(steve setCycle: End self)
 			)
 			(4
@@ -661,7 +661,7 @@
 					setCycle: Osc 1
 				)
 				(stone setMotion: MoveTo 176 (stone y:) self)
-				(sFX number: 721 flags: 1 play:)
+				(sFX number: 721 flags: 1 play:) ; sHeavyStoneMoved
 			)
 			(3
 				(sFX stop:)
@@ -1284,7 +1284,7 @@
 (instance sFXLocked of Sound
 	(properties
 		flags 1
-		number 48
+		number 48 ; sTryingALockedDoor
 	)
 )
 

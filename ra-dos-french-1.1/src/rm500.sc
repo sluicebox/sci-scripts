@@ -107,7 +107,7 @@
 				setCel: 0
 			)
 			(WrapMusic pause:)
-			(gGameMusic2 number: 350 loop: -1 flags: 1 play:)
+			(gGameMusic2 number: 350 loop: -1 flags: 1 play:) ; mExitMuseum
 		)
 		(if (or (> gAct 4) (and (== gAct 4) (TimeCheck $3104 1))) ; can 3:15 am occur?
 			(yvetteStatue init: stopUpd:)
@@ -200,7 +200,7 @@
 			)
 			(3
 				(gEgo setMotion: 0 view: 858 setLoop: 4 setCycle: End self)
-				(sFX number: 80 flags: 5 play:)
+				(sFX number: 80 flags: 5 play:) ; sThud
 			)
 			(4
 				(= ticks 60)
@@ -939,7 +939,7 @@
 					(gGame points: 1 146)
 					(gEgo get: -1 8) ; skeletonKey
 					((ScriptID 21 0) doit: 777) ; addCluesCode, Skeleton Key
-					(sFX number: 501 play:)
+					(sFX number: 501 play:) ; sPryingOffKey
 					(keyGlintInset dispose:)
 					(keyGlint setScript: 0)
 					(gMessager say: 18 22) ; "With careful use of the Dagger, you manage to pry the skeleton key off the Bosch painting without any serious damage."
@@ -954,7 +954,7 @@
 					(gGame points: 1 146)
 					(gEgo get: -1 8) ; skeletonKey
 					((ScriptID 21 0) doit: 777) ; addCluesCode, Skeleton Key
-					(sFX number: 501 play:)
+					(sFX number: 501 play:) ; sPryingOffKey
 					(keyGlintInset dispose:)
 					(keyGlint setScript: 0)
 					(gMessager say: 18 21) ; "With careful use of the wire cutters, you manage to remove the skeleton key without damaging the Bosch painting."
@@ -1008,7 +1008,7 @@
 			)
 			(9
 				(if (TimeCheck $0080)
-					(gGameMusic2 number: 502 loop: 1 flags: 1 play: self)
+					(gGameMusic2 number: 502 loop: 1 flags: 1 play: self) ; mEndAct3Alternate
 				)
 				(gEgo setMotion: MoveFwd 70 self)
 			)
@@ -1062,7 +1062,7 @@
 						noun: 1
 					)
 					(gGameMusic1 pause:)
-					(gGameMusic2 number: 19 flags: 1 setLoop: 1 play:)
+					(gGameMusic2 number: 19 flags: 1 setLoop: 1 play:) ; mHimlerShoos
 				)
 				(gEgo setMotion: MoveFwd 15 self)
 			)
@@ -1119,7 +1119,7 @@
 			)
 			(2
 				(gEgo setCycle: End self)
-				(sFX number: 500 play:)
+				(sFX number: 500 play:) ; sBreakPlaster
 				(yvetteStatue setCycle: End self)
 			)
 			(3 0)
@@ -1146,14 +1146,14 @@
 				(gEgo stopUpd:)
 				(WrapMusic pause: 1)
 				(if (IsFlag 68)
-					(fooSound number: 6 loop: -1 flags: 1 play:)
+					(fooSound number: 6 loop: -1 flags: 1 play:) ; mExamine
 					(= cycles 1)
 				else
 					(SetFlag 68)
 					(gCurRoom drawPic: 556)
-					(wrapMusic init: -1 3 6)
+					(wrapMusic init: -1 3 6) ; mDeadBody3, mExamine
 					(= local0 1)
-					(sFX number: 84 flags: 5 loop: 1 play:)
+					(sFX number: 84 flags: 5 loop: 1 play:) ; gasp
 					(= ticks 180)
 				)
 			)

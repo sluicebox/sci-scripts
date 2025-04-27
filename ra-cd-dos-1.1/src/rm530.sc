@@ -350,7 +350,7 @@
 			)
 			(4
 				(gGame points: 1 167)
-				(sFX number: 558 play:)
+				(sFX number: 558 play:) ; sSwitch
 				(lightBulb setCel: 0)
 				(darkPassage hide:)
 				(= cycles 1)
@@ -451,14 +451,14 @@
 					yStep: 16
 					setMotion: MoveTo (gEgo x:) 183 self
 				)
-				(sFX number: 542 flags: 1 setLoop: 1 play:)
+				(sFX number: 542 flags: 1 setLoop: 1 play:) ; need
 			)
 			(3
 				(gEgo hide:)
 				(= ticks 120)
 			)
 			(4
-				(sFX number: 543 play:)
+				(sFX number: 543 play:) ; sImpact
 				(= ticks 180)
 			)
 			(5
@@ -499,7 +499,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(gGameMusic2 number: 540 loop: -1 flags: 1 play:)
+				(gGameMusic2 number: 540 loop: -1 flags: 1 play:) ; mUpTheStairs
 				(= cycles 3)
 			)
 			(1
@@ -532,7 +532,7 @@
 			)
 			(1
 				(WrapMusic pause: 1)
-				(gGameMusic2 number: 541 loop: -1 flags: 1 play:)
+				(gGameMusic2 number: 541 loop: -1 flags: 1 play:) ; mDownTheStairs
 				(gEgo
 					view: 541
 					setScale: Scaler 100 100 190 0
@@ -633,7 +633,7 @@
 			)
 			(2
 				(SetFlag 32)
-				(sFX number: 558 play:)
+				(sFX number: 558 play:) ; sSwitch
 				(lightBulb setCel: 1)
 				(darkPassage init:)
 				(= ticks 120)

@@ -35,7 +35,7 @@
 		(self setRegions: 92) ; intro
 		(super init:)
 		(thief init:)
-		(gGameMusic1 number: 160 flags: 1 loop: -1 play:)
+		(gGameMusic1 number: 160 flags: 1 loop: -1 play:) ; sStation
 		(self setScript: sCartoon)
 	)
 
@@ -96,7 +96,7 @@
 				)
 			)
 			(7
-				(gGameMusic2 number: 162 flags: 1 loop: 1 play:)
+				(gGameMusic2 number: 162 flags: 1 loop: 1 play:) ; mRippedOff2
 				(trainLady
 					loop: 1
 					posn: 110 160
@@ -138,7 +138,7 @@
 			)
 			(12
 				(gMessager say: 1 0 0 7 self) ; "Can ya spare a dime, Miss?"
-				(gGameMusic2 number: 163 flags: 1 loop: -1 play:)
+				(gGameMusic2 number: 163 flags: 1 loop: -1 play:) ; mRippedOff3
 			)
 			(13
 				(gEgo
@@ -164,7 +164,7 @@
 			)
 			(15
 				(myConv load: @local66 init: self) ; "Hand it over!"
-				(gGameMusic2 number: 164 flags: 1 loop: 1 play: self)
+				(gGameMusic2 number: 164 flags: 1 loop: 1 play: self) ; mRippedOff4
 			)
 			(16
 				(gMessager say: 1 0 0 13 self) ; "Welcome to New York, kid."
@@ -199,7 +199,7 @@
 					moveSpeed: 5
 					setMotion: PolyPath 110 167 self
 				)
-				(gGameMusic2 number: 161 flags: 1 loop: 1 play:)
+				(gGameMusic2 number: 161 flags: 1 loop: 1 play:) ; mRippedOff1
 			)
 			(1
 				(thief loop: 2 cel: 1 posn: 83 168 setCycle: End self)

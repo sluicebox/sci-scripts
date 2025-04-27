@@ -65,7 +65,7 @@
 					yourself:
 				)
 		)
-		(gGameMusic2 number: 321 loop: -1 flags: 1 play:)
+		(gGameMusic2 number: 321 loop: -1 flags: 1 play:) ; sRunningSinkWater
 		(sleazy approachVerbs: 4 2 6 init: setScript: sSheAnimates) ; Do, Talk, Ask
 		(smoke init: setScript: sDoSomethingLaura)
 		(partition init:)

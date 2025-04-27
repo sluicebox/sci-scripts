@@ -83,7 +83,7 @@
 		(super init:)
 		(gEgo wearingGown: 0)
 		(gTheIconBar disable:)
-		(gGameMusic1 number: 120 flags: 1 loop: -1 play:)
+		(gGameMusic1 number: 120 flags: 1 loop: -1 play:) ; mDocks
 		(reporters init:)
 		(reporterHeads init:)
 		(r_arm init: setCycle: RandCycle cycleSpeed: 48)
@@ -396,15 +396,15 @@
 			(4
 				(cond
 					((== global126 1)
-						(gGameMusic2 number: 750 flags: 5 loop: 1 play:)
+						(gGameMusic2 number: 750 flags: 5 loop: 1 play:) ; sCrowdCheer
 						(reporterHeads setCycle: End self)
 					)
 					((or (== global126 2) (== global126 4))
-						(gGameMusic2 number: 751 flags: 5 loop: 1 play:)
+						(gGameMusic2 number: 751 flags: 5 loop: 1 play:) ; sCrowdSmallClaps
 						(reporterHeads setCycle: End self)
 					)
 					(else
-						(gGameMusic2 number: 752 flags: 5 loop: 1 play:)
+						(gGameMusic2 number: 752 flags: 5 loop: 1 play:) ; sCrowdMutter
 						(= seconds 4)
 					)
 				)
@@ -436,7 +436,7 @@
 				(gGameMusic1 fade: 0 12 30 1)
 			)
 			(9
-				(gGameMusic1 number: 760 flags: 1 loop: 1 play:)
+				(gGameMusic1 number: 760 flags: 1 loop: 1 play:) ; mPaperSpin
 				(paper show:)
 				(paper setCycle: End self)
 			)

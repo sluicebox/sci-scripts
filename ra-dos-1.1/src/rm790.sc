@@ -23,7 +23,7 @@
 	(method (init)
 		(LoadMany rsVIEW 790)
 		(super init:)
-		(gGameMusic1 number: 110 loop: -1 flags: 1 play:)
+		(gGameMusic1 number: 110 loop: -1 flags: 1 play:) ; mStateRoom
 		(gTheIconBar disable:)
 		(gGame setCursor: 996)
 		(sleeper init:)
@@ -63,8 +63,8 @@
 				(badGuy loop: 2 cel: 0 setCycle: Fwd)
 				(sleeper setCycle: Fwd)
 				(bullets init: setPri: 15 setCycle: End self)
-				(gGameMusic1 number: 1 loop: 1 flags: 1 play:)
-				(gGameMusic2 number: 653 loop: -1 flags: 1 play:)
+				(gGameMusic1 number: 1 loop: 1 flags: 1 play:) ; mDeadBody1
+				(gGameMusic2 number: 653 loop: -1 flags: 1 play:) ; sMachineGunned
 			)
 			(5
 				(sleeper setCycle: 0)

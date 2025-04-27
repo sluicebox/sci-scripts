@@ -81,7 +81,7 @@
 				(gGame handsOn:)
 			)
 		)
-		(gGameMusic2 number: 610 loop: -1 flags: 1 play:)
+		(gGameMusic2 number: 610 loop: -1 flags: 1 play:) ; mVatLab
 		(super init:)
 		(LoadMany rsVIEW 611 612)
 		(northDoor init:)
@@ -1240,14 +1240,14 @@
 (instance sFX of Sound
 	(properties
 		flags 1
-		number 613
+		number 613 ; sFootFallOnLadder1
 	)
 )
 
 (instance sHeimlichMusic of Sound
 	(properties
 		flags 1
-		number 19
+		number 19 ; mHimlerShoos
 		loop -1
 	)
 )

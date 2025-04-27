@@ -55,12 +55,12 @@
 		(= gDoVerbCode exitDoVerbCode)
 		(if (SetFlag 69)
 			(= picture 525)
-			(gGameMusic1 number: 6 loop: -1 flags: 1 play:)
+			(gGameMusic1 number: 6 loop: -1 flags: 1 play:) ; mExamine
 			(localproc_0)
 		else
 			(= picture 556)
-			(wrapMusic init: -1 4 6)
-			(sFX number: 85 flags: 5 loop: 1 play:)
+			(wrapMusic init: -1 4 6) ; mDeadBody4, mExamine
+			(sFX number: 85 flags: 5 loop: 1 play:) ; Oh
 			((Timer new:) setReal: self 3)
 		)
 		(super init:)

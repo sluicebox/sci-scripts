@@ -430,7 +430,7 @@
 				(if (== (gGameMusic1 number:) 335)
 					(gGameMusic1 fade: 127 5 5 0)
 				else
-					(gGameMusic1 number: 335 flags: 1 setLoop: -1 play:)
+					(gGameMusic1 number: 335 flags: 1 setLoop: -1 play:) ; mPartyWaltz
 				)
 				(gEgo
 					edgeHit: EDGE_NONE
@@ -612,7 +612,7 @@
 					setCycle: StopWalk -1
 					setMotion: MoveFwd 20 self
 				)
-				(gGameMusic1 number: 3 flags: 1 loop: 1 play:)
+				(gGameMusic1 number: 3 flags: 1 loop: 1 play:) ; mDeadBody3
 			)
 			(2
 				(oriley view: 424 setLoop: 0 setCel: 0 setCycle: End self)
@@ -933,7 +933,7 @@
 (instance thudSound of Sound
 	(properties
 		flags 5
-		number 80
+		number 80 ; sThud
 	)
 )
 

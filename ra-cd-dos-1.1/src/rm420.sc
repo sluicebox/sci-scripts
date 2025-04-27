@@ -51,7 +51,7 @@
 		)
 		(if (== gAct 5)
 			(gGame handsOn:)
-			(gGameMusic1 number: 16 flags: 1 setLoop: -1 play:)
+			(gGameMusic1 number: 16 flags: 1 setLoop: -1 play:) ; mChase1
 			(self setRegions: 94) ; PursuitRgn
 			(gCurRoom obstacles: (List new:))
 			((ScriptID 2420 0) doit: (gCurRoom obstacles:)) ; poly2420Code
@@ -555,7 +555,7 @@
 						noun: 1
 					)
 					(gGameMusic1 pause:)
-					(gGameMusic2 number: 19 flags: 1 setLoop: 1 play:)
+					(gGameMusic2 number: 19 flags: 1 setLoop: 1 play:) ; mHimlerShoos
 				)
 			)
 			(1
@@ -624,15 +624,15 @@
 			(0
 				(WrapMusic pause:)
 				(if (IsFlag 67)
-					(fooSound number: 6 loop: -1 flags: 1 play:)
+					(fooSound number: 6 loop: -1 flags: 1 play:) ; mExamine
 					(= cycles 1)
 				else
 					(SetFlag 67)
 					(gCast eachElementDo: #hide)
 					(DrawPic 556)
 					(gAddToPics eachElementDo: #dispose release:)
-					(wrapMusic init: -1 3 6)
-					(sFX number: 84 flags: 1 loop: 1 play:)
+					(wrapMusic init: -1 3 6) ; mDeadBody3, mExamine
+					(sFX number: 84 flags: 1 loop: 1 play:) ; gasp
 					(= ticks 180)
 				)
 			)
@@ -694,14 +694,14 @@
 				(= cycles 1)
 			)
 			(1
-				(gGameMusic1 number: 3 flags: 1 loop: 1 play:)
+				(gGameMusic1 number: 3 flags: 1 loop: 1 play:) ; mDeadBody3
 				(= cycles 4)
 			)
 			(2
 				(oriley cel: 0 setCycle: End self)
 			)
 			(3
-				(sFX number: 80 flags: 1 loop: 1 play:)
+				(sFX number: 80 flags: 1 loop: 1 play:) ; sThud
 				(gEgo
 					view: 858
 					setScale: Scaler 100 100 190 0

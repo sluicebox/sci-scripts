@@ -39,7 +39,7 @@
 		(badGuy init:)
 		(inTrunk init:)
 		(lid init:)
-		(gGameMusic1 number: 110 flags: 1 loop: -1 play: sCartoon)
+		(gGameMusic1 number: 110 flags: 1 loop: -1 play: sCartoon) ; mStateRoom
 		(cond
 			((> gHowFast 12) 0)
 			((> gHowFast 8)
@@ -95,7 +95,7 @@
 				(gNarrator x: 20 y: 160 modeless: 1)
 			)
 			(6
-				(gGameMusic1 number: 112 flags: 1 loop: 1 play: sCartoon)
+				(gGameMusic1 number: 112 flags: 1 loop: 1 play: sCartoon) ; mStateMurder
 				(gMessager say: 1 0 0 0) ; "Huuurrrkk! Ack!"
 				(badGuy setCycle: CT 9 -1 self)
 			)

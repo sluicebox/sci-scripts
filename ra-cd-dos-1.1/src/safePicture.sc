@@ -59,11 +59,11 @@
 			(4 ; Do
 				(cond
 					((== (self cel:) 0)
-						(sFX number: 44 flags: 1 setLoop: 1 play:)
+						(sFX number: 44 flags: 1 setLoop: 1 play:) ; sSqueakyDoorOpen
 						(self setCycle: End)
 					)
 					((== (safeDoor cel:) 0)
-						(sFX number: 45 flags: 1 setLoop: 1 play:)
+						(sFX number: 45 flags: 1 setLoop: 1 play:) ; sSqueakyDoorClose
 						(self setCycle: Beg)
 					)
 				)
@@ -106,7 +106,7 @@
 					(local0
 						(if (== (self cel:) 0)
 							(= local3 0)
-							(sFX number: 560 flags: 1 setLoop: 1 play:)
+							(sFX number: 560 flags: 1 setLoop: 1 play:) ; sOpenSafe
 							(self setPri: 7 setCycle: End)
 							(= local1 1)
 						else
@@ -266,7 +266,7 @@
 			(0
 				(gGame handsOff:)
 				(= temp0 (if (mod local2 2) -1 else 1))
-				(sFX number: 562 flags: 1 play: setLoop: -1)
+				(sFX number: 562 flags: 1 play: setLoop: -1) ; sTurnTumbler
 				(dialNumber
 					setCycle: CT (mod (+ local4 register) 10) temp0 self
 				)
@@ -285,7 +285,7 @@
 							(== [local5 3] 7)
 						)
 						(= local0 1)
-						(sFX number: 558 flags: 1 setLoop: 1 play:)
+						(sFX number: 558 flags: 1 setLoop: 1 play:) ; sSwitch
 					else
 						(= local0 0)
 						(sFX stop:)
@@ -311,7 +311,7 @@
 				(safeDoor setPri: 5 setCycle: Beg self)
 			)
 			(1
-				(sFX number: 561 flags: 1 play: setLoop: 1)
+				(sFX number: 561 flags: 1 play: setLoop: 1) ; sCloseSafe
 				(= local1 0)
 				(self dispose:)
 			)
@@ -330,7 +330,7 @@
 				((ScriptID 560 4) locked: 0 exitType: 2 caller: self open:) ; westDoor
 			)
 			(1
-				(gGameMusic2 number: 19 loop: -1 flags: 1 play:)
+				(gGameMusic2 number: 19 loop: -1 flags: 1 play:) ; mHimlerShoos
 				(gGame handsOff:)
 				(= ticks 60)
 			)

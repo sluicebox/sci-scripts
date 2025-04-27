@@ -114,10 +114,10 @@
 					(!= gPrevRoomNum 456) ; magRosetta
 					(not (TimeCheck $4108)) ; has 4:15 am occurred?
 				)
-				(gGameMusic2 number: 521 loop: -1 flags: 1 play:)
+				(gGameMusic2 number: 521 loop: -1 flags: 1 play:) ; mCobraArcade
 			)
 			((!= gPrevRoomNum 456) ; magRosetta
-				(gGameMusic2 number: 520 loop: -1 flags: 1 play:)
+				(gGameMusic2 number: 520 loop: -1 flags: 1 play:) ; mOlympiasOffice
 			)
 		)
 		(if (and (== gPrevRoomNum 525) (not (TimeCheck $4108))) ; has 4:15 am occurred?
@@ -186,7 +186,7 @@
 		(if local13
 			(super newRoom: 26) ; actBreak
 		else
-			(gGameMusic2 number: 520)
+			(gGameMusic2 number: 520) ; mOlympiasOffice
 			((ScriptID 22 0) doit: $4108) ; triggerAndClock, 4:15 am
 		)
 	)
@@ -224,7 +224,7 @@
 				(= newRoomNumber 26) ; actBreak
 				(WrapMusic dispose:)
 				((ScriptID 22 0) doit: $001f) ; triggerAndClock
-				(gGameMusic2 number: 524 loop: 1 flags: 1 play: self)
+				(gGameMusic2 number: 524 loop: 1 flags: 1 play: self) ; mEndAct4
 				(= local13 1)
 			)
 			(else
@@ -1110,7 +1110,7 @@
 		(switch theVerb
 			(4 ; Do
 				(= local2 (if (== local2 522) 523 else 522))
-				(sFX number: 525 flags: 1 play:)
+				(sFX number: 525 flags: 1 play:) ; sHyroglphPage
 				(DrawPic 780 (if (== local2 522) 11 else 12))
 				(localproc_0 local2)
 			)
@@ -1280,7 +1280,7 @@
 				(= ticks 180)
 			)
 			(2
-				(sFX number: 522 flags: 1 play:)
+				(sFX number: 522 flags: 1 play:) ; sCobraHiss1
 				(= cycles 2)
 			)
 			(3
@@ -1312,7 +1312,7 @@
 				(= ticks 30)
 			)
 			(8
-				(sFX number: 522 flags: 1 play:)
+				(sFX number: 522 flags: 1 play:) ; sCobraHiss1
 				(bigCobra init:)
 				(= ticks 180)
 			)
@@ -1334,7 +1334,7 @@
 		(switch (= state newState)
 			(0
 				(gGame handsOff:)
-				(sFX number: 522 flags: 1 play:)
+				(sFX number: 522 flags: 1 play:) ; sCobraHiss1
 				(bigCobra
 					init:
 					x: (- (cobraLoose x:) 58)
@@ -1585,7 +1585,7 @@
 			)
 			(1
 				(gGameMusic2 stop:)
-				(sFX number: 523 flags: 1 play:)
+				(sFX number: 523 flags: 1 play:) ; sCobraHiss2
 				(if local9
 					(cobraLoose
 						setLoop: 2
@@ -1604,7 +1604,7 @@
 			)
 			(2
 				(cobraLoose setCycle: End self)
-				(sFX number: 481 flags: 5 setLoop: 1 play:)
+				(sFX number: 481 flags: 5 setLoop: 1 play:) ; sCaughtInMouth
 			)
 			(3
 				(gEgo
@@ -1659,7 +1659,7 @@
 				(cobraDoor setCycle: Beg self)
 			)
 			(6
-				(sFX number: 441 flags: 5 setLoop: 1 play:)
+				(sFX number: 441 flags: 5 setLoop: 1 play:) ; sHelmetClose
 				(gGame points: 1 164)
 				(= local8 1)
 				(SetFlag 80)
@@ -1670,7 +1670,7 @@
 					signal: 16384
 					setHeading: 270
 				)
-				(gGameMusic2 number: 520 loop: -1 flags: 1 play:)
+				(gGameMusic2 number: 520 loop: -1 flags: 1 play:) ; mOlympiasOffice
 				(= cycles 1)
 			)
 			(7
@@ -1792,14 +1792,14 @@
 			)
 			(3
 				(gEgo cycleSpeed: 12 setCycle: Beg self)
-				(sFX number: 49 flags: 5 setLoop: 1 play:)
+				(sFX number: 49 flags: 5 setLoop: 1 play:) ; sDoorUnlatch
 				(mountedSkull setCycle: End self)
 			)
 			(4 0)
 			(5
 				(gEgo normalize: 831)
 				(Face gEgo secretDoor)
-				(sFX number: 721 flags: 5 setLoop: 1 play:)
+				(sFX number: 721 flags: 5 setLoop: 1 play:) ; sHeavyStoneMoved
 				(secretDoor setCycle: End self)
 			)
 			(6
@@ -1811,7 +1811,7 @@
 			)
 			(8
 				(gEgo setPri: 2)
-				(sFX number: 721 flags: 5 setLoop: 1 play:)
+				(sFX number: 721 flags: 5 setLoop: 1 play:) ; sHeavyStoneMoved
 				(secretDoor setCycle: Beg self)
 			)
 			(9

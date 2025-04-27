@@ -25,7 +25,7 @@
 
 	(method (init)
 		(super init:)
-		(gGameMusic1 number: 140 flags: 1 loop: -1 play:)
+		(gGameMusic1 number: 140 flags: 1 loop: -1 play:) ; mLauraTheme1
 		(= local0
 			(switch global126
 				(1 1)

@@ -76,7 +76,7 @@
 					yourself:
 				)
 		)
-		(gGameMusic1 number: 121 loop: -1 flags: 1 play:)
+		(gGameMusic1 number: 121 loop: -1 flags: 1 play:) ; sDistantFoghorn
 		(gGameMusic2 fade:)
 		(person1 init: setStep: 1 1)
 		(person2 init: setStep: 1 1)
@@ -541,7 +541,7 @@
 						setMotion: MoveTo (steve x:) 140
 					)
 				)
-				(noise number: 97 flags: 1 play:)
+				(noise number: 97 flags: 1 play:) ; yoTaxi
 			)
 			(3
 				(taxi
@@ -568,7 +568,7 @@
 				)
 			)
 			(7
-				(noise number: 40 flags: 1 play: self)
+				(noise number: 40 flags: 1 play: self) ; sCarDoorOpen
 			)
 			(8
 				(gCurRoom newRoom: 250)

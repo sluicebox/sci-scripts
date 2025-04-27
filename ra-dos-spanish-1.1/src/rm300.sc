@@ -188,7 +188,7 @@
 			)
 			(3
 				(Face gEgo mugger)
-				(noise number: 163 loop: -1 flags: 1 play:)
+				(noise number: 163 loop: -1 flags: 1 play:) ; mRippedOff3
 				(= cycles 5)
 			)
 			(4
@@ -221,7 +221,7 @@
 					setCycle: End self
 				)
 				(noise stop:)
-				(sFX number: 3 play:)
+				(sFX number: 3 play:) ; mDeadBody3
 			)
 			(7
 				(= seconds 1)
@@ -300,7 +300,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(gGameMusic2 number: 252 loop: -1 flags: 1 play: 20)
+				(gGameMusic2 number: 252 loop: -1 flags: 1 play: 20) ; sTaxiCabSFX
 				(gGame handsOff:)
 				(= cycles 1)
 			)
@@ -316,7 +316,7 @@
 					setScale: Scaler 105 0 190 0
 					setCycle: End self
 				)
-				(gGameMusic1 number: 97 loop: 1 flags: 1 play:)
+				(gGameMusic1 number: 97 loop: 1 flags: 1 play:) ; yoTaxi
 			)
 			(3
 				(gGameMusic2 send: 2 224 2000 fade: 127 5 5 0)
@@ -347,7 +347,7 @@
 			)
 			(8
 				(gGameMusic2 send: 2 224 0)
-				(noise number: 40 flags: 5 play: self)
+				(noise number: 40 flags: 5 play: self) ; sCarDoorOpen
 			)
 			(9
 				(gEgo normalize: 830 hide:)
@@ -381,7 +381,7 @@
 				)
 			)
 			(2
-				(sFX number: 297 play:)
+				(sFX number: 297 play:) ; sDoorKnock
 				(gEgo setCycle: CT 6 1 self)
 			)
 			(3

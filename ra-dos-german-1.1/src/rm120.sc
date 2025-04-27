@@ -26,7 +26,7 @@
 		(super init:)
 		(person1 init: setScale: 122)
 		(person2 init: setScale: 122)
-		(gGameMusic1 number: 120 flags: 1 loop: -1 play:)
+		(gGameMusic1 number: 120 flags: 1 loop: -1 play:) ; mDocks
 		(gCurRoom setScript: sIntroScript)
 	)
 

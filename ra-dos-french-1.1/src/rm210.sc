@@ -80,7 +80,7 @@
 					)
 			)
 			(luigi approachVerbs: 4 2 6 10 init: setCycle: Fwd) ; Do, Talk, Ask, coupon
-			(gGameMusic1 number: 190 loop: -1 flags: 1 play:)
+			(gGameMusic1 number: 190 loop: -1 flags: 1 play:) ; mLuigi
 		)
 		(frontDoor init:)
 		(taxiSign approachVerbs: 4 addToPic:) ; Do
@@ -298,7 +298,7 @@
 	(method (changeState newState)
 		(switch (= state newState)
 			(0
-				(gGameMusic2 number: 252 loop: -1 flags: 1 play: 20)
+				(gGameMusic2 number: 252 loop: -1 flags: 1 play: 20) ; sTaxiCabSFX
 				(gGame handsOff:)
 				((ScriptID 91 1) pause:) ; streetSounds
 				(= cycles 1)
@@ -311,7 +311,7 @@
 					setScale: Scaler 102 0 190 112
 					setCycle: End self
 				)
-				(noise number: 97 play:)
+				(noise number: 97 play:) ; yoTaxi
 			)
 			(2
 				(taxi init: setScale: Scaler 116 0 190 112 posn: 378 181)
@@ -347,7 +347,7 @@
 			)
 			(8
 				(gGameMusic2 send: 2 224 0)
-				(noise number: 40 flags: 5 play: self)
+				(noise number: 40 flags: 5 play: self) ; sCarDoorOpen
 				(if (gCast contains: luigi)
 					(luigi setScript: 0 addToPic:)
 				)

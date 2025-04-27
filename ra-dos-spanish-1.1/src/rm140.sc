@@ -38,7 +38,7 @@
 		)
 		(super init:)
 		(dad init:)
-		(gGameMusic1 number: 140 flags: 1 loop: -1 play:)
+		(gGameMusic1 number: 140 flags: 1 loop: -1 play:) ; mLauraTheme1
 		(self setScript: sCartoon)
 	)
 

@@ -78,7 +78,7 @@
 		(if (== gPrevRoomNum north)
 			(Palette palSET_INTENSITY 0 255 100)
 		)
-		(gGameMusic2 number: 565 loop: -1 flags: 1 play:)
+		(gGameMusic2 number: 565 loop: -1 flags: 1 play:) ; mCarringtonsOffice
 		(if (or (> gAct 3) (and (== gAct 3) (TimeCheck $c304 1))) ; can 12:45 am occur?
 			(deskClock addToPic:)
 			(deadWatney addToPic:)
@@ -961,7 +961,7 @@
 				)
 			)
 			(2
-				(sFX number: 564 flags: 1 loop: 1 play:)
+				(sFX number: 564 flags: 1 loop: 1 play:) ; sPickUpCharcoal
 				(gGame points: 1 175)
 				(= cycles 3)
 			)
@@ -1009,7 +1009,7 @@
 				(= ticks 30)
 			)
 			(4
-				(sFX number: 566 flags: 5 loop: 1 play:)
+				(sFX number: 566 flags: 5 loop: 1 play:) ; sPulBookFromShelf
 				(gEgo setCycle: Beg self)
 			)
 			(5
@@ -1044,7 +1044,7 @@
 			)
 			(1
 				(if local1
-					(sFX number: 561 flags: 5 loop: 1 play:)
+					(sFX number: 561 flags: 5 loop: 1 play:) ; sCloseSafe
 					(= local1 0)
 					(= ticks 60)
 				else
@@ -1054,7 +1054,7 @@
 			(2
 				(if (!= ((ScriptID 561 0) cel:) 0) ; safePicture
 					((ScriptID 561 0) setCycle: Beg self) ; safePicture
-					(sFX number: 45 flags: 5 loop: 1 play:)
+					(sFX number: 45 flags: 5 loop: 1 play:) ; sSqueakyDoorClose
 				else
 					(= cycles 1)
 				)
@@ -1087,7 +1087,7 @@
 			)
 			(2
 				(gEgo x: 306 y: 147 setPri: 5 setHeading: 180)
-				(sFX number: 721 flags: 5 loop: 1 play:)
+				(sFX number: 721 flags: 5 loop: 1 play:) ; sHeavyStoneMoved
 				(secretDoor setCycle: End self)
 			)
 			(3
@@ -1095,7 +1095,7 @@
 				(gEgo setPri: -1 setMotion: MoveTo 303 177 self)
 			)
 			(4
-				(sFX number: 721 flags: 5 loop: 1 play:)
+				(sFX number: 721 flags: 5 loop: 1 play:) ; sHeavyStoneMoved
 				(secretDoor setCycle: Beg self)
 			)
 			(5

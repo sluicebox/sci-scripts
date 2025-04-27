@@ -100,7 +100,7 @@
 			)
 			(1
 				((ScriptID 32 0) addToPic:) ; aHeimlich
-				(gGameMusic1 number: 350 setLoop: -1 flags: 1 play:)
+				(gGameMusic1 number: 350 setLoop: -1 flags: 1 play:) ; mExitMuseum
 			)
 			(2 0)
 			(3
@@ -137,7 +137,7 @@
 				(= ticks 60)
 			)
 			(11
-				(gGameMusic1 number: 642 loop: -1 flags: 1 play:)
+				(gGameMusic1 number: 642 loop: -1 flags: 1 play:) ; mErniesOffice
 				((ScriptID 31 0) ; aErnie
 					room: gCurRoomNum
 					init:
@@ -178,7 +178,7 @@
 				(gMessager say: 1 0 0 0 self) ; "Did you manage to learn anything from your interviews, Detective O'Riley?"
 			)
 			(17
-				(WrapMusic init: 1 90 91 92 93)
+				(WrapMusic init: 1 90 91 92 93) ; mMuseum1, mMuseum2, mMuseum3, mMuseum4
 				(gEgo setMotion: PolyPath 340 185 self)
 			)
 			(18

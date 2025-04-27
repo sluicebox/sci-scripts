@@ -138,14 +138,14 @@
 				(= cycles 1)
 			)
 			(3
-				(wrapMusic init: -1 2 6)
-				(gGameMusic2 number: 83 flags: 5 loop: 1 play:)
+				(wrapMusic init: -1 2 6) ; mDeadBody2, mExamine
+				(gGameMusic2 number: 83 flags: 5 loop: 1 play:) ; scream
 				(= local0 1)
 				(= seconds 3)
 			)
 			(4
 				(if (and (IsFlag 72) (!= gAct 5))
-					(screamAndLook number: 6 loop: -1 flags: 1 play:)
+					(screamAndLook number: 6 loop: -1 flags: 1 play:) ; mExamine
 				else
 					(SetFlag 72)
 				)

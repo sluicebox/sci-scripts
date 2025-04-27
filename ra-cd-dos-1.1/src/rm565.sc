@@ -363,7 +363,7 @@
 			)
 			(2
 				(gEgo x: 306 y: 147 setPri: 5 setHeading: 180)
-				(sFX number: 721 flags: 1 setLoop: 1 play:)
+				(sFX number: 721 flags: 1 setLoop: 1 play:) ; sHeavyStoneMoved
 				(secretDoor init: setCycle: End self)
 			)
 			(3
@@ -372,7 +372,7 @@
 			)
 			(4
 				(gEgo setMotion: PolyPath 265 180 self)
-				(sFX number: 721 flags: 1 setLoop: 1 play:)
+				(sFX number: 721 flags: 1 setLoop: 1 play:) ; sHeavyStoneMoved
 				(secretDoor setCycle: Beg self)
 			)
 			(5 0)
@@ -402,13 +402,13 @@
 				(if (IsFlag 66)
 					(gGameMusic2 pause: 1)
 					(= local0 1)
-					(fooSound number: 6 loop: -1 flags: 1 play:)
+					(fooSound number: 6 loop: -1 flags: 1 play:) ; mExamine
 					(= cycles 1)
 				else
 					(SetFlag 66)
 					(gCurRoom picture: 465 drawPic: 465)
-					(sFX number: 84 flags: 1 loop: 1 play:)
-					(wrapMusic init: -1 2 6)
+					(sFX number: 84 flags: 1 loop: 1 play:) ; gasp
+					(wrapMusic init: -1 2 6) ; mDeadBody2, mExamine
 					(= local1 1)
 					(= ticks 180)
 				)

@@ -165,7 +165,7 @@
 				(if (== (eastDoor state:) 0)
 					(doorWire dispose:)
 					(eastDoor caller: self open:)
-					(gGameMusic2 number: 444 flags: 5 loop: 1 play:)
+					(gGameMusic2 number: 444 flags: 5 loop: 1 play:) ; sBreakDownDoor
 					(splinters init: setCycle: End)
 				else
 					(= cycles 1)
@@ -181,7 +181,7 @@
 					setCycle: Walk
 					setMotion: MoveTo 281 134 self
 				)
-				(gGameMusic1 number: 3 flags: 1 loop: 1 play:)
+				(gGameMusic1 number: 3 flags: 1 loop: 1 play:) ; mDeadBody3
 			)
 			(3
 				(oriley setMotion: PChase gEgo 22 self)
@@ -273,7 +273,7 @@
 			(2
 				(gEgo setCycle: End self)
 				(wireEnd dispose:)
-				(gGameMusic2 number: 430 flags: 5 loop: 1 play:)
+				(gGameMusic2 number: 430 flags: 5 loop: 1 play:) ; sCutCable
 			)
 			(3
 				(gEgo normalize: (if (== gAct 5) 426 else 831))
@@ -669,7 +669,7 @@
 (instance thudSound of Sound
 	(properties
 		flags 5
-		number 80
+		number 80 ; sThud
 	)
 )
 

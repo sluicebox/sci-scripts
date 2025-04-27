@@ -149,7 +149,7 @@
 			)
 			(1
 				(openDrawer init:)
-				(sFX number: 42 play:)
+				(sFX number: 42 play:) ; sDeskDrawerOpen
 				(= cycles 1)
 			)
 			(2
@@ -197,7 +197,7 @@
 				(gCurRoom newRoom: 230)
 			)
 			(4 ; Do
-				(sFX number: 42 play:)
+				(sFX number: 42 play:) ; sDeskDrawerOpen
 				(openDrawer dispose:)
 			)
 			(else
@@ -651,18 +651,18 @@
 			(4 ; Do
 				(cond
 					((gCast contains: openDrawer)
-						(sFX number: 42 play:)
+						(sFX number: 42 play:) ; sDeskDrawerOpen
 						(openDrawer dispose:)
 					)
 					((IsFlag 29)
-						(sFX number: 42 play:)
+						(sFX number: 42 play:) ; sDeskDrawerOpen
 						(openDrawer init:)
 					)
 					(local0
 						(gMessager say: 9 4 3 0 0 230) ; "The desk drawer is locked."
 					)
 					((not (gEgo has: 6)) ; pressPass
-						(sFX number: 42 play:)
+						(sFX number: 42 play:) ; sDeskDrawerOpen
 						(openDrawer init:)
 					)
 					(else
@@ -687,7 +687,7 @@
 (instance sFX of Sound
 	(properties
 		flags 5
-		number 42
+		number 42 ; sDeskDrawerOpen
 	)
 )
 

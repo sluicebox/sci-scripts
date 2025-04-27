@@ -24,7 +24,7 @@
 		(LoadMany rsSOUND 150)
 		(self setRegions: 92) ; intro
 		(super init:)
-		(gGameMusic1 number: 150 flags: 1 loop: -1 play:)
+		(gGameMusic1 number: 150 flags: 1 loop: -1 play:) ; mNightTrain
 		(lauraTrain init:)
 		(self setScript: sCartoon)
 	)

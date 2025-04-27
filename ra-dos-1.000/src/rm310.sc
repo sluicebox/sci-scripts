@@ -149,13 +149,13 @@
 		(if (== gPrevRoomNum south)
 			(switch (Random 0 2)
 				(0
-					(WrapMusic init: 1 temp3 311 1312)
+					(WrapMusic init: 1 temp3 311 1312) ; mBar2, mBar3
 				)
 				(1
-					(WrapMusic init: 1 311 temp3 1312)
+					(WrapMusic init: 1 311 temp3 1312) ; mBar2, mBar3
 				)
 				(2
-					(WrapMusic init: 1 1312 temp3 311)
+					(WrapMusic init: 1 1312 temp3 311) ; mBar3, mBar2
 				)
 			)
 		)
