@@ -144,7 +144,7 @@
 					(HandsOn)
 					(gEgo setScript: 0)
 				else
-					(EgoDead 612 0)
+					(EgoDead 612 0) ; "*** You're so STUPID!!!"
 				)
 				(self dispose:)
 			)
@@ -195,7 +195,7 @@
 					(HandsOn)
 					(gEgo setScript: 0)
 				else
-					(EgoDead 612 0)
+					(EgoDead 612 0) ; "*** You're so STUPID!!!"
 				)
 				(self dispose:)
 			)

@@ -373,7 +373,7 @@
 			)
 			(7
 				(localproc_0 lOrb (gEgo x:) (- (gEgo y:) 15))
-				(EgoDead)
+				(EgoDead) ; "We're glad you could play SQIV. As usual, you've been a real pantload."
 			)
 		)
 	)
@@ -463,7 +463,7 @@
 				)
 			)
 			(3
-				(EgoDead)
+				(EgoDead) ; "We're glad you could play SQIV. As usual, you've been a real pantload."
 			)
 		)
 	)

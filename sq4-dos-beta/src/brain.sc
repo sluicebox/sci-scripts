@@ -324,7 +324,7 @@
 		(if formatting
 			(localproc_1)
 			(if (not (-- formatting))
-				(EgoDead)
+				(EgoDead) ; "We're glad you could play SQIV. As usual, you've been a real pantload."
 			)
 		)
 		(cond
@@ -609,7 +609,7 @@
 				(Graph grREDRAW_BOX local4 local5 local6 local7 1)
 				(client setMotion: PolyPath (gEgo x:) (gEgo y:))
 				(if register
-					(EgoDead)
+					(EgoDead) ; "We're glad you could play SQIV. As usual, you've been a real pantload."
 				else
 					(blast
 						view: 28

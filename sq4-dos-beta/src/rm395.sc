@@ -583,7 +583,7 @@
 				(gEgo setCycle: End self)
 			)
 			(7
-				(EgoDead 395 8)
+				(EgoDead 395 8) ; "It looks like shop lifting is taken seriously around here!"
 				(= cycles 1)
 			)
 			(8

@@ -182,7 +182,7 @@
 					(HandsOn)
 					(gEgo setScript: 0)
 				else
-					(EgoDead 611 0)
+					(EgoDead 611 0) ; "*** You're so STUPID!!!"
 				)
 				(self dispose:)
 			)

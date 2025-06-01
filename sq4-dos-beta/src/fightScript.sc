@@ -279,7 +279,7 @@
 				(if (and local1 register)
 					(if local2
 						(Print 151 0) ; "Ego falls off the edge and dies"
-						(EgoDead)
+						(EgoDead) ; "We're glad you could play SQIV. As usual, you've been a real pantload."
 					else
 						(Print 151 1) ; "*** Whew! You were nearly thrown off the edge of the platform."
 						(= local2 1)

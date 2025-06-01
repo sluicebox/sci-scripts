@@ -354,7 +354,7 @@
 			)
 			(6
 				(if local2
-					(EgoDead 406 0)
+					(EgoDead 406 0) ; "** Hint: hitting a moving target is more difficult than hitting a LUMP!"
 				else
 					(client dispose:)
 				)
@@ -433,7 +433,7 @@
 				(= cycles 22)
 			)
 			(4
-				(EgoDead 406 1)
+				(EgoDead 406 1) ; "Were you looking for trouble? Maybe you thought you could beat them senseless with your pink bunny rabbit?"
 			)
 		)
 	)

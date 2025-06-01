@@ -574,7 +574,7 @@
 				(client cel: 0)
 			)
 			(12
-				(EgoDead 370 1)
+				(EgoDead 370 1) ; "** Why'd you just STAND there?!"
 			)
 		)
 	)
@@ -653,7 +653,7 @@
 			)
 			(5
 				(if register
-					(EgoDead 370 4)
+					(EgoDead 370 4) ; "** Now, you KNEW he was coming, didn't you?!"
 				)
 			)
 		)

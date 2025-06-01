@@ -708,7 +708,7 @@
 				((ScriptID 700 6) cel: 0) ; sp1
 			)
 			(4
-				(EgoDead 400 3)
+				(EgoDead 400 3) ; "Next time, don't dilly-dally, dude!"
 			)
 		)
 	)
@@ -908,7 +908,7 @@
 				(= cycles 1)
 			)
 			(12
-				(EgoDead 400 3)
+				(EgoDead 400 3) ; "Next time, don't dilly-dally, dude!"
 			)
 		)
 	)
@@ -1113,7 +1113,7 @@
 				(= cycles 1)
 			)
 			(12
-				(EgoDead 400 3)
+				(EgoDead 400 3) ; "Next time, don't dilly-dally, dude!"
 			)
 		)
 	)
@@ -1236,7 +1236,7 @@
 				0
 			)
 			(5
-				(EgoDead 400 5)
+				(EgoDead 400 5) ; "*** you're history"
 			)
 		)
 	)

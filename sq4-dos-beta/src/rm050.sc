@@ -262,7 +262,7 @@
 			)
 			(17
 				(Print 50 0) ; "Given another opportunity in this thing we loosely refer to as life, I think UNSTABLE ORDNANCE would be low on your list of fun things to carry."
-				(EgoDead 50 1)
+				(EgoDead 50 1) ; "Anyway, we hope you'll get yourself together and rejoin us. Isn't this a blast?"
 			)
 		)
 	)
@@ -308,7 +308,7 @@
 			)
 			(4
 				(Print 50 2) ; "Serious damage to important body parts, particularly those vital organs normally well-protected by the skeletal structure of the chest, pretty much screws-up any future plans you might have had for living. Bummer, eh?"
-				(EgoDead 50 3)
+				(EgoDead 50 3) ; "Oh, well. Just think proudly of your accomplishmen... On second thought, just think - it happens to even IMPORTANT people!"
 			)
 		)
 	)

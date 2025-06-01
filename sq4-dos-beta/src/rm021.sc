@@ -84,7 +84,7 @@
 			(2
 				(Print 21 0) ; "THE END"
 				(Print 21 1) ; "It's a game"
-				(EgoDead)
+				(EgoDead) ; "We're glad you could play SQIV. As usual, you've been a real pantload."
 			)
 		)
 	)

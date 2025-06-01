@@ -607,7 +607,7 @@
 				)
 			)
 			(3
-				(EgoDead 390 0)
+				(EgoDead 390 0) ; "Next time, don't dilly-dally, dude!"
 			)
 		)
 	)
@@ -684,7 +684,7 @@
 				)
 			)
 			(4
-				(EgoDead 390 0)
+				(EgoDead 390 0) ; "Next time, don't dilly-dally, dude!"
 			)
 		)
 	)
@@ -756,7 +756,7 @@
 				)
 			)
 			(4
-				(EgoDead 390 0)
+				(EgoDead 390 0) ; "Next time, don't dilly-dally, dude!"
 			)
 		)
 	)

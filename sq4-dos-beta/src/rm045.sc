@@ -351,7 +351,7 @@
 			)
 			(6
 				(= seconds 4)
-				(EgoDead)
+				(EgoDead) ; "We're glad you could play SQIV. As usual, you've been a real pantload."
 			)
 			(7
 				(HandsOn)

@@ -224,7 +224,7 @@
 				(= seconds 1)
 			)
 			(3
-				(EgoDead 530 0)
+				(EgoDead 530 0) ; "*** Gee, I guess that way doesn't go anywhere."
 			)
 		)
 	)
@@ -490,7 +490,7 @@
 			)
 			(24
 				(proc0_12 local0)
-				(EgoDead)
+				(EgoDead) ; "We're glad you could play SQIV. As usual, you've been a real pantload."
 			)
 		)
 	)

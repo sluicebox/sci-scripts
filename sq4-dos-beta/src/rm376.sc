@@ -378,7 +378,7 @@
 				(blast cel: 0 posn: local3 local4 setPri: 15 setCycle: End self)
 			)
 			(10
-				(EgoDead 376 0)
+				(EgoDead 376 0) ; "Smoking is bad for your health."
 			)
 		)
 	)
@@ -444,7 +444,7 @@
 				(blast cel: 0 posn: local3 local2 setPri: 15 setCycle: End self)
 			)
 			(5
-				(EgoDead 376 0)
+				(EgoDead 376 0) ; "Smoking is bad for your health."
 			)
 		)
 	)

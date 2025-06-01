@@ -667,7 +667,7 @@
 				)
 			)
 			(8
-				(EgoDead 410 0)
+				(EgoDead 410 0) ; "** Gee, Zero IQ, zero G might be for you."
 			)
 			(9
 				(= cycles 20)
@@ -856,7 +856,7 @@
 					3
 					{RUN LIKE HECK!!!}
 				)
-				(EgoDead 410 1)
+				(EgoDead 410 1) ; "Well... maybe. It's worth a try."
 			)
 		)
 	)
@@ -984,7 +984,7 @@
 					3
 					{RUN LIKE HECK!!!}
 				)
-				(EgoDead 410 1)
+				(EgoDead 410 1) ; "Well... maybe. It's worth a try."
 			)
 		)
 	)

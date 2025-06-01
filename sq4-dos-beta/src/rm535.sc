@@ -385,7 +385,7 @@
 				(= seconds 1)
 			)
 			(3
-				(EgoDead 535 0)
+				(EgoDead 535 0) ; "*** Gee, I guess that way doesn't go anywhere."
 			)
 		)
 	)

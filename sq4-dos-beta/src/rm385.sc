@@ -422,7 +422,7 @@
 				(= cycles 8)
 			)
 			(5
-				(EgoDead 385 2)
+				(EgoDead 385 2) ; "** It's not over 'till the fat lady Orat spits... EEE-UCK! Well, I guess it's over. All over. All over everything!"
 			)
 		)
 	)

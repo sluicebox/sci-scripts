@@ -465,7 +465,7 @@
 				(client setCel: 0 view: 13 setCycle: End self)
 			)
 			(3
-				(EgoDead 700 0)
+				(EgoDead 700 0) ; "** Zap zap, you're dead"
 			)
 		)
 	)

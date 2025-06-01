@@ -409,7 +409,7 @@
 				(gEgo hide:)
 			)
 			(5
-				(EgoDead 702 1)
+				(EgoDead 702 1) ; "As the green slime dissolves the flesh from your bones, you think, "Hey! This stuff consumes 47 times its weight in acid!""
 			)
 		)
 	)

@@ -155,7 +155,7 @@
 				(= seconds 3)
 			)
 			(3
-				(EgoDead 706 7)
+				(EgoDead 706 7) ; "Your last name might as well be `Lindsley' now."
 			)
 		)
 	)
@@ -336,7 +336,7 @@
 						(Print 706 10) ; ""GEEEZ!" Much like life at Sierra, you find the force field a real eye-opening experience."
 					)
 					(else
-						(EgoDead 706 11)
+						(EgoDead 706 11) ; "Your musculature spasms for the last time as the Force Field shock causes you to give up the ghost."
 					)
 				)
 				(self dispose:)
