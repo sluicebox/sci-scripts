@@ -521,7 +521,7 @@
 			(7
 				(gEgo dispose:)
 				(guard dispose:)
-				(EgoDead 40 23)
+				(EgoDead 40 23) ; "Sonny, you really must learn not to be such a nuisance. It's not that hard to find your seat and fasten your seatbelt!"
 			)
 		)
 	)

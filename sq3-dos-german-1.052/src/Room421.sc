@@ -893,7 +893,7 @@
 			(12
 				(local7 stop:)
 				(global111 setLoop: 8 setCel: 0)
-				(EgoDead 901 0 14 16)
+				(EgoDead 901 0 14 16) ; "Thanks for playing Space Quest ]I[. As usual, you've been a real hoot."
 			)
 		)
 	)
@@ -1210,7 +1210,7 @@
 				)
 			)
 			(1
-				(EgoDead 901 (LangSwitch 0 2) (LangSwitch 3 0) 99)
+				(EgoDead 901 (LangSwitch 0 2) (LangSwitch 3 0) 99) ; "Thanks for playing Space Quest ]I[. As usual, you've been a real hoot."
 			)
 		)
 	)
@@ -1352,7 +1352,7 @@
 				(= seconds 6)
 			)
 			(2
-				(EgoDead 901 0 0 1)
+				(EgoDead 901 0 0 1) ; "It wouldn't be so bad, except for the sudden stop at the end.__Next time, don't get so close to the edge."
 			)
 		)
 	)

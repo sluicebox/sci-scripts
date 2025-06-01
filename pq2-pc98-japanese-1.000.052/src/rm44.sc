@@ -183,7 +183,7 @@
 				)
 			)
 			(2
-				(EgoDead 44 0 80 {Jim is terribly disappointed, and says:})
+				(EgoDead 44 0 80 {Jim is terribly disappointed, and says:}) ; "Looks like you BLEW it, Sonny! You and 49 other people are now dead!"
 			)
 		)
 	)

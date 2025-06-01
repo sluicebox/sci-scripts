@@ -289,7 +289,7 @@
 			)
 			(1
 				(Print 3 31) ; "Unfortunately, the fall was too much for your frail frame to withstand."
-				(EgoDead 901 0 0 1)
+				(EgoDead 901 0 0 1) ; "It wouldn't be so bad, except for the sudden stop at the end.__Next time, don't get so close to the edge."
 			)
 		)
 	)
@@ -400,7 +400,7 @@
 				(gEgo cel: 0 setCycle: 0)
 				(RedrawCast)
 				(Print 3 36 #at -1 20 #width 280) ; "It's obvious that the metal was sharper than you. The resulting laceration turns you into a living fountain - at least for a few moments. Unfortunately for you, this show was your finale. Good luck in the afterlife."
-				(EgoDead 901 0 6 8)
+				(EgoDead 901 0 6 8) ; "A brave but fatal attempt at arterial art."
 			)
 		)
 	)

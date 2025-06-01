@@ -333,7 +333,7 @@
 				(Print 31 7) ; "T*H*U*M*P !!!"
 				(ShakeScreen 5)
 				(clr)
-				(EgoDead 31 8)
+				(EgoDead 31 8) ; "In the days that followed, it was most folks' opinion that Sonny Bonds was overly distracted by continuous and lengthy sessions playing a recently released computer game called POLICE QUEST II. This must be why he didn't see the Mack truck driven by the little old lady who lived in the house next to Marie."
 			)
 		)
 	)

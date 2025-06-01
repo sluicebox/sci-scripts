@@ -181,7 +181,7 @@
 			)
 			(10
 				(clr)
-				(EgoDead 300 9)
+				(EgoDead 300 9) ; "Even the hottest detective needs to follow orders."
 			)
 		)
 	)

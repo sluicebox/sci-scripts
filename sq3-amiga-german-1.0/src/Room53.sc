@@ -219,7 +219,7 @@
 				(= seconds 3)
 			)
 			(9
-				(EgoDead 901 (LangSwitch 0 2) (LangSwitch 13 1) 19)
+				(EgoDead 901 (LangSwitch 0 2) (LangSwitch 13 1) 19) ; "Thanks for playing Space Quest ]I[. As usual, you've been a real hoot."
 			)
 			(10
 				(tongue dispose:)

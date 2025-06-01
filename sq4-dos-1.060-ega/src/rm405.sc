@@ -498,7 +498,7 @@
 				)
 			)
 			(8
-				(EgoDead 8 12)
+				(EgoDead 8 12) ; "Gee, Zero IQ, Zero-G might be for you."
 			)
 			(9
 				(= cycles 20)
@@ -715,7 +715,7 @@
 					3
 					{Remove your hindquarters from here!!!}
 				)
-				(EgoDead 8 18)
+				(EgoDead 8 18) ; "Well... maybe.__It's worth a try."
 			)
 		)
 	)
@@ -858,7 +858,7 @@
 					3
 					{Remove your hindquarters from here!!!}
 				)
-				(EgoDead 8 18)
+				(EgoDead 8 18) ; "Well... maybe.__It's worth a try."
 			)
 		)
 	)

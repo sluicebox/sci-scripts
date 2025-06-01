@@ -667,7 +667,7 @@
 				)
 			)
 			(6
-				(EgoDead 901 (LangSwitch 1 2) (LangSwitch 0 2) 999)
+				(EgoDead 901 (LangSwitch 1 2) (LangSwitch 0 2) 999) ; "Thanks for playing Space Quest ]I[. As usual, you've been a real hoot."
 			)
 		)
 	)

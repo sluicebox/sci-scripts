@@ -458,7 +458,7 @@
 				)
 			)
 			(1
-				(EgoDead)
+				(EgoDead) ; "We're glad you could play SQIV. As usual, you've been a real pantload."
 			)
 		)
 	)

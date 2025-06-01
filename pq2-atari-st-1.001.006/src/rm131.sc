@@ -214,7 +214,7 @@
 				)
 			)
 			(3
-				(EgoDead 131 5)
+				(EgoDead 131 5) ; "Unfortunately, Bains was waiting for you."
 			)
 		)
 	)

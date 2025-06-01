@@ -474,7 +474,7 @@
 			)
 			(4
 				(Print 15 41) ; "Oh my! It appears that your being trapped has made you a prime target for rodent ruffians. What a mess!"
-				(EgoDead 901 0 2 3)
+				(EgoDead 901 0 2 3) ; "You may not be Purina Rat Chow, but you'll do!"
 			)
 		)
 	)

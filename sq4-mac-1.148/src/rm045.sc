@@ -386,7 +386,7 @@
 				(= seconds 4)
 			)
 			(7
-				(EgoDead 8)
+				(EgoDead 8) ; "We're glad you could play SQIV.__As usual, you've been a real pantload."
 			)
 		)
 	)
@@ -442,7 +442,7 @@
 			(9
 				(gLongSong2 stop:)
 				(Print 45 2) ; "The shot just misses you (lucky stiff) and then caroms off the reflective surfaces of the cabin interior. During the course of this event it does eventually manage to take you both out (perforated stiff)."
-				(EgoDead 8 28)
+				(EgoDead 8 28) ; "Just as you fade from the living organism club you think, in amazement,"So that's what my spleen looks like!""
 			)
 		)
 	)

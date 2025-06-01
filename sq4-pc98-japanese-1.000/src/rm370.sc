@@ -825,7 +825,7 @@
 				(client cel: 0)
 			)
 			(12
-				(EgoDead 8 9)
+				(EgoDead 8 9) ; "Why'd you just STAND there?! I guess you just enjoy a laser buzz once in awhile."
 			)
 		)
 	)
@@ -909,7 +909,7 @@
 			)
 			(5
 				(if register
-					(EgoDead 8 10)
+					(EgoDead 8 10) ; "Now, you KNEW he was coming, didn't you?!"
 				)
 			)
 		)

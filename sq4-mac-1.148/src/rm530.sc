@@ -478,7 +478,7 @@
 			)
 			(26
 				(proc0_12 local0)
-				(EgoDead 8)
+				(EgoDead 8) ; "We're glad you could play SQIV.__As usual, you've been a real pantload."
 			)
 		)
 	)

@@ -84,7 +84,7 @@
 					(gCurRoom newRoom: 14)
 				else
 					(Print 20 3 #at -1 130 #width 280) ; "Unfortunately, your inadequately protected ship is struck and subsequently destroyed in the bottle neck of metallic objects striving to pass through the same relatively small opening."
-					(EgoDead 0 0 4 5)
+					(EgoDead 0 0 4 5) ; "Sudden Decompression Sucks!"
 				)
 			)
 		)

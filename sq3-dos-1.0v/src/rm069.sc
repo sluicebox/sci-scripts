@@ -332,7 +332,7 @@
 			)
 			(4
 				(Print 69 28) ; "Way to go, ace! You blundered your way to within range of the pirates' jello gun. You suffocate in an impenetrable block of jello."
-				(EgoDead 0 0 7 15)
+				(EgoDead 0 0 7 15) ; "As your life sputters to a close, you decide to cut down on desserts."
 			)
 		)
 	)

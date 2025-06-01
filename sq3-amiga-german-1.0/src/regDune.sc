@@ -569,7 +569,7 @@
 			(6
 				(local4 stop:)
 				(global111 setLoop: 8 setCel: 0)
-				(EgoDead 901 0 14 16)
+				(EgoDead 901 0 14 16) ; "Thanks for playing Space Quest ]I[. As usual, you've been a real hoot."
 			)
 			(8
 				(= seconds 12)

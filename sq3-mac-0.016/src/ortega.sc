@@ -221,7 +221,7 @@
 			)
 			(4
 				(Print 600 32) ; "You sizzle into oblivion. This planet wouldn't be so bad if you could keep cool somehow."
-				(EgoDead 0 0 8 11)
+				(EgoDead 0 0 8 11) ; "It's so hot you could fry a Vorlian phlegmsnake egg."
 				(= global159 0)
 				(HandsOn)
 			)
@@ -243,7 +243,7 @@
 				(ohnoScript changeState: 0)
 			)
 			(1
-				(EgoDead 0 0 1 2)
+				(EgoDead 0 0 1 2) ; "You never did care for fondue.__Next time, don't get so close to the edge."
 			)
 		)
 	)

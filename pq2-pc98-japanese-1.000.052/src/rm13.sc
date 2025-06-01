@@ -376,7 +376,7 @@
 					)
 					(else
 						(if local202
-							(EgoDead 13 3)
+							(EgoDead 13 3) ; "As a police officer, you should not abandon any stolen property which you have recovered. Next time, think about what you're doing."
 						)
 						(if (< local211 local209)
 							(++ local211)

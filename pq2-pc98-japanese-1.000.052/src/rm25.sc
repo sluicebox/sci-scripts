@@ -1245,7 +1245,7 @@
 			(3
 				(Print 25 73) ; "Your last act in life is kicking the door in as you're blasted into an unknown dimension."
 				(Print 25 74) ; "Because of your improper positioning, you have been blasted into oblivion."
-				(EgoDead 25 75)
+				(EgoDead 25 75) ; "Congratulations, you have been successful in taking yourself out of the game."
 			)
 		)
 	)
@@ -1333,7 +1333,7 @@
 					)
 				else
 					(Print 25 79 #draw) ; "Because of your improper positioning, you have been blasted into oblivion."
-					(EgoDead 25 75)
+					(EgoDead 25 75) ; "Congratulations, you have been successful in taking yourself out of the game."
 				)
 			)
 			(3
@@ -1454,7 +1454,7 @@
 			)
 			(2
 				(HandsOff)
-				(EgoDead 25 75)
+				(EgoDead 25 75) ; "Congratulations, you have been successful in taking yourself out of the game."
 			)
 		)
 	)

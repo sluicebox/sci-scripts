@@ -231,7 +231,7 @@
 				else
 					(PrintSplit 701 2) ; "Having the correct shield up could have prevented this!  The final shot shreds the side of your ship. In the sudden vacuum, your body fluids expand beyond the capacity of your tissues. Your desicated body will drift forever, a grim testament to your blundering stupidity."
 				)
-				(EgoDead 0 0 4 5)
+				(EgoDead 0 0 4 5) ; "Sudden Decompression Sucks!"
 			)
 		)
 	)

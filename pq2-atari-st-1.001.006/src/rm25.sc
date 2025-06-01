@@ -1667,7 +1667,7 @@
 					)
 				else
 					(Print 25 111 #draw) ; "Because of your improper positioning, you have been blasted into oblivion."
-					(EgoDead 25 115)
+					(EgoDead 25 115) ; "Congratulations, you have been successful in taking yourself out of the game."
 				)
 			)
 			(3

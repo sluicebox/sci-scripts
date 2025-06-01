@@ -772,7 +772,7 @@
 				(if (> (gEgo y:) 208)
 					(Print 10 35 #time 5 #draw) ; "You experience excruciating pain."
 					(Print 10 36 #time 6 #draw) ; "As you pass out from loss of blood, you realize your error."
-					(EgoDead 10 37)
+					(EgoDead 10 37) ; "A foot is a terrible thing to waste. Next time, draw your weapon fully before firing it."
 				)
 				(if (and (== [global215 global207] 6) (== local75 0))
 					(Print 10 38 #draw) ; "You should protect your ears."
@@ -787,7 +787,7 @@
 						(== global209 6)
 					)
 					(RedrawCast)
-					(EgoDead 10 39)
+					(EgoDead 10 39) ; "FORGIVE ME FOR SHOUTING, BUT FAILURE TO USE EAR PROTECTORS HAS CAUSED SEVERE HEARING IMPAIRMENT. YOUR MEAGER DISABILITY PENSION IS SORRY COMPENSATION FOR THE CONSTANT RINGING IN YOUR EARS."
 				)
 				(= local78 0)
 			)

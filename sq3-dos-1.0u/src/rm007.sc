@@ -204,7 +204,7 @@
 			)
 			(3
 				(Print 7 18) ; "Oh, gosh! You've stepped off a metallic escarpment and tumbled into the darkness. Twisted, jagged remnants of old vehicles reach out to slow your dark descent, cutting short your life in the process."
-				(EgoDead 901 0 0 1)
+				(EgoDead 901 0 0 1) ; "It wouldn't be so bad, except for the sudden stop at the end.__Next time, don't get so close to the edge."
 				(return)
 			)
 			(4

@@ -379,7 +379,7 @@
 			)
 			(localproc_1)
 			(if (not (-- formatting))
-				(EgoDead 0 5)
+				(EgoDead 0 5) ; "The formatting sequence times out, the computer brain does its thing, and you suddenly realize you've lost the game because you weren't there to see it."
 			)
 		)
 		(cond
@@ -724,7 +724,7 @@
 			)
 			(2
 				(if register
-					(EgoDead 8 20)
+					(EgoDead 8 20) ; "For a fleeting moment, you are impressed with the droid's accuracy."
 				else
 					(blast dispose:)
 				)

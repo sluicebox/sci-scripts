@@ -586,19 +586,19 @@
 			(3
 				(switch local1
 					(0
-						(EgoDead 41 29)
+						(EgoDead 41 29) ; "You fire at the hijacker but unfortunately, the stewardess was in the way. You hit her and the hijacker kills you."
 					)
 					(1
-						(EgoDead 41 30)
+						(EgoDead 41 30) ; "You fire at the hijacker but miss because of your intoxicated condition. Unfortunately he didn't miss you!"
 					)
 					(2
-						(EgoDead 41 31)
+						(EgoDead 41 31) ; "You fire at the hijacker but miss because your gun is not sighted."
 					)
 					(3
-						(EgoDead 41 32)
+						(EgoDead 41 32) ; "Because of your furtive movement, the hijacker unloads on you."
 					)
 					(4
-						(EgoDead 41 33)
+						(EgoDead 41 33) ; "The masked hijacker kills you, avenging his companions death."
 					)
 				)
 			)
@@ -767,7 +767,7 @@
 				(= local2 0)
 				(HandsOff)
 				(hijackMusic fade:)
-				(EgoDead 41 41)
+				(EgoDead 41 41) ; "Because you failed to take action, the hijackers have succeeded with their sinister plot. You will live out the rest of your life in Bum Suk Egypt."
 			)
 			(8
 				(hijackMusic stop:)

@@ -718,7 +718,7 @@
 				(gEgo view: 26 cel: 0 setCycle: End self)
 			)
 			(3
-				(EgoDead 8 17)
+				(EgoDead 8 17) ; "Zap zap, you're dead."
 			)
 		)
 	)

@@ -598,7 +598,7 @@
 			(1
 				(ShakeScreen 10 ssFULL_SHAKE)
 				(Print 17 6) ; "With the engines off, the ship falls abruptly to the floor.  The resulting impact is too much for it and you."
-				(EgoDead 0 0 5 7)
+				(EgoDead 0 0 5 7) ; "Your radar is designed to avoid just such an occurrence."
 			)
 		)
 	)

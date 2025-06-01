@@ -222,7 +222,7 @@
 				(= seconds 4)
 			)
 			(2
-				(EgoDead 0 6)
+				(EgoDead 0 6) ; "THWUMP! Nice Reactions, Roger! Life is pounded loose from your body by the impact of the sand bike."
 			)
 		)
 	)
@@ -319,7 +319,7 @@
 				(gEgo setCycle: End self)
 			)
 			(4
-				(EgoDead 1 7)
+				(EgoDead 1 7) ; "Your musculature spasms for the last time as the Force Field shock causes you to give up the ghost."
 			)
 		)
 	)

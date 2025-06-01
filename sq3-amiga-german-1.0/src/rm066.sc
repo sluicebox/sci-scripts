@@ -348,7 +348,7 @@
 			)
 			(6
 				(Print 66 7) ; "The impact of your landing set off the thermal detonator.  Your fragments are strewn over a wide area."
-				(EgoDead 0 0 16 20)
+				(EgoDead 0 0 16 20) ; "Didn't mom always tell you not to play with firecrackers?"
 			)
 			(7
 				(gEgo
@@ -385,7 +385,7 @@
 			)
 			(1
 				(Print 66 9) ; "The impact switch on the thermal detonator was triggered by your wobbling on the unstable rock. Your fragments are strewn over a wide area."
-				(EgoDead 0 0 16 20)
+				(EgoDead 0 0 16 20) ; "Didn't mom always tell you not to play with firecrackers?"
 			)
 		)
 	)

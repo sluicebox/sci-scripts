@@ -84,7 +84,7 @@
 				(= cycles 4)
 			)
 			(11
-				(EgoDead 5 16)
+				(EgoDead 5 16) ; "This is Roger. This is Roger on Ortega.  Any questions?"
 			)
 		)
 	)

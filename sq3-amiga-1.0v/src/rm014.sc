@@ -1055,7 +1055,7 @@
 						(blowUp play:)
 						(ShakeScreen 30)
 						(Print 14 91) ; "The ship rises successfully, but collides with the top of the freighter. The resulting explosion sends a potpourri of flesh and metal fragments careening in all directions."
-						(EgoDead 0 0 5 7)
+						(EgoDead 0 0 5 7) ; "Your radar is designed to avoid just such an occurrence."
 					)
 				else
 					(Print 14 92) ; "The ship settles back down into the nest of debris."

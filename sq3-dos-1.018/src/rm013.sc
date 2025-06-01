@@ -497,7 +497,7 @@
 					(RedrawCast)
 					(gEgo dispose:)
 					(Print 13 32) ; "You really bit the beam, Buckwheat. And there's that lack of regard for organics in action again. I guess they never heard of the warning shot concept around here. Anyway, you're dead."
-					(EgoDead 901 0 10 14)
+					(EgoDead 901 0 10 14) ; "Hope you enjoy your new flow-through ventilation system."
 				else
 					(bot
 						setLoop: 3
@@ -570,7 +570,7 @@
 					(RedrawCast)
 					(gEgo dispose:)
 					(Print 13 32) ; "You really bit the beam, Buckwheat. And there's that lack of regard for organics in action again. I guess they never heard of the warning shot concept around here. Anyway, you're dead."
-					(EgoDead 901 0 10 14)
+					(EgoDead 901 0 10 14) ; "Hope you enjoy your new flow-through ventilation system."
 				else
 					(bot setLoop: 0 cel: 0 setScript: botPanelScript)
 					(= local2 0)
@@ -618,7 +618,7 @@
 			)
 			(4
 				(cls)
-				(EgoDead 901 0 0 1)
+				(EgoDead 901 0 0 1) ; "It wouldn't be so bad, except for the sudden stop at the end.__Next time, don't get so close to the edge."
 			)
 		)
 	)
@@ -971,7 +971,7 @@
 			)
 			(5
 				(Print 13 36) ; "We haven't seen footwork like that since Gerald Ford! Unfortunately, your fall causes you to make contact with the non-moving deck below. The resulting impact forces the cancellation of your subscription to life."
-				(EgoDead 901 0 0 1)
+				(EgoDead 901 0 0 1) ; "It wouldn't be so bad, except for the sudden stop at the end.__Next time, don't get so close to the edge."
 			)
 		)
 	)

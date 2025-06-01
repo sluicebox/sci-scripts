@@ -123,7 +123,7 @@
 				(= seconds 7)
 			)
 			(4
-				(EgoDead 901 0 11 18)
+				(EgoDead 901 0 11 18) ; "Thanks for playing Space Quest ]I[. As usual, you've been a real hoot."
 			)
 		)
 	)

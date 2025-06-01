@@ -353,7 +353,7 @@
 			)
 			(5
 				(cls)
-				(EgoDead 901 (LangSwitch 0 2) (LangSwitch 3 0) 4)
+				(EgoDead 901 (LangSwitch 0 2) (LangSwitch 3 0) 4) ; "You're a less-than-choice cut, Wilco!"
 			)
 		)
 	)
@@ -501,7 +501,7 @@
 			)
 			(3
 				(cls)
-				(EgoDead 901 0 0 1)
+				(EgoDead 901 0 0 1) ; "It wouldn't be so bad, except for the sudden stop at the end.__Next time, don't get so close to the edge."
 			)
 		)
 	)

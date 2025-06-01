@@ -396,7 +396,7 @@
 				)
 			)
 			(7
-				(EgoDead 133 41)
+				(EgoDead 133 41) ; "In Marie's excited state of being, she raised her voice, alerting Bains. Next time try to calm her before untying her."
 			)
 			(8
 				(localproc_0 133 42) ; "The sound of approaching footsteps interrupts your plans, and Marie says..."
@@ -500,13 +500,13 @@
 				(HandsOff)
 				(cond
 					((and (== local107 0) (not global204))
-						(EgoDead 133 45)
+						(EgoDead 133 45) ; "One loaded gun in your hand is worth two in the holster."
 					)
 					((not local108)
-						(EgoDead 133 46)
+						(EgoDead 133 46) ; "Standing out in the open, you shoot it out with Bains. Your nervousness causes you to miss. Unfortunately, he didn't."
 					)
 					(else
-						(EgoDead 133 47)
+						(EgoDead 133 47) ; "The firefight between you and Bains ends with him winning. Remember, the one with the quick gun AND enough ammo wins."
 					)
 				)
 			)

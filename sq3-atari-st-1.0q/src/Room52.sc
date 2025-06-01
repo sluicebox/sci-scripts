@@ -655,7 +655,7 @@
 				)
 			)
 			(6
-				(EgoDead 901 1 0 999)
+				(EgoDead 901 1 0 999) ; "Thanks for playing Space Quest ]I[. As usual, you've been a real hoot."
 			)
 			(7
 				(HandsOff)

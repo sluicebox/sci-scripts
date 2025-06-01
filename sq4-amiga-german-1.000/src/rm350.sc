@@ -146,7 +146,7 @@
 				(= seconds 3)
 			)
 			(6
-				(EgoDead 4 0)
+				(EgoDead 4 0) ; "We're glad you could play SQIV. As usual, you've been a real pantload."
 			)
 		)
 	)
@@ -198,7 +198,7 @@
 				(bSound play:)
 			)
 			(7
-				(EgoDead 4 27)
+				(EgoDead 4 27) ; "I'm sure the Babes appreciate your sacrifice, too bad you can't experience just how appreciative they are."
 			)
 		)
 	)

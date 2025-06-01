@@ -545,7 +545,7 @@
 				(gLongSong2 fade:)
 			)
 			(14
-				(EgoDead 8)
+				(EgoDead 8) ; "We're glad you could play SQIV. As usual, you've been a real pantload."
 			)
 		)
 	)

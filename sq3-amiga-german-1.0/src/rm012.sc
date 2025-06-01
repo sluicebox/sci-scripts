@@ -175,7 +175,7 @@
 			)
 			(4
 				(cls)
-				(EgoDead 901 0 0 1)
+				(EgoDead 901 0 0 1) ; "It wouldn't be so bad, except for the sudden stop at the end.__Next time, don't get so close to the edge."
 			)
 		)
 	)

@@ -483,7 +483,7 @@
 				)
 			)
 			(4
-				(EgoDead 8 24)
+				(EgoDead 8 24) ; "It's not over 'till the fat lady Orat spits... EEE-UCK! Well, I guess it's over. All over. All over everything!"
 			)
 		)
 	)

@@ -732,7 +732,7 @@
 			)
 			(2
 				(Animate (gCast elements:) 0)
-				(EgoDead 2 21)
+				(EgoDead 2 21) ; "OW! Now this is a pain that'll linger! All the Ben Gay in Florida won't relieve this stiffness."
 			)
 		)
 	)

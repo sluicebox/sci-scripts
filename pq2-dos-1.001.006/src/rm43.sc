@@ -211,7 +211,7 @@
 				(Print 43 10) ; "You and Keith leave the plane, and search around Steelton. You talk to the Steelton police and they are unable to help you."
 				(Print 43 11) ; "You and Keith find that Colby has been murdered, but there are no clues."
 				(Print 43 12) ; "Two days later, the Steelton police find Marie's body in a gutter, with multiple gun shot wounds to the head."
-				(EgoDead 43 13)
+				(EgoDead 43 13) ; "It really would have been a good idea to call the Steelton police before you arrived - just like the Captain suggested."
 			)
 			(21
 				(Print 43 14) ; "You and Keith leave the airplane, and are met at the airport by Officer Jarvis Pitman."

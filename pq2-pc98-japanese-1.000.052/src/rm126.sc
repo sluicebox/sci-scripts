@@ -337,7 +337,7 @@
 				(Print 126 15) ; "And you're swept into the sewer . Your head hits hard during the fall, rendering you unconscious..."
 				(Print 126 16) ; "Unfortunately for you, the sewer does the rest."
 				(gEgo dispose:)
-				(EgoDead 126 17)
+				(EgoDead 126 17) ; "You drown in the sewer because of an unfortunate accident. Next time, try to minimize the chance of it happening again."
 			)
 		)
 	)

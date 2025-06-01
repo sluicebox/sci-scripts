@@ -790,7 +790,7 @@
 			)
 			(9
 				(= seconds 4)
-				(EgoDead 8)
+				(EgoDead 8) ; "We're glad you could play SQIV. As usual, you've been a real pantload."
 			)
 		)
 	)

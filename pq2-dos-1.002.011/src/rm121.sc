@@ -187,7 +187,7 @@
 				(Print 121 0) ; "You step into the path of high pressure water being released from the surface..."
 				(Print 121 1) ; "And you're swept into the sewer . Your head hits hard during the fall, rendering you unconscious..."
 				(Print 121 2) ; "Unfortunately for you, the sewer does the rest."
-				(EgoDead 121 3)
+				(EgoDead 121 3) ; "You drown in the sewer because of an unfortunate accident. Next time, try to minimize the chance of it happening again."
 			)
 		)
 	)

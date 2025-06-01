@@ -350,7 +350,7 @@
 			)
 			(3
 				(fallSound stop:)
-				(EgoDead 901 0 0 10)
+				(EgoDead 901 0 0 10) ; "That's one small step for man... One giant leap for janitor-kind."
 			)
 		)
 	)

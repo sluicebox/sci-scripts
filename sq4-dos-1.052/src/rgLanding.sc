@@ -126,7 +126,7 @@
 				(= seconds 1)
 			)
 			(5
-				(EgoDead 0 22)
+				(EgoDead 0 22) ; "That was a LOOoooong first step."
 			)
 		)
 	)

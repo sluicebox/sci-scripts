@@ -246,7 +246,7 @@
 			)
 			(1
 				(local1 stop:)
-				(EgoDead 901 0 14 16)
+				(EgoDead 901 0 14 16) ; "Thanks for playing Space Quest ]I[. As usual, you've been a real hoot."
 			)
 		)
 	)

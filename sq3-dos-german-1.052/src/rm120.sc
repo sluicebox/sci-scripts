@@ -698,7 +698,7 @@
 				(boom play:)
 				(ShakeScreen 10 ssFULL_SHAKE)
 				(Print 120 0 #at -1 130 #width 280) ; "Well, it looks like you've depleted your power. The last thing you see is your blood slowly spreading across the arena floor."
-				(EgoDead 0 0 9 13)
+				(EgoDead 0 0 9 13) ; "Better hang out at the gym more often."
 			)
 		)
 	)

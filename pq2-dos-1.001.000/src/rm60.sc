@@ -1100,7 +1100,7 @@
 						(Print 60 67) ; "As Bains comes running towards you, you notice the gun in his hand, analyze the situation quickly, and take action. Although your bullet misses its mark, it comes close enough for the suspect to take leg bail."
 					)
 					(else
-						(EgoDead 60 68)
+						(EgoDead 60 68) ; "Your nerves on edge, you fired wildly into the bushes. Was it Bains, or a little boy playing? Without knowing, you should not have discharged your weapon. Next time, be sure you are in danger before firing."
 					)
 				)
 				(SetScore 4)
@@ -1133,10 +1133,10 @@
 			(9
 				(switch local10
 					(1
-						(EgoDead 60 70)
+						(EgoDead 60 70) ; "Too bad, so sad, you've been had. But wait! All is not lost. Just restore your game and begin again. Next time though, make sure your gun is properly sighted in and pointed in the right direction."
 					)
 					(else
-						(EgoDead 60 71)
+						(EgoDead 60 71) ; "Too bad, so sad, you've been had. But wait! All is not lost. Just restore your game and begin again. Next time though, you might try returning gun fire before it's too late."
 					)
 				)
 			)
@@ -1285,7 +1285,7 @@
 			)
 			(9
 				(if (== global131 13)
-					(EgoDead 60 74)
+					(EgoDead 60 74) ; "Don't worry; Keith will explain in his report how he heroically 'watched your back'."
 				)
 			)
 		)

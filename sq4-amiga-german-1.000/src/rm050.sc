@@ -299,7 +299,7 @@
 			)
 			(18
 				(Print 50 0) ; "Given another opportunity in this thing we loosely refer to as life, I think UNSTABLE ORDNANCE would be low on your list of fun things to carry."
-				(EgoDead 6 4)
+				(EgoDead 6 4) ; "Anyway, we hope you'll get yourself together and rejoin us. Isn't this a blast?"
 			)
 		)
 	)
@@ -352,7 +352,7 @@
 			(4
 				(gLongSong number: 147 loop: 1 vol: 127 play:)
 				(Print 50 1) ; "Serious damage to important body parts, particularly those vital organs normally well-protected by the skeletal structure of the chest, pretty much screws up any future plans you might have had for living. Bummer, eh?"
-				(EgoDead 0 8)
+				(EgoDead 0 8) ; "Oh, well. Just think proudly of your accomplishment... On second thought, just think - it happens to even IMPORTANT people!"
 			)
 		)
 	)

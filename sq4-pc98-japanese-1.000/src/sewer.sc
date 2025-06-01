@@ -406,7 +406,7 @@
 			(5
 				(gLongSong number: 0 vol: 0 stop:)
 				(gLongSong2 number: 0 vol: 0 stop:)
-				(EgoDead 3 13)
+				(EgoDead 3 13) ; "As the green slime dissolves the flesh from your bones, you think, "Hey! This stuff consumes 47 times its weight in acid!""
 				(self dispose:)
 			)
 		)

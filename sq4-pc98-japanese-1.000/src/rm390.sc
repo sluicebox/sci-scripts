@@ -596,7 +596,7 @@
 				)
 			)
 			(3
-				(EgoDead 8 3)
+				(EgoDead 8 3) ; "Next time, don't dilly-dally, dude!"
 			)
 		)
 	)
@@ -681,7 +681,7 @@
 				)
 			)
 			(4
-				(EgoDead 8 3)
+				(EgoDead 8 3) ; "Next time, don't dilly-dally, dude!"
 			)
 		)
 	)
@@ -761,7 +761,7 @@
 				)
 			)
 			(4
-				(EgoDead 8 3)
+				(EgoDead 8 3) ; "Next time, don't dilly-dally, dude!"
 			)
 		)
 	)

@@ -430,7 +430,7 @@
 				(blast cel: 0 posn: local3 local4 setPri: 15 setCycle: End self)
 			)
 			(10
-				(EgoDead 8 1)
+				(EgoDead 8 1) ; "Smoking is bad for your health."
 			)
 		)
 	)
@@ -498,7 +498,7 @@
 				(blast cel: 0 posn: local3 local2 setPri: 15 setCycle: End self)
 			)
 			(5
-				(EgoDead 8 1)
+				(EgoDead 8 1) ; "Smoking is bad for your health."
 			)
 		)
 	)
@@ -696,7 +696,7 @@
 				(gEgo setCycle: Beg self)
 			)
 			(2
-				(EgoDead 8 29)
+				(EgoDead 8 29) ; "You were warned not to try to break into the change machine, but did you listen?"
 			)
 		)
 	)

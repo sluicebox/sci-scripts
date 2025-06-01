@@ -105,7 +105,7 @@
 
 	(method (newRoom newRoomNumber)
 		(if (and (== newRoomNumber (gCurRoom south:)) (brain formatting:))
-			(EgoDead 0 19)
+			(EgoDead 0 19) ; "As you leave the laser tunnel, you hear a metallic voice announce that the formatting program is beginning, erasing all data in the super computer and dashing all hopes of regaining your son!"
 		else
 			(gLongSong fade:)
 			(if (gCast contains: smoke0)
@@ -1080,7 +1080,7 @@
 				(= seconds 5)
 			)
 			(2
-				(EgoDead 8)
+				(EgoDead 8) ; "We're glad you could play SQIV.__As usual, you've been a real pantload."
 			)
 		)
 	)

@@ -297,7 +297,7 @@
 				)
 				(local3 view: 13)
 				(RedrawCast)
-				(EgoDead 128 6)
+				(EgoDead 128 6) ; "Unfortunately the noise alerted Bains, and you were caught by his ambush."
 			)
 			(10
 				(local3

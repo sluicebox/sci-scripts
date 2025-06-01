@@ -362,7 +362,7 @@
 				(self cue:)
 			)
 			(8
-				(EgoDead 77 36)
+				(EgoDead 77 36) ; "Next time, try to react a little faster. Use your equipment."
 			)
 			(9
 				(User canControl: 1)

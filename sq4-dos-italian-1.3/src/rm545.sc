@@ -120,7 +120,7 @@
 	(method (doit &tmp temp0 temp1 temp2 temp3 temp4 temp5)
 		(super doit:)
 		(if (and local1 (not (-- local1)))
-			(EgoDead 8 23)
+			(EgoDead 8 23) ; "While you were busy staring blankly at your PocketPal(tm) screen, a droid clumsily snuck up to you and tapped you on the shoulder. "Zap," it said in its droning metallic voice, "you're it.""
 		)
 		(= temp4 ((ScriptID 704 1) mover:)) ; droid1
 		(= temp5 ((ScriptID 704 2) mover:)) ; droid2

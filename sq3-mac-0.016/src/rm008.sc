@@ -700,7 +700,7 @@
 			)
 			(7
 				(Print 8 58) ; "We warned you to be careful. Did you listen? Nooooo! Good luck next time."
-				(EgoDead 901 0 15 1)
+				(EgoDead 901 0 15 1) ; "It wouldn't be so bad, except for the sudden stop at the end.__Next time, don't get so close to the edge."
 				(HandsOn)
 			)
 			(8
@@ -799,7 +799,7 @@
 				(gEgo cel: 0 setCycle: 0)
 				(RedrawCast)
 				(Print 8 61 #at -1 20 #width 280) ; "It's obvious that the metal was sharper than you. The resulting laceration turns you into a living fountain - at least for a few moments. Unfortunately for you, this show was your finale. Good luck in the afterlife."
-				(EgoDead 901 0 6 8)
+				(EgoDead 901 0 6 8) ; "A brave but fatal attempt at arterial art."
 			)
 		)
 	)

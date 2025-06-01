@@ -179,7 +179,7 @@
 				(clr)
 				(gEgo dispose:)
 				(Print 1 6) ; "No one will ever know why, upon arriving for work one day, Detective Sonny Bonds decided to take a walk down the center line of Lytton's busiest street."
-				(EgoDead 1 7)
+				(EgoDead 1 7) ; "Thank you for playing Police Quest 2. Next time, be a little more careful."
 			)
 			((== global132 local5 1)
 				(if (not (gCast contains: ourCar))

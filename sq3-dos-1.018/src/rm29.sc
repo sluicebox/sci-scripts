@@ -714,7 +714,7 @@
 				(= seconds 2)
 			)
 			(26
-				(EgoDead 0 0 10 12)
+				(EgoDead 0 0 10 12) ; "A pulselaser blast to the forehead is not your idea of fun.__Fortunately, it didn't hit anything important."
 			)
 		)
 	)

@@ -288,7 +288,7 @@
 				(= seconds 1)
 			)
 			(3
-				(EgoDead)
+				(EgoDead) ; "We're glad you could play SQIV. As usual, you've been a real pantload."
 			)
 		)
 	)
@@ -657,11 +657,11 @@
 				(= seconds 3)
 			)
 			(7
-				(EgoDead 8)
+				(EgoDead 8) ; "We're glad you could play SQIV. As usual, you've been a real pantload."
 			)
 			(8
 				(if (not (gCurRoom script:))
-					(EgoDead 8)
+					(EgoDead 8) ; "We're glad you could play SQIV. As usual, you've been a real pantload."
 					(cop view: 7)
 				)
 				(HandsOn)

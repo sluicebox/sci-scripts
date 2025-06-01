@@ -829,7 +829,7 @@
 				((ScriptID 700 6) cel: 0) ; sp1
 			)
 			(4
-				(EgoDead 8 25)
+				(EgoDead 8 25) ; "Boy, these guys manage to be in the most inconvenient places! They seem to have this area secured. Your extra crispy parts surely will provide no threat."
 			)
 		)
 	)
@@ -1070,7 +1070,7 @@
 				(gEgo view: 26 cel: 0 cycleSpeed: 1 setCycle: End self)
 			)
 			(13
-				(EgoDead 8 3)
+				(EgoDead 8 3) ; "Next time, don't dilly-dally, dude!"
 			)
 		)
 	)
@@ -1309,7 +1309,7 @@
 				(gEgo view: 26 cel: 0 cycleSpeed: 1 setCycle: End self)
 			)
 			(13
-				(EgoDead 8 3)
+				(EgoDead 8 3) ; "Next time, don't dilly-dally, dude!"
 			)
 		)
 	)
@@ -1445,7 +1445,7 @@
 				0
 			)
 			(5
-				(EgoDead 8 26)
+				(EgoDead 8 26) ; "Boy, is that typical. Isn't it just like a Sequel Police cyborg to guard the main entrances and exits?"
 			)
 		)
 	)

@@ -176,7 +176,7 @@
 				(gEgo dispose:)
 				(RedrawCast)
 				(Print 62 3) ; "The quakes started by the detonator have broken open a huge crack in the planet surface, which you and everything else in the vicinity have fallen into. The super-heated magma does a quick work of boiling you alive."
-				(EgoDead 0 0 1 2)
+				(EgoDead 0 0 1 2) ; "You never did care for fondue.__Next time, don't get so close to the edge."
 			)
 		)
 	)

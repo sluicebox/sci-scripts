@@ -334,7 +334,7 @@
 				(gEgo view: 511 setLoop: 1 setCel: 0 setCycle: End self)
 			)
 			(9
-				(EgoDead 8 30)
+				(EgoDead 8 30) ; "The word "Laser" came to mind after each of the first six shots, but only after the seventh blast were you convinced."
 			)
 		)
 	)
@@ -446,7 +446,7 @@
 				)
 			)
 			(3
-				(EgoDead)
+				(EgoDead) ; "We're glad you could play SQIV. As usual, you've been a real pantload."
 			)
 		)
 	)
@@ -477,7 +477,7 @@
 			)
 			(3
 				(if local4
-					(EgoDead 0 11)
+					(EgoDead 0 11) ; "Well, that's just great! Now Vohaul's on the loose again, disguised as your SON! You lose 3 out of 2."
 				else
 					(gLongSong number: 870 vol: 127 loop: -1 flags: 1 playBed:)
 					(= cycles 2)

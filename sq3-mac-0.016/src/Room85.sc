@@ -304,14 +304,14 @@
 				(= seconds 7)
 			)
 			(12
-				(EgoDead 901 0 7 99)
+				(EgoDead 901 0 7 99) ; "Thanks for playing Space Quest ]I[. As usual, you've been a real hoot."
 			)
 			(14
 				(Print 85 7) ; "Oh. No! You've stepped into an electrical force field and as a result you are fried to a crackly crunch. YOU'RE TOAST, DUDE!"
 				(self changeState: 16)
 			)
 			(16
-				(EgoDead 901 0 11 18)
+				(EgoDead 901 0 11 18) ; "Thanks for playing Space Quest ]I[. As usual, you've been a real hoot."
 			)
 		)
 	)
