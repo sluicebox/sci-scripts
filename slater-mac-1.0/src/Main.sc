@@ -6,6 +6,7 @@
 (use Messager)
 (use Talker)
 (use PseudoMouse)
+(use Feature)
 (use LoadMany)
 (use Grooper)
 (use Window)
@@ -436,7 +437,7 @@
 		(gUser canControl: 0)
 	)
 
-	(method (init &tmp temp0 temp1 [temp2 100] temp102 [temp103 20])
+	(method (init &tmp temp0 temp1 [temp2 121])
 		(LoadMany rsSCRIPT 982)
 		(super init:)
 		(StrCpy @gSysLogPath {})
@@ -473,42 +474,12 @@
 		(= gDemoSound demoSound)
 		(= gMessager gameMessager)
 		((= gMouseDownHandler MH) add:)
-		((= gKeyDownHandler KH) add:)
 		((= gDirectionHandler DH) add:)
 		((= gPSound pSound) owner: self init:)
-		((= gLongSong longSong) owner: self priority: 15 init:)
-		((= gLongSong2 longSong2) owner: self priority: 15 init:)
-		((= gLongSong3 longSong3) owner: self priority: 15 init:)
-		(gKeyDownHandler addToFront: TheGame)
-		(if (FileIO fiEXISTS {880.scr})
-			(while 1
-				(= temp103 0)
-				(= temp102
-					(Print
-						font: gSmallFont
-						addText: {Enter room number...} 0 0
-						addEdit: @temp103 5 125 0
-						init:
-					)
-				)
-				(if temp103
-					(= temp102 (ReadNumber @temp103))
-				)
-				(if (> temp102 0)
-					(break)
-				)
-			)
-			(gGame masterVolume: 15)
-			(if (!= (Platform 4 0) 1)
-				(= global143 1)
-			)
-			(if (< temp102 13)
-				(= global106 temp102)
-			)
-			(self newRoom: temp102)
-		else
-			(self newRoom: 812)
-		)
+		((= gLongSong longSong) owner: self priority: 14 init:)
+		((= gLongSong2 longSong2) owner: self priority: 14 init:)
+		((= gLongSong3 longSong3) owner: self priority: 14 init:)
+		(self newRoom: 812)
 	)
 
 	(method (startRoom roomNum)
@@ -538,17 +509,7 @@
 			874
 			830
 			991
-			948
 		)
-		(gKeyDownHandler delete: TheGame)
-		(if (u> (MemoryInfo 1) (+ 10 (MemoryInfo 0))) ; FreeHeap, LargestPtr
-			(if gModelessDialog
-				(gModelessDialog dispose:)
-			)
-			(Prints {Memory fragmented.})
-			(SetDebug)
-		)
-		(gKeyDownHandler addToFront: TheGame)
 		(if (not (OneOf gCurRoomNum 812 804 111 801 802 803))
 			(= global119 [global123 gCurRoomNum])
 		else
@@ -567,7 +528,14 @@
 			(gTheCursor init:)
 		else
 			((= gTheCursor cursorObj)
-				view: 990
+				view:
+					(switch param1
+						(999 10)
+						(998 11)
+						(997 12)
+						(996 0)
+						(else param1)
+					)
 				loop: 0
 				setCel:
 					(switch param1
@@ -592,106 +560,32 @@
 		(if (event claimed:)
 			(return 1)
 		)
-		(if
-			(and
-				(or (== (event type:) evKEYBOARD) (== (event type:) evMOUSEBUTTON))
-				(not (== gCurRoomNum 801))
-				(== global120 1)
-			)
+		(if (and (== (event type:) evMOUSEBUTTON) (not (== gCurRoomNum 801)) (== global120 1))
 			(= global120 0)
 			(super handleEvent: event)
 		)
-		(cond
-			(
-				(and
-					(== (gTheCursor cel:) 10)
-					(== (event type:) evKEYBOARD)
-					(== (User canInput:) 1)
+		(if
+			(and
+				(== (gTheCursor cel:) 10)
+				(== (event type:) evMOUSEBUTTON)
+				(== (User canInput:) 1)
+			)
+			(cond
+				((and (< (event x:) 20) (> (event y:) 175))
+					(event claimed: 1)
+					(leftArrow setScript: leftArrowScript)
 				)
-				(switch (event message:)
-					(KEY_SPACE
-						(if (!= gCurRoomNum 111)
-							(event claimed: 1)
-							(stopButton setScript: stopButtonScript)
-						)
-					)
-					(KEY_f
-						(if (not (OneOf gCurRoomNum 801 802 803 812 817))
-							(event claimed: 1)
-							(rightArrow setScript: rightArrowScript)
-						)
-					)
-					(KEY_b
-						(if (not (OneOf gCurRoomNum 801 803 812 817))
-							(event claimed: 1)
-							(leftArrow setScript: leftArrowScript)
-						)
-					)
-					(KEY_p
-						(= global120 0)
-						(event claimed: 1)
-					)
-					(KEY_r
-						(= global120 1)
-						(event claimed: 1)
-						(rightArrow setScript: rightArrowScript)
-					)
-					(KEY_RETURN
-						(cond
-							((and (< (event x:) 15) (> (event y:) 185))
-								(event claimed: 1)
-								(leftArrow setScript: leftArrowScript)
-							)
-							((and (> (event x:) 308) (> (event y:) 185))
-								(event claimed: 1)
-								(rightArrow setScript: rightArrowScript)
-							)
-							((== (OnControl CONTROL (event x:) (event y:)) 8)
-								(event claimed: 1)
-								(stopButton setScript: stopButtonScript)
-							)
-						)
-					)
-					(else
-						(if (FileIO fiEXISTS {880.SCR})
-							(event claimed: 0)
-							((ScriptID 880) handleEvent: event) ; MISSING SCRIPT
-							((ScriptID 880) dispose:) ; MISSING SCRIPT
-							(DisposeScript 880)
-						)
-					)
+				((and (> (event x:) 300) (> (event y:) 175))
+					(event claimed: 1)
+					(rightArrow setScript: rightArrowScript)
+				)
+				((== (OnControl CONTROL (event x:) (event y:)) 8)
+					(event claimed: 1)
+					(stopButton setScript: stopButtonScript)
 				)
 			)
-			(
-				(and
-					(== (gTheCursor cel:) 10)
-					(or (== (event type:) evKEYBOARD) (== (event type:) evMOUSEBUTTON))
-					(== (User canInput:) 1)
-				)
-				(cond
-					((and (< (event x:) 20) (> (event y:) 175))
-						(event claimed: 1)
-						(leftArrow setScript: leftArrowScript)
-					)
-					((and (> (event x:) 300) (> (event y:) 175))
-						(event claimed: 1)
-						(rightArrow setScript: rightArrowScript)
-					)
-					((== (OnControl CONTROL (event x:) (event y:)) 8)
-						(event claimed: 1)
-						(stopButton setScript: stopButtonScript)
-					)
-				)
-			)
-			((FileIO fiEXISTS {880.SCR})
-				(event claimed: 0)
-				((ScriptID 880) handleEvent: event) ; MISSING SCRIPT
-				((ScriptID 880) dispose:) ; MISSING SCRIPT
-				(DisposeScript 880)
-			)
-			(else
-				(super handleEvent: event &rest)
-			)
+		else
+			(super handleEvent: event &rest)
 		)
 	)
 )
@@ -701,10 +595,6 @@
 )
 
 (instance MH of EventHandler
-	(properties)
-)
-
-(instance KH of EventHandler
 	(properties)
 )
 
@@ -737,8 +627,8 @@
 (instance leftArrow of Prop
 	(properties
 		x 11
-		y 196
-		priority 15
+		y 197
+		priority 14
 		signal 16
 	)
 )
@@ -746,9 +636,9 @@
 (instance rightArrow of Prop
 	(properties
 		x 308
-		y 196
+		y 197
 		loop 1
-		priority 15
+		priority 14
 		signal 16
 	)
 )
@@ -756,9 +646,10 @@
 (instance stopButton of Prop
 	(properties
 		x 158
-		y 158
+		y 189
+		z 30
 		loop 2
-		priority 15
+		priority 14
 		signal 16
 	)
 )
@@ -945,5 +836,125 @@
 
 (instance mySound of Sound
 	(properties)
+)
+
+(class InterFeature of Feature
+	(properties)
+
+	(method (init)
+		(super init: &rest)
+		(gMouseDownHandler addToEnd: self)
+	)
+
+	(method (dispose)
+		(gMouseDownHandler delete: self)
+		(super dispose: &rest)
+	)
+
+	(method (handleEvent event)
+		(if
+			(and
+				(== (User canInput:) 1)
+				(self onMe: event)
+				(or
+					(== ((gUser curEvent:) message:) KEY_RETURN)
+					(== ((gUser curEvent:) type:) evMOUSEBUTTON)
+				)
+			)
+			(self doVerb:)
+		else
+			(super handleEvent: event)
+		)
+	)
+)
+
+(class InterProp of Prop
+	(properties)
+
+	(method (init)
+		(super init: &rest)
+		(gMouseDownHandler addToEnd: self)
+	)
+
+	(method (dispose)
+		(gMouseDownHandler delete: self)
+		(super dispose: &rest)
+	)
+
+	(method (handleEvent event)
+		(if
+			(and
+				(== (User canInput:) 1)
+				(self onMe: event)
+				(or
+					(== ((gUser curEvent:) message:) KEY_RETURN)
+					(== ((gUser curEvent:) type:) evMOUSEBUTTON)
+				)
+			)
+			(self doVerb:)
+		else
+			(super handleEvent: event)
+		)
+	)
+)
+
+(class InterView of View
+	(properties)
+
+	(method (init)
+		(super init: &rest)
+		(gMouseDownHandler addToEnd: self)
+	)
+
+	(method (dispose)
+		(gMouseDownHandler delete: self)
+		(super dispose: &rest)
+	)
+
+	(method (handleEvent event)
+		(if
+			(and
+				(== (User canInput:) 1)
+				(self onMe: event)
+				(or
+					(== ((gUser curEvent:) message:) KEY_RETURN)
+					(== ((gUser curEvent:) type:) evMOUSEBUTTON)
+				)
+			)
+			(self doVerb:)
+		else
+			(super handleEvent: event)
+		)
+	)
+)
+
+(class InterActor of Actor
+	(properties)
+
+	(method (init)
+		(super init: &rest)
+		(gMouseDownHandler addToEnd: self)
+	)
+
+	(method (dispose)
+		(gMouseDownHandler delete: self)
+		(super dispose: &rest)
+	)
+
+	(method (handleEvent event)
+		(if
+			(and
+				(== (User canInput:) 1)
+				(self onMe: event)
+				(or
+					(== ((gUser curEvent:) message:) KEY_RETURN)
+					(== ((gUser curEvent:) type:) evMOUSEBUTTON)
+				)
+			)
+			(self doVerb:)
+		else
+			(super handleEvent: event)
+		)
+	)
 )
 
