@@ -71,7 +71,7 @@
 		(SetPort -1)
 		(if hiRes
 			(/= height 2)
-			(= underBits (Graph 15 y 0 (+ y height) 319))
+			(= underBits (Graph 15 y 0 (+ y height) 319)) ; grSAVE_BITS_HIGH_RES_KQ6
 		else
 			(= underBits (Graph grSAVE_BOX y 0 (+ y height) 320 1))
 		)

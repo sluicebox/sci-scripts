@@ -429,7 +429,7 @@
 		(if (not underBits)
 			(= underBits
 				(Graph
-					15
+					15 ; grSAVE_BITS_HIGH_RES_KQ6
 					y
 					x
 					(+ y (/ (* (CelHigh 5 0 0) 5) 11))

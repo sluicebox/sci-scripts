@@ -364,7 +364,7 @@
 			(if temp72
 				(= empty
 					(Graph
-						15
+						15 ; grSAVE_BITS_HIGH_RES_KQ6
 						(+ (temp21 top:) 10)
 						(temp21 left:)
 						(+ (temp21 bottom:) 10)

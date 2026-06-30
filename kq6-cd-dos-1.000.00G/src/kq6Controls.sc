@@ -178,7 +178,7 @@
 			(= temp56 (+ top 18))
 			(= local1
 				(Graph
-					15
+					15 ; grSAVE_BITS_HIGH_RES_KQ6
 					temp56
 					temp55
 					(+ (/ (CelHigh 948 12 0) 2) temp56)
